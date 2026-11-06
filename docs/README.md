@@ -46,6 +46,8 @@
 
 [工作台截图](assets/screenshots/README.md)来自真实前后端与当前 Microduck 快照，随文档发布，可按记录的脚本重建。
 
-[项目愿景](vision.md)描述长期目标。[历史架构图](assets/diagrams/README.md)、[旧 Compile UI](compile/ui/README.md)、[宣讲网页](html/README.md)和[演示文稿](presentations/README.md)属于独立展示或教学资料，部分表达早于当前实现。
+[当前结构图](assets/diagrams/workbench-structure.svg)说明工作台、工作区、三技能及产物的层次，[图示说明](assets/diagrams/README.md)区分当前结构与历史示意。
+
+[项目愿景](vision.md)描述长期目标。[旧 Compile UI](compile/ui/README.md)、[宣讲网页](html/README.md)和[演示文稿](presentations/README.md)属于独立展示或教学资料，部分表达早于当前实现。
 
 删除本机旧知识快照不改变历史 Schema 的含义，也不要求把所有历史发布包留在工作台菜单中。

@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1000" viewBox="0 0 1200 1000" role="img" aria-labelledby="diagram-title diagram-description">
+  <title id="diagram-title">统一工作台、设备工作区与三技能</title>
+  <desc id="diagram-description">统一工作台管理多个设备工作区。每个工作区对应一个设备，Build、Simulate、Compile 共享设备上下文，分别产出 DKP、场景与观测、数据集与模型。产物在工作区登记并通过版本引用关联，三技能复用通用执行能力。</desc>
+  <defs>
+    <filter id="panel-shadow" x="-10%" y="-20%" width="120%" height="145%">
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#174c48" flood-opacity=".055"/>
+    </filter>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6.5" refY="4" orient="auto">
+      <path d="M1 1 6 4 1 7" fill="none" stroke="#83a39b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <style>
+      text { font-family: "Segoe UI", "Microsoft YaHei", "PingFang SC", sans-serif; fill: #2b4145; }
+      .muted { fill: #5e7375; }
+      .accent { fill: #237d79; }
+      .heading { font-weight: 650; }
+      .line { fill: none; stroke: #b3cac3; stroke-width: 1.5; }
+      .icon { fill: none; stroke: #347f78; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+      .card { fill: #fff; stroke: #dce8e3; stroke-width: 1.2; }
+      .artifact { fill: #f0f7f4; stroke: #dbeae3; stroke-width: 1; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="1000" fill="#fff"/>
+
+  <!-- Application layer: a shared interface, rather than a Build artifact. -->
+  <rect x="32" y="24" width="1136" height="110" rx="18" fill="#edf6f4" stroke="#cce0da" stroke-width="1.3" filter="url(#panel-shadow)"/>
+  <g transform="translate(56 50)">
+    <rect width="48" height="48" rx="12" fill="#237d79"/>
+    <g fill="none" stroke="#fff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+      <path d="m24 6 9 5v10l-9 5-9-5V11l9-5Zm-9 5 9 5 9-5m-9 5v10"/>
+      <path d="m15 21 9 5v10l-9 5-9-5V26l9-5Zm-9 5 9 5 9-5m-9 5v10"/>
+      <path d="m33 21 9 5v10l-9 5-9-5V26l9-5Zm-9 5 9 5 9-5m-9 5v10"/>
+    </g>
+  </g>
+  <text x="124" y="70" font-size="29" class="heading">统一工作台</text>
+  <text x="124" y="104" font-size="17" class="muted">设备切换 · 浏览查询 · 交互操作 · 作业与产物入口</text>
+  <rect x="918" y="57" width="220" height="40" rx="20" fill="#fff" stroke="#cce0da"/>
+  <text x="1028" y="83" text-anchor="middle" font-size="16" class="accent">管理多个设备工作区</text>
+
+  <path d="M600 135v39" class="line" marker-end="url(#arrow)"/>
+  <text x="616" y="160" font-size="14" class="muted">选择设备上下文</text>
+
+  <!-- Business boundary: one device, shared identities and version references. -->
+  <rect x="32" y="184" width="1136" height="640" rx="20" fill="#f8fbfa" stroke="#d4e4dd" stroke-width="1.3"/>
+  <g class="icon" transform="translate(56 202)">
+    <path d="M2 5h9l3 4h16v17H2Z"/>
+  </g>
+  <text x="100" y="223" font-size="23" class="heading">设备工作区</text>
+  <text x="1140" y="222" text-anchor="end" font-size="16" class="muted">一个设备的完整工作上下文</text>
+
+  <rect x="56" y="244" width="1088" height="56" rx="10" fill="#fff" stroke="#e0eae5"/>
+  <text x="78" y="279" font-size="16" class="heading accent">共同上下文</text>
+  <path d="M196 258v28M454 258v28M738 258v28" stroke="#e0eae5"/>
+  <text x="220" y="279" font-size="16" class="muted">设备身份与输入版本</text>
+  <text x="478" y="279" font-size="16" class="muted">对象与来源定位</text>
+  <text x="762" y="279" font-size="16" class="muted">任务状态与产物引用</text>
+  <text x="56" y="325" font-size="14" class="muted">三类能力入口 · 同一套技能在不同设备上下文中复用</text>
+
+  <!-- Build and its own deliverable. -->
+  <g id="build-capability">
+    <rect x="56" y="342" width="348" height="330" rx="12" class="card"/>
+    <rect x="78" y="362" width="38" height="38" rx="9" fill="#edf6f1"/>
+    <g class="icon" transform="translate(87 370)">
+      <path d="M2 1h11l6 6v17H2Zm11 0v7h6M6 13h9M6 18h9"/>
+    </g>
+    <text x="130" y="390" font-size="26" class="heading">Build</text>
+    <text x="78" y="423" font-size="17">解析资料与核验知识</text>
+    <text x="78" y="449" font-size="16" class="muted">固定来源、几何与装配依据</text>
+    <path d="M230 464v25" class="line" marker-end="url(#arrow)"/>
+    <text x="244" y="481" font-size="13" class="muted">产出</text>
+    <rect x="76" y="500" width="308" height="148" rx="8" class="artifact"/>
+    <text x="98" y="535" font-size="21" class="heading accent">DKP 设备知识包</text>
+    <text x="98" y="568" font-size="16">知识 · 几何 · 证据</text>
+    <text x="98" y="594" font-size="16">来源 · 索引 · 能力范围</text>
+    <text x="98" y="627" font-size="14" class="muted">不可变知识快照</text>
+  </g>
+
+  <!-- Simulate and its own deliverables. -->
+  <g id="simulate-capability">
+    <rect x="426" y="342" width="348" height="330" rx="12" class="card"/>
+    <rect x="448" y="362" width="38" height="38" rx="9" fill="#edf6f1"/>
+    <g class="icon" transform="translate(455 368)">
+      <path d="m12 1 10 6v13l-10 6L2 20V7l10-6ZM2 7l10 6 10-6m-10 6v13"/>
+    </g>
+    <text x="500" y="390" font-size="26" class="heading">Simulate</text>
+    <text x="448" y="423" font-size="17">装配与场景管理</text>
+    <text x="448" y="449" font-size="16" class="muted">渲染观测、测试模型</text>
+    <path d="M600 464v25" class="line" marker-end="url(#arrow)"/>
+    <text x="614" y="481" font-size="13" class="muted">产出</text>
+    <rect x="446" y="500" width="308" height="148" rx="8" class="artifact"/>
+    <text x="468" y="535" font-size="21" class="heading accent">场景、观测与报告</text>
+    <text x="468" y="568" font-size="16">配置 · 会话 · 渲染批次</text>
+    <text x="468" y="594" font-size="16">模型测试报告 · 纠错候选</text>
+    <text x="468" y="627" font-size="14" class="muted">独立的场景版本与运行记录</text>
+  </g>
+
+  <!-- Compile and its own deliverables. -->
+  <g id="compile-capability">
+    <rect x="796" y="342" width="348" height="330" rx="12" class="card"/>
+    <rect x="818" y="362" width="38" height="38" rx="9" fill="#edf6f1"/>
+    <g class="icon" transform="translate(825 369)">
+      <circle cx="12" cy="4" r="3.5"/><circle cx="4" cy="21" r="3.5"/><circle cx="21" cy="21" r="3.5"/>
+      <path d="m10 7-5 11m9-11 6 11M8 21h9"/>
+    </g>
+    <text x="870" y="390" font-size="26" class="heading">Compile</text>
+    <text x="818" y="423" font-size="17">语料与数据集管理</text>
+    <text x="818" y="449" font-size="16" class="muted">训练、登记与评测模型</text>
+    <path d="M970 464v25" class="line" marker-end="url(#arrow)"/>
+    <text x="984" y="481" font-size="13" class="muted">产出</text>
+    <rect x="816" y="500" width="308" height="148" rx="8" class="artifact"/>
+    <text x="838" y="535" font-size="21" class="heading accent">数据集、模型与评测</text>
+    <text x="838" y="568" font-size="16">语料 · 数据集 · 模型版本</text>
+    <text x="838" y="594" font-size="16">训练实验 · 评测记录</text>
+    <text x="838" y="627" font-size="14" class="muted">独立于 DKP 的研发产物</text>
+  </g>
+
+  <!-- Outputs are registered in the device context, not packed back into DKP. -->
+  <path d="M230 672v34M600 672v34M970 672v34" class="line"/>
+  <rect x="56" y="708" width="1088" height="92" rx="10" fill="#eaf3ef" stroke="#d4e4dc"/>
+  <text x="80" y="744" font-size="20" class="heading">工作区统一登记与引用各类产物</text>
+  <text x="80" y="777" font-size="16" class="muted">独立版本化 · 输入与输出可追踪 · 由工作台统一组织、检索、展示与交互</text>
+
+  <!-- Shared execution capabilities are reused across device workspaces. -->
+  <rect x="32" y="850" width="1136" height="94" rx="12" fill="#f5f7f7" stroke="#e0e7e6"/>
+  <text x="56" y="884" font-size="19" class="heading">三技能共用的执行能力</text>
+  <text x="56" y="915" font-size="15" class="muted">按设备上下文调用</text>
+  <path d="M328 869v56" stroke="#dce5e3"/>
+  <text x="354" y="884" font-size="17">知识解析与验证</text>
+  <text x="592" y="884" font-size="17">几何 · 约束 · 渲染</text>
+  <text x="864" y="884" font-size="17">训练 · 推理 · 模型运行</text>
+  <text x="354" y="915" font-size="15" class="muted">技能负责编排，对应执行器完成计算，工作台呈现交互与结果。</text>
+
+  <text x="36" y="979" font-size="14" class="muted">产品组织结构示意 · 三种能力按任务独立调用 · 实际接入状态见当前能力表</text>
+</svg>
