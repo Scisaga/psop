@@ -40,7 +40,7 @@ Simulate 的自由装配执行、批量多视角渲染和模型场景测试，�
 
 ```powershell
 git lfs install
-git clone --branch v2 https://github.com/Scisaga/psop.git
+git clone --branch main https://github.com/Scisaga/psop.git
 cd psop
 git lfs pull
 cd apps/workbench
