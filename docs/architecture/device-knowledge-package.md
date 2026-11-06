@@ -1,6 +1,8 @@
 # DKP v2：设备知识数据包合同
 
-2026-11-06（Asia/Shanghai）。封套 `psop.dkp/2.0-draft.1`，新构建知识剖面 `psop.hardware.source-model/1.8`，机械目标 `psop.hardware/2.0-draft.4`。
+2026-11-07。封套 `psop.dkp/2.0-draft.1`，当前知识剖面 `psop.hardware.source-model/1.8`，机械目标 `psop.hardware/2.0-draft.4`。
+
+1.8 包含来源模型、有限几何、安装知识、参考对应、柱孔配合、连接审查与带有限方向假设的参考连接件示意。先阅读本页数据入口及 1.8 小节；1.3～1.7 小节解释各层的技术沿革。保留旧合同不要求在本地工作区保留所有历史包，快照可按[工作区生命周期](device-workspace.md)清理。
 
 ## 包与工作区
 

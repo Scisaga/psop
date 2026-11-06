@@ -1,6 +1,6 @@
 # 设备工作区与工作台读取边界
 
-> 2026-11-06（Asia/Shanghai）。本页补充 [系统设计](system-design.md) 中的设备工作区定义，接口限于本轮实际读取与登记范围。
+> 2026-11-07。设备工作区与当前 source-model/1.8 的登记、读取及显示边界。实际操作见[工作台使用指南](../workbench.md)。
 
 ## 1. 业务对象
 
@@ -28,6 +28,9 @@ node apps/workbench/scripts/workspaces.mjs register --dkp <新v2-DKP目录> --wo
 | --- | --- |
 | GET /api/workspaces | 列出实际登记的设备工作区、可用知识快照和默认选择 |
 | GET /api/workspaces/:workspaceId/snapshots/:snapshotId/view | 校验所选快照，返回供通用界面使用的显示投影 |
+| GET /api/workspaces/:workspaceId/snapshots/:snapshotId/knowledge | 返回包内结构化设备知识 |
+| GET /api/workspaces/:workspaceId/snapshots/:snapshotId/manifest | 返回发布清单、包身份和能力声明 |
+| GET /api/workspaces/:workspaceId/snapshots/:snapshotId/assets/:path | 读取已登记资产，核对摘要，支持范围读取 |
 
 工作区对象包含 id、deviceId、name、description、snapshots；快照包含 id、packageId、packageVersion、packageDigest、ontologyVersion、createdAt 和 counts。选择快照须使用实际列表中的 ID。
 
@@ -35,7 +38,7 @@ node apps/workbench/scripts/workspaces.mjs register --dkp <新v2-DKP目录> --wo
 
 显示投影关联新包身份与能力。资产 URL 由工作台服务挂载并返回，客户端不拼接任意本机路径。原件、XML／CSV 定位和几何绑定仍指向该包版本，搜索、3D 和证据页面共享同一上下文。
 
-feature、hole、pattern、observation 与 interface 的选择和链接分别保留类别。1.4 增加安装孔位、参考安装和槽开口的定位，1.5 另支持实体安装柱、局部功能声明与未知选择规则；1.6 按连接链加入内腔、逐对审查和补全示意，小柱用途更正为项目推断；1.7 增加柱孔有限配合及补全件用途分级，当前 1.8 修正参考连接件的方向并记录有限装入假设。同一孔组的两侧布局作一个布局的入口详情，不以 02／03 同名条目冒充两个功能对象。安装页展示有依据的孔位、规则及双方对应，缺项按能力分别说明。旧 1.0～1.7 读取冻结合同；1.1／1.2 只作历史几何浏览，均不以零数量声称不存在装法。
+当前 1.8 分别定位有限特征、孔道、几何模式、参考观测、安装入口、槽、小柱、柱孔配合、参考安装和连接件示意。类型与链接保留各自身份，界面共享同一包摘要及对象上下文。同一孔组的两侧布局作为入口详情，不以 02／03 同名条目冒充两个功能对象；缺项按实际能力分别说明。旧剖面读取遵循对应合同，其技术沿革见 [DKP 数据合同](device-knowledge-package.md)。
 
 接口页以本件实际配合和作用为主线：双方局部位置 → 定位／保持分工与依据 → 已有规则、参考对应及缺项。孔位、小柱的定位保留当前接口上下文，显式查看原始几何才切换分类。逐对连接分析、辅助几何及缺项折叠呈现，并有独立审查页；邻接筛查不取代接口清单。大腿每两根小柱与同台舵机壳体 B2／B3 孔对应，16 mm 组距、约 2 mm 有限插入和模型间隙支持安装定位用途推断；不形成“至少双柱”规则、轴向保持或承载结论。外侧 Ø5.5 mm 大洞另列为用途未知的几何，不作为默认主接口或装饰。
 
@@ -77,3 +80,11 @@ feature、hole、pattern、observation 与 interface 的选择和链接分别保
 ## 5. 运行入口
 
 运行方式见 [工作台说明](../../apps/workbench/README.md)。包文件与语义边界见 [DKP v2](device-knowledge-package.md) 和 [硬件本体](hardware-ontology.md)。工作台不承担旧 core、旧 ID 或旧静态页面的兼容运行。
+
+## 6. 快照保留与清理
+
+一个设备工作区可以只保留当前快照。不可变约束针对保留包的内容和身份，不要求永久保存所有开发发布物。当前 Microduck 开发工作区已从 11 个版本清理为一份 1.8 快照。
+
+清理顺序为：确定保留的实际快照，移除旧登记引用并更新 selectedSnapshotId，再删除不被任何工作区引用的旧包目录。包目录按登记表位置解析，清理范围限于确认的设备发布目录。刷新后菜单只显示仍登记的版本。
+
+新构建使用新版本和输出目录；--fresh 默认添加快照，不自动清理其他版本。历史 Schema 与回归能力可继续保留，浏览器测试不应依赖本机永久保存一整套开发包。

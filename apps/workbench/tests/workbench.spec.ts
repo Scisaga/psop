@@ -9,7 +9,6 @@ const registry = await readRegistry();
 const device = registry.workspaces.find((workspace: { deviceId: string }) => workspace.deviceId === 'microduck');
 if (!device?.snapshots.length) throw new Error('Prepare the v2 Microduck workspace before running browser tests.');
 const selectedSnapshotId = device.selectedSnapshotId || device.snapshots.at(-1).id;
-const firstSnapshotId = device.snapshots[0].id;
 const historicalSurfaceId = device.snapshots.find((snapshot: { path: string }) => JSON.parse(readFileSync(path.resolve(path.dirname(defaultRegistry), snapshot.path, 'manifest.json'), 'utf8')).profile === 'psop.hardware.source-model/1.2')?.id;
 let data: PrototypeData;
 let target: Part, foot: Part, ankle: Part, sole: Part, servo: Part;
@@ -366,15 +365,16 @@ test('历史平面分组只作几何浏览，不再计入接口实例', async ({
   await expect(page.locator('.ontology-association-row')).toHaveCount(0);
 });
 
-test('旧快照切换到新版本后保留连杆身份并显示已知安装', async ({ page }) => {
-  await page.goto(explorerUrl(leg.id, undefined, firstSnapshotId));
-  await expect(page.locator('.mechanics-unprocessed')).toContainText('该版本尚未分析');
-  await page.locator('.mechanics-unprocessed').getByRole('button', { name: '查看知识版本', exact: true }).click();
-  await page.getByRole('dialog').getByRole('combobox', { name: '选择知识版本', exact: true }).selectOption(selectedSnapshotId);
-  await expect(page).toHaveURL(new RegExp(`snapshot=${selectedSnapshotId}`));
+test('当前连杆知识可直接打开，版本菜单只列实际登记快照', async ({ page }) => {
+  await page.goto(explorerUrl(leg.id));
   await expect(page.locator('.object-id')).toContainText(leg.id);
   await expect(page.locator('.mounting-summary')).toContainText('6 个安装孔位');
   await expect(page.locator('.mounting-summary')).toContainText('1 项参考装配');
+  await page.getByRole('button', { name: '选择设备工作区', exact: true }).click();
+  const versions = page.getByRole('combobox', { name: '选择知识版本', exact: true });
+  await expect(versions.locator('option')).toHaveCount(device.snapshots.length);
+  await expect(versions).toHaveValue(selectedSnapshotId);
+  await expect(page).toHaveURL(new RegExp(`snapshot=${selectedSnapshotId}`));
 });
 
 test('八个安装孔位按两侧组织，同孔道的另一侧入口可独立定位', async ({ page }) => {

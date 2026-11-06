@@ -1,79 +1,96 @@
 # PSOP 统一工作台
 
-工作台管理多个设备工作区；一个工作区围绕一个设备，登记多个知识快照、构建产物及后续模拟/训练记录。Build、Simulate、Compile 是同一设备工作区内的三类能力。界面延续雾白、石墨和矿物青，以及独立滚动、精细面板和 3D／证据联动。
+工作台管理多个设备工作区，读取 Build 发布的 DKP，提供模型、安装知识、本体和证据的联动浏览。当前使用 `psop.hardware.source-model/1.8`，实现状态核对于 2026-11-07。
 
-> 连接审查更新：2026-11-06（Asia/Shanghai）。新构建使用 psop-build 3.0.0-draft.9 与 source-model/1.8；封套仍为 psop.dkp/2.0-draft.1。按实际局部配合组织定位与保持审查，柱孔测量和未核实替代示意各自保留资格；1.0～1.7 快照保持冻结。
+![Microduck 设备工作区](../../docs/assets/screenshots/workbench-overview.png)
 
-## 启动
+操作说明见[工作台使用指南](../../docs/workbench.md)。本页说明运行、数据与开发方式。
 
-Windows 双击 `启动工作台.cmd`，或运行 `node scripts/launch.mjs`。启动器直接使用 Node，不依赖 PowerShell 脚本执行策略。需要 Node.js 22.12+、Python 3.11+；首次安装依赖及获取固定的补充 XML 需要网络。默认本机地址 `http://127.0.0.1:8780/`。
+## 运行
+
+需要 Node.js 22.12+、Python 3.11+。大型原始资料使用 Git LFS；检出仓库后执行 `git lfs pull`。首次准备 Microduck 会下载固定版本的补充 XML。
+
+Windows 双击[启动工作台.cmd](启动工作台.cmd)，或从本目录执行：
 
 ```powershell
-cd apps/workbench
-npm ci
-npm run prepare:workspace
-npm run dev
+node scripts/launch.mjs
 ```
 
-生产构建使用 `npm run build`、`npm start`。可信局域网可通过 `node scripts/launch.mjs --bind <本机具体IP>` 启动。该版本没有账户系统或公网部署配置。
+启动器安装缺少的依赖、复用或准备设备工作区、构建并打开 **http://127.0.0.1:8780/**。`--no-browser` 关闭自动打开页面。
 
-`prepare:workspace` 调用 psop-build `prepare → finalize → validate`，摄入原材料及显式装配说明，发布并登记真实 Microduck v2 DKP，不在前端另抽知识。已有工作区复用登记快照；需要新 1.8 方向修正知识时运行 `python -B scripts/prepare_workspace.py --fresh`。旧包及 Schema 原字节不变。
-
-## 工作区与 DKP
+手动启动：
 
 ```powershell
-# 登记已经校验的 v2 数据包；同一设备工作区可登记多个版本
+npm ci
+npm run prepare:workspace
+npm run build
+npm start
+```
+
+前端开发使用 `npm run dev`。可信局域网可用 `node scripts/launch.mjs --bind <本机具体IP>`，通过 `--port` 指定端口。当前服务没有账户和公网部署配置。
+
+## 设备工作区和版本
+
+`prepare:workspace` 调用实际 Build CLI，摄入材料、装配说明和支持资料，发布并登记 DKP。已有工作区会复用。
+
+```powershell
+# 生成并登记新快照
+python -B scripts/prepare_workspace.py --fresh
+
+# 登记已有包，相对路径以当前工作目录为基准
 node scripts/workspaces.mjs register --dkp ../../build/<设备>/<包>.dkp --workspace <工作区ID>
 
-# 创建尚无知识快照的其他设备工作区
+# 创建空设备工作区并检查目录
 node scripts/workspaces.mjs create --id <工作区ID> --device-id <设备ID> --name <设备名称>
 node scripts/workspaces.mjs list
 ```
 
-登记信息写入仓库根目录 `workspaces/registry.json`，不进入 DKP。每个工作区固定设备，每个快照固定 package/version/digest；同版本不同摘要拒绝覆盖。封套接受 v2，按显式分支读取 source-model/1.0 至 1.8；旧 core、CMP/PORT/IFC、DKP v1 和包内 App不兼容。
+登记表在仓库根目录 `workspaces/registry.json`，生成包在 `build/`，均不进入 Git。工作区可以只有一个当前版本，也可以保留多个快照。清理时先移除旧登记引用，再删除不再被使用的包目录，保留当前选择及其他工作区的引用。当前 Microduck 开发工作区已清理为一份 1.8 快照。
 
-目录只核验已登记manifest摘要与元数据，不重放所有历史几何，也不声称内容已验证。选择/读取知识和资产时执行完整包验证，文件逐次核对登记字节及SHA-256。React是源知识投影，不复制原件到静态public或另抽权威事实。
+读取层仍识别 source-model/1.0～1.8 的显式合同，运行当前工作台不依赖本机保留旧包。历史合同兼容不恢复旧 core 或包内 App。
 
-## 当前能力
+## 主要交互
 
-- 共享浏览：真实 STL 参考装配、爆炸/复原、拾取、隐藏/隔离、标签、透明、剖切与视角；知识、本体定义、来源原文及 XML/CSV 证据定位。
-- 几何/安装分层：接口页按本件实际配合部位显示双方原子成员、用途依据、选用规则及未知项，再展示有来源的参考连接。大腿优先显示小柱与壳体孔的配合，外侧大洞单列为用途未知的几何。孔位和小柱的普通定位保留接口上下文，显式“查看原始几何”才切到几何页。四条双入口孔道仍是一份含八个可寻址孔位的孔位池，两侧分别显示规则，不生成 02／03 同名接口。
-- 连接审查：接口页中的连接分析、缺项及辅助几何默认折叠，也可进入独立连接审查页检查完整连接链。邻接筛查记录不作为安装接口清单，广相范围覆盖不等于已证明全机机械连接。
-- 补全示意：有来源参考路径的未绑定连接件与未核实替代示例分开；轴心螺钉／压盖属于后者，默认不显示，只能显式查看，不置入当前固定链。合成件不混入来源实例或确定 BOM，实际长度标为“长度待确认”，图形参数不成为实物规格。可独立显隐、斜向定位并适度展开；分享及导出保留用途、显示范围、实际可见性和显示姿态，不产生已固定标签。
-- 参考安装：联动舵机与腿部连杆的两对具体孔位，保留共同参考位姿、间隔测量、用户说明及模型复核；不将参考映射显示成已执行紧固。
-- 几何聚焦：孔入口与小柱采用各自观察方向，遇到遮挡时进入临时局部查看，透明处理遮挡几何并保留局部上下文，可恢复原场景。分享及导出保留局部检查状态；这些操作只改善显示，不改变来源位姿或证明碰撞、装配可行性。
-- 对象详情：右栏可拖拽或用键盘调宽，最小 320px、默认 380px、最大 640px，双击分隔条恢复默认并在本机保存偏好。实际上限还为 3D 画布保留空间；窄屏收起结构树或调整面板布局，不无限压缩画布。
-- 面组检查：本件与对端使用不同颜色；对应面每页六项，源面片明细按需展开。法线默认隐藏，可单独开启，分享链接保留显示状态；显示操作不改变来源位姿或几何判断。
-- 工作区：真实工作区/快照列表、切换与上下文链接，支持空设备工作区。
-- Build：真实发布快照、来源数量、验证结果及逐项能力状态。已经移除假构建进度与流程回放。
-- Simulate：装配、场景与视图生成、模型测试的统一入口；v2 物理引擎和执行服务尚未接入，明确显示待接入。
-- Compile：语料、训练、模型与评估的统一入口；实际训练、推理和模型试验尚未接入，不生成假运行或示例指标。
+| 区域 | 当前行为 |
+| --- | --- |
+| 设备与版本 | 切换工作区及实际登记快照，跨页面沿用上下文 |
+| 结构树与 3D | 拾取、隐藏、隔离、透明、剖切、爆炸／复原与视角控制 |
+| 对象详情 | 概览、几何、接口、关联、证据；支持拖拽及键盘调宽 |
+| 安装接口 | 可选成员与规则按需展开，具体参考装配只呈现一份双方对应及紧固路径详情 |
+| 局部查看 | 聚焦孔口、小柱或连接件，淡化遮挡对象，支持恢复原视图 |
+| 来源定位 | 打开原始 XML、CSV、说明、PDF 或图片，定位相关行与断言 |
+| 分享与导出 | 保留设备、版本、对象、相机、显隐和局部检查状态 |
+| 三技能 | Build 展示实际发布信息；Simulate / Compile 显示当前能力及待接入执行器 |
 
-新 1.7 按已发布的安装说明及几何复核展示知识，缺项分别说明，不用统一“机制未确认”遮盖标准孔位关系。大腿每两根小柱与同台舵机 B2／B3 两孔对应，组距约 16 mm、源有限插入约 2 mm；孔径约 2 mm、插入段柱径约 1.80→1.59 mm，模型有间隙。用途可推断为安装定位，轴向保持与承载 unknown，无过盈／倒扣依据，也不将两个参考成员推成最少双柱规则。外侧 Ø5.5 mm 大洞用途 unknown，既不默认当主接口，也不称装饰；同轴多个截面不重复计孔。连杆上方四孔保留独立位置，小柱不标用户确认或计作孔道。长槽只声明有限开口，不推槽深／贯通。
+详情栏最小 320px、默认 380px、最大 640px，受画布可用空间约束；双击分隔条复原，窄屏采用纵向布局。
 
-默认高亮有限孔壁、柱壁、选定入口和布局辅助线，拓扑支持面不作为黄色作用区。普通壳面不独立成为支承接口；source-mesh Frame 仍是测量框架，完整物理、路径和工程执行仍 unavailable。源共面显示深度冲突使用材质偏移与随观察距离调整的裁剪精度处理，保留原顶点、位姿、三角面索引和相邻部件。工作台只读冻结包；新的几何测量和用途纠正经新 DKP 发布，临时局部查看、透明和展开只改变显示状态。
+1.8 的参考螺钉从同一连杆孔道的外侧入口朝壳体目标绘制，并记录有限方向假设。未核实替代方案需要显式启用。实际规格、装入方式、保持与承载按证据分别标注；爆炸偏移、透明和高亮属于浏览状态。
 
-1.0 未做接口分析；1.1／1.2 原分组只按历史几何、未复评展示；1.3 保留冻结几何分层，不原地补写说明；1.6 的大洞及轴心补全件关联保留为历史未核实解释，不能沿用作当前固定依据。每部件仍列实际覆盖与缺项。共同规则见[装配接口与方案](../../docs/architecture/assembly-interfaces.md)。Simulate 查询通过 CLI 读取已发布参考知识或运行显式定义的有界匹配，页面不伪造物理执行。
+## 数据与 API
 
-## 本地 API
+工作台生成 DKP 的显示投影，知识与资产保持包内身份。目录读取核验 manifest 元数据；选择内容时完整验证并重放来源，资产读取继续检查字节和 SHA-256。
 
-- `GET /api/workspaces`：设备工作区及固定快照目录。
-- `GET /api/workspaces/:id/snapshots/:snapshot/view`：显示投影。
-- `GET /api/workspaces/:id/snapshots/:snapshot/knowledge`：包内结构化知识。
-- `GET /api/workspaces/:id/snapshots/:snapshot/manifest`：发布清单与能力状态。
-- `GET /api/workspaces/:id/snapshots/:snapshot/assets/:path`：登记资产，支持 PDF/视频范围读取。
+| GET 路径 | 内容 |
+| --- | --- |
+| `/api/workspaces` | 工作区、快照与默认选择 |
+| `/api/workspaces/:id/snapshots/:snapshot/view` | 通用显示投影 |
+| `/api/workspaces/:id/snapshots/:snapshot/knowledge` | 结构化设备知识 |
+| `/api/workspaces/:id/snapshots/:snapshot/manifest` | 发布清单、摘要与能力 |
+| `/api/workspaces/:id/snapshots/:snapshot/assets/:path` | 登记资产，支持范围读取 |
 
-当前 API 只读。工作区登记通过本地 CLI；未来构建作业、模拟动作与训练服务须分别接入，各自保存权威状态，不能写回冻结 DKP。
+当前 HTTP API 只读，登记通过本地 CLI。模拟动作、批量渲染、训练、推理和模型测试尚未形成执行 API。详见[设备工作区](../../docs/architecture/device-workspace.md)。
 
-## 验证
+## 验证与截图
+
+先准备 Microduck 工作区，浏览器测试使用本机 Chrome：
 
 ```powershell
-python -B -m unittest discover -s ../../skills/psop-build/tests -v
-npm run test:api
 npm run build
+npm run test:api
 npm run test:e2e
+node scripts/capture_docs.mjs
 ```
 
-浏览器检查使用本机 Chrome。工作区注册表、DKP 生成目录、依赖、构建产物及截图均被 Git 忽略。
+最后一个命令需要运行中的工作台服务，会重建[正式截图及来源记录](../../docs/assets/screenshots/README.md)。正式文档截图随 Git 发布；测试结果、运行时截图、依赖与构建目录仍被忽略。
 
-端到端测试通过实际HTTP读取选择后的知识，避免收集器/worker各自重复启动完整几何重放。目录元数据与完整内容验证分别验收。
+端到端测试直接读取所选 DKP。单版本工作区也可运行，只有需要多个或特定历史快照的用例按登记情况跳过。

@@ -1,39 +1,51 @@
-# PSOP v2 文档目录
+# PSOP 文档
 
-> 2026-11-06（Asia/Shanghai）。当前产品为统一工作台＋多个设备工作区。旧 core、旧 DKP profile 与包内独立 App 合同已退出 v2；历史实现和报告不能当作当前能力。
+2026-11-07。当前主线是统一工作台、设备工作区和 Build `source-model/1.8`。先阅读使用指南，再按需要进入数据合同和机械定义。
 
-## 当前规范与实现入口
+## 使用与运行
 
-| 入口 | 内容 |
+| 文档 | 内容 |
 | --- | --- |
-| [项目 README](../README.md) | 实际运行、当前能力与主数据流 |
-| [硬件本体定义](architecture/hardware-ontology.md) | psop.hardware/2.0-draft.4 的机械语义 |
-| [原子特征、参数化接口与装配方案](architecture/assembly-interfaces.md) | 安装孔位与共享孔道、组合规则、参考安装及三技能共同合同 |
-| [系统设计](architecture/system-design.md) | 工作台、设备工作区、三个技能及执行底座 |
-| [DKP v2](architecture/device-knowledge-package.md) | 数据包、来源、索引、版本和验证范围 |
-| [设备工作区](architecture/device-workspace.md) | 多设备、知识快照、登记和读取接口 |
-| [Build 设计](build/device-knowledge-build.md) | 来源及装配说明摄入、孔位／规则／参考映射与数据型发布 |
-| [完整连接还原](build/connection-reconstruction.md) | 全对筛查、柱孔有限配合、定位／保持／第三件、有限内腔及分类补全示意 |
-| [Simulate 设计](simulate/simulate-design.md) | 装配、场景、渲染和模型测试 |
-| [Compile 设计](compile/compile-design.md) | 语料审核、数据划分、多模型训练与评测 |
-| [十四视图](compile/canonical-14-views.md) | 共用场景执行与 Compile 数据管理的目标合同 |
-| [统一工作台](../apps/workbench/README.md) | 工作区、DKP 读取与前端运行 |
-| [Build 技能](../skills/psop-build/SKILL.md) | 实际 prepare／finalize／validate |
-| [Simulate 技能](../skills/psop-simulate/SKILL.md) | 有界装配查询及 v2 编排边界，物理执行引擎待接入 |
-| [Compile 技能](../skills/psop-compile/SKILL.md) | v2 编排边界，真实训练待接入 |
+| [项目 README](../README.md) | 当前能力、实景截图与快速启动 |
+| [工作台使用指南](workbench.md) | 模型、接口、证据、分享与版本维护 |
+| [工作台开发说明](../apps/workbench/README.md) | 依赖、启动、本地 API、测试与截图更新 |
+| [界面设计](../apps/workbench/DESIGN.md) | 面板层级、显示状态及交互约定 |
 
-## 语义、证据与实施状态
+## 架构与执行边界
 
-- [本体重建与退役边界](architecture/hardware-ontology-migration.md)：旧合同退役、原始资料复用和新子集边界。
-- [验证状态](architecture/hardware-ontology-validation.md)：区分定义、结构子集、来源模型和完整机械求值。
-- [历史来源核查](architecture/hardware-ontology-evidence.md)：保留核查时间、来源版本与证明范围，不把旧机器 ID 当新合同。
-- [设备本体旧路径说明](architecture/device-ontology.md)：旧平行草案已退役。
-- [项目愿景](vision.md)：长期目标和研发原则。
+| 文档 | 内容 |
+| --- | --- |
+| [系统设计](architecture/system-design.md) | 工作台、设备工作区、三技能及当前实现与后续闭环 |
+| [设备工作区](architecture/device-workspace.md) | 登记、读取、状态隔离与旧版本清理 |
+| [DKP 数据合同](architecture/device-knowledge-package.md) | 1.8 数据层次、来源、验证及历史剖面沿革 |
+| [Build](build/device-knowledge-build.md) | 实际摄入、分析、发布与登记 |
+| [Simulate](simulate/simulate-design.md) | 当前有界查询与后续装配、渲染、模型测试 |
+| [Compile](compile/compile-design.md) | 当前入口与后续语料、训练、多模型和评测 |
+| [规范十四视图](compile/canonical-14-views.md) | 尚待执行器接入的视角与监督合同 |
 
-当前默认 source-model/1.8，结构化支持来源模型、有限几何、孔道／内腔／安装位置、槽开口、组合规则、参考安装、柱孔有限配合和逐对连接审查。定位推断与保持未知分离，外侧共轴圆洞用途未知；参考连接件示意和未核实替代示例按 usage 区分，后者默认不显示、不生成已固定标签。补全示意与确定物料分开，用户原话、项目推断、厂商一般结构、几何复核及完整机械执行分别声明。1.0～1.7 合同保留冻结历史。路径、批量训练监督、训练和模型回测仍按资料与后端能力报告缺项，页面、合成样例和参考模型不替代真实设备验收。
+## 机械语义与证据
 
-## 展示与教学材料
+| 文档 | 内容 |
+| --- | --- |
+| [硬件本体定义](architecture/hardware-ontology.md) | 唯一机械语义目标 `psop.hardware/2.0-draft.4` |
+| [原子特征、接口与装配方案](architecture/assembly-interfaces.md) | 共享孔道、孔位池、选择规则、具体绑定和操作假设 |
+| [连接还原](build/connection-reconstruction.md) | 定位、保持、第三件、逐对审查与有限方向检查 |
+| [实现与验证范围](architecture/hardware-ontology-validation.md) | 定义、来源几何、静态参考与机械执行边界 |
+| [迁移与历史合同](architecture/hardware-ontology-migration.md) | 版本演进与旧合同退役 |
+| [历史来源核查](architecture/hardware-ontology-evidence.md) | 带核查时间和适用范围的来源研究 |
 
-[历史架构图](assets/diagrams/README.md)、[旧 Compile UI 参考](compile/ui/README.md)、[宣讲网页](html/README.md) 和 [介绍材料](presentations/README.md) 是独立展示／教学交付。它们可能使用旧产品结构或模拟内容，不作为 v2 CLI、数据合同和能力状态的依据。
+## Agent 技能与机器合同
 
-硬件概念图位于 [figures/hardware-ontology](architecture/figures/hardware-ontology/README.md)，只辅助阅读，不作为真实机械证据。演示文稿、视频和 PPT 资产不会因工程合同重写而自动更新。
+- [psop-build](../skills/psop-build/SKILL.md)：工具 `3.0.0-draft.9`，`prepare / finalize / validate`；字段见 [Build 合同](../skills/psop-build/references/v2-contract.md)。
+- [psop-simulate](../skills/psop-simulate/SKILL.md)：真实 DKP 静态查询及显式定义的有界推理，物理执行待接入。
+- [psop-compile](../skills/psop-compile/SKILL.md)：语料、训练和评测编排，实际训练与推理待接入。
+
+当前事实从代码、Schema、DKP manifest 和实际执行结果核对。目标交互、效果图和合成示意不作为已实现能力或真实装配结论。
+
+## 截图与展示资料
+
+[工作台截图](assets/screenshots/README.md)来自真实前后端与当前 Microduck 快照，随文档发布，可按记录的脚本重建。
+
+[项目愿景](vision.md)描述长期目标。[历史架构图](assets/diagrams/README.md)、[旧 Compile UI](compile/ui/README.md)、[宣讲网页](html/README.md)和[演示文稿](presentations/README.md)属于独立展示或教学资料，部分表达早于当前实现。
+
+删除本机旧知识快照不改变历史 Schema 的含义，也不要求把所有历史发布包留在工作台菜单中。
