@@ -798,29 +798,31 @@
   },
   "unregistered_intermediate_artifact": {
     "path": "build/microduck/source-1.9/microduck.dkp",
-    "status": "not_registered_not_delivered",
-    "cleanup": "Automatic approval rejected deletion with blocked by policy; artifact retained. Only the .2 package above is the final validated version."
+    "status": "removed",
+    "cleanup": "Removal was initially rejected by the execution layer; after manual commands were supplied, filesystem verification confirmed removal."
   },
   "complete_review_index": "docs/build/interface-review/investigation-index.json",
   "maintenance_after_user_request": {
     "instruction": "Keep only the latest snapshot; remove older packages and intermediate builds; commit and push all source changes.",
     "registered_snapshots": 1,
     "selected_snapshot_id": "dkp-59ce1b25aea434fc3367",
-    "filesystem_cleanup": "blocked_by_execution_policy",
+    "filesystem_cleanup": "completed_after_manual_commands",
     "rejection": "blocked by policy",
-    "remaining_old_and_intermediate_directories": [
-      "C:\\Users\\scisa\\Desktop\\psop\\build\\microduck\\source-1.9\\microduck.dkp",
-      "C:\\Users\\scisa\\Desktop\\psop\\build\\microduck\\source-1.9\\work",
-      "C:\\Users\\scisa\\Desktop\\psop\\build\\microduck\\source-1.9-probe",
-      "C:\\Users\\scisa\\Desktop\\psop\\build\\microduck\\source-1.9-final",
-      "C:\\Users\\scisa\\Desktop\\psop\\build\\microduck\\source-1.9-final-2",
-      "C:\\Users\\scisa\\Desktop\\psop\\build\\microduck\\source-1.9-final-3",
-      "C:\\Users\\scisa\\Desktop\\psop\\build\\v2\\microduck",
-      "C:\\Users\\scisa\\Desktop\\psop\\build\\v2-build-check",
-      "C:\\Users\\scisa\\Desktop\\psop\\build\\interface-analysis"
-    ],
+    "remaining_old_and_intermediate_directories": [],
     "planned_bytes": 1820241011,
     "package_unchanged": true,
-    "source_compatibility_contracts_retained": true
+    "source_compatibility_contracts_retained": true,
+    "removed_old_and_intermediate_directories": [
+      "build/microduck/source-1.9/microduck.dkp",
+      "build/microduck/source-1.9/work",
+      "build/microduck/source-1.9-probe",
+      "build/microduck/source-1.9-final",
+      "build/microduck/source-1.9-final-2",
+      "build/microduck/source-1.9-final-3",
+      "build/v2/microduck",
+      "build/v2-build-check",
+      "build/interface-analysis"
+    ],
+    "verification": "All nine planned directories are absent; final .2 manifest SHA-256 is unchanged; registry contains only the latest snapshot."
   }
 }
