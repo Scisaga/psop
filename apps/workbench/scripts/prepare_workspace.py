@@ -37,12 +37,13 @@ def prepare(*, fresh: bool = False) -> dict:
     arguments = [sys.executable, "-B", str(BUILDER), "prepare", "--input",
                  str(REPO / "device-materials/microduck-official-materials.zip"),
                  "--work", str(work), "--device-id", "microduck", "--device-name", "Microduck",
-                 "--assembly-knowledge", str(REPO / "device-materials/microduck-assembly-knowledge.json")]
+                 "--assembly-knowledge", str(REPO / "device-materials/microduck-assembly-knowledge.json"),
+                 "--investigation", str(REPO / "device-materials/interface-review/microduck-review.json")]
     if cache.is_file():
         arguments.extend(["--xml", str(cache)])
     command(arguments)
     command([sys.executable, "-B", str(BUILDER), "finalize", "--work", str(work), "--output", str(output),
-             "--version", "2.0.0-connector-direction." + token.replace("-", ".")])
+             "--version", "2.0.0-interface-investigation." + token.replace("-", ".")])
     validation = command([sys.executable, "-B", str(BUILDER), "validate", "--dkp", str(output)])
     if validation.get("valid") is not True:
         raise RuntimeError("The newly published v2 DKP failed validation.")

@@ -30,6 +30,7 @@ def main(argv=None):
     intake.add_argument("--profile", choices=tuple(PROFILE_SCHEMAS), default=PROFILE,
                         help="Explicit source-model contract; historical contracts retain their original semantics")
     intake.add_argument("--assembly-knowledge", type=Path, help="Explicit installation declarations, inferred-role scope and connection-review policy; referenced manufacturer originals are captured and locked")
+    intake.add_argument("--investigation", type=Path, help="Frozen source-SHA-bound independent source-region review and expected-feature annotations (1.9 only)")
     publish = commands.add_parser("finalize")
     publish.add_argument("--work", required=True, type=Path)
     publish.add_argument("--output", required=True, type=Path)
@@ -47,7 +48,7 @@ def main(argv=None):
                       "scope": "Measured openings and installation knowledge, source-pair connection reviews and separately attributed illustrative connectors; actual engagement, engineering acceptance, paths and training unavailable"}
         elif args.command == "prepare":
             result = prepare(args.input, args.work, args.device_id, args.device_name, args.xml, args.ontology,
-                             profile=args.profile, assembly_knowledge=args.assembly_knowledge)
+                             profile=args.profile, assembly_knowledge=args.assembly_knowledge, investigation=args.investigation)
         elif args.command == "finalize":
             result = finalize(args.work, args.output, args.version)
         else:

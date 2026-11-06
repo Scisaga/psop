@@ -143,7 +143,7 @@ class PinHousingFit(unittest.TestCase):
 
     def test_new_default_preserves_the_frozen_profile_contract(self):
         self.assertEqual(package.FROZEN_PIN_FIT_PROFILE, "psop.hardware.source-model/1.7")
-        self.assertEqual(package.VERSION, "3.0.0-draft.9")
+        self.assertEqual(package.VERSION, "3.0.0-draft.10")
         paths, capabilities = package.profile_contract(package.FROZEN_CONNECTION_PROFILE)
         self.assertEqual(paths, ("manifest-source-model-1.6.schema.json", "source-model-1.6.schema.json"))
         frozen = json.loads((SKILL / "schemas/manifest-source-model-1.6.schema.json").read_text(encoding="utf-8"))

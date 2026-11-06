@@ -17,7 +17,8 @@ MOUNTING_PATTERNS_PROFILE = "psop.hardware.source-model/1.5"
 CONNECTION_REVIEW_PROFILE = "psop.hardware.source-model/1.6"
 PIN_HOLE_FIT_PROFILE = "psop.hardware.source-model/1.7"
 CONNECTOR_DIRECTION_PROFILE = "psop.hardware.source-model/1.8"
-MOUNTING_PROFILES = {MOUNTING_PROFILE, MOUNTING_PATTERNS_PROFILE, CONNECTION_REVIEW_PROFILE, PIN_HOLE_FIT_PROFILE, CONNECTOR_DIRECTION_PROFILE}
+INVESTIGATION_PROFILE = "psop.hardware.source-model/1.9"
+MOUNTING_PROFILES = {MOUNTING_PROFILE, MOUNTING_PATTERNS_PROFILE, CONNECTION_REVIEW_PROFILE, PIN_HOLE_FIT_PROFILE, CONNECTOR_DIRECTION_PROFILE, INVESTIGATION_PROFILE}
 
 
 def _status():
@@ -54,7 +55,7 @@ def _dkp_query(path, part_a, part_b):
         raise ValueError("--dkp must be a published data-only DKP directory")
     manifest = read_json(root / "manifest.json")
     if manifest.get("profile") not in {SOURCE_PROFILE, *MOUNTING_PROFILES}:
-        raise ValueError("DKP query requires an explicitly supported source-model/1.3 through 1.8 contract")
+        raise ValueError("DKP query requires an explicitly supported source-model/1.3 through 1.9 contract")
     validation = validate(root)
     if not validation.get("valid"):
         raise ValueError("DKP validation did not succeed")
@@ -87,9 +88,13 @@ def _dkp_query(path, part_a, part_b):
     components = [item for item in knowledge.get("supplemental_components", []) if item["review_ref"] in review_refs]
     pin_fits = [item for item in knowledge.get("pin_hole_fits", []) if {participant["part_ref"] for participant in item["participants"]} == requested]
     selected_entities += openings + passages + reviews + components + pin_fits
+    structures = [item for item in knowledge.get("structure_candidates", []) if item["owner_ref"] in requested]
+    regions = [item for item in knowledge.get("review_regions", []) if item["owner_ref"] in requested]
+    selected_entities += structures + regions
     source_refs = {ref for entity in selected_entities for ref in entity.get("source_refs", [])}
     evidence_refs = {ref for entity in selected_entities for ref in entity.get("evidence_refs", [])}
     evidence = read_json(local_path(root, manifest["entrypoints"]["evidence"]))["items"]
+    source_refs.update(item["sourceId"] for item in evidence if item["id"] in evidence_refs)
     result = {"schema": "psop.simulate.query/1.0", "ok": True, "status": "unknown", "basis": "validated_source_geometry",
             "execution_performed": False, "reason": "functional_interface_modes_not_qualified",
             "query": {"part_a": part_a, "part_b": part_b},
@@ -121,7 +126,7 @@ def _dkp_query(path, part_a, part_b):
             "limitations": ["Reference matches retain the supplied assertion provenance and frozen source Configuration; they do not enumerate all other possible installations.",
                 "User-asserted mounting sites retain their shared underlying holes; two entry sites do not create two independent physical resources.",
                 "This command executes no installation, simulation step or modification to the package."]})
-    if validation["profile"] in {CONNECTION_REVIEW_PROFILE, PIN_HOLE_FIT_PROFILE, CONNECTOR_DIRECTION_PROFILE}:
+    if validation["profile"] in {CONNECTION_REVIEW_PROFILE, PIN_HOLE_FIT_PROFILE, CONNECTOR_DIRECTION_PROFILE, INVESTIGATION_PROFILE}:
         result.update({"basis": "published_connection_reviews", "status": "reference_matches" if mounts else "connection_review" if reviews else "unknown",
             "reason": "source_pair_connection_review_available" if reviews else "pair_outside_bounded_review_scope",
             "functional_interfaces": [], "installation_definitions": interfaces,
@@ -139,10 +144,14 @@ def _dkp_query(path, part_a, part_b):
             "limitations": ["All-pair bounded screening records its scope; a separated bound is not proof that no indirect or alternative connection exists.",
                 "Connection reviews and illustrative connector models are read-only Build knowledge, not a simulated assembly or a qualified complete interface.",
                 "This command executes no installation, simulation step or modification to the package."]})
-    if validation["profile"] in {PIN_HOLE_FIT_PROFILE, CONNECTOR_DIRECTION_PROFILE}:
+    if validation["profile"] in {PIN_HOLE_FIT_PROFILE, CONNECTOR_DIRECTION_PROFILE, INVESTIGATION_PROFILE}:
         result.update({"pin_hole_fits": pin_fits,
             "reference_connector_schematics": [item for item in components if item["usage"] == "reference_connector"],
             "unverified_alternative_schematics": [item for item in components if item["usage"] == "unverified_alternative"]})
+    if validation["profile"] == INVESTIGATION_PROFILE:
+        result.update(structure_candidates=structures, review_regions=regions,
+            part_investigations=[item for item in knowledge["part_investigations"] if item["part_ref"] in requested],
+            review_coverage=knowledge["review_coverage"])
     return result
 
 

@@ -1,1 +1,32 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><rect width="40" height="40" rx="10" fill="#147d83"/><g fill="none" stroke="#fff" stroke-width="1.7" stroke-linejoin="round"><path d="m20 7 10 6v12l-10 6-10-6V13Z"/><path d="m10 13 10 6 10-6M20 19v12M15 10l10 6M15 16l10-6"/><path d="m10 20 10 6 10-6"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" role="img" aria-labelledby="psop-title psop-description">
+  <title id="psop-title">PSOP</title>
+  <desc id="psop-description">Folded space: two vermilion ribbons turn around an open center.</desc>
+  <defs>
+    <linearGradient id="upper-fold" x1="409" y1="365" x2="593" y2="543" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A92B0D"/>
+      <stop offset=".48" stop-color="#E83D12"/>
+      <stop offset="1" stop-color="#FF4A24"/>
+    </linearGradient>
+    <linearGradient id="upper-face" x1="817" y1="88" x2="409" y2="433" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF5126"/>
+      <stop offset=".56" stop-color="#FF4A24"/>
+      <stop offset="1" stop-color="#F23A15"/>
+    </linearGradient>
+    <linearGradient id="lower-fold" x1="687" y1="337" x2="842" y2="460" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F5451C"/>
+      <stop offset=".6" stop-color="#D4330E"/>
+      <stop offset="1" stop-color="#A92B0D"/>
+    </linearGradient>
+    <linearGradient id="lower-face" x1="851" y1="447" x2="488" y2="718" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF5126"/>
+      <stop offset=".6" stop-color="#FF4A24"/>
+      <stop offset="1" stop-color="#FF542B"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(-329 -35) scale(1.36)">
+    <path fill="url(#upper-fold)" d="M841 76 839 180C839 216 825 237 795 249L510 350C487 366 492 390 512 410L629 527 584 545 386 465C361 455 353 445 353 423 348 364 370 322 420 293Z"/>
+    <path fill="url(#upper-face)" d="M841 76 839 180C839 216 825 237 795 249L409 397C374 410 352 424 358 444 352 436 352 422 353 408 351 354 374 318 420 293Z"/>
+    <path fill="url(#lower-fold)" d="M677 331 836 375C871 387 886 398 886 415L883 482 803 461C782 432 756 411 684 373 679 370 677 369 677 363Z"/>
+    <path fill="url(#lower-face)" d="M886 408V478C886 515 870 536 837 554L469 735V600L840 445C871 432 886 421 886 408Z"/>
+  </g>
+</svg>

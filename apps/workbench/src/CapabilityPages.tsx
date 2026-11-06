@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { ArrowDownToLine, ArrowRight, ArrowUpRight, Box, Boxes, Check, CircleHelp, ClipboardCheck, Database, FileText, FlaskConical, Image, Layers3, LockKeyhole, Move3D, Package, ScanEye, Workflow } from 'lucide-react';
 import type { DeviceWorkspace, KnowledgeSnapshot, PrototypeData } from './types';
 import { isMechanismProfile } from './mechanics-model';
+import { BuildInvestigationCoverage } from './InvestigationInspector';
 import './capabilities.css';
 
 interface ContextProps {
@@ -27,6 +28,7 @@ const capabilityLabel: Record<string, string> = {
   source_model: '来源模型', model_knowledge: '模型对象知识', knowledge: '知识结构', mechanical_validation: '机械验证',
   ontology_validation: '本体检查', physical_simulation: '物理模拟', canonical_14_views: '规范多视图',
   reference_mounting: '参考安装关系', connection_review: '连接分析', supplemental_components: '连接件与待验证方案示意',
+  structure_investigation: '结构主动调查', independent_review: '独立标注与区域审查',
 };
 
 export function BuildPage({ data, workspace, snapshot, onSelectSnapshot, onOpenOverview, onOpenSources }: ContextProps & {
@@ -60,6 +62,7 @@ export function BuildPage({ data, workspace, snapshot, onSelectSnapshot, onOpenO
         {capabilities.length ? <div className="cap-capability-list">{capabilities.map(([name, capability]) => <div key={name}><div><strong>{!isMechanismProfile(data) && ['interface_analysis', 'connection_candidates'].includes(name) ? name === 'interface_analysis' ? '历史几何分组 · 未按机制复评' : '历史几何配对观测 · 未按机制复评' : capabilityLabel[name] || name.replaceAll('_', ' ')}</strong><span className={`cap-state is-${capability.status}`}>{({ complete: '已实现', partial: '部分支持', unavailable: '未提供' })[capability.status]}</span></div>{(capability.description || capability.limitations?.length) && <p>{capability.description || capability.limitations?.join('；')}</p>}</div>)}</div> : <div className="cap-inline-empty"><ClipboardCheck size={23} /><strong>当前快照未提供能力声明</strong><p>模型与原件可以浏览，额外的机械或工程能力仍需明确记录。</p></div>}
       </section>
     </div>
+    <BuildInvestigationCoverage data={data} />
     <section className="cap-history-panel"><header className="cap-section-heading"><div><h2>已登记的知识版本</h2><p>切换版本会同步更新当前设备的模型、知识与来源。</p></div><span className="cap-count">{workspace.snapshots.length}</span></header><div className="cap-history-scroll"><table><thead><tr><th>版本</th><th>生成时间</th><th>来源 / 对象</th><th>内容摘要</th><th /></tr></thead><tbody>{workspace.snapshots.map(item => <tr key={item.id} className={item.id === snapshot.id ? 'is-current' : ''}><td><strong>{item.packageVersion}</strong><small>{item.packageId}</small></td><td>{dateLabel(item.createdAt)}</td><td>{item.counts.sources} / {item.counts.parts}</td><td><code title={item.packageDigest}>{item.packageDigest.slice(0, 16)}…</code></td><td>{item.id === snapshot.id ? <span className="cap-current"><Check size={13} />当前</span> : <button className="bp-text-button" onClick={() => onSelectSnapshot(item.id)}>打开版本<ArrowRight size={13} /></button>}</td></tr>)}</tbody></table></div></section>
     <div className="cap-footnote"><Workflow size={16} /><p>这里呈现已发布的真实知识快照。网页构建作业服务尚未接入；新版本由 psop-build 构建、校验后登记到设备工作区。</p></div>
   </div>;

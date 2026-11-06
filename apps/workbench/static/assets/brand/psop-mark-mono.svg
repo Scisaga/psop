@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" fill="currentColor" role="img" aria-labelledby="psop-title psop-description">
+  <title id="psop-title">PSOP</title>
+  <desc id="psop-description">Folded space, monochrome silhouette.</desc>
+  <g transform="translate(-329 -35) scale(1.36)">
+    <path d="M841 76 839 180C839 216 825 237 795 249L510 350C487 366 492 390 512 410L629 527 584 545 386 465C361 455 353 445 353 423 348 364 370 322 420 293Z"/>
+    <path d="M677 331 836 375C871 387 886 398 886 415V478C886 515 870 536 837 554L469 735V600L803 461C782 432 756 411 684 373 679 370 677 369 677 363Z"/>
+  </g>
+</svg>

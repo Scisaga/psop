@@ -1,0 +1,40 @@
+{
+  "schema": "psop.workbench.qa/1.0",
+  "snapshot_id": "dkp-59ce1b25aea434fc3367",
+  "package_version": "2.0.0-interface-investigation.2",
+  "package_digest": "59ce1b25aea434fc336718cfa6bca6f570d34037c87194ba1f45773fbcd3c9a1",
+  "profile": "psop.hardware.source-model/1.9",
+  "build": {
+    "command": "npm run build",
+    "result": "pass"
+  },
+  "browser": {
+    "command": "npm run test:e2e",
+    "result": "pass",
+    "total": 36,
+    "passed": 35,
+    "skipped": 1,
+    "failed": 0,
+    "reported_duration": "3.0m",
+    "stdout_summary": "1 skipped; 35 passed (3.0m)",
+    "exec_session_id": 96411,
+    "result_file": "apps/workbench/test-results/.last-run.json",
+    "result_file_sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903",
+    "skipped_scope": "Historical source-model/1.2 surface snapshot is not registered. Actual 1.8 compatibility was exercised and passed."
+  },
+  "covered": [
+    "LS-06 source SHA, triangle witnesses, position, 3D overlay, source viewing, unknown/reviewed separation, export and reload",
+    "LG-01 independent finite wall, source-region status and Build coverage",
+    "Partial diameter-5-mm source wall angular coverage and fit residuals remain visible, without inventing a full hole",
+    "Historical 1.8 reading and current-snapshot notice",
+    "Existing full workbench browsing, mounting, source, narrow-screen and sharing regressions"
+  ],
+  "initial_assertion_update": "The 1.9 geometry browser defaults to structure investigations. The legacy thigh browsing test now explicitly selects its circular-opening category before retaining the original location, grouping and 3D checks. Targeted rerun passed; the complete 36-case run subsequently passed with the single unavailable historical-1.2 case skipped.",
+  "artifacts": [
+    "docs/build/interface-review/left-shell-ls06-workbench-1.9.png",
+    "docs/build/interface-review/workbench-1.9-screenshot.json",
+    "docs/build/interface-review/left-shell-ls06-closeup-1.9.png",
+    "docs/build/interface-review/left-shell-ls06-closeup-1.9.json"
+  ],
+  "scope": "Browser and source-geometry investigation checks only; no mechanical engagement, retention, engineering approval or whole-device recall claim."
+}

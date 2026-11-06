@@ -14,7 +14,7 @@ const development = args.includes('--dev');
 const directory = path.join(appRoot, 'dist');
 if (!net.isIP(bind) || ['0.0.0.0', '::'].includes(bind) || !Number.isInteger(port) || port < 1 || port > 65535) throw new Error('Use a specific local IP and a port in 1..65535.');
 if (!development) await stat(path.join(directory, 'index.html')).catch(() => { throw new Error('Run npm run build before starting the workbench.'); });
-const mime = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.css': 'text/css; charset=utf-8', '.json': 'application/json; charset=utf-8', '.svg': 'image/svg+xml', '.png': 'image/png', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.webp': 'image/webp', '.gif': 'image/gif', '.pdf': 'application/pdf', '.stl': 'model/stl', '.xml': 'text/plain; charset=utf-8', '.md': 'text/plain; charset=utf-8', '.csv': 'text/plain; charset=utf-8', '.txt': 'text/plain; charset=utf-8', '.mp4': 'video/mp4', '.woff2': 'font/woff2', '.step': 'application/octet-stream' };
+const mime = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.css': 'text/css; charset=utf-8', '.json': 'application/json; charset=utf-8', '.svg': 'image/svg+xml', '.ico': 'image/vnd.microsoft.icon', '.png': 'image/png', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.webp': 'image/webp', '.gif': 'image/gif', '.pdf': 'application/pdf', '.stl': 'model/stl', '.xml': 'text/plain; charset=utf-8', '.md': 'text/plain; charset=utf-8', '.csv': 'text/plain; charset=utf-8', '.txt': 'text/plain; charset=utf-8', '.mp4': 'video/mp4', '.woff2': 'font/woff2', '.step': 'application/octet-stream' };
 
 function json(response, status, value, head = false) {
   const bytes = Buffer.from(JSON.stringify(value));

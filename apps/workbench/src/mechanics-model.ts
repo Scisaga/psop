@@ -12,6 +12,8 @@ export interface GeometryDescriptor {
   openingRefs?: string[];
   passageRef?: string;
   supplementRef?: string;
+  structureRef?: string;
+  reviewRegionRef?: string;
   contextPartRefs: string[];
   title: string;
 }
@@ -101,6 +103,15 @@ export function resolveGeometry(data: PrototypeData, selection: GeometrySelectio
   const analysis = data.analysis;
   if (!analysis || !selection) return null;
   const base = { selection, authority: 'geometry_only' as const, peers: [], contextPartRefs: [] };
+  if (selection.kind === 'structure') {
+    const candidate = analysis.structure_candidates?.find(item => item.id === selection.id);
+    return candidate ? { ...base, ownerRef: candidate.owner_ref, featureRefs: [], structureRef: candidate.id,
+      title: '待调查结构 · 功能证据单独核查' } : null;
+  }
+  if (selection.kind === 'review_region') {
+    const region = analysis.review_regions?.find(item => item.id === selection.id);
+    return region ? { ...base, ownerRef: region.owner_ref, featureRefs: [], reviewRegionRef: region.id, title: `审查区域 · ${region.label}` } : null;
+  }
   if (selection.kind === 'pin_fit') {
     const fit = analysis.pin_hole_fits?.find(item => item.id === selection.id);
     const participant = fit?.participants.find(item => item.part_ref === selection.ownerRef) || fit?.participants.find(item => item.role === 'pin_carrier');
@@ -194,7 +205,7 @@ export function descriptorFeatures(data: PrototypeData, descriptor: GeometryDesc
 }
 
 export function routeSelection(params: URLSearchParams): GeometrySelection | null {
-  for (const [key, kind] of [['pinFit', 'pin_fit'], ['review', 'connection_review'], ['supplement', 'supplement'], ['opening', 'opening'], ['passage', 'passage'], ['site', 'site'], ['mount', 'mount'], ['mountingInterface', 'mounting_interface'], ['slot', 'slot'], ['observation', 'observation'], ['pattern', 'pattern'], ['hole', 'hole'], ['feature', 'feature'], ['group', 'legacy_group'], ['legacyObservation', 'legacy_observation'], ['interface', 'interface']] as const) {
+  for (const [key, kind] of [['structure', 'structure'], ['reviewRegion', 'review_region'], ['pinFit', 'pin_fit'], ['review', 'connection_review'], ['supplement', 'supplement'], ['opening', 'opening'], ['passage', 'passage'], ['site', 'site'], ['mount', 'mount'], ['mountingInterface', 'mounting_interface'], ['slot', 'slot'], ['observation', 'observation'], ['pattern', 'pattern'], ['hole', 'hole'], ['feature', 'feature'], ['group', 'legacy_group'], ['legacyObservation', 'legacy_observation'], ['interface', 'interface']] as const) {
     const id = params.get(key);
     if (id) return { kind, id, ownerRef: params.get('part') || undefined };
   }
@@ -202,5 +213,5 @@ export function routeSelection(params: URLSearchParams): GeometrySelection | nul
 }
 
 export function selectionQueryKey(selection: GeometrySelection): string {
-  return selection.kind === 'pin_fit' ? 'pinFit' : selection.kind === 'legacy_group' ? 'group' : selection.kind === 'legacy_observation' ? 'legacyObservation' : selection.kind === 'mounting_interface' ? 'mountingInterface' : selection.kind === 'connection_review' ? 'review' : selection.kind;
+  return selection.kind === 'review_region' ? 'reviewRegion' : selection.kind === 'pin_fit' ? 'pinFit' : selection.kind === 'legacy_group' ? 'group' : selection.kind === 'legacy_observation' ? 'legacyObservation' : selection.kind === 'mounting_interface' ? 'mountingInterface' : selection.kind === 'connection_review' ? 'review' : selection.kind;
 }

@@ -25,6 +25,11 @@ MAX_CLEARANCE_M = 3e-4
 BORE_RADIUS_DIFFERENCE_M = 7.5e-4
 _CACHE: dict[str, dict] = {}
 
+# Discovery is a separate, versioned pass.  The historical extractor below is
+# deliberately unchanged: old packages must replay their original measurements.
+DISCOVERY_METHOD = "normal-axis-validated-cylinder-discovery/1"
+_DISCOVERY_CACHE: dict[str, list[dict]] = {}
+
 
 def _dot(a, b):
     return sum(x * y for x, y in zip(a, b))
@@ -189,6 +194,150 @@ def _extract(raw):
     result = {"digest": digest, "triangle_count": len(faces), "features": features}
     _CACHE[cache_key] = deepcopy(result)
     return result
+
+
+def _discovery_axes(normals, adjacent):
+    """Propose directions from neighbouring curved facets, including oblique axes.
+
+    The broad normal gate is only a proposal mechanism.  Exported skinny
+    triangles can have noisy normals even when their vertices lie on the same
+    cylinder; every accepted patch is independently checked against its finite
+    radial geometry.  No source-part identity or assembly declaration is used.
+    """
+    bins = defaultdict(list)
+    for triangle, neighbors in enumerate(adjacent):
+        for neighbor in neighbors:
+            if neighbor <= triangle:
+                continue
+            vector = _cross(normals[triangle], normals[neighbor])
+            length = _length(vector)
+            if length < math.sin(math.radians(.5)):
+                continue
+            vector = [value / length for value in vector]
+            principal = max(range(3), key=lambda i: abs(vector[i]))
+            if vector[principal] < 0:
+                vector = [-value for value in vector]
+            bins[tuple(round(value / .002) for value in vector)].append(vector)
+    axes = [[float(i == axis) for i in range(3)] for axis in range(3)]
+    for _, vectors in sorted(bins.items(), key=lambda item: (-len(item[1]), item[0])):
+        if len(vectors) < 12:
+            continue
+        vector = [sum(value[i] for value in vectors) / len(vectors) for i in range(3)]
+        length = _length(vector)
+        vector = [value / length for value in vector]
+        if any(abs(_dot(vector, previous)) > math.cos(.001) for previous in axes):
+            continue
+        axes.append(vector)
+        if len(axes) >= 64:
+            break
+    return axes
+
+
+def _discovery_coordinates(vertices, axis):
+    helper = min(range(3), key=lambda i: abs(axis[i]))
+    radial_a = _cross(axis, [float(i == helper) for i in range(3)])
+    length = _length(radial_a)
+    radial_a = [value / length for value in radial_a]
+    radial_b = _cross(axis, radial_a)
+    return radial_a, radial_b, [(_dot(point, radial_a), _dot(point, radial_b), _dot(point, axis)) for point in vertices]
+
+
+def _discovery_patch(vertices, faces, normals, patch, axis, coordinates, radial_a, radial_b):
+    if len(patch) < 12:
+        return None
+    support = sorted({vertex for triangle in patch for vertex in faces[triangle]})
+    points = [coordinates[vertex] for vertex in support]
+    ox, oy = (sum(point[i] for point in points) / len(points) for i in range(2))
+    rows = [(point[0] - ox, point[1] - oy, 1.) for point in points]
+    targets = [-row[0] ** 2 - row[1] ** 2 for row in rows]
+    fit = _solve([[sum(row[i] * row[j] for row in rows) for j in range(3)] for i in range(3)],
+                 [sum(row[i] * target for row, target in zip(rows, targets)) for i in range(3)])
+    if fit is None:
+        return None
+    cx, cy = ox - fit[0] / 2, oy - fit[1] / 2
+    radii = [math.hypot(point[0] - cx, point[1] - cy) for point in points]
+    radius = sum(radii) / len(radii)
+    if not .0005 <= radius <= .05:
+        return None
+    rms = math.sqrt(sum((value - radius) ** 2 for value in radii) / len(radii))
+    maximum_error = max(abs(value - radius) for value in radii)
+    # These vertex checks are tighter than the frozen detector.  A relaxed
+    # normal proposal must not turn elliptical, drafted or curved-shell patches
+    # into fictitious circular walls.
+    if rms > max(1e-7, radius * 1e-4) or maximum_error > max(5e-7, radius * 1e-4):
+        return None
+    minimum, maximum = min(point[2] for point in points), max(point[2] for point in points)
+    if maximum - minimum < .00015:
+        return None
+    coverage = _coverage(coordinates, faces, patch, (0, 1), (cx, cy))
+    if coverage < .35:
+        return None
+    midpoint = (minimum + maximum) / 2
+    origin = [radial_a[i] * cx + radial_b[i] * cy + axis[i] * midpoint for i in range(3)]
+    winding = []
+    for triangle in patch:
+        center = [sum(vertices[vertex][i] for vertex in faces[triangle]) / 3 for i in range(3)]
+        delta = _sub(center, origin)
+        projection = _dot(delta, axis)
+        radial = [delta[i] - projection * axis[i] for i in range(3)]
+        winding.append(_dot(radial, normals[triangle]) / max(_length(radial), 1e-20))
+    average_winding = sum(winding) / len(winding)
+    kind = "bore_wall" if average_winding < -.95 else "shaft_wall" if average_winding > .95 else "cylinder_surface"
+    return {"kind": kind, "geometry": {"type": "cylinder", "origin": origin, "axis": list(axis),
+             "radius_m": radius, "axial_range_m": [minimum - midpoint, maximum - midpoint]},
+            "support_triangle_indices": sorted(patch), "method": DISCOVERY_METHOD,
+            "measurement": {"fit_rms_m": rms, "fit_max_m": maximum_error, "coverage": coverage,
+                            "normal_radial_alignment": average_winding},
+            "limitations": ["This is measured finite wall geometry, not a functional interface, thread, through-hole or confirmed connection.",
+                            "Partial angular coverage and clipped ends remain partial; the analytic cylinder does not fill missing source material.",
+                            "Search uses at most 64 normal-derived axis proposals, radius 0.5–50 mm, wall extent at least 0.15 mm and angular coverage at least 35%; other structures require another method."]}
+
+
+def discover_structures(raw):
+    """Discover traceable cylindrical wall candidates without functional claims.
+
+    Returned origins/axes/ranges are in the source mesh frame, in metres.
+    Triangle witnesses always address the supplied binary STL.  Results do not
+    depend on Part names, selectors, reference-pose mates or known hole counts.
+    """
+    key = DISCOVERY_METHOD + ":" + hashlib.sha256(raw).hexdigest()
+    if key in _DISCOVERY_CACHE:
+        return deepcopy(_DISCOVERY_CACHE[key])
+    vertices, faces, normals, adjacent = _mesh(raw)
+    candidates = []
+    for axis in _discovery_axes(normals, adjacent):
+        radial_a, radial_b, coordinates = _discovery_coordinates(vertices, axis)
+        eligible = {i for i, normal in enumerate(normals)
+                    if _length(normal) > .9 and abs(_dot(normal, axis)) <= .005}
+        for seed in sorted(eligible):
+            if seed not in eligible:
+                continue
+            eligible.remove(seed)
+            stack, patch = [seed], []
+            while stack:
+                triangle = stack.pop()
+                patch.append(triangle)
+                for neighbor in adjacent[triangle]:
+                    if neighbor in eligible:
+                        eligible.remove(neighbor)
+                        stack.append(neighbor)
+            candidate = _discovery_patch(vertices, faces, normals, patch, axis, coordinates, radial_a, radial_b)
+            if candidate:
+                candidates.append(candidate)
+    # Equivalent normal hypotheses must not duplicate a measured finite wall.
+    selected, supports = [], []
+    for candidate in sorted(candidates, key=lambda value: (-len(value["support_triangle_indices"]),
+                             value["measurement"]["fit_rms_m"], value["geometry"]["axis"])):
+        support = set(candidate["support_triangle_indices"])
+        if any(len(support & previous) / min(len(support), len(previous)) > .8
+               and abs(_dot(candidate["geometry"]["axis"], item["geometry"]["axis"])) > .999
+               for item, previous in zip(selected, supports)):
+            continue
+        selected.append(candidate)
+        supports.append(support)
+    selected.sort(key=lambda value: (value["geometry"]["axis"], value["geometry"]["origin"], value["geometry"]["radius_m"]))
+    _DISCOVERY_CACHE[key] = deepcopy(selected)
+    return selected
 
 
 def _rotate(vector, quaternion):

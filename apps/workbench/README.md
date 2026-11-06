@@ -1,10 +1,12 @@
 # PSOP 统一工作台
 
-工作台管理多个设备工作区，读取 Build 发布的 DKP，提供模型、安装知识、本体和证据的联动浏览。当前使用 `psop.hardware.source-model/1.8`，实现状态核对于 2026-11-07。
+工作台管理多个设备工作区，读取 Build 发布的 DKP，提供模型、安装知识、本体和证据的联动浏览。当前使用 `psop.hardware.source-model/1.9`，保留 1.0～1.8 历史读取；几何页可定位待调查结构和原始区域，分别查看功能证据、审查状态与下一步。实现状态核对于 2026-11-07。
 
 ![Microduck 设备工作区](../../docs/assets/screenshots/workbench-overview.png)
 
 操作说明见[工作台使用指南](../../docs/workbench.md)。本页说明运行、数据与开发方式。
+
+品牌标识采用朱红色「折叠空间」，用于左上角、启动页、关于窗口和 favicon。SVG 母版、各尺寸图标及原始选定方案统一位于 [assets/brand](../../assets/brand/README.md)。修改母版后，在仓库根目录运行 `node scripts/generate-brand-icons.mjs` 同步工作台静态资源。
 
 ## 运行
 

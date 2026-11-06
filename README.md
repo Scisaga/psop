@@ -20,7 +20,7 @@ PSOP 把设备资料、三维部件、装配知识和来源证据组织到同一
 | Build | 通过 `prepare → finalize → validate` 构建、校验并登记数据型 DKP |
 | Simulate 查询 | CLI 查询已发布装配知识，或对显式定义执行有界选孔与刚性匹配 |
 
-当前主线为 Build `3.0.0-draft.9`、知识剖面 `psop.hardware.source-model/1.8`、封套 `psop.dkp/2.0-draft.1`，机械语义目标为[硬件本体 draft.4](docs/architecture/hardware-ontology.md)。
+当前主线为 Build `3.0.0-draft.10`、知识剖面 `psop.hardware.source-model/1.9`、封套 `psop.dkp/2.0-draft.1`，机械语义目标为[硬件本体 draft.4](docs/architecture/hardware-ontology.md)。Build 从全部件清单生成结构调查，独立样例与逐区域审查分别验收，见[源模型复核](docs/build/interface-review/source-review.md)。
 
 Simulate 的自由装配执行、批量多视角渲染和模型场景测试，以及 Compile 的数据集发布、训练和推理，仍待接入执行器。工作台已有对应入口，并显示实际能力状态。
 

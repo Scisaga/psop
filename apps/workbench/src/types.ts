@@ -195,7 +195,7 @@ export interface SupplementalComponent {
     | { type: 'cap'; outer_radius_m: number; inner_radius_m: number; thickness_m: number };
   parameter_basis: string; unconfirmed_fields: string[]; source_refs: string[]; evidence_refs: string[];
 }
-export type GeometrySelectionKind = 'interface' | 'feature' | 'hole' | 'pattern' | 'observation' | 'site' | 'mount' | 'mounting_interface' | 'slot' | 'opening' | 'passage' | 'connection_review' | 'supplement' | 'pin_fit' | 'legacy_group' | 'legacy_observation';
+export type GeometrySelectionKind = 'interface' | 'feature' | 'hole' | 'pattern' | 'observation' | 'site' | 'mount' | 'mounting_interface' | 'slot' | 'opening' | 'passage' | 'connection_review' | 'supplement' | 'pin_fit' | 'structure' | 'review_region' | 'legacy_group' | 'legacy_observation';
 export interface GeometrySelection { kind: GeometrySelectionKind; id: string; ownerRef?: string }
 export interface MechanicalInterface {
   id: string;
@@ -258,6 +258,38 @@ export interface ReferenceRelation {
   evidence_refs: string[];
 }
 export type MechanicalGapType = 'slots_keys' | 'undercuts_shoulders' | 'threads_fasteners' | 'curved_mates' | 'snap_geometry' | 'elastic_retention' | 'assembly_paths' | 'electrical_interfaces' | 'engineering_limits';
+export interface StructureCandidate {
+  id: string; kind: string; owner_ref: string; geometry_source_ref: string; geometry_sha256: string;
+  geometry: { type: string; center: Vec3; axis?: Vec3; normal?: Vec3; radius_m?: number; [key: string]: unknown };
+  support_triangle_indices: number[]; source_refs: string[]; evidence_refs: string[];
+  measurement?: { coverage?: number; fit_rms_m?: number; fit_max_m?: number; [key: string]: unknown };
+  limitations: string[];
+  related_feature_refs: string[]; related_opening_refs: string[];
+  function_status: 'unknown' | 'installation_evidence_available';
+  review_status: 'unreviewed' | 'reviewed' | 'blocked';
+  next_actions: string[]; missing_evidence: string[]; stop_reason: string; method: string;
+  counterpart_proposals: { part_ref: string; structure_ref?: string; basis: string; axis_distance_m?: number; axial_gap_m?: number; status: 'geometry_only'; limitations: string[] }[];
+}
+export interface ReviewRegion {
+  id: string; owner_ref: string; geometry_source_ref: string; label: string;
+  triangle_indices: number[]; center: Vec3;
+  review_status: 'auto_screened' | 'reviewed' | 'blocked' | 'unreviewed';
+  evidence_refs: string[]; limitations: string[]; next_actions: string[];
+}
+export interface PartInvestigation {
+  part_ref: string; geometry_source_ref: string; geometry_sha256: string; geometry_asset_ref: string;
+  instance_context: Record<string, unknown>; region_refs: string[]; candidate_refs: string[];
+  status: string; limitations: string[]; next_actions: string[];
+}
+export interface ReviewCoverage {
+  schema: string;
+  region_review: { total: number; reviewed: number; auto_screened: number; blocked: number; unreviewed: number; complete: false };
+  independent_features: {
+    status: 'pass' | 'incomplete' | 'not_supplied'; expected_count: number; located_count: number;
+    missing: { id: string; part_ref: string; center_local_m: Vec3; reason: string }[];
+    matches: { id: string; part_ref: string; center_local_m: Vec3; candidate_refs: string[] }[]; scope: string; limitations: string[];
+  };
+}
 export interface MechanicalAnalysis {
   frames: MechanicalFrame[];
   features: MechanicalFeature[];
@@ -274,6 +306,10 @@ export interface MechanicalAnalysis {
   connection_reviews?: ConnectionReview[];
   supplemental_components?: SupplementalComponent[];
   pin_hole_fits?: PinHoleFit[];
+  structure_candidates?: StructureCandidate[];
+  part_investigations?: PartInvestigation[];
+  review_regions?: ReviewRegion[];
+  review_coverage?: ReviewCoverage;
   interfaces: MechanicalInterface[];
   connection_candidates: ConnectionCandidate[];
   reference_relations: ReferenceRelation[];

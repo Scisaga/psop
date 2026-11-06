@@ -1,12 +1,12 @@
 # 数据型 DKP v2：来源与装配知识层次
 
-2026-11-06（Asia/Shanghai）。工具 `3.0.0-draft.9`，默认 `psop.hardware.source-model/1.8`，封套 `psop.dkp/2.0-draft.1`。机械目标仍为硬件本体 draft.4。
+2026-11-07（Asia/Shanghai）。工具 `3.0.0-draft.10`，默认 `psop.hardware.source-model/1.9`，封套 `psop.dkp/2.0-draft.1`。机械目标仍为硬件本体 draft.4。
 
 ## 文件与身份
 
 入口 manifest.json；文件只允许 inputs、sources、knowledge、indexes、schemas。没有包内 App、执行服务或场景可变状态。知识入口为 entities/sources/evidence/gaps，浏览入口为 indexes/scene.json，固定路径由 entrypoints 给出。
 
-manifest 必需字段包括 schema/profile/package_id/package_version/device/created_at/ontology/adapter/inputs/toolchain/entrypoints/counts/capabilities/files/package_digest。新 Schema 为 [manifest-source-model-1.8.schema.json](../schemas/manifest-source-model-1.8.schema.json) 与 [source-model-1.8.schema.json](../schemas/source-model-1.8.schema.json)。
+manifest 必需字段包括 schema/profile/package_id/package_version/device/created_at/ontology/adapter/inputs/toolchain/entrypoints/counts/capabilities/files/package_digest。新 Schema 为 [manifest-source-model-1.9.schema.json](../schemas/manifest-source-model-1.9.schema.json) 与 [source-model-1.9.schema.json](../schemas/source-model-1.9.schema.json)。
 
 files 覆盖除 manifest 外的所有文件，逐项固定相对 POSIX path、bytes、SHA-256。绝对路径、点段、盘符、反斜杠、符号链接、重复和额外文件拒绝。package_digest 为去掉自身字段的 manifest，以 UTF-8、对象键排序、无额外空白及非有限数值的 JSON 字节 SHA-256。它是完整性摘要，不是发布者签名。
 
@@ -25,6 +25,7 @@ files 覆盖除 manifest 外的所有文件，逐项固定相对 POSIX path、by
 | 1.6 | 厂商支持原件、圆内开口／有限变半径腔、全对筛查与连接链审查、补全示意和推断资格 |
 | 1.7 | 源位姿柱孔有限配合、定位推断与保持未知分离，补全件按参考连接件和未核实替代解释分类 |
 | 1.8 | 参考连接件 insertion 假设、外侧入口与杆向修正，独立有限区段一致性检查 |
+| 1.9 | 全部件/原网格区域清单、任意轴有限圆柱发现、待证结构与局部对端提议、固定独立标注覆盖 |
 
 旧 Schema 与算法保留原字节，不能原地升级旧包。以上不是已废弃 core/DKP v1 的兼容。
 
@@ -118,6 +119,27 @@ Simulate 可读取这些有限配合及部分安装定义，保持规则、实�
 参考连接件必有 insertion，未核实替代示意的 insertion 为 null。记录 status=illustrative_hypothesis、hypothesis=through_bracket_toward_housing、reference_mount_ref、configuration_ref、实际 site_refs、entry_part_ref／entry_portal_ref、target_site_ref、head_seat_world、axis_world 和源孔壁 sections（part／hole／feature 与轴向 range_m）。checks 仅 finite_geometry=pass，continuous_path=not_evaluated、retention=unknown。
 
 生产器从同一支架孔道选择朝向目标的唯一外侧开口，不将参考映射的近侧孔口直接当装入入口。独立校验从源孔口及有限壁段复核头下位置、姿态轴、目标朝向、区段顺序与杆段覆盖；反向、过短、借用其他孔或篡改测量均拒绝。无法唯一确定或几何不支持时移除该示意，保留未绑定紧固角色和缺项。此处是受限的图形一致性检查，仍不确认设备实际装入侧、真实长度、承压面、螺纹、连续可达性或保持。1.7 的原有错误方向按历史合同保留，消费端须注明尚未核验。
+
+## 1.9 主动结构调查与独立覆盖
+
+`prepare` 默认从全部 Part/几何资产开始生成 `work/investigation.json`，不依赖人工 mounting selectors。`mechanics.discover_structures` 从相邻面法向提出至多 64 个轴，用径向残差、有限壁长、角覆盖和内外法向复核。保留半径 0.5–50 mm、壁长至少 0.15 mm、角覆盖至少 35% 的适用范围；部分壁仍为部分几何，不补满圆柱、不据此认定贯通或功能。
+
+新知识和 scene.analysis 同时包含四项，旧 1.8 的 features、接口定义、计数和重放算法保持不变：
+
+| 字段 | 合同 |
+| --- | --- |
+| structure_candidates | 实例稳定 ID、源 SHA、源局部 geometry/center、支持三角、拟合误差/角覆盖、既有 feature/opening 引用；function_status 与 review_status 分离；有 next_actions、missing_evidence、stop_reason 和有限对端提议 |
+| part_investigations | 每个源 Part 实例各一项；几何资产/源、SHA、资料、位置/四元数/缩放、源 body、未核定运动归属、区域与候选引用及限制 |
+| review_regions | 原网格六类法向扇区覆盖全部三角面；只记 auto_screened；独立输入可另记录具体已复核或未审区域、局部位置和证据，不用一个自动标记覆盖整件 |
+| review_coverage | 区域审查分类和 complete=false；独立样例 expected_count、located_count、逐项 matches/missing、位置与下一步；样例无标注为 not_supplied，不是 pass |
+
+可选 `--investigation` 接收 `psop.interface-investigation/1.0`。输入含 device_id、sources 和 samples；每个样例限定 part_ref/geometry_sha256、regions 和独立 expected_features。期望项有稳定 id、kind、center_local_m、axis_local、radius_m（适用时）、tolerance_m、triangle_witnesses、annotation_basis 和 next_action；区域有三角范围、审查状态、证据及限制。独立清单是输入，不能由生产输出自动补齐。
+
+输入字节被锁为 manifest.inputs.investigation，发布 `SRC-INTERFACE-INVESTIGATION`。实际检索原件的相对 capture_path（限输入目录）、sha256 固定到 inputs/investigation-sources，发布为独立 Source，manifest.inputs.investigation_documents 列明每份摘要。来源文本作为证据数据，不作为指令。功能依据仍走已有显式装配声明，独立标注不授予机械资格。
+
+覆盖检查直接比较冻结清单与候选的 Part、SHA、局部轴/位置/有限轴段、几何类别与原三角见证，不调用生产检测器生成分母。明确应检项缺失会拒绝发布/校验并列出 ID；功能 unknown、无样例、或区域未审查可以保留，但能力始终 partial。任何统计重算或重新封装摘要均不能抹掉固定分母。完整性重放是额外防篡改手段，不代替独立漏项检查。
+
+对端提议只在源 qpos0 下比较有限轴距、方向及轴向间隔，保持 geometry_only；不建立保持、运动归属或连接件规格。不适用尺度/几何以及没有提议都有公开限制；没有参考对端不代表不能在其他构型安装。
 
 ## 参数化方式与装配方案
 

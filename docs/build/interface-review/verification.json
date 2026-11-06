@@ -1,0 +1,826 @@
+{
+  "recorded_on": "2026-11-07",
+  "start_branch": "v2",
+  "start_head": "f5a7d659dd8ea3d3f992eb8c5bb12f090d56bf4a",
+  "skill_runtime": {
+    "entrypoint": "skills/psop-build/SKILL.md",
+    "installed_psop_build_found": false,
+    "tool_version": "3.0.0-draft.10",
+    "profile": "psop.hardware.source-model/1.9"
+  },
+  "baseline": {
+    "package_version": "2.0.0-connector-direction.20261106151943.e353b2e9",
+    "package_digest": "8ebaa348952284ed70d82f7eff4ff7ec3ba476fc6e11b10d839587daf584ebcd",
+    "independent_features": {
+      "status": "incomplete",
+      "expected_count": 11,
+      "located_count": 10,
+      "matches": [
+        {
+          "id": "LS-01",
+          "part_ref": "part:microduck:e27cbdd6c07a264e",
+          "center_local_m": [
+            0.0005,
+            0.042,
+            0.0525
+          ],
+          "candidate_refs": [
+            "structure:f96be67694f3b2ab0871"
+          ]
+        },
+        {
+          "id": "LS-02",
+          "part_ref": "part:microduck:e27cbdd6c07a264e",
+          "center_local_m": [
+            0.01625,
+            -0.028,
+            0.05
+          ],
+          "candidate_refs": [
+            "structure:0256c819bc593ac3805f"
+          ]
+        },
+        {
+          "id": "LS-03",
+          "part_ref": "part:microduck:e27cbdd6c07a264e",
+          "center_local_m": [
+            0.01625,
+            -0.022,
+            0.056
+          ],
+          "candidate_refs": [
+            "structure:e6c707207445ed2960e6"
+          ]
+        },
+        {
+          "id": "LS-04",
+          "part_ref": "part:microduck:e27cbdd6c07a264e",
+          "center_local_m": [
+            0.01625,
+            -0.022,
+            0.044
+          ],
+          "candidate_refs": [
+            "structure:d759a79e73f6251ccd45"
+          ]
+        },
+        {
+          "id": "LS-05",
+          "part_ref": "part:microduck:e27cbdd6c07a264e",
+          "center_local_m": [
+            0.01625,
+            -0.016,
+            0.05
+          ],
+          "candidate_refs": [
+            "structure:e49b4e4d5f7f13bf794a"
+          ]
+        },
+        {
+          "id": "LG-01",
+          "part_ref": "part:microduck:638f29b46b322e64",
+          "center_local_m": [
+            0.039,
+            0.0262426407,
+            0.0315344471
+          ],
+          "candidate_refs": [
+            "structure:e4430536936ac9f61003"
+          ]
+        },
+        {
+          "id": "LG-02",
+          "part_ref": "part:microduck:638f29b46b322e64",
+          "center_local_m": [
+            0.039,
+            0.0262426407,
+            0.0400197285
+          ],
+          "candidate_refs": [
+            "structure:13d5566705eedd240ab9"
+          ]
+        },
+        {
+          "id": "LG-03",
+          "part_ref": "part:microduck:638f29b46b322e64",
+          "center_local_m": [
+            0.039,
+            0.0177573593,
+            0.0315344471
+          ],
+          "candidate_refs": [
+            "structure:90f373f31887ac26859b"
+          ]
+        },
+        {
+          "id": "LG-04",
+          "part_ref": "part:microduck:638f29b46b322e64",
+          "center_local_m": [
+            0.039,
+            0.0177573593,
+            0.0400197285
+          ],
+          "candidate_refs": [
+            "structure:4ccf24585ebebf95152c"
+          ]
+        },
+        {
+          "id": "LG-05",
+          "part_ref": "part:microduck:638f29b46b322e64",
+          "center_local_m": [
+            0.033,
+            0.022,
+            -0.006222912
+          ],
+          "candidate_refs": [
+            "structure:9219bfdb22cb6ac20185"
+          ]
+        }
+      ],
+      "missing": [
+        {
+          "id": "LS-06",
+          "part_ref": "part:microduck:e27cbdd6c07a264e",
+          "center_local_m": [
+            0.0255,
+            -0.0095,
+            0.04153
+          ],
+          "candidate_refs": [],
+          "reason": "No source-triangle, local-position, finite-extent and direction match",
+          "next_action": "核对匹配版本的壳体装配图、实际连接件与孔的装入侧；检查有限壁段及邻件，不从几何圆孔推断紧固。"
+        }
+      ],
+      "scope": "Only source-SHA-bound independently annotated samples",
+      "limitations": [
+        "No whole-device or arbitrary-geometry recall claim; unannotated and occluded regions remain open."
+      ]
+    }
+  },
+  "published": {
+    "path": "build/microduck/source-1.9/microduck-2.dkp",
+    "package_version": "2.0.0-interface-investigation.2",
+    "profile": "psop.hardware.source-model/1.9",
+    "package_digest": "59ce1b25aea434fc336718cfa6bca6f570d34037c87194ba1f45773fbcd3c9a1",
+    "tool_sha256": "aff3f77a5d378038ea82a574e18d48289a53772f3c8b3a39179b219fb97d6ca8",
+    "counts": {
+      "sources": 68,
+      "geometries": 38,
+      "parts": 70,
+      "bodies": 15,
+      "joints": 14,
+      "evidence": 223
+    },
+    "investigation_sha256": "60cdfb7b41ffdb9226d885b9afd6759e6915eba85de1afffa904ca0b9ee2faa8",
+    "captured_originals": [
+      {
+        "id": "upstream-model-readme",
+        "path": "sources/SRC-INVESTIGATION-B2DF4346FF46A912F975.md",
+        "sha256": "b5e606efe7ff71f4f6324820b36152d401a0b1be6e2f908bbaca01ffee81638d"
+      },
+      {
+        "id": "upstream-model-docs",
+        "path": "sources/SRC-INVESTIGATION-CCC7685787AB63E7B0D3.json",
+        "sha256": "0756917217a37d3e2abe84def0f5d46960bc87d18b00a21468f0e3c34bd99ab3"
+      },
+      {
+        "id": "upstream-microduck-design-tree",
+        "path": "sources/SRC-INVESTIGATION-FC374631ED68A28D7D8E.json",
+        "sha256": "8d379daa2a1ce0fc9218e8ca113c9b77118c60c1b4e661141e72165363bf43ab"
+      },
+      {
+        "id": "local-xl330-assembly",
+        "path": "sources/SRC-INVESTIGATION-F99EF4933CDDF90F93D4.md",
+        "sha256": "ea5859ff3975edf15a823a8f4c9f8ba6adcdc9981a65f8b219641a9950f67740"
+      },
+      {
+        "id": "upstream-model-export-config",
+        "path": "sources/SRC-INVESTIGATION-7E5AD7382A245A7C6490.json",
+        "sha256": "978dcc845ae4072d74618bd7a3ac752079c3592ebc0fd2ec3079db00c0ceb954"
+      }
+    ]
+  },
+  "comparison": [
+    {
+      "mesh_key": "left_shell",
+      "part_ref": "part:microduck:e27cbdd6c07a264e",
+      "source_ref": "SRC-000022",
+      "before_cylinder_wall_segments": 5,
+      "new_discovery_wall_segments": 7,
+      "published_cylinder_wall_observations": 7,
+      "added_wall_observations": [
+        {
+          "id": "structure:2f4619dc0b3a74d95a37",
+          "kind": "bore_wall",
+          "center_local_m": [
+            0.025499999953279402,
+            -0.009500000042998351,
+            0.04152967408299446
+          ],
+          "axis_local": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "radius_m": 0.0010999999400219034,
+          "source_triangle_count": 180,
+          "coverage": 1.0,
+          "function_status": "unknown"
+        },
+        {
+          "id": "structure:ce74e0946ae63dfc33e1",
+          "kind": "bore_wall",
+          "center_local_m": [
+            0.025500000034308596,
+            -0.009499999988153901,
+            0.043760716915130615
+          ],
+          "axis_local": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "radius_m": 0.002499999477657203,
+          "source_triangle_count": 99,
+          "coverage": 0.5055555675905682,
+          "function_status": "unknown"
+        }
+      ]
+    },
+    {
+      "mesh_key": "leg",
+      "part_ref": "part:microduck:638f29b46b322e64",
+      "source_ref": "SRC-000023",
+      "before_cylinder_wall_segments": 14,
+      "new_discovery_wall_segments": 18,
+      "published_cylinder_wall_observations": 20,
+      "added_wall_observations": [
+        {
+          "id": "structure:025c1af7c03b52c67024",
+          "kind": "bore_wall",
+          "center_local_m": [
+            0.03545000031590462,
+            0.017757359204968983,
+            0.0315344470246563
+          ],
+          "axis_local": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "radius_m": 0.002199999969245906,
+          "source_triangle_count": 204,
+          "coverage": 1.0,
+          "function_status": "unknown"
+        },
+        {
+          "id": "structure:1826c67eea102a57f786",
+          "kind": "bore_wall",
+          "center_local_m": [
+            0.034800074994564056,
+            0.013999999876337038,
+            0.016277087750333867
+          ],
+          "axis_local": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "radius_m": 0.0024200001025757507,
+          "source_triangle_count": 138,
+          "coverage": 0.5585026101239786,
+          "function_status": "unknown"
+        },
+        {
+          "id": "structure:2b197745f7140ecb9b51",
+          "kind": "bore_wall",
+          "center_local_m": [
+            0.03545000031590462,
+            0.017757359248464704,
+            0.04001972829774803
+          ],
+          "axis_local": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "radius_m": 0.0022000000042841183,
+          "source_triangle_count": 259,
+          "coverage": 1.0,
+          "function_status": "unknown"
+        },
+        {
+          "id": "structure:5922b191e0b54030aef8",
+          "kind": "bore_wall",
+          "center_local_m": [
+            0.03545000031590462,
+            0.026242640665652746,
+            0.040019728354856274
+          ],
+          "axis_local": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "radius_m": 0.002200000093828116,
+          "source_triangle_count": 259,
+          "coverage": 1.0,
+          "function_status": "unknown"
+        },
+        {
+          "id": "structure:a59f5c1bcb1509fabdc7",
+          "kind": "bore_wall",
+          "center_local_m": [
+            0.034800074994564056,
+            0.030000000258308117,
+            0.016277087656211248
+          ],
+          "axis_local": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "radius_m": 0.002420000133633097,
+          "source_triangle_count": 138,
+          "coverage": 0.5585026350251341,
+          "function_status": "unknown"
+        },
+        {
+          "id": "structure:bcc80a20076dacd9e087",
+          "kind": "bore_wall",
+          "center_local_m": [
+            0.03545000031590462,
+            0.02624264063547419,
+            0.03153444701135872
+          ],
+          "axis_local": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "radius_m": 0.0022000000186006194,
+          "source_triangle_count": 204,
+          "coverage": 1.0,
+          "function_status": "unknown"
+        }
+      ]
+    }
+  ],
+  "coverage": {
+    "schema": "psop.interface-review-coverage/1.0",
+    "region_review": {
+      "total": 433,
+      "reviewed": 11,
+      "auto_screened": 420,
+      "blocked": 0,
+      "unreviewed": 2,
+      "complete": false
+    },
+    "independent_features": {
+      "status": "pass",
+      "expected_count": 11,
+      "located_count": 11,
+      "matches": [
+        {
+          "id": "LS-01",
+          "part_ref": "part:microduck:e27cbdd6c07a264e",
+          "center_local_m": [
+            0.0005,
+            0.042,
+            0.0525
+          ],
+          "candidate_refs": [
+            "structure:f96be67694f3b2ab0871"
+          ]
+        },
+        {
+          "id": "LS-02",
+          "part_ref": "part:microduck:e27cbdd6c07a264e",
+          "center_local_m": [
+            0.01625,
+            -0.028,
+            0.05
+          ],
+          "candidate_refs": [
+            "structure:0256c819bc593ac3805f"
+          ]
+        },
+        {
+          "id": "LS-03",
+          "part_ref": "part:microduck:e27cbdd6c07a264e",
+          "center_local_m": [
+            0.01625,
+            -0.022,
+            0.056
+          ],
+          "candidate_refs": [
+            "structure:e6c707207445ed2960e6"
+          ]
+        },
+        {
+          "id": "LS-04",
+          "part_ref": "part:microduck:e27cbdd6c07a264e",
+          "center_local_m": [
+            0.01625,
+            -0.022,
+            0.044
+          ],
+          "candidate_refs": [
+            "structure:d759a79e73f6251ccd45"
+          ]
+        },
+        {
+          "id": "LS-05",
+          "part_ref": "part:microduck:e27cbdd6c07a264e",
+          "center_local_m": [
+            0.01625,
+            -0.016,
+            0.05
+          ],
+          "candidate_refs": [
+            "structure:e49b4e4d5f7f13bf794a"
+          ]
+        },
+        {
+          "id": "LS-06",
+          "part_ref": "part:microduck:e27cbdd6c07a264e",
+          "center_local_m": [
+            0.0255,
+            -0.0095,
+            0.04153
+          ],
+          "candidate_refs": [
+            "structure:2f4619dc0b3a74d95a37"
+          ]
+        },
+        {
+          "id": "LG-01",
+          "part_ref": "part:microduck:638f29b46b322e64",
+          "center_local_m": [
+            0.039,
+            0.0262426407,
+            0.0315344471
+          ],
+          "candidate_refs": [
+            "structure:e4430536936ac9f61003"
+          ]
+        },
+        {
+          "id": "LG-02",
+          "part_ref": "part:microduck:638f29b46b322e64",
+          "center_local_m": [
+            0.039,
+            0.0262426407,
+            0.0400197285
+          ],
+          "candidate_refs": [
+            "structure:13d5566705eedd240ab9"
+          ]
+        },
+        {
+          "id": "LG-03",
+          "part_ref": "part:microduck:638f29b46b322e64",
+          "center_local_m": [
+            0.039,
+            0.0177573593,
+            0.0315344471
+          ],
+          "candidate_refs": [
+            "structure:90f373f31887ac26859b"
+          ]
+        },
+        {
+          "id": "LG-04",
+          "part_ref": "part:microduck:638f29b46b322e64",
+          "center_local_m": [
+            0.039,
+            0.0177573593,
+            0.0400197285
+          ],
+          "candidate_refs": [
+            "structure:4ccf24585ebebf95152c"
+          ]
+        },
+        {
+          "id": "LG-05",
+          "part_ref": "part:microduck:638f29b46b322e64",
+          "center_local_m": [
+            0.033,
+            0.022,
+            -0.006222912
+          ],
+          "candidate_refs": [
+            "structure:9219bfdb22cb6ac20185"
+          ]
+        }
+      ],
+      "missing": [],
+      "scope": "Only source-SHA-bound independently annotated samples",
+      "limitations": [
+        "No whole-device or arbitrary-geometry recall claim; unannotated and occluded regions remain open."
+      ]
+    },
+    "part_count": 70,
+    "geometry_asset_count": 38,
+    "function_status": {
+      "unknown": 2265,
+      "installation_evidence_available": 80
+    }
+  },
+  "intentionally_omitted_LS_06": {
+    "status": "incomplete",
+    "expected_count": 11,
+    "located_count": 10,
+    "matches": [
+      {
+        "id": "LS-01",
+        "part_ref": "part:microduck:e27cbdd6c07a264e",
+        "center_local_m": [
+          0.0005,
+          0.042,
+          0.0525
+        ],
+        "candidate_refs": [
+          "structure:f96be67694f3b2ab0871"
+        ]
+      },
+      {
+        "id": "LS-02",
+        "part_ref": "part:microduck:e27cbdd6c07a264e",
+        "center_local_m": [
+          0.01625,
+          -0.028,
+          0.05
+        ],
+        "candidate_refs": [
+          "structure:0256c819bc593ac3805f"
+        ]
+      },
+      {
+        "id": "LS-03",
+        "part_ref": "part:microduck:e27cbdd6c07a264e",
+        "center_local_m": [
+          0.01625,
+          -0.022,
+          0.056
+        ],
+        "candidate_refs": [
+          "structure:e6c707207445ed2960e6"
+        ]
+      },
+      {
+        "id": "LS-04",
+        "part_ref": "part:microduck:e27cbdd6c07a264e",
+        "center_local_m": [
+          0.01625,
+          -0.022,
+          0.044
+        ],
+        "candidate_refs": [
+          "structure:d759a79e73f6251ccd45"
+        ]
+      },
+      {
+        "id": "LS-05",
+        "part_ref": "part:microduck:e27cbdd6c07a264e",
+        "center_local_m": [
+          0.01625,
+          -0.016,
+          0.05
+        ],
+        "candidate_refs": [
+          "structure:e49b4e4d5f7f13bf794a"
+        ]
+      },
+      {
+        "id": "LG-01",
+        "part_ref": "part:microduck:638f29b46b322e64",
+        "center_local_m": [
+          0.039,
+          0.0262426407,
+          0.0315344471
+        ],
+        "candidate_refs": [
+          "structure:e4430536936ac9f61003"
+        ]
+      },
+      {
+        "id": "LG-02",
+        "part_ref": "part:microduck:638f29b46b322e64",
+        "center_local_m": [
+          0.039,
+          0.0262426407,
+          0.0400197285
+        ],
+        "candidate_refs": [
+          "structure:13d5566705eedd240ab9"
+        ]
+      },
+      {
+        "id": "LG-03",
+        "part_ref": "part:microduck:638f29b46b322e64",
+        "center_local_m": [
+          0.039,
+          0.0177573593,
+          0.0315344471
+        ],
+        "candidate_refs": [
+          "structure:90f373f31887ac26859b"
+        ]
+      },
+      {
+        "id": "LG-04",
+        "part_ref": "part:microduck:638f29b46b322e64",
+        "center_local_m": [
+          0.039,
+          0.0177573593,
+          0.0400197285
+        ],
+        "candidate_refs": [
+          "structure:4ccf24585ebebf95152c"
+        ]
+      },
+      {
+        "id": "LG-05",
+        "part_ref": "part:microduck:638f29b46b322e64",
+        "center_local_m": [
+          0.033,
+          0.022,
+          -0.006222912
+        ],
+        "candidate_refs": [
+          "structure:9219bfdb22cb6ac20185"
+        ]
+      }
+    ],
+    "missing": [
+      {
+        "id": "LS-06",
+        "part_ref": "part:microduck:e27cbdd6c07a264e",
+        "center_local_m": [
+          0.0255,
+          -0.0095,
+          0.04153
+        ],
+        "candidate_refs": [],
+        "reason": "No source-triangle, local-position, finite-extent and direction match",
+        "next_action": "核对匹配版本的壳体装配图、实际连接件与孔的装入侧；检查有限壁段及邻件，不从几何圆孔推断紧固。"
+      }
+    ],
+    "scope": "Only source-SHA-bound independently annotated samples",
+    "limitations": [
+      "No whole-device or arbitrary-geometry recall claim; unannotated and occluded regions remain open."
+    ]
+  },
+  "unresolved": {
+    "region_review_complete": false,
+    "function_status": {
+      "unknown": 2265,
+      "installation_evidence_available": 80
+    },
+    "no_source_pose_counterpart_proposal": 1040,
+    "specific": [
+      "LS-06 functional purpose, actual connector and retention unknown",
+      "Left shell coaxial radius 2.5 mm wall has only partial angular support",
+      "Left shell lips, narrow slots, shoulders and enlarged entrance are not independently exhausted",
+      "Leg central slot, side openings and flanges remain outside the selected section review",
+      "Other source instances and unannotated regions require separate functional and multiview review",
+      "Referenced Onshape workspace was inaccessible; fixed CAD revision and actual assembly drawings remain missing"
+    ]
+  },
+  "validation": {
+    "published_validate": {
+      "valid": true,
+      "package_digest": "59ce1b25aea434fc336718cfa6bca6f570d34037c87194ba1f45773fbcd3c9a1",
+      "elapsed_seconds": 167.9166671,
+      "log": ".runtime/investigation-validate-1.9.json"
+    },
+    "workspace": {
+      "id": "microduck",
+      "selected_snapshot_id": "dkp-59ce1b25aea434fc3367",
+      "package_digest": "59ce1b25aea434fc336718cfa6bca6f570d34037c87194ba1f45773fbcd3c9a1"
+    },
+    "independent_source_sections": {
+      "passed": 11,
+      "expected": 11,
+      "command": "python -B device-materials/interface-review/independent_sections.py"
+    },
+    "build_suite": {
+      "tests": 152,
+      "initial_status": "two_subtest_failures_in_one_test_due_to_concurrent_tool_change",
+      "log": ".runtime/build-tests-1.9.log",
+      "cause": "Producer changed while the suite was running; version lock rejected changed prepared work before input-byte-specific assertions.",
+      "final_publication_rerun": {
+        "tests": 6,
+        "passed": 6,
+        "status": "pass",
+        "log": ".runtime/investigation-publication-rerun.log",
+        "command": "python -B -m unittest discover -s skills/psop-build/tests -p test_investigation_publication.py -v"
+      }
+    },
+    "structure_investigation_unit": {
+      "tests": 8,
+      "passed": 8,
+      "status": "pass"
+    },
+    "structure_discovery_unit": {
+      "tests": 7,
+      "passed": 7,
+      "status": "pass"
+    },
+    "shared_assembly": {
+      "tests": 21,
+      "passed": 21,
+      "status": "pass",
+      "log": ".runtime/assembly-tests-1.9.log"
+    },
+    "simulate_queries": {
+      "tests": 5,
+      "passed": 5,
+      "status": "pass",
+      "log": ".runtime/simulate-tests-1.9.log"
+    },
+    "skill_validation": {
+      "status": "pass",
+      "method": "skill-creator quick_validate.py using existing local YAML dependency and Python UTF-8 mode"
+    },
+    "workbench": {
+      "status": "pass",
+      "frontend_build": "pass",
+      "legacy_api_tests": 7,
+      "legacy_api_passed": 7,
+      "api_tests": 7,
+      "api_passed": 7,
+      "api_log": ".runtime/workbench-api-1.9.log",
+      "browser": {
+        "command": "npm run test:e2e",
+        "result": "pass",
+        "total": 36,
+        "passed": 35,
+        "skipped": 1,
+        "failed": 0,
+        "reported_duration": "3.0m",
+        "stdout_summary": "1 skipped; 35 passed (3.0m)",
+        "exec_session_id": 96411,
+        "result_file": "apps/workbench/test-results/.last-run.json",
+        "result_file_sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903",
+        "skipped_scope": "Historical source-model/1.2 surface snapshot is not registered. Actual 1.8 compatibility was exercised and passed."
+      },
+      "artifacts": [
+        "docs/build/interface-review/left-shell-ls06-workbench-1.9.png",
+        "docs/build/interface-review/workbench-1.9-screenshot.json",
+        "docs/build/interface-review/left-shell-ls06-closeup-1.9.png",
+        "docs/build/interface-review/left-shell-ls06-closeup-1.9.json"
+      ],
+      "covered": [
+        "LS-06 source SHA, triangle witnesses, position, 3D overlay, source viewing, unknown/reviewed separation, export and reload",
+        "LG-01 independent finite wall, source-region status and Build coverage",
+        "Partial diameter-5-mm source wall angular coverage and fit residuals remain visible, without inventing a full hole",
+        "Historical 1.8 reading and current-snapshot notice",
+        "Existing full workbench browsing, mounting, source, narrow-screen and sharing regressions"
+      ],
+      "initial_assertion_update": "The 1.9 geometry browser defaults to structure investigations. The legacy thigh browsing test now explicitly selects its circular-opening category before retaining the original location, grouping and 3D checks. Targeted rerun passed; the complete 36-case run subsequently passed with the single unavailable historical-1.2 case skipped."
+    },
+    "diff_check": "pass",
+    "published_query": {
+      "ok": true,
+      "profile": "psop.hardware.source-model/1.9",
+      "package_digest": "59ce1b25aea434fc336718cfa6bca6f570d34037c87194ba1f45773fbcd3c9a1",
+      "structures": 66,
+      "review_regions": 25,
+      "execution_performed": false,
+      "independent_input_source_visible": true,
+      "unresolved_evidence_sources": [],
+      "artifact": ".runtime/investigation-query-1.9.json",
+      "process_exit_code": 0
+    },
+    "preserved_parallel_worktree_changes": "BrandMark, brand icons and associated unrelated changes were preserved and are outside this investigation scope."
+  },
+  "unregistered_intermediate_artifact": {
+    "path": "build/microduck/source-1.9/microduck.dkp",
+    "status": "not_registered_not_delivered",
+    "cleanup": "Automatic approval rejected deletion with blocked by policy; artifact retained. Only the .2 package above is the final validated version."
+  },
+  "complete_review_index": "docs/build/interface-review/investigation-index.json",
+  "maintenance_after_user_request": {
+    "instruction": "Keep only the latest snapshot; remove older packages and intermediate builds; commit and push all source changes.",
+    "registered_snapshots": 1,
+    "selected_snapshot_id": "dkp-59ce1b25aea434fc3367",
+    "filesystem_cleanup": "blocked_by_execution_policy",
+    "rejection": "blocked by policy",
+    "remaining_old_and_intermediate_directories": [
+      "C:\\Users\\scisa\\Desktop\\psop\\build\\microduck\\source-1.9\\microduck.dkp",
+      "C:\\Users\\scisa\\Desktop\\psop\\build\\microduck\\source-1.9\\work",
+      "C:\\Users\\scisa\\Desktop\\psop\\build\\microduck\\source-1.9-probe",
+      "C:\\Users\\scisa\\Desktop\\psop\\build\\microduck\\source-1.9-final",
+      "C:\\Users\\scisa\\Desktop\\psop\\build\\microduck\\source-1.9-final-2",
+      "C:\\Users\\scisa\\Desktop\\psop\\build\\microduck\\source-1.9-final-3",
+      "C:\\Users\\scisa\\Desktop\\psop\\build\\v2\\microduck",
+      "C:\\Users\\scisa\\Desktop\\psop\\build\\v2-build-check",
+      "C:\\Users\\scisa\\Desktop\\psop\\build\\interface-analysis"
+    ],
+    "planned_bytes": 1820241011,
+    "package_unchanged": true,
+    "source_compatibility_contracts_retained": true
+  }
+}

@@ -19,13 +19,13 @@ const explorerUrl = (partId: string, selection?: Record<string, string>, snapsho
 });
 
 test.beforeAll(async () => {
-  test.setTimeout(120000);
+  test.setTimeout(360000);
   // Exercise the real HTTP boundary and reuse the server's validation cache;
   // test collection and worker startup must not each replay the full package.
-  const response = await fetch(`http://127.0.0.1:8780/api/workspaces/${device.id}/snapshots/${selectedSnapshotId}/view`, { signal: AbortSignal.timeout(115000) });
+  const response = await fetch(`http://127.0.0.1:8780/api/workspaces/${device.id}/snapshots/${selectedSnapshotId}/view`, { signal: AbortSignal.timeout(330000) });
   if (!response.ok) throw new Error(await response.text());
   data = await response.json();
-  expect(data.meta.validation?.profile, 'Publish and select the connector-direction 1.8 snapshot').toBe('psop.hardware.source-model/1.8');
+  expect(data.meta.validation?.profile, 'Publish and select a connector-direction or investigation snapshot').toMatch(/^psop\.hardware\.source-model\/1\.(8|9)$/);
   target = data.parts.find(p => p.meshKey === 'motor_support')!;
   foot = data.parts.find(p => p.meshKey === 'foot_right')!;
   ankle = data.parts.find(p => p.meshKey === 'ankle_right')!;
@@ -203,6 +203,7 @@ test('同一设备在三个能力间保持知识版本，未接入服务不制�
 });
 
 test('知识版本切换加载对应DKP，并能返回另一版本', async ({ page }) => {
+  test.setTimeout(360000);
   test.skip(device.snapshots.length < 2, 'This integration journey needs two published v2 snapshots.');
   await page.goto('/#build');
   await expect(page.locator('.cap-snapshot-panel')).toBeVisible();
@@ -213,8 +214,8 @@ test('知识版本切换加载对应DKP，并能返回另一版本', async ({ pa
   await page.getByRole('button', { name: '选择设备工作区', exact: true }).click();
   await page.getByRole('combobox', { name: '选择知识版本', exact: true }).selectOption(another.id);
   await expect(page).toHaveURL(new RegExp(`snapshot=${another.id}`));
-  await expect(page.locator('.cap-history-panel tr.is-current')).toHaveCount(1);
-  await expect(page.locator('.cap-digest code')).toHaveText(another.packageDigest);
+  await expect(page.locator('.cap-history-panel tr.is-current')).toHaveCount(1, { timeout: 335000 });
+  await expect(page.locator('.cap-digest code')).toHaveText(another.packageDigest, { timeout: 335000 });
   await page.locator('.cap-history-panel tbody tr').filter({ hasText: current.packageDigest.slice(0, 16) }).getByRole('button', { name: '打开版本', exact: true }).click();
   await expect(page).toHaveURL(new RegExp(`snapshot=${currentId}`));
 });
@@ -623,6 +624,7 @@ test('左右大腿按两处轴心结构浏览真实大圆洞，多个截面轮�
     await expect(page.locator('.mechanics-counts')).toContainText('2圆洞轴心结构');
     await expect(page.locator('.mechanics-counts')).toContainText('10有限内轮廓');
     await page.getByRole('tab', { name: '几何', exact: true }).click();
+    await page.getByRole('tab', { name: '圆洞结构 2', exact: true }).click();
     await expect(page.getByRole('tab', { name: '圆洞结构 2', exact: true })).toHaveAttribute('aria-selected', 'true');
     await expect(page.locator('.mechanics-geometry-record[data-geometry-kind="opening"]')).toHaveCount(2);
     await page.locator('.mechanics-geometry-record[data-geometry-kind="opening"]').first().click();

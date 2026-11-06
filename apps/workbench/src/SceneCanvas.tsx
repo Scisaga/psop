@@ -376,6 +376,14 @@ function inspectionSamples(runtime: Runtime, props: SceneProps, selection: Geome
     const passage = props.data.analysis?.passage_hypotheses?.find(item => item.id === descriptor.passageRef);
     if (passage) addTriangles(passage.owner_ref, passage.wall_triangle_indices);
   }
+  if (descriptor.structureRef) {
+    const candidate = props.data.analysis?.structure_candidates?.find(item => item.id === descriptor.structureRef);
+    if (candidate) { addTriangles(candidate.owner_ref, candidate.support_triangle_indices); samples.push({ ownerRef: candidate.owner_ref, point: new THREE.Vector3().fromArray(candidate.geometry.center) }); }
+  }
+  if (descriptor.reviewRegionRef) {
+    const region = props.data.analysis?.review_regions?.find(item => item.id === descriptor.reviewRegionRef);
+    if (region) { addTriangles(region.owner_ref, region.triangle_indices); samples.push({ ownerRef: region.owner_ref, point: new THREE.Vector3().fromArray(region.center) }); }
+  }
   if (descriptor.supplementRef) {
     const selected = runtime.supplements.get(descriptor.supplementRef);
     for (const item of runtime.supplements.values()) if (item.component.review_ref === selected?.component.review_ref && item.group.visible) {
@@ -630,7 +638,7 @@ function presentGeometry(runtime: Runtime, props: SceneProps, selection = props.
   clearGeometryOverlay(runtime);
   const host = runtime.renderer.domElement.parentElement;
   if (host) {
-    for (const key of ['interfaceHighlight', 'highlightedInterface', 'observationHighlight', 'featureHighlight', 'holeHighlight', 'patternHighlight', 'siteHighlight', 'pinFitHighlight', 'mountHighlight', 'mountingInterfaceHighlight', 'slotHighlight', 'openingHighlight', 'passageHighlight', 'reviewHighlight', 'supplementHighlight', 'legacyGroupHighlight', 'legacyObservationHighlight', 'geometryAuthority', 'geometrySelectionKind', 'geometryFeatureTypes', 'geometryPeerOwners', 'selectedEntrySide', 'selectedEntryDirection']) host.dataset[key] = '';
+    for (const key of ['interfaceHighlight', 'highlightedInterface', 'observationHighlight', 'featureHighlight', 'holeHighlight', 'patternHighlight', 'siteHighlight', 'pinFitHighlight', 'mountHighlight', 'mountingInterfaceHighlight', 'slotHighlight', 'openingHighlight', 'passageHighlight', 'reviewHighlight', 'supplementHighlight', 'structureHighlight', 'reviewRegionHighlight', 'legacyGroupHighlight', 'legacyObservationHighlight', 'geometryAuthority', 'geometrySelectionKind', 'geometryFeatureTypes', 'geometryPeerOwners', 'selectedEntrySide', 'selectedEntryDirection']) host.dataset[key] = '';
     for (const key of ['highlightedFeatures', 'highlightedPlanes', 'planeFeatures', 'highlightedCylinders', 'highlightedCones', 'highlightedTriangles', 'highlightedSupportTriangles', 'highlightedSiteEntrances', 'highlightedEntryRings']) host.dataset[key] = '0';
     delete host.dataset.geometryWorldCenter; delete host.dataset.interfaceWorldCenter; delete host.dataset.observationWorldCenter;
   }
@@ -642,9 +650,11 @@ function presentGeometry(runtime: Runtime, props: SceneProps, selection = props.
   const openings = props.data.analysis?.circular_openings?.filter(item => selected.openingRefs?.includes(item.id)) ?? [];
   const passage = selected.passageRef ? props.data.analysis?.passage_hypotheses?.find(item => item.id === selected.passageRef) : undefined;
   const supplement = selected.supplementRef ? runtime.supplements.get(selected.supplementRef) : undefined;
+  const structure = selected.structureRef ? props.data.analysis?.structure_candidates?.find(item => item.id === selected.structureRef) : undefined;
+  const region = selected.reviewRegionRef ? props.data.analysis?.review_regions?.find(item => item.id === selected.reviewRegionRef) : undefined;
   if (supplement && !supplementalComponentEnabled(props.data, supplement.component, props.showSupplemental === true, props.supplementReviewIds, props.activeConnectionAlternativeIds)) return;
   const contextOnly = !features.length && !slot && !openings.length && !passage && !supplement && selected.selection.kind === 'connection_review';
-  if (!features.length && !slot && !openings.length && !passage && !supplement && !contextOnly) return;
+  if (!features.length && !slot && !openings.length && !passage && !supplement && !structure && !region && !contextOnly) return;
   const group = new THREE.Group();
   group.name = `${selected.selection.kind}-highlight:${selected.selection.id}`;
   group.userData.selection = selected.selection;
@@ -658,6 +668,23 @@ function presentGeometry(runtime: Runtime, props: SceneProps, selection = props.
   for (const feature of features) group.add(featureOverlay(feature, owner.mesh.geometry, bounds, '#d69529', selectedSites ? selectedSites.filter(site => site.feature_refs.includes(feature.id)).map(site => site.position) : patternEntries?.filter(entry => entry.refs.includes(feature.id)).map(entry => entry.point)));
   if (slot) group.add(slotOverlay(slot, bounds));
   openings.forEach(opening => group.add(openingOverlay(opening, bounds, '#d69529')));
+  if (structure || region) {
+    const indices = structure?.support_triangle_indices || region!.triangle_indices;
+    const source = new THREE.Group();
+    const patch = sourceTrianglePatch(indices, owner.mesh.geometry, bounds, '#d69529');
+    if (patch) source.add(patch);
+    const center = new THREE.Vector3().fromArray(structure?.geometry.center || region!.center);
+    // This cross is a location marker, independent of whether an analytic
+    // feature can be fitted. It does not synthesize a hole or contact surface.
+    const points: THREE.Vector3[] = [];
+    for (const axis of [new THREE.Vector3(1, 0, 0), new THREE.Vector3(0, 1, 0), new THREE.Vector3(0, 0, 1)]) points.push(center.clone().addScaledVector(axis, -.001), center.clone().addScaledVector(axis, .001));
+    const marker = new THREE.LineSegments(new THREE.BufferGeometry().setFromPoints(points), new THREE.LineBasicMaterial({ color: '#d69529', depthTest: false, depthWrite: false }));
+    marker.renderOrder = 11; source.add(marker);
+    bounds.expandByPoint(center.clone().addScalar(-.0015)); bounds.expandByPoint(center.clone().addScalar(.0015));
+    source.userData.featureType = structure ? 'investigation_structure' : 'review_region';
+    source.userData.sourceTriangleCount = patch ? patch.geometry.getAttribute('position').count / 3 : 0;
+    group.add(source);
+  }
   if (passage) {
     const patch = sourceTrianglePatch(passage.wall_triangle_indices, owner.mesh.geometry, bounds, '#d69529');
     const cavity = new THREE.Group(); if (patch) cavity.add(patch);
@@ -703,14 +730,14 @@ function presentGeometry(runtime: Runtime, props: SceneProps, selection = props.
   // toward its tip. Observe each from its exposed end, without reversing pins
   // into the source housing as if they were holes.
   const siteOutward = sameSide ? selectedSites![0].entry_direction.map(value => value * (selectedSites![0].site_kind === 'integral_pin' ? 1 : -1)) : undefined;
-  runtime.geometryAxis = new THREE.Vector3().fromArray(slot ? slot.geometry.normal : siteOutward || (openings.length ? openings[0].geometry.normal : passage ? passage.geometry.axis : selectedPattern ? selectedPattern.geometry.normal : features.length ? features[0].kind === 'planar_patch' ? features[0].geometry.normal : features[0].geometry.axis : [1, -1, 1])).normalize();
+  runtime.geometryAxis = new THREE.Vector3().fromArray(structure?.geometry.axis || structure?.geometry.normal || (slot ? slot.geometry.normal : siteOutward || (openings.length ? openings[0].geometry.normal : passage ? passage.geometry.axis : selectedPattern ? selectedPattern.geometry.normal : features.length ? features[0].kind === 'planar_patch' ? features[0].geometry.normal : features[0].geometry.axis : [1, -1, 1]))).normalize();
   if (supplement) {
     const outward = supplement.axis.clone().negate();
     const tangent = ISO_DIRECTION.clone().addScaledVector(outward, -ISO_DIRECTION.dot(outward));
     if (tangent.lengthSq() < 1e-8) tangent.crossVectors(outward, new THREE.Vector3(0, 0, 1));
     runtime.geometryAxis.copy(outward.add(tangent.normalize()).normalize()).applyQuaternion(owner.mesh.quaternion.clone().invert());
   }
-  group.userData.entryFocused = !!selectedPattern || sameSide || !!slot || openings.length > 0 || !!supplement;
+  group.userData.entryFocused = !!selectedPattern || sameSide || !!slot || openings.length > 0 || !!supplement || !!structure;
   const drawnPeers = new Set<string>();
   for (const peer of selected.peers) {
     const record = runtime.records.get(peer.ownerRef);
@@ -729,7 +756,7 @@ function presentGeometry(runtime: Runtime, props: SceneProps, selection = props.
   runtime.geometryOwnerId = selected.ownerRef;
   if (host) {
     const drawn = group.children.filter(object => object.userData.featureType && object.children.length > 0);
-    const marker = ({ interface: 'interfaceHighlight', observation: 'observationHighlight', feature: 'featureHighlight', hole: 'holeHighlight', pattern: 'patternHighlight', site: 'siteHighlight', pin_fit: 'pinFitHighlight', mount: 'mountHighlight', mounting_interface: 'mountingInterfaceHighlight', slot: 'slotHighlight', opening: 'openingHighlight', passage: 'passageHighlight', connection_review: 'reviewHighlight', supplement: 'supplementHighlight', legacy_group: 'legacyGroupHighlight', legacy_observation: 'legacyObservationHighlight' } as const)[selected.selection.kind];
+    const marker = ({ interface: 'interfaceHighlight', observation: 'observationHighlight', feature: 'featureHighlight', hole: 'holeHighlight', pattern: 'patternHighlight', site: 'siteHighlight', pin_fit: 'pinFitHighlight', mount: 'mountHighlight', mounting_interface: 'mountingInterfaceHighlight', slot: 'slotHighlight', opening: 'openingHighlight', passage: 'passageHighlight', connection_review: 'reviewHighlight', supplement: 'supplementHighlight', structure: 'structureHighlight', review_region: 'reviewRegionHighlight', legacy_group: 'legacyGroupHighlight', legacy_observation: 'legacyObservationHighlight' } as const)[selected.selection.kind];
     host.dataset[marker] = drawn.length ? selected.selection.id : '';
     if (selected.selection.kind === 'interface') host.dataset.highlightedInterface = host.dataset.interfaceHighlight;
     host.dataset.geometryAuthority = drawn.length ? selected.authority : '';
