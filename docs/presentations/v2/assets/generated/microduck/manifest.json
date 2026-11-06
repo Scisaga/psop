@@ -1,0 +1,182 @@
+{
+  "schema_version": "psop.microduck-visuals/3",
+  "date": "2026-10-15",
+  "case": "MD-01 / MD-SERVO-CHECK-01 Rev.A / S03 / J01",
+  "status": "source_assembly_and_teaching_task",
+  "geometry_source": "build/microduck-official-assembled/microduck-official-assembled-v1.2.1.build.dkp/apps/build/data/scene-manifest.json; official STL and SRC-000048 reference transforms, 70 assembly instances",
+  "official_photo_sources": {
+    "official-closeup.webp": "https://pollen-robotics.com/assets/microduck/gallery/closeup.webp",
+    "official-squad.webp": "https://pollen-robotics.com/assets/microduck/squad.webp"
+  },
+  "task_source": "build/microduck-official-assembled/microduck-official-assembled-v1.2.1.build.dkp/kb/tasks/task-definitions.jsonl; TSK-000006 and TSK-000008, proposed/document",
+  "assets": [
+    {
+      "file": "cover-build-exploded.png",
+      "source": "build/microduck-official-assembled/microduck-official-assembled-v1.2.1.build.dkp/apps/build/data/scene-manifest.json",
+      "rights": "Creative Commons BY-SA-NC; upstream source does not name a version",
+      "kind": "source_assembly_render",
+      "sha256": "e9aefce9bfd2a244a23e199b432af566517f5e2250c6f39aa21fc550990aaf33"
+    },
+    {
+      "file": "cover-installation.png",
+      "source": "build/microduck-official-assembled/microduck-official-assembled-v1.2.1.build.dkp/apps/build/data/scene-manifest.json",
+      "rights": "Creative Commons BY-SA-NC; upstream source does not name a version",
+      "kind": "source_assembly_render",
+      "sha256": "55b7420536f72ddf48a5441b005e59980414ab74961f403485347d45f36c5824"
+    },
+    {
+      "file": "cover-simulate.png",
+      "source": "PSOP task illustration or prototype",
+      "rights": "Native PSOP diagram or prototype; embedded geometry retains upstream attribution",
+      "kind": "prototype_browser_capture",
+      "sha256": "c14dcc0477d2fa88621bb04015909d6931fcbefd375f308966b24f0193f227f9"
+    },
+    {
+      "file": "device-knowledge.svg",
+      "source": "PSOP task illustration or prototype",
+      "rights": "Native PSOP diagram or prototype; embedded geometry retains upstream attribution",
+      "kind": "native_svg_task_diagram",
+      "sha256": "684be43ccc182af71222fd19b73969b113d6801267e088084bd14e0d095e9251"
+    },
+    {
+      "file": "installation-process.png",
+      "source": "imagegen installation-process illustration using official-closeup.webp and source-derived model renders as references",
+      "rights": "Generated process illustration; references retain their source attribution",
+      "kind": "generated_installation_illustration",
+      "sha256": "2566e9e8610868a7b2e72192ca4893d00ed42fb5f78af56bf5718bd51faf2303"
+    },
+    {
+      "file": "learning-trace.svg",
+      "source": "PSOP task illustration or prototype",
+      "rights": "Native PSOP diagram or prototype; embedded geometry retains upstream attribution",
+      "kind": "native_svg_task_diagram",
+      "sha256": "72ef0797537fa1d4f4946b274881076aa422d622d89c7a6d74f49a01c85ed8d0"
+    },
+    {
+      "file": "microduck-joint.svg",
+      "source": "PSOP task illustration or prototype",
+      "rights": "Native PSOP diagram or prototype; embedded geometry retains upstream attribution",
+      "kind": "native_svg_task_diagram",
+      "sha256": "25f67c0c531275f4bb49e3e1808368700fe8d7ad3a2852def81f8d26829cb296"
+    },
+    {
+      "file": "microduck-overview.svg",
+      "source": "PSOP task illustration or prototype",
+      "rights": "Native PSOP diagram or prototype; embedded geometry retains upstream attribution",
+      "kind": "native_svg_task_diagram",
+      "sha256": "6710a1f56a619729974ff8c572d9e14e5889191af9740ea280028f038cf7177c"
+    },
+    {
+      "file": "model-assembled.png",
+      "source": "build/microduck-official-assembled/microduck-official-assembled-v1.2.1.build.dkp/apps/build/data/scene-manifest.json",
+      "rights": "Creative Commons BY-SA-NC; upstream source does not name a version",
+      "kind": "source_assembly_render",
+      "sha256": "fbb0a2f11c7f8cea786811606190ef5337e988bc8d05d8de093b9982e281d724"
+    },
+    {
+      "file": "model-exploded.png",
+      "source": "build/microduck-official-assembled/microduck-official-assembled-v1.2.1.build.dkp/apps/build/data/scene-manifest.json",
+      "rights": "Creative Commons BY-SA-NC; upstream source does not name a version",
+      "kind": "source_assembly_render",
+      "sha256": "35eb1781ffc296c63adb426198dc4a53c72e014069f63c786f1052c45816761b"
+    },
+    {
+      "file": "model-joint-detail.png",
+      "source": "build/microduck-official-assembled/microduck-official-assembled-v1.2.1.build.dkp/apps/build/data/scene-manifest.json",
+      "rights": "Creative Commons BY-SA-NC; upstream source does not name a version",
+      "kind": "source_assembly_render",
+      "sha256": "167269d5d7e562cb82a53db1a2ce7cd650dd812fbad34d2e2e0befffb232f413"
+    },
+    {
+      "file": "model-servo-module.png",
+      "source": "build/microduck-official-assembled/microduck-official-assembled-v1.2.1.build.dkp/apps/build/data/scene-manifest.json",
+      "rights": "Creative Commons BY-SA-NC; upstream source does not name a version",
+      "kind": "source_assembly_render",
+      "sha256": "fcad8f2ba007ca47a1a8548b3ab35e400ed4c9f1c9230fd486b4f462e35cf2f4"
+    },
+    {
+      "file": "official-closeup.webp",
+      "source": "https://pollen-robotics.com/assets/microduck/gallery/closeup.webp",
+      "rights": "Pollen Robotics official photo; license not asserted by this manifest",
+      "kind": "official_product_photo",
+      "sha256": "db83bc618f2ed8c96c605c73011f436c20d509fddc89730fd57695db6ddbbdfc"
+    },
+    {
+      "file": "official-squad.webp",
+      "source": "https://pollen-robotics.com/assets/microduck/squad.webp",
+      "rights": "Pollen Robotics official photo; license not asserted by this manifest",
+      "kind": "official_product_photo",
+      "sha256": "07697da85e127859b6b90d1d845a1ebc7269e3069833636c06a35ecc5e0e1991"
+    },
+    {
+      "file": "sim-step-01.png",
+      "source": "PSOP task illustration or prototype",
+      "rights": "Native PSOP diagram or prototype; embedded geometry retains upstream attribution",
+      "kind": "prototype_browser_capture",
+      "sha256": "d26da62a85974bcae0efd82bb14b1472bce80a26f11c139b4d761f565d50f92a"
+    },
+    {
+      "file": "sim-step-02.png",
+      "source": "PSOP task illustration or prototype",
+      "rights": "Native PSOP diagram or prototype; embedded geometry retains upstream attribution",
+      "kind": "prototype_browser_capture",
+      "sha256": "cafc37b02efe826a04103a4055a9e3ed965035aab55661a449556e67a1567e40"
+    },
+    {
+      "file": "sim-step-03.png",
+      "source": "PSOP task illustration or prototype",
+      "rights": "Native PSOP diagram or prototype; embedded geometry retains upstream attribution",
+      "kind": "prototype_browser_capture",
+      "sha256": "97df742bb502bede739e737bd6619d6f60f72be5741bf61d1ddf6f71783f1d40"
+    },
+    {
+      "file": "sim-step-04.png",
+      "source": "PSOP task illustration or prototype",
+      "rights": "Native PSOP diagram or prototype; embedded geometry retains upstream attribution",
+      "kind": "prototype_browser_capture",
+      "sha256": "58da66707d8d8a816241397738c88697c0a3eb0bef00d4246af9cd7dd094eaff"
+    },
+    {
+      "file": "sim-step-05.png",
+      "source": "PSOP task illustration or prototype",
+      "rights": "Native PSOP diagram or prototype; embedded geometry retains upstream attribution",
+      "kind": "prototype_browser_capture",
+      "sha256": "9ad66b1b968c3fb3a56ea94055f5f7a29de249fb887317f5baa3b50f05294d70"
+    },
+    {
+      "file": "task-checks.svg",
+      "source": "PSOP task illustration or prototype",
+      "rights": "Native PSOP diagram or prototype; embedded geometry retains upstream attribution",
+      "kind": "native_svg_task_diagram",
+      "sha256": "77b75c592d54a295ada4840c217b6fba8aeb54ac6fa01e8574345b08010bdb8f"
+    },
+    {
+      "file": "ui-build.png",
+      "source": "PSOP task illustration or prototype",
+      "rights": "Native PSOP diagram or prototype; embedded geometry retains upstream attribution",
+      "kind": "prototype_browser_capture",
+      "sha256": "636ac3b3325ed20933dd1573e8db54394c0b6d20ca7c2304389a610201ae11a8"
+    },
+    {
+      "file": "ui-compile.png",
+      "source": "PSOP task illustration or prototype",
+      "rights": "Native PSOP diagram or prototype; embedded geometry retains upstream attribution",
+      "kind": "prototype_browser_capture",
+      "sha256": "901fd7293d165e3c287aedee53d7fd0982cae530631c3424f9b6f8e90cd53cda"
+    },
+    {
+      "file": "ui-mobile.png",
+      "source": "PSOP task illustration or prototype",
+      "rights": "Native PSOP diagram or prototype; embedded geometry retains upstream attribution",
+      "kind": "prototype_browser_capture",
+      "sha256": "9b573d879aa28f7b960f05dc5036683783d6a9ebc8319ed13c8cf91f59a15b22"
+    },
+    {
+      "file": "ui-simulate.png",
+      "source": "PSOP task illustration or prototype",
+      "rights": "Native PSOP diagram or prototype; embedded geometry retains upstream attribution",
+      "kind": "prototype_browser_capture",
+      "sha256": "d1d753aaf510fea8008fc8f8405f2e2063936cff7d538fb4b023c74cc46499c3"
+    }
+  ]
+}

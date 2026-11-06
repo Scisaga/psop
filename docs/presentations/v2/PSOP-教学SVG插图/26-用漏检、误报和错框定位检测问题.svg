@@ -1,0 +1,163 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <title>用漏检、误报和错框定位检测问题</title>
+  <desc>PSOP 第 26 / 65 页教学图；文字与方法图保持可编辑。Microduck 视图由官方来源 STL 和 robot_walk.xml 的 source assembly 渲染，配置为 walk-model-reference、MCD-000001。alpha 软件任务身份与该几何参考的实物对应尚未核验；MD-01、S03、J01 和 EG 为教学定义。</desc>
+  <defs>
+    <linearGradient id="steel" x1="0" y1="0" x2="0.9" y2="1">
+      <stop stop-color="#EAF0F3" />
+      <stop offset=".37" stop-color="#A9BBC6" />
+      <stop offset=".63" stop-color="#F1F5F5" />
+      <stop offset="1" stop-color="#859CA9" />
+    </linearGradient>
+  </defs>
+  <g id="base" transform="translate(0 0)">
+    <rect x="0" y="0" width="1600" height="900" rx="0" fill="#FCFDFB" />
+    <rect x="0" y="0" width="9" height="900" rx="0" fill="#14877D" />
+    <path d="M64 62 L1536 62" stroke="#D7E1E7" fill="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+    <text x="64.000" y="41.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="18.999" font-weight="400" data-text="PSOP  /  四个模型与多模态协作" aria-label="PSOP  /  四个模型与多模态协作" xml:space="preserve" textLength="273.541" lengthAdjust="spacingAndGlyphs" fill="#526578">PSOP  /  四个模型与多模态协作</text>
+    <text x="1355.287" y="41.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="18.999" font-weight="400" data-text="LESSON 02  ·  26/65" aria-label="LESSON 02  ·  26/65" xml:space="preserve" textLength="180.021" lengthAdjust="spacingAndGlyphs" fill="#526578">LESSON 02  ·  26/65</text>
+  </g>
+  <g id="title" transform="translate(0 0)">
+    <text x="64.000" y="125.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="48.001" font-weight="700" data-text="用漏检、误报和错框定位检测问题" aria-label="用漏检、误报和错框定位检测问题" xml:space="preserve" textLength="720.001" lengthAdjust="spacingAndGlyphs" fill="#18344C">用漏检、误报和错框定位检测问题</text>
+    <text x="64.000" y="177.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="24.001" font-weight="400" data-text="总体 mAP 只能概括部分表现。工程研发更需要知道：重要对象是否漏掉、相似工具是否误报、区域是否偏离，以及这些" aria-label="总体 mAP 只能概括部分表现。工程研发更需要知道：重要对象是否漏掉、相似工具是否误报、区域是否偏离，以及这些" xml:space="preserve" textLength="1268.263" lengthAdjust="spacingAndGlyphs" fill="#526578">总体 mAP 只能概括部分表现。工程研发更需要知道：重要对象是否漏掉、相似工具是否误报、区域是否偏离，以及这些</text>
+    <text x="64.000" y="209.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="24.001" font-weight="400" data-text="错误集中在哪些视角、遮挡和光照条件。" aria-label="错误集中在哪些视角、遮挡和光照条件。" xml:space="preserve" textLength="432.001" lengthAdjust="spacingAndGlyphs" fill="#526578">错误集中在哪些视角、遮挡和光照条件。</text>
+  </g>
+  <g id="beat_01" transform="translate(0 0)">
+    <g id="illustration" transform="translate(64 237)">
+      <text x="0.000" y="28.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="28.000" font-weight="700" data-text="漏检 FN" aria-label="漏检 FN" xml:space="preserve" textLength="95.367" lengthAdjust="spacingAndGlyphs" fill="#B9752E">漏检 FN</text>
+      <rect x="0.0" y="55" width="469.3333333333333" height="188" rx="7" fill="#F1F5F7" stroke="#D7E1E7" stroke-width="1.5" />
+      <path d="M13 65 L13 232" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M35 65 L35 232" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M57 65 L57 232" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M79 65 L79 232" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M101 65 L101 232" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M123 65 L123 232" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M145 65 L145 232" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M167 65 L167 232" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M189 65 L189 232" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M211 65 L211 232" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M233 65 L233 232" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M255 65 L255 232" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M277 65 L277 232" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M299 65 L299 232" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M321 65 L321 232" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M343 65 L343 232" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M365 65 L365 232" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M387 65 L387 232" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M409 65 L409 232" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M431 65 L431 232" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M453 65 L453 232" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M13.0 65 L456.3333333333333 65" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M13.0 87 L456.3333333333333 87" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M13.0 109 L456.3333333333333 109" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M13.0 131 L456.3333333333333 131" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M13.0 153 L456.3333333333333 153" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M13.0 175 L456.3333333333333 175" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M13.0 197 L456.3333333333333 197" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M13.0 219 L456.3333333333333 219" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <ellipse cx="237.0" cy="141" rx="81" ry="51" fill="#BCD5E4" stroke="#326BB8" stroke-width="1.5" />
+      <text x="189.000" y="149.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="24.001" font-weight="700" data-text="参考目标" aria-label="参考目标" xml:space="preserve" textLength="96.001" lengthAdjust="spacingAndGlyphs" fill="#326BB8">参考目标</text>
+      <rect x="145.0" y="77" width="184" height="128" rx="1" fill="none" stroke="#14877D" stroke-width="1.8" />
+      <path d="M129.0 270 H343.0" stroke="#B9752E" fill="none" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="6 5" />
+      <text x="16.000" y="284.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.000" font-weight="700" data-text="参考区域有，预测区域无" aria-label="参考区域有，预测区域无" xml:space="preserve" textLength="242.000" lengthAdjust="spacingAndGlyphs" fill="#B9752E">参考区域有，预测区域无</text>
+      <text x="501.333" y="28.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="28.000" font-weight="700" data-text="误报 FP" aria-label="误报 FP" xml:space="preserve" textLength="95.367" lengthAdjust="spacingAndGlyphs" fill="#BE574C">误报 FP</text>
+      <rect x="501.3333333333333" y="55" width="469.3333333333333" height="188" rx="7" fill="#F1F5F7" stroke="#D7E1E7" stroke-width="1.5" />
+      <path d="M514 65 L514 232" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M536 65 L536 232" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M558 65 L558 232" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M580 65 L580 232" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M602 65 L602 232" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M624 65 L624 232" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M646 65 L646 232" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M668 65 L668 232" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M690 65 L690 232" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M712 65 L712 232" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M734 65 L734 232" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M756 65 L756 232" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M778 65 L778 232" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M800 65 L800 232" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M822 65 L822 232" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M844 65 L844 232" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M866 65 L866 232" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M888 65 L888 232" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M910 65 L910 232" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M932 65 L932 232" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M954 65 L954 232" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M514.3333333333333 65 L957.6666666666665 65" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M514.3333333333333 87 L957.6666666666665 87" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M514.3333333333333 109 L957.6666666666665 109" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M514.3333333333333 131 L957.6666666666665 131" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M514.3333333333333 153 L957.6666666666665 153" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M514.3333333333333 175 L957.6666666666665 175" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M514.3333333333333 197 L957.6666666666665 197" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M514.3333333333333 219 L957.6666666666665 219" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <ellipse cx="738.3333333333333" cy="141" rx="81" ry="51" fill="#BCD5E4" stroke="#326BB8" stroke-width="1.5" />
+      <text x="690.333" y="149.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="24.001" font-weight="700" data-text="参考目标" aria-label="参考目标" xml:space="preserve" textLength="96.001" lengthAdjust="spacingAndGlyphs" fill="#326BB8">参考目标</text>
+      <circle cx="561.3333333333333" cy="146" r="30" fill="#DDE4E9" stroke="#8898A8" stroke-width="1.4" />
+      <text x="541.333" y="153.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="20.001" font-weight="400" data-text="背景" aria-label="背景" xml:space="preserve" textLength="40.001" lengthAdjust="spacingAndGlyphs" fill="#526578">背景</text>
+      <rect x="522.3333333333333" y="100" width="93" height="103" rx="1" fill="none" stroke="#BE574C" stroke-width="2.5" />
+      <text x="517.333" y="284.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.000" font-weight="700" data-text="背景被报成目标类别" aria-label="背景被报成目标类别" xml:space="preserve" textLength="198.000" lengthAdjust="spacingAndGlyphs" fill="#BE574C">背景被报成目标类别</text>
+      <text x="1002.667" y="28.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="28.000" font-weight="700" data-text="错框：定位偏差" aria-label="错框：定位偏差" xml:space="preserve" textLength="196.000" lengthAdjust="spacingAndGlyphs" fill="#7756AA">错框：定位偏差</text>
+      <rect x="1002.6666666666666" y="55" width="469.3333333333333" height="188" rx="7" fill="#F1F5F7" stroke="#D7E1E7" stroke-width="1.5" />
+      <path d="M1015 65 L1015 232" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M1037 65 L1037 232" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M1059 65 L1059 232" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M1081 65 L1081 232" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M1103 65 L1103 232" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M1125 65 L1125 232" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M1147 65 L1147 232" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M1169 65 L1169 232" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M1191 65 L1191 232" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M1213 65 L1213 232" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M1235 65 L1235 232" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M1257 65 L1257 232" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M1279 65 L1279 232" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M1301 65 L1301 232" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M1323 65 L1323 232" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M1345 65 L1345 232" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M1367 65 L1367 232" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M1389 65 L1389 232" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M1411 65 L1411 232" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M1433 65 L1433 232" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M1455 65 L1455 232" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M1015.6666666666666 65 L1459.0 65" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M1015.6666666666666 87 L1459.0 87" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M1015.6666666666666 109 L1459.0 109" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M1015.6666666666666 131 L1459.0 131" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M1015.6666666666666 153 L1459.0 153" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M1015.6666666666666 175 L1459.0 175" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M1015.6666666666666 197 L1459.0 197" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M1015.6666666666666 219 L1459.0 219" stroke="#E0E7EC" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round" />
+      <ellipse cx="1239.6666666666665" cy="141" rx="81" ry="51" fill="#BCD5E4" stroke="#326BB8" stroke-width="1.5" />
+      <text x="1191.667" y="149.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="24.001" font-weight="700" data-text="参考目标" aria-label="参考目标" xml:space="preserve" textLength="96.001" lengthAdjust="spacingAndGlyphs" fill="#326BB8">参考目标</text>
+      <rect x="1147.6666666666665" y="77" width="184" height="128" rx="1" fill="none" stroke="#14877D" stroke-width="1.8" />
+      <rect x="1207.6666666666665" y="96" width="184" height="128" rx="1" fill="none" stroke="#7756AA" stroke-width="2.6" />
+      <path d="M1236.6666666666665 49 L1289.6666666666665 68" stroke="#7756AA" fill="none" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M1279.7225629508148 69.05584150722817 L1289.6666666666665 68 L1282.6582436064623 60.866837573053715" stroke="#7756AA" fill="none" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" />
+      <text x="1018.667" y="284.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.000" font-weight="700" data-text="类别匹配，位置重叠不足" aria-label="类别匹配，位置重叠不足" xml:space="preserve" textLength="242.000" lengthAdjust="spacingAndGlyphs" fill="#7756AA">类别匹配，位置重叠不足</text>
+      <text x="0.000" y="323.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="20.001" font-weight="400" data-text="绿色为参考区域；其他颜色为错误说明。这里用坐标网格与抽象区域解释评价定义。" aria-label="绿色为参考区域；其他颜色为错误说明。这里用坐标网格与抽象区域解释评价定义。" xml:space="preserve" textLength="740.001" lengthAdjust="spacingAndGlyphs" fill="#526578">绿色为参考区域；其他颜色为错误说明。这里用坐标网格与抽象区域解释评价定义。</text>
+    </g>
+  </g>
+  <g id="beat_02" transform="translate(0 0)">
+    <text x="64.000" y="617.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.000" font-weight="700" data-text="漏检首先影响后续完整性" aria-label="漏检首先影响后续完整性" xml:space="preserve" textLength="275.000" lengthAdjust="spacingAndGlyphs" fill="#326BB8">漏检首先影响后续完整性</text>
+    <text x="64.000" y="656.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="没有区域时，关系模型和任务模型也可能缺" aria-label="没有区域时，关系模型和任务模型也可能缺" xml:space="preserve" textLength="436.999" lengthAdjust="spacingAndGlyphs" fill="#526578">没有区域时，关系模型和任务模型也可能缺</text>
+    <text x="64.000" y="686.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="少对象信息。观察目标尺度、遮挡、反射及" aria-label="少对象信息。观察目标尺度、遮挡、反射及" xml:space="preserve" textLength="436.999" lengthAdjust="spacingAndGlyphs" fill="#526578">少对象信息。观察目标尺度、遮挡、反射及</text>
+    <text x="64.000" y="716.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="标签是否一致。" aria-label="标签是否一致。" xml:space="preserve" textLength="160.999" lengthAdjust="spacingAndGlyphs" fill="#526578">标签是否一致。</text>
+    <text x="570.000" y="617.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.000" font-weight="700" data-text="误报影响对象和区域关联" aria-label="误报影响对象和区域关联" xml:space="preserve" textLength="275.000" lengthAdjust="spacingAndGlyphs" fill="#14877D">误报影响对象和区域关联</text>
+    <text x="570.000" y="656.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="背景或相似工具被当成目标，会让后续关系" aria-label="背景或相似工具被当成目标，会让后续关系" xml:space="preserve" textLength="436.999" lengthAdjust="spacingAndGlyphs" fill="#526578">背景或相似工具被当成目标，会让后续关系</text>
+    <text x="570.000" y="686.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="与动作判断使用错误对象。空场景和困难负" aria-label="与动作判断使用错误对象。空场景和困难负" xml:space="preserve" textLength="436.999" lengthAdjust="spacingAndGlyphs" fill="#526578">与动作判断使用错误对象。空场景和困难负</text>
+    <text x="570.000" y="716.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="样本有助于分析。" aria-label="样本有助于分析。" xml:space="preserve" textLength="183.999" lengthAdjust="spacingAndGlyphs" fill="#526578">样本有助于分析。</text>
+    <text x="1076.000" y="617.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.000" font-weight="700" data-text="错框需要检查定位与预处理" aria-label="错框需要检查定位与预处理" xml:space="preserve" textLength="300.000" lengthAdjust="spacingAndGlyphs" fill="#7756AA">错框需要检查定位与预处理</text>
+    <text x="1076.000" y="656.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="类别正确而区域偏移时，排查图片缩放、坐" aria-label="类别正确而区域偏移时，排查图片缩放、坐" xml:space="preserve" textLength="436.999" lengthAdjust="spacingAndGlyphs" fill="#526578">类别正确而区域偏移时，排查图片缩放、坐</text>
+    <text x="1076.000" y="686.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="标转换和区域定义，再看模型定位能力及标" aria-label="标转换和区域定义，再看模型定位能力及标" xml:space="preserve" textLength="436.999" lengthAdjust="spacingAndGlyphs" fill="#526578">标转换和区域定义，再看模型定位能力及标</text>
+    <text x="1076.000" y="716.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="注质量。" aria-label="注质量。" xml:space="preserve" textLength="91.999" lengthAdjust="spacingAndGlyphs" fill="#526578">注质量。</text>
+  </g>
+  <g id="beat_03" transform="translate(0 0)">
+    <path d="M64 760 L1536 760" stroke="#D7E1E7" fill="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+    <rect x="64" y="782" width="4" height="57" rx="2" fill="#14877D" />
+    <text x="84.000" y="798.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.000" font-weight="400" data-text="阈值降低可能找回更多目标，也可能增加误报。先在验证集选择阈值，再以独立作业检验关键类别的 Recall、Precision 与延迟。" aria-label="阈值降低可能找回更多目标，也可能增加误报。先在验证集选择阈值，再以独立作业检验关键类别的 Recall、Precision 与延迟。" xml:space="preserve" textLength="1247.576" lengthAdjust="spacingAndGlyphs" fill="#18344C">阈值降低可能找回更多目标，也可能增加误报。先在验证集选择阈值，再以独立作业检验关键类别的 Recall、Precision 与延迟。</text>
+  </g>
+  <g id="footer" transform="translate(0 0)">
+    <text x="64.000" y="877.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="17.000" font-weight="400" data-text="学习手册 §06.9.4 / 15.4" aria-label="学习手册 §06.9.4 / 15.4" xml:space="preserve" textLength="180.097" lengthAdjust="spacingAndGlyphs" fill="#8898A8">学习手册 §06.9.4 / 15.4</text>
+    <text x="1247.000" y="877.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="17.000" font-weight="400" data-text="工程案例与数值示意的来源见逐页备注" aria-label="工程案例与数值示意的来源见逐页备注" xml:space="preserve" textLength="289.000" lengthAdjust="spacingAndGlyphs" fill="#8898A8">工程案例与数值示意的来源见逐页备注</text>
+  </g>
+</svg>

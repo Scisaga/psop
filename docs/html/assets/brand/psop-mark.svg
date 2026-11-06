@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72" fill="none" role="img" aria-labelledby="psop-mark-title psop-mark-description">
+  <title id="psop-mark-title">PSOP</title>
+  <desc id="psop-mark-description">Two interlocking paths connect verified task execution with reviewed experience returning to future tasks and model learning. One orange condition gate controls the handoff.</desc>
+  <path id="mark-execution" d="M10 49V25C10 15.611 17.611 8 27 8H46L58 20H27C24.239 20 22 22.239 22 25V37L10 49Z" fill="#EFEFE9"/>
+  <path id="mark-feedback" d="M62 23V47C62 56.389 54.389 64 45 64H26L14 52H45C47.761 52 50 49.761 50 47V35L62 23Z" fill="#B1DFC9"/>
+  <rect id="mark-gate" x="31.5" y="28" width="9" height="16" rx="1.5" fill="#FFA06D"/>
+</svg>

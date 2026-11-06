@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72" fill="none">
+  <title>PSOP — Verified execution and reviewed learning</title>
+  <desc>Interlocking execution and feedback paths meet at one condition gate.</desc>
+  <rect width="72" height="72" rx="16" fill="#101211"/>
+  <path d="M10 49V25C10 15.611 17.611 8 27 8H46L58 20H27C24.239 20 22 22.239 22 25V37L10 49Z" fill="#EFEFE9"/>
+  <path d="M62 23V47C62 56.389 54.389 64 45 64H26L14 52H45C47.761 52 50 49.761 50 47V35L62 23Z" fill="#B1DFC9"/>
+  <rect x="31.5" y="28" width="9" height="16" rx="1.5" fill="#FFA06D"/>
+</svg>

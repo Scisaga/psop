@@ -1,0 +1,23 @@
+{
+  "schema_version": "psop.microduck-photo-references/1",
+  "retrieved_at": "2026-10-15",
+  "attribution": "Pollen Robotics",
+  "source_page": "https://pollen-robotics.com/microduck/press-kit/",
+  "purpose": "核对 Microduck 实物外观、部件比例、材质与配色",
+  "assets": [
+    {
+      "file": "official-closeup.webp",
+      "source": "https://pollen-robotics.com/assets/microduck/gallery/closeup.webp",
+      "image_transform": "none; original downloaded bytes",
+      "sha256": "db83bc618f2ed8c96c605c73011f436c20d509fddc89730fd57695db6ddbbdfc",
+      "bytes": 69152
+    },
+    {
+      "file": "official-squad.webp",
+      "source": "https://pollen-robotics.com/assets/microduck/squad.webp",
+      "image_transform": "none; original downloaded bytes",
+      "sha256": "07697da85e127859b6b90d1d845a1ebc7269e3069833636c06a35ecc5e0e1991",
+      "bytes": 149162
+    }
+  ]
+}

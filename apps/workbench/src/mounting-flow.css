@@ -1,0 +1,33 @@
+.mounting-choices { border-top: 1px solid #e7eeea; color: #729084; font-size: 11px; }
+.mounting-choices > summary { padding: 13px; cursor: pointer; }
+.mounting-choices > summary > span { float: right; color: #96a59a; font-size: 10px; }
+.mounting-interface-card > .mounting-site-count { padding: 12px 13px; }
+.mounting-interface-card > .mounting-site-count > strong { font-size: 22px; }
+.mounting-flow-label { display: flex; justify-content: space-between; padding: 14px 13px 9px; font-size: 11px; color: #557f74; border-top: 1px solid #e3ece7; }
+.mounting-flow-label > span { font-size: 10px; color: #99aaa2; }
+.mounting-reference-connection { margin: 0 10px 12px; border: 1px solid #dde8e1; border-radius: 6px; overflow: hidden; background: #fff; }
+.mounting-reference-connection.is-selected { border-color: #81ad9b; box-shadow: inset 3px 0 #81ad9b; }
+.mounting-reference-connection > .mounting-reference-card { width: 100%; margin: 0; border: 0; border-radius: 0; background: #f6faf7; padding: 13px 12px; }
+.mounting-reference-connection > .mounting-reference-status { padding: 10px 12px 4px; margin: 0; border: 0; background: transparent; font-size: 10px; }
+.mounting-reference-connection > .mounting-correspondences { padding: 10px 12px; }
+.mounting-reference-connection .mounting-correspondence { margin: 0; padding: 0; border: 0; background: transparent; }
+.mounting-reference-connection .mounting-correspondence + .mounting-correspondence { margin-top: 7px; }
+.mounting-reference-connection .mounting-correspondence > div { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.mounting-reference-connection .mounting-correspondence > div > span { display: flex; align-items: center; position: relative; min-width: 0; }
+.mounting-reference-connection .mounting-correspondence > div > span > svg { position: absolute; left: -12px; width: 11px; color: #a5b7ab; }
+.mounting-reference-connection .mounting-correspondence button { display: flex; align-items: center; gap: 6px; width: 100%; min-width: 0; padding: 8px; border: 1px solid #dfe9e1; border-radius: 4px; background: #f9fcf9; color: #527e6b; }
+.mounting-reference-connection .mounting-correspondence button small { display: none; }
+.mounting-reference-connection .mounting-correspondence button > svg { margin-left: auto; }
+.mounting-reference-connection .mounting-correspondence > div > span:last-child button { color: #588aa0; border-color: #dbe8ed; background: #f7fbfd; }
+.mounting-pair-labels { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; font-size: 9px; color: #93a698; margin-bottom: 8px; }
+.mounting-connection-state { padding: 0 12px 10px; font-size: 10px; line-height: 1.8; color: #9d946e; }
+.mounting-reference-connection > .connection-fasteners { margin: 0 10px 10px; }
+.mounting-reference-evidence, .mounting-member-evidence { font-size: 10px; color: #8aa08e; border-top: 1px solid #edf1e9; padding: 0 12px; }
+.mounting-reference-evidence > summary, .mounting-member-evidence > summary { padding: 12px 0; cursor: pointer; }
+.mounting-reference-evidence > p { line-height: 1.8; margin: 0 0 8px; }
+.mounting-reference-evidence .mechanics-metrics { padding-bottom: 10px; }
+.mounting-choices .mounting-selected-site { margin: 0 12px; padding-block: 12px; }
+.review-supplement-sources { margin-top: 10px; border-top: 1px solid #e8e6d8; color: #a49873; font-size: 10px; }
+.review-supplement-sources > summary { cursor: pointer; padding: 11px 0; }
+.connector-insertion-note { font-size: 10px; line-height: 1.8; color: #a19469; padding-top: 8px; }
+.mounting-reference-connection button:focus-visible, .mounting-choices > summary:focus-visible { outline: 2px solid #4e9094; outline-offset: 2px; }

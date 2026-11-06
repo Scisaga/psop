@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="850" viewBox="0 0 1440 850" role="img" aria-labelledby="figure-title figure-desc">
+<title id="figure-title">PSOP 能力构建与使用流程</title>
+<desc id="figure-desc">原始材料经 psop@build 形成 build-profile DKP。psop@compile 只读 build 快照，构建具体 EG、headless 可执行世界、训练数据、模型和工作台，形成 compile-profile DKP。EG 只描述任务 SOP，训练语料在数据侧独立引用，Qwen-ASR、YOLO、RelateAnything、MiniCPM-V 4.6 接受独立和组合评测，再导出到终端以照片和提问提供帮助；终端不加载 EG，物理操作由操作者完成，不新增生产阶段。psop@simulate 只读 compile 快照，生成独立 Web 3D 沙盒。沙盒候选反馈经授权和审核后只能进入后续独立 revision，不能修改当前快照。</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1L9 5L1 9Z" fill="#35434A"/></marker><symbol id="icon-document" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h8l4 4v14H6z M14 3v5h4 M9 12h6 M9 16h6"/></symbol><symbol id="icon-graph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="9" width="5" height="6" rx="1"/><rect x="17" y="2" width="5" height="6" rx="1"/><rect x="17" y="16" width="5" height="6" rx="1"/><path d="M7 12h5V5h5 M12 12v7h5"/></symbol><symbol id="icon-chip" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="5" width="14" height="14" rx="2"/><rect x="9" y="9" width="6" height="6" rx="1"/><path d="M9 2v3 M15 2v3 M9 19v3 M15 19v3 M2 9h3 M2 15h3 M19 9h3 M19 15h3"/></symbol><symbol id="icon-cube" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l9 5v10l-9 5-9-5V7z M3 7l9 5 9-5 M12 12v10 M7.5 4.5l9 5v5"/></symbol><symbol id="icon-package" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7l9-4 9 4v13H3z M3 7h18 M10 7v5h4V7"/></symbol><symbol id="icon-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M10 5h4 M10 19h4"/></symbol><symbol id="icon-eye" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></symbol><symbol id="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l9 4v6c0 5-9 10-9 10S3 17 3 12V6z M7 12l3 3 7-7"/></symbol><symbol id="icon-refresh" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 8A8 8 0 0 0 5 6L2 9 M2 3v6h6 M4 16a8 8 0 0 0 15 2l3-3 M16 15h6v6"/></symbol><symbol id="icon-device" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8 M12 17v4 M7 8h10 M7 12h5"/></symbol></defs>
+<g font-family="&quot;Noto Sans CJK SC&quot;, &quot;Source Han Sans SC&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-serif">
+<rect x="0" y="0" width="1440" height="850" rx="0" fill="#FFFFFF"/>
+<text x="32" y="48" font-size="29" font-weight="700" fill="#202B33" text-anchor="start">PSOP 能力构建与使用流程</text>
+<text x="32" y="81" font-size="17" font-weight="400" fill="#536875" text-anchor="start">三个正式生产环节、两次 DKP 快照、一个包外沙盒；终端照片＋提问获得无 EG 帮助</text>
+<text x="1408" y="47" font-size="20" font-weight="700" fill="#0079CC" text-anchor="end">PSOP</text>
+<g id="build" data-group="build">
+<rect x="32" y="130" width="408" height="470" rx="10" fill="#F0F5FC" stroke="#2674AF" stroke-width="1.7"/>
+<text x="236.0" y="164" font-size="22" font-weight="700" fill="#0079CC" text-anchor="middle">01  psop@build</text>
+</g>
+<g id="compile" data-group="compile">
+<rect x="516" y="130" width="408" height="470" rx="10" fill="#F0F5FC" stroke="#2674AF" stroke-width="1.7"/>
+<text x="720.0" y="164" font-size="22" font-weight="700" fill="#0079CC" text-anchor="middle">02  psop@compile</text>
+</g>
+<g id="simulate" data-group="simulate">
+<rect x="1000" y="130" width="408" height="470" rx="10" fill="#F0F5FC" stroke="#2674AF" stroke-width="1.7"/>
+<text x="1204.0" y="164" font-size="22" font-weight="700" fill="#0079CC" text-anchor="middle">03  psop@simulate</text>
+</g>
+<rect x="32" y="710" width="1376" height="56" rx="8" fill="#F3F4F4" stroke="#173746" stroke-width="1.7"/>
+<text x="52" y="745" font-size="21" font-weight="700" fill="#0079CC" text-anchor="start">不可变边界</text>
+<text x="288" y="745" font-size="18" font-weight="400" fill="#202B33" text-anchor="start">同一 package_id 的新快照逐阶段增强 · simulate 不创建 DKP profile · 反馈不原地修改当前发布链</text>
+<path d="M 236 262 L 236 282" fill="none" stroke="#35434A" stroke-width="1.6" marker-end="url(#arrow)"/>
+<path d="M 236 360 L 236 395" fill="none" stroke="#35434A" stroke-width="1.6" marker-end="url(#arrow)"/>
+<path d="M 236 473 L 236 508" fill="none" stroke="#35434A" stroke-width="1.6" marker-end="url(#arrow)"/>
+<path d="M 720 262 L 720 282" fill="none" stroke="#35434A" stroke-width="1.6" marker-end="url(#arrow)"/>
+<path d="M 720 360 L 720 395" fill="none" stroke="#35434A" stroke-width="1.6" marker-end="url(#arrow)"/>
+<path d="M 720 473 L 720 508" fill="none" stroke="#35434A" stroke-width="1.6" marker-end="url(#arrow)"/>
+<path d="M 1204 262 L 1204 282" fill="none" stroke="#35434A" stroke-width="1.6" marker-end="url(#arrow)"/>
+<path d="M 1204 360 L 1204 395" fill="none" stroke="#35434A" stroke-width="1.6" marker-end="url(#arrow)"/>
+<path d="M 1204 473 L 1204 508" fill="none" stroke="#35434A" stroke-width="1.6" marker-end="url(#arrow)"/>
+<path d="M 440 547 L 478 547" fill="none" stroke="#35434A" stroke-width="1.6"/>
+<path d="M 478 547 L 478.0 398.0" fill="none" stroke="#35434A" stroke-width="1.6"/>
+<path d="M 478.0 372.0 L 478 223" fill="none" stroke="#35434A" stroke-width="1.6"/>
+<path d="M 478 223 L 516 223" fill="none" stroke="#35434A" stroke-width="1.6" marker-end="url(#arrow)"/>
+<path d="M 924 547 L 962 547" fill="none" stroke="#35434A" stroke-width="1.6"/>
+<path d="M 962 547 L 962.0 398.0" fill="none" stroke="#35434A" stroke-width="1.6"/>
+<path d="M 962.0 372.0 L 962 223" fill="none" stroke="#35434A" stroke-width="1.6"/>
+<path d="M 962 223 L 1000 223" fill="none" stroke="#35434A" stroke-width="1.6" marker-end="url(#arrow)"/>
+<path d="M 1204 586 L 1204 650" fill="none" stroke="#35434A" stroke-width="1.6" stroke-dasharray="6 5"/>
+<path d="M 1204 650 L 908.25 650.0" fill="none" stroke="#35434A" stroke-width="1.6" stroke-dasharray="6 5"/>
+<path d="M 531.75 650.0 L 236 650" fill="none" stroke="#35434A" stroke-width="1.6" stroke-dasharray="6 5"/>
+<path d="M 236 650 L 236 600" fill="none" stroke="#35434A" stroke-width="1.6" stroke-dasharray="6 5" marker-end="url(#arrow)"/>
+<g id="build_input" data-node="build_input">
+<rect x="48" y="184" width="376" height="78" rx="6" fill="#FFFFFF" stroke="#173746" stroke-width="1.7"/>
+<use href="#icon-document" x="62" y="199" width="25" height="25" color="#0079CC"/>
+<text x="96" y="219" font-size="21" font-weight="500" fill="#202B33" text-anchor="start">输入：原始设备材料</text>
+<text x="63" y="246" font-size="17" font-weight="400" fill="#536875" text-anchor="start">说明书 · BOM · CAD · 图片 / 视频</text>
+</g>
+<g id="build_process" data-node="build_process">
+<rect x="48" y="282" width="376" height="78" rx="6" fill="#FFFFFF" stroke="#173746" stroke-width="1.7"/>
+<use href="#icon-graph" x="62" y="297" width="25" height="25" color="#0079CC"/>
+<text x="96" y="317" font-size="21" font-weight="500" fill="#202B33" text-anchor="start">构建设备本体知识库</text>
+<text x="63" y="344" font-size="17" font-weight="400" fill="#536875" text-anchor="start">稳定 ID · 关系 · 证据 · 几何 · 源预览</text>
+</g>
+<g id="build_frontend" data-node="build_frontend">
+<rect x="48" y="395" width="376" height="78" rx="6" fill="#FFFFFF" stroke="#173746" stroke-width="1.7"/>
+<use href="#icon-eye" x="62" y="410" width="25" height="25" color="#0079CC"/>
+<text x="96" y="430" font-size="21" font-weight="500" fill="#202B33" text-anchor="start">apps/build/ 知识 App</text>
+<text x="63" y="457" font-size="17" font-weight="400" fill="#536875" text-anchor="start">语义爆炸图 · 图谱浏览与查询</text>
+</g>
+<g id="build_output" data-node="build_output">
+<rect x="48" y="508" width="376" height="78" rx="6" fill="#FFFFFF" stroke="#173746" stroke-width="1.7"/>
+<use href="#icon-package" x="62" y="523" width="25" height="25" color="#0079CC"/>
+<text x="96" y="543" font-size="21" font-weight="500" fill="#202B33" text-anchor="start">验证并冻结 build DKP</text>
+<text x="63" y="570" font-size="17" font-weight="400" fill="#536875" text-anchor="start">profile · manifest · digest</text>
+</g>
+<g id="compile_input" data-node="compile_input">
+<rect x="532" y="184" width="376" height="78" rx="6" fill="#FFFFFF" stroke="#173746" stroke-width="1.7"/>
+<use href="#icon-check" x="546" y="199" width="25" height="25" color="#0079CC"/>
+<text x="580" y="219" font-size="21" font-weight="500" fill="#202B33" text-anchor="start">输入：只读 build 快照</text>
+<text x="547" y="246" font-size="17" font-weight="400" fill="#536875" text-anchor="start">固定 package / build digest</text>
+</g>
+<g id="compile_process" data-node="compile_process">
+<rect x="532" y="282" width="376" height="78" rx="6" fill="#FFFFFF" stroke="#173746" stroke-width="1.7"/>
+<use href="#icon-chip" x="546" y="297" width="25" height="25" color="#0079CC"/>
+<text x="580" y="317" font-size="21" font-weight="500" fill="#202B33" text-anchor="start">任务 SOP 与确定性执行</text>
+<text x="547" y="344" font-size="17" font-weight="400" fill="#536875" text-anchor="start">十四视图 · 反事实 · 四模型训练</text>
+</g>
+<g id="compile_frontend" data-node="compile_frontend">
+<rect x="532" y="395" width="376" height="78" rx="6" fill="#FFFFFF" stroke="#173746" stroke-width="1.7"/>
+<use href="#icon-eye" x="546" y="410" width="25" height="25" color="#0079CC"/>
+<text x="580" y="430" font-size="21" font-weight="500" fill="#202B33" text-anchor="start">apps/compile/ 工作台</text>
+<text x="547" y="457" font-size="17" font-weight="400" fill="#536875" text-anchor="start">SOP／语料分区 · 模型 · 评测</text>
+</g>
+<g id="compile_output" data-node="compile_output">
+<rect x="532" y="508" width="376" height="78" rx="6" fill="#FFFFFF" stroke="#173746" stroke-width="1.7"/>
+<use href="#icon-package" x="546" y="523" width="25" height="25" color="#0079CC"/>
+<text x="580" y="543" font-size="21" font-weight="500" fill="#202B33" text-anchor="start">验证并冻结 compile DKP</text>
+<text x="547" y="570" font-size="17" font-weight="400" fill="#536875" text-anchor="start">SOP独立于语料 · 模型导出到终端</text>
+</g>
+<g id="simulate_input" data-node="simulate_input">
+<rect x="1016" y="184" width="376" height="78" rx="6" fill="#FFFFFF" stroke="#173746" stroke-width="1.7"/>
+<use href="#icon-check" x="1030" y="199" width="25" height="25" color="#0079CC"/>
+<text x="1064" y="219" font-size="21" font-weight="500" fill="#202B33" text-anchor="start">输入：只读 compile 快照</text>
+<text x="1031" y="246" font-size="17" font-weight="400" fill="#536875" text-anchor="start">复用 kernel 语义 · 场景资产 · API</text>
+</g>
+<g id="simulate_process" data-node="simulate_process">
+<rect x="1016" y="282" width="376" height="78" rx="6" fill="#FFFFFF" stroke="#173746" stroke-width="1.7"/>
+<use href="#icon-cube" x="1030" y="297" width="25" height="25" color="#0079CC"/>
+<text x="1064" y="317" font-size="21" font-weight="500" fill="#202B33" text-anchor="start">构建交互式 Web 3D 沙盒</text>
+<text x="1031" y="344" font-size="17" font-weight="400" fill="#536875" text-anchor="start">用户 / Agent · 内建设备模型推理</text>
+</g>
+<g id="simulate_output" data-node="simulate_output">
+<rect x="1016" y="395" width="376" height="78" rx="6" fill="#FFFFFF" stroke="#173746" stroke-width="1.7"/>
+<use href="#icon-device" x="1030" y="410" width="25" height="25" color="#0079CC"/>
+<text x="1064" y="430" font-size="21" font-weight="500" fill="#202B33" text-anchor="start">独立 &lt;simulate-output&gt;/</text>
+<text x="1031" y="457" font-size="17" font-weight="400" fill="#536875" text-anchor="start">不是 DKP profile · 不回写输入</text>
+</g>
+<g id="simulate_feedback" data-node="simulate_feedback">
+<rect x="1016" y="508" width="376" height="78" rx="6" fill="#FFFFFF" stroke="#173746" stroke-width="1.7"/>
+<use href="#icon-refresh" x="1030" y="523" width="25" height="25" color="#0079CC"/>
+<text x="1064" y="543" font-size="21" font-weight="500" fill="#202B33" text-anchor="start">候选反馈 bundle</text>
+<text x="1031" y="570" font-size="17" font-weight="400" fill="#536875" text-anchor="start">授权 · 隐私 · 审核 · 后续 revision</text>
+</g>
+<text x="32" y="805" font-size="16" font-weight="400" fill="#536875" text-anchor="start">Codex 提出候选并以 typed action 操作；kernel、约束、BHV 与 EG 验证器证明真值。</text>
+<text x="1408" y="805" font-size="16" font-weight="400" fill="#536875" text-anchor="end">隐藏真值不可旁路视觉输入</text>
+<text x="478" y="390" font-size="15" font-weight="400" fill="#536875" text-anchor="middle">只读</text>
+<text x="962" y="390" font-size="15" font-weight="400" fill="#536875" text-anchor="middle">只读</text>
+<text x="720" y="655" font-size="15" font-weight="400" fill="#536875" text-anchor="middle">经授权审核后进入后续 build / compile revision</text>
+</g>
+</svg>

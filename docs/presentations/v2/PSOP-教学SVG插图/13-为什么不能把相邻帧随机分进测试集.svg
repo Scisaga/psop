@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <title>为什么不能把相邻帧随机分进测试集</title>
+  <desc>PSOP 第 13 / 65 页教学图；文字与方法图保持可编辑。Microduck 视图由官方来源 STL 和 robot_walk.xml 的 source assembly 渲染，配置为 walk-model-reference、MCD-000001。alpha 软件任务身份与该几何参考的实物对应尚未核验；MD-01、S03、J01 和 EG 为教学定义。</desc>
+  <defs>
+    <linearGradient id="steel" x1="0" y1="0" x2="0.9" y2="1">
+      <stop stop-color="#EAF0F3" />
+      <stop offset=".37" stop-color="#A9BBC6" />
+      <stop offset=".63" stop-color="#F1F5F5" />
+      <stop offset="1" stop-color="#859CA9" />
+    </linearGradient>
+  </defs>
+  <g id="base" transform="translate(0 0)">
+    <rect x="0" y="0" width="1600" height="900" rx="0" fill="#FCFDFB" />
+    <rect x="0" y="0" width="9" height="900" rx="0" fill="#326BB8" />
+    <path d="M64 62 L1536 62" stroke="#D7E1E7" fill="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+    <text x="64.000" y="41.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="18.999" font-weight="400" data-text="PSOP  /  从工程问题到可学习的输入" aria-label="PSOP  /  从工程问题到可学习的输入" xml:space="preserve" textLength="311.484" lengthAdjust="spacingAndGlyphs" fill="#526578">PSOP  /  从工程问题到可学习的输入</text>
+    <text x="1355.287" y="41.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="18.999" font-weight="400" data-text="LESSON 01  ·  13/65" aria-label="LESSON 01  ·  13/65" xml:space="preserve" textLength="180.021" lengthAdjust="spacingAndGlyphs" fill="#526578">LESSON 01  ·  13/65</text>
+  </g>
+  <g id="title" transform="translate(0 0)">
+    <text x="64.000" y="125.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="48.001" font-weight="700" data-text="为什么不能把相邻帧随机分进测试集" aria-label="为什么不能把相邻帧随机分进测试集" xml:space="preserve" textLength="768.001" lengthAdjust="spacingAndGlyphs" fill="#18344C">为什么不能把相邻帧随机分进测试集</text>
+    <text x="64.000" y="177.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="24.001" font-weight="400" data-text="同一视频的相邻帧、同一录音的切片和同一轨迹的状态常高度相似。随机拆散这些记录，模型可能在测试中见到训练样" aria-label="同一视频的相邻帧、同一录音的切片和同一轨迹的状态常高度相似。随机拆散这些记录，模型可能在测试中见到训练样" xml:space="preserve" textLength="1248.001" lengthAdjust="spacingAndGlyphs" fill="#526578">同一视频的相邻帧、同一录音的切片和同一轨迹的状态常高度相似。随机拆散这些记录，模型可能在测试中见到训练样</text>
+    <text x="64.000" y="209.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="24.001" font-weight="400" data-text="本的近重复，得到无法代表新作业的高分。" aria-label="本的近重复，得到无法代表新作业的高分。" xml:space="preserve" textLength="456.001" lengthAdjust="spacingAndGlyphs" fill="#526578">本的近重复，得到无法代表新作业的高分。</text>
+  </g>
+  <g id="beat_01" transform="translate(0 0)">
+    <g id="illustration" transform="translate(64 237)">
+      <text x="0.000" y="29.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="27.001" font-weight="700" data-text="按相邻帧随机拆分" aria-label="按相邻帧随机拆分" xml:space="preserve" textLength="216.001" lengthAdjust="spacingAndGlyphs" fill="#BE574C">按相邻帧随机拆分</text>
+      <text x="748.000" y="29.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="27.001" font-weight="700" data-text="按完整作业拆分" aria-label="按完整作业拆分" xml:space="preserve" textLength="189.001" lengthAdjust="spacingAndGlyphs" fill="#14877D">按完整作业拆分</text>
+      <text x="0.000" y="88.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="700" data-text="作业 A" aria-label="作业 A" xml:space="preserve" textLength="65.500" lengthAdjust="spacingAndGlyphs" fill="#18344C">作业 A</text>
+      <rect x="106" y="58" width="53" height="41" rx="5" fill="#EAF1FA" stroke="#326BB8" stroke-width="1.5" />
+      <rect x="171" y="58" width="53" height="41" rx="5" fill="#E8F5F1" stroke="#14877D" stroke-width="1.5" />
+      <rect x="236" y="58" width="53" height="41" rx="5" fill="#F0ECF7" stroke="#7756AA" stroke-width="1.5" />
+      <rect x="301" y="58" width="53" height="41" rx="5" fill="#EAF1FA" stroke="#326BB8" stroke-width="1.5" />
+      <rect x="366" y="58" width="53" height="41" rx="5" fill="#E8F5F1" stroke="#14877D" stroke-width="1.5" />
+      <rect x="431" y="58" width="53" height="41" rx="5" fill="#F0ECF7" stroke="#7756AA" stroke-width="1.5" />
+      <rect x="496" y="58" width="53" height="41" rx="5" fill="#EAF1FA" stroke="#326BB8" stroke-width="1.5" />
+      <rect x="561" y="58" width="53" height="41" rx="5" fill="#E8F5F1" stroke="#14877D" stroke-width="1.5" />
+      <text x="748.000" y="88.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="700" data-text="训练：作业 A" aria-label="训练：作业 A" xml:space="preserve" textLength="134.500" lengthAdjust="spacingAndGlyphs" fill="#326BB8">训练：作业 A</text>
+      <rect x="930" y="58" width="49" height="41" rx="5" fill="#EAF1FA" stroke="#326BB8" stroke-width="1.5" />
+      <rect x="991" y="58" width="49" height="41" rx="5" fill="#EAF1FA" stroke="#326BB8" stroke-width="1.5" />
+      <rect x="1052" y="58" width="49" height="41" rx="5" fill="#EAF1FA" stroke="#326BB8" stroke-width="1.5" />
+      <rect x="1113" y="58" width="49" height="41" rx="5" fill="#EAF1FA" stroke="#326BB8" stroke-width="1.5" />
+      <rect x="1174" y="58" width="49" height="41" rx="5" fill="#EAF1FA" stroke="#326BB8" stroke-width="1.5" />
+      <rect x="1235" y="58" width="49" height="41" rx="5" fill="#EAF1FA" stroke="#326BB8" stroke-width="1.5" />
+      <rect x="1296" y="58" width="49" height="41" rx="5" fill="#EAF1FA" stroke="#326BB8" stroke-width="1.5" />
+      <rect x="1357" y="58" width="49" height="41" rx="5" fill="#EAF1FA" stroke="#326BB8" stroke-width="1.5" />
+      <text x="0.000" y="150.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="700" data-text="作业 B" aria-label="作业 B" xml:space="preserve" textLength="65.500" lengthAdjust="spacingAndGlyphs" fill="#18344C">作业 B</text>
+      <rect x="106" y="120" width="53" height="41" rx="5" fill="#E8F5F1" stroke="#14877D" stroke-width="1.5" />
+      <rect x="171" y="120" width="53" height="41" rx="5" fill="#F0ECF7" stroke="#7756AA" stroke-width="1.5" />
+      <rect x="236" y="120" width="53" height="41" rx="5" fill="#EAF1FA" stroke="#326BB8" stroke-width="1.5" />
+      <rect x="301" y="120" width="53" height="41" rx="5" fill="#E8F5F1" stroke="#14877D" stroke-width="1.5" />
+      <rect x="366" y="120" width="53" height="41" rx="5" fill="#F0ECF7" stroke="#7756AA" stroke-width="1.5" />
+      <rect x="431" y="120" width="53" height="41" rx="5" fill="#EAF1FA" stroke="#326BB8" stroke-width="1.5" />
+      <rect x="496" y="120" width="53" height="41" rx="5" fill="#E8F5F1" stroke="#14877D" stroke-width="1.5" />
+      <rect x="561" y="120" width="53" height="41" rx="5" fill="#F0ECF7" stroke="#7756AA" stroke-width="1.5" />
+      <text x="748.000" y="150.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="700" data-text="验证：作业 B" aria-label="验证：作业 B" xml:space="preserve" textLength="134.500" lengthAdjust="spacingAndGlyphs" fill="#14877D">验证：作业 B</text>
+      <rect x="930" y="120" width="49" height="41" rx="5" fill="#E8F5F1" stroke="#14877D" stroke-width="1.5" />
+      <rect x="991" y="120" width="49" height="41" rx="5" fill="#E8F5F1" stroke="#14877D" stroke-width="1.5" />
+      <rect x="1052" y="120" width="49" height="41" rx="5" fill="#E8F5F1" stroke="#14877D" stroke-width="1.5" />
+      <rect x="1113" y="120" width="49" height="41" rx="5" fill="#E8F5F1" stroke="#14877D" stroke-width="1.5" />
+      <rect x="1174" y="120" width="49" height="41" rx="5" fill="#E8F5F1" stroke="#14877D" stroke-width="1.5" />
+      <rect x="1235" y="120" width="49" height="41" rx="5" fill="#E8F5F1" stroke="#14877D" stroke-width="1.5" />
+      <rect x="1296" y="120" width="49" height="41" rx="5" fill="#E8F5F1" stroke="#14877D" stroke-width="1.5" />
+      <rect x="1357" y="120" width="49" height="41" rx="5" fill="#E8F5F1" stroke="#14877D" stroke-width="1.5" />
+      <text x="0.000" y="212.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="700" data-text="作业 C" aria-label="作业 C" xml:space="preserve" textLength="65.500" lengthAdjust="spacingAndGlyphs" fill="#18344C">作业 C</text>
+      <rect x="106" y="182" width="53" height="41" rx="5" fill="#F0ECF7" stroke="#7756AA" stroke-width="1.5" />
+      <rect x="171" y="182" width="53" height="41" rx="5" fill="#EAF1FA" stroke="#326BB8" stroke-width="1.5" />
+      <rect x="236" y="182" width="53" height="41" rx="5" fill="#E8F5F1" stroke="#14877D" stroke-width="1.5" />
+      <rect x="301" y="182" width="53" height="41" rx="5" fill="#F0ECF7" stroke="#7756AA" stroke-width="1.5" />
+      <rect x="366" y="182" width="53" height="41" rx="5" fill="#EAF1FA" stroke="#326BB8" stroke-width="1.5" />
+      <rect x="431" y="182" width="53" height="41" rx="5" fill="#E8F5F1" stroke="#14877D" stroke-width="1.5" />
+      <rect x="496" y="182" width="53" height="41" rx="5" fill="#F0ECF7" stroke="#7756AA" stroke-width="1.5" />
+      <rect x="561" y="182" width="53" height="41" rx="5" fill="#EAF1FA" stroke="#326BB8" stroke-width="1.5" />
+      <text x="748.000" y="212.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="700" data-text="测试：作业 C" aria-label="测试：作业 C" xml:space="preserve" textLength="134.500" lengthAdjust="spacingAndGlyphs" fill="#7756AA">测试：作业 C</text>
+      <rect x="930" y="182" width="49" height="41" rx="5" fill="#F0ECF7" stroke="#7756AA" stroke-width="1.5" />
+      <rect x="991" y="182" width="49" height="41" rx="5" fill="#F0ECF7" stroke="#7756AA" stroke-width="1.5" />
+      <rect x="1052" y="182" width="49" height="41" rx="5" fill="#F0ECF7" stroke="#7756AA" stroke-width="1.5" />
+      <rect x="1113" y="182" width="49" height="41" rx="5" fill="#F0ECF7" stroke="#7756AA" stroke-width="1.5" />
+      <rect x="1174" y="182" width="49" height="41" rx="5" fill="#F0ECF7" stroke="#7756AA" stroke-width="1.5" />
+      <rect x="1235" y="182" width="49" height="41" rx="5" fill="#F0ECF7" stroke="#7756AA" stroke-width="1.5" />
+      <rect x="1296" y="182" width="49" height="41" rx="5" fill="#F0ECF7" stroke="#7756AA" stroke-width="1.5" />
+      <rect x="1357" y="182" width="49" height="41" rx="5" fill="#F0ECF7" stroke="#7756AA" stroke-width="1.5" />
+      <path d="M705 10 L705 283" stroke="#D7E1E7" fill="none" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" />
+      <text x="0.000" y="302.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="700" data-text="同一过程的信息可能跨集合泄漏" aria-label="同一过程的信息可能跨集合泄漏" xml:space="preserve" textLength="321.999" lengthAdjust="spacingAndGlyphs" fill="#BE574C">同一过程的信息可能跨集合泄漏</text>
+      <text x="748.000" y="302.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="700" data-text="评价模型面对新过程的能力" aria-label="评价模型面对新过程的能力" xml:space="preserve" textLength="275.999" lengthAdjust="spacingAndGlyphs" fill="#14877D">评价模型面对新过程的能力</text>
+    </g>
+  </g>
+  <g id="beat_02" transform="translate(0 0)">
+    <text x="64.000" y="617.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.000" font-weight="700" data-text="训练、验证、测试各有角色" aria-label="训练、验证、测试各有角色" xml:space="preserve" textLength="300.000" lengthAdjust="spacingAndGlyphs" fill="#326BB8">训练、验证、测试各有角色</text>
+    <text x="64.000" y="656.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="训练集更新参数，验证集选择阈值和检查" aria-label="训练集更新参数，验证集选择阈值和检查" xml:space="preserve" textLength="413.999" lengthAdjust="spacingAndGlyphs" fill="#526578">训练集更新参数，验证集选择阈值和检查</text>
+    <text x="64.000" y="686.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="点，测试集在选择完成后评价。不能反复按" aria-label="点，测试集在选择完成后评价。不能反复按" xml:space="preserve" textLength="436.999" lengthAdjust="spacingAndGlyphs" fill="#526578">点，测试集在选择完成后评价。不能反复按</text>
+    <text x="64.000" y="716.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="测试结果挑选模型。" aria-label="测试结果挑选模型。" xml:space="preserve" textLength="206.999" lengthAdjust="spacingAndGlyphs" fill="#526578">测试结果挑选模型。</text>
+    <text x="570.000" y="617.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.000" font-weight="700" data-text="先定义想证明哪种泛化" aria-label="先定义想证明哪种泛化" xml:space="preserve" textLength="250.000" lengthAdjust="spacingAndGlyphs" fill="#14877D">先定义想证明哪种泛化</text>
+    <text x="570.000" y="656.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="跨新作业、设备、工位或未来时间的目标不" aria-label="跨新作业、设备、工位或未来时间的目标不" xml:space="preserve" textLength="436.999" lengthAdjust="spacingAndGlyphs" fill="#526578">跨新作业、设备、工位或未来时间的目标不</text>
+    <text x="570.000" y="686.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="同。划分单位应对应这种目标，通常要保留" aria-label="同。划分单位应对应这种目标，通常要保留" xml:space="preserve" textLength="436.999" lengthAdjust="spacingAndGlyphs" fill="#526578">同。划分单位应对应这种目标，通常要保留</text>
+    <text x="570.000" y="716.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="完整轨迹或对象组。" aria-label="完整轨迹或对象组。" xml:space="preserve" textLength="206.999" lengthAdjust="spacingAndGlyphs" fill="#526578">完整轨迹或对象组。</text>
+    <text x="1076.000" y="617.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.000" font-weight="700" data-text="按切片观察退化原因" aria-label="按切片观察退化原因" xml:space="preserve" textLength="225.000" lengthAdjust="spacingAndGlyphs" fill="#7756AA">按切片观察退化原因</text>
+    <text x="1076.000" y="656.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="总体准确率可能掩盖遮挡、少数类别" aria-label="总体准确率可能掩盖遮挡、少数类别" xml:space="preserve" textLength="367.999" lengthAdjust="spacingAndGlyphs" fill="#526578">总体准确率可能掩盖遮挡、少数类别</text>
+    <text x="1076.000" y="686.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="和新设备退化。分组划分与分条件评" aria-label="和新设备退化。分组划分与分条件评" xml:space="preserve" textLength="367.999" lengthAdjust="spacingAndGlyphs" fill="#526578">和新设备退化。分组划分与分条件评</text>
+    <text x="1076.000" y="716.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="价要一起设计。" aria-label="价要一起设计。" xml:space="preserve" textLength="160.999" lengthAdjust="spacingAndGlyphs" fill="#526578">价要一起设计。</text>
+  </g>
+  <g id="beat_03" transform="translate(0 0)">
+    <path d="M64 760 L1536 760" stroke="#D7E1E7" fill="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+    <rect x="64" y="782" width="4" height="57" rx="2" fill="#326BB8" />
+    <text x="84.000" y="798.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.000" font-weight="400" data-text="假设一段作业有 300 帧：逐帧随机分配容易泄漏；将整段轨迹只放入一个集合，再用另一作业测试，更能检验新过程表现。" aria-label="假设一段作业有 300 帧：逐帧随机分配容易泄漏；将整段轨迹只放入一个集合，再用另一作业测试，更能检验新过程表现。" xml:space="preserve" textLength="1195.724" lengthAdjust="spacingAndGlyphs" fill="#18344C">假设一段作业有 300 帧：逐帧随机分配容易泄漏；将整段轨迹只放入一个集合，再用另一作业测试，更能检验新过程表现。</text>
+  </g>
+  <g id="footer" transform="translate(0 0)">
+    <text x="64.000" y="877.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="17.000" font-weight="400" data-text="学习手册 §04.5 / 04.6 / 22.9" aria-label="学习手册 §04.5 / 04.6 / 22.9" xml:space="preserve" textLength="217.359" lengthAdjust="spacingAndGlyphs" fill="#8898A8">学习手册 §04.5 / 04.6 / 22.9</text>
+    <text x="1247.000" y="877.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="17.000" font-weight="400" data-text="工程案例与数值示意的来源见逐页备注" aria-label="工程案例与数值示意的来源见逐页备注" xml:space="preserve" textLength="289.000" lengthAdjust="spacingAndGlyphs" fill="#8898A8">工程案例与数值示意的来源见逐页备注</text>
+  </g>
+</svg>

@@ -1,0 +1,27 @@
+{
+  "tool": "built-in image_gen.imagegen",
+  "date": "2026-10-15",
+  "asset": "installation-process.png",
+  "prompt": "Edit the first reference photo into a new, photorealistic photograph showing this exact Microduck robot DURING installation of its hip/leg servo assembly, not a finished product standing for a studio portrait.\nInput image 1 is the edit target and strict real-product appearance reference: official Microduck cream shell, rounded wedge/duck head, orange hinged beak, circular camera, long exposed neck made from stacked black rectangular servo bodies, white torso shell, exposed metal plate links, orange feet. Preserve these distinctive shapes and plausible real mechanical proportions.\nInput image 2 is supporting reference of the actual source CAD assembly; use its real hardware arrangement, not sphere/cylinder cartoon robot shapes.\nScene: a clean robotics workbench, dark charcoal antistatic work mat. The Microduck torso is supported in a small padded fixture, power disconnected. Its head and long neck remain recognizable in the upper background. One hip/upper-leg assembly is partially detached with a clear assembly gap; its orange foot/lower leg rests on the bench nearby. In the central foreground, a technician's two natural human hands are actually working: one hand holds and aligns the small black replacement servo and metal connecting bracket at the hip, the other hand is engaging a visible fastener with a precision screwdriver. Clearly show mid-installation action, correct tool contact, and the exposed joint/bracket. A few matching small screws and a spare connector may lie neatly on the mat.\nComposition: wide horizontal photograph for an installation-guidance slide, approximately 16:9. Main active joint and both hands centered in the lower-middle; head/neck remain visible. Keep the assembly point unobscured. Allow a small amount of uncluttered space at the upper left and far right for separate UI overlays added later. Natural detailed industrial photography, soft neutral workshop light, sharp mechanically credible fasteners, matte cream plastic, brushed metal and black servo cases, orange beak/feet.\nNo text, no labels, no arrows, no UI, no phone, no watermark. Do not depict a completed standing robot. No spherical cartoon head, no rounded barrel-like fake servos, no antenna, no oversized toy camera, no extra arms, no artificial cyan glowing parts. This is a generated installation scene for a prototype, not a claim of recorded real hardware work.",
+  "reference_images": [
+    "official-closeup.webp",
+    "model-assembled.png"
+  ],
+  "scene_status": "generated_installation_process_visual_for_design_prototype",
+  "target_region": {
+    "image_size": [
+      1672,
+      941
+    ],
+    "fastener_point": [
+      883,
+      527
+    ],
+    "hip_roi": [
+      650,
+      465,
+      950,
+      660
+    ]
+  }
+}

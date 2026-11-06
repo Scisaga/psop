@@ -1,0 +1,210 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1680" height="1120" viewBox="0 0 1680 1120" role="img" aria-labelledby="title desc">
+<title id="title">PSOP Compile · 模型版本与云端运行时</title><desc id="desc">白色平面工作台概念稿：模型版本列表与选中工件、训练记录、评测和云端运行时详情。ASR首期复用Qwen基础模型与独立DKP术语提示配置v03，不微调；其它角色为YOLO r05、RelateAnything r03、MiniCPM-V4.6 r08，云端组合r08不读取EG。所有指标和状态为示例。</desc>
+<defs>
+        <filter id="shadow" x="-20%" y="-30%" width="140%" height="170%"><feDropShadow dx="0" dy="4" stdDeviation="10" flood-color="#17283F" flood-opacity="0.045"/></filter>
+        <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#D6DEE8"/><stop offset=".5" stop-color="#8997AA"/><stop offset="1" stop-color="#C9D2DC"/></linearGradient>
+        <linearGradient id="servo-body" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#495A73"/><stop offset="1" stop-color="#26354C"/></linearGradient>
+        <linearGradient id="plate" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#E9EDF2"/><stop offset="1" stop-color="#CCD5E0"/></linearGradient>
+        <linearGradient id="photo" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#EAF0F6"/><stop offset="1" stop-color="#D8E1EC"/></linearGradient>
+        <marker id="arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0 L7 3.5 L0 7" fill="#A9B4C5"/></marker>
+        </defs><g font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif">
+<rect x="0" y="0" width="1680" height="1120" rx="0" fill="#F4F6FA" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="0" y="0" width="208" height="1120" rx="0" fill="#111D30" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="25" y="28" width="30" height="30" rx="8" fill="#5C60E8" stroke="none" stroke-width="1" opacity="1"/>
+<g transform="translate(30 33) scale(0.8333333333333334)" fill="none" stroke="#FFFFFF" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l10 5-10 5L2 8z M2 12l10 5 10-5 M2 16l10 5 10-5"/></g>
+<text x="66" y="47" font-size="23" fill="#FFFFFF" font-weight="650" text-anchor="start">PSOP</text>
+<text x="66" y="67" font-size="10" fill="#8899B3" font-weight="500" text-anchor="start" letter-spacing="2">COMPILE</text>
+<rect x="16" y="97" width="176" height="79" rx="9" fill="#1C2A42" stroke="none" stroke-width="1" opacity="1"/>
+<text x="30" y="124" font-size="16" fill="#F0F4FA" font-weight="600" text-anchor="start">Microduck</text>
+<g transform="translate(163 110) scale(0.6666666666666666)" fill="none" stroke="#B2BDD0" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></g>
+<text x="30" y="148" font-size="12" fill="#91A0B9" font-weight="400" text-anchor="start">双足机器人 · R2</text>
+<circle cx="32" cy="163" r="3" fill="#149E92" stroke="none" stroke-width="1" opacity="1"/>
+<text x="41" y="167" font-size="10" fill="#91A0B9" font-weight="400" text-anchor="start">build 快照已固定</text>
+<text x="27" y="207" font-size="11" fill="#6F829E" font-weight="500" text-anchor="start" letter-spacing="1">设备工作空间</text>
+<g transform="translate(28 234) scale(0.7916666666666666)" fill="none" stroke="#879AB8" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h6v6H3z M15 3h6v6h-6z M3 15h6v6H3z M15 15h6v6h-6z"/></g>
+<text x="58" y="250" font-size="14" fill="#ADBBD0" font-weight="400" text-anchor="start">设备能力总览</text>
+<g transform="translate(28 281) scale(0.7916666666666666)" fill="none" stroke="#879AB8" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h6v5H4z M14 15h6v5h-6z M7 9v8h7 M10 6h7v9"/></g>
+<text x="58" y="297" font-size="14" fill="#ADBBD0" font-weight="400" text-anchor="start">任务与执行图</text>
+<g transform="translate(28 328) scale(0.7916666666666666)" fill="none" stroke="#879AB8" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l10 5-10 5L2 8z M2 12l10 5 10-5 M2 16l10 5 10-5"/></g>
+<text x="58" y="344" font-size="14" fill="#ADBBD0" font-weight="400" text-anchor="start">训练语料</text>
+<rect x="14" y="365" width="180" height="40" rx="7" fill="#2B3559" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="14" y="374" width="3" height="21" rx="2" fill="#8F94FC" stroke="none" stroke-width="1" opacity="1"/>
+<g transform="translate(28 375) scale(0.7916666666666666)" fill="none" stroke="#C2C6FF" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10H7z M9 1v6 M15 1v6 M9 17v6 M15 17v6 M1 9h6 M1 15h6 M17 9h6 M17 15h6"/></g>
+<text x="58" y="391" font-size="14" fill="#E9ECFF" font-weight="500" text-anchor="start">模型与训练</text>
+<g transform="translate(28 422) scale(0.7916666666666666)" fill="none" stroke="#879AB8" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M4 3v18h17 M8 16v-4 M13 16V8 M18 16V5"/></g>
+<text x="58" y="438" font-size="14" fill="#ADBBD0" font-weight="400" text-anchor="start">评测与纠错</text>
+<g transform="translate(28 469) scale(0.7916666666666666)" fill="none" stroke="#879AB8" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.5 7.5L22 12l-7.5 2.5L12 22l-2.5-7.5L2 12l7.5-2.5z"/></g>
+<text x="58" y="485" font-size="14" fill="#ADBBD0" font-weight="400" text-anchor="start">现场帮助试验</text>
+<g transform="translate(28 516) scale(0.7916666666666666)" fill="none" stroke="#879AB8" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7l9-4 9 4v11l-9 4-9-4z M3 7l9 5 9-5 M12 12v10 M7 5l10 5"/></g>
+<text x="58" y="532" font-size="14" fill="#ADBBD0" font-weight="400" text-anchor="start">云端运行时</text>
+<line x1="24" y1="955" x2="184" y2="955" stroke="#273650" stroke-width="1"/>
+<text x="27" y="982" font-size="11" fill="#7489A7" font-weight="400" text-anchor="start">输入快照</text>
+<text x="27" y="1005" font-size="12" fill="#BDC9DC" font-weight="400" text-anchor="start">microduck.build · 1.3.2</text>
+<text x="27" y="1026" font-size="11" fill="#6F829E" font-weight="400" text-anchor="start">sha256: 68af…d42c</text>
+<g transform="translate(27 1050) scale(0.75)" fill="none" stroke="#90A3C0" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M9 7a3 3 0 0 1 6 0c0 3-3 3-3 6 M12 17h.01 M22 12a10 10 0 1 1-20 0a10 10 0 1 1 20 0"/></g>
+<text x="54" y="1065" font-size="12" fill="#90A3C0" font-weight="400" text-anchor="start">文档与帮助</text>
+<rect x="208" y="0" width="1472" height="76" rx="0" fill="#FFFFFF" stroke="none" stroke-width="1" opacity="1"/>
+<line x1="208" y1="76" x2="1680" y2="76" stroke="#E3E9F1" stroke-width="1"/>
+<text x="244" y="43" font-size="14" fill="#728096" font-weight="400" text-anchor="start">设备能力</text>
+<g transform="translate(309 28) scale(0.7083333333333334)" fill="none" stroke="#B0BCCB" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></g>
+<text x="340" y="43" font-size="14" fill="#19283E" font-weight="500" text-anchor="start">Microduck</text>
+<rect x="767" y="18" width="386" height="40" rx="7" fill="#F4F6FA" stroke="none" stroke-width="1" opacity="1"/>
+<g transform="translate(782 29) scale(0.75)" fill="none" stroke="#8B99AD" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M15 15l6 6 M18 10a8 8 0 1 1-16 0a8 8 0 1 1 16 0"/></g>
+<text x="810" y="44" font-size="13" fill="#93A0B2" font-weight="400" text-anchor="start">搜索任务、部件、语料或模型</text>
+<rect x="1185" y="25" width="154" height="27" rx="6" fill="#EEEEFE" stroke="none" stroke-width="1" opacity="1"/>
+<text x="1262.0" y="42.82" font-size="12" fill="#5C60E8" font-weight="500" text-anchor="middle">compile · v2.0.0</text>
+<g transform="translate(1376 28) scale(0.8333333333333334)" fill="none" stroke="#728096" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-8 10-8 10S4 17 4 12V6z M8 12l3 3 5-6"/></g>
+<text x="1405" y="43" font-size="12" fill="#728096" font-weight="400" text-anchor="start">compile 工作台</text>
+<circle cx="1633" cy="38" r="17" fill="#E6EBF5" stroke="none" stroke-width="1" opacity="1"/>
+<text x="1633" y="43" font-size="13" fill="#63758E" font-weight="500" text-anchor="middle">林</text>
+<text x="244" y="129" font-size="30" fill="#19283E" font-weight="650" text-anchor="start">模型版本与云端运行时</text>
+<text x="244" y="160" font-size="14" fill="#728096" font-weight="400" text-anchor="start">按角色查看版本、适配记录与云端组合；ASR 首期复用基础模型与独立设备术语提示。</text>
+<rect x="1504" y="108" width="140" height="29" rx="6" fill="#E8F6F2" stroke="none" stroke-width="1" opacity="1"/>
+<text x="1574.0" y="126.82" font-size="12" fill="#149E92" font-weight="500" text-anchor="middle">目标产品设计</text>
+<rect x="208" y="1086" width="1472" height="34" rx="0" fill="#FFFFFF" stroke="none" stroke-width="1" opacity="1"/>
+<line x1="208" y1="1086" x2="1680" y2="1086" stroke="#E3E9F1" stroke-width="1"/>
+<circle cx="246" cy="1103" r="3" fill="#5C60E8" stroke="none" stroke-width="1" opacity="1"/>
+<text x="257" y="1107" font-size="11" fill="#728096" font-weight="400" text-anchor="start">概念 UI · 设备、数据、模型状态与输出均为示例，非已实现能力或真实维修依据</text>
+<text x="1642" y="1107" font-size="10" fill="#94A1B4" font-weight="500" text-anchor="end" letter-spacing="1.5">PSOP / COMPILE</text>
+<rect x="208" y="77" width="1472" height="1008" rx="0" fill="#FFFFFF" stroke="none" stroke-width="1" opacity="1"/>
+<text x="244" y="122" font-size="27" fill="#19283E" font-weight="650" text-anchor="start">模型版本与云端运行时</text>
+<text x="244" y="151" font-size="13" fill="#728096" font-weight="400" text-anchor="start">按角色查看版本、适配记录与云端组合；ASR 首期复用基础模型与独立设备术语提示。</text>
+<line x1="244" y1="169" x2="1644" y2="169" stroke="#E3E9F1" stroke-width="1"/>
+<text x="244" y="205" font-size="15" fill="#5C60E8" font-weight="600" text-anchor="start">模型版本</text>
+<text x="367" y="205" font-size="15" fill="#728096" font-weight="400" text-anchor="start">云端组合</text>
+<line x1="244" y1="224" x2="328" y2="224" stroke="#5C60E8" stroke-width="2.5"/>
+<rect x="1447" y="183" width="197" height="38" rx="7" fill="#5C60E8" stroke="none" stroke-width="1" opacity="1"/>
+<g transform="translate(1460 193) scale(0.75)" fill="none" stroke="#FFFFFF" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M12 16V4 M7 9l5-5 5 5 M4 17v4h16v-4"/></g>
+<text x="1554.5" y="208" font-size="14" fill="#FFFFFF" font-weight="500" text-anchor="middle">发布云端组合</text>
+<line x1="244" y1="232" x2="1644" y2="232" stroke="#E3E9F1" stroke-width="1"/>
+<line x1="716" y1="250" x2="716" y2="1064" stroke="#E3E9F1" stroke-width="1"/>
+<text x="244" y="275" font-size="18" fill="#19283E" font-weight="600" text-anchor="start">模型与配置</text>
+<rect x="244" y="294" width="448" height="34" rx="3" fill="#FFFFFF" stroke="#E3E9F1" stroke-width="1" opacity="1"/>
+<g transform="translate(255 303) scale(0.7083333333333334)" fill="none" stroke="#728096" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M15 15l6 6 M18 10a8 8 0 1 1-16 0a8 8 0 1 1 16 0"/></g>
+<text x="280" y="317" font-size="13" fill="#728096" font-weight="400" text-anchor="start">搜索模型、版本或适配记录</text>
+<text x="244" y="355" font-size="12" fill="#728096" font-weight="500" text-anchor="start">角色 / 模型</text>
+<text x="453" y="355" font-size="12" fill="#728096" font-weight="500" text-anchor="start">版本 / 配置</text>
+<text x="545" y="355" font-size="12" fill="#728096" font-weight="500" text-anchor="start">适配方式</text>
+<text x="664" y="355" font-size="12" fill="#728096" font-weight="500" text-anchor="start">状态</text>
+<line x1="244" y1="368" x2="692" y2="368" stroke="#E3E9F1" stroke-width="1"/>
+<g transform="translate(249 395) scale(0.7916666666666666)" fill="none" stroke="#728096" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6v11H9z M5 10v4a7 7 0 0 0 14 0v-4 M12 21v-3"/></g>
+<text x="277" y="411" font-size="15" fill="#19283E" font-weight="600" text-anchor="start">Qwen3-ASR</text>
+<text x="277" y="439" font-size="12" fill="#728096" font-weight="400" text-anchor="start">基础模型 + 术语配置</text>
+<text x="465" y="411" font-size="14" fill="#19283E" font-weight="500" text-anchor="start">r02 / v03</text>
+<text x="545" y="411" font-size="12" fill="#19283E" font-weight="400" text-anchor="start">术语提示</text>
+<text x="545" y="439" font-size="12" fill="#728096" font-weight="400" text-anchor="start">不微调</text>
+<circle cx="658" cy="407" r="3" fill="#149E92" stroke="none" stroke-width="1" opacity="1"/>
+<text x="668" y="411" font-size="12" fill="#149E92" font-weight="500" text-anchor="start">已验证</text>
+<line x1="244" y1="483" x2="692" y2="483" stroke="#E3E9F1" stroke-width="1"/>
+<g transform="translate(249 506) scale(0.7916666666666666)" fill="none" stroke="#728096" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h18v18H3z M3 18l6-7 5 5 3-4 4 6 M15 7h.01"/></g>
+<text x="277" y="522" font-size="15" fill="#19283E" font-weight="600" text-anchor="start">YOLO</text>
+<text x="277" y="550" font-size="12" fill="#728096" font-weight="400" text-anchor="start">部件与接口检测</text>
+<text x="465" y="522" font-size="14" fill="#19283E" font-weight="500" text-anchor="start">r05</text>
+<text x="545" y="522" font-size="12" fill="#19283E" font-weight="400" text-anchor="start">设备数据训练</text>
+<text x="545" y="550" font-size="12" fill="#728096" font-weight="400" text-anchor="start">检测模型</text>
+<circle cx="658" cy="518" r="3" fill="#149E92" stroke="none" stroke-width="1" opacity="1"/>
+<text x="668" y="522" font-size="12" fill="#149E92" font-weight="500" text-anchor="start">已验证</text>
+<line x1="244" y1="594" x2="692" y2="594" stroke="#E3E9F1" stroke-width="1"/>
+<g transform="translate(249 617) scale(0.7916666666666666)" fill="none" stroke="#728096" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14l4-4 M8 16l-2 2a4 4 0 0 1-6-6l4-4a4 4 0 0 1 6 0 M16 8l2-2a4 4 0 0 1 6 6l-4 4a4 4 0 0 1-6 0"/></g>
+<text x="277" y="633" font-size="15" fill="#19283E" font-weight="600" text-anchor="start">RelateAnything</text>
+<text x="277" y="661" font-size="12" fill="#728096" font-weight="400" text-anchor="start">可观察的部件关系</text>
+<text x="465" y="633" font-size="14" fill="#19283E" font-weight="500" text-anchor="start">r03</text>
+<text x="545" y="633" font-size="12" fill="#19283E" font-weight="400" text-anchor="start">关系数据微调</text>
+<text x="545" y="661" font-size="12" fill="#728096" font-weight="400" text-anchor="start">关系模型</text>
+<circle cx="658" cy="629" r="3" fill="#149E92" stroke="none" stroke-width="1" opacity="1"/>
+<text x="668" y="633" font-size="12" fill="#149E92" font-weight="500" text-anchor="start">已验证</text>
+<line x1="244" y1="705" x2="692" y2="705" stroke="#E3E9F1" stroke-width="1"/>
+<rect x="236" y="709" width="464" height="102" rx="0" fill="#EEEEFE" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="236" y="725" width="3" height="64" rx="0" fill="#5C60E8" stroke="none" stroke-width="1" opacity="1"/>
+<g transform="translate(249 728) scale(0.7916666666666666)" fill="none" stroke="#5C60E8" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.5 7.5L22 12l-7.5 2.5L12 22l-2.5-7.5L2 12l7.5-2.5z"/></g>
+<text x="277" y="744" font-size="15" fill="#5C60E8" font-weight="600" text-anchor="start">MiniCPM-V 4.6</text>
+<text x="277" y="772" font-size="12" fill="#728096" font-weight="400" text-anchor="start">现场理解与帮助</text>
+<text x="465" y="744" font-size="14" fill="#19283E" font-weight="500" text-anchor="start">r08</text>
+<text x="545" y="744" font-size="12" fill="#19283E" font-weight="400" text-anchor="start">现场帮助微调</text>
+<text x="545" y="772" font-size="12" fill="#728096" font-weight="400" text-anchor="start">帮助模型</text>
+<circle cx="658" cy="740" r="3" fill="#149E92" stroke="none" stroke-width="1" opacity="1"/>
+<text x="668" y="744" font-size="12" fill="#149E92" font-weight="500" text-anchor="start">已验证</text>
+<line x1="244" y1="816" x2="692" y2="816" stroke="#E3E9F1" stroke-width="1"/>
+<text x="244" y="875" font-size="16" fill="#19283E" font-weight="600" text-anchor="start">ASR 独立术语配置</text>
+<text x="244" y="909" font-size="14" fill="#19283E" font-weight="500" text-anchor="start">Microduck · v03</text>
+<text x="244" y="938" font-size="13" fill="#728096" font-weight="400" text-anchor="start">设备 / 部件名称、别名、型号、料号、接口术语</text>
+<text x="244" y="966" font-size="13" fill="#728096" font-weight="400" text-anchor="start">来源：DKP · build 1.3.2</text>
+<text x="244" y="994" font-size="13" fill="#19283E" font-weight="400" text-anchor="start">云端按设备加载 context / prompt</text>
+<text x="244" y="1022" font-size="13" fill="#5C60E8" font-weight="400" text-anchor="start">配置不属于 EG，首期不要求新增微调权重。</text>
+<text x="744" y="274" font-size="23" fill="#19283E" font-weight="600" text-anchor="start">MiniCPM-V 4.6 · r08</text>
+<circle cx="1473" cy="265" r="3" fill="#149E92" stroke="none" stroke-width="1" opacity="1"/>
+<text x="1483" y="269" font-size="13" fill="#149E92" font-weight="500" text-anchor="start">已验证 · 示例</text>
+<text x="744" y="304" font-size="13" fill="#728096" font-weight="400" text-anchor="start">TR-008 / DS-MCPM-008 / 设备范围：Microduck R2</text>
+<line x1="744" y1="326" x2="1644" y2="326" stroke="#E3E9F1" stroke-width="1"/>
+<text x="744" y="359" font-size="18" fill="#19283E" font-weight="600" text-anchor="start">工件与训练记录</text>
+<line x1="1205" y1="378" x2="1205" y2="521" stroke="#E3E9F1" stroke-width="1"/>
+<text x="744" y="388" font-size="12" fill="#728096" font-weight="500" text-anchor="start">工件</text>
+<text x="1038" y="388" font-size="12" fill="#728096" font-weight="500" text-anchor="start">用途</text>
+<line x1="744" y1="402" x2="1183" y2="402" stroke="#E3E9F1" stroke-width="1"/>
+<g transform="translate(745 413) scale(0.6666666666666666)" fill="none" stroke="#728096" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h7l2 3h9v12H3z"/></g>
+<text x="771" y="428" font-size="14" fill="#19283E" font-weight="400" text-anchor="start">model-r08.safetensors</text>
+<text x="1038" y="428" font-size="13" fill="#728096" font-weight="400" text-anchor="start">模型权重</text>
+<line x1="744" y1="441" x2="1183" y2="441" stroke="#E3E9F1" stroke-width="1"/>
+<g transform="translate(745 451) scale(0.6666666666666666)" fill="none" stroke="#728096" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h7l2 3h9v12H3z"/></g>
+<text x="771" y="466" font-size="14" fill="#19283E" font-weight="400" text-anchor="start">processor / tokenizer</text>
+<text x="1038" y="466" font-size="13" fill="#728096" font-weight="400" text-anchor="start">输入处理</text>
+<line x1="744" y1="479" x2="1183" y2="479" stroke="#E3E9F1" stroke-width="1"/>
+<g transform="translate(745 489) scale(0.6666666666666666)" fill="none" stroke="#728096" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h7l2 3h9v12H3z"/></g>
+<text x="771" y="504" font-size="14" fill="#19283E" font-weight="400" text-anchor="start">runtime-profile-r08</text>
+<text x="1038" y="504" font-size="13" fill="#728096" font-weight="400" text-anchor="start">推理适配</text>
+<line x1="744" y1="517" x2="1183" y2="517" stroke="#E3E9F1" stroke-width="1"/>
+<text x="1228" y="388" font-size="15" fill="#19283E" font-weight="600" text-anchor="start">训练记录 · TR-008</text>
+<circle cx="1231" cy="413" r="3" fill="#149E92" stroke="none" stroke-width="1" opacity="1"/>
+<text x="1244" y="417" font-size="13" fill="#728096" font-weight="400" text-anchor="start">设备语料微调结束</text>
+<circle cx="1231" cy="441" r="3" fill="#149E92" stroke="none" stroke-width="1" opacity="1"/>
+<text x="1244" y="445" font-size="13" fill="#728096" font-weight="400" text-anchor="start">Checkpoint 与训练记录已归档</text>
+<circle cx="1231" cy="469" r="3" fill="#149E92" stroke="none" stroke-width="1" opacity="1"/>
+<text x="1244" y="473" font-size="13" fill="#728096" font-weight="400" text-anchor="start">独立现场评测完成</text>
+<circle cx="1231" cy="497" r="3" fill="#149E92" stroke="none" stroke-width="1" opacity="1"/>
+<text x="1244" y="501" font-size="13" fill="#728096" font-weight="400" text-anchor="start">组合推理验证完成（示例）</text>
+<line x1="744" y1="545" x2="1644" y2="545" stroke="#E3E9F1" stroke-width="1"/>
+<text x="744" y="578" font-size="18" fill="#19283E" font-weight="600" text-anchor="start">选中版本评测</text>
+<text x="1644" y="576" font-size="12" fill="#728096" font-weight="400" text-anchor="end">结果为示例，需以实际验证为准</text>
+<text x="744" y="607" font-size="12" fill="#728096" font-weight="500" text-anchor="start">项目</text>
+<text x="1066" y="607" font-size="12" fill="#728096" font-weight="500" text-anchor="start">测试条件</text>
+<text x="1588" y="607" font-size="12" fill="#728096" font-weight="500" text-anchor="start">结果</text>
+<line x1="744" y1="621" x2="1644" y2="621" stroke="#E3E9F1" stroke-width="1"/>
+<text x="744" y="648" font-size="14" fill="#19283E" font-weight="400" text-anchor="start">现场帮助正确率</text>
+<text x="1066" y="648" font-size="13" fill="#728096" font-weight="400" text-anchor="start">不提供 EG</text>
+<text x="1644" y="648" font-size="14" fill="#19283E" font-weight="500" text-anchor="end">92.4%</text>
+<line x1="744" y1="661" x2="1644" y2="661" stroke="#E3E9F1" stroke-width="1"/>
+<text x="744" y="686" font-size="14" fill="#19283E" font-weight="400" text-anchor="start">证据不足处理率</text>
+<text x="1066" y="686" font-size="13" fill="#728096" font-weight="400" text-anchor="start">独立现场材料</text>
+<text x="1644" y="686" font-size="14" fill="#19283E" font-weight="500" text-anchor="end">96.8%</text>
+<line x1="744" y1="699" x2="1644" y2="699" stroke="#E3E9F1" stroke-width="1"/>
+<text x="744" y="724" font-size="14" fill="#19283E" font-weight="400" text-anchor="start">典型失败情况</text>
+<text x="1066" y="724" font-size="13" fill="#728096" font-weight="400" text-anchor="start">锁扣遮挡</text>
+<text x="1644" y="724" font-size="14" fill="#19283E" font-weight="500" text-anchor="end">仍需补充观察</text>
+<line x1="744" y1="744" x2="1644" y2="744" stroke="#E3E9F1" stroke-width="1"/>
+<text x="744" y="778" font-size="18" fill="#19283E" font-weight="600" text-anchor="start">云端运行时 · 组合 r08</text>
+<circle cx="1473" cy="771" r="3" fill="#149E92" stroke="none" stroke-width="1" opacity="1"/>
+<text x="1483" y="775" font-size="13" fill="#149E92" font-weight="500" text-anchor="start">已验证 · 示例</text>
+<text x="744" y="814" font-size="12" fill="#728096" font-weight="500" text-anchor="start">设备范围</text>
+<text x="842" y="814" font-size="13" fill="#19283E" font-weight="400" text-anchor="start">Microduck R2</text>
+<text x="744" y="842" font-size="12" fill="#728096" font-weight="500" text-anchor="start">模型组合</text>
+<text x="842" y="842" font-size="13" fill="#19283E" font-weight="400" text-anchor="start">Qwen-ASR r02 + 术语 v03 / YOLO r05 / RelateAnything r03 / MiniCPM-V r08</text>
+<text x="744" y="870" font-size="12" fill="#728096" font-weight="500" text-anchor="start">调用入口</text>
+<text x="842" y="870" font-size="13" fill="#19283E" font-weight="400" text-anchor="start">cloud-runtime-r08 · 授权调用</text>
+<text x="744" y="898" font-size="12" fill="#728096" font-weight="500" text-anchor="start">请求形式</text>
+<text x="842" y="898" font-size="13" fill="#19283E" font-weight="400" text-anchor="start">照片 + 问题；语音由 Qwen-ASR 结合设备术语提示转写</text>
+<text x="744" y="926" font-size="12" fill="#728096" font-weight="500" text-anchor="start">服务处理</text>
+<text x="842" y="926" font-size="13" fill="#19283E" font-weight="400" text-anchor="start">检测与关系预测 → MiniCPM-V → 帮助或追问</text>
+<text x="744" y="954" font-size="12" fill="#728096" font-weight="500" text-anchor="start">运行边界</text>
+<text x="842" y="954" font-size="13" fill="#19283E" font-weight="400" text-anchor="start">不读取 EG，不要求用户提供检测标注、关系或规范步骤</text>
+<text x="744" y="982" font-size="12" fill="#728096" font-weight="500" text-anchor="start">部署验证</text>
+<text x="842" y="982" font-size="13" fill="#19283E" font-weight="400" text-anchor="start">目标云环境：组合效果、响应与异常处理通过（示例）</text>
+<rect x="744" y="1018" width="148" height="38" rx="7" fill="#FFFFFF" stroke="#E3E9F1" stroke-width="1" opacity="1"/>
+<g transform="translate(757 1028) scale(0.75)" fill="none" stroke="#19283E" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M12 7v5l4 2 M22 12a10 10 0 1 1-20 0a10 10 0 1 1 20 0"/></g>
+<text x="827.0" y="1043" font-size="14" fill="#19283E" font-weight="500" text-anchor="middle">查看运行日志</text>
+<rect x="908" y="1018" width="170" height="38" rx="7" fill="#5C60E8" stroke="none" stroke-width="1" opacity="1"/>
+<g transform="translate(921 1028) scale(0.75)" fill="none" stroke="#FFFFFF" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.5 7.5L22 12l-7.5 2.5L12 22l-2.5-7.5L2 12l7.5-2.5z"/></g>
+<text x="1002.0" y="1043" font-size="14" fill="#FFFFFF" font-weight="500" text-anchor="middle">试用照片问答</text>
+<rect x="1094" y="1018" width="195" height="38" rx="7" fill="#FFFFFF" stroke="#E3E9F1" stroke-width="1" opacity="1"/>
+<g transform="translate(1107 1028) scale(0.75)" fill="none" stroke="#19283E" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12 M7 10l5 5 5-5 M4 17v4h16v-4"/></g>
+<text x="1200.5" y="1043" font-size="14" fill="#19283E" font-weight="500" text-anchor="middle">导出模型与配置</text>
+</g></svg>

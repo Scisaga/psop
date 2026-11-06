@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <title>四种学习方式从不同信号获得改进</title>
+  <desc>PSOP 第 10 / 65 页教学图；文字与方法图保持可编辑。Microduck 视图由官方来源 STL 和 robot_walk.xml 的 source assembly 渲染，配置为 walk-model-reference、MCD-000001。alpha 软件任务身份与该几何参考的实物对应尚未核验；MD-01、S03、J01 和 EG 为教学定义。</desc>
+  <defs>
+    <linearGradient id="steel" x1="0" y1="0" x2="0.9" y2="1">
+      <stop stop-color="#EAF0F3" />
+      <stop offset=".37" stop-color="#A9BBC6" />
+      <stop offset=".63" stop-color="#F1F5F5" />
+      <stop offset="1" stop-color="#859CA9" />
+    </linearGradient>
+  </defs>
+  <g id="base" transform="translate(0 0)">
+    <rect x="0" y="0" width="1600" height="900" rx="0" fill="#FCFDFB" />
+    <rect x="0" y="0" width="9" height="900" rx="0" fill="#326BB8" />
+    <path d="M64 62 L1536 62" stroke="#D7E1E7" fill="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+    <text x="64.000" y="41.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="18.999" font-weight="400" data-text="PSOP  /  从工程问题到可学习的输入" aria-label="PSOP  /  从工程问题到可学习的输入" xml:space="preserve" textLength="311.484" lengthAdjust="spacingAndGlyphs" fill="#526578">PSOP  /  从工程问题到可学习的输入</text>
+    <text x="1355.287" y="41.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="18.999" font-weight="400" data-text="LESSON 01  ·  10/65" aria-label="LESSON 01  ·  10/65" xml:space="preserve" textLength="180.021" lengthAdjust="spacingAndGlyphs" fill="#526578">LESSON 01  ·  10/65</text>
+  </g>
+  <g id="title" transform="translate(0 0)">
+    <text x="64.000" y="125.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="48.001" font-weight="700" data-text="四种学习方式从不同信号获得改进" aria-label="四种学习方式从不同信号获得改进" xml:space="preserve" textLength="720.001" lengthAdjust="spacingAndGlyphs" fill="#18344C">四种学习方式从不同信号获得改进</text>
+    <text x="64.000" y="177.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="24.001" font-weight="400" data-text="学习方式的差别，首先在于正确性信号从哪里来：人工标签、数据内部结构、数据构造的目标，或行动后的奖励。它们可以组合，但实验" aria-label="学习方式的差别，首先在于正确性信号从哪里来：人工标签、数据内部结构、数据构造的目标，或行动后的奖励。它们可以组合，但实验" xml:space="preserve" textLength="1440.001" lengthAdjust="spacingAndGlyphs" fill="#526578">学习方式的差别，首先在于正确性信号从哪里来：人工标签、数据内部结构、数据构造的目标，或行动后的奖励。它们可以组合，但实验</text>
+    <text x="64.000" y="209.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="24.001" font-weight="400" data-text="要明确每个阶段实际使用了什么监督。" aria-label="要明确每个阶段实际使用了什么监督。" xml:space="preserve" textLength="408.001" lengthAdjust="spacingAndGlyphs" fill="#526578">要明确每个阶段实际使用了什么监督。</text>
+  </g>
+  <g id="beat_01" transform="translate(0 0)">
+    <g id="illustration" transform="translate(64 237)">
+      <rect x="0" y="0" width="714" height="140" rx="9" fill="#FFFFFF" stroke="#D7E1E7" stroke-width="1.5" />
+      <text x="22.000" y="33.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.999" font-weight="700" data-text="监督学习" aria-label="监督学习" xml:space="preserve" textLength="103.999" lengthAdjust="spacingAndGlyphs" fill="#326BB8">监督学习</text>
+      <text x="22.000" y="72.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.000" font-weight="400" data-text="输入 → 正确标签" aria-label="输入 → 正确标签" xml:space="preserve" textLength="167.020" lengthAdjust="spacingAndGlyphs" fill="#18344C">输入 → 正确标签</text>
+      <text x="22.000" y="110.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="21.000" font-weight="400" data-text="s03.wav → 人工校订文字" aria-label="s03.wav → 人工校订文字" xml:space="preserve" textLength="241.254" lengthAdjust="spacingAndGlyphs" fill="#526578">s03.wav → 人工校订文字</text>
+      <circle cx="631" cy="74" r="14" fill="#FFFFFF" stroke="#326BB8" stroke-width="1.8" />
+      <path d="M624 74 l5 5 l10 -11" stroke="#326BB8" fill="none" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" />
+      <rect x="758" y="0" width="714" height="140" rx="9" fill="#FFFFFF" stroke="#D7E1E7" stroke-width="1.5" />
+      <text x="780.000" y="33.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.999" font-weight="700" data-text="无监督学习" aria-label="无监督学习" xml:space="preserve" textLength="129.999" lengthAdjust="spacingAndGlyphs" fill="#14877D">无监督学习</text>
+      <text x="780.000" y="72.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.000" font-weight="400" data-text="发现样本自身结构" aria-label="发现样本自身结构" xml:space="preserve" textLength="176.000" lengthAdjust="spacingAndGlyphs" fill="#18344C">发现样本自身结构</text>
+      <text x="780.000" y="110.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="21.000" font-weight="400" data-text="相似作业轨迹组成一组" aria-label="相似作业轨迹组成一组" xml:space="preserve" textLength="210.000" lengthAdjust="spacingAndGlyphs" fill="#526578">相似作业轨迹组成一组</text>
+      <circle cx="1313" cy="51" r="4" fill="#14877D" />
+      <circle cx="1335" cy="51" r="4" fill="#14877D" />
+      <circle cx="1357" cy="51" r="4" fill="#14877D" />
+      <circle cx="1379" cy="51" r="4" fill="#14877D" />
+      <circle cx="1401" cy="51" r="4" fill="#14877D" />
+      <circle cx="1315" cy="71" r="4" fill="#14877D" />
+      <circle cx="1337" cy="71" r="4" fill="#14877D" />
+      <circle cx="1359" cy="71" r="4" fill="#14877D" />
+      <circle cx="1381" cy="71" r="4" fill="#A0C7BF" />
+      <circle cx="1403" cy="71" r="4" fill="#A0C7BF" />
+      <circle cx="1317" cy="91" r="4" fill="#A0C7BF" />
+      <circle cx="1339" cy="91" r="4" fill="#A0C7BF" />
+      <circle cx="1361" cy="91" r="4" fill="#A0C7BF" />
+      <circle cx="1383" cy="91" r="4" fill="#A0C7BF" />
+      <circle cx="1405" cy="91" r="4" fill="#A0C7BF" />
+      <rect x="0" y="158" width="714" height="140" rx="9" fill="#FFFFFF" stroke="#D7E1E7" stroke-width="1.5" />
+      <text x="22.000" y="191.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.999" font-weight="700" data-text="自监督学习" aria-label="自监督学习" xml:space="preserve" textLength="129.999" lengthAdjust="spacingAndGlyphs" fill="#7756AA">自监督学习</text>
+      <text x="22.000" y="230.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.000" font-weight="400" data-text="从数据内部构造目标" aria-label="从数据内部构造目标" xml:space="preserve" textLength="198.000" lengthAdjust="spacingAndGlyphs" fill="#18344C">从数据内部构造目标</text>
+      <text x="22.000" y="268.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="21.000" font-weight="400" data-text="已见片段 → 被遮蔽片段" aria-label="已见片段 → 被遮蔽片段" xml:space="preserve" textLength="222.428" lengthAdjust="spacingAndGlyphs" fill="#526578">已见片段 → 被遮蔽片段</text>
+      <rect x="533" y="218" width="28" height="28" rx="3" fill="#F0ECF7" stroke="#7756AA" stroke-width="1.5" />
+      <text x="541.722" y="239.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="18.000" font-weight="400" data-text="1" aria-label="1" xml:space="preserve" textLength="9.900" lengthAdjust="spacingAndGlyphs" fill="#7756AA">1</text>
+      <rect x="569" y="218" width="28" height="28" rx="3" fill="#F0ECF7" stroke="#7756AA" stroke-width="1.5" />
+      <text x="577.722" y="239.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="18.000" font-weight="400" data-text="2" aria-label="2" xml:space="preserve" textLength="9.900" lengthAdjust="spacingAndGlyphs" fill="#7756AA">2</text>
+      <rect x="605" y="218" width="28" height="28" rx="3" fill="#7756AA" stroke="#7756AA" stroke-width="1.5" />
+      <text x="614.654" y="239.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="18.000" font-weight="400" data-text="?" aria-label="?" xml:space="preserve" textLength="9.900" lengthAdjust="spacingAndGlyphs" fill="#FFFFFF">?</text>
+      <rect x="641" y="218" width="28" height="28" rx="3" fill="#F0ECF7" stroke="#7756AA" stroke-width="1.5" />
+      <text x="649.722" y="239.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="18.000" font-weight="400" data-text="4" aria-label="4" xml:space="preserve" textLength="9.900" lengthAdjust="spacingAndGlyphs" fill="#7756AA">4</text>
+      <rect x="758" y="158" width="714" height="140" rx="9" fill="#FFFFFF" stroke="#D7E1E7" stroke-width="1.5" />
+      <text x="780.000" y="191.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.999" font-weight="700" data-text="强化学习" aria-label="强化学习" xml:space="preserve" textLength="103.999" lengthAdjust="spacingAndGlyphs" fill="#B9752E">强化学习</text>
+      <text x="780.000" y="230.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.000" font-weight="400" data-text="动作后的奖励与状态" aria-label="动作后的奖励与状态" xml:space="preserve" textLength="198.000" lengthAdjust="spacingAndGlyphs" fill="#18344C">动作后的奖励与状态</text>
+      <text x="780.000" y="268.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="21.000" font-weight="400" data-text="动作 → 环境反馈 → 策略" aria-label="动作 → 环境反馈 → 策略" xml:space="preserve" textLength="234.855" lengthAdjust="spacingAndGlyphs" fill="#526578">动作 → 环境反馈 → 策略</text>
+      <path d="M1319 213 C1391 170 1450 271 1335 269" stroke="#B9752E" fill="none" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M1335 269 L1319 213" stroke="#B9752E" fill="none" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M1325.6560162101657 220.46307230368365 L1319 213 L1317.2914206612393 222.8529567462341" stroke="#B9752E" fill="none" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" />
+    </g>
+  </g>
+  <g id="beat_02" transform="translate(0 0)">
+    <text x="64.000" y="617.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.000" font-weight="700" data-text="监督学习与无监督学习" aria-label="监督学习与无监督学习" xml:space="preserve" textLength="250.000" lengthAdjust="spacingAndGlyphs" fill="#326BB8">监督学习与无监督学习</text>
+    <text x="64.000" y="656.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="前者使用输入和正确目标，例如音频与转" aria-label="前者使用输入和正确目标，例如音频与转" xml:space="preserve" textLength="413.999" lengthAdjust="spacingAndGlyphs" fill="#526578">前者使用输入和正确目标，例如音频与转</text>
+    <text x="64.000" y="686.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="写；后者探索数据自身的结构，例如聚类不" aria-label="写；后者探索数据自身的结构，例如聚类不" xml:space="preserve" textLength="436.999" lengthAdjust="spacingAndGlyphs" fill="#526578">写；后者探索数据自身的结构，例如聚类不</text>
+    <text x="64.000" y="716.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="同作业模式。" aria-label="同作业模式。" xml:space="preserve" textLength="137.999" lengthAdjust="spacingAndGlyphs" fill="#526578">同作业模式。</text>
+    <text x="570.000" y="617.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.000" font-weight="700" data-text="自监督学习构造目标" aria-label="自监督学习构造目标" xml:space="preserve" textLength="225.000" lengthAdjust="spacingAndGlyphs" fill="#14877D">自监督学习构造目标</text>
+    <text x="570.000" y="656.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="从已有数据产生预测任务，如遮蔽重建或后" aria-label="从已有数据产生预测任务，如遮蔽重建或后" xml:space="preserve" textLength="436.999" lengthAdjust="spacingAndGlyphs" fill="#526578">从已有数据产生预测任务，如遮蔽重建或后</text>
+    <text x="570.000" y="686.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="续片段预测，帮助模型获得通用表示，再适" aria-label="续片段预测，帮助模型获得通用表示，再适" xml:space="preserve" textLength="436.999" lengthAdjust="spacingAndGlyphs" fill="#526578">续片段预测，帮助模型获得通用表示，再适</text>
+    <text x="570.000" y="716.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="配领域目标。" aria-label="配领域目标。" xml:space="preserve" textLength="137.999" lengthAdjust="spacingAndGlyphs" fill="#526578">配领域目标。</text>
+    <text x="1076.000" y="617.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.000" font-weight="700" data-text="强化学习使用环境反馈" aria-label="强化学习使用环境反馈" xml:space="preserve" textLength="250.000" lengthAdjust="spacingAndGlyphs" fill="#7756AA">强化学习使用环境反馈</text>
+    <text x="1076.000" y="656.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="策略执行动作后接收状态变化与奖励。必须" aria-label="策略执行动作后接收状态变化与奖励。必须" xml:space="preserve" textLength="436.999" lengthAdjust="spacingAndGlyphs" fill="#526578">策略执行动作后接收状态变化与奖励。必须</text>
+    <text x="1076.000" y="686.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="定义环境、终止条件和奖励，不能只凭一段" aria-label="定义环境、终止条件和奖励，不能只凭一段" xml:space="preserve" textLength="436.999" lengthAdjust="spacingAndGlyphs" fill="#526578">定义环境、终止条件和奖励，不能只凭一段</text>
+    <text x="1076.000" y="716.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="语言计划训练闭环。" aria-label="语言计划训练闭环。" xml:space="preserve" textLength="206.999" lengthAdjust="spacingAndGlyphs" fill="#526578">语言计划训练闭环。</text>
+  </g>
+  <g id="beat_03" transform="translate(0 0)">
+    <path d="M64 760 L1536 760" stroke="#D7E1E7" fill="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+    <rect x="64" y="782" width="4" height="57" rx="2" fill="#326BB8" />
+    <text x="84.000" y="798.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.000" font-weight="400" data-text="检测与领域转写通常先建立监督基线；多步骤策略可先学习审核示范，再研究环境奖励带来的额外效果。" aria-label="检测与领域转写通常先建立监督基线；多步骤策略可先学习审核示范，再研究环境奖励带来的额外效果。" xml:space="preserve" textLength="1012.000" lengthAdjust="spacingAndGlyphs" fill="#18344C">检测与领域转写通常先建立监督基线；多步骤策略可先学习审核示范，再研究环境奖励带来的额外效果。</text>
+  </g>
+  <g id="footer" transform="translate(0 0)">
+    <text x="64.000" y="877.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="17.000" font-weight="400" data-text="学习手册 §04.2" aria-label="学习手册 §04.2" xml:space="preserve" textLength="114.712" lengthAdjust="spacingAndGlyphs" fill="#8898A8">学习手册 §04.2</text>
+    <text x="1247.000" y="877.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="17.000" font-weight="400" data-text="工程案例与数值示意的来源见逐页备注" aria-label="工程案例与数值示意的来源见逐页备注" xml:space="preserve" textLength="289.000" lengthAdjust="spacingAndGlyphs" fill="#8898A8">工程案例与数值示意的来源见逐页备注</text>
+  </g>
+</svg>

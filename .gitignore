@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.mypy_cache/
+*.egg-info/
+.psop/
+/build/
+/workspaces/
+.env
+.env.*
+
+# Local-only compile UI data projection (sources are not cleared for distribution).
+/apps/compile/data/
+
+# Local UI verification and temporary validation dependencies.
+/.runtime/

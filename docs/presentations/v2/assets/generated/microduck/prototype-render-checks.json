@@ -1,0 +1,55 @@
+[
+  {
+    "prototype": "build",
+    "width": 1680,
+    "height": 720,
+    "scale": 2,
+    "image": "ui-build.png",
+    "sha256": "636ac3b3325ed20933dd1573e8db54394c0b6d20ca7c2304389a610201ae11a8",
+    "errors": [],
+    "outside": [],
+    "outside_panels": [],
+    "cpn": null
+  },
+  {
+    "prototype": "compile",
+    "width": 1680,
+    "height": 720,
+    "scale": 2,
+    "image": "ui-compile.png",
+    "sha256": "901fd7293d165e3c287aedee53d7fd0982cae530631c3424f9b6f8e90cd53cda",
+    "errors": [],
+    "outside": [],
+    "outside_panels": [],
+    "cpn": {
+      "x": 267,
+      "y": 165,
+      "width": 1110,
+      "height": 380
+    }
+  },
+  {
+    "prototype": "simulate",
+    "width": 1680,
+    "height": 720,
+    "scale": 2,
+    "image": "ui-simulate.png",
+    "sha256": "d1d753aaf510fea8008fc8f8405f2e2063936cff7d538fb4b023c74cc46499c3",
+    "errors": [],
+    "outside": [],
+    "outside_panels": [],
+    "cpn": null
+  },
+  {
+    "prototype": "mobile",
+    "width": 430,
+    "height": 800,
+    "scale": 2,
+    "image": "ui-mobile.png",
+    "sha256": "9b573d879aa28f7b960f05dc5036683783d6a9ebc8319ed13c8cf91f59a15b22",
+    "errors": [],
+    "outside": [],
+    "outside_panels": [],
+    "cpn": null
+  }
+]

@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <title>合成数据实验：比较组和测试必须一致</title>
+  <desc>PSOP 第 56 / 65 页教学图；文字与方法图保持可编辑。Microduck 视图由官方来源 STL 和 robot_walk.xml 的 source assembly 渲染，配置为 walk-model-reference、MCD-000001。alpha 软件任务身份与该几何参考的实物对应尚未核验；MD-01、S03、J01 和 EG 为教学定义。</desc>
+  <defs>
+    <linearGradient id="steel" x1="0" y1="0" x2="0.9" y2="1">
+      <stop stop-color="#EAF0F3" />
+      <stop offset=".37" stop-color="#A9BBC6" />
+      <stop offset=".63" stop-color="#F1F5F5" />
+      <stop offset="1" stop-color="#859CA9" />
+    </linearGradient>
+  </defs>
+  <g id="base" transform="translate(0 0)">
+    <rect x="0" y="0" width="1600" height="900" rx="0" fill="#FCFDFB" />
+    <rect x="0" y="0" width="9" height="900" rx="0" fill="#BE574C" />
+    <path d="M64 62 L1536 62" stroke="#D7E1E7" fill="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+    <text x="64.000" y="41.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="18.999" font-weight="400" data-text="PSOP  /  实验、评测与研究实践" aria-label="PSOP  /  实验、评测与研究实践" xml:space="preserve" textLength="273.541" lengthAdjust="spacingAndGlyphs" fill="#526578">PSOP  /  实验、评测与研究实践</text>
+    <text x="1355.287" y="41.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="18.999" font-weight="400" data-text="LESSON 05  ·  56/65" aria-label="LESSON 05  ·  56/65" xml:space="preserve" textLength="180.021" lengthAdjust="spacingAndGlyphs" fill="#526578">LESSON 05  ·  56/65</text>
+  </g>
+  <g id="title" transform="translate(0 0)">
+    <text x="64.000" y="125.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="48.001" font-weight="700" data-text="合成数据实验：比较组和测试必须一致" aria-label="合成数据实验：比较组和测试必须一致" xml:space="preserve" textLength="816.001" lengthAdjust="spacingAndGlyphs" fill="#18344C">合成数据实验：比较组和测试必须一致</text>
+    <text x="64.000" y="177.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="24.001" font-weight="400" data-text="合成数据要在固定真实独立测试中评价。比较真实、合成和混合训练，同时控制训练预算，才能判断是否补充了有效覆盖，而不是仅凭样" aria-label="合成数据要在固定真实独立测试中评价。比较真实、合成和混合训练，同时控制训练预算，才能判断是否补充了有效覆盖，而不是仅凭样" xml:space="preserve" textLength="1440.001" lengthAdjust="spacingAndGlyphs" fill="#526578">合成数据要在固定真实独立测试中评价。比较真实、合成和混合训练，同时控制训练预算，才能判断是否补充了有效覆盖，而不是仅凭样</text>
+    <text x="64.000" y="209.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="24.001" font-weight="400" data-text="本更多或测试更容易得到高分。" aria-label="本更多或测试更容易得到高分。" xml:space="preserve" textLength="336.001" lengthAdjust="spacingAndGlyphs" fill="#526578">本更多或测试更容易得到高分。</text>
+  </g>
+  <g id="beat_01" transform="translate(0 0)">
+    <g id="illustration" transform="translate(64 237)">
+      <rect x="0" y="0" width="412" height="98" rx="10" fill="#EAF1FA" />
+      <text x="21.000" y="36.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="29.000" font-weight="700" data-text="真实训练" aria-label="真实训练" xml:space="preserve" textLength="116.000" lengthAdjust="spacingAndGlyphs" fill="#326BB8">真实训练</text>
+      <text x="21.000" y="76.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="24.001" font-weight="400" data-text="现场基线起点" aria-label="现场基线起点" xml:space="preserve" textLength="144.001" lengthAdjust="spacingAndGlyphs" fill="#526578">现场基线起点</text>
+      <path d="M206 103 L206 142 L734 142 L734 180" stroke="#326BB8" fill="none" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M734 142 L734 180" stroke="#326BB8" fill="none" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M729.6503446588877 170.99552897647322 L734 180 L738.3496553411123 170.99552897647322" stroke="#326BB8" fill="none" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+      <rect x="505" y="0" width="412" height="98" rx="10" fill="#F0ECF7" />
+      <text x="526.000" y="36.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="29.000" font-weight="700" data-text="合成训练" aria-label="合成训练" xml:space="preserve" textLength="116.000" lengthAdjust="spacingAndGlyphs" fill="#7756AA">合成训练</text>
+      <text x="526.000" y="76.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="24.001" font-weight="400" data-text="检查现实差距" aria-label="检查现实差距" xml:space="preserve" textLength="144.001" lengthAdjust="spacingAndGlyphs" fill="#526578">检查现实差距</text>
+      <path d="M711 103 L711 142 L734 142 L734 180" stroke="#7756AA" fill="none" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M734 142 L734 180" stroke="#7756AA" fill="none" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M729.6503446588877 170.99552897647322 L734 180 L738.3496553411123 170.99552897647322" stroke="#7756AA" fill="none" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+      <rect x="1010" y="0" width="412" height="98" rx="10" fill="#E8F5F1" />
+      <text x="1031.000" y="36.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="29.000" font-weight="700" data-text="真实 + 合成" aria-label="真实 + 合成" xml:space="preserve" textLength="155.351" lengthAdjust="spacingAndGlyphs" fill="#14877D">真实 + 合成</text>
+      <text x="1031.000" y="76.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="24.001" font-weight="400" data-text="检查覆盖能否补充" aria-label="检查覆盖能否补充" xml:space="preserve" textLength="192.001" lengthAdjust="spacingAndGlyphs" fill="#526578">检查覆盖能否补充</text>
+      <path d="M1216 103 L1216 142 L734 142 L734 180" stroke="#14877D" fill="none" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M734 142 L734 180" stroke="#14877D" fill="none" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M729.6503446588877 170.99552897647322 L734 180 L738.3496553411123 170.99552897647322" stroke="#14877D" fill="none" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+      <rect x="277" y="184" width="917" height="101" rx="10" fill="#FFFFFF" stroke="#14877D" stroke-width="1.5" />
+      <text x="301.000" y="222.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="29.000" font-weight="700" data-text="同一真实独立测试集 + 同一评分规则" aria-label="同一真实独立测试集 + 同一评分规则" xml:space="preserve" textLength="474.351" lengthAdjust="spacingAndGlyphs" fill="#14877D">同一真实独立测试集 + 同一评分规则</text>
+      <text x="301.000" y="263.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="24.001" font-weight="400" data-text="训练预算、模型初始化、划分方式与关键切片分别固定" aria-label="训练预算、模型初始化、划分方式与关键切片分别固定" xml:space="preserve" textLength="576.001" lengthAdjust="spacingAndGlyphs" fill="#526578">训练预算、模型初始化、划分方式与关键切片分别固定</text>
+      <text x="0.000" y="323.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="再对视角、光照、遮挡及任务分支做单因素消融，解释各自贡献。" aria-label="再对视角、光照、遮挡及任务分支做单因素消融，解释各自贡献。" xml:space="preserve" textLength="666.999" lengthAdjust="spacingAndGlyphs" fill="#526578">再对视角、光照、遮挡及任务分支做单因素消融，解释各自贡献。</text>
+    </g>
+  </g>
+  <g id="beat_02" transform="translate(0 0)">
+    <text x="64.000" y="617.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.000" font-weight="700" data-text="三类训练回答不同问题" aria-label="三类训练回答不同问题" xml:space="preserve" textLength="250.000" lengthAdjust="spacingAndGlyphs" fill="#326BB8">三类训练回答不同问题</text>
+    <text x="64.000" y="656.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="真实基线描述现场起点，合成训练暴" aria-label="真实基线描述现场起点，合成训练暴" xml:space="preserve" textLength="367.999" lengthAdjust="spacingAndGlyphs" fill="#526578">真实基线描述现场起点，合成训练暴</text>
+    <text x="64.000" y="686.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="露现实差距，混合训练检查合成覆盖" aria-label="露现实差距，混合训练检查合成覆盖" xml:space="preserve" textLength="367.999" lengthAdjust="spacingAndGlyphs" fill="#526578">露现实差距，混合训练检查合成覆盖</text>
+    <text x="64.000" y="716.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="能否增加真实表现。" aria-label="能否增加真实表现。" xml:space="preserve" textLength="206.999" lengthAdjust="spacingAndGlyphs" fill="#526578">能否增加真实表现。</text>
+    <text x="570.000" y="617.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.000" font-weight="700" data-text="生成因素分别做消融" aria-label="生成因素分别做消融" xml:space="preserve" textLength="225.000" lengthAdjust="spacingAndGlyphs" fill="#14877D">生成因素分别做消融</text>
+    <text x="570.000" y="656.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="视角、光照、遮挡和任务分支各自可能有贡" aria-label="视角、光照、遮挡和任务分支各自可能有贡" xml:space="preserve" textLength="436.999" lengthAdjust="spacingAndGlyphs" fill="#526578">视角、光照、遮挡和任务分支各自可能有贡</text>
+    <text x="570.000" y="686.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="献。去掉一个因素并保持其他条件，才更容" aria-label="献。去掉一个因素并保持其他条件，才更容" xml:space="preserve" textLength="436.999" lengthAdjust="spacingAndGlyphs" fill="#526578">献。去掉一个因素并保持其他条件，才更容</text>
+    <text x="570.000" y="716.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="易解释变化。" aria-label="易解释变化。" xml:space="preserve" textLength="137.999" lengthAdjust="spacingAndGlyphs" fill="#526578">易解释变化。</text>
+    <text x="1076.000" y="617.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.000" font-weight="700" data-text="切片结果决定后续采集" aria-label="切片结果决定后续采集" xml:space="preserve" textLength="250.000" lengthAdjust="spacingAndGlyphs" fill="#7756AA">切片结果决定后续采集</text>
+    <text x="1076.000" y="656.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="总体提高时还要看小目标、反光、未知对象" aria-label="总体提高时还要看小目标、反光、未知对象" xml:space="preserve" textLength="436.999" lengthAdjust="spacingAndGlyphs" fill="#526578">总体提高时还要看小目标、反光、未知对象</text>
+    <text x="1076.000" y="686.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="及缺证分支。某个关键切片退化，应直接影" aria-label="及缺证分支。某个关键切片退化，应直接影" xml:space="preserve" textLength="436.999" lengthAdjust="spacingAndGlyphs" fill="#526578">及缺证分支。某个关键切片退化，应直接影</text>
+    <text x="1076.000" y="716.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="响下一轮数据策略。" aria-label="响下一轮数据策略。" xml:space="preserve" textLength="206.999" lengthAdjust="spacingAndGlyphs" fill="#526578">响下一轮数据策略。</text>
+  </g>
+  <g id="beat_03" transform="translate(0 0)">
+    <path d="M64 760 L1536 760" stroke="#D7E1E7" fill="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+    <rect x="64" y="782" width="4" height="57" rx="2" fill="#BE574C" />
+    <text x="84.000" y="798.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.000" font-weight="400" data-text="保持同一真实测试集和评分规则，记录真实 / 合成来源与生成配置。图中比较设计没有填入虚构成绩，运行后再写实际结果。" aria-label="保持同一真实测试集和评分规则，记录真实 / 合成来源与生成配置。图中比较设计没有填入虚构成绩，运行后再写实际结果。" xml:space="preserve" textLength="1210.419" lengthAdjust="spacingAndGlyphs" fill="#18344C">保持同一真实测试集和评分规则，记录真实 / 合成来源与生成配置。图中比较设计没有填入虚构成绩，运行后再写实际结果。</text>
+  </g>
+  <g id="footer" transform="translate(0 0)">
+    <text x="64.000" y="877.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="17.000" font-weight="400" data-text="学习手册 §15.7 / 11.7" aria-label="学习手册 §15.7 / 11.7" xml:space="preserve" textLength="166.036" lengthAdjust="spacingAndGlyphs" fill="#8898A8">学习手册 §15.7 / 11.7</text>
+    <text x="1247.000" y="877.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="17.000" font-weight="400" data-text="工程案例与数值示意的来源见逐页备注" aria-label="工程案例与数值示意的来源见逐页备注" xml:space="preserve" textLength="289.000" lengthAdjust="spacingAndGlyphs" fill="#8898A8">工程案例与数值示意的来源见逐页备注</text>
+  </g>
+</svg>

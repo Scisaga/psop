@@ -1,0 +1,1075 @@
+{
+  "schema_version": "psop.static-homepage-assets/1",
+  "created": "2026-10-15",
+  "source_slide_manifest": "docs/presentations/v2/slides/manifest.json",
+  "source_slide_manifest_sha256": "2759d1e4df3e44833987bf268d5f47d0b4c723ab2c9eb3aa6e8e5b4c08f44b3c",
+  "case_manifest_sha256": "e2d956ee283c5162fad865497ca0a177596de65dd66864a20bff2501452a3151",
+  "geometry_source": "Official Microduck walk-reference XML/STL assembly: 38 source meshes, 70 assembly instances, SRC-000048 / qpos0; source geometry preserved",
+  "geometry_license": "Creative Commons BY-SA-NC; upstream statement does not name a version",
+  "case_boundaries": [
+    "Walk model geometry and alpha software identity are recorded independently.",
+    "Installation stage offsets are teaching previews; no completed fixation, connection, or recheck is asserted.",
+    "installation-process.webp is an existing AI-generated installation illustration, not a field-recording photograph.",
+    "ar-demo-25s.mp4 is the original mechanical-arm demonstration, not a Microduck test or recording."
+  ],
+  "serving": "All assets use local files; no runtime network, API, or external CDN required. MP4 should be loaded only after click. Lower-section workbench and stage images should be loaded lazily.",
+  "assets": [
+    {
+      "file": "microduck-assembled.webp",
+      "role": "Hero: transparent source-derived whole Microduck assembly",
+      "source": "docs/presentations/v2/assets/generated/microduck/model-assembled.png",
+      "source_sha256": "fbb0a2f11c7f8cea786811606190ef5337e988bc8d05d8de093b9982e281d724",
+      "sha256": "1bbe9e7eb403e908fb72387a5aed670328b376c16c43f4aea4217b6f75da3276",
+      "bytes": 96866,
+      "size": [
+        900,
+        1200
+      ],
+      "source_size": [
+        900,
+        1200
+      ],
+      "mode": "RGBA",
+      "transform": "Lossless WebP encoding with exact transparent-pixel RGB retained; dimensions, alpha and all RGBA pixel values are identical to the source PNG",
+      "kind": "source_assembly_render",
+      "attribution": "build/microduck-official-assembled/microduck-official-assembled-v1.2.1.build.dkp/apps/build/data/scene-manifest.json",
+      "rights": "Creative Commons BY-SA-NC; upstream source does not name a version",
+      "source_alpha_bounds": [
+        168,
+        120,
+        817,
+        1097
+      ],
+      "alpha_bounds": [
+        168,
+        120,
+        817,
+        1097
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "source_model_metadata": {
+        "source": {
+          "assembly_status": "source_reference",
+          "configurations": [
+            "walk-model-reference"
+          ],
+          "coordinate_system": {
+            "handedness": "right",
+            "transform_layout": "row-major",
+            "up_axis": "+Z"
+          },
+          "mesh_count": 38,
+          "object_count": 70,
+          "pose": "qpos0",
+          "source_id": "SRC-000048",
+          "source_digest": "sha256:80fc4424ed71e430ec4919110dfdb5c714dc1c4e1138e1832a16865cf31eb8c8",
+          "path": "../../sources/SRC-000048--robot_walk/original/robot_walk.xml",
+          "reference_device_id": "DEV-000003",
+          "sourceCommit": "cb70b792312d559a4da09064d92009079671815f",
+          "sourceBounds": [
+            [
+              -0.05177709943375588,
+              -0.07050000131130217,
+              0.013473379386577666
+            ],
+            [
+              0.09229001924991602,
+              0.07050000131130217,
+              0.2774493844779491
+            ]
+          ],
+          "precision": "uint16 positions per mesh bounds; source face normals int16; triangles unchanged",
+          "license": "Creative Commons BY-SA-NC (upstream statement does not name a version)",
+          "alphaMapping": "Not verified; alpha software identity is separate from this walk reference"
+        },
+        "imageSize": [
+          900,
+          1200
+        ],
+        "options": {},
+        "assemblyBounds": [
+          75.02740857568584,
+          64.28571428571452,
+          824.9725914243138,
+          1135.714285714286
+        ],
+        "jointRegionBounds": [
+          463.9779860673681,
+          695.9360615741965,
+          602.3714259804974,
+          861.5037068979698
+        ],
+        "jointRegionAnchor": [
+          533.1747060239328,
+          778.7198842360832
+        ],
+        "jointRegionSourceBody": "trunk_base/yaw2roll",
+        "jointRegionMeaning": "walk reference left_hip_yaw body; alpha ID 20 correspondence is not verified",
+        "instanceCount": 70,
+        "alphaBounds": [
+          168,
+          120,
+          817,
+          1097
+        ],
+        "file": "model-assembled.png",
+        "sha256": "fbb0a2f11c7f8cea786811606190ef5337e988bc8d05d8de093b9982e281d724",
+        "errors": [],
+        "background": "transparent"
+      }
+    },
+    {
+      "file": "microduck-exploded.webp",
+      "role": "Build: transparent complete source assembly exploded view",
+      "source": "docs/presentations/v2/assets/generated/microduck/cover-build-exploded.png",
+      "source_sha256": "e9aefce9bfd2a244a23e199b432af566517f5e2250c6f39aa21fc550990aaf33",
+      "sha256": "32ee7c81d1ae670b0adf590a40d2bd3e5af9251f7998486e31692d78c4218eea",
+      "bytes": 74568,
+      "size": [
+        1000,
+        1150
+      ],
+      "source_size": [
+        1000,
+        1150
+      ],
+      "mode": "RGBA",
+      "transform": "Lossless WebP encoding with exact transparent-pixel RGB retained; dimensions, alpha and all RGBA pixel values are identical to the source PNG",
+      "kind": "source_assembly_render",
+      "attribution": "build/microduck-official-assembled/microduck-official-assembled-v1.2.1.build.dkp/apps/build/data/scene-manifest.json",
+      "rights": "Creative Commons BY-SA-NC; upstream source does not name a version",
+      "source_alpha_bounds": [
+        298,
+        100,
+        831,
+        1061
+      ],
+      "alpha_bounds": [
+        298,
+        100,
+        831,
+        1061
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "source_model_metadata": {
+        "source": {
+          "assembly_status": "source_reference",
+          "configurations": [
+            "walk-model-reference"
+          ],
+          "coordinate_system": {
+            "handedness": "right",
+            "transform_layout": "row-major",
+            "up_axis": "+Z"
+          },
+          "mesh_count": 38,
+          "object_count": 70,
+          "pose": "qpos0",
+          "source_id": "SRC-000048",
+          "source_digest": "sha256:80fc4424ed71e430ec4919110dfdb5c714dc1c4e1138e1832a16865cf31eb8c8",
+          "path": "../../sources/SRC-000048--robot_walk/original/robot_walk.xml",
+          "reference_device_id": "DEV-000003",
+          "sourceCommit": "cb70b792312d559a4da09064d92009079671815f",
+          "sourceBounds": [
+            [
+              -0.05177709943375588,
+              -0.07050000131130217,
+              0.013473379386577666
+            ],
+            [
+              0.09229001924991602,
+              0.07050000131130217,
+              0.2774493844779491
+            ]
+          ],
+          "precision": "uint16 positions per mesh bounds; source face normals int16; triangles unchanged",
+          "maxPositionQuantizationErrorMeters": 9.360648376168416e-07,
+          "sourceManifestSha256": "c3279ec14d88c6b9e4f60b25bd0ba9bfd85c1015daf8d63efe4cb2efef4dc965",
+          "license": "Creative Commons BY-SA-NC (upstream statement does not name a version)",
+          "alphaMapping": "Not verified; alpha software identity is separate from this walk reference"
+        },
+        "imageSize": [
+          1000,
+          1150
+        ],
+        "options": {
+          "coverExploded": true
+        },
+        "assemblyBounds": [
+          164.92262793762413,
+          61.607142857143025,
+          835.0773720623758,
+          1088.392857142857
+        ],
+        "jointRegionBounds": [
+          528.4634560951715,
+          686.2048046976058,
+          604.0556198148827,
+          776.6398467043504
+        ],
+        "jointRegionAnchor": [
+          566.259537955027,
+          731.4223257009781
+        ],
+        "jointRegionSourceBody": "trunk_base/yaw2roll",
+        "jointRegionMeaning": "walk reference left_hip_yaw body; alpha ID 20 correspondence is not verified",
+        "instanceCount": 70,
+        "displayOffsets": {
+          "SRC-000048:geom:0": [
+            0,
+            0,
+            0
+          ],
+          "SRC-000048:geom:1": [
+            -74,
+            4,
+            0
+          ],
+          "SRC-000048:geom:2": [
+            0,
+            0,
+            0
+          ],
+          "SRC-000048:geom:3": [
+            0,
+            0,
+            0
+          ],
+          "SRC-000048:geom:4": [
+            0,
+            0,
+            0
+          ],
+          "SRC-000048:geom:5": [
+            0,
+            0,
+            0
+          ],
+          "SRC-000048:geom:7": [
+            0,
+            0,
+            0
+          ],
+          "SRC-000048:geom:8": [
+            0,
+            0,
+            0
+          ],
+          "SRC-000048:geom:9": [
+            74,
+            4,
+            0
+          ],
+          "SRC-000048:geom:10": [
+            0,
+            0,
+            0
+          ],
+          "SRC-000048:geom:11": [
+            64,
+            -20,
+            0
+          ],
+          "SRC-000048:geom:12": [
+            64,
+            -20,
+            0
+          ],
+          "SRC-000048:geom:13": [
+            64,
+            -20,
+            0
+          ],
+          "SRC-000048:geom:14": [
+            64,
+            -20,
+            0
+          ],
+          "SRC-000048:geom:15": [
+            64,
+            -20,
+            0
+          ],
+          "SRC-000048:geom:16": [
+            64,
+            -20,
+            0
+          ],
+          "SRC-000048:geom:17": [
+            64,
+            -20,
+            0
+          ],
+          "SRC-000048:geom:18": [
+            64,
+            -20,
+            0
+          ],
+          "SRC-000048:geom:19": [
+            64,
+            -20,
+            0
+          ],
+          "SRC-000048:geom:20": [
+            64,
+            -20,
+            0
+          ],
+          "SRC-000048:geom:21": [
+            64,
+            -20,
+            0
+          ],
+          "SRC-000048:geom:22": [
+            64,
+            -20,
+            0
+          ],
+          "SRC-000048:geom:24": [
+            64,
+            -20,
+            0
+          ],
+          "SRC-000048:geom:25": [
+            64,
+            -72,
+            0
+          ],
+          "SRC-000048:geom:27": [
+            64,
+            -72,
+            0
+          ],
+          "SRC-000048:geom:28": [
+            64,
+            -72,
+            0
+          ],
+          "SRC-000048:geom:29": [
+            64,
+            -72,
+            0
+          ],
+          "SRC-000048:geom:30": [
+            0,
+            40,
+            0
+          ],
+          "SRC-000048:geom:31": [
+            0,
+            40,
+            0
+          ],
+          "SRC-000048:geom:32": [
+            0,
+            40,
+            0
+          ],
+          "SRC-000048:geom:33": [
+            0,
+            40,
+            0
+          ],
+          "SRC-000048:geom:34": [
+            0,
+            40,
+            0
+          ],
+          "SRC-000048:geom:35": [
+            0,
+            40,
+            0
+          ],
+          "SRC-000048:geom:36": [
+            0,
+            40,
+            0
+          ],
+          "SRC-000048:geom:37": [
+            0,
+            40,
+            0
+          ],
+          "SRC-000048:geom:38": [
+            0,
+            40,
+            0
+          ],
+          "SRC-000048:geom:39": [
+            0,
+            40,
+            0
+          ],
+          "SRC-000048:geom:40": [
+            0,
+            94,
+            38
+          ],
+          "SRC-000048:geom:41": [
+            0,
+            94,
+            38
+          ],
+          "SRC-000048:geom:42": [
+            0,
+            94,
+            0
+          ],
+          "SRC-000048:geom:43": [
+            0,
+            94,
+            0
+          ],
+          "SRC-000048:geom:44": [
+            0,
+            94,
+            0
+          ],
+          "SRC-000048:geom:45": [
+            0,
+            132,
+            0
+          ],
+          "SRC-000048:geom:46": [
+            0,
+            94,
+            0
+          ],
+          "SRC-000048:geom:47": [
+            0,
+            94,
+            0
+          ],
+          "SRC-000048:geom:48": [
+            0,
+            94,
+            0
+          ],
+          "SRC-000048:geom:49": [
+            0,
+            94,
+            0
+          ],
+          "SRC-000048:geom:50": [
+            0,
+            94,
+            38
+          ],
+          "SRC-000048:geom:51": [
+            0,
+            94,
+            0
+          ],
+          "SRC-000048:geom:52": [
+            0,
+            70,
+            0
+          ],
+          "SRC-000048:geom:53": [
+            0,
+            94,
+            38
+          ],
+          "SRC-000048:geom:54": [
+            0,
+            94,
+            0
+          ],
+          "SRC-000048:geom:55": [
+            0,
+            94,
+            0
+          ],
+          "SRC-000048:geom:56": [
+            -64,
+            -20,
+            0
+          ],
+          "SRC-000048:geom:57": [
+            -64,
+            -20,
+            0
+          ],
+          "SRC-000048:geom:58": [
+            -64,
+            -20,
+            0
+          ],
+          "SRC-000048:geom:59": [
+            -64,
+            -20,
+            0
+          ],
+          "SRC-000048:geom:60": [
+            -64,
+            -20,
+            0
+          ],
+          "SRC-000048:geom:61": [
+            -64,
+            -20,
+            0
+          ],
+          "SRC-000048:geom:62": [
+            -64,
+            -20,
+            0
+          ],
+          "SRC-000048:geom:63": [
+            -64,
+            -20,
+            0
+          ],
+          "SRC-000048:geom:64": [
+            -64,
+            -20,
+            0
+          ],
+          "SRC-000048:geom:65": [
+            -64,
+            -20,
+            0
+          ],
+          "SRC-000048:geom:66": [
+            -64,
+            -20,
+            0
+          ],
+          "SRC-000048:geom:67": [
+            -64,
+            -20,
+            0
+          ],
+          "SRC-000048:geom:68": [
+            -64,
+            -20,
+            0
+          ],
+          "SRC-000048:geom:70": [
+            -64,
+            -72,
+            0
+          ],
+          "SRC-000048:geom:71": [
+            -64,
+            -72,
+            0
+          ],
+          "SRC-000048:geom:73": [
+            -64,
+            -72,
+            0
+          ],
+          "SRC-000048:geom:74": [
+            -64,
+            -72,
+            0
+          ]
+        },
+        "sourceMatricesPreserved": true,
+        "alphaBounds": [
+          298,
+          100,
+          831,
+          1061
+        ],
+        "file": "cover-build-exploded.png",
+        "sha256": "e9aefce9bfd2a244a23e199b432af566517f5e2250c6f39aa21fc550990aaf33",
+        "errors": [],
+        "background": "transparent"
+      }
+    },
+    {
+      "file": "microduck-installation.webp",
+      "role": "Simulate: transparent stage 2 alignment preview; detached hip/leg component",
+      "source": "docs/presentations/v2/assets/generated/microduck/cover-installation.png",
+      "source_sha256": "55b7420536f72ddf48a5441b005e59980414ab74961f403485347d45f36c5824",
+      "sha256": "8c7621e340ac3d009a7bb197633e5c73a178f238a6407d0e137faf6e0050fd1b",
+      "bytes": 103186,
+      "size": [
+        1200,
+        1100
+      ],
+      "source_size": [
+        1200,
+        1100
+      ],
+      "mode": "RGBA",
+      "transform": "Lossless WebP encoding with exact transparent-pixel RGB retained; dimensions, alpha and all RGBA pixel values are identical to the source PNG",
+      "kind": "source_assembly_render",
+      "attribution": "build/microduck-official-assembled/microduck-official-assembled-v1.2.1.build.dkp/apps/build/data/scene-manifest.json",
+      "rights": "Creative Commons BY-SA-NC; upstream source does not name a version",
+      "source_alpha_bounds": [
+        173,
+        109,
+        1084,
+        967
+      ],
+      "alpha_bounds": [
+        173,
+        109,
+        1084,
+        967
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "source_model_metadata": {
+        "source": {
+          "assembly_status": "source_reference",
+          "configurations": [
+            "walk-model-reference"
+          ],
+          "coordinate_system": {
+            "handedness": "right",
+            "transform_layout": "row-major",
+            "up_axis": "+Z"
+          },
+          "mesh_count": 38,
+          "object_count": 70,
+          "pose": "qpos0",
+          "source_id": "SRC-000048",
+          "source_digest": "sha256:80fc4424ed71e430ec4919110dfdb5c714dc1c4e1138e1832a16865cf31eb8c8",
+          "path": "../../sources/SRC-000048--robot_walk/original/robot_walk.xml",
+          "reference_device_id": "DEV-000003",
+          "sourceCommit": "cb70b792312d559a4da09064d92009079671815f",
+          "sourceBounds": [
+            [
+              -0.05177709943375588,
+              -0.07050000131130217,
+              0.013473379386577666
+            ],
+            [
+              0.09229001924991602,
+              0.07050000131130217,
+              0.2774493844779491
+            ]
+          ],
+          "precision": "uint16 positions per mesh bounds; source face normals int16; triangles unchanged",
+          "maxPositionQuantizationErrorMeters": 9.360648376168416e-07,
+          "sourceManifestSha256": "c3279ec14d88c6b9e4f60b25bd0ba9bfd85c1015daf8d63efe4cb2efef4dc965",
+          "license": "Creative Commons BY-SA-NC (upstream statement does not name a version)",
+          "alphaMapping": "Not verified; alpha software identity is separate from this walk reference"
+        },
+        "imageSize": [
+          1200,
+          1100
+        ],
+        "options": {
+          "installationStage": 2
+        },
+        "assemblyBounds": [
+          89.65455776911458,
+          58.92857142857171,
+          1110.3454422308853,
+          1041.0714285714284
+        ],
+        "jointRegionBounds": [
+          768.3330154448074,
+          556.0381780986781,
+          892.1061864115366,
+          704.1147956325846
+        ],
+        "jointRegionAnchor": [
+          830.219600928172,
+          630.0764868656313
+        ],
+        "jointRegionSourceBody": "trunk_base/yaw2roll",
+        "jointRegionMeaning": "walk reference left_hip_yaw body; alpha ID 20 correspondence is not verified",
+        "instanceCount": 70,
+        "displayOffsets": {},
+        "sourceMatricesPreserved": true,
+        "installationStage": 2,
+        "installationMeaning": "display-only stage 2 alignment of the walk reference left hip/leg chain; no physical installation acceptance",
+        "sourceTargetAnchor": [
+          499.40189702595893,
+          697.8879232392278
+        ],
+        "sourceTargetBounds": [
+          437.5153115425944,
+          623.8496144722745,
+          561.2884825093234,
+          771.9262320061811
+        ],
+        "movingJointAnchor": [
+          830.219600928172,
+          630.0764868656313
+        ],
+        "movingJointBounds": [
+          768.3330154448074,
+          556.0381780986781,
+          892.1061864115366,
+          704.1147956325846
+        ],
+        "movingAssemblyBounds": [
+          755.8827208447494,
+          543.9417439099303,
+          1091.1911439439548,
+          931.665904803908
+        ],
+        "movingInstanceCount": 17,
+        "fixedInstanceCount": 53,
+        "movingSourceBodies": [
+          "trunk_base/yaw2roll",
+          "trunk_base/yaw2roll/hip_l",
+          "trunk_base/yaw2roll/hip_l/upper_leg_left",
+          "trunk_base/yaw2roll/hip_l/upper_leg_left/leg",
+          "trunk_base/yaw2roll/hip_l/upper_leg_left/leg/ankle_left"
+        ],
+        "projectionCoordinates": "image pixels, origin top-left, x right, y down",
+        "alphaBounds": [
+          173,
+          109,
+          1084,
+          967
+        ],
+        "file": "cover-installation.png",
+        "sha256": "55b7420536f72ddf48a5441b005e59980414ab74961f403485347d45f36c5824",
+        "errors": [],
+        "background": "transparent"
+      }
+    },
+    {
+      "file": "installation-process.webp",
+      "role": "AR/mobile: generated in-progress installation illustration, hands and tool visible",
+      "source": "docs/presentations/v2/assets/generated/microduck/installation-process.png",
+      "source_sha256": "2566e9e8610868a7b2e72192ca4893d00ed42fb5f78af56bf5718bd51faf2303",
+      "sha256": "51963ee6b3b8a17ddc5655c88dd83c21e4cd2e33bd97b520dab2b8b50ac77cc4",
+      "bytes": 140788,
+      "size": [
+        1600,
+        900
+      ],
+      "source_size": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "transform": "Lanczos resize from [1672, 941] to width 1600; WebP encoding, lossless=False, quality=89",
+      "kind": "generated_installation_illustration",
+      "attribution": "imagegen installation-process illustration using official-closeup.webp and source-derived model renders as references",
+      "rights": "Generated process illustration; references retain their source attribution",
+      "installation_target": {
+        "source_pixel": [
+          883,
+          527
+        ],
+        "source_size": [
+          1672,
+          941
+        ],
+        "normalized": [
+          0.52811004784689,
+          0.5600425079702445
+        ],
+        "note": "Tightening location on the right hip connector in the generated process illustration; visual pointer, not measured pose evidence"
+      }
+    },
+    {
+      "file": "workbench-build.webp",
+      "role": "Lazy build teaching workbench screenshot",
+      "source": "docs/presentations/v2/assets/generated/microduck/ui-build.png",
+      "source_sha256": "636ac3b3325ed20933dd1573e8db54394c0b6d20ca7c2304389a610201ae11a8",
+      "sha256": "d768b8a9ebdf06cb9242a408af5856904bc3d02db446c5826febf3e3a7777585",
+      "bytes": 122140,
+      "size": [
+        1680,
+        720
+      ],
+      "source_size": [
+        3360,
+        1440
+      ],
+      "mode": "RGB",
+      "transform": "Lanczos resize of original 3360 x 1440 UI capture to 1680 x 720, high-quality WebP encoding (quality 95, method 6); screenshot only, no presentation title/footer",
+      "kind": "prototype_browser_capture",
+      "attribution": "PSOP task illustration or prototype",
+      "rights": "Native PSOP diagram or prototype; embedded geometry retains upstream attribution",
+      "slide_usage": {
+        "slide": "docs/presentations/v2/slides/15-build-workbench.svg",
+        "relationship": "Same existing UI prototype image used by the corresponding presentation workbench slide; this web asset is encoded directly from ui-build.png / ui-compile.png / ui-simulate.png, not a rasterization of the full slide"
+      }
+    },
+    {
+      "file": "workbench-compile.webp",
+      "role": "Lazy compile teaching workbench screenshot",
+      "source": "docs/presentations/v2/assets/generated/microduck/ui-compile.png",
+      "source_sha256": "901fd7293d165e3c287aedee53d7fd0982cae530631c3424f9b6f8e90cd53cda",
+      "sha256": "e0fb2daf65784e82ec5d00746567beada5caa3b835fb61eab440fcf9315d92c2",
+      "bytes": 121768,
+      "size": [
+        1680,
+        720
+      ],
+      "source_size": [
+        3360,
+        1440
+      ],
+      "mode": "RGB",
+      "transform": "Lanczos resize of original 3360 x 1440 UI capture to 1680 x 720, high-quality WebP encoding (quality 95, method 6); screenshot only, no presentation title/footer",
+      "kind": "prototype_browser_capture",
+      "attribution": "PSOP task illustration or prototype",
+      "rights": "Native PSOP diagram or prototype; embedded geometry retains upstream attribution",
+      "slide_usage": {
+        "slide": "docs/presentations/v2/slides/16-compile-eg.svg",
+        "relationship": "Same existing UI prototype image used by the corresponding presentation workbench slide; this web asset is encoded directly from ui-build.png / ui-compile.png / ui-simulate.png, not a rasterization of the full slide"
+      }
+    },
+    {
+      "file": "workbench-simulate.webp",
+      "role": "Lazy simulate teaching workbench screenshot",
+      "source": "docs/presentations/v2/assets/generated/microduck/ui-simulate.png",
+      "source_sha256": "d1d753aaf510fea8008fc8f8405f2e2063936cff7d538fb4b023c74cc46499c3",
+      "sha256": "ddb89e11396e68fd595b2881f2b20a168a908f68b39b2396dcb9a160f04ab8e1",
+      "bytes": 105608,
+      "size": [
+        1680,
+        720
+      ],
+      "source_size": [
+        3360,
+        1440
+      ],
+      "mode": "RGB",
+      "transform": "Lanczos resize of original 3360 x 1440 UI capture to 1680 x 720, high-quality WebP encoding (quality 95, method 6); screenshot only, no presentation title/footer",
+      "kind": "prototype_browser_capture",
+      "attribution": "PSOP task illustration or prototype",
+      "rights": "Native PSOP diagram or prototype; embedded geometry retains upstream attribution",
+      "slide_usage": {
+        "slide": "docs/presentations/v2/slides/17-simulate-workbench.svg",
+        "relationship": "Same existing UI prototype image used by the corresponding presentation workbench slide; this web asset is encoded directly from ui-build.png / ui-compile.png / ui-simulate.png, not a rasterization of the full slide"
+      }
+    },
+    {
+      "file": "sim-step-01.webp",
+      "role": "Lazy installation preview stage 1: 准备部件",
+      "source": "docs/presentations/v2/assets/generated/microduck/sim-step-01.png",
+      "source_sha256": "d26da62a85974bcae0efd82bb14b1472bce80a26f11c139b4d761f565d50f92a",
+      "sha256": "31fd2886919c475086ed90d692b120924fad55addf081b597418aeda550fc29c",
+      "bytes": 143756,
+      "size": [
+        1680,
+        720
+      ],
+      "source_size": [
+        1680,
+        720
+      ],
+      "mode": "RGB",
+      "transform": "WebP encoding only; pixel layout and dimensions retained; lossless=True, quality=90",
+      "kind": "prototype_browser_capture",
+      "attribution": "PSOP task illustration or prototype",
+      "rights": "Native PSOP diagram or prototype; embedded geometry retains upstream attribution",
+      "stage": {
+        "stage": 1,
+        "name": "准备部件",
+        "guard": false,
+        "success": false,
+        "recheckPresent": false,
+        "movingSourceInstances": 17,
+        "sourceMatricesSha256": "ac1595f620c9369c2a86541117e5187bda48bbb6870957e585b15932408ba8b9",
+        "displayMatricesSha256": "8e590fd0c09bf7d071ecd799cd089b26713bbe4d0108adc9b2212d270753ccdb",
+        "source_target_anchor": [
+          17.49999960884452,
+          84.52662080713743,
+          -13.256460001212325
+        ]
+      }
+    },
+    {
+      "file": "sim-step-02.webp",
+      "role": "Lazy installation preview stage 2: 对齐髋部支架",
+      "source": "docs/presentations/v2/assets/generated/microduck/sim-step-02.png",
+      "source_sha256": "cafc37b02efe826a04103a4055a9e3ed965035aab55661a449556e67a1567e40",
+      "sha256": "e7a26c7dc99996b94e0bb9f50ad5d3f110447ae1343db12ecf9446d96dcaaaaf",
+      "bytes": 145050,
+      "size": [
+        1680,
+        720
+      ],
+      "source_size": [
+        1680,
+        720
+      ],
+      "mode": "RGB",
+      "transform": "WebP encoding only; pixel layout and dimensions retained; lossless=True, quality=90",
+      "kind": "prototype_browser_capture",
+      "attribution": "PSOP task illustration or prototype",
+      "rights": "Native PSOP diagram or prototype; embedded geometry retains upstream attribution",
+      "stage": {
+        "stage": 2,
+        "name": "对齐髋部支架",
+        "guard": false,
+        "success": false,
+        "recheckPresent": false,
+        "movingSourceInstances": 17,
+        "sourceMatricesSha256": "ac1595f620c9369c2a86541117e5187bda48bbb6870957e585b15932408ba8b9",
+        "displayMatricesSha256": "3b31ac7591e0d03a4e502c94e9daa819940385140cafd83d2cba92208caef250",
+        "source_target_anchor": [
+          17.49999960884452,
+          84.52662080713743,
+          -13.256460001212325
+        ]
+      }
+    },
+    {
+      "file": "sim-step-03.webp",
+      "role": "Lazy installation preview stage 3: 安装舵机与连接件",
+      "source": "docs/presentations/v2/assets/generated/microduck/sim-step-03.png",
+      "source_sha256": "97df742bb502bede739e737bd6619d6f60f72be5741bf61d1ddf6f71783f1d40",
+      "sha256": "a8e625b4fd42d6c51df4157134cef28105878af12aeecb09768af76afd19ee06",
+      "bytes": 146108,
+      "size": [
+        1680,
+        720
+      ],
+      "source_size": [
+        1680,
+        720
+      ],
+      "mode": "RGB",
+      "transform": "WebP encoding only; pixel layout and dimensions retained; lossless=True, quality=90",
+      "kind": "prototype_browser_capture",
+      "attribution": "PSOP task illustration or prototype",
+      "rights": "Native PSOP diagram or prototype; embedded geometry retains upstream attribution",
+      "stage": {
+        "stage": 3,
+        "name": "安装舵机与连接件",
+        "guard": false,
+        "success": false,
+        "recheckPresent": false,
+        "movingSourceInstances": 17,
+        "sourceMatricesSha256": "ac1595f620c9369c2a86541117e5187bda48bbb6870957e585b15932408ba8b9",
+        "displayMatricesSha256": "fd430cb60ef2087be7e6858ce6245f75680e8c53cbbea358d92760125ac41625",
+        "source_target_anchor": [
+          17.49999960884452,
+          84.52662080713743,
+          -13.256460001212325
+        ]
+      }
+    },
+    {
+      "file": "sim-step-04.webp",
+      "role": "Lazy installation preview stage 4: 固定与连接",
+      "source": "docs/presentations/v2/assets/generated/microduck/sim-step-04.png",
+      "source_sha256": "58da66707d8d8a816241397738c88697c0a3eb0bef00d4246af9cd7dd094eaff",
+      "sha256": "8fda20dbc7b0641b71a2f85dd4b140e6bf6d65732949eb45ded846504a07676f",
+      "bytes": 137876,
+      "size": [
+        1680,
+        720
+      ],
+      "source_size": [
+        1680,
+        720
+      ],
+      "mode": "RGB",
+      "transform": "WebP encoding only; pixel layout and dimensions retained; lossless=True, quality=90",
+      "kind": "prototype_browser_capture",
+      "attribution": "PSOP task illustration or prototype",
+      "rights": "Native PSOP diagram or prototype; embedded geometry retains upstream attribution",
+      "stage": {
+        "stage": 4,
+        "name": "固定与连接",
+        "guard": false,
+        "success": false,
+        "recheckPresent": false,
+        "movingSourceInstances": 17,
+        "sourceMatricesSha256": "ac1595f620c9369c2a86541117e5187bda48bbb6870957e585b15932408ba8b9",
+        "displayMatricesSha256": "e89e3b780e445433f527180fa87d2c06ddae661ad34c369dc612f193f92f4bdf",
+        "source_target_anchor": [
+          17.49999960884452,
+          84.52662080713743,
+          -13.256460001212325
+        ]
+      }
+    },
+    {
+      "file": "sim-step-05.webp",
+      "role": "Lazy installation preview stage 5: 复检待完成",
+      "source": "docs/presentations/v2/assets/generated/microduck/sim-step-05.png",
+      "source_sha256": "9ad66b1b968c3fb3a56ea94055f5f7a29de249fb887317f5baa3b50f05294d70",
+      "sha256": "1be73182444ea01369759be9f24edba92e17ecba4eca80cf4dcd9b54ad07b2a2",
+      "bytes": 136664,
+      "size": [
+        1680,
+        720
+      ],
+      "source_size": [
+        1680,
+        720
+      ],
+      "mode": "RGB",
+      "transform": "WebP encoding only; pixel layout and dimensions retained; lossless=True, quality=90",
+      "kind": "prototype_browser_capture",
+      "attribution": "PSOP task illustration or prototype",
+      "rights": "Native PSOP diagram or prototype; embedded geometry retains upstream attribution",
+      "stage": {
+        "stage": 5,
+        "name": "复检待完成",
+        "guard": false,
+        "success": false,
+        "recheckPresent": false,
+        "movingSourceInstances": 17,
+        "sourceMatricesSha256": "ac1595f620c9369c2a86541117e5187bda48bbb6870957e585b15932408ba8b9",
+        "displayMatricesSha256": "e89e3b780e445433f527180fa87d2c06ddae661ad34c369dc612f193f92f4bdf",
+        "source_target_anchor": [
+          17.49999960884452,
+          84.52662080713743,
+          -13.256460001212325
+        ]
+      }
+    },
+    {
+      "file": "ar-demo-poster.webp",
+      "role": "AR video poster: original mechanical-arm assembly demonstration; separate from Microduck teaching case",
+      "source": "docs/presentations/v2/assets/generated/ar-demo-poster.png",
+      "source_sha256": "1f7199c886451fab1ceb3a3f311fd11779084188ab3c4f7b94483ba076f791ff",
+      "sha256": "f8cf8d7d813407ea4e0427d38498e81fc5d0a3f26e930c6611d79a192f70042c",
+      "bytes": 209160,
+      "size": [
+        1280,
+        720
+      ],
+      "source_size": [
+        1280,
+        720
+      ],
+      "mode": "RGB",
+      "transform": "WebP encoding only; pixel layout and dimensions retained; lossless=False, quality=87",
+      "kind": "original_mechanical_arm_video_poster",
+      "attribution": "PSOP teaching prototype",
+      "rights": "Native PSOP illustration; embedded source geometry retains original attribution"
+    },
+    {
+      "file": "ar-demo-25s.mp4",
+      "role": "Click-to-load original mechanical-arm AR assembly demonstration, approximately 25 seconds",
+      "source": "docs/presentations/v2/assets/media/ar-demo-25s.mp4",
+      "source_sha256": "f7196a70d861a6e6870d36ed4728ea4c8627fce9a66ac6aacb29bf4e9f8cd08b",
+      "sha256": "f7196a70d861a6e6870d36ed4728ea4c8627fce9a66ac6aacb29bf4e9f8cd08b",
+      "bytes": 12214576,
+      "kind": "original_mechanical_arm_video",
+      "transform": "Byte-for-byte local copy",
+      "attribution": "Original PSOP presentation demonstration; not a Microduck recording"
+    },
+    {
+      "file": "psop-overview.pdf",
+      "role": "Click-to-download complete current 25-page PSOP solution presentation PDF; no page images are preloaded",
+      "source": "docs/presentations/v2/psop-v2.pdf",
+      "source_sha256": "80f4dcbd49ba2a777414969f2df9cead0760ac5d18858034e7b94a8cb6db7104",
+      "sha256": "80f4dcbd49ba2a777414969f2df9cead0760ac5d18858034e7b94a8cb6db7104",
+      "bytes": 20991714,
+      "kind": "current_psop_solution_presentation",
+      "transform": "Byte-for-byte local copy",
+      "attribution": "PSOP v2 presentation; individual embedded references retain their original attribution",
+      "loading": "Download only after explicit click; no preload or background fetch"
+    }
+  ]
+}

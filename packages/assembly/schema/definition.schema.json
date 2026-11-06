@@ -1,0 +1,1321 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "psop.assembly.definition/1.0-draft.1",
+  "title": "Bounded explicit hole-role families and selection rules; no implicit physical success",
+  "type": "object",
+  "properties": {
+    "schema": {
+      "const": "psop.assembly.definition/1.0-draft.1"
+    },
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "basis": {
+      "$ref": "#/$defs/basis"
+    },
+    "logical_holes": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/logical_hole"
+      },
+      "minItems": 1
+    },
+    "interfaces": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/interface"
+      },
+      "minItems": 2
+    },
+    "query": {
+      "$ref": "#/$defs/query_input"
+    },
+    "participants": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/participant"
+      },
+      "minItems": 0
+    },
+    "context": {
+      "$ref": "#/$defs/context"
+    }
+  },
+  "required": [
+    "schema",
+    "id",
+    "basis",
+    "logical_holes",
+    "interfaces",
+    "query"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "basis": {
+      "type": "object",
+      "properties": {
+        "kind": {
+          "enum": [
+            "synthetic",
+            "source"
+          ]
+        },
+        "refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "kind",
+        "refs"
+      ],
+      "additionalProperties": false
+    },
+    "warrant": {
+      "type": "object",
+      "properties": {
+        "kind": {
+          "enum": [
+            "synthetic",
+            "source_function"
+          ]
+        },
+        "refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "statement": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "kind",
+        "refs",
+        "statement"
+      ],
+      "additionalProperties": false
+    },
+    "assessment_input": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "enum": [
+            "pass",
+            "fail",
+            "unknown"
+          ]
+        },
+        "basis_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "status",
+        "basis_refs"
+      ],
+      "additionalProperties": false
+    },
+    "assessment": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "enum": [
+            "pass",
+            "fail",
+            "unknown"
+          ]
+        },
+        "reasons": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0
+        }
+      },
+      "required": [
+        "status",
+        "reasons"
+      ],
+      "additionalProperties": false
+    },
+    "interval": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      },
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "logical_hole": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "owner_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "frame_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "center_m": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "minItems": 3,
+          "maxItems": 3
+        },
+        "axis": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "minItems": 3,
+          "maxItems": 3
+        },
+        "radius_m": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "axial_range_m": {
+          "$ref": "#/$defs/interval"
+        }
+      },
+      "required": [
+        "id",
+        "owner_ref",
+        "frame_ref",
+        "center_m",
+        "axis",
+        "radius_m",
+        "axial_range_m"
+      ],
+      "additionalProperties": false
+    },
+    "selection": {
+      "type": "object",
+      "properties": {
+        "completeness": {
+          "enum": [
+            "complete",
+            "open_unknown"
+          ]
+        },
+        "allowed_sets": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 1,
+            "uniqueItems": true
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "cardinality": {
+          "type": "object",
+          "properties": {
+            "min": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "max": {
+              "type": "integer",
+              "minimum": 0
+            }
+          },
+          "required": [
+            "min",
+            "max"
+          ],
+          "additionalProperties": false
+        },
+        "anchors_any": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 1,
+            "uniqueItems": true
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "paired_dependencies": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 2,
+            "uniqueItems": true
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "required_members": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "dimension": {
+          "enum": [
+            "mechanical",
+            "engineering",
+            "task"
+          ]
+        }
+      },
+      "required": [
+        "completeness"
+      ],
+      "additionalProperties": false
+    },
+    "member": {
+      "type": "object",
+      "properties": {
+        "role_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "hole_ref": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "role_ref",
+        "hole_ref"
+      ],
+      "additionalProperties": false
+    },
+    "mode": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "selection": {
+          "$ref": "#/$defs/selection"
+        },
+        "warrant": {
+          "$ref": "#/$defs/warrant"
+        },
+        "requirements": {
+          "type": "object",
+          "properties": {
+            "connector_role_refs": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "minItems": 0,
+              "uniqueItems": true
+            },
+            "path_required": {
+              "type": "boolean"
+            },
+            "elastic_required": {
+              "type": "boolean"
+            },
+            "completion_policy": {
+              "const": "all_selected_paths"
+            }
+          },
+          "required": [
+            "connector_role_refs",
+            "path_required",
+            "elastic_required",
+            "completion_policy"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "id",
+        "selection",
+        "warrant",
+        "requirements"
+      ],
+      "additionalProperties": false
+    },
+    "interface": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "owner_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "frame_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "mechanism": {
+          "type": "string",
+          "minLength": 1
+        },
+        "owner_role": {
+          "type": "string",
+          "minLength": 1
+        },
+        "complementary_roles": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "members": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/member"
+          },
+          "minItems": 1
+        },
+        "warrant": {
+          "$ref": "#/$defs/warrant"
+        },
+        "modes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/mode"
+          },
+          "minItems": 1
+        }
+      },
+      "required": [
+        "id",
+        "owner_ref",
+        "frame_ref",
+        "mechanism",
+        "owner_role",
+        "complementary_roles",
+        "members",
+        "warrant",
+        "modes"
+      ],
+      "additionalProperties": false
+    },
+    "query_input": {
+      "type": "object",
+      "properties": {
+        "part_a": {
+          "type": "string",
+          "minLength": 1
+        },
+        "part_b": {
+          "type": "string",
+          "minLength": 1
+        },
+        "interface_a": {
+          "type": "string",
+          "minLength": 1
+        },
+        "interface_b": {
+          "type": "string",
+          "minLength": 1
+        },
+        "mode_a": {
+          "type": "string",
+          "minLength": 1
+        },
+        "mode_b": {
+          "type": "string",
+          "minLength": 1
+        },
+        "axis_relation": {
+          "enum": [
+            "parallel",
+            "opposed",
+            "unoriented"
+          ]
+        },
+        "position_tolerance_m": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "angle_tolerance_rad": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "limits": {
+          "type": "object",
+          "properties": {
+            "max_members": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "max_mappings": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "max_proposals": {
+              "type": "integer",
+              "minimum": 1
+            }
+          },
+          "required": [
+            "max_members",
+            "max_mappings",
+            "max_proposals"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "part_a",
+        "part_b",
+        "interface_a",
+        "interface_b",
+        "mode_a",
+        "mode_b",
+        "axis_relation",
+        "position_tolerance_m",
+        "angle_tolerance_rad",
+        "limits"
+      ],
+      "additionalProperties": false
+    },
+    "participant": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "kind": {
+          "type": "string",
+          "minLength": 1
+        },
+        "basis_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "basis_refs"
+      ],
+      "additionalProperties": false
+    },
+    "use": {
+      "type": "object",
+      "properties": {
+        "hole_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "axial_interval_m": {
+          "$ref": "#/$defs/interval"
+        },
+        "sharing_group": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "hole_ref",
+        "axial_interval_m"
+      ],
+      "additionalProperties": false
+    },
+    "connector_binding": {
+      "type": "object",
+      "properties": {
+        "role_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "member_pair": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "participant_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "uses": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/use"
+          },
+          "minItems": 0
+        }
+      },
+      "required": [
+        "role_ref",
+        "member_pair",
+        "participant_ref"
+      ],
+      "additionalProperties": false
+    },
+    "existing_use": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "hole_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "axial_interval_m": {
+          "$ref": "#/$defs/interval"
+        },
+        "participant_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sharing_group": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "id",
+        "hole_ref",
+        "axial_interval_m",
+        "participant_ref"
+      ],
+      "additionalProperties": false
+    },
+    "sharing_rule": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "kind": {
+          "enum": [
+            "common_participant_multilayer",
+            "exclusive_intervals"
+          ]
+        },
+        "sharing_group": {
+          "type": "string",
+          "minLength": 1
+        },
+        "participant_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "hole_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "warrant": {
+          "$ref": "#/$defs/warrant"
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "warrant"
+      ],
+      "additionalProperties": false
+    },
+    "engagement": {
+      "type": "object",
+      "properties": {
+        "member_pair": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "status": {
+          "enum": [
+            "engaged",
+            "not_engaged",
+            "unknown"
+          ]
+        },
+        "basis_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "member_pair",
+        "status",
+        "basis_refs"
+      ],
+      "additionalProperties": false
+    },
+    "context": {
+      "type": "object",
+      "properties": {
+        "connector_bindings": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/connector_binding"
+          },
+          "minItems": 0
+        },
+        "existing_uses": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/existing_use"
+          },
+          "minItems": 0
+        },
+        "sharing_rules": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/sharing_rule"
+          },
+          "minItems": 0
+        },
+        "assessments": {
+          "type": "object",
+          "properties": {
+            "engineering": {
+              "$ref": "#/$defs/assessment_input"
+            },
+            "task": {
+              "$ref": "#/$defs/assessment_input"
+            },
+            "path": {
+              "$ref": "#/$defs/assessment_input"
+            },
+            "elastic": {
+              "$ref": "#/$defs/assessment_input"
+            }
+          },
+          "required": [],
+          "additionalProperties": false
+        },
+        "engagement": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/engagement"
+          },
+          "minItems": 0
+        }
+      },
+      "required": [],
+      "additionalProperties": false
+    },
+    "selections": {
+      "type": "object",
+      "properties": {
+        "admissible_sets": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 1,
+            "uniqueItems": true
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "unknown_sets": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 1,
+            "uniqueItems": true
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "forbidden_count": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "admissible_sets",
+        "unknown_sets",
+        "forbidden_count"
+      ],
+      "additionalProperties": false
+    },
+    "member_mapping": {
+      "type": "object",
+      "properties": {
+        "role_a": {
+          "type": "string",
+          "minLength": 1
+        },
+        "role_b": {
+          "type": "string",
+          "minLength": 1
+        },
+        "hole_a_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "hole_b_ref": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "role_a",
+        "role_b",
+        "hole_a_ref",
+        "hole_b_ref"
+      ],
+      "additionalProperties": false
+    },
+    "transform": {
+      "type": "object",
+      "properties": {
+        "rotation": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "number"
+            },
+            "minItems": 3,
+            "maxItems": 3
+          },
+          "minItems": 3,
+          "maxItems": 3
+        },
+        "translation_m": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "minItems": 3,
+          "maxItems": 3
+        },
+        "maps_frame_b_to_a": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "determinant": {
+          "type": "number",
+          "minimum": 0.999999,
+          "maximum": 1.000001
+        }
+      },
+      "required": [
+        "rotation",
+        "translation_m",
+        "maps_frame_b_to_a",
+        "determinant"
+      ],
+      "additionalProperties": false
+    },
+    "geometry_assessment": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "enum": [
+            "pass",
+            "fail",
+            "unknown"
+          ]
+        },
+        "scope": {
+          "const": "rigid_group_registration"
+        },
+        "max_position_residual_m": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "max_axis_residual_rad": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        }
+      },
+      "required": [
+        "status",
+        "scope",
+        "max_position_residual_m",
+        "max_axis_residual_rad"
+      ],
+      "additionalProperties": false
+    },
+    "pose": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "status": {
+              "const": "determined"
+            },
+            "transform": {
+              "$ref": "#/$defs/transform"
+            },
+            "reason": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "status",
+            "transform"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "status": {
+              "const": "underdetermined"
+            },
+            "transform": {
+              "type": "null"
+            },
+            "reason": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "status",
+            "transform"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "status": {
+              "const": "incompatible"
+            },
+            "transform": {
+              "type": "null"
+            },
+            "reason": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "status",
+            "transform",
+            "reason"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "proposal": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "interface_a_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "mode_a_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "interface_b_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "mode_b_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "selected_roles_a": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "selected_roles_b": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "member_mapping": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/member_mapping"
+          },
+          "minItems": 1
+        },
+        "pose": {
+          "$ref": "#/$defs/pose"
+        },
+        "assessments": {
+          "type": "object",
+          "properties": {
+            "geometry": {
+              "$ref": "#/$defs/geometry_assessment"
+            },
+            "mechanical": {
+              "$ref": "#/$defs/assessment"
+            },
+            "engineering": {
+              "$ref": "#/$defs/assessment"
+            },
+            "task": {
+              "$ref": "#/$defs/assessment"
+            },
+            "completion": {
+              "$ref": "#/$defs/assessment"
+            },
+            "occupancy": {
+              "$ref": "#/$defs/assessment"
+            },
+            "mode_eligibility": {
+              "$ref": "#/$defs/assessment"
+            }
+          },
+          "required": [
+            "geometry",
+            "mechanical",
+            "engineering",
+            "task",
+            "completion",
+            "occupancy",
+            "mode_eligibility"
+          ],
+          "additionalProperties": false
+        },
+        "unresolved_requirements": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0
+        },
+        "engaged_member_pairs": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 2,
+            "maxItems": 2
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "synthetic": {
+          "type": "boolean"
+        },
+        "definition_digest": {
+          "type": "string",
+          "pattern": "^sha256:[a-f0-9]{64}$"
+        },
+        "selection_results": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/selection_result"
+          },
+          "minItems": 2,
+          "maxItems": 2
+        }
+      },
+      "required": [
+        "id",
+        "interface_a_ref",
+        "mode_a_ref",
+        "interface_b_ref",
+        "mode_b_ref",
+        "selected_roles_a",
+        "selected_roles_b",
+        "member_mapping",
+        "pose",
+        "assessments",
+        "unresolved_requirements",
+        "engaged_member_pairs",
+        "synthetic",
+        "definition_digest",
+        "selection_results"
+      ],
+      "additionalProperties": false
+    },
+    "selection_result": {
+      "type": "object",
+      "properties": {
+        "side": {
+          "enum": [
+            "a",
+            "b"
+          ]
+        },
+        "dimension": {
+          "enum": [
+            "mechanical",
+            "engineering",
+            "task"
+          ]
+        },
+        "dimension_defaulted": {
+          "type": "boolean"
+        },
+        "status": {
+          "enum": [
+            "pass",
+            "fail",
+            "unknown"
+          ]
+        }
+      },
+      "required": [
+        "side",
+        "dimension",
+        "dimension_defaulted",
+        "status"
+      ],
+      "additionalProperties": false
+    },
+    "input_member_mapping": {
+      "type": "object",
+      "properties": {
+        "role_a": {
+          "type": "string",
+          "minLength": 1
+        },
+        "role_b": {
+          "type": "string",
+          "minLength": 1
+        },
+        "hole_a_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "hole_b_ref": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "role_a",
+        "role_b"
+      ],
+      "additionalProperties": false
+    },
+    "proposal_input": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "interface_a_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "mode_a_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "interface_b_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "mode_b_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "selected_roles_a": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "selected_roles_b": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "member_mapping": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/input_member_mapping"
+          },
+          "minItems": 1
+        },
+        "pose": {
+          "$ref": "#/$defs/pose"
+        },
+        "assessments": {
+          "type": "object",
+          "properties": {
+            "geometry": {
+              "$ref": "#/$defs/geometry_assessment"
+            },
+            "mechanical": {
+              "$ref": "#/$defs/assessment"
+            },
+            "engineering": {
+              "$ref": "#/$defs/assessment"
+            },
+            "task": {
+              "$ref": "#/$defs/assessment"
+            },
+            "completion": {
+              "$ref": "#/$defs/assessment"
+            },
+            "occupancy": {
+              "$ref": "#/$defs/assessment"
+            },
+            "mode_eligibility": {
+              "$ref": "#/$defs/assessment"
+            }
+          },
+          "required": [
+            "geometry",
+            "mechanical",
+            "engineering",
+            "task",
+            "completion",
+            "occupancy",
+            "mode_eligibility"
+          ],
+          "additionalProperties": false
+        },
+        "unresolved_requirements": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0
+        },
+        "engaged_member_pairs": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 2,
+            "maxItems": 2
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "synthetic": {
+          "type": "boolean"
+        },
+        "definition_digest": {
+          "type": "string",
+          "pattern": "^sha256:[a-f0-9]{64}$"
+        },
+        "selection_results": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/selection_result"
+          },
+          "minItems": 2,
+          "maxItems": 2
+        }
+      },
+      "required": [
+        "selected_roles_a",
+        "selected_roles_b",
+        "member_mapping"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

@@ -1,0 +1,1045 @@
+{
+  "result": "passed",
+  "local_paths_checked": 74,
+  "duplicate_ids": false,
+  "file_mode": {
+    "console_errors": [],
+    "failed_requests": [],
+    "mobile_menu": "passed",
+    "keyboard_tabs": "passed",
+    "image_detail_fit_focus": "passed",
+    "source_dialog_focus": "passed",
+    "initial_video_pdf_requests": 0,
+    "3d_ready": true
+  },
+  "http_mode": {
+    "status": 200,
+    "external_requests": 0,
+    "console_errors": [],
+    "initial_video_pdf_requests": 0,
+    "reduced_motion": "passed",
+    "3d_ready": true
+  },
+  "viewports": [
+    {
+      "viewport": 1440,
+      "document": 1440,
+      "body": 1440
+    },
+    {
+      "viewport": 768,
+      "document": 768,
+      "body": 768
+    },
+    {
+      "viewport": 390,
+      "document": 390,
+      "body": 390
+    },
+    {
+      "viewport": 360,
+      "document": 360,
+      "body": 360
+    }
+  ],
+  "source_slides_manifest": {
+    "file": "../presentations/v2/slides/manifest.json",
+    "sha256": "2759d1e4df3e44833987bf268d5f47d0b4c723ab2c9eb3aa6e8e5b4c08f44b3c"
+  },
+  "core_demos": {
+    "3d": {
+      "protocol": "file://",
+      "source_meshes": 38,
+      "source_instances": 70,
+      "assembled": {
+        "ready": true,
+        "fallback": false,
+        "visible": true,
+        "explosion": 0,
+        "target": 0,
+        "azimuth": 0.57,
+        "elevation": 0.13,
+        "drag": false,
+        "frames": 19,
+        "meshCount": 70,
+        "triangleCount": 796844,
+        "sourceMatricesPreserved": true,
+        "active": true,
+        "reducedMotion": false,
+        "manual": true,
+        "error": null,
+        "source": {
+          "assembly_status": "source_reference",
+          "configurations": [
+            "walk-model-reference"
+          ],
+          "coordinate_system": {
+            "handedness": "right",
+            "transform_layout": "row-major",
+            "up_axis": "+Z"
+          },
+          "mesh_count": 38,
+          "object_count": 70,
+          "pose": "qpos0",
+          "source_id": "SRC-000048",
+          "source_digest": "sha256:80fc4424ed71e430ec4919110dfdb5c714dc1c4e1138e1832a16865cf31eb8c8",
+          "path": "../../sources/SRC-000048--robot_walk/original/robot_walk.xml",
+          "reference_device_id": "DEV-000003",
+          "sourceCommit": "cb70b792312d559a4da09064d92009079671815f",
+          "sourceBounds": [
+            [
+              -0.05177709943375588,
+              -0.07050000131130217,
+              0.013473379386577666
+            ],
+            [
+              0.09229001924991602,
+              0.07050000131130217,
+              0.2774493844779491
+            ]
+          ],
+          "precision": "uint16 positions per mesh bounds; source face normals int16; triangles unchanged",
+          "maxPositionQuantizationErrorMeters": 9.360648376168416e-07,
+          "sourceManifestSha256": "c3279ec14d88c6b9e4f60b25bd0ba9bfd85c1015daf8d63efe4cb2efef4dc965",
+          "license": "Creative Commons BY-SA-NC (upstream statement does not name a version)",
+          "alphaMapping": "Not verified; alpha software identity is separate from this walk reference"
+        }
+      },
+      "exploded": {
+        "ready": true,
+        "fallback": false,
+        "visible": true,
+        "explosion": 0.9973935079400226,
+        "target": 1,
+        "azimuth": 0.57,
+        "elevation": 0.13,
+        "drag": false,
+        "frames": 51,
+        "meshCount": 70,
+        "triangleCount": 796844,
+        "sourceMatricesPreserved": true,
+        "active": true,
+        "reducedMotion": false,
+        "manual": true,
+        "error": null,
+        "source": {
+          "assembly_status": "source_reference",
+          "configurations": [
+            "walk-model-reference"
+          ],
+          "coordinate_system": {
+            "handedness": "right",
+            "transform_layout": "row-major",
+            "up_axis": "+Z"
+          },
+          "mesh_count": 38,
+          "object_count": 70,
+          "pose": "qpos0",
+          "source_id": "SRC-000048",
+          "source_digest": "sha256:80fc4424ed71e430ec4919110dfdb5c714dc1c4e1138e1832a16865cf31eb8c8",
+          "path": "../../sources/SRC-000048--robot_walk/original/robot_walk.xml",
+          "reference_device_id": "DEV-000003",
+          "sourceCommit": "cb70b792312d559a4da09064d92009079671815f",
+          "sourceBounds": [
+            [
+              -0.05177709943375588,
+              -0.07050000131130217,
+              0.013473379386577666
+            ],
+            [
+              0.09229001924991602,
+              0.07050000131130217,
+              0.2774493844779491
+            ]
+          ],
+          "precision": "uint16 positions per mesh bounds; source face normals int16; triangles unchanged",
+          "maxPositionQuantizationErrorMeters": 9.360648376168416e-07,
+          "sourceManifestSha256": "c3279ec14d88c6b9e4f60b25bd0ba9bfd85c1015daf8d63efe4cb2efef4dc965",
+          "license": "Creative Commons BY-SA-NC (upstream statement does not name a version)",
+          "alphaMapping": "Not verified; alpha software identity is separate from this walk reference"
+        }
+      },
+      "rotated": {
+        "ready": true,
+        "fallback": false,
+        "visible": true,
+        "explosion": 1,
+        "target": 1,
+        "azimuth": -0.15000000000000013,
+        "elevation": 0.2500000000000001,
+        "drag": false,
+        "frames": 75,
+        "meshCount": 70,
+        "triangleCount": 796844,
+        "sourceMatricesPreserved": true,
+        "active": true,
+        "reducedMotion": false,
+        "manual": true,
+        "error": null,
+        "source": {
+          "assembly_status": "source_reference",
+          "configurations": [
+            "walk-model-reference"
+          ],
+          "coordinate_system": {
+            "handedness": "right",
+            "transform_layout": "row-major",
+            "up_axis": "+Z"
+          },
+          "mesh_count": 38,
+          "object_count": 70,
+          "pose": "qpos0",
+          "source_id": "SRC-000048",
+          "source_digest": "sha256:80fc4424ed71e430ec4919110dfdb5c714dc1c4e1138e1832a16865cf31eb8c8",
+          "path": "../../sources/SRC-000048--robot_walk/original/robot_walk.xml",
+          "reference_device_id": "DEV-000003",
+          "sourceCommit": "cb70b792312d559a4da09064d92009079671815f",
+          "sourceBounds": [
+            [
+              -0.05177709943375588,
+              -0.07050000131130217,
+              0.013473379386577666
+            ],
+            [
+              0.09229001924991602,
+              0.07050000131130217,
+              0.2774493844779491
+            ]
+          ],
+          "precision": "uint16 positions per mesh bounds; source face normals int16; triangles unchanged",
+          "maxPositionQuantizationErrorMeters": 9.360648376168416e-07,
+          "sourceManifestSha256": "c3279ec14d88c6b9e4f60b25bd0ba9bfd85c1015daf8d63efe4cb2efef4dc965",
+          "license": "Creative Commons BY-SA-NC (upstream statement does not name a version)",
+          "alphaMapping": "Not verified; alpha software identity is separate from this walk reference"
+        }
+      },
+      "reset": {
+        "ready": true,
+        "fallback": false,
+        "visible": true,
+        "explosion": 0.004137142280093918,
+        "target": 0,
+        "azimuth": 0.57,
+        "elevation": 0.13,
+        "drag": false,
+        "frames": 97,
+        "meshCount": 70,
+        "triangleCount": 796844,
+        "sourceMatricesPreserved": true,
+        "active": true,
+        "reducedMotion": false,
+        "manual": true,
+        "error": null,
+        "source": {
+          "assembly_status": "source_reference",
+          "configurations": [
+            "walk-model-reference"
+          ],
+          "coordinate_system": {
+            "handedness": "right",
+            "transform_layout": "row-major",
+            "up_axis": "+Z"
+          },
+          "mesh_count": 38,
+          "object_count": 70,
+          "pose": "qpos0",
+          "source_id": "SRC-000048",
+          "source_digest": "sha256:80fc4424ed71e430ec4919110dfdb5c714dc1c4e1138e1832a16865cf31eb8c8",
+          "path": "../../sources/SRC-000048--robot_walk/original/robot_walk.xml",
+          "reference_device_id": "DEV-000003",
+          "sourceCommit": "cb70b792312d559a4da09064d92009079671815f",
+          "sourceBounds": [
+            [
+              -0.05177709943375588,
+              -0.07050000131130217,
+              0.013473379386577666
+            ],
+            [
+              0.09229001924991602,
+              0.07050000131130217,
+              0.2774493844779491
+            ]
+          ],
+          "precision": "uint16 positions per mesh bounds; source face normals int16; triangles unchanged",
+          "maxPositionQuantizationErrorMeters": 9.360648376168416e-07,
+          "sourceManifestSha256": "c3279ec14d88c6b9e4f60b25bd0ba9bfd85c1015daf8d63efe4cb2efef4dc965",
+          "license": "Creative Commons BY-SA-NC (upstream statement does not name a version)",
+          "alphaMapping": "Not verified; alpha software identity is separate from this walk reference"
+        }
+      },
+      "offscreen_paused": true,
+      "reduced_motion_auto_paused": true,
+      "reduced_motion_manual_works": true,
+      "canvas": {
+        "assembled": {
+          "bounds": [
+            187,
+            86,
+            517,
+            585
+          ],
+          "canvas": [
+            660,
+            661
+          ],
+          "visible": true,
+          "within_canvas": true,
+          "sha256": "285f808414a5c8e18d137449d8d22d9498af11d64250095bdaad26ff48bf1734"
+        },
+        "exploded": {
+          "bounds": [
+            208,
+            77,
+            522,
+            591
+          ],
+          "canvas": [
+            660,
+            661
+          ],
+          "visible": true,
+          "within_canvas": true,
+          "sha256": "05286868ba18a6fe8af713e9e3459f4404761b5d80a82f420d672789f4ba3b8b"
+        },
+        "rotated": {
+          "bounds": [
+            154,
+            80,
+            487,
+            572
+          ],
+          "canvas": [
+            660,
+            661
+          ],
+          "visible": true,
+          "within_canvas": true,
+          "sha256": "75b390a3e23ed8cd5e68e119792a34b58ef85349b5df433bbee94ed098491039"
+        },
+        "mobile-exploded": {
+          "bounds": [
+            94,
+            62,
+            315,
+            424
+          ],
+          "canvas": [
+            360,
+            481
+          ],
+          "visible": true,
+          "within_canvas": true,
+          "sha256": "52b073924f9f246e97de5f3a00e64e29a7e29c580aebe61b2b52190b4da979df"
+        }
+      },
+      "errors": [],
+      "result": "passed"
+    },
+    "eg_ar": {
+      "result": "passed",
+      "desktop": {
+        "viewport": 1440,
+        "actual_page": true,
+        "initial_video_requests": 0,
+        "arc_sample_distance_maximum": 0.5,
+        "initial_marking": "p_align",
+        "hold_marking": "p_identity_ok",
+        "hold_join_fired": false,
+        "join_inputs_consumed_together": true,
+        "next_empty_until_join_finishes": true,
+        "complete_marking": "p_next",
+        "pause_resume_reset": true,
+        "ar_auto_4s_and_manual": true,
+        "video_load_after_click_only": true,
+        "video_escape_pauses_and_restores_focus": true,
+        "screenshots": [
+          "desktop-eg-hold.png",
+          "desktop-eg-join.png",
+          "desktop-ar-awaiting.png"
+        ]
+      },
+      "mobile": {
+        "viewport": 390,
+        "scrollWidth": 390,
+        "bodyWidth": 390,
+        "overflowElements": [
+          {
+            "tag": "DIV",
+            "id": "",
+            "cls": "hero-halo",
+            "x": -65,
+            "w": 520,
+            "right": 455,
+            "overflow": "visible"
+          },
+          {
+            "tag": "DIV",
+            "id": "",
+            "cls": "model-orbit orbit-one",
+            "x": -27.281421661376953,
+            "w": 444.5628662109375,
+            "right": 417.28144454956055,
+            "overflow": "visible"
+          },
+          {
+            "tag": "DIV",
+            "id": "",
+            "cls": "model-orbit orbit-two",
+            "x": -38.06142044067383,
+            "w": 466.12286376953125,
+            "right": 428.0614433288574,
+            "overflow": "visible"
+          },
+          {
+            "tag": "DIV",
+            "id": "",
+            "cls": "model-floor",
+            "x": -173.9671630859375,
+            "w": 737.934326171875,
+            "right": 563.9671630859375,
+            "overflow": "visible"
+          },
+          {
+            "tag": "svg",
+            "id": "eg-graph",
+            "cls": "[object SVGAnimatedString]",
+            "x": 20,
+            "w": 780,
+            "right": 800,
+            "overflow": "visible"
+          },
+          {
+            "tag": "g",
+            "id": "",
+            "cls": "[object SVGAnimatedString]",
+            "x": 72.01451110839844,
+            "w": 669.0379028320312,
+            "right": 741.0524139404297,
+            "overflow": "visible"
+          },
+          {
+            "tag": "path",
+            "id": "",
+            "cls": "[object SVGAnimatedString]",
+            "x": 327.6701965332031,
+            "w": 66.73046875,
+            "right": 394.4006652832031,
+            "overflow": "visible"
+          },
+          {
+            "tag": "path",
+            "id": "",
+            "cls": "[object SVGAnimatedString]",
+            "x": 327.6701965332031,
+            "w": 66.73046875,
+            "right": 394.4006652832031,
+            "overflow": "visible"
+          },
+          {
+            "tag": "path",
+            "id": "",
+            "cls": "[object SVGAnimatedString]",
+            "x": 432.5323791503906,
+            "w": 58.06414794921875,
+            "right": 490.5965270996094,
+            "overflow": "visible"
+          },
+          {
+            "tag": "path",
+            "id": "",
+            "cls": "[object SVGAnimatedString]",
+            "x": 509.6623840332031,
+            "w": 53.731048583984375,
+            "right": 563.3934326171875,
+            "overflow": "visible"
+          },
+          {
+            "tag": "path",
+            "id": "",
+            "cls": "[object SVGAnimatedString]",
+            "x": 432.5323791503906,
+            "w": 58.06414794921875,
+            "right": 490.5965270996094,
+            "overflow": "visible"
+          },
+          {
+            "tag": "path",
+            "id": "",
+            "cls": "[object SVGAnimatedString]",
+            "x": 509.6623840332031,
+            "w": 53.731048583984375,
+            "right": 563.3934326171875,
+            "overflow": "visible"
+          },
+          {
+            "tag": "path",
+            "id": "",
+            "cls": "[object SVGAnimatedString]",
+            "x": 601.5250854492188,
+            "w": 58.064208984375,
+            "right": 659.5892944335938,
+            "overflow": "visible"
+          },
+          {
+            "tag": "path",
+            "id": "",
+            "cls": "[object SVGAnimatedString]",
+            "x": 601.5250854492188,
+            "w": 58.064208984375,
+            "right": 659.5892944335938,
+            "overflow": "visible"
+          },
+          {
+            "tag": "path",
+            "id": "",
+            "cls": "[object SVGAnimatedString]",
+            "x": 678.6551513671875,
+            "w": 62.39727783203125,
+            "right": 741.0524291992188,
+            "overflow": "visible"
+          },
+          {
+            "tag": "g",
+            "id": "",
+            "cls": "[object SVGAnimatedString]",
+            "x": 36.345985412597656,
+            "w": 750.6388549804688,
+            "right": 786.9848403930664,
+            "overflow": "visible"
+          },
+          {
+            "tag": "g",
+            "id": "",
+            "cls": "[object SVGAnimatedString]",
+            "x": 379.6690673828125,
+            "w": 69.98992919921875,
+            "right": 449.65899658203125,
+            "overflow": "visible"
+          },
+          {
+            "tag": "circle",
+            "id": "",
+            "cls": "[object SVGAnimatedString]",
+            "x": 397.8671875,
+            "w": 32.931915283203125,
+            "right": 430.7991027832031,
+            "overflow": "visible"
+          },
+          {
+            "tag": "text",
+            "id": "",
+            "cls": "[object SVGAnimatedString]",
+            "x": 379.6690673828125,
+            "w": 69.98992919921875,
+            "right": 449.65899658203125,
+            "overflow": "visible"
+          },
+          {
+            "tag": "g",
+            "id": "",
+            "cls": "[object SVGAnimatedString]",
+            "x": 378.6690673828125,
+            "w": 70.98995971679688,
+            "right": 449.6590270996094,
+            "overflow": "visible"
+          },
+          {
+            "tag": "circle",
+            "id": "",
+            "cls": "[object SVGAnimatedString]",
+            "x": 397.8671875,
+            "w": 32.931915283203125,
+            "right": 430.7991027832031,
+            "overflow": "visible"
+          },
+          {
+            "tag": "text",
+            "id": "",
+            "cls": "[object SVGAnimatedString]",
+            "x": 378.6690673828125,
+            "w": 70.98995971679688,
+            "right": 449.6590270996094,
+            "overflow": "visible"
+          },
+          {
+            "tag": "g",
+            "id": "",
+            "cls": "[object SVGAnimatedString]",
+            "x": 466.33203125,
+            "w": 69.989990234375,
+            "right": 536.322021484375,
+            "overflow": "visible"
+          },
+          {
+            "tag": "rect",
+            "id": "",
+            "cls": "[object SVGAnimatedString]",
+            "x": 494.9296875,
+            "w": 12.1328125,
+            "right": 507.0625,
+            "overflow": "visible"
+          },
+          {
+            "tag": "text",
+            "id": "",
+            "cls": "[object SVGAnimatedString]",
+            "x": 466.33203125,
+            "w": 69.989990234375,
+            "right": 536.322021484375,
+            "overflow": "visible"
+          },
+          {
+            "tag": "g",
+            "id": "",
+            "cls": "[object SVGAnimatedString]",
+            "x": 465.3320007324219,
+            "w": 70.98995971679688,
+            "right": 536.3219604492188,
+            "overflow": "visible"
+          },
+          {
+            "tag": "rect",
+            "id": "",
+            "cls": "[object SVGAnimatedString]",
+            "x": 494.9296875,
+            "w": 12.1328125,
+            "right": 507.0625,
+            "overflow": "visible"
+          },
+          {
+            "tag": "text",
+            "id": "",
+            "cls": "[object SVGAnimatedString]",
+            "x": 465.3320007324219,
+            "w": 70.98995971679688,
+            "right": 536.3219604492188,
+            "overflow": "visible"
+          },
+          {
+            "tag": "g",
+            "id": "",
+            "cls": "[object SVGAnimatedString]",
+            "x": 548.6617431640625,
+            "w": 69.32818603515625,
+            "right": 617.9899291992188,
+            "overflow": "visible"
+          },
+          {
+            "tag": "circle",
+            "id": "",
+            "cls": "[object SVGAnimatedString]",
+            "x": 566.8599243164062,
+            "w": 32.93194580078125,
+            "right": 599.7918701171875,
+            "overflow": "visible"
+          },
+          {
+            "tag": "text",
+            "id": "",
+            "cls": "[object SVGAnimatedString]",
+            "x": 548.6617431640625,
+            "w": 69.32818603515625,
+            "right": 617.9899291992188,
+            "overflow": "visible"
+          },
+          {
+            "tag": "g",
+            "id": "",
+            "cls": "[object SVGAnimatedString]",
+            "x": 547.6618041992188,
+            "w": 70.328125,
+            "right": 617.9899291992188,
+            "overflow": "visible"
+          },
+          {
+            "tag": "circle",
+            "id": "",
+            "cls": "[object SVGAnimatedString]",
+            "x": 566.8599243164062,
+            "w": 32.93194580078125,
+            "right": 599.7918701171875,
+            "overflow": "visible"
+          },
+          {
+            "tag": "text",
+            "id": "",
+            "cls": "[object SVGAnimatedString]",
+            "x": 547.6618041992188,
+            "w": 70.328125,
+            "right": 617.9899291992188,
+            "overflow": "visible"
+          },
+          {
+            "tag": "g",
+            "id": "",
+            "cls": "[object SVGAnimatedString]",
+            "x": 633.6060180664062,
+            "w": 72.765625,
+            "right": 706.3716430664062,
+            "overflow": "visible"
+          }
+        ],
+        "controls": [
+          {
+            "id": "eg-play",
+            "text": "继续演示",
+            "x": 20,
+            "y": 626.25,
+            "w": 83,
+            "h": 39
+          },
+          {
+            "id": "eg-evidence",
+            "text": "补充复检记录",
+            "x": 110,
+            "y": 626.25,
+            "w": 101,
+            "h": 39
+          },
+          {
+            "id": "eg-reset",
+            "text": "",
+            "x": 218,
+            "y": 626.25,
+            "w": 35,
+            "h": 39
+          }
+        ],
+        "state": {
+          "x": 63.796875,
+          "y": 541.859375,
+          "w": 306.203125,
+          "h": 22.390625
+        },
+        "detail": {
+          "x": 63.796875,
+          "y": 569.25,
+          "w": 306.203125,
+          "h": 37
+        },
+        "phone": {
+          "clientHeight": 464,
+          "scrollHeight": 464,
+          "rect": {
+            "x": 75.5,
+            "y": 369.640625,
+            "width": 239,
+            "height": 474.1875,
+            "top": 369.640625,
+            "right": 314.5,
+            "bottom": 843.828125,
+            "left": 75.5
+          }
+        },
+        "ar_description": {
+          "clientHeight": 29,
+          "scrollHeight": 29,
+          "rect": {
+            "x": 104.5,
+            "y": 726.515625,
+            "width": 181,
+            "height": 28.78125,
+            "top": 726.515625,
+            "right": 285.5,
+            "bottom": 755.296875,
+            "left": 104.5
+          }
+        },
+        "function_checks": {
+          "hold_then_evidence_to_next": true,
+          "reset": true,
+          "manual_ar_waiting": true
+        },
+        "page_errors": []
+      },
+      "source": "docs/html/scripts/demos.js",
+      "note": "Desktop assertions completed in actual page test; its first run stopped only on the subsequently fixed mobile decoration overflow. Narrow layout rechecked after field clipping."
+    },
+    "software_gpu_profile": {
+      "result": "passed",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "baseline_fps": 2.8,
+      "steady_measured_fps": 14.3,
+      "software_profile": {
+        "pixel_ratio": 0.72,
+        "antialias": false
+      },
+      "hardware_profile": "Unchanged high quality: antialias on desktop; DPR ≤1.75 / ≤1.25 mobile",
+      "unchanged": [
+        "source triangles",
+        "38 source geometries",
+        "70 assembly instances",
+        "source matrices",
+        "source rgba",
+        "PBR materials",
+        "lighting"
+      ],
+      "note": "Headless Chromium SwiftShader measurements; physical GPU performance was not measured."
+    }
+  },
+  "files": {
+    "assets/3d/microduck-source.js": {
+      "bytes": 8164287,
+      "sha256": "12efa5b9300a799cfd72dfdc78c5f95be5bb2003a251f083674f983a1f6a16c5"
+    },
+    "assets/3d/sources.json": {
+      "bytes": 30566,
+      "sha256": "a3cffc939bd83c6a36e99f2b44b5d808ff06ef46a98eb9333cba7f066fce7fb5"
+    },
+    "assets/3d/THREE-LICENSE.txt": {
+      "bytes": 1081,
+      "sha256": "852e0e8699169bf9f6fdc6bda3e682d078dcbc738b5d33e74df594721bff271d"
+    },
+    "assets/3d/three.min.js": {
+      "bytes": 669884,
+      "sha256": "170c6789f43217c96b3170f4b42fafe135de7f7cd48497a4218f9757ee1d49fa"
+    },
+    "assets/ar-demo-25s.mp4": {
+      "bytes": 12214576,
+      "sha256": "f7196a70d861a6e6870d36ed4728ea4c8627fce9a66ac6aacb29bf4e9f8cd08b"
+    },
+    "assets/ar-demo-poster.webp": {
+      "bytes": 209160,
+      "sha256": "f8cf8d7d813407ea4e0427d38498e81fc5d0a3f26e930c6611d79a192f70042c"
+    },
+    "assets/brand/psop-favicon.svg": {
+      "bytes": 584,
+      "sha256": "698b693bd0718b39dd92245f19e8d21b667435fe604c0dff69596cdbebd8f968"
+    },
+    "assets/brand/psop-mark.svg": {
+      "bytes": 756,
+      "sha256": "5be1999159a5fd00caef1c1590375633e21da593c2765834ea0617a16cc5a5f6"
+    },
+    "assets/eg-refined.svg": {
+      "bytes": 16871,
+      "sha256": "11414da943050123dc4f8e5aa74ceecafe0cac181aa0554be3dbe2cee1dae695"
+    },
+    "assets/installation-process.webp": {
+      "bytes": 140788,
+      "sha256": "51963ee6b3b8a17ddc5655c88dd83c21e4cd2e33bd97b520dab2b8b50ac77cc4"
+    },
+    "assets/microduck-assembled.webp": {
+      "bytes": 96866,
+      "sha256": "1bbe9e7eb403e908fb72387a5aed670328b376c16c43f4aea4217b6f75da3276"
+    },
+    "assets/microduck-exploded.webp": {
+      "bytes": 74568,
+      "sha256": "32ee7c81d1ae670b0adf590a40d2bd3e5af9251f7998486e31692d78c4218eea"
+    },
+    "assets/microduck-installation.webp": {
+      "bytes": 103186,
+      "sha256": "8c7621e340ac3d009a7bb197633e5c73a178f238a6407d0e137faf6e0050fd1b"
+    },
+    "assets/psop-overview.pdf": {
+      "bytes": 20991714,
+      "sha256": "80f4dcbd49ba2a777414969f2df9cead0760ac5d18858034e7b94a8cb6db7104"
+    },
+    "assets/sim-step-01.webp": {
+      "bytes": 143756,
+      "sha256": "31fd2886919c475086ed90d692b120924fad55addf081b597418aeda550fc29c"
+    },
+    "assets/sim-step-02.webp": {
+      "bytes": 145050,
+      "sha256": "e7a26c7dc99996b94e0bb9f50ad5d3f110447ae1343db12ecf9446d96dcaaaaf"
+    },
+    "assets/sim-step-03.webp": {
+      "bytes": 146108,
+      "sha256": "a8e625b4fd42d6c51df4157134cef28105878af12aeecb09768af76afd19ee06"
+    },
+    "assets/sim-step-04.webp": {
+      "bytes": 137876,
+      "sha256": "8fda20dbc7b0641b71a2f85dd4b140e6bf6d65732949eb45ded846504a07676f"
+    },
+    "assets/sim-step-05.webp": {
+      "bytes": 136664,
+      "sha256": "1be73182444ea01369759be9f24edba92e17ecba4eca80cf4dcd9b54ad07b2a2"
+    },
+    "assets/sources.json": {
+      "bytes": 35724,
+      "sha256": "23db55044304fc8f4ca796b8add3a5d9bbd230db8f7cbbc971d8e95a3fc0b41b"
+    },
+    "assets/workbench-build.webp": {
+      "bytes": 122140,
+      "sha256": "d768b8a9ebdf06cb9242a408af5856904bc3d02db446c5826febf3e3a7777585"
+    },
+    "assets/workbench-compile.webp": {
+      "bytes": 121768,
+      "sha256": "e0fb2daf65784e82ec5d00746567beada5caa3b835fb61eab440fcf9315d92c2"
+    },
+    "assets/workbench-simulate.webp": {
+      "bytes": 105608,
+      "sha256": "ddb89e11396e68fd595b2881f2b20a168a908f68b39b2396dcb9a160f04ab8e1"
+    },
+    "brand-preview.png": {
+      "bytes": 6310,
+      "sha256": "276004e5ead698d61f4a280c37fed48588c3539bf57ff5001f6ff4a4c760e5ef"
+    },
+    "eg-preview.png": {
+      "bytes": 109945,
+      "sha256": "7876e0714bfdd556ca20891ea5d1156ce132a1a42fb3063f00e5af8769850de1"
+    },
+    "eg-refined.css": {
+      "bytes": 5680,
+      "sha256": "989648c217bc1c5d5839045e690ddafc3edb4dd7667f681208edbe5255058b32"
+    },
+    "index.html": {
+      "bytes": 41526,
+      "sha256": "a372d3769d47640bd6ed8c5c81176afcad147fb698a50724660de0eb4021b7d0"
+    },
+    "preview.png": {
+      "bytes": 168414,
+      "sha256": "45e30d77694b322b3e049c02eb8cb90652cbfc3b43d096fb2267c2bd9f431e44"
+    },
+    "README.md": {
+      "bytes": 2251,
+      "sha256": "d52d13cb2937c4222d9ae8ccfae20dcbf5b70c8c5e2480df5340392514c43ec7"
+    },
+    "scripts/demos.js": {
+      "bytes": 23651,
+      "sha256": "e664b8d4fbd3af012f237fb3d50486e4a2c0cbcc3eb747da9479902294c5a247"
+    },
+    "scripts/main.js": {
+      "bytes": 10948,
+      "sha256": "c5ca055bb69430b1062bebbda41fb827d6a8f48cd55fc4562bdcbd135dfec2aa"
+    },
+    "scripts/microduck-3d.js": {
+      "bytes": 23620,
+      "sha256": "b2dd07658976da9d93a60599e369db3367d352a84f82937434a11078b98e9782"
+    },
+    "styles.css": {
+      "bytes": 61709,
+      "sha256": "ead1751f7f6e169db9add9124ca2959065d04203e34d8be5976b49af9f5b667a"
+    }
+  },
+  "fallback_checks": {
+    "image_viewer_centred": true,
+    "nojs_visible_workspaces": 3,
+    "nojs_mobile_width": 390,
+    "nojs_download": "passed"
+  },
+  "preview": "preview.png",
+  "styling_revision": {
+    "date": "2026-10-15",
+    "brand_concept": "Verified task execution and reviewed experience feedback, linked as two interlocking tracks around a condition gate",
+    "brand_sources": [
+      "assets/brand/psop-mark.svg",
+      "assets/brand/psop-favicon.svg"
+    ],
+    "eg_sources": [
+      "assets/eg-refined.svg",
+      "eg-refined.css"
+    ],
+    "layout_execution_checks": {
+      "result": "passed",
+      "local_paths_checked": 78,
+      "layout": [
+        {
+          "width": 1440,
+          "overflow": false
+        },
+        {
+          "width": 768,
+          "overflow": false
+        },
+        {
+          "width": 390,
+          "overflow": false
+        },
+        {
+          "width": 360,
+          "overflow": false
+        }
+      ],
+      "eg": {
+        "nodes": 13,
+        "arcs": 13,
+        "ready_wait_complete_reset": "passed",
+        "label_count": 22,
+        "overlaps": [],
+        "edgeLabels": [],
+        "mobile_execution": "passed"
+      },
+      "page_errors": []
+    },
+    "motion_checks": {
+      "result": "passed",
+      "first_path_sample": [
+        {
+          "from": "p_align",
+          "to": "t_install_macro",
+          "distance": 0.001708984375
+        }
+      ],
+      "two_join_path_samples": [
+        {
+          "from": "p_identity_ok",
+          "to": "t_join",
+          "distance": 0.025670072673374122
+        },
+        {
+          "from": "p_recheck_ok",
+          "to": "t_join",
+          "distance": 0.025670072673374122
+        }
+      ],
+      "pause_freezes_tokens": true,
+      "next_empty_until_join_finishes": true,
+      "console_errors": []
+    },
+    "brand_checks": {
+      "psop-mark.svg": {
+        "sha256": "5be1999159a5fd00caef1c1590375633e21da593c2765834ea0617a16cc5a5f6",
+        "bytes": 756,
+        "viewbox": "0 0 72 72"
+      },
+      "psop-favicon.svg": {
+        "sha256": "698b693bd0718b39dd92245f19e8d21b667435fe604c0dff69596cdbebd8f968",
+        "bytes": 584,
+        "viewbox": "0 0 72 72"
+      },
+      "geometry": {
+        "rotation_symmetry_degrees": 180,
+        "gate_center": [
+          36,
+          36
+        ],
+        "execution_feedback_width": 12,
+        "square_viewbox": 72,
+        "rendered_sizes": [
+          16,
+          32,
+          128
+        ]
+      }
+    },
+    "final_file_mode": {
+      "external_stylesheet_gradient": "passed",
+      "label_font_size": "14px",
+      "mobile_width": 390,
+      "mobile_wait_and_join": "passed",
+      "console_errors": []
+    },
+    "changed_files": [
+      "index.html",
+      "preview.png",
+      "README.md",
+      "styles.css"
+    ],
+    "added_files": [
+      "assets/brand/psop-favicon.svg",
+      "assets/brand/psop-mark.svg",
+      "assets/eg-refined.svg",
+      "brand-preview.png",
+      "eg-preview.png",
+      "eg-refined.css"
+    ],
+    "deleted_files": [
+      "assets/favicon.svg"
+    ],
+    "previews": [
+      "preview.png",
+      "brand-preview.png",
+      "eg-preview.png"
+    ]
+  }
+}

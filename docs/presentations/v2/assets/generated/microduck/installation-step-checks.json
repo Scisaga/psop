@@ -1,0 +1,166 @@
+{
+  "workflow": "Microduck installation display; source matrices retained, illustrative stage offsets",
+  "stages": [
+    {
+      "stage": 1,
+      "name": "准备部件",
+      "movingSourceInstances": 17,
+      "chainBounds": [
+        [
+          119.97337963989743,
+          0.500000052154058,
+          -37.03355934183594
+        ],
+        [
+          224.49975413084027,
+          65.00000131130217,
+          43.743540464448955
+        ]
+      ],
+      "targetAnchor": [
+        17.49999960884452,
+        84.52662080713743,
+        -13.256460001212325
+      ],
+      "guard": false,
+      "success": false,
+      "recheckPresent": false,
+      "sourceMatricesSha256": "ac1595f620c9369c2a86541117e5187bda48bbb6870957e585b15932408ba8b9",
+      "displayMatricesSha256": "8e590fd0c09bf7d071ecd799cd089b26713bbe4d0108adc9b2212d270753ccdb",
+      "image": "sim-step-01.png",
+      "imageSha256": "d26da62a85974bcae0efd82bb14b1472bce80a26f11c139b4d761f565d50f92a",
+      "canvasSha256": "95fd6c002934fbd938630a19c62418bbdf75a5a8eb2a84d59c770fb0eee5f528"
+    },
+    {
+      "stage": 2,
+      "name": "对齐髋部支架",
+      "movingSourceInstances": 17,
+      "chainBounds": [
+        [
+          131.00000005215406,
+          28.000245869159716,
+          -62.03355934183595
+        ],
+        [
+          195.50000131130219,
+          132.5266203601026,
+          18.743540464448948
+        ]
+      ],
+      "targetAnchor": [
+        17.49999960884452,
+        84.52662080713743,
+        -13.256460001212325
+      ],
+      "guard": false,
+      "success": false,
+      "recheckPresent": false,
+      "sourceMatricesSha256": "ac1595f620c9369c2a86541117e5187bda48bbb6870957e585b15932408ba8b9",
+      "displayMatricesSha256": "3b31ac7591e0d03a4e502c94e9daa819940385140cafd83d2cba92208caef250",
+      "image": "sim-step-02.png",
+      "imageSha256": "cafc37b02efe826a04103a4055a9e3ed965035aab55661a449556e67a1567e40",
+      "canvasSha256": "f9400f6b78131e58fe08a77d8273839a379193fd76745f43ff47ba2be9fba352"
+    },
+    {
+      "stage": 3,
+      "name": "安装舵机与连接件",
+      "movingSourceInstances": 17,
+      "chainBounds": [
+        [
+          67.00000005215406,
+          11.000245869159716,
+          -72.03355934183594
+        ],
+        [
+          131.50000131130219,
+          115.5266203601026,
+          8.743540464448948
+        ]
+      ],
+      "targetAnchor": [
+        17.49999960884452,
+        84.52662080713743,
+        -13.256460001212325
+      ],
+      "guard": false,
+      "success": false,
+      "recheckPresent": false,
+      "sourceMatricesSha256": "ac1595f620c9369c2a86541117e5187bda48bbb6870957e585b15932408ba8b9",
+      "displayMatricesSha256": "fd430cb60ef2087be7e6858ce6245f75680e8c53cbbea358d92760125ac41625",
+      "image": "sim-step-03.png",
+      "imageSha256": "97df742bb502bede739e737bd6619d6f60f72be5741bf61d1ddf6f71783f1d40",
+      "canvasSha256": "f2b462cfc1b8f1a9f64bba894e27766ca03340b2b464ca2eb952ab6b81ec3122"
+    },
+    {
+      "stage": 4,
+      "name": "固定与连接",
+      "movingSourceInstances": 17,
+      "chainBounds": [
+        [
+          6.0000000521540615,
+          0.0002458691597198026,
+          -72.03355934183594
+        ],
+        [
+          70.50000131130217,
+          104.5266203601026,
+          8.743540464448948
+        ]
+      ],
+      "targetAnchor": [
+        17.49999960884452,
+        84.52662080713743,
+        -13.256460001212325
+      ],
+      "guard": false,
+      "success": false,
+      "recheckPresent": false,
+      "sourceMatricesSha256": "ac1595f620c9369c2a86541117e5187bda48bbb6870957e585b15932408ba8b9",
+      "displayMatricesSha256": "e89e3b780e445433f527180fa87d2c06ddae661ad34c369dc612f193f92f4bdf",
+      "image": "sim-step-04.png",
+      "imageSha256": "58da66707d8d8a816241397738c88697c0a3eb0bef00d4246af9cd7dd094eaff",
+      "canvasSha256": "98578534b839312a8d39f95bd42055e3a9ee314e676f2e9abbb6684efdd2b1a7"
+    },
+    {
+      "stage": 5,
+      "name": "复检待完成",
+      "movingSourceInstances": 17,
+      "chainBounds": [
+        [
+          6.0000000521540615,
+          0.0002458691597198026,
+          -72.03355934183594
+        ],
+        [
+          70.50000131130217,
+          104.5266203601026,
+          8.743540464448948
+        ]
+      ],
+      "targetAnchor": [
+        17.49999960884452,
+        84.52662080713743,
+        -13.256460001212325
+      ],
+      "guard": false,
+      "success": false,
+      "recheckPresent": false,
+      "sourceMatricesSha256": "ac1595f620c9369c2a86541117e5187bda48bbb6870957e585b15932408ba8b9",
+      "displayMatricesSha256": "e89e3b780e445433f527180fa87d2c06ddae661ad34c369dc612f193f92f4bdf",
+      "image": "sim-step-05.png",
+      "imageSha256": "9ad66b1b968c3fb3a56ea94055f5f7a29de249fb887317f5baa3b50f05294d70",
+      "canvasSha256": "615b50c77edfab2422801c4fb83585b72ec32cc765596ef02348299cb72744d4"
+    }
+  ],
+  "errors": [],
+  "cover": {
+    "image": "cover-simulate.png",
+    "size": [
+      1000,
+      500
+    ],
+    "stage": 2,
+    "sha256": "c14dcc0477d2fa88621bb04015909d6931fcbefd375f308966b24f0193f227f9"
+  },
+  "result": "passed"
+}

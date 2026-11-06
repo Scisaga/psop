@@ -1,0 +1,3929 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "psop.hardware.source-model/1.6",
+  "title": "Finite source openings and bounded complete-connection reviews with attributed inference and unconfirmed connector schematics",
+  "type": "object",
+  "properties": {
+    "schema": {
+      "const": "psop.hardware.source-model/1.6"
+    },
+    "ontology_target": {
+      "const": "psop.hardware/2.0-draft.4"
+    },
+    "device_id": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^[a-z][a-z0-9-]{1,63}$"
+    },
+    "parts": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/part"
+      },
+      "minItems": 1
+    },
+    "configurations": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/configuration"
+      },
+      "minItems": 1,
+      "maxItems": 1
+    },
+    "interfaces": {
+      "type": "array",
+      "maxItems": 0
+    },
+    "interface_connections": {
+      "type": "array",
+      "maxItems": 0
+    },
+    "frames": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/frame"
+      },
+      "minItems": 0
+    },
+    "features": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/feature"
+      },
+      "minItems": 0
+    },
+    "connection_candidates": {
+      "type": "array",
+      "maxItems": 0
+    },
+    "reference_relations": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/reference_relation"
+      },
+      "minItems": 0
+    },
+    "analysis": {
+      "$ref": "#/$defs/analysis"
+    },
+    "logical_holes": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/logical_hole"
+      },
+      "minItems": 0
+    },
+    "feature_patterns": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/feature_pattern"
+      },
+      "minItems": 0
+    },
+    "reference_observations": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/reference_observation"
+      },
+      "minItems": 0
+    },
+    "mounting_sites": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/mounting_site"
+      },
+      "minItems": 0
+    },
+    "mounting_interfaces": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/mounting_interface"
+      },
+      "minItems": 0
+    },
+    "reference_mounts": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/reference_mount"
+      },
+      "minItems": 0
+    },
+    "slot_features": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/slot_feature"
+      },
+      "minItems": 0
+    },
+    "circular_openings": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/circular_opening"
+      },
+      "minItems": 0
+    },
+    "passage_hypotheses": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/passage_hypothesis"
+      },
+      "minItems": 0
+    },
+    "pair_screenings": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/pair_screening"
+      },
+      "minItems": 0
+    },
+    "connection_reviews": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/connection_review"
+      },
+      "minItems": 0
+    },
+    "supplemental_components": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/supplemental_component"
+      },
+      "minItems": 0
+    }
+  },
+  "required": [
+    "schema",
+    "ontology_target",
+    "device_id",
+    "parts",
+    "configurations",
+    "interfaces",
+    "interface_connections",
+    "frames",
+    "features",
+    "connection_candidates",
+    "reference_relations",
+    "analysis",
+    "logical_holes",
+    "feature_patterns",
+    "reference_observations",
+    "mounting_sites",
+    "mounting_interfaces",
+    "reference_mounts",
+    "slot_features",
+    "circular_openings",
+    "passage_hypotheses",
+    "pair_screenings",
+    "connection_reviews",
+    "supplemental_components"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "part": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^part:[a-z][a-z0-9-]{1,63}:[a-f0-9]{16}$"
+        },
+        "type": {
+          "const": "Part"
+        },
+        "domain": {
+          "const": "model"
+        },
+        "revision": {
+          "type": "string",
+          "minLength": 1
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "geometry_source_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_locator": {
+          "type": "object",
+          "properties": {
+            "source_ref": {
+              "type": "string",
+              "minLength": 1
+            },
+            "path": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "source_ref",
+            "path"
+          ],
+          "additionalProperties": false
+        },
+        "interfaces": {
+          "type": "array",
+          "maxItems": 0
+        },
+        "interface_status": {
+          "enum": [
+            "mechanism_unconfirmed",
+            "mounting_knowledge_available"
+          ]
+        },
+        "mounting_interfaces": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "id",
+        "type",
+        "domain",
+        "revision",
+        "name",
+        "source_refs",
+        "evidence_refs",
+        "geometry_source_ref",
+        "source_locator",
+        "interfaces",
+        "interface_status",
+        "mounting_interfaces"
+      ],
+      "additionalProperties": false
+    },
+    "configuration": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^configuration:[a-z][a-z0-9-]{1,63}:source-qpos0$"
+        },
+        "type": {
+          "const": "Configuration"
+        },
+        "domain": {
+          "const": "model"
+        },
+        "revision": {
+          "type": "string",
+          "minLength": 1
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "part_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "source_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "unit": {
+          "const": "m"
+        },
+        "quaternion_order": {
+          "const": "xyzw"
+        },
+        "placements": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "part_ref": {
+                "type": "string",
+                "minLength": 1
+              },
+              "position": {
+                "type": "array",
+                "items": {
+                  "type": "number"
+                },
+                "minItems": 3,
+                "maxItems": 3
+              },
+              "quaternion": {
+                "type": "array",
+                "items": {
+                  "type": "number"
+                },
+                "minItems": 4,
+                "maxItems": 4
+              }
+            },
+            "required": [
+              "part_ref",
+              "position",
+              "quaternion"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 1
+        },
+        "connection_status": {
+          "enum": [
+            "mechanism_unconfirmed",
+            "reference_mounts_published"
+          ]
+        },
+        "interface_connections": {
+          "type": "array",
+          "items": {},
+          "maxItems": 0
+        },
+        "mechanical_status": {
+          "const": "not_evaluated"
+        },
+        "reference_mount_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "id",
+        "type",
+        "domain",
+        "revision",
+        "name",
+        "part_refs",
+        "source_refs",
+        "unit",
+        "quaternion_order",
+        "placements",
+        "connection_status",
+        "interface_connections",
+        "mechanical_status",
+        "reference_mount_refs"
+      ],
+      "additionalProperties": false
+    },
+    "feature": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/cylindrical_feature"
+        },
+        {
+          "$ref": "#/$defs/planar_feature"
+        },
+        {
+          "$ref": "#/$defs/conical_feature"
+        }
+      ]
+    },
+    "cylindrical_feature": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "owner_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "frame_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "kind": {
+          "enum": [
+            "bore_wall",
+            "shaft_wall"
+          ]
+        },
+        "geometry": {
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "cylinder"
+            },
+            "axis": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 3,
+              "maxItems": 3
+            },
+            "origin": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 3,
+              "maxItems": 3
+            },
+            "radius_m": {
+              "type": "number",
+              "minimum": 0
+            },
+            "axial_range_m": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 2,
+              "maxItems": 2
+            },
+            "triangle_indices": {
+              "type": "array",
+              "items": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "minItems": 1,
+              "uniqueItems": true
+            }
+          },
+          "required": [
+            "type",
+            "axis",
+            "origin",
+            "radius_m",
+            "axial_range_m",
+            "triangle_indices"
+          ],
+          "additionalProperties": false
+        },
+        "geometry_source_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "geometry_digest": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^sha256:[a-f0-9]{64}$"
+        },
+        "measurement": {
+          "type": "object",
+          "properties": {
+            "basis": {
+              "const": "calculated"
+            },
+            "method": {
+              "type": "string",
+              "minLength": 1
+            },
+            "fit_rms_m": {
+              "type": "number",
+              "minimum": 0
+            },
+            "fit_max_m": {
+              "type": "number",
+              "minimum": 0
+            },
+            "coverage": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            }
+          },
+          "required": [
+            "basis",
+            "method",
+            "fit_rms_m",
+            "fit_max_m",
+            "coverage"
+          ],
+          "additionalProperties": false
+        },
+        "source_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "id",
+        "owner_ref",
+        "frame_ref",
+        "kind",
+        "geometry",
+        "geometry_source_ref",
+        "geometry_digest",
+        "measurement",
+        "source_refs",
+        "evidence_refs"
+      ],
+      "additionalProperties": false
+    },
+    "planar_feature": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "owner_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "frame_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "kind": {
+          "const": "planar_patch"
+        },
+        "geometry": {
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "plane"
+            },
+            "origin": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 3,
+              "maxItems": 3
+            },
+            "normal": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 3,
+              "maxItems": 3
+            },
+            "area_m2": {
+              "type": "number",
+              "minimum": 0
+            },
+            "triangle_indices": {
+              "type": "array",
+              "items": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "minItems": 1,
+              "uniqueItems": true
+            },
+            "boundary_loops": {
+              "type": "array",
+              "items": {
+                "type": "array",
+                "items": {
+                  "type": "array",
+                  "items": {
+                    "type": "number"
+                  },
+                  "minItems": 3,
+                  "maxItems": 3
+                },
+                "minItems": 4
+              },
+              "minItems": 1
+            }
+          },
+          "required": [
+            "type",
+            "origin",
+            "normal",
+            "area_m2",
+            "triangle_indices",
+            "boundary_loops"
+          ],
+          "additionalProperties": false
+        },
+        "geometry_source_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "geometry_digest": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^sha256:[a-f0-9]{64}$"
+        },
+        "measurement": {
+          "type": "object",
+          "properties": {
+            "basis": {
+              "const": "calculated"
+            },
+            "method": {
+              "type": "string",
+              "minLength": 1
+            },
+            "fit_rms_m": {
+              "type": "number",
+              "minimum": 0
+            },
+            "fit_max_m": {
+              "type": "number",
+              "minimum": 0
+            },
+            "coverage": {
+              "const": 1
+            }
+          },
+          "required": [
+            "basis",
+            "method",
+            "fit_rms_m",
+            "fit_max_m",
+            "coverage"
+          ],
+          "additionalProperties": false
+        },
+        "source_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "id",
+        "owner_ref",
+        "frame_ref",
+        "kind",
+        "geometry",
+        "geometry_source_ref",
+        "geometry_digest",
+        "measurement",
+        "source_refs",
+        "evidence_refs"
+      ],
+      "additionalProperties": false
+    },
+    "frame": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "owner_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "pose": {
+          "type": "object",
+          "properties": {
+            "expressed_in": {
+              "type": "string",
+              "minLength": 1
+            },
+            "position": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 3,
+              "maxItems": 3
+            },
+            "quaternion": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 4,
+              "maxItems": 4
+            }
+          },
+          "required": [
+            "expressed_in",
+            "position",
+            "quaternion"
+          ],
+          "additionalProperties": false
+        },
+        "revision": {
+          "type": "string",
+          "minLength": 1
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "kind": {
+          "const": "source_geometry_measurement"
+        },
+        "geometry_source_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "geometry_digest": {
+          "type": "string",
+          "pattern": "^sha256:[a-f0-9]{64}$"
+        },
+        "motion_ownership": {
+          "const": "unresolved"
+        }
+      },
+      "required": [
+        "id",
+        "owner_ref",
+        "pose",
+        "revision",
+        "evidence_refs",
+        "kind",
+        "geometry_source_ref",
+        "geometry_digest",
+        "motion_ownership"
+      ],
+      "additionalProperties": false
+    },
+    "analysis": {
+      "type": "object",
+      "properties": {
+        "method": {
+          "const": "source-pair-connection-review/1"
+        },
+        "unit": {
+          "const": "m"
+        },
+        "features_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "interfaces_count": {
+          "const": 0
+        },
+        "connection_candidates_count": {
+          "const": 0
+        },
+        "meshes_analyzed": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "limitations": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "coverage": {
+          "type": "object",
+          "properties": {
+            "mesh_count": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "part_count": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "parts_with_features": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "parts_without_features": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "primitive_types": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "cylinder",
+                  "plane",
+                  "conical_frustum",
+                  "circular_inner_boundary",
+                  "variable_radius_cavity"
+                ]
+              },
+              "minItems": 2,
+              "maxItems": 5,
+              "uniqueItems": true
+            },
+            "planar_features_count": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "surface_pairs_count": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "parts_with_planar_features": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "feature_type_status": {
+              "type": "object",
+              "properties": {
+                "cylindrical_geometry": {
+                  "const": "partial"
+                },
+                "planar_geometry": {
+                  "const": "partial"
+                },
+                "slots_keys": {
+                  "const": "partial"
+                },
+                "undercuts_shoulders": {
+                  "const": "not_analyzed"
+                },
+                "threads_fasteners": {
+                  "const": "not_analyzed"
+                },
+                "curved_mates": {
+                  "const": "not_analyzed"
+                },
+                "snap_geometry": {
+                  "const": "not_analyzed"
+                },
+                "elastic_retention": {
+                  "const": "not_analyzed"
+                },
+                "assembly_paths": {
+                  "const": "not_analyzed"
+                },
+                "electrical_interfaces": {
+                  "const": "not_analyzed"
+                },
+                "engineering_limits": {
+                  "const": "not_analyzed"
+                }
+              },
+              "required": [
+                "cylindrical_geometry",
+                "planar_geometry",
+                "slots_keys",
+                "undercuts_shoulders",
+                "threads_fasteners",
+                "curved_mates",
+                "snap_geometry",
+                "elastic_retention",
+                "assembly_paths",
+                "electrical_interfaces",
+                "engineering_limits"
+              ],
+              "additionalProperties": false
+            },
+            "part_gaps": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "part_ref": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "unresolved_types": {
+                    "type": "array",
+                    "items": {
+                      "enum": [
+                        "slots_keys",
+                        "undercuts_shoulders",
+                        "threads_fasteners",
+                        "curved_mates",
+                        "snap_geometry",
+                        "elastic_retention",
+                        "assembly_paths",
+                        "electrical_interfaces",
+                        "engineering_limits"
+                      ]
+                    },
+                    "minItems": 9,
+                    "maxItems": 9,
+                    "uniqueItems": true
+                  }
+                },
+                "required": [
+                  "part_ref",
+                  "unresolved_types"
+                ],
+                "additionalProperties": false
+              },
+              "minItems": 1
+            },
+            "planar_regions_examined_count": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "unpaired_planar_regions_count": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "raw_cylinder_observations_count": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "raw_surface_observations_count": {
+              "type": "integer",
+              "minimum": 0
+            }
+          },
+          "required": [
+            "mesh_count",
+            "part_count",
+            "parts_with_features",
+            "parts_without_features",
+            "primitive_types",
+            "planar_features_count",
+            "surface_pairs_count",
+            "parts_with_planar_features",
+            "feature_type_status",
+            "part_gaps",
+            "planar_regions_examined_count",
+            "unpaired_planar_regions_count",
+            "raw_cylinder_observations_count",
+            "raw_surface_observations_count"
+          ],
+          "additionalProperties": false
+        },
+        "logical_holes_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "feature_patterns_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "raw_observations_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "reference_observations_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "pattern_alignment_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "mounting_sites_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "mounting_interfaces_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "reference_mounts_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "slot_features_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "circular_openings_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "passage_hypotheses_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "pair_screenings_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "connection_reviews_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "supplemental_components_count": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "method",
+        "unit",
+        "features_count",
+        "interfaces_count",
+        "connection_candidates_count",
+        "meshes_analyzed",
+        "limitations",
+        "coverage",
+        "logical_holes_count",
+        "feature_patterns_count",
+        "raw_observations_count",
+        "reference_observations_count",
+        "pattern_alignment_count",
+        "mounting_sites_count",
+        "mounting_interfaces_count",
+        "reference_mounts_count",
+        "slot_features_count",
+        "circular_openings_count",
+        "passage_hypotheses_count",
+        "pair_screenings_count",
+        "connection_reviews_count",
+        "supplemental_components_count"
+      ],
+      "additionalProperties": false
+    },
+    "surface_pair": {
+      "type": "object",
+      "properties": {
+        "feature_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 2,
+          "maxItems": 2,
+          "uniqueItems": true
+        },
+        "overlap_area_m2": {
+          "type": "number",
+          "minimum": 0
+        },
+        "plane_gap_m": {
+          "type": "number",
+          "minimum": 0
+        },
+        "normal_angle_rad": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 3.141592653589793
+        }
+      },
+      "required": [
+        "feature_refs",
+        "overlap_area_m2",
+        "plane_gap_m",
+        "normal_angle_rad"
+      ],
+      "additionalProperties": false
+    },
+    "portal": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "position": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "minItems": 3,
+          "maxItems": 3
+        },
+        "normal": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "minItems": 3,
+          "maxItems": 3
+        },
+        "status": {
+          "enum": [
+            "opening",
+            "closed",
+            "unresolved"
+          ]
+        },
+        "support_triangle_indices": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "boundary_vertices": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "number"
+            },
+            "minItems": 3,
+            "maxItems": 3
+          },
+          "minItems": 0
+        }
+      },
+      "required": [
+        "id",
+        "position",
+        "normal",
+        "status",
+        "support_triangle_indices",
+        "boundary_vertices"
+      ],
+      "additionalProperties": false
+    },
+    "topology_link": {
+      "type": "object",
+      "properties": {
+        "kind": {
+          "const": "annular_shoulder"
+        },
+        "wall_feature_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 2,
+          "maxItems": 2,
+          "uniqueItems": true
+        },
+        "triangle_indices": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "kind",
+        "wall_feature_refs",
+        "triangle_indices"
+      ],
+      "additionalProperties": false
+    },
+    "logical_hole": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "owner_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "frame_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "geometry_source_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "geometry_digest": {
+          "type": "string",
+          "pattern": "^sha256:[a-f0-9]{64}$"
+        },
+        "status": {
+          "const": "geometry_only"
+        },
+        "motion_ownership": {
+          "const": "unresolved"
+        },
+        "kind": {
+          "enum": [
+            "single_bore",
+            "stepped_bore"
+          ]
+        },
+        "wall_feature_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "axis": {
+          "type": "object",
+          "properties": {
+            "origin": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 3,
+              "maxItems": 3
+            },
+            "direction": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 3,
+              "maxItems": 3
+            },
+            "axial_range_m": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 2,
+              "maxItems": 2
+            }
+          },
+          "required": [
+            "origin",
+            "direction",
+            "axial_range_m"
+          ],
+          "additionalProperties": false
+        },
+        "portals": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/portal"
+          },
+          "minItems": 0
+        },
+        "topology_links": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/topology_link"
+          },
+          "minItems": 0
+        },
+        "source_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "id",
+        "owner_ref",
+        "frame_ref",
+        "geometry_source_ref",
+        "geometry_digest",
+        "status",
+        "motion_ownership",
+        "kind",
+        "wall_feature_refs",
+        "axis",
+        "portals",
+        "topology_links",
+        "source_refs",
+        "evidence_refs"
+      ],
+      "additionalProperties": false
+    },
+    "feature_pattern": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "owner_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "frame_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "status": {
+          "const": "geometry_only"
+        },
+        "motion_ownership": {
+          "const": "unresolved"
+        },
+        "kind": {
+          "const": "geometry_only"
+        },
+        "logical_hole_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 2,
+          "uniqueItems": true
+        },
+        "portal_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 2,
+          "uniqueItems": true
+        },
+        "geometry": {
+          "type": "object",
+          "properties": {
+            "type": {
+              "enum": [
+                "circular",
+                "rectangular",
+                "linear",
+                "coplanar_collection"
+              ]
+            },
+            "origin": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 3,
+              "maxItems": 3
+            },
+            "normal": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 3,
+              "maxItems": 3
+            },
+            "member_centers": {
+              "type": "array",
+              "items": {
+                "type": "array",
+                "items": {
+                  "type": "number"
+                },
+                "minItems": 3,
+                "maxItems": 3
+              },
+              "minItems": 2
+            },
+            "pitch_circle_diameter_m": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "minimum": 0
+            },
+            "spacing_m": {
+              "type": "array",
+              "items": {
+                "type": "number",
+                "minimum": 0
+              },
+              "minItems": 0
+            },
+            "rotational_symmetry_order": {
+              "type": "integer",
+              "minimum": 1
+            }
+          },
+          "required": [
+            "type",
+            "origin",
+            "normal",
+            "member_centers",
+            "pitch_circle_diameter_m",
+            "spacing_m",
+            "rotational_symmetry_order"
+          ],
+          "additionalProperties": false
+        },
+        "witness": {
+          "type": "object",
+          "properties": {
+            "method": {
+              "const": "coplanar-hole-patterns/1"
+            },
+            "support_triangle_indices": {
+              "type": "array",
+              "items": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "minItems": 1,
+              "uniqueItems": true
+            }
+          },
+          "required": [
+            "method",
+            "support_triangle_indices"
+          ],
+          "additionalProperties": false
+        },
+        "source_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "id",
+        "owner_ref",
+        "frame_ref",
+        "status",
+        "motion_ownership",
+        "kind",
+        "logical_hole_refs",
+        "portal_refs",
+        "geometry",
+        "witness",
+        "source_refs",
+        "evidence_refs"
+      ],
+      "additionalProperties": false
+    },
+    "participant": {
+      "type": "object",
+      "properties": {
+        "part_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "feature_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "logical_hole_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "pattern_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "part_ref",
+        "feature_refs",
+        "logical_hole_refs",
+        "pattern_refs"
+      ],
+      "additionalProperties": false
+    },
+    "observation_check": {
+      "type": "object",
+      "properties": {
+        "kind": {
+          "enum": [
+            "axis_angle",
+            "axis_distance",
+            "finite_axial_gap",
+            "finite_axial_overlap",
+            "radial_clearance",
+            "bore_radius_difference",
+            "opposed_normals",
+            "plane_gap",
+            "finite_surface_overlap"
+          ]
+        },
+        "result": {
+          "const": "pass"
+        },
+        "residual": {
+          "type": "number"
+        },
+        "threshold": {
+          "type": "number",
+          "minimum": 0
+        },
+        "unit": {
+          "enum": [
+            "rad",
+            "m",
+            "m2"
+          ]
+        }
+      },
+      "required": [
+        "kind",
+        "result",
+        "residual",
+        "threshold",
+        "unit"
+      ],
+      "additionalProperties": false
+    },
+    "normal_projection": {
+      "type": "object",
+      "properties": {
+        "feature_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "value": {
+          "type": "number",
+          "minimum": -1.000000001,
+          "maximum": 1.000000001
+        },
+        "near_contact": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "feature_ref",
+        "value",
+        "near_contact"
+      ],
+      "additionalProperties": false
+    },
+    "normal_sample": {
+      "type": "object",
+      "properties": {
+        "vector": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "minItems": 3,
+          "maxItems": 3
+        },
+        "projections": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/normal_projection"
+          },
+          "minItems": 0
+        }
+      },
+      "required": [
+        "vector",
+        "projections"
+      ],
+      "additionalProperties": false
+    },
+    "normal_halfspace_test": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "const": "numerical_only"
+        },
+        "basis": {
+          "const": "source-reference-normal-projections"
+        },
+        "moving_part_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "frame": {
+          "const": "world"
+        },
+        "orientation_support": {
+          "enum": [
+            "closed_outward",
+            "unresolved"
+          ]
+        },
+        "near_contact_tolerance_m": {
+          "const": 2e-06
+        },
+        "samples": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/normal_sample"
+          },
+          "minItems": 6,
+          "maxItems": 6
+        },
+        "limitations": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "status",
+        "basis",
+        "moving_part_ref",
+        "frame",
+        "orientation_support",
+        "near_contact_tolerance_m",
+        "samples",
+        "limitations"
+      ],
+      "additionalProperties": false
+    },
+    "cylinder_observation": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "kind": {
+          "enum": [
+            "coaxial_bores",
+            "finite_cylinder_containment"
+          ]
+        },
+        "status": {
+          "const": "geometry_only"
+        },
+        "configuration_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "participants": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/participant"
+          },
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "checks": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/observation_check"
+          },
+          "minItems": 1
+        },
+        "source_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "unresolved_requirements": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "status",
+        "configuration_ref",
+        "participants",
+        "checks",
+        "source_refs",
+        "evidence_refs",
+        "unresolved_requirements"
+      ],
+      "additionalProperties": false
+    },
+    "surface_observation": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "kind": {
+          "const": "finite_surface_overlap"
+        },
+        "status": {
+          "const": "geometry_only"
+        },
+        "configuration_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "participants": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/participant"
+          },
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "checks": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/observation_check"
+          },
+          "minItems": 1
+        },
+        "source_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "unresolved_requirements": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "surface_pairs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/surface_pair"
+          },
+          "minItems": 1
+        },
+        "normal_halfspace_test": {
+          "$ref": "#/$defs/normal_halfspace_test"
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "status",
+        "configuration_ref",
+        "participants",
+        "checks",
+        "source_refs",
+        "evidence_refs",
+        "unresolved_requirements",
+        "surface_pairs",
+        "normal_halfspace_test"
+      ],
+      "additionalProperties": false
+    },
+    "member_correspondence": {
+      "type": "object",
+      "properties": {
+        "logical_hole_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "feature_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 2,
+          "maxItems": 2
+        }
+      },
+      "required": [
+        "logical_hole_refs",
+        "feature_refs"
+      ],
+      "additionalProperties": false
+    },
+    "reference_placement": {
+      "type": "object",
+      "properties": {
+        "part_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "position": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "minItems": 3,
+          "maxItems": 3
+        },
+        "quaternion": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "minItems": 4,
+          "maxItems": 4
+        },
+        "scale": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "minItems": 3,
+          "maxItems": 3
+        }
+      },
+      "required": [
+        "part_ref",
+        "position",
+        "quaternion",
+        "scale"
+      ],
+      "additionalProperties": false
+    },
+    "pattern_observation": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "kind": {
+          "const": "hole_pattern_alignment"
+        },
+        "status": {
+          "const": "geometry_only"
+        },
+        "configuration_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "participants": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/participant"
+          },
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "checks": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/observation_check"
+          },
+          "minItems": 1
+        },
+        "source_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "unresolved_requirements": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "member_observation_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 2,
+          "uniqueItems": true
+        },
+        "member_correspondences": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/member_correspondence"
+          },
+          "minItems": 2
+        },
+        "reference_placements": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/reference_placement"
+          },
+          "minItems": 2,
+          "maxItems": 2
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "status",
+        "configuration_ref",
+        "participants",
+        "checks",
+        "source_refs",
+        "evidence_refs",
+        "unresolved_requirements",
+        "member_observation_refs",
+        "member_correspondences",
+        "reference_placements"
+      ],
+      "additionalProperties": false
+    },
+    "reference_observation": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/cylinder_observation"
+        },
+        {
+          "$ref": "#/$defs/surface_observation"
+        },
+        {
+          "$ref": "#/$defs/pattern_observation"
+        }
+      ]
+    },
+    "reference_relation": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "kind": {
+          "enum": [
+            "same_source_body",
+            "source_joint"
+          ]
+        },
+        "part_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "source_body_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_joint_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "part_refs",
+        "source_body_ref",
+        "evidence_refs"
+      ],
+      "additionalProperties": false
+    },
+    "mounting_site": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/hole_mounting_site"
+        },
+        {
+          "$ref": "#/$defs/integral_pin_site"
+        }
+      ]
+    },
+    "mounting_side": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1
+        },
+        "normal": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "minItems": 3,
+          "maxItems": 3
+        },
+        "site_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "id",
+        "label",
+        "normal",
+        "site_refs"
+      ],
+      "additionalProperties": false
+    },
+    "mounting_selection_rule": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/known_mounting_selection_rule"
+        },
+        {
+          "$ref": "#/$defs/unknown_mounting_selection_rule"
+        }
+      ]
+    },
+    "mounting_interface": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "owner_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "frame_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "status": {
+          "enum": [
+            "user_asserted",
+            "project_inferred"
+          ]
+        },
+        "mechanism": {
+          "enum": [
+            "fastener_mount",
+            "unknown"
+          ]
+        },
+        "role": {
+          "enum": [
+            "housing_mount",
+            "bracket_mount",
+            "mounting_feature"
+          ]
+        },
+        "member_site_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 2,
+          "uniqueItems": true
+        },
+        "sides": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/mounting_side"
+          },
+          "minItems": 1
+        },
+        "selection_rule": {
+          "$ref": "#/$defs/mounting_selection_rule"
+        },
+        "assertion_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "source_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "unresolved_requirements": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "id",
+        "owner_ref",
+        "frame_ref",
+        "status",
+        "mechanism",
+        "role",
+        "member_site_refs",
+        "sides",
+        "selection_rule",
+        "assertion_refs",
+        "source_refs",
+        "evidence_refs",
+        "unresolved_requirements",
+        "label"
+      ],
+      "additionalProperties": false
+    },
+    "mount_participant": {
+      "type": "object",
+      "properties": {
+        "part_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "interface_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "site_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 2,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "part_ref",
+        "interface_ref",
+        "site_refs"
+      ],
+      "additionalProperties": false
+    },
+    "mount_site_pair": {
+      "type": "object",
+      "properties": {
+        "site_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 2,
+          "maxItems": 2,
+          "uniqueItems": true
+        },
+        "hole_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 2,
+          "maxItems": 2,
+          "uniqueItems": true
+        },
+        "feature_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 2,
+          "maxItems": 2,
+          "uniqueItems": true
+        },
+        "axis_distance_m": {
+          "type": "number",
+          "minimum": 0
+        },
+        "axis_angle_rad": {
+          "type": "number",
+          "minimum": 0
+        },
+        "axial_gap_m": {
+          "type": "number",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "site_refs",
+        "hole_refs",
+        "feature_refs",
+        "axis_distance_m",
+        "axis_angle_rad",
+        "axial_gap_m"
+      ],
+      "additionalProperties": false
+    },
+    "connector_role": {
+      "type": "object",
+      "properties": {
+        "role": {
+          "const": "fastener"
+        },
+        "status": {
+          "const": "unbound"
+        },
+        "site_pair_index": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "role",
+        "status",
+        "site_pair_index"
+      ],
+      "additionalProperties": false
+    },
+    "mount_assessment": {
+      "type": "object",
+      "properties": {
+        "reference_alignment": {
+          "const": "pass"
+        },
+        "mechanical": {
+          "const": "unknown"
+        },
+        "engineering": {
+          "const": "unknown"
+        },
+        "task": {
+          "const": "unknown"
+        },
+        "completion": {
+          "const": "unknown"
+        }
+      },
+      "required": [
+        "reference_alignment",
+        "mechanical",
+        "engineering",
+        "task",
+        "completion"
+      ],
+      "additionalProperties": false
+    },
+    "reference_mount": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "configuration_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "status": {
+          "const": "user_asserted_reference"
+        },
+        "mechanism": {
+          "const": "fastener_mount"
+        },
+        "participants": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/mount_participant"
+          },
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "site_pairs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/mount_site_pair"
+          },
+          "minItems": 2
+        },
+        "reference_placements": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/reference_placement"
+          },
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "connector_roles": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/connector_role"
+          },
+          "minItems": 2
+        },
+        "assessment": {
+          "$ref": "#/$defs/mount_assessment"
+        },
+        "assertion_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "source_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "unresolved_requirements": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "id",
+        "configuration_ref",
+        "status",
+        "mechanism",
+        "participants",
+        "site_pairs",
+        "reference_placements",
+        "connector_roles",
+        "assessment",
+        "assertion_refs",
+        "source_refs",
+        "evidence_refs",
+        "unresolved_requirements"
+      ],
+      "additionalProperties": false
+    },
+    "slot_geometry": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "enum": [
+            "capsule_opening",
+            "rounded_rectangle_opening"
+          ]
+        },
+        "origin": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "minItems": 3,
+          "maxItems": 3
+        },
+        "normal": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "minItems": 3,
+          "maxItems": 3
+        },
+        "major_axis": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "minItems": 3,
+          "maxItems": 3
+        },
+        "width_m": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "length_m": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "corner_radius_m": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "boundary_vertices": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "number"
+            },
+            "minItems": 3,
+            "maxItems": 3
+          },
+          "minItems": 4
+        },
+        "support_triangle_indices": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "type",
+        "origin",
+        "normal",
+        "major_axis",
+        "width_m",
+        "length_m",
+        "corner_radius_m",
+        "boundary_vertices",
+        "support_triangle_indices"
+      ],
+      "additionalProperties": false
+    },
+    "slot_feature": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "owner_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "frame_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "status": {
+          "const": "geometry_only"
+        },
+        "kind": {
+          "enum": [
+            "capsule_opening",
+            "rounded_rectangle_opening"
+          ]
+        },
+        "geometry_source_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "geometry_digest": {
+          "type": "string",
+          "pattern": "^sha256:[a-f0-9]{64}$"
+        },
+        "geometry": {
+          "$ref": "#/$defs/slot_geometry"
+        },
+        "measurement": {
+          "type": "object",
+          "properties": {
+            "basis": {
+              "const": "calculated"
+            },
+            "method": {
+              "const": "finite-rounded-slot-openings/1"
+            },
+            "fit_max_m": {
+              "type": "number",
+              "minimum": 0
+            }
+          },
+          "required": [
+            "basis",
+            "method",
+            "fit_max_m"
+          ],
+          "additionalProperties": false
+        },
+        "source_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "id",
+        "owner_ref",
+        "frame_ref",
+        "status",
+        "kind",
+        "geometry_source_ref",
+        "geometry_digest",
+        "geometry",
+        "measurement",
+        "source_refs",
+        "evidence_refs"
+      ],
+      "additionalProperties": false
+    },
+    "conical_feature": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "owner_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "frame_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "kind": {
+          "const": "shaft_wall"
+        },
+        "geometry": {
+          "type": "object",
+          "properties": {
+            "axis": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 3,
+              "maxItems": 3
+            },
+            "origin": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 3,
+              "maxItems": 3
+            },
+            "triangle_indices": {
+              "type": "array",
+              "items": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "minItems": 1,
+              "uniqueItems": true
+            },
+            "type": {
+              "const": "conical_frustum"
+            },
+            "radius_start_m": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "radius_end_m": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "length_m": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            }
+          },
+          "required": [
+            "axis",
+            "origin",
+            "triangle_indices",
+            "type",
+            "radius_start_m",
+            "radius_end_m",
+            "length_m"
+          ],
+          "additionalProperties": false
+        },
+        "geometry_source_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "geometry_digest": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^sha256:[a-f0-9]{64}$"
+        },
+        "measurement": {
+          "type": "object",
+          "properties": {
+            "basis": {
+              "const": "calculated"
+            },
+            "method": {
+              "type": "string",
+              "minLength": 1
+            },
+            "fit_rms_m": {
+              "type": "number",
+              "minimum": 0
+            },
+            "fit_max_m": {
+              "type": "number",
+              "minimum": 0
+            },
+            "coverage": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            }
+          },
+          "required": [
+            "basis",
+            "method",
+            "fit_rms_m",
+            "fit_max_m",
+            "coverage"
+          ],
+          "additionalProperties": false
+        },
+        "source_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "id",
+        "owner_ref",
+        "frame_ref",
+        "kind",
+        "geometry",
+        "geometry_source_ref",
+        "geometry_digest",
+        "measurement",
+        "source_refs",
+        "evidence_refs"
+      ],
+      "additionalProperties": false
+    },
+    "hole_mounting_site": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "owner_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "frame_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "hole_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "portal_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "feature_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "side_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1
+        },
+        "position": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "minItems": 3,
+          "maxItems": 3
+        },
+        "entry_direction": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "minItems": 3,
+          "maxItems": 3
+        },
+        "status": {
+          "enum": [
+            "geometry_candidate",
+            "user_asserted",
+            "project_inferred"
+          ]
+        },
+        "role": {
+          "enum": [
+            "unqualified",
+            "housing_mount",
+            "bracket_mount",
+            "mounting_feature"
+          ]
+        },
+        "assertion_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "source_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "id",
+        "owner_ref",
+        "frame_ref",
+        "hole_ref",
+        "portal_ref",
+        "feature_refs",
+        "side_ref",
+        "label",
+        "position",
+        "entry_direction",
+        "status",
+        "role",
+        "assertion_refs",
+        "source_refs",
+        "evidence_refs"
+      ],
+      "additionalProperties": false
+    },
+    "integral_pin_site": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "owner_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "frame_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "hole_ref": {
+          "type": "null"
+        },
+        "portal_ref": {
+          "type": "null"
+        },
+        "feature_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true,
+          "maxItems": 1
+        },
+        "side_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1
+        },
+        "position": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "minItems": 3,
+          "maxItems": 3
+        },
+        "entry_direction": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "minItems": 3,
+          "maxItems": 3
+        },
+        "status": {
+          "enum": [
+            "geometry_candidate",
+            "user_asserted",
+            "project_inferred"
+          ]
+        },
+        "role": {
+          "enum": [
+            "unqualified",
+            "housing_mount",
+            "bracket_mount",
+            "mounting_feature"
+          ]
+        },
+        "assertion_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "source_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "site_kind": {
+          "const": "integral_pin"
+        }
+      },
+      "required": [
+        "id",
+        "owner_ref",
+        "frame_ref",
+        "hole_ref",
+        "portal_ref",
+        "feature_refs",
+        "side_ref",
+        "label",
+        "position",
+        "entry_direction",
+        "status",
+        "role",
+        "assertion_refs",
+        "source_refs",
+        "evidence_refs",
+        "site_kind"
+      ],
+      "additionalProperties": false
+    },
+    "known_mounting_selection_rule": {
+      "type": "object",
+      "properties": {
+        "same_side": {
+          "const": true
+        },
+        "min_count": {
+          "const": 2
+        },
+        "require_adjacent_pair": {
+          "const": true
+        },
+        "allowed_adjacent_pairs": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 2,
+            "uniqueItems": true,
+            "maxItems": 2
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "adjacency_basis": {
+          "enum": [
+            "rectangle_edges",
+            "reference_pair"
+          ]
+        }
+      },
+      "required": [
+        "same_side",
+        "min_count",
+        "require_adjacent_pair",
+        "allowed_adjacent_pairs",
+        "adjacency_basis"
+      ],
+      "additionalProperties": false
+    },
+    "unknown_mounting_selection_rule": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "const": "unknown"
+        },
+        "same_side": {
+          "type": "null"
+        },
+        "min_count": {
+          "type": "null"
+        },
+        "require_adjacent_pair": {
+          "type": "null"
+        },
+        "allowed_adjacent_pairs": {
+          "type": "array",
+          "maxItems": 0
+        },
+        "adjacency_basis": {
+          "const": "not_assessed"
+        }
+      },
+      "required": [
+        "status",
+        "same_side",
+        "min_count",
+        "require_adjacent_pair",
+        "allowed_adjacent_pairs",
+        "adjacency_basis"
+      ],
+      "additionalProperties": false
+    },
+    "circular_opening": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "owner_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "frame_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "status": {
+          "const": "geometry_only"
+        },
+        "geometry": {
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "circular_inner_boundary"
+            },
+            "center": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 3,
+              "maxItems": 3
+            },
+            "normal": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 3,
+              "maxItems": 3
+            },
+            "radius_m": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "boundary_vertices": {
+              "type": "array",
+              "items": {
+                "type": "array",
+                "items": {
+                  "type": "number"
+                },
+                "minItems": 3,
+                "maxItems": 3
+              },
+              "minItems": 12
+            }
+          },
+          "required": [
+            "type",
+            "center",
+            "normal",
+            "radius_m",
+            "boundary_vertices"
+          ],
+          "additionalProperties": false
+        },
+        "source_geometry_digest": {
+          "type": "string",
+          "pattern": "^sha256:[a-f0-9]{64}$"
+        },
+        "support_triangle_indices": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "fit_max_m": {
+          "type": "number",
+          "minimum": 0
+        },
+        "source_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "id",
+        "owner_ref",
+        "frame_ref",
+        "status",
+        "geometry",
+        "source_geometry_digest",
+        "support_triangle_indices",
+        "fit_max_m",
+        "source_refs",
+        "evidence_refs"
+      ],
+      "additionalProperties": false
+    },
+    "passage_hypothesis": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "owner_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "frame_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "status": {
+          "enum": [
+            "topology_witnessed",
+            "partial"
+          ]
+        },
+        "opening_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "geometry": {
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "variable_radius_cavity"
+            },
+            "origin": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 3,
+              "maxItems": 3
+            },
+            "axis": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 3,
+              "maxItems": 3
+            },
+            "axial_range_m": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 2,
+              "maxItems": 2
+            },
+            "radius_range_m": {
+              "type": "array",
+              "items": {
+                "type": "number",
+                "minimum": 0
+              },
+              "minItems": 2,
+              "maxItems": 2
+            }
+          },
+          "required": [
+            "type",
+            "origin",
+            "axis",
+            "axial_range_m",
+            "radius_range_m"
+          ],
+          "additionalProperties": false
+        },
+        "wall_triangle_indices": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "connectivity": {
+          "type": "object",
+          "properties": {
+            "method": {
+              "const": "shared-source-edge-components"
+            },
+            "boundary_closed": {
+              "type": "boolean"
+            },
+            "scope": {
+              "const": "finite_source_surface_only"
+            }
+          },
+          "required": [
+            "method",
+            "boundary_closed",
+            "scope"
+          ],
+          "additionalProperties": false
+        },
+        "source_geometry_digest": {
+          "type": "string",
+          "pattern": "^sha256:[a-f0-9]{64}$"
+        },
+        "unresolved_requirements": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "source_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "id",
+        "owner_ref",
+        "frame_ref",
+        "status",
+        "opening_refs",
+        "geometry",
+        "wall_triangle_indices",
+        "connectivity",
+        "source_geometry_digest",
+        "unresolved_requirements",
+        "source_refs",
+        "evidence_refs"
+      ],
+      "additionalProperties": false
+    },
+    "pair_screening": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "configuration_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "part_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 2,
+          "uniqueItems": true,
+          "maxItems": 2
+        },
+        "method": {
+          "const": "world-aabb-separation/1"
+        },
+        "distance_m": {
+          "type": "number",
+          "minimum": 0
+        },
+        "threshold_m": {
+          "type": "number",
+          "minimum": 0
+        },
+        "status": {
+          "enum": [
+            "bounds_separated",
+            "review_required"
+          ]
+        },
+        "review_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "configuration_ref",
+        "part_refs",
+        "method",
+        "distance_m",
+        "threshold_m",
+        "status",
+        "review_ref"
+      ],
+      "additionalProperties": false
+    },
+    "review_participant": {
+      "type": "object",
+      "properties": {
+        "part_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "feature_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "opening_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "site_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "part_ref",
+        "feature_refs",
+        "opening_refs",
+        "site_refs"
+      ],
+      "additionalProperties": false
+    },
+    "review_role_path": {
+      "type": "object",
+      "properties": {
+        "role": {
+          "enum": [
+            "location",
+            "retention",
+            "motion"
+          ]
+        },
+        "status": {
+          "enum": [
+            "reference_supported",
+            "hypothesis",
+            "unresolved"
+          ]
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1
+        },
+        "component_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "role",
+        "status",
+        "description",
+        "component_refs",
+        "evidence_refs"
+      ],
+      "additionalProperties": false
+    },
+    "review_alternative": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1
+        },
+        "status": {
+          "const": "unverified"
+        },
+        "component_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "requirements": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "id",
+        "label",
+        "status",
+        "component_refs",
+        "requirements"
+      ],
+      "additionalProperties": false
+    },
+    "connection_review": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "configuration_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "screening_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "status": {
+          "enum": [
+            "unresolved",
+            "reference_supported"
+          ]
+        },
+        "participants": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/review_participant"
+          },
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "basis": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "source_bounds",
+              "source_reference_geometry",
+              "reference_mount",
+              "coaxial_axis_opening",
+              "integral_pin_function_hypothesis"
+            ]
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "geometry_observation_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "reference_mount_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "role_paths": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/review_role_path"
+          },
+          "minItems": 1
+        },
+        "alternatives": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/review_alternative"
+          },
+          "minItems": 1
+        },
+        "assessments": {
+          "type": "object",
+          "properties": {
+            "mechanical": {
+              "const": "unknown"
+            },
+            "engineering": {
+              "const": "unknown"
+            },
+            "task": {
+              "const": "unknown"
+            },
+            "completion": {
+              "const": "unknown"
+            }
+          },
+          "required": [
+            "mechanical",
+            "engineering",
+            "task",
+            "completion"
+          ],
+          "additionalProperties": false
+        },
+        "missing_requirements": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "source_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "id",
+        "configuration_ref",
+        "screening_ref",
+        "status",
+        "participants",
+        "basis",
+        "geometry_observation_refs",
+        "reference_mount_refs",
+        "role_paths",
+        "alternatives",
+        "assessments",
+        "missing_requirements",
+        "source_refs",
+        "evidence_refs"
+      ],
+      "additionalProperties": false
+    },
+    "supplemental_component": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "review_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1
+        },
+        "kind": {
+          "enum": [
+            "screw",
+            "cap"
+          ]
+        },
+        "status": {
+          "const": "illustrative_unconfirmed"
+        },
+        "domain": {
+          "const": "synthetic"
+        },
+        "bom_status": {
+          "const": "not_confirmed"
+        },
+        "role": {
+          "const": "retention"
+        },
+        "pose": {
+          "type": "object",
+          "properties": {
+            "frame": {
+              "const": "world"
+            },
+            "position": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 3,
+              "maxItems": 3
+            },
+            "quaternion": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 4,
+              "maxItems": 4
+            },
+            "scale": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 3,
+              "maxItems": 3
+            }
+          },
+          "required": [
+            "frame",
+            "position",
+            "quaternion",
+            "scale"
+          ],
+          "additionalProperties": false
+        },
+        "geometry": {
+          "oneOf": [
+            {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "const": "screw"
+                },
+                "shaft_radius_m": {
+                  "type": "number",
+                  "exclusiveMinimum": 0
+                },
+                "shaft_length_m": {
+                  "type": "number",
+                  "exclusiveMinimum": 0
+                },
+                "head_radius_m": {
+                  "type": "number",
+                  "exclusiveMinimum": 0
+                },
+                "head_length_m": {
+                  "type": "number",
+                  "exclusiveMinimum": 0
+                }
+              },
+              "required": [
+                "type",
+                "shaft_radius_m",
+                "shaft_length_m",
+                "head_radius_m",
+                "head_length_m"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "const": "cap"
+                },
+                "outer_radius_m": {
+                  "type": "number",
+                  "exclusiveMinimum": 0
+                },
+                "inner_radius_m": {
+                  "type": "number",
+                  "minimum": 0
+                },
+                "thickness_m": {
+                  "type": "number",
+                  "exclusiveMinimum": 0
+                }
+              },
+              "required": [
+                "type",
+                "outer_radius_m",
+                "inner_radius_m",
+                "thickness_m"
+              ],
+              "additionalProperties": false
+            }
+          ]
+        },
+        "parameter_basis": {
+          "type": "string",
+          "minLength": 1
+        },
+        "unconfirmed_fields": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "source_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "id",
+        "review_ref",
+        "label",
+        "kind",
+        "status",
+        "domain",
+        "bom_status",
+        "role",
+        "pose",
+        "geometry",
+        "parameter_basis",
+        "unconfirmed_fields",
+        "source_refs",
+        "evidence_refs"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

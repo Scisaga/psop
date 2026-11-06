@@ -1,0 +1,252 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "psop.hardware.source-model/1.0",
+  "title": "Supported model-domain Part and source-reference Configuration subset; not the full hardware ontology",
+  "type": "object",
+  "properties": {
+    "schema": {
+      "const": "psop.hardware.source-model/1.0"
+    },
+    "ontology_target": {
+      "const": "psop.hardware/2.0-draft.4"
+    },
+    "device_id": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^[a-z][a-z0-9-]{1,63}$"
+    },
+    "parts": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/part"
+      },
+      "minItems": 1
+    },
+    "configurations": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/configuration"
+      },
+      "minItems": 1,
+      "maxItems": 1
+    },
+    "interfaces": {
+      "type": "array",
+      "items": {},
+      "maxItems": 0
+    },
+    "interface_connections": {
+      "type": "array",
+      "items": {},
+      "maxItems": 0
+    }
+  },
+  "required": [
+    "schema",
+    "ontology_target",
+    "device_id",
+    "parts",
+    "configurations",
+    "interfaces",
+    "interface_connections"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "part": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^part:[a-z][a-z0-9-]{1,63}:[a-f0-9]{16}$"
+        },
+        "type": {
+          "const": "Part"
+        },
+        "domain": {
+          "const": "model"
+        },
+        "revision": {
+          "type": "string",
+          "minLength": 1
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "geometry_source_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_locator": {
+          "type": "object",
+          "properties": {
+            "source_ref": {
+              "type": "string",
+              "minLength": 1
+            },
+            "path": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "source_ref",
+            "path"
+          ],
+          "additionalProperties": false
+        },
+        "interfaces": {
+          "type": "array",
+          "items": {},
+          "maxItems": 0
+        },
+        "interface_status": {
+          "const": "not_extracted"
+        }
+      },
+      "required": [
+        "id",
+        "type",
+        "domain",
+        "revision",
+        "name",
+        "source_refs",
+        "evidence_refs",
+        "geometry_source_ref",
+        "source_locator",
+        "interfaces",
+        "interface_status"
+      ],
+      "additionalProperties": false
+    },
+    "configuration": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^configuration:[a-z][a-z0-9-]{1,63}:source-qpos0$"
+        },
+        "type": {
+          "const": "Configuration"
+        },
+        "domain": {
+          "const": "model"
+        },
+        "revision": {
+          "type": "string",
+          "minLength": 1
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "part_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "source_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "unit": {
+          "const": "m"
+        },
+        "quaternion_order": {
+          "const": "xyzw"
+        },
+        "placements": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "part_ref": {
+                "type": "string",
+                "minLength": 1
+              },
+              "position": {
+                "type": "array",
+                "items": {
+                  "type": "number"
+                },
+                "minItems": 3,
+                "maxItems": 3
+              },
+              "quaternion": {
+                "type": "array",
+                "items": {
+                  "type": "number"
+                },
+                "minItems": 4,
+                "maxItems": 4
+              }
+            },
+            "required": [
+              "part_ref",
+              "position",
+              "quaternion"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 1
+        },
+        "connection_status": {
+          "const": "not_extracted"
+        },
+        "interface_connections": {
+          "type": "array",
+          "items": {},
+          "maxItems": 0
+        },
+        "mechanical_status": {
+          "const": "not_evaluated"
+        }
+      },
+      "required": [
+        "id",
+        "type",
+        "domain",
+        "revision",
+        "name",
+        "part_refs",
+        "source_refs",
+        "unit",
+        "quaternion_order",
+        "placements",
+        "connection_status",
+        "interface_connections",
+        "mechanical_status"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

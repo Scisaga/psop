@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <title>ASR 为什么不能只报告整体错误率</title>
+  <desc>PSOP 第 22 / 65 页教学图；文字与方法图保持可编辑。Microduck 视图由官方来源 STL 和 robot_walk.xml 的 source assembly 渲染，配置为 walk-model-reference、MCD-000001。alpha 软件任务身份与该几何参考的实物对应尚未核验；MD-01、S03、J01 和 EG 为教学定义。</desc>
+  <defs>
+    <linearGradient id="steel" x1="0" y1="0" x2="0.9" y2="1">
+      <stop stop-color="#EAF0F3" />
+      <stop offset=".37" stop-color="#A9BBC6" />
+      <stop offset=".63" stop-color="#F1F5F5" />
+      <stop offset="1" stop-color="#859CA9" />
+    </linearGradient>
+  </defs>
+  <g id="base" transform="translate(0 0)">
+    <rect x="0" y="0" width="1600" height="900" rx="0" fill="#FCFDFB" />
+    <rect x="0" y="0" width="9" height="900" rx="0" fill="#14877D" />
+    <path d="M64 62 L1536 62" stroke="#D7E1E7" fill="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+    <text x="64.000" y="41.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="18.999" font-weight="400" data-text="PSOP  /  四个模型与多模态协作" aria-label="PSOP  /  四个模型与多模态协作" xml:space="preserve" textLength="273.541" lengthAdjust="spacingAndGlyphs" fill="#526578">PSOP  /  四个模型与多模态协作</text>
+    <text x="1355.287" y="41.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="18.999" font-weight="400" data-text="LESSON 02  ·  22/65" aria-label="LESSON 02  ·  22/65" xml:space="preserve" textLength="180.021" lengthAdjust="spacingAndGlyphs" fill="#526578">LESSON 02  ·  22/65</text>
+  </g>
+  <g id="title" transform="translate(0 0)">
+    <text x="64.000" y="125.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="48.001" font-weight="700" data-text="ASR 为什么不能只报告整体错误率" aria-label="ASR 为什么不能只报告整体错误率" xml:space="preserve" textLength="736.782" lengthAdjust="spacingAndGlyphs" fill="#18344C">ASR 为什么不能只报告整体错误率</text>
+    <text x="64.000" y="177.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="24.001" font-weight="400" data-text="WER 按词统计替换、删除和插入，CER 按字符计算。整体转写只错一个字，也可能把“未确认”变成“已确认”。因此要把影响任务的关" aria-label="WER 按词统计替换、删除和插入，CER 按字符计算。整体转写只错一个字，也可能把“未确认”变成“已确认”。因此要把影响任务的关" xml:space="preserve" textLength="1456.407" lengthAdjust="spacingAndGlyphs" fill="#526578">WER 按词统计替换、删除和插入，CER 按字符计算。整体转写只错一个字，也可能把“未确认”变成“已确认”。因此要把影响任务的关</text>
+    <text x="64.000" y="209.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="24.001" font-weight="400" data-text="键字段单独评价，再观察噪声和人员差异。" aria-label="键字段单独评价，再观察噪声和人员差异。" xml:space="preserve" textLength="456.001" lengthAdjust="spacingAndGlyphs" fill="#526578">键字段单独评价，再观察噪声和人员差异。</text>
+  </g>
+  <g id="beat_01" transform="translate(0 0)">
+    <g id="illustration" transform="translate(64 238)">
+      <text x="0.000" y="29.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="27.001" font-weight="700" data-text="只改变几个字，也会改变一个任务条件" aria-label="只改变几个字，也会改变一个任务条件" xml:space="preserve" textLength="459.001" lengthAdjust="spacingAndGlyphs" fill="#18344C">只改变几个字，也会改变一个任务条件</text>
+      <text x="0.000" y="90.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.000" font-weight="700" data-text="参考转写" aria-label="参考转写" xml:space="preserve" textLength="100.000" lengthAdjust="spacingAndGlyphs" fill="#14877D">参考转写</text>
+      <rect x="173" y="63" width="805" height="133" rx="10" fill="#FFFFFF" stroke="#D7E1E7" stroke-width="1.5" />
+      <text x="194.000" y="102.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.000" font-weight="400" data-text="S03" aria-label="S03" xml:space="preserve" textLength="47.747" lengthAdjust="spacingAndGlyphs" fill="#18344C">S03</text>
+      <rect x="257" y="75" width="130" height="39" rx="4" fill="#E8F5F1" />
+      <text x="272.000" y="102.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.000" font-weight="700" data-text="暂未复检" aria-label="暂未复检" xml:space="preserve" textLength="100.000" lengthAdjust="spacingAndGlyphs" fill="#14877D">暂未复检</text>
+      <text x="398.000" y="102.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.000" font-weight="400" data-text="，先申请复检。" aria-label="，先申请复检。" xml:space="preserve" textLength="175.000" lengthAdjust="spacingAndGlyphs" fill="#18344C">，先申请复检。</text>
+      <path d="M338 118 L338 139" stroke="#14877D" fill="none" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M333.6503446588877 129.99552897647322 L338 139 L342.3496553411123 129.99552897647322" stroke="#14877D" fill="none" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" />
+      <text x="194.000" y="171.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.999" font-weight="400" data-text="verification_available = false" aria-label="verification_available = false" xml:space="preserve" textLength="452.593" lengthAdjust="spacingAndGlyphs" fill="#14877D">verification_available = false</text>
+      <text x="0.000" y="263.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.000" font-weight="700" data-text="错误转写" aria-label="错误转写" xml:space="preserve" textLength="100.000" lengthAdjust="spacingAndGlyphs" fill="#BE574C">错误转写</text>
+      <rect x="173" y="236" width="805" height="133" rx="10" fill="#FFFFFF" stroke="#D7E1E7" stroke-width="1.5" />
+      <text x="194.000" y="275.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.000" font-weight="400" data-text="S03" aria-label="S03" xml:space="preserve" textLength="47.747" lengthAdjust="spacingAndGlyphs" fill="#18344C">S03</text>
+      <rect x="257" y="248" width="130" height="39" rx="4" fill="#FAECE9" />
+      <text x="272.000" y="275.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.000" font-weight="700" data-text="已经复检" aria-label="已经复检" xml:space="preserve" textLength="100.000" lengthAdjust="spacingAndGlyphs" fill="#BE574C">已经复检</text>
+      <text x="398.000" y="275.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.000" font-weight="400" data-text="，先申请复检。" aria-label="，先申请复检。" xml:space="preserve" textLength="175.000" lengthAdjust="spacingAndGlyphs" fill="#18344C">，先申请复检。</text>
+      <path d="M338 291 L338 312" stroke="#BE574C" fill="none" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M333.6503446588877 302.9955289764732 L338 312 L342.3496553411123 302.9955289764732" stroke="#BE574C" fill="none" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" />
+      <text x="194.000" y="344.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.999" font-weight="400" data-text="verification_available = true" aria-label="verification_available = true" xml:space="preserve" textLength="436.940" lengthAdjust="spacingAndGlyphs" fill="#BE574C">verification_available = true</text>
+      <path d="M0 430 L978 430" stroke="#D7E1E7" fill="none" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" />
+      <text x="0.000" y="472.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.000" font-weight="700" data-text="整体 CER / WER" aria-label="整体 CER / WER" xml:space="preserve" textLength="187.688" lengthAdjust="spacingAndGlyphs" fill="#326BB8">整体 CER / WER</text>
+      <text x="331.000" y="472.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="24.001" font-weight="700" data-text="+ 编号、数值、单位、否定字段" aria-label="+ 编号、数值、单位、否定字段" xml:space="preserve" textLength="337.419" lengthAdjust="spacingAndGlyphs" fill="#B9752E">+ 编号、数值、单位、否定字段</text>
+    </g>
+  </g>
+  <g id="beat_02" transform="translate(0 0)">
+    <text x="1114.000" y="268.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.000" font-weight="700" data-text="先统一文本规范与切分" aria-label="先统一文本规范与切分" xml:space="preserve" textLength="250.000" lengthAdjust="spacingAndGlyphs" fill="#326BB8">先统一文本规范与切分</text>
+    <text x="1114.000" y="310.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="中文、编号、数值与单位如何书写，会影" aria-label="中文、编号、数值与单位如何书写，会影" xml:space="preserve" textLength="413.999" lengthAdjust="spacingAndGlyphs" fill="#526578">中文、编号、数值与单位如何书写，会影</text>
+    <text x="1114.000" y="340.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="响 CER /WER。训练和测试的参考文本" aria-label="响 CER /WER。训练和测试的参考文本" xml:space="preserve" textLength="393.548" lengthAdjust="spacingAndGlyphs" fill="#526578">响 CER /WER。训练和测试的参考文本</text>
+    <text x="1114.000" y="370.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="应使用同一约定。" aria-label="应使用同一约定。" xml:space="preserve" textLength="183.999" lengthAdjust="spacingAndGlyphs" fill="#526578">应使用同一约定。</text>
+    <text x="1114.000" y="435.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.000" font-weight="700" data-text="关键字段要逐项核对" aria-label="关键字段要逐项核对" xml:space="preserve" textLength="225.000" lengthAdjust="spacingAndGlyphs" fill="#14877D">关键字段要逐项核对</text>
+    <text x="1114.000" y="477.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="术语、型号、数值、单位、否定词和动作" aria-label="术语、型号、数值、单位、否定词和动作" xml:space="preserve" textLength="413.999" lengthAdjust="spacingAndGlyphs" fill="#526578">术语、型号、数值、单位、否定词和动作</text>
+    <text x="1114.000" y="507.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="词分别记录正确率。它们的错误可能改变" aria-label="词分别记录正确率。它们的错误可能改变" xml:space="preserve" textLength="413.999" lengthAdjust="spacingAndGlyphs" fill="#526578">词分别记录正确率。它们的错误可能改变</text>
+    <text x="1114.000" y="537.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="对象或下一动作。" aria-label="对象或下一动作。" xml:space="preserve" textLength="183.999" lengthAdjust="spacingAndGlyphs" fill="#526578">对象或下一动作。</text>
+    <text x="1114.000" y="602.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.000" font-weight="700" data-text="配对录音有助于定位原因" aria-label="配对录音有助于定位原因" xml:space="preserve" textLength="275.000" lengthAdjust="spacingAndGlyphs" fill="#7756AA">配对录音有助于定位原因</text>
+    <text x="1114.000" y="644.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="让同一句话在安静与设备噪声下录制，比" aria-label="让同一句话在安静与设备噪声下录制，比" xml:space="preserve" textLength="413.999" lengthAdjust="spacingAndGlyphs" fill="#526578">让同一句话在安静与设备噪声下录制，比</text>
+    <text x="1114.000" y="674.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="较转写差异；还需覆盖人员、口音、设备" aria-label="较转写差异；还需覆盖人员、口音、设备" xml:space="preserve" textLength="413.999" lengthAdjust="spacingAndGlyphs" fill="#526578">较转写差异；还需覆盖人员、口音、设备</text>
+    <text x="1114.000" y="704.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="与完整处理延迟。" aria-label="与完整处理延迟。" xml:space="preserve" textLength="183.999" lengthAdjust="spacingAndGlyphs" fill="#526578">与完整处理延迟。</text>
+  </g>
+  <g id="beat_03" transform="translate(0 0)">
+    <path d="M64 760 L1536 760" stroke="#D7E1E7" fill="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+    <rect x="64" y="782" width="4" height="57" rx="2" fill="#14877D" />
+    <text x="84.000" y="798.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.000" font-weight="400" data-text="教学对照：参考“暂未复检”→预测“已经复检”。检查错字之外，要记录 verification_available 是否被误置为 true，以及" aria-label="教学对照：参考“暂未复检”→预测“已经复检”。检查错字之外，要记录 verification_available 是否被误置为 true，以及" xml:space="preserve" textLength="1232.881" lengthAdjust="spacingAndGlyphs" fill="#18344C">教学对照：参考“暂未复检”→预测“已经复检”。检查错字之外，要记录 verification_available 是否被误置为 true，以及</text>
+    <text x="84.000" y="828.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.000" font-weight="400" data-text="后续动作是否受影响。" aria-label="后续动作是否受影响。" xml:space="preserve" textLength="220.000" lengthAdjust="spacingAndGlyphs" fill="#18344C">后续动作是否受影响。</text>
+  </g>
+  <g id="footer" transform="translate(0 0)">
+    <text x="64.000" y="877.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="17.000" font-weight="400" data-text="学习手册 §06.8.4 / 15.5" aria-label="学习手册 §06.8.4 / 15.5" xml:space="preserve" textLength="180.097" lengthAdjust="spacingAndGlyphs" fill="#8898A8">学习手册 §06.8.4 / 15.5</text>
+    <text x="1247.000" y="877.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="17.000" font-weight="400" data-text="工程案例与数值示意的来源见逐页备注" aria-label="工程案例与数值示意的来源见逐页备注" xml:space="preserve" textLength="289.000" lengthAdjust="spacingAndGlyphs" fill="#8898A8">工程案例与数值示意的来源见逐页备注</text>
+  </g>
+</svg>

@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <title>四类模型需要四种不同的正确答案</title>
+  <desc>PSOP 第 34 / 65 页教学图；文字与方法图保持可编辑。Microduck 视图由官方来源 STL 和 robot_walk.xml 的 source assembly 渲染，配置为 walk-model-reference、MCD-000001。alpha 软件任务身份与该几何参考的实物对应尚未核验；MD-01、S03、J01 和 EG 为教学定义。</desc>
+  <defs>
+    <linearGradient id="steel" x1="0" y1="0" x2="0.9" y2="1">
+      <stop stop-color="#EAF0F3" />
+      <stop offset=".37" stop-color="#A9BBC6" />
+      <stop offset=".63" stop-color="#F1F5F5" />
+      <stop offset="1" stop-color="#859CA9" />
+    </linearGradient>
+  </defs>
+  <g id="base" transform="translate(0 0)">
+    <rect x="0" y="0" width="1600" height="900" rx="0" fill="#FCFDFB" />
+    <rect x="0" y="0" width="9" height="900" rx="0" fill="#14877D" />
+    <path d="M64 62 L1536 62" stroke="#D7E1E7" fill="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+    <text x="64.000" y="41.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="18.999" font-weight="400" data-text="PSOP  /  四个模型与多模态协作" aria-label="PSOP  /  四个模型与多模态协作" xml:space="preserve" textLength="273.541" lengthAdjust="spacingAndGlyphs" fill="#526578">PSOP  /  四个模型与多模态协作</text>
+    <text x="1355.287" y="41.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="18.999" font-weight="400" data-text="LESSON 02  ·  34/65" aria-label="LESSON 02  ·  34/65" xml:space="preserve" textLength="180.021" lengthAdjust="spacingAndGlyphs" fill="#526578">LESSON 02  ·  34/65</text>
+  </g>
+  <g id="title" transform="translate(0 0)">
+    <text x="64.000" y="125.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="48.001" font-weight="700" data-text="四类模型需要四种不同的正确答案" aria-label="四类模型需要四种不同的正确答案" xml:space="preserve" textLength="720.001" lengthAdjust="spacingAndGlyphs" fill="#18344C">四类模型需要四种不同的正确答案</text>
+    <text x="64.000" y="177.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="24.001" font-weight="400" data-text="共享一条作业的录音、图片和轨迹，可以减少重复采集；但转写、检测、关系与任务问答的学习目标不同。EG 提供任务语义和对应关系，" aria-label="共享一条作业的录音、图片和轨迹，可以减少重复采集；但转写、检测、关系与任务问答的学习目标不同。EG 提供任务语义和对应关系，" xml:space="preserve" textLength="1454.146" lengthAdjust="spacingAndGlyphs" fill="#526578">共享一条作业的录音、图片和轨迹，可以减少重复采集；但转写、检测、关系与任务问答的学习目标不同。EG 提供任务语义和对应关系，</text>
+    <text x="64.000" y="209.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="24.001" font-weight="400" data-text="不能代替模型要求的监督格式。" aria-label="不能代替模型要求的监督格式。" xml:space="preserve" textLength="336.001" lengthAdjust="spacingAndGlyphs" fill="#526578">不能代替模型要求的监督格式。</text>
+  </g>
+  <g id="beat_01" transform="translate(0 0)">
+    <g id="illustration" transform="translate(64 237)">
+      <rect x="0" y="0" width="1472" height="296" rx="12" fill="#FFFFFF" stroke="#D7E1E7" stroke-width="1.5" />
+      <rect x="0" y="0" width="1472" height="52" rx="12" fill="#18344C" />
+      <rect x="0" y="26" width="1472" height="26" rx="0" fill="#18344C" />
+      <text x="22.000" y="35.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="700" data-text="任务" aria-label="任务" xml:space="preserve" textLength="45.999" lengthAdjust="spacingAndGlyphs" fill="#FFFFFF">任务</text>
+      <text x="367.000" y="35.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="700" data-text="模型输入" aria-label="模型输入" xml:space="preserve" textLength="91.999" lengthAdjust="spacingAndGlyphs" fill="#FFFFFF">模型输入</text>
+      <text x="905.000" y="35.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="700" data-text="所需正确答案" aria-label="所需正确答案" xml:space="preserve" textLength="137.999" lengthAdjust="spacingAndGlyphs" fill="#FFFFFF">所需正确答案</text>
+      <rect x="1" y="52" width="1470" height="61" rx="0" fill="#F1F5F7" />
+      <text x="22.000" y="90.500" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="700" data-text="转写" aria-label="转写" xml:space="preserve" textLength="45.999" lengthAdjust="spacingAndGlyphs" fill="#326BB8">转写</text>
+      <text x="367.000" y="90.500" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="录音与术语背景" aria-label="录音与术语背景" xml:space="preserve" textLength="160.999" lengthAdjust="spacingAndGlyphs" fill="#526578">录音与术语背景</text>
+      <text x="905.000" y="90.500" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="人工校订的文字" aria-label="人工校订的文字" xml:space="preserve" textLength="160.999" lengthAdjust="spacingAndGlyphs" fill="#526578">人工校订的文字</text>
+      <text x="22.000" y="151.500" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="700" data-text="检测" aria-label="检测" xml:space="preserve" textLength="45.999" lengthAdjust="spacingAndGlyphs" fill="#B9752E">检测</text>
+      <text x="367.000" y="151.500" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="图像及已定义类别" aria-label="图像及已定义类别" xml:space="preserve" textLength="183.999" lengthAdjust="spacingAndGlyphs" fill="#526578">图像及已定义类别</text>
+      <text x="905.000" y="151.500" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="类别与对应区域" aria-label="类别与对应区域" xml:space="preserve" textLength="160.999" lengthAdjust="spacingAndGlyphs" fill="#526578">类别与对应区域</text>
+      <path d="M0 113 L1472 113" stroke="#D7E1E7" fill="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+      <rect x="1" y="174" width="1470" height="61" rx="0" fill="#F1F5F7" />
+      <text x="22.000" y="212.500" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="700" data-text="关系" aria-label="关系" xml:space="preserve" textLength="45.999" lengthAdjust="spacingAndGlyphs" fill="#7756AA">关系</text>
+      <text x="367.000" y="212.500" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="图像与有方向的区域对" aria-label="图像与有方向的区域对" xml:space="preserve" textLength="229.999" lengthAdjust="spacingAndGlyphs" fill="#526578">图像与有方向的区域对</text>
+      <text x="905.000" y="212.500" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="关系 / 负例 / 可见性" aria-label="关系 / 负例 / 可见性" xml:space="preserve" textLength="207.875" lengthAdjust="spacingAndGlyphs" fill="#526578">关系 / 负例 / 可见性</text>
+      <path d="M0 174 L1472 174" stroke="#D7E1E7" fill="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+      <text x="22.000" y="273.500" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="700" data-text="任务" aria-label="任务" xml:space="preserve" textLength="45.999" lengthAdjust="spacingAndGlyphs" fill="#14877D">任务</text>
+      <text x="367.000" y="273.500" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="图像、状态、依据、问题" aria-label="图像、状态、依据、问题" xml:space="preserve" textLength="252.999" lengthAdjust="spacingAndGlyphs" fill="#526578">图像、状态、依据、问题</text>
+      <text x="905.000" y="273.500" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="审核判断与合法动作" aria-label="审核判断与合法动作" xml:space="preserve" textLength="206.999" lengthAdjust="spacingAndGlyphs" fill="#526578">审核判断与合法动作</text>
+      <path d="M0 235 L1472 235" stroke="#D7E1E7" fill="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M345 52 L345 296" stroke="#D7E1E7" fill="none" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M883 52 L883 296" stroke="#D7E1E7" fill="none" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round" />
+    </g>
+  </g>
+  <g id="beat_02" transform="translate(0 0)">
+    <text x="64.000" y="617.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.000" font-weight="700" data-text="感知目标需要相应标签" aria-label="感知目标需要相应标签" xml:space="preserve" textLength="250.000" lengthAdjust="spacingAndGlyphs" fill="#326BB8">感知目标需要相应标签</text>
+    <text x="64.000" y="656.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="ASR 需要真实音频与校订文字；" aria-label="ASR 需要真实音频与校订文字；" xml:space="preserve" textLength="327.277" lengthAdjust="spacingAndGlyphs" fill="#526578">ASR 需要真实音频与校订文字；</text>
+    <text x="64.000" y="686.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="YOLO 需要图像、类别和区域。只有" aria-label="YOLO 需要图像、类别和区域。只有" xml:space="preserve" textLength="368.976" lengthAdjust="spacingAndGlyphs" fill="#526578">YOLO 需要图像、类别和区域。只有</text>
+    <text x="64.000" y="716.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="词表或只有图片都不够。" aria-label="词表或只有图片都不够。" xml:space="preserve" textLength="252.999" lengthAdjust="spacingAndGlyphs" fill="#526578">词表或只有图片都不够。</text>
+    <text x="570.000" y="617.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.000" font-weight="700" data-text="关系监督描述有序对象对" aria-label="关系监督描述有序对象对" xml:space="preserve" textLength="275.000" lengthAdjust="spacingAndGlyphs" fill="#14877D">关系监督描述有序对象对</text>
+    <text x="570.000" y="656.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="关系样本还需主体、客体、词表、方向和可" aria-label="关系样本还需主体、客体、词表、方向和可" xml:space="preserve" textLength="436.999" lengthAdjust="spacingAndGlyphs" fill="#526578">关系样本还需主体、客体、词表、方向和可</text>
+    <text x="570.000" y="686.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="见性。普通框标签只告诉对象在哪里，不说" aria-label="见性。普通框标签只告诉对象在哪里，不说" xml:space="preserve" textLength="436.999" lengthAdjust="spacingAndGlyphs" fill="#526578">见性。普通框标签只告诉对象在哪里，不说</text>
+    <text x="570.000" y="716.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="明它们之间有什么关系。" aria-label="明它们之间有什么关系。" xml:space="preserve" textLength="252.999" lengthAdjust="spacingAndGlyphs" fill="#526578">明它们之间有什么关系。</text>
+    <text x="1076.000" y="617.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.000" font-weight="700" data-text="任务监督说明当时怎么行动" aria-label="任务监督说明当时怎么行动" xml:space="preserve" textLength="300.000" lengthAdjust="spacingAndGlyphs" fill="#7756AA">任务监督说明当时怎么行动</text>
+    <text x="1076.000" y="656.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="MiniCPM-V 需要图像、上下文、问题和审" aria-label="MiniCPM-V 需要图像、上下文、问题和审" xml:space="preserve" textLength="432.125" lengthAdjust="spacingAndGlyphs" fill="#526578">MiniCPM-V 需要图像、上下文、问题和审</text>
+    <text x="1076.000" y="686.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="核回答。未来结果可审核标签，不能泄漏进" aria-label="核回答。未来结果可审核标签，不能泄漏进" xml:space="preserve" textLength="436.999" lengthAdjust="spacingAndGlyphs" fill="#526578">核回答。未来结果可审核标签，不能泄漏进</text>
+    <text x="1076.000" y="716.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="当前输入。" aria-label="当前输入。" xml:space="preserve" textLength="114.999" lengthAdjust="spacingAndGlyphs" fill="#526578">当前输入。</text>
+  </g>
+  <g id="beat_03" transform="translate(0 0)">
+    <path d="M64 760 L1536 760" stroke="#D7E1E7" fill="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+    <rect x="64" y="782" width="4" height="57" rx="2" fill="#14877D" />
+    <text x="84.000" y="798.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.000" font-weight="400" data-text="一批带框图片可以训练检测；若要训练任务问答，需要进一步整理当前状态、缺失记录与正确动作。若要训练 ASR，则另需音频—转写对。" aria-label="一批带框图片可以训练检测；若要训练任务问答，需要进一步整理当前状态、缺失记录与正确动作。若要训练 ASR，则另需音频—转写对。" xml:space="preserve" textLength="1348.811" lengthAdjust="spacingAndGlyphs" fill="#18344C">一批带框图片可以训练检测；若要训练任务问答，需要进一步整理当前状态、缺失记录与正确动作。若要训练 ASR，则另需音频—转写对。</text>
+  </g>
+  <g id="footer" transform="translate(0 0)">
+    <text x="64.000" y="877.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="17.000" font-weight="400" data-text="学习手册 §06.12.2 / 12.1 / 22.23" aria-label="学习手册 §06.12.2 / 12.1 / 22.23" xml:space="preserve" textLength="251.359" lengthAdjust="spacingAndGlyphs" fill="#8898A8">学习手册 §06.12.2 / 12.1 / 22.23</text>
+    <text x="1247.000" y="877.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="17.000" font-weight="400" data-text="工程案例与数值示意的来源见逐页备注" aria-label="工程案例与数值示意的来源见逐页备注" xml:space="preserve" textLength="289.000" lengthAdjust="spacingAndGlyphs" fill="#8898A8">工程案例与数值示意的来源见逐页备注</text>
+  </g>
+</svg>

@@ -1,0 +1,228 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1680" height="1120" viewBox="0 0 1680 1120" role="img" aria-labelledby="title desc">
+<title id="title">PSOP Compile · 任务 SOP（列表与步骤详情）</title><desc id="desc">纯设备任务 SOP 的扁平工作区概念。完整任务含14节点，列表选择STEP09检查连接与锁扣，详情呈现人员动作、前置、安全与验收；迷你节点图展示09的后续分支。不是维修依据。</desc>
+<defs>
+        <filter id="shadow" x="-20%" y="-30%" width="140%" height="170%"><feDropShadow dx="0" dy="4" stdDeviation="10" flood-color="#17283F" flood-opacity="0.045"/></filter>
+        <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#D6DEE8"/><stop offset=".5" stop-color="#8997AA"/><stop offset="1" stop-color="#C9D2DC"/></linearGradient>
+        <linearGradient id="servo-body" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#495A73"/><stop offset="1" stop-color="#26354C"/></linearGradient>
+        <linearGradient id="plate" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#E9EDF2"/><stop offset="1" stop-color="#CCD5E0"/></linearGradient>
+        <linearGradient id="photo" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#EAF0F6"/><stop offset="1" stop-color="#D8E1EC"/></linearGradient>
+        <marker id="arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0 L7 3.5 L0 7" fill="#A9B4C5"/></marker>
+        </defs><g font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif">
+<rect x="0" y="0" width="1680" height="1120" rx="0" fill="#F4F6FA" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="0" y="0" width="208" height="1120" rx="0" fill="#111D30" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="25" y="28" width="30" height="30" rx="8" fill="#5C60E8" stroke="none" stroke-width="1" opacity="1"/>
+<g transform="translate(30 33) scale(0.8333333333333334)" fill="none" stroke="#FFFFFF" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l10 5-10 5L2 8z M2 12l10 5 10-5 M2 16l10 5 10-5"/></g>
+<text x="66" y="47" font-size="23" fill="#FFFFFF" font-weight="650" text-anchor="start">PSOP</text>
+<text x="66" y="67" font-size="10" fill="#8899B3" font-weight="500" text-anchor="start" letter-spacing="2">COMPILE</text>
+<rect x="16" y="97" width="176" height="79" rx="9" fill="#1C2A42" stroke="none" stroke-width="1" opacity="1"/>
+<text x="30" y="124" font-size="16" fill="#F0F4FA" font-weight="600" text-anchor="start">Microduck</text>
+<g transform="translate(163 110) scale(0.6666666666666666)" fill="none" stroke="#B2BDD0" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></g>
+<text x="30" y="148" font-size="12" fill="#91A0B9" font-weight="400" text-anchor="start">双足机器人 · R2</text>
+<circle cx="32" cy="163" r="3" fill="#149E92" stroke="none" stroke-width="1" opacity="1"/>
+<text x="41" y="167" font-size="10" fill="#91A0B9" font-weight="400" text-anchor="start">build 快照已固定</text>
+<text x="27" y="207" font-size="11" fill="#6F829E" font-weight="500" text-anchor="start" letter-spacing="1">设备工作空间</text>
+<g transform="translate(28 234) scale(0.7916666666666666)" fill="none" stroke="#879AB8" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h6v6H3z M15 3h6v6h-6z M3 15h6v6H3z M15 15h6v6h-6z"/></g>
+<text x="58" y="250" font-size="14" fill="#ADBBD0" font-weight="400" text-anchor="start">设备能力总览</text>
+<rect x="14" y="271" width="180" height="40" rx="7" fill="#2B3559" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="14" y="280" width="3" height="21" rx="2" fill="#8F94FC" stroke="none" stroke-width="1" opacity="1"/>
+<g transform="translate(28 281) scale(0.7916666666666666)" fill="none" stroke="#C2C6FF" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h6v5H4z M14 15h6v5h-6z M7 9v8h7 M10 6h7v9"/></g>
+<text x="58" y="297" font-size="14" fill="#E9ECFF" font-weight="500" text-anchor="start">任务与执行图</text>
+<g transform="translate(28 328) scale(0.7916666666666666)" fill="none" stroke="#879AB8" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l10 5-10 5L2 8z M2 12l10 5 10-5 M2 16l10 5 10-5"/></g>
+<text x="58" y="344" font-size="14" fill="#ADBBD0" font-weight="400" text-anchor="start">训练语料</text>
+<g transform="translate(28 375) scale(0.7916666666666666)" fill="none" stroke="#879AB8" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10H7z M9 1v6 M15 1v6 M9 17v6 M15 17v6 M1 9h6 M1 15h6 M17 9h6 M17 15h6"/></g>
+<text x="58" y="391" font-size="14" fill="#ADBBD0" font-weight="400" text-anchor="start">模型与训练</text>
+<g transform="translate(28 422) scale(0.7916666666666666)" fill="none" stroke="#879AB8" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M4 3v18h17 M8 16v-4 M13 16V8 M18 16V5"/></g>
+<text x="58" y="438" font-size="14" fill="#ADBBD0" font-weight="400" text-anchor="start">评测与纠错</text>
+<g transform="translate(28 469) scale(0.7916666666666666)" fill="none" stroke="#879AB8" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.5 7.5L22 12l-7.5 2.5L12 22l-2.5-7.5L2 12l7.5-2.5z"/></g>
+<text x="58" y="485" font-size="14" fill="#ADBBD0" font-weight="400" text-anchor="start">现场帮助试验</text>
+<g transform="translate(28 516) scale(0.7916666666666666)" fill="none" stroke="#879AB8" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7l9-4 9 4v11l-9 4-9-4z M3 7l9 5 9-5 M12 12v10 M7 5l10 5"/></g>
+<text x="58" y="532" font-size="14" fill="#ADBBD0" font-weight="400" text-anchor="start">云端运行时</text>
+<line x1="24" y1="955" x2="184" y2="955" stroke="#273650" stroke-width="1"/>
+<text x="27" y="982" font-size="11" fill="#7489A7" font-weight="400" text-anchor="start">输入快照</text>
+<text x="27" y="1005" font-size="12" fill="#BDC9DC" font-weight="400" text-anchor="start">microduck.build · 1.3.2</text>
+<text x="27" y="1026" font-size="11" fill="#6F829E" font-weight="400" text-anchor="start">sha256: 68af…d42c</text>
+<g transform="translate(27 1050) scale(0.75)" fill="none" stroke="#90A3C0" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M9 7a3 3 0 0 1 6 0c0 3-3 3-3 6 M12 17h.01 M22 12a10 10 0 1 1-20 0a10 10 0 1 1 20 0"/></g>
+<text x="54" y="1065" font-size="12" fill="#90A3C0" font-weight="400" text-anchor="start">文档与帮助</text>
+<rect x="208" y="0" width="1472" height="76" rx="0" fill="#FFFFFF" stroke="none" stroke-width="1" opacity="1"/>
+<line x1="208" y1="76" x2="1680" y2="76" stroke="#E3E9F1" stroke-width="1"/>
+<text x="244" y="43" font-size="14" fill="#728096" font-weight="400" text-anchor="start">设备能力</text>
+<g transform="translate(309 28) scale(0.7083333333333334)" fill="none" stroke="#B0BCCB" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></g>
+<text x="340" y="43" font-size="14" fill="#19283E" font-weight="500" text-anchor="start">Microduck</text>
+<rect x="767" y="18" width="386" height="40" rx="7" fill="#F4F6FA" stroke="none" stroke-width="1" opacity="1"/>
+<g transform="translate(782 29) scale(0.75)" fill="none" stroke="#8B99AD" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M15 15l6 6 M18 10a8 8 0 1 1-16 0a8 8 0 1 1 16 0"/></g>
+<text x="810" y="44" font-size="13" fill="#93A0B2" font-weight="400" text-anchor="start">搜索任务、部件、语料或模型</text>
+<rect x="1185" y="25" width="154" height="27" rx="6" fill="#EEEEFE" stroke="none" stroke-width="1" opacity="1"/>
+<text x="1262.0" y="42.82" font-size="12" fill="#5C60E8" font-weight="500" text-anchor="middle">compile · v2.0.0</text>
+<g transform="translate(1376 28) scale(0.8333333333333334)" fill="none" stroke="#728096" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-8 10-8 10S4 17 4 12V6z M8 12l3 3 5-6"/></g>
+<text x="1405" y="43" font-size="12" fill="#728096" font-weight="400" text-anchor="start">compile 工作台</text>
+<circle cx="1633" cy="38" r="17" fill="#E6EBF5" stroke="none" stroke-width="1" opacity="1"/>
+<text x="1633" y="43" font-size="13" fill="#63758E" font-weight="500" text-anchor="middle">林</text>
+<text x="244" y="129" font-size="30" fill="#19283E" font-weight="650" text-anchor="start">任务 SOP</text>
+<text x="244" y="160" font-size="14" fill="#728096" font-weight="400" text-anchor="start">以步骤列表查看硬件操作规程；按需打开执行图，核对条件分支与验收要求。</text>
+<rect x="1504" y="108" width="140" height="29" rx="6" fill="#E8F6F2" stroke="none" stroke-width="1" opacity="1"/>
+<text x="1574.0" y="126.82" font-size="12" fill="#149E92" font-weight="500" text-anchor="middle">目标产品设计</text>
+<rect x="208" y="1086" width="1472" height="34" rx="0" fill="#FFFFFF" stroke="none" stroke-width="1" opacity="1"/>
+<line x1="208" y1="1086" x2="1680" y2="1086" stroke="#E3E9F1" stroke-width="1"/>
+<circle cx="246" cy="1103" r="3" fill="#5C60E8" stroke="none" stroke-width="1" opacity="1"/>
+<text x="257" y="1107" font-size="11" fill="#728096" font-weight="400" text-anchor="start">概念 UI · 设备、数据、模型状态与输出均为示例，非已实现能力或真实维修依据</text>
+<text x="1642" y="1107" font-size="10" fill="#94A1B4" font-weight="500" text-anchor="end" letter-spacing="1.5">PSOP / COMPILE</text>
+<rect x="208" y="77" width="1472" height="1008" rx="0" fill="#FFFFFF" stroke="none" stroke-width="1" opacity="1"/>
+<text x="244" y="122" font-size="27" fill="#19283E" font-weight="650" text-anchor="start">任务 SOP</text>
+<text x="244" y="151" font-size="13" fill="#728096" font-weight="400" text-anchor="start">以步骤列表查看硬件操作规程；按需打开执行图，核对条件分支与验收要求。</text>
+<line x1="244" y1="169" x2="1644" y2="169" stroke="#E3E9F1" stroke-width="1"/>
+<text x="244" y="207" font-size="17" fill="#19283E" font-weight="600" text-anchor="start">TSK-000014 · 更换左髋舵机</text>
+<text x="579" y="207" font-size="13" fill="#728096" font-weight="400" text-anchor="start">EG-000014 · v12</text>
+<text x="1127" y="207" font-size="12" fill="#CF942F" font-weight="400" text-anchor="start">概念 SOP · 非真实维修依据</text>
+<rect x="1448" y="181" width="196" height="38" rx="7" fill="#FFFFFF" stroke="#E3E9F1" stroke-width="1" opacity="1"/>
+<g transform="translate(1461 191) scale(0.75)" fill="none" stroke="#19283E" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12 M7 10l5 5 5-5 M4 17v4h16v-4"/></g>
+<text x="1555.0" y="206" font-size="14" fill="#19283E" font-weight="500" text-anchor="middle">导出 SOP</text>
+<line x1="244" y1="232" x2="1644" y2="232" stroke="#E3E9F1" stroke-width="1"/>
+<text x="244" y="268" font-size="15" fill="#5C60E8" font-weight="600" text-anchor="start">步骤列表</text>
+<text x="359" y="268" font-size="15" fill="#728096" font-weight="400" text-anchor="start">执行图</text>
+<line x1="244" y1="283" x2="624" y2="283" stroke="#E3E9F1" stroke-width="1"/>
+<line x1="244" y1="283" x2="310" y2="283" stroke="#5C60E8" stroke-width="2"/>
+<text x="605" y="269" font-size="12" fill="#728096" font-weight="400" text-anchor="end">14 步</text>
+<line x1="628" y1="247" x2="628" y2="1060" stroke="#E3E9F1" stroke-width="1"/>
+<text x="252" y="327" font-size="12" fill="#728096" font-weight="600" text-anchor="start">01</text>
+<text x="294" y="327" font-size="14" fill="#19283E" font-weight="400" text-anchor="start">断电与安全确认</text>
+<text x="601" y="327" font-size="11" fill="#728096" font-weight="500" text-anchor="end">安全</text>
+<line x1="244" y1="344" x2="610" y2="344" stroke="#EDF0F5" stroke-width="1"/>
+<text x="252" y="371" font-size="12" fill="#728096" font-weight="600" text-anchor="start">02</text>
+<text x="294" y="371" font-size="14" fill="#19283E" font-weight="400" text-anchor="start">拆下髋部盖板</text>
+<text x="601" y="371" font-size="11" fill="#728096" font-weight="500" text-anchor="end">操作</text>
+<line x1="244" y1="388" x2="610" y2="388" stroke="#EDF0F5" stroke-width="1"/>
+<text x="252" y="415" font-size="12" fill="#728096" font-weight="600" text-anchor="start">03</text>
+<text x="294" y="415" font-size="14" fill="#19283E" font-weight="400" text-anchor="start">断开原线束</text>
+<text x="601" y="415" font-size="11" fill="#728096" font-weight="500" text-anchor="end">操作</text>
+<line x1="244" y1="432" x2="610" y2="432" stroke="#EDF0F5" stroke-width="1"/>
+<text x="252" y="459" font-size="12" fill="#728096" font-weight="600" text-anchor="start">04</text>
+<text x="294" y="459" font-size="14" fill="#19283E" font-weight="400" text-anchor="start">拆下旧舵机</text>
+<text x="601" y="459" font-size="11" fill="#728096" font-weight="500" text-anchor="end">操作</text>
+<line x1="244" y1="476" x2="610" y2="476" stroke="#EDF0F5" stroke-width="1"/>
+<text x="252" y="503" font-size="12" fill="#728096" font-weight="600" text-anchor="start">05</text>
+<text x="294" y="503" font-size="14" fill="#19283E" font-weight="400" text-anchor="start">核对替换件规格</text>
+<text x="601" y="503" font-size="11" fill="#728096" font-weight="500" text-anchor="end">核对</text>
+<line x1="244" y1="520" x2="610" y2="520" stroke="#EDF0F5" stroke-width="1"/>
+<text x="252" y="547" font-size="12" fill="#728096" font-weight="600" text-anchor="start">06</text>
+<text x="294" y="547" font-size="14" fill="#19283E" font-weight="400" text-anchor="start">规格判定</text>
+<text x="601" y="547" font-size="11" fill="#728096" font-weight="500" text-anchor="end">判断</text>
+<line x1="244" y1="564" x2="610" y2="564" stroke="#EDF0F5" stroke-width="1"/>
+<text x="252" y="591" font-size="12" fill="#728096" font-weight="600" text-anchor="start">07</text>
+<text x="294" y="591" font-size="14" fill="#19283E" font-weight="400" text-anchor="start">安装并固定新舵机</text>
+<text x="601" y="591" font-size="11" fill="#728096" font-weight="500" text-anchor="end">操作</text>
+<line x1="244" y1="608" x2="610" y2="608" stroke="#EDF0F5" stroke-width="1"/>
+<text x="252" y="635" font-size="12" fill="#728096" font-weight="600" text-anchor="start">08</text>
+<text x="294" y="635" font-size="14" fill="#19283E" font-weight="400" text-anchor="start">接回线束</text>
+<text x="601" y="635" font-size="11" fill="#728096" font-weight="500" text-anchor="end">操作</text>
+<line x1="244" y1="652" x2="610" y2="652" stroke="#EDF0F5" stroke-width="1"/>
+<rect x="234" y="652" width="381" height="42" rx="0" fill="#EEEEFE" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="234" y="658" width="3" height="28" rx="0" fill="#5C60E8" stroke="none" stroke-width="1" opacity="1"/>
+<text x="252" y="679" font-size="12" fill="#5C60E8" font-weight="600" text-anchor="start">09</text>
+<text x="294" y="679" font-size="14" fill="#19283E" font-weight="600" text-anchor="start">检查连接与锁扣</text>
+<text x="601" y="679" font-size="11" fill="#5C60E8" font-weight="500" text-anchor="end">检查</text>
+<text x="252" y="723" font-size="12" fill="#728096" font-weight="600" text-anchor="start">10</text>
+<text x="294" y="723" font-size="14" fill="#19283E" font-weight="400" text-anchor="start">复装盖板</text>
+<text x="601" y="723" font-size="11" fill="#728096" font-weight="500" text-anchor="end">操作</text>
+<line x1="244" y1="740" x2="610" y2="740" stroke="#EDF0F5" stroke-width="1"/>
+<text x="252" y="767" font-size="12" fill="#728096" font-weight="600" text-anchor="start">11</text>
+<text x="294" y="767" font-size="14" fill="#19283E" font-weight="400" text-anchor="start">按设备规程功能检查</text>
+<text x="601" y="767" font-size="11" fill="#728096" font-weight="500" text-anchor="end">验收</text>
+<line x1="244" y1="784" x2="610" y2="784" stroke="#EDF0F5" stroke-width="1"/>
+<text x="252" y="811" font-size="12" fill="#728096" font-weight="600" text-anchor="start">12</text>
+<text x="294" y="811" font-size="14" fill="#19283E" font-weight="400" text-anchor="start">完成与记录</text>
+<text x="601" y="811" font-size="11" fill="#728096" font-weight="500" text-anchor="end">记录</text>
+<line x1="244" y1="828" x2="610" y2="828" stroke="#EDF0F5" stroke-width="1"/>
+<text x="252" y="855" font-size="12" fill="#728096" font-weight="600" text-anchor="start">13</text>
+<text x="294" y="855" font-size="14" fill="#19283E" font-weight="400" text-anchor="start">调整观察位置后复查</text>
+<text x="601" y="855" font-size="11" fill="#728096" font-weight="500" text-anchor="end">复查</text>
+<line x1="244" y1="872" x2="610" y2="872" stroke="#EDF0F5" stroke-width="1"/>
+<text x="252" y="899" font-size="12" fill="#728096" font-weight="600" text-anchor="start">14</text>
+<text x="294" y="899" font-size="14" fill="#19283E" font-weight="400" text-anchor="start">停止操作并核对</text>
+<text x="601" y="899" font-size="11" fill="#DE6874" font-weight="500" text-anchor="end">异常</text>
+<line x1="244" y1="916" x2="610" y2="916" stroke="#EDF0F5" stroke-width="1"/>
+<text x="244" y="966" font-size="12" fill="#DE6874" font-weight="500" text-anchor="start">06 规格不符 → 14 停止操作并核对</text>
+<text x="244" y="991" font-size="12" fill="#CF942F" font-weight="500" text-anchor="start">13 改善观察位置 → 09 重新检查</text>
+<text x="244" y="1031" font-size="12" fill="#728096" font-weight="400" text-anchor="start">对象：CMP-000042 · 左髋舵机</text>
+<text x="664" y="271" font-size="24" fill="#19283E" font-weight="600" text-anchor="start">STEP-09 · 检查连接与锁扣</text>
+<text x="664" y="302" font-size="13" fill="#728096" font-weight="400" text-anchor="start">更换左髋舵机 / Microduck · R2 / 标准配置</text>
+<rect x="1463" y="253" width="181" height="38" rx="7" fill="#FFFFFF" stroke="#E3E9F1" stroke-width="1" opacity="1"/>
+<g transform="translate(1476 263) scale(0.75)" fill="none" stroke="#19283E" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h6v5H4z M14 15h6v5h-6z M7 9v8h7 M10 6h7v9"/></g>
+<text x="1562.5" y="278" font-size="14" fill="#19283E" font-weight="500" text-anchor="middle">打开执行图</text>
+<line x1="664" y1="324" x2="1644" y2="324" stroke="#E3E9F1" stroke-width="1"/>
+<text x="664" y="358" font-size="16" fill="#19283E" font-weight="600" text-anchor="start">相关实体</text>
+<text x="664" y="392" font-size="15" fill="#19283E" font-weight="500" text-anchor="start">CMP-000042 · 左髋舵机</text>
+<text x="664" y="420" font-size="14" fill="#728096" font-weight="400" text-anchor="start">舵机接口、线束插头、锁扣与固定件</text>
+<text x="664" y="448" font-size="13" fill="#728096" font-weight="400" text-anchor="start">设备与部件规格必须与当前任务范围一致。</text>
+<line x1="664" y1="476" x2="1110" y2="476" stroke="#E3E9F1" stroke-width="1"/>
+<text x="664" y="508" font-size="16" fill="#19283E" font-weight="600" text-anchor="start">前置条件</text>
+<circle cx="668" cy="538" r="3" fill="#728096" stroke="none" stroke-width="1" opacity="1"/>
+<text x="682" y="542" font-size="14" fill="#728096" font-weight="400" text-anchor="start">满足设备断电与安全要求</text>
+<circle cx="668" cy="568" r="3" fill="#728096" stroke="none" stroke-width="1" opacity="1"/>
+<text x="682" y="572" font-size="14" fill="#728096" font-weight="400" text-anchor="start">新舵机已按规定安装固定</text>
+<circle cx="668" cy="598" r="3" fill="#728096" stroke="none" stroke-width="1" opacity="1"/>
+<text x="682" y="602" font-size="14" fill="#728096" font-weight="400" text-anchor="start">线束已按设备规程正确接回</text>
+<line x1="1141" y1="343" x2="1141" y2="621" stroke="#E3E9F1" stroke-width="1"/>
+<text x="1171" y="358" font-size="16" fill="#19283E" font-weight="600" text-anchor="start">人员检查动作</text>
+<text x="1171" y="392" font-size="14" fill="#728096" font-weight="400" text-anchor="start">检查插入方向与到位情况。</text>
+<text x="1171" y="420" font-size="14" fill="#728096" font-weight="400" text-anchor="start">检查锁扣、线束走向及固定。</text>
+<text x="1171" y="448" font-size="14" fill="#728096" font-weight="400" text-anchor="start">遮挡时调整观察位置，再检查连接。</text>
+<line x1="1171" y1="476" x2="1644" y2="476" stroke="#E3E9F1" stroke-width="1"/>
+<text x="1171" y="508" font-size="16" fill="#19283E" font-weight="600" text-anchor="start">安全与验收</text>
+<text x="1171" y="542" font-size="14" fill="#728096" font-weight="400" text-anchor="start">按设备规定安全状态检查，不强行插拔。</text>
+<text x="1171" y="572" font-size="14" fill="#728096" font-weight="400" text-anchor="start">连接、锁扣与线束固定满足设备验收要求。</text>
+<text x="1171" y="602" font-size="14" fill="#728096" font-weight="400" text-anchor="start">确认无异常后才复装盖板；异常时停止核对。</text>
+<line x1="664" y1="639" x2="1644" y2="639" stroke="#E3E9F1" stroke-width="1"/>
+<text x="664" y="674" font-size="16" fill="#19283E" font-weight="600" text-anchor="start">判断分支与后续步骤</text>
+<text x="664" y="699" font-size="13" fill="#728096" font-weight="400" text-anchor="start">当前步骤的后续子图；物理操作由人员完成。</text>
+<defs>
+<marker id="sop-v2-teal" markerWidth="6" markerHeight="6" refX="11" refY="3" orient="auto"><path d="M0 0L6 3L0 6Z" fill="#149E92"/></marker>
+<marker id="sop-v2-amber" markerWidth="6" markerHeight="6" refX="11" refY="3" orient="auto"><path d="M0 0L6 3L0 6Z" fill="#CF942F"/></marker>
+<marker id="sop-v2-red" markerWidth="6" markerHeight="6" refX="11" refY="3" orient="auto"><path d="M0 0L6 3L0 6Z" fill="#DE6874"/></marker>
+</defs>
+<path d="M764 806 C851 806 867 752 966 752" fill="none" stroke="#149E92" stroke-width="1.8" stroke-linecap="round" marker-end="url(#sop-v2-teal)"/>
+<path d="M1006 752 C1060 752 1106 752 1160 752" fill="none" stroke="#149E92" stroke-width="1.8" stroke-linecap="round" marker-end="url(#sop-v2-teal)"/>
+<path d="M1200 752 C1260 752 1318 752 1378 752" fill="none" stroke="#149E92" stroke-width="1.8" stroke-linecap="round" marker-end="url(#sop-v2-teal)"/>
+<path d="M764 818 C868 818 900 937 966 937" fill="none" stroke="#CF942F" stroke-width="1.8" stroke-linecap="round" marker-end="url(#sop-v2-amber)"/>
+<path d="M1006 937 C1110 937 1110 1010 744 1010 C676 1010 658 818 724 818" fill="none" stroke="#CF942F" stroke-width="1.8" stroke-linecap="round" marker-end="url(#sop-v2-amber)"/>
+<path d="M764 830 C1042 830 1256 937 1378 937" fill="none" stroke="#DE6874" stroke-width="1.8" stroke-linecap="round" marker-end="url(#sop-v2-red)"/>
+<rect x="824" y="724" width="130" height="25" rx="0" fill="#FFFFFF" stroke="none" stroke-width="1" opacity="1"/>
+<text x="889" y="742" font-size="12" fill="#149E92" font-weight="500" text-anchor="middle">符合验收条件</text>
+<rect x="830" y="869" width="105" height="25" rx="0" fill="#FFFFFF" stroke="none" stroke-width="1" opacity="1"/>
+<text x="882.5" y="887" font-size="12" fill="#CF942F" font-weight="500" text-anchor="middle">无法确认</text>
+<rect x="1237" y="884" width="88" height="25" rx="0" fill="#FFFFFF" stroke="none" stroke-width="1" opacity="1"/>
+<text x="1281" y="902" font-size="12" fill="#DE6874" font-weight="500" text-anchor="middle">存在异常</text>
+<text x="780" y="1005" font-size="11" fill="#CF942F" font-weight="400" text-anchor="start">回到 09 复查</text>
+<rect x="722" y="796" width="44" height="44" rx="10" fill="#FFFFFF" stroke="#5C60E8" stroke-width="2" opacity="1"/>
+<g transform="translate(731 805) scale(1.0833333333333333)" fill="none" stroke="#5C60E8" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h6v5H4z M14 15h6v5h-6z M7 9v8h7 M10 6h7v9"/></g>
+<circle cx="724" cy="818" r="3.8" fill="#FFFFFF" stroke="#5C60E8" stroke-width="1.5" opacity="1"/>
+<circle cx="764" cy="806" r="3.8" fill="#FFFFFF" stroke="#149E92" stroke-width="1.5" opacity="1"/>
+<circle cx="764" cy="818" r="3.8" fill="#FFFFFF" stroke="#CF942F" stroke-width="1.5" opacity="1"/>
+<circle cx="764" cy="830" r="3.8" fill="#FFFFFF" stroke="#DE6874" stroke-width="1.5" opacity="1"/>
+<text x="744" y="867" font-size="12" fill="#19283E" font-weight="500" text-anchor="middle">09 检查连接</text>
+<rect x="964" y="730" width="44" height="44" rx="10" fill="#FFFFFF" stroke="#C9D3E2" stroke-width="1.2" opacity="1"/>
+<g transform="translate(973 739) scale(1.0833333333333333)" fill="none" stroke="#149E92" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l10 5-10 5L2 8z M2 12l10 5 10-5 M2 16l10 5 10-5"/></g>
+<circle cx="966" cy="752" r="3.8" fill="#FFFFFF" stroke="#149E92" stroke-width="1.5" opacity="1"/>
+<circle cx="1006" cy="752" r="3.8" fill="#FFFFFF" stroke="#149E92" stroke-width="1.5" opacity="1"/>
+<text x="986" y="801" font-size="12" fill="#19283E" font-weight="500" text-anchor="middle">10 复装盖板</text>
+<rect x="1158" y="730" width="44" height="44" rx="10" fill="#FFFFFF" stroke="#C9D3E2" stroke-width="1.2" opacity="1"/>
+<g transform="translate(1167 739) scale(1.0833333333333333)" fill="none" stroke="#149E92" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-8 10-8 10S4 17 4 12V6z M8 12l3 3 5-6"/></g>
+<circle cx="1160" cy="752" r="3.8" fill="#FFFFFF" stroke="#149E92" stroke-width="1.5" opacity="1"/>
+<circle cx="1200" cy="752" r="3.8" fill="#FFFFFF" stroke="#149E92" stroke-width="1.5" opacity="1"/>
+<text x="1180" y="801" font-size="12" fill="#19283E" font-weight="500" text-anchor="middle">11 功能检查</text>
+<rect x="1376" y="730" width="44" height="44" rx="10" fill="#FFFFFF" stroke="#C9D3E2" stroke-width="1.2" opacity="1"/>
+<g transform="translate(1385 739) scale(1.0833333333333333)" fill="none" stroke="#149E92" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h7l2 3h9v12H3z"/></g>
+<circle cx="1378" cy="752" r="3.8" fill="#FFFFFF" stroke="#149E92" stroke-width="1.5" opacity="1"/>
+<text x="1398" y="801" font-size="12" fill="#19283E" font-weight="500" text-anchor="middle">12 完成与记录</text>
+<rect x="964" y="915" width="44" height="44" rx="10" fill="#FFFFFF" stroke="#C9D3E2" stroke-width="1.2" opacity="1"/>
+<g transform="translate(973 924) scale(1.0833333333333333)" fill="none" stroke="#CF942F" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M20 8a8 8 0 0 0-14-3L3 8 M3 3v5h5 M4 16a8 8 0 0 0 14 3l3-3 M21 21v-5h-5"/></g>
+<circle cx="966" cy="937" r="3.8" fill="#FFFFFF" stroke="#CF942F" stroke-width="1.5" opacity="1"/>
+<circle cx="1006" cy="937" r="3.8" fill="#FFFFFF" stroke="#CF942F" stroke-width="1.5" opacity="1"/>
+<text x="986" y="986" font-size="12" fill="#19283E" font-weight="500" text-anchor="middle">13 调整观察位置</text>
+<rect x="1376" y="915" width="44" height="44" rx="10" fill="#FFFFFF" stroke="#C9D3E2" stroke-width="1.2" opacity="1"/>
+<g transform="translate(1385 924)" fill="none" stroke="#DE6874" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2h10l6 6v10l-6 6H8l-6-6V8Z M10 9v8 M16 9v8"/></g>
+<circle cx="1378" cy="937" r="3.8" fill="#FFFFFF" stroke="#DE6874" stroke-width="1.5" opacity="1"/>
+<text x="1398" y="986" font-size="12" fill="#19283E" font-weight="500" text-anchor="middle">14 停止并核对</text>
+<line x1="664" y1="1022" x2="1644" y2="1022" stroke="#E3E9F1" stroke-width="1"/>
+<text x="664" y="1050" font-size="12" fill="#728096" font-weight="400" text-anchor="start">来源：设备规程 / DKP 装配与连接说明（示例）</text>
+<text x="1644" y="1050" font-size="12" fill="#728096" font-weight="500" text-anchor="end">EG-000014 · v12</text>
+</g></svg>

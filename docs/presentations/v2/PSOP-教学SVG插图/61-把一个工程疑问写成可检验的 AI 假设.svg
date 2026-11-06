@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <title>把一个工程疑问写成可检验的 AI 假设</title>
+  <desc>PSOP 第 61 / 65 页教学图；文字与方法图保持可编辑。Microduck 视图由官方来源 STL 和 robot_walk.xml 的 source assembly 渲染，配置为 walk-model-reference、MCD-000001。alpha 软件任务身份与该几何参考的实物对应尚未核验；MD-01、S03、J01 和 EG 为教学定义。</desc>
+  <defs>
+    <linearGradient id="steel" x1="0" y1="0" x2="0.9" y2="1">
+      <stop stop-color="#EAF0F3" />
+      <stop offset=".37" stop-color="#A9BBC6" />
+      <stop offset=".63" stop-color="#F1F5F5" />
+      <stop offset="1" stop-color="#859CA9" />
+    </linearGradient>
+  </defs>
+  <g id="base" transform="translate(0 0)">
+    <rect x="0" y="0" width="1600" height="900" rx="0" fill="#FCFDFB" />
+    <rect x="0" y="0" width="9" height="900" rx="0" fill="#BE574C" />
+    <path d="M64 62 L1536 62" stroke="#D7E1E7" fill="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+    <text x="64.000" y="41.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="18.999" font-weight="400" data-text="PSOP  /  实验、评测与研究实践" aria-label="PSOP  /  实验、评测与研究实践" xml:space="preserve" textLength="273.541" lengthAdjust="spacingAndGlyphs" fill="#526578">PSOP  /  实验、评测与研究实践</text>
+    <text x="1355.287" y="41.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="18.999" font-weight="400" data-text="LESSON 05  ·  61/65" aria-label="LESSON 05  ·  61/65" xml:space="preserve" textLength="180.021" lengthAdjust="spacingAndGlyphs" fill="#526578">LESSON 05  ·  61/65</text>
+  </g>
+  <g id="title" transform="translate(0 0)">
+    <text x="64.000" y="125.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="48.001" font-weight="700" data-text="把一个工程疑问写成可检验的 AI 假设" aria-label="把一个工程疑问写成可检验的 AI 假设" xml:space="preserve" textLength="800.790" lengthAdjust="spacingAndGlyphs" fill="#18344C">把一个工程疑问写成可检验的 AI 假设</text>
+    <text x="64.000" y="177.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="24.001" font-weight="400" data-text="好的研究问题明确改变什么、保持什么，以及用哪个指标判断。专业背景帮助确定参考答案、适用场景与失败原因；模型分数对实际价值" aria-label="好的研究问题明确改变什么、保持什么，以及用哪个指标判断。专业背景帮助确定参考答案、适用场景与失败原因；模型分数对实际价值" xml:space="preserve" textLength="1440.001" lengthAdjust="spacingAndGlyphs" fill="#526578">好的研究问题明确改变什么、保持什么，以及用哪个指标判断。专业背景帮助确定参考答案、适用场景与失败原因；模型分数对实际价值</text>
+    <text x="64.000" y="209.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="24.001" font-weight="400" data-text="的影响，还要用时间、返工和等待记录验证。" aria-label="的影响，还要用时间、返工和等待记录验证。" xml:space="preserve" textLength="480.001" lengthAdjust="spacingAndGlyphs" fill="#526578">的影响，还要用时间、返工和等待记录验证。</text>
+  </g>
+  <g id="beat_01" transform="translate(0 0)">
+    <g id="illustration" transform="translate(64 237)">
+      <text x="0.000" y="28.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="28.000" font-weight="700" data-text="假设：EG 对齐缺证样本能减少 S03 的非法动作" aria-label="假设：EG 对齐缺证样本能减少 S03 的非法动作" xml:space="preserve" textLength="595.984" lengthAdjust="spacingAndGlyphs" fill="#326BB8">假设：EG 对齐缺证样本能减少 S03 的非法动作</text>
+      <rect x="0" y="60" width="344" height="139" rx="9" fill="#FFFFFF" stroke="#D7E1E7" stroke-width="1.5" />
+      <text x="18.000" y="97.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.000" font-weight="700" data-text="改变一个因素" aria-label="改变一个因素" xml:space="preserve" textLength="150.000" lengthAdjust="spacingAndGlyphs" fill="#326BB8">改变一个因素</text>
+      <text x="18.000" y="146.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="24.001" font-weight="400" data-text="缺证监督：普通 / EG 对齐" aria-label="缺证监督：普通 / EG 对齐" xml:space="preserve" textLength="278.603" lengthAdjust="spacingAndGlyphs" fill="#18344C">缺证监督：普通 / EG 对齐</text>
+      <rect x="376" y="60" width="344" height="139" rx="9" fill="#FFFFFF" stroke="#D7E1E7" stroke-width="1.5" />
+      <text x="394.000" y="97.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.000" font-weight="700" data-text="固定比较条件" aria-label="固定比较条件" xml:space="preserve" textLength="150.000" lengthAdjust="spacingAndGlyphs" fill="#14877D">固定比较条件</text>
+      <text x="394.000" y="146.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="24.001" font-weight="400" data-text="同一模型、样本预算与" aria-label="同一模型、样本预算与" xml:space="preserve" textLength="240.001" lengthAdjust="spacingAndGlyphs" fill="#18344C">同一模型、样本预算与</text>
+      <text x="394.000" y="178.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="24.001" font-weight="400" data-text="Runtime" aria-label="Runtime" xml:space="preserve" textLength="96.262" lengthAdjust="spacingAndGlyphs" fill="#18344C">Runtime</text>
+      <rect x="752" y="60" width="344" height="139" rx="9" fill="#FFFFFF" stroke="#D7E1E7" stroke-width="1.5" />
+      <text x="770.000" y="97.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.000" font-weight="700" data-text="固定独立测试" aria-label="固定独立测试" xml:space="preserve" textLength="150.000" lengthAdjust="spacingAndGlyphs" fill="#7756AA">固定独立测试</text>
+      <text x="770.000" y="146.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="24.001" font-weight="400" data-text="完整作业、缺证与冲突切片" aria-label="完整作业、缺证与冲突切片" xml:space="preserve" textLength="288.001" lengthAdjust="spacingAndGlyphs" fill="#18344C">完整作业、缺证与冲突切片</text>
+      <rect x="1128" y="60" width="344" height="139" rx="9" fill="#FFFFFF" stroke="#D7E1E7" stroke-width="1.5" />
+      <text x="1146.000" y="97.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.000" font-weight="700" data-text="共同评价指标" aria-label="共同评价指标" xml:space="preserve" textLength="150.000" lengthAdjust="spacingAndGlyphs" fill="#B9752E">共同评价指标</text>
+      <text x="1146.000" y="146.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="24.001" font-weight="400" data-text="缺证非法动作率 + 任务" aria-label="缺证非法动作率 + 任务" xml:space="preserve" textLength="248.005" lengthAdjust="spacingAndGlyphs" fill="#18344C">缺证非法动作率 + 任务</text>
+      <text x="1146.000" y="178.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="24.001" font-weight="400" data-text="成功率" aria-label="成功率" xml:space="preserve" textLength="72.001" lengthAdjust="spacingAndGlyphs" fill="#18344C">成功率</text>
+      <rect x="0" y="238" width="1472" height="85" rx="9" fill="#EAF1FA" />
+      <text x="21.000" y="274.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.999" font-weight="700" data-text="观察与解释" aria-label="观察与解释" xml:space="preserve" textLength="129.999" lengthAdjust="spacingAndGlyphs" fill="#326BB8">观察与解释</text>
+      <text x="258.000" y="274.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.000" font-weight="400" data-text="记录总体变化、关键分支、新对象与失败原因。" aria-label="记录总体变化、关键分支、新对象与失败原因。" xml:space="preserve" textLength="525.000" lengthAdjust="spacingAndGlyphs" fill="#18344C">记录总体变化、关键分支、新对象与失败原因。</text>
+      <text x="258.000" y="308.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.000" font-weight="400" data-text="只改变监督组织；延迟、资源和实际任务效果单独测。" aria-label="只改变监督组织；延迟、资源和实际任务效果单独测。" xml:space="preserve" textLength="528.000" lengthAdjust="spacingAndGlyphs" fill="#526578">只改变监督组织；延迟、资源和实际任务效果单独测。</text>
+    </g>
+  </g>
+  <g id="beat_02" transform="translate(0 0)">
+    <text x="64.000" y="617.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.000" font-weight="700" data-text="从任务短板选择变量" aria-label="从任务短板选择变量" xml:space="preserve" textLength="225.000" lengthAdjust="spacingAndGlyphs" fill="#326BB8">从任务短板选择变量</text>
+    <text x="64.000" y="656.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="版本误引可研究过滤，缺证误推进可研究" aria-label="版本误引可研究过滤，缺证误推进可研究" xml:space="preserve" textLength="413.999" lengthAdjust="spacingAndGlyphs" fill="#526578">版本误引可研究过滤，缺证误推进可研究</text>
+    <text x="64.000" y="686.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="EG 监督，真实漏检可研究合成视角，资源" aria-label="EG 监督，真实漏检可研究合成视角，资源" xml:space="preserve" textLength="427.554" lengthAdjust="spacingAndGlyphs" fill="#526578">EG 监督，真实漏检可研究合成视角，资源</text>
+    <text x="64.000" y="716.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="受限可研究蒸馏与量化。" aria-label="受限可研究蒸馏与量化。" xml:space="preserve" textLength="252.999" lengthAdjust="spacingAndGlyphs" fill="#526578">受限可研究蒸馏与量化。</text>
+    <text x="570.000" y="617.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.000" font-weight="700" data-text="建立可复现的控制条件" aria-label="建立可复现的控制条件" xml:space="preserve" textLength="250.000" lengthAdjust="spacingAndGlyphs" fill="#14877D">建立可复现的控制条件</text>
+    <text x="570.000" y="656.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="固定任务、数据划分、模型、预算和运行环" aria-label="固定任务、数据划分、模型、预算和运行环" xml:space="preserve" textLength="436.999" lengthAdjust="spacingAndGlyphs" fill="#526578">固定任务、数据划分、模型、预算和运行环</text>
+    <text x="570.000" y="686.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="境。单次改变一个因素，或明确采用交叉实" aria-label="境。单次改变一个因素，或明确采用交叉实" xml:space="preserve" textLength="436.999" lengthAdjust="spacingAndGlyphs" fill="#526578">境。单次改变一个因素，或明确采用交叉实</text>
+    <text x="570.000" y="716.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="验，避免混合多项变化。" aria-label="验，避免混合多项变化。" xml:space="preserve" textLength="252.999" lengthAdjust="spacingAndGlyphs" fill="#526578">验，避免混合多项变化。</text>
+    <text x="1076.000" y="617.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.000" font-weight="700" data-text="同时解释收益和局限" aria-label="同时解释收益和局限" xml:space="preserve" textLength="225.000" lengthAdjust="spacingAndGlyphs" fill="#7756AA">同时解释收益和局限</text>
+    <text x="1076.000" y="656.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="报告总体与重要切片、失败案例和适用范" aria-label="报告总体与重要切片、失败案例和适用范" xml:space="preserve" textLength="413.999" lengthAdjust="spacingAndGlyphs" fill="#526578">报告总体与重要切片、失败案例和适用范</text>
+    <text x="1076.000" y="686.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="围。经济收益需实际成本与任务时间数据，" aria-label="围。经济收益需实际成本与任务时间数据，" xml:space="preserve" textLength="436.999" lengthAdjust="spacingAndGlyphs" fill="#526578">围。经济收益需实际成本与任务时间数据，</text>
+    <text x="1076.000" y="716.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="不能直接由 mAP 或成功率推算。" aria-label="不能直接由 mAP 或成功率推算。" xml:space="preserve" textLength="341.416" lengthAdjust="spacingAndGlyphs" fill="#526578">不能直接由 mAP 或成功率推算。</text>
+  </g>
+  <g id="beat_03" transform="translate(0 0)">
+    <path d="M64 760 L1536 760" stroke="#D7E1E7" fill="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+    <rect x="64" y="782" width="4" height="57" rx="2" fill="#BE574C" />
+    <text x="84.000" y="798.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.000" font-weight="400" data-text="假设示例：在模型、样本预算和 Runtime 固定时，增加 EG 对齐缺证样本，将降低缺证状态非法动作率。先定义切片、基线和评分。" aria-label="假设示例：在模型、样本预算和 Runtime 固定时，增加 EG 对齐缺证样本，将降低缺证状态非法动作率。先定义切片、基线和评分。" xml:space="preserve" textLength="1287.118" lengthAdjust="spacingAndGlyphs" fill="#18344C">假设示例：在模型、样本预算和 Runtime 固定时，增加 EG 对齐缺证样本，将降低缺证状态非法动作率。先定义切片、基线和评分。</text>
+  </g>
+  <g id="footer" transform="translate(0 0)">
+    <text x="64.000" y="877.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="17.000" font-weight="400" data-text="学习手册 §18.2 / 18.3 / 18.4 / 18.5" aria-label="学习手册 §18.2 / 18.3 / 18.4 / 18.5" xml:space="preserve" textLength="268.683" lengthAdjust="spacingAndGlyphs" fill="#8898A8">学习手册 §18.2 / 18.3 / 18.4 / 18.5</text>
+    <text x="1247.000" y="877.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="17.000" font-weight="400" data-text="工程案例与数值示意的来源见逐页备注" aria-label="工程案例与数值示意的来源见逐页备注" xml:space="preserve" textLength="289.000" lengthAdjust="spacingAndGlyphs" fill="#8898A8">工程案例与数值示意的来源见逐页备注</text>
+  </g>
+</svg>

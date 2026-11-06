@@ -1,0 +1,66 @@
+.inspector-resize-handle {
+  position: absolute;
+  z-index: 8;
+  inset: 0 auto 0 -4px;
+  width: 8px;
+  cursor: col-resize;
+  touch-action: none;
+  outline: none;
+}
+
+.inspector-resize-handle::before {
+  content: '';
+  position: absolute;
+  inset: 0 auto 0 3px;
+  width: 1px;
+  background: transparent;
+  transition: background-color 120ms;
+}
+
+.inspector-resize-grip {
+  position: absolute;
+  left: 1px;
+  top: calc(50% - 20px);
+  width: 6px;
+  height: 40px;
+  border: 1px solid #d4e3e3;
+  border-radius: 4px;
+  background: #f7fbfb;
+  opacity: 0;
+  transition: opacity 120ms;
+}
+
+.inspector-resize-grip::after {
+  content: '';
+  position: absolute;
+  inset: 9px auto 9px 2px;
+  width: 1px;
+  background: #7fa3a5;
+}
+
+.inspector-resize-handle:hover::before,
+.inspector-resize-handle:focus-visible::before,
+.inspector-resize-handle.is-resizing::before { background: #4e9094; }
+
+.inspector-resize-handle:hover .inspector-resize-grip,
+.inspector-resize-handle:focus-visible .inspector-resize-grip,
+.inspector-resize-handle.is-resizing .inspector-resize-grip { opacity: 1; }
+
+.inspector-resize-handle:focus-visible .inspector-resize-grip { outline: 2px solid #4e9094; outline-offset: 2px; }
+.inspector-resize-handle.is-resizing .inspector-resize-grip { border-color: #4e9094; background: #e8f3f2; }
+.inspector-is-resizing, .inspector-is-resizing * { cursor: col-resize !important; user-select: none !important; }
+
+.inspector-resize-instructions {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .inspector-resize-handle::before,
+  .inspector-resize-grip { transition: none; }
+}

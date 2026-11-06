@@ -1,0 +1,39 @@
+{
+  "assembly_status": "source_reference",
+  "configurations": [
+    "walk-model-reference"
+  ],
+  "coordinate_system": {
+    "handedness": "right",
+    "transform_layout": "row-major",
+    "up_axis": "+Z"
+  },
+  "mesh_count": 38,
+  "object_count": 70,
+  "pose": "qpos0",
+  "source_id": "SRC-000048",
+  "source_digest": "sha256:80fc4424ed71e430ec4919110dfdb5c714dc1c4e1138e1832a16865cf31eb8c8",
+  "path": "../../sources/SRC-000048--robot_walk/original/robot_walk.xml",
+  "reference_device_id": "DEV-000003",
+  "sourceCommit": "cb70b792312d559a4da09064d92009079671815f",
+  "sourceBounds": [
+    [
+      -0.05177709943375588,
+      -0.07050000131130217,
+      0.013473379386577666
+    ],
+    [
+      0.09229001924991602,
+      0.07050000131130217,
+      0.2774493844779491
+    ]
+  ],
+  "precision": "uint16 positions per mesh bounds; source face normals int16; triangles unchanged",
+  "maxPositionQuantizationErrorMeters": 9.360648376168416e-07,
+  "sourceManifestSha256": "c3279ec14d88c6b9e4f60b25bd0ba9bfd85c1015daf8d63efe4cb2efef4dc965",
+  "license": "Creative Commons BY-SA-NC (upstream statement does not name a version)",
+  "alphaMapping": "Not verified; alpha software identity is separate from this walk reference",
+  "bundleBytes": 8164287,
+  "uniqueTriangles": 431802,
+  "instanceTriangles": 796844
+}
