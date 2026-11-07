@@ -1,0 +1,10 @@
+{
+  "valid": true,
+  "method": "repeat finalize from the same frozen work directory to a new unregistered output; compare every file byte",
+  "work": "build/connection-analysis/work-final-1",
+  "original": "build/microduck/source-1.11/microduck-connection-analysis.dkp",
+  "repeat": "build/stability-review/reproducibility.dkp",
+  "packageDigest": "84f6829a25a82fefaf1da6cc00b399088a5db6e41923b4074c39a08d1988b6db",
+  "identicalFileCount": 80,
+  "mismatches": []
+}

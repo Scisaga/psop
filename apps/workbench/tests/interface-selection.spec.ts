@@ -18,7 +18,7 @@ test.beforeAll(async () => {
   const response = await fetch(`http://127.0.0.1:8780/api/workspaces/${workspace.id}/snapshots/${snapshotId}/view`, { signal: AbortSignal.timeout(330000) });
   if (!response.ok) throw new Error(await response.text());
   data = await response.json();
-  expect(data.meta.validation?.profile).toBe('psop.hardware.source-model/1.10');
+  expect(['psop.hardware.source-model/1.10', 'psop.hardware.source-model/1.11']).toContain(data.meta.validation?.profile);
   shell = data.parts.find(item => item.meshKey === 'right_shell')!;
   expect(shell).toBeTruthy();
 });

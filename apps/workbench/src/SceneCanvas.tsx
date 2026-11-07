@@ -7,6 +7,8 @@ import type { CircularOpening, ConicalFeature, CylindricalFeature, FeaturePatter
 import { featuresFor, isAlternativeSupplement, openingGroupsFor, resolveGeometry, supplementalComponentEnabled } from './mechanics-model';
 import { disposeSupplementalScene, makeSupplementalScene, supplementalPosition, supplementalWorldBounds, type SupplementalRecord } from './supplement-scene';
 import { DISPLAY_CREASE_DEGREES, prepareSourceDisplayNormals, setSourceFacetShading } from './source-display-normals';
+import { geometryBoundaryMaterial } from './geometry-overlay-material';
+import { INSPECTION_VISIBILITY_POLICY, stableObstructions, type ObstructionCandidate } from './inspection-visibility';
 import './scene.css';
 
 export interface CameraPose {
@@ -97,6 +99,13 @@ interface Runtime {
   groundTarget: number;
   ready: boolean;
   disposed: boolean;
+  controlsActive: boolean;
+  lastCameraChangeAt: number;
+  coverageSamples: number;
+  sourceTransparencyOrder: Map<string, number>;
+  sourceTransparencyOrderDirty: boolean;
+  sourceTransparencyOrderUpdatedAt: number;
+  inspectionDiagnostics: { frames: Record<string, unknown>[]; raycasts: Record<string, unknown>[]; materialStates: Record<string, unknown>[]; materialKey: string } | null;
   inspection: {
     selection: GeometrySelection;
     previousCamera: CameraPose;
@@ -108,6 +117,8 @@ interface Runtime {
     contextOnly: boolean;
     updatedAt: number;
     signature: string;
+    visibilitySettled: boolean;
+    candidates: Map<string, ObstructionCandidate>;
   } | null;
   onInspectionChange: (state: InspectionState) => void;
   inspectionSuppressedSelection: string | null;
@@ -231,6 +242,8 @@ function explosionOffset(record: MeshRecord, center: THREE.Vector3) {
 }
 
 function presentation(runtime: Runtime, props: SceneProps) {
+  runtime.sourceTransparencyOrderDirty = true;
+  if (runtime.inspection) { runtime.inspection.visibilitySettled = false; runtime.inspection.updatedAt = 0; }
   applySourcePresentation(runtime, props);
   let visibleSupplements = 0;
   for (const record of runtime.supplements.values()) {
@@ -296,12 +309,17 @@ function applySourcePresentation(runtime: Runtime, props: SceneProps) {
     material.color.copy(selected ? new THREE.Color('#6ebbb5') : record.color);
     material.emissive.set(selected ? '#126b70' : '#000000');
     material.emissiveIntensity = selected ? 0.13 : 0;
-    const transparent = faded || props.xray && !selected;
-    const depthWrite = !transparent;
-    const changed = material.transparent !== transparent || material.depthWrite !== depthWrite || (material.clippingPlanes?.length || 0) !== (props.clipping ? 1 : 0);
-    material.transparent = transparent;
+    const translucent = faded || props.xray && !selected;
+    const changed = material.transparent !== translucent || material.depthWrite === translucent || material.alphaToCoverage || material.alphaHash || (material.clippingPlanes?.length || 0) !== (props.clipping ? 1 : 0);
+    // Keep alpha blending's readable accumulated contrast across several
+    // source layers. Their relative order is held during a camera gesture;
+    // sample coverage correlates those layers' masks and washes them out.
+    material.transparent = translucent;
+    material.alphaToCoverage = false;
+    material.alphaHash = false;
     material.opacity = faded ? localContext ? .18 : .08 : props.xray && !selected ? .22 : 1;
-    material.depthWrite = depthWrite;
+    material.depthWrite = !translucent;
+    record.mesh.renderOrder = translucent ? 2 : 0;
     // Source assemblies can contain coincident, outward-facing contact faces
     // with different triangulations. Give opaque actuator surfaces a stable
     // depth priority without changing source vertices, triangle IDs or poses.
@@ -315,6 +333,20 @@ function applySourcePresentation(runtime: Runtime, props: SceneProps) {
     (runtime.selectedEdge.material as THREE.LineBasicMaterial).opacity = runtime.inspection?.translucentPartIds.has(props.selectedId) ? .12 : .5;
   }
   applySupplementalVisibility(runtime, props);
+  runtime.sourceTransparencyOrderDirty = true;
+}
+function updateSourceTransparencyOrder(runtime: Runtime, cameraPosition = runtime.camera.position, cameraTarget = runtime.controls.target, force = false) {
+  if (!force && (!runtime.sourceTransparencyOrderDirty || runtime.flight || runtime.controlsActive || performance.now() - runtime.lastCameraChangeAt < INSPECTION_VISIBILITY_POLICY.cameraQuietMs)) return;
+  runtime.scene.updateMatrixWorld(true);
+  const direction = cameraTarget.clone().sub(cameraPosition).normalize();
+  const entries = [...runtime.records.values()].filter(record => record.mesh.visible && record.mesh.material.transparent).map(record => {
+    const center = record.mesh.geometry.boundingSphere?.center.clone() || record.mesh.geometry.boundingBox!.getCenter(new THREE.Vector3());
+    center.applyMatrix4(record.mesh.matrixWorld);
+    return { id: record.part.id, depth: center.sub(cameraPosition).dot(direction) };
+  }).sort((a, b) => b.depth - a.depth || a.id.localeCompare(b.id));
+  runtime.sourceTransparencyOrder = new Map(entries.map((item, index) => [item.id, index]));
+  runtime.sourceTransparencyOrderDirty = false;
+  runtime.sourceTransparencyOrderUpdatedAt = performance.now();
 }
 function applySupplementalVisibility(runtime: Runtime, props: SceneProps) {
   const hidden = new Set(props.hiddenIds);
@@ -346,6 +378,15 @@ function publishInspection(runtime: Runtime) {
   const host = runtime.renderer.domElement.parentElement;
   if (host) { host.dataset.inspectionActive = String(state.active); host.dataset.inspectionMode = state.mode; host.dataset.inspectionTranslucentParts = state.translucentPartIds.join(','); host.dataset.inspectionOwnerTranslucent = String(state.includesOwner); }
   if (!runtime.inspection || runtime.inspection.signature !== signature) { if (runtime.inspection) runtime.inspection.signature = signature; runtime.onInspectionChange(state); }
+}
+function recordInspectionFrame(runtime: Runtime) {
+  const diagnostics = runtime.inspectionDiagnostics;
+  if (!diagnostics || !runtime.ready || diagnostics.frames.length >= 30000) return;
+  const materials = [...runtime.records.values()].map(record => ({ partId: record.part.id, visible: record.mesh.visible, opacity: record.mesh.material.opacity, transparent: record.mesh.material.transparent, depthWrite: record.mesh.material.depthWrite, depthTest: record.mesh.material.depthTest, alphaToCoverage: record.mesh.material.alphaToCoverage, alphaHash: record.mesh.material.alphaHash, renderOrder: record.mesh.renderOrder }));
+  const key = JSON.stringify(materials);
+  if (key !== diagnostics.materialKey) { diagnostics.materialStates.push({ time: performance.now(), materials }); diagnostics.materialKey = key; }
+  const phase = (window as unknown as { __inspectionPhase?: string }).__inspectionPhase || 'unmarked';
+  diagnostics.frames.push({ time: performance.now(), phase, selection: runtime.inspection?.selection || null, camera: { ...actualCamera(runtime), quaternion: runtime.camera.quaternion.toArray() }, translucentPartIds: [...runtime.inspection?.translucentPartIds || []], active: !!runtime.inspection, flight: !!runtime.flight, controlsActive: runtime.controlsActive, cameraQuietMs: performance.now() - runtime.lastCameraChangeAt, materialStateIndex: diagnostics.materialStates.length - 1, sourceTransparentSortOrder: runtime.renderer.renderLists.get(runtime.scene, 0).transparent.filter(item => item.object.userData.partId).map(item => item.object.userData.partId), sourceSortRanks: Object.fromEntries(runtime.sourceTransparencyOrder), sourceSortUpdatedAt: runtime.sourceTransparencyOrderUpdatedAt, transparencyMode: 'stable_alpha', coverageSamples: runtime.coverageSamples });
 }
 function inspectionOverlayDepth(runtime: Runtime) {
   for (const overlay of [runtime.geometryOverlay, ...runtime.peerGeometryOverlays]) overlay?.traverse(object => {
@@ -428,6 +469,7 @@ function sampleWorldPoint(runtime: Runtime, sample: InspectionSample, explosion?
     : sample.point.clone().multiply(supplemental.group.scale).applyQuaternion(supplemental.group.quaternion).add(supplementalPosition(supplemental, explosion, runtime.records.get(supplemental.anchorPartRef)?.offset));
 }
 function visibilityObstructions(runtime: Runtime, props: SceneProps, cameraPosition: THREE.Vector3, targets: THREE.Vector3[], desiredPose = false) {
+  const started = performance.now();
   const raycaster = new THREE.Raycaster();
   const visibleRecords = [...runtime.records.values()].filter(record => record.mesh.visible && (!props.xray || props.selectedId === record.part.id));
   const meshes = visibleRecords.map(record => {
@@ -437,32 +479,43 @@ function visibilityObstructions(runtime: Runtime, props: SceneProps, cameraPosit
     mesh.matrixWorld.compose(record.basePosition.clone().addScaledVector(record.offset, props.explosion), record.mesh.quaternion, record.mesh.scale);
     return { id: record.part.id, mesh };
   });
-  const blockers = new Set<string>(); let blockedSamples = 0;
+  const blockers = new Set<string>(); const hitCounts = new Map<string, number>(); let blockedSamples = 0;
   for (const target of targets) {
     const direction = target.clone().sub(cameraPosition), distance = direction.length();
     if (distance < .00002) continue;
     raycaster.set(cameraPosition, direction.normalize()); raycaster.near = .000005; raycaster.far = Math.max(.000005, distance - .00002);
     let blocked = false;
     for (const item of meshes) {
-      if (raycaster.intersectObject(item.mesh, false).some(hit => !props.clipping || runtime.clippingPlane.distanceToPoint(hit.point) >= 0)) { blockers.add(item.id); blocked = true; }
+      if (raycaster.intersectObject(item.mesh, false).some(hit => !props.clipping || runtime.clippingPlane.distanceToPoint(hit.point) >= 0)) { blockers.add(item.id); hitCounts.set(item.id, (hitCounts.get(item.id) || 0) + 1); blocked = true; }
     }
     if (blocked) blockedSamples += 1;
   }
-  return { blockers, blockedSamples };
+  const diagnostics = runtime.inspectionDiagnostics;
+  if (diagnostics && diagnostics.raycasts.length < 10000) diagnostics.raycasts.push({ time: performance.now(), durationMs: performance.now() - started, camera: runtime.camera.position.toArray(), testedCamera: cameraPosition.toArray(), sampleCount: targets.length, hitCounts: Object.fromEntries(hitCounts), blockedSamples, desiredPose, translucentPartIds: [...blockers], phase: (window as unknown as { __inspectionPhase?: string }).__inspectionPhase || 'unmarked' });
+  return { blockers, blockedSamples, hitCounts };
 }
 function updateInspectionVisibility(runtime: Runtime, props: SceneProps, force = false) {
   const inspection = runtime.inspection;
   if (!inspection || !runtime.ready || runtime.flight && !force) return;
   const now = performance.now();
-  if (!force && now - inspection.updatedAt < 120) return;
+  // A drag, wheel gesture and its orbit damping share the same stable source
+  // presentation. Re-evaluate after the camera settles, never mid-gesture.
+  if (!force && (runtime.controlsActive || now - runtime.lastCameraChangeAt < INSPECTION_VISIBILITY_POLICY.cameraQuietMs)) {
+    inspection.candidates.clear(); inspection.visibilitySettled = false; return;
+  }
+  if (!force && (inspection.visibilitySettled || now - inspection.updatedAt < INSPECTION_VISIBILITY_POLICY.sampleIntervalMs)) return;
   inspection.updatedAt = now;
   runtime.scene.updateMatrixWorld(true); runtime.camera.updateMatrixWorld(true);
   const targets = inspection.samples.map(sample => sampleWorldPoint(runtime, sample));
-  const result = inspection.contextOnly ? { blockers: new Set<string>(), blockedSamples: 0 } : visibilityObstructions(runtime, props, runtime.camera.position, targets);
-  inspection.translucentPartIds = result.blockers;
-  applySourcePresentation(runtime, props);
-  inspectionOverlayDepth(runtime);
-  runtime.renderer.shadowMap.needsUpdate = true;
+  const result = inspection.contextOnly ? { blockers: new Set<string>(), blockedSamples: 0, hitCounts: new Map<string, number>() } : visibilityObstructions(runtime, props, runtime.camera.position, targets);
+  const stable = stableObstructions(inspection, result.hitCounts, targets.length, now);
+  inspection.visibilitySettled = !stable.pending;
+  if (stable.changed) {
+    inspection.translucentPartIds = stable.translucentPartIds;
+    applySourcePresentation(runtime, props);
+    inspectionOverlayDepth(runtime);
+    runtime.renderer.shadowMap.needsUpdate = true;
+  }
   const host = runtime.renderer.domElement.parentElement;
   if (host) { host.dataset.inspectionTargetSamples = String(targets.length); host.dataset.inspectionObstructedSamples = String(result.blockedSamples); }
   publishInspection(runtime);
@@ -513,7 +566,7 @@ function cylindricalOverlay(feature: CylindricalFeature, source: THREE.BufferGeo
   const [start, end] = feature.geometry.axial_range_m;
   const radial = new THREE.Vector3(Math.abs(axis.z) < 0.9 ? 0 : 1, 0, Math.abs(axis.z) < 0.9 ? 1 : 0).cross(axis).normalize();
   const tangent = axis.clone().cross(radial).normalize();
-  const lineMaterial = new THREE.LineBasicMaterial({ color, transparent: true, opacity: 0.98, depthTest: true, depthWrite: false });
+  const lineMaterial = geometryBoundaryMaterial(new THREE.LineBasicMaterial({ color, transparent: true, opacity: 0.98, depthTest: true, depthWrite: false }));
   const centers = entryPositions?.length ? entryPositions.map(point => new THREE.Vector3().fromArray(point)) : [start, end].map(distance => origin.clone().addScaledVector(axis, distance));
   for (const center of centers) {
     const points = Array.from({ length: 96 }, (_, index) => center.clone().addScaledVector(radial, Math.cos(index * Math.PI / 48) * radius).addScaledVector(tangent, Math.sin(index * Math.PI / 48) * radius));
@@ -559,7 +612,7 @@ function planarOverlay(feature: PlanarFeature, source: THREE.BufferGeometry, bou
   const group = new THREE.Group();
   const patch = sourceTrianglePatch(feature.geometry.triangle_indices, source, bounds, color);
   if (patch) group.add(patch);
-  const lineMaterial = new THREE.LineBasicMaterial({ color, transparent: true, opacity: 0.98, depthTest: true, depthWrite: false });
+  const lineMaterial = geometryBoundaryMaterial(new THREE.LineBasicMaterial({ color, transparent: true, opacity: 0.98, depthTest: true, depthWrite: false }));
   for (const loop of feature.geometry.boundary_loops) {
     const points = loop.map(point => new THREE.Vector3().fromArray(point));
     points.forEach(point => bounds.expandByPoint(point));
@@ -599,7 +652,7 @@ function conicalOverlay(feature: ConicalFeature, source: THREE.BufferGeometry, b
 
 function holePortalOverlay(hole: LogicalHole, source: THREE.BufferGeometry, bounds: THREE.Box3, portalRefs?: Set<string>) {
   const group = new THREE.Group();
-  const material = new THREE.LineBasicMaterial({ color: '#e9b34f', depthTest: true, depthWrite: false, transparent: true, opacity: 0.9 });
+  const material = geometryBoundaryMaterial(new THREE.LineBasicMaterial({ color: '#e9b34f', depthTest: true, depthWrite: false, transparent: true, opacity: 0.9 }));
   const portals = hole.portals.filter(portal => !portalRefs || portalRefs.has(portal.id));
   for (const portal of portals) {
     const points = portal.boundary_vertices.map(point => new THREE.Vector3().fromArray(point));
@@ -639,7 +692,7 @@ function patternGuideOverlay(pattern: FeaturePattern, bounds: THREE.Box3) {
 function slotOverlay(slot: SlotFeature, bounds: THREE.Box3) {
   const group = new THREE.Group(), points = slot.geometry.boundary_vertices.map(point => new THREE.Vector3().fromArray(point));
   points.forEach(point => bounds.expandByPoint(point));
-  const outline = new THREE.LineLoop(new THREE.BufferGeometry().setFromPoints(points), new THREE.LineBasicMaterial({ color: '#d6a348', transparent: true, opacity: .95, depthTest: true, depthWrite: false }));
+  const outline = new THREE.LineLoop(new THREE.BufferGeometry().setFromPoints(points), geometryBoundaryMaterial(new THREE.LineBasicMaterial({ color: '#d6a348', transparent: true, opacity: .95, depthTest: true, depthWrite: false })));
   outline.renderOrder = 11; group.add(outline);
   const center = new THREE.Vector3().fromArray(slot.geometry.origin), axis = new THREE.Vector3().fromArray(slot.geometry.major_axis);
   const guide = new THREE.Line(new THREE.BufferGeometry().setFromPoints([-1, 1].map(sign => center.clone().addScaledVector(axis, sign * slot.geometry.length_m / 2))), new THREE.LineDashedMaterial({ color: '#c1a56a', transparent: true, opacity: .6, dashSize: .0006, gapSize: .0005, depthTest: true, depthWrite: false }));
@@ -651,7 +704,7 @@ function openingOverlay(opening: CircularOpening, bounds: THREE.Box3, color: str
   const group = new THREE.Group();
   const points = opening.geometry.boundary_vertices.map(point => new THREE.Vector3().fromArray(point));
   points.forEach(point => bounds.expandByPoint(point));
-  const outline = new THREE.LineLoop(new THREE.BufferGeometry().setFromPoints(points), new THREE.LineBasicMaterial({ color, transparent: true, opacity: .98, depthTest: true, depthWrite: false }));
+  const outline = new THREE.LineLoop(new THREE.BufferGeometry().setFromPoints(points), geometryBoundaryMaterial(new THREE.LineBasicMaterial({ color, transparent: true, opacity: .98, depthTest: true, depthWrite: false })));
   outline.userData.openingBoundary = true; group.add(outline);
   group.userData.featureType = 'circular_opening'; group.userData.sourceTriangleCount = 0;
   return group;
@@ -692,7 +745,7 @@ function presentGeometry(runtime: Runtime, props: SceneProps, selection = props.
   const structure = structures[0];
   const region = selected.reviewRegionRef ? props.data.analysis?.review_regions?.find(item => item.id === selected.reviewRegionRef) : undefined;
   if (supplement && !supplementalComponentEnabled(props.data, supplement.component, props.showSupplemental === true, props.supplementReviewIds, props.activeConnectionAlternativeIds)) return;
-  const contextOnly = !features.length && !slot && !openings.length && !passage && !supplement && selected.selection.kind === 'connection_review';
+  const contextOnly = !features.length && !slot && !openings.length && !passage && !supplement && !structure && selected.selection.kind === 'connection_review';
   if (!features.length && !slot && !openings.length && !passage && !supplement && !structure && !region && !contextOnly) return;
   const group = new THREE.Group();
   group.name = `${selected.selection.kind}-highlight:${selected.selection.id}`;
@@ -707,8 +760,9 @@ function presentGeometry(runtime: Runtime, props: SceneProps, selection = props.
   for (const feature of features) group.add(featureOverlay(feature, owner.mesh.geometry, bounds, '#d69529', selectedSites ? selectedSites.filter(site => site.feature_refs.includes(feature.id)).map(site => site.position) : patternEntries?.filter(entry => entry.refs.includes(feature.id)).map(entry => entry.point)));
   if (slot) group.add(slotOverlay(slot, bounds));
   openings.forEach(opening => group.add(openingOverlay(opening, bounds, '#d69529')));
-  if (selected.hypothesisRef) addStructurePatches(group, structures, owner.mesh.geometry, bounds, '#d69529', new Set(features.flatMap(item => item.geometry.triangle_indices)));
-  if (structure && !selected.hypothesisRef || region) {
+  const multiStructureRelationship = !!selected.hypothesisRef || selected.selection.kind === 'connection_review';
+  if (multiStructureRelationship) addStructurePatches(group, structures, owner.mesh.geometry, bounds, '#d69529', new Set(features.flatMap(item => item.geometry.triangle_indices)));
+  if (structure && !multiStructureRelationship || region) {
     const indices = structure?.support_triangle_indices || region!.triangle_indices;
     const source = new THREE.Group();
     const patch = sourceTrianglePatch(indices, owner.mesh.geometry, bounds, '#d69529');
@@ -849,7 +903,7 @@ function focusGeometry(runtime: Runtime, props: SceneProps, selection?: Geometry
   if (Math.abs(direction.z) > 0.97) direction.add(new THREE.Vector3(0, 0.06, 0)).normalize();
   const previous = runtime.inspection;
   const descriptor = resolveGeometry(props.data, active);
-  runtime.inspection = { selection: { ...active }, previousCamera: previous?.previousCamera || actualCamera(runtime), previousView: previous?.previousView || runtime.currentView, previousDirection: previous?.previousDirection || runtime.viewDirection.clone(), contextPartIds: new Set([owner.part.id, ...(descriptor?.contextPartRefs || []), ...(descriptor?.peers.map(item => item.ownerRef) || [])]), translucentPartIds: new Set(), samples: [], contextOnly: runtime.renderer.domElement.parentElement?.dataset.geometryContextOnly === 'true', updatedAt: 0, signature: '' };
+  runtime.inspection = { selection: { ...active }, previousCamera: previous?.previousCamera || actualCamera(runtime), previousView: previous?.previousView || runtime.currentView, previousDirection: previous?.previousDirection || runtime.viewDirection.clone(), contextPartIds: new Set([owner.part.id, ...(descriptor?.contextPartRefs || []), ...(descriptor?.peers.map(item => item.ownerRef) || [])]), translucentPartIds: new Set(), samples: [], contextOnly: runtime.renderer.domElement.parentElement?.dataset.geometryContextOnly === 'true', updatedAt: 0, signature: '', visibilitySettled: false, candidates: new Map() };
   applySourcePresentation(runtime, props);
   runtime.inspection.samples = inspectionSamples(runtime, props, active, runtime.geometryLocalBounds);
   const targets = runtime.inspection.samples.map(sample => sampleWorldPoint(runtime, sample, props.explosion));
@@ -881,7 +935,8 @@ function focusGeometry(runtime: Runtime, props: SceneProps, selection?: Geometry
       }
     }
     const position = target.clone().addScaledVector(candidate, distance);
-    const visibility = runtime.inspection.contextOnly ? { blockers: new Set<string>(), blockedSamples: 0 } : visibilityObstructions(runtime, props, position, targets, true);
+    const visibility = runtime.inspection.contextOnly ? { blockers: new Set<string>(), blockedSamples: 0, hitCounts: new Map<string, number>() } : visibilityObstructions(runtime, props, position, targets, true);
+    visibility.blockers = new Set([...visibility.hitCounts].filter(([, hits]) => hits >= Math.min(2, Math.max(1, targets.length))).map(([id]) => id));
     const score = visibility.blockers.size * .45 + visibility.blockedSamples / Math.max(1, targets.length) * 2 + index * .015;
     if (!best || score < best.score) best = { direction: candidate, position, blockers: visibility.blockers, guardedBounds: guarded.size, score };
     if (index === 0 && !visibility.blockers.size) break;
@@ -889,6 +944,7 @@ function focusGeometry(runtime: Runtime, props: SceneProps, selection?: Geometry
   if (!best) return;
   runtime.inspection.translucentPartIds = best.blockers;
   applySourcePresentation(runtime, props); inspectionOverlayDepth(runtime);
+  updateSourceTransparencyOrder(runtime, best.position, target, true);
   runtime.viewDirection.copy(best.direction); runtime.flight = { target, position: best.position };
   publishInspection(runtime);
   const host = runtime.renderer.domElement.parentElement;
@@ -1070,8 +1126,19 @@ const SceneCanvas = forwardRef<SceneHandle, SceneProps>(function SceneCanvas(pro
       selectedEdge: null, analysisDisplay: analysisDisplayRef.current, geometryOverlay: null, peerGeometryOverlays: [], geometryLocalBounds: null, geometryAxis: null, geometryOwnerId: null,
       currentView: 'iso', viewDirection: ISO_DIRECTION.clone(), flight: null, width: 1, height: 1, groundTarget: 0, ready: false, disposed: false,
       inspection: null, inspectionSuppressedSelection: null, onInspectionChange: state => { setInspectionNotice(state); propsRef.current.onInspectionChange?.(state); },
+      controlsActive: false, lastCameraChangeAt: 0, coverageSamples: renderer.getContext().getParameter(renderer.getContext().SAMPLES) as number,
+      sourceTransparencyOrder: new Map(), sourceTransparencyOrderDirty: true, sourceTransparencyOrderUpdatedAt: 0,
+      inspectionDiagnostics: (window as unknown as { __PSOP_INSPECTION_DIAGNOSTICS__?: boolean }).__PSOP_INSPECTION_DIAGNOSTICS__ === true || new URLSearchParams(location.hash.split('?')[1] || '').get('inspectionDiagnostics') === '1' ? { frames: [], raycasts: [], materialStates: [], materialKey: '' } : null,
     };
     runtimeRef.current = runtime;
+    renderer.setTransparentSort((a, b) => {
+      if (a.groupOrder !== b.groupOrder) return a.groupOrder - b.groupOrder;
+      if (a.renderOrder !== b.renderOrder) return a.renderOrder - b.renderOrder;
+      const aRank = runtime.sourceTransparencyOrder.get(a.object.userData.partId), bRank = runtime.sourceTransparencyOrder.get(b.object.userData.partId);
+      if (aRank != null && bRank != null) return aRank - bRank || a.id - b.id;
+      return b.z - a.z || a.id - b.id;
+    });
+    if (runtime.inspectionDiagnostics) Object.assign(window, { __inspectionDiagnostics: { export: () => ({ frames: runtime.inspectionDiagnostics!.frames, raycasts: runtime.inspectionDiagnostics!.raycasts, materialStates: runtime.inspectionDiagnostics!.materialStates }) } });
     const geometryMap = new Map<string, THREE.BufferGeometry>();
     let frame = 0;
     let loaded = 0;
@@ -1095,7 +1162,9 @@ const SceneCanvas = forwardRef<SceneHandle, SceneProps>(function SceneCanvas(pro
     const observer = new ResizeObserver(resize);
     observer.observe(host);
     resize();
-    controls.addEventListener('start', () => { runtime.flight = null; if (runtime.inspection) runtime.inspection.updatedAt = 0; });
+    controls.addEventListener('start', () => { runtime.flight = null; runtime.controlsActive = true; runtime.lastCameraChangeAt = performance.now(); if (runtime.inspection) { runtime.inspection.updatedAt = 0; runtime.inspection.visibilitySettled = false; runtime.inspection.candidates.clear(); } });
+    controls.addEventListener('end', () => { runtime.controlsActive = false; runtime.lastCameraChangeAt = performance.now(); });
+    controls.addEventListener('change', () => { runtime.lastCameraChangeAt = performance.now(); runtime.sourceTransparencyOrderDirty = true; if (runtime.inspection) { runtime.inspection.visibilitySettled = false; runtime.inspection.candidates.clear(); } });
 
     const drawLabels = () => {
       const occupied: { x: number; y: number; w: number; h: number }[] = [];
@@ -1197,7 +1266,9 @@ const SceneCanvas = forwardRef<SceneHandle, SceneProps>(function SceneCanvas(pro
       host.dataset.depthNear = String(camera.near);
       host.dataset.depthFar = String(camera.far);
       host.dataset.contactDepthPolicy = 'opaque-actuator-priority';
+      updateSourceTransparencyOrder(runtime);
       renderer.render(scene, camera);
+      recordInspectionFrame(runtime);
       host.dataset.cameraFlight = runtime.flight ? 'active' : 'settled';
       if (runtime.geometryOwnerId && runtime.geometryLocalBounds) {
         const owner = runtime.records.get(runtime.geometryOwnerId);

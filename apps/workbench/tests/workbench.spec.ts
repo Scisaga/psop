@@ -25,7 +25,7 @@ test.beforeAll(async () => {
   const response = await fetch(`http://127.0.0.1:8780/api/workspaces/${device.id}/snapshots/${selectedSnapshotId}/view`, { signal: AbortSignal.timeout(330000) });
   if (!response.ok) throw new Error(await response.text());
   data = await response.json();
-  expect(data.meta.validation?.profile, 'Publish and select a connector-direction or investigation snapshot').toMatch(/^psop\.hardware\.source-model\/1\.(8|9|10)$/);
+  expect(data.meta.validation?.profile, 'Publish and select a connector-direction or investigation snapshot').toMatch(/^psop\.hardware\.source-model\/1\.(8|9|10|11)$/);
   target = data.parts.find(p => p.meshKey === 'motor_support')!;
   foot = data.parts.find(p => p.meshKey === 'foot_right')!;
   ankle = data.parts.find(p => p.meshKey === 'ankle_right')!;
@@ -645,6 +645,7 @@ test('连接审查目录可查双方局部结构、三种角色与示意第三�
   await expect(page.locator('.review-directory-table tbody tr')).toHaveCount(1);
   await page.locator('.review-directory-table tbody tr').click();
   await expect(page.locator('.connection-review-detail')).toHaveAttribute('data-connection-review-id', review.id);
+  await page.locator('.relation-original-review').evaluate((element: HTMLDetailsElement) => { element.open = true; });
   await expect(page.locator('.review-role-path')).toHaveCount(3);
   const missing = page.locator('.review-missing-details');
   await missing.locator('summary').click();
@@ -657,10 +658,12 @@ test('连接审查目录可查双方局部结构、三种角色与示意第三�
   await expect(page.locator('.object-id')).toContainText(peer.part_ref);
   await expect(page.locator('.review-participant').first()).toHaveAttribute('data-review-participant', peer.part_ref);
   await expect(page.locator('.review-participant').first()).toContainText('本件');
+  await page.locator('.relation-original-review').evaluate((element: HTMLDetailsElement) => { element.open = true; });
   await page.locator('.review-component-link').first().click();
   await expect(page.locator('.mounting-reference-connection .review-supplement')).toContainText('参考连接示意 · 未确认 BOM');
   await expect(page.locator('.review-supplement')).toHaveCount(1);
-  await expect(page.locator('.installation-analysis-disclosure')).not.toHaveAttribute('open');
+  await expect(page.locator('.connection-review-inspector')).toBeVisible();
+  await expect(page.locator('.connection-review-detail')).toHaveCount(0);
   await expect(page.getByRole('button', { name: '切换参考连接件示意', exact: true })).toHaveAttribute('aria-pressed', 'true');
   await expect(page).toHaveURL(/supplements=1/);
 });
@@ -739,12 +742,13 @@ test('参考装配与紧固路径在同一张卡内，选择示意不重复配�
   await expect(connection.locator('.review-supplement-sources .review-evidence-links > button').first()).toBeHidden();
   await connection.locator('.review-supplement-sources summary').click();
   await expect(connection.locator('.review-supplement-sources .review-evidence-links > button').first()).toBeVisible();
-  const analysis = page.locator('.installation-analysis-disclosure');
-  await expect(analysis).not.toHaveAttribute('open');
-  await analysis.locator(':scope > summary').click();
-  await expect(analysis).toHaveAttribute('open');
+  const analysis = page.locator('.connection-review-inspector');
+  await expect(analysis).toBeVisible();
+  const reviewId = data.analysis!.connection_reviews!.find(item => item.reference_mount_refs.includes(standardMount.id))!.id;
+  await analysis.locator(`[data-review-list-id="${reviewId}"] button`).first().click();
+  await page.locator('.relation-original-review').evaluate((element: HTMLDetailsElement) => { element.open = true; });
   await analysis.locator('.review-component-link').first().click();
-  await expect(analysis).not.toHaveAttribute('open');
+  await expect(page.locator('.connection-review-detail')).toHaveCount(0);
   await expect(page.locator('.review-supplement')).toHaveCount(1);
 
 });
@@ -811,9 +815,9 @@ test('小柱配合优先，轴心方案显式启用并可分享恢复，普通�
   await expect(scene).toHaveAttribute('data-scene-ready', 'true');
   const fits = page.locator('.installation-fit');
   await expect(fits).toHaveCount(2);
-  const audit = page.locator('.installation-analysis-disclosure');
-  await expect(audit).not.toHaveAttribute('open');
-  expect(await fits.first().evaluate(el => !!(el.compareDocumentPosition(document.querySelector('.installation-analysis-disclosure')!) & Node.DOCUMENT_POSITION_FOLLOWING))).toBeTruthy();
+  const audit = page.locator('.connection-review-inspector');
+  await expect(audit).toBeVisible();
+  expect(await fits.first().evaluate(el => !!(el.compareDocumentPosition(document.querySelector('.connection-review-inspector')!) & Node.DOCUMENT_POSITION_FOLLOWING))).toBeTruthy();
   await expect(scene).toHaveAttribute('data-visible-supplemental-instances', '0');
   await page.getByRole('button', { name: '切换参考连接件示意', exact: true }).click();
   const references = data.analysis!.supplemental_components!.filter(item => item.usage === 'reference_connector');
@@ -884,7 +888,7 @@ test('舵机待验证方案深链可查看，临时定位保留隐藏和隔离�
   await expect(group).toBeVisible();
   await expect(group.locator('.review-supplement')).toContainText('规格待确认');
   await expect(group.locator('.connection-alternative-select')).toHaveAttribute('aria-pressed', 'true');
-  await expect(page.locator('.installation-analysis-disclosure')).not.toHaveAttribute('open');
+  await expect(page.locator('.connection-review-inspector')).toBeVisible();
   let downloading = page.waitForEvent('download');
   await page.getByRole('button', { name: '导出视图', exact: true }).click();
   const before = JSON.parse(readFileSync((await (await downloading).path())!, 'utf8'));

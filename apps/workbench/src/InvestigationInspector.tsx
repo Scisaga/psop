@@ -50,8 +50,9 @@ export function StructureDetails({ data, item, onSelectGeometry, onOpenSource }:
   const coverage = item.measurement?.coverage;
   const partial = coverage !== undefined && coverage < .95;
   const performed = data.analysis?.investigation_records?.filter(record => record.part_ref === item.owner_ref && (record.structure_refs.includes(item.id) || record.opening_refs.some(ref => item.related_opening_refs.includes(ref)) || record.feature_refs.some(ref => item.related_feature_refs.includes(ref)))) ?? [];
-  const supported = performed.some(record => record.evidence_status === 'supported_hypothesis');
-  const workStatus = item.work_status ?? (performed.length ? 'investigated' : 'not_recorded');
+  const relationFindings = data.analysis?.connection_review_findings?.filter(finding => finding.work_status === 'investigated' && finding.participants.some(participant => participant.part_ref === item.owner_ref && (participant.structure_refs.includes(item.id) || participant.opening_refs.some(ref => item.related_opening_refs.includes(ref)) || participant.feature_refs.some(ref => item.related_feature_refs.includes(ref))))) ?? [];
+  const supported = performed.some(record => record.evidence_status === 'supported_hypothesis') || relationFindings.some(finding => finding.evidence_status === 'supported_hypothesis');
+  const workStatus = performed.length || relationFindings.length ? 'investigated' : item.work_status ?? 'not_recorded';
   const investigated = workStatus === 'investigated';
   return <div className="structure-investigation" data-structure-id={item.id} data-review-status={item.review_status} data-function-status={item.function_status} data-work-status={workStatus}>
     <div className="investigation-state"><span>几何{reviewLabel[item.review_status]}</span><strong>{supported ? '有依据的安装假设' : functionLabel(item)}</strong></div>

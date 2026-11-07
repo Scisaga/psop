@@ -1,6 +1,6 @@
 # PSOP 统一工作台
 
-工作台管理多个设备工作区，读取 Build 发布的 DKP，提供模型、安装知识、本体和证据的联动浏览。当前使用 `psop.hardware.source-model/1.10`，保留 1.0～1.9 历史读取。几何页按物理位置浏览入口和有限壁；接口页区分已有安装知识、具体待验证假设和仍缺证的结构。实现状态核对于 2026-11-07，实际范围见[本轮验收](../../docs/build/interface-review/verification.md)。
+工作台管理多个设备工作区，读取 Build 发布的 DKP，提供模型、安装知识、本体和证据的联动浏览。当前使用 `psop.hardware.source-model/1.11`，保留 1.0～1.10 历史读取。几何页按物理位置浏览入口和有限壁；接口页直接区分已有安装定义、待验证假设、已调查缺证关系与待调查候选，并支持局部结构双向定位。实现状态核对于 2026-11-07，实际范围见[本轮验收](../../docs/build/interface-review/verification.md)。
 
 ![Microduck 设备工作区](../../docs/assets/screenshots/workbench-overview.png)
 

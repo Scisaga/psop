@@ -118,13 +118,17 @@ function AnalysisCoverage({ data, part, onSelectGeometry }: Pick<MechanicsProps,
 
 export function MechanicsInspector(props: MechanicsProps) {
   const { data, part, onOpenVersions } = props;
-  const [reviewOpen, setReviewOpen] = useState(props.selection?.kind === 'connection_review');
-  useEffect(() => { setReviewOpen(props.selection?.kind === 'connection_review'); }, [props.selection?.kind, props.selection?.id]);
+  useEffect(() => {
+    const selection = props.selection;
+    if (!selection || !['connection_review', 'installation_hypothesis'].includes(selection.kind)) return;
+    const attribute = selection.kind === 'connection_review' ? 'data-connection-review-id' : 'data-installation-hypothesis-id';
+    const frame = requestAnimationFrame(() => document.querySelector(`[${attribute}="${CSS.escape(selection.id)}"]`)?.scrollIntoView({ block: 'start' }));
+    return () => cancelAnimationFrame(frame);
+  }, [part.id, props.selection?.kind, props.selection?.id, props.selection?.ownerRef]);
   if (!data.analysis) return <section className="detail-section"><h3>接口机制</h3><MissingAnalysis onOpenVersions={onOpenVersions} /></section>;
   const modern = isMechanismProfile(data);
   if (Array.isArray(data.analysis.connection_reviews)) {
-    const reviews = data.analysis.connection_reviews.filter(review => review.participants.some(participant => participant.part_ref === part.id));
-    return <><MountingInspector {...props} /><details className="installation-analysis-disclosure" open={reviewOpen} onToggle={event => setReviewOpen(event.currentTarget.open)}><summary>连接分析与待核实记录 · {reviews.length} 对</summary>{reviewOpen && <ConnectionReviewInspector {...props} onSelectGeometry={selection => { if (selection.kind !== 'connection_review') setReviewOpen(false); props.onSelectGeometry(selection); }} />}</details>{props.onOpenConnectionReviews && <button className="installation-review-entry" onClick={props.onOpenConnectionReviews}><GitCompareArrows size={13} />打开全机连接审查<ArrowUpRight size={12} /></button>}<details className="installation-coverage-disclosure"><summary>分析覆盖与待完善能力</summary><AnalysisCoverage data={data} part={part} onSelectGeometry={props.onSelectGeometry} /></details></>;
+    return <><MountingInspector {...props} relationshipAnalysis={<ConnectionReviewInspector {...props} />} />{props.onOpenConnectionReviews && <button className="installation-review-entry" onClick={props.onOpenConnectionReviews}><GitCompareArrows size={13} />打开全机连接审查<ArrowUpRight size={12} /></button>}<details className="installation-coverage-disclosure"><summary>分析覆盖与待完善能力</summary><AnalysisCoverage data={data} part={part} onSelectGeometry={props.onSelectGeometry} /></details></>;
   }
   const interfaces = qualifiedInterfaces(data).filter(item => item.owner_ref === part.id);
   if (isMountingProfile(data) && (mountingInterfacesFor(data, part.id).length || referenceMountsFor(data, part.id).length)) return <><MountingInspector {...props} /><AnalysisCoverage data={data} part={part} onSelectGeometry={props.onSelectGeometry} /></>;

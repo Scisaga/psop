@@ -1,0 +1,20 @@
+{
+  "image": "left-shell-ls06-workbench.png",
+  "snapshotId": "dkp-84f6829a25a82fefaf1d",
+  "packageId": "psop.microduck",
+  "packageVersion": "2.0.0-connection-analysis.1",
+  "packageDigest": "84f6829a25a82fefaf1da6cc00b399088a5db6e41923b4074c39a08d1988b6db",
+  "profile": "psop.hardware.source-model/1.11",
+  "independentAnnotationId": "LS-06",
+  "partRef": "part:microduck:e27cbdd6c07a264e",
+  "structureRef": "structure:2f4619dc0b3a74d95a37",
+  "geometrySha256": "2abde8e2b79c9b011cdb11957c67ab4287b45d7301affd4235ab81141118e331",
+  "centerLocalM": [
+    0.0255,
+    -0.0095,
+    0.04153
+  ],
+  "functionStatus": "unknown",
+  "reviewStatus": "reviewed",
+  "scope": "Published source geometry location and investigation record; no mechanical engagement or whole-device recall claim."
+}

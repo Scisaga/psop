@@ -1,0 +1,96 @@
+{
+  "schema": "psop.build.gaps/2.0-draft.1",
+  "device_id": "microduck",
+  "items": [
+    {
+      "id": "gap:microduck:hardware_knowledge",
+      "capability": "hardware_knowledge",
+      "status": "open",
+      "description": "source geometry, finite pin/housing reference-pair location evidence and separately identified unverified connector alternatives; retention remains unknown"
+    },
+    {
+      "id": "gap:microduck:mechanical_validation",
+      "capability": "mechanical_validation",
+      "status": "open",
+      "description": "no confirmed interface connection, retaining, motion constraint, assembly path or mechanical success is published"
+    },
+    {
+      "id": "gap:microduck:engineering_validation",
+      "capability": "engineering_validation",
+      "status": "open",
+      "description": "materials, tolerances, manufacturing and load acceptance not established"
+    },
+    {
+      "id": "gap:microduck:path_validation",
+      "capability": "path_validation",
+      "status": "open",
+      "description": "presentation explosion is not a disassembly or motion proof"
+    },
+    {
+      "id": "gap:microduck:training_data",
+      "capability": "training_data",
+      "status": "open",
+      "description": "no training dataset, canonical multiview render or use authorization is published"
+    },
+    {
+      "id": "gap:microduck:geometric_analysis",
+      "capability": "geometric_analysis",
+      "status": "open",
+      "description": "finite arbitrary-axis cylindrical discovery with strict source witnesses, legacy finite geometry and per-instance raw mesh regions; unsupported structures remain open"
+    },
+    {
+      "id": "gap:microduck:interface_analysis",
+      "capability": "interface_analysis",
+      "status": "open",
+      "description": "connection reviews separate declared knowledge from project-inferred roles and manufacturer-general examples; no complete physical interface qualification"
+    },
+    {
+      "id": "gap:microduck:connection_candidates",
+      "capability": "connection_candidates",
+      "status": "open",
+      "description": "raw geometry observations are not qualified interfaces or mechanism-level connection candidates"
+    },
+    {
+      "id": "gap:microduck:reference_mounting",
+      "capability": "reference_mounting",
+      "status": "open",
+      "description": "supplied standard-assembly assertions checked against the frozen source placements and mapped site axes; no executed engagement is published"
+    },
+    {
+      "id": "gap:microduck:connection_review",
+      "capability": "connection_review",
+      "status": "open",
+      "description": "source-pose pin/housing fits support installation-location inference only; outer circular openings and manufacturer-general illustrations do not establish retaining roles"
+    },
+    {
+      "id": "gap:microduck:supplemental_components",
+      "capability": "supplemental_components",
+      "status": "open",
+      "description": "reference connector schematics use explicit through-bracket hypotheses with independently checked finite entrance, head seat, shaft direction and target coverage; actual installation side, thread, continuous path and retention remain unverified"
+    },
+    {
+      "id": "gap:microduck:structure_investigation",
+      "capability": "structure_investigation",
+      "status": "open",
+      "description": "every source Part and mesh normal region is inventoried before functional interpretation; unknown function has explicit evidence gaps and next actions"
+    },
+    {
+      "id": "gap:microduck:independent_review",
+      "capability": "independent_review",
+      "status": "open",
+      "description": "locked source-SHA-bound independent annotations establish expected sample features; automatic screening is distinct from completed region review"
+    },
+    {
+      "id": "gap:microduck:installation_hypotheses",
+      "capability": "installation_hypotheses",
+      "status": "open",
+      "description": "frozen completed research, source-bound finite counterpart geometry, dimensional complementarity and evidence support bounded mechanism hypotheses; no actual retaining or engineering confirmation"
+    },
+    {
+      "id": "gap:microduck:connection_analysis",
+      "capability": "connection_analysis",
+      "status": "open",
+      "description": "every connection review has finite local evidence and an explicit investigation stage; frozen executed investigations support bounded mechanisms, multi-Part context and independent omission acceptance without qualifying Interfaces"
+    }
+  ]
+}

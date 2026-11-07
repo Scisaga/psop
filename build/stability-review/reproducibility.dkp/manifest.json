@@ -1,0 +1,583 @@
+{
+  "schema": "psop.dkp/2.0-draft.1",
+  "profile": "psop.hardware.source-model/1.11",
+  "package_id": "psop.microduck",
+  "package_version": "2.0.0-connection-analysis.1",
+  "device": {
+    "id": "microduck",
+    "name": "Microduck"
+  },
+  "created_at": "2026-11-07T09:35:40+00:00",
+  "ontology": {
+    "id": "psop.hardware",
+    "version": "psop.hardware/2.0-draft.4",
+    "path": "sources/SRC-PSOP-ONTOLOGY.md",
+    "sha256": "bc7b3442fa2545d99d631d5b14059b98eb41276b0398f282b42522b61743ae7d"
+  },
+  "adapter": {
+    "id": "microduck-mjcf/1.0",
+    "commit": "cb70b792312d559a4da09064d92009079671815f",
+    "xml_sha256": "80fc4424ed71e430ec4919110dfdb5c714dc1c4e1138e1832a16865cf31eb8c8"
+  },
+  "inputs": {
+    "archive": {
+      "path": "inputs/materials.zip",
+      "sha256": "1a20e8494cc633a44ab4d8c662d8aa2e3b44973fbe8b4856040cdd0239d201aa"
+    },
+    "assembly_knowledge": {
+      "path": "sources/SRC-MD-ASSEMBLY-KNOWLEDGE.json",
+      "sha256": "1a6f193caa17c6384b2f0d31c1bf2b0785d0d5fc6721ad5e4f60bd57d8eb0093"
+    },
+    "supporting_documents": [
+      {
+        "id": "SRC-MD-XL330-ASSEMBLY-INCLUDE",
+        "path": "sources/SRC-MD-XL330-ASSEMBLY-INCLUDE.md",
+        "sha256": "ea5859ff3975edf15a823a8f4c9f8ba6adcdc9981a65f8b219641a9950f67740"
+      },
+      {
+        "id": "SRC-MD-XL330-ASSEMBLY-DRAWING",
+        "path": "sources/SRC-MD-XL330-ASSEMBLY-DRAWING.png",
+        "sha256": "f24a151e24ae979e436ea33888863c8de2ed5f81955a096e1d2fa494d59ae217"
+      },
+      {
+        "id": "SRC-MD-XL330-HORN-SCREW",
+        "path": "sources/SRC-MD-XL330-HORN-SCREW.png",
+        "sha256": "0b25105a72e0506a55806438dee7c831530580e0257dfddf0e4000c6021c06f7"
+      }
+    ],
+    "investigation": {
+      "path": "sources/SRC-INTERFACE-INVESTIGATION.json",
+      "sha256": "bba52e040b28eef00ac6ed5ca9a2764430ecf5728402c78328e8a8a59455e062"
+    },
+    "investigation_documents": [
+      {
+        "id": "upstream-model-readme",
+        "path": "sources/SRC-INVESTIGATION-B2DF4346FF46A912F975.md",
+        "sha256": "b5e606efe7ff71f4f6324820b36152d401a0b1be6e2f908bbaca01ffee81638d"
+      },
+      {
+        "id": "upstream-model-docs",
+        "path": "sources/SRC-INVESTIGATION-CCC7685787AB63E7B0D3.json",
+        "sha256": "0756917217a37d3e2abe84def0f5d46960bc87d18b00a21468f0e3c34bd99ab3"
+      },
+      {
+        "id": "upstream-microduck-design-tree",
+        "path": "sources/SRC-INVESTIGATION-FC374631ED68A28D7D8E.json",
+        "sha256": "8d379daa2a1ce0fc9218e8ca113c9b77118c60c1b4e661141e72165363bf43ab"
+      },
+      {
+        "id": "local-xl330-assembly",
+        "path": "sources/SRC-INVESTIGATION-F99EF4933CDDF90F93D4.md",
+        "sha256": "ea5859ff3975edf15a823a8f4c9f8ba6adcdc9981a65f8b219641a9950f67740"
+      },
+      {
+        "id": "upstream-model-export-config",
+        "path": "sources/SRC-INVESTIGATION-7E5AD7382A245A7C6490.json",
+        "sha256": "978dcc845ae4072d74618bd7a3ac752079c3592ebc0fd2ec3079db00c0ceb954"
+      },
+      {
+        "id": "connection-studies-2026-11-07",
+        "path": "sources/SRC-INVESTIGATION-D97B8A0805474DAC9FC5.md",
+        "sha256": "fa1ecb061d762d0da86384c1ebac70e3ececf79cf91dba62d6df77d0297bbbb0"
+      },
+      {
+        "id": "connection-source-sections-2026-11-07",
+        "path": "sources/SRC-INVESTIGATION-F0BEA6257AB7813726E4.json",
+        "sha256": "a8a82eeb0d794d1c3503d43f8ef20173275c6df557177e42e246f1a8cfe9a11b"
+      },
+      {
+        "id": "hip-connection-studies-2026-11-07",
+        "path": "sources/SRC-INVESTIGATION-0BDDD07C70CE1FE5F182.md",
+        "sha256": "782128431aa897df14fcc903a94f2d51f0fb3a07b7f2d54375194f0e07380ca1"
+      }
+    ]
+  },
+  "toolchain": {
+    "name": "psop-build",
+    "version": "3.0.0-draft.12",
+    "sha256": "f61d0edfe48d7b2cef32cbc445a6f51cf9e8b75003a89c8a20138624c9c5af6f"
+  },
+  "entrypoints": {
+    "knowledge": "knowledge/entities.json",
+    "sources": "knowledge/sources.json",
+    "evidence": "knowledge/evidence.json",
+    "gaps": "knowledge/gaps.json",
+    "scene": "indexes/scene.json"
+  },
+  "counts": {
+    "sources": 71,
+    "geometries": 38,
+    "parts": 70,
+    "bodies": 15,
+    "joints": 14,
+    "evidence": 226
+  },
+  "capabilities": {
+    "source_registry": {
+      "status": "complete",
+      "scope": "captured source bytes, paths and digests"
+    },
+    "source_model_projection": {
+      "status": "complete",
+      "scope": "frozen Microduck MJCF visual model at qpos0"
+    },
+    "hardware_knowledge": {
+      "status": "partial",
+      "scope": "source geometry, finite pin/housing reference-pair location evidence and separately identified unverified connector alternatives; retention remains unknown"
+    },
+    "mechanical_validation": {
+      "status": "unavailable",
+      "scope": "no confirmed interface connection, retaining, motion constraint, assembly path or mechanical success is published"
+    },
+    "engineering_validation": {
+      "status": "unavailable",
+      "scope": "materials, tolerances, manufacturing and load acceptance not established"
+    },
+    "path_validation": {
+      "status": "unavailable",
+      "scope": "presentation explosion is not a disassembly or motion proof"
+    },
+    "training_data": {
+      "status": "unavailable",
+      "scope": "no training dataset, canonical multiview render or use authorization is published"
+    },
+    "geometric_analysis": {
+      "status": "partial",
+      "scope": "finite arbitrary-axis cylindrical discovery with strict source witnesses, legacy finite geometry and per-instance raw mesh regions; unsupported structures remain open"
+    },
+    "interface_analysis": {
+      "status": "partial",
+      "scope": "connection reviews separate declared knowledge from project-inferred roles and manufacturer-general examples; no complete physical interface qualification"
+    },
+    "connection_candidates": {
+      "status": "unavailable",
+      "scope": "raw geometry observations are not qualified interfaces or mechanism-level connection candidates"
+    },
+    "reference_mounting": {
+      "status": "partial",
+      "scope": "supplied standard-assembly assertions checked against the frozen source placements and mapped site axes; no executed engagement is published"
+    },
+    "connection_review": {
+      "status": "partial",
+      "scope": "source-pose pin/housing fits support installation-location inference only; outer circular openings and manufacturer-general illustrations do not establish retaining roles"
+    },
+    "supplemental_components": {
+      "status": "partial",
+      "scope": "reference connector schematics use explicit through-bracket hypotheses with independently checked finite entrance, head seat, shaft direction and target coverage; actual installation side, thread, continuous path and retention remain unverified"
+    },
+    "structure_investigation": {
+      "status": "partial",
+      "scope": "every source Part and mesh normal region is inventoried before functional interpretation; unknown function has explicit evidence gaps and next actions"
+    },
+    "independent_review": {
+      "status": "partial",
+      "scope": "locked source-SHA-bound independent annotations establish expected sample features; automatic screening is distinct from completed region review"
+    },
+    "installation_hypotheses": {
+      "status": "partial",
+      "scope": "frozen completed research, source-bound finite counterpart geometry, dimensional complementarity and evidence support bounded mechanism hypotheses; no actual retaining or engineering confirmation"
+    },
+    "connection_analysis": {
+      "status": "partial",
+      "scope": "every connection review has finite local evidence and an explicit investigation stage; frozen executed investigations support bounded mechanisms, multi-Part context and independent omission acceptance without qualifying Interfaces"
+    }
+  },
+  "files": [
+    {
+      "path": "indexes/scene.json",
+      "sha256": "0be9fa91f9609c97ba264bc7c4df66541e739a078da4d8de481945d8a786d864",
+      "bytes": 89252775
+    },
+    {
+      "path": "inputs/materials.zip",
+      "sha256": "1a20e8494cc633a44ab4d8c662d8aa2e3b44973fbe8b4856040cdd0239d201aa",
+      "bytes": 14079105
+    },
+    {
+      "path": "knowledge/entities.json",
+      "sha256": "75f4460d8974ef845ccdd57950df29bc39124609c6e8f83b38c0c302b2c594d4",
+      "bytes": 79457355
+    },
+    {
+      "path": "knowledge/evidence.json",
+      "sha256": "b1402a70eab088787a9da787f4ff743bc9d77bde6cf7181791159d8265c7beeb",
+      "bytes": 130795
+    },
+    {
+      "path": "knowledge/gaps.json",
+      "sha256": "1a5dd80cc5743066d203fca3e4b70d6fbb244ae46db6004fd737cc49c3eaba71",
+      "bytes": 4558
+    },
+    {
+      "path": "knowledge/sources.json",
+      "sha256": "4f11fd9230e6346b983417cc9be92fdb2074b19f7163dbd018c04a2c84ec0558",
+      "bytes": 2593987
+    },
+    {
+      "path": "schemas/manifest-source-model-1.11.schema.json",
+      "sha256": "3a9749e096320aae36c0b642c9ae08fd050ff111bd17b906acb9edb556744e7f",
+      "bytes": 12484
+    },
+    {
+      "path": "schemas/source-model-1.11.schema.json",
+      "sha256": "fcfd14944dd0015faeeb5cc5a6bd6bda79f5f867a6f265a1e7b5dfc27a8cc8e8",
+      "bytes": 143689
+    },
+    {
+      "path": "sources/SRC-000001.md",
+      "sha256": "934f1d796bf83748208cebddf3c6cc634acd28c81199cd4009e7297a9a1e92a4",
+      "bytes": 2438
+    },
+    {
+      "path": "sources/SRC-000002.md",
+      "sha256": "e24b043269faeb6369d9df5f46625547a265c78f2ff0d5eea9319b95f3281495",
+      "bytes": 2096
+    },
+    {
+      "path": "sources/SRC-000003.jpg",
+      "sha256": "f8505dfd6a98807b39dde42edd525123c19963f1ffb498134ee1c0b01e7f605c",
+      "bytes": 369129
+    },
+    {
+      "path": "sources/SRC-000004.md",
+      "sha256": "54ece777eeaba2b6cc8e394e398fb56dbc4c77a5a7a2aac3ab969a7a7c19f9d9",
+      "bytes": 5584
+    },
+    {
+      "path": "sources/SRC-000005.md",
+      "sha256": "ffa2b395c02e11082c72a599431c87ade87d2c11a376a8582526759af5f07851",
+      "bytes": 2743
+    },
+    {
+      "path": "sources/SRC-000006.md",
+      "sha256": "ce08531722f0dcc9ee05e4e4741733d75bbc275fb4fc376322859f671e37042a",
+      "bytes": 8559
+    },
+    {
+      "path": "sources/SRC-000007.md",
+      "sha256": "e0cf18cccf72d4063ae6666ce1484fd43f1921523a56204247a9e9069584de3d",
+      "bytes": 3386
+    },
+    {
+      "path": "sources/SRC-000008.md",
+      "sha256": "9c1ce0887dd17d701bbce770d0d5d5d43519f36863aea4df1eb91e885784d388",
+      "bytes": 4034
+    },
+    {
+      "path": "sources/SRC-000009.md",
+      "sha256": "9262bc605dddd84bf04ee87a1e56096dbfcd3f82f359e953abeea2a726f488d0",
+      "bytes": 12653
+    },
+    {
+      "path": "sources/SRC-000010.stl",
+      "sha256": "2ec1bd89205b407efebaa9a8898ad9fea741389d87b80ecc5c96b21d1668119e",
+      "bytes": 248984
+    },
+    {
+      "path": "sources/SRC-000011.stl",
+      "sha256": "f83f388ae00787415e76b8ecaab769f08f25b8c4e90c1937ff0fc4d68d81722e",
+      "bytes": 248884
+    },
+    {
+      "path": "sources/SRC-000012.stl",
+      "sha256": "42ddde9d01bf5d91f88b99847017f14d97d2537ee27383c6d41dd8bf30a51134",
+      "bytes": 69484
+    },
+    {
+      "path": "sources/SRC-000013.stl",
+      "sha256": "b5603a64b2d965ad75ea847767b5798130852e12a658fde7b5068fc457e2adcc",
+      "bytes": 121084
+    },
+    {
+      "path": "sources/SRC-000014.stl",
+      "sha256": "1820f7cf96646b0fc0c431f07da87b91b13111bfa9857ab1bf2b1fc3388f8da2",
+      "bytes": 1048584
+    },
+    {
+      "path": "sources/SRC-000015.stl",
+      "sha256": "1a61582759d82b5b4df9b7d11099bf1bb3944fc77e6b74d3237adf24dd5d03d7",
+      "bytes": 942884
+    },
+    {
+      "path": "sources/SRC-000016.stl",
+      "sha256": "d0e89a173e7bdc8038c4d413f458140d8f42f1a2f098f67a887c2388eff31718",
+      "bytes": 570684
+    },
+    {
+      "path": "sources/SRC-000017.stl",
+      "sha256": "a1f5d43456d0f522bd60870153795f1e8112c1adf9b8b4373b59608d9545c044",
+      "bytes": 996184
+    },
+    {
+      "path": "sources/SRC-000018.stl",
+      "sha256": "54f97fa1f0e0e611d31329df9f3c3b17ffcca2d695c579d1d32cbe99e8a6c7ef",
+      "bytes": 997684
+    },
+    {
+      "path": "sources/SRC-000019.stl",
+      "sha256": "e175896932d76dc7648cf939aa39cb7b1d188b783d91745adb9a4cec65e9052c",
+      "bytes": 1048584
+    },
+    {
+      "path": "sources/SRC-000020.stl",
+      "sha256": "2d2ade4e86df4b37ce313bb9b96023109dd04bab39dba08b154e76d332fbce2e",
+      "bytes": 336384
+    },
+    {
+      "path": "sources/SRC-000021.stl",
+      "sha256": "45cdbd319a4583095d8daa0db07dee726522a743d59acb82d27d82ded500a1cf",
+      "bytes": 495984
+    },
+    {
+      "path": "sources/SRC-000022.stl",
+      "sha256": "2abde8e2b79c9b011cdb11957c67ab4287b45d7301affd4235ab81141118e331",
+      "bytes": 1048584
+    },
+    {
+      "path": "sources/SRC-000023.stl",
+      "sha256": "9a91cc1ae31ecd9e0c1ba93f3bb2ad8a12e29bff24ec27d1ac66c0c3037d9fcf",
+      "bytes": 738884
+    },
+    {
+      "path": "sources/SRC-000024.stl",
+      "sha256": "b1c717432ff7666398de58adec6a1b7e03a7e45aa155dbfe27a6152ef19663e5",
+      "bytes": 93684
+    },
+    {
+      "path": "sources/SRC-000025.stl",
+      "sha256": "031d5ffaf6247328cf6d020f6b6695ffb3f8d3f22cf923b85811351d89ecfd7c",
+      "bytes": 549684
+    },
+    {
+      "path": "sources/SRC-000026.stl",
+      "sha256": "ce0aa5bef82c7474512d302568c341b9769b3005e0bdb91a19c2eaaba6dad480",
+      "bytes": 180884
+    },
+    {
+      "path": "sources/SRC-000027.stl",
+      "sha256": "a685ce65348ae4d0d49417c69a7a8871f8bbd54a6e3419362be9c334abd5d2ae",
+      "bytes": 356084
+    },
+    {
+      "path": "sources/SRC-000028.stl",
+      "sha256": "b6e86b886153be8a8a776c1cb219c074ee9e89c8bd431117662a2d9e504d7cb5",
+      "bytes": 73484
+    },
+    {
+      "path": "sources/SRC-000029.stl",
+      "sha256": "e1167b3d5ad7fbbe6e63296bcd0c6b61556611e6bc1367b15ecfd27e3abb72f5",
+      "bytes": 49284
+    },
+    {
+      "path": "sources/SRC-000030.stl",
+      "sha256": "0e55a48281331b3b7b1a363d2e93b6012f37c52045b6dc922a149ca7c1b38388",
+      "bytes": 1048584
+    },
+    {
+      "path": "sources/SRC-000031.stl",
+      "sha256": "802cc66fc5447c67fc642d1339e55160df10f2ad04a65efd130e35fb7b2d3c90",
+      "bytes": 1048584
+    },
+    {
+      "path": "sources/SRC-000032.stl",
+      "sha256": "ee45e397d3f3422f34940a4b61156c3c11c7e8c2b240451ce5f9ddd1622a130e",
+      "bytes": 641684
+    },
+    {
+      "path": "sources/SRC-000033.stl",
+      "sha256": "3efba3e193cc6aa49d49a9c92cdded0504917397c9e2c5b8fe002a958e2f2d2b",
+      "bytes": 1048584
+    },
+    {
+      "path": "sources/SRC-000034.stl",
+      "sha256": "295ee68ed9766c91fe06d3a2a49d39f7c2f56cc943395d293afdeb013123435e",
+      "bytes": 1048584
+    },
+    {
+      "path": "sources/SRC-000035.stl",
+      "sha256": "e815f3483a2e7b80844f3c0938a47e53db38b12faed9b2d364414c19e4322da4",
+      "bytes": 1048584
+    },
+    {
+      "path": "sources/SRC-000036.stl",
+      "sha256": "3c2b52b0b6e2ce944a1e1b5a0838e1216be1ad3a34c8cdf91be186e634aec57b",
+      "bytes": 393584
+    },
+    {
+      "path": "sources/SRC-000037.stl",
+      "sha256": "e028c8b09fecd4cb354d042bf7fd95a1a1bc2d524d760d62137fa8d74093fc23",
+      "bytes": 789484
+    },
+    {
+      "path": "sources/SRC-000038.stl",
+      "sha256": "3f5068872f3add10eb967327651445bdfca635f5a8a01befa0ef05e462b72b4c",
+      "bytes": 795184
+    },
+    {
+      "path": "sources/SRC-000039.stl",
+      "sha256": "75a35f9bcf94cd8e52f99b3fd6ae667b48f52503f9075ee2f699eebe8e7b3ddf",
+      "bytes": 684
+    },
+    {
+      "path": "sources/SRC-000040.stl",
+      "sha256": "6d01f396f514c9d2185cf6b8250b1d8382ac3fa0702eb525bcb284f706196291",
+      "bytes": 806084
+    },
+    {
+      "path": "sources/SRC-000041.stl",
+      "sha256": "aa4f853ae555a8b765e585ce4519c0bbff325ce298ec15a1437792c52a0beac1",
+      "bytes": 184984
+    },
+    {
+      "path": "sources/SRC-000042.stl",
+      "sha256": "8cb1c12dfa6d366a318bb1ec16f585427b9a185afeb7738d0a6f41f5db46a07d",
+      "bytes": 612584
+    },
+    {
+      "path": "sources/SRC-000043.stl",
+      "sha256": "5caf996cc3e151b01f393cdc6a6a6a940c1d86179d8b7c7f5f85cf1f1ac2fb63",
+      "bytes": 612584
+    },
+    {
+      "path": "sources/SRC-000044.stl",
+      "sha256": "231b3e5f1e24d146d735dc158cbcfec0c95a0d0ca8c500f61f04d15d0b665652",
+      "bytes": 180084
+    },
+    {
+      "path": "sources/SRC-000045.stl",
+      "sha256": "96238ed0d020ce0009cf1a5aa4b6926176c800840318ee65e4375be2298d2744",
+      "bytes": 206384
+    },
+    {
+      "path": "sources/SRC-000046.stl",
+      "sha256": "6c8f193ec7cb40be0f48eeb5fba81bce2c87f12e1aab3f77f1bc4981386e1495",
+      "bytes": 620284
+    },
+    {
+      "path": "sources/SRC-000047.stl",
+      "sha256": "b0c9902dee19f06cdb7fa930292e0e1c91e2dc59baa971211495b58ff76c3c60",
+      "bytes": 290784
+    },
+    {
+      "path": "sources/SRC-000049.csv",
+      "sha256": "3c126799f2daebace01f39b1a6c07bf886a9f48abb0bd8b445fa043a2123e98b",
+      "bytes": 23067
+    },
+    {
+      "path": "sources/SRC-000050.pdf",
+      "sha256": "fde208048a7ff3baa46893715e78cca8123d211073e16bf10550a5b94a82d771",
+      "bytes": 1527440
+    },
+    {
+      "path": "sources/SRC-000051.step",
+      "sha256": "9e2394e9e34b495f144549ace6f3083466c4a0ac9761cfd22fa0172d8b4d3a04",
+      "bytes": 18533506
+    },
+    {
+      "path": "sources/SRC-000052.pdf",
+      "sha256": "022b7351df59a1ead183ec2973df301491426cdf713ac9d3d5b718aa44d96df6",
+      "bytes": 169356
+    },
+    {
+      "path": "sources/SRC-000053.csv",
+      "sha256": "952958c4734805de7d31568e8b005fc6fa05d40b8dc2472dcae71bd8a63dd292",
+      "bytes": 9879
+    },
+    {
+      "path": "sources/SRC-000054.md",
+      "sha256": "9b003ff02b312d9415b47c14d2d94704a0f33238f3e5c505fb8e0ba70ed02ce2",
+      "bytes": 12596
+    },
+    {
+      "path": "sources/SRC-000055.md",
+      "sha256": "158b5df68b59a031c545d08103a2b91c1622b2cc7359a9b428486cbb39ce21ed",
+      "bytes": 7721
+    },
+    {
+      "path": "sources/SRC-000056.mp4",
+      "sha256": "86c277ca169c9575a769db7c659b1fdca4b34b90510428b3f5f6325cb97702a8",
+      "bytes": 1224585
+    },
+    {
+      "path": "sources/SRC-INTERFACE-INVESTIGATION.json",
+      "sha256": "bba52e040b28eef00ac6ed5ca9a2764430ecf5728402c78328e8a8a59455e062",
+      "bytes": 1408540
+    },
+    {
+      "path": "sources/SRC-INVESTIGATION-0BDDD07C70CE1FE5F182.md",
+      "sha256": "782128431aa897df14fcc903a94f2d51f0fb3a07b7f2d54375194f0e07380ca1",
+      "bytes": 6776
+    },
+    {
+      "path": "sources/SRC-INVESTIGATION-7E5AD7382A245A7C6490.json",
+      "sha256": "978dcc845ae4072d74618bd7a3ac752079c3592ebc0fd2ec3079db00c0ceb954",
+      "bytes": 1815
+    },
+    {
+      "path": "sources/SRC-INVESTIGATION-B2DF4346FF46A912F975.md",
+      "sha256": "b5e606efe7ff71f4f6324820b36152d401a0b1be6e2f908bbaca01ffee81638d",
+      "bytes": 13267
+    },
+    {
+      "path": "sources/SRC-INVESTIGATION-CCC7685787AB63E7B0D3.json",
+      "sha256": "0756917217a37d3e2abe84def0f5d46960bc87d18b00a21468f0e3c34bd99ab3",
+      "bytes": 2088
+    },
+    {
+      "path": "sources/SRC-INVESTIGATION-D97B8A0805474DAC9FC5.md",
+      "sha256": "fa1ecb061d762d0da86384c1ebac70e3ececf79cf91dba62d6df77d0297bbbb0",
+      "bytes": 4416
+    },
+    {
+      "path": "sources/SRC-INVESTIGATION-F0BEA6257AB7813726E4.json",
+      "sha256": "a8a82eeb0d794d1c3503d43f8ef20173275c6df557177e42e246f1a8cfe9a11b",
+      "bytes": 549495
+    },
+    {
+      "path": "sources/SRC-INVESTIGATION-F99EF4933CDDF90F93D4.md",
+      "sha256": "ea5859ff3975edf15a823a8f4c9f8ba6adcdc9981a65f8b219641a9950f67740",
+      "bytes": 205
+    },
+    {
+      "path": "sources/SRC-INVESTIGATION-FC374631ED68A28D7D8E.json",
+      "sha256": "8d379daa2a1ce0fc9218e8ca113c9b77118c60c1b4e661141e72165363bf43ab",
+      "bytes": 113885
+    },
+    {
+      "path": "sources/SRC-MD-ASSEMBLY-KNOWLEDGE.json",
+      "sha256": "1a6f193caa17c6384b2f0d31c1bf2b0785d0d5fc6721ad5e4f60bd57d8eb0093",
+      "bytes": 8691
+    },
+    {
+      "path": "sources/SRC-MD-INDEX.csv",
+      "sha256": "7c37794e47946e61375563c41611e055fd23157ffcec87df55f02e93f6f4298d",
+      "bytes": 9523
+    },
+    {
+      "path": "sources/SRC-MD-MJCF.xml",
+      "sha256": "80fc4424ed71e430ec4919110dfdb5c714dc1c4e1138e1832a16865cf31eb8c8",
+      "bytes": 32023
+    },
+    {
+      "path": "sources/SRC-MD-XL330-ASSEMBLY-DRAWING.png",
+      "sha256": "f24a151e24ae979e436ea33888863c8de2ed5f81955a096e1d2fa494d59ae217",
+      "bytes": 144747
+    },
+    {
+      "path": "sources/SRC-MD-XL330-ASSEMBLY-INCLUDE.md",
+      "sha256": "ea5859ff3975edf15a823a8f4c9f8ba6adcdc9981a65f8b219641a9950f67740",
+      "bytes": 205
+    },
+    {
+      "path": "sources/SRC-MD-XL330-HORN-SCREW.png",
+      "sha256": "0b25105a72e0506a55806438dee7c831530580e0257dfddf0e4000c6021c06f7",
+      "bytes": 57560
+    },
+    {
+      "path": "sources/SRC-PSOP-ONTOLOGY.md",
+      "sha256": "bc7b3442fa2545d99d631d5b14059b98eb41276b0398f282b42522b61743ae7d",
+      "bytes": 94201
+    }
+  ],
+  "package_digest": "84f6829a25a82fefaf1da6cc00b399088a5db6e41923b4074c39a08d1988b6db"
+}

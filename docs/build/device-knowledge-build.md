@@ -40,6 +40,11 @@ Microduck 的四条舵机孔道提供两侧八个安装入口，同侧邻接规�
 
 ## 构建和登记
 
+当前默认是 `source-model/1.11` / `psop-build 3.0.0-draft.12`，冻结调查输入为
+`device-materials/interface-review/microduck-connection-analysis.json`（investigation/1.2）。
+它保留 1.10 的三条假设与原件，增加由已有连接审查实际开展的局部机制研究。
+当前六对髋部台账、全70实例覆盖及阶段计数见[本轮连接审查台账](interface-review/connection-analysis.md)。
+
 最快方式是在仓库根目录运行：
 
 ```powershell
@@ -48,10 +53,19 @@ python -B apps/workbench/scripts/prepare_workspace.py --fresh
 
 它按当前代码生成新包、完整验证并登记到 Microduck 工作区。已有包不覆盖；工作区中旧开发版本可以在不再使用时清理。
 
-需要控制各阶段时，使用尚未存在的工作目录与发布目录：
+需要控制当前各阶段时，使用尚未存在的工作目录与发布目录：
 
 ```powershell
-python -B skills/psop-build/scripts/psop_build.py prepare --input device-materials/microduck-official-materials.zip --assembly-knowledge device-materials/microduck-assembly-knowledge.json --investigation device-materials/interface-review/microduck-relations.json --work build/microduck/source-1.10/work-final-2 --device-id microduck --device-name Microduck
+python -B skills/psop-build/scripts/psop_build.py prepare --input device-materials/microduck-official-materials.zip --assembly-knowledge device-materials/microduck-assembly-knowledge.json --investigation device-materials/interface-review/microduck-connection-analysis.json --work build/connection-analysis/work-final-1 --device-id microduck --device-name Microduck
+python -B skills/psop-build/scripts/psop_build.py finalize --work build/connection-analysis/work-final-1 --output build/microduck/source-1.11/microduck-connection-analysis.dkp --version 2.0.0-connection-analysis.1
+python -B skills/psop-build/scripts/psop_build.py validate --dkp build/microduck/source-1.11/microduck-connection-analysis.dkp
+node apps/workbench/scripts/workspaces.mjs register --dkp build/microduck/source-1.11/microduck-connection-analysis.dkp --workspace microduck
+```
+
+下方是1.10的历史发布命令，仅在显式选择冻结的 `--profile psop.hardware.source-model/1.10` 时重现：
+
+```powershell
+python -B skills/psop-build/scripts/psop_build.py prepare --profile psop.hardware.source-model/1.10 --input device-materials/microduck-official-materials.zip --assembly-knowledge device-materials/microduck-assembly-knowledge.json --investigation device-materials/interface-review/microduck-relations.json --work build/microduck/source-1.10/work-final-2 --device-id microduck --device-name Microduck
 python -B skills/psop-build/scripts/psop_build.py finalize --work build/microduck/source-1.10/work-final-2 --output build/microduck/source-1.10/microduck-1.dkp --version 2.0.0-interface-relations.1
 python -B skills/psop-build/scripts/psop_build.py validate --dkp build/microduck/source-1.10/microduck-1.dkp
 node apps/workbench/scripts/workspaces.mjs register --dkp build/microduck/source-1.10/microduck-1.dkp --workspace microduck

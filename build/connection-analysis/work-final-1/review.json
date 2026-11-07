@@ -1,0 +1,83 @@
+{
+  "schema": "psop.build.review/2.0-draft.1",
+  "device_id": "microduck",
+  "scope": "Source-model geometry and reference observations; mechanism qualification and mechanical/engineering confirmation are profile-scoped",
+  "counts": {
+    "sources": 71,
+    "geometries": 38,
+    "parts": 70,
+    "bodies": 15,
+    "joints": 14,
+    "evidence": 226
+  },
+  "capabilities": {
+    "source_registry": {
+      "status": "complete",
+      "scope": "captured source bytes, paths and digests"
+    },
+    "source_model_projection": {
+      "status": "complete",
+      "scope": "frozen Microduck MJCF visual model at qpos0"
+    },
+    "hardware_knowledge": {
+      "status": "partial",
+      "scope": "source geometry, finite pin/housing reference-pair location evidence and separately identified unverified connector alternatives; retention remains unknown"
+    },
+    "mechanical_validation": {
+      "status": "unavailable",
+      "scope": "no confirmed interface connection, retaining, motion constraint, assembly path or mechanical success is published"
+    },
+    "engineering_validation": {
+      "status": "unavailable",
+      "scope": "materials, tolerances, manufacturing and load acceptance not established"
+    },
+    "path_validation": {
+      "status": "unavailable",
+      "scope": "presentation explosion is not a disassembly or motion proof"
+    },
+    "training_data": {
+      "status": "unavailable",
+      "scope": "no training dataset, canonical multiview render or use authorization is published"
+    },
+    "geometric_analysis": {
+      "status": "partial",
+      "scope": "finite arbitrary-axis cylindrical discovery with strict source witnesses, legacy finite geometry and per-instance raw mesh regions; unsupported structures remain open"
+    },
+    "interface_analysis": {
+      "status": "partial",
+      "scope": "connection reviews separate declared knowledge from project-inferred roles and manufacturer-general examples; no complete physical interface qualification"
+    },
+    "connection_candidates": {
+      "status": "unavailable",
+      "scope": "raw geometry observations are not qualified interfaces or mechanism-level connection candidates"
+    },
+    "reference_mounting": {
+      "status": "partial",
+      "scope": "supplied standard-assembly assertions checked against the frozen source placements and mapped site axes; no executed engagement is published"
+    },
+    "connection_review": {
+      "status": "partial",
+      "scope": "source-pose pin/housing fits support installation-location inference only; outer circular openings and manufacturer-general illustrations do not establish retaining roles"
+    },
+    "supplemental_components": {
+      "status": "partial",
+      "scope": "reference connector schematics use explicit through-bracket hypotheses with independently checked finite entrance, head seat, shaft direction and target coverage; actual installation side, thread, continuous path and retention remain unverified"
+    },
+    "structure_investigation": {
+      "status": "partial",
+      "scope": "every source Part and mesh normal region is inventoried before functional interpretation; unknown function has explicit evidence gaps and next actions"
+    },
+    "independent_review": {
+      "status": "partial",
+      "scope": "locked source-SHA-bound independent annotations establish expected sample features; automatic screening is distinct from completed region review"
+    },
+    "installation_hypotheses": {
+      "status": "partial",
+      "scope": "frozen completed research, source-bound finite counterpart geometry, dimensional complementarity and evidence support bounded mechanism hypotheses; no actual retaining or engineering confirmation"
+    },
+    "connection_analysis": {
+      "status": "partial",
+      "scope": "every connection review has finite local evidence and an explicit investigation stage; frozen executed investigations support bounded mechanisms, multi-Part context and independent omission acceptance without qualifying Interfaces"
+    }
+  }
+}

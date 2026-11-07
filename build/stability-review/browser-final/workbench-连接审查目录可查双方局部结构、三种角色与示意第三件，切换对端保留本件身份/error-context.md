@@ -1,0 +1,657 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: workbench.spec.ts >> 连接审查目录可查双方局部结构、三种角色与示意第三件，切换对端保留本件身份
+- Location: tests\workbench.spec.ts:641:1
+
+# Error details
+
+```
+Test timeout of 45000ms exceeded.
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - complementary "主导航" [ref=e4]:
+    - generic [ref=e5]:
+      - img "PSOP" [ref=e6]
+      - generic [ref=e7]:
+        - strong [ref=e8]: PSOP
+        - generic [ref=e9]: 工作台
+      - button "收起导航" [ref=e10] [cursor=pointer]
+    - button "选择设备工作区" [ref=e15] [cursor=pointer]:
+      - generic [ref=e20]:
+        - strong [ref=e21]: Microduck
+        - generic [ref=e22]: 设备工作区
+    - generic [ref=e25]: 设备知识
+    - navigation "设备知识" [ref=e26]:
+      - button "设备总览" [ref=e27] [cursor=pointer]
+      - button "知识浏览" [ref=e39] [cursor=pointer]
+      - button "连接审查" [ref=e46] [cursor=pointer]
+      - button "本体定义" [ref=e51] [cursor=pointer]
+      - button "来源资料 71" [ref=e55] [cursor=pointer]:
+        - generic [ref=e59]: 来源资料
+        - generic [ref=e60]: "71"
+    - generic [ref=e61]: 设备能力
+    - navigation "三个技能" [ref=e62]:
+      - button "Build 构建" [ref=e63] [cursor=pointer]
+      - button "Simulate 模拟 执行服务待接入" [ref=e69] [cursor=pointer]:
+        - generic [ref=e75]: Simulate 模拟
+        - generic "执行服务待接入" [ref=e76]
+      - button "Compile 训练 执行服务待接入" [ref=e77] [cursor=pointer]:
+        - generic [ref=e80]: Compile 训练
+        - generic "执行服务待接入" [ref=e81]
+    - generic [ref=e83]:
+      - generic [ref=e85]:
+        - strong [ref=e86]: v2 知识快照
+        - generic [ref=e87]: 来源与版本分别追踪
+      - button "查看知识版本" [ref=e88] [cursor=pointer]
+    - button "工作台说明与快捷键 ?" [ref=e92] [cursor=pointer]:
+      - generic [ref=e96]: 工作台说明与快捷键
+      - generic [ref=e97]: "?"
+    - generic [ref=e98]:
+      - generic [ref=e99]: M
+      - generic [ref=e100]:
+        - strong [ref=e101]: 本地工作区
+        - generic [ref=e102]: 2.0.0-connection-analysis.1
+  - main [ref=e104]:
+    - generic [ref=e105]:
+      - generic [ref=e106]:
+        - generic [ref=e107]: 设备工作区
+        - button "Microduck" [ref=e110] [cursor=pointer]
+        - strong [ref=e113]: 设备总览
+      - generic [ref=e114]:
+        - button "搜索知识与资料 Ctrl K" [ref=e115] [cursor=pointer]:
+          - generic [ref=e119]: 搜索知识与资料
+          - generic [ref=e120]: Ctrl K
+        - button "统一工作台" [ref=e122] [cursor=pointer]
+        - button "工作台说明" [ref=e124] [cursor=pointer]
+    - generic [ref=e128]:
+      - generic [ref=e141]:
+        - heading [level=1] [ref=e142]:
+          - text: Microduck
+          - button "2.0.0-connection-analysis.1" [ref=e143] [cursor=pointer]
+        - paragraph [ref=e146]: 从部件出发，连接设备知识与原始依据。
+      - generic [ref=e147]:
+        - button "装配来源" [ref=e148] [cursor=pointer]
+        - button "导出视图" [ref=e155] [cursor=pointer]
+        - button "复制视图链接" [ref=e158] [cursor=pointer]
+    - generic [ref=e163]:
+      - region "部件结构" [ref=e164]:
+        - generic [ref=e165]:
+          - generic [ref=e166]: 模型结构
+          - button "收起模型结构" [ref=e172] [cursor=pointer]
+        - generic [ref=e176]:
+          - button "按场景分组" [ref=e177] [cursor=pointer]
+          - button "按部件类别" [ref=e178] [cursor=pointer]
+        - textbox "查找部件或 ID" [ref=e183]
+        - generic [ref=e184]:
+          - strong [ref=e195]: Microduck
+          - generic [ref=e196]: "70"
+        - generic [ref=e197]:
+          - button "头部与颈部 26" [ref=e199] [cursor=pointer]:
+            - strong [ref=e203]: 头部与颈部
+            - generic [ref=e204]: "26"
+          - generic [ref=e205]:
+            - button "躯干 10" [expanded] [ref=e206] [cursor=pointer]:
+              - strong [ref=e210]: 躯干
+              - generic [ref=e211]: "10"
+            - generic [ref=e212]:
+              - generic [ref=e213]:
+                - button "轴承外形（22×16×4 配置名） ed" [ref=e214] [cursor=pointer]:
+                  - generic [ref=e219]: 轴承外形（22×16×4 配置名）
+                  - generic [ref=e220]: ed
+                - button "隐藏 part:microduck:b364863ffde63eed" [ref=e221] [cursor=pointer]
+              - generic [ref=e225]:
+                - button "右侧外壳 f1" [ref=e226] [cursor=pointer]:
+                  - generic [ref=e231]: 右侧外壳
+                  - generic [ref=e232]: f1
+                - button "隐藏 part:microduck:9d70b219a5533bf1" [ref=e233] [cursor=pointer]
+              - generic [ref=e237]:
+                - button "电路板固定件 06" [ref=e238] [cursor=pointer]:
+                  - generic [ref=e243]: 电路板固定件
+                  - generic [ref=e244]: "06"
+                - button "隐藏 part:microduck:78cf36c41e4fde06" [ref=e245] [cursor=pointer]
+              - generic [ref=e249]:
+                - button "躯干底座 4a" [ref=e250] [cursor=pointer]:
+                  - generic [ref=e255]: 躯干底座
+                  - generic [ref=e256]: 4a
+                - button "隐藏 part:microduck:203d2686e3321e4a" [ref=e257] [cursor=pointer]
+              - generic [ref=e261]:
+                - button "XL330 舵机 f5" [ref=e262] [cursor=pointer]:
+                  - generic [ref=e267]: XL330 舵机
+                  - generic [ref=e268]: f5
+                - button "隐藏 part:microduck:a682dc3620df43f5" [ref=e269] [cursor=pointer]
+              - generic [ref=e273]:
+                - button "电源支架 4c" [ref=e274] [cursor=pointer]:
+                  - generic [ref=e279]: 电源支架
+                  - generic [ref=e280]: 4c
+                - button "隐藏 part:microduck:e7e8275c7d01674c" [ref=e281] [cursor=pointer]
+              - generic [ref=e285]:
+                - button "NP-F970 电池外形 d7" [ref=e286] [cursor=pointer]:
+                  - generic [ref=e291]: NP-F970 电池外形
+                  - generic [ref=e292]: d7
+                - button "隐藏 part:microduck:f97c1c6580d651d7" [ref=e293] [cursor=pointer]
+              - generic [ref=e297]:
+                - button "XL330 舵机 1e" [ref=e298] [cursor=pointer]:
+                  - generic [ref=e303]: XL330 舵机
+                  - generic [ref=e304]: 1e
+                - button "隐藏 part:microduck:09cb390e38430c1e" [ref=e305] [cursor=pointer]
+              - generic [ref=e309]:
+                - button "左侧外壳 4e" [ref=e310] [cursor=pointer]:
+                  - generic [ref=e315]: 左侧外壳
+                  - generic [ref=e316]: 4e
+                - button "隐藏 part:microduck:e27cbdd6c07a264e" [ref=e317] [cursor=pointer]
+              - generic [ref=e321]:
+                - button "轴承外形（22×16×4 配置名） a4" [ref=e322] [cursor=pointer]:
+                  - generic [ref=e327]: 轴承外形（22×16×4 配置名）
+                  - generic [ref=e328]: a4
+                - button "隐藏 part:microduck:7938fd9143c59ea4" [ref=e329] [cursor=pointer]
+          - button "左腿与足部 17" [ref=e334] [cursor=pointer]:
+            - strong [ref=e338]: 左腿与足部
+            - generic [ref=e339]: "17"
+          - generic [ref=e340]:
+            - button "右腿与足部 17" [expanded] [ref=e341] [cursor=pointer]:
+              - strong [ref=e345]: 右腿与足部
+              - generic [ref=e346]: "17"
+            - generic [ref=e347]:
+              - generic [ref=e348]:
+                - button "偏航与横滚连接件 89" [ref=e349] [cursor=pointer]:
+                  - generic [ref=e354]: 偏航与横滚连接件
+                  - generic [ref=e355]: "89"
+                - button "隐藏 part:microduck:48099e14105d3289" [ref=e356] [cursor=pointer]
+              - generic [ref=e360]:
+                - button "XL330 舵机 a3" [ref=e361] [cursor=pointer]:
+                  - generic [ref=e366]: XL330 舵机
+                  - generic [ref=e367]: a3
+                - button "隐藏 part:microduck:087d7a46a3ce4ca3" [ref=e368] [cursor=pointer]
+              - generic [ref=e372]:
+                - button "横滚轴承支承件 6a" [ref=e373] [cursor=pointer]:
+                  - generic [ref=e378]: 横滚轴承支承件
+                  - generic [ref=e379]: 6a
+                - button "隐藏 part:microduck:c703574f50f6a46a" [ref=e380] [cursor=pointer]
+              - generic [ref=e384]:
+                - button "轴承外形（22×16×4 配置名） 88" [ref=e385] [cursor=pointer]:
+                  - generic [ref=e390]: 轴承外形（22×16×4 配置名）
+                  - generic [ref=e391]: "88"
+                - button "隐藏 part:microduck:3fbf0b5c8cea4488" [ref=e392] [cursor=pointer]
+              - generic [ref=e396]:
+                - button "髋部件 91" [ref=e397] [cursor=pointer]:
+                  - generic [ref=e402]: 髋部件
+                  - generic [ref=e403]: "91"
+                - button "隐藏 part:microduck:c7eeeac0a640d191" [ref=e404] [cursor=pointer]
+              - generic [ref=e408]:
+                - button "轴承外形（22×16×4 配置名） 2a" [ref=e409] [cursor=pointer]:
+                  - generic [ref=e414]: 轴承外形（22×16×4 配置名）
+                  - generic [ref=e415]: 2a
+                - button "隐藏 part:microduck:d924e1596ffb042a" [ref=e416] [cursor=pointer]
+              - generic [ref=e420]:
+                - button "XL330 舵机 b0" [ref=e421] [cursor=pointer]:
+                  - generic [ref=e426]: XL330 舵机
+                  - generic [ref=e427]: b0
+                - button "隐藏 part:microduck:7038a050dbc33fb0" [ref=e428] [cursor=pointer]
+              - generic [ref=e432]:
+                - button "轴承外形（22×16×4 配置名） d8" [ref=e433] [cursor=pointer]:
+                  - generic [ref=e438]: 轴承外形（22×16×4 配置名）
+                  - generic [ref=e439]: d8
+                - button "隐藏 part:microduck:d6a148b5784955d8" [ref=e440] [cursor=pointer]
+              - generic [ref=e444]:
+                - button "大腿加强板 cc" [ref=e445] [cursor=pointer]:
+                  - generic [ref=e450]: 大腿加强板
+                  - generic [ref=e451]: cc
+                - button "隐藏 part:microduck:7e86db28af59d3cc" [ref=e452] [cursor=pointer]
+              - generic [ref=e456]:
+                - button "右大腿部件 e1" [ref=e457] [cursor=pointer]:
+                  - generic [ref=e462]: 右大腿部件
+                  - generic [ref=e463]: e1
+                - button "隐藏 part:microduck:e40b9945707505e1" [ref=e464] [cursor=pointer]
+              - generic [ref=e468]:
+                - button "XL330 舵机 db" [ref=e469] [cursor=pointer]:
+                  - generic [ref=e474]: XL330 舵机
+                  - generic [ref=e475]: db
+                - button "隐藏 part:microduck:08c5ade0f3fd37db" [ref=e476] [cursor=pointer]
+              - generic [ref=e480]:
+                - button "XL330 舵机 04" [ref=e481] [cursor=pointer]:
+                  - generic [ref=e486]: XL330 舵机
+                  - generic [ref=e487]: "04"
+                - button "隐藏 part:microduck:0820b4025f26a004" [ref=e488] [cursor=pointer]
+              - generic [ref=e492]:
+                - button "腿部连杆 f1" [ref=e493] [cursor=pointer]:
+                  - generic [ref=e498]: 腿部连杆
+                  - generic [ref=e499]: f1
+                - button "隐藏 part:microduck:7f4fefc3c6de90f1" [ref=e500] [cursor=pointer]
+              - generic [ref=e504]:
+                - button "右踝部件 7b" [ref=e505] [cursor=pointer]:
+                  - generic [ref=e510]: 右踝部件
+                  - generic [ref=e511]: 7b
+                - button "隐藏 part:microduck:b371ac60e2f6757b" [ref=e512] [cursor=pointer]
+              - generic [ref=e516]:
+                - button "右脚底 55" [ref=e517] [cursor=pointer]:
+                  - generic [ref=e522]: 右脚底
+                  - generic [ref=e523]: "55"
+                - button "隐藏 part:microduck:2f557a24b2729755" [ref=e524] [cursor=pointer]
+              - generic [ref=e528]:
+                - button "轴承外形（默认配置名） df" [ref=e529] [cursor=pointer]:
+                  - generic [ref=e534]: 轴承外形（默认配置名）
+                  - generic [ref=e535]: df
+                - button "隐藏 part:microduck:e196235810184adf" [ref=e536] [cursor=pointer]
+              - generic [ref=e540]:
+                - button "右脚部件 f4" [ref=e541] [cursor=pointer]:
+                  - generic [ref=e546]: 右脚部件
+                  - generic [ref=e547]: f4
+                - button "隐藏 part:microduck:f9955f19a691a1f4" [ref=e548] [cursor=pointer]
+        - generic [ref=e552]:
+          - text: 70 个模型可视实例
+          - generic "不代表采购数量" [ref=e554]: ⓘ
+      - region "Microduck 3D 工作区" [ref=e555]:
+        - generic [ref=e556]:
+          - img "Microduck 可旋转三维参考装配模型" [ref=e557]
+          - group [ref=e558]:
+            - generic "显示分析" [ref=e559] [cursor=pointer]
+          - status [ref=e560]:
+            - generic [ref=e561]: 局部查看 · 透视查看（临时淡化 2 件）
+            - button "恢复视图" [ref=e562] [cursor=pointer]
+          - generic:
+            - button "定位 腿部连杆" [ref=e563] [cursor=pointer]:
+              - generic [ref=e565]:
+                - strong [ref=e566]: 腿部连杆
+                - generic [ref=e567]: part:microduck:7f4fefc3c6de90f1
+            - button "定位 头部下壳" [ref=e568] [cursor=pointer]:
+              - generic [ref=e570]:
+                - strong [ref=e571]: 头部下壳
+                - generic [ref=e572]: part:microduck:52fdcacf474a463f
+            - button "定位 XL330 舵机":
+              - generic:
+                - strong: XL330 舵机
+                - generic: part:microduck:a682dc3620df43f5
+            - button "定位 躯干底座":
+              - generic:
+                - strong: 躯干底座
+                - generic: part:microduck:203d2686e3321e4a
+            - button "定位 左脚部件" [ref=e573] [cursor=pointer]:
+              - generic [ref=e575]:
+                - strong [ref=e576]: 左脚部件
+                - generic [ref=e577]: part:microduck:41db565298264db6
+          - img "随视角变化的右手坐标轴，Z 为模型上方":
+            - generic: X
+            - generic: "Y"
+            - generic: Z
+        - button "切换参考连接件示意" [ref=e578] [cursor=pointer]:
+          - generic [ref=e583]:
+            - text: 参考连接件 · 已隐藏
+            - generic [ref=e584]: 未确认 BOM
+        - generic:
+          - generic: 来源参考配置
+          - generic: /
+          - generic: qpos0
+        - button "透视视图" [ref=e591] [cursor=pointer]
+        - generic [ref=e597]:
+          - generic [ref=e604]: XL330 舵机 ↔ 腿部连杆 · 孔组已调查待证 · 已调查、仍缺证 · 本件金色 / 对端蓝色
+          - button "清除几何标注" [ref=e605] [cursor=pointer]
+        - generic [ref=e609]:
+          - button "适应全部模型" [ref=e610] [cursor=pointer]
+          - button "聚焦选中部件 (F)" [ref=e616] [cursor=pointer]
+          - button "仅显示选中部件" [ref=e624] [cursor=pointer]
+          - button "切换部件标签" [pressed] [ref=e628] [cursor=pointer]
+          - button "切换透明显示" [ref=e633] [cursor=pointer]
+          - button "切换剖切" [ref=e637] [cursor=pointer]
+          - button "切换参考网格" [pressed] [ref=e644] [cursor=pointer]
+          - button "重置场景" [ref=e648] [cursor=pointer]
+          - button "切换全屏" [ref=e652] [cursor=pointer]
+        - generic [ref=e658]:
+          - generic [ref=e664]:
+            - strong [ref=e665]: 爆炸视图
+            - generic [ref=e666]: 0%
+          - slider "爆炸展开程度" [ref=e667] [cursor=pointer]: "0"
+          - button "复原装配" [ref=e668] [cursor=pointer]
+          - generic [ref=e672]:
+            - button "装配" [ref=e673] [cursor=pointer]
+            - button "展开" [ref=e674] [cursor=pointer]
+        - generic:
+          - generic: 拖动旋转滚轮缩放右键平移
+          - generic: 模型单位 m
+      - complementary "对象知识详情" [ref=e675]:
+        - separator "调整对象详情宽度" [ref=e676]:
+          - generic [ref=e678]: 左右方向键调整宽度，按住 Shift 加快；Home 最窄，End 最宽，回车恢复默认。
+        - generic [ref=e679]:
+          - generic [ref=e680]: 对象详情
+          - button "收起对象详情" [ref=e684] [cursor=pointer]
+        - generic [ref=e693]:
+          - generic [ref=e694]: 结构件
+          - heading "腿部连杆" [level=2] [ref=e695]
+          - button "part:microduck:7f4fefc3c6de90f1" [ref=e696] [cursor=pointer]
+        - generic [ref=e700]:
+          - generic [ref=e701]: 模型对象
+          - generic [ref=e702]: 来源已定位
+        - tablist "对象详情分类" [ref=e703]:
+          - tab "概览" [ref=e704] [cursor=pointer]
+          - tab "几何" [ref=e705] [cursor=pointer]
+          - tab "接口" [selected] [ref=e706] [cursor=pointer]
+          - tab "关联" [ref=e707] [cursor=pointer]
+          - tab "证据 3" [ref=e708] [cursor=pointer]:
+            - text: 证据
+            - generic [ref=e709]: "3"
+        - generic [ref=e710]:
+          - generic [ref=e711]:
+            - generic [ref=e712]:
+              - heading "安装定义与参考配合 2 类定义 / 1 项参考装配" [level=3] [ref=e713]:
+                - text: 安装定义与参考配合
+                - generic [ref=e714]: 2 类定义 / 1 项参考装配
+              - generic [ref=e715]:
+                - generic [ref=e716]:
+                  - generic [ref=e720]:
+                    - strong [ref=e721]: 连杆中部双孔安装位
+                    - generic [ref=e722]: 安装用途已声明
+                  - button "定位全部可选安装孔位" [ref=e723] [cursor=pointer]
+                - generic [ref=e730]:
+                  - strong [ref=e731]:
+                    - text: "2"
+                    - generic [ref=e732]: 个安装孔位
+                  - generic [ref=e733]: 2 条共享孔道
+                - group [ref=e734]:
+                  - generic "可选孔位与规则 选用条件已声明" [ref=e735] [cursor=pointer]:
+                    - text: 可选孔位与规则
+                    - generic [ref=e736]: 选用条件已声明
+                - generic [ref=e737]:
+                  - generic [ref=e738]:
+                    - text: 参考安装
+                    - generic [ref=e739]: 1 项
+                  - generic [ref=e740]:
+                    - 'button "XL330 舵机 · #26a004 2 对孔位 · 标准参考装配 右腿与足部 · 基准位置 (-31.777, -50, 38.5) mm" [ref=e741] [cursor=pointer]':
+                      - generic [ref=e749]:
+                        - strong [ref=e750]: "XL330 舵机 · #26a004"
+                        - generic [ref=e751]: 2 对孔位 · 标准参考装配
+                        - generic [ref=e752]: 右腿与足部 · 基准位置 (-31.777, -50, 38.5) mm
+                    - generic [ref=e762]:
+                      - text: 参考孔位对应已定位
+                      - generic [ref=e763]: 接合与保持状态未评估
+                    - generic [ref=e764]:
+                      - generic [ref=e765]:
+                        - generic [ref=e766]: 本件孔位
+                        - generic [ref=e767]: 对端孔位
+                      - generic [ref=e769]:
+                        - button [ref=e771] [cursor=pointer]:
+                          - strong [ref=e772]: L2
+                        - button [ref=e783] [cursor=pointer]:
+                          - strong [ref=e784]: B3
+                      - generic [ref=e792]:
+                        - button [ref=e794] [cursor=pointer]:
+                          - strong [ref=e795]: L1
+                        - button [ref=e806] [cursor=pointer]:
+                          - strong [ref=e807]: B2
+                    - generic [ref=e814]: 2 条紧固路径要求 · 实际连接件未绑定
+                    - generic [ref=e815]:
+                      - generic [ref=e816]:
+                        - strong [ref=e821]: 紧固路径示意
+                        - generic [ref=e822]: 连接件未绑定
+                      - button "显示紧固路径示意 connection-review:microduck:818ac0f2dee9c3d6" [ref=e823] [cursor=pointer]: 查看紧固路径示意
+                      - generic [ref=e827]:
+                        - button "参考双孔紧固件路径 1 · 待确认示意" [ref=e828] [cursor=pointer]
+                        - button "参考双孔紧固件路径 2 · 待确认示意" [ref=e839] [cursor=pointer]
+                      - generic [ref=e850]: 合成示意 · 实物、装入侧与规格待确认
+                    - group [ref=e851]:
+                      - generic "参考测量与依据" [ref=e852] [cursor=pointer]
+                - group [ref=e853]:
+                  - generic "查看安装规则与来源" [ref=e854] [cursor=pointer]
+              - generic [ref=e855]:
+                - generic [ref=e856]:
+                  - generic [ref=e860]:
+                    - strong [ref=e861]: 连杆上端四孔安装位
+                    - generic [ref=e862]: 安装用途已声明
+                  - button "定位全部可选安装孔位" [ref=e863] [cursor=pointer]
+                - generic [ref=e870]:
+                  - strong [ref=e871]:
+                    - text: "4"
+                    - generic [ref=e872]: 个安装孔位
+                  - generic [ref=e873]: 4 条共享孔道
+                - group [ref=e874]:
+                  - generic "可选孔位与规则 选用条件待确认" [ref=e875] [cursor=pointer]:
+                    - text: 可选孔位与规则
+                    - generic [ref=e876]: 选用条件待确认
+                  - generic [ref=e877]:
+                    - generic [ref=e878]:
+                      - strong [ref=e879]: 已定位安装侧
+                      - generic [ref=e880]: 4 个入口
+                    - generic [ref=e881]:
+                      - button "定位安装孔位 U1" [ref=e882] [cursor=pointer]:
+                        - generic [ref=e886]:
+                          - strong [ref=e887]: U1
+                          - generic [ref=e888]: 安装入口
+                      - button "定位安装孔位 U2" [ref=e895] [cursor=pointer]:
+                        - generic [ref=e899]:
+                          - strong [ref=e900]: U2
+                          - generic [ref=e901]: 安装入口
+                      - button "定位安装孔位 U3" [ref=e908] [cursor=pointer]:
+                        - generic [ref=e912]:
+                          - strong [ref=e913]: U3
+                          - generic [ref=e914]: 安装入口
+                      - button "定位安装孔位 U4" [ref=e921] [cursor=pointer]:
+                        - generic [ref=e925]:
+                          - strong [ref=e926]: U4
+                          - generic [ref=e927]: 安装入口
+                  - generic [ref=e934]:
+                    - strong [ref=e942]: 选用数量与组合规则未确认
+                    - paragraph [ref=e943]: 最少数量、允许组合与保持方式待确认。
+                - generic [ref=e944]:
+                  - paragraph [ref=e945]: 参考孔轴未对齐：来源零位下两侧孔阵列相位不同，尚未发布逐孔对应。其他安装相位仍待验证。
+                  - paragraph [ref=e946]: 相邻部件会遮挡安装位置，可透明或展开查看。
+                  - generic [ref=e947]:
+                    - button "透明查看" [ref=e948] [cursor=pointer]
+                    - button "展开查看" [ref=e952] [cursor=pointer]
+                - group [ref=e957]:
+                  - generic "查看安装规则与来源" [ref=e958] [cursor=pointer]
+            - generic [ref=e959]:
+              - generic [ref=e960]:
+                - generic [ref=e961]:
+                  - strong [ref=e969]: 局部连接审查
+                  - generic [ref=e970]: 待核查
+                - generic [ref=e971]:
+                  - heading "XL330 舵机 ↔ 腿部连杆 · 孔组已调查待证" [level=4] [ref=e972]
+                  - paragraph [ref=e973]: 已调查 · 证据仍不足
+                  - generic [ref=e974]:
+                    - generic [ref=e975]:
+                      - button "对端 · XL330 舵机 XL330 舵机 · 本次有限孔组 源局部 0, 0, -22.5 mm" [ref=e976] [cursor=pointer]:
+                        - generic [ref=e977]:
+                          - strong [ref=e978]: 对端 · XL330 舵机
+                          - generic [ref=e979]: XL330 舵机 · 本次有限孔组
+                          - generic [ref=e980]: 源局部 0, 0, -22.5 mm
+                      - generic [ref=e987]:
+                        - button "查看源结构及三角见证" [ref=e988] [cursor=pointer]
+                        - button "查看源结构及三角见证" [ref=e995] [cursor=pointer]
+                        - button "查看有限源特征" [ref=e1002] [cursor=pointer]
+                        - button "查看有限源特征" [ref=e1009] [cursor=pointer]
+                    - generic [ref=e1016]:
+                      - button "本件 · 腿部连杆 腿部连杆 · 本次有限孔组 源局部 37.1, 22, 16.277 mm" [ref=e1017] [cursor=pointer]:
+                        - generic [ref=e1018]:
+                          - strong [ref=e1019]: 本件 · 腿部连杆
+                          - generic [ref=e1020]: 腿部连杆 · 本次有限孔组
+                          - generic [ref=e1021]: 源局部 37.1, 22, 16.277 mm
+                      - generic [ref=e1028]:
+                        - button "查看源结构及三角见证" [ref=e1029] [cursor=pointer]
+                        - button "查看源结构及三角见证" [ref=e1036] [cursor=pointer]
+                        - button "查看有限源特征" [ref=e1043] [cursor=pointer]
+                        - button "查看有限源特征" [ref=e1050] [cursor=pointer]
+                  - generic [ref=e1057]:
+                    - heading "局部结构配对与兼容性" [level=4] [ref=e1058]
+                    - list [ref=e1059]:
+                      - listitem [ref=e1060]: 两侧 16.000/2.700 mm 圆柱结构，轴距 0.0000 mm，有限间隔 0.0000 mm，重叠 2.5000 mm。
+                      - listitem [ref=e1061]: 两侧 16.000/5.500 mm 圆柱结构，轴距 0.0000 mm，有限间隔 0.0000 mm，重叠 0.5000 mm。
+                      - listitem [ref=e1062]: 两侧 16.000/8.000 mm 圆柱结构，轴距 0.0000 mm，有限间隔 0.0000 mm，重叠 0.5000 mm。
+                      - listitem [ref=e1063]: 两侧 16.000/10.000 mm 圆柱结构，轴距 0.0000 mm，有限间隔 0.0000 mm，重叠 0.0000 mm。
+                      - listitem [ref=e1064]: 两侧 16.000/10.000 mm 圆柱结构，轴距 0.0000 mm，有限间隔 0.0000 mm，重叠 0.5000 mm。
+                      - listitem [ref=e1065]: 两侧 2.000/2.400 mm 孔壁，轴距 0.0000 mm，有限间隔 0.5000 mm，重叠 0.0000 mm。
+                      - listitem [ref=e1066]: 两侧 2.000/2.400 mm 孔壁，轴距 0.0000 mm，有限间隔 0.5000 mm，重叠 0.0000 mm。
+                      - listitem [ref=e1067]: 两侧 2.000/4.840 mm 孔壁，轴距 0.0000 mm，有限间隔 2.3000 mm，重叠 0.0000 mm。
+                      - listitem [ref=e1068]: 两侧 2.000/4.840 mm 孔壁，轴距 0.0000 mm，有限间隔 2.3000 mm，重叠 0.0000 mm。
+                  - generic [ref=e1069]:
+                    - heading "机制候选与适用范围" [level=4] [ref=e1070]
+                    - list [ref=e1071]:
+                      - listitem [ref=e1072]: 螺钉通过腿部连杆的本组大孔，进入XL330 舵机接收结构形成夹持。缺实际承接/选孔/活动区证据，尚为待证机制。
+                  - generic [ref=e1073]:
+                    - generic [ref=e1074]:
+                      - term [ref=e1075]:
+                        - text: 定位
+                        - generic [ref=e1076]: 几何支持
+                      - definition [ref=e1077]: 2组有限孔壁和所有对应轴/组距为连接件轴线与板件相位提供几何定位解释；未将源body当固定依据。
+                    - generic [ref=e1078]:
+                      - term [ref=e1079]:
+                        - text: 保持
+                        - generic [ref=e1080]: 仍缺依据
+                      - definition [ref=e1081]: 条件性保持路径为螺钉头压板→接收螺纹/螺母；源模型无螺钉及螺纹，实际夹紧、抗拔与承载仍未知。
+                    - generic [ref=e1082]:
+                      - term [ref=e1083]:
+                        - text: 运动
+                        - generic [ref=e1084]: 仍缺依据
+                      - definition [ref=e1085]: 必须分别确认舵机壳体/输出件的局部归属；同一个STL网格或同一个仿真body不证明整件刚性随动。
+                    - generic [ref=e1086]:
+                      - term [ref=e1087]:
+                        - text: 限位
+                        - generic [ref=e1088]: 仍缺依据
+                      - definition [ref=e1089]: 孔壁、台阶或扩口不自动证明行程限位、止转或允许旋入深度，需核对实物承座与干涉。
+                  - generic [ref=e1090]:
+                    - heading "已执行调查的具体结论" [level=4] [ref=e1091]
+                    - list [ref=e1092]:
+                      - listitem [ref=e1093]: 双方具体源局部位置：XL330 舵机 (0.000, 8.000, -22.500) mm；(0.000, -8.000, -22.500) mm；腿部连杆 (37.100, 30.000, 16.277) mm；(37.100, 14.000, 16.277) mm。
+                      - listitem [ref=e1094]: 实际独立截面及共同构型比较了 2 组有限孔壁。两侧 2.000/2.400 mm 孔壁，轴距 0.0000 mm，有限间隔 0.5000 mm，重叠 0.0000 mm。 两侧 2.000/2.400 mm 孔壁，轴距 0.0000 mm，有限间隔 0.5000 mm，重叠 0.0000 mm。
+                      - listitem [ref=e1095]: 已执行具体孔组调查，但不能仅凭互补直径与相邻把本组升级为安装假设。双方接近通过孔，缺螺纹、螺母或嵌件的承接依据。
+                  - generic [ref=e1096]:
+                    - heading "第三件与紧固件" [level=4] [ref=e1097]
+                    - list [ref=e1098]:
+                      - listitem [ref=e1099]: screw：若采用所述夹持机制，必须有独立螺钉；实际数量、规格及保持状态没有BOM依据。
+                  - generic [ref=e1100]:
+                    - heading "反证与不一致" [level=4] [ref=e1101]
+                    - list [ref=e1102]:
+                      - listitem [ref=e1103]: STL为简化的参考外形，所见圆柱不包含制造螺纹、真实紧固件或预紧；几何阈值不是公差。
+                  - generic [ref=e1104]:
+                    - heading "替代解释" [level=4] [ref=e1105]
+                    - list [ref=e1106]:
+                      - listitem [ref=e1107]: 也可能通过分离舵盘、独立嵌件或穿透螺钉/螺母承接；这些部件在当前源模型未分体确认。
+                  - generic [ref=e1108]:
+                    - heading "还缺少的证据" [level=4] [ref=e1109]
+                    - list [ref=e1110]:
+                      - listitem [ref=e1111]: 腿部连杆这组孔的装入侧、完整头部承座及实际使用孔数尚未由装配图确认。
+                      - listitem [ref=e1112]: XL330 舵机对应孔的实际螺纹/螺母/嵌件身份、螺钉长度、材料与制造公差缺证。
+                      - listitem [ref=e1113]: 该局部接收区域归舵机壳体、输出舵盘还是其他活动件，以及实际保持、限位、连续路径与载荷未确认。
+                  - generic [ref=e1114]:
+                    - heading "下一步可执行调查" [level=4] [ref=e1115]
+                    - list [ref=e1116]:
+                      - listitem [ref=e1117]: 按列出的局部坐标复核XL330 舵机内外侧承座/入口；取得同修订分体CAD或逐孔装配图以确认接收区域和真实紧固件。
+                      - listitem [ref=e1118]: 按列出的局部坐标复核腿部连杆内外侧承座/入口；取得同修订分体CAD或逐孔装配图以确认接收区域和真实紧固件。
+                  - group [ref=e1119]:
+                    - generic "实际调查方法与观察 · 3 项" [ref=e1120] [cursor=pointer]
+                  - generic [ref=e1121]:
+                    - heading "支持与审查来源" [level=4] [ref=e1122]
+                    - button "README.md" [ref=e1123] [cursor=pointer]
+                    - button "leg_腿部连杆.stl" [ref=e1131] [cursor=pointer]
+                    - button "xl330_XL330舵机外形.stl" [ref=e1139] [cursor=pointer]
+                    - button "HAT元件位置与图纸对照-中文.csv" [ref=e1147] [cursor=pointer]
+                    - button "HAT零件清单-中文.csv" [ref=e1155] [cursor=pointer]
+                    - button "README.md" [ref=e1163] [cursor=pointer]
+                    - button "README.md" [ref=e1171] [cursor=pointer]
+                    - button "hip-connection-studies-2026-11-07" [ref=e1179] [cursor=pointer]
+                    - button "connection-source-sections-2026-11-07" [ref=e1187] [cursor=pointer]
+                    - button "模型部件索引.csv" [ref=e1195] [cursor=pointer]
+                    - button "robot_walk.xml" [ref=e1203] [cursor=pointer]
+                    - button "ROBOTIS XL330 壳体及随动端装配图" [ref=e1211] [cursor=pointer]
+                    - button "ROBOTIS X330 舵盘螺钉长度示意" [ref=e1219] [cursor=pointer]
+                  - paragraph [ref=e1227]: 该分析保留审查依据与未决条件；实际接合、保持能力与工程验收仍需各自验证。
+                - group [ref=e1228]:
+                  - generic "原始连接审查、角色路径与几何证据" [ref=e1229] [cursor=pointer]
+              - generic [ref=e1230]:
+                - heading "已完成调查、仍缺证的关系 1 对" [level=3] [ref=e1231]:
+                  - text: 已完成调查、仍缺证的关系
+                  - generic [ref=e1232]: 1 对
+                - article [ref=e1234]:
+                  - button "XL330 舵机 ↔ 腿部连杆 · 孔组已调查待证 已调查 · 证据仍不足" [ref=e1235] [cursor=pointer]:
+                    - generic [ref=e1239]:
+                      - strong [ref=e1240]: XL330 舵机 ↔ 腿部连杆 · 孔组已调查待证
+                      - generic [ref=e1241]: 已调查 · 证据仍不足
+                  - paragraph [ref=e1248]: 螺钉通过腿部连杆的本组大孔，进入XL330 舵机接收结构形成夹持。缺实际承接/选孔/活动区证据，尚为待证机制。
+                  - paragraph [ref=e1249]:
+                    - strong [ref=e1250]: 还缺：
+                    - text: 腿部连杆这组孔的装入侧、完整头部承座及实际使用孔数尚未由装配图确认。
+                  - button "XL330 舵机" [ref=e1252] [cursor=pointer]
+              - generic [ref=e1266]:
+                - heading "尚未完成调查的候选关系 5 对" [level=3] [ref=e1267]:
+                  - text: 尚未完成调查的候选关系
+                  - generic [ref=e1268]: 5 对
+                - paragraph [ref=e1269]: 这些记录提供局部调查入口，尚不构成安装机制或正式接口。
+                - article [ref=e1271]:
+                  - button "XL330 舵机 ↔ 腿部连杆 候选关系 · 尚未完成调查" [ref=e1272] [cursor=pointer]:
+                    - generic [ref=e1276]:
+                      - strong [ref=e1277]: XL330 舵机 ↔ 腿部连杆
+                      - generic [ref=e1278]: 候选关系 · 尚未完成调查
+                  - paragraph [ref=e1285]: 两侧 16.000/6.000 mm 圆柱结构，轴距 0.0000 mm，有限间隔 0.0500 mm，重叠 0.0000 mm。
+                  - paragraph [ref=e1286]:
+                    - strong [ref=e1287]: 还缺：
+                    - text: 实际保持机制和中间参与件
+                  - button "XL330 舵机" [ref=e1289] [cursor=pointer]
+                - article [ref=e1304]:
+                  - button "腿部连杆 ↔ 右踝部件 候选关系 · 尚未完成调查" [ref=e1305] [cursor=pointer]:
+                    - generic [ref=e1309]:
+                      - strong [ref=e1310]: 腿部连杆 ↔ 右踝部件
+                      - generic [ref=e1311]: 候选关系 · 尚未完成调查
+                  - paragraph [ref=e1318]: 两侧 5.500/15.000 mm 孔壁，轴距 0.0000 mm，有限间隔 0.0000 mm，重叠 2.1000 mm。
+                  - paragraph [ref=e1319]:
+                    - strong [ref=e1320]: 还缺：
+                    - text: 实际保持机制和中间参与件
+                  - button "右踝部件" [ref=e1322] [cursor=pointer]
+                - article [ref=e1337]:
+                  - button "腿部连杆 ↔ 轴承外形（22×16×4 配置名） 候选关系 · 尚未完成调查" [ref=e1338] [cursor=pointer]:
+                    - generic [ref=e1342]:
+                      - strong [ref=e1343]: 腿部连杆 ↔ 轴承外形（22×16×4 配置名）
+                      - generic [ref=e1344]: 候选关系 · 尚未完成调查
+                  - paragraph [ref=e1351]: 两侧 6.000/22.000 mm 圆柱结构，轴距 0.0000 mm，有限间隔 0.0000 mm，重叠 1.6500 mm。
+                  - paragraph [ref=e1352]:
+                    - strong [ref=e1353]: 还缺：
+                    - text: 实际保持机制和中间参与件
+                  - button "轴承外形（22×16×4 配置名）" [ref=e1355] [cursor=pointer]
+                - article [ref=e1370]:
+                  - button "腿部连杆 ↔ 轴承外形（默认配置名） 候选关系 · 尚未完成调查" [ref=e1371] [cursor=pointer]:
+                    - generic [ref=e1375]:
+                      - strong [ref=e1376]: 腿部连杆 ↔ 轴承外形（默认配置名）
+                      - generic [ref=e1377]: 候选关系 · 尚未完成调查
+                  - paragraph [ref=e1384]: 两侧 5.500/10.000 mm 孔壁，轴距 0.0000 mm，有限间隔 0.0000 mm，重叠 2.6000 mm。
+                  - paragraph [ref=e1385]:
+                    - strong [ref=e1386]: 还缺：
+                    - text: 实际保持机制和中间参与件
+                  - button "轴承外形（默认配置名）" [ref=e1388] [cursor=pointer]
+                - article [ref=e1403]:
+                  - button "腿部连杆 ↔ 右脚部件 候选关系 · 尚未完成调查" [ref=e1404] [cursor=pointer]:
+                    - generic [ref=e1408]:
+                      - strong [ref=e1409]: 腿部连杆 ↔ 右脚部件
+                      - generic [ref=e1410]: 候选关系 · 尚未完成调查
+                  - paragraph [ref=e1417]: 当前审查只有来源包围盒或面投影线索；在相同参考构型下，未检出轴距≤0.15 mm 且有限间隔≤5 mm 的双方圆柱结构配对。
+                  - paragraph [ref=e1418]:
+                    - strong [ref=e1419]: 还缺：
+                    - text: 实际保持机制和中间参与件
+                  - button "右脚部件" [ref=e1421] [cursor=pointer]
+              - generic [ref=e1435]:
+                - heading "尚未进入连接审查的几何线索 1 对" [level=3] [ref=e1436]:
+                  - text: 尚未进入连接审查的几何线索
+                  - generic [ref=e1437]: 1 对
+                - article [ref=e1438]:
+                  - strong [ref=e1439]: "大腿加强板 · #59d3cc ↔ 腿部连杆 · #de90f1"
+                  - paragraph [ref=e1440]: 大腿加强板 ↔ 腿部连杆：在列出的源局部结构处剖切，核对上述有限间隔/直径与实际中间件。双方孔壁已有几何数据，优先核对是否穿透螺钉/隔柱或仅同轴让位；固定本地资料缺少该对的逐孔装配及保持依据。
+                  - button "查看有限几何线索" [ref=e1441] [cursor=pointer]
+              - group [ref=e1448]:
+                - generic "本件关系分析覆盖 · 各证据阶段分别计数" [ref=e1449] [cursor=pointer]
+          - button "打开全机连接审查" [ref=e1450] [cursor=pointer]
+          - group [ref=e1461]:
+            - generic "分析覆盖与待完善能力" [ref=e1462] [cursor=pointer]
+        - generic [ref=e1463]:
+          - button "定位所选几何" [ref=e1464] [cursor=pointer]
+          - button "复制对象链接" [ref=e1471] [cursor=pointer]
+    - generic [ref=e1475]:
+      - generic [ref=e1476]:
+        - text: 模型已就绪38 份几何70 个可视实例
+        - generic [ref=e1481]: 4 件参考连接示意 / 8 件方案示意
+      - button "psop.microduck@2.0.0-connection-analysis.1" [ref=e1482] [cursor=pointer]
+```

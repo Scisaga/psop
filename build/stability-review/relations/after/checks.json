@@ -1,0 +1,314 @@
+{
+  "phase": "after",
+  "snapshot": "dkp-84f6829a25a82fefaf1d",
+  "meta": {
+    "title": "Microduck",
+    "ontologyVersion": "psop.hardware/2.0-draft.4",
+    "scope": "官方模型参考 · qpos0；不等同 alpha 实机配置或工程验收",
+    "sourceCommit": "cb70b792312d559a4da09064d92009079671815f",
+    "counts": {
+      "sources": 71,
+      "geometries": 38,
+      "parts": 70,
+      "bodies": 15,
+      "joints": 14,
+      "evidence": 226
+    },
+    "version": "2.0.0-connection-analysis.1",
+    "snapshot": "psop.microduck@2.0.0-connection-analysis.1",
+    "generatedAt": "2026-11-07T09:35:40+00:00",
+    "packageId": "psop.microduck",
+    "packageVersion": "2.0.0-connection-analysis.1",
+    "packageDigest": "84f6829a25a82fefaf1da6cc00b399088a5db6e41923b4074c39a08d1988b6db",
+    "dkpSchema": "psop.dkp/2.0-draft.1",
+    "inputKind": "dkp",
+    "capabilities": {
+      "source_registry": {
+        "status": "complete",
+        "scope": "captured source bytes, paths and digests",
+        "description": "captured source bytes, paths and digests"
+      },
+      "source_model_projection": {
+        "status": "complete",
+        "scope": "frozen Microduck MJCF visual model at qpos0",
+        "description": "frozen Microduck MJCF visual model at qpos0"
+      },
+      "hardware_knowledge": {
+        "status": "partial",
+        "scope": "source geometry, finite pin/housing reference-pair location evidence and separately identified unverified connector alternatives; retention remains unknown",
+        "description": "source geometry, finite pin/housing reference-pair location evidence and separately identified unverified connector alternatives; retention remains unknown"
+      },
+      "mechanical_validation": {
+        "status": "unavailable",
+        "scope": "no confirmed interface connection, retaining, motion constraint, assembly path or mechanical success is published",
+        "description": "no confirmed interface connection, retaining, motion constraint, assembly path or mechanical success is published"
+      },
+      "engineering_validation": {
+        "status": "unavailable",
+        "scope": "materials, tolerances, manufacturing and load acceptance not established",
+        "description": "materials, tolerances, manufacturing and load acceptance not established"
+      },
+      "path_validation": {
+        "status": "unavailable",
+        "scope": "presentation explosion is not a disassembly or motion proof",
+        "description": "presentation explosion is not a disassembly or motion proof"
+      },
+      "training_data": {
+        "status": "unavailable",
+        "scope": "no training dataset, canonical multiview render or use authorization is published",
+        "description": "no training dataset, canonical multiview render or use authorization is published"
+      },
+      "geometric_analysis": {
+        "status": "partial",
+        "scope": "finite arbitrary-axis cylindrical discovery with strict source witnesses, legacy finite geometry and per-instance raw mesh regions; unsupported structures remain open",
+        "description": "finite arbitrary-axis cylindrical discovery with strict source witnesses, legacy finite geometry and per-instance raw mesh regions; unsupported structures remain open"
+      },
+      "interface_analysis": {
+        "status": "partial",
+        "scope": "connection reviews separate declared knowledge from project-inferred roles and manufacturer-general examples; no complete physical interface qualification",
+        "description": "connection reviews separate declared knowledge from project-inferred roles and manufacturer-general examples; no complete physical interface qualification"
+      },
+      "connection_candidates": {
+        "status": "unavailable",
+        "scope": "raw geometry observations are not qualified interfaces or mechanism-level connection candidates",
+        "description": "raw geometry observations are not qualified interfaces or mechanism-level connection candidates"
+      },
+      "reference_mounting": {
+        "status": "partial",
+        "scope": "supplied standard-assembly assertions checked against the frozen source placements and mapped site axes; no executed engagement is published",
+        "description": "supplied standard-assembly assertions checked against the frozen source placements and mapped site axes; no executed engagement is published"
+      },
+      "connection_review": {
+        "status": "partial",
+        "scope": "source-pose pin/housing fits support installation-location inference only; outer circular openings and manufacturer-general illustrations do not establish retaining roles",
+        "description": "source-pose pin/housing fits support installation-location inference only; outer circular openings and manufacturer-general illustrations do not establish retaining roles"
+      },
+      "supplemental_components": {
+        "status": "partial",
+        "scope": "reference connector schematics use explicit through-bracket hypotheses with independently checked finite entrance, head seat, shaft direction and target coverage; actual installation side, thread, continuous path and retention remain unverified",
+        "description": "reference connector schematics use explicit through-bracket hypotheses with independently checked finite entrance, head seat, shaft direction and target coverage; actual installation side, thread, continuous path and retention remain unverified"
+      },
+      "structure_investigation": {
+        "status": "partial",
+        "scope": "every source Part and mesh normal region is inventoried before functional interpretation; unknown function has explicit evidence gaps and next actions",
+        "description": "every source Part and mesh normal region is inventoried before functional interpretation; unknown function has explicit evidence gaps and next actions"
+      },
+      "independent_review": {
+        "status": "partial",
+        "scope": "locked source-SHA-bound independent annotations establish expected sample features; automatic screening is distinct from completed region review",
+        "description": "locked source-SHA-bound independent annotations establish expected sample features; automatic screening is distinct from completed region review"
+      },
+      "installation_hypotheses": {
+        "status": "partial",
+        "scope": "frozen completed research, source-bound finite counterpart geometry, dimensional complementarity and evidence support bounded mechanism hypotheses; no actual retaining or engineering confirmation",
+        "description": "frozen completed research, source-bound finite counterpart geometry, dimensional complementarity and evidence support bounded mechanism hypotheses; no actual retaining or engineering confirmation"
+      },
+      "connection_analysis": {
+        "status": "partial",
+        "scope": "every connection review has finite local evidence and an explicit investigation stage; frozen executed investigations support bounded mechanisms, multi-Part context and independent omission acceptance without qualifying Interfaces",
+        "description": "every connection review has finite local evidence and an explicit investigation stage; frozen executed investigations support bounded mechanisms, multi-Part context and independent omission acceptance without qualifying Interfaces"
+      }
+    },
+    "validation": {
+      "valid": true,
+      "profile": "psop.hardware.source-model/1.11"
+    }
+  },
+  "reviews": [
+    {
+      "reviewId": "connection-review:microduck:27d56794bd7c8a86",
+      "participants": [
+        {
+          "part_ref": "part:microduck:47a950fbb3d0e416",
+          "feature_refs": [
+            "feature:microduck:47a950fbb3d0e416:4b70f665bd37",
+            "feature:microduck:47a950fbb3d0e416:plane-61bdfcca3695"
+          ],
+          "opening_refs": [
+            "opening:microduck:47a950fbb3d0e416:452e107b7fb32383",
+            "opening:microduck:47a950fbb3d0e416:6eaa4083b66aac77",
+            "opening:microduck:47a950fbb3d0e416:cc2d448293b5dd35",
+            "opening:microduck:47a950fbb3d0e416:f3a95e2795236d14"
+          ],
+          "site_refs": []
+        },
+        {
+          "part_ref": "part:microduck:fa9ee2f71faafb88",
+          "feature_refs": [
+            "feature:microduck:fa9ee2f71faafb88:0f97108977c9",
+            "feature:microduck:fa9ee2f71faafb88:8c530854bffc",
+            "feature:microduck:fa9ee2f71faafb88:plane-5da8ab6659b8"
+          ],
+          "opening_refs": [
+            "opening:microduck:fa9ee2f71faafb88:61a17ff765f34335",
+            "opening:microduck:fa9ee2f71faafb88:966151ae6197c62f"
+          ],
+          "site_refs": []
+        }
+      ],
+      "text": "局部连接审查\n待补证据\n髋部件 ↔ 轴承外形（22×16×4 配置名） · 已调查待证\n\n已调查 · 证据仍不足\n\n本件 · 髋部件 · #aafb88\n髋部件 · 源局部有限结构\n源局部 17.5, -17.525, -0 mm\n左腿与足部 · 参考装配位置 (4, 0, 102.5) mm\n查看源结构及三角见证\n对端 · 轴承外形（22×16×4 配置名） · #d0e416\n轴承外形（22×16×4 配置名） · 源局部有限结构\n源局部 0, 0, 2 mm\n左腿与足部 · 参考装配位置 (22.5, 17.5, 102.5) mm\n查看源结构及三角见证\n查看有限源特征\n局部结构配对与兼容性\n两侧 16.000/16.000 mm 圆柱结构，轴距 0.0000 mm，有限间隔 0.0000 mm，重叠 1.7500 mm。\n两侧 22.000/16.000 mm 圆柱结构，轴距 0.0000 mm，有限间隔 0.0000 mm，重叠 1.6500 mm。\n两侧 16.000/6.000 mm 孔壁，轴距 0.0000 mm，有限间隔 0.0000 mm，重叠 1.7500 mm。\n两侧 22.000/6.000 mm 圆柱结构，轴距 0.0000 mm，有限间隔 0.0000 mm，重叠 1.6500 mm。\n两侧 16.000/19.000 mm 圆柱结构，轴距 0.0000 mm，有限间隔 0.2000 mm，重叠 0.0000 mm。\n两侧 22.000/19.000 mm 圆柱结构，轴距 0.0000 mm，有限间隔 0.3000 mm，重叠 0.0000 mm。\n机制候选与适用范围\n髋轴颈位于轴承内圈的名义径向位置，肩面可解释单向轴向承接；轴承两环可能相对转动，实际环归属和抗拔未确认。\n定位\n几何支持\nØ16轴颈与完整Ø16内壁及有限重叠支持名义径向定位；不由入口倒角推断间隙等级。\n保持\n仍缺依据\n肩端最多支持一侧轴向承接；反向抗拔、压配或盖件无依据，实际保持未知。\n运动\n仍缺依据\n轴承两环间的转动是具体机制候选，髋、内圈、外圈和对端活动框架仍需分体CAD/装配图确定。\n限位\n仍缺依据\n端面可能限定单向轴向位置；没有完整轴向堆叠/止推/行程限位依据。\n已执行调查的具体结论\n髋部完整外向轴颈Ø16 mm，轴承完整内壁Ø16 mm；口部Ø16.4 mm是倒角，不是配合壁直径。\n在唯一qpos0配置中双方同轴，有限壁段重叠约1.75 mm；相等的名义尺寸不证明过盈等级或已接合。\n第三件与紧固件\naxial_retainer：反向保持可能需要压盖、卡环或相邻夹持件；当前未定位真实件，不能自动创建示意保持实体。\n反证与不一致\n源模型名义零间隙不能证明压配；轴承外壁Ø22和入口倒角不能代替完整Ø16内壁。\n替代解释\n可能为松配定位、带独立套筒或仅参考外形留置，不能确认实机已安装或已保持。\n还缺少的证据\n轴承具体型号/修订、真实内外圈尺寸及髋轴颈制造公差尚无依据。\n内外圈分别跟随哪个部件，以及完整轴向保持件/载荷和润滑未确认。\n下一步可执行调查\n按双方明确局部位置隔离/剖切，检查环、孔周端面、轴向挡肩及实际中间件；需匹配修订的分体CAD或逐件装配图。\n实际调查方法与观察 · 2 项\n支持与审查来源\nREADME.md\nhip_l_髋部件.stl\nseeed_bearing__configuration__22x16x4_轴承外形-22×16×4.stl\nHAT元件位置与图纸对照-中文.csv\nHAT零件清单-中文.csv\nREADME.md\nREADME.md\nhip-connection-studies-2026-11-07\nconnection-source-sections-2026-11-07\n模型部件索引.csv\nrobot_walk.xml\n\n该分析保留审查依据与未决条件；实际接合、保持能力与工程验收仍需各自验证。\n\n原始连接审查、角色路径与几何证据",
+      "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-84f6829a25a82fefaf1d&part=part%3Amicroduck%3Afa9ee2f71faafb88&review=connection-review%3Amicroduck%3A27d56794bd7c8a86&explode=0.00&detail=interfaces&inspection=1&view=iso&labels=0&grid=0&supplements=0",
+      "image": "27d56794bd7c8a86.png"
+    },
+    {
+      "reviewId": "connection-review:microduck:f81f10dc6482cb07",
+      "participants": [
+        {
+          "part_ref": "part:microduck:55970da91992f38c",
+          "feature_refs": [],
+          "opening_refs": [],
+          "site_refs": []
+        },
+        {
+          "part_ref": "part:microduck:fa9ee2f71faafb88",
+          "feature_refs": [],
+          "opening_refs": [],
+          "site_refs": []
+        }
+      ],
+      "text": "局部连接审查\n待补证据\n髋部件 ↔ 偏航与横滚连接件 · 已调查待证\n\n已调查 · 证据仍不足\n\n本件 · 髋部件 · #aafb88\n髋部件 · 源局部有限结构\n源局部 17.5, -17.525, -0 mm\n左腿与足部 · 参考装配位置 (4, 0, 102.5) mm\n查看源结构及三角见证\n对端 · 偏航与横滚连接件 · #92f38c\n偏航与横滚连接件 · 源局部有限结构\n源局部 17.5, -2, 13.475 mm\n左腿与足部 · 参考装配位置 (4, 0, 102.5) mm\n查看源结构及三角见证\n查看有限源特征\n机制候选与适用范围\n可能经舵机、轴承和横滚支承件构成间接机构；当前未建立此两件的直接固定、卡扣或轴孔机制。\n定位\n几何支持\n未定位直接接触/互补结构；显示的双方轴颈仅标明实际调查区域，不声称它们相配。\n保持\n仍缺依据\n没有直接紧固/保持结构依据，不能套用厂家螺钉图补齐本对。\n运动\n仍缺依据\n仅能在更大舵机/轴承机构语境讨论相对运动，源body/相邻不能证明刚性固定。\n限位\n仍缺依据\n没有本对独立的止转、止推或行程限位依据。\n已执行调查的具体结论\n已比较双方全部有限圆柱结构：在唯一参考构型下，没有轴距≤0.15 mm且有限间隔≤5 mm的直接局部配对。\n旧审查只有包围盒相关，没有geometry_observation_refs、局部孔组或补全件；共享仿真body不是物理连接依据。\n反证与不一致\n包围盒重叠及共body不提供有限接触、互补尺寸或保持路径。\n替代解释\n两件可能仅在同一机构中经其他零件间接关联，也可能在不同运动构型接近；缺直接配对不代表永久不能安装。\n还缺少的证据\n同修订CAD中局部非圆面、槽或分体接触以及经过哪些实际中间件的机构链尚缺。\n直接连接、紧固件或活动框架关系没有装配说明支持。\n下一步可执行调查\n按双方明确局部位置隔离/剖切，检查环、孔周端面、轴向挡肩及实际中间件；需匹配修订的分体CAD或逐件装配图。\n实际调查方法与观察 · 2 项\n支持与审查来源\nREADME.md\nhip_l_髋部件.stl\nyaw2roll_偏航与横滚连接件.stl\nHAT元件位置与图纸对照-中文.csv\nHAT零件清单-中文.csv\nREADME.md\nREADME.md\nhip-connection-studies-2026-11-07\nconnection-source-sections-2026-11-07\n模型部件索引.csv\nrobot_walk.xml\n\n该分析保留审查依据与未决条件；实际接合、保持能力与工程验收仍需各自验证。\n\n原始连接审查、角色路径与几何证据",
+      "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-84f6829a25a82fefaf1d&part=part%3Amicroduck%3Afa9ee2f71faafb88&review=connection-review%3Amicroduck%3Af81f10dc6482cb07&explode=0.00&detail=interfaces&inspection=1&view=iso&labels=0&grid=0&supplements=0",
+      "image": "f81f10dc6482cb07.png"
+    },
+    {
+      "reviewId": "connection-review:microduck:926a5beb2c028185",
+      "participants": [
+        {
+          "part_ref": "part:microduck:9ffe9d5bcd6bc13a",
+          "feature_refs": [
+            "feature:microduck:9ffe9d5bcd6bc13a:4c6adb5a4bd2",
+            "feature:microduck:9ffe9d5bcd6bc13a:678d6de22520",
+            "feature:microduck:9ffe9d5bcd6bc13a:c762f0d8139b",
+            "feature:microduck:9ffe9d5bcd6bc13a:ee2340944a76",
+            "feature:microduck:9ffe9d5bcd6bc13a:f4716268e4b3"
+          ],
+          "opening_refs": [
+            "opening:microduck:9ffe9d5bcd6bc13a:e77de7cf187ae9b2"
+          ],
+          "site_refs": []
+        },
+        {
+          "part_ref": "part:microduck:fa9ee2f71faafb88",
+          "feature_refs": [
+            "feature:microduck:fa9ee2f71faafb88:2ae52bb39653",
+            "feature:microduck:fa9ee2f71faafb88:2ee7062c1815",
+            "feature:microduck:fa9ee2f71faafb88:40aa9fcc7543",
+            "feature:microduck:fa9ee2f71faafb88:7f1abed92893",
+            "feature:microduck:fa9ee2f71faafb88:968274710e8e",
+            "feature:microduck:fa9ee2f71faafb88:9e6a15bfabec",
+            "feature:microduck:fa9ee2f71faafb88:d0acc192b12c",
+            "feature:microduck:fa9ee2f71faafb88:ec1d9aeca1f6",
+            "feature:microduck:fa9ee2f71faafb88:f3519facbf1d"
+          ],
+          "opening_refs": [
+            "opening:microduck:fa9ee2f71faafb88:8905efb6dc74da8c"
+          ],
+          "site_refs": []
+        }
+      ],
+      "text": "局部连接审查\n待补证据\nXL330 舵机 ↔ 髋部件 · 四孔螺钉夹持假设\n\n机制有依据 · 接合待验证\n\n对端 · XL330 舵机 · #6bc13a\nXL330 舵机 · 本次有限孔组\n源局部 -11.5, 0, 0 mm\n左腿与足部 · 参考装配位置 (4, 55, 102.5) mm\n查看源结构及三角见证\n查看源结构及三角见证\n查看源结构及三角见证\n查看源结构及三角见证\n查看有限源特征\n查看有限源特征\n查看有限源特征\n查看有限源特征\n本件 · 髋部件 · #aafb88\n髋部件 · 本次有限孔组\n源局部 38.975, -0, 0 mm\n左腿与足部 · 参考装配位置 (4, 0, 102.5) mm\n查看源结构及三角见证\n查看源结构及三角见证\n查看源结构及三角见证\n查看源结构及三角见证\n查看有限源特征\n查看有限源特征\n查看有限源特征\n查看有限源特征\n局部结构配对与兼容性\n两侧 1.600/2.400 mm 孔壁，轴距 0.0000 mm，有限间隔 0.0500 mm，重叠 0.0000 mm。\n两侧 1.600/2.400 mm 孔壁，轴距 0.0000 mm，有限间隔 0.0500 mm，重叠 0.0000 mm。\n两侧 1.600/2.400 mm 孔壁，轴距 0.0000 mm，有限间隔 0.0500 mm，重叠 0.0000 mm。\n两侧 1.600/2.400 mm 孔壁，轴距 0.0000 mm，有限间隔 0.0500 mm，重叠 0.0000 mm。\n两侧 16.000/16.000 mm 圆柱结构，轴距 0.0000 mm，有限间隔 0.0500 mm，重叠 0.0000 mm。\n两侧 16.000/6.000 mm 圆柱结构，轴距 0.0000 mm，有限间隔 0.0500 mm，重叠 0.0000 mm。\n两侧 16.000/19.000 mm 圆柱结构，轴距 0.0000 mm，有限间隔 2.0000 mm，重叠 0.0000 mm。\n两侧 1.600/4.840 mm 孔壁，轴距 0.0000 mm，有限间隔 3.0000 mm，重叠 0.0000 mm。\n两侧 1.600/4.840 mm 孔壁，轴距 0.0000 mm，有限间隔 3.0000 mm，重叠 0.0000 mm。\n两侧 1.600/4.840 mm 孔壁，轴距 0.0000 mm，有限间隔 3.0000 mm，重叠 0.0000 mm。\n两侧 1.600/4.841 mm 孔壁，轴距 0.0005 mm，有限间隔 3.0000 mm，重叠 0.0000 mm。\n机制候选与适用范围\n螺钉通过髋部件的本组大孔，进入XL330 舵机接收结构形成夹持。有几何与一般机制依据，实际保持未知。\n定位\n有依据的假设\n4组有限孔壁和所有对应轴/组距为连接件轴线与板件相位提供几何定位解释；未将源body当固定依据。\n保持\n仍缺依据\n条件性保持路径为螺钉头压板→接收螺纹/螺母；源模型无螺钉及螺纹，实际夹紧、抗拔与承载仍未知。\n运动\n仍缺依据\n必须分别确认舵机壳体/输出件的局部归属；同一个STL网格或同一个仿真body不证明整件刚性随动。\n限位\n仍缺依据\n孔壁、台阶或扩口不自动证明行程限位、止转或允许旋入深度，需核对实物承座与干涉。\n已执行调查的具体结论\n双方具体源局部位置：XL330 舵机 (-11.500, 6.000, 0.000) mm；(-11.500, 0.000, -6.000) mm；(-11.500, 0.000, 6.000) mm；(-11.500, -6.000, -0.000) mm；髋部件 (38.975, 0.000, 6.000) mm；(38.975, 6.000, 0.000) mm；(38.975, -6.000, 0.000) mm；(38.975, -0.000, -6.000) mm。\n实际独立截面及共同构型比较了 4 组有限孔壁。两侧 1.600/2.400 mm 孔壁，轴距 0.0000 mm，有限间隔 0.0500 mm，重叠 0.0000 mm。 两侧 1.600/2.400 mm 孔壁，轴距 0.0000 mm，有限间隔 0.0500 mm，重叠 0.0000 mm。 两侧 1.600/2.400 mm 孔壁，轴距 0.0000 mm，有限间隔 0.0500 mm，重叠 0.0000 mm。 两侧 1.600/2.400 mm 孔壁，轴距 0.0000 mm，有限间隔 0.0500 mm，重叠 0.0000 mm。\n四条轴线与孔组在一个固定构型中对应；Ø1.6 mm接收孔/较大通过孔与厂家穿板装配图共同支持螺钉夹持解释，不确认实物螺纹或紧固。\n第三件与紧固件\nscrew：若采用所述夹持机制，必须有独立螺钉；实际数量、规格及保持状态没有BOM依据。\n反证与不一致\nSTL为简化的参考外形，所见圆柱不包含制造螺纹、真实紧固件或预紧；几何阈值不是公差。\n替代解释\n也可能通过分离舵盘、独立嵌件或穿透螺钉/螺母承接；这些部件在当前源模型未分体确认。\n还缺少的证据\n髋部件这组孔的装入侧、完整头部承座及实际使用孔数尚未由装配图确认。\nXL330 舵机对应孔的实际螺纹/螺母/嵌件身份、螺钉长度、材料与制造公差缺证。\n该局部接收区域归舵机壳体、输出舵盘还是其他活动件，以及实际保持、限位、连续路径与载荷未确认。\n下一步可执行调查\n按列出的局部坐标复核XL330 舵机内外侧承座/入口；取得同修订分体CAD或逐孔装配图以确认接收区域和真实紧固件。\n按列出的局部坐标复核髋部件内外侧承座/入口；取得同修订分体CAD或逐孔装配图以确认接收区域和真实紧固件。\n查看有依据的关系假设\n实际调查方法与观察 · 3 项\n支持与审查来源\nREADME.md\nhip_l_髋部件.stl\nxl330_XL330舵机外形.stl\nHAT元件位置与图纸对照-中文.csv\nHAT零件清单-中文.csv\nREADME.md\nREADME.md\nhip-connection-studies-2026-11-07\nconnection-source-sections-2026-11-07\n模型部件索引.csv\nrobot_walk.xml\nROBOTIS XL330 壳体及随动端装配图\nROBOTIS X330 舵盘螺钉长度示意\n\n该分析保留审查依据与未决条件；实际接合、保持能力与工程验收仍需各自验证。\n\n原始连接审查、角色路径与几何证据",
+      "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-84f6829a25a82fefaf1d&part=part%3Amicroduck%3Afa9ee2f71faafb88&review=connection-review%3Amicroduck%3A926a5beb2c028185&explode=0.00&detail=interfaces&inspection=1&view=iso&labels=0&grid=0&supplements=0",
+      "image": "926a5beb2c028185.png"
+    },
+    {
+      "reviewId": "connection-review:microduck:c2e8a8093a4b8563",
+      "participants": [
+        {
+          "part_ref": "part:microduck:bb34e925e25e29f6",
+          "feature_refs": [
+            "feature:microduck:bb34e925e25e29f6:4b70f665bd37",
+            "feature:microduck:bb34e925e25e29f6:plane-61bdfcca3695"
+          ],
+          "opening_refs": [
+            "opening:microduck:bb34e925e25e29f6:452e107b7fb32383",
+            "opening:microduck:bb34e925e25e29f6:6eaa4083b66aac77",
+            "opening:microduck:bb34e925e25e29f6:cc2d448293b5dd35",
+            "opening:microduck:bb34e925e25e29f6:f3a95e2795236d14"
+          ],
+          "site_refs": []
+        },
+        {
+          "part_ref": "part:microduck:fa9ee2f71faafb88",
+          "feature_refs": [
+            "feature:microduck:fa9ee2f71faafb88:2ee7062c1815",
+            "feature:microduck:fa9ee2f71faafb88:ec1d9aeca1f6",
+            "feature:microduck:fa9ee2f71faafb88:plane-e63b5358fc46"
+          ],
+          "opening_refs": [
+            "opening:microduck:fa9ee2f71faafb88:8905efb6dc74da8c"
+          ],
+          "site_refs": []
+        }
+      ],
+      "text": "局部连接审查\n待补证据\n髋部件 ↔ 轴承外形（22×16×4 配置名） · 已调查待证\n\n已调查 · 证据仍不足\n\n本件 · 髋部件 · #aafb88\n髋部件 · 源局部有限结构\n源局部 39.475, 0, 0 mm\n左腿与足部 · 参考装配位置 (4, 0, 102.5) mm\n查看源结构及三角见证\n对端 · 轴承外形（22×16×4 配置名） · #5e29f6\n轴承外形（22×16×4 配置名） · 源局部有限结构\n源局部 0, 0, 2 mm\n左腿与足部 · 参考装配位置 (4, 38.5, 102.5) mm\n查看源结构及三角见证\n查看有限源特征\n局部结构配对与兼容性\n两侧 22.000/16.000 mm 圆柱结构，轴距 0.0000 mm，有限间隔 0.0000 mm，重叠 1.6500 mm。\n两侧 16.000/16.000 mm 圆柱结构，轴距 0.0000 mm，有限间隔 0.0000 mm，重叠 1.7500 mm。\n两侧 16.000/6.000 mm 孔壁，轴距 0.0000 mm，有限间隔 0.0000 mm，重叠 1.7500 mm。\n两侧 22.000/6.000 mm 圆柱结构，轴距 0.0000 mm，有限间隔 0.0000 mm，重叠 1.6500 mm。\n两侧 16.000/19.000 mm 圆柱结构，轴距 0.0000 mm，有限间隔 0.2000 mm，重叠 0.0000 mm。\n两侧 22.000/19.000 mm 圆柱结构，轴距 0.0000 mm，有限间隔 0.3000 mm，重叠 0.0000 mm。\n机制候选与适用范围\n髋轴颈位于轴承内圈的名义径向位置，肩面可解释单向轴向承接；轴承两环可能相对转动，实际环归属和抗拔未确认。\n定位\n几何支持\nØ16轴颈与完整Ø16内壁及有限重叠支持名义径向定位；不由入口倒角推断间隙等级。\n保持\n仍缺依据\n肩端最多支持一侧轴向承接；反向抗拔、压配或盖件无依据，实际保持未知。\n运动\n仍缺依据\n轴承两环间的转动是具体机制候选，髋、内圈、外圈和对端活动框架仍需分体CAD/装配图确定。\n限位\n仍缺依据\n端面可能限定单向轴向位置；没有完整轴向堆叠/止推/行程限位依据。\n已执行调查的具体结论\n髋部完整外向轴颈Ø16 mm，轴承完整内壁Ø16 mm；口部Ø16.4 mm是倒角，不是配合壁直径。\n在唯一qpos0配置中双方同轴，有限壁段重叠约1.75 mm；相等的名义尺寸不证明过盈等级或已接合。\n第三件与紧固件\naxial_retainer：反向保持可能需要压盖、卡环或相邻夹持件；当前未定位真实件，不能自动创建示意保持实体。\n反证与不一致\n源模型名义零间隙不能证明压配；轴承外壁Ø22和入口倒角不能代替完整Ø16内壁。\n替代解释\n可能为松配定位、带独立套筒或仅参考外形留置，不能确认实机已安装或已保持。\n还缺少的证据\n轴承具体型号/修订、真实内外圈尺寸及髋轴颈制造公差尚无依据。\n内外圈分别跟随哪个部件，以及完整轴向保持件/载荷和润滑未确认。\n下一步可执行调查\n按双方明确局部位置隔离/剖切，检查环、孔周端面、轴向挡肩及实际中间件；需匹配修订的分体CAD或逐件装配图。\n实际调查方法与观察 · 2 项\n支持与审查来源\nREADME.md\nhip_l_髋部件.stl\nseeed_bearing__configuration__22x16x4_轴承外形-22×16×4.stl\nHAT元件位置与图纸对照-中文.csv\nHAT零件清单-中文.csv\nREADME.md\nREADME.md\nhip-connection-studies-2026-11-07\nconnection-source-sections-2026-11-07\n模型部件索引.csv\nrobot_walk.xml\n\n该分析保留审查依据与未决条件；实际接合、保持能力与工程验收仍需各自验证。\n\n原始连接审查、角色路径与几何证据",
+      "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-84f6829a25a82fefaf1d&part=part%3Amicroduck%3Afa9ee2f71faafb88&review=connection-review%3Amicroduck%3Ac2e8a8093a4b8563&explode=0.00&detail=interfaces&inspection=1&view=iso&labels=0&grid=0&supplements=0",
+      "image": "c2e8a8093a4b8563.png"
+    },
+    {
+      "reviewId": "connection-review:microduck:d22c650fc9abdaca",
+      "participants": [
+        {
+          "part_ref": "part:microduck:cb253f38c818b9d8",
+          "feature_refs": [],
+          "opening_refs": [
+            "opening:microduck:cb253f38c818b9d8:81eef8e201ce8d0d",
+            "opening:microduck:cb253f38c818b9d8:d098b90aa4f668f3"
+          ],
+          "site_refs": []
+        },
+        {
+          "part_ref": "part:microduck:fa9ee2f71faafb88",
+          "feature_refs": [
+            "feature:microduck:fa9ee2f71faafb88:0f97108977c9",
+            "feature:microduck:fa9ee2f71faafb88:8c530854bffc"
+          ],
+          "opening_refs": [],
+          "site_refs": []
+        }
+      ],
+      "text": "局部连接审查\n待补证据\n髋部件 ↔ 横滚轴承支承件 · 已调查待证\n\n已调查 · 证据仍不足\n\n本件 · 髋部件 · #aafb88\n髋部件 · 源局部有限结构\n源局部 17.5, -17.525, -0 mm\n左腿与足部 · 参考装配位置 (4, 0, 102.5) mm\n查看源结构及三角见证\n对端 · 横滚轴承支承件 · #18b9d8\n横滚轴承支承件 · 源局部有限结构\n源局部 17.5, -14, 0 mm\n左腿与足部 · 参考装配位置 (4, 0, 102.5) mm\n查看源结构及三角见证\n查看有限源特征\n局部结构配对与兼容性\n两侧 19.000/6.000 mm 孔壁，轴距 0.0000 mm，有限间隔 2.0500 mm，重叠 0.0000 mm。\n两侧 19.000/16.000 mm 圆柱结构，轴距 0.0000 mm，有限间隔 2.0500 mm，重叠 0.0000 mm。\n两侧 19.000/19.000 mm 圆柱结构，轴距 0.0000 mm，有限间隔 4.0000 mm，重叠 0.0000 mm。\n机制候选与适用范围\n保留髋轴颈—真实源轴承—支承件端面/孔周承接的间接支承候选，排除直接轴孔精确配合；完整保持未证。\n定位\n存在反证\n直接Ø16/Ø19径向尺寸和有限范围不互补；定位如存在，应经中间轴承的两环传递。\n保持\n仍缺依据\n支承件孔周可能提供端面挡肩，但不证明夹持外圈、抗拔或另一侧保持。\n运动\n仍缺依据\n可能由轴承环间转动解耦髋和支承件，不能把同body或同轴解释为固定。\n限位\n仍缺依据\n孔周端面可能为单向挡肩；限位、实际接触和全堆叠尚缺依据。\n已执行调查的具体结论\n髋Ø16轴颈与横滚支承件Ø19孔同轴，但有限壁相隔约2.05 mm，径向差1.5 mm，没有直接插入/径向贴合。\n中间已有真实源轴承part:microduck:47a950fbb3d0e416：轴承内圈对髋轴颈、外圈端面靠支承件孔周面是三件支承链候选；Ø19孔不能径向压配Ø22外圈。\n第三件与紧固件\nsource_bearing：具体第三件为part:microduck:47a950fbb3d0e416，只确认源模型中存在，不声明接触或已保持。\n反证与不一致\nØ19孔小于Ø22外圈，不能作为外圈径向压配座；Ø16轴颈和Ø19孔自身又没有径向贴合或有限插入。\n替代解释\n可能以孔周端面挡住轴承外圈，也可能只是让位；不能从孔名确定保持。\n还缺少的证据\n轴承外圈端面与支承件孔周的真实接触和完整轴向保持件缺证。\n髋/轴承两环/支承件的活动归属、公差及载荷需匹配修订CAD或装配图。\n下一步可执行调查\n按双方明确局部位置隔离/剖切，检查环、孔周端面、轴向挡肩及实际中间件；需匹配修订的分体CAD或逐件装配图。\n实际调查方法与观察 · 2 项\n支持与审查来源\nREADME.md\nbearing_roll_横滚轴承支承件.stl\nhip_l_髋部件.stl\nHAT元件位置与图纸对照-中文.csv\nHAT零件清单-中文.csv\nREADME.md\nREADME.md\nhip-connection-studies-2026-11-07\nconnection-source-sections-2026-11-07\n模型部件索引.csv\nrobot_walk.xml\n\n该分析保留审查依据与未决条件；实际接合、保持能力与工程验收仍需各自验证。\n\n原始连接审查、角色路径与几何证据",
+      "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-84f6829a25a82fefaf1d&part=part%3Amicroduck%3Afa9ee2f71faafb88&review=connection-review%3Amicroduck%3Ad22c650fc9abdaca&explode=0.00&detail=interfaces&inspection=1&view=iso&labels=0&grid=0&supplements=0",
+      "image": "d22c650fc9abdaca.png"
+    },
+    {
+      "reviewId": "connection-review:microduck:e42fab2d8700637e",
+      "participants": [
+        {
+          "part_ref": "part:microduck:cd6d48fccc95df41",
+          "feature_refs": [
+            "feature:microduck:cd6d48fccc95df41:4c6adb5a4bd2",
+            "feature:microduck:cd6d48fccc95df41:678d6de22520",
+            "feature:microduck:cd6d48fccc95df41:c762f0d8139b",
+            "feature:microduck:cd6d48fccc95df41:ee2340944a76",
+            "feature:microduck:cd6d48fccc95df41:f4716268e4b3"
+          ],
+          "opening_refs": [
+            "opening:microduck:cd6d48fccc95df41:e77de7cf187ae9b2"
+          ],
+          "site_refs": []
+        },
+        {
+          "part_ref": "part:microduck:fa9ee2f71faafb88",
+          "feature_refs": [
+            "feature:microduck:fa9ee2f71faafb88:0f97108977c9",
+            "feature:microduck:fa9ee2f71faafb88:296a39d9819c",
+            "feature:microduck:fa9ee2f71faafb88:61ab5d99f5cd",
+            "feature:microduck:fa9ee2f71faafb88:7c88d6e0ea46",
+            "feature:microduck:fa9ee2f71faafb88:8c530854bffc",
+            "feature:microduck:fa9ee2f71faafb88:b1c955159fb3",
+            "feature:microduck:fa9ee2f71faafb88:ed90b2c80473"
+          ],
+          "opening_refs": [
+            "opening:microduck:fa9ee2f71faafb88:61a17ff765f34335",
+            "opening:microduck:fa9ee2f71faafb88:966151ae6197c62f"
+          ],
+          "site_refs": []
+        }
+      ],
+      "text": "局部连接审查\n待补证据\nXL330 舵机 ↔ 髋部件 · 四孔螺钉夹持假设\n\n机制有依据 · 接合待验证\n\n对端 · XL330 舵机 · #95df41\nXL330 舵机 · 本次有限孔组\n源局部 -11.5, 0, 0 mm\n左腿与足部 · 参考装配位置 (6, 17.5, 102.5) mm\n查看源结构及三角见证\n查看源结构及三角见证\n查看源结构及三角见证\n查看源结构及三角见证\n查看有限源特征\n查看有限源特征\n查看有限源特征\n查看有限源特征\n本件 · 髋部件 · #aafb88\n髋部件 · 本次有限孔组\n源局部 17.5, -18.025, -0 mm\n左腿与足部 · 参考装配位置 (4, 0, 102.5) mm\n查看源结构及三角见证\n查看源结构及三角见证\n查看源结构及三角见证\n查看源结构及三角见证\n查看有限源特征\n查看有限源特征\n查看有限源特征\n查看有限源特征\n局部结构配对与兼容性\n两侧 1.600/2.400 mm 孔壁，轴距 0.0000 mm，有限间隔 0.0500 mm，重叠 0.0000 mm。\n两侧 1.600/2.400 mm 孔壁，轴距 0.0000 mm，有限间隔 0.0500 mm，重叠 0.0000 mm。\n两侧 1.600/2.400 mm 孔壁，轴距 0.0000 mm，有限间隔 0.0500 mm，重叠 0.0000 mm。\n两侧 1.600/2.400 mm 孔壁，轴距 0.0000 mm，有限间隔 0.0500 mm，重叠 0.0000 mm。\n两侧 16.000/16.000 mm 圆柱结构，轴距 0.0000 mm，有限间隔 0.0500 mm，重叠 0.0000 mm。\n两侧 16.000/6.000 mm 圆柱结构，轴距 0.0000 mm，有限间隔 0.0500 mm，重叠 0.0000 mm。\n两侧 16.000/19.000 mm 圆柱结构，轴距 0.0000 mm，有限间隔 2.0000 mm，重叠 0.0000 mm。\n两侧 1.600/4.840 mm 孔壁，轴距 0.0001 mm，有限间隔 3.0000 mm，重叠 0.0000 mm。\n机制候选与适用范围\n螺钉通过髋部件的本组大孔，进入XL330 舵机接收结构形成夹持。有几何与一般机制依据，实际保持未知。\n定位\n有依据的假设\n4组有限孔壁和所有对应轴/组距为连接件轴线与板件相位提供几何定位解释；未将源body当固定依据。\n保持\n仍缺依据\n条件性保持路径为螺钉头压板→接收螺纹/螺母；源模型无螺钉及螺纹，实际夹紧、抗拔与承载仍未知。\n运动\n仍缺依据\n必须分别确认舵机壳体/输出件的局部归属；同一个STL网格或同一个仿真body不证明整件刚性随动。\n限位\n仍缺依据\n孔壁、台阶或扩口不自动证明行程限位、止转或允许旋入深度，需核对实物承座与干涉。\n已执行调查的具体结论\n双方具体源局部位置：XL330 舵机 (-11.500, 6.000, 0.000) mm；(-11.500, -6.000, -0.000) mm；(-11.500, 0.000, 6.000) mm；(-11.500, 0.000, -6.000) mm；髋部件 (11.500, -18.025, -0.000) mm；(23.500, -18.025, -0.000) mm；(17.500, -18.025, 6.000) mm；(17.500, -18.025, -6.000) mm。\n实际独立截面及共同构型比较了 4 组有限孔壁。两侧 1.600/2.400 mm 孔壁，轴距 0.0000 mm，有限间隔 0.0500 mm，重叠 0.0000 mm。 两侧 1.600/2.400 mm 孔壁，轴距 0.0000 mm，有限间隔 0.0500 mm，重叠 0.0000 mm。 两侧 1.600/2.400 mm 孔壁，轴距 0.0000 mm，有限间隔 0.0500 mm，重叠 0.0000 mm。 两侧 1.600/2.400 mm 孔壁，轴距 0.0000 mm，有限间隔 0.0500 mm，重叠 0.0000 mm。\n四条轴线与孔组在一个固定构型中对应；Ø1.6 mm接收孔/较大通过孔与厂家穿板装配图共同支持螺钉夹持解释，不确认实物螺纹或紧固。\n第三件与紧固件\nscrew：若采用所述夹持机制，必须有独立螺钉；实际数量、规格及保持状态没有BOM依据。\n反证与不一致\nSTL为简化的参考外形，所见圆柱不包含制造螺纹、真实紧固件或预紧；几何阈值不是公差。\n替代解释\n也可能通过分离舵盘、独立嵌件或穿透螺钉/螺母承接；这些部件在当前源模型未分体确认。\n还缺少的证据\n髋部件这组孔的装入侧、完整头部承座及实际使用孔数尚未由装配图确认。\nXL330 舵机对应孔的实际螺纹/螺母/嵌件身份、螺钉长度、材料与制造公差缺证。\n该局部接收区域归舵机壳体、输出舵盘还是其他活动件，以及实际保持、限位、连续路径与载荷未确认。\n下一步可执行调查\n按列出的局部坐标复核XL330 舵机内外侧承座/入口；取得同修订分体CAD或逐孔装配图以确认接收区域和真实紧固件。\n按列出的局部坐标复核髋部件内外侧承座/入口；取得同修订分体CAD或逐孔装配图以确认接收区域和真实紧固件。\n查看有依据的关系假设\n实际调查方法与观察 · 3 项\n支持与审查来源\nREADME.md\nhip_l_髋部件.stl\nxl330_XL330舵机外形.stl\nHAT元件位置与图纸对照-中文.csv\nHAT零件清单-中文.csv\nREADME.md\nREADME.md\nhip-connection-studies-2026-11-07\nconnection-source-sections-2026-11-07\n模型部件索引.csv\nrobot_walk.xml\nROBOTIS XL330 壳体及随动端装配图\nROBOTIS X330 舵盘螺钉长度示意\n\n该分析保留审查依据与未决条件；实际接合、保持能力与工程验收仍需各自验证。\n\n原始连接审查、角色路径与几何证据",
+      "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-84f6829a25a82fefaf1d&part=part%3Amicroduck%3Afa9ee2f71faafb88&review=connection-review%3Amicroduck%3Ae42fab2d8700637e&explode=0.00&detail=interfaces&inspection=1&view=iso&labels=0&grid=0&supplements=0",
+      "image": "e42fab2d8700637e.png"
+    }
+  ],
+  "errors": []
+}

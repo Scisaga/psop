@@ -19,7 +19,9 @@ PIN_HOLE_FIT_PROFILE = "psop.hardware.source-model/1.7"
 CONNECTOR_DIRECTION_PROFILE = "psop.hardware.source-model/1.8"
 INVESTIGATION_PROFILE = "psop.hardware.source-model/1.9"
 RELATIONSHIP_PROFILE = "psop.hardware.source-model/1.10"
-MOUNTING_PROFILES = {MOUNTING_PROFILE, MOUNTING_PATTERNS_PROFILE, CONNECTION_REVIEW_PROFILE, PIN_HOLE_FIT_PROFILE, CONNECTOR_DIRECTION_PROFILE, INVESTIGATION_PROFILE, RELATIONSHIP_PROFILE}
+CONNECTION_ANALYSIS_PROFILE = "psop.hardware.source-model/1.11"
+RELATIONSHIP_PROFILES = {RELATIONSHIP_PROFILE, CONNECTION_ANALYSIS_PROFILE}
+MOUNTING_PROFILES = {MOUNTING_PROFILE, MOUNTING_PATTERNS_PROFILE, CONNECTION_REVIEW_PROFILE, PIN_HOLE_FIT_PROFILE, CONNECTOR_DIRECTION_PROFILE, INVESTIGATION_PROFILE, *RELATIONSHIP_PROFILES}
 
 
 def _status():
@@ -56,7 +58,7 @@ def _dkp_query(path, part_a, part_b):
         raise ValueError("--dkp must be a published data-only DKP directory")
     manifest = read_json(root / "manifest.json")
     if manifest.get("profile") not in {SOURCE_PROFILE, *MOUNTING_PROFILES}:
-        raise ValueError("DKP query requires an explicitly supported source-model/1.3 through 1.10 contract")
+        raise ValueError("DKP query requires an explicitly supported source-model/1.3 through 1.11 contract")
     validation = validate(root)
     if not validation.get("valid"):
         raise ValueError("DKP validation did not succeed")
@@ -92,8 +94,10 @@ def _dkp_query(path, part_a, part_b):
     structures = [item for item in knowledge.get("structure_candidates", []) if item["owner_ref"] in requested]
     regions = [item for item in knowledge.get("review_regions", []) if item["owner_ref"] in requested]
     hypotheses = [item for item in knowledge.get("installation_hypotheses", []) if {p["part_ref"] for p in item["participants"]} == requested]
-    investigations = [item for item in knowledge.get("investigation_records", []) if item["part_ref"] in requested]
-    selected_entities += structures + regions + hypotheses + investigations
+    findings = [item for item in knowledge.get("connection_review_findings", []) if item["review_ref"] in review_refs]
+    finding_studies = {"investigation:" + item["study_ref"] for item in findings if item.get("study_ref")}
+    investigations = [item for item in knowledge.get("investigation_records", []) if item["part_ref"] in requested or item["id"] in finding_studies]
+    selected_entities += structures + regions + hypotheses + investigations + findings
     source_refs = {ref for entity in selected_entities for ref in entity.get("source_refs", [])}
     evidence_refs = {ref for entity in selected_entities for ref in entity.get("evidence_refs", [])}
     evidence = read_json(local_path(root, manifest["entrypoints"]["evidence"]))["items"]
@@ -129,7 +133,7 @@ def _dkp_query(path, part_a, part_b):
             "limitations": ["Reference matches retain the supplied assertion provenance and frozen source Configuration; they do not enumerate all other possible installations.",
                 "User-asserted mounting sites retain their shared underlying holes; two entry sites do not create two independent physical resources.",
                 "This command executes no installation, simulation step or modification to the package."]})
-    if validation["profile"] in {CONNECTION_REVIEW_PROFILE, PIN_HOLE_FIT_PROFILE, CONNECTOR_DIRECTION_PROFILE, INVESTIGATION_PROFILE, RELATIONSHIP_PROFILE}:
+    if validation["profile"] in {CONNECTION_REVIEW_PROFILE, PIN_HOLE_FIT_PROFILE, CONNECTOR_DIRECTION_PROFILE, INVESTIGATION_PROFILE, *RELATIONSHIP_PROFILES}:
         result.update({"basis": "published_connection_reviews", "status": "reference_matches" if mounts else "connection_review" if reviews else "unknown",
             "reason": "source_pair_connection_review_available" if reviews else "pair_outside_bounded_review_scope",
             "functional_interfaces": [], "installation_definitions": interfaces,
@@ -147,20 +151,24 @@ def _dkp_query(path, part_a, part_b):
             "limitations": ["All-pair bounded screening records its scope; a separated bound is not proof that no indirect or alternative connection exists.",
                 "Connection reviews and illustrative connector models are read-only Build knowledge, not a simulated assembly or a qualified complete interface.",
                 "This command executes no installation, simulation step or modification to the package."]})
-    if validation["profile"] in {PIN_HOLE_FIT_PROFILE, CONNECTOR_DIRECTION_PROFILE, INVESTIGATION_PROFILE, RELATIONSHIP_PROFILE}:
+    if validation["profile"] in {PIN_HOLE_FIT_PROFILE, CONNECTOR_DIRECTION_PROFILE, INVESTIGATION_PROFILE, *RELATIONSHIP_PROFILES}:
         result.update({"pin_hole_fits": pin_fits,
             "reference_connector_schematics": [item for item in components if item["usage"] == "reference_connector"],
             "unverified_alternative_schematics": [item for item in components if item["usage"] == "unverified_alternative"]})
-    if validation["profile"] in {INVESTIGATION_PROFILE, RELATIONSHIP_PROFILE}:
+    if validation["profile"] in {INVESTIGATION_PROFILE, *RELATIONSHIP_PROFILES}:
         result.update(structure_candidates=structures, review_regions=regions,
             part_investigations=[item for item in knowledge["part_investigations"] if item["part_ref"] in requested],
             review_coverage=knowledge["review_coverage"])
-    if validation["profile"] == RELATIONSHIP_PROFILE:
+    if validation["profile"] in RELATIONSHIP_PROFILES:
         result.update(installation_hypotheses=hypotheses, investigation_records=investigations,
             relationship_coverage=knowledge["relationship_coverage"])
         if hypotheses:
             result.update(status="installation_hypotheses", basis="published_completed_relationship_research",
                 reason="bounded_counterpart_mechanism_and_evidence_available")
+    if validation["profile"] == CONNECTION_ANALYSIS_PROFILE:
+        result.update(connection_review_findings=findings,
+            connection_relation_contexts=[c for c in knowledge["connection_relation_contexts"] if requested <= set(c["part_refs"])],
+            connection_analysis_coverage=knowledge["connection_analysis_coverage"])
     return result
 
 

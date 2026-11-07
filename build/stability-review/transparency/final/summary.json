@@ -1,0 +1,124 @@
+{
+  "raycasts": 24,
+  "phases": [
+    {
+      "phase": "initial",
+      "durationMs": 3270.699999988079,
+      "frames": 162,
+      "fps": 49.22493655810279,
+      "transitions": 1
+    },
+    {
+      "phase": "initial-selected",
+      "durationMs": 1349.7999999821186,
+      "frames": 77,
+      "fps": 56.304637724853166,
+      "transitions": 0
+    },
+    {
+      "phase": "focus",
+      "durationMs": 2410.5,
+      "frames": 141,
+      "fps": 58.079236672889444,
+      "transitions": 0
+    },
+    {
+      "phase": "rotate-10s",
+      "durationMs": 13659.700000017881,
+      "frames": 814,
+      "fps": 59.51814461510397,
+      "transitions": 0
+    },
+    {
+      "phase": "rotation-settle",
+      "durationMs": 2567.199999988079,
+      "frames": 137,
+      "fps": 52.97600498622294,
+      "transitions": 1
+    },
+    {
+      "phase": "zoom-10s",
+      "durationMs": 15732.90000000596,
+      "frames": 945,
+      "fps": 60.00165258786634,
+      "transitions": 0
+    },
+    {
+      "phase": "zoom-settle",
+      "durationMs": 2916.199999988079,
+      "frames": 157,
+      "fps": 53.49427336967207,
+      "transitions": 0
+    },
+    {
+      "phase": "alternate",
+      "durationMs": 9941.199999988079,
+      "frames": 571,
+      "fps": 57.33714239736486,
+      "transitions": 2
+    },
+    {
+      "phase": "other-opening",
+      "durationMs": 3463.2000000178814,
+      "frames": 173,
+      "fps": 49.66504966479323,
+      "transitions": 1
+    },
+    {
+      "phase": "restore",
+      "durationMs": 3700,
+      "frames": 199,
+      "fps": 53.513513513513516,
+      "transitions": 0
+    },
+    {
+      "phase": "clear-selection",
+      "durationMs": 2107.4000000059605,
+      "frames": 103,
+      "fps": 48.40087311365261,
+      "transitions": 0
+    }
+  ],
+  "transitions": [
+    {
+      "time": 3849.0999999940395,
+      "phase": "initial",
+      "parts": [
+        "part:microduck:cd6d48fccc95df41"
+      ]
+    },
+    {
+      "time": 25941.90000000596,
+      "phase": "rotation-settle",
+      "parts": [
+        "part:microduck:cd6d48fccc95df41",
+        "part:microduck:47a950fbb3d0e416",
+        "part:microduck:cb253f38c818b9d8"
+      ]
+    },
+    {
+      "time": 53465.09999999404,
+      "phase": "alternate",
+      "parts": [
+        "part:microduck:cd6d48fccc95df41",
+        "part:microduck:47a950fbb3d0e416",
+        "part:microduck:cb253f38c818b9d8",
+        "part:microduck:fa9ee2f71faafb88"
+      ]
+    },
+    {
+      "time": 53724,
+      "phase": "alternate",
+      "parts": [
+        "part:microduck:47a950fbb3d0e416",
+        "part:microduck:fa9ee2f71faafb88"
+      ]
+    },
+    {
+      "time": 55907.80000001192,
+      "phase": "other-opening",
+      "parts": []
+    }
+  ],
+  "errors": []
+}

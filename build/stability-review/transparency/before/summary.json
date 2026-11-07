@@ -1,0 +1,565 @@
+{
+  "raycasts": 517,
+  "phases": [
+    {
+      "phase": "initial",
+      "durationMs": 3685,
+      "frames": 142,
+      "fps": 38.26322930800543,
+      "transitions": 1
+    },
+    {
+      "phase": "initial-selected",
+      "durationMs": 1466.7999999821186,
+      "frames": 63,
+      "fps": 42.268884647365574,
+      "transitions": 0
+    },
+    {
+      "phase": "focus",
+      "durationMs": 2901.699999988079,
+      "frames": 121,
+      "fps": 41.355067719093284,
+      "transitions": 0
+    },
+    {
+      "phase": "rotate-10s",
+      "durationMs": 16583.30000001192,
+      "frames": 535,
+      "fps": 32.20106975087082,
+      "transitions": 41
+    },
+    {
+      "phase": "rotation-settle",
+      "durationMs": 2916.5999999940395,
+      "frames": 125,
+      "fps": 42.5152574916867,
+      "transitions": 0
+    },
+    {
+      "phase": "zoom-10s",
+      "durationMs": 18349.30000001192,
+      "frames": 801,
+      "fps": 43.59839339917492,
+      "transitions": 0
+    },
+    {
+      "phase": "zoom-settle",
+      "durationMs": 2850.100000023842,
+      "frames": 132,
+      "fps": 45.96329953296521,
+      "transitions": 0
+    },
+    {
+      "phase": "alternate",
+      "durationMs": 10821.5,
+      "frames": 526,
+      "fps": 48.514531257219424,
+      "transitions": 10
+    },
+    {
+      "phase": "other-opening",
+      "durationMs": 3450,
+      "frames": 149,
+      "fps": 42.89855072463768,
+      "transitions": 1
+    },
+    {
+      "phase": "restore",
+      "durationMs": 3583.300000011921,
+      "frames": 191,
+      "fps": 53.023749057954376,
+      "transitions": 0
+    }
+  ],
+  "transitions": [
+    {
+      "time": 5136.700000017881,
+      "phase": "initial",
+      "parts": [
+        "part:microduck:cd6d48fccc95df41"
+      ]
+    },
+    {
+      "time": 13155.100000023842,
+      "phase": "rotate-10s",
+      "parts": [
+        "part:microduck:cd6d48fccc95df41",
+        "part:microduck:c75bfc0afb35e000"
+      ]
+    },
+    {
+      "time": 13360.40000000596,
+      "phase": "rotate-10s",
+      "parts": [
+        "part:microduck:cd6d48fccc95df41",
+        "part:microduck:4cf80d5a57c8cb04",
+        "part:microduck:c75bfc0afb35e000"
+      ]
+    },
+    {
+      "time": 13638,
+      "phase": "rotate-10s",
+      "parts": [
+        "part:microduck:cd6d48fccc95df41",
+        "part:microduck:fa9ee2f71faafb88",
+        "part:microduck:4cf80d5a57c8cb04",
+        "part:microduck:c75bfc0afb35e000",
+        "part:microduck:9ffe9d5bcd6bc13a"
+      ]
+    },
+    {
+      "time": 13790.800000011921,
+      "phase": "rotate-10s",
+      "parts": [
+        "part:microduck:cd6d48fccc95df41",
+        "part:microduck:bb34e925e25e29f6",
+        "part:microduck:fa9ee2f71faafb88",
+        "part:microduck:4cf80d5a57c8cb04",
+        "part:microduck:9ffe9d5bcd6bc13a"
+      ]
+    },
+    {
+      "time": 13912.800000011921,
+      "phase": "rotate-10s",
+      "parts": [
+        "part:microduck:cd6d48fccc95df41",
+        "part:microduck:bb34e925e25e29f6",
+        "part:microduck:fa9ee2f71faafb88",
+        "part:microduck:9ffe9d5bcd6bc13a"
+      ]
+    },
+    {
+      "time": 14038,
+      "phase": "rotate-10s",
+      "parts": [
+        "part:microduck:cd6d48fccc95df41",
+        "part:microduck:bb34e925e25e29f6",
+        "part:microduck:fa9ee2f71faafb88",
+        "part:microduck:9ffe9d5bcd6bc13a",
+        "part:microduck:c75bfc0afb35e000"
+      ]
+    },
+    {
+      "time": 14174.200000017881,
+      "phase": "rotate-10s",
+      "parts": [
+        "part:microduck:cd6d48fccc95df41",
+        "part:microduck:fa9ee2f71faafb88",
+        "part:microduck:9ffe9d5bcd6bc13a"
+      ]
+    },
+    {
+      "time": 14318.40000000596,
+      "phase": "rotate-10s",
+      "parts": [
+        "part:microduck:cd6d48fccc95df41",
+        "part:microduck:fa9ee2f71faafb88",
+        "part:microduck:66c73aaad945a993",
+        "part:microduck:9ffe9d5bcd6bc13a"
+      ]
+    },
+    {
+      "time": 14892.40000000596,
+      "phase": "rotate-10s",
+      "parts": [
+        "part:microduck:cd6d48fccc95df41",
+        "part:microduck:bb34e925e25e29f6",
+        "part:microduck:fa9ee2f71faafb88",
+        "part:microduck:9ffe9d5bcd6bc13a"
+      ]
+    },
+    {
+      "time": 15187.300000011921,
+      "phase": "rotate-10s",
+      "parts": [
+        "part:microduck:cd6d48fccc95df41",
+        "part:microduck:bb34e925e25e29f6",
+        "part:microduck:fa9ee2f71faafb88",
+        "part:microduck:9ffe9d5bcd6bc13a",
+        "part:microduck:c75bfc0afb35e000"
+      ]
+    },
+    {
+      "time": 15535.300000011921,
+      "phase": "rotate-10s",
+      "parts": [
+        "part:microduck:cd6d48fccc95df41",
+        "part:microduck:cb253f38c818b9d8",
+        "part:microduck:bb34e925e25e29f6",
+        "part:microduck:fa9ee2f71faafb88",
+        "part:microduck:9ffe9d5bcd6bc13a"
+      ]
+    },
+    {
+      "time": 15662.100000023842,
+      "phase": "rotate-10s",
+      "parts": [
+        "part:microduck:cd6d48fccc95df41",
+        "part:microduck:47a950fbb3d0e416",
+        "part:microduck:cb253f38c818b9d8",
+        "part:microduck:fa9ee2f71faafb88",
+        "part:microduck:9ffe9d5bcd6bc13a"
+      ]
+    },
+    {
+      "time": 15761.100000023842,
+      "phase": "rotate-10s",
+      "parts": [
+        "part:microduck:cd6d48fccc95df41",
+        "part:microduck:47a950fbb3d0e416",
+        "part:microduck:cb253f38c818b9d8",
+        "part:microduck:fa9ee2f71faafb88"
+      ]
+    },
+    {
+      "time": 16025.200000017881,
+      "phase": "rotate-10s",
+      "parts": [
+        "part:microduck:cd6d48fccc95df41",
+        "part:microduck:47a950fbb3d0e416",
+        "part:microduck:fa9ee2f71faafb88"
+      ]
+    },
+    {
+      "time": 17224.90000000596,
+      "phase": "rotate-10s",
+      "parts": [
+        "part:microduck:cd6d48fccc95df41",
+        "part:microduck:47a950fbb3d0e416"
+      ]
+    },
+    {
+      "time": 17361.70000001788,
+      "phase": "rotate-10s",
+      "parts": [
+        "part:microduck:cd6d48fccc95df41",
+        "part:microduck:47a950fbb3d0e416",
+        "part:microduck:cb253f38c818b9d8"
+      ]
+    },
+    {
+      "time": 17772.100000023842,
+      "phase": "rotate-10s",
+      "parts": [
+        "part:microduck:cd6d48fccc95df41",
+        "part:microduck:cb253f38c818b9d8"
+      ]
+    },
+    {
+      "time": 18040,
+      "phase": "rotate-10s",
+      "parts": [
+        "part:microduck:cd6d48fccc95df41"
+      ]
+    },
+    {
+      "time": 18437.30000001192,
+      "phase": "rotate-10s",
+      "parts": [
+        "part:microduck:cd6d48fccc95df41",
+        "part:microduck:55970da91992f38c"
+      ]
+    },
+    {
+      "time": 19114,
+      "phase": "rotate-10s",
+      "parts": [
+        "part:microduck:55970da91992f38c",
+        "part:microduck:cd6d48fccc95df41",
+        "part:microduck:b364863ffde63eed"
+      ]
+    },
+    {
+      "time": 19551.600000023842,
+      "phase": "rotate-10s",
+      "parts": [
+        "part:microduck:55970da91992f38c",
+        "part:microduck:cd6d48fccc95df41",
+        "part:microduck:b364863ffde63eed",
+        "part:microduck:203d2686e3321e4a"
+      ]
+    },
+    {
+      "time": 19827.90000000596,
+      "phase": "rotate-10s",
+      "parts": [
+        "part:microduck:b364863ffde63eed",
+        "part:microduck:203d2686e3321e4a",
+        "part:microduck:55970da91992f38c",
+        "part:microduck:cd6d48fccc95df41",
+        "part:microduck:e27cbdd6c07a264e"
+      ]
+    },
+    {
+      "time": 19950.40000000596,
+      "phase": "rotate-10s",
+      "parts": [
+        "part:microduck:b364863ffde63eed",
+        "part:microduck:203d2686e3321e4a",
+        "part:microduck:55970da91992f38c",
+        "part:microduck:cd6d48fccc95df41",
+        "part:microduck:e27cbdd6c07a264e",
+        "part:microduck:a682dc3620df43f5"
+      ]
+    },
+    {
+      "time": 21639.100000023842,
+      "phase": "rotate-10s",
+      "parts": [
+        "part:microduck:203d2686e3321e4a",
+        "part:microduck:a682dc3620df43f5",
+        "part:microduck:55970da91992f38c",
+        "part:microduck:cd6d48fccc95df41",
+        "part:microduck:b364863ffde63eed"
+      ]
+    },
+    {
+      "time": 22127.20000001788,
+      "phase": "rotate-10s",
+      "parts": [
+        "part:microduck:203d2686e3321e4a",
+        "part:microduck:a682dc3620df43f5",
+        "part:microduck:e7e8275c7d01674c",
+        "part:microduck:55970da91992f38c",
+        "part:microduck:cd6d48fccc95df41"
+      ]
+    },
+    {
+      "time": 22276.90000000596,
+      "phase": "rotate-10s",
+      "parts": [
+        "part:microduck:203d2686e3321e4a",
+        "part:microduck:a682dc3620df43f5",
+        "part:microduck:e7e8275c7d01674c",
+        "part:microduck:f97c1c6580d651d7",
+        "part:microduck:55970da91992f38c",
+        "part:microduck:cd6d48fccc95df41"
+      ]
+    },
+    {
+      "time": 22669.5,
+      "phase": "rotate-10s",
+      "parts": [
+        "part:microduck:203d2686e3321e4a",
+        "part:microduck:e7e8275c7d01674c",
+        "part:microduck:f97c1c6580d651d7",
+        "part:microduck:55970da91992f38c",
+        "part:microduck:cd6d48fccc95df41"
+      ]
+    },
+    {
+      "time": 22920.80000001192,
+      "phase": "rotate-10s",
+      "parts": [
+        "part:microduck:e7e8275c7d01674c",
+        "part:microduck:f97c1c6580d651d7",
+        "part:microduck:cd6d48fccc95df41",
+        "part:microduck:55970da91992f38c"
+      ]
+    },
+    {
+      "time": 23687.600000023842,
+      "phase": "rotate-10s",
+      "parts": [
+        "part:microduck:e7e8275c7d01674c",
+        "part:microduck:f97c1c6580d651d7",
+        "part:microduck:cd6d48fccc95df41"
+      ]
+    },
+    {
+      "time": 24090.100000023842,
+      "phase": "rotate-10s",
+      "parts": [
+        "part:microduck:e7e8275c7d01674c",
+        "part:microduck:cd6d48fccc95df41",
+        "part:microduck:48099e14105d3289"
+      ]
+    },
+    {
+      "time": 24345.20000001788,
+      "phase": "rotate-10s",
+      "parts": [
+        "part:microduck:e7e8275c7d01674c",
+        "part:microduck:cd6d48fccc95df41",
+        "part:microduck:48099e14105d3289",
+        "part:microduck:087d7a46a3ce4ca3"
+      ]
+    },
+    {
+      "time": 24482.5,
+      "phase": "rotate-10s",
+      "parts": [
+        "part:microduck:cd6d48fccc95df41",
+        "part:microduck:087d7a46a3ce4ca3",
+        "part:microduck:48099e14105d3289"
+      ]
+    },
+    {
+      "time": 24779,
+      "phase": "rotate-10s",
+      "parts": [
+        "part:microduck:cd6d48fccc95df41",
+        "part:microduck:087d7a46a3ce4ca3"
+      ]
+    },
+    {
+      "time": 25138.80000001192,
+      "phase": "rotate-10s",
+      "parts": [
+        "part:microduck:cd6d48fccc95df41"
+      ]
+    },
+    {
+      "time": 25670.600000023842,
+      "phase": "rotate-10s",
+      "parts": [
+        "part:microduck:e7e8275c7d01674c",
+        "part:microduck:cd6d48fccc95df41"
+      ]
+    },
+    {
+      "time": 26061.30000001192,
+      "phase": "rotate-10s",
+      "parts": [
+        "part:microduck:cd6d48fccc95df41",
+        "part:microduck:e7e8275c7d01674c",
+        "part:microduck:47a950fbb3d0e416"
+      ]
+    },
+    {
+      "time": 26192.80000001192,
+      "phase": "rotate-10s",
+      "parts": [
+        "part:microduck:cd6d48fccc95df41",
+        "part:microduck:47a950fbb3d0e416"
+      ]
+    },
+    {
+      "time": 27671.80000001192,
+      "phase": "rotate-10s",
+      "parts": [
+        "part:microduck:cd6d48fccc95df41",
+        "part:microduck:47a950fbb3d0e416",
+        "part:microduck:cb253f38c818b9d8"
+      ]
+    },
+    {
+      "time": 28058.30000001192,
+      "phase": "rotate-10s",
+      "parts": [
+        "part:microduck:cd6d48fccc95df41",
+        "part:microduck:47a950fbb3d0e416",
+        "part:microduck:cb253f38c818b9d8",
+        "part:microduck:638f29b46b322e64"
+      ]
+    },
+    {
+      "time": 28325.20000001788,
+      "phase": "rotate-10s",
+      "parts": [
+        "part:microduck:cd6d48fccc95df41",
+        "part:microduck:47a950fbb3d0e416",
+        "part:microduck:cb253f38c818b9d8",
+        "part:microduck:7c130c8489b57c99"
+      ]
+    },
+    {
+      "time": 28445.5,
+      "phase": "rotate-10s",
+      "parts": [
+        "part:microduck:cd6d48fccc95df41",
+        "part:microduck:47a950fbb3d0e416",
+        "part:microduck:cb253f38c818b9d8"
+      ]
+    },
+    {
+      "time": 53843,
+      "phase": "alternate",
+      "parts": [
+        "part:microduck:cd6d48fccc95df41",
+        "part:microduck:47a950fbb3d0e416"
+      ]
+    },
+    {
+      "time": 53972.20000001788,
+      "phase": "alternate",
+      "parts": [
+        "part:microduck:47a950fbb3d0e416",
+        "part:microduck:fa9ee2f71faafb88"
+      ]
+    },
+    {
+      "time": 55322,
+      "phase": "alternate",
+      "parts": [
+        "part:microduck:cd6d48fccc95df41",
+        "part:microduck:47a950fbb3d0e416"
+      ]
+    },
+    {
+      "time": 55469.70000001788,
+      "phase": "alternate",
+      "parts": [
+        "part:microduck:cd6d48fccc95df41",
+        "part:microduck:47a950fbb3d0e416",
+        "part:microduck:cb253f38c818b9d8"
+      ]
+    },
+    {
+      "time": 57021.90000000596,
+      "phase": "alternate",
+      "parts": [
+        "part:microduck:cd6d48fccc95df41",
+        "part:microduck:47a950fbb3d0e416"
+      ]
+    },
+    {
+      "time": 57155.40000000596,
+      "phase": "alternate",
+      "parts": [
+        "part:microduck:47a950fbb3d0e416",
+        "part:microduck:fa9ee2f71faafb88"
+      ]
+    },
+    {
+      "time": 58505.60000002384,
+      "phase": "alternate",
+      "parts": [
+        "part:microduck:cd6d48fccc95df41",
+        "part:microduck:47a950fbb3d0e416"
+      ]
+    },
+    {
+      "time": 58652.30000001192,
+      "phase": "alternate",
+      "parts": [
+        "part:microduck:cd6d48fccc95df41",
+        "part:microduck:47a950fbb3d0e416",
+        "part:microduck:cb253f38c818b9d8"
+      ]
+    },
+    {
+      "time": 60205.70000001788,
+      "phase": "alternate",
+      "parts": [
+        "part:microduck:cd6d48fccc95df41",
+        "part:microduck:47a950fbb3d0e416"
+      ]
+    },
+    {
+      "time": 60344.80000001192,
+      "phase": "alternate",
+      "parts": [
+        "part:microduck:47a950fbb3d0e416",
+        "part:microduck:fa9ee2f71faafb88"
+      ]
+    },
+    {
+      "time": 64341.40000000596,
+      "phase": "other-opening",
+      "parts": []
+    }
+  ],
+  "errors": []
+}

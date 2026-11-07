@@ -27,7 +27,7 @@ class RelationshipPublication(unittest.TestCase):
             xml = REPO / "build/v2/cache/microduck-reference.xml"
             work = cls.root / "work"
             package.prepare(REPO / "device-materials/microduck-official-materials.zip", work, "microduck", "Microduck",
-                xml if xml.is_file() else None, profile=package.PROFILE,
+                xml if xml.is_file() else None, profile=package.FROZEN_RELATIONSHIP_PROFILE,
                 assembly_knowledge=REPO / "device-materials/microduck-assembly-knowledge.json",
                 investigation=REPO / "device-materials/interface-review/microduck-relations.json")
             package.finalize(work, cls.published, "2.0.0-relationship-publication.test")

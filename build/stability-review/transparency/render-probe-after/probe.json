@@ -1,0 +1,28 @@
+[
+  {
+    "ordering": {
+      "sourceOrder": [],
+      "translucentPartIds": [
+        "part:microduck:cd6d48fccc95df41",
+        "part:microduck:47a950fbb3d0e416",
+        "part:microduck:cb253f38c818b9d8"
+      ],
+      "camera": {
+        "position": [
+          -0.006292647609018303,
+          0.05501934502906711,
+          0.04814488594655085
+        ],
+        "target": [
+          0.02055000075697899,
+          0.01750000007450581,
+          0.09649999994784593
+        ]
+      },
+      "changedPixels": 0,
+      "maxDelta": 0,
+      "rmse": 0,
+      "totalPixels": 683760
+    }
+  }
+]

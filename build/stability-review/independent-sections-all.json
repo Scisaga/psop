@@ -1,0 +1,1735 @@
+{
+  "method": "independent-source-plane-sections/1",
+  "passed": 247,
+  "features": [
+    {
+      "id": "LS-01",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.868320735574235e-07,
+      "max_outward_radial_dot": -0.9998936321745105
+    },
+    {
+      "id": "LS-02",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.0484027505917957e-06,
+      "max_outward_radial_dot": -0.9998936433830905
+    },
+    {
+      "id": "LS-03",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.0479505786577855e-06,
+      "max_outward_radial_dot": -0.9998937467045232
+    },
+    {
+      "id": "LS-04",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.0481077896043033e-06,
+      "max_outward_radial_dot": -0.9998936324475569
+    },
+    {
+      "id": "LS-05",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.04844266759661e-06,
+      "max_outward_radial_dot": -0.9998937390025573
+    },
+    {
+      "id": "LS-06",
+      "source_triangles": 180,
+      "closed_section": true,
+      "max_radius_residual_m": 1.0474331260999867e-06,
+      "max_outward_radial_dot": -0.9997611948847388
+    },
+    {
+      "id": "CR-SECTION-6baf593c8ec3",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.0481107227035963e-06,
+      "max_outward_radial_dot": -0.9998936339680039
+    },
+    {
+      "id": "CR-SECTION-e123a730a4a2",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.0481543841821088e-06,
+      "max_outward_radial_dot": -0.9998937349848258
+    },
+    {
+      "id": "CR-SECTION-e01d63510a22",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.047950517370222e-06,
+      "max_outward_radial_dot": -0.9998937451128748
+    },
+    {
+      "id": "CR-SECTION-e5404fc65645",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.048172387991056e-06,
+      "max_outward_radial_dot": -0.9998936399724734
+    },
+    {
+      "id": "LG-01",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.0452364139596718e-06,
+      "max_outward_radial_dot": -0.999893758058404
+    },
+    {
+      "id": "LG-02",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.0448889071039153e-06,
+      "max_outward_radial_dot": -0.9998936207724108
+    },
+    {
+      "id": "LG-03",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.0453971534198254e-06,
+      "max_outward_radial_dot": -0.9998937608415984
+    },
+    {
+      "id": "LG-04",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.0452890367037247e-06,
+      "max_outward_radial_dot": -0.9998936177412312
+    },
+    {
+      "id": "LG-05",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.282614865968923e-06,
+      "max_outward_radial_dot": -0.9998940198328421
+    },
+    {
+      "id": "CR-SECTION-bd2199a2b8f6",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.1429276693536439e-06,
+      "max_outward_radial_dot": -0.9998939246314347
+    },
+    {
+      "id": "CR-SECTION-c47b1cf38960",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.1429873584250377e-06,
+      "max_outward_radial_dot": -0.9998939219015911
+    },
+    {
+      "id": "RS-DISPLAY-X",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.60046101250353e-07,
+      "max_outward_radial_dot": -0.9998933871915294
+    },
+    {
+      "id": "RS-DISPLAY-Z",
+      "source_triangles": 180,
+      "closed_section": true,
+      "max_radius_residual_m": 1.0474253337696207e-06,
+      "max_outward_radial_dot": -0.9997611944666103
+    },
+    {
+      "id": "RS-HORN-1",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.0481077896832332e-06,
+      "max_outward_radial_dot": -0.9998936324475569
+    },
+    {
+      "id": "RS-HORN-2",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.0484027506236712e-06,
+      "max_outward_radial_dot": -0.9998936433830905
+    },
+    {
+      "id": "RS-HORN-3",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.048442667629353e-06,
+      "max_outward_radial_dot": -0.9998937390025573
+    },
+    {
+      "id": "RS-HORN-4",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.0479505785628094e-06,
+      "max_outward_radial_dot": -0.9998937467045232
+    },
+    {
+      "id": "NECK-HORN-1",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.61540943377062e-07,
+      "max_outward_radial_dot": -0.9998940450377382
+    },
+    {
+      "id": "NECK-HORN-2",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.61540943377062e-07,
+      "max_outward_radial_dot": -0.9998940450377382
+    },
+    {
+      "id": "NECK-HORN-3",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.61540943377062e-07,
+      "max_outward_radial_dot": -0.9998940450377382
+    },
+    {
+      "id": "NECK-HORN-4",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.61540943377062e-07,
+      "max_outward_radial_dot": -0.9998940450377382
+    },
+    {
+      "id": "CR-SECTION-c945923ccd14",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 9.524472813343936e-07,
+      "max_outward_radial_dot": -0.9998939216048441
+    },
+    {
+      "id": "CR-SECTION-f37766542b91",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 9.524472813343936e-07,
+      "max_outward_radial_dot": -0.9998939216048441
+    },
+    {
+      "id": "CR-SECTION-11cfcd571e90",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.615581326068108e-07,
+      "max_outward_radial_dot": -0.9998940450623304
+    },
+    {
+      "id": "CR-SECTION-009c3a4be356",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.615581326068108e-07,
+      "max_outward_radial_dot": -0.9998940450623303
+    },
+    {
+      "id": "CR-SECTION-3961fc6c0466",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.615581326068108e-07,
+      "max_outward_radial_dot": -0.9998940450623304
+    },
+    {
+      "id": "CR-SECTION-b81891282027",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.615581326068108e-07,
+      "max_outward_radial_dot": -0.9998940450623304
+    },
+    {
+      "id": "BR-SERVO-1",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.0476356260696873e-06,
+      "max_outward_radial_dot": -0.9998938965159121
+    },
+    {
+      "id": "BR-SERVO-2",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.0477316510308903e-06,
+      "max_outward_radial_dot": -0.9998938239398311
+    },
+    {
+      "id": "BR-LINK-1",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.047290828197359e-06,
+      "max_outward_radial_dot": -0.9998939990085758
+    },
+    {
+      "id": "BR-LINK-2",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.0478166341094074e-06,
+      "max_outward_radial_dot": -0.9998938843362793
+    },
+    {
+      "id": "CR-SECTION-43323b54ea62",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.047313617650843e-06,
+      "max_outward_radial_dot": -0.999893998259055
+    },
+    {
+      "id": "CR-SECTION-97d1520b73a0",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.047657115513809e-06,
+      "max_outward_radial_dot": -0.9998938851603303
+    },
+    {
+      "id": "TORSO-HOUSING-1",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 9.491098645491875e-07,
+      "max_outward_radial_dot": -0.9998939205508899
+    },
+    {
+      "id": "TORSO-HOUSING-2",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 9.491042046296059e-07,
+      "max_outward_radial_dot": -0.9998939205508899
+    },
+    {
+      "id": "ACTUATOR-X-1",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.606955190774846e-07,
+      "max_outward_radial_dot": -0.9998940450377382
+    },
+    {
+      "id": "ACTUATOR-X-2",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.606955190774846e-07,
+      "max_outward_radial_dot": -0.9998940450377382
+    },
+    {
+      "id": "ACTUATOR-X-3",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.606955190774846e-07,
+      "max_outward_radial_dot": -0.9998940450377382
+    },
+    {
+      "id": "ACTUATOR-X-4",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.606955190774846e-07,
+      "max_outward_radial_dot": -0.9998940450377382
+    },
+    {
+      "id": "CR-SECTION-a8114388a041",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 9.521802241539874e-07,
+      "max_outward_radial_dot": -0.9998939705930672
+    },
+    {
+      "id": "CR-SECTION-0b25d4eeb3df",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 9.521802241539874e-07,
+      "max_outward_radial_dot": -0.9998939705930672
+    },
+    {
+      "id": "CR-SECTION-009c3a4be356",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.615581326068108e-07,
+      "max_outward_radial_dot": -0.9998940450623303
+    },
+    {
+      "id": "CR-SECTION-b81891282027",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.615581326068108e-07,
+      "max_outward_radial_dot": -0.9998940450623304
+    },
+    {
+      "id": "CR-SECTION-11cfcd571e90",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.615581326068108e-07,
+      "max_outward_radial_dot": -0.9998940450623304
+    },
+    {
+      "id": "CR-SECTION-3961fc6c0466",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.615581326068108e-07,
+      "max_outward_radial_dot": -0.9998940450623304
+    },
+    {
+      "id": "HIP-Y-1",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.142532830168859e-06,
+      "max_outward_radial_dot": -0.9998939615198557
+    },
+    {
+      "id": "HIP-Y-2",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.1428459928627694e-06,
+      "max_outward_radial_dot": -0.9998939529692144
+    },
+    {
+      "id": "HIP-Y-3",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.1428459928298097e-06,
+      "max_outward_radial_dot": -0.9998939529692144
+    },
+    {
+      "id": "HIP-Y-4",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.1423806083035379e-06,
+      "max_outward_radial_dot": -0.9998940502780036
+    },
+    {
+      "id": "HIP-X-1",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.1423180430424063e-06,
+      "max_outward_radial_dot": -0.9998940571671064
+    },
+    {
+      "id": "HIP-X-2",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.1423180430424063e-06,
+      "max_outward_radial_dot": -0.9998940571671064
+    },
+    {
+      "id": "HIP-X-3",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.1423180430424063e-06,
+      "max_outward_radial_dot": -0.9998940571671064
+    },
+    {
+      "id": "HIP-X-4",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.1423180430424063e-06,
+      "max_outward_radial_dot": -0.9998940571671064
+    },
+    {
+      "id": "CR-SECTION-bbf43e18143e",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.1423066081297107e-06,
+      "max_outward_radial_dot": -0.9998940571985104
+    },
+    {
+      "id": "CR-SECTION-59cbb62fb897",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.1423066081297107e-06,
+      "max_outward_radial_dot": -0.9998940571985104
+    },
+    {
+      "id": "CR-SECTION-5f47efff9194",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.1423066081297107e-06,
+      "max_outward_radial_dot": -0.9998940571985104
+    },
+    {
+      "id": "CR-SECTION-c9e78a6d87df",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.1423066081297107e-06,
+      "max_outward_radial_dot": -0.9998940571985104
+    },
+    {
+      "id": "CR-SECTION-506752305792",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.1424056412217675e-06,
+      "max_outward_radial_dot": -0.9998940503494381
+    },
+    {
+      "id": "CR-SECTION-cb475a9c0986",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.1425196417640636e-06,
+      "max_outward_radial_dot": -0.9998939614167374
+    },
+    {
+      "id": "CR-SECTION-78dc68b55b62",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.1428731574425997e-06,
+      "max_outward_radial_dot": -0.9998939533238078
+    },
+    {
+      "id": "CR-SECTION-fb552ed0eb77",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.1428731574425997e-06,
+      "max_outward_radial_dot": -0.9998939533238078
+    },
+    {
+      "id": "HIP-Y-1",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.142532830168859e-06,
+      "max_outward_radial_dot": -0.9998939615198557
+    },
+    {
+      "id": "HIP-Y-2",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.1428459928627694e-06,
+      "max_outward_radial_dot": -0.9998939529692144
+    },
+    {
+      "id": "HIP-Y-3",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.1428459928298097e-06,
+      "max_outward_radial_dot": -0.9998939529692144
+    },
+    {
+      "id": "HIP-Y-4",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.1423806083035379e-06,
+      "max_outward_radial_dot": -0.9998940502780036
+    },
+    {
+      "id": "HIP-X-1",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.1423180430424063e-06,
+      "max_outward_radial_dot": -0.9998940571671064
+    },
+    {
+      "id": "HIP-X-2",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.1423180430424063e-06,
+      "max_outward_radial_dot": -0.9998940571671064
+    },
+    {
+      "id": "HIP-X-3",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.1423180430424063e-06,
+      "max_outward_radial_dot": -0.9998940571671064
+    },
+    {
+      "id": "HIP-X-4",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.1423180430424063e-06,
+      "max_outward_radial_dot": -0.9998940571671064
+    },
+    {
+      "id": "CR-SECTION-506752305792",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.1424056412217675e-06,
+      "max_outward_radial_dot": -0.9998940503494381
+    },
+    {
+      "id": "CR-SECTION-cb475a9c0986",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.1425196417640636e-06,
+      "max_outward_radial_dot": -0.9998939614167374
+    },
+    {
+      "id": "CR-SECTION-78dc68b55b62",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.1428731574425997e-06,
+      "max_outward_radial_dot": -0.9998939533238078
+    },
+    {
+      "id": "CR-SECTION-fb552ed0eb77",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.1428731574425997e-06,
+      "max_outward_radial_dot": -0.9998939533238078
+    },
+    {
+      "id": "CR-SECTION-c9e78a6d87df",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.1423066081297107e-06,
+      "max_outward_radial_dot": -0.9998940571985104
+    },
+    {
+      "id": "CR-SECTION-5f47efff9194",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.1423066081297107e-06,
+      "max_outward_radial_dot": -0.9998940571985104
+    },
+    {
+      "id": "CR-SECTION-59cbb62fb897",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.1423066081297107e-06,
+      "max_outward_radial_dot": -0.9998940571985104
+    },
+    {
+      "id": "CR-SECTION-bbf43e18143e",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.1423066081297107e-06,
+      "max_outward_radial_dot": -0.9998940571985104
+    },
+    {
+      "id": "ACTUATOR-X-1",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.606955190774846e-07,
+      "max_outward_radial_dot": -0.9998940450377382
+    },
+    {
+      "id": "ACTUATOR-X-2",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.606955190774846e-07,
+      "max_outward_radial_dot": -0.9998940450377382
+    },
+    {
+      "id": "ACTUATOR-X-3",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.606955190774846e-07,
+      "max_outward_radial_dot": -0.9998940450377382
+    },
+    {
+      "id": "ACTUATOR-X-4",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.606955190774846e-07,
+      "max_outward_radial_dot": -0.9998940450377382
+    },
+    {
+      "id": "CR-SECTION-c945923ccd14",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 9.524472813343936e-07,
+      "max_outward_radial_dot": -0.9998939216048441
+    },
+    {
+      "id": "CR-SECTION-f37766542b91",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 9.524472813343936e-07,
+      "max_outward_radial_dot": -0.9998939216048441
+    },
+    {
+      "id": "CR-SECTION-009c3a4be356",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.615581326068108e-07,
+      "max_outward_radial_dot": -0.9998940450623303
+    },
+    {
+      "id": "CR-SECTION-3961fc6c0466",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.615581326068108e-07,
+      "max_outward_radial_dot": -0.9998940450623304
+    },
+    {
+      "id": "CR-SECTION-11cfcd571e90",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.615581326068108e-07,
+      "max_outward_radial_dot": -0.9998940450623304
+    },
+    {
+      "id": "CR-SECTION-b81891282027",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.615581326068108e-07,
+      "max_outward_radial_dot": -0.9998940450623304
+    },
+    {
+      "id": "ACTUATOR-X-1",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.606955190774846e-07,
+      "max_outward_radial_dot": -0.9998940450377382
+    },
+    {
+      "id": "ACTUATOR-X-2",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.606955190774846e-07,
+      "max_outward_radial_dot": -0.9998940450377382
+    },
+    {
+      "id": "ACTUATOR-X-3",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.606955190774846e-07,
+      "max_outward_radial_dot": -0.9998940450377382
+    },
+    {
+      "id": "ACTUATOR-X-4",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.606955190774846e-07,
+      "max_outward_radial_dot": -0.9998940450377382
+    },
+    {
+      "id": "CR-SECTION-a8114388a041",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 9.521802241539874e-07,
+      "max_outward_radial_dot": -0.9998939705930672
+    },
+    {
+      "id": "CR-SECTION-0b25d4eeb3df",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 9.521802241539874e-07,
+      "max_outward_radial_dot": -0.9998939705930672
+    },
+    {
+      "id": "CR-SECTION-c945923ccd14",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 9.524472813343936e-07,
+      "max_outward_radial_dot": -0.9998939216048441
+    },
+    {
+      "id": "CR-SECTION-f37766542b91",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 9.524472813343936e-07,
+      "max_outward_radial_dot": -0.9998939216048441
+    },
+    {
+      "id": "CR-SECTION-b81891282027",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.615581326068108e-07,
+      "max_outward_radial_dot": -0.9998940450623304
+    },
+    {
+      "id": "CR-SECTION-009c3a4be356",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.615581326068108e-07,
+      "max_outward_radial_dot": -0.9998940450623303
+    },
+    {
+      "id": "CR-SECTION-3961fc6c0466",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.615581326068108e-07,
+      "max_outward_radial_dot": -0.9998940450623304
+    },
+    {
+      "id": "CR-SECTION-11cfcd571e90",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.615581326068108e-07,
+      "max_outward_radial_dot": -0.9998940450623304
+    },
+    {
+      "id": "ACTUATOR-X-1",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.606955190774846e-07,
+      "max_outward_radial_dot": -0.9998940450377382
+    },
+    {
+      "id": "ACTUATOR-X-2",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.606955190774846e-07,
+      "max_outward_radial_dot": -0.9998940450377382
+    },
+    {
+      "id": "ACTUATOR-X-3",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.606955190774846e-07,
+      "max_outward_radial_dot": -0.9998940450377382
+    },
+    {
+      "id": "ACTUATOR-X-4",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.606955190774846e-07,
+      "max_outward_radial_dot": -0.9998940450377382
+    },
+    {
+      "id": "CR-SECTION-c945923ccd14",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 9.524472813343936e-07,
+      "max_outward_radial_dot": -0.9998939216048441
+    },
+    {
+      "id": "CR-SECTION-f37766542b91",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 9.524472813343936e-07,
+      "max_outward_radial_dot": -0.9998939216048441
+    },
+    {
+      "id": "CR-SECTION-b81891282027",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.615581326068108e-07,
+      "max_outward_radial_dot": -0.9998940450623304
+    },
+    {
+      "id": "CR-SECTION-11cfcd571e90",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.615581326068108e-07,
+      "max_outward_radial_dot": -0.9998940450623304
+    },
+    {
+      "id": "CR-SECTION-3961fc6c0466",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.615581326068108e-07,
+      "max_outward_radial_dot": -0.9998940450623304
+    },
+    {
+      "id": "CR-SECTION-009c3a4be356",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.615581326068108e-07,
+      "max_outward_radial_dot": -0.9998940450623303
+    },
+    {
+      "id": "CR-SECTION-d6c422a1c615",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.0474324978356191e-06,
+      "max_outward_radial_dot": -0.9998939476680904
+    },
+    {
+      "id": "CR-SECTION-19094ab3bfaa",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.047539607342213e-06,
+      "max_outward_radial_dot": -0.9998938954938105
+    },
+    {
+      "id": "CR-SECTION-6f5df550e67e",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.0475677167146816e-06,
+      "max_outward_radial_dot": -0.9998939028416411
+    },
+    {
+      "id": "CR-SECTION-7ffa664b82a1",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.0475893397702413e-06,
+      "max_outward_radial_dot": -0.99989393531186
+    },
+    {
+      "id": "CR-SECTION-3961fc6c0466",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.615581326068108e-07,
+      "max_outward_radial_dot": -0.9998940450623304
+    },
+    {
+      "id": "CR-SECTION-009c3a4be356",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.615581326068108e-07,
+      "max_outward_radial_dot": -0.9998940450623303
+    },
+    {
+      "id": "CR-SECTION-b81891282027",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.615581326068108e-07,
+      "max_outward_radial_dot": -0.9998940450623304
+    },
+    {
+      "id": "CR-SECTION-11cfcd571e90",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.615581326068108e-07,
+      "max_outward_radial_dot": -0.9998940450623304
+    },
+    {
+      "id": "CR-SECTION-c945923ccd14",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 9.524472813343936e-07,
+      "max_outward_radial_dot": -0.9998939216048441
+    },
+    {
+      "id": "CR-SECTION-f37766542b91",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 9.524472813343936e-07,
+      "max_outward_radial_dot": -0.9998939216048441
+    },
+    {
+      "id": "CR-SECTION-c945923ccd14",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 9.524472813343936e-07,
+      "max_outward_radial_dot": -0.9998939216048441
+    },
+    {
+      "id": "CR-SECTION-f37766542b91",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 9.524472813343936e-07,
+      "max_outward_radial_dot": -0.9998939216048441
+    },
+    {
+      "id": "CR-SECTION-3961fc6c0466",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.615581326068108e-07,
+      "max_outward_radial_dot": -0.9998940450623304
+    },
+    {
+      "id": "CR-SECTION-b81891282027",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.615581326068108e-07,
+      "max_outward_radial_dot": -0.9998940450623304
+    },
+    {
+      "id": "CR-SECTION-009c3a4be356",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.615581326068108e-07,
+      "max_outward_radial_dot": -0.9998940450623303
+    },
+    {
+      "id": "CR-SECTION-11cfcd571e90",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.615581326068108e-07,
+      "max_outward_radial_dot": -0.9998940450623304
+    },
+    {
+      "id": "CR-SECTION-bd2199a2b8f6",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.1429276693536439e-06,
+      "max_outward_radial_dot": -0.9998939246314347
+    },
+    {
+      "id": "CR-SECTION-c47b1cf38960",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.1429873584250377e-06,
+      "max_outward_radial_dot": -0.9998939219015911
+    },
+    {
+      "id": "CR-SECTION-cc101dfac60b",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.0474324978356191e-06,
+      "max_outward_radial_dot": -0.9998939476680904
+    },
+    {
+      "id": "CR-SECTION-c7a15f5fd783",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.047539607342213e-06,
+      "max_outward_radial_dot": -0.9998938954938105
+    },
+    {
+      "id": "CR-SECTION-620f49b16591",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.0475677167146816e-06,
+      "max_outward_radial_dot": -0.9998939028416411
+    },
+    {
+      "id": "CR-SECTION-17517a797535",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.0475893397702413e-06,
+      "max_outward_radial_dot": -0.99989393531186
+    },
+    {
+      "id": "CR-SECTION-1e4dd33092b8",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.142526598380553e-06,
+      "max_outward_radial_dot": -0.999893993994361
+    },
+    {
+      "id": "CR-SECTION-c6346099e661",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.1426427206384128e-06,
+      "max_outward_radial_dot": -0.9998939537635994
+    },
+    {
+      "id": "CR-SECTION-bd6b2a15fca0",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.0472629185830692e-06,
+      "max_outward_radial_dot": -0.9998940112701512
+    },
+    {
+      "id": "CR-SECTION-8046746e4e04",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.0475527091418062e-06,
+      "max_outward_radial_dot": -0.9998938977009937
+    },
+    {
+      "id": "CR-SECTION-163fda7566a1",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.047443706584392e-06,
+      "max_outward_radial_dot": -0.9998939361850958
+    },
+    {
+      "id": "CR-SECTION-8d4685bb3e92",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.0474335018911818e-06,
+      "max_outward_radial_dot": -0.9998939341771443
+    },
+    {
+      "id": "CR-SECTION-20930ae92712",
+      "source_triangles": 160,
+      "closed_section": true,
+      "max_radius_residual_m": 9.758314768893578e-07,
+      "max_outward_radial_dot": -0.9997433800265341
+    },
+    {
+      "id": "CR-SECTION-5f69d861039d",
+      "source_triangles": 160,
+      "closed_section": true,
+      "max_radius_residual_m": 9.760851983693815e-07,
+      "max_outward_radial_dot": -0.99975049750748
+    },
+    {
+      "id": "CR-SECTION-a9accaef816a",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.0475895322664339e-06,
+      "max_outward_radial_dot": -0.9998938959117935
+    },
+    {
+      "id": "CR-SECTION-6bf2902a757e",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.047659276835495e-06,
+      "max_outward_radial_dot": -0.99989382495023
+    },
+    {
+      "id": "CR-SECTION-43323b54ea62",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.047313617650843e-06,
+      "max_outward_radial_dot": -0.999893998259055
+    },
+    {
+      "id": "CR-SECTION-97d1520b73a0",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.047657115513809e-06,
+      "max_outward_radial_dot": -0.9998938851603303
+    },
+    {
+      "id": "CR-SECTION-8999ea74a555",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.0476109566198277e-06,
+      "max_outward_radial_dot": -0.9998938957100629
+    },
+    {
+      "id": "CR-SECTION-f53928e4579e",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.0476109566198277e-06,
+      "max_outward_radial_dot": -0.9998938957100629
+    },
+    {
+      "id": "CR-SECTION-37e1ce76212f",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.047989299936573e-06,
+      "max_outward_radial_dot": -0.9998937590352999
+    },
+    {
+      "id": "CR-SECTION-4e14f53cb192",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.0475255020137627e-06,
+      "max_outward_radial_dot": -0.9998938716313405
+    },
+    {
+      "id": "CR-SECTION-f37766542b91",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 9.524472813343936e-07,
+      "max_outward_radial_dot": -0.9998939216048441
+    },
+    {
+      "id": "CR-SECTION-c945923ccd14",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 9.524472813343936e-07,
+      "max_outward_radial_dot": -0.9998939216048441
+    },
+    {
+      "id": "CR-SECTION-009c3a4be356",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.615581326068108e-07,
+      "max_outward_radial_dot": -0.9998940450623303
+    },
+    {
+      "id": "CR-SECTION-b81891282027",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.615581326068108e-07,
+      "max_outward_radial_dot": -0.9998940450623304
+    },
+    {
+      "id": "CR-SECTION-11cfcd571e90",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.615581326068108e-07,
+      "max_outward_radial_dot": -0.9998940450623304
+    },
+    {
+      "id": "CR-SECTION-3961fc6c0466",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.615581326068108e-07,
+      "max_outward_radial_dot": -0.9998940450623304
+    },
+    {
+      "id": "CR-SECTION-a6e51a6ad7e7",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.095199246814579e-06,
+      "max_outward_radial_dot": -0.9998938887022798
+    },
+    {
+      "id": "CR-SECTION-bb6267d6d3ac",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.0953532143950177e-06,
+      "max_outward_radial_dot": -0.9998938434093168
+    },
+    {
+      "id": "CR-SECTION-5166f736cbc7",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.095199246814579e-06,
+      "max_outward_radial_dot": -0.9998938887022798
+    },
+    {
+      "id": "CR-SECTION-1cfd63cbd405",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.0953532143950177e-06,
+      "max_outward_radial_dot": -0.9998938434093168
+    },
+    {
+      "id": "CR-SECTION-2ed833fb2b24",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.0967354274998408e-06,
+      "max_outward_radial_dot": -0.9998933118030301
+    },
+    {
+      "id": "CR-SECTION-89b8429d49b5",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.0966308320505685e-06,
+      "max_outward_radial_dot": -0.9998931602960159
+    },
+    {
+      "id": "CR-SECTION-e4c9e8eba2b1",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.0962435427119485e-06,
+      "max_outward_radial_dot": -0.9998932984296762
+    },
+    {
+      "id": "CR-SECTION-871eefc7ea78",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.0966611104993706e-06,
+      "max_outward_radial_dot": -0.9998932060365945
+    },
+    {
+      "id": "CR-SECTION-f37766542b91",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 9.524472813343936e-07,
+      "max_outward_radial_dot": -0.9998939216048441
+    },
+    {
+      "id": "CR-SECTION-c945923ccd14",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 9.524472813343936e-07,
+      "max_outward_radial_dot": -0.9998939216048441
+    },
+    {
+      "id": "CR-SECTION-b81891282027",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.615581326068108e-07,
+      "max_outward_radial_dot": -0.9998940450623304
+    },
+    {
+      "id": "CR-SECTION-009c3a4be356",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.615581326068108e-07,
+      "max_outward_radial_dot": -0.9998940450623303
+    },
+    {
+      "id": "CR-SECTION-3961fc6c0466",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.615581326068108e-07,
+      "max_outward_radial_dot": -0.9998940450623304
+    },
+    {
+      "id": "CR-SECTION-11cfcd571e90",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.615581326068108e-07,
+      "max_outward_radial_dot": -0.9998940450623304
+    },
+    {
+      "id": "CR-SECTION-8f3e4b481ae5",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.615581326068108e-07,
+      "max_outward_radial_dot": -0.9998940450623303
+    },
+    {
+      "id": "CR-SECTION-49c62c6d5535",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.615581326068108e-07,
+      "max_outward_radial_dot": -0.9998940450623304
+    },
+    {
+      "id": "CR-SECTION-41c33ac1fd80",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.615581326068108e-07,
+      "max_outward_radial_dot": -0.9998940450623304
+    },
+    {
+      "id": "CR-SECTION-893fa258859f",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.615581326068108e-07,
+      "max_outward_radial_dot": -0.9998940450623304
+    },
+    {
+      "id": "CR-SECTION-c945923ccd14",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 9.524472813343936e-07,
+      "max_outward_radial_dot": -0.9998939216048441
+    },
+    {
+      "id": "CR-SECTION-f37766542b91",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 9.524472813343936e-07,
+      "max_outward_radial_dot": -0.9998939216048441
+    },
+    {
+      "id": "CR-SECTION-009c3a4be356",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.615581326068108e-07,
+      "max_outward_radial_dot": -0.9998940450623303
+    },
+    {
+      "id": "CR-SECTION-b81891282027",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.615581326068108e-07,
+      "max_outward_radial_dot": -0.9998940450623304
+    },
+    {
+      "id": "CR-SECTION-11cfcd571e90",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.615581326068108e-07,
+      "max_outward_radial_dot": -0.9998940450623304
+    },
+    {
+      "id": "CR-SECTION-3961fc6c0466",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.615581326068108e-07,
+      "max_outward_radial_dot": -0.9998940450623304
+    },
+    {
+      "id": "CR-SECTION-35b393e312e6",
+      "source_triangles": 180,
+      "closed_section": true,
+      "max_radius_residual_m": 1.0469005021398591e-06,
+      "max_outward_radial_dot": -0.9997618959726519
+    },
+    {
+      "id": "CR-SECTION-0b2fa7cd0f02",
+      "source_triangles": 180,
+      "closed_section": true,
+      "max_radius_residual_m": 1.0470469605670593e-06,
+      "max_outward_radial_dot": -0.9997618557513672
+    },
+    {
+      "id": "CR-SECTION-7bf21513783a",
+      "source_triangles": 180,
+      "closed_section": true,
+      "max_radius_residual_m": 1.047106697925999e-06,
+      "max_outward_radial_dot": -0.9997618898338021
+    },
+    {
+      "id": "CR-SECTION-771ec23fe588",
+      "source_triangles": 180,
+      "closed_section": true,
+      "max_radius_residual_m": 1.0470022610879152e-06,
+      "max_outward_radial_dot": -0.9997620795625877
+    },
+    {
+      "id": "CR-SECTION-b81891282027",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.615581326068108e-07,
+      "max_outward_radial_dot": -0.9998940450623304
+    },
+    {
+      "id": "CR-SECTION-11cfcd571e90",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.615581326068108e-07,
+      "max_outward_radial_dot": -0.9998940450623304
+    },
+    {
+      "id": "CR-SECTION-3961fc6c0466",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.615581326068108e-07,
+      "max_outward_radial_dot": -0.9998940450623304
+    },
+    {
+      "id": "CR-SECTION-009c3a4be356",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.615581326068108e-07,
+      "max_outward_radial_dot": -0.9998940450623303
+    },
+    {
+      "id": "CR-SECTION-2ed833fb2b24",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.0967354274998408e-06,
+      "max_outward_radial_dot": -0.9998933118030301
+    },
+    {
+      "id": "CR-SECTION-89b8429d49b5",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.0966308320505685e-06,
+      "max_outward_radial_dot": -0.9998931602960159
+    },
+    {
+      "id": "CR-SECTION-e4c9e8eba2b1",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.0962435427119485e-06,
+      "max_outward_radial_dot": -0.9998932984296762
+    },
+    {
+      "id": "CR-SECTION-871eefc7ea78",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.0966611104993706e-06,
+      "max_outward_radial_dot": -0.9998932060365945
+    },
+    {
+      "id": "CR-SECTION-249c95867256",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.0475471439827955e-06,
+      "max_outward_radial_dot": -0.9998938988581756
+    },
+    {
+      "id": "CR-SECTION-a75d4beee989",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.0475471439827955e-06,
+      "max_outward_radial_dot": -0.9998938988581756
+    },
+    {
+      "id": "CR-SECTION-d43813f0f5d1",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.047978625819167e-06,
+      "max_outward_radial_dot": -0.9998937589285101
+    },
+    {
+      "id": "CR-SECTION-1fd44c279ec3",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.0474329317764798e-06,
+      "max_outward_radial_dot": -0.999893960642664
+    },
+    {
+      "id": "CR-SECTION-370305c643b3",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.0475471439827955e-06,
+      "max_outward_radial_dot": -0.9998938988581756
+    },
+    {
+      "id": "CR-SECTION-91ddb7ce9c46",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.0475471439827955e-06,
+      "max_outward_radial_dot": -0.9998938988581756
+    },
+    {
+      "id": "CR-SECTION-8177b0a62fb2",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.047978625819167e-06,
+      "max_outward_radial_dot": -0.9998937589285101
+    },
+    {
+      "id": "CR-SECTION-5918370cadb9",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.0474329317764798e-06,
+      "max_outward_radial_dot": -0.999893960642664
+    },
+    {
+      "id": "CR-SECTION-1e38800f6db2",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.0470487419684746e-06,
+      "max_outward_radial_dot": -0.9998940703191349
+    },
+    {
+      "id": "CR-SECTION-3b336ae33e17",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.0470487419684746e-06,
+      "max_outward_radial_dot": -0.9998940703191349
+    },
+    {
+      "id": "CR-SECTION-87f19b47dc7b",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.0470487419684746e-06,
+      "max_outward_radial_dot": -0.9998940703191349
+    },
+    {
+      "id": "CR-SECTION-74849b7c63c8",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.0470487419684746e-06,
+      "max_outward_radial_dot": -0.9998940703191349
+    },
+    {
+      "id": "CR-SECTION-c945923ccd14",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 9.524472813343936e-07,
+      "max_outward_radial_dot": -0.9998939216048441
+    },
+    {
+      "id": "CR-SECTION-f37766542b91",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 9.524472813343936e-07,
+      "max_outward_radial_dot": -0.9998939216048441
+    },
+    {
+      "id": "CR-SECTION-4e14f53cb192",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.0475255020137627e-06,
+      "max_outward_radial_dot": -0.9998938716313405
+    },
+    {
+      "id": "CR-SECTION-37e1ce76212f",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.047989299936573e-06,
+      "max_outward_radial_dot": -0.9998937590352999
+    },
+    {
+      "id": "CR-SECTION-f53928e4579e",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.0476109566198277e-06,
+      "max_outward_radial_dot": -0.9998938957100629
+    },
+    {
+      "id": "CR-SECTION-8999ea74a555",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.0476109566198277e-06,
+      "max_outward_radial_dot": -0.9998938957100629
+    },
+    {
+      "id": "CR-SECTION-bd6b2a15fca0",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.0472629185830692e-06,
+      "max_outward_radial_dot": -0.9998940112701512
+    },
+    {
+      "id": "CR-SECTION-8046746e4e04",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.0475527091418062e-06,
+      "max_outward_radial_dot": -0.9998938977009937
+    },
+    {
+      "id": "CR-SECTION-163fda7566a1",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.047443706584392e-06,
+      "max_outward_radial_dot": -0.9998939361850958
+    },
+    {
+      "id": "CR-SECTION-8d4685bb3e92",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.0474335018911818e-06,
+      "max_outward_radial_dot": -0.9998939341771443
+    },
+    {
+      "id": "CR-SECTION-20930ae92712",
+      "source_triangles": 160,
+      "closed_section": true,
+      "max_radius_residual_m": 9.758314768893578e-07,
+      "max_outward_radial_dot": -0.9997433800265341
+    },
+    {
+      "id": "CR-SECTION-5f69d861039d",
+      "source_triangles": 160,
+      "closed_section": true,
+      "max_radius_residual_m": 9.760851983693815e-07,
+      "max_outward_radial_dot": -0.99975049750748
+    },
+    {
+      "id": "CR-SECTION-1e4dd33092b8",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.142526598380553e-06,
+      "max_outward_radial_dot": -0.999893993994361
+    },
+    {
+      "id": "CR-SECTION-c6346099e661",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.1426427206384128e-06,
+      "max_outward_radial_dot": -0.9998939537635994
+    },
+    {
+      "id": "CR-SECTION-c945923ccd14",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 9.524472813343936e-07,
+      "max_outward_radial_dot": -0.9998939216048441
+    },
+    {
+      "id": "CR-SECTION-f37766542b91",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 9.524472813343936e-07,
+      "max_outward_radial_dot": -0.9998939216048441
+    },
+    {
+      "id": "CR-SECTION-009c3a4be356",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.615581326068108e-07,
+      "max_outward_radial_dot": -0.9998940450623303
+    },
+    {
+      "id": "CR-SECTION-11cfcd571e90",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.615581326068108e-07,
+      "max_outward_radial_dot": -0.9998940450623304
+    },
+    {
+      "id": "CR-SECTION-b81891282027",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.615581326068108e-07,
+      "max_outward_radial_dot": -0.9998940450623304
+    },
+    {
+      "id": "CR-SECTION-3961fc6c0466",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.615581326068108e-07,
+      "max_outward_radial_dot": -0.9998940450623304
+    },
+    {
+      "id": "CR-SECTION-f37766542b91",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 9.524472813343936e-07,
+      "max_outward_radial_dot": -0.9998939216048441
+    },
+    {
+      "id": "CR-SECTION-c945923ccd14",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 9.524472813343936e-07,
+      "max_outward_radial_dot": -0.9998939216048441
+    },
+    {
+      "id": "CR-SECTION-0b25d4eeb3df",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 9.521802241539874e-07,
+      "max_outward_radial_dot": -0.9998939705930672
+    },
+    {
+      "id": "CR-SECTION-a8114388a041",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 9.521802241539874e-07,
+      "max_outward_radial_dot": -0.9998939705930672
+    },
+    {
+      "id": "CR-SECTION-b81891282027",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.615581326068108e-07,
+      "max_outward_radial_dot": -0.9998940450623304
+    },
+    {
+      "id": "CR-SECTION-3961fc6c0466",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.615581326068108e-07,
+      "max_outward_radial_dot": -0.9998940450623304
+    },
+    {
+      "id": "CR-SECTION-11cfcd571e90",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.615581326068108e-07,
+      "max_outward_radial_dot": -0.9998940450623304
+    },
+    {
+      "id": "CR-SECTION-009c3a4be356",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.615581326068108e-07,
+      "max_outward_radial_dot": -0.9998940450623303
+    },
+    {
+      "id": "CR-SECTION-f148bd6bbd57",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.0470255116838082e-06,
+      "max_outward_radial_dot": -0.9998940913296603
+    },
+    {
+      "id": "CR-SECTION-16d45a2b4920",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.0471238428304188e-06,
+      "max_outward_radial_dot": -0.9998940463782408
+    },
+    {
+      "id": "CR-SECTION-635d3fbb72fe",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.0471238428304188e-06,
+      "max_outward_radial_dot": -0.9998940463782408
+    },
+    {
+      "id": "CR-SECTION-8bc5f8649db0",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.047170253741991e-06,
+      "max_outward_radial_dot": -0.9998940098234512
+    },
+    {
+      "id": "CR-SECTION-7ece7dad5241",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.1902304330572728e-06,
+      "max_outward_radial_dot": -0.9998939229073437
+    },
+    {
+      "id": "CR-SECTION-52143691a576",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.1902304330572728e-06,
+      "max_outward_radial_dot": -0.9998939229073437
+    },
+    {
+      "id": "CR-SECTION-b158ef511b2d",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.1900090810010137e-06,
+      "max_outward_radial_dot": -0.9998940221119337
+    },
+    {
+      "id": "CR-SECTION-1e318054000e",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.1900090810010137e-06,
+      "max_outward_radial_dot": -0.9998940221119337
+    },
+    {
+      "id": "CR-SECTION-f5fac6abcecf",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 9.761892212965893e-07,
+      "max_outward_radial_dot": -0.9998939100632712
+    },
+    {
+      "id": "CR-SECTION-c5f425079051",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 9.769305791740204e-07,
+      "max_outward_radial_dot": -0.999893796134624
+    },
+    {
+      "id": "CR-SECTION-8f41c2c2c001",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.2852593475507715e-06,
+      "max_outward_radial_dot": -0.9998939587035856
+    },
+    {
+      "id": "CR-SECTION-67501dfc85e4",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.2852593475507715e-06,
+      "max_outward_radial_dot": -0.9998939587035856
+    }
+  ]
+}

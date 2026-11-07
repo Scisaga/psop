@@ -177,6 +177,35 @@ Microduck 新输入为 `device-materials/interface-review/microduck-relations.js
 解释器分开验证；尚未有依据的右壳 Z 向台阶孔及支承件另一组孔仍有具体调查
 记录并保持 insufficient。
 
+## 1.11：已有连接审查进入机制分析
+
+新默认合同 `psop.hardware.source-model/1.11` 接收冻结输入
+`psop.interface-investigation/1.2`。原 1.10 模块、Schema、三条假设和原件字节
+保持不变。新输入是 `device-materials/interface-review/microduck-connection-analysis.json`。
+
+解释链为 `ConnectionReview → 双方有限局部结构配对 → 机制候选 → 已执行证据审查
+→ 有范围假设/具体待证结果 → 独立漏项接受 → 发布`。原 `pair_screenings`、
+`connection_reviews`、`mounting_interfaces`、`reference_mounts` 和已接合记录
+继续保留各自资格；几何候选不借新数组成为正式安装定义。
+
+`connection_review_findings` 按 `review_ref` 关联原审查，包含双方 Part、
+structure/feature/opening 引用、源局部坐标、有限直径/轴距/间隔/重叠、机制、
+定位/保持/运动/限位、实际 actions、发现、反证、替代、第三件、缺项和下一步。
+无依据的局部位置为 null；不能用原点或任意首个结构代替。自动配对保持
+`not_investigated + geometry_only`；只有冻结的 `connection_review_studies`
+能标 `investigated`。有机制依据的四孔通过/接收结构仍须双方独立原三角截面、
+完整共同构型和全部组距通过，才产生 `supported_hypothesis`，实际保持仍 unknown。
+
+`connection_analysis_coverage` 枚举全部70实例及211已有审查，分别引用安装定义、
+假设、已调查缺证、仅几何和尚未调查结果；原候选中另有12对有限线索未进入旧审查，
+保留双方具体位置、有限几何测量和调查方法。`connection_relation_contexts`
+保存真实三个以上源部件的机构语境，不把间接链压成直接固定关系。
+
+`expected_review_findings` 的7个独立接受案例要求六对髋部逐项结果和另一类左踝
+的具体机制。删除关系/假设或退化成通用 next_actions 后重算 coverage，仍必须失败。
+全量重放是额外的完整性检查，不代替独立接受。Simulate 查询读取同一 findings、
+假设和多件语境，继续 `execution_performed=false`，不产生合格 Interface。
+
 ## 参数化方式与装配方案
 
 详细语义统一引用[原子特征、参数化接口与装配方案](../../../docs/architecture/assembly-interfaces.md)。带功能依据的能力由独立共享 assembly 合同描述：稳定原子孔/角色、Interface/mode、S 选择约束、互补角色、连接件、共同构型、局部路径与四维判断。

@@ -309,6 +309,20 @@ export interface InvestigationRecord {
   actions: { method: string; source_refs: string[]; observation: string }[];
   findings: string[]; missing_evidence: string[]; hypothesis_refs: string[]; stop_reason: string;
 }
+export interface ConnectionReviewFinding {
+  id: string; review_ref: string; title: string;
+  work_status: 'investigated' | 'not_investigated';
+  evidence_status: 'supported_hypothesis' | 'insufficient' | 'geometry_only';
+  participants: { part_ref: string; structure_refs: string[]; feature_refs: string[]; opening_refs: string[]; position_local_m: Vec3 | null; label: string; role: string }[];
+  local_pairings: { participant_refs: string[]; feature_refs: string[]; geometry_checks: { name?: string; kind?: string; value?: number | number[]; residual?: number; unit?: string; result?: string; statement?: string }[]; statement: string }[];
+  mechanism_candidates: { kind: string; status: string; summary: string }[];
+  roles: { role: 'location' | 'retention' | 'motion' | 'limit'; status: string; statement: string }[];
+  actions: { method: string; source_refs: string[]; observation: string }[];
+  findings: string[]; counterevidence: string[]; alternatives: string[];
+  intermediate_components: { kind: string; requirement: string; status: string; statement: string }[];
+  missing_evidence: string[]; next_actions: string[]; hypothesis_refs: string[];
+  source_refs: string[]; evidence_refs: string[];
+}
 export interface MechanicalAnalysis {
   frames: MechanicalFrame[];
   features: MechanicalFeature[];
@@ -331,6 +345,17 @@ export interface MechanicalAnalysis {
   review_coverage?: ReviewCoverage;
   installation_hypotheses?: InstallationHypothesis[];
   investigation_records?: InvestigationRecord[];
+  connection_review_findings?: ConnectionReviewFinding[];
+  connection_relation_contexts?: {
+    id: string; title: string; part_refs: string[]; statement: string;
+    missing_evidence: string[]; source_refs: string[]; finding_refs: string[];
+    status: 'investigated_insufficient';
+  }[];
+  connection_analysis_coverage?: {
+    parts: { part_ref: string; name: string; installation_definition_refs: string[]; hypothesis_refs: string[]; finding_refs: string[]; investigated_insufficient_refs: string[]; geometry_only_refs: string[]; uninvestigated_refs: string[]; mechanisms: string[]; context_refs: string[] }[];
+    unreviewed_geometric_pairs: { part_refs: string[]; structure_refs: string[]; next_action: string; work_status: 'not_investigated'; evidence_status: 'geometry_only' }[];
+    [key: string]: unknown;
+  };
   relationship_coverage?: {
     expected_count: number; located_count: number;
     matches: { id: string; hypothesis_ref: string }[]; missing: string[];

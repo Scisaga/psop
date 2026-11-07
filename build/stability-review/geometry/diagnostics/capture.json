@@ -1,0 +1,2097 @@
+{
+  "phase": "diagnostics",
+  "origin": "http://127.0.0.1:8780",
+  "snapshot": "dkp-1c8eeda600249ce33b99",
+  "digest": "1c8eeda600249ce33b99ec622417a744d5cdaf43a512f1495a4780ae0030cb00",
+  "capturedAtUtc": "2026-11-07T09:15:06.557Z",
+  "sourceCodeSha256": "f4a40c1b778bbc74a555fe0eebdbbf03e806810ad681747aafafe88694795fda",
+  "records": [
+    {
+      "target": "right-y42-z52",
+      "mode": "source-facets",
+      "image": "right-y42-z52-source-facets.png",
+      "partRef": "part:microduck:9d70b219a5533bf1",
+      "openingRef": "opening:microduck:9d70b219a5533bf1:ce6aaab539c0f712",
+      "camera": [
+        -0.033587387165606844,
+        0.01719999998575077,
+        0.15588252252119836,
+        -0.038000000206215995,
+        -0.0008000000142492285,
+        0.15499999991307653
+      ],
+      "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-1c8eeda600249ce33b99&part=part%3Amicroduck%3A9d70b219a5533bf1&opening=opening%3Amicroduck%3A9d70b219a5533bf1%3Ace6aaab539c0f712&explode=0.00&detail=geometry&view=iso&isolate=part%3Amicroduck%3A9d70b219a5533bf1&labels=0&grid=0&supplements=0&camera=-0.0335874%2C0.0172000%2C0.1558825%2C-0.0380000%2C-0.0008000%2C0.1550000",
+      "actualCamera": {
+        "position": [
+          -0.029676099058512324,
+          0.03315498749083738,
+          0.15666478014261725
+        ],
+        "target": [
+          -0.03800000020621599,
+          -0.0008000000142492285,
+          0.15499999991307653
+        ]
+      },
+      "indexed": false,
+      "vertices": 62910,
+      "sourceDisplayMapping": {
+        "positions": "unchanged",
+        "facetOrder": "identity",
+        "sourceFacetCount": 20970,
+        "creaseDegrees": 35,
+        "normalPolicy": "edge_connected_angle_weighted",
+        "adjacencyToleranceM": 1e-8
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "high-performance",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "pixelRatio": 1,
+      "renderer": "WebKit WebGL",
+      "selectedEdge": false,
+      "objects": [
+        {
+          "type": "Group",
+          "userData": {
+            "selection": {
+              "kind": "opening",
+              "id": "opening:microduck:9d70b219a5533bf1:ce6aaab539c0f712",
+              "ownerRef": "part:microduck:9d70b219a5533bf1"
+            },
+            "authority": "geometry_only",
+            "surface": false,
+            "contextPartRefs": [],
+            "entryFocused": true
+          },
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "material": null
+        },
+        {
+          "type": "Group",
+          "userData": {
+            "featureType": "circular_opening",
+            "sourceTriangleCount": 0
+          },
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "material": null
+        },
+        {
+          "type": "LineLoop",
+          "userData": {
+            "openingBoundary": true
+          },
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "material": {
+            "type": "LineBasicMaterial",
+            "depthTest": true,
+            "depthWrite": false,
+            "transparent": true,
+            "opacity": 0.98,
+            "polygonOffset": false,
+            "polygonOffsetFactor": 0,
+            "polygonOffsetUnits": 0,
+            "renderOrder": 0
+          }
+        }
+      ]
+    },
+    {
+      "target": "right-y42-z52",
+      "mode": "display-normals",
+      "image": "right-y42-z52-display-normals.png",
+      "partRef": "part:microduck:9d70b219a5533bf1",
+      "openingRef": "opening:microduck:9d70b219a5533bf1:ce6aaab539c0f712",
+      "camera": [
+        -0.033587387165606844,
+        0.01719999998575077,
+        0.15588252252119836,
+        -0.038000000206215995,
+        -0.0008000000142492285,
+        0.15499999991307653
+      ],
+      "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-1c8eeda600249ce33b99&part=part%3Amicroduck%3A9d70b219a5533bf1&opening=opening%3Amicroduck%3A9d70b219a5533bf1%3Ace6aaab539c0f712&explode=0.00&detail=geometry&view=iso&isolate=part%3Amicroduck%3A9d70b219a5533bf1&labels=0&grid=0&supplements=0&camera=-0.0335874%2C0.0172000%2C0.1558825%2C-0.0380000%2C-0.0008000%2C0.1550000",
+      "actualCamera": {
+        "position": [
+          -0.029676099058512324,
+          0.03315498749083738,
+          0.15666478014261725
+        ],
+        "target": [
+          -0.03800000020621599,
+          -0.0008000000142492285,
+          0.15499999991307653
+        ]
+      },
+      "indexed": false,
+      "vertices": 62910,
+      "sourceDisplayMapping": {
+        "positions": "unchanged",
+        "facetOrder": "identity",
+        "sourceFacetCount": 20970,
+        "creaseDegrees": 35,
+        "normalPolicy": "edge_connected_angle_weighted",
+        "adjacencyToleranceM": 1e-8
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "high-performance",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "pixelRatio": 1,
+      "renderer": "WebKit WebGL",
+      "selectedEdge": false,
+      "objects": [
+        {
+          "type": "Group",
+          "userData": {
+            "selection": {
+              "kind": "opening",
+              "id": "opening:microduck:9d70b219a5533bf1:ce6aaab539c0f712",
+              "ownerRef": "part:microduck:9d70b219a5533bf1"
+            },
+            "authority": "geometry_only",
+            "surface": false,
+            "contextPartRefs": [],
+            "entryFocused": true
+          },
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "material": null
+        },
+        {
+          "type": "Group",
+          "userData": {
+            "featureType": "circular_opening",
+            "sourceTriangleCount": 0
+          },
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "material": null
+        },
+        {
+          "type": "LineLoop",
+          "userData": {
+            "openingBoundary": true
+          },
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "material": {
+            "type": "LineBasicMaterial",
+            "depthTest": true,
+            "depthWrite": false,
+            "transparent": true,
+            "opacity": 0.98,
+            "polygonOffset": false,
+            "polygonOffsetFactor": 0,
+            "polygonOffsetUnits": 0,
+            "renderOrder": 0
+          }
+        }
+      ]
+    },
+    {
+      "target": "right-y42-z52",
+      "mode": "opening-outline",
+      "image": "right-y42-z52-opening-outline.png",
+      "partRef": "part:microduck:9d70b219a5533bf1",
+      "openingRef": "opening:microduck:9d70b219a5533bf1:ce6aaab539c0f712",
+      "camera": [
+        -0.033587387165606844,
+        0.01719999998575077,
+        0.15588252252119836,
+        -0.038000000206215995,
+        -0.0008000000142492285,
+        0.15499999991307653
+      ],
+      "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-1c8eeda600249ce33b99&part=part%3Amicroduck%3A9d70b219a5533bf1&opening=opening%3Amicroduck%3A9d70b219a5533bf1%3Ace6aaab539c0f712&explode=0.00&detail=geometry&view=iso&isolate=part%3Amicroduck%3A9d70b219a5533bf1&labels=0&grid=0&supplements=0&camera=-0.0335874%2C0.0172000%2C0.1558825%2C-0.0380000%2C-0.0008000%2C0.1550000",
+      "actualCamera": {
+        "position": [
+          -0.029676099058512324,
+          0.03315498749083738,
+          0.15666478014261725
+        ],
+        "target": [
+          -0.03800000020621599,
+          -0.0008000000142492285,
+          0.15499999991307653
+        ]
+      },
+      "indexed": false,
+      "vertices": 62910,
+      "sourceDisplayMapping": {
+        "positions": "unchanged",
+        "facetOrder": "identity",
+        "sourceFacetCount": 20970,
+        "creaseDegrees": 35,
+        "normalPolicy": "edge_connected_angle_weighted",
+        "adjacencyToleranceM": 1e-8
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "high-performance",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "pixelRatio": 1,
+      "renderer": "WebKit WebGL",
+      "selectedEdge": false,
+      "objects": [
+        {
+          "type": "Group",
+          "userData": {
+            "selection": {
+              "kind": "opening",
+              "id": "opening:microduck:9d70b219a5533bf1:ce6aaab539c0f712",
+              "ownerRef": "part:microduck:9d70b219a5533bf1"
+            },
+            "authority": "geometry_only",
+            "surface": false,
+            "contextPartRefs": [],
+            "entryFocused": true
+          },
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "material": null
+        },
+        {
+          "type": "Group",
+          "userData": {
+            "featureType": "circular_opening",
+            "sourceTriangleCount": 0
+          },
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "material": null
+        },
+        {
+          "type": "LineLoop",
+          "userData": {
+            "openingBoundary": true
+          },
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "material": {
+            "type": "LineBasicMaterial",
+            "depthTest": true,
+            "depthWrite": false,
+            "transparent": true,
+            "opacity": 0.98,
+            "polygonOffset": false,
+            "polygonOffsetFactor": 0,
+            "polygonOffsetUnits": 0,
+            "renderOrder": 0
+          }
+        }
+      ]
+    },
+    {
+      "target": "right-y42-z52",
+      "mode": "all-overlays",
+      "image": "right-y42-z52-all-overlays.png",
+      "partRef": "part:microduck:9d70b219a5533bf1",
+      "openingRef": "opening:microduck:9d70b219a5533bf1:ce6aaab539c0f712",
+      "camera": [
+        -0.033587387165606844,
+        0.01719999998575077,
+        0.15588252252119836,
+        -0.038000000206215995,
+        -0.0008000000142492285,
+        0.15499999991307653
+      ],
+      "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-1c8eeda600249ce33b99&part=part%3Amicroduck%3A9d70b219a5533bf1&opening=opening%3Amicroduck%3A9d70b219a5533bf1%3Ace6aaab539c0f712&explode=0.00&detail=geometry&view=iso&isolate=part%3Amicroduck%3A9d70b219a5533bf1&labels=0&grid=0&supplements=0&camera=-0.0335874%2C0.0172000%2C0.1558825%2C-0.0380000%2C-0.0008000%2C0.1550000",
+      "actualCamera": {
+        "position": [
+          -0.029676099058512324,
+          0.03315498749083738,
+          0.15666478014261725
+        ],
+        "target": [
+          -0.03800000020621599,
+          -0.0008000000142492285,
+          0.15499999991307653
+        ]
+      },
+      "indexed": false,
+      "vertices": 62910,
+      "sourceDisplayMapping": {
+        "positions": "unchanged",
+        "facetOrder": "identity",
+        "sourceFacetCount": 20970,
+        "creaseDegrees": 35,
+        "normalPolicy": "edge_connected_angle_weighted",
+        "adjacencyToleranceM": 1e-8
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "high-performance",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "pixelRatio": 1,
+      "renderer": "WebKit WebGL",
+      "selectedEdge": false,
+      "objects": [
+        {
+          "type": "Group",
+          "userData": {
+            "selection": {
+              "kind": "opening",
+              "id": "opening:microduck:9d70b219a5533bf1:ce6aaab539c0f712",
+              "ownerRef": "part:microduck:9d70b219a5533bf1"
+            },
+            "authority": "geometry_only",
+            "surface": false,
+            "contextPartRefs": [],
+            "entryFocused": true
+          },
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "material": null
+        },
+        {
+          "type": "Group",
+          "userData": {
+            "featureType": "circular_opening",
+            "sourceTriangleCount": 0
+          },
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "material": null
+        },
+        {
+          "type": "LineLoop",
+          "userData": {
+            "openingBoundary": true
+          },
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "material": {
+            "type": "LineBasicMaterial",
+            "depthTest": true,
+            "depthWrite": false,
+            "transparent": true,
+            "opacity": 0.98,
+            "polygonOffset": false,
+            "polygonOffsetFactor": 0,
+            "polygonOffsetUnits": 0,
+            "renderOrder": 0
+          }
+        }
+      ]
+    },
+    {
+      "target": "right-y42-z52",
+      "mode": "final",
+      "image": "right-y42-z52-final.png",
+      "partRef": "part:microduck:9d70b219a5533bf1",
+      "openingRef": "opening:microduck:9d70b219a5533bf1:ce6aaab539c0f712",
+      "camera": [
+        -0.033587387165606844,
+        0.01719999998575077,
+        0.15588252252119836,
+        -0.038000000206215995,
+        -0.0008000000142492285,
+        0.15499999991307653
+      ],
+      "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-1c8eeda600249ce33b99&part=part%3Amicroduck%3A9d70b219a5533bf1&opening=opening%3Amicroduck%3A9d70b219a5533bf1%3Ace6aaab539c0f712&explode=0.00&detail=geometry&view=iso&isolate=part%3Amicroduck%3A9d70b219a5533bf1&labels=0&grid=0&supplements=0&camera=-0.0335874%2C0.0172000%2C0.1558825%2C-0.0380000%2C-0.0008000%2C0.1550000",
+      "actualCamera": {
+        "position": [
+          -0.029676099058512324,
+          0.03315498749083738,
+          0.15666478014261725
+        ],
+        "target": [
+          -0.03800000020621599,
+          -0.0008000000142492285,
+          0.15499999991307653
+        ]
+      },
+      "indexed": false,
+      "vertices": 62910,
+      "sourceDisplayMapping": {
+        "positions": "unchanged",
+        "facetOrder": "identity",
+        "sourceFacetCount": 20970,
+        "creaseDegrees": 35,
+        "normalPolicy": "edge_connected_angle_weighted",
+        "adjacencyToleranceM": 1e-8
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "high-performance",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "pixelRatio": 1,
+      "renderer": "WebKit WebGL",
+      "selectedEdge": false,
+      "objects": [
+        {
+          "type": "Group",
+          "userData": {
+            "selection": {
+              "kind": "opening",
+              "id": "opening:microduck:9d70b219a5533bf1:ce6aaab539c0f712",
+              "ownerRef": "part:microduck:9d70b219a5533bf1"
+            },
+            "authority": "geometry_only",
+            "surface": false,
+            "contextPartRefs": [],
+            "entryFocused": true
+          },
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "material": null
+        },
+        {
+          "type": "Group",
+          "userData": {
+            "featureType": "circular_opening",
+            "sourceTriangleCount": 0
+          },
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "material": null
+        },
+        {
+          "type": "LineLoop",
+          "userData": {
+            "openingBoundary": true
+          },
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "material": {
+            "type": "LineBasicMaterial",
+            "depthTest": true,
+            "depthWrite": false,
+            "transparent": true,
+            "opacity": 0.98,
+            "polygonOffset": false,
+            "polygonOffsetFactor": 0,
+            "polygonOffsetUnits": 0,
+            "renderOrder": 0
+          }
+        }
+      ]
+    },
+    {
+      "target": "right-y42-z52",
+      "mode": "no-shadow",
+      "image": "right-y42-z52-no-shadow.png",
+      "partRef": "part:microduck:9d70b219a5533bf1",
+      "openingRef": "opening:microduck:9d70b219a5533bf1:ce6aaab539c0f712",
+      "camera": [
+        -0.033587387165606844,
+        0.01719999998575077,
+        0.15588252252119836,
+        -0.038000000206215995,
+        -0.0008000000142492285,
+        0.15499999991307653
+      ],
+      "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-1c8eeda600249ce33b99&part=part%3Amicroduck%3A9d70b219a5533bf1&opening=opening%3Amicroduck%3A9d70b219a5533bf1%3Ace6aaab539c0f712&explode=0.00&detail=geometry&view=iso&isolate=part%3Amicroduck%3A9d70b219a5533bf1&labels=0&grid=0&supplements=0&camera=-0.0335874%2C0.0172000%2C0.1558825%2C-0.0380000%2C-0.0008000%2C0.1550000"
+    },
+    {
+      "target": "right-y42-z52",
+      "mode": "zero-normal-bias",
+      "image": "right-y42-z52-zero-normal-bias.png",
+      "partRef": "part:microduck:9d70b219a5533bf1",
+      "openingRef": "opening:microduck:9d70b219a5533bf1:ce6aaab539c0f712",
+      "camera": [
+        -0.033587387165606844,
+        0.01719999998575077,
+        0.15588252252119836,
+        -0.038000000206215995,
+        -0.0008000000142492285,
+        0.15499999991307653
+      ],
+      "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-1c8eeda600249ce33b99&part=part%3Amicroduck%3A9d70b219a5533bf1&opening=opening%3Amicroduck%3A9d70b219a5533bf1%3Ace6aaab539c0f712&explode=0.00&detail=geometry&view=iso&isolate=part%3Amicroduck%3A9d70b219a5533bf1&labels=0&grid=0&supplements=0&camera=-0.0335874%2C0.0172000%2C0.1558825%2C-0.0380000%2C-0.0008000%2C0.1550000"
+    },
+    {
+      "target": "right-y42-z52",
+      "mode": "smaller-normal-bias",
+      "image": "right-y42-z52-smaller-normal-bias.png",
+      "partRef": "part:microduck:9d70b219a5533bf1",
+      "openingRef": "opening:microduck:9d70b219a5533bf1:ce6aaab539c0f712",
+      "camera": [
+        -0.033587387165606844,
+        0.01719999998575077,
+        0.15588252252119836,
+        -0.038000000206215995,
+        -0.0008000000142492285,
+        0.15499999991307653
+      ],
+      "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-1c8eeda600249ce33b99&part=part%3Amicroduck%3A9d70b219a5533bf1&opening=opening%3Amicroduck%3A9d70b219a5533bf1%3Ace6aaab539c0f712&explode=0.00&detail=geometry&view=iso&isolate=part%3Amicroduck%3A9d70b219a5533bf1&labels=0&grid=0&supplements=0&camera=-0.0335874%2C0.0172000%2C0.1558825%2C-0.0380000%2C-0.0008000%2C0.1550000"
+    },
+    {
+      "target": "right-y42-z52",
+      "mode": "no-double-shadow",
+      "image": "right-y42-z52-no-double-shadow.png",
+      "partRef": "part:microduck:9d70b219a5533bf1",
+      "openingRef": "opening:microduck:9d70b219a5533bf1:ce6aaab539c0f712",
+      "camera": [
+        -0.033587387165606844,
+        0.01719999998575077,
+        0.15588252252119836,
+        -0.038000000206215995,
+        -0.0008000000142492285,
+        0.15499999991307653
+      ],
+      "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-1c8eeda600249ce33b99&part=part%3Amicroduck%3A9d70b219a5533bf1&opening=opening%3Amicroduck%3A9d70b219a5533bf1%3Ace6aaab539c0f712&explode=0.00&detail=geometry&view=iso&isolate=part%3Amicroduck%3A9d70b219a5533bf1&labels=0&grid=0&supplements=0&camera=-0.0335874%2C0.0172000%2C0.1558825%2C-0.0380000%2C-0.0008000%2C0.1550000"
+    },
+    {
+      "target": "right-y42-z52",
+      "mode": "logical-hole",
+      "image": "right-y42-z52-logical-hole.png",
+      "partRef": "part:microduck:9d70b219a5533bf1",
+      "holeRef": "logical-hole:microduck:9d70b219a5533bf1:04f94c3a0b748d4f",
+      "camera": [
+        -0.033587387165606844,
+        0.01719999998575077,
+        0.15588252252119836,
+        -0.038000000206215995,
+        -0.0008000000142492285,
+        0.15499999991307653
+      ],
+      "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-1c8eeda600249ce33b99&part=part%3Amicroduck%3A9d70b219a5533bf1&hole=logical-hole%3Amicroduck%3A9d70b219a5533bf1%3A04f94c3a0b748d4f&explode=0.00&detail=geometry&view=iso&isolate=part%3Amicroduck%3A9d70b219a5533bf1&labels=0&grid=0&supplements=0&camera=-0.0335874%2C0.0172000%2C0.1558825%2C-0.0380000%2C-0.0008000%2C0.1550000",
+      "objects": [
+        {
+          "type": "Group",
+          "userData": {
+            "selection": {
+              "kind": "hole",
+              "id": "logical-hole:microduck:9d70b219a5533bf1:04f94c3a0b748d4f",
+              "ownerRef": "part:microduck:9d70b219a5533bf1"
+            },
+            "authority": "geometry_only",
+            "surface": false,
+            "contextPartRefs": [],
+            "entryFocused": false
+          }
+        },
+        {
+          "type": "Group",
+          "userData": {
+            "featureType": "cylinder",
+            "sourceTriangleCount": 144
+          }
+        },
+        {
+          "type": "LineLoop",
+          "userData": {
+            "entryRing": true
+          }
+        },
+        {
+          "type": "LineLoop",
+          "userData": {
+            "entryRing": true
+          }
+        },
+        {
+          "type": "LineSegments",
+          "userData": {}
+        },
+        {
+          "type": "Mesh",
+          "userData": {}
+        },
+        {
+          "type": "Group",
+          "userData": {
+            "sourceTriangleCount": 0,
+            "featureType": "portal"
+          }
+        },
+        {
+          "type": "LineLoop",
+          "userData": {}
+        },
+        {
+          "type": "LineLoop",
+          "userData": {}
+        }
+      ]
+    },
+    {
+      "target": "right-y42-z52",
+      "mode": "oblique",
+      "image": "right-y42-z52-oblique.png",
+      "partRef": "part:microduck:9d70b219a5533bf1",
+      "openingRef": "opening:microduck:9d70b219a5533bf1:ce6aaab539c0f712",
+      "camera": [
+        -0.04623687788201972,
+        0.027199999985750775,
+        0.15335262437791577,
+        -0.038000000206215995,
+        -0.0008000000142492285,
+        0.15499999991307653
+      ],
+      "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-1c8eeda600249ce33b99&part=part%3Amicroduck%3A9d70b219a5533bf1&opening=opening%3Amicroduck%3A9d70b219a5533bf1%3Ace6aaab539c0f712&explode=0.00&detail=geometry&view=iso&isolate=part%3Amicroduck%3A9d70b219a5533bf1&labels=0&grid=0&supplements=0&camera=-0.0462369%2C0.0272000%2C0.1533526%2C-0.0380000%2C-0.0008000%2C0.1550000"
+    },
+    {
+      "target": "right-y42-z52",
+      "mode": "zoom",
+      "image": "right-y42-z52-zoom.png",
+      "partRef": "part:microduck:9d70b219a5533bf1",
+      "openingRef": "opening:microduck:9d70b219a5533bf1:ce6aaab539c0f712",
+      "camera": [
+        -0.03505825817914324,
+        0.011199999985750771,
+        0.15558834831849108,
+        -0.038000000206215995,
+        -0.0008000000142492285,
+        0.15499999991307653
+      ],
+      "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-1c8eeda600249ce33b99&part=part%3Amicroduck%3A9d70b219a5533bf1&opening=opening%3Amicroduck%3A9d70b219a5533bf1%3Ace6aaab539c0f712&explode=0.00&detail=geometry&view=iso&isolate=part%3Amicroduck%3A9d70b219a5533bf1&labels=0&grid=0&supplements=0&camera=-0.0350583%2C0.0112000%2C0.1555883%2C-0.0380000%2C-0.0008000%2C0.1550000"
+    },
+    {
+      "target": "right-x25-y9",
+      "mode": "source-facets",
+      "image": "right-x25-y9-source-facets.png",
+      "partRef": "part:microduck:9d70b219a5533bf1",
+      "openingRef": "opening:microduck:9d70b219a5533bf1:4450b2102e065a82",
+      "camera": [
+        0.01781021833292681,
+        -0.024706934422452375,
+        0.1630000004470348,
+        0.01350000004943163,
+        -0.025999999907500928,
+        0.14500000044703482
+      ],
+      "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-1c8eeda600249ce33b99&part=part%3Amicroduck%3A9d70b219a5533bf1&opening=opening%3Amicroduck%3A9d70b219a5533bf1%3A4450b2102e065a82&explode=0.00&detail=geometry&view=iso&isolate=part%3Amicroduck%3A9d70b219a5533bf1&labels=0&grid=0&supplements=0&camera=0.0178102%2C-0.0247069%2C0.1630000%2C0.0135000%2C-0.0260000%2C0.1450000",
+      "actualCamera": {
+        "position": [
+          0.021630711204078973,
+          -0.023560711183241035,
+          0.1789549908759272
+        ],
+        "target": [
+          0.0135,
+          -0.026,
+          0.145
+        ]
+      },
+      "indexed": false,
+      "vertices": 62910,
+      "sourceDisplayMapping": {
+        "positions": "unchanged",
+        "facetOrder": "identity",
+        "sourceFacetCount": 20970,
+        "creaseDegrees": 35,
+        "normalPolicy": "edge_connected_angle_weighted",
+        "adjacencyToleranceM": 1e-8
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "high-performance",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "pixelRatio": 1,
+      "renderer": "WebKit WebGL",
+      "selectedEdge": false,
+      "objects": [
+        {
+          "type": "Group",
+          "userData": {
+            "selection": {
+              "kind": "opening",
+              "id": "opening:microduck:9d70b219a5533bf1:4450b2102e065a82",
+              "ownerRef": "part:microduck:9d70b219a5533bf1"
+            },
+            "authority": "geometry_only",
+            "surface": false,
+            "contextPartRefs": [],
+            "entryFocused": true
+          },
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "material": null
+        },
+        {
+          "type": "Group",
+          "userData": {
+            "featureType": "circular_opening",
+            "sourceTriangleCount": 0
+          },
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "material": null
+        },
+        {
+          "type": "LineLoop",
+          "userData": {
+            "openingBoundary": true
+          },
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "material": {
+            "type": "LineBasicMaterial",
+            "depthTest": true,
+            "depthWrite": false,
+            "transparent": true,
+            "opacity": 0.98,
+            "polygonOffset": false,
+            "polygonOffsetFactor": 0,
+            "polygonOffsetUnits": 0,
+            "renderOrder": 0
+          }
+        }
+      ]
+    },
+    {
+      "target": "right-x25-y9",
+      "mode": "display-normals",
+      "image": "right-x25-y9-display-normals.png",
+      "partRef": "part:microduck:9d70b219a5533bf1",
+      "openingRef": "opening:microduck:9d70b219a5533bf1:4450b2102e065a82",
+      "camera": [
+        0.01781021833292681,
+        -0.024706934422452375,
+        0.1630000004470348,
+        0.01350000004943163,
+        -0.025999999907500928,
+        0.14500000044703482
+      ],
+      "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-1c8eeda600249ce33b99&part=part%3Amicroduck%3A9d70b219a5533bf1&opening=opening%3Amicroduck%3A9d70b219a5533bf1%3A4450b2102e065a82&explode=0.00&detail=geometry&view=iso&isolate=part%3Amicroduck%3A9d70b219a5533bf1&labels=0&grid=0&supplements=0&camera=0.0178102%2C-0.0247069%2C0.1630000%2C0.0135000%2C-0.0260000%2C0.1450000",
+      "actualCamera": {
+        "position": [
+          0.021630711204078973,
+          -0.023560711183241035,
+          0.1789549908759272
+        ],
+        "target": [
+          0.0135,
+          -0.026,
+          0.145
+        ]
+      },
+      "indexed": false,
+      "vertices": 62910,
+      "sourceDisplayMapping": {
+        "positions": "unchanged",
+        "facetOrder": "identity",
+        "sourceFacetCount": 20970,
+        "creaseDegrees": 35,
+        "normalPolicy": "edge_connected_angle_weighted",
+        "adjacencyToleranceM": 1e-8
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "high-performance",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "pixelRatio": 1,
+      "renderer": "WebKit WebGL",
+      "selectedEdge": false,
+      "objects": [
+        {
+          "type": "Group",
+          "userData": {
+            "selection": {
+              "kind": "opening",
+              "id": "opening:microduck:9d70b219a5533bf1:4450b2102e065a82",
+              "ownerRef": "part:microduck:9d70b219a5533bf1"
+            },
+            "authority": "geometry_only",
+            "surface": false,
+            "contextPartRefs": [],
+            "entryFocused": true
+          },
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "material": null
+        },
+        {
+          "type": "Group",
+          "userData": {
+            "featureType": "circular_opening",
+            "sourceTriangleCount": 0
+          },
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "material": null
+        },
+        {
+          "type": "LineLoop",
+          "userData": {
+            "openingBoundary": true
+          },
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "material": {
+            "type": "LineBasicMaterial",
+            "depthTest": true,
+            "depthWrite": false,
+            "transparent": true,
+            "opacity": 0.98,
+            "polygonOffset": false,
+            "polygonOffsetFactor": 0,
+            "polygonOffsetUnits": 0,
+            "renderOrder": 0
+          }
+        }
+      ]
+    },
+    {
+      "target": "right-x25-y9",
+      "mode": "opening-outline",
+      "image": "right-x25-y9-opening-outline.png",
+      "partRef": "part:microduck:9d70b219a5533bf1",
+      "openingRef": "opening:microduck:9d70b219a5533bf1:4450b2102e065a82",
+      "camera": [
+        0.01781021833292681,
+        -0.024706934422452375,
+        0.1630000004470348,
+        0.01350000004943163,
+        -0.025999999907500928,
+        0.14500000044703482
+      ],
+      "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-1c8eeda600249ce33b99&part=part%3Amicroduck%3A9d70b219a5533bf1&opening=opening%3Amicroduck%3A9d70b219a5533bf1%3A4450b2102e065a82&explode=0.00&detail=geometry&view=iso&isolate=part%3Amicroduck%3A9d70b219a5533bf1&labels=0&grid=0&supplements=0&camera=0.0178102%2C-0.0247069%2C0.1630000%2C0.0135000%2C-0.0260000%2C0.1450000",
+      "actualCamera": {
+        "position": [
+          0.021630711204078973,
+          -0.023560711183241035,
+          0.1789549908759272
+        ],
+        "target": [
+          0.0135,
+          -0.026,
+          0.145
+        ]
+      },
+      "indexed": false,
+      "vertices": 62910,
+      "sourceDisplayMapping": {
+        "positions": "unchanged",
+        "facetOrder": "identity",
+        "sourceFacetCount": 20970,
+        "creaseDegrees": 35,
+        "normalPolicy": "edge_connected_angle_weighted",
+        "adjacencyToleranceM": 1e-8
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "high-performance",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "pixelRatio": 1,
+      "renderer": "WebKit WebGL",
+      "selectedEdge": false,
+      "objects": [
+        {
+          "type": "Group",
+          "userData": {
+            "selection": {
+              "kind": "opening",
+              "id": "opening:microduck:9d70b219a5533bf1:4450b2102e065a82",
+              "ownerRef": "part:microduck:9d70b219a5533bf1"
+            },
+            "authority": "geometry_only",
+            "surface": false,
+            "contextPartRefs": [],
+            "entryFocused": true
+          },
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "material": null
+        },
+        {
+          "type": "Group",
+          "userData": {
+            "featureType": "circular_opening",
+            "sourceTriangleCount": 0
+          },
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "material": null
+        },
+        {
+          "type": "LineLoop",
+          "userData": {
+            "openingBoundary": true
+          },
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "material": {
+            "type": "LineBasicMaterial",
+            "depthTest": true,
+            "depthWrite": false,
+            "transparent": true,
+            "opacity": 0.98,
+            "polygonOffset": false,
+            "polygonOffsetFactor": 0,
+            "polygonOffsetUnits": 0,
+            "renderOrder": 0
+          }
+        }
+      ]
+    },
+    {
+      "target": "right-x25-y9",
+      "mode": "all-overlays",
+      "image": "right-x25-y9-all-overlays.png",
+      "partRef": "part:microduck:9d70b219a5533bf1",
+      "openingRef": "opening:microduck:9d70b219a5533bf1:4450b2102e065a82",
+      "camera": [
+        0.01781021833292681,
+        -0.024706934422452375,
+        0.1630000004470348,
+        0.01350000004943163,
+        -0.025999999907500928,
+        0.14500000044703482
+      ],
+      "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-1c8eeda600249ce33b99&part=part%3Amicroduck%3A9d70b219a5533bf1&opening=opening%3Amicroduck%3A9d70b219a5533bf1%3A4450b2102e065a82&explode=0.00&detail=geometry&view=iso&isolate=part%3Amicroduck%3A9d70b219a5533bf1&labels=0&grid=0&supplements=0&camera=0.0178102%2C-0.0247069%2C0.1630000%2C0.0135000%2C-0.0260000%2C0.1450000",
+      "actualCamera": {
+        "position": [
+          0.021630711204078973,
+          -0.023560711183241035,
+          0.1789549908759272
+        ],
+        "target": [
+          0.0135,
+          -0.026,
+          0.145
+        ]
+      },
+      "indexed": false,
+      "vertices": 62910,
+      "sourceDisplayMapping": {
+        "positions": "unchanged",
+        "facetOrder": "identity",
+        "sourceFacetCount": 20970,
+        "creaseDegrees": 35,
+        "normalPolicy": "edge_connected_angle_weighted",
+        "adjacencyToleranceM": 1e-8
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "high-performance",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "pixelRatio": 1,
+      "renderer": "WebKit WebGL",
+      "selectedEdge": false,
+      "objects": [
+        {
+          "type": "Group",
+          "userData": {
+            "selection": {
+              "kind": "opening",
+              "id": "opening:microduck:9d70b219a5533bf1:4450b2102e065a82",
+              "ownerRef": "part:microduck:9d70b219a5533bf1"
+            },
+            "authority": "geometry_only",
+            "surface": false,
+            "contextPartRefs": [],
+            "entryFocused": true
+          },
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "material": null
+        },
+        {
+          "type": "Group",
+          "userData": {
+            "featureType": "circular_opening",
+            "sourceTriangleCount": 0
+          },
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "material": null
+        },
+        {
+          "type": "LineLoop",
+          "userData": {
+            "openingBoundary": true
+          },
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "material": {
+            "type": "LineBasicMaterial",
+            "depthTest": true,
+            "depthWrite": false,
+            "transparent": true,
+            "opacity": 0.98,
+            "polygonOffset": false,
+            "polygonOffsetFactor": 0,
+            "polygonOffsetUnits": 0,
+            "renderOrder": 0
+          }
+        }
+      ]
+    },
+    {
+      "target": "right-x25-y9",
+      "mode": "final",
+      "image": "right-x25-y9-final.png",
+      "partRef": "part:microduck:9d70b219a5533bf1",
+      "openingRef": "opening:microduck:9d70b219a5533bf1:4450b2102e065a82",
+      "camera": [
+        0.01781021833292681,
+        -0.024706934422452375,
+        0.1630000004470348,
+        0.01350000004943163,
+        -0.025999999907500928,
+        0.14500000044703482
+      ],
+      "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-1c8eeda600249ce33b99&part=part%3Amicroduck%3A9d70b219a5533bf1&opening=opening%3Amicroduck%3A9d70b219a5533bf1%3A4450b2102e065a82&explode=0.00&detail=geometry&view=iso&isolate=part%3Amicroduck%3A9d70b219a5533bf1&labels=0&grid=0&supplements=0&camera=0.0178102%2C-0.0247069%2C0.1630000%2C0.0135000%2C-0.0260000%2C0.1450000",
+      "actualCamera": {
+        "position": [
+          0.021630711204078973,
+          -0.023560711183241035,
+          0.1789549908759272
+        ],
+        "target": [
+          0.0135,
+          -0.026,
+          0.145
+        ]
+      },
+      "indexed": false,
+      "vertices": 62910,
+      "sourceDisplayMapping": {
+        "positions": "unchanged",
+        "facetOrder": "identity",
+        "sourceFacetCount": 20970,
+        "creaseDegrees": 35,
+        "normalPolicy": "edge_connected_angle_weighted",
+        "adjacencyToleranceM": 1e-8
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "high-performance",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "pixelRatio": 1,
+      "renderer": "WebKit WebGL",
+      "selectedEdge": false,
+      "objects": [
+        {
+          "type": "Group",
+          "userData": {
+            "selection": {
+              "kind": "opening",
+              "id": "opening:microduck:9d70b219a5533bf1:4450b2102e065a82",
+              "ownerRef": "part:microduck:9d70b219a5533bf1"
+            },
+            "authority": "geometry_only",
+            "surface": false,
+            "contextPartRefs": [],
+            "entryFocused": true
+          },
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "material": null
+        },
+        {
+          "type": "Group",
+          "userData": {
+            "featureType": "circular_opening",
+            "sourceTriangleCount": 0
+          },
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "material": null
+        },
+        {
+          "type": "LineLoop",
+          "userData": {
+            "openingBoundary": true
+          },
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "material": {
+            "type": "LineBasicMaterial",
+            "depthTest": true,
+            "depthWrite": false,
+            "transparent": true,
+            "opacity": 0.98,
+            "polygonOffset": false,
+            "polygonOffsetFactor": 0,
+            "polygonOffsetUnits": 0,
+            "renderOrder": 0
+          }
+        }
+      ]
+    },
+    {
+      "target": "right-x25-y9",
+      "mode": "no-shadow",
+      "image": "right-x25-y9-no-shadow.png",
+      "partRef": "part:microduck:9d70b219a5533bf1",
+      "openingRef": "opening:microduck:9d70b219a5533bf1:4450b2102e065a82",
+      "camera": [
+        0.01781021833292681,
+        -0.024706934422452375,
+        0.1630000004470348,
+        0.01350000004943163,
+        -0.025999999907500928,
+        0.14500000044703482
+      ],
+      "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-1c8eeda600249ce33b99&part=part%3Amicroduck%3A9d70b219a5533bf1&opening=opening%3Amicroduck%3A9d70b219a5533bf1%3A4450b2102e065a82&explode=0.00&detail=geometry&view=iso&isolate=part%3Amicroduck%3A9d70b219a5533bf1&labels=0&grid=0&supplements=0&camera=0.0178102%2C-0.0247069%2C0.1630000%2C0.0135000%2C-0.0260000%2C0.1450000"
+    },
+    {
+      "target": "right-x25-y9",
+      "mode": "zero-normal-bias",
+      "image": "right-x25-y9-zero-normal-bias.png",
+      "partRef": "part:microduck:9d70b219a5533bf1",
+      "openingRef": "opening:microduck:9d70b219a5533bf1:4450b2102e065a82",
+      "camera": [
+        0.01781021833292681,
+        -0.024706934422452375,
+        0.1630000004470348,
+        0.01350000004943163,
+        -0.025999999907500928,
+        0.14500000044703482
+      ],
+      "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-1c8eeda600249ce33b99&part=part%3Amicroduck%3A9d70b219a5533bf1&opening=opening%3Amicroduck%3A9d70b219a5533bf1%3A4450b2102e065a82&explode=0.00&detail=geometry&view=iso&isolate=part%3Amicroduck%3A9d70b219a5533bf1&labels=0&grid=0&supplements=0&camera=0.0178102%2C-0.0247069%2C0.1630000%2C0.0135000%2C-0.0260000%2C0.1450000"
+    },
+    {
+      "target": "right-x25-y9",
+      "mode": "smaller-normal-bias",
+      "image": "right-x25-y9-smaller-normal-bias.png",
+      "partRef": "part:microduck:9d70b219a5533bf1",
+      "openingRef": "opening:microduck:9d70b219a5533bf1:4450b2102e065a82",
+      "camera": [
+        0.01781021833292681,
+        -0.024706934422452375,
+        0.1630000004470348,
+        0.01350000004943163,
+        -0.025999999907500928,
+        0.14500000044703482
+      ],
+      "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-1c8eeda600249ce33b99&part=part%3Amicroduck%3A9d70b219a5533bf1&opening=opening%3Amicroduck%3A9d70b219a5533bf1%3A4450b2102e065a82&explode=0.00&detail=geometry&view=iso&isolate=part%3Amicroduck%3A9d70b219a5533bf1&labels=0&grid=0&supplements=0&camera=0.0178102%2C-0.0247069%2C0.1630000%2C0.0135000%2C-0.0260000%2C0.1450000"
+    },
+    {
+      "target": "right-x25-y9",
+      "mode": "no-double-shadow",
+      "image": "right-x25-y9-no-double-shadow.png",
+      "partRef": "part:microduck:9d70b219a5533bf1",
+      "openingRef": "opening:microduck:9d70b219a5533bf1:4450b2102e065a82",
+      "camera": [
+        0.01781021833292681,
+        -0.024706934422452375,
+        0.1630000004470348,
+        0.01350000004943163,
+        -0.025999999907500928,
+        0.14500000044703482
+      ],
+      "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-1c8eeda600249ce33b99&part=part%3Amicroduck%3A9d70b219a5533bf1&opening=opening%3Amicroduck%3A9d70b219a5533bf1%3A4450b2102e065a82&explode=0.00&detail=geometry&view=iso&isolate=part%3Amicroduck%3A9d70b219a5533bf1&labels=0&grid=0&supplements=0&camera=0.0178102%2C-0.0247069%2C0.1630000%2C0.0135000%2C-0.0260000%2C0.1450000"
+    },
+    {
+      "target": "right-x25-y9",
+      "mode": "oblique",
+      "image": "right-x25-y9-oblique.png",
+      "partRef": "part:microduck:9d70b219a5533bf1",
+      "openingRef": "opening:microduck:9d70b219a5533bf1:4450b2102e065a82",
+      "camera": [
+        0.00545425925357396,
+        -0.02841372214625823,
+        0.1730000004470348,
+        0.01350000004943163,
+        -0.025999999907500928,
+        0.14500000044703482
+      ],
+      "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-1c8eeda600249ce33b99&part=part%3Amicroduck%3A9d70b219a5533bf1&opening=opening%3Amicroduck%3A9d70b219a5533bf1%3A4450b2102e065a82&explode=0.00&detail=geometry&view=iso&isolate=part%3Amicroduck%3A9d70b219a5533bf1&labels=0&grid=0&supplements=0&camera=0.0054543%2C-0.0284137%2C0.1730000%2C0.0135000%2C-0.0260000%2C0.1450000"
+    },
+    {
+      "target": "right-x25-y9",
+      "mode": "zoom",
+      "image": "right-x25-y9-zoom.png",
+      "partRef": "part:microduck:9d70b219a5533bf1",
+      "openingRef": "opening:microduck:9d70b219a5533bf1:4450b2102e065a82",
+      "camera": [
+        0.016373478905095086,
+        -0.025137956250801893,
+        0.15700000044703483,
+        0.01350000004943163,
+        -0.025999999907500928,
+        0.14500000044703482
+      ],
+      "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-1c8eeda600249ce33b99&part=part%3Amicroduck%3A9d70b219a5533bf1&opening=opening%3Amicroduck%3A9d70b219a5533bf1%3A4450b2102e065a82&explode=0.00&detail=geometry&view=iso&isolate=part%3Amicroduck%3A9d70b219a5533bf1&labels=0&grid=0&supplements=0&camera=0.0163735%2C-0.0251380%2C0.1570000%2C0.0135000%2C-0.0260000%2C0.1450000"
+    },
+    {
+      "target": "hip-x17-z6",
+      "mode": "source-facets",
+      "image": "hip-x17-z6-source-facets.png",
+      "partRef": "part:microduck:fa9ee2f71faafb88",
+      "openingRef": "opening:microduck:fa9ee2f71faafb88:c620cf250a66d5e3",
+      "camera": [
+        0.04150000040233135,
+        0.021244226399026088,
+        0.09899615089002002,
+        0.023500000402331352,
+        0.0175000000745058,
+        0.0965000000070065
+      ],
+      "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-1c8eeda600249ce33b99&part=part%3Amicroduck%3Afa9ee2f71faafb88&opening=opening%3Amicroduck%3Afa9ee2f71faafb88%3Ac620cf250a66d5e3&explode=0.00&detail=geometry&view=iso&isolate=part%3Amicroduck%3Afa9ee2f71faafb88&labels=0&grid=0&supplements=0&camera=0.0415000%2C0.0212442%2C0.0989962%2C0.0235000%2C0.0175000%2C0.0965000",
+      "actualCamera": {
+        "position": [
+          0.05745498513390924,
+          0.024563014185465713,
+          0.10120880188284802
+        ],
+        "target": [
+          0.0235,
+          0.0175,
+          0.0965
+        ]
+      },
+      "indexed": false,
+      "vertices": 62910,
+      "sourceDisplayMapping": {
+        "positions": "unchanged",
+        "facetOrder": "identity",
+        "sourceFacetCount": 20970,
+        "creaseDegrees": 35,
+        "normalPolicy": "edge_connected_angle_weighted",
+        "adjacencyToleranceM": 1e-8
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "high-performance",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "pixelRatio": 1,
+      "renderer": "WebKit WebGL",
+      "selectedEdge": false,
+      "objects": [
+        {
+          "type": "Group",
+          "userData": {
+            "selection": {
+              "kind": "opening",
+              "id": "opening:microduck:fa9ee2f71faafb88:c620cf250a66d5e3",
+              "ownerRef": "part:microduck:fa9ee2f71faafb88"
+            },
+            "authority": "geometry_only",
+            "surface": false,
+            "contextPartRefs": [],
+            "entryFocused": true
+          },
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "material": null
+        },
+        {
+          "type": "Group",
+          "userData": {
+            "featureType": "circular_opening",
+            "sourceTriangleCount": 0
+          },
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "material": null
+        },
+        {
+          "type": "LineLoop",
+          "userData": {
+            "openingBoundary": true
+          },
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "material": {
+            "type": "LineBasicMaterial",
+            "depthTest": true,
+            "depthWrite": false,
+            "transparent": true,
+            "opacity": 0.98,
+            "polygonOffset": false,
+            "polygonOffsetFactor": 0,
+            "polygonOffsetUnits": 0,
+            "renderOrder": 0
+          }
+        }
+      ]
+    },
+    {
+      "target": "hip-x17-z6",
+      "mode": "display-normals",
+      "image": "hip-x17-z6-display-normals.png",
+      "partRef": "part:microduck:fa9ee2f71faafb88",
+      "openingRef": "opening:microduck:fa9ee2f71faafb88:c620cf250a66d5e3",
+      "camera": [
+        0.04150000040233135,
+        0.021244226399026088,
+        0.09899615089002002,
+        0.023500000402331352,
+        0.0175000000745058,
+        0.0965000000070065
+      ],
+      "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-1c8eeda600249ce33b99&part=part%3Amicroduck%3Afa9ee2f71faafb88&opening=opening%3Amicroduck%3Afa9ee2f71faafb88%3Ac620cf250a66d5e3&explode=0.00&detail=geometry&view=iso&isolate=part%3Amicroduck%3Afa9ee2f71faafb88&labels=0&grid=0&supplements=0&camera=0.0415000%2C0.0212442%2C0.0989962%2C0.0235000%2C0.0175000%2C0.0965000",
+      "actualCamera": {
+        "position": [
+          0.05745498513390924,
+          0.024563014185465713,
+          0.10120880188284802
+        ],
+        "target": [
+          0.0235,
+          0.0175,
+          0.0965
+        ]
+      },
+      "indexed": false,
+      "vertices": 62910,
+      "sourceDisplayMapping": {
+        "positions": "unchanged",
+        "facetOrder": "identity",
+        "sourceFacetCount": 20970,
+        "creaseDegrees": 35,
+        "normalPolicy": "edge_connected_angle_weighted",
+        "adjacencyToleranceM": 1e-8
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "high-performance",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "pixelRatio": 1,
+      "renderer": "WebKit WebGL",
+      "selectedEdge": false,
+      "objects": [
+        {
+          "type": "Group",
+          "userData": {
+            "selection": {
+              "kind": "opening",
+              "id": "opening:microduck:fa9ee2f71faafb88:c620cf250a66d5e3",
+              "ownerRef": "part:microduck:fa9ee2f71faafb88"
+            },
+            "authority": "geometry_only",
+            "surface": false,
+            "contextPartRefs": [],
+            "entryFocused": true
+          },
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "material": null
+        },
+        {
+          "type": "Group",
+          "userData": {
+            "featureType": "circular_opening",
+            "sourceTriangleCount": 0
+          },
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "material": null
+        },
+        {
+          "type": "LineLoop",
+          "userData": {
+            "openingBoundary": true
+          },
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "material": {
+            "type": "LineBasicMaterial",
+            "depthTest": true,
+            "depthWrite": false,
+            "transparent": true,
+            "opacity": 0.98,
+            "polygonOffset": false,
+            "polygonOffsetFactor": 0,
+            "polygonOffsetUnits": 0,
+            "renderOrder": 0
+          }
+        }
+      ]
+    },
+    {
+      "target": "hip-x17-z6",
+      "mode": "opening-outline",
+      "image": "hip-x17-z6-opening-outline.png",
+      "partRef": "part:microduck:fa9ee2f71faafb88",
+      "openingRef": "opening:microduck:fa9ee2f71faafb88:c620cf250a66d5e3",
+      "camera": [
+        0.04150000040233135,
+        0.021244226399026088,
+        0.09899615089002002,
+        0.023500000402331352,
+        0.0175000000745058,
+        0.0965000000070065
+      ],
+      "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-1c8eeda600249ce33b99&part=part%3Amicroduck%3Afa9ee2f71faafb88&opening=opening%3Amicroduck%3Afa9ee2f71faafb88%3Ac620cf250a66d5e3&explode=0.00&detail=geometry&view=iso&isolate=part%3Amicroduck%3Afa9ee2f71faafb88&labels=0&grid=0&supplements=0&camera=0.0415000%2C0.0212442%2C0.0989962%2C0.0235000%2C0.0175000%2C0.0965000",
+      "actualCamera": {
+        "position": [
+          0.05745498513390924,
+          0.024563014185465713,
+          0.10120880188284802
+        ],
+        "target": [
+          0.0235,
+          0.0175,
+          0.0965
+        ]
+      },
+      "indexed": false,
+      "vertices": 62910,
+      "sourceDisplayMapping": {
+        "positions": "unchanged",
+        "facetOrder": "identity",
+        "sourceFacetCount": 20970,
+        "creaseDegrees": 35,
+        "normalPolicy": "edge_connected_angle_weighted",
+        "adjacencyToleranceM": 1e-8
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "high-performance",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "pixelRatio": 1,
+      "renderer": "WebKit WebGL",
+      "selectedEdge": false,
+      "objects": [
+        {
+          "type": "Group",
+          "userData": {
+            "selection": {
+              "kind": "opening",
+              "id": "opening:microduck:fa9ee2f71faafb88:c620cf250a66d5e3",
+              "ownerRef": "part:microduck:fa9ee2f71faafb88"
+            },
+            "authority": "geometry_only",
+            "surface": false,
+            "contextPartRefs": [],
+            "entryFocused": true
+          },
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "material": null
+        },
+        {
+          "type": "Group",
+          "userData": {
+            "featureType": "circular_opening",
+            "sourceTriangleCount": 0
+          },
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "material": null
+        },
+        {
+          "type": "LineLoop",
+          "userData": {
+            "openingBoundary": true
+          },
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "material": {
+            "type": "LineBasicMaterial",
+            "depthTest": true,
+            "depthWrite": false,
+            "transparent": true,
+            "opacity": 0.98,
+            "polygonOffset": false,
+            "polygonOffsetFactor": 0,
+            "polygonOffsetUnits": 0,
+            "renderOrder": 0
+          }
+        }
+      ]
+    },
+    {
+      "target": "hip-x17-z6",
+      "mode": "all-overlays",
+      "image": "hip-x17-z6-all-overlays.png",
+      "partRef": "part:microduck:fa9ee2f71faafb88",
+      "openingRef": "opening:microduck:fa9ee2f71faafb88:c620cf250a66d5e3",
+      "camera": [
+        0.04150000040233135,
+        0.021244226399026088,
+        0.09899615089002002,
+        0.023500000402331352,
+        0.0175000000745058,
+        0.0965000000070065
+      ],
+      "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-1c8eeda600249ce33b99&part=part%3Amicroduck%3Afa9ee2f71faafb88&opening=opening%3Amicroduck%3Afa9ee2f71faafb88%3Ac620cf250a66d5e3&explode=0.00&detail=geometry&view=iso&isolate=part%3Amicroduck%3Afa9ee2f71faafb88&labels=0&grid=0&supplements=0&camera=0.0415000%2C0.0212442%2C0.0989962%2C0.0235000%2C0.0175000%2C0.0965000",
+      "actualCamera": {
+        "position": [
+          0.05745498513390924,
+          0.024563014185465713,
+          0.10120880188284802
+        ],
+        "target": [
+          0.0235,
+          0.0175,
+          0.0965
+        ]
+      },
+      "indexed": false,
+      "vertices": 62910,
+      "sourceDisplayMapping": {
+        "positions": "unchanged",
+        "facetOrder": "identity",
+        "sourceFacetCount": 20970,
+        "creaseDegrees": 35,
+        "normalPolicy": "edge_connected_angle_weighted",
+        "adjacencyToleranceM": 1e-8
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "high-performance",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "pixelRatio": 1,
+      "renderer": "WebKit WebGL",
+      "selectedEdge": false,
+      "objects": [
+        {
+          "type": "Group",
+          "userData": {
+            "selection": {
+              "kind": "opening",
+              "id": "opening:microduck:fa9ee2f71faafb88:c620cf250a66d5e3",
+              "ownerRef": "part:microduck:fa9ee2f71faafb88"
+            },
+            "authority": "geometry_only",
+            "surface": false,
+            "contextPartRefs": [],
+            "entryFocused": true
+          },
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "material": null
+        },
+        {
+          "type": "Group",
+          "userData": {
+            "featureType": "circular_opening",
+            "sourceTriangleCount": 0
+          },
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "material": null
+        },
+        {
+          "type": "LineLoop",
+          "userData": {
+            "openingBoundary": true
+          },
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "material": {
+            "type": "LineBasicMaterial",
+            "depthTest": true,
+            "depthWrite": false,
+            "transparent": true,
+            "opacity": 0.98,
+            "polygonOffset": false,
+            "polygonOffsetFactor": 0,
+            "polygonOffsetUnits": 0,
+            "renderOrder": 0
+          }
+        }
+      ]
+    },
+    {
+      "target": "hip-x17-z6",
+      "mode": "final",
+      "image": "hip-x17-z6-final.png",
+      "partRef": "part:microduck:fa9ee2f71faafb88",
+      "openingRef": "opening:microduck:fa9ee2f71faafb88:c620cf250a66d5e3",
+      "camera": [
+        0.04150000040233135,
+        0.021244226399026088,
+        0.09899615089002002,
+        0.023500000402331352,
+        0.0175000000745058,
+        0.0965000000070065
+      ],
+      "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-1c8eeda600249ce33b99&part=part%3Amicroduck%3Afa9ee2f71faafb88&opening=opening%3Amicroduck%3Afa9ee2f71faafb88%3Ac620cf250a66d5e3&explode=0.00&detail=geometry&view=iso&isolate=part%3Amicroduck%3Afa9ee2f71faafb88&labels=0&grid=0&supplements=0&camera=0.0415000%2C0.0212442%2C0.0989962%2C0.0235000%2C0.0175000%2C0.0965000",
+      "actualCamera": {
+        "position": [
+          0.05745498513390924,
+          0.024563014185465713,
+          0.10120880188284802
+        ],
+        "target": [
+          0.0235,
+          0.0175,
+          0.0965
+        ]
+      },
+      "indexed": false,
+      "vertices": 62910,
+      "sourceDisplayMapping": {
+        "positions": "unchanged",
+        "facetOrder": "identity",
+        "sourceFacetCount": 20970,
+        "creaseDegrees": 35,
+        "normalPolicy": "edge_connected_angle_weighted",
+        "adjacencyToleranceM": 1e-8
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "high-performance",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "pixelRatio": 1,
+      "renderer": "WebKit WebGL",
+      "selectedEdge": false,
+      "objects": [
+        {
+          "type": "Group",
+          "userData": {
+            "selection": {
+              "kind": "opening",
+              "id": "opening:microduck:fa9ee2f71faafb88:c620cf250a66d5e3",
+              "ownerRef": "part:microduck:fa9ee2f71faafb88"
+            },
+            "authority": "geometry_only",
+            "surface": false,
+            "contextPartRefs": [],
+            "entryFocused": true
+          },
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "material": null
+        },
+        {
+          "type": "Group",
+          "userData": {
+            "featureType": "circular_opening",
+            "sourceTriangleCount": 0
+          },
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "material": null
+        },
+        {
+          "type": "LineLoop",
+          "userData": {
+            "openingBoundary": true
+          },
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "material": {
+            "type": "LineBasicMaterial",
+            "depthTest": true,
+            "depthWrite": false,
+            "transparent": true,
+            "opacity": 0.98,
+            "polygonOffset": false,
+            "polygonOffsetFactor": 0,
+            "polygonOffsetUnits": 0,
+            "renderOrder": 0
+          }
+        }
+      ]
+    },
+    {
+      "target": "hip-x17-z6",
+      "mode": "no-shadow",
+      "image": "hip-x17-z6-no-shadow.png",
+      "partRef": "part:microduck:fa9ee2f71faafb88",
+      "openingRef": "opening:microduck:fa9ee2f71faafb88:c620cf250a66d5e3",
+      "camera": [
+        0.04150000040233135,
+        0.021244226399026088,
+        0.09899615089002002,
+        0.023500000402331352,
+        0.0175000000745058,
+        0.0965000000070065
+      ],
+      "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-1c8eeda600249ce33b99&part=part%3Amicroduck%3Afa9ee2f71faafb88&opening=opening%3Amicroduck%3Afa9ee2f71faafb88%3Ac620cf250a66d5e3&explode=0.00&detail=geometry&view=iso&isolate=part%3Amicroduck%3Afa9ee2f71faafb88&labels=0&grid=0&supplements=0&camera=0.0415000%2C0.0212442%2C0.0989962%2C0.0235000%2C0.0175000%2C0.0965000"
+    },
+    {
+      "target": "hip-x17-z6",
+      "mode": "zero-normal-bias",
+      "image": "hip-x17-z6-zero-normal-bias.png",
+      "partRef": "part:microduck:fa9ee2f71faafb88",
+      "openingRef": "opening:microduck:fa9ee2f71faafb88:c620cf250a66d5e3",
+      "camera": [
+        0.04150000040233135,
+        0.021244226399026088,
+        0.09899615089002002,
+        0.023500000402331352,
+        0.0175000000745058,
+        0.0965000000070065
+      ],
+      "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-1c8eeda600249ce33b99&part=part%3Amicroduck%3Afa9ee2f71faafb88&opening=opening%3Amicroduck%3Afa9ee2f71faafb88%3Ac620cf250a66d5e3&explode=0.00&detail=geometry&view=iso&isolate=part%3Amicroduck%3Afa9ee2f71faafb88&labels=0&grid=0&supplements=0&camera=0.0415000%2C0.0212442%2C0.0989962%2C0.0235000%2C0.0175000%2C0.0965000"
+    },
+    {
+      "target": "hip-x17-z6",
+      "mode": "smaller-normal-bias",
+      "image": "hip-x17-z6-smaller-normal-bias.png",
+      "partRef": "part:microduck:fa9ee2f71faafb88",
+      "openingRef": "opening:microduck:fa9ee2f71faafb88:c620cf250a66d5e3",
+      "camera": [
+        0.04150000040233135,
+        0.021244226399026088,
+        0.09899615089002002,
+        0.023500000402331352,
+        0.0175000000745058,
+        0.0965000000070065
+      ],
+      "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-1c8eeda600249ce33b99&part=part%3Amicroduck%3Afa9ee2f71faafb88&opening=opening%3Amicroduck%3Afa9ee2f71faafb88%3Ac620cf250a66d5e3&explode=0.00&detail=geometry&view=iso&isolate=part%3Amicroduck%3Afa9ee2f71faafb88&labels=0&grid=0&supplements=0&camera=0.0415000%2C0.0212442%2C0.0989962%2C0.0235000%2C0.0175000%2C0.0965000"
+    },
+    {
+      "target": "hip-x17-z6",
+      "mode": "no-double-shadow",
+      "image": "hip-x17-z6-no-double-shadow.png",
+      "partRef": "part:microduck:fa9ee2f71faafb88",
+      "openingRef": "opening:microduck:fa9ee2f71faafb88:c620cf250a66d5e3",
+      "camera": [
+        0.04150000040233135,
+        0.021244226399026088,
+        0.09899615089002002,
+        0.023500000402331352,
+        0.0175000000745058,
+        0.0965000000070065
+      ],
+      "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-1c8eeda600249ce33b99&part=part%3Amicroduck%3Afa9ee2f71faafb88&opening=opening%3Amicroduck%3Afa9ee2f71faafb88%3Ac620cf250a66d5e3&explode=0.00&detail=geometry&view=iso&isolate=part%3Amicroduck%3Afa9ee2f71faafb88&labels=0&grid=0&supplements=0&camera=0.0415000%2C0.0212442%2C0.0989962%2C0.0235000%2C0.0175000%2C0.0965000"
+    },
+    {
+      "target": "hip-x17-z6",
+      "mode": "logical-hole",
+      "image": "hip-x17-z6-logical-hole.png",
+      "partRef": "part:microduck:fa9ee2f71faafb88",
+      "holeRef": "logical-hole:microduck:fa9ee2f71faafb88:0c91e4366ee831d6",
+      "camera": [
+        0.04150000040233135,
+        0.021244226399026088,
+        0.09899615089002002,
+        0.023500000402331352,
+        0.0175000000745058,
+        0.0965000000070065
+      ],
+      "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-1c8eeda600249ce33b99&part=part%3Amicroduck%3Afa9ee2f71faafb88&hole=logical-hole%3Amicroduck%3Afa9ee2f71faafb88%3A0c91e4366ee831d6&explode=0.00&detail=geometry&view=iso&isolate=part%3Amicroduck%3Afa9ee2f71faafb88&labels=0&grid=0&supplements=0&camera=0.0415000%2C0.0212442%2C0.0989962%2C0.0235000%2C0.0175000%2C0.0965000",
+      "objects": [
+        {
+          "type": "Group",
+          "userData": {
+            "selection": {
+              "kind": "hole",
+              "id": "logical-hole:microduck:fa9ee2f71faafb88:0c91e4366ee831d6",
+              "ownerRef": "part:microduck:fa9ee2f71faafb88"
+            },
+            "authority": "geometry_only",
+            "surface": false,
+            "contextPartRefs": [],
+            "entryFocused": false
+          }
+        },
+        {
+          "type": "Group",
+          "userData": {
+            "featureType": "cylinder",
+            "sourceTriangleCount": 144
+          }
+        },
+        {
+          "type": "LineLoop",
+          "userData": {
+            "entryRing": true
+          }
+        },
+        {
+          "type": "LineLoop",
+          "userData": {
+            "entryRing": true
+          }
+        },
+        {
+          "type": "LineSegments",
+          "userData": {}
+        },
+        {
+          "type": "Mesh",
+          "userData": {}
+        },
+        {
+          "type": "Group",
+          "userData": {
+            "sourceTriangleCount": 0,
+            "featureType": "portal"
+          }
+        },
+        {
+          "type": "LineLoop",
+          "userData": {}
+        },
+        {
+          "type": "LineLoop",
+          "userData": {}
+        }
+      ]
+    },
+    {
+      "target": "hip-x17-z6",
+      "mode": "oblique",
+      "image": "hip-x17-z6-oblique.png",
+      "partRef": "part:microduck:fa9ee2f71faafb88",
+      "openingRef": "opening:microduck:fa9ee2f71faafb88:c620cf250a66d5e3",
+      "camera": [
+        0.05150000040233135,
+        0.010510777602067896,
+        0.09184051835871458,
+        0.023500000402331352,
+        0.0175000000745058,
+        0.0965000000070065
+      ],
+      "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-1c8eeda600249ce33b99&part=part%3Amicroduck%3Afa9ee2f71faafb88&opening=opening%3Amicroduck%3Afa9ee2f71faafb88%3Ac620cf250a66d5e3&explode=0.00&detail=geometry&view=iso&isolate=part%3Amicroduck%3Afa9ee2f71faafb88&labels=0&grid=0&supplements=0&camera=0.0515000%2C0.0105108%2C0.0918405%2C0.0235000%2C0.0175000%2C0.0965000"
+    },
+    {
+      "target": "hip-x17-z6",
+      "mode": "zoom",
+      "image": "hip-x17-z6-zoom.png",
+      "partRef": "part:microduck:fa9ee2f71faafb88",
+      "openingRef": "opening:microduck:fa9ee2f71faafb88:c620cf250a66d5e3",
+      "camera": [
+        0.03550000040233135,
+        0.019996150957519325,
+        0.09816410059568217,
+        0.023500000402331352,
+        0.0175000000745058,
+        0.0965000000070065
+      ],
+      "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-1c8eeda600249ce33b99&part=part%3Amicroduck%3Afa9ee2f71faafb88&opening=opening%3Amicroduck%3Afa9ee2f71faafb88%3Ac620cf250a66d5e3&explode=0.00&detail=geometry&view=iso&isolate=part%3Amicroduck%3Afa9ee2f71faafb88&labels=0&grid=0&supplements=0&camera=0.0355000%2C0.0199962%2C0.0981641%2C0.0235000%2C0.0175000%2C0.0965000"
+    }
+  ],
+  "errors": []
+}

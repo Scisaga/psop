@@ -145,6 +145,14 @@ export function resolveGeometry(data: PrototypeData, selection: GeometrySelectio
     const review = analysis.connection_reviews?.find(item => item.id === (supplement?.review_ref || selection.id));
     const owner = review?.participants.find(item => item.part_ref === selection.ownerRef) || review?.participants[0];
     if (!review || !owner) return null;
+    const finding = !supplement ? analysis.connection_review_findings?.find(item => item.review_ref === review.id && item.work_status === 'investigated') : undefined;
+    const investigatedOwner = finding?.participants.find(item => item.part_ref === owner.part_ref);
+    if (finding && investigatedOwner && finding.participants.some(item => item.structure_refs.length || item.feature_refs.length || item.opening_refs.length)) {
+      return { ...base, authority: 'project_inferred', ownerRef: investigatedOwner.part_ref,
+        featureRefs: investigatedOwner.feature_refs, openingRefs: investigatedOwner.opening_refs, structureRefs: investigatedOwner.structure_refs,
+        peers: finding.participants.filter(item => item.part_ref !== investigatedOwner.part_ref).map(item => ({ ownerRef: item.part_ref, featureRefs: item.feature_refs, openingRefs: item.opening_refs, structureRefs: item.structure_refs })),
+        contextPartRefs: finding.participants.map(item => item.part_ref), title: `${finding.title} · ${finding.evidence_status === 'supported_hypothesis' ? '机制待验证' : '已调查、仍缺证'}` };
+    }
     // Plane projections support a review, but do not define its contact area.
     // Explicit feature/observation selections retain full source-plane access.
     const refsFor = (participant: typeof owner) => [...new Set([...participant.feature_refs, ...(analysis.mounting_sites?.filter(site => participant.site_refs.includes(site.id)).flatMap(site => site.feature_refs) ?? [])])].filter(id => analysis.features.find(feature => feature.id === id)?.geometry.type !== 'plane');

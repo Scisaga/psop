@@ -74,7 +74,7 @@ export async function readDescriptor(directory) {
   const bytes = await readFile(path.join(root, 'manifest.json'));
   const manifest = JSON.parse(bytes.toString('utf8'));
   if (manifest.schema !== DKP_SCHEMA) throw new Error(`Unsupported DKP schema: ${manifest.schema || 'missing'}. Only v2 data packages are accepted.`);
-  if (!['1.0', '1.1', '1.2', '1.3', '1.4', '1.5', '1.6', '1.7', '1.8', '1.9', '1.10'].some(version => manifest.profile === `psop.hardware.source-model/${version}`)) throw new Error('Unsupported DKP knowledge profile.');
+  if (!['1.0', '1.1', '1.2', '1.3', '1.4', '1.5', '1.6', '1.7', '1.8', '1.9', '1.10', '1.11'].some(version => manifest.profile === `psop.hardware.source-model/${version}`)) throw new Error('Unsupported DKP knowledge profile.');
   if (!/^[a-f0-9]{64}$/.test(manifest.package_digest || '') || !Array.isArray(manifest.files)) throw new Error('Invalid DKP manifest.');
   if (!manifest.device?.id || !manifest.device?.name || !manifest.entrypoints?.scene) throw new Error('DKP device or scene entry is missing.');
   const { package_digest, ...unsigned } = manifest;

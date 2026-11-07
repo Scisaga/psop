@@ -3,6 +3,7 @@ import { ChevronRight, Crosshair, FileText, Focus, Ruler } from 'lucide-react';
 import type { CircularOpening, GeometrySelection, MechanicalFeature, Part, PrototypeData, StructureCandidate } from './types';
 import { openingGroupsFor, resolveGeometry } from './mechanics-model';
 import { InvestigationRecordDetails, InstallationHypothesisCard, installationHypothesesFor } from './InstallationHypotheses';
+import { ConnectionFindingSummary, connectionFindingsFor } from './RelationAnalysis';
 import { ReviewRegionDetails, StructureDetails } from './InvestigationInspector';
 import './structure-details.css';
 
@@ -79,6 +80,7 @@ export default function PhysicalStructureInspector(props: Props) {
   const descriptor = resolveGeometry(data, selection);
   const refs = active ? { structures: active.structures.map(item => item.id), openings: active.openings.map(item => item.id), features: active.featureRefs } : { structures: structure ? [structure.id] : [], openings: descriptor?.openingRefs ?? [], features: descriptor?.featureRefs ?? [] };
   const hypotheses = installationHypothesesFor(data, part.id).filter(item => item.participants.some(participant => participant.part_ref === part.id && (intersects(participant.structure_refs, refs.structures) || intersects(participant.opening_refs, refs.openings) || intersects(participant.feature_refs, refs.features))));
+  const connectionFindings = connectionFindingsFor(data, part.id).filter(item => item.participants.some(participant => participant.part_ref === part.id && (intersects(participant.structure_refs, refs.structures) || intersects(participant.opening_refs, refs.openings) || intersects(participant.feature_refs, refs.features))));
   const investigations = data.analysis?.investigation_records?.filter(item => item.part_ref === part.id && (intersects(item.structure_refs, refs.structures) || intersects(item.opening_refs, refs.openings) || intersects(item.feature_refs, refs.features))) ?? [];
   const passages = data.analysis?.passage_hypotheses?.filter(item => item.owner_ref === part.id && intersects(item.opening_refs, refs.openings)) ?? [];
   const walls = data.analysis?.features.filter(item => refs.features.includes(item.id) && item.geometry.type !== 'plane') ?? [];
@@ -112,7 +114,8 @@ export default function PhysicalStructureInspector(props: Props) {
       {region && <ReviewRegionDetails data={data} item={region} onOpenSource={onOpenSource} />}
       {(active || structure) && <div className="structure-connection-context"><h4>可能连接谁、承担什么作用</h4>{hypotheses.map(item => <InstallationHypothesisCard key={item.id} {...props} item={item} compact />)}
         {sites.map(site => <button className="structure-known-installation" key={site.id} onClick={() => onSelectGeometry({ kind: 'site', id: site.id, ownerRef: site.owner_ref })}><LinkIcon /><span><strong>{site.status === 'user_asserted' ? '已有安装用途声明' : '已有安装用途推断'} · {site.label}</strong><small>查看选用条件、参考关系与依据</small></span><ChevronRight size={13} /></button>)}
-        {!hypotheses.length && !sites.length && <p className="field-help">{investigations.length ? '此部位已执行调查，当前依据仍不足以形成具体安装关系。' : Array.isArray(data.analysis?.investigation_records) ? '当前只有几何记录；该部位尚未完成具体连接用途调查。' : '此历史快照未单独记录部位的功能调查状态；已发布几何和原有依据保留。'}</p>}
+        {connectionFindings.filter(item => !item.hypothesis_refs.some(id => hypotheses.some(hypothesis => hypothesis.id === id))).map(finding => <ConnectionFindingSummary key={finding.id} {...props} finding={finding} />)}
+        {!hypotheses.length && !sites.length && !connectionFindings.length && <p className="field-help">{investigations.length ? '此部位已执行调查，当前依据仍不足以形成具体安装关系。' : Array.isArray(data.analysis?.investigation_records) ? '当前只有几何记录；该部位尚未完成具体连接用途调查。' : '此历史快照未单独记录部位的功能调查状态；已发布几何和原有依据保留。'}</p>}
         {investigations.filter(item => !item.hypothesis_refs.length).map(item => <div key={item.id} className="structure-investigated-result"><p>{item.findings.join(' ')}</p><h4>还缺什么</h4><ul>{item.missing_evidence.map((missing, index) => <li key={index}>{missing}</li>)}</ul><InvestigationRecordDetails data={data} onOpenSource={onOpenSource} item={item} /></div>)}
       </div>}
       {opening && <details className="structure-technical"><summary>此边界的原始记录与来源</summary><div className="structure-technical-body"><code className="mechanics-object-id">{opening.id}</code><p className="field-help">{opening.geometry.boundary_vertices.length} 个源边界顶点；入口边界不等于独立通孔。</p>{opening.source_refs.map(id => { const source = data.sources.find(item => item.id === id); const evidence = data.evidence.find(item => opening.evidence_refs.includes(item.id) && item.sourceId === id); return source && <button className="mechanics-source-link" key={id} onClick={() => onOpenSource(id, evidence?.id)}><FileText size={13} /><span>{source.title}</span></button>; })}</div></details>}
