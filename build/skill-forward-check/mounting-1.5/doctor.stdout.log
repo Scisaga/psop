@@ -1,0 +1,27 @@
+{
+  "ok": true,
+  "command": "doctor",
+  "schema": "psop.simulate.status/2.0-draft.2",
+  "stage": "simulate",
+  "status": "partial",
+  "available": true,
+  "reason": "bounded_group_query_only",
+  "capabilities": {
+    "assembly": {
+      "status": "unavailable"
+    },
+    "rendering": {
+      "status": "unavailable"
+    },
+    "model_testing": {
+      "status": "unavailable"
+    },
+    "group_query": {
+      "status": "partial",
+      "scope": "Read validated Build installation knowledge and reference mappings, inspect historical 1.3 geometry, or evaluate explicit bounded rigid group definitions."
+    }
+  },
+  "workbench": "apps/workbench",
+  "execution_performed": false,
+  "message": "提供有界孔组查询；物理装配、路径、弹性、渲染及模型测试执行器尚未实现。"
+}

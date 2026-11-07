@@ -1,0 +1,902 @@
+{
+  "source": "C:\\Users\\scisa\\Desktop\\psop\\packages\\assembly\\fixtures\\four-hole-modes.json",
+  "source_sha256": "890177b4e4c9a61e241c782d422c997106b50abeef255bdf3d2d305424b79b79",
+  "query_artifact": "C:\\Users\\scisa\\Desktop\\psop\\build\\skill-forward-check\\four-hole-query.json",
+  "query_artifact_sha256": "963ede12a1e662ece42ab39d06e1a03b5492dc4871fa1c7f8d4c794b41f1b331",
+  "validation": {
+    "query_schema": "pass",
+    "source_hash_unchanged": "pass"
+  },
+  "selected_modes": {
+    "a": "exact-four-examples",
+    "b": "exact-four-examples"
+  },
+  "declared_modes": [
+    "exact-four-examples",
+    "open-two-examples",
+    "cardinality-2-to-4",
+    "contains-anchor-pair",
+    "paired-dependencies",
+    "full-pattern",
+    "single-hole"
+  ],
+  "status": "proposals",
+  "execution_performed": false,
+  "search": {
+    "complete": true,
+    "selection_complete": true,
+    "stop_reason": "exhausted",
+    "mappings_examined": 38
+  },
+  "query_limits": {
+    "max_members": 8,
+    "max_mappings": 50000,
+    "max_proposals": 256
+  },
+  "proposal_count": 13,
+  "selection_pairs": [
+    {
+      "left": [
+        "A",
+        "B"
+      ],
+      "right": [
+        "A",
+        "B"
+      ],
+      "proposals": 2
+    },
+    {
+      "left": [
+        "A",
+        "B"
+      ],
+      "right": [
+        "C",
+        "D"
+      ],
+      "proposals": 2
+    },
+    {
+      "left": [
+        "C",
+        "D"
+      ],
+      "right": [
+        "A",
+        "B"
+      ],
+      "proposals": 2
+    },
+    {
+      "left": [
+        "C",
+        "D"
+      ],
+      "right": [
+        "C",
+        "D"
+      ],
+      "proposals": 2
+    },
+    {
+      "left": [
+        "A",
+        "B",
+        "C"
+      ],
+      "right": [
+        "A",
+        "B",
+        "C"
+      ],
+      "proposals": 1
+    },
+    {
+      "left": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "right": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "proposals": 4
+    }
+  ],
+  "assessment_counts": {
+    "geometry": {
+      "pass": 13
+    },
+    "mode_eligibility": {
+      "pass": 13
+    },
+    "mechanical": {
+      "unknown": 13
+    },
+    "engineering": {
+      "unknown": 13
+    },
+    "task": {
+      "unknown": 13
+    },
+    "completion": {
+      "unknown": 13
+    },
+    "occupancy": {
+      "pass": 13
+    }
+  },
+  "proposals": [
+    {
+      "id": "proposal:dcf82d34b089dc712459",
+      "selected_roles_a": [
+        "A",
+        "B"
+      ],
+      "selected_roles_b": [
+        "A",
+        "B"
+      ],
+      "mapping": [
+        "A->A",
+        "B->B"
+      ],
+      "pose": {
+        "status": "determined",
+        "transform": {
+          "rotation": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "translation_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "maps_frame_b_to_a": [
+            "frame:synthetic:right",
+            "frame:synthetic:left"
+          ],
+          "determinant": 1.0
+        }
+      },
+      "engaged_member_pairs": [],
+      "unresolved_requirements": [
+        "Unbound third-party role fastener for A/A",
+        "Unbound third-party role fastener for B/B",
+        "Assembly/removal path remains unverified",
+        "Elastic engagement remains unverified",
+        "Selected members are not all evidenced as engaged",
+        "Mechanical engagement and retention remain outside this engine's evaluated scope"
+      ]
+    },
+    {
+      "id": "proposal:912dbd02cb577a996acf",
+      "selected_roles_a": [
+        "A",
+        "B"
+      ],
+      "selected_roles_b": [
+        "A",
+        "B"
+      ],
+      "mapping": [
+        "A->B",
+        "B->A"
+      ],
+      "pose": {
+        "status": "determined",
+        "transform": {
+          "rotation": [
+            [
+              -1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "translation_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "maps_frame_b_to_a": [
+            "frame:synthetic:right",
+            "frame:synthetic:left"
+          ],
+          "determinant": 1.0
+        }
+      },
+      "engaged_member_pairs": [],
+      "unresolved_requirements": [
+        "Unbound third-party role fastener for A/B",
+        "Unbound third-party role fastener for B/A",
+        "Assembly/removal path remains unverified",
+        "Elastic engagement remains unverified",
+        "Selected members are not all evidenced as engaged",
+        "Mechanical engagement and retention remain outside this engine's evaluated scope"
+      ]
+    },
+    {
+      "id": "proposal:0eeb93695e593726126e",
+      "selected_roles_a": [
+        "A",
+        "B"
+      ],
+      "selected_roles_b": [
+        "C",
+        "D"
+      ],
+      "mapping": [
+        "A->C",
+        "B->D"
+      ],
+      "pose": {
+        "status": "determined",
+        "transform": {
+          "rotation": [
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              -1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "translation_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "maps_frame_b_to_a": [
+            "frame:synthetic:right",
+            "frame:synthetic:left"
+          ],
+          "determinant": 1.0
+        }
+      },
+      "engaged_member_pairs": [],
+      "unresolved_requirements": [
+        "Unbound third-party role fastener for A/C",
+        "Unbound third-party role fastener for B/D",
+        "Assembly/removal path remains unverified",
+        "Elastic engagement remains unverified",
+        "Selected members are not all evidenced as engaged",
+        "Mechanical engagement and retention remain outside this engine's evaluated scope"
+      ]
+    },
+    {
+      "id": "proposal:5adb6529182abb2ea72c",
+      "selected_roles_a": [
+        "A",
+        "B"
+      ],
+      "selected_roles_b": [
+        "C",
+        "D"
+      ],
+      "mapping": [
+        "A->D",
+        "B->C"
+      ],
+      "pose": {
+        "status": "determined",
+        "transform": {
+          "rotation": [
+            [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "translation_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "maps_frame_b_to_a": [
+            "frame:synthetic:right",
+            "frame:synthetic:left"
+          ],
+          "determinant": 1.0
+        }
+      },
+      "engaged_member_pairs": [],
+      "unresolved_requirements": [
+        "Unbound third-party role fastener for A/D",
+        "Unbound third-party role fastener for B/C",
+        "Assembly/removal path remains unverified",
+        "Elastic engagement remains unverified",
+        "Selected members are not all evidenced as engaged",
+        "Mechanical engagement and retention remain outside this engine's evaluated scope"
+      ]
+    },
+    {
+      "id": "proposal:6286a77c949d6ce4811a",
+      "selected_roles_a": [
+        "C",
+        "D"
+      ],
+      "selected_roles_b": [
+        "A",
+        "B"
+      ],
+      "mapping": [
+        "C->A",
+        "D->B"
+      ],
+      "pose": {
+        "status": "determined",
+        "transform": {
+          "rotation": [
+            [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "translation_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "maps_frame_b_to_a": [
+            "frame:synthetic:right",
+            "frame:synthetic:left"
+          ],
+          "determinant": 1.0
+        }
+      },
+      "engaged_member_pairs": [],
+      "unresolved_requirements": [
+        "Unbound third-party role fastener for C/A",
+        "Unbound third-party role fastener for D/B",
+        "Assembly/removal path remains unverified",
+        "Elastic engagement remains unverified",
+        "Selected members are not all evidenced as engaged",
+        "Mechanical engagement and retention remain outside this engine's evaluated scope"
+      ]
+    },
+    {
+      "id": "proposal:d16b2aef98fb7927474e",
+      "selected_roles_a": [
+        "C",
+        "D"
+      ],
+      "selected_roles_b": [
+        "A",
+        "B"
+      ],
+      "mapping": [
+        "C->B",
+        "D->A"
+      ],
+      "pose": {
+        "status": "determined",
+        "transform": {
+          "rotation": [
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              -1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "translation_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "maps_frame_b_to_a": [
+            "frame:synthetic:right",
+            "frame:synthetic:left"
+          ],
+          "determinant": 1.0
+        }
+      },
+      "engaged_member_pairs": [],
+      "unresolved_requirements": [
+        "Unbound third-party role fastener for C/B",
+        "Unbound third-party role fastener for D/A",
+        "Assembly/removal path remains unverified",
+        "Elastic engagement remains unverified",
+        "Selected members are not all evidenced as engaged",
+        "Mechanical engagement and retention remain outside this engine's evaluated scope"
+      ]
+    },
+    {
+      "id": "proposal:f434bd3a4aca1e068108",
+      "selected_roles_a": [
+        "C",
+        "D"
+      ],
+      "selected_roles_b": [
+        "C",
+        "D"
+      ],
+      "mapping": [
+        "C->C",
+        "D->D"
+      ],
+      "pose": {
+        "status": "determined",
+        "transform": {
+          "rotation": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "translation_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "maps_frame_b_to_a": [
+            "frame:synthetic:right",
+            "frame:synthetic:left"
+          ],
+          "determinant": 1.0
+        }
+      },
+      "engaged_member_pairs": [],
+      "unresolved_requirements": [
+        "Unbound third-party role fastener for C/C",
+        "Unbound third-party role fastener for D/D",
+        "Assembly/removal path remains unverified",
+        "Elastic engagement remains unverified",
+        "Selected members are not all evidenced as engaged",
+        "Mechanical engagement and retention remain outside this engine's evaluated scope"
+      ]
+    },
+    {
+      "id": "proposal:9a17f7a1d899d9baefee",
+      "selected_roles_a": [
+        "C",
+        "D"
+      ],
+      "selected_roles_b": [
+        "C",
+        "D"
+      ],
+      "mapping": [
+        "C->D",
+        "D->C"
+      ],
+      "pose": {
+        "status": "determined",
+        "transform": {
+          "rotation": [
+            [
+              -1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "translation_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "maps_frame_b_to_a": [
+            "frame:synthetic:right",
+            "frame:synthetic:left"
+          ],
+          "determinant": 1.0
+        }
+      },
+      "engaged_member_pairs": [],
+      "unresolved_requirements": [
+        "Unbound third-party role fastener for C/D",
+        "Unbound third-party role fastener for D/C",
+        "Assembly/removal path remains unverified",
+        "Elastic engagement remains unverified",
+        "Selected members are not all evidenced as engaged",
+        "Mechanical engagement and retention remain outside this engine's evaluated scope"
+      ]
+    },
+    {
+      "id": "proposal:5ac91c5f5778d8748eb1",
+      "selected_roles_a": [
+        "A",
+        "B",
+        "C"
+      ],
+      "selected_roles_b": [
+        "A",
+        "B",
+        "C"
+      ],
+      "mapping": [
+        "A->A",
+        "B->B",
+        "C->C"
+      ],
+      "pose": {
+        "status": "determined",
+        "transform": {
+          "rotation": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "translation_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "maps_frame_b_to_a": [
+            "frame:synthetic:right",
+            "frame:synthetic:left"
+          ],
+          "determinant": 1.0
+        }
+      },
+      "engaged_member_pairs": [],
+      "unresolved_requirements": [
+        "Unbound third-party role fastener for A/A",
+        "Unbound third-party role fastener for B/B",
+        "Unbound third-party role fastener for C/C",
+        "Assembly/removal path remains unverified",
+        "Elastic engagement remains unverified",
+        "Selected members are not all evidenced as engaged",
+        "Mechanical engagement and retention remain outside this engine's evaluated scope"
+      ]
+    },
+    {
+      "id": "proposal:ab4d7138b04a85c41887",
+      "selected_roles_a": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "selected_roles_b": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "mapping": [
+        "A->A",
+        "B->B",
+        "C->C",
+        "D->D"
+      ],
+      "pose": {
+        "status": "determined",
+        "transform": {
+          "rotation": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "translation_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "maps_frame_b_to_a": [
+            "frame:synthetic:right",
+            "frame:synthetic:left"
+          ],
+          "determinant": 1.0
+        }
+      },
+      "engaged_member_pairs": [],
+      "unresolved_requirements": [
+        "Unbound third-party role fastener for A/A",
+        "Unbound third-party role fastener for B/B",
+        "Unbound third-party role fastener for C/C",
+        "Unbound third-party role fastener for D/D",
+        "Assembly/removal path remains unverified",
+        "Elastic engagement remains unverified",
+        "Selected members are not all evidenced as engaged",
+        "Mechanical engagement and retention remain outside this engine's evaluated scope"
+      ]
+    },
+    {
+      "id": "proposal:b258fc390ec77c917788",
+      "selected_roles_a": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "selected_roles_b": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "mapping": [
+        "A->B",
+        "B->A",
+        "C->D",
+        "D->C"
+      ],
+      "pose": {
+        "status": "determined",
+        "transform": {
+          "rotation": [
+            [
+              -1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "translation_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "maps_frame_b_to_a": [
+            "frame:synthetic:right",
+            "frame:synthetic:left"
+          ],
+          "determinant": 1.0
+        }
+      },
+      "engaged_member_pairs": [],
+      "unresolved_requirements": [
+        "Unbound third-party role fastener for A/B",
+        "Unbound third-party role fastener for B/A",
+        "Unbound third-party role fastener for C/D",
+        "Unbound third-party role fastener for D/C",
+        "Assembly/removal path remains unverified",
+        "Elastic engagement remains unverified",
+        "Selected members are not all evidenced as engaged",
+        "Mechanical engagement and retention remain outside this engine's evaluated scope"
+      ]
+    },
+    {
+      "id": "proposal:58be39ca740851d0f3c0",
+      "selected_roles_a": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "selected_roles_b": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "mapping": [
+        "A->C",
+        "B->D",
+        "C->B",
+        "D->A"
+      ],
+      "pose": {
+        "status": "determined",
+        "transform": {
+          "rotation": [
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              -1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "translation_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "maps_frame_b_to_a": [
+            "frame:synthetic:right",
+            "frame:synthetic:left"
+          ],
+          "determinant": 1.0
+        }
+      },
+      "engaged_member_pairs": [],
+      "unresolved_requirements": [
+        "Unbound third-party role fastener for A/C",
+        "Unbound third-party role fastener for B/D",
+        "Unbound third-party role fastener for C/B",
+        "Unbound third-party role fastener for D/A",
+        "Assembly/removal path remains unverified",
+        "Elastic engagement remains unverified",
+        "Selected members are not all evidenced as engaged",
+        "Mechanical engagement and retention remain outside this engine's evaluated scope"
+      ]
+    },
+    {
+      "id": "proposal:cd81760b9ce1a1b6f996",
+      "selected_roles_a": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "selected_roles_b": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "mapping": [
+        "A->D",
+        "B->C",
+        "C->A",
+        "D->B"
+      ],
+      "pose": {
+        "status": "determined",
+        "transform": {
+          "rotation": [
+            [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "translation_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "maps_frame_b_to_a": [
+            "frame:synthetic:right",
+            "frame:synthetic:left"
+          ],
+          "determinant": 1.0
+        }
+      },
+      "engaged_member_pairs": [],
+      "unresolved_requirements": [
+        "Unbound third-party role fastener for A/D",
+        "Unbound third-party role fastener for B/C",
+        "Unbound third-party role fastener for C/A",
+        "Unbound third-party role fastener for D/B",
+        "Assembly/removal path remains unverified",
+        "Elastic engagement remains unverified",
+        "Selected members are not all evidenced as engaged",
+        "Mechanical engagement and retention remain outside this engine's evaluated scope"
+      ]
+    }
+  ],
+  "scope_note": "Only the fixture query-selected exact-four-examples mode was queried. Other declared modes and arbitrary real-device assemblies are outside this artifact.",
+  "completion_note": "All 13 geometry/mode proposals retain unknown mechanical, engineering, task and completion assessments; this is not completed assembly evidence."
+}

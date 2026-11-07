@@ -1,0 +1,56 @@
+{
+  "snapshot": "dkp-1c8eeda600249ce33b99",
+  "packageVersion": "2.0.0-interface-relations.1",
+  "packageDigest": "1c8eeda600249ce33b99ec622417a744d5cdaf43a512f1495a4780ae0030cb00",
+  "records": [
+    {
+      "hypothesisRef": "installation-hypothesis:right-shell-neck-four",
+      "title": "右外壳四孔与颈部舵机的螺钉连接假设",
+      "ownerRef": "part:microduck:9d70b219a5533bf1",
+      "peerRef": "part:microduck:4cef8bb24d37fe6e",
+      "sourceLocatorLines": [
+        "90      <geom type=\"mesh\" class=\"visual\" pos=\"0.004 -0.0005 -0.0175\" quat=\"0.707107 0 0 0.707107\" mesh=\"right_shell\" material=\"right_shell_material\"/>"
+      ],
+      "images": [
+        "right-shell-neck-four-main.png",
+        "right-shell-neck-four-evidence.png",
+        "right-shell-neck-four-source.png",
+        "right-shell-neck-four-peer.png"
+      ],
+      "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-1c8eeda600249ce33b99&part=part%3Amicroduck%3A9d70b219a5533bf1&hypothesis=installation-hypothesis%3Aright-shell-neck-four&detail=interfaces&labels=0&grid=0&explode=0"
+    },
+    {
+      "hypothesisRef": "installation-hypothesis:right-left-shell-closure",
+      "title": "左右外壳接缝处的螺钉闭壳假设",
+      "ownerRef": "part:microduck:9d70b219a5533bf1",
+      "peerRef": "part:microduck:e27cbdd6c07a264e",
+      "sourceLocatorLines": [
+        "90      <geom type=\"mesh\" class=\"visual\" pos=\"0.004 -0.0005 -0.0175\" quat=\"0.707107 0 0 0.707107\" mesh=\"right_shell\" material=\"right_shell_material\"/>"
+      ],
+      "images": [
+        "right-left-shell-closure-main.png",
+        "right-left-shell-closure-evidence.png",
+        "right-left-shell-closure-source.png",
+        "right-left-shell-closure-peer.png"
+      ],
+      "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-1c8eeda600249ce33b99&part=part%3Amicroduck%3A9d70b219a5533bf1&hypothesis=installation-hypothesis%3Aright-left-shell-closure&detail=interfaces&labels=0&grid=0&explode=0"
+    },
+    {
+      "hypothesisRef": "installation-hypothesis:bearing-roll-housing-pair",
+      "title": "轴承支承件双孔与躯干舵机的螺钉连接假设",
+      "ownerRef": "part:microduck:cb253f38c818b9d8",
+      "peerRef": "part:microduck:cd6d48fccc95df41",
+      "sourceLocatorLines": [
+        "122        <geom type=\"mesh\" class=\"visual\" pos=\"-0.0175 -0.002 0.0125\" quat=\"0 -1 -0 -0\" mesh=\"bearing_roll\" material=\"bearing_roll_material\"/>"
+      ],
+      "images": [
+        "bearing-roll-housing-pair-main.png",
+        "bearing-roll-housing-pair-evidence.png",
+        "bearing-roll-housing-pair-source.png",
+        "bearing-roll-housing-pair-peer.png"
+      ],
+      "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-1c8eeda600249ce33b99&part=part%3Amicroduck%3Acb253f38c818b9d8&hypothesis=installation-hypothesis%3Abearing-roll-housing-pair&detail=interfaces&labels=0&grid=0&explode=0"
+    }
+  ],
+  "errors": []
+}

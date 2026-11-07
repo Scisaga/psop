@@ -1,0 +1,94 @@
+{
+  "schema": "psop.build.intake/2.0-draft.1",
+  "profile": "psop.hardware.source-model/1.10",
+  "device": {
+    "id": "microduck",
+    "name": "Microduck"
+  },
+  "prepared_at": "2026-11-06T20:48:01+00:00",
+  "tool": {
+    "name": "psop-build",
+    "version": "3.0.0-draft.11",
+    "sha256": "36ff93e1e499aad07ff21d26fcbbfe5dd531c89d9463ace4e37aa0716998f449"
+  },
+  "inputs": {
+    "archive": {
+      "path": "inputs/materials.zip",
+      "sha256": "1a20e8494cc633a44ab4d8c662d8aa2e3b44973fbe8b4856040cdd0239d201aa"
+    },
+    "model": {
+      "path": "inputs/model.xml",
+      "sha256": "80fc4424ed71e430ec4919110dfdb5c714dc1c4e1138e1832a16865cf31eb8c8",
+      "url": "https://raw.githubusercontent.com/pollen-robotics/microduck_rl/cb70b792312d559a4da09064d92009079671815f/src/mjlab_microduck/robot/microduck/robot_walk.xml"
+    },
+    "ontology": {
+      "path": "inputs/hardware-ontology.md",
+      "sha256": "bc7b3442fa2545d99d631d5b14059b98eb41276b0398f282b42522b61743ae7d"
+    },
+    "assembly_knowledge": {
+      "path": "inputs/assembly-knowledge.json",
+      "sha256": "1a6f193caa17c6384b2f0d31c1bf2b0785d0d5fc6721ad5e4f60bd57d8eb0093"
+    },
+    "supporting_documents": [
+      {
+        "id": "SRC-MD-XL330-ASSEMBLY-INCLUDE",
+        "path": "inputs/supporting/references/xl330-assembly/x330_drawing.md",
+        "sha256": "ea5859ff3975edf15a823a8f4c9f8ba6adcdc9981a65f8b219641a9950f67740"
+      },
+      {
+        "id": "SRC-MD-XL330-ASSEMBLY-DRAWING",
+        "path": "inputs/supporting/references/xl330-assembly/xl330_assembly_integrated.png",
+        "sha256": "f24a151e24ae979e436ea33888863c8de2ed5f81955a096e1d2fa494d59ae217"
+      },
+      {
+        "id": "SRC-MD-XL330-HORN-SCREW",
+        "path": "inputs/supporting/references/xl330-assembly/x330_horn_screw.png",
+        "sha256": "0b25105a72e0506a55806438dee7c831530580e0257dfddf0e4000c6021c06f7"
+      }
+    ],
+    "investigation": {
+      "path": "inputs/interface-investigation.json",
+      "sha256": "4027932ed7225231bfc836852a7a47293b3be6aed2cd180c4acab723a1ce098a"
+    },
+    "investigation_documents": [
+      {
+        "id": "upstream-model-readme",
+        "path": "inputs/investigation-sources/SRC-INVESTIGATION-B2DF4346FF46A912F975.md",
+        "sha256": "b5e606efe7ff71f4f6324820b36152d401a0b1be6e2f908bbaca01ffee81638d"
+      },
+      {
+        "id": "upstream-model-docs",
+        "path": "inputs/investigation-sources/SRC-INVESTIGATION-CCC7685787AB63E7B0D3.json",
+        "sha256": "0756917217a37d3e2abe84def0f5d46960bc87d18b00a21468f0e3c34bd99ab3"
+      },
+      {
+        "id": "upstream-microduck-design-tree",
+        "path": "inputs/investigation-sources/SRC-INVESTIGATION-FC374631ED68A28D7D8E.json",
+        "sha256": "8d379daa2a1ce0fc9218e8ca113c9b77118c60c1b4e661141e72165363bf43ab"
+      },
+      {
+        "id": "local-xl330-assembly",
+        "path": "inputs/investigation-sources/SRC-INVESTIGATION-F99EF4933CDDF90F93D4.md",
+        "sha256": "ea5859ff3975edf15a823a8f4c9f8ba6adcdc9981a65f8b219641a9950f67740"
+      },
+      {
+        "id": "upstream-model-export-config",
+        "path": "inputs/investigation-sources/SRC-INVESTIGATION-7E5AD7382A245A7C6490.json",
+        "sha256": "978dcc845ae4072d74618bd7a3ac752079c3592ebc0fd2ec3079db00c0ceb954"
+      },
+      {
+        "id": "connection-studies-2026-11-07",
+        "path": "inputs/investigation-sources/SRC-INVESTIGATION-D97B8A0805474DAC9FC5.md",
+        "sha256": "fa1ecb061d762d0da86384c1ebac70e3ececf79cf91dba62d6df77d0297bbbb0"
+      }
+    ]
+  },
+  "counts": {
+    "sources": 69,
+    "geometries": 38,
+    "parts": 70,
+    "bodies": 15,
+    "joints": 14,
+    "evidence": 224
+  }
+}

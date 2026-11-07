@@ -1,0 +1,1 @@
+﻿python -B skills/psop-simulate/scripts/psop_simulate.py query --dkp build/v2/microduck/packages/microduck-20261105203918-aa6f313d.dkp --part-a part:microduck:0820b4025f26a004 --part-b part:microduck:7f4fefc3c6de90f1 --output build/skill-forward-check/mounting-1.4/forward-trial-query.json

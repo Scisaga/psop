@@ -1,0 +1,10 @@
+test_duplicate_definition_keys_are_not_last_wins_selection_rules (test_query_cli.QueryBoundary.test_duplicate_definition_keys_are_not_last_wins_selection_rules) ... ok
+test_exclusive_write_preserves_existing_file_even_after_preflight (test_query_cli.QueryBoundary.test_exclusive_write_preserves_existing_file_even_after_preflight) ... ok
+test_existing_output_and_definition_input_cannot_be_overwritten (test_query_cli.QueryBoundary.test_existing_output_and_definition_input_cannot_be_overwritten) ... ok
+test_new_output_inside_dkp_is_rejected_before_any_package_mutation (test_query_cli.QueryBoundary.test_new_output_inside_dkp_is_rejected_before_any_package_mutation) ... ok
+test_nonfinite_definition_numbers_are_rejected (test_query_cli.QueryBoundary.test_nonfinite_definition_numbers_are_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.037s
+
+OK

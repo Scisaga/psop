@@ -1,0 +1,574 @@
+{
+  "generated_at": "2026-11-06T03:52:32.875524+08:00",
+  "source_fixture": "packages/assembly/fixtures/four-hole-modes.json",
+  "source_fixture_sha256": "890177b4e4c9a61e241c782d422c997106b50abeef255bdf3d2d305424b79b79",
+  "source_fixture_unchanged": true,
+  "scope": "Seven synthetic declared queries, pairing each mode with the same mode on the other side. Not all 49 cross-mode pairs, and not all physical assembly methods.",
+  "definition_edit_policy": "Only query.mode_a and query.mode_b may change semantically; all synthetic basis, warrants, geometry and context are preserved.",
+  "records": [
+    {
+      "mode_a": "exact-four-examples",
+      "mode_b": "exact-four-examples",
+      "source_fixture": "packages/assembly/fixtures/four-hole-modes.json",
+      "source_fixture_sha256": "890177b4e4c9a61e241c782d422c997106b50abeef255bdf3d2d305424b79b79",
+      "definition_path": "build/skill-forward-check/modes/exact-four-examples.definition.json",
+      "definition_sha256": "e27df304006b8a73b2d76c8d8a9b6ed43856ddb8de9dc2c6c17f66640c059ae5",
+      "semantic_changes_from_original": [],
+      "basis_preserved": true,
+      "query_path": "build/skill-forward-check/modes/exact-four-examples.query.json",
+      "query_sha256": "5e445a0835b80c03885f2efee5b57c1383778982f0f41184a5158760283aa60c",
+      "actual_command": [
+        "C:\\Python314\\python.exe",
+        "-B",
+        "skills/psop-simulate/scripts/psop_simulate.py",
+        "query",
+        "--definition",
+        "build/skill-forward-check/modes/exact-four-examples.definition.json",
+        "--output",
+        "build/skill-forward-check/modes/exact-four-examples.query.json"
+      ],
+      "display_command": "python -B skills/psop-simulate/scripts/psop_simulate.py query --definition build/skill-forward-check/modes/exact-four-examples.definition.json --output build/skill-forward-check/modes/exact-four-examples.query.json",
+      "exit_code": 0,
+      "stderr": "",
+      "schema_validation": "pass",
+      "status": "proposals",
+      "execution_performed": false,
+      "search": {
+        "complete": true,
+        "selection_complete": true,
+        "stop_reason": "exhausted",
+        "mappings_examined": 38
+      },
+      "query_limits": {
+        "max_members": 8,
+        "max_mappings": 50000,
+        "max_proposals": 256
+      },
+      "allowed_subset_counts": {
+        "a": 4,
+        "b": 4
+      },
+      "unknown_subset_counts": {
+        "a": 0,
+        "b": 0
+      },
+      "forbidden_subset_counts": {
+        "a": 11,
+        "b": 11
+      },
+      "proposal_count": 13,
+      "assessment_counts": {
+        "geometry": {
+          "pass": 13
+        },
+        "mode_eligibility": {
+          "pass": 13
+        },
+        "mechanical": {
+          "unknown": 13
+        },
+        "engineering": {
+          "unknown": 13
+        },
+        "task": {
+          "unknown": 13
+        },
+        "completion": {
+          "unknown": 13
+        },
+        "occupancy": {
+          "pass": 13
+        }
+      },
+      "pose_status_counts": {
+        "determined": 13
+      }
+    },
+    {
+      "mode_a": "open-two-examples",
+      "mode_b": "open-two-examples",
+      "source_fixture": "packages/assembly/fixtures/four-hole-modes.json",
+      "source_fixture_sha256": "890177b4e4c9a61e241c782d422c997106b50abeef255bdf3d2d305424b79b79",
+      "definition_path": "build/skill-forward-check/modes/open-two-examples.definition.json",
+      "definition_sha256": "df5a34b1fc6d1b0e284a32599a2acdb4cfb6067970d1978633aa0c5d148cf65f",
+      "semantic_changes_from_original": [
+        "/query/mode_a",
+        "/query/mode_b"
+      ],
+      "basis_preserved": true,
+      "query_path": "build/skill-forward-check/modes/open-two-examples.query.json",
+      "query_sha256": "7f4cbdb9cde957dcebd75547a2c33e734173765d2b1615b24e582be51a9eb795",
+      "actual_command": [
+        "C:\\Python314\\python.exe",
+        "-B",
+        "skills/psop-simulate/scripts/psop_simulate.py",
+        "query",
+        "--definition",
+        "build/skill-forward-check/modes/open-two-examples.definition.json",
+        "--output",
+        "build/skill-forward-check/modes/open-two-examples.query.json"
+      ],
+      "display_command": "python -B skills/psop-simulate/scripts/psop_simulate.py query --definition build/skill-forward-check/modes/open-two-examples.definition.json --output build/skill-forward-check/modes/open-two-examples.query.json",
+      "exit_code": 0,
+      "stderr": "",
+      "schema_validation": "pass",
+      "status": "proposals",
+      "execution_performed": false,
+      "search": {
+        "complete": true,
+        "selection_complete": false,
+        "stop_reason": "exhausted",
+        "mappings_examined": 8
+      },
+      "query_limits": {
+        "max_members": 8,
+        "max_mappings": 50000,
+        "max_proposals": 256
+      },
+      "allowed_subset_counts": {
+        "a": 2,
+        "b": 2
+      },
+      "unknown_subset_counts": {
+        "a": 13,
+        "b": 13
+      },
+      "forbidden_subset_counts": {
+        "a": 0,
+        "b": 0
+      },
+      "proposal_count": 8,
+      "assessment_counts": {
+        "geometry": {
+          "pass": 8
+        },
+        "mode_eligibility": {
+          "pass": 8
+        },
+        "mechanical": {
+          "unknown": 8
+        },
+        "engineering": {
+          "unknown": 8
+        },
+        "task": {
+          "unknown": 8
+        },
+        "completion": {
+          "unknown": 8
+        },
+        "occupancy": {
+          "pass": 8
+        }
+      },
+      "pose_status_counts": {
+        "determined": 8
+      }
+    },
+    {
+      "mode_a": "cardinality-2-to-4",
+      "mode_b": "cardinality-2-to-4",
+      "source_fixture": "packages/assembly/fixtures/four-hole-modes.json",
+      "source_fixture_sha256": "890177b4e4c9a61e241c782d422c997106b50abeef255bdf3d2d305424b79b79",
+      "definition_path": "build/skill-forward-check/modes/cardinality-2-to-4.definition.json",
+      "definition_sha256": "b5dff58fe5de727dec9823f69c4c473c26d9d539f94e4d47a8e0b896f50db603",
+      "semantic_changes_from_original": [
+        "/query/mode_a",
+        "/query/mode_b"
+      ],
+      "basis_preserved": true,
+      "query_path": "build/skill-forward-check/modes/cardinality-2-to-4.query.json",
+      "query_sha256": "5d31b9cfa0f63f9a511fad0dee4aec0f6e480315b1cc6966d659f42f13435202",
+      "actual_command": [
+        "C:\\Python314\\python.exe",
+        "-B",
+        "skills/psop-simulate/scripts/psop_simulate.py",
+        "query",
+        "--definition",
+        "build/skill-forward-check/modes/cardinality-2-to-4.definition.json",
+        "--output",
+        "build/skill-forward-check/modes/cardinality-2-to-4.query.json"
+      ],
+      "display_command": "python -B skills/psop-simulate/scripts/psop_simulate.py query --definition build/skill-forward-check/modes/cardinality-2-to-4.definition.json --output build/skill-forward-check/modes/cardinality-2-to-4.query.json",
+      "exit_code": 0,
+      "stderr": "",
+      "schema_validation": "pass",
+      "status": "proposals",
+      "execution_performed": false,
+      "search": {
+        "complete": true,
+        "selection_complete": true,
+        "stop_reason": "exhausted",
+        "mappings_examined": 192
+      },
+      "query_limits": {
+        "max_members": 8,
+        "max_mappings": 50000,
+        "max_proposals": 256
+      },
+      "allowed_subset_counts": {
+        "a": 11,
+        "b": 11
+      },
+      "unknown_subset_counts": {
+        "a": 0,
+        "b": 0
+      },
+      "forbidden_subset_counts": {
+        "a": 4,
+        "b": 4
+      },
+      "proposal_count": 60,
+      "assessment_counts": {
+        "geometry": {
+          "pass": 60
+        },
+        "mode_eligibility": {
+          "pass": 60
+        },
+        "mechanical": {
+          "unknown": 60
+        },
+        "engineering": {
+          "unknown": 60
+        },
+        "task": {
+          "unknown": 60
+        },
+        "completion": {
+          "unknown": 60
+        },
+        "occupancy": {
+          "pass": 60
+        }
+      },
+      "pose_status_counts": {
+        "determined": 60
+      }
+    },
+    {
+      "mode_a": "contains-anchor-pair",
+      "mode_b": "contains-anchor-pair",
+      "source_fixture": "packages/assembly/fixtures/four-hole-modes.json",
+      "source_fixture_sha256": "890177b4e4c9a61e241c782d422c997106b50abeef255bdf3d2d305424b79b79",
+      "definition_path": "build/skill-forward-check/modes/contains-anchor-pair.definition.json",
+      "definition_sha256": "6c9831f828a07d20f97aee86ee874d93a0a7d5141c66f65a9685cad56538fd37",
+      "semantic_changes_from_original": [
+        "/query/mode_a",
+        "/query/mode_b"
+      ],
+      "basis_preserved": true,
+      "query_path": "build/skill-forward-check/modes/contains-anchor-pair.query.json",
+      "query_sha256": "a0bd1055338ba96adfc062d63ee4a2b60385f7adf5c46686629d78512443b670",
+      "actual_command": [
+        "C:\\Python314\\python.exe",
+        "-B",
+        "skills/psop-simulate/scripts/psop_simulate.py",
+        "query",
+        "--definition",
+        "build/skill-forward-check/modes/contains-anchor-pair.definition.json",
+        "--output",
+        "build/skill-forward-check/modes/contains-anchor-pair.query.json"
+      ],
+      "display_command": "python -B skills/psop-simulate/scripts/psop_simulate.py query --definition build/skill-forward-check/modes/contains-anchor-pair.definition.json --output build/skill-forward-check/modes/contains-anchor-pair.query.json",
+      "exit_code": 0,
+      "stderr": "",
+      "schema_validation": "pass",
+      "status": "proposals",
+      "execution_performed": false,
+      "search": {
+        "complete": true,
+        "selection_complete": true,
+        "stop_reason": "exhausted",
+        "mappings_examined": 128
+      },
+      "query_limits": {
+        "max_members": 8,
+        "max_mappings": 50000,
+        "max_proposals": 256
+      },
+      "allowed_subset_counts": {
+        "a": 7,
+        "b": 7
+      },
+      "unknown_subset_counts": {
+        "a": 0,
+        "b": 0
+      },
+      "forbidden_subset_counts": {
+        "a": 8,
+        "b": 8
+      },
+      "proposal_count": 28,
+      "assessment_counts": {
+        "geometry": {
+          "pass": 28
+        },
+        "mode_eligibility": {
+          "pass": 28
+        },
+        "mechanical": {
+          "unknown": 28
+        },
+        "engineering": {
+          "unknown": 28
+        },
+        "task": {
+          "unknown": 28
+        },
+        "completion": {
+          "unknown": 28
+        },
+        "occupancy": {
+          "pass": 28
+        }
+      },
+      "pose_status_counts": {
+        "determined": 28
+      }
+    },
+    {
+      "mode_a": "paired-dependencies",
+      "mode_b": "paired-dependencies",
+      "source_fixture": "packages/assembly/fixtures/four-hole-modes.json",
+      "source_fixture_sha256": "890177b4e4c9a61e241c782d422c997106b50abeef255bdf3d2d305424b79b79",
+      "definition_path": "build/skill-forward-check/modes/paired-dependencies.definition.json",
+      "definition_sha256": "09702fc014b00c2ea795c4c850983237437c069288effe33feb3b3a0df5945b3",
+      "semantic_changes_from_original": [
+        "/query/mode_a",
+        "/query/mode_b"
+      ],
+      "basis_preserved": true,
+      "query_path": "build/skill-forward-check/modes/paired-dependencies.query.json",
+      "query_sha256": "245544e3339e42b7f05414bcae3ba7f8f7969a58d66af499d44f080562001455",
+      "actual_command": [
+        "C:\\Python314\\python.exe",
+        "-B",
+        "skills/psop-simulate/scripts/psop_simulate.py",
+        "query",
+        "--definition",
+        "build/skill-forward-check/modes/paired-dependencies.definition.json",
+        "--output",
+        "build/skill-forward-check/modes/paired-dependencies.query.json"
+      ],
+      "display_command": "python -B skills/psop-simulate/scripts/psop_simulate.py query --definition build/skill-forward-check/modes/paired-dependencies.definition.json --output build/skill-forward-check/modes/paired-dependencies.query.json",
+      "exit_code": 0,
+      "stderr": "",
+      "schema_validation": "pass",
+      "status": "proposals",
+      "execution_performed": false,
+      "search": {
+        "complete": true,
+        "selection_complete": true,
+        "stop_reason": "exhausted",
+        "mappings_examined": 32
+      },
+      "query_limits": {
+        "max_members": 8,
+        "max_mappings": 50000,
+        "max_proposals": 256
+      },
+      "allowed_subset_counts": {
+        "a": 3,
+        "b": 3
+      },
+      "unknown_subset_counts": {
+        "a": 0,
+        "b": 0
+      },
+      "forbidden_subset_counts": {
+        "a": 12,
+        "b": 12
+      },
+      "proposal_count": 12,
+      "assessment_counts": {
+        "geometry": {
+          "pass": 12
+        },
+        "mode_eligibility": {
+          "pass": 12
+        },
+        "mechanical": {
+          "unknown": 12
+        },
+        "engineering": {
+          "unknown": 12
+        },
+        "task": {
+          "unknown": 12
+        },
+        "completion": {
+          "unknown": 12
+        },
+        "occupancy": {
+          "pass": 12
+        }
+      },
+      "pose_status_counts": {
+        "determined": 12
+      }
+    },
+    {
+      "mode_a": "full-pattern",
+      "mode_b": "full-pattern",
+      "source_fixture": "packages/assembly/fixtures/four-hole-modes.json",
+      "source_fixture_sha256": "890177b4e4c9a61e241c782d422c997106b50abeef255bdf3d2d305424b79b79",
+      "definition_path": "build/skill-forward-check/modes/full-pattern.definition.json",
+      "definition_sha256": "5d1f839e1febfd0e3b42bac40be200e301bdbbc29b7e9e73eb62ed0d31961b2f",
+      "semantic_changes_from_original": [
+        "/query/mode_a",
+        "/query/mode_b"
+      ],
+      "basis_preserved": true,
+      "query_path": "build/skill-forward-check/modes/full-pattern.query.json",
+      "query_sha256": "43cb7ab4959ac63fd49b286346cbf35b5df45f300ada41b414f76c749fd65a66",
+      "actual_command": [
+        "C:\\Python314\\python.exe",
+        "-B",
+        "skills/psop-simulate/scripts/psop_simulate.py",
+        "query",
+        "--definition",
+        "build/skill-forward-check/modes/full-pattern.definition.json",
+        "--output",
+        "build/skill-forward-check/modes/full-pattern.query.json"
+      ],
+      "display_command": "python -B skills/psop-simulate/scripts/psop_simulate.py query --definition build/skill-forward-check/modes/full-pattern.definition.json --output build/skill-forward-check/modes/full-pattern.query.json",
+      "exit_code": 0,
+      "stderr": "",
+      "schema_validation": "pass",
+      "status": "proposals",
+      "execution_performed": false,
+      "search": {
+        "complete": true,
+        "selection_complete": true,
+        "stop_reason": "exhausted",
+        "mappings_examined": 24
+      },
+      "query_limits": {
+        "max_members": 8,
+        "max_mappings": 50000,
+        "max_proposals": 256
+      },
+      "allowed_subset_counts": {
+        "a": 1,
+        "b": 1
+      },
+      "unknown_subset_counts": {
+        "a": 0,
+        "b": 0
+      },
+      "forbidden_subset_counts": {
+        "a": 14,
+        "b": 14
+      },
+      "proposal_count": 4,
+      "assessment_counts": {
+        "geometry": {
+          "pass": 4
+        },
+        "mode_eligibility": {
+          "pass": 4
+        },
+        "mechanical": {
+          "unknown": 4
+        },
+        "engineering": {
+          "unknown": 4
+        },
+        "task": {
+          "unknown": 4
+        },
+        "completion": {
+          "unknown": 4
+        },
+        "occupancy": {
+          "pass": 4
+        }
+      },
+      "pose_status_counts": {
+        "determined": 4
+      }
+    },
+    {
+      "mode_a": "single-hole",
+      "mode_b": "single-hole",
+      "source_fixture": "packages/assembly/fixtures/four-hole-modes.json",
+      "source_fixture_sha256": "890177b4e4c9a61e241c782d422c997106b50abeef255bdf3d2d305424b79b79",
+      "definition_path": "build/skill-forward-check/modes/single-hole.definition.json",
+      "definition_sha256": "f27c22c72fb5224918aba2027c6696f24f62ce1277d02a0d89db687b38f5a03e",
+      "semantic_changes_from_original": [
+        "/query/mode_a",
+        "/query/mode_b"
+      ],
+      "basis_preserved": true,
+      "query_path": "build/skill-forward-check/modes/single-hole.query.json",
+      "query_sha256": "d5360af9b603bd8d3933cd40b3a9ea83f28002e0d6ea90e58a7c65ebf582d1a4",
+      "actual_command": [
+        "C:\\Python314\\python.exe",
+        "-B",
+        "skills/psop-simulate/scripts/psop_simulate.py",
+        "query",
+        "--definition",
+        "build/skill-forward-check/modes/single-hole.definition.json",
+        "--output",
+        "build/skill-forward-check/modes/single-hole.query.json"
+      ],
+      "display_command": "python -B skills/psop-simulate/scripts/psop_simulate.py query --definition build/skill-forward-check/modes/single-hole.definition.json --output build/skill-forward-check/modes/single-hole.query.json",
+      "exit_code": 0,
+      "stderr": "",
+      "schema_validation": "pass",
+      "status": "proposals",
+      "execution_performed": false,
+      "search": {
+        "complete": true,
+        "selection_complete": true,
+        "stop_reason": "exhausted",
+        "mappings_examined": 1
+      },
+      "query_limits": {
+        "max_members": 8,
+        "max_mappings": 50000,
+        "max_proposals": 256
+      },
+      "allowed_subset_counts": {
+        "a": 1,
+        "b": 1
+      },
+      "unknown_subset_counts": {
+        "a": 0,
+        "b": 0
+      },
+      "forbidden_subset_counts": {
+        "a": 14,
+        "b": 14
+      },
+      "proposal_count": 1,
+      "assessment_counts": {
+        "geometry": {
+          "unknown": 1
+        },
+        "mode_eligibility": {
+          "pass": 1
+        },
+        "mechanical": {
+          "unknown": 1
+        },
+        "engineering": {
+          "unknown": 1
+        },
+        "task": {
+          "unknown": 1
+        },
+        "completion": {
+          "unknown": 1
+        },
+        "occupancy": {
+          "pass": 1
+        }
+      },
+      "pose_status_counts": {
+        "underdetermined": 1
+      }
+    }
+  ]
+}

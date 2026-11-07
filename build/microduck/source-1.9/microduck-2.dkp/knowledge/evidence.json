@@ -1,0 +1,2134 @@
+{
+  "schema": "psop.build.evidence/2.0-draft.1",
+  "items": [
+    {
+      "id": "evidence:b364863ffde63eed:xml",
+      "sourceId": "SRC-MD-MJCF",
+      "title": "参考装配中的可视实例",
+      "kind": "xml-node",
+      "excerpt": "<geom type=\"mesh\" class=\"visual\" pos=\"0.006 0.0175 -0.005\" quat=\"1 -0 -0 0\" mesh=\"seeed_bearing__configuration__22x16x4\" material=\"seeed_bearing__configuration__22x16x4_material\"/>",
+      "lineStart": 88,
+      "lineEnd": 88,
+      "partId": "part:microduck:b364863ffde63eed"
+    },
+    {
+      "id": "evidence:b364863ffde63eed:csv",
+      "sourceId": "SRC-MD-INDEX",
+      "title": "中文名称与原网格映射",
+      "kind": "csv-row",
+      "excerpt": "当前文件名：seeed_bearing__configuration__22x16x4_轴承外形-22×16×4.stl\nSTL原文件名：seeed_bearing__configuration__22x16x4.stl\n中文识别名称（整理）：轴承外形（22×16×4 配置名）\n原仿真模型可视实例数（非采购数量）：11\n原仿真模型所属刚体（非alpha装配对应）：bearing_roll；hip_l；hip_l_2；neck_pitch；trunk_base；upper_leg_left；upper_leg_right；yaw2roll；yaw_roll_motion\n官方原文件来源：https://github.com/pollen-robotics/microduck_rl/blob/cb70b792312d559a4da09064d92009079671815f/src/mjlab_microduck/robot/microduck/assets/seeed_bearing__configuration__22x16x4.stl",
+      "row": 26,
+      "lineStart": 26,
+      "lineEnd": 26,
+      "partId": "part:microduck:b364863ffde63eed"
+    },
+    {
+      "id": "evidence:b364863ffde63eed:stl",
+      "sourceId": "SRC-000034",
+      "title": "STL 原始文件",
+      "kind": "source-file",
+      "excerpt": "来源文件：microduck-official-materials/03-三维模型/assets/seeed_bearing__configuration__22x16x4_轴承外形-22×16×4.stl\nSHA-256：295ee68ed9766c91fe06d3a2a49d39f7c2f56cc943395d293afdeb013123435e\n文件大小：1048584 bytes\n仅为来源登记，不是制造或物理验证。",
+      "partId": "part:microduck:b364863ffde63eed"
+    },
+    {
+      "id": "evidence:9d70b219a5533bf1:xml",
+      "sourceId": "SRC-MD-MJCF",
+      "title": "参考装配中的可视实例",
+      "kind": "xml-node",
+      "excerpt": "<geom type=\"mesh\" class=\"visual\" pos=\"0.004 -0.0005 -0.0175\" quat=\"0.707107 0 0 0.707107\" mesh=\"right_shell\" material=\"right_shell_material\"/>",
+      "lineStart": 90,
+      "lineEnd": 90,
+      "partId": "part:microduck:9d70b219a5533bf1"
+    },
+    {
+      "id": "evidence:9d70b219a5533bf1:csv",
+      "sourceId": "SRC-MD-INDEX",
+      "title": "中文名称与原网格映射",
+      "kind": "csv-row",
+      "excerpt": "当前文件名：right_shell_右侧外壳.stl\nSTL原文件名：right_shell.stl\n中文识别名称（整理）：右侧外壳\n原仿真模型可视实例数（非采购数量）：1\n原仿真模型所属刚体（非alpha装配对应）：trunk_base\n官方原文件来源：https://github.com/pollen-robotics/microduck_rl/blob/cb70b792312d559a4da09064d92009079671815f/src/mjlab_microduck/robot/microduck/assets/right_shell.stl",
+      "row": 25,
+      "lineStart": 25,
+      "lineEnd": 25,
+      "partId": "part:microduck:9d70b219a5533bf1"
+    },
+    {
+      "id": "evidence:9d70b219a5533bf1:stl",
+      "sourceId": "SRC-000033",
+      "title": "STL 原始文件",
+      "kind": "source-file",
+      "excerpt": "来源文件：microduck-official-materials/03-三维模型/assets/right_shell_右侧外壳.stl\nSHA-256：3efba3e193cc6aa49d49a9c92cdded0504917397c9e2c5b8fe002a958e2f2d2b\n文件大小：1048584 bytes\n仅为来源登记，不是制造或物理验证。",
+      "partId": "part:microduck:9d70b219a5533bf1"
+    },
+    {
+      "id": "evidence:78cf36c41e4fde06:xml",
+      "sourceId": "SRC-MD-MJCF",
+      "title": "参考装配中的可视实例",
+      "kind": "xml-node",
+      "excerpt": "<geom type=\"mesh\" class=\"visual\" pos=\"0.0042 0 -0.0175215\" quat=\"0.707107 -0 0 0.707107\" mesh=\"banana_pcb_locker\" material=\"banana_pcb_locker_material\"/>",
+      "lineStart": 92,
+      "lineEnd": 92,
+      "partId": "part:microduck:78cf36c41e4fde06"
+    },
+    {
+      "id": "evidence:78cf36c41e4fde06:csv",
+      "sourceId": "SRC-MD-INDEX",
+      "title": "中文名称与原网格映射",
+      "kind": "csv-row",
+      "excerpt": "当前文件名：banana_pcb_locker_电路板固定件.stl\nSTL原文件名：banana_pcb_locker.stl\n中文识别名称（整理）：电路板固定件\n原仿真模型可视实例数（非采购数量）：1\n原仿真模型所属刚体（非alpha装配对应）：trunk_base\n官方原文件来源：https://github.com/pollen-robotics/microduck_rl/blob/cb70b792312d559a4da09064d92009079671815f/src/mjlab_microduck/robot/microduck/assets/banana_pcb_locker.stl",
+      "row": 4,
+      "lineStart": 4,
+      "lineEnd": 4,
+      "partId": "part:microduck:78cf36c41e4fde06"
+    },
+    {
+      "id": "evidence:78cf36c41e4fde06:stl",
+      "sourceId": "SRC-000012",
+      "title": "STL 原始文件",
+      "kind": "source-file",
+      "excerpt": "来源文件：microduck-official-materials/03-三维模型/assets/banana_pcb_locker_电路板固定件.stl\nSHA-256：42ddde9d01bf5d91f88b99847017f14d97d2537ee27383c6d41dd8bf30a51134\n文件大小：69484 bytes\n仅为来源登记，不是制造或物理验证。",
+      "partId": "part:microduck:78cf36c41e4fde06"
+    },
+    {
+      "id": "evidence:203d2686e3321e4a:xml",
+      "sourceId": "SRC-MD-MJCF",
+      "title": "参考装配中的可视实例",
+      "kind": "xml-node",
+      "excerpt": "<geom type=\"mesh\" class=\"visual\" pos=\"0.004 -0 -0.0175\" quat=\"0.707107 -0 -0 0.707107\" mesh=\"trunk_base\" material=\"trunk_base_material\"/>",
+      "lineStart": 94,
+      "lineEnd": 94,
+      "partId": "part:microduck:203d2686e3321e4a"
+    },
+    {
+      "id": "evidence:203d2686e3321e4a:csv",
+      "sourceId": "SRC-MD-INDEX",
+      "title": "中文名称与原网格映射",
+      "kind": "csv-row",
+      "excerpt": "当前文件名：trunk_base_躯干底座.stl\nSTL原文件名：trunk_base.stl\n中文识别名称（整理）：躯干底座\n原仿真模型可视实例数（非采购数量）：1\n原仿真模型所属刚体（非alpha装配对应）：trunk_base\n官方原文件来源：https://github.com/pollen-robotics/microduck_rl/blob/cb70b792312d559a4da09064d92009079671815f/src/mjlab_microduck/robot/microduck/assets/trunk_base.stl",
+      "row": 33,
+      "lineStart": 33,
+      "lineEnd": 33,
+      "partId": "part:microduck:203d2686e3321e4a"
+    },
+    {
+      "id": "evidence:203d2686e3321e4a:stl",
+      "sourceId": "SRC-000041",
+      "title": "STL 原始文件",
+      "kind": "source-file",
+      "excerpt": "来源文件：microduck-official-materials/03-三维模型/assets/trunk_base_躯干底座.stl\nSHA-256：aa4f853ae555a8b765e585ce4519c0bbff325ce298ec15a1437792c52a0beac1\n文件大小：184984 bytes\n仅为来源登记，不是制造或物理验证。",
+      "partId": "part:microduck:203d2686e3321e4a"
+    },
+    {
+      "id": "evidence:a682dc3620df43f5:xml",
+      "sourceId": "SRC-MD-MJCF",
+      "title": "参考装配中的可视实例",
+      "kind": "xml-node",
+      "excerpt": "<geom type=\"mesh\" class=\"visual\" pos=\"0.006 0.0175 0.0115\" quat=\"0 -0.707107 0 -0.707107\" mesh=\"xl330\" material=\"xl330_material\"/>",
+      "lineStart": 96,
+      "lineEnd": 96,
+      "partId": "part:microduck:a682dc3620df43f5"
+    },
+    {
+      "id": "evidence:a682dc3620df43f5:csv",
+      "sourceId": "SRC-MD-INDEX",
+      "title": "中文名称与原网格映射",
+      "kind": "csv-row",
+      "excerpt": "当前文件名：xl330_XL330舵机外形.stl\nSTL原文件名：xl330.stl\n中文识别名称（整理）：XL330 舵机外形\n原仿真模型可视实例数（非采购数量）：15\n原仿真模型所属刚体（非alpha装配对应）：bearing_roll；jaw_soft；leg；leg_2；neck；trunk_base；upper_leg_left；upper_leg_right；yaw2roll；yaw_roll_motion\n官方原文件来源：https://github.com/pollen-robotics/microduck_rl/blob/cb70b792312d559a4da09064d92009079671815f/src/mjlab_microduck/robot/microduck/assets/xl330.stl",
+      "row": 37,
+      "lineStart": 37,
+      "lineEnd": 37,
+      "partId": "part:microduck:a682dc3620df43f5"
+    },
+    {
+      "id": "evidence:a682dc3620df43f5:stl",
+      "sourceId": "SRC-000045",
+      "title": "STL 原始文件",
+      "kind": "source-file",
+      "excerpt": "来源文件：microduck-official-materials/03-三维模型/assets/xl330_XL330舵机外形.stl\nSHA-256：96238ed0d020ce0009cf1a5aa4b6926176c800840318ee65e4375be2298d2744\n文件大小：206384 bytes\n仅为来源登记，不是制造或物理验证。",
+      "partId": "part:microduck:a682dc3620df43f5"
+    },
+    {
+      "id": "evidence:e7e8275c7d01674c:xml",
+      "sourceId": "SRC-MD-MJCF",
+      "title": "参考装配中的可视实例",
+      "kind": "xml-node",
+      "excerpt": "<geom type=\"mesh\" class=\"visual\" pos=\"0.004 -0 -0.0175215\" quat=\"0.707107 -0 -0 0.707107\" mesh=\"power_support\" material=\"power_support_material\"/>",
+      "lineStart": 98,
+      "lineEnd": 98,
+      "partId": "part:microduck:e7e8275c7d01674c"
+    },
+    {
+      "id": "evidence:e7e8275c7d01674c:csv",
+      "sourceId": "SRC-MD-INDEX",
+      "title": "中文名称与原网格映射",
+      "kind": "csv-row",
+      "excerpt": "当前文件名：power_support_电源支架.stl\nSTL原文件名：power_support.stl\n中文识别名称（整理）：电源支架\n原仿真模型可视实例数（非采购数量）：1\n原仿真模型所属刚体（非alpha装配对应）：trunk_base\n官方原文件来源：https://github.com/pollen-robotics/microduck_rl/blob/cb70b792312d559a4da09064d92009079671815f/src/mjlab_microduck/robot/microduck/assets/power_support.stl",
+      "row": 24,
+      "lineStart": 24,
+      "lineEnd": 24,
+      "partId": "part:microduck:e7e8275c7d01674c"
+    },
+    {
+      "id": "evidence:e7e8275c7d01674c:stl",
+      "sourceId": "SRC-000032",
+      "title": "STL 原始文件",
+      "kind": "source-file",
+      "excerpt": "来源文件：microduck-official-materials/03-三维模型/assets/power_support_电源支架.stl\nSHA-256：ee45e397d3f3422f34940a4b61156c3c11c7e8c2b240451ce5f9ddd1622a130e\n文件大小：641684 bytes\n仅为来源登记，不是制造或物理验证。",
+      "partId": "part:microduck:e7e8275c7d01674c"
+    },
+    {
+      "id": "evidence:f97c1c6580d651d7:xml",
+      "sourceId": "SRC-MD-MJCF",
+      "title": "参考装配中的可视实例",
+      "kind": "xml-node",
+      "excerpt": "<geom type=\"mesh\" class=\"visual\" pos=\"-0.0359693 0 -0.00385049\" quat=\"0.00617059 0.70708 -0.70708 -0.00617059\" mesh=\"np_f970\" material=\"np_f970_material\"/>",
+      "lineStart": 101,
+      "lineEnd": 101,
+      "partId": "part:microduck:f97c1c6580d651d7"
+    },
+    {
+      "id": "evidence:f97c1c6580d651d7:csv",
+      "sourceId": "SRC-MD-INDEX",
+      "title": "中文名称与原网格映射",
+      "kind": "csv-row",
+      "excerpt": "当前文件名：np_f970_NP-F970电池外形.stl\nSTL原文件名：np_f970.stl\n中文识别名称（整理）：NP-F970 电池外形\n原仿真模型可视实例数（非采购数量）：1\n原仿真模型所属刚体（非alpha装配对应）：trunk_base\n官方原文件来源：https://github.com/pollen-robotics/microduck_rl/blob/cb70b792312d559a4da09064d92009079671815f/src/mjlab_microduck/robot/microduck/assets/np_f970.stl",
+      "row": 22,
+      "lineStart": 22,
+      "lineEnd": 22,
+      "partId": "part:microduck:f97c1c6580d651d7"
+    },
+    {
+      "id": "evidence:f97c1c6580d651d7:stl",
+      "sourceId": "SRC-000030",
+      "title": "STL 原始文件",
+      "kind": "source-file",
+      "excerpt": "来源文件：microduck-official-materials/03-三维模型/assets/np_f970_NP-F970电池外形.stl\nSHA-256：0e55a48281331b3b7b1a363d2e93b6012f37c52045b6dc922a149ca7c1b38388\n文件大小：1048584 bytes\n仅为来源登记，不是制造或物理验证。",
+      "partId": "part:microduck:f97c1c6580d651d7"
+    },
+    {
+      "id": "evidence:09cb390e38430c1e:xml",
+      "sourceId": "SRC-MD-MJCF",
+      "title": "参考装配中的可视实例",
+      "kind": "xml-node",
+      "excerpt": "<geom type=\"mesh\" class=\"visual\" pos=\"0.006 -0.0175 0.0115\" quat=\"0 -0.707107 0 -0.707107\" mesh=\"xl330\" material=\"xl330_material\"/>",
+      "lineStart": 103,
+      "lineEnd": 103,
+      "partId": "part:microduck:09cb390e38430c1e"
+    },
+    {
+      "id": "evidence:09cb390e38430c1e:csv",
+      "sourceId": "SRC-MD-INDEX",
+      "title": "中文名称与原网格映射",
+      "kind": "csv-row",
+      "excerpt": "当前文件名：xl330_XL330舵机外形.stl\nSTL原文件名：xl330.stl\n中文识别名称（整理）：XL330 舵机外形\n原仿真模型可视实例数（非采购数量）：15\n原仿真模型所属刚体（非alpha装配对应）：bearing_roll；jaw_soft；leg；leg_2；neck；trunk_base；upper_leg_left；upper_leg_right；yaw2roll；yaw_roll_motion\n官方原文件来源：https://github.com/pollen-robotics/microduck_rl/blob/cb70b792312d559a4da09064d92009079671815f/src/mjlab_microduck/robot/microduck/assets/xl330.stl",
+      "row": 37,
+      "lineStart": 37,
+      "lineEnd": 37,
+      "partId": "part:microduck:09cb390e38430c1e"
+    },
+    {
+      "id": "evidence:09cb390e38430c1e:stl",
+      "sourceId": "SRC-000045",
+      "title": "STL 原始文件",
+      "kind": "source-file",
+      "excerpt": "来源文件：microduck-official-materials/03-三维模型/assets/xl330_XL330舵机外形.stl\nSHA-256：96238ed0d020ce0009cf1a5aa4b6926176c800840318ee65e4375be2298d2744\n文件大小：206384 bytes\n仅为来源登记，不是制造或物理验证。",
+      "partId": "part:microduck:09cb390e38430c1e"
+    },
+    {
+      "id": "evidence:e27cbdd6c07a264e:xml",
+      "sourceId": "SRC-MD-MJCF",
+      "title": "参考装配中的可视实例",
+      "kind": "xml-node",
+      "excerpt": "<geom type=\"mesh\" class=\"visual\" pos=\"0.004 -0 -0.0175785\" quat=\"0.707107 -0 -0 0.707107\" mesh=\"left_shell\" material=\"left_shell_material\"/>",
+      "lineStart": 105,
+      "lineEnd": 105,
+      "partId": "part:microduck:e27cbdd6c07a264e"
+    },
+    {
+      "id": "evidence:e27cbdd6c07a264e:csv",
+      "sourceId": "SRC-MD-INDEX",
+      "title": "中文名称与原网格映射",
+      "kind": "csv-row",
+      "excerpt": "当前文件名：left_shell_左侧外壳.stl\nSTL原文件名：left_shell.stl\n中文识别名称（整理）：左侧外壳\n原仿真模型可视实例数（非采购数量）：1\n原仿真模型所属刚体（非alpha装配对应）：trunk_base\n官方原文件来源：https://github.com/pollen-robotics/microduck_rl/blob/cb70b792312d559a4da09064d92009079671815f/src/mjlab_microduck/robot/microduck/assets/left_shell.stl",
+      "row": 14,
+      "lineStart": 14,
+      "lineEnd": 14,
+      "partId": "part:microduck:e27cbdd6c07a264e"
+    },
+    {
+      "id": "evidence:e27cbdd6c07a264e:stl",
+      "sourceId": "SRC-000022",
+      "title": "STL 原始文件",
+      "kind": "source-file",
+      "excerpt": "来源文件：microduck-official-materials/03-三维模型/assets/left_shell_左侧外壳.stl\nSHA-256：2abde8e2b79c9b011cdb11957c67ab4287b45d7301affd4235ab81141118e331\n文件大小：1048584 bytes\n仅为来源登记，不是制造或物理验证。",
+      "partId": "part:microduck:e27cbdd6c07a264e"
+    },
+    {
+      "id": "evidence:7938fd9143c59ea4:xml",
+      "sourceId": "SRC-MD-MJCF",
+      "title": "参考装配中的可视实例",
+      "kind": "xml-node",
+      "excerpt": "<geom type=\"mesh\" class=\"visual\" pos=\"0.006 -0.0175 -0.005\" quat=\"1 -0 -0 0\" mesh=\"seeed_bearing__configuration__22x16x4\" material=\"seeed_bearing__configuration__22x16x4_material\"/>",
+      "lineStart": 107,
+      "lineEnd": 107,
+      "partId": "part:microduck:7938fd9143c59ea4"
+    },
+    {
+      "id": "evidence:7938fd9143c59ea4:csv",
+      "sourceId": "SRC-MD-INDEX",
+      "title": "中文名称与原网格映射",
+      "kind": "csv-row",
+      "excerpt": "当前文件名：seeed_bearing__configuration__22x16x4_轴承外形-22×16×4.stl\nSTL原文件名：seeed_bearing__configuration__22x16x4.stl\n中文识别名称（整理）：轴承外形（22×16×4 配置名）\n原仿真模型可视实例数（非采购数量）：11\n原仿真模型所属刚体（非alpha装配对应）：bearing_roll；hip_l；hip_l_2；neck_pitch；trunk_base；upper_leg_left；upper_leg_right；yaw2roll；yaw_roll_motion\n官方原文件来源：https://github.com/pollen-robotics/microduck_rl/blob/cb70b792312d559a4da09064d92009079671815f/src/mjlab_microduck/robot/microduck/assets/seeed_bearing__configuration__22x16x4.stl",
+      "row": 26,
+      "lineStart": 26,
+      "lineEnd": 26,
+      "partId": "part:microduck:7938fd9143c59ea4"
+    },
+    {
+      "id": "evidence:7938fd9143c59ea4:stl",
+      "sourceId": "SRC-000034",
+      "title": "STL 原始文件",
+      "kind": "source-file",
+      "excerpt": "来源文件：microduck-official-materials/03-三维模型/assets/seeed_bearing__configuration__22x16x4_轴承外形-22×16×4.stl\nSHA-256：295ee68ed9766c91fe06d3a2a49d39f7c2f56cc943395d293afdeb013123435e\n文件大小：1048584 bytes\n仅为来源登记，不是制造或物理验证。",
+      "partId": "part:microduck:7938fd9143c59ea4"
+    },
+    {
+      "id": "evidence:55970da91992f38c:xml",
+      "sourceId": "SRC-MD-MJCF",
+      "title": "参考装配中的可视实例",
+      "kind": "xml-node",
+      "excerpt": "<geom type=\"mesh\" class=\"visual\" pos=\"-0.0175 -0.002 0.0125\" quat=\"0 1 0 0\" mesh=\"yaw2roll\" material=\"yaw2roll_material\"/>",
+      "lineStart": 116,
+      "lineEnd": 116,
+      "partId": "part:microduck:55970da91992f38c"
+    },
+    {
+      "id": "evidence:55970da91992f38c:csv",
+      "sourceId": "SRC-MD-INDEX",
+      "title": "中文名称与原网格映射",
+      "kind": "csv-row",
+      "excerpt": "当前文件名：yaw2roll_偏航与横滚连接件.stl\nSTL原文件名：yaw2roll.stl\n中文识别名称（整理）：偏航与横滚连接件\n原仿真模型可视实例数（非采购数量）：2\n原仿真模型所属刚体（非alpha装配对应）：bearing_roll；yaw2roll\n官方原文件来源：https://github.com/pollen-robotics/microduck_rl/blob/cb70b792312d559a4da09064d92009079671815f/src/mjlab_microduck/robot/microduck/assets/yaw2roll.stl",
+      "row": 38,
+      "lineStart": 38,
+      "lineEnd": 38,
+      "partId": "part:microduck:55970da91992f38c"
+    },
+    {
+      "id": "evidence:55970da91992f38c:stl",
+      "sourceId": "SRC-000046",
+      "title": "STL 原始文件",
+      "kind": "source-file",
+      "excerpt": "来源文件：microduck-official-materials/03-三维模型/assets/yaw2roll_偏航与横滚连接件.stl\nSHA-256：6c8f193ec7cb40be0f48eeb5fba81bce2c87f12e1aab3f77f1bc4981386e1495\n文件大小：620284 bytes\n仅为来源登记，不是制造或物理验证。",
+      "partId": "part:microduck:55970da91992f38c"
+    },
+    {
+      "id": "evidence:cd6d48fccc95df41:xml",
+      "sourceId": "SRC-MD-MJCF",
+      "title": "参考装配中的可视实例",
+      "kind": "xml-node",
+      "excerpt": "<geom type=\"mesh\" class=\"visual\" pos=\"-0 -0 0.0125\" quat=\"0 -0.707107 0.707107 -0\" mesh=\"xl330\" material=\"xl330_material\"/>",
+      "lineStart": 118,
+      "lineEnd": 118,
+      "partId": "part:microduck:cd6d48fccc95df41"
+    },
+    {
+      "id": "evidence:cd6d48fccc95df41:csv",
+      "sourceId": "SRC-MD-INDEX",
+      "title": "中文名称与原网格映射",
+      "kind": "csv-row",
+      "excerpt": "当前文件名：xl330_XL330舵机外形.stl\nSTL原文件名：xl330.stl\n中文识别名称（整理）：XL330 舵机外形\n原仿真模型可视实例数（非采购数量）：15\n原仿真模型所属刚体（非alpha装配对应）：bearing_roll；jaw_soft；leg；leg_2；neck；trunk_base；upper_leg_left；upper_leg_right；yaw2roll；yaw_roll_motion\n官方原文件来源：https://github.com/pollen-robotics/microduck_rl/blob/cb70b792312d559a4da09064d92009079671815f/src/mjlab_microduck/robot/microduck/assets/xl330.stl",
+      "row": 37,
+      "lineStart": 37,
+      "lineEnd": 37,
+      "partId": "part:microduck:cd6d48fccc95df41"
+    },
+    {
+      "id": "evidence:cd6d48fccc95df41:stl",
+      "sourceId": "SRC-000045",
+      "title": "STL 原始文件",
+      "kind": "source-file",
+      "excerpt": "来源文件：microduck-official-materials/03-三维模型/assets/xl330_XL330舵机外形.stl\nSHA-256：96238ed0d020ce0009cf1a5aa4b6926176c800840318ee65e4375be2298d2744\n文件大小：206384 bytes\n仅为来源登记，不是制造或物理验证。",
+      "partId": "part:microduck:cd6d48fccc95df41"
+    },
+    {
+      "id": "evidence:47a950fbb3d0e416:xml",
+      "sourceId": "SRC-MD-MJCF",
+      "title": "参考装配中的可视实例",
+      "kind": "xml-node",
+      "excerpt": "<geom type=\"mesh\" class=\"visual\" pos=\"-0 0.0165 0.0125\" quat=\"0.5 0.5 0.5 -0.5\" mesh=\"seeed_bearing__configuration__22x16x4\" material=\"seeed_bearing__configuration__22x16x4_material\"/>",
+      "lineStart": 120,
+      "lineEnd": 120,
+      "partId": "part:microduck:47a950fbb3d0e416"
+    },
+    {
+      "id": "evidence:47a950fbb3d0e416:csv",
+      "sourceId": "SRC-MD-INDEX",
+      "title": "中文名称与原网格映射",
+      "kind": "csv-row",
+      "excerpt": "当前文件名：seeed_bearing__configuration__22x16x4_轴承外形-22×16×4.stl\nSTL原文件名：seeed_bearing__configuration__22x16x4.stl\n中文识别名称（整理）：轴承外形（22×16×4 配置名）\n原仿真模型可视实例数（非采购数量）：11\n原仿真模型所属刚体（非alpha装配对应）：bearing_roll；hip_l；hip_l_2；neck_pitch；trunk_base；upper_leg_left；upper_leg_right；yaw2roll；yaw_roll_motion\n官方原文件来源：https://github.com/pollen-robotics/microduck_rl/blob/cb70b792312d559a4da09064d92009079671815f/src/mjlab_microduck/robot/microduck/assets/seeed_bearing__configuration__22x16x4.stl",
+      "row": 26,
+      "lineStart": 26,
+      "lineEnd": 26,
+      "partId": "part:microduck:47a950fbb3d0e416"
+    },
+    {
+      "id": "evidence:47a950fbb3d0e416:stl",
+      "sourceId": "SRC-000034",
+      "title": "STL 原始文件",
+      "kind": "source-file",
+      "excerpt": "来源文件：microduck-official-materials/03-三维模型/assets/seeed_bearing__configuration__22x16x4_轴承外形-22×16×4.stl\nSHA-256：295ee68ed9766c91fe06d3a2a49d39f7c2f56cc943395d293afdeb013123435e\n文件大小：1048584 bytes\n仅为来源登记，不是制造或物理验证。",
+      "partId": "part:microduck:47a950fbb3d0e416"
+    },
+    {
+      "id": "evidence:cb253f38c818b9d8:xml",
+      "sourceId": "SRC-MD-MJCF",
+      "title": "参考装配中的可视实例",
+      "kind": "xml-node",
+      "excerpt": "<geom type=\"mesh\" class=\"visual\" pos=\"-0.0175 -0.002 0.0125\" quat=\"0 -1 -0 -0\" mesh=\"bearing_roll\" material=\"bearing_roll_material\"/>",
+      "lineStart": 122,
+      "lineEnd": 122,
+      "partId": "part:microduck:cb253f38c818b9d8"
+    },
+    {
+      "id": "evidence:cb253f38c818b9d8:csv",
+      "sourceId": "SRC-MD-INDEX",
+      "title": "中文名称与原网格映射",
+      "kind": "csv-row",
+      "excerpt": "当前文件名：bearing_roll_横滚轴承支承件.stl\nSTL原文件名：bearing_roll.stl\n中文识别名称（整理）：横滚轴承支承件\n原仿真模型可视实例数（非采购数量）：2\n原仿真模型所属刚体（非alpha装配对应）：bearing_roll；yaw2roll\n官方原文件来源：https://github.com/pollen-robotics/microduck_rl/blob/cb70b792312d559a4da09064d92009079671815f/src/mjlab_microduck/robot/microduck/assets/bearing_roll.stl",
+      "row": 5,
+      "lineStart": 5,
+      "lineEnd": 5,
+      "partId": "part:microduck:cb253f38c818b9d8"
+    },
+    {
+      "id": "evidence:cb253f38c818b9d8:stl",
+      "sourceId": "SRC-000013",
+      "title": "STL 原始文件",
+      "kind": "source-file",
+      "excerpt": "来源文件：microduck-official-materials/03-三维模型/assets/bearing_roll_横滚轴承支承件.stl\nSHA-256：b5603a64b2d965ad75ea847767b5798130852e12a658fde7b5068fc457e2adcc\n文件大小：121084 bytes\n仅为来源登记，不是制造或物理验证。",
+      "partId": "part:microduck:cb253f38c818b9d8"
+    },
+    {
+      "id": "evidence:bb34e925e25e29f6:xml",
+      "sourceId": "SRC-MD-MJCF",
+      "title": "参考装配中的可视实例",
+      "kind": "xml-node",
+      "excerpt": "<geom type=\"mesh\" class=\"visual\" pos=\"0.021 0 -0.0185\" quat=\"0.5 0.5 0.5 0.5\" mesh=\"seeed_bearing__configuration__22x16x4\" material=\"seeed_bearing__configuration__22x16x4_material\"/>",
+      "lineStart": 129,
+      "lineEnd": 129,
+      "partId": "part:microduck:bb34e925e25e29f6"
+    },
+    {
+      "id": "evidence:bb34e925e25e29f6:csv",
+      "sourceId": "SRC-MD-INDEX",
+      "title": "中文名称与原网格映射",
+      "kind": "csv-row",
+      "excerpt": "当前文件名：seeed_bearing__configuration__22x16x4_轴承外形-22×16×4.stl\nSTL原文件名：seeed_bearing__configuration__22x16x4.stl\n中文识别名称（整理）：轴承外形（22×16×4 配置名）\n原仿真模型可视实例数（非采购数量）：11\n原仿真模型所属刚体（非alpha装配对应）：bearing_roll；hip_l；hip_l_2；neck_pitch；trunk_base；upper_leg_left；upper_leg_right；yaw2roll；yaw_roll_motion\n官方原文件来源：https://github.com/pollen-robotics/microduck_rl/blob/cb70b792312d559a4da09064d92009079671815f/src/mjlab_microduck/robot/microduck/assets/seeed_bearing__configuration__22x16x4.stl",
+      "row": 26,
+      "lineStart": 26,
+      "lineEnd": 26,
+      "partId": "part:microduck:bb34e925e25e29f6"
+    },
+    {
+      "id": "evidence:bb34e925e25e29f6:stl",
+      "sourceId": "SRC-000034",
+      "title": "STL 原始文件",
+      "kind": "source-file",
+      "excerpt": "来源文件：microduck-official-materials/03-三维模型/assets/seeed_bearing__configuration__22x16x4_轴承外形-22×16×4.stl\nSHA-256：295ee68ed9766c91fe06d3a2a49d39f7c2f56cc943395d293afdeb013123435e\n文件大小：1048584 bytes\n仅为来源登记，不是制造或物理验证。",
+      "partId": "part:microduck:bb34e925e25e29f6"
+    },
+    {
+      "id": "evidence:fa9ee2f71faafb88:xml",
+      "sourceId": "SRC-MD-MJCF",
+      "title": "参考装配中的可视实例",
+      "kind": "xml-node",
+      "excerpt": "<geom type=\"mesh\" class=\"visual\" pos=\"-0.0175 0 -0.0185\" quat=\"0.707107 -0.707107 0 0\" mesh=\"hip_l\" material=\"hip_l_material\"/>",
+      "lineStart": 131,
+      "lineEnd": 131,
+      "partId": "part:microduck:fa9ee2f71faafb88"
+    },
+    {
+      "id": "evidence:fa9ee2f71faafb88:csv",
+      "sourceId": "SRC-MD-INDEX",
+      "title": "中文名称与原网格映射",
+      "kind": "csv-row",
+      "excerpt": "当前文件名：hip_l_髋部件.stl\nSTL原文件名：hip_l.stl\n中文识别名称（整理）：髋部件\n原仿真模型可视实例数（非采购数量）：2\n原仿真模型所属刚体（非alpha装配对应）：hip_l；hip_l_2\n官方原文件来源：https://github.com/pollen-robotics/microduck_rl/blob/cb70b792312d559a4da09064d92009079671815f/src/mjlab_microduck/robot/microduck/assets/hip_l.stl",
+      "row": 11,
+      "lineStart": 11,
+      "lineEnd": 11,
+      "partId": "part:microduck:fa9ee2f71faafb88"
+    },
+    {
+      "id": "evidence:fa9ee2f71faafb88:stl",
+      "sourceId": "SRC-000019",
+      "title": "STL 原始文件",
+      "kind": "source-file",
+      "excerpt": "来源文件：microduck-official-materials/03-三维模型/assets/hip_l_髋部件.stl\nSHA-256：e175896932d76dc7648cf939aa39cb7b1d188b783d91745adb9a4cec65e9052c\n文件大小：1048584 bytes\n仅为来源登记，不是制造或物理验证。",
+      "partId": "part:microduck:fa9ee2f71faafb88"
+    },
+    {
+      "id": "evidence:66c73aaad945a993:xml",
+      "sourceId": "SRC-MD-MJCF",
+      "title": "参考装配中的可视实例",
+      "kind": "xml-node",
+      "excerpt": "<geom type=\"mesh\" class=\"visual\" pos=\"-0 -0 -0.0425\" quat=\"0.5 -0.5 -0.5 -0.5\" mesh=\"upper_leg_left\" material=\"upper_leg_left_material\"/>",
+      "lineStart": 138,
+      "lineEnd": 138,
+      "partId": "part:microduck:66c73aaad945a993"
+    },
+    {
+      "id": "evidence:66c73aaad945a993:csv",
+      "sourceId": "SRC-MD-INDEX",
+      "title": "中文名称与原网格映射",
+      "kind": "csv-row",
+      "excerpt": "当前文件名：upper_leg_left_左大腿部件.stl\nSTL原文件名：upper_leg_left.stl\n中文识别名称（整理）：左大腿部件\n原仿真模型可视实例数（非采购数量）：1\n原仿真模型所属刚体（非alpha装配对应）：upper_leg_left\n官方原文件来源：https://github.com/pollen-robotics/microduck_rl/blob/cb70b792312d559a4da09064d92009079671815f/src/mjlab_microduck/robot/microduck/assets/upper_leg_left.stl",
+      "row": 34,
+      "lineStart": 34,
+      "lineEnd": 34,
+      "partId": "part:microduck:66c73aaad945a993"
+    },
+    {
+      "id": "evidence:66c73aaad945a993:stl",
+      "sourceId": "SRC-000042",
+      "title": "STL 原始文件",
+      "kind": "source-file",
+      "excerpt": "来源文件：microduck-official-materials/03-三维模型/assets/upper_leg_left_左大腿部件.stl\nSHA-256：8cb1c12dfa6d366a318bb1ec16f585427b9a185afeb7738d0a6f41f5db46a07d\n文件大小：612584 bytes\n仅为来源登记，不是制造或物理验证。",
+      "partId": "part:microduck:66c73aaad945a993"
+    },
+    {
+      "id": "evidence:4cf80d5a57c8cb04:xml",
+      "sourceId": "SRC-MD-MJCF",
+      "title": "参考装配中的可视实例",
+      "kind": "xml-node",
+      "excerpt": "<geom type=\"mesh\" class=\"visual\" pos=\"0.022 0.0357771 0.0125\" quat=\"0 0.707107 0 0.707107\" mesh=\"xl330\" material=\"xl330_material\"/>",
+      "lineStart": 140,
+      "lineEnd": 140,
+      "partId": "part:microduck:4cf80d5a57c8cb04"
+    },
+    {
+      "id": "evidence:4cf80d5a57c8cb04:csv",
+      "sourceId": "SRC-MD-INDEX",
+      "title": "中文名称与原网格映射",
+      "kind": "csv-row",
+      "excerpt": "当前文件名：xl330_XL330舵机外形.stl\nSTL原文件名：xl330.stl\n中文识别名称（整理）：XL330 舵机外形\n原仿真模型可视实例数（非采购数量）：15\n原仿真模型所属刚体（非alpha装配对应）：bearing_roll；jaw_soft；leg；leg_2；neck；trunk_base；upper_leg_left；upper_leg_right；yaw2roll；yaw_roll_motion\n官方原文件来源：https://github.com/pollen-robotics/microduck_rl/blob/cb70b792312d559a4da09064d92009079671815f/src/mjlab_microduck/robot/microduck/assets/xl330.stl",
+      "row": 37,
+      "lineStart": 37,
+      "lineEnd": 37,
+      "partId": "part:microduck:4cf80d5a57c8cb04"
+    },
+    {
+      "id": "evidence:4cf80d5a57c8cb04:stl",
+      "sourceId": "SRC-000045",
+      "title": "STL 原始文件",
+      "kind": "source-file",
+      "excerpt": "来源文件：microduck-official-materials/03-三维模型/assets/xl330_XL330舵机外形.stl\nSHA-256：96238ed0d020ce0009cf1a5aa4b6926176c800840318ee65e4375be2298d2744\n文件大小：206384 bytes\n仅为来源登记，不是制造或物理验证。",
+      "partId": "part:microduck:4cf80d5a57c8cb04"
+    },
+    {
+      "id": "evidence:c75bfc0afb35e000:xml",
+      "sourceId": "SRC-MD-MJCF",
+      "title": "参考装配中的可视实例",
+      "kind": "xml-node",
+      "excerpt": "<geom type=\"mesh\" class=\"visual\" pos=\"0 0 -0.0425\" quat=\"0.5 -0.5 -0.5 -0.5\" mesh=\"upper_leg_rigidity_plate\" material=\"upper_leg_rigidity_plate_material\"/>",
+      "lineStart": 142,
+      "lineEnd": 142,
+      "partId": "part:microduck:c75bfc0afb35e000"
+    },
+    {
+      "id": "evidence:c75bfc0afb35e000:csv",
+      "sourceId": "SRC-MD-INDEX",
+      "title": "中文名称与原网格映射",
+      "kind": "csv-row",
+      "excerpt": "当前文件名：upper_leg_rigidity_plate_大腿加强板.stl\nSTL原文件名：upper_leg_rigidity_plate.stl\n中文识别名称（整理）：大腿加强板\n原仿真模型可视实例数（非采购数量）：2\n原仿真模型所属刚体（非alpha装配对应）：upper_leg_left；upper_leg_right\n官方原文件来源：https://github.com/pollen-robotics/microduck_rl/blob/cb70b792312d559a4da09064d92009079671815f/src/mjlab_microduck/robot/microduck/assets/upper_leg_rigidity_plate.stl",
+      "row": 36,
+      "lineStart": 36,
+      "lineEnd": 36,
+      "partId": "part:microduck:c75bfc0afb35e000"
+    },
+    {
+      "id": "evidence:c75bfc0afb35e000:stl",
+      "sourceId": "SRC-000044",
+      "title": "STL 原始文件",
+      "kind": "source-file",
+      "excerpt": "来源文件：microduck-official-materials/03-三维模型/assets/upper_leg_rigidity_plate_大腿加强板.stl\nSHA-256：231b3e5f1e24d146d735dc158cbcfec0c95a0d0ca8c500f61f04d15d0b665652\n文件大小：180084 bytes\n仅为来源登记，不是制造或物理验证。",
+      "partId": "part:microduck:c75bfc0afb35e000"
+    },
+    {
+      "id": "evidence:e475134639b3f7e1:xml",
+      "sourceId": "SRC-MD-MJCF",
+      "title": "参考装配中的可视实例",
+      "kind": "xml-node",
+      "excerpt": "<geom type=\"mesh\" class=\"visual\" pos=\"0.022 0.0357771 -0.004\" quat=\"0 0 -0 1\" mesh=\"seeed_bearing__configuration__22x16x4\" material=\"seeed_bearing__configuration__22x16x4_material\"/>",
+      "lineStart": 144,
+      "lineEnd": 144,
+      "partId": "part:microduck:e475134639b3f7e1"
+    },
+    {
+      "id": "evidence:e475134639b3f7e1:csv",
+      "sourceId": "SRC-MD-INDEX",
+      "title": "中文名称与原网格映射",
+      "kind": "csv-row",
+      "excerpt": "当前文件名：seeed_bearing__configuration__22x16x4_轴承外形-22×16×4.stl\nSTL原文件名：seeed_bearing__configuration__22x16x4.stl\n中文识别名称（整理）：轴承外形（22×16×4 配置名）\n原仿真模型可视实例数（非采购数量）：11\n原仿真模型所属刚体（非alpha装配对应）：bearing_roll；hip_l；hip_l_2；neck_pitch；trunk_base；upper_leg_left；upper_leg_right；yaw2roll；yaw_roll_motion\n官方原文件来源：https://github.com/pollen-robotics/microduck_rl/blob/cb70b792312d559a4da09064d92009079671815f/src/mjlab_microduck/robot/microduck/assets/seeed_bearing__configuration__22x16x4.stl",
+      "row": 26,
+      "lineStart": 26,
+      "lineEnd": 26,
+      "partId": "part:microduck:e475134639b3f7e1"
+    },
+    {
+      "id": "evidence:e475134639b3f7e1:stl",
+      "sourceId": "SRC-000034",
+      "title": "STL 原始文件",
+      "kind": "source-file",
+      "excerpt": "来源文件：microduck-official-materials/03-三维模型/assets/seeed_bearing__configuration__22x16x4_轴承外形-22×16×4.stl\nSHA-256：295ee68ed9766c91fe06d3a2a49d39f7c2f56cc943395d293afdeb013123435e\n文件大小：1048584 bytes\n仅为来源登记，不是制造或物理验证。",
+      "partId": "part:microduck:e475134639b3f7e1"
+    },
+    {
+      "id": "evidence:9ffe9d5bcd6bc13a:xml",
+      "sourceId": "SRC-MD-MJCF",
+      "title": "参考装配中的可视实例",
+      "kind": "xml-node",
+      "excerpt": "<geom type=\"mesh\" class=\"visual\" pos=\"0 -0 0.0125\" quat=\"0.5 0.5 -0.5 0.5\" mesh=\"xl330\" material=\"xl330_material\"/>",
+      "lineStart": 146,
+      "lineEnd": 146,
+      "partId": "part:microduck:9ffe9d5bcd6bc13a"
+    },
+    {
+      "id": "evidence:9ffe9d5bcd6bc13a:csv",
+      "sourceId": "SRC-MD-INDEX",
+      "title": "中文名称与原网格映射",
+      "kind": "csv-row",
+      "excerpt": "当前文件名：xl330_XL330舵机外形.stl\nSTL原文件名：xl330.stl\n中文识别名称（整理）：XL330 舵机外形\n原仿真模型可视实例数（非采购数量）：15\n原仿真模型所属刚体（非alpha装配对应）：bearing_roll；jaw_soft；leg；leg_2；neck；trunk_base；upper_leg_left；upper_leg_right；yaw2roll；yaw_roll_motion\n官方原文件来源：https://github.com/pollen-robotics/microduck_rl/blob/cb70b792312d559a4da09064d92009079671815f/src/mjlab_microduck/robot/microduck/assets/xl330.stl",
+      "row": 37,
+      "lineStart": 37,
+      "lineEnd": 37,
+      "partId": "part:microduck:9ffe9d5bcd6bc13a"
+    },
+    {
+      "id": "evidence:9ffe9d5bcd6bc13a:stl",
+      "sourceId": "SRC-000045",
+      "title": "STL 原始文件",
+      "kind": "source-file",
+      "excerpt": "来源文件：microduck-official-materials/03-三维模型/assets/xl330_XL330舵机外形.stl\nSHA-256：96238ed0d020ce0009cf1a5aa4b6926176c800840318ee65e4375be2298d2744\n文件大小：206384 bytes\n仅为来源登记，不是制造或物理验证。",
+      "partId": "part:microduck:9ffe9d5bcd6bc13a"
+    },
+    {
+      "id": "evidence:638f29b46b322e64:xml",
+      "sourceId": "SRC-MD-MJCF",
+      "title": "参考装配中的可视实例",
+      "kind": "xml-node",
+      "excerpt": "<geom type=\"mesh\" class=\"visual\" pos=\"-0.022 0.0357771 0.0385\" quat=\"0.5 0.5 0.5 -0.5\" mesh=\"leg\" material=\"leg_material\"/>",
+      "lineStart": 153,
+      "lineEnd": 153,
+      "partId": "part:microduck:638f29b46b322e64"
+    },
+    {
+      "id": "evidence:638f29b46b322e64:csv",
+      "sourceId": "SRC-MD-INDEX",
+      "title": "中文名称与原网格映射",
+      "kind": "csv-row",
+      "excerpt": "当前文件名：leg_腿部连杆.stl\nSTL原文件名：leg.stl\n中文识别名称（整理）：腿部连杆\n原仿真模型可视实例数（非采购数量）：2\n原仿真模型所属刚体（非alpha装配对应）：leg；leg_2\n官方原文件来源：https://github.com/pollen-robotics/microduck_rl/blob/cb70b792312d559a4da09064d92009079671815f/src/mjlab_microduck/robot/microduck/assets/leg.stl",
+      "row": 15,
+      "lineStart": 15,
+      "lineEnd": 15,
+      "partId": "part:microduck:638f29b46b322e64"
+    },
+    {
+      "id": "evidence:638f29b46b322e64:stl",
+      "sourceId": "SRC-000023",
+      "title": "STL 原始文件",
+      "kind": "source-file",
+      "excerpt": "来源文件：microduck-official-materials/03-三维模型/assets/leg_腿部连杆.stl\nSHA-256：9a91cc1ae31ecd9e0c1ba93f3bb2ad8a12e29bff24ec27d1ac66c0c3037d9fcf\n文件大小：738884 bytes\n仅为来源登记，不是制造或物理验证。",
+      "partId": "part:microduck:638f29b46b322e64"
+    },
+    {
+      "id": "evidence:7c130c8489b57c99:xml",
+      "sourceId": "SRC-MD-MJCF",
+      "title": "参考装配中的可视实例",
+      "kind": "xml-node",
+      "excerpt": "<geom type=\"mesh\" class=\"visual\" pos=\"-0 0.042 -0.0115\" quat=\"0.5 -0.5 -0.5 -0.5\" mesh=\"xl330\" material=\"xl330_material\"/>",
+      "lineStart": 156,
+      "lineEnd": 156,
+      "partId": "part:microduck:7c130c8489b57c99"
+    },
+    {
+      "id": "evidence:7c130c8489b57c99:csv",
+      "sourceId": "SRC-MD-INDEX",
+      "title": "中文名称与原网格映射",
+      "kind": "csv-row",
+      "excerpt": "当前文件名：xl330_XL330舵机外形.stl\nSTL原文件名：xl330.stl\n中文识别名称（整理）：XL330 舵机外形\n原仿真模型可视实例数（非采购数量）：15\n原仿真模型所属刚体（非alpha装配对应）：bearing_roll；jaw_soft；leg；leg_2；neck；trunk_base；upper_leg_left；upper_leg_right；yaw2roll；yaw_roll_motion\n官方原文件来源：https://github.com/pollen-robotics/microduck_rl/blob/cb70b792312d559a4da09064d92009079671815f/src/mjlab_microduck/robot/microduck/assets/xl330.stl",
+      "row": 37,
+      "lineStart": 37,
+      "lineEnd": 37,
+      "partId": "part:microduck:7c130c8489b57c99"
+    },
+    {
+      "id": "evidence:7c130c8489b57c99:stl",
+      "sourceId": "SRC-000045",
+      "title": "STL 原始文件",
+      "kind": "source-file",
+      "excerpt": "来源文件：microduck-official-materials/03-三维模型/assets/xl330_XL330舵机外形.stl\nSHA-256：96238ed0d020ce0009cf1a5aa4b6926176c800840318ee65e4375be2298d2744\n文件大小：206384 bytes\n仅为来源登记，不是制造或物理验证。",
+      "partId": "part:microduck:7c130c8489b57c99"
+    },
+    {
+      "id": "evidence:8b649e45831a1972:xml",
+      "sourceId": "SRC-MD-MJCF",
+      "title": "参考装配中的可视实例",
+      "kind": "xml-node",
+      "excerpt": "<geom type=\"mesh\" class=\"visual\" pos=\"-0.022 0.00622291 -0.0647\" quat=\"0.5 -0.5 -0.5 -0.5\" mesh=\"sole_left\" material=\"sole_left_material\"/>",
+      "lineStart": 163,
+      "lineEnd": 163,
+      "partId": "part:microduck:8b649e45831a1972"
+    },
+    {
+      "id": "evidence:8b649e45831a1972:csv",
+      "sourceId": "SRC-MD-INDEX",
+      "title": "中文名称与原网格映射",
+      "kind": "csv-row",
+      "excerpt": "当前文件名：sole_left_左脚底.stl\nSTL原文件名：sole_left.stl\n中文识别名称（整理）：左脚底\n原仿真模型可视实例数（非采购数量）：1\n原仿真模型所属刚体（非alpha装配对应）：ankle_left\n官方原文件来源：https://github.com/pollen-robotics/microduck_rl/blob/cb70b792312d559a4da09064d92009079671815f/src/mjlab_microduck/robot/microduck/assets/sole_left.stl",
+      "row": 29,
+      "lineStart": 29,
+      "lineEnd": 29,
+      "partId": "part:microduck:8b649e45831a1972"
+    },
+    {
+      "id": "evidence:8b649e45831a1972:stl",
+      "sourceId": "SRC-000037",
+      "title": "STL 原始文件",
+      "kind": "source-file",
+      "excerpt": "来源文件：microduck-official-materials/03-三维模型/assets/sole_left_左脚底.stl\nSHA-256：e028c8b09fecd4cb354d042bf7fd95a1a1bc2d524d760d62137fa8d74093fc23\n文件大小：789484 bytes\n仅为来源登记，不是制造或物理验证。",
+      "partId": "part:microduck:8b649e45831a1972"
+    },
+    {
+      "id": "evidence:41db565298264db6:xml",
+      "sourceId": "SRC-MD-MJCF",
+      "title": "参考装配中的可视实例",
+      "kind": "xml-node",
+      "excerpt": "<geom type=\"mesh\" class=\"visual\" pos=\"-0.022 0.00622291 -0.0647\" quat=\"0.5 -0.5 -0.5 -0.5\" mesh=\"foot_left\" material=\"foot_left_material\"/>",
+      "lineStart": 166,
+      "lineEnd": 166,
+      "partId": "part:microduck:41db565298264db6"
+    },
+    {
+      "id": "evidence:41db565298264db6:csv",
+      "sourceId": "SRC-MD-INDEX",
+      "title": "中文名称与原网格映射",
+      "kind": "csv-row",
+      "excerpt": "当前文件名：foot_left_左脚部件.stl\nSTL原文件名：foot_left.stl\n中文识别名称（整理）：左脚部件\n原仿真模型可视实例数（非采购数量）：1\n原仿真模型所属刚体（非alpha装配对应）：ankle_left\n官方原文件来源：https://github.com/pollen-robotics/microduck_rl/blob/cb70b792312d559a4da09064d92009079671815f/src/mjlab_microduck/robot/microduck/assets/foot_left.stl",
+      "row": 9,
+      "lineStart": 9,
+      "lineEnd": 9,
+      "partId": "part:microduck:41db565298264db6"
+    },
+    {
+      "id": "evidence:41db565298264db6:stl",
+      "sourceId": "SRC-000017",
+      "title": "STL 原始文件",
+      "kind": "source-file",
+      "excerpt": "来源文件：microduck-official-materials/03-三维模型/assets/foot_left_左脚部件.stl\nSHA-256：a1f5d43456d0f522bd60870153795f1e8112c1adf9b8b4373b59608d9545c044\n文件大小：996184 bytes\n仅为来源登记，不是制造或物理验证。",
+      "partId": "part:microduck:41db565298264db6"
+    },
+    {
+      "id": "evidence:766eaa6e4dd8b09f:xml",
+      "sourceId": "SRC-MD-MJCF",
+      "title": "参考装配中的可视实例",
+      "kind": "xml-node",
+      "excerpt": "<geom type=\"mesh\" class=\"visual\" pos=\"0 0 -0.0322\" quat=\"0 0 0 1\" mesh=\"seeed_bearing__configuration_default\" material=\"seeed_bearing__configuration_default_material\"/>",
+      "lineStart": 168,
+      "lineEnd": 168,
+      "partId": "part:microduck:766eaa6e4dd8b09f"
+    },
+    {
+      "id": "evidence:766eaa6e4dd8b09f:csv",
+      "sourceId": "SRC-MD-INDEX",
+      "title": "中文名称与原网格映射",
+      "kind": "csv-row",
+      "excerpt": "当前文件名：seeed_bearing__configuration_default_轴承外形-默认配置.stl\nSTL原文件名：seeed_bearing__configuration_default.stl\n中文识别名称（整理）：轴承外形（默认配置名）\n原仿真模型可视实例数（非采购数量）：3\n原仿真模型所属刚体（非alpha装配对应）：ankle_left；ankle_right；jaw_soft\n官方原文件来源：https://github.com/pollen-robotics/microduck_rl/blob/cb70b792312d559a4da09064d92009079671815f/src/mjlab_microduck/robot/microduck/assets/seeed_bearing__configuration_default.stl",
+      "row": 27,
+      "lineStart": 27,
+      "lineEnd": 27,
+      "partId": "part:microduck:766eaa6e4dd8b09f"
+    },
+    {
+      "id": "evidence:766eaa6e4dd8b09f:stl",
+      "sourceId": "SRC-000035",
+      "title": "STL 原始文件",
+      "kind": "source-file",
+      "excerpt": "来源文件：microduck-official-materials/03-三维模型/assets/seeed_bearing__configuration_default_轴承外形-默认配置.stl\nSHA-256：e815f3483a2e7b80844f3c0938a47e53db38b12faed9b2d364414c19e4322da4\n文件大小：1048584 bytes\n仅为来源登记，不是制造或物理验证。",
+      "partId": "part:microduck:766eaa6e4dd8b09f"
+    },
+    {
+      "id": "evidence:07e507f1e9297aa3:xml",
+      "sourceId": "SRC-MD-MJCF",
+      "title": "参考装配中的可视实例",
+      "kind": "xml-node",
+      "excerpt": "<geom type=\"mesh\" class=\"visual\" pos=\"-0.022 0.00622291 -0.0647\" quat=\"0.5 -0.5 -0.5 -0.5\" mesh=\"ankle_left\" material=\"ankle_left_material\"/>",
+      "lineStart": 170,
+      "lineEnd": 170,
+      "partId": "part:microduck:07e507f1e9297aa3"
+    },
+    {
+      "id": "evidence:07e507f1e9297aa3:csv",
+      "sourceId": "SRC-MD-INDEX",
+      "title": "中文名称与原网格映射",
+      "kind": "csv-row",
+      "excerpt": "当前文件名：ankle_left_左踝部件.stl\nSTL原文件名：ankle_left.stl\n中文识别名称（整理）：左踝部件\n原仿真模型可视实例数（非采购数量）：1\n原仿真模型所属刚体（非alpha装配对应）：ankle_left\n官方原文件来源：https://github.com/pollen-robotics/microduck_rl/blob/cb70b792312d559a4da09064d92009079671815f/src/mjlab_microduck/robot/microduck/assets/ankle_left.stl",
+      "row": 2,
+      "lineStart": 2,
+      "lineEnd": 2,
+      "partId": "part:microduck:07e507f1e9297aa3"
+    },
+    {
+      "id": "evidence:07e507f1e9297aa3:stl",
+      "sourceId": "SRC-000010",
+      "title": "STL 原始文件",
+      "kind": "source-file",
+      "excerpt": "来源文件：microduck-official-materials/03-三维模型/assets/ankle_left_左踝部件.stl\nSHA-256：2ec1bd89205b407efebaa9a8898ad9fea741389d87b80ecc5c96b21d1668119e\n文件大小：248984 bytes\n仅为来源登记，不是制造或物理验证。",
+      "partId": "part:microduck:07e507f1e9297aa3"
+    },
+    {
+      "id": "evidence:6b5602b4416129fe:xml",
+      "sourceId": "SRC-MD-MJCF",
+      "title": "参考装配中的可视实例",
+      "kind": "xml-node",
+      "excerpt": "<geom type=\"mesh\" class=\"visual\" pos=\"0.022 0.05 0.028\" quat=\"0.5 0.5 0.5 -0.5\" mesh=\"neck\" material=\"neck_material\"/>",
+      "lineStart": 184,
+      "lineEnd": 184,
+      "partId": "part:microduck:6b5602b4416129fe"
+    },
+    {
+      "id": "evidence:6b5602b4416129fe:csv",
+      "sourceId": "SRC-MD-INDEX",
+      "title": "中文名称与原网格映射",
+      "kind": "csv-row",
+      "excerpt": "当前文件名：neck_颈部件.stl\nSTL原文件名：neck.stl\n中文识别名称（整理）：颈部件\n原仿真模型可视实例数（非采购数量）：2\n原仿真模型所属刚体（非alpha装配对应）：neck\n官方原文件来源：https://github.com/pollen-robotics/microduck_rl/blob/cb70b792312d559a4da09064d92009079671815f/src/mjlab_microduck/robot/microduck/assets/neck.stl",
+      "row": 19,
+      "lineStart": 19,
+      "lineEnd": 19,
+      "partId": "part:microduck:6b5602b4416129fe"
+    },
+    {
+      "id": "evidence:6b5602b4416129fe:stl",
+      "sourceId": "SRC-000028",
+      "title": "STL 原始文件",
+      "kind": "source-file",
+      "excerpt": "来源文件：microduck-official-materials/03-三维模型/assets/neck_颈部件.stl\nSHA-256：b6e86b886153be8a8a776c1cb219c074ee9e89c8bd431117662a2d9e504d7cb5\n文件大小：73484 bytes\n仅为来源登记，不是制造或物理验证。",
+      "partId": "part:microduck:6b5602b4416129fe"
+    },
+    {
+      "id": "evidence:4cef8bb24d37fe6e:xml",
+      "sourceId": "SRC-MD-MJCF",
+      "title": "参考装配中的可视实例",
+      "kind": "xml-node",
+      "excerpt": "<geom type=\"mesh\" class=\"visual\" pos=\"0 0 0.0145\" quat=\"0.5 -0.5 -0.5 -0.5\" mesh=\"xl330\" material=\"xl330_material\"/>",
+      "lineStart": 186,
+      "lineEnd": 186,
+      "partId": "part:microduck:4cef8bb24d37fe6e"
+    },
+    {
+      "id": "evidence:4cef8bb24d37fe6e:csv",
+      "sourceId": "SRC-MD-INDEX",
+      "title": "中文名称与原网格映射",
+      "kind": "csv-row",
+      "excerpt": "当前文件名：xl330_XL330舵机外形.stl\nSTL原文件名：xl330.stl\n中文识别名称（整理）：XL330 舵机外形\n原仿真模型可视实例数（非采购数量）：15\n原仿真模型所属刚体（非alpha装配对应）：bearing_roll；jaw_soft；leg；leg_2；neck；trunk_base；upper_leg_left；upper_leg_right；yaw2roll；yaw_roll_motion\n官方原文件来源：https://github.com/pollen-robotics/microduck_rl/blob/cb70b792312d559a4da09064d92009079671815f/src/mjlab_microduck/robot/microduck/assets/xl330.stl",
+      "row": 37,
+      "lineStart": 37,
+      "lineEnd": 37,
+      "partId": "part:microduck:4cef8bb24d37fe6e"
+    },
+    {
+      "id": "evidence:4cef8bb24d37fe6e:stl",
+      "sourceId": "SRC-000045",
+      "title": "STL 原始文件",
+      "kind": "source-file",
+      "excerpt": "来源文件：microduck-official-materials/03-三维模型/assets/xl330_XL330舵机外形.stl\nSHA-256：96238ed0d020ce0009cf1a5aa4b6926176c800840318ee65e4375be2298d2744\n文件大小：206384 bytes\n仅为来源登记，不是制造或物理验证。",
+      "partId": "part:microduck:4cef8bb24d37fe6e"
+    },
+    {
+      "id": "evidence:44b5600c1a735117:xml",
+      "sourceId": "SRC-MD-MJCF",
+      "title": "参考装配中的可视实例",
+      "kind": "xml-node",
+      "excerpt": "<geom type=\"mesh\" class=\"visual\" pos=\"-0 -0.05 0.0145\" quat=\"0.5 0.5 -0.5 0.5\" mesh=\"xl330\" material=\"xl330_material\"/>",
+      "lineStart": 188,
+      "lineEnd": 188,
+      "partId": "part:microduck:44b5600c1a735117"
+    },
+    {
+      "id": "evidence:44b5600c1a735117:csv",
+      "sourceId": "SRC-MD-INDEX",
+      "title": "中文名称与原网格映射",
+      "kind": "csv-row",
+      "excerpt": "当前文件名：xl330_XL330舵机外形.stl\nSTL原文件名：xl330.stl\n中文识别名称（整理）：XL330 舵机外形\n原仿真模型可视实例数（非采购数量）：15\n原仿真模型所属刚体（非alpha装配对应）：bearing_roll；jaw_soft；leg；leg_2；neck；trunk_base；upper_leg_left；upper_leg_right；yaw2roll；yaw_roll_motion\n官方原文件来源：https://github.com/pollen-robotics/microduck_rl/blob/cb70b792312d559a4da09064d92009079671815f/src/mjlab_microduck/robot/microduck/assets/xl330.stl",
+      "row": 37,
+      "lineStart": 37,
+      "lineEnd": 37,
+      "partId": "part:microduck:44b5600c1a735117"
+    },
+    {
+      "id": "evidence:44b5600c1a735117:stl",
+      "sourceId": "SRC-000045",
+      "title": "STL 原始文件",
+      "kind": "source-file",
+      "excerpt": "来源文件：microduck-official-materials/03-三维模型/assets/xl330_XL330舵机外形.stl\nSHA-256：96238ed0d020ce0009cf1a5aa4b6926176c800840318ee65e4375be2298d2744\n文件大小：206384 bytes\n仅为来源登记，不是制造或物理验证。",
+      "partId": "part:microduck:44b5600c1a735117"
+    },
+    {
+      "id": "evidence:133711c520619e45:xml",
+      "sourceId": "SRC-MD-MJCF",
+      "title": "参考装配中的可视实例",
+      "kind": "xml-node",
+      "excerpt": "<geom type=\"mesh\" class=\"visual\" pos=\"0.022 0.05 0.003\" quat=\"0.5 0.5 0.5 -0.5\" mesh=\"neck\" material=\"neck_material\"/>",
+      "lineStart": 190,
+      "lineEnd": 190,
+      "partId": "part:microduck:133711c520619e45"
+    },
+    {
+      "id": "evidence:133711c520619e45:csv",
+      "sourceId": "SRC-MD-INDEX",
+      "title": "中文名称与原网格映射",
+      "kind": "csv-row",
+      "excerpt": "当前文件名：neck_颈部件.stl\nSTL原文件名：neck.stl\n中文识别名称（整理）：颈部件\n原仿真模型可视实例数（非采购数量）：2\n原仿真模型所属刚体（非alpha装配对应）：neck\n官方原文件来源：https://github.com/pollen-robotics/microduck_rl/blob/cb70b792312d559a4da09064d92009079671815f/src/mjlab_microduck/robot/microduck/assets/neck.stl",
+      "row": 19,
+      "lineStart": 19,
+      "lineEnd": 19,
+      "partId": "part:microduck:133711c520619e45"
+    },
+    {
+      "id": "evidence:133711c520619e45:stl",
+      "sourceId": "SRC-000028",
+      "title": "STL 原始文件",
+      "kind": "source-file",
+      "excerpt": "来源文件：microduck-official-materials/03-三维模型/assets/neck_颈部件.stl\nSHA-256：b6e86b886153be8a8a776c1cb219c074ee9e89c8bd431117662a2d9e504d7cb5\n文件大小：73484 bytes\n仅为来源登记，不是制造或物理验证。",
+      "partId": "part:microduck:133711c520619e45"
+    },
+    {
+      "id": "evidence:834f5cc892eba41e:xml",
+      "sourceId": "SRC-MD-MJCF",
+      "title": "参考装配中的可视实例",
+      "kind": "xml-node",
+      "excerpt": "<geom type=\"mesh\" class=\"visual\" pos=\"-0 0.0287931 -0.0145\" quat=\"0.5 -0.5 -0.5 -0.5\" mesh=\"neck_pitch\" material=\"neck_pitch_material\"/>",
+      "lineStart": 197,
+      "lineEnd": 197,
+      "partId": "part:microduck:834f5cc892eba41e"
+    },
+    {
+      "id": "evidence:834f5cc892eba41e:csv",
+      "sourceId": "SRC-MD-INDEX",
+      "title": "中文名称与原网格映射",
+      "kind": "csv-row",
+      "excerpt": "当前文件名：neck_pitch_颈俯仰部件.stl\nSTL原文件名：neck_pitch.stl\n中文识别名称（整理）：颈俯仰部件\n原仿真模型可视实例数（非采购数量）：1\n原仿真模型所属刚体（非alpha装配对应）：neck_pitch\n官方原文件来源：https://github.com/pollen-robotics/microduck_rl/blob/cb70b792312d559a4da09064d92009079671815f/src/mjlab_microduck/robot/microduck/assets/neck_pitch.stl",
+      "row": 20,
+      "lineStart": 20,
+      "lineEnd": 20,
+      "partId": "part:microduck:834f5cc892eba41e"
+    },
+    {
+      "id": "evidence:834f5cc892eba41e:stl",
+      "sourceId": "SRC-000027",
+      "title": "STL 原始文件",
+      "kind": "source-file",
+      "excerpt": "来源文件：microduck-official-materials/03-三维模型/assets/neck_pitch_颈俯仰部件.stl\nSHA-256：a685ce65348ae4d0d49417c69a7a8871f8bbd54a6e3419362be9c334abd5d2ae\n文件大小：356084 bytes\n仅为来源登记，不是制造或物理验证。",
+      "partId": "part:microduck:834f5cc892eba41e"
+    },
+    {
+      "id": "evidence:6b884b140f6e283c:xml",
+      "sourceId": "SRC-MD-MJCF",
+      "title": "参考装配中的可视实例",
+      "kind": "xml-node",
+      "excerpt": "<geom type=\"mesh\" class=\"visual\" pos=\"-0 0.0207931 -0.0145\" quat=\"0.707107 0.707107 -0 0\" mesh=\"seeed_bearing__configuration__22x16x4\" material=\"seeed_bearing__configuration__22x16x4_material\"/>",
+      "lineStart": 199,
+      "lineEnd": 199,
+      "partId": "part:microduck:6b884b140f6e283c"
+    },
+    {
+      "id": "evidence:6b884b140f6e283c:csv",
+      "sourceId": "SRC-MD-INDEX",
+      "title": "中文名称与原网格映射",
+      "kind": "csv-row",
+      "excerpt": "当前文件名：seeed_bearing__configuration__22x16x4_轴承外形-22×16×4.stl\nSTL原文件名：seeed_bearing__configuration__22x16x4.stl\n中文识别名称（整理）：轴承外形（22×16×4 配置名）\n原仿真模型可视实例数（非采购数量）：11\n原仿真模型所属刚体（非alpha装配对应）：bearing_roll；hip_l；hip_l_2；neck_pitch；trunk_base；upper_leg_left；upper_leg_right；yaw2roll；yaw_roll_motion\n官方原文件来源：https://github.com/pollen-robotics/microduck_rl/blob/cb70b792312d559a4da09064d92009079671815f/src/mjlab_microduck/robot/microduck/assets/seeed_bearing__configuration__22x16x4.stl",
+      "row": 26,
+      "lineStart": 26,
+      "lineEnd": 26,
+      "partId": "part:microduck:6b884b140f6e283c"
+    },
+    {
+      "id": "evidence:6b884b140f6e283c:stl",
+      "sourceId": "SRC-000034",
+      "title": "STL 原始文件",
+      "kind": "source-file",
+      "excerpt": "来源文件：microduck-official-materials/03-三维模型/assets/seeed_bearing__configuration__22x16x4_轴承外形-22×16×4.stl\nSHA-256：295ee68ed9766c91fe06d3a2a49d39f7c2f56cc943395d293afdeb013123435e\n文件大小：1048584 bytes\n仅为来源登记，不是制造或物理验证。",
+      "partId": "part:microduck:6b884b140f6e283c"
+    },
+    {
+      "id": "evidence:d4b9a9e9474a9829:xml",
+      "sourceId": "SRC-MD-MJCF",
+      "title": "参考装配中的可视实例",
+      "kind": "xml-node",
+      "excerpt": "<geom type=\"mesh\" class=\"visual\" pos=\"0 0 0.01\" quat=\"0.707107 0 0 0.707107\" mesh=\"yaw_roll_motion\" material=\"yaw_roll_motion_material\"/>",
+      "lineStart": 206,
+      "lineEnd": 206,
+      "partId": "part:microduck:d4b9a9e9474a9829"
+    },
+    {
+      "id": "evidence:d4b9a9e9474a9829:csv",
+      "sourceId": "SRC-MD-INDEX",
+      "title": "中文名称与原网格映射",
+      "kind": "csv-row",
+      "excerpt": "当前文件名：yaw_roll_motion_偏航与横滚传动件.stl\nSTL原文件名：yaw_roll_motion.stl\n中文识别名称（整理）：偏航与横滚传动件\n原仿真模型可视实例数（非采购数量）：1\n原仿真模型所属刚体（非alpha装配对应）：yaw_roll_motion\n官方原文件来源：https://github.com/pollen-robotics/microduck_rl/blob/cb70b792312d559a4da09064d92009079671815f/src/mjlab_microduck/robot/microduck/assets/yaw_roll_motion.stl",
+      "row": 39,
+      "lineStart": 39,
+      "lineEnd": 39,
+      "partId": "part:microduck:d4b9a9e9474a9829"
+    },
+    {
+      "id": "evidence:d4b9a9e9474a9829:stl",
+      "sourceId": "SRC-000047",
+      "title": "STL 原始文件",
+      "kind": "source-file",
+      "excerpt": "来源文件：microduck-official-materials/03-三维模型/assets/yaw_roll_motion_偏航与横滚传动件.stl\nSHA-256：b0c9902dee19f06cdb7fa930292e0e1c91e2dc59baa971211495b58ff76c3c60\n文件大小：290784 bytes\n仅为来源登记，不是制造或物理验证。",
+      "partId": "part:microduck:d4b9a9e9474a9829"
+    },
+    {
+      "id": "evidence:a07b37bcb704b29f:xml",
+      "sourceId": "SRC-MD-MJCF",
+      "title": "参考装配中的可视实例",
+      "kind": "xml-node",
+      "excerpt": "<geom type=\"mesh\" class=\"visual\" pos=\"0 0 0.0145\" quat=\"0.5 -0.5 -0.5 -0.5\" mesh=\"xl330\" material=\"xl330_material\"/>",
+      "lineStart": 208,
+      "lineEnd": 208,
+      "partId": "part:microduck:a07b37bcb704b29f"
+    },
+    {
+      "id": "evidence:a07b37bcb704b29f:csv",
+      "sourceId": "SRC-MD-INDEX",
+      "title": "中文名称与原网格映射",
+      "kind": "csv-row",
+      "excerpt": "当前文件名：xl330_XL330舵机外形.stl\nSTL原文件名：xl330.stl\n中文识别名称（整理）：XL330 舵机外形\n原仿真模型可视实例数（非采购数量）：15\n原仿真模型所属刚体（非alpha装配对应）：bearing_roll；jaw_soft；leg；leg_2；neck；trunk_base；upper_leg_left；upper_leg_right；yaw2roll；yaw_roll_motion\n官方原文件来源：https://github.com/pollen-robotics/microduck_rl/blob/cb70b792312d559a4da09064d92009079671815f/src/mjlab_microduck/robot/microduck/assets/xl330.stl",
+      "row": 37,
+      "lineStart": 37,
+      "lineEnd": 37,
+      "partId": "part:microduck:a07b37bcb704b29f"
+    },
+    {
+      "id": "evidence:a07b37bcb704b29f:stl",
+      "sourceId": "SRC-000045",
+      "title": "STL 原始文件",
+      "kind": "source-file",
+      "excerpt": "来源文件：microduck-official-materials/03-三维模型/assets/xl330_XL330舵机外形.stl\nSHA-256：96238ed0d020ce0009cf1a5aa4b6926176c800840318ee65e4375be2298d2744\n文件大小：206384 bytes\n仅为来源登记，不是制造或物理验证。",
+      "partId": "part:microduck:a07b37bcb704b29f"
+    },
+    {
+      "id": "evidence:ea69e2c6bba10a23:xml",
+      "sourceId": "SRC-MD-MJCF",
+      "title": "参考装配中的可视实例",
+      "kind": "xml-node",
+      "excerpt": "<geom type=\"mesh\" class=\"visual\" pos=\"-0.016 0 0.0145\" quat=\"0.707107 -0 -0.707107 -0\" mesh=\"seeed_bearing__configuration__22x16x4\" material=\"seeed_bearing__configuration__22x16x4_material\"/>",
+      "lineStart": 210,
+      "lineEnd": 210,
+      "partId": "part:microduck:ea69e2c6bba10a23"
+    },
+    {
+      "id": "evidence:ea69e2c6bba10a23:csv",
+      "sourceId": "SRC-MD-INDEX",
+      "title": "中文名称与原网格映射",
+      "kind": "csv-row",
+      "excerpt": "当前文件名：seeed_bearing__configuration__22x16x4_轴承外形-22×16×4.stl\nSTL原文件名：seeed_bearing__configuration__22x16x4.stl\n中文识别名称（整理）：轴承外形（22×16×4 配置名）\n原仿真模型可视实例数（非采购数量）：11\n原仿真模型所属刚体（非alpha装配对应）：bearing_roll；hip_l；hip_l_2；neck_pitch；trunk_base；upper_leg_left；upper_leg_right；yaw2roll；yaw_roll_motion\n官方原文件来源：https://github.com/pollen-robotics/microduck_rl/blob/cb70b792312d559a4da09064d92009079671815f/src/mjlab_microduck/robot/microduck/assets/seeed_bearing__configuration__22x16x4.stl",
+      "row": 26,
+      "lineStart": 26,
+      "lineEnd": 26,
+      "partId": "part:microduck:ea69e2c6bba10a23"
+    },
+    {
+      "id": "evidence:ea69e2c6bba10a23:stl",
+      "sourceId": "SRC-000034",
+      "title": "STL 原始文件",
+      "kind": "source-file",
+      "excerpt": "来源文件：microduck-official-materials/03-三维模型/assets/seeed_bearing__configuration__22x16x4_轴承外形-22×16×4.stl\nSHA-256：295ee68ed9766c91fe06d3a2a49d39f7c2f56cc943395d293afdeb013123435e\n文件大小：1048584 bytes\n仅为来源登记，不是制造或物理验证。",
+      "partId": "part:microduck:ea69e2c6bba10a23"
+    },
+    {
+      "id": "evidence:55121c0b36f62219:xml",
+      "sourceId": "SRC-MD-MJCF",
+      "title": "参考装配中的可视实例",
+      "kind": "xml-node",
+      "excerpt": "<geom type=\"mesh\" class=\"visual\" pos=\"0.018 0 0.0145\" quat=\"0.707107 0 -0.707107 -0\" mesh=\"seeed_bearing__configuration__22x16x4\" material=\"seeed_bearing__configuration__22x16x4_material\"/>",
+      "lineStart": 212,
+      "lineEnd": 212,
+      "partId": "part:microduck:55121c0b36f62219"
+    },
+    {
+      "id": "evidence:55121c0b36f62219:csv",
+      "sourceId": "SRC-MD-INDEX",
+      "title": "中文名称与原网格映射",
+      "kind": "csv-row",
+      "excerpt": "当前文件名：seeed_bearing__configuration__22x16x4_轴承外形-22×16×4.stl\nSTL原文件名：seeed_bearing__configuration__22x16x4.stl\n中文识别名称（整理）：轴承外形（22×16×4 配置名）\n原仿真模型可视实例数（非采购数量）：11\n原仿真模型所属刚体（非alpha装配对应）：bearing_roll；hip_l；hip_l_2；neck_pitch；trunk_base；upper_leg_left；upper_leg_right；yaw2roll；yaw_roll_motion\n官方原文件来源：https://github.com/pollen-robotics/microduck_rl/blob/cb70b792312d559a4da09064d92009079671815f/src/mjlab_microduck/robot/microduck/assets/seeed_bearing__configuration__22x16x4.stl",
+      "row": 26,
+      "lineStart": 26,
+      "lineEnd": 26,
+      "partId": "part:microduck:55121c0b36f62219"
+    },
+    {
+      "id": "evidence:55121c0b36f62219:stl",
+      "sourceId": "SRC-000034",
+      "title": "STL 原始文件",
+      "kind": "source-file",
+      "excerpt": "来源文件：microduck-official-materials/03-三维模型/assets/seeed_bearing__configuration__22x16x4_轴承外形-22×16×4.stl\nSHA-256：295ee68ed9766c91fe06d3a2a49d39f7c2f56cc943395d293afdeb013123435e\n文件大小：1048584 bytes\n仅为来源登记，不是制造或物理验证。",
+      "partId": "part:microduck:55121c0b36f62219"
+    },
+    {
+      "id": "evidence:b61b0609c61fc572:xml",
+      "sourceId": "SRC-MD-MJCF",
+      "title": "参考装配中的可视实例",
+      "kind": "xml-node",
+      "excerpt": "<geom type=\"mesh\" class=\"visual\" pos=\"0.0155 -9.13778e-05 -0.05548\" quat=\"0.5 -0.5 0.5 -0.5\" mesh=\"lens\" material=\"lens_material\"/>",
+      "lineStart": 219,
+      "lineEnd": 219,
+      "partId": "part:microduck:b61b0609c61fc572"
+    },
+    {
+      "id": "evidence:b61b0609c61fc572:csv",
+      "sourceId": "SRC-MD-INDEX",
+      "title": "中文名称与原网格映射",
+      "kind": "csv-row",
+      "excerpt": "当前文件名：lens_镜头外形.stl\nSTL原文件名：lens.stl\n中文识别名称（整理）：镜头外形\n原仿真模型可视实例数（非采购数量）：1\n原仿真模型所属刚体（非alpha装配对应）：jaw_soft\n官方原文件来源：https://github.com/pollen-robotics/microduck_rl/blob/cb70b792312d559a4da09064d92009079671815f/src/mjlab_microduck/robot/microduck/assets/lens.stl",
+      "row": 16,
+      "lineStart": 16,
+      "lineEnd": 16,
+      "partId": "part:microduck:b61b0609c61fc572"
+    },
+    {
+      "id": "evidence:b61b0609c61fc572:stl",
+      "sourceId": "SRC-000024",
+      "title": "STL 原始文件",
+      "kind": "source-file",
+      "excerpt": "来源文件：microduck-official-materials/03-三维模型/assets/lens_镜头外形.stl\nSHA-256：b1c717432ff7666398de58adec6a1b7e03a7e45aa155dbfe27a6152ef19663e5\n文件大小：93684 bytes\n仅为来源登记，不是制造或物理验证。",
+      "partId": "part:microduck:b61b0609c61fc572"
+    },
+    {
+      "id": "evidence:afa52198f7fad203:xml",
+      "sourceId": "SRC-MD-MJCF",
+      "title": "参考装配中的可视实例",
+      "kind": "xml-node",
+      "excerpt": "<geom type=\"mesh\" class=\"visual\" pos=\"-0.0045 -9.13778e-05 -0.0178\" quat=\"0.5 0.5 0.5 0.5\" mesh=\"face_part\" material=\"face_part_material\"/>",
+      "lineStart": 221,
+      "lineEnd": 221,
+      "partId": "part:microduck:afa52198f7fad203"
+    },
+    {
+      "id": "evidence:afa52198f7fad203:csv",
+      "sourceId": "SRC-MD-INDEX",
+      "title": "中文名称与原网格映射",
+      "kind": "csv-row",
+      "excerpt": "当前文件名：face_part_面部件.stl\nSTL原文件名：face_part.stl\n中文识别名称（整理）：面部件\n原仿真模型可视实例数（非采购数量）：1\n原仿真模型所属刚体（非alpha装配对应）：jaw_soft\n官方原文件来源：https://github.com/pollen-robotics/microduck_rl/blob/cb70b792312d559a4da09064d92009079671815f/src/mjlab_microduck/robot/microduck/assets/face_part.stl",
+      "row": 8,
+      "lineStart": 8,
+      "lineEnd": 8,
+      "partId": "part:microduck:afa52198f7fad203"
+    },
+    {
+      "id": "evidence:afa52198f7fad203:stl",
+      "sourceId": "SRC-000016",
+      "title": "STL 原始文件",
+      "kind": "source-file",
+      "excerpt": "来源文件：microduck-official-materials/03-三维模型/assets/face_part_面部件.stl\nSHA-256：d0e89a173e7bdc8038c4d413f458140d8f42f1a2f098f67a887c2388eff31718\n文件大小：570684 bytes\n仅为来源登记，不是制造或物理验证。",
+      "partId": "part:microduck:afa52198f7fad203"
+    },
+    {
+      "id": "evidence:50f0c376d01bb0c1:xml",
+      "sourceId": "SRC-MD-MJCF",
+      "title": "参考装配中的可视实例",
+      "kind": "xml-node",
+      "excerpt": "<geom type=\"mesh\" class=\"visual\" pos=\"0.003 0.0255 -0.018\" quat=\"0.707107 0 -0 -0.707107\" mesh=\"xl330\" material=\"xl330_material\"/>",
+      "lineStart": 223,
+      "lineEnd": 223,
+      "partId": "part:microduck:50f0c376d01bb0c1"
+    },
+    {
+      "id": "evidence:50f0c376d01bb0c1:csv",
+      "sourceId": "SRC-MD-INDEX",
+      "title": "中文名称与原网格映射",
+      "kind": "csv-row",
+      "excerpt": "当前文件名：xl330_XL330舵机外形.stl\nSTL原文件名：xl330.stl\n中文识别名称（整理）：XL330 舵机外形\n原仿真模型可视实例数（非采购数量）：15\n原仿真模型所属刚体（非alpha装配对应）：bearing_roll；jaw_soft；leg；leg_2；neck；trunk_base；upper_leg_left；upper_leg_right；yaw2roll；yaw_roll_motion\n官方原文件来源：https://github.com/pollen-robotics/microduck_rl/blob/cb70b792312d559a4da09064d92009079671815f/src/mjlab_microduck/robot/microduck/assets/xl330.stl",
+      "row": 37,
+      "lineStart": 37,
+      "lineEnd": 37,
+      "partId": "part:microduck:50f0c376d01bb0c1"
+    },
+    {
+      "id": "evidence:50f0c376d01bb0c1:stl",
+      "sourceId": "SRC-000045",
+      "title": "STL 原始文件",
+      "kind": "source-file",
+      "excerpt": "来源文件：microduck-official-materials/03-三维模型/assets/xl330_XL330舵机外形.stl\nSHA-256：96238ed0d020ce0009cf1a5aa4b6926176c800840318ee65e4375be2298d2744\n文件大小：206384 bytes\n仅为来源登记，不是制造或物理验证。",
+      "partId": "part:microduck:50f0c376d01bb0c1"
+    },
+    {
+      "id": "evidence:f5797f92c2bf01b8:xml",
+      "sourceId": "SRC-MD-MJCF",
+      "title": "参考装配中的可视实例",
+      "kind": "xml-node",
+      "excerpt": "<geom type=\"mesh\" class=\"visual\" pos=\"-0.0046 0 -0.0179996\" quat=\"0.5 0.5 0.5 0.5\" mesh=\"jaw_soft\" material=\"jaw_soft_material\"/>",
+      "lineStart": 225,
+      "lineEnd": 225,
+      "partId": "part:microduck:f5797f92c2bf01b8"
+    },
+    {
+      "id": "evidence:f5797f92c2bf01b8:csv",
+      "sourceId": "SRC-MD-INDEX",
+      "title": "中文名称与原网格映射",
+      "kind": "csv-row",
+      "excerpt": "当前文件名：jaw_soft_喙部软质件.stl\nSTL原文件名：jaw_soft.stl\n中文识别名称（整理）：喙部软质件（文件名标识）\n原仿真模型可视实例数（非采购数量）：1\n原仿真模型所属刚体（非alpha装配对应）：jaw_soft\n官方原文件来源：https://github.com/pollen-robotics/microduck_rl/blob/cb70b792312d559a4da09064d92009079671815f/src/mjlab_microduck/robot/microduck/assets/jaw_soft.stl",
+      "row": 13,
+      "lineStart": 13,
+      "lineEnd": 13,
+      "partId": "part:microduck:f5797f92c2bf01b8"
+    },
+    {
+      "id": "evidence:f5797f92c2bf01b8:stl",
+      "sourceId": "SRC-000020",
+      "title": "STL 原始文件",
+      "kind": "source-file",
+      "excerpt": "来源文件：microduck-official-materials/03-三维模型/assets/jaw_soft_喙部软质件.stl\nSHA-256：2d2ade4e86df4b37ce313bb9b96023109dd04bab39dba08b154e76d332fbce2e\n文件大小：336384 bytes\n仅为来源登记，不是制造或物理验证。",
+      "partId": "part:microduck:f5797f92c2bf01b8"
+    },
+    {
+      "id": "evidence:986b5adf27910138:xml",
+      "sourceId": "SRC-MD-MJCF",
+      "title": "参考装配中的可视实例",
+      "kind": "xml-node",
+      "excerpt": "<geom type=\"mesh\" class=\"visual\" pos=\"-0.0045 -0 -0.018\" quat=\"0.5 0.5 0.5 0.5\" mesh=\"motor_support\" material=\"motor_support_material\"/>",
+      "lineStart": 227,
+      "lineEnd": 227,
+      "partId": "part:microduck:986b5adf27910138"
+    },
+    {
+      "id": "evidence:986b5adf27910138:csv",
+      "sourceId": "SRC-MD-INDEX",
+      "title": "中文名称与原网格映射",
+      "kind": "csv-row",
+      "excerpt": "当前文件名：motor_support_电机支架.stl\nSTL原文件名：motor_support.stl\n中文识别名称（整理）：电机支架\n原仿真模型可视实例数（非采购数量）：1\n原仿真模型所属刚体（非alpha装配对应）：jaw_soft\n官方原文件来源：https://github.com/pollen-robotics/microduck_rl/blob/cb70b792312d559a4da09064d92009079671815f/src/mjlab_microduck/robot/microduck/assets/motor_support.stl",
+      "row": 18,
+      "lineStart": 18,
+      "lineEnd": 18,
+      "partId": "part:microduck:986b5adf27910138"
+    },
+    {
+      "id": "evidence:986b5adf27910138:stl",
+      "sourceId": "SRC-000026",
+      "title": "STL 原始文件",
+      "kind": "source-file",
+      "excerpt": "来源文件：microduck-official-materials/03-三维模型/assets/motor_support_电机支架.stl\nSHA-256：ce0aa5bef82c7474512d302568c341b9769b3005e0bdb91a19c2eaaba6dad480\n文件大小：180884 bytes\n仅为来源登记，不是制造或物理验证。",
+      "partId": "part:microduck:986b5adf27910138"
+    },
+    {
+      "id": "evidence:82d68e991b23c2a3:xml",
+      "sourceId": "SRC-MD-MJCF",
+      "title": "参考装配中的可视实例",
+      "kind": "xml-node",
+      "excerpt": "<geom type=\"mesh\" class=\"visual\" pos=\"-0.0045 -0 -0.018\" quat=\"0.5 0.5 0.5 0.5\" mesh=\"top_head_shell\" material=\"top_head_shell_material\"/>",
+      "lineStart": 229,
+      "lineEnd": 229,
+      "partId": "part:microduck:82d68e991b23c2a3"
+    },
+    {
+      "id": "evidence:82d68e991b23c2a3:csv",
+      "sourceId": "SRC-MD-INDEX",
+      "title": "中文名称与原网格映射",
+      "kind": "csv-row",
+      "excerpt": "当前文件名：top_head_shell_头部上壳.stl\nSTL原文件名：top_head_shell.stl\n中文识别名称（整理）：头部上壳\n原仿真模型可视实例数（非采购数量）：1\n原仿真模型所属刚体（非alpha装配对应）：jaw_soft\n官方原文件来源：https://github.com/pollen-robotics/microduck_rl/blob/cb70b792312d559a4da09064d92009079671815f/src/mjlab_microduck/robot/microduck/assets/top_head_shell.stl",
+      "row": 32,
+      "lineStart": 32,
+      "lineEnd": 32,
+      "partId": "part:microduck:82d68e991b23c2a3"
+    },
+    {
+      "id": "evidence:82d68e991b23c2a3:stl",
+      "sourceId": "SRC-000040",
+      "title": "STL 原始文件",
+      "kind": "source-file",
+      "excerpt": "来源文件：microduck-official-materials/03-三维模型/assets/top_head_shell_头部上壳.stl\nSHA-256：6d01f396f514c9d2185cf6b8250b1d8382ac3fa0702eb525bcb284f706196291\n文件大小：806084 bytes\n仅为来源登记，不是制造或物理验证。",
+      "partId": "part:microduck:82d68e991b23c2a3"
+    },
+    {
+      "id": "evidence:96e22c7fa2b976d3:xml",
+      "sourceId": "SRC-MD-MJCF",
+      "title": "参考装配中的可视实例",
+      "kind": "xml-node",
+      "excerpt": "<geom type=\"mesh\" class=\"visual\" pos=\"0 0 0.0145\" quat=\"0.5 -0.5 -0.5 -0.5\" mesh=\"xl330\" material=\"xl330_material\"/>",
+      "lineStart": 231,
+      "lineEnd": 231,
+      "partId": "part:microduck:96e22c7fa2b976d3"
+    },
+    {
+      "id": "evidence:96e22c7fa2b976d3:csv",
+      "sourceId": "SRC-MD-INDEX",
+      "title": "中文名称与原网格映射",
+      "kind": "csv-row",
+      "excerpt": "当前文件名：xl330_XL330舵机外形.stl\nSTL原文件名：xl330.stl\n中文识别名称（整理）：XL330 舵机外形\n原仿真模型可视实例数（非采购数量）：15\n原仿真模型所属刚体（非alpha装配对应）：bearing_roll；jaw_soft；leg；leg_2；neck；trunk_base；upper_leg_left；upper_leg_right；yaw2roll；yaw_roll_motion\n官方原文件来源：https://github.com/pollen-robotics/microduck_rl/blob/cb70b792312d559a4da09064d92009079671815f/src/mjlab_microduck/robot/microduck/assets/xl330.stl",
+      "row": 37,
+      "lineStart": 37,
+      "lineEnd": 37,
+      "partId": "part:microduck:96e22c7fa2b976d3"
+    },
+    {
+      "id": "evidence:96e22c7fa2b976d3:stl",
+      "sourceId": "SRC-000045",
+      "title": "STL 原始文件",
+      "kind": "source-file",
+      "excerpt": "来源文件：microduck-official-materials/03-三维模型/assets/xl330_XL330舵机外形.stl\nSHA-256：96238ed0d020ce0009cf1a5aa4b6926176c800840318ee65e4375be2298d2744\n文件大小：206384 bytes\n仅为来源登记，不是制造或物理验证。",
+      "partId": "part:microduck:96e22c7fa2b976d3"
+    },
+    {
+      "id": "evidence:a0775b54397eb21e:xml",
+      "sourceId": "SRC-MD-MJCF",
+      "title": "参考装配中的可视实例",
+      "kind": "xml-node",
+      "excerpt": "<geom type=\"mesh\" class=\"visual\" pos=\"0.0032 -0.04 -0.018\" quat=\"0.5 -0.5 0.5 0.5\" mesh=\"seeed_bearing__configuration_default\" material=\"seeed_bearing__configuration_default_material\"/>",
+      "lineStart": 233,
+      "lineEnd": 233,
+      "partId": "part:microduck:a0775b54397eb21e"
+    },
+    {
+      "id": "evidence:a0775b54397eb21e:csv",
+      "sourceId": "SRC-MD-INDEX",
+      "title": "中文名称与原网格映射",
+      "kind": "csv-row",
+      "excerpt": "当前文件名：seeed_bearing__configuration_default_轴承外形-默认配置.stl\nSTL原文件名：seeed_bearing__configuration_default.stl\n中文识别名称（整理）：轴承外形（默认配置名）\n原仿真模型可视实例数（非采购数量）：3\n原仿真模型所属刚体（非alpha装配对应）：ankle_left；ankle_right；jaw_soft\n官方原文件来源：https://github.com/pollen-robotics/microduck_rl/blob/cb70b792312d559a4da09064d92009079671815f/src/mjlab_microduck/robot/microduck/assets/seeed_bearing__configuration_default.stl",
+      "row": 27,
+      "lineStart": 27,
+      "lineEnd": 27,
+      "partId": "part:microduck:a0775b54397eb21e"
+    },
+    {
+      "id": "evidence:a0775b54397eb21e:stl",
+      "sourceId": "SRC-000035",
+      "title": "STL 原始文件",
+      "kind": "source-file",
+      "excerpt": "来源文件：microduck-official-materials/03-三维模型/assets/seeed_bearing__configuration_default_轴承外形-默认配置.stl\nSHA-256：e815f3483a2e7b80844f3c0938a47e53db38b12faed9b2d364414c19e4322da4\n文件大小：1048584 bytes\n仅为来源登记，不是制造或物理验证。",
+      "partId": "part:microduck:a0775b54397eb21e"
+    },
+    {
+      "id": "evidence:554503ef38151e67:xml",
+      "sourceId": "SRC-MD-MJCF",
+      "title": "参考装配中的可视实例",
+      "kind": "xml-node",
+      "excerpt": "<geom type=\"mesh\" class=\"visual\" pos=\"0.02694 0.0289936 -0.0519\" quat=\"0.707107 0 -0 -0.707107\" mesh=\"elec_rpi_robot_hat_pcb\" material=\"elec_rpi_robot_hat_pcb_material\"/>",
+      "lineStart": 235,
+      "lineEnd": 235,
+      "partId": "part:microduck:554503ef38151e67"
+    },
+    {
+      "id": "evidence:554503ef38151e67:csv",
+      "sourceId": "SRC-MD-INDEX",
+      "title": "中文名称与原网格映射",
+      "kind": "csv-row",
+      "excerpt": "当前文件名：elec_rpi_robot_hat_pcb_RPIRobotHAT电路板外形.stl\nSTL原文件名：elec_rpi_robot_hat_pcb.stl\n中文识别名称（整理）：RPI Robot HAT 电路板外形\n原仿真模型可视实例数（非采购数量）：1\n原仿真模型所属刚体（非alpha装配对应）：jaw_soft\n官方原文件来源：https://github.com/pollen-robotics/microduck_rl/blob/cb70b792312d559a4da09064d92009079671815f/src/mjlab_microduck/robot/microduck/assets/elec_rpi_robot_hat_pcb.stl",
+      "row": 7,
+      "lineStart": 7,
+      "lineEnd": 7,
+      "partId": "part:microduck:554503ef38151e67"
+    },
+    {
+      "id": "evidence:554503ef38151e67:stl",
+      "sourceId": "SRC-000015",
+      "title": "STL 原始文件",
+      "kind": "source-file",
+      "excerpt": "来源文件：microduck-official-materials/03-三维模型/assets/elec_rpi_robot_hat_pcb_RPIRobotHAT电路板外形.stl\nSHA-256：1a61582759d82b5b4df9b7d11099bf1bb3944fc77e6b74d3237adf24dd5d03d7\n文件大小：942884 bytes\n仅为来源登记，不是制造或物理验证。",
+      "partId": "part:microduck:554503ef38151e67"
+    },
+    {
+      "id": "evidence:88b7496d63cb41ff:xml",
+      "sourceId": "SRC-MD-MJCF",
+      "title": "参考装配中的可视实例",
+      "kind": "xml-node",
+      "excerpt": "<geom type=\"mesh\" class=\"visual\" pos=\"-0.00420071 1.7776e-08 -0.0180814\" quat=\"0.5 0.5 0.5 0.5\" mesh=\"soft_mouth_top\" material=\"soft_mouth_top_material\"/>",
+      "lineStart": 237,
+      "lineEnd": 237,
+      "partId": "part:microduck:88b7496d63cb41ff"
+    },
+    {
+      "id": "evidence:88b7496d63cb41ff:csv",
+      "sourceId": "SRC-MD-INDEX",
+      "title": "中文名称与原网格映射",
+      "kind": "csv-row",
+      "excerpt": "当前文件名：soft_mouth_top_喙上部软质件.stl\nSTL原文件名：soft_mouth_top.stl\n中文识别名称（整理）：喙上部软质件（文件名标识）\n原仿真模型可视实例数（非采购数量）：1\n原仿真模型所属刚体（非alpha装配对应）：jaw_soft\n官方原文件来源：https://github.com/pollen-robotics/microduck_rl/blob/cb70b792312d559a4da09064d92009079671815f/src/mjlab_microduck/robot/microduck/assets/soft_mouth_top.stl",
+      "row": 28,
+      "lineStart": 28,
+      "lineEnd": 28,
+      "partId": "part:microduck:88b7496d63cb41ff"
+    },
+    {
+      "id": "evidence:88b7496d63cb41ff:stl",
+      "sourceId": "SRC-000036",
+      "title": "STL 原始文件",
+      "kind": "source-file",
+      "excerpt": "来源文件：microduck-official-materials/03-三维模型/assets/soft_mouth_top_喙上部软质件.stl\nSHA-256：3c2b52b0b6e2ce944a1e1b5a0838e1216be1ad3a34c8cdf91be186e634aec57b\n文件大小：393584 bytes\n仅为来源登记，不是制造或物理验证。",
+      "partId": "part:microduck:88b7496d63cb41ff"
+    },
+    {
+      "id": "evidence:2559a4c412bcda3e:xml",
+      "sourceId": "SRC-MD-MJCF",
+      "title": "参考装配中的可视实例",
+      "kind": "xml-node",
+      "excerpt": "<geom type=\"mesh\" class=\"visual\" pos=\"-0.0045 -9.13778e-05 -0.0178\" quat=\"0.5 0.5 0.5 0.5\" mesh=\"noenoeil\" material=\"noenoeil_material\"/>",
+      "lineStart": 239,
+      "lineEnd": 239,
+      "partId": "part:microduck:2559a4c412bcda3e"
+    },
+    {
+      "id": "evidence:2559a4c412bcda3e:csv",
+      "sourceId": "SRC-MD-INDEX",
+      "title": "中文名称与原网格映射",
+      "kind": "csv-row",
+      "excerpt": "当前文件名：noenoeil_眼部部件.stl\nSTL原文件名：noenoeil.stl\n中文识别名称（整理）：眼部部件（文件名标识）\n原仿真模型可视实例数（非采购数量）：1\n原仿真模型所属刚体（非alpha装配对应）：jaw_soft\n官方原文件来源：https://github.com/pollen-robotics/microduck_rl/blob/cb70b792312d559a4da09064d92009079671815f/src/mjlab_microduck/robot/microduck/assets/noenoeil.stl",
+      "row": 21,
+      "lineStart": 21,
+      "lineEnd": 21,
+      "partId": "part:microduck:2559a4c412bcda3e"
+    },
+    {
+      "id": "evidence:2559a4c412bcda3e:stl",
+      "sourceId": "SRC-000029",
+      "title": "STL 原始文件",
+      "kind": "source-file",
+      "excerpt": "来源文件：microduck-official-materials/03-三维模型/assets/noenoeil_眼部部件.stl\nSHA-256：e1167b3d5ad7fbbe6e63296bcd0c6b61556611e6bc1367b15ecfd27e3abb72f5\n文件大小：49284 bytes\n仅为来源登记，不是制造或物理验证。",
+      "partId": "part:microduck:2559a4c412bcda3e"
+    },
+    {
+      "id": "evidence:328011951ac11ee7:xml",
+      "sourceId": "SRC-MD-MJCF",
+      "title": "参考装配中的可视实例",
+      "kind": "xml-node",
+      "excerpt": "<geom type=\"mesh\" class=\"visual\" pos=\"-0.0045 -0 -0.018\" quat=\"0.5 0.5 0.5 0.5\" mesh=\"jaw\" material=\"jaw_material\"/>",
+      "lineStart": 241,
+      "lineEnd": 241,
+      "partId": "part:microduck:328011951ac11ee7"
+    },
+    {
+      "id": "evidence:328011951ac11ee7:csv",
+      "sourceId": "SRC-MD-INDEX",
+      "title": "中文名称与原网格映射",
+      "kind": "csv-row",
+      "excerpt": "当前文件名：jaw_喙部件.stl\nSTL原文件名：jaw.stl\n中文识别名称（整理）：喙部件\n原仿真模型可视实例数（非采购数量）：1\n原仿真模型所属刚体（非alpha装配对应）：jaw_soft\n官方原文件来源：https://github.com/pollen-robotics/microduck_rl/blob/cb70b792312d559a4da09064d92009079671815f/src/mjlab_microduck/robot/microduck/assets/jaw.stl",
+      "row": 12,
+      "lineStart": 12,
+      "lineEnd": 12,
+      "partId": "part:microduck:328011951ac11ee7"
+    },
+    {
+      "id": "evidence:328011951ac11ee7:stl",
+      "sourceId": "SRC-000021",
+      "title": "STL 原始文件",
+      "kind": "source-file",
+      "excerpt": "来源文件：microduck-official-materials/03-三维模型/assets/jaw_喙部件.stl\nSHA-256：45cdbd319a4583095d8daa0db07dee726522a743d59acb82d27d82ded500a1cf\n文件大小：495984 bytes\n仅为来源登记，不是制造或物理验证。",
+      "partId": "part:microduck:328011951ac11ee7"
+    },
+    {
+      "id": "evidence:52fdcacf474a463f:xml",
+      "sourceId": "SRC-MD-MJCF",
+      "title": "参考装配中的可视实例",
+      "kind": "xml-node",
+      "excerpt": "<geom type=\"mesh\" class=\"visual\" pos=\"-0.0043 -0 -0.018\" quat=\"0.5 0.5 0.5 0.5\" mesh=\"bottom_head_shell\" material=\"bottom_head_shell_material\"/>",
+      "lineStart": 243,
+      "lineEnd": 243,
+      "partId": "part:microduck:52fdcacf474a463f"
+    },
+    {
+      "id": "evidence:52fdcacf474a463f:csv",
+      "sourceId": "SRC-MD-INDEX",
+      "title": "中文名称与原网格映射",
+      "kind": "csv-row",
+      "excerpt": "当前文件名：bottom_head_shell_头部下壳.stl\nSTL原文件名：bottom_head_shell.stl\n中文识别名称（整理）：头部下壳\n原仿真模型可视实例数（非采购数量）：1\n原仿真模型所属刚体（非alpha装配对应）：jaw_soft\n官方原文件来源：https://github.com/pollen-robotics/microduck_rl/blob/cb70b792312d559a4da09064d92009079671815f/src/mjlab_microduck/robot/microduck/assets/bottom_head_shell.stl",
+      "row": 6,
+      "lineStart": 6,
+      "lineEnd": 6,
+      "partId": "part:microduck:52fdcacf474a463f"
+    },
+    {
+      "id": "evidence:52fdcacf474a463f:stl",
+      "sourceId": "SRC-000014",
+      "title": "STL 原始文件",
+      "kind": "source-file",
+      "excerpt": "来源文件：microduck-official-materials/03-三维模型/assets/bottom_head_shell_头部下壳.stl\nSHA-256：1820f7cf96646b0fc0c431f07da87b91b13111bfa9857ab1bf2b1fc3388f8da2\n文件大小：1048584 bytes\n仅为来源登记，不是制造或物理验证。",
+      "partId": "part:microduck:52fdcacf474a463f"
+    },
+    {
+      "id": "evidence:2d2cde8ae8ebacac:xml",
+      "sourceId": "SRC-MD-MJCF",
+      "title": "参考装配中的可视实例",
+      "kind": "xml-node",
+      "excerpt": "<geom type=\"mesh\" class=\"visual\" pos=\"0.0155 -9.13778e-05 -0.05558\" quat=\"0.5 -0.5 0.5 -0.5\" mesh=\"m12_lens_holder\" material=\"m12_lens_holder_material\"/>",
+      "lineStart": 245,
+      "lineEnd": 245,
+      "partId": "part:microduck:2d2cde8ae8ebacac"
+    },
+    {
+      "id": "evidence:2d2cde8ae8ebacac:csv",
+      "sourceId": "SRC-MD-INDEX",
+      "title": "中文名称与原网格映射",
+      "kind": "csv-row",
+      "excerpt": "当前文件名：m12_lens_holder_M12镜头座.stl\nSTL原文件名：m12_lens_holder.stl\n中文识别名称（整理）：M12 镜头座\n原仿真模型可视实例数（非采购数量）：1\n原仿真模型所属刚体（非alpha装配对应）：jaw_soft\n官方原文件来源：https://github.com/pollen-robotics/microduck_rl/blob/cb70b792312d559a4da09064d92009079671815f/src/mjlab_microduck/robot/microduck/assets/m12_lens_holder.stl",
+      "row": 17,
+      "lineStart": 17,
+      "lineEnd": 17,
+      "partId": "part:microduck:2d2cde8ae8ebacac"
+    },
+    {
+      "id": "evidence:2d2cde8ae8ebacac:stl",
+      "sourceId": "SRC-000025",
+      "title": "STL 原始文件",
+      "kind": "source-file",
+      "excerpt": "来源文件：microduck-official-materials/03-三维模型/assets/m12_lens_holder_M12镜头座.stl\nSHA-256：031d5ffaf6247328cf6d020f6b6695ffb3f8d3f22cf923b85811351d89ecfd7c\n文件大小：549684 bytes\n仅为来源登记，不是制造或物理验证。",
+      "partId": "part:microduck:2d2cde8ae8ebacac"
+    },
+    {
+      "id": "evidence:ebfcaf98422b7b28:xml",
+      "sourceId": "SRC-MD-MJCF",
+      "title": "参考装配中的可视实例",
+      "kind": "xml-node",
+      "excerpt": "<geom type=\"mesh\" class=\"visual\" pos=\"0.015435 -1.13778e-05 -0.06001\" quat=\"0.5 -0.5 -0.5 0.5\" mesh=\"pcb__raspberry_pi_zero_2_w\" material=\"pcb__raspberry_pi_zero_2_w_material\"/>",
+      "lineStart": 247,
+      "lineEnd": 247,
+      "partId": "part:microduck:ebfcaf98422b7b28"
+    },
+    {
+      "id": "evidence:ebfcaf98422b7b28:csv",
+      "sourceId": "SRC-MD-INDEX",
+      "title": "中文名称与原网格映射",
+      "kind": "csv-row",
+      "excerpt": "当前文件名：pcb__raspberry_pi_zero_2_w_树莓派Zero2W电路板外形.stl\nSTL原文件名：pcb__raspberry_pi_zero_2_w.stl\n中文识别名称（整理）：树莓派 Zero 2 W 电路板外形\n原仿真模型可视实例数（非采购数量）：1\n原仿真模型所属刚体（非alpha装配对应）：jaw_soft\n官方原文件来源：https://github.com/pollen-robotics/microduck_rl/blob/cb70b792312d559a4da09064d92009079671815f/src/mjlab_microduck/robot/microduck/assets/pcb__raspberry_pi_zero_2_w.stl",
+      "row": 23,
+      "lineStart": 23,
+      "lineEnd": 23,
+      "partId": "part:microduck:ebfcaf98422b7b28"
+    },
+    {
+      "id": "evidence:ebfcaf98422b7b28:stl",
+      "sourceId": "SRC-000031",
+      "title": "STL 原始文件",
+      "kind": "source-file",
+      "excerpt": "来源文件：microduck-official-materials/03-三维模型/assets/pcb__raspberry_pi_zero_2_w_树莓派Zero2W电路板外形.stl\nSHA-256：802cc66fc5447c67fc642d1339e55160df10f2ad04a65efd130e35fb7b2d3c90\n文件大小：1048584 bytes\n仅为来源登记，不是制造或物理验证。",
+      "partId": "part:microduck:ebfcaf98422b7b28"
+    },
+    {
+      "id": "evidence:22f2cd114e324ec5:xml",
+      "sourceId": "SRC-MD-MJCF",
+      "title": "参考装配中的可视实例",
+      "kind": "xml-node",
+      "excerpt": "<geom type=\"mesh\" class=\"visual\" pos=\"0.01 -0.016786 0.0260226\" quat=\"0.5 0.5 0.5 0.5\" mesh=\"speaker\" material=\"speaker_material\"/>",
+      "lineStart": 249,
+      "lineEnd": 249,
+      "partId": "part:microduck:22f2cd114e324ec5"
+    },
+    {
+      "id": "evidence:22f2cd114e324ec5:csv",
+      "sourceId": "SRC-MD-INDEX",
+      "title": "中文名称与原网格映射",
+      "kind": "csv-row",
+      "excerpt": "当前文件名：speaker_扬声器外形.stl\nSTL原文件名：speaker.stl\n中文识别名称（整理）：扬声器外形\n原仿真模型可视实例数（非采购数量）：1\n原仿真模型所属刚体（非alpha装配对应）：jaw_soft\n官方原文件来源：https://github.com/pollen-robotics/microduck_rl/blob/cb70b792312d559a4da09064d92009079671815f/src/mjlab_microduck/robot/microduck/assets/speaker.stl",
+      "row": 31,
+      "lineStart": 31,
+      "lineEnd": 31,
+      "partId": "part:microduck:22f2cd114e324ec5"
+    },
+    {
+      "id": "evidence:22f2cd114e324ec5:stl",
+      "sourceId": "SRC-000039",
+      "title": "STL 原始文件",
+      "kind": "source-file",
+      "excerpt": "来源文件：microduck-official-materials/03-三维模型/assets/speaker_扬声器外形.stl\nSHA-256：75a35f9bcf94cd8e52f99b3fd6ae667b48f52503f9075ee2f699eebe8e7b3ddf\n文件大小：684 bytes\n仅为来源登记，不是制造或物理验证。",
+      "partId": "part:microduck:22f2cd114e324ec5"
+    },
+    {
+      "id": "evidence:48099e14105d3289:xml",
+      "sourceId": "SRC-MD-MJCF",
+      "title": "参考装配中的可视实例",
+      "kind": "xml-node",
+      "excerpt": "<geom type=\"mesh\" class=\"visual\" pos=\"-0.0175 -0.002 0.0125\" quat=\"0 1 0 0\" mesh=\"yaw2roll\" material=\"yaw2roll_material\"/>",
+      "lineStart": 269,
+      "lineEnd": 269,
+      "partId": "part:microduck:48099e14105d3289"
+    },
+    {
+      "id": "evidence:48099e14105d3289:csv",
+      "sourceId": "SRC-MD-INDEX",
+      "title": "中文名称与原网格映射",
+      "kind": "csv-row",
+      "excerpt": "当前文件名：yaw2roll_偏航与横滚连接件.stl\nSTL原文件名：yaw2roll.stl\n中文识别名称（整理）：偏航与横滚连接件\n原仿真模型可视实例数（非采购数量）：2\n原仿真模型所属刚体（非alpha装配对应）：bearing_roll；yaw2roll\n官方原文件来源：https://github.com/pollen-robotics/microduck_rl/blob/cb70b792312d559a4da09064d92009079671815f/src/mjlab_microduck/robot/microduck/assets/yaw2roll.stl",
+      "row": 38,
+      "lineStart": 38,
+      "lineEnd": 38,
+      "partId": "part:microduck:48099e14105d3289"
+    },
+    {
+      "id": "evidence:48099e14105d3289:stl",
+      "sourceId": "SRC-000046",
+      "title": "STL 原始文件",
+      "kind": "source-file",
+      "excerpt": "来源文件：microduck-official-materials/03-三维模型/assets/yaw2roll_偏航与横滚连接件.stl\nSHA-256：6c8f193ec7cb40be0f48eeb5fba81bce2c87f12e1aab3f77f1bc4981386e1495\n文件大小：620284 bytes\n仅为来源登记，不是制造或物理验证。",
+      "partId": "part:microduck:48099e14105d3289"
+    },
+    {
+      "id": "evidence:087d7a46a3ce4ca3:xml",
+      "sourceId": "SRC-MD-MJCF",
+      "title": "参考装配中的可视实例",
+      "kind": "xml-node",
+      "excerpt": "<geom type=\"mesh\" class=\"visual\" pos=\"-0 -0 0.0125\" quat=\"0 -0.707107 0.707107 0\" mesh=\"xl330\" material=\"xl330_material\"/>",
+      "lineStart": 271,
+      "lineEnd": 271,
+      "partId": "part:microduck:087d7a46a3ce4ca3"
+    },
+    {
+      "id": "evidence:087d7a46a3ce4ca3:csv",
+      "sourceId": "SRC-MD-INDEX",
+      "title": "中文名称与原网格映射",
+      "kind": "csv-row",
+      "excerpt": "当前文件名：xl330_XL330舵机外形.stl\nSTL原文件名：xl330.stl\n中文识别名称（整理）：XL330 舵机外形\n原仿真模型可视实例数（非采购数量）：15\n原仿真模型所属刚体（非alpha装配对应）：bearing_roll；jaw_soft；leg；leg_2；neck；trunk_base；upper_leg_left；upper_leg_right；yaw2roll；yaw_roll_motion\n官方原文件来源：https://github.com/pollen-robotics/microduck_rl/blob/cb70b792312d559a4da09064d92009079671815f/src/mjlab_microduck/robot/microduck/assets/xl330.stl",
+      "row": 37,
+      "lineStart": 37,
+      "lineEnd": 37,
+      "partId": "part:microduck:087d7a46a3ce4ca3"
+    },
+    {
+      "id": "evidence:087d7a46a3ce4ca3:stl",
+      "sourceId": "SRC-000045",
+      "title": "STL 原始文件",
+      "kind": "source-file",
+      "excerpt": "来源文件：microduck-official-materials/03-三维模型/assets/xl330_XL330舵机外形.stl\nSHA-256：96238ed0d020ce0009cf1a5aa4b6926176c800840318ee65e4375be2298d2744\n文件大小：206384 bytes\n仅为来源登记，不是制造或物理验证。",
+      "partId": "part:microduck:087d7a46a3ce4ca3"
+    },
+    {
+      "id": "evidence:c703574f50f6a46a:xml",
+      "sourceId": "SRC-MD-MJCF",
+      "title": "参考装配中的可视实例",
+      "kind": "xml-node",
+      "excerpt": "<geom type=\"mesh\" class=\"visual\" pos=\"-0.0175 -0.002 0.0125\" quat=\"0 1 0 0\" mesh=\"bearing_roll\" material=\"bearing_roll_material\"/>",
+      "lineStart": 273,
+      "lineEnd": 273,
+      "partId": "part:microduck:c703574f50f6a46a"
+    },
+    {
+      "id": "evidence:c703574f50f6a46a:csv",
+      "sourceId": "SRC-MD-INDEX",
+      "title": "中文名称与原网格映射",
+      "kind": "csv-row",
+      "excerpt": "当前文件名：bearing_roll_横滚轴承支承件.stl\nSTL原文件名：bearing_roll.stl\n中文识别名称（整理）：横滚轴承支承件\n原仿真模型可视实例数（非采购数量）：2\n原仿真模型所属刚体（非alpha装配对应）：bearing_roll；yaw2roll\n官方原文件来源：https://github.com/pollen-robotics/microduck_rl/blob/cb70b792312d559a4da09064d92009079671815f/src/mjlab_microduck/robot/microduck/assets/bearing_roll.stl",
+      "row": 5,
+      "lineStart": 5,
+      "lineEnd": 5,
+      "partId": "part:microduck:c703574f50f6a46a"
+    },
+    {
+      "id": "evidence:c703574f50f6a46a:stl",
+      "sourceId": "SRC-000013",
+      "title": "STL 原始文件",
+      "kind": "source-file",
+      "excerpt": "来源文件：microduck-official-materials/03-三维模型/assets/bearing_roll_横滚轴承支承件.stl\nSHA-256：b5603a64b2d965ad75ea847767b5798130852e12a658fde7b5068fc457e2adcc\n文件大小：121084 bytes\n仅为来源登记，不是制造或物理验证。",
+      "partId": "part:microduck:c703574f50f6a46a"
+    },
+    {
+      "id": "evidence:3fbf0b5c8cea4488:xml",
+      "sourceId": "SRC-MD-MJCF",
+      "title": "参考装配中的可视实例",
+      "kind": "xml-node",
+      "excerpt": "<geom type=\"mesh\" class=\"visual\" pos=\"-0 0.0165 0.0125\" quat=\"0.5 0.5 0.5 -0.5\" mesh=\"seeed_bearing__configuration__22x16x4\" material=\"seeed_bearing__configuration__22x16x4_material\"/>",
+      "lineStart": 275,
+      "lineEnd": 275,
+      "partId": "part:microduck:3fbf0b5c8cea4488"
+    },
+    {
+      "id": "evidence:3fbf0b5c8cea4488:csv",
+      "sourceId": "SRC-MD-INDEX",
+      "title": "中文名称与原网格映射",
+      "kind": "csv-row",
+      "excerpt": "当前文件名：seeed_bearing__configuration__22x16x4_轴承外形-22×16×4.stl\nSTL原文件名：seeed_bearing__configuration__22x16x4.stl\n中文识别名称（整理）：轴承外形（22×16×4 配置名）\n原仿真模型可视实例数（非采购数量）：11\n原仿真模型所属刚体（非alpha装配对应）：bearing_roll；hip_l；hip_l_2；neck_pitch；trunk_base；upper_leg_left；upper_leg_right；yaw2roll；yaw_roll_motion\n官方原文件来源：https://github.com/pollen-robotics/microduck_rl/blob/cb70b792312d559a4da09064d92009079671815f/src/mjlab_microduck/robot/microduck/assets/seeed_bearing__configuration__22x16x4.stl",
+      "row": 26,
+      "lineStart": 26,
+      "lineEnd": 26,
+      "partId": "part:microduck:3fbf0b5c8cea4488"
+    },
+    {
+      "id": "evidence:3fbf0b5c8cea4488:stl",
+      "sourceId": "SRC-000034",
+      "title": "STL 原始文件",
+      "kind": "source-file",
+      "excerpt": "来源文件：microduck-official-materials/03-三维模型/assets/seeed_bearing__configuration__22x16x4_轴承外形-22×16×4.stl\nSHA-256：295ee68ed9766c91fe06d3a2a49d39f7c2f56cc943395d293afdeb013123435e\n文件大小：1048584 bytes\n仅为来源登记，不是制造或物理验证。",
+      "partId": "part:microduck:3fbf0b5c8cea4488"
+    },
+    {
+      "id": "evidence:c7eeeac0a640d191:xml",
+      "sourceId": "SRC-MD-MJCF",
+      "title": "参考装配中的可视实例",
+      "kind": "xml-node",
+      "excerpt": "<geom type=\"mesh\" class=\"visual\" pos=\"-0.0175 0 -0.0185\" quat=\"0.707107 -0.707107 -0 -0\" mesh=\"hip_l\" material=\"hip_l_material\"/>",
+      "lineStart": 282,
+      "lineEnd": 282,
+      "partId": "part:microduck:c7eeeac0a640d191"
+    },
+    {
+      "id": "evidence:c7eeeac0a640d191:csv",
+      "sourceId": "SRC-MD-INDEX",
+      "title": "中文名称与原网格映射",
+      "kind": "csv-row",
+      "excerpt": "当前文件名：hip_l_髋部件.stl\nSTL原文件名：hip_l.stl\n中文识别名称（整理）：髋部件\n原仿真模型可视实例数（非采购数量）：2\n原仿真模型所属刚体（非alpha装配对应）：hip_l；hip_l_2\n官方原文件来源：https://github.com/pollen-robotics/microduck_rl/blob/cb70b792312d559a4da09064d92009079671815f/src/mjlab_microduck/robot/microduck/assets/hip_l.stl",
+      "row": 11,
+      "lineStart": 11,
+      "lineEnd": 11,
+      "partId": "part:microduck:c7eeeac0a640d191"
+    },
+    {
+      "id": "evidence:c7eeeac0a640d191:stl",
+      "sourceId": "SRC-000019",
+      "title": "STL 原始文件",
+      "kind": "source-file",
+      "excerpt": "来源文件：microduck-official-materials/03-三维模型/assets/hip_l_髋部件.stl\nSHA-256：e175896932d76dc7648cf939aa39cb7b1d188b783d91745adb9a4cec65e9052c\n文件大小：1048584 bytes\n仅为来源登记，不是制造或物理验证。",
+      "partId": "part:microduck:c7eeeac0a640d191"
+    },
+    {
+      "id": "evidence:d924e1596ffb042a:xml",
+      "sourceId": "SRC-MD-MJCF",
+      "title": "参考装配中的可视实例",
+      "kind": "xml-node",
+      "excerpt": "<geom type=\"mesh\" class=\"visual\" pos=\"0.025 0 -0.0185\" quat=\"0.5 0.5 -0.5 -0.5\" mesh=\"seeed_bearing__configuration__22x16x4\" material=\"seeed_bearing__configuration__22x16x4_material\"/>",
+      "lineStart": 284,
+      "lineEnd": 284,
+      "partId": "part:microduck:d924e1596ffb042a"
+    },
+    {
+      "id": "evidence:d924e1596ffb042a:csv",
+      "sourceId": "SRC-MD-INDEX",
+      "title": "中文名称与原网格映射",
+      "kind": "csv-row",
+      "excerpt": "当前文件名：seeed_bearing__configuration__22x16x4_轴承外形-22×16×4.stl\nSTL原文件名：seeed_bearing__configuration__22x16x4.stl\n中文识别名称（整理）：轴承外形（22×16×4 配置名）\n原仿真模型可视实例数（非采购数量）：11\n原仿真模型所属刚体（非alpha装配对应）：bearing_roll；hip_l；hip_l_2；neck_pitch；trunk_base；upper_leg_left；upper_leg_right；yaw2roll；yaw_roll_motion\n官方原文件来源：https://github.com/pollen-robotics/microduck_rl/blob/cb70b792312d559a4da09064d92009079671815f/src/mjlab_microduck/robot/microduck/assets/seeed_bearing__configuration__22x16x4.stl",
+      "row": 26,
+      "lineStart": 26,
+      "lineEnd": 26,
+      "partId": "part:microduck:d924e1596ffb042a"
+    },
+    {
+      "id": "evidence:d924e1596ffb042a:stl",
+      "sourceId": "SRC-000034",
+      "title": "STL 原始文件",
+      "kind": "source-file",
+      "excerpt": "来源文件：microduck-official-materials/03-三维模型/assets/seeed_bearing__configuration__22x16x4_轴承外形-22×16×4.stl\nSHA-256：295ee68ed9766c91fe06d3a2a49d39f7c2f56cc943395d293afdeb013123435e\n文件大小：1048584 bytes\n仅为来源登记，不是制造或物理验证。",
+      "partId": "part:microduck:d924e1596ffb042a"
+    },
+    {
+      "id": "evidence:7038a050dbc33fb0:xml",
+      "sourceId": "SRC-MD-MJCF",
+      "title": "参考装配中的可视实例",
+      "kind": "xml-node",
+      "excerpt": "<geom type=\"mesh\" class=\"visual\" pos=\"-0.022 0.0357771 0.0125\" quat=\"0.707107 -0 -0.707107 -0\" mesh=\"xl330\" material=\"xl330_material\"/>",
+      "lineStart": 291,
+      "lineEnd": 291,
+      "partId": "part:microduck:7038a050dbc33fb0"
+    },
+    {
+      "id": "evidence:7038a050dbc33fb0:csv",
+      "sourceId": "SRC-MD-INDEX",
+      "title": "中文名称与原网格映射",
+      "kind": "csv-row",
+      "excerpt": "当前文件名：xl330_XL330舵机外形.stl\nSTL原文件名：xl330.stl\n中文识别名称（整理）：XL330 舵机外形\n原仿真模型可视实例数（非采购数量）：15\n原仿真模型所属刚体（非alpha装配对应）：bearing_roll；jaw_soft；leg；leg_2；neck；trunk_base；upper_leg_left；upper_leg_right；yaw2roll；yaw_roll_motion\n官方原文件来源：https://github.com/pollen-robotics/microduck_rl/blob/cb70b792312d559a4da09064d92009079671815f/src/mjlab_microduck/robot/microduck/assets/xl330.stl",
+      "row": 37,
+      "lineStart": 37,
+      "lineEnd": 37,
+      "partId": "part:microduck:7038a050dbc33fb0"
+    },
+    {
+      "id": "evidence:7038a050dbc33fb0:stl",
+      "sourceId": "SRC-000045",
+      "title": "STL 原始文件",
+      "kind": "source-file",
+      "excerpt": "来源文件：microduck-official-materials/03-三维模型/assets/xl330_XL330舵机外形.stl\nSHA-256：96238ed0d020ce0009cf1a5aa4b6926176c800840318ee65e4375be2298d2744\n文件大小：206384 bytes\n仅为来源登记，不是制造或物理验证。",
+      "partId": "part:microduck:7038a050dbc33fb0"
+    },
+    {
+      "id": "evidence:d6a148b5784955d8:xml",
+      "sourceId": "SRC-MD-MJCF",
+      "title": "参考装配中的可视实例",
+      "kind": "xml-node",
+      "excerpt": "<geom type=\"mesh\" class=\"visual\" pos=\"-0.022 0.0357771 0\" quat=\"0 1 -0 -0\" mesh=\"seeed_bearing__configuration__22x16x4\" material=\"seeed_bearing__configuration__22x16x4_material\"/>",
+      "lineStart": 293,
+      "lineEnd": 293,
+      "partId": "part:microduck:d6a148b5784955d8"
+    },
+    {
+      "id": "evidence:d6a148b5784955d8:csv",
+      "sourceId": "SRC-MD-INDEX",
+      "title": "中文名称与原网格映射",
+      "kind": "csv-row",
+      "excerpt": "当前文件名：seeed_bearing__configuration__22x16x4_轴承外形-22×16×4.stl\nSTL原文件名：seeed_bearing__configuration__22x16x4.stl\n中文识别名称（整理）：轴承外形（22×16×4 配置名）\n原仿真模型可视实例数（非采购数量）：11\n原仿真模型所属刚体（非alpha装配对应）：bearing_roll；hip_l；hip_l_2；neck_pitch；trunk_base；upper_leg_left；upper_leg_right；yaw2roll；yaw_roll_motion\n官方原文件来源：https://github.com/pollen-robotics/microduck_rl/blob/cb70b792312d559a4da09064d92009079671815f/src/mjlab_microduck/robot/microduck/assets/seeed_bearing__configuration__22x16x4.stl",
+      "row": 26,
+      "lineStart": 26,
+      "lineEnd": 26,
+      "partId": "part:microduck:d6a148b5784955d8"
+    },
+    {
+      "id": "evidence:d6a148b5784955d8:stl",
+      "sourceId": "SRC-000034",
+      "title": "STL 原始文件",
+      "kind": "source-file",
+      "excerpt": "来源文件：microduck-official-materials/03-三维模型/assets/seeed_bearing__configuration__22x16x4_轴承外形-22×16×4.stl\nSHA-256：295ee68ed9766c91fe06d3a2a49d39f7c2f56cc943395d293afdeb013123435e\n文件大小：1048584 bytes\n仅为来源登记，不是制造或物理验证。",
+      "partId": "part:microduck:d6a148b5784955d8"
+    },
+    {
+      "id": "evidence:7e86db28af59d3cc:xml",
+      "sourceId": "SRC-MD-MJCF",
+      "title": "参考装配中的可视实例",
+      "kind": "xml-node",
+      "excerpt": "<geom type=\"mesh\" class=\"visual\" pos=\"-0 -0 0.0435\" quat=\"0.5 -0.5 0.5 0.5\" mesh=\"upper_leg_rigidity_plate\" material=\"upper_leg_rigidity_plate_material\"/>",
+      "lineStart": 295,
+      "lineEnd": 295,
+      "partId": "part:microduck:7e86db28af59d3cc"
+    },
+    {
+      "id": "evidence:7e86db28af59d3cc:csv",
+      "sourceId": "SRC-MD-INDEX",
+      "title": "中文名称与原网格映射",
+      "kind": "csv-row",
+      "excerpt": "当前文件名：upper_leg_rigidity_plate_大腿加强板.stl\nSTL原文件名：upper_leg_rigidity_plate.stl\n中文识别名称（整理）：大腿加强板\n原仿真模型可视实例数（非采购数量）：2\n原仿真模型所属刚体（非alpha装配对应）：upper_leg_left；upper_leg_right\n官方原文件来源：https://github.com/pollen-robotics/microduck_rl/blob/cb70b792312d559a4da09064d92009079671815f/src/mjlab_microduck/robot/microduck/assets/upper_leg_rigidity_plate.stl",
+      "row": 36,
+      "lineStart": 36,
+      "lineEnd": 36,
+      "partId": "part:microduck:7e86db28af59d3cc"
+    },
+    {
+      "id": "evidence:7e86db28af59d3cc:stl",
+      "sourceId": "SRC-000044",
+      "title": "STL 原始文件",
+      "kind": "source-file",
+      "excerpt": "来源文件：microduck-official-materials/03-三维模型/assets/upper_leg_rigidity_plate_大腿加强板.stl\nSHA-256：231b3e5f1e24d146d735dc158cbcfec0c95a0d0ca8c500f61f04d15d0b665652\n文件大小：180084 bytes\n仅为来源登记，不是制造或物理验证。",
+      "partId": "part:microduck:7e86db28af59d3cc"
+    },
+    {
+      "id": "evidence:e40b9945707505e1:xml",
+      "sourceId": "SRC-MD-MJCF",
+      "title": "参考装配中的可视实例",
+      "kind": "xml-node",
+      "excerpt": "<geom type=\"mesh\" class=\"visual\" pos=\"-0 -0 -0.0425\" quat=\"0.5 -0.5 0.5 0.5\" mesh=\"upper_leg_right\" material=\"upper_leg_right_material\"/>",
+      "lineStart": 297,
+      "lineEnd": 297,
+      "partId": "part:microduck:e40b9945707505e1"
+    },
+    {
+      "id": "evidence:e40b9945707505e1:csv",
+      "sourceId": "SRC-MD-INDEX",
+      "title": "中文名称与原网格映射",
+      "kind": "csv-row",
+      "excerpt": "当前文件名：upper_leg_right_右大腿部件.stl\nSTL原文件名：upper_leg_right.stl\n中文识别名称（整理）：右大腿部件\n原仿真模型可视实例数（非采购数量）：1\n原仿真模型所属刚体（非alpha装配对应）：upper_leg_right\n官方原文件来源：https://github.com/pollen-robotics/microduck_rl/blob/cb70b792312d559a4da09064d92009079671815f/src/mjlab_microduck/robot/microduck/assets/upper_leg_right.stl",
+      "row": 35,
+      "lineStart": 35,
+      "lineEnd": 35,
+      "partId": "part:microduck:e40b9945707505e1"
+    },
+    {
+      "id": "evidence:e40b9945707505e1:stl",
+      "sourceId": "SRC-000043",
+      "title": "STL 原始文件",
+      "kind": "source-file",
+      "excerpt": "来源文件：microduck-official-materials/03-三维模型/assets/upper_leg_right_右大腿部件.stl\nSHA-256：5caf996cc3e151b01f393cdc6a6a6a940c1d86179d8b7c7f5f85cf1f1ac2fb63\n文件大小：612584 bytes\n仅为来源登记，不是制造或物理验证。",
+      "partId": "part:microduck:e40b9945707505e1"
+    },
+    {
+      "id": "evidence:08c5ade0f3fd37db:xml",
+      "sourceId": "SRC-MD-MJCF",
+      "title": "参考装配中的可视实例",
+      "kind": "xml-node",
+      "excerpt": "<geom type=\"mesh\" class=\"visual\" pos=\"-0 -0 0.0125\" quat=\"0.5 0.5 -0.5 0.5\" mesh=\"xl330\" material=\"xl330_material\"/>",
+      "lineStart": 299,
+      "lineEnd": 299,
+      "partId": "part:microduck:08c5ade0f3fd37db"
+    },
+    {
+      "id": "evidence:08c5ade0f3fd37db:csv",
+      "sourceId": "SRC-MD-INDEX",
+      "title": "中文名称与原网格映射",
+      "kind": "csv-row",
+      "excerpt": "当前文件名：xl330_XL330舵机外形.stl\nSTL原文件名：xl330.stl\n中文识别名称（整理）：XL330 舵机外形\n原仿真模型可视实例数（非采购数量）：15\n原仿真模型所属刚体（非alpha装配对应）：bearing_roll；jaw_soft；leg；leg_2；neck；trunk_base；upper_leg_left；upper_leg_right；yaw2roll；yaw_roll_motion\n官方原文件来源：https://github.com/pollen-robotics/microduck_rl/blob/cb70b792312d559a4da09064d92009079671815f/src/mjlab_microduck/robot/microduck/assets/xl330.stl",
+      "row": 37,
+      "lineStart": 37,
+      "lineEnd": 37,
+      "partId": "part:microduck:08c5ade0f3fd37db"
+    },
+    {
+      "id": "evidence:08c5ade0f3fd37db:stl",
+      "sourceId": "SRC-000045",
+      "title": "STL 原始文件",
+      "kind": "source-file",
+      "excerpt": "来源文件：microduck-official-materials/03-三维模型/assets/xl330_XL330舵机外形.stl\nSHA-256：96238ed0d020ce0009cf1a5aa4b6926176c800840318ee65e4375be2298d2744\n文件大小：206384 bytes\n仅为来源登记，不是制造或物理验证。",
+      "partId": "part:microduck:08c5ade0f3fd37db"
+    },
+    {
+      "id": "evidence:0820b4025f26a004:xml",
+      "sourceId": "SRC-MD-MJCF",
+      "title": "参考装配中的可视实例",
+      "kind": "xml-node",
+      "excerpt": "<geom type=\"mesh\" class=\"visual\" pos=\"-0.042 0 -0.0115\" quat=\"0.707107 -0 -0.707107 -0\" mesh=\"xl330\" material=\"xl330_material\"/>",
+      "lineStart": 306,
+      "lineEnd": 306,
+      "partId": "part:microduck:0820b4025f26a004"
+    },
+    {
+      "id": "evidence:0820b4025f26a004:csv",
+      "sourceId": "SRC-MD-INDEX",
+      "title": "中文名称与原网格映射",
+      "kind": "csv-row",
+      "excerpt": "当前文件名：xl330_XL330舵机外形.stl\nSTL原文件名：xl330.stl\n中文识别名称（整理）：XL330 舵机外形\n原仿真模型可视实例数（非采购数量）：15\n原仿真模型所属刚体（非alpha装配对应）：bearing_roll；jaw_soft；leg；leg_2；neck；trunk_base；upper_leg_left；upper_leg_right；yaw2roll；yaw_roll_motion\n官方原文件来源：https://github.com/pollen-robotics/microduck_rl/blob/cb70b792312d559a4da09064d92009079671815f/src/mjlab_microduck/robot/microduck/assets/xl330.stl",
+      "row": 37,
+      "lineStart": 37,
+      "lineEnd": 37,
+      "partId": "part:microduck:0820b4025f26a004"
+    },
+    {
+      "id": "evidence:0820b4025f26a004:stl",
+      "sourceId": "SRC-000045",
+      "title": "STL 原始文件",
+      "kind": "source-file",
+      "excerpt": "来源文件：microduck-official-materials/03-三维模型/assets/xl330_XL330舵机外形.stl\nSHA-256：96238ed0d020ce0009cf1a5aa4b6926176c800840318ee65e4375be2298d2744\n文件大小：206384 bytes\n仅为来源登记，不是制造或物理验证。",
+      "partId": "part:microduck:0820b4025f26a004"
+    },
+    {
+      "id": "evidence:7f4fefc3c6de90f1:xml",
+      "sourceId": "SRC-MD-MJCF",
+      "title": "参考装配中的可视实例",
+      "kind": "xml-node",
+      "excerpt": "<geom type=\"mesh\" class=\"visual\" pos=\"-0.0357771 -0.022 0.0385\" quat=\"0.707107 0 0.707107 -0\" mesh=\"leg\" material=\"leg_material\"/>",
+      "lineStart": 308,
+      "lineEnd": 308,
+      "partId": "part:microduck:7f4fefc3c6de90f1"
+    },
+    {
+      "id": "evidence:7f4fefc3c6de90f1:csv",
+      "sourceId": "SRC-MD-INDEX",
+      "title": "中文名称与原网格映射",
+      "kind": "csv-row",
+      "excerpt": "当前文件名：leg_腿部连杆.stl\nSTL原文件名：leg.stl\n中文识别名称（整理）：腿部连杆\n原仿真模型可视实例数（非采购数量）：2\n原仿真模型所属刚体（非alpha装配对应）：leg；leg_2\n官方原文件来源：https://github.com/pollen-robotics/microduck_rl/blob/cb70b792312d559a4da09064d92009079671815f/src/mjlab_microduck/robot/microduck/assets/leg.stl",
+      "row": 15,
+      "lineStart": 15,
+      "lineEnd": 15,
+      "partId": "part:microduck:7f4fefc3c6de90f1"
+    },
+    {
+      "id": "evidence:7f4fefc3c6de90f1:stl",
+      "sourceId": "SRC-000023",
+      "title": "STL 原始文件",
+      "kind": "source-file",
+      "excerpt": "来源文件：microduck-official-materials/03-三维模型/assets/leg_腿部连杆.stl\nSHA-256：9a91cc1ae31ecd9e0c1ba93f3bb2ad8a12e29bff24ec27d1ac66c0c3037d9fcf\n文件大小：738884 bytes\n仅为来源登记，不是制造或物理验证。",
+      "partId": "part:microduck:7f4fefc3c6de90f1"
+    },
+    {
+      "id": "evidence:b371ac60e2f6757b:xml",
+      "sourceId": "SRC-MD-MJCF",
+      "title": "参考装配中的可视实例",
+      "kind": "xml-node",
+      "excerpt": "<geom type=\"mesh\" class=\"visual\" pos=\"0.022 0.00622291 -0.0647\" quat=\"0.5 -0.5 0.5 0.5\" mesh=\"ankle_right\" material=\"ankle_right_material\"/>",
+      "lineStart": 316,
+      "lineEnd": 316,
+      "partId": "part:microduck:b371ac60e2f6757b"
+    },
+    {
+      "id": "evidence:b371ac60e2f6757b:csv",
+      "sourceId": "SRC-MD-INDEX",
+      "title": "中文名称与原网格映射",
+      "kind": "csv-row",
+      "excerpt": "当前文件名：ankle_right_右踝部件.stl\nSTL原文件名：ankle_right.stl\n中文识别名称（整理）：右踝部件\n原仿真模型可视实例数（非采购数量）：1\n原仿真模型所属刚体（非alpha装配对应）：ankle_right\n官方原文件来源：https://github.com/pollen-robotics/microduck_rl/blob/cb70b792312d559a4da09064d92009079671815f/src/mjlab_microduck/robot/microduck/assets/ankle_right.stl",
+      "row": 3,
+      "lineStart": 3,
+      "lineEnd": 3,
+      "partId": "part:microduck:b371ac60e2f6757b"
+    },
+    {
+      "id": "evidence:b371ac60e2f6757b:stl",
+      "sourceId": "SRC-000011",
+      "title": "STL 原始文件",
+      "kind": "source-file",
+      "excerpt": "来源文件：microduck-official-materials/03-三维模型/assets/ankle_right_右踝部件.stl\nSHA-256：f83f388ae00787415e76b8ecaab769f08f25b8c4e90c1937ff0fc4d68d81722e\n文件大小：248884 bytes\n仅为来源登记，不是制造或物理验证。",
+      "partId": "part:microduck:b371ac60e2f6757b"
+    },
+    {
+      "id": "evidence:2f557a24b2729755:xml",
+      "sourceId": "SRC-MD-MJCF",
+      "title": "参考装配中的可视实例",
+      "kind": "xml-node",
+      "excerpt": "<geom type=\"mesh\" class=\"visual\" pos=\"0.022 0.00622291 -0.0647\" quat=\"0.5 -0.5 0.5 0.5\" mesh=\"sole_right\" material=\"sole_right_material\"/>",
+      "lineStart": 318,
+      "lineEnd": 318,
+      "partId": "part:microduck:2f557a24b2729755"
+    },
+    {
+      "id": "evidence:2f557a24b2729755:csv",
+      "sourceId": "SRC-MD-INDEX",
+      "title": "中文名称与原网格映射",
+      "kind": "csv-row",
+      "excerpt": "当前文件名：sole_right_右脚底.stl\nSTL原文件名：sole_right.stl\n中文识别名称（整理）：右脚底\n原仿真模型可视实例数（非采购数量）：1\n原仿真模型所属刚体（非alpha装配对应）：ankle_right\n官方原文件来源：https://github.com/pollen-robotics/microduck_rl/blob/cb70b792312d559a4da09064d92009079671815f/src/mjlab_microduck/robot/microduck/assets/sole_right.stl",
+      "row": 30,
+      "lineStart": 30,
+      "lineEnd": 30,
+      "partId": "part:microduck:2f557a24b2729755"
+    },
+    {
+      "id": "evidence:2f557a24b2729755:stl",
+      "sourceId": "SRC-000038",
+      "title": "STL 原始文件",
+      "kind": "source-file",
+      "excerpt": "来源文件：microduck-official-materials/03-三维模型/assets/sole_right_右脚底.stl\nSHA-256：3f5068872f3add10eb967327651445bdfca635f5a8a01befa0ef05e462b72b4c\n文件大小：795184 bytes\n仅为来源登记，不是制造或物理验证。",
+      "partId": "part:microduck:2f557a24b2729755"
+    },
+    {
+      "id": "evidence:e196235810184adf:xml",
+      "sourceId": "SRC-MD-MJCF",
+      "title": "参考装配中的可视实例",
+      "kind": "xml-node",
+      "excerpt": "<geom type=\"mesh\" class=\"visual\" pos=\"0 -0 -0.0292\" quat=\"0 -1 -0 -0\" mesh=\"seeed_bearing__configuration_default\" material=\"seeed_bearing__configuration_default_material\"/>",
+      "lineStart": 321,
+      "lineEnd": 321,
+      "partId": "part:microduck:e196235810184adf"
+    },
+    {
+      "id": "evidence:e196235810184adf:csv",
+      "sourceId": "SRC-MD-INDEX",
+      "title": "中文名称与原网格映射",
+      "kind": "csv-row",
+      "excerpt": "当前文件名：seeed_bearing__configuration_default_轴承外形-默认配置.stl\nSTL原文件名：seeed_bearing__configuration_default.stl\n中文识别名称（整理）：轴承外形（默认配置名）\n原仿真模型可视实例数（非采购数量）：3\n原仿真模型所属刚体（非alpha装配对应）：ankle_left；ankle_right；jaw_soft\n官方原文件来源：https://github.com/pollen-robotics/microduck_rl/blob/cb70b792312d559a4da09064d92009079671815f/src/mjlab_microduck/robot/microduck/assets/seeed_bearing__configuration_default.stl",
+      "row": 27,
+      "lineStart": 27,
+      "lineEnd": 27,
+      "partId": "part:microduck:e196235810184adf"
+    },
+    {
+      "id": "evidence:e196235810184adf:stl",
+      "sourceId": "SRC-000035",
+      "title": "STL 原始文件",
+      "kind": "source-file",
+      "excerpt": "来源文件：microduck-official-materials/03-三维模型/assets/seeed_bearing__configuration_default_轴承外形-默认配置.stl\nSHA-256：e815f3483a2e7b80844f3c0938a47e53db38b12faed9b2d364414c19e4322da4\n文件大小：1048584 bytes\n仅为来源登记，不是制造或物理验证。",
+      "partId": "part:microduck:e196235810184adf"
+    },
+    {
+      "id": "evidence:f9955f19a691a1f4:xml",
+      "sourceId": "SRC-MD-MJCF",
+      "title": "参考装配中的可视实例",
+      "kind": "xml-node",
+      "excerpt": "<geom type=\"mesh\" class=\"visual\" pos=\"0.022 0.00622291 -0.0647\" quat=\"0.5 -0.5 0.5 0.5\" mesh=\"foot_right\" material=\"foot_right_material\"/>",
+      "lineStart": 323,
+      "lineEnd": 323,
+      "partId": "part:microduck:f9955f19a691a1f4"
+    },
+    {
+      "id": "evidence:f9955f19a691a1f4:csv",
+      "sourceId": "SRC-MD-INDEX",
+      "title": "中文名称与原网格映射",
+      "kind": "csv-row",
+      "excerpt": "当前文件名：foot_right_右脚部件.stl\nSTL原文件名：foot_right.stl\n中文识别名称（整理）：右脚部件\n原仿真模型可视实例数（非采购数量）：1\n原仿真模型所属刚体（非alpha装配对应）：ankle_right\n官方原文件来源：https://github.com/pollen-robotics/microduck_rl/blob/cb70b792312d559a4da09064d92009079671815f/src/mjlab_microduck/robot/microduck/assets/foot_right.stl",
+      "row": 10,
+      "lineStart": 10,
+      "lineEnd": 10,
+      "partId": "part:microduck:f9955f19a691a1f4"
+    },
+    {
+      "id": "evidence:f9955f19a691a1f4:stl",
+      "sourceId": "SRC-000018",
+      "title": "STL 原始文件",
+      "kind": "source-file",
+      "excerpt": "来源文件：microduck-official-materials/03-三维模型/assets/foot_right_右脚部件.stl\nSHA-256：54f97fa1f0e0e611d31329df9f3c3b17ffcca2d695c579d1d32cbe99e8a6c7ef\n文件大小：997684 bytes\n仅为来源登记，不是制造或物理验证。",
+      "partId": "part:microduck:f9955f19a691a1f4"
+    },
+    {
+      "id": "evidence:microduck:assembly-knowledge",
+      "sourceId": "SRC-MD-ASSEMBLY-KNOWLEDGE",
+      "title": "安装规则与标准装配的用户声明",
+      "kind": "source-file",
+      "excerpt": "用户声明：应该有8个可安装孔位 并说明至少同侧两个相邻的孔位可作为安装接口 同时还要标识那两个孔位与腿部连杆的孔位相连接\n声明文件的规则身份与原文保留；这不是厂家工程验收、已执行装配或实时接合状态。",
+      "lineStart": 7,
+      "lineEnd": 7
+    },
+    {
+      "id": "evidence:microduck:mounting-assertion:leg-upper-four-mounting-sites",
+      "sourceId": "SRC-MD-ASSEMBLY-KNOWLEDGE",
+      "title": "连杆上端四孔安装位",
+      "kind": "source-file",
+      "excerpt": "腿部连杆上方的四个安装孔位没有识别出来",
+      "lineStart": 62,
+      "lineEnd": 62
+    },
+    {
+      "id": "evidence:microduck:mounting-assertion:thigh-integral-mounting-pins",
+      "sourceId": "SRC-MD-ASSEMBLY-KNOWLEDGE",
+      "title": "Project inference cites this request; the user did not confirm the inferred functional role",
+      "kind": "source-file",
+      "excerpt": "右大腿部件的安装接口没有识别出来",
+      "lineStart": 92,
+      "lineEnd": 92
+    },
+    {
+      "id": "evidence:microduck:connection-review-request",
+      "sourceId": "SRC-MD-ASSEMBLY-KNOWLEDGE",
+      "title": "Complete-connection review request",
+      "kind": "source-file",
+      "excerpt": "看到这两个圆洞了吗 我觉得是与舵机固定用的\n你识别的两个有限面重叠投影 不太对\n这个爆炸图 应该把固定螺丝之类的也画进去\n接口这部分 需要重新仔细任意两个相接的部件\n你理解我的意思吗？",
+      "lineStart": 161,
+      "lineEnd": 161
+    },
+    {
+      "id": "evidence:microduck:supporting-document:SRC-MD-XL330-ASSEMBLY-INCLUDE",
+      "sourceId": "SRC-MD-XL330-ASSEMBLY-INCLUDE",
+      "title": "ROBOTIS X330 装配图入口",
+      "kind": "source-file",
+      "excerpt": "manufacturer_x330_assembly_diagram_index\nManufacturer-general reference; Microduck usage, dimensions and assembly are not confirmed by this example."
+    },
+    {
+      "id": "evidence:microduck:supporting-document:SRC-MD-XL330-ASSEMBLY-DRAWING",
+      "sourceId": "SRC-MD-XL330-ASSEMBLY-DRAWING",
+      "title": "ROBOTIS XL330 壳体及随动端装配图",
+      "kind": "source-file",
+      "excerpt": "frame_front_and_back_use_m2_tapping_screws\nidler_assembly_has_idler_horn_idler_cap_and_m2_6x6_tapping_screw\nmanufacturer_general_not_microduck_assembly_confirmation\nManufacturer-general reference; Microduck usage, dimensions and assembly are not confirmed by this example."
+    },
+    {
+      "id": "evidence:microduck:supporting-document:SRC-MD-XL330-HORN-SCREW",
+      "sourceId": "SRC-MD-XL330-HORN-SCREW",
+      "title": "ROBOTIS X330 舵盘螺钉长度示意",
+      "kind": "source-file",
+      "excerpt": "horn_screw_diagram_contrasts_m2x6_tap_with_m2x8_tap_under_depicted_3T_geometry\nmanufacturer_general_not_microduck_fastener_specification\nManufacturer-general reference; Microduck usage, dimensions and assembly are not confirmed by this example."
+    },
+    {
+      "id": "evidence:interface-investigation:input",
+      "sourceId": "SRC-INTERFACE-INVESTIGATION",
+      "title": "源模型独立复核与明确检查范围",
+      "kind": "source-file",
+      "excerpt": "独立标注限定于输入列明的源几何 SHA、区域和结构；功能未知不等于未发现，样例通过不代表整机召回。"
+    },
+    {
+      "id": "evidence:interface-investigation:input:b2df4346ff46a912f975",
+      "sourceId": "SRC-INVESTIGATION-B2DF4346FF46A912F975",
+      "title": "调查原件：upstream-model-readme",
+      "kind": "source-file",
+      "excerpt": "{\"url\": \"https://github.com/pollen-robotics/microduck_rl/blob/cb70b792312d559a4da09064d92009079671815f/README.md\", \"revision\": \"cb70b792312d559a4da09064d92009079671815f\", \"supports\": [\"Purpose and model-export origin of the frozen simulation project.\"], \"limitations\": [\"The README model export link points to an Onshape workspace, not a frozen CAD version. A per-hole assembly drawing was not located in this file; it may exist elsewhere.\"], \"observed\": \"Read the captured README model section (lines 124 onward) and inspected its hardware/assembly references. It identifies the MJCF as an Onshape export and the repository as RL training/runtime infrastructure; no per-hole shell connection definition was located in that text.\"}"
+    },
+    {
+      "id": "evidence:interface-investigation:input:ccc7685787ab63e7b0d3",
+      "sourceId": "SRC-INVESTIGATION-CCC7685787AB63E7B0D3",
+      "title": "调查原件：upstream-model-docs",
+      "kind": "source-file",
+      "excerpt": "{\"url\": \"https://api.github.com/repos/pollen-robotics/microduck_rl/contents/docs?ref=cb70b792312d559a4da09064d92009079671815f\", \"revision\": \"cb70b792312d559a4da09064d92009079671815f\", \"supports\": [], \"limitations\": [\"The inspected top-level directory listing did not provide a shell assembly drawing. Nested documents were not exhaustively reviewed.\"]}"
+    },
+    {
+      "id": "evidence:interface-investigation:input:fc374631ed68a28d7d8e",
+      "sourceId": "SRC-INVESTIGATION-FC374631ED68A28D7D8E",
+      "title": "调查原件：upstream-microduck-design-tree",
+      "kind": "source-file",
+      "excerpt": "{\"url\": \"https://api.github.com/repos/pollen-robotics/microduck/git/trees/4861141fdc7c7acd253671acf5abdd55b77b779e?recursive=1\", \"revision\": \"4861141fdc7c7acd253671acf5abdd55b77b779e\", \"supports\": [], \"limitations\": [\"This path-name search does not establish that no useful unnamed document exists, and this alpha runtime revision is not automatically the STL mechanical revision.\"], \"observed\": \"The matching entries were docs/design and software/network/simulation design notes; no shell/CAD/BOM/assembly-named path was returned.\"}"
+    },
+    {
+      "id": "evidence:interface-investigation:input:f99ef4933cddf90f93d4",
+      "sourceId": "SRC-INVESTIGATION-F99EF4933CDDF90F93D4",
+      "title": "调查原件：local-xl330-assembly",
+      "kind": "source-file",
+      "excerpt": "{\"url\": \"https://raw.githubusercontent.com/ROBOTIS-GIT/emanual/0807b1b5f7472bbbbb2c9751f1d3406678e86d37/_includes/en/dxl/drawing/x330_drawing.md\", \"revision\": \"0807b1b5f7472bbbbb2c9751f1d3406678e86d37\", \"supports\": [\"General X330 drawing provenance only.\"], \"limitations\": [\"Manufacturer-general diagrams do not determine the left-shell Z hole function, actual Microduck connection or retention.\"], \"observed\": \"Inspected the captured manufacturer image-index include, which links the generic horn screw and assembly illustrations.\"}"
+    },
+    {
+      "id": "evidence:interface-investigation:input:7e5ad7382a245a7c6490",
+      "sourceId": "SRC-INVESTIGATION-7E5AD7382A245A7C6490",
+      "title": "调查原件：upstream-model-export-config",
+      "kind": "source-file",
+      "excerpt": "{\"url\": \"https://github.com/pollen-robotics/microduck_rl/blob/cb70b792312d559a4da09064d92009079671815f/src/mjlab_microduck/robot/microduck/config_mjcf_walk.json\", \"revision\": \"cb70b792312d559a4da09064d92009079671815f\", \"supports\": [\"Provenance link from the fixed model configuration to its CAD workspace.\"], \"limitations\": [\"No part function, fastener or retaining role is established by the export configuration.\"], \"observed\": \"The configuration identifies an Onshape workspace URL and STL simplification settings; the JSON fixes the export configuration, but it does not pin the changing CAD workspace to the STL revision.\"}"
+    }
+  ]
+}

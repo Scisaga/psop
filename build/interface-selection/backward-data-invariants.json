@@ -1,0 +1,82 @@
+[
+  {
+    "key": "features",
+    "unchanged": true,
+    "count": 1394
+  },
+  {
+    "key": "logical_holes",
+    "unchanged": true,
+    "count": 446
+  },
+  {
+    "key": "feature_patterns",
+    "unchanged": true,
+    "count": 134
+  },
+  {
+    "key": "reference_observations",
+    "unchanged": true,
+    "count": 188
+  },
+  {
+    "key": "mounting_sites",
+    "unchanged": true,
+    "count": 626
+  },
+  {
+    "key": "mounting_interfaces",
+    "unchanged": true,
+    "count": 23
+  },
+  {
+    "key": "reference_mounts",
+    "unchanged": true,
+    "count": 2
+  },
+  {
+    "key": "slot_features",
+    "unchanged": true,
+    "count": 18
+  },
+  {
+    "key": "circular_openings",
+    "unchanged": true,
+    "count": 852
+  },
+  {
+    "key": "passage_hypotheses",
+    "unchanged": true,
+    "count": 458
+  },
+  {
+    "key": "pair_screenings",
+    "unchanged": true,
+    "count": 2415
+  },
+  {
+    "key": "connection_reviews",
+    "unchanged": true,
+    "count": 211
+  },
+  {
+    "key": "supplemental_components",
+    "unchanged": true,
+    "count": 12
+  },
+  {
+    "key": "pin_hole_fits",
+    "unchanged": true,
+    "count": 4
+  },
+  {
+    "key": "interfaces",
+    "unchanged": true,
+    "count": 0
+  },
+  {
+    "key": "interface_connections",
+    "unchanged": true,
+    "count": 0
+  }
+]

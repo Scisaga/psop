@@ -1,0 +1,268 @@
+{
+  "request": {
+    "part_a": "part:microduck:0820b4025f26a004",
+    "part_b": "part:microduck:7f4fefc3c6de90f1"
+  },
+  "method": "Independent forward trial following the skill, shared semantics, doctor and query help; no implementation read or altered.",
+  "command_file": "forward-trial-command.txt",
+  "cli_exit_code": 0,
+  "stderr_bytes": 0,
+  "result": {
+    "ok": true,
+    "status": "reference_matches",
+    "basis": "published_mounting_knowledge",
+    "reason": "build_reference_assemblies_available",
+    "execution_performed": false,
+    "assessment": {
+      "mechanical": "unknown",
+      "engineering": "unknown",
+      "task": "unknown",
+      "completion": "unknown"
+    },
+    "scope": {
+      "kind": "published_static_mounting_knowledge",
+      "enumeration_performed": false,
+      "reference_configuration": "configuration:microduck:source-qpos0"
+    }
+  },
+  "package": {
+    "path": "C:\\Users\\scisa\\Desktop\\psop\\build\\v2\\microduck\\packages\\microduck-20261105203918-aa6f313d.dkp",
+    "profile": "psop.hardware.source-model/1.4",
+    "package_id": "psop.microduck",
+    "package_version": "2.0.0-mounting.20261105203918.aa6f313d",
+    "package_digest": "bca82f977208dfa0d1d8116bde5d86eef24839d48dd11f2d0abc4110a63dab3f"
+  },
+  "package_integrity": {
+    "files_checked": 68,
+    "unchanged": true,
+    "changed_paths": [],
+    "manifest_digest_matches_result": true
+  },
+  "lineage": {
+    "source_checks": [
+      {
+        "source_ref": "SRC-000023",
+        "resolved": true,
+        "path": "sources/SRC-000023.stl",
+        "declared_sha256": "9a91cc1ae31ecd9e0c1ba93f3bb2ad8a12e29bff24ec27d1ac66c0c3037d9fcf",
+        "actual_sha256": "9a91cc1ae31ecd9e0c1ba93f3bb2ad8a12e29bff24ec27d1ac66c0c3037d9fcf",
+        "hash_matches": true,
+        "declared_size": 738884,
+        "actual_size": 738884,
+        "external_url": "https://github.com/pollen-robotics/microduck_rl/blob/cb70b792312d559a4da09064d92009079671815f/src/mjlab_microduck/robot/microduck/assets/leg.stl"
+      },
+      {
+        "source_ref": "SRC-000045",
+        "resolved": true,
+        "path": "sources/SRC-000045.stl",
+        "declared_sha256": "96238ed0d020ce0009cf1a5aa4b6926176c800840318ee65e4375be2298d2744",
+        "actual_sha256": "96238ed0d020ce0009cf1a5aa4b6926176c800840318ee65e4375be2298d2744",
+        "hash_matches": true,
+        "declared_size": 206384,
+        "actual_size": 206384,
+        "external_url": "https://github.com/pollen-robotics/microduck_rl/blob/cb70b792312d559a4da09064d92009079671815f/src/mjlab_microduck/robot/microduck/assets/xl330.stl"
+      },
+      {
+        "source_ref": "SRC-MD-ASSEMBLY-KNOWLEDGE",
+        "resolved": true,
+        "path": "sources/SRC-MD-ASSEMBLY-KNOWLEDGE.json",
+        "declared_sha256": "600d336855dde8e4f4c6b88f2182ce78227f7b8089e3d77a012113ed06a1740b",
+        "actual_sha256": "600d336855dde8e4f4c6b88f2182ce78227f7b8089e3d77a012113ed06a1740b",
+        "hash_matches": true,
+        "declared_size": 2616,
+        "actual_size": 2616,
+        "external_url": null
+      },
+      {
+        "source_ref": "SRC-MD-INDEX",
+        "resolved": true,
+        "path": "sources/SRC-MD-INDEX.csv",
+        "declared_sha256": "7c37794e47946e61375563c41611e055fd23157ffcec87df55f02e93f6f4298d",
+        "actual_sha256": "7c37794e47946e61375563c41611e055fd23157ffcec87df55f02e93f6f4298d",
+        "hash_matches": true,
+        "declared_size": 9523,
+        "actual_size": 9523,
+        "external_url": null
+      },
+      {
+        "source_ref": "SRC-MD-MJCF",
+        "resolved": true,
+        "path": "sources/SRC-MD-MJCF.xml",
+        "declared_sha256": "80fc4424ed71e430ec4919110dfdb5c714dc1c4e1138e1832a16865cf31eb8c8",
+        "actual_sha256": "80fc4424ed71e430ec4919110dfdb5c714dc1c4e1138e1832a16865cf31eb8c8",
+        "hash_matches": true,
+        "declared_size": 32023,
+        "actual_size": 32023,
+        "external_url": "https://raw.githubusercontent.com/pollen-robotics/microduck_rl/cb70b792312d559a4da09064d92009079671815f/src/mjlab_microduck/robot/microduck/robot_walk.xml"
+      }
+    ],
+    "evidence_refs_resolved": true,
+    "evidence_refs": [
+      "evidence:0820b4025f26a004:csv",
+      "evidence:0820b4025f26a004:stl",
+      "evidence:0820b4025f26a004:xml",
+      "evidence:7f4fefc3c6de90f1:csv",
+      "evidence:7f4fefc3c6de90f1:stl",
+      "evidence:7f4fefc3c6de90f1:xml",
+      "evidence:microduck:assembly-knowledge"
+    ],
+    "assertion_refs_resolved": true,
+    "assertion_refs": [
+      "xl330-housing-mount",
+      "xl330-leg-standard"
+    ],
+    "assertion_provenance": {
+      "kind": "user_statement",
+      "recorded_at": "2026-11-06",
+      "statement": "应该有8个可安装孔位 并说明至少同侧两个相邻的孔位可作为安装接口 同时还要标识那两个孔位与腿部连杆的孔位相连接",
+      "interpretation": "按用户前述说明，XL330 壳体两侧各四个孔位，标准参考装配使用同侧两个孔位连接腿部连杆。此交付将相邻显式解释为矩形边，保留 16 mm 短边与 30 mm 长边，排除对角；这是可复审的项目解释，不是厂家认证。本文件不指定螺纹、允许旋入深度、紧固扭矩或实际接合状态。"
+    },
+    "assembly_input_hash_matches_manifest": true,
+    "frozen_source_revision": "cb70b792312d559a4da09064d92009079671815f"
+  },
+  "site_summary": [
+    {
+      "part_ref": "part:microduck:0820b4025f26a004",
+      "name": "XL330 舵机",
+      "all_site_records": 16,
+      "status_counts": {
+        "geometry_candidate": 8,
+        "user_asserted": 8
+      },
+      "functional_member_count": 8,
+      "functional_member_labels": [
+        "B3",
+        "B1",
+        "B2",
+        "A1",
+        "A4",
+        "A3",
+        "B4",
+        "A2"
+      ],
+      "functional_underlying_hole_count": 4
+    },
+    {
+      "part_ref": "part:microduck:7f4fefc3c6de90f1",
+      "name": "腿部连杆",
+      "all_site_records": 16,
+      "status_counts": {
+        "geometry_candidate": 14,
+        "user_asserted": 2
+      },
+      "functional_member_count": 2,
+      "functional_member_labels": [
+        "L2",
+        "L1"
+      ],
+      "functional_underlying_hole_count": 2
+    }
+  ],
+  "reference_mounts": [
+    {
+      "id": "reference-mount:microduck:c3aab3776d13124a",
+      "configuration_ref": "configuration:microduck:source-qpos0",
+      "status": "user_asserted_reference",
+      "mechanism": "fastener_mount",
+      "pairs": [
+        {
+          "labels": [
+            "B3",
+            "L2"
+          ],
+          "site_refs": [
+            "mounting-site:microduck:0820b4025f26a004:0e749c6f6b8e843b",
+            "mounting-site:microduck:7f4fefc3c6de90f1:02edf4282ded8347"
+          ],
+          "hole_refs": [
+            "logical-hole:microduck:0820b4025f26a004:10b781bc50fe86f9",
+            "logical-hole:microduck:7f4fefc3c6de90f1:fa1e1fa9e51c6624"
+          ],
+          "axis_distance_m": 1.2317536623207246e-08,
+          "axis_angle_rad": 0.0,
+          "axial_gap_m": 0.0005000011995434511
+        },
+        {
+          "labels": [
+            "B2",
+            "L1"
+          ],
+          "site_refs": [
+            "mounting-site:microduck:0820b4025f26a004:2582884f119bcb29",
+            "mounting-site:microduck:7f4fefc3c6de90f1:0cac534d827851e1"
+          ],
+          "hole_refs": [
+            "logical-hole:microduck:0820b4025f26a004:fb71a619f020532d",
+            "logical-hole:microduck:7f4fefc3c6de90f1:715d98733cf14793"
+          ],
+          "axis_distance_m": 1.2317571493643923e-08,
+          "axis_angle_rad": 0.0,
+          "axial_gap_m": 0.0005000011995434442
+        }
+      ],
+      "connector_roles": [
+        {
+          "role": "fastener",
+          "status": "unbound",
+          "site_pair_index": 0
+        },
+        {
+          "role": "fastener",
+          "status": "unbound",
+          "site_pair_index": 1
+        }
+      ],
+      "assessment": {
+        "reference_alignment": "pass",
+        "mechanical": "unknown",
+        "engineering": "unknown",
+        "task": "unknown",
+        "completion": "unknown"
+      },
+      "source_refs": [
+        "SRC-000023",
+        "SRC-000045",
+        "SRC-MD-ASSEMBLY-KNOWLEDGE",
+        "SRC-MD-INDEX",
+        "SRC-MD-MJCF"
+      ],
+      "evidence_refs": [
+        "evidence:0820b4025f26a004:csv",
+        "evidence:0820b4025f26a004:stl",
+        "evidence:0820b4025f26a004:xml",
+        "evidence:7f4fefc3c6de90f1:csv",
+        "evidence:7f4fefc3c6de90f1:stl",
+        "evidence:7f4fefc3c6de90f1:xml",
+        "evidence:microduck:assembly-knowledge"
+      ],
+      "assertion_refs": [
+        "xl330-leg-standard",
+        "xl330-housing-mount"
+      ],
+      "unresolved_requirements": [
+        "This is a user-declared standard relationship located in the frozen source configuration, not a live assembled state.",
+        "The finite gap is measured, not hidden by a relaxed adjacency threshold; a compatible fastener and its actual occupied range remain unbound.",
+        "Connector dimensions, threads, retaining contact, engagement, assembly paths, engineering and task acceptance remain unevaluated."
+      ]
+    }
+  ],
+  "interpretation_notes": [
+    "The 32 mounting_sites records include geometry-only entry sites; only interface membership identifies the 8 declared servo sites and 2 reference leg sites.",
+    "Two entry sites sharing one logical hole do not constitute two separate hole resources.",
+    "The user statement and its recorded project interpretation establish the functional claim; frozen source geometry supports the reference mapping. This is not manufacturer certification.",
+    "Reference_alignment pass is a static reference check. The query enumerates no new configurations and executes no installation.",
+    "Actual fastener entities, engagement, retaining contact, occupied ranges, path, elasticity and engineering acceptance remain unresolved."
+  ],
+  "can_claim_assembly_completed": false,
+  "completion_reason": "execution_performed is false, both fastener roles are unbound, and mechanical/engineering/task/completion remain unknown.",
+  "limitations": [
+    "Reference matches retain the supplied assertion provenance and frozen source Configuration; they do not enumerate all other possible installations.",
+    "User-asserted mounting sites retain their shared underlying holes; two entry sites do not create two independent physical resources.",
+    "This command executes no installation, simulation step or modification to the package."
+  ],
+  "query_artifact": {
+    "path": "forward-trial-query.json",
+    "bytes": 937908,
+    "sha256": "25c43192f442e7a63b8d13d2c0385d1dded0a79c6c9e33df91a5dc2eeff84490"
+  }
+}

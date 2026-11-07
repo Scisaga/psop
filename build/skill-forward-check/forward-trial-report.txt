@@ -1,0 +1,58 @@
+PSOP Simulate 独立前向技能试用
+日期：2026-11-06（Asia/Shanghai）
+工作目录：C:\Users\scisa\Desktop\psop
+
+实际请求：使用 packages/assembly/fixtures/four-hole-modes.json 查询两个部件可能的安装方式，生成可检查查询产物，解释是否证明已组装完成及下一步缺项。
+
+执行结果
+已按技能执行显式 definition 查询，退出码 0；输出 status=proposals、execution_performed=false。
+输入两个部件为 part:synthetic:left 与 part:synthetic:right，机制为 fastened_mount。
+夹具 query 固定左右 mode 都为 exact-four-examples，axis_relation=parallel。
+左右允许选择均为 AB、CD、ABC、ABCD；这是该 mode 的完整机械选择清单。
+搜索检查了 38 个映射，complete=true、selection_complete=true、stop_reason=exhausted。
+在 max_members=8、max_mappings=50000、max_proposals=256 的界限内，没有截断。
+共返回 13 项候选：AB->AB 2 项，AB->CD 2 项，CD->AB 2 项，CD->CD 2 项，ABC->ABC 1 项，ABCD->ABCD 4 项。
+这些计数包括保留的对称孔映射，不能称作 13 种已经完成的真实装配。
+13 项均 geometry=pass、mode_eligibility=pass、occupancy=pass；mechanical、engineering、task、completion 均为 unknown。
+occupancy=pass 表示未从当前声明推断占用冲突，不替代实际装配碰撞或间隙检查。
+
+产物（仅新增包外文件）
+build/skill-forward-check/four-hole-query.json：CLI 原始输出，62,427 字节。
+build/skill-forward-check/four-hole-summary.json：压缩汇总、13 个候选映射及位姿、每项缺项、产物哈希。
+build/skill-forward-check/forward-trial-report.txt：本报告。
+输入文件 SHA-256：890177b4e4c9a61e241c782d422c997106b50abeef255bdf3d2d305424b79b79。
+查询后重新计算输入文件哈希，与查询中固定的哈希一致。
+使用 packages/assembly/psop_assembly/validation.py 的 validate_named(result, 'query') 验证查询内层机器合同，通过。
+
+实际执行的核心命令
+python -B skills/psop-simulate/scripts/psop_simulate.py doctor
+python -B skills/psop-simulate/scripts/psop_simulate.py query --help
+python -B skills/psop-simulate/scripts/psop_simulate.py query --definition packages/assembly/fixtures/four-hole-modes.json --output build/skill-forward-check/four-hole-query.json
+三条命令均退出码 0。
+doctor 返回 partial / bounded_group_query_only；assembly、rendering、model_testing 均 unavailable；execution_performed=false。
+辅助执行了只读 Get-Content、rg，以及通过 PowerShell 单引号 here-string 传给 python -B - 的 JSON 汇总和 schema 校验脚本。
+已阅读技能及其强制引用 docs/architecture/assembly-interfaces.md、references/implementation-status.md；补读 references/contracts-and-api.md、夹具、CLI 和 engine.py 以核对查询范围。
+
+是否证明装配完成
+不能。结果只证明合成声明范围内的选孔规则和共同 proper SE(3) 刚性孔组匹配通过。
+participants=[]、context={}；每个选中孔映射仍有未绑定的第三方 fastener 角色，engaged_member_pairs 全为空。
+选定集合 S 仅表示候选角色绑定，不表示已进入、已保持或已完成。
+该夹具还明确要求 path_required=true、elastic_required=true、completion_policy=all_selected_paths。
+当前执行器不计算机械接合/保持、连续装配或拆卸路径、弹性、载荷或工程验收；不能凭静态匹配或人工填状态补出完成结论。
+合成 warrant 只支持本规则夹具试验，不授权 Microduck 或任何真实设备安装。
+
+下一步缺项
+1. 先选定目标候选，固定真实输入知识修订、当前配置、机制/连接件允许范围、环境及已有占用，明确工程和 Task 条件。
+2. 绑定实际存在、可追溯的连接件 Part，提供每条孔路径的 fastener、承接与有限作用区/区段依据；不能自动发明螺钉。
+3. 获得各条选中路径的进入、接合、保持和完成证据；所有选中路径完成的方式才可派生整组完成。
+4. 补齐装配/拆卸可达路径、弹性接合、载荷、工程与任务检查。现有 CLI 缺这些执行器，需要另行接入相应模型或实测流程；再次 query 本身不能认证完成。
+
+技能是否足够
+对“按现有夹具中 query 固定的模式生成受限查询产物，并解释不能证明完成”的请求，技能指令足够：有先读资料、doctor、help、definition 与 DKP 区分、包外保存和不能越界的明确要求。
+不需要修改实现、文档、夹具或真实 DKP；本次未执行这些修改。
+
+歧义与失败
+1. 夹具有七个声明 mode，但 query 只选择 exact-four-examples；CLI 没有 --mode-a/--mode-b 选项。因此本产物不覆盖全部七个 mode 或所有 mode 组合。“可能的安装方式”若意指它们全部，技能没有明确提供遍历流程。不能把本次 complete=true 扩大成全部声明模式或真实安装机制均已穷尽。
+2. 技能要求固定起始配置等上下文，但本夹具 context={}，且 CLI 只读取文件内 context。本次可明确声明为空上下文，不能得到当前真实状态或可达性结论。
+3. Windows PowerShell 首次 Get-Content 未加 -Encoding UTF8，中文显示乱码；改用 UTF8 后全部可读，文件未修改。
+4. 一次辅助汇总脚本把 assessments 写成 assessment，出现 KeyError；改成正确复数字段后完成汇总和 schema 验证。该失败未影响已成功生成的原始查询产物，未发现产品 CLI 执行失败。
