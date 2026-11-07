@@ -29,9 +29,11 @@ FROZEN_PATTERNS_PROFILE = "psop.hardware.source-model/1.5"
 FROZEN_CONNECTION_PROFILE = "psop.hardware.source-model/1.6"
 FROZEN_PIN_FIT_PROFILE = "psop.hardware.source-model/1.7"
 FROZEN_DIRECTION_PROFILE = "psop.hardware.source-model/1.8"
-PROFILE = "psop.hardware.source-model/1.9"
-VERSION = "3.0.0-draft.10"
-PIN_FIT_PROFILES = {FROZEN_PIN_FIT_PROFILE, FROZEN_DIRECTION_PROFILE, PROFILE}
+FROZEN_INVESTIGATION_PROFILE = "psop.hardware.source-model/1.9"
+PROFILE = "psop.hardware.source-model/1.10"
+VERSION = "3.0.0-draft.11"
+INVESTIGATION_PROFILES = {FROZEN_INVESTIGATION_PROFILE, PROFILE}
+PIN_FIT_PROFILES = {FROZEN_PIN_FIT_PROFILE, FROZEN_DIRECTION_PROFILE, FROZEN_INVESTIGATION_PROFILE, PROFILE}
 REVIEW_PROFILES = {FROZEN_CONNECTION_PROFILE, *PIN_FIT_PROFILES}
 PATTERNS_PROFILES = {FROZEN_PATTERNS_PROFILE, *REVIEW_PROFILES}
 MOUNTING_PROFILES = {FROZEN_MOUNTING_PROFILE, *PATTERNS_PROFILES}
@@ -102,11 +104,15 @@ FROZEN_DIRECTION_CAPABILITIES = {
     **FROZEN_PIN_FIT_CAPABILITIES,
     "supplemental_components": {"status": "partial", "scope": "reference connector schematics use explicit through-bracket hypotheses with independently checked finite entrance, head seat, shaft direction and target coverage; actual installation side, thread, continuous path and retention remain unverified"},
 }
-CAPABILITIES = {
+FROZEN_INVESTIGATION_CAPABILITIES = {
     **FROZEN_DIRECTION_CAPABILITIES,
     "geometric_analysis": {"status": "partial", "scope": "finite arbitrary-axis cylindrical discovery with strict source witnesses, legacy finite geometry and per-instance raw mesh regions; unsupported structures remain open"},
     "structure_investigation": {"status": "partial", "scope": "every source Part and mesh normal region is inventoried before functional interpretation; unknown function has explicit evidence gaps and next actions"},
     "independent_review": {"status": "partial", "scope": "locked source-SHA-bound independent annotations establish expected sample features; automatic screening is distinct from completed region review"},
+}
+CAPABILITIES = {
+    **FROZEN_INVESTIGATION_CAPABILITIES,
+    "installation_hypotheses": {"status": "partial", "scope": "frozen completed research, source-bound finite counterpart geometry, dimensional complementarity and evidence support bounded mechanism hypotheses; no actual retaining or engineering confirmation"},
 }
 PROFILE_SCHEMAS = {
     LEGACY_PROFILE: ("manifest.schema.json", "source-model.schema.json"),
@@ -118,7 +124,8 @@ PROFILE_SCHEMAS = {
     FROZEN_CONNECTION_PROFILE: ("manifest-source-model-1.6.schema.json", "source-model-1.6.schema.json"),
     FROZEN_PIN_FIT_PROFILE: ("manifest-source-model-1.7.schema.json", "source-model-1.7.schema.json"),
     FROZEN_DIRECTION_PROFILE: ("manifest-source-model-1.8.schema.json", "source-model-1.8.schema.json"),
-    PROFILE: ("manifest-source-model-1.9.schema.json", "source-model-1.9.schema.json"),
+    FROZEN_INVESTIGATION_PROFILE: ("manifest-source-model-1.9.schema.json", "source-model-1.9.schema.json"),
+    PROFILE: ("manifest-source-model-1.10.schema.json", "source-model-1.10.schema.json"),
 }
 
 
@@ -130,7 +137,7 @@ def profile_contract(profile: str) -> tuple[tuple[str, str], dict]:
                     FROZEN_MOUNTING_PROFILE: FROZEN_MOUNTING_CAPABILITIES,
                     FROZEN_PATTERNS_PROFILE: FROZEN_PATTERNS_CAPABILITIES,
                     FROZEN_CONNECTION_PROFILE: FROZEN_CONNECTION_CAPABILITIES, FROZEN_PIN_FIT_PROFILE: FROZEN_PIN_FIT_CAPABILITIES,
-                    FROZEN_DIRECTION_PROFILE: FROZEN_DIRECTION_CAPABILITIES, PROFILE: CAPABILITIES}
+                    FROZEN_DIRECTION_PROFILE: FROZEN_DIRECTION_CAPABILITIES, FROZEN_INVESTIGATION_PROFILE: FROZEN_INVESTIGATION_CAPABILITIES, PROFILE: CAPABILITIES}
     return PROFILE_SCHEMAS[profile], capabilities[profile]
 
 
@@ -219,8 +226,10 @@ def enrich_scene(scene: dict, root: Path, profile: str, assembly_knowledge: dict
         else:
             from .connection_review import analysis_for_v18 as analysis_for
         analysis = analysis_for(scene, root, assembly_knowledge) if profile in MOUNTING_PROFILES else analysis_for(scene, root)
-        if profile == PROFILE:
+        if profile in INVESTIGATION_PROFILES:
             from .investigation import augment_analysis
+            if profile == PROFILE:
+                from .relationship_investigation import augment_analysis
             analysis = augment_analysis(analysis, scene, root, investigation)
         scene["evidence"].extend(analysis.pop("evidence", []))
         scene["meta"]["counts"]["evidence"] = len(scene["evidence"])
@@ -405,8 +414,8 @@ def prepare(input_path: Path, work: Path, device_id: str, name: str, xml: Path |
         raise ValueError("prepare requires a new work directory; existing work is never overwritten")
     if assembly_knowledge is not None and profile not in MOUNTING_PROFILES:
         raise ValueError("Explicit assembly knowledge requires a supported mounting knowledge profile")
-    if investigation is not None and profile != PROFILE:
-        raise ValueError("Independent investigation input requires source-model/1.9")
+    if investigation is not None and profile not in INVESTIGATION_PROFILES:
+        raise ValueError("Independent investigation input requires source-model/1.9 or 1.10")
     work.parent.mkdir(parents=True, exist_ok=True)
     staging = Path(tempfile.mkdtemp(prefix=f".{work.name}.prepare-", dir=work.parent))
     try:
@@ -429,6 +438,8 @@ def prepare(input_path: Path, work: Path, device_id: str, name: str, xml: Path |
         investigation_records = []
         if investigation is not None:
             from .investigation import capture_input, freeze_documents, document_inputs
+            if profile == PROFILE:
+                from .relationship_investigation import capture_input
             shutil.copyfile(investigation.resolve(strict=True), staging / "inputs/interface-investigation.json")
             investigation_value = read_json(staging / "inputs/interface-investigation.json")
             investigation_records = freeze_documents(investigation_value, investigation.resolve(strict=True).parent, staging)
@@ -455,8 +466,10 @@ def prepare(input_path: Path, work: Path, device_id: str, name: str, xml: Path |
         if investigation is not None:
             intake["inputs"]["investigation"] = {"path": "inputs/interface-investigation.json", "sha256": digest((staging / "inputs/interface-investigation.json").read_bytes())}
             intake["inputs"]["investigation_documents"] = investigation_records
-        if profile == PROFILE:
+        if profile in INVESTIGATION_PROFILES:
             from .investigation import KEYS
+            if profile == PROFILE:
+                from .relationship_investigation import KEYS
             write_json(staging / "investigation.json", {**{key: scene["analysis"][key] for key in KEYS},
                 "available_sources": [{"id": s["id"], "title": s["title"], "path": s["path"], "url": s["url"],
                     "format": s["format"], "sha256": s["digest"], "bytes": s["bytes"]} for s in scene["sources"]]})
@@ -469,7 +482,7 @@ def prepare(input_path: Path, work: Path, device_id: str, name: str, xml: Path |
         os.replace(staging, work)
         return {"ok": True, "command": "prepare", "work": str(work.resolve()), "device": intake["device"],
                 "profile": profile, "counts": intake["counts"], "review": str(work / "review.json"),
-                **({"investigation": str(work / "investigation.json"), "review_coverage": scene["analysis"]["review_coverage"]} if profile == PROFILE else {})}
+                **({"investigation": str(work / "investigation.json"), "review_coverage": scene["analysis"]["review_coverage"]} if profile in INVESTIGATION_PROFILES else {})}
     finally:
         if staging.exists():
             shutil.rmtree(staging)
@@ -512,8 +525,10 @@ def knowledge_for(scene: dict, device_id: str, version: str, profile: str = PROF
                 knowledge[key] = analysis[key]
         if profile in PIN_FIT_PROFILES:
             knowledge["pin_hole_fits"] = analysis["pin_hole_fits"]
-        if profile == PROFILE:
+        if profile in INVESTIGATION_PROFILES:
             from .investigation import KEYS
+            if profile == PROFILE:
+                from .relationship_investigation import KEYS
             for key in KEYS:
                 knowledge[key] = analysis[key]
         for part in knowledge["parts"]:
@@ -582,9 +597,11 @@ def finalize(work: Path, output: Path, version: str) -> dict:
         review = None
         review_input = intake["inputs"].get("investigation")
         if review_input:
-            if profile != PROFILE:
+            if profile not in INVESTIGATION_PROFILES:
                 raise ValueError("Historical profiles cannot consume investigation input")
             from .investigation import capture_input, document_inputs
+            if profile == PROFILE:
+                from .relationship_investigation import capture_input
             review_path = local_path(work, review_input["path"])
             review = capture_input(scene, staging, review_path,
                 document_inputs(read_json(review_path), intake["inputs"].get("investigation_documents", []), work))
@@ -1565,7 +1582,7 @@ def validate_connection_reviews(knowledge: dict, scene: dict, root: Path | None 
             raise ValueError("Connection-review analysis count differs from its published records")
     if knowledge["schema"] in PIN_FIT_PROFILES:
         validate_pin_hole_fits(knowledge, scene)
-    if knowledge["schema"] in {FROZEN_DIRECTION_PROFILE, PROFILE}:
+    if knowledge["schema"] in {FROZEN_DIRECTION_PROFILE, FROZEN_INVESTIGATION_PROFILE, PROFILE}:
         from .connector_paths import validate as validate_connector_paths
         validate_connector_paths(knowledge, scene)
 
@@ -1724,7 +1741,7 @@ def validate(root: Path) -> dict:
     investigation_paths = None
     if review_input:
         from .investigation import SOURCE_PATH
-        if profile != PROFILE or review_input["path"] != SOURCE_PATH:
+        if profile not in INVESTIGATION_PROFILES or review_input["path"] != SOURCE_PATH:
             raise ValueError("Unsupported investigation input lock")
         review_path = local_path(root, review_input["path"])
         if digest(review_path.read_bytes()) != review_input["sha256"]:
@@ -1749,8 +1766,10 @@ def validate(root: Path) -> dict:
     validate_shape(knowledge, read_json(SKILL / "schemas" / schema_names[1]))
     if profile != LEGACY_PROFILE:
         validate_analysis(knowledge, scene, root)
-    if profile == PROFILE:
+    if profile in INVESTIGATION_PROFILES:
         from .investigation import validate_coverage
+        if profile == PROFILE:
+            from .relationship_investigation import validate_coverage
         validate_coverage(knowledge, scene, root)
     with tempfile.TemporaryDirectory(prefix="psop-v2-verify-") as temporary:
         replay = project(archive, Path(temporary), ontology_path, xml_path=root / "sources/SRC-MD-MJCF.xml",
@@ -1759,6 +1778,8 @@ def validate(root: Path) -> dict:
         review = None
         if review_path:
             from .investigation import capture_input
+            if profile == PROFILE:
+                from .relationship_investigation import capture_input
             review = capture_input(replay, Path(temporary), review_path, investigation_paths)
         enrich_scene(replay, Path(temporary), profile, assembly, review)
     replay["meta"].update({"version": manifest["package_version"], "snapshot": f"{manifest['package_id']}@{manifest['package_version']}",
@@ -1791,4 +1812,4 @@ def validate(root: Path) -> dict:
             "package_id": manifest["package_id"], "package_version": manifest["package_version"],
             "package_digest": manifest["package_digest"], "device": manifest["device"],
             "counts": manifest["counts"], "capabilities": manifest["capabilities"],
-            **({"review_coverage": knowledge["review_coverage"]} if profile == PROFILE else {})}
+            **({"review_coverage": knowledge["review_coverage"]} if profile in INVESTIGATION_PROFILES else {})}

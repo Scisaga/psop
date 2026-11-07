@@ -1,0 +1,47 @@
+{
+  "recorded_at_utc": "2026-11-06 20:56:43 UTC",
+  "checked_on": "2026-11-07",
+  "client_timezone": "Asia/Shanghai",
+  "fixed_repository": "pollen-robotics/microduck",
+  "fixed_commit": "4861141fdc7c7acd253671acf5abdd55b77b779e",
+  "tree_capture": "device-materials/interface-review/references/upstream-microduck-tree.json",
+  "tree_entries": 479,
+  "method": "Read the existing complete nontruncated tree, inspect likely design/roadmap paths, then retrieve and inspect three bounded exact-version documents through GitHub read tools.",
+  "records": [
+    {
+      "url": "https://github.com/pollen-robotics/microduck/blob/4861141fdc7c7acd253671acf5abdd55b77b779e/docs/project/roadmap.md",
+      "git_blob_sha": "06b10d1db21b0b7822cea65a7eb89fd8916a5f2a",
+      "line_count": 368,
+      "character_count": 24940,
+      "method": "Read title, scope and relevant hardware/software boundary passages; searched the retrieved exact-version text for hole/screw/fastener/assembly/CAD/Onshape/manufacturing/retention terms.",
+      "matching_line_numbers": [
+        112
+      ],
+      "observed": "This roadmap concerns software daemons, updates, bring-up, telemetry and privacy; its one retention keyword hit concerns software logs rather than mechanical retention."
+    },
+    {
+      "url": "https://github.com/pollen-robotics/microduck/blob/4861141fdc7c7acd253671acf5abdd55b77b779e/docs/design/simulation.md",
+      "git_blob_sha": "9cba7229d348b9f31425aa82cb601c88b2a42e96",
+      "line_count": 357,
+      "character_count": 20506,
+      "method": "Read title, scope and relevant hardware/software boundary passages; searched the retrieved exact-version text for hole/screw/fastener/assembly/CAD/Onshape/manufacturing/retention terms.",
+      "matching_line_numbers": [],
+      "observed": "This document describes the same software daemons running against a MuJoCo body and explicitly separates simulation from real hardware; no matching mechanical assembly term was found."
+    },
+    {
+      "url": "https://github.com/pollen-robotics/microduck/blob/4861141fdc7c7acd253671acf5abdd55b77b779e/docs/design/robotd-design.md",
+      "git_blob_sha": "581f92721952c734aecb109b6097b59bd49b05b6",
+      "line_count": 1079,
+      "character_count": 64953,
+      "method": "Read title, scope and relevant hardware/software boundary passages; searched the retrieved exact-version text for hole/screw/fastener/assembly/CAD/Onshape/manufacturing/retention terms.",
+      "matching_line_numbers": [],
+      "observed": "This document scopes the alpha control loop, device bus and actuator travel limits; it does not supply the requested local shell/support-hole counterpart or fastener specification."
+    }
+  ],
+  "result": "No per-hole right-shell Z-boss or support-link receiving/retaining specification was obtained from these bounded checks.",
+  "limitations": [
+    "The runtime alpha revision is not established as the manufacturing CAD revision for the frozen STL.",
+    "A finite path/text search does not prove no useful differently named file or other upstream source exists.",
+    "No frozen research input, script, schema or published package was changed by these additional checks."
+  ]
+}

@@ -1,6 +1,6 @@
 # Build：设备知识构建
 
-2026-11-07。当前工具 `3.0.0-draft.10` 默认发布 `psop.hardware.source-model/1.9`，封套为 [DKP v2](../architecture/device-knowledge-package.md)。实际流程已在 Microduck 跑通。
+2026-11-07。当前工具 `3.0.0-draft.11` 默认发布 `psop.hardware.source-model/1.10`，封套为 [DKP v2](../architecture/device-knowledge-package.md)。1.0～1.9 保留原合同。实际流程与边界见[本轮验收](interface-review/verification.md)。
 
 ## 输入和输出
 
@@ -11,11 +11,12 @@
 | [装配知识说明](../../device-materials/microduck-assembly-knowledge.json) | 保存用户声明、项目解释、适用网格和参考安装范围 |
 | 厂商支持 md / PNG | 固定通用结构依据及适用范围 |
 | [独立调查与标注](../../device-materials/interface-review/microduck-review.json) | 固定原网格样例的应检位置、区域审查、来源原文及缺证；与生产提取分开 |
+| [关系实查与验收输入](../../device-materials/interface-review/microduck-relations.json) | 继承独立几何标注，增加已执行调查、具体机制假设、反证和固定关系期望；不授予正式 Interface 资格 |
 | 硬件本体与工具 | 锁定机械语义目标及生产者血缘 |
 
 补充 XML 与装配说明单独登记，不声称原始 ZIP 已包含它们。输出只含知识、来源、证据、几何、索引与 Schema，由[统一工作台](../../apps/workbench/README.md)读取。
 
-## 1.9 实际交付内容
+## 当前实际交付内容
 
 | 层次 | 内容与边界 |
 | --- | --- |
@@ -29,6 +30,7 @@
 | 未核实方案 | 单独标明用途的替代螺钉／压盖示意，默认不作为当前连接事实 |
 | 主动结构调查 | 全部 Part 实例、几何资产、原始区域、任意轴有限壁与逐处后续动作；不依赖人工 selectors |
 | 独立覆盖 | 固定源 SHA 的标注样例及位置/轴/三角见证；自动初筛不算完成审查 |
+| 关系解释 | 独立截面绑定双方有限壁，检查共同构型、孔径互补、全部组距及必要中间件，发布有范围的安装假设；未调查与已调查但缺证分开 |
 
 Microduck 的四条舵机孔道提供两侧八个安装入口，同侧邻接规则与标准双孔对应分别保存。连杆上方四孔保留独立位置及未知选用条件；大腿小柱的几何配合支持定位推断，外侧大圆洞用途未知。
 
@@ -49,10 +51,10 @@ python -B apps/workbench/scripts/prepare_workspace.py --fresh
 需要控制各阶段时，使用尚未存在的工作目录与发布目录：
 
 ```powershell
-python -B skills/psop-build/scripts/psop_build.py prepare --input device-materials/microduck-official-materials.zip --assembly-knowledge device-materials/microduck-assembly-knowledge.json --investigation device-materials/interface-review/microduck-review.json --work build/microduck/source-1.9-final-3/work --device-id microduck --device-name Microduck
-python -B skills/psop-build/scripts/psop_build.py finalize --work build/microduck/source-1.9-final-3/work --output build/microduck/source-1.9/microduck-2.dkp --version 2.0.0-interface-investigation.2
-python -B skills/psop-build/scripts/psop_build.py validate --dkp build/microduck/source-1.9/microduck-2.dkp
-node apps/workbench/scripts/workspaces.mjs register --dkp build/microduck/source-1.9/microduck-2.dkp --workspace microduck
+python -B skills/psop-build/scripts/psop_build.py prepare --input device-materials/microduck-official-materials.zip --assembly-knowledge device-materials/microduck-assembly-knowledge.json --investigation device-materials/interface-review/microduck-relations.json --work build/microduck/source-1.10/work-final-2 --device-id microduck --device-name Microduck
+python -B skills/psop-build/scripts/psop_build.py finalize --work build/microduck/source-1.10/work-final-2 --output build/microduck/source-1.10/microduck-1.dkp --version 2.0.0-interface-relations.1
+python -B skills/psop-build/scripts/psop_build.py validate --dkp build/microduck/source-1.10/microduck-1.dkp
+node apps/workbench/scripts/workspaces.mjs register --dkp build/microduck/source-1.10/microduck-1.dkp --workspace microduck
 ```
 
 `prepare` 固定输入、本体与工具；`finalize` 从冻结输入重建，在新暂存目录验证后原子发布；`validate` 核对 Schema、引用、源字节、摘要、独立语义约束与确定性重放。更改摘要不能让伪造测量或功能资格通过。
@@ -65,10 +67,10 @@ node apps/workbench/scripts/workspaces.mjs register --dkp build/microduck/source
 
 完整机械、路径、工程、批量渲染和训练执行尚未接入。当前支持的实体和检查范围以 manifest 的逐项能力声明为准。
 
-## 当前任务记录：主动接口调查
+## 当前任务记录：右壳显示与具体关系分析
 
-- 目标：复现左壳实际漏项，默认从全部件开始调查，并让独立覆盖暴露遗漏。
-- 关键决定：保留 1.0～1.8 冻结算法和包；1.9 用独立结构候选承载新发现，几何、功能和审查状态分开；研究证据在 prepare 前固定，finalize/validate 离线重放。
-- 已完成：真实左壳截面漏项夹具与修复、连杆通用性样例、70 实例/38 资产初筛、11 项独立原截面清单及五份资料原件、故意遗漏检查、完整结构/未决索引、工作台定位与历史提示；`.2` 已校验并登记，发布回归 6/6、API 7/7、浏览 35 通过/1 历史跳过。
-- 未决：左壳 LS-06 及同轴部分大壁的用途/连接件/保持；左壳唇缘与窄槽、连杆中部长槽和凸缘尚未逐区独立验收；Onshape 固定机械修订内容未取得。
-- 下一步：按[源审查记录](interface-review/source-review.md)取得匹配 CAD/装配图，扩大逐区域标注；本轮发布与验证结果见[交付记录](interface-review/verification.md)。
+- 目标：修复右壳两个实际选孔位置的显示与详情，并为右壳及另一类无手写安装定义的部件形成具体、有证据的关系。
+- 关键决定：1.0～1.9 冻结；1.10 将已执行调查与具体安装假设分开，保留正式 Interface 资格边界。输入研究先冻结，构建和验证确定性重放；展示法向不改变源三角或测量。
+- 已完成：两目标独立截面复核、描边/源面分层隔离、按位置阅读界面、三条关系与五项实查、27 项源样例、删除关系及通用待办反例、既有资格保留；新包 `2.0.0-interface-relations.1` 已登记，旧 `.2` 保留。实际画面和验证见[本轮验收](interface-review/verification.md)。
+- 未决：右壳 Z 向台阶孔的具体对端；支承件另两孔的接收螺纹/螺母/嵌件；实际紧固件、保持、公差、材料和载荷。原左壳其他唇缘/槽/台阶及未审区域没有因此完成。
+- 下一步：取得匹配修订 CAD/装配图与实际紧固资料，沿五项实查的具体缺证继续；不以新增候选或 unknown 待办数量代替关系结果。

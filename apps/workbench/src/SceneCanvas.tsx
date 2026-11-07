@@ -3,9 +3,10 @@ import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { STLLoader } from 'three/addons/loaders/STLLoader.js';
 import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
-import type { CircularOpening, ConicalFeature, CylindricalFeature, FeaturePattern, GeometrySelection, LogicalHole, MechanicalFeature, Part, PlanarFeature, PrototypeData, SlotFeature } from './types';
+import type { CircularOpening, ConicalFeature, CylindricalFeature, FeaturePattern, GeometrySelection, LogicalHole, MechanicalFeature, Part, PlanarFeature, PrototypeData, SlotFeature, StructureCandidate } from './types';
 import { featuresFor, isAlternativeSupplement, openingGroupsFor, resolveGeometry, supplementalComponentEnabled } from './mechanics-model';
 import { disposeSupplementalScene, makeSupplementalScene, supplementalPosition, supplementalWorldBounds, type SupplementalRecord } from './supplement-scene';
+import { DISPLAY_CREASE_DEGREES, prepareSourceDisplayNormals, setSourceFacetShading } from './source-display-normals';
 import './scene.css';
 
 export interface CameraPose {
@@ -82,6 +83,7 @@ interface Runtime {
   contactShadow: THREE.Mesh;
   clippingPlane: THREE.Plane;
   selectedEdge: THREE.LineSegments | null;
+  analysisDisplay: { edges: boolean; triangles: boolean; facets: boolean };
   geometryOverlay: THREE.Group | null;
   peerGeometryOverlays: THREE.Group[];
   geometryLocalBounds: THREE.Box3 | null;
@@ -255,11 +257,30 @@ function presentation(runtime: Runtime, props: SceneProps) {
     runtime.selectedEdge = null;
   }
   const selected = props.selectedId ? runtime.records.get(props.selectedId) : null;
-  if (selected?.mesh.visible) {
-    const edges = new THREE.LineSegments(new THREE.EdgesGeometry(selected.mesh.geometry, 32), new THREE.LineBasicMaterial({ color: '#147d83', transparent: true, opacity: runtime.inspection?.translucentPartIds.has(selected.part.id) ? .12 : .5 }));
+  // Whole-mesh edges expose tessellation and source creases around complex
+  // openings. They belong to an explicit analysis view, never local selection.
+  if (selected?.mesh.visible && (runtime.analysisDisplay.edges || runtime.analysisDisplay.triangles)) {
+    const geometry = runtime.analysisDisplay.triangles ? new THREE.WireframeGeometry(selected.mesh.geometry) : new THREE.EdgesGeometry(selected.mesh.geometry, 32);
+    const edges = new THREE.LineSegments(geometry, new THREE.LineBasicMaterial({ color: '#147d83', transparent: true, opacity: runtime.inspection?.translucentPartIds.has(selected.part.id) ? .12 : .5, depthTest: true, depthWrite: false }));
     edges.renderOrder = 3;
     selected.mesh.add(edges);
     runtime.selectedEdge = edges;
+  }
+  const descriptor = resolveGeometry(props.data, props.selection ?? null);
+  const normalOwners = new Set([props.selectedId, ...(descriptor?.peers.map(item => item.ownerRef) ?? [])]);
+  for (const record of runtime.records.values()) {
+    // Background assets retain their raw facet normals until they are actually
+    // inspected. Preparing only the selected/related meshes avoids blocking
+    // initial scene loading on every asset in a large assembly.
+    if (normalOwners.has(record.part.id)) prepareSourceDisplayNormals(record.mesh.geometry);
+    setSourceFacetShading(record.mesh.geometry, runtime.analysisDisplay.facets);
+  }
+  if (host) {
+    host.dataset.meshEdges = runtime.selectedEdge ? runtime.analysisDisplay.triangles ? 'source_triangles' : 'source_creases' : 'hidden';
+    host.dataset.sourceNormalPolicy = runtime.analysisDisplay.facets ? 'source_facets' : 'edge_connected_angle_weighted';
+    host.dataset.sourceFacetMapping = 'identity_positions_and_facet_order';
+    host.dataset.displayCreaseDegrees = String(DISPLAY_CREASE_DEGREES);
+    host.dataset.sourceNormalScope = 'selected_and_related_parts';
   }
   setGeometryNormalsVisible(runtime, props.showGeometryNormals ?? false);
 }
@@ -326,12 +347,13 @@ function publishInspection(runtime: Runtime) {
   if (host) { host.dataset.inspectionActive = String(state.active); host.dataset.inspectionMode = state.mode; host.dataset.inspectionTranslucentParts = state.translucentPartIds.join(','); host.dataset.inspectionOwnerTranslucent = String(state.includesOwner); }
   if (!runtime.inspection || runtime.inspection.signature !== signature) { if (runtime.inspection) runtime.inspection.signature = signature; runtime.onInspectionChange(state); }
 }
-function inspectionOverlayDepth(runtime: Runtime, through: boolean) {
+function inspectionOverlayDepth(runtime: Runtime) {
   for (const overlay of [runtime.geometryOverlay, ...runtime.peerGeometryOverlays]) overlay?.traverse(object => {
     const drawable = object as THREE.Mesh<THREE.BufferGeometry, THREE.Material | THREE.Material[]>;
     for (const material of Array.isArray(drawable.material) ? drawable.material : drawable.material ? [drawable.material] : []) {
-      if (typeof material.userData.inspectionDepthTest !== 'boolean') material.userData.inspectionDepthTest = material.depthTest;
-      material.depthTest = through ? false : material.userData.inspectionDepthTest;
+      // Obstructing source parts are faded explicitly. The overlay still
+      // participates in depth testing, including in local and x-ray views.
+      material.depthTest = true;
     }
   });
 }
@@ -340,7 +362,7 @@ function restoreInspection(runtime: Runtime, props: SceneProps) {
   if (!previous) return;
   runtime.inspection = null;
   runtime.inspectionSuppressedSelection = [previous.selection.kind, previous.selection.id, previous.selection.ownerRef || ''].join('|');
-  applySourcePresentation(runtime, props); inspectionOverlayDepth(runtime, false);
+  applySourcePresentation(runtime, props); inspectionOverlayDepth(runtime);
   runtime.currentView = previous.previousView; runtime.viewDirection.copy(previous.previousDirection);
   runtime.flight = { position: new THREE.Vector3().fromArray(previous.previousCamera.position), target: new THREE.Vector3().fromArray(previous.previousCamera.target) };
   runtime.renderer.shadowMap.needsUpdate = true;
@@ -363,7 +385,7 @@ function inspectionSamples(runtime: Runtime, props: SceneProps, selection: Geome
       samples.push({ ownerRef, point: point.multiplyScalar(1 / 3) });
     }
   };
-  for (const participant of [{ ownerRef: descriptor.ownerRef, featureRefs: descriptor.featureRefs, openingRefs: descriptor.openingRefs, siteRefs: descriptor.siteRefs }, ...descriptor.peers]) {
+  for (const participant of [{ ownerRef: descriptor.ownerRef, featureRefs: descriptor.featureRefs, openingRefs: descriptor.openingRefs, siteRefs: descriptor.siteRefs, structureRefs: descriptor.structureRefs }, ...descriptor.peers]) {
     featuresFor(props.data, participant.featureRefs).forEach(feature => addTriangles(participant.ownerRef, feature.geometry.triangle_indices));
     for (const opening of props.data.analysis?.circular_openings?.filter(item => participant.openingRefs?.includes(item.id)) ?? []) {
       const vertices = opening.geometry.boundary_vertices;
@@ -371,6 +393,7 @@ function inspectionSamples(runtime: Runtime, props: SceneProps, selection: Geome
       samples.push({ ownerRef: participant.ownerRef, point: new THREE.Vector3().fromArray(opening.geometry.center) });
     }
     for (const site of props.data.analysis?.mounting_sites?.filter(item => participant.siteRefs?.includes(item.id)) ?? []) samples.push({ ownerRef: participant.ownerRef, point: new THREE.Vector3().fromArray(site.position) });
+    for (const item of props.data.analysis?.structure_candidates?.filter(item => participant.structureRefs?.includes(item.id) && item.owner_ref === participant.ownerRef) ?? []) addTriangles(participant.ownerRef, item.support_triangle_indices);
   }
   if (descriptor.passageRef) {
     const passage = props.data.analysis?.passage_hypotheses?.find(item => item.id === descriptor.passageRef);
@@ -438,7 +461,7 @@ function updateInspectionVisibility(runtime: Runtime, props: SceneProps, force =
   const result = inspection.contextOnly ? { blockers: new Set<string>(), blockedSamples: 0 } : visibilityObstructions(runtime, props, runtime.camera.position, targets);
   inspection.translucentPartIds = result.blockers;
   applySourcePresentation(runtime, props);
-  inspectionOverlayDepth(runtime, result.blockers.size > 0 || props.xray);
+  inspectionOverlayDepth(runtime);
   runtime.renderer.shadowMap.needsUpdate = true;
   const host = runtime.renderer.domElement.parentElement;
   if (host) { host.dataset.inspectionTargetSamples = String(targets.length); host.dataset.inspectionObstructedSamples = String(result.blockedSamples); }
@@ -536,7 +559,7 @@ function planarOverlay(feature: PlanarFeature, source: THREE.BufferGeometry, bou
   const group = new THREE.Group();
   const patch = sourceTrianglePatch(feature.geometry.triangle_indices, source, bounds, color);
   if (patch) group.add(patch);
-  const lineMaterial = new THREE.LineBasicMaterial({ color, transparent: true, opacity: 0.98, depthTest: false, depthWrite: false });
+  const lineMaterial = new THREE.LineBasicMaterial({ color, transparent: true, opacity: 0.98, depthTest: true, depthWrite: false });
   for (const loop of feature.geometry.boundary_loops) {
     const points = loop.map(point => new THREE.Vector3().fromArray(point));
     points.forEach(point => bounds.expandByPoint(point));
@@ -634,11 +657,26 @@ function openingOverlay(opening: CircularOpening, bounds: THREE.Box3, color: str
   return group;
 }
 
+function addStructurePatches(group: THREE.Group, structures: StructureCandidate[], source: THREE.BufferGeometry, bounds: THREE.Box3, color: string, alreadyDrawn: Set<number>) {
+  for (const item of structures) {
+    // Opening support triangles establish the rim's source identity, not an
+    // installation surface. Draw its actual boundary through openingRefs.
+    if (item.kind === 'circular_opening') continue;
+    const indices = item.support_triangle_indices.filter(index => !alreadyDrawn.has(index));
+    indices.forEach(index => alreadyDrawn.add(index));
+    const patch = sourceTrianglePatch(indices, source, bounds, color);
+    if (!patch) continue;
+    const wrapper = new THREE.Group(); wrapper.add(patch);
+    wrapper.userData.featureType = 'investigation_structure'; wrapper.userData.sourceTriangleCount = indices.length;
+    group.add(wrapper);
+  }
+}
+
 function presentGeometry(runtime: Runtime, props: SceneProps, selection = props.selection) {
   clearGeometryOverlay(runtime);
   const host = runtime.renderer.domElement.parentElement;
   if (host) {
-    for (const key of ['interfaceHighlight', 'highlightedInterface', 'observationHighlight', 'featureHighlight', 'holeHighlight', 'patternHighlight', 'siteHighlight', 'pinFitHighlight', 'mountHighlight', 'mountingInterfaceHighlight', 'slotHighlight', 'openingHighlight', 'passageHighlight', 'reviewHighlight', 'supplementHighlight', 'structureHighlight', 'reviewRegionHighlight', 'legacyGroupHighlight', 'legacyObservationHighlight', 'geometryAuthority', 'geometrySelectionKind', 'geometryFeatureTypes', 'geometryPeerOwners', 'selectedEntrySide', 'selectedEntryDirection']) host.dataset[key] = '';
+    for (const key of ['interfaceHighlight', 'highlightedInterface', 'observationHighlight', 'featureHighlight', 'holeHighlight', 'patternHighlight', 'siteHighlight', 'pinFitHighlight', 'mountHighlight', 'mountingInterfaceHighlight', 'installationHypothesisHighlight', 'slotHighlight', 'openingHighlight', 'passageHighlight', 'reviewHighlight', 'supplementHighlight', 'structureHighlight', 'reviewRegionHighlight', 'legacyGroupHighlight', 'legacyObservationHighlight', 'geometryAuthority', 'geometrySelectionKind', 'geometryFeatureTypes', 'geometryPeerOwners', 'selectedEntrySide', 'selectedEntryDirection']) host.dataset[key] = '';
     for (const key of ['highlightedFeatures', 'highlightedPlanes', 'planeFeatures', 'highlightedCylinders', 'highlightedCones', 'highlightedTriangles', 'highlightedSupportTriangles', 'highlightedSiteEntrances', 'highlightedEntryRings']) host.dataset[key] = '0';
     delete host.dataset.geometryWorldCenter; delete host.dataset.interfaceWorldCenter; delete host.dataset.observationWorldCenter;
   }
@@ -650,7 +688,8 @@ function presentGeometry(runtime: Runtime, props: SceneProps, selection = props.
   const openings = props.data.analysis?.circular_openings?.filter(item => selected.openingRefs?.includes(item.id)) ?? [];
   const passage = selected.passageRef ? props.data.analysis?.passage_hypotheses?.find(item => item.id === selected.passageRef) : undefined;
   const supplement = selected.supplementRef ? runtime.supplements.get(selected.supplementRef) : undefined;
-  const structure = selected.structureRef ? props.data.analysis?.structure_candidates?.find(item => item.id === selected.structureRef) : undefined;
+  const structures = props.data.analysis?.structure_candidates?.filter(item => item.owner_ref === selected.ownerRef && (item.id === selected.structureRef || selected.structureRefs?.includes(item.id))) ?? [];
+  const structure = structures[0];
   const region = selected.reviewRegionRef ? props.data.analysis?.review_regions?.find(item => item.id === selected.reviewRegionRef) : undefined;
   if (supplement && !supplementalComponentEnabled(props.data, supplement.component, props.showSupplemental === true, props.supplementReviewIds, props.activeConnectionAlternativeIds)) return;
   const contextOnly = !features.length && !slot && !openings.length && !passage && !supplement && selected.selection.kind === 'connection_review';
@@ -668,7 +707,8 @@ function presentGeometry(runtime: Runtime, props: SceneProps, selection = props.
   for (const feature of features) group.add(featureOverlay(feature, owner.mesh.geometry, bounds, '#d69529', selectedSites ? selectedSites.filter(site => site.feature_refs.includes(feature.id)).map(site => site.position) : patternEntries?.filter(entry => entry.refs.includes(feature.id)).map(entry => entry.point)));
   if (slot) group.add(slotOverlay(slot, bounds));
   openings.forEach(opening => group.add(openingOverlay(opening, bounds, '#d69529')));
-  if (structure || region) {
+  if (selected.hypothesisRef) addStructurePatches(group, structures, owner.mesh.geometry, bounds, '#d69529', new Set(features.flatMap(item => item.geometry.triangle_indices)));
+  if (structure && !selected.hypothesisRef || region) {
     const indices = structure?.support_triangle_indices || region!.triangle_indices;
     const source = new THREE.Group();
     const patch = sourceTrianglePatch(indices, owner.mesh.geometry, bounds, '#d69529');
@@ -678,7 +718,7 @@ function presentGeometry(runtime: Runtime, props: SceneProps, selection = props.
     // feature can be fitted. It does not synthesize a hole or contact surface.
     const points: THREE.Vector3[] = [];
     for (const axis of [new THREE.Vector3(1, 0, 0), new THREE.Vector3(0, 1, 0), new THREE.Vector3(0, 0, 1)]) points.push(center.clone().addScaledVector(axis, -.001), center.clone().addScaledVector(axis, .001));
-    const marker = new THREE.LineSegments(new THREE.BufferGeometry().setFromPoints(points), new THREE.LineBasicMaterial({ color: '#d69529', depthTest: false, depthWrite: false }));
+    const marker = new THREE.LineSegments(new THREE.BufferGeometry().setFromPoints(points), new THREE.LineBasicMaterial({ color: '#d69529', depthTest: true, depthWrite: false }));
     marker.renderOrder = 11; source.add(marker);
     bounds.expandByPoint(center.clone().addScalar(-.0015)); bounds.expandByPoint(center.clone().addScalar(.0015));
     source.userData.featureType = structure ? 'investigation_structure' : 'review_region';
@@ -749,6 +789,8 @@ function presentGeometry(runtime: Runtime, props: SceneProps, selection = props.
     for (const feature of peerFeatures) overlay.add(featureOverlay(feature, record.mesh.geometry, peerBounds, '#348eac', peerSites?.filter(site => site.feature_refs.includes(feature.id)).map(site => site.position)));
     const peerOpenings = props.data.analysis?.circular_openings?.filter(item => peer.openingRefs?.includes(item.id)) ?? [];
     peerOpenings.forEach(opening => overlay.add(openingOverlay(opening, peerBounds, '#348eac')));
+    const peerStructures = props.data.analysis?.structure_candidates?.filter(item => item.owner_ref === peer.ownerRef && peer.structureRefs?.includes(item.id)) ?? [];
+    addStructurePatches(overlay, peerStructures, record.mesh.geometry, peerBounds, '#348eac', new Set(peerFeatures.flatMap(item => item.geometry.triangle_indices)));
     overlay.userData.localBounds = peerBounds;
     record.mesh.add(overlay); runtime.peerGeometryOverlays.push(overlay);
     if (overlay.children.length) drawnPeers.add(peer.ownerRef);
@@ -756,7 +798,7 @@ function presentGeometry(runtime: Runtime, props: SceneProps, selection = props.
   runtime.geometryOwnerId = selected.ownerRef;
   if (host) {
     const drawn = group.children.filter(object => object.userData.featureType && object.children.length > 0);
-    const marker = ({ interface: 'interfaceHighlight', observation: 'observationHighlight', feature: 'featureHighlight', hole: 'holeHighlight', pattern: 'patternHighlight', site: 'siteHighlight', pin_fit: 'pinFitHighlight', mount: 'mountHighlight', mounting_interface: 'mountingInterfaceHighlight', slot: 'slotHighlight', opening: 'openingHighlight', passage: 'passageHighlight', connection_review: 'reviewHighlight', supplement: 'supplementHighlight', structure: 'structureHighlight', review_region: 'reviewRegionHighlight', legacy_group: 'legacyGroupHighlight', legacy_observation: 'legacyObservationHighlight' } as const)[selected.selection.kind];
+    const marker = ({ interface: 'interfaceHighlight', observation: 'observationHighlight', feature: 'featureHighlight', hole: 'holeHighlight', pattern: 'patternHighlight', site: 'siteHighlight', pin_fit: 'pinFitHighlight', mount: 'mountHighlight', mounting_interface: 'mountingInterfaceHighlight', installation_hypothesis: 'installationHypothesisHighlight', slot: 'slotHighlight', opening: 'openingHighlight', passage: 'passageHighlight', connection_review: 'reviewHighlight', supplement: 'supplementHighlight', structure: 'structureHighlight', review_region: 'reviewRegionHighlight', legacy_group: 'legacyGroupHighlight', legacy_observation: 'legacyObservationHighlight' } as const)[selected.selection.kind];
     host.dataset[marker] = drawn.length ? selected.selection.id : '';
     if (selected.selection.kind === 'interface') host.dataset.highlightedInterface = host.dataset.interfaceHighlight;
     host.dataset.geometryAuthority = drawn.length ? selected.authority : '';
@@ -846,7 +888,7 @@ function focusGeometry(runtime: Runtime, props: SceneProps, selection?: Geometry
   }
   if (!best) return;
   runtime.inspection.translucentPartIds = best.blockers;
-  applySourcePresentation(runtime, props); inspectionOverlayDepth(runtime, best.blockers.size > 0 || props.xray);
+  applySourcePresentation(runtime, props); inspectionOverlayDepth(runtime);
   runtime.viewDirection.copy(best.direction); runtime.flight = { target, position: best.position };
   publishInspection(runtime);
   const host = runtime.renderer.domElement.parentElement;
@@ -881,6 +923,9 @@ const SceneCanvas = forwardRef<SceneHandle, SceneProps>(function SceneCanvas(pro
   const [error, setError] = useState<string | null>(null);
   const [inspectionNotice, setInspectionNotice] = useState<InspectionState | null>(null);
   const [missingCount, setMissingCount] = useState(0);
+  const [analysisDisplay, setAnalysisDisplay] = useState({ edges: false, triangles: false, facets: false });
+  const analysisDisplayRef = useRef(analysisDisplay);
+  analysisDisplayRef.current = analysisDisplay;
 
   useImperativeHandle(ref, () => ({
     fitAll() {
@@ -1022,7 +1067,7 @@ const SceneCanvas = forwardRef<SceneHandle, SceneProps>(function SceneCanvas(pro
     const runtime: Runtime = {
       scene, camera, renderer, controls, records: new Map(), supplements: new Map(), center: new THREE.Vector3(), bounds: new THREE.Box3(),
       grid, floor, contactShadow, clippingPlane: new THREE.Plane(new THREE.Vector3(0, -1, 0), 0),
-      selectedEdge: null, geometryOverlay: null, peerGeometryOverlays: [], geometryLocalBounds: null, geometryAxis: null, geometryOwnerId: null,
+      selectedEdge: null, analysisDisplay: analysisDisplayRef.current, geometryOverlay: null, peerGeometryOverlays: [], geometryLocalBounds: null, geometryAxis: null, geometryOwnerId: null,
       currentView: 'iso', viewDirection: ISO_DIRECTION.clone(), flight: null, width: 1, height: 1, groundTarget: 0, ready: false, disposed: false,
       inspection: null, inspectionSuppressedSelection: null, onInspectionChange: state => { setInspectionNotice(state); propsRef.current.onInspectionChange?.(state); },
     };
@@ -1317,6 +1362,11 @@ const SceneCanvas = forwardRef<SceneHandle, SceneProps>(function SceneCanvas(pro
 
   useEffect(() => {
     const runtime = runtimeRef.current;
+    if (runtime?.ready) { runtime.analysisDisplay = analysisDisplay; presentation(runtime, propsRef.current); }
+  }, [analysisDisplay]);
+
+  useEffect(() => {
+    const runtime = runtimeRef.current;
     if (runtime?.ready) { if (!props.selection) restoreInspection(runtime, props); presentGeometry(runtime, props); }
   }, [props.selection, props.data, props.showSupplemental, props.supplementReviewIds, props.activeConnectionAlternativeIds]);
 
@@ -1337,6 +1387,12 @@ const SceneCanvas = forwardRef<SceneHandle, SceneProps>(function SceneCanvas(pro
 
   return <div className="scene-canvas" ref={hostRef} data-scene-ready={load.ready && !error ? 'true' : 'false'}>
     <div className="scene-soft-glow" aria-hidden="true" />
+    {load.ready && !error && <details className="scene-analysis-tools"><summary>显示分析</summary>
+      <label><input type="checkbox" checked={analysisDisplay.edges} onChange={event => setAnalysisDisplay(value => ({ ...value, edges: event.target.checked }))} />整件特征边线</label>
+      <label><input type="checkbox" checked={analysisDisplay.triangles} onChange={event => setAnalysisDisplay(value => ({ ...value, triangles: event.target.checked }))} />原始三角边</label>
+      <label><input type="checkbox" checked={analysisDisplay.facets} onChange={event => setAnalysisDisplay(value => ({ ...value, facets: event.target.checked }))} />原始面片法向</label>
+      <small>展示法向保留 {DISPLAY_CREASE_DEGREES}° 锐边。原始顶点、三角顺序与测量保持一致。</small>
+    </details>}
     {inspectionNotice?.active && <div className={`scene-inspection-notice ${inspectionNotice.mode === 'through_geometry' ? 'is-through' : ''}`} role="status"><span>局部查看{inspectionNotice.mode === 'through_geometry' ? ` · 透视查看（临时淡化 ${inspectionNotice.translucentPartIds.length} 件）` : inspectionNotice.mode === 'context_only' ? ' · 局部机制待定位' : ''}</span><button type="button" onClick={() => { const runtime = runtimeRef.current; if (runtime) restoreInspection(runtime, propsRef.current); }}>恢复视图</button></div>}
     <svg className="scene-leaders" aria-hidden="true">
       {labels.map(part => <line key={part.id} ref={element => { if (element) leaderRefs.current.set(part.id, element); else leaderRefs.current.delete(part.id); }} className={props.selectedId === part.id ? 'is-selected' : ''} />)}

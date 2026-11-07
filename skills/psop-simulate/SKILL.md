@@ -20,7 +20,9 @@ python -B skills/psop-simulate/scripts/psop_simulate.py doctor
 python -B skills/psop-simulate/scripts/psop_simulate.py query --help
 ```
 
-有功能定义的受控夹具使用显式 definition 输入；真实设备使用已验证 DKP 与具体 Part。1.4～1.8 可读取 Build 已发布的安装孔位、功能说明、组合规则和参考安装映射，固定其来源与适用配置；这是静态设备知识查询，不宣称穷尽新构型的安装方案。1.3 或未提供功能说明的部件仍返回几何及缺项，不把空结果称为无法安装。合成定义仅验证规则，不作为 Microduck 安装许可。
+有功能定义的受控夹具使用显式 definition 输入；真实设备使用已验证 DKP 与具体 Part。1.4～1.10 可读取 Build 已发布的安装孔位、功能说明、组合规则和参考安装映射，固定其来源与适用配置；这是静态设备知识查询，不宣称穷尽新构型的安装方案。1.3 或未提供功能说明的部件仍返回几何及缺项，不把空结果称为无法安装。合成定义仅验证规则，不作为 Microduck 安装许可。
+
+1.10 查询另返回 installation_hypotheses、investigation_records 与独立关系接受范围。具体对端、机制、有限组距/区段与证据齐全时可返回 installation_hypotheses 状态，仍是 project_inference；functional_interfaces 保持空、execution_performed=false。读到有依据假设不表示已执行装配、已保持或工程通过；investigated+insufficient 表示已实际检查但仍缺所列证据，不等同未调查，也不能据此补造连接。
 
 1.6 还读取全对筛查、逐对连接审查、有限开口／内腔和补全示意。查询需说明双方局部位置、定位与保持角色、中间件、运动归属、替代解释及缺项。厂商通用资料、项目推断及用户原话分别保留；小柱用途不能延续旧用户确认标签。synthetic 补全螺钉或压盖不是已确认设备物料，其显示和展开也不创建实际接合状态。
 

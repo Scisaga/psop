@@ -1,0 +1,56 @@
+/* The selected physical place is the reading context. Source arrays remain
+   available in disclosures, with one scrollbar owned by the inspector. */
+.physical-structure-inspector{color:#486d70;font-size:11px;line-height:1.75}
+.structure-work-status{font-size:10px;line-height:1.85;color:#87927c;margin:8px 0}
+.physical-structure-inspector .detail-section{padding-top:16px;padding-bottom:16px}
+.physical-structure-inspector .detail-section>h3{color:#31565b;font-size:12px;line-height:1.7;align-items:flex-start;gap:8px}
+.physical-structure-inspector .detail-section>h3>span{flex-shrink:0;font-size:10px}
+.physical-location-picker{display:grid;gap:7px;color:#68888a;font-size:10px}
+.physical-location-picker>select{width:100%;min-width:0;max-width:100%;padding:10px 27px 10px 9px;border:1px solid #cbdedb;border-radius:5px;background:#fff;color:#315f64;font:inherit;font-size:11px;line-height:1.8}
+.physical-location-picker>select:focus-visible{outline:2px solid #187e83;outline-offset:2px}
+.physical-location-list{display:grid;gap:0;margin-top:10px}
+.physical-location-list>button{display:flex;align-items:center;gap:8px;padding:11px 1px;width:100%;text-align:left;color:#698e8e;border-bottom:1px solid #e6eeeb}
+.physical-location-list>button>span{min-width:0;flex:1}
+.physical-location-list strong{display:block;font-size:11px;font-weight:500;color:#416c70;line-height:1.7}
+.physical-location-list small{display:block;font-size:10px;color:#829a95;margin-top:2px}
+.physical-location-list>button:hover{background:#f3f9f7}
+.structure-location-description{display:grid;gap:3px;margin:9px 0 13px;font-size:11px;color:#5c7c7d;line-height:1.8}
+.structure-location-description>strong{font-size:10px;font-weight:500;color:#829792}
+.structure-location-description>span{display:block;font-size:10px;color:#819691}
+.structure-key-metrics{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:12px 0 17px;padding:12px 0;border-top:1px solid #dce8e4;border-bottom:1px solid #dce8e4}
+.structure-key-metrics>div{min-width:0}.structure-key-metrics dt{font-size:10px;color:#7e9791}.structure-key-metrics dd{margin:5px 0 0;font-size:16px;line-height:1.4;color:#31777c;font-variant-numeric:tabular-nums}.structure-key-metrics dd>small{font-size:10px;color:#809991}
+.structure-composition>h4,.structure-connection-context>h4{margin:16px 0 7px;color:#315f64;font-size:11px;font-weight:600}
+.structure-composition>p{font-size:11px;color:#6b8580;line-height:1.85;margin:7px 0}
+.structure-composition>.field-help{font-size:10px;color:#8c947b;margin-top:10px}
+.structure-composition>.structure-wall-diameters{font-size:10px;color:#628580;margin:5px 0 8px;font-variant-numeric:tabular-nums}
+.structure-composition-members{margin:9px 0}.structure-composition-members .mechanics-detail-link{padding-inline:8px}
+.structure-member{display:flex;align-items:center;gap:8px;width:100%;padding:9px 8px;text-align:left;color:#69938d;border-left:2px solid #dce9e3;border-bottom:1px solid #e8eeeb;background:#fcfefd}
+.structure-member>span{flex:1;min-width:0}.structure-member strong{display:block;font-weight:500;font-size:11px;color:#557b75;line-height:1.7}.structure-member small{display:block;font-size:10px;color:#8b9d91;margin-top:3px}
+.structure-member.is-selected{border-left-color:#187e83;background:#edf7f4}.structure-member.is-selected strong{color:#286e73}.structure-member:hover{background:#f1f8f5}
+.structure-known-installation{display:flex;align-items:center;gap:8px;width:100%;padding:11px 8px;margin:10px 0;text-align:left;border:1px solid #d9e7df;border-radius:5px;color:#729183;background:#f7fbf7}
+.structure-known-installation>span{flex:1;min-width:0}.structure-known-installation strong{font-size:11px;display:block;font-weight:500;color:#4c7967}.structure-known-installation small{font-size:10px;display:block;color:#8c9e88;margin-top:4px}
+.structure-technical{margin:13px 0;border:1px solid #dde7e3;border-radius:5px;background:#fcfefd;min-width:0}
+.structure-technical>summary{cursor:pointer;list-style:revert;padding:11px 9px;font-size:10px;color:#6e8c82;line-height:1.7}
+.structure-technical[open]>summary{border-bottom:1px solid #e1eae5}.structure-technical-body{padding:10px;min-width:0}.structure-technical-body .mechanics-source-link{padding-inline:0}
+.raw-geometry-disclosure{margin:13px 18px 18px}.raw-geometry-disclosure>summary{display:flex;align-items:center;gap:5px}.raw-geometry-disclosure>summary>span{font-size:9px;color:#98aaa0;margin-left:auto}
+.raw-geometry-records .geometry-tabs{display:grid;grid-template-columns:1fr 1fr;overflow:visible;gap:4px;border-bottom:0}.raw-geometry-records .geometry-tabs>button{border:1px solid #dfe9e4;border-radius:4px;white-space:normal;text-align:left;padding:8px;font-size:10px}.raw-geometry-records .geometry-tabs>button.active{background:#edf7f2;border-color:#82b7a6}
+.raw-geometry-records .geometry-record-list,.raw-geometry-records .mechanics-interface-list,.physical-structure-inspector .investigation-regions{max-height:none;overflow:visible;padding-right:0}
+.raw-geometry-records .detail-section{padding:12px 9px}.raw-geometry-records .mechanics-object-id{font-size:9px}
+.installation-hypothesis{margin:11px 0;border:1px solid #e3d6b6;border-radius:6px;background:#fff;overflow:hidden;min-width:0}
+.installation-hypothesis.is-active{border-color:#bd9d56;box-shadow:inset 3px 0 #bc9848}
+.hypothesis-card-heading{display:flex;align-items:flex-start;gap:8px;width:100%;padding:12px 10px;color:#a28442;text-align:left;background:#fcfaf4}
+.hypothesis-card-heading>svg{flex-shrink:0;margin-top:3px}.hypothesis-card-heading>span{min-width:0;flex:1}.hypothesis-card-heading strong{display:block;color:#6f653f;font-size:12px;font-weight:600;line-height:1.7}.hypothesis-card-heading small{display:block;margin-top:4px;color:#a2936b;font-size:10px;line-height:1.7}
+.hypothesis-card-heading:hover{background:#f9f4e8}.hypothesis-card-heading:focus-visible,.hypothesis-peer:focus-visible{outline:2px solid #187e83;outline-offset:-3px}
+.hypothesis-body>summary{cursor:pointer;font-size:10px;color:#8b855e;padding:10px;border-top:1px solid #eee6d3}.hypothesis-body[open]>summary{border-bottom:1px solid #eee6d3}
+.hypothesis-details{padding:0 11px 12px;min-width:0}.hypothesis-mechanism{font-size:11px;line-height:1.85;color:#556f68;margin:12px 0}
+.hypothesis-participants{margin:11px 0}.hypothesis-peer.installation-peer{display:flex;align-items:flex-start;gap:8px;width:100%;text-align:left;padding:10px 8px;border:1px solid #d9e6e7;border-radius:5px;background:#f3f9fa;color:#65949e;margin:7px 0}
+.hypothesis-peer>span{flex:1;min-width:0}.hypothesis-peer strong{display:block;font-size:11px;color:#3d7480;font-weight:600;line-height:1.7}.hypothesis-peer small{display:block;font-size:10px;color:#789ba1;margin-top:3px;line-height:1.7}.hypothesis-peer>svg{flex-shrink:0;margin-top:3px}.hypothesis-peer:hover{border-color:#8bb7bf;background:#eaf5f7}
+.hypothesis-roles{margin:14px 0}.hypothesis-roles>div{padding:9px 0;border-top:1px solid #e5ebe5}.hypothesis-roles dt{display:flex;justify-content:space-between;gap:8px;font-size:11px;color:#54766c;font-weight:600}.hypothesis-roles dt>span{font-size:9px;font-weight:400;color:#9b8a58}.hypothesis-roles dd{margin:5px 0 0;font-size:11px;color:#73867a;line-height:1.85}.hypothesis-roles [data-role-status=unknown] dt>span{color:#a49372}
+.hypothesis-statements,.hypothesis-evidence{margin:14px 0;min-width:0}.hypothesis-statements>h4,.hypothesis-evidence>h4{font-size:11px;color:#54756a;font-weight:600;margin:0 0 7px}.hypothesis-statements ul{padding-left:16px;margin:0}.hypothesis-statements li{font-size:11px;color:#788a7b;line-height:1.85;margin:6px 0;overflow-wrap:anywhere}.hypothesis-statements.is-open{border-top:1px solid #e7ddc5;padding-top:12px}.hypothesis-statements.is-open>h4{color:#99844f}.hypothesis-statements.is-open li{color:#9c8c68}
+.hypothesis-evidence>div{padding:8px 0;border-top:1px solid #e6ece5}.hypothesis-evidence p{font-size:11px;color:#6e8778;margin:0;line-height:1.85;overflow-wrap:anywhere}.hypothesis-sources .mechanics-source-link{font-size:10px;padding:8px 0;border-top:0}.hypothesis-sources:empty{display:none}
+.hypothesis-measurements .mechanics-metrics{font-size:10px}.hypothesis-measurements .mechanics-metrics>div{align-items:flex-start}.hypothesis-measurements .mechanics-metrics dt{max-width:62%;white-space:normal;flex-shrink:1}.hypothesis-measurements>.field-help{margin:0;padding:0 10px 10px}
+.hypothesis-compact{padding:1px 10px 10px}.hypothesis-compact>p{font-size:11px;color:#7c8773;line-height:1.85;margin:8px 0}.hypothesis-compact>button{display:flex;gap:4px;align-items:center;font-size:10px;color:#93834e;padding:0}
+.hypothesis-compact>.hypothesis-compact-peer{color:#4e8792;margin:7px 0 10px}
+.investigation-performed-action{padding:8px 0;border-bottom:1px solid #e6ece5}.investigation-performed-action>strong{font-size:10px;color:#6f8b7e;font-weight:600}.investigation-performed-action>p{font-size:10px;line-height:1.85;color:#81917e;margin:5px 0}.structure-investigated-result>p,.structure-investigated-result li{font-size:11px;line-height:1.85;color:#7a8b79}.structure-investigated-result>h4{font-size:11px;color:#9e8858;font-weight:500;margin:12px 0 5px}.structure-investigated-result>ul{padding-left:16px;margin:5px 0}
+.mounting-hypotheses>h3>span{color:#a48c58}.mounting-unexplained>.field-help{font-size:11px}.mounting-unexplained .structure-technical{margin-bottom:10px}.mounting-unexplained .investigation-record>summary{color:#8d835f}
+@media(max-width:650px){.physical-location-picker>select{font-size:12px}.hypothesis-card-heading strong{font-size:13px}.physical-structure-inspector .detail-section>h3{font-size:13px}.hypothesis-details,.hypothesis-compact{padding-inline:10px}}

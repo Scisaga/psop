@@ -141,6 +141,42 @@ Simulate 可读取这些有限配合及部分安装定义，保持规则、实�
 
 对端提议只在源 qpos0 下比较有限轴距、方向及轴向间隔，保持 geometry_only；不建立保持、运动归属或连接件规格。不适用尺度/几何以及没有提议都有公开限制；没有参考对端不代表不能在其他构型安装。
 
+## 1.10 已执行调查与具体安装假设
+
+`psop.interface-investigation/1.1` 保留 1.0 的独立源截面与原件锁，增加冻结的
+`relation_studies` 和 `expected_relations`。旧 1.9 的 Schema、原输入与投影不变；
+新的输入和结果只能用新剖面发布。无研究输入的 prepare 仍能发现全部件几何，
+但不会自动将它们标成已调查。
+
+| 发布字段 | 合同与资格边界 |
+| --- | --- |
+| `investigation_records` | 已执行的方法、实际读取的原件、局部结构、具体发现/缺项与停止理由；work_status=investigated，证据状态独立为 insufficient 或 supported_hypothesis |
+| `installation_hypotheses` | 具体双方、独立结构/特征/开口与局部坐标、共同源构型、机制、定位/保持/运动/限位角色、有限尺寸与全部组距、支持/反对证据、替代方案、第三件与未知条件 |
+| `relationship_coverage` | 冻结独立关系期望及匹配/缺项；假设、安装定义、合格 Interface 和工程确认分别计数，不作为整件完成率 |
+| 结构候选扩展 | work_status、investigation_refs、hypothesis_refs；几何 reviewed 不自动完成用途调查，installation_hypothesis_available 不等于已安装/已保持 |
+
+当前可执行解释器是有界螺钉夹持假设：源 SHA 和独立原三角截面定位双方完整有限
+内壁，在同一来源配置下一一比较轴距、有限壁端间隔、通过/接收孔径及整个孔组
+的全部两两距离。必须另有实际查阅的机制证据与反证/替代解释；仅邻近、部件名
+或同 body 不足以生成假设。阈值用于源模型一致性，不是制造公差。
+
+该记录保持 project_inference、supported_hypothesis；必要螺钉属于
+unconfirmed 中间件，不生成已安装的实体。保持、活动区、实际接合、工程验收、
+连续路径和真实物料仍按各自缺证保存。安装假设不进入 qualified Interface、
+interface_connections 或正式 mounting_interfaces，不改变其资格要求。
+
+结果接受检查直接读取冻结 expected_relations，要求对应的具体双方、机制、
+有限结构、测量、分角色解释和证据；删除应有关系或只留下通用 next_actions，
+即使重算统计和封装摘要也失败。确定性重放另作完整性检查，不代替此接受要求。
+Simulate 的静态查询返回同一组假设与调查记录，execution_performed=false，
+functional_interfaces 仍空；Compile 尚无执行器，不能将这些假设用作确定的
+紧固/承载监督标签。
+
+Microduck 新输入为 `device-materials/interface-review/microduck-relations.json`，
+旧 `microduck-review.json` 保留 1.0 的历史语义。该输入的新增设备知识与通用
+解释器分开验证；尚未有依据的右壳 Z 向台阶孔及支承件另一组孔仍有具体调查
+记录并保持 insufficient。
+
 ## 参数化方式与装配方案
 
 详细语义统一引用[原子特征、参数化接口与装配方案](../../../docs/architecture/assembly-interfaces.md)。带功能依据的能力由独立共享 assembly 合同描述：稳定原子孔/角色、Interface/mode、S 选择约束、互补角色、连接件、共同构型、局部路径与四维判断。

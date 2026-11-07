@@ -1,4 +1,37 @@
-# Microduck 源模型独立标注
+# Microduck 源模型与连接实查
+
+## 1.10：右外壳与横滚轴承支承件
+
+2026-11-07。当前冻结输入为 [microduck-relations.json](../../../device-materials/interface-review/microduck-relations.json)，继承下方原 1.9 独立标注，新增两处右壳显示目标以及关系两端的原始三角截面。完整研究原文为 [connection-studies.md](../../../device-materials/interface-review/references/connection-studies.md)。
+
+右壳身份由固定 XML 的 `trunk_base/geom[2]` visual、CSV 的 `right_shell` 与 `SRC-000033.stl` 对应为 `part:microduck:9d70b219a5533bf1`。用户提供的坐标用于独立定位及验收，通用解释器不按这些名称或坐标发现关系。
+
+两处显示目标独立于 Build 检测器重新执行原始三角与平面相交：
+
+| 标注 | 源局部截面 | 内壁直径 | 原三角 | 最大半径残差 |
+| --- | --- | --- | ---: | ---: |
+| RS-DISPLAY-X | X=-2.5，Y=42，Z=52.5 mm | 1.6 mm | 144 | 0.760 μm |
+| RS-DISPLAY-Z | X=-25.5，Y=-9.5，Z=41.53 mm | 2.2 mm | 180 | 1.047 μm |
+
+两者均闭合且源法向朝向内壁。它们不是两个已确认接口，残差不是制造公差。新输入的全部 27 个有限内壁截面已用原独立复核器实际检查：
+
+```powershell
+python -B device-materials/interface-review/independent_sections.py --annotations device-materials/interface-review/microduck-relations.json
+```
+
+实际查阅了材料 ZIP 的设备说明、模型 README、部件索引、操作与维修说明、HAT C1 板级说明及 CSV，并查看官方整机原始照片。模型索引不是机械 BOM，HAT 清单不提供壳体紧固件；照片中目标内部被遮挡且未绑定 STL 修订。另查看已捕获的 ROBOTIS 装配/舵盘螺钉原图并重新访问官方入口。Onshape workspace 仍未取得内容，下载入口未取得尺寸 PDF，均未记为已读 CAD/图纸。
+
+| 实际部位 | 具体判断 | 依据及确认边界 |
+| --- | --- | --- |
+| 右壳 Y/Z 四孔 PCD 12 mm | 与颈部舵机对应四孔的螺钉夹持假设 | Ø2.2/1.6 mm、共同参考构型全部组距、约 0.0785 mm 轴距、约 0.6 mm 有限间隔及厂商一般装配图；实际螺钉、螺纹、输出活动区归属及所用孔数未确认 |
+| 右壳 Y=42 / Z=52.5 mm | 左壳通过孔至右壳接收孔的闭壳螺钉假设 | Ø2.2/1.6 mm、约 0.8 mm 有限间隔；单孔不足以说明整壳抗转，头部承座、长度和实际保持仍缺证 |
+| 右壳 X=-25.5 / Y=-9.5 mm 的 Z 向台阶 | 已调查，关系目标未完成 | Ø2.2 mm 壁和 Ø5 mm 部分扩口保留；未找到明确有限对端及逐孔装配依据，不并入其他假设 |
+| 横滚轴承支承件 16 mm 双孔 | 与对应舵机壳体双孔的螺钉夹持假设 | Ø2.2/2 mm、有限壁长约 1/23 mm、共同位姿及厂商框架图；不确认保持、载荷、最少用孔数 |
+| 同支承件 18 mm 双孔 | 已调查，仍缺承接件证据 | 对应 yaw2roll Ø2.05 mm 孔、约 0.2 mm 间隔，双方接近通过孔，缺螺纹/螺母/嵌件资料 |
+
+另排除了“Ø19 mm 大孔直接承座 Ø22 mm 轴承外圈”的解释：尺寸不互补，名称和同轴不能证明压配或保持。上述有依据的假设与已有安装定义分别发布；定位、保持、运动和限位分别保存状态。整件、整机和未标注区域没有因此完成调查。
+
+## 1.9 原始独立标注（历史范围）
 
 本轮标注输入为 [microduck-review.json](../../../device-materials/interface-review/microduck-review.json)。它由隔离源 STL 的多视图审阅和原始三角平面截面建立，没有导入 Build 提取器，也没有把提取器结果复制为应检分母。
 

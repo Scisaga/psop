@@ -8,3 +8,4 @@ device-materials/oomwoo-official-materials.zip filter=lfs diff=lfs merge=lfs -te
 /device-materials/interface-review/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 /device-materials/interface-review/references/** -whitespace
 /skills/psop-build/schemas/*1.9.schema.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/skills/psop-build/schemas/*1.10.schema.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

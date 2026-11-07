@@ -6,13 +6,15 @@ export interface GeometryDescriptor {
   authority: 'geometry_only' | 'historical_geometry' | 'mechanism_candidate' | 'user_asserted' | 'project_inferred' | 'reference_assembly' | 'illustrative_unconfirmed';
   ownerRef: string;
   featureRefs: string[];
-  peers: { ownerRef: string; featureRefs: string[]; siteRefs?: string[]; openingRefs?: string[] }[];
+  peers: { ownerRef: string; featureRefs: string[]; siteRefs?: string[]; openingRefs?: string[]; structureRefs?: string[] }[];
   siteRefs?: string[];
   slotRef?: string;
   openingRefs?: string[];
   passageRef?: string;
   supplementRef?: string;
   structureRef?: string;
+  structureRefs?: string[];
+  hypothesisRef?: string;
   reviewRegionRef?: string;
   contextPartRefs: string[];
   title: string;
@@ -29,7 +31,7 @@ export const mountingRecordInferred = (item: { status: string; assertion_refs: s
 export const mountingRuleSummary = (item: MountingInterface) => item.selection_rule.status === 'unknown' || item.selection_rule.min_count === null
   ? '选用数量与组合规则未确认'
   : `${item.selection_rule.same_side ? '同侧' : ''}至少 ${item.selection_rule.min_count} 个${item.selection_rule.require_adjacent_pair ? '，包含一对允许的相邻孔位' : ''}`;
-export const installationSelection = (selection: GeometrySelection | null) => !!selection && ['pin_fit', 'site', 'mount', 'mounting_interface', 'interface', 'connection_review', 'supplement'].includes(selection.kind);
+export const installationSelection = (selection: GeometrySelection | null) => !!selection && ['installation_hypothesis', 'pin_fit', 'site', 'mount', 'mounting_interface', 'interface', 'connection_review', 'supplement'].includes(selection.kind);
 export const connectionReviewsFor = (data: PrototypeData, ownerRef: string) => data.analysis?.connection_reviews?.filter(item => item.participants.some(participant => participant.part_ref === ownerRef)) ?? [];
 /** Historical profiles have no usage discriminator; retain their explicit alternative scope. */
 export function isAlternativeSupplement(data: PrototypeData, component: SupplementalComponent) {
@@ -103,6 +105,16 @@ export function resolveGeometry(data: PrototypeData, selection: GeometrySelectio
   const analysis = data.analysis;
   if (!analysis || !selection) return null;
   const base = { selection, authority: 'geometry_only' as const, peers: [], contextPartRefs: [] };
+  if (selection.kind === 'installation_hypothesis') {
+    const hypothesis = analysis.installation_hypotheses?.find(item => item.id === selection.id);
+    const participant = hypothesis?.participants.find(item => item.part_ref === selection.ownerRef) || hypothesis?.participants[0];
+    if (!hypothesis || !participant) return null;
+    return { ...base, authority: 'project_inferred', ownerRef: participant.part_ref,
+      featureRefs: participant.feature_refs, openingRefs: participant.opening_refs, structureRefs: participant.structure_refs,
+      hypothesisRef: hypothesis.id,
+      peers: hypothesis.participants.filter(item => item.part_ref !== participant.part_ref).map(item => ({ ownerRef: item.part_ref, featureRefs: item.feature_refs, openingRefs: item.opening_refs, structureRefs: item.structure_refs })),
+      contextPartRefs: hypothesis.participants.map(item => item.part_ref), title: `${hypothesis.title} · 待验证假设` };
+  }
   if (selection.kind === 'structure') {
     const candidate = analysis.structure_candidates?.find(item => item.id === selection.id);
     return candidate ? { ...base, ownerRef: candidate.owner_ref, featureRefs: [], structureRef: candidate.id,
@@ -205,7 +217,7 @@ export function descriptorFeatures(data: PrototypeData, descriptor: GeometryDesc
 }
 
 export function routeSelection(params: URLSearchParams): GeometrySelection | null {
-  for (const [key, kind] of [['structure', 'structure'], ['reviewRegion', 'review_region'], ['pinFit', 'pin_fit'], ['review', 'connection_review'], ['supplement', 'supplement'], ['opening', 'opening'], ['passage', 'passage'], ['site', 'site'], ['mount', 'mount'], ['mountingInterface', 'mounting_interface'], ['slot', 'slot'], ['observation', 'observation'], ['pattern', 'pattern'], ['hole', 'hole'], ['feature', 'feature'], ['group', 'legacy_group'], ['legacyObservation', 'legacy_observation'], ['interface', 'interface']] as const) {
+  for (const [key, kind] of [['hypothesis', 'installation_hypothesis'], ['structure', 'structure'], ['reviewRegion', 'review_region'], ['pinFit', 'pin_fit'], ['review', 'connection_review'], ['supplement', 'supplement'], ['opening', 'opening'], ['passage', 'passage'], ['site', 'site'], ['mount', 'mount'], ['mountingInterface', 'mounting_interface'], ['slot', 'slot'], ['observation', 'observation'], ['pattern', 'pattern'], ['hole', 'hole'], ['feature', 'feature'], ['group', 'legacy_group'], ['legacyObservation', 'legacy_observation'], ['interface', 'interface']] as const) {
     const id = params.get(key);
     if (id) return { kind, id, ownerRef: params.get('part') || undefined };
   }
@@ -213,5 +225,5 @@ export function routeSelection(params: URLSearchParams): GeometrySelection | nul
 }
 
 export function selectionQueryKey(selection: GeometrySelection): string {
-  return selection.kind === 'review_region' ? 'reviewRegion' : selection.kind === 'pin_fit' ? 'pinFit' : selection.kind === 'legacy_group' ? 'group' : selection.kind === 'legacy_observation' ? 'legacyObservation' : selection.kind === 'mounting_interface' ? 'mountingInterface' : selection.kind === 'connection_review' ? 'review' : selection.kind;
+  return selection.kind === 'installation_hypothesis' ? 'hypothesis' : selection.kind === 'review_region' ? 'reviewRegion' : selection.kind === 'pin_fit' ? 'pinFit' : selection.kind === 'legacy_group' ? 'group' : selection.kind === 'legacy_observation' ? 'legacyObservation' : selection.kind === 'mounting_interface' ? 'mountingInterface' : selection.kind === 'connection_review' ? 'review' : selection.kind;
 }

@@ -142,13 +142,13 @@ def document_inputs(review, records, root: Path, published=False):
     return result
 
 
-def capture_input(scene, root: Path, path: Path | None, supporting_paths=None):
+def capture_input(scene, root: Path, path: Path | None, supporting_paths=None, *, validator=None):
     if path is None:
         return None
     raw = path.read_bytes()
     if not raw or len(raw) > 16*1024*1024:
         raise ValueError("Investigation input must be nonempty and bounded to 16 MiB")
-    value = validate_input(json.loads(raw), scene)
+    value = (validator or validate_input)(json.loads(raw), scene)
     target = root / SOURCE_PATH
     target.parent.mkdir(parents=True, exist_ok=True)
     target.write_bytes(raw)

@@ -304,7 +304,8 @@ export default function App() {
     const analysis = data.analysis;
     const ownerName = (id: string) => data.parts.find(part => part.id === id)?.name || id;
     const records: { selection: GeometrySelection; title: string; detail: string }[] = [
-      ...(analysis.structure_candidates ?? []).map(item => ({ selection: { kind: 'structure' as const, id: item.id, ownerRef: item.owner_ref }, title: '待调查结构', detail: `${ownerName(item.owner_ref)} · ${item.geometry.type} · ${item.function_status === 'unknown' ? '功能待证' : '有安装用途依据'} · ${analysis.review_coverage?.independent_features.matches.filter(match => match.candidate_refs.includes(item.id)).map(match => match.id).join(' / ') || ''} · ${item.id}` })),
+      ...(analysis.installation_hypotheses ?? []).map(item => ({ selection: { kind: 'installation_hypothesis' as const, id: item.id, ownerRef: item.participants[0]?.part_ref }, title: item.title, detail: `待验证安装假设 · ${item.participants.map(participant => ownerName(participant.part_ref)).join(' ↔ ')} · ${item.mechanism.summary}` })),
+      ...(analysis.structure_candidates ?? []).map(item => ({ selection: { kind: 'structure' as const, id: item.id, ownerRef: item.owner_ref }, title: '局部结构', detail: `${ownerName(item.owner_ref)} · ${item.geometry.type} · ${item.function_status === 'unknown' ? '功能待证' : item.function_status === 'installation_hypothesis_available' ? '有依据的安装假设' : '有安装用途依据'} · ${analysis.review_coverage?.independent_features.matches.filter(match => match.candidate_refs.includes(item.id)).map(match => match.id).join(' / ') || ''} · ${item.id}` })),
       ...(analysis.review_regions ?? []).map(item => ({ selection: { kind: 'review_region' as const, id: item.id, ownerRef: item.owner_ref }, title: '区域审查', detail: `${ownerName(item.owner_ref)} · ${item.label} · ${item.review_status}` })),
       ...(analysis.pin_hole_fits ?? []).map(item => ({ selection: { kind: 'pin_fit' as const, id: item.id, ownerRef: item.participants.find(participant => participant.role === 'pin_carrier')!.part_ref }, title: '小柱与壳体孔配合', detail: `${item.measurements.member_count} 对原子成员 · 保持方式未知` })),
       ...(analysis.mounting_sites ?? []).filter(item => item.status !== 'geometry_candidate').map(item => ({ selection: { kind: 'site' as const, id: item.id, ownerRef: item.owner_ref }, title: `${mountingSiteName(item)} ${item.label}`, detail: `${ownerName(item.owner_ref)} · ${item.status === 'project_inferred' || item.assertion_refs.includes('thigh-integral-mounting-pins') ? '用途推断，待核实' : '已声明安装用途'}` })),
@@ -352,6 +353,8 @@ export default function App() {
     const resolved = { ...selection, ownerRef: item.ownerRef };
     pendingGeometryFocus.current = resolved; pendingFocus.current = false; pendingCamera.current = null; bookmarkCamera.current = null;
     setSelectedId(item.ownerRef); setGeometrySelection(resolved); setInspectorTab(detail !== 'auto' ? detail : installationSelection(selection) && item.authority !== 'geometry_only' ? 'interfaces' : 'geometry'); setInspectorVisible(true); setPage('explorer');
+    setHiddenIds(ids => ids.filter(id => id !== item.ownerRef));
+    setIsolateId(current => current && current !== item.ownerRef ? null : current);
     if (selection.kind === 'supplement') {
       const component = data.analysis?.supplemental_components?.find(component => component.id === selection.id);
       if (component && isAlternativeSupplement(data, component)) {

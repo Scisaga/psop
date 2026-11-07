@@ -6,7 +6,7 @@ const mm = (value: number) => (value * 1000).toFixed(3).replace(/\.?0+$/, '');
 const residualMm = (value: number) => value !== 0 && Math.abs(value * 1000) < .0001 ? (value * 1000).toExponential(3) : mm(value);
 const reviewLabel: Record<string, string> = { auto_screened: '仅自动初筛', reviewed: '已审查', blocked: '受限待处理', unreviewed: '未审查' };
 export const structureLabel = (item: StructureCandidate) => ({ circular_opening: '圆形开口', circular_inner_boundary: '圆形内轮廓', conical_frustum: '有限锥形柱表面', bore_wall: '内圆柱壁', shaft_wall: '实体柱表面', cylinder: '有限圆柱结构', slot: '槽开口', capsule_opening: '胶囊形槽开口', rounded_rectangle_opening: '圆角矩形槽开口', planar_patch: '有限面片' } as Record<string, string>)[item.geometry.type === 'cylinder' && ['bore_wall', 'shaft_wall'].includes(item.kind) ? item.kind : item.geometry.type] || '待调查几何结构';
-const functionLabel = (item: StructureCandidate) => item.function_status === 'installation_evidence_available' ? '有安装用途依据' : '功能待证';
+const functionLabel = (item: StructureCandidate) => item.function_status === 'installation_evidence_available' ? '有安装用途依据' : item.function_status === 'installation_hypothesis_available' ? '有依据的安装假设' : '功能待证';
 const textLabels: Record<string, string> = {
   'Device-specific functional role, installation side, retention and connector specification have not been established.': '本设备中的功能、装入侧、保持方式和连接件规格尚未核定。',
   'Inspect raw source region and assembly drawings for this exact geometry revision.': '检查本几何修订的源区域和装配图。',
@@ -49,8 +49,13 @@ export function StructureDetails({ data, item, onSelectGeometry, onOpenSource }:
   const installationSites = data.analysis?.mounting_sites?.filter(site => site.owner_ref === item.owner_ref && site.status !== 'geometry_candidate' && site.feature_refs.some(ref => item.related_feature_refs.includes(ref))) ?? [];
   const coverage = item.measurement?.coverage;
   const partial = coverage !== undefined && coverage < .95;
-  return <div className="structure-investigation" data-structure-id={item.id} data-review-status={item.review_status} data-function-status={item.function_status}>
-    <div className="investigation-state"><span>{reviewLabel[item.review_status]}</span><strong>{functionLabel(item)}</strong></div>
+  const performed = data.analysis?.investigation_records?.filter(record => record.part_ref === item.owner_ref && (record.structure_refs.includes(item.id) || record.opening_refs.some(ref => item.related_opening_refs.includes(ref)) || record.feature_refs.some(ref => item.related_feature_refs.includes(ref)))) ?? [];
+  const supported = performed.some(record => record.evidence_status === 'supported_hypothesis');
+  const workStatus = item.work_status ?? (performed.length ? 'investigated' : 'not_recorded');
+  const investigated = workStatus === 'investigated';
+  return <div className="structure-investigation" data-structure-id={item.id} data-review-status={item.review_status} data-function-status={item.function_status} data-work-status={workStatus}>
+    <div className="investigation-state"><span>几何{reviewLabel[item.review_status]}</span><strong>{supported ? '有依据的安装假设' : functionLabel(item)}</strong></div>
+    <p className="structure-work-status">{workStatus === 'not_recorded' ? '此历史快照未单独记录功能调查状态。' : `功能调查：${investigated ? supported || item.function_status === 'installation_hypothesis_available' ? '已执行，形成待验证假设' : '已执行，依据仍不足' : '尚未完成具体部位调查'}。`}几何审查与功能依据分别记录。</p>
     {partial && <p className="investigation-stop" data-angular-coverage={coverage}><strong>部分圆柱壁 · 圆周覆盖 {(coverage! * 100).toFixed(2)}%</strong>未覆盖的圆周保持缺失，不能据此认定完整孔或通孔。</p>}
     <p className="field-help">登记源几何和调查去向。几何候选与对端提议不确认机械连接、保持或承载。</p>
     {installationSites.map(site => <button className="mechanics-detail-link" key={site.id} onClick={() => onSelectGeometry({ kind: 'site', id: site.id, ownerRef: site.owner_ref })}>查看对应安装用途与依据 · {site.label}<Focus size={12} /></button>)}
@@ -116,6 +121,8 @@ export function BuildInvestigationCoverage({ data }: { data: PrototypeData }) {
   const candidates = analysis?.structure_candidates ?? [];
   return <section className="cap-history-panel cap-investigation-panel" data-review-coverage="published">
     <header className="cap-section-heading"><div><h2>调查与覆盖验收</h2><p>审查状态、功能证据和独立样例分别报告。</p></div><span className="cap-state is-partial">部分完成</span></header>
+    {analysis?.installation_hypotheses && <dl className="cap-facts"><div><dt>有依据的安装假设</dt><dd>{analysis.installation_hypotheses.length} 项</dd></div><div><dt>已有安装定义</dt><dd>{analysis.mounting_interfaces?.length ?? 0} 项</dd></div><div><dt>已确认接合</dt><dd>{analysis.interface_connections?.length ?? 0} 项</dd></div></dl>}
+    {analysis?.relationship_coverage && <dl className="cap-facts"><div><dt>独立关系样例定位</dt><dd>{analysis.relationship_coverage.located_count} / {analysis.relationship_coverage.expected_count}</dd></div><div><dt>正式 Interface / 工程确认</dt><dd>{analysis.relationship_coverage.qualified_interfaces_count} / {analysis.relationship_coverage.engineering_confirmed_count}</dd></div></dl>}
     <dl className="cap-facts"><div><dt>已建立调查清单</dt><dd>{analysis?.part_investigations?.length ?? 0} / {data.parts.length} 个实例</dd></div><div><dt>已登记结构</dt><dd>{candidates.length} 项</dd></div><div><dt>功能仍待证</dt><dd>{candidates.filter(item => item.function_status === 'unknown').length} 项</dd></div><div><dt>结构尚未审查 / 受限</dt><dd>{candidates.filter(item => item.review_status === 'unreviewed').length} / {candidates.filter(item => item.review_status === 'blocked').length}</dd></div><div><dt>区域已审查</dt><dd>{regions.reviewed} / {regions.total}</dd></div><div><dt>仅自动初筛 / 未审查 / 受限</dt><dd>{regions.auto_screened} / {regions.unreviewed} / {regions.blocked}</dd></div><div><dt>独立样例定位</dt><dd>{sample.located_count} / {sample.expected_count}</dd></div><div><dt>样例验收</dt><dd>{({ pass: '声明样例通过', incomplete: '存在遗漏', not_supplied: '未提供独立标注' })[sample.status]}</dd></div></dl>
     <p className="field-help">样例通过仅覆盖冻结标注列明的源几何及区域。全机表面、背面、遮挡区、未标注结构和机械功能仍需独立调查；遍历网格不等于审查完成。</p>
     {sample.missing.length > 0 && <div className="build-investigation-missing">{sample.missing.map(item => <p className="investigation-missing" key={`${item.part_ref}:${item.id}`}><strong>{data.parts.find(part => part.id === item.part_ref)?.name || item.part_ref} · {item.id}</strong>{item.reason}<small>源网格局部 {item.center_local_m.map(mm).join(', ')} mm</small></p>)}</div>}

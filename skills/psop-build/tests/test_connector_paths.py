@@ -92,7 +92,7 @@ class ConnectorPaths(unittest.TestCase):
 
     def test_historical_contracts_are_not_rewritten(self):
         self.assertEqual(package.FROZEN_DIRECTION_PROFILE, "psop.hardware.source-model/1.8")
-        self.assertEqual(package.PROFILE, "psop.hardware.source-model/1.9")
+        self.assertEqual(package.PROFILE, "psop.hardware.source-model/1.10")
         self.assertEqual(package.profile_contract(package.FROZEN_PIN_FIT_PROFILE)[0][1], "source-model-1.7.schema.json")
         old = json.loads((SKILL / "schemas/source-model-1.7.schema.json").read_text(encoding="utf-8"))
         self.assertNotIn("insertion", old["$defs"]["supplemental_component"]["properties"])

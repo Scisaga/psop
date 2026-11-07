@@ -195,7 +195,7 @@ export interface SupplementalComponent {
     | { type: 'cap'; outer_radius_m: number; inner_radius_m: number; thickness_m: number };
   parameter_basis: string; unconfirmed_fields: string[]; source_refs: string[]; evidence_refs: string[];
 }
-export type GeometrySelectionKind = 'interface' | 'feature' | 'hole' | 'pattern' | 'observation' | 'site' | 'mount' | 'mounting_interface' | 'slot' | 'opening' | 'passage' | 'connection_review' | 'supplement' | 'pin_fit' | 'structure' | 'review_region' | 'legacy_group' | 'legacy_observation';
+export type GeometrySelectionKind = 'interface' | 'feature' | 'hole' | 'pattern' | 'observation' | 'site' | 'mount' | 'mounting_interface' | 'slot' | 'opening' | 'passage' | 'connection_review' | 'supplement' | 'pin_fit' | 'structure' | 'review_region' | 'installation_hypothesis' | 'legacy_group' | 'legacy_observation';
 export interface GeometrySelection { kind: GeometrySelectionKind; id: string; ownerRef?: string }
 export interface MechanicalInterface {
   id: string;
@@ -265,7 +265,8 @@ export interface StructureCandidate {
   measurement?: { coverage?: number; fit_rms_m?: number; fit_max_m?: number; [key: string]: unknown };
   limitations: string[];
   related_feature_refs: string[]; related_opening_refs: string[];
-  function_status: 'unknown' | 'installation_evidence_available';
+  function_status: 'unknown' | 'installation_evidence_available' | 'installation_hypothesis_available';
+  work_status?: 'not_investigated' | 'investigated'; investigation_refs?: string[]; hypothesis_refs?: string[];
   review_status: 'unreviewed' | 'reviewed' | 'blocked';
   next_actions: string[]; missing_evidence: string[]; stop_reason: string; method: string;
   counterpart_proposals: { part_ref: string; structure_ref?: string; basis: string; axis_distance_m?: number; axial_gap_m?: number; status: 'geometry_only'; limitations: string[] }[];
@@ -290,6 +291,24 @@ export interface ReviewCoverage {
     matches: { id: string; part_ref: string; center_local_m: Vec3; candidate_refs: string[] }[]; scope: string; limitations: string[];
   };
 }
+export interface InstallationHypothesis {
+  id: string; title: string; status: 'supported_hypothesis'; assertion_basis: 'project_inference';
+  configuration_ref: string; investigation_ref: string;
+  mechanism: { kind: string; summary: string };
+  participants: { part_ref: string; role: string; label: string; structure_refs: string[]; feature_refs: string[]; opening_refs: string[]; position_local_m: Vec3 }[];
+  roles: { role: 'location' | 'retention' | 'motion' | 'limit'; status: 'supported_hypothesis' | 'unknown'; statement: string; participant_refs: string[] }[];
+  measurements: { name: string; value: number | number[]; unit: 'm' | 'rad' | 'count'; basis: 'source_geometry' }[];
+  supporting_evidence: { claim: string; source_refs: string[]; evidence_refs: string[] }[];
+  counterevidence: string[]; alternatives: string[];
+  intermediate_components: { kind: string; requirement: 'required' | 'possible'; status: 'unconfirmed'; statement: string }[];
+  unresolved_requirements: string[]; source_refs: string[]; evidence_refs: string[];
+}
+export interface InvestigationRecord {
+  id: string; title: string; part_ref: string; structure_refs: string[]; opening_refs: string[]; feature_refs: string[];
+  position_local_m: Vec3; work_status: 'investigated'; evidence_status: 'supported_hypothesis' | 'insufficient';
+  actions: { method: string; source_refs: string[]; observation: string }[];
+  findings: string[]; missing_evidence: string[]; hypothesis_refs: string[]; stop_reason: string;
+}
 export interface MechanicalAnalysis {
   frames: MechanicalFrame[];
   features: MechanicalFeature[];
@@ -310,6 +329,14 @@ export interface MechanicalAnalysis {
   part_investigations?: PartInvestigation[];
   review_regions?: ReviewRegion[];
   review_coverage?: ReviewCoverage;
+  installation_hypotheses?: InstallationHypothesis[];
+  investigation_records?: InvestigationRecord[];
+  relationship_coverage?: {
+    expected_count: number; located_count: number;
+    matches: { id: string; hypothesis_ref: string }[]; missing: string[];
+    installation_hypotheses_count: number; installation_definitions_count: number;
+    qualified_interfaces_count: number; engineering_confirmed_count: number; scope: string;
+  };
   interfaces: MechanicalInterface[];
   connection_candidates: ConnectionCandidate[];
   reference_relations: ReferenceRelation[];

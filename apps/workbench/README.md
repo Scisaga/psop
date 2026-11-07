@@ -1,6 +1,6 @@
 # PSOP 统一工作台
 
-工作台管理多个设备工作区，读取 Build 发布的 DKP，提供模型、安装知识、本体和证据的联动浏览。当前使用 `psop.hardware.source-model/1.9`，保留 1.0～1.8 历史读取；几何页可定位待调查结构和原始区域，分别查看功能证据、审查状态与下一步。实现状态核对于 2026-11-07。
+工作台管理多个设备工作区，读取 Build 发布的 DKP，提供模型、安装知识、本体和证据的联动浏览。当前使用 `psop.hardware.source-model/1.10`，保留 1.0～1.9 历史读取。几何页按物理位置浏览入口和有限壁；接口页区分已有安装知识、具体待验证假设和仍缺证的结构。实现状态核对于 2026-11-07，实际范围见[本轮验收](../../docs/build/interface-review/verification.md)。
 
 ![Microduck 设备工作区](../../docs/assets/screenshots/workbench-overview.png)
 
@@ -47,9 +47,9 @@ node scripts/workspaces.mjs create --id <工作区ID> --device-id <设备ID> --n
 node scripts/workspaces.mjs list
 ```
 
-登记表在仓库根目录 `workspaces/registry.json`，生成包在 `build/`，均不进入 Git。工作区可以只有一个当前版本，也可以保留多个快照。清理时先移除旧登记引用，再删除不再被使用的包目录，保留当前选择及其他工作区的引用。当前 Microduck 开发工作区已清理为一份 1.8 快照。
+登记表在仓库根目录 `workspaces/registry.json`，生成包在 `build/`，均不进入 Git。工作区可以只有一个当前版本，也可以保留多个快照。清理时先移除旧登记引用，再删除不再被使用的包目录，保留当前选择及其他工作区的引用。本轮保留原 1.9 快照，用于与新关系分析快照对照。
 
-读取层仍识别 source-model/1.0～1.8 的显式合同，运行当前工作台不依赖本机保留旧包。历史合同兼容不恢复旧 core 或包内 App。
+读取层仍识别 source-model/1.0～1.9 的显式合同，运行当前工作台不依赖本机保留所有旧包。历史合同兼容不恢复旧 core 或包内 App。
 
 ## 主要交互
 
@@ -57,8 +57,9 @@ node scripts/workspaces.mjs list
 | --- | --- |
 | 设备与版本 | 切换工作区及实际登记快照，跨页面沿用上下文 |
 | 结构树与 3D | 拾取、隐藏、隔离、透明、剖切、爆炸／复原与视角控制 |
-| 对象详情 | 概览、几何、接口、关联、证据；支持拖拽及键盘调宽 |
+| 对象详情 | 概览、几何、接口、关联、证据；几何按位置组织组成、尺寸及关系，原始数组按需展开；支持拖拽及键盘调宽 |
 | 安装接口 | 可选成员与规则按需展开，具体参考装配只呈现一份双方对应及紧固路径详情 |
+| 安装假设 | 查看本件具体部位、对端、机制分工、尺寸比较、支持/反对依据及未决条件；可双向定位，保持与工程验证独立 |
 | 局部查看 | 聚焦孔口、小柱或连接件，淡化遮挡对象，支持恢复原视图 |
 | 来源定位 | 打开原始 XML、CSV、说明、PDF 或图片，定位相关行与断言 |
 | 分享与导出 | 保留设备、版本、对象、相机、显隐和局部检查状态 |
@@ -89,10 +90,13 @@ node scripts/workspaces.mjs list
 ```powershell
 npm run build
 npm run test:api
+node --test scripts/source-display-normals.test.mjs
 npm run test:e2e
 node scripts/capture_docs.mjs
 ```
 
 最后一个命令需要运行中的工作台服务，会重建[正式截图及来源记录](../../docs/assets/screenshots/README.md)。正式文档截图随 Git 发布；测试结果、运行时截图、依赖与构建目录仍被忽略。
+
+右壳两处选孔的固定相机矩阵可用 `node scripts/capture_interface_selection.mjs before` 和 `node scripts/capture_interface_selection.mjs after` 保存到 `build/interface-selection/`；第三个参数可指定已登记快照，`PSOP_CAPTURE_BASE_URL` 可指定服务地址。首次捕获冻结实际显示投影，后续沿用同一源位置、相机及显示状态。仅保存截图不构成视觉验收，需实际查看并与[已复核对照](../../docs/build/interface-review/verification.md)比较。
 
 端到端测试直接读取所选 DKP。单版本工作区也可运行，只有需要多个或特定历史快照的用例按登记情况跳过。

@@ -28,7 +28,7 @@ class InvestigationPublication(unittest.TestCase):
         cls.prepared = package.prepare(
             REPO / "device-materials/microduck-official-materials.zip", cls.work,
             "microduck", "Microduck", xml if xml.exists() else None,
-            profile=package.PROFILE,
+            profile=package.FROZEN_INVESTIGATION_PROFILE,
             assembly_knowledge=REPO / "device-materials/microduck-assembly-knowledge.json",
             investigation=cls.review_path,
         )

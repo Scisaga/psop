@@ -25,7 +25,7 @@ test.beforeAll(async () => {
   const response = await fetch(`http://127.0.0.1:8780/api/workspaces/${device.id}/snapshots/${selectedSnapshotId}/view`, { signal: AbortSignal.timeout(330000) });
   if (!response.ok) throw new Error(await response.text());
   data = await response.json();
-  expect(data.meta.validation?.profile, 'Publish and select a connector-direction or investigation snapshot').toMatch(/^psop\.hardware\.source-model\/1\.(8|9)$/);
+  expect(data.meta.validation?.profile, 'Publish and select a connector-direction or investigation snapshot').toMatch(/^psop\.hardware\.source-model\/1\.(8|9|10)$/);
   target = data.parts.find(p => p.meshKey === 'motor_support')!;
   foot = data.parts.find(p => p.meshKey === 'foot_right')!;
   ankle = data.parts.find(p => p.meshKey === 'ankle_right')!;
@@ -65,7 +65,8 @@ test('真实装配可加载，展示控制与局部选择可用', async ({ page 
   await expect(page.getByRole('button', { name: '切换剖切', exact: true })).toHaveAttribute('aria-pressed', 'false');
   await page.getByRole('button', { name: '查看几何分析', exact: true }).click();
   await expect(page.getByRole('tab', { name: '几何', exact: true })).toHaveAttribute('aria-selected', 'true');
-  await expect(page.locator('.mechanics-geometry-record').first()).toBeVisible();
+  await expect(page.getByRole('combobox', { name: '选择物理位置', exact: true })).toBeVisible();
+  await expect(page.locator('.physical-location-list button').first()).toBeVisible();
   await page.getByRole('tab', { name: '接口', exact: true }).click();
   await expect(page.locator('.mounting-inspector')).toHaveAttribute('data-mounting-knowledge', 'published');
   await expect(page.locator('.mounting-site')).toHaveCount(8);
@@ -624,16 +625,16 @@ test('左右大腿按两处轴心结构浏览真实大圆洞，多个截面轮�
     await expect(page.locator('.mechanics-counts')).toContainText('2圆洞轴心结构');
     await expect(page.locator('.mechanics-counts')).toContainText('10有限内轮廓');
     await page.getByRole('tab', { name: '几何', exact: true }).click();
-    await page.getByRole('tab', { name: '圆洞结构 2', exact: true }).click();
-    await expect(page.getByRole('tab', { name: '圆洞结构 2', exact: true })).toHaveAttribute('aria-selected', 'true');
-    await expect(page.locator('.mechanics-geometry-record[data-geometry-kind="opening"]')).toHaveCount(2);
-    await page.locator('.mechanics-geometry-record[data-geometry-kind="opening"]').first().click();
+    const picker = page.getByRole('combobox', { name: '选择物理位置', exact: true });
+    const positions = picker.locator('option').filter({ hasText: '圆洞位置' });
+    await expect(positions).toHaveCount(2);
+    await picker.selectOption((await positions.first().getAttribute('value'))!);
     const scene = page.locator('.scene-canvas');
     await expect(scene).toHaveAttribute('data-highlighted-openings', '1');
     await expect(scene).toHaveAttribute('data-highlighted-support-triangles', '0');
-    await expect(page.locator('.opening-measurement')).toContainText('Ø5.5 mm');
-    await page.locator('.geometry-opening-members summary').click();
-    await expect(page.locator('.geometry-opening-members .mechanics-member')).toHaveCount(5);
+    await expect(page.locator('.physical-opening-measurement')).toContainText('Ø5.50');
+    await expect(page.locator('.structure-composition .structure-member[data-geometry-kind="opening"]')).toHaveCount(5);
+    await expect(page.locator('.structure-composition')).toContainText('每条入口和壁段保留独立身份');
   }
 });
 

@@ -30,7 +30,7 @@ def main(argv=None):
     intake.add_argument("--profile", choices=tuple(PROFILE_SCHEMAS), default=PROFILE,
                         help="Explicit source-model contract; historical contracts retain their original semantics")
     intake.add_argument("--assembly-knowledge", type=Path, help="Explicit installation declarations, inferred-role scope and connection-review policy; referenced manufacturer originals are captured and locked")
-    intake.add_argument("--investigation", type=Path, help="Frozen source-SHA-bound independent source-region review and expected-feature annotations (1.9 only)")
+    intake.add_argument("--investigation", type=Path, help="Frozen source-SHA-bound independent source-region review and expected-feature annotations (1.9 geometry review; 1.10 completed relationship research)")
     publish = commands.add_parser("finalize")
     publish.add_argument("--work", required=True, type=Path)
     publish.add_argument("--output", required=True, type=Path)

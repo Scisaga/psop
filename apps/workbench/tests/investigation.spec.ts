@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { readFileSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { Quaternion, Vector3 } from 'three';
 import { readRegistry, defaultRegistry } from '../scripts/dkp.mjs';
@@ -38,12 +38,13 @@ function independentlyAnnotated(id: string) {
   return { sample, expected, candidate };
 }
 
-test('独立标注的左外壳 LS-06 漏项可定位、查证、分享和导出，功能仍待证', async ({ page }) => {
+test('独立标注的左外壳 LS-06 漏项可定位、查证、分享和导出，功能仍待证', async ({ page }, testInfo) => {
   test.skip(!data.analysis?.structure_candidates, 'Select the source-model/1.9 investigation release.');
   const { sample, expected, candidate } = independentlyAnnotated('LS-06');
   expect(candidate.function_status).toBe('unknown');
   expect(candidate.review_status).toBe('reviewed');
   await page.goto(url(sample.part_ref, { structure: candidate.id }));
+  await expect(page.locator('[data-scene-ready="true"]')).toBeVisible({ timeout: 30000 });
   const scene = page.locator('.scene-canvas');
   await expect(scene).toHaveAttribute('data-structure-highlight', candidate.id);
   await expect(scene).toHaveAttribute('data-geometry-authority', 'geometry_only');
@@ -75,11 +76,9 @@ test('独立标注的左外壳 LS-06 漏项可定位、查证、分享和导出�
   expect(exported.packageDigest).toBe(data.meta.packageDigest);
   await page.reload();
   await expect(scene).toHaveAttribute('data-structure-highlight', candidate.id);
-  const artifactDir = path.resolve(path.dirname(defaultRegistry), '../docs/build/interface-review');
-  mkdirSync(artifactDir, { recursive: true });
-  await page.screenshot({ path: path.join(artifactDir, 'left-shell-ls06-workbench-1.9.png'), fullPage: true });
-  writeFileSync(path.join(artifactDir, 'workbench-1.9-screenshot.json'), JSON.stringify({
-    image: 'left-shell-ls06-workbench-1.9.png', snapshotId, packageId: data.meta.packageId,
+  await page.screenshot({ path: testInfo.outputPath('left-shell-ls06-workbench.png'), fullPage: true });
+  writeFileSync(testInfo.outputPath('workbench-screenshot.json'), JSON.stringify({
+    image: 'left-shell-ls06-workbench.png', snapshotId, packageId: data.meta.packageId,
     packageVersion: data.meta.packageVersion, packageDigest: data.meta.packageDigest,
     profile: data.meta.validation?.profile, independentAnnotationId: expected.id,
     partRef: sample.part_ref, structureRef: candidate.id, geometrySha256: sample.geometry_sha256,
@@ -92,6 +91,7 @@ test('另一类部件 LG-01 的独立壁截面也可定位，逐区域审查不�
   test.skip(!data.analysis?.structure_candidates, 'Select the source-model/1.9 investigation release.');
   const { sample, candidate } = independentlyAnnotated('LG-01');
   await page.goto(url(sample.part_ref, { structure: candidate.id }));
+  await expect(page.locator('[data-scene-ready="true"]')).toBeVisible({ timeout: 30000 });
   await expect(page.locator('.scene-canvas')).toHaveAttribute('data-structure-highlight', candidate.id);
   await expect(page.locator(`[data-structure-id="${candidate.id}"]`)).toContainText('下一步调查');
   const region = data.analysis!.review_regions!.find(item => item.owner_ref === sample.part_ref && item.review_status === 'auto_screened')!;
@@ -114,6 +114,7 @@ test('部分圆柱壁保留角覆盖、拟合残差和方法边界，不补成�
   const partial = data.analysis!.structure_candidates!.find(item => item.owner_ref === shell.id && Math.abs((item.geometry.radius_m ?? 0) - .0025) < .00002 && (item.measurement?.coverage ?? 1) < .95)!;
   expect(partial, 'Retain the measured partial wall in the source shell').toBeTruthy();
   await page.goto(url(shell.id, { structure: partial.id }));
+  await expect(page.locator('[data-scene-ready="true"]')).toBeVisible({ timeout: 30000 });
   await expect(page.locator('.scene-canvas')).toHaveAttribute('data-structure-highlight', partial.id);
   const details = page.locator(`[data-structure-id="${partial.id}"]`);
   await expect(details.locator('[data-angular-coverage]')).toContainText(`${(partial.measurement!.coverage! * 100).toFixed(2)}%`);
@@ -131,6 +132,7 @@ test('历史 1.8 快照仍按原合同浏览，不伪造新增调查状态', asy
   await expect(page.locator('[data-scene-ready="true"]')).toBeVisible({ timeout: 335000 });
   await expect(page.locator('.object-id')).toContainText(part.id);
   await expect(page.locator('[data-investigation-part]')).toHaveCount(0);
+  await page.locator('[data-raw-geometry-records] > summary').click();
   await expect(page.getByRole('tab', { name: /^圆洞结构/ })).toBeVisible();
   await expect(page.locator('.geometry-record-list')).toContainText('有限截面轮廓');
   if (old18.id !== snapshotId && workspace.selectedSnapshotId === snapshotId) {
