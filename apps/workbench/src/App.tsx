@@ -108,6 +108,7 @@ export default function App() {
   const [error, setError] = useState('');
   const [workspaces, setWorkspaces] = useState<DeviceWorkspace[]>([]);
   const [catalogLoaded, setCatalogLoaded] = useState(false);
+  const [loadingSeconds, setLoadingSeconds] = useState(0);
   const [workspaceId, setWorkspaceId] = useState(route.workspace);
   const [snapshotId, setSnapshotId] = useState(route.snapshot);
   const [page, setPage] = useState<Page>(route.page);
@@ -185,9 +186,15 @@ export default function App() {
     if (!catalogLoaded || !workspaceId || !snapshotId) return;
     const controller = new AbortController();
     const timeout = window.setTimeout(() => { controller.abort(); setError('知识快照校验超过等待时间，请重试并检查本地服务。'); }, 330000);
+    const started = Date.now();
+    setLoadingSeconds(0);
+    const progress = window.setInterval(() => setLoadingSeconds(Math.floor((Date.now() - started) / 1000)), 1000);
     setData(null); setError(''); setSceneReady(false);
-    fetch(`/api/workspaces/${encodeURIComponent(workspaceId)}/snapshots/${encodeURIComponent(snapshotId)}/view`, { signal: controller.signal }).then(r => {
-      if (!r.ok) throw new Error(`知识快照读取失败（HTTP ${r.status}）`);
+    fetch(`/api/workspaces/${encodeURIComponent(workspaceId)}/snapshots/${encodeURIComponent(snapshotId)}/view`, { signal: controller.signal }).then(async r => {
+      if (!r.ok) {
+        const failure = await r.json().catch(() => null);
+        throw new Error(`知识快照读取失败：${failure?.error || `HTTP ${r.status}`}`);
+      }
       return r.json();
     }).then((result: PrototypeData) => {
       if (controller.signal.aborted) return;
@@ -202,8 +209,8 @@ export default function App() {
       setHiddenIds(ids => ids.filter(id => result.parts.some(p => p.id === id)));
       setIsolateId(id => result.parts.some(p => p.id === id) ? id : null);
       setSourceDialog(value => value && result.sources.some(item => item.id === value.sourceId) ? value : null);
-    }).catch(e => { if (e.name !== 'AbortError') setError(e.message); }).finally(() => window.clearTimeout(timeout));
-    return () => { window.clearTimeout(timeout); controller.abort(); };
+    }).catch(e => { if (e.name !== 'AbortError') setError(e.message); }).finally(() => { window.clearTimeout(timeout); window.clearInterval(progress); });
+    return () => { window.clearTimeout(timeout); window.clearInterval(progress); controller.abort(); };
   }, [catalogLoaded, workspaceId, snapshotId]);
 
   useEffect(() => { document.title = `${workspaceName} · ${NAV.find(item => item.id === page)?.label || '工作台'} · PSOP`; }, [workspaceName, page]);
@@ -460,6 +467,7 @@ export default function App() {
 
   if (!data || !workspace || !snapshot) return <div className="startup"><BrandMark className="startup-mark" /><h1>PSOP 工作台</h1>{error ? <><p role="alert">{error}</p><small>请核对工作区服务及所选知识版本，再重新加载。</small></> : !catalogLoaded ? <><p>正在读取设备工作区</p><LoaderCircle size={18} className="spin" /></> : !workspaces.length ? <><p>尚无设备工作区</p><small>登记首个设备的 DKP 后，即可浏览知识并使用三个技能的能力。</small></> : !workspace?.snapshots.length ? <><p>此设备尚无知识版本</p><small>由 psop-build 发布并登记 DKP 后，工作台会显示可用内容。</small></> : <><p>正在打开 {workspaceName}</p><LoaderCircle size={18} className="spin" /><small>读取所选 DKP 的知识、来源与模型资产</small></>}
     {catalogLoaded && workspaces.length > 0 && <div className="startup-contexts">{workspaces.map(item => <button className="button secondary" key={item.id} onClick={() => chooseContext(item)}><Box size={14} />{item.name}<small>{item.snapshots.length} 个版本</small></button>)}{workspace && <select aria-label="选择知识版本" value={snapshotId} onChange={event => chooseContext(workspace, event.target.value)}><option value="" disabled>选择可用知识版本</option>{workspace.snapshots.map(item => <option key={item.id} value={item.id}>{item.packageVersion}</option>)}</select>}</div>}
+    {!error && workspace && snapshot && loadingSeconds >= 10 && <small role="status">首次打开或内容更新后会校验模型完整性，可能需要几分钟。已等待 {loadingSeconds} 秒；完成后再次打开会更快。</small>}
     {(error || (catalogLoaded && !data)) && <button className="button primary" onClick={() => location.reload()}>重新加载目录</button>}
   </div>;
 

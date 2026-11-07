@@ -20,6 +20,8 @@ node scripts/launch.mjs
 
 启动器安装缺少的依赖、复用或准备设备工作区、构建并打开 **http://127.0.0.1:8780/**。`--no-browser` 关闭自动打开页面。
 
+首次打开某个版本会完整校验来源并重放几何，可能需要数分钟。通过结果保存在仓库 `.runtime/dkp-validation/`；重启服务后先核对完整文件清单、每个文件的 SHA-256、校验工具、Python 与依赖版本，身份未变时复用结果。包或校验工具变化后重新校验，读取每份资产时仍核对其字节。启动页等待超过 10 秒会说明校验原因并显示等待时间；失败时显示服务返回的具体原因。
+
 手动启动：
 
 ```powershell
@@ -47,7 +49,7 @@ node scripts/workspaces.mjs create --id <工作区ID> --device-id <设备ID> --n
 node scripts/workspaces.mjs list
 ```
 
-登记表在仓库根目录 `workspaces/registry.json`，生成包在 `build/`，均不进入 Git。工作区可以只有一个当前版本，也可以保留多个快照。清理时先移除旧登记引用，再删除不再被使用的包目录，保留当前选择及其他工作区的引用。本轮保留原 1.9 快照，用于与新关系分析快照对照。
+登记表在仓库根目录 `workspaces/registry.json`，留在本机；生成包及构建记录位于 `build/`，随 Git 提交并保留原始字节。工作区可以只有一个当前版本，也可以保留多个快照。清理时先移除旧登记引用，再删除不再被使用的包目录，保留当前选择及其他工作区的引用。本轮保留原 1.9 快照，用于与新关系分析快照对照。
 
 读取层仍识别 source-model/1.0～1.9 的显式合同，运行当前工作台不依赖本机保留所有旧包。历史合同兼容不恢复旧 core 或包内 App。
 
@@ -90,12 +92,13 @@ node scripts/workspaces.mjs list
 ```powershell
 npm run build
 npm run test:api
+npm run test:validation-cache
 node --test scripts/source-display-normals.test.mjs
 npm run test:e2e
 node scripts/capture_docs.mjs
 ```
 
-最后一个命令需要运行中的工作台服务，会重建[正式截图及来源记录](../../docs/assets/screenshots/README.md)。正式文档截图随 Git 发布；测试结果、运行时截图、依赖与构建目录仍被忽略。
+最后一个命令需要运行中的工作台服务，会重建[正式截图及来源记录](../../docs/assets/screenshots/README.md)。正式文档截图和 `build/` 中的构建验收产物随 Git 发布；本机运行缓存、测试临时输出及依赖仍被忽略。
 
 右壳两处选孔的固定相机矩阵可用 `node scripts/capture_interface_selection.mjs before` 和 `node scripts/capture_interface_selection.mjs after` 保存到 `build/interface-selection/`；第三个参数可指定已登记快照，`PSOP_CAPTURE_BASE_URL` 可指定服务地址。首次捕获冻结实际显示投影，后续沿用同一源位置、相机及显示状态。仅保存截图不构成视觉验收，需实际查看并与[已复核对照](../../docs/build/interface-review/verification.md)比较。
 

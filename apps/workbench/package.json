@@ -10,6 +10,7 @@
     "start": "node scripts/serve.mjs",
     "prepare:workspace": "python -B scripts/prepare_workspace.py",
     "test:api": "node --test scripts/workspaces.test.mjs",
+    "test:validation-cache": "node --test scripts/validation-cache.test.mjs",
     "test:e2e": "playwright test"
   },
   "dependencies": {

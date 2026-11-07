@@ -3,13 +3,13 @@ import { createHash, randomUUID } from 'node:crypto';
 import { spawn } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
+import { createValidationCache } from './validation-cache.mjs';
 
 export const appRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 export const repoRoot = path.resolve(appRoot, '..', '..');
 export const defaultRegistry = path.join(repoRoot, 'workspaces', 'registry.json');
 export const REGISTRY_SCHEMA = 'psop.workspace-registry/1.0';
 export const DKP_SCHEMA = 'psop.dkp/2.0-draft.1';
-const validated = new Map();
 
 export function assertIdentifier(value, label = 'identifier') {
   if (typeof value !== 'string' || !/^[a-zA-Z0-9][a-zA-Z0-9._:-]{0,127}$/.test(value)) throw new Error(`Invalid ${label}.`);
@@ -32,15 +32,15 @@ function canonical(value) {
   return JSON.stringify(value);
 }
 
-function runValidator(directory) {
+function runPython(arguments_, timeout = 300000) {
   return new Promise((resolve, reject) => {
-    const child = spawn(process.env.PSOP_PYTHON || 'python', ['-B', path.join(repoRoot, 'skills/psop-build/scripts/psop_build.py'), 'validate', '--dkp', directory], {
-      windowsHide: true, stdio: ['ignore', 'pipe', 'pipe'], env: { ...process.env, PYTHONIOENCODING: 'utf-8' },
+    const child = spawn(process.env.PSOP_PYTHON || 'python', ['-B', ...arguments_], {
+      cwd: repoRoot, windowsHide: true, stdio: ['ignore', 'pipe', 'pipe'], env: { ...process.env, PYTHONIOENCODING: 'utf-8' },
     });
     let output = '', errors = '';
     // source-model/1.9 preparation takes about 154 seconds on the reference
     // workstation. A cold read must also rebuild sources and check geometry.
-    const timer = setTimeout(() => { child.kill(); reject(new Error('DKP validation timed out after five minutes.')); }, 300000);
+    const timer = setTimeout(() => { child.kill(); reject(new Error(`DKP validation timed out after ${timeout / 1000} seconds.`)); }, timeout);
     child.stdout.on('data', bytes => { output += bytes.toString('utf8'); });
     child.stderr.on('data', bytes => { errors += bytes.toString('utf8'); });
     child.on('error', error => { clearTimeout(timer); reject(error); });
@@ -48,12 +48,26 @@ function runValidator(directory) {
       clearTimeout(timer);
       try {
         const result = JSON.parse(output);
-        if (code !== 0 || result.valid !== true) throw new Error(JSON.stringify(result.errors || result.error || result));
+        if (code !== 0) throw new Error(JSON.stringify(result.errors || result.error || result));
         resolve(result);
       } catch (error) { reject(new Error(`DKP validation failed: ${error.message || errors.trim()}`)); }
     });
   });
 }
+
+const validatePackage = createValidationCache({
+  directory: path.join(repoRoot, '.runtime', 'dkp-validation'),
+  identity: async () => {
+    const runtime = await runPython(['-c', [
+      'import sys, json, importlib.metadata',
+      'sys.path.insert(0, "skills/psop-build/scripts")',
+      'from psop_build_v2.package import tool_digest',
+      'print(json.dumps({"tool": tool_digest(), "python": sys.version, "executable": sys.executable, "platform": sys.platform, "dependencies": sorted((d.metadata["Name"], d.version) for d in importlib.metadata.distributions())}))',
+    ].join('\n')], 30000);
+    return sha256(Buffer.concat([Buffer.from(JSON.stringify(runtime)), await readFile(new URL('./validation-cache.mjs', import.meta.url))]));
+  },
+  validate: root => runPython([path.join(repoRoot, 'skills/psop-build/scripts/psop_build.py'), 'validate', '--dkp', root]),
+});
 
 export async function readDescriptor(directory) {
   const root = await realpath(directory);
@@ -77,13 +91,8 @@ export async function readDescriptor(directory) {
 
 export async function loadPackage(directory) {
   const descriptor = await readDescriptor(directory);
-  const { root, manifest, entries, descriptorDigest } = descriptor;
-  const key = `${root}:${descriptorDigest}`;
-  if (!validated.has(key)) {
-    const validation = runValidator(root).catch(error => { validated.delete(key); throw error; });
-    validated.set(key, validation);
-  }
-  const validation = await validated.get(key);
+  const { root, manifest, entries } = descriptor;
+  const validation = await validatePackage(descriptor);
   return { root, manifest, entries, validation };
 }
 
