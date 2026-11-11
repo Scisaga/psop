@@ -1,0 +1,30 @@
+{
+  "kind": "actual_workbench_recording",
+  "source": "docs/html/assets/workbench-simulate-demo.webm",
+  "source_sha256": "6f49b755db0cec8a3035ce8314bdc368e8af9b83359bb596c4957007d9e5db8c",
+  "capture": "docs/html/assets/workbench-capture.json",
+  "file": "simulate-demo.gif",
+  "dimensions": [
+    720,
+    450
+  ],
+  "frames": 80,
+  "duration_seconds": 10.01,
+  "loop": 0,
+  "speed_relative_to_source": 3,
+  "editing": "The existing real-recording montage is played at 3x speed; the source automatic-assembly footage already uses native 4x playback. Resize, video denoising and GIF palette quantization only; no generated scene or motion.",
+  "ffmpeg_version": "7.1",
+  "ffmpeg_arguments": [
+    "-i",
+    "docs/html/assets/workbench-simulate-demo.webm",
+    "-filter_complex",
+    "setpts=PTS/3,fps=8,scale=720:-1:flags=lanczos,hqdn3d=2:1.5:6:4.5,split[frames][colors];[colors]palettegen=max_colors=96:stats_mode=diff[palette];[frames][palette]paletteuse=dither=bayer:bayer_scale=5:diff_mode=rectangle",
+    "-an",
+    "-loop",
+    "0",
+    "-y",
+    "docs/simulate/evidence/simulate-demo.gif"
+  ],
+  "bytes": 5374783,
+  "sha256": "6a2cc0b28f6361424012b0989e59d5c45f7aa98fddc32e78485bbc0e6d15ab94"
+}

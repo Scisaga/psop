@@ -30,7 +30,9 @@ Simulate 的三维交互装配与自动组装功能已完成，操作、真实�
 
 ## Simulate 三维装配与自动组装
 
-![Simulate 沉浸式三维装配工作台](docs/simulate/evidence/coastal-workbench.png)
+[![Simulate 连接、拆分与自动组装实录](docs/simulate/evidence/simulate-demo.gif)](docs/html/assets/workbench-simulate-demo.webm)
+
+*工作台实录节选：外壳连接、拆分、撤销与整机自动组装。动图加速循环播放，点击可查看原视频。*
 
 Simulate 读取同一份 DKP 的真实网格、接口和参考关系，在三维桌面上完成散件摆放、连续装配、拆分和成品还原。当前 Microduck 工作区包含 **70 个部件、38 份来源网格、411 项接口**。
 
