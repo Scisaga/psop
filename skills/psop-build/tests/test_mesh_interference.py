@@ -27,6 +27,13 @@ def combine(*meshes):
     return SolidMesh(vertices,faces)
 
 
+def selected_source_package(repo):
+    registry=json.loads((repo/'workspaces/registry.json').read_text(encoding='utf8'))
+    workspace=next(w for w in registry['workspaces'] if w['id']=='microduck')
+    snapshot=next(s for s in workspace['snapshots'] if s['id']==workspace['selectedSnapshotId'])
+    return (repo/'workspaces'/snapshot['path']).resolve()
+
+
 class SolidInterferenceTest(unittest.TestCase):
     def test_disjoint_bounds_and_opposed_face_edge_point_contacts_are_clear(self):
         a=box()
@@ -92,7 +99,7 @@ class SolidInterferenceTest(unittest.TestCase):
             self.assertEqual(boolean_evaluate(native,native,r,t)['status'],'interference' if expected else 'clear')
 
     def test_source_edge_coincidences_cannot_hide_whole_solid_overlap(self):
-        repo=Path(__file__).resolve().parents[3];root=repo/'build/microduck/source-1.15/microduck-capabilities-9.dkp'
+        repo=Path(__file__).resolve().parents[3];root=selected_source_package(repo)
         fixture=json.loads((repo/'device-materials/assembly/tests/fixtures/solid-interference-cases.json').read_text())
         scene=json.loads((root/'indexes/scene.json').read_text(encoding='utf8'));context=MeshInterference(scene['parts'],root)
         for case in fixture['cases']:
@@ -101,7 +108,7 @@ class SolidInterferenceTest(unittest.TestCase):
             self.assertGreater(result['intersection_volume_m3'],8e-9)
 
     def test_curved_bearing_precision_contacts_are_not_false_body_collisions(self):
-        repo=Path(__file__).resolve().parents[3];root=repo/'build/microduck/source-1.15/microduck-capabilities-9.dkp'
+        repo=Path(__file__).resolve().parents[3];root=selected_source_package(repo)
         fixture=json.loads((repo/'device-materials/assembly/tests/fixtures/solid-interference-cases.json').read_text())
         scene=json.loads((root/'indexes/scene.json').read_text(encoding='utf8'));context=MeshInterference(scene['parts'],root)
         for case in fixture['numerical_contacts']:

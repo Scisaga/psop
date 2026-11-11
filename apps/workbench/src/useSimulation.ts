@@ -1,8 +1,8 @@
 import {useCallback,useEffect,useRef,useState} from 'react';
-import type {CandidateResult,ConnectionCandidate,ConnectionPreview,SceneSummary,SceneProgress,SimulationSession} from './simulate-types';
+import type {CandidateCatalog,CandidateResult,ConnectionCandidate,ConnectionPreview,SceneSummary,SceneProgress,SimulationSession} from './simulate-types';
 
 class SimulationError extends Error {status:number;constructor(message:string,status:number){super(message);this.status=status;}}
-async function request<T>(url:string,body?:unknown,signal?:AbortSignal):Promise<T>{const response=await fetch(url,{method:body===undefined?'GET':'POST',headers:body===undefined?undefined:{'Content-Type':'application/json'},body:body===undefined?undefined:JSON.stringify(body),signal:signal??AbortSignal.timeout(45000)});const value=await response.json();if(!response.ok)throw new SimulationError(value.error??'装配操作失败，请重试。',response.status);return value;}
+async function request<T>(url:string,body?:unknown,signal?:AbortSignal,timeout=45000):Promise<T>{const deadline=AbortSignal.timeout(timeout);try{const response=await fetch(url,{method:body===undefined?'GET':'POST',headers:body===undefined?undefined:{'Content-Type':'application/json'},body:body===undefined?undefined:JSON.stringify(body),signal:signal?AbortSignal.any([signal,deadline]):deadline});const value=await response.json();if(!response.ok)throw new SimulationError(value.error??'装配操作失败，请重试。',response.status);return value;}catch(error){if(deadline.aborted&&!signal?.aborted)throw new SimulationError('读取超时，请重试。',408);throw error;}}
 type Draft={id:string;body:Record<string,unknown>};
 const draftKey=(base:string,id:string)=>'psop.simulate.draft:'+base+'/'+id;
 function readDraft(base:string,id:string):Draft|null{
@@ -34,16 +34,17 @@ export function useSimulation(workspace:string,snapshot:string){
           if(!health.simulate?.commands?.includes(String(input.type)))throw new SimulationError('当前装配服务版本尚未支持此操作，请重新启动工作台后重试。',426);
         }
         retryRef.current={id:s.id,body:input};saveDraft(base,retryRef.current);
-        const next=await request<SimulationSession>(base+'/'+s.id+'/commands',input,input.type==='auto_assemble'?AbortSignal.timeout(190000):undefined);clearDraft(base,s.id);
+        const next=await request<SimulationSession>(base+'/'+s.id+'/commands',input,undefined,input.type==='auto_assemble'?190000:45000);clearDraft(base,s.id);
         if(epoch===generation.current){setTransition(String(input.type));if(next.revision<current.current!.revision)accept(await request<SimulationSession>(base+'/'+s.id));else accept(next);retryRef.current=null;}return next;
       }catch(e){if(epoch===generation.current){setError((e as Error).message);if(e instanceof SimulationError&&e.status===409){setTransition('');accept(await request<SimulationSession>(base+'/'+s.id));clearDraft(base,s.id);retryRef.current=null;}else if(e instanceof SimulationError&&e.status<500){clearDraft(base,s.id);retryRef.current=null;}}return null;}finally{if(epoch===generation.current)setSaving(false);}};
     const promise=operation();pending.current=promise;try{return await promise;}finally{if(pending.current===promise)pending.current=null;}
   },[base,accept]);
   const syncRead=useCallback(async<T,>(operation:Promise<T>,s:SimulationSession):Promise<T>=>{const epoch=generation.current;try{return await operation;}catch(e){if(e instanceof SimulationError&&e.status===409&&epoch===generation.current&&current.current?.id===s.id&&current.current.revision===s.revision&&!pending.current&&!retryRef.current)await choose(s.id);throw e;}},[choose]);
-  const query=useCallback((instanceId:string,signal?:AbortSignal)=>{const s=current.current;if(!s)throw Error('场景尚未就绪。');return syncRead(request<CandidateResult>(base+'/'+s.id+'/candidates',{instance_id:instanceId,expected_revision:s.revision},signal),s);},[base,syncRead]);
+  const catalog=useCallback((instanceId:string,signal?:AbortSignal,includeRelations=false)=>{const s=current.current;if(!s)throw Error('场景尚未就绪。');return syncRead(request<CandidateCatalog>(base+'/'+s.id+'/candidates',{scope:'catalog',instance_id:instanceId,include_relations:includeRelations,expected_revision:s.revision},signal,10000),s);},[base,syncRead]);
+  const query=useCallback((instanceId:string,signal?:AbortSignal,targetInstanceId?:string)=>{const s=current.current;if(!s)throw Error('场景尚未就绪。');return syncRead(request<CandidateResult>(base+'/'+s.id+'/candidates',{instance_id:instanceId,target_instance_id:targetInstanceId,expected_revision:s.revision},signal),s);},[base,syncRead]);
   const summary=useCallback((signal?:AbortSignal)=>{const s=current.current;if(!s)throw Error('场景尚未就绪。');return syncRead(request<SceneProgress>(base+'/'+s.id+'/candidates',{scope:'scene',expected_revision:s.revision},signal),s);},[base,syncRead]);
   const preview=useCallback((candidate:ConnectionCandidate,signal?:AbortSignal,diagnostics=false)=>{const s=current.current;if(!s)throw Error('场景尚未就绪。');return syncRead(request<ConnectionPreview>(base+'/'+s.id+'/preview',{candidate_id:candidate.id,moving_instance_id:candidate.moving_instance_id,target_instance_id:candidate.target_instance_id,expected_revision:s.revision,diagnostics},signal),s);},[base,syncRead]);
   const retry=useCallback(()=>retryRef.current?send({},true):choose(current.current!.id),[send,choose]);
   const discard=useCallback(()=>{const s=current.current;if(s){clearDraft(base,s.id);retryRef.current=null;return choose(s.id);}},[base,choose]);
-  return {session,scenes,error,loading,saving,unsaved:!!retryRef.current,hasDraft:()=>!!retryRef.current,transition,choose,create,send,query,summary,preview,retry,discard,flush:()=>pending.current??Promise.resolve()};
+  return {session,scenes,error,loading,saving,unsaved:!!retryRef.current,hasDraft:()=>!!retryRef.current,transition,choose,create,send,catalog,query,summary,preview,retry,discard,flush:()=>pending.current??Promise.resolve()};
 }

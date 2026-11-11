@@ -56,7 +56,7 @@ function initialRoute() {
     && Math.hypot(...coordinates.slice(0, 3).map((n, i) => n - coordinates[i + 3])) > 0.000001
     ? { position: coordinates.slice(0, 3) as CameraPose['position'], target: coordinates.slice(3) as CameraPose['target'] } : null;
   return {
-    page: (NAV.some(n => n.id === rawPage) ? rawPage : NAV.some(n => n.id === stored.page) ? stored.page : 'explorer') as Page,
+    page: (NAV.some(n => n.id === rawPage) ? rawPage : 'explorer') as Page,
     workspace: requestedWorkspace || stored.workspace || '',
     snapshot: params.has('snapshot') ? params.get('snapshot') || '' : useStoredSnapshot ? stored.snapshot || '' : '',
     source: params.get('source'),

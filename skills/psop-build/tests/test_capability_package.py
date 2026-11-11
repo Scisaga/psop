@@ -73,6 +73,23 @@ class FrozenCapabilities(unittest.TestCase):
         self.assertEqual(len(result['catalog']['features']), 2)
         self.assertEqual(result['catalog']['analysis']['unique_measurements'], 1)
 
+    def test_new_contact_publications_include_a_recomputed_interface_adaptation_index(self):
+        self.assertNotIn('interface_adaptations', self.scene['assembly']['capability_index'])
+        result = deepcopy(self.compatibility)
+        result['coverage']['interface_contact_method'] = 'finite-interface-contact-regions/1'
+        report = validate_catalog(self.catalog, self.scene, self.root, self.requirements)
+        _prepare_details(self.scene, self.catalog, result, self.root, self.requirements, report)
+        index = self.scene['assembly']['capability_index']['interface_adaptations']
+        published = _read(self.root/index['path'])
+        self.assertEqual(published['schema'], 'psop.interface-adaptations/1')
+        self.assertEqual(published['fits'], [])
+        self.assertEqual(index['fit_count'], 0)
+        _validate_prepared(self.root, verify_candidates=False)
+        published['fits'].append({'owner_refs': ['part:a', 'part:b']})
+        _write(self.root/index['path'], published)
+        with self.assertRaisesRegex(ValueError, 'Interface adaptation index differs'):
+            _validate_prepared(self.root, verify_candidates=False)
+
     def test_published_use_explanation_and_unknowns_cannot_disappear_from_part_details(self):
         review = {'owner_ref': 'part:a', 'summary': 'Seated casing; retention unspecified',
             'open_items': ['Real retaining hardware is not supplied'], 'interface_dispositions': []}

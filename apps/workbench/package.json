@@ -10,7 +10,7 @@
     "start": "node scripts/serve.mjs",
     "prepare:workspace": "python -B scripts/prepare_workspace.py",
     "test:api": "node --test scripts/workspaces.test.mjs",
-    "test:simulate": "node --test scripts/assembly-judgment.test.mjs scripts/simulate.test.mjs scripts/simulate-proximity.test.mjs scripts/simulate-placement.test.mjs scripts/simulate-resting-pose.test.mjs scripts/simulate-presentation.test.mjs scripts/simulate-auto-assembly.test.mjs scripts/simulate-process.test.mjs",
+    "test:simulate": "node --test scripts/assembly-judgment.test.mjs scripts/simulate.test.mjs scripts/simulate-interface-adaptations.test.mjs scripts/simulate-proximity.test.mjs scripts/simulate-placement.test.mjs scripts/simulate-resting-pose.test.mjs scripts/simulate-presentation.test.mjs scripts/simulate-auto-assembly.test.mjs scripts/simulate-process.test.mjs",
     "test:simulate:real": "node --test scripts/simulate-real.test.mjs",
     "benchmark:simulate": "node scripts/benchmark-simulate.mjs",
     "test:validation-cache": "node --test scripts/validation-cache.test.mjs scripts/python-runtime.test.mjs",

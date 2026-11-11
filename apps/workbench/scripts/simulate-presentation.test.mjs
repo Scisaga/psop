@@ -9,8 +9,8 @@ import {SimulationCinematic} from '../src/SimulationCinematic.ts';
 import {blendAssemblyView,chooseAssemblyShot,frameAssemblyShot} from '../src/simulate-cinematic-camera.ts';
 
 test('connection cards keep a fixed bottom edge and reserve only the actually visible height',()=>{
- const view={width:690,height:640},p=placePopover(view,{width:360});assert.ok(p.left>=16&&p.left+p.width<=view.width-16);assert.equal(p.bottom,20);assert.equal(p.maxHeight,350);
- assert.deepEqual(placePopover(view,{width:360}),p,'content updates do not participate in placement');
+ const view={width:690,height:640},p=placePopover(view,{width:820});assert.ok(p.left>=16&&p.left+p.width<=view.width-16);assert.equal(p.bottom,20);assert.equal(p.maxHeight,540);assert.equal(p.width,658);
+ assert.deepEqual(placePopover(view,{width:820}),p,'content updates do not participate in placement');
  const small=placePopover({width:360,height:300},{width:360});assert.equal(small.bottom,20);assert.equal(small.maxHeight,208);assert.equal(small.left+small.width,344);
  const obscured=placePopover({width:690,height:640,bottomInset:160,topInset:70},{width:360});assert.equal(obscured.bottom,180);assert.ok(obscured.maxHeight+obscured.bottom+72+70<=640);
  const short=placePopover({width:640,height:190},{width:360});assert.equal(short.maxHeight,98);assert.ok(short.maxHeight+short.bottom<=190);
@@ -34,6 +34,24 @@ test('committed connection uses an interface closeup and restores the exact book
  session={instances:[{...session.instances[0],position:[.08,0,.01]},session.instances[1]],connections:[{id:'ab',anchors:[[.01,0,0],[-.01,0,0]],endpoints:[{instance_id:'a'},{instance_id:'b'}]}]};const start=performance.now();controller.accept(session,'connect',true);assert.equal(controller.mode,'connect');assert.equal(orbit.enabled,false);controller.tick(start+700);assert.ok(camera.position.distanceTo(bookmark.position)>.2);controller.tick(start+2100);assert.equal(controller.active,false);assert.deepEqual(camera.position,bookmark.position);assert.deepEqual(orbit.target,bookmark.target);assert.equal(records.get('a').mesh.position.x,.08);assert.deepEqual(events,['connect',null]);
  controller.prepare();session={...session,connections:[...session.connections,{...session.connections[0],id:'loop'}]};controller.accept(session,'connect',true);controller.tick(performance.now()+500);controller.finish();assert.deepEqual(camera.position,bookmark.position);assert.equal(controller.active,false);assert.equal(session.connections.length,2);
  controller.dispose();dotTexture.dispose();geometry.dispose();material.dispose();
+});
+
+test('automatic table lifting animates the target independently while both subassemblies stay rigid',()=>{
+ globalThis.matchMedia=()=>({matches:false});const geometry=new BoxGeometry(.02,.02,.02);geometry.computeBoundingBox();const material=new MeshStandardMaterial(),scene=new Scene(),camera=new PerspectiveCamera(34,1.3,.001,10);camera.up.set(0,0,1);camera.position.set(.7,-.8,.8);
+ const orbit={target:new Vector3(0,0,.02),enabled:true,enableDamping:true,update(){camera.lookAt(this.target);}},dotTexture=new Texture(),instances=[['a',.15,0,.01],['c',.17,0,.01],['b',0,0,.01],['d',.02,0,.01],['e',.3,.3,.01]].map(([id,x,y,z])=>({id,position:[x,y,z],quaternion:[0,0,0,1]})),records=new Map(instances.map(p=>{const mesh=new Mesh(geometry,material);mesh.position.fromArray(p.position);scene.add(mesh);return [p.id,{mesh}];})),edge=(id,a,b)=>({id,endpoints:[{instance_id:a},{instance_id:b}]});
+ let session={instances,connections:[edge('ac','a','c'),edge('bd','b','d')]};const controller=new SimulationPresentation({scene,camera,orbit,records,dotTexture,source:()=>({session,interfaces:[]}),invalidate(){},onChange(){}});
+ const relative=(a,b)=>{const ma=records.get(a).mesh,mb=records.get(b).mesh;ma.updateMatrixWorld();mb.updateMatrixWorld();return ma.matrixWorld.clone().invert().multiply(mb.matrixWorld);};
+ try{
+  controller.accept(session,'',false);const ac=relative('a','c'),bd=relative('b','d'),unrelated=records.get('e').mesh.position.clone(),rotation=new Quaternion().setFromAxisAngle(new Vector3(0,1,0),Math.PI/2).toArray();
+  session={instances:instances.map(p=>p.id==='a'?{...p,position:[0,0,.05],quaternion:rotation}:p.id==='c'?{...p,position:[0,0,.03],quaternion:rotation}:['b','d'].includes(p.id)?{...p,position:[p.position[0],0,.07]}:p),connections:[...session.connections,edge('ab','a','b')],operation:{type:'connect',table_lift:{translation:[0,0,.06],instance_ids:['a','c','b','d'],target_instance_ids:['b','d']}}};
+  controller.accept(session,'connect',true);const start=performance.now();
+  for(const ms of [160,500,900]){
+   controller.tick(start+ms);for(const [before,after]of [[ac,relative('a','c')],[bd,relative('b','d')]])assert.ok(before.elements.every((v,i)=>Math.abs(v-after.elements[i])<1e-12));
+   assert.equal(records.get('b').mesh.position.x,0);assert.equal(records.get('b').mesh.position.y,0);assert.deepEqual(records.get('b').mesh.quaternion.toArray(),[0,0,0,1]);assert.deepEqual(records.get('e').mesh.position,unrelated);
+   if(ms<320)assert.ok(records.get('b').mesh.position.z>.01&&records.get('b').mesh.position.z<.07);else assert.equal(records.get('b').mesh.position.z,.07);
+  }
+  controller.finish();for(const p of session.instances){assert.deepEqual(records.get(p.id).mesh.position.toArray(),p.position);assert.deepEqual(records.get(p.id).mesh.quaternion.toArray(),p.quaternion);}assert.equal(controller.active,false);assert.equal(orbit.enabled,true);
+ }finally{controller.dispose();dotTexture.dispose();geometry.dispose();material.dispose();}
 });
 
 test('cinematic shots fit tall products on narrow screens and choose a view around occluding parts',()=>{

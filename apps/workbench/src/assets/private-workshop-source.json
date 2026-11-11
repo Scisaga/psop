@@ -1,6 +1,6 @@
 {
   "schema_version": 4,
-  "prepared_on": "2026-11-11",
+  "prepared_on": "2026-11-12",
   "scene": "stark-research-workshop",
   "visual_reference": "User reference for Tony Stark's private research workshop: rectangular space, warm grey concrete panels, inclined ribbon windows, exposed I-beams, pendant lights and precision equipment. Latest direction: sparse layout; no vehicles, armor, circular platform, red tool chest or grey-green bench lamp.",
   "reference_usage": "Architectural/material/layout reference; the film still is not shipped as a surrounding texture.",
@@ -26,12 +26,13 @@
   "geometry": {
     "source": "../simulate-environment.ts",
     "architecture": "7.6 × 8.4m rectangular plan, 3.4m height. Straight end walls; a short straight incline confined to the window bands. Physical slabs, ceiling panels, I-beam webs/flanges/end plates/bolts, pendant liners/rims/stems, skirting and one flush grille.",
-    "equipment": "One rear instrument desk with two monitors, one oscilloscope and an orange task lamp attached by a C-clamp with lower jaw, screw, pressure pad and socket. One CAD-derived six-axis assistant on a controller pedestal. Central DKP bench and its remaining rack/tray/calibration block retained.",
+    "equipment": "One rear writing desk with a rounded 36mm walnut top, suspended wood-front drawers, open knee space, adjustable feet, cable grommet and under-desk tray. Two 32-inch thin-bezel monitors, a mechanical keyboard, wireless mouse, stitched desk pad, notebook and pen. One full-size performance workstation with a transparent side panel, three intake fans, dual roof fans and radiator, CPU pump and hoses, motherboard, RAM, finned GPU, power shroud, ports and wiring. Orange task lamp attached by a C-clamp and rotated inward over the writing area. Desk props are generated in ../simulate-writing-desk.ts. One CAD-derived six-axis assistant on a controller pedestal. Central DKP bench has four fluted precision drivers in a perforated aluminium stand, a lined tray of threaded M3/M4 socket screws with matching thin flat washers, and a 150mm vernier caliper with measuring jaws, engraved scales, slider, lock and depth rod. Display tools are generated in ../simulate-workbench-tools.ts.",
+    "writing_desk": {"source": "../simulate-writing-desk.ts", "dimensions_m": [2.12, 0.84, 0.77], "wood": "Deterministic 2048 x 1024 lengthwise grain canvas with edge-continuous slab UVs and subtle bump; generated locally at mount time, no external texture request.", "monitors": "Two 0.708 x 0.398m active displays with 2048 x 1152 authored CAD/development artwork, unlit screen materials, inset glass, slim rear housings, vents, ports, tilt and aluminium stands.", "workstation": "Display-only authored hardware geometry, not a claim of a specific commercial machine or benchmark result."},
     "interaction": "Context does not enter raycast records, assembly inventory, connector occupancy or undo history. Removed main-bench lamp no longer reserves a desktop return slot.",
     "batching": "Static opaque meshes batched by material and shadow flags. Imported geometry, materials, image bitmaps and render targets owned per mounted scene; released on failure and scene switching."
   },
-  "artwork": "Runtime canvas engineering studies on physical monitors; no live solver results are implied.",
-  "lighting": "RoomEnvironment PMREM and neutral key/fill/rim. Separate cached room shadow on a static layer excludes moving DKP meshes. Opaque floor has rough, low-strength planar reflections (1024 high / 512 balanced / disabled performance).",
+  "artwork": "Runtime canvas CAD and development illustrations on physical monitors; no live solver results are implied.",
+  "lighting": "RoomEnvironment PMREM and neutral key/fill/rim. Inward-facing desk lamp has a soft warm spotlight positioned at the imported bulb and aimed at the writing surface, without another shadow map. Separate cached room shadow on a static layer excludes moving DKP meshes. Opaque floor has rough, low-strength planar reflections (1024 high / 512 balanced / disabled performance).",
   "archived_generated_asset": {
     "file": "private-workshop-city-vista.png",
     "resolution": [

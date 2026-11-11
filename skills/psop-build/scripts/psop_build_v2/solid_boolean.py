@@ -9,32 +9,32 @@ import hashlib
 import tempfile
 from uuid import uuid4
 
-_worker=None
-_algorithm=None
+_workers={}
+_algorithms={}
 
 
 def _close():
-    global _worker
-    if _worker is not None:
+    for _worker in _workers.values():
         _worker.stdin.close()
         try:_worker.wait(timeout=5)
         except subprocess.TimeoutExpired:_worker.kill();_worker.wait()
-        _worker=None
+    _workers.clear()
 
 
 atexit.register(_close)
 
 
 def _request(request):
-    global _worker
+    contact=bool(request.get('interface_contact'));_worker=_workers.get(contact)
     if _worker is None or _worker.poll() is not None:
         repo=Path(__file__).resolve().parents[4]
         node=os.environ.get('PSOP_NODE_PATH') or shutil.which('node')
         bundled=repo/'apps/workbench/.runtime/node-v22.23.4-win-x64/node.exe'
         if node is None and bundled.is_file():node=str(bundled)
         if node is None:raise ValueError('Whole-source interference screening requires Node.js 22 or newer (PSOP_NODE_PATH)')
-        _worker=subprocess.Popen([node,str(Path(__file__).resolve().parents[1]/'solid_interference_worker.mjs')],stdin=subprocess.PIPE,stdout=subprocess.PIPE,stderr=subprocess.PIPE,
+        _worker=subprocess.Popen([node,str(Path(__file__).resolve().parents[1]/('interface_contact_worker.mjs' if contact else 'solid_interference_worker.mjs'))],stdin=subprocess.PIPE,stdout=subprocess.PIPE,stderr=subprocess.PIPE,
             text=True,encoding='utf-8',creationflags=getattr(subprocess,'CREATE_NO_WINDOW',0))
+        _workers[contact]=_worker
     _worker.stdin.write(json.dumps(request,separators=(',',':'))+'\n');_worker.stdin.flush()
     line=_worker.stdout.readline()
     if not line:raise ValueError('Solid interference worker stopped: '+_worker.stderr.read()[-2000:])
@@ -43,17 +43,18 @@ def _request(request):
     return result
 
 
-def evaluate(a,b,r,t,*,diagnostics=False):
-    global _algorithm
+def evaluate(a,b,r,t,*,diagnostics=False,interface_contact=None):
     scripts=Path(__file__).resolve().parents[1]
-    if _algorithm is None:
+    contact=bool(interface_contact)
+    if contact not in _algorithms:
         vendor=scripts/'vendor/manifold-3d'
         lock=json.loads((vendor/'SOURCE.json').read_bytes())
         for name,expected in lock['files'].items():
             if hashlib.sha256((vendor/name).read_bytes()).hexdigest()!=expected:raise ValueError('Pinned solid engine changed: '+name)
-        records=[hashlib.sha256((scripts/name).read_bytes()).hexdigest() for name in ('solid_interference_worker.mjs','solid-contact-diagnostics.mjs','vendor/manifold-3d/SOURCE.json')]
-        _algorithm=hashlib.sha256(json.dumps(records).encode()).hexdigest()
-    identity=[a['sha256'],b['sha256'],[[round(v,12) for v in row] for row in r],[round(v,12) for v in t],diagnostics,_algorithm]
+        names=('interface_contact_worker.mjs','interface-contact-diagnostics.mjs','interface-contact.mjs','finite-source-surface.mjs','vendor/manifold-3d/SOURCE.json') if contact else ('solid_interference_worker.mjs','solid-contact-diagnostics.mjs','vendor/manifold-3d/SOURCE.json')
+        records=[hashlib.sha256((scripts/name).read_bytes()).hexdigest() for name in names]
+        _algorithms[contact]=hashlib.sha256(json.dumps(records).encode()).hexdigest()
+    identity=[a['sha256'],b['sha256'],[[round(v,12) for v in row] for row in r],[round(v,12) for v in t],diagnostics,*([interface_contact] if contact else []),_algorithms[contact]]
     key=hashlib.sha256(json.dumps(identity,separators=(',',':')).encode()).hexdigest()
     directory=Path(os.environ.get('PSOP_SOLID_OBSERVATION_CACHE',str(Path(tempfile.gettempdir())/'psop-solid-observation-cache-v1')))
     file=directory/(key+'.json')
@@ -63,7 +64,7 @@ def evaluate(a,b,r,t,*,diagnostics=False):
         if cached['identity']==key and hashlib.sha256(encoded(cached['observation'])).hexdigest()==cached['observation_sha256']:
             return cached['observation']
     except (OSError,ValueError,KeyError,TypeError):pass
-    result=_request({'a':a,'b':b,'r':r,'t':t,**({'diagnostics':True} if diagnostics else {})})
+    result=_request({'a':a,'b':b,'r':r,'t':t,**({'diagnostics':True} if diagnostics else {}),**({'interface_contact':interface_contact} if interface_contact else {})})
     if result.get('status') in {'clear','interference'}:
         temporary=directory/(key+'.'+uuid4().hex+'.tmp')
         try:

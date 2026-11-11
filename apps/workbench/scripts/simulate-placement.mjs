@@ -7,10 +7,12 @@ export function tableFor(parts,bounds,orientations={}){
   const size=box.getSize(new Vector3());return {width:Math.max(1,size.x+.26),height:Math.max(.65,size.y+.23)};
 }
 
-/** Remaining rack, tray and calibration block reserve space without entering assembly inventory. */
+/** Display tools reserve desktop space without entering assembly inventory. */
 export function tableReservations({width:w,height:h}){
   const rect=(x,y,hw,hh)=>({min:{x:x-hw,y:y-hh},max:{x:x+hw,y:y+hh}});
-  return [rect(w*.22,h*.45,.061,.032),rect(w*.43,-h*.31,.066,.052),rect(-w*.43,-h*.4,.048,.028)];
+  // Caliper bounds include the open jaws, depth rod and slight in-plane rotation.
+  // Match the display layout in src/simulate-workbench-tools.ts.
+  return [rect(w*.22,h*.45,.061,.032),rect(w*.43,-h*.31,.066,.052),rect(-w*.5+.132,-h*.5+.066,.137,.049)];
 }
 
 /** Nearest empty rectangle among finite axis-aligned obstacles; no sampling can skip a narrow free slot. */

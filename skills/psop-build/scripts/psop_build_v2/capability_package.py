@@ -151,6 +151,13 @@ def _prepare_details(scene, catalog, compatibility, root, requirements, review):
             "candidate_count": sum(p["candidate_count"] for p in by_owner[owner])}
     capability_index = {"parts": part_index, "compatibility": {"index_path": ENTRYPOINTS["compatibility"]}, "review_path": ENTRYPOINTS["coverage"]}
     if separate:capability_index["assembly_policy"]=compatibility["assembly_policy"]
+    if compatibility.get('coverage', {}).get('interface_contact_method'):
+        from .interface_adaptations import analyze
+        adaptations = analyze(scene, root, catalog)
+        adaptation_path = 'indexes/interface-adaptations.json'
+        _write(root/adaptation_path, adaptations)
+        capability_index['interface_adaptations'] = {'path': adaptation_path, 'method': adaptations['method'],
+            'fit_count': len(adaptations['fits']), 'equivalence_count': len(adaptations['equivalences'])}
     scene["assembly"]["capability_index"] = capability_index
     # Scene is a browsing summary, not an eager duplicate of all new details.
     _write(root/ENTRYPOINTS["scene"], scene)
@@ -311,7 +318,7 @@ def _load_catalog(root, scene):
         if detail["compatibility_pairs"] != pairs_by_owner[owner] or record["candidate_count"] != sum(p["candidate_count"] for p in pairs_by_owner[owner]):
             raise ValueError("Part-local compatibility list loses or changes pair coverage")
     catalog["reference_connections"] = list(refs.values())
-    summary_keys=("parts", "compatibility", "review_path")+(("assembly_policy",) if 'assembly_policy' in idx else ())
+    summary_keys=("parts", "compatibility", "review_path")+(("assembly_policy",) if 'assembly_policy' in idx else ())+(("interface_adaptations",) if 'interface_adaptations' in idx else ())
     if set(idx["parts"]) != {p["id"] for p in scene["parts"]} or scene["assembly"]["capability_index"] != {k: idx[k] for k in summary_keys}:
         raise ValueError("Scene capability index differs from complete instance scope")
     return catalog
@@ -323,6 +330,14 @@ def _validate_prepared(root, verify_candidates=True):
     if authored.is_file() and {k: v for k, v in scene["assembly"].items() if k != "capability_index"} != _read(authored)["catalog"]:
         raise ValueError("Browsing reference summary differs from the captured attributed catalog")
     catalog = _load_catalog(root, scene)
+    adaptation_index = scene.get('assembly', {}).get('capability_index', {}).get('interface_adaptations')
+    if adaptation_index:
+        from .interface_adaptations import analyze
+        actual = _read(_p().local_path(root, adaptation_index['path']))
+        expected_adaptations = analyze(scene, root, catalog)
+        if actual != expected_adaptations or adaptation_index != {'path': 'indexes/interface-adaptations.json',
+            'method': actual['method'], 'fit_count': len(actual['fits']), 'equivalence_count': len(actual['equivalences'])}:
+            raise ValueError('Interface adaptation index differs from finite source interface analysis')
     from .reference_alignment import INPUT_PATH, REPORT_PATH, reconcile, summary
     if (root/INPUT_PATH).is_file():
         request = _read(root/INPUT_PATH)

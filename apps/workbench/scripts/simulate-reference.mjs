@@ -23,7 +23,7 @@ export function withReferencePairs(scene,index){
   return {...index,pairs};
 }
 
-export const hasPossibilities=pair=>pair.candidate_count>0||pair.reference_connections?.length>0;
+export const hasPossibilities=pair=>pair.candidate_count>0||pair.reference_connections?.length>0||pair.interface_adaptations?.length>0;
 
 /** Recover a relative pose from its explicit configuration, never from animation or spatial adjacency. */
 export function referenceBranches(scene,pair,details,resources){

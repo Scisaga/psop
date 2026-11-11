@@ -8,7 +8,7 @@ let data:PrototypeData,target:Part,servo:Part;
 const explorerUrl=(part:string)=>'/#explorer?'+new URLSearchParams({workspace:device.id,snapshot:selectedSnapshotId,part});
 test.beforeAll(async()=>{test.setTimeout(360000);data=await(await fetch(`http://127.0.0.1:8780/api/workspaces/microduck/snapshots/${selectedSnapshotId}/view`)).json();target=data.parts.find(p=>p.meshKey==='motor_support')!;servo=data.parts.find(p=>p.id==='part:microduck:0820b4025f26a004')!;});
 test('中文查询到部件，再定位到真实 XML 与 CSV 证据', async ({ page }) => {
-  await page.goto('/');
+  await page.goto('/#explorer');
   await expect(page.locator('[data-scene-ready="true"]')).toBeVisible({ timeout: 30000 });
   await page.getByRole('textbox', { name: '查找部件或 ID', exact: true }).fill(target.id);
   await page.getByRole('button', { name: `隐藏 ${target.id}`, exact: true }).click();
@@ -37,7 +37,7 @@ test('中文查询到部件，再定位到真实 XML 与 CSV 证据', async ({ p
 
 test('窄屏保持导航、模型与详情可用且没有页面级横向溢出', async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
-  await page.goto('/');
+  await page.goto('/#explorer');
   await expect(page.locator('[data-scene-ready="true"]')).toBeVisible({ timeout: 30000 });
   await expect(page.locator('.viewport')).toBeVisible();
   await expect(page.getByRole('button', { name: '仅显示选中部件', exact: true })).toBeVisible();
@@ -52,7 +52,7 @@ test('窄屏保持导航、模型与详情可用且没有页面级横向溢出',
 
 test('分享链接恢复实际旋转视角、部件可见性和展示状态', async ({ page, context }) => {
   await context.grantPermissions(['clipboard-read', 'clipboard-write']);
-  await page.goto('/');
+  await page.goto('/#explorer');
   await expect(page.locator('[data-scene-ready="true"]')).toBeVisible({ timeout: 30000 });
   await page.getByRole('button', { name: '展开', exact: true }).click();
   await page.getByRole('button', { name: '切换部件标签', exact: true }).click();

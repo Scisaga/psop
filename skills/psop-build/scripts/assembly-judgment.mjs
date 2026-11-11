@@ -1,5 +1,6 @@
 /** Shared virtual-assembly policy. A rigid observation never proves physical impossibility. */
 import {createHash} from 'node:crypto';
+import {INTERFACE_CONTACT_METHOD} from './interface-contact.mjs';
 
 export const ASSEMBLY_POLICY_SCHEMA='psop.assembly-policy/1';
 export const DEFAULT_ASSEMBLY_POLICY=Object.freeze({schema:ASSEMBLY_POLICY_SCHEMA,version:1,minor_contact_volume_mm3:.01,unrelated_obstacle_depth_m:.0001});
@@ -16,7 +17,9 @@ export const mechanicsNotEvaluated=Object.freeze({status:'not_evaluated',scope:'
 export function assessAssembly({observation={status:'not_evaluated'},policy=DEFAULT_ASSEMBLY_POLICY,configuration_ref=null,reference=false,expected_contact=false,mechanism=null,independent_block=null,baseline=null}={}){
   policy=assemblyPolicy(policy);
   const reasons=[];let decision='allow';
+  const contact=observation.diagnostics?.interface_contact,invalidContact=contact?.method===INTERFACE_CONTACT_METHOD&&contact.status==='sampled'&&contact.regions?.length&&contact.witnesses?.some(w=>Number.isFinite(w.depth_m)&&Number.isFinite(w.outside_contact_distance_m)&&w.depth_m>policy.unrelated_obstacle_depth_m&&w.outside_contact_distance_m>policy.unrelated_obstacle_depth_m);
   if(independent_block){decision='block';reasons.push(independent_block);}
+  else if(!reference&&expected_contact&&observation.status==='interference'&&invalidContact){decision='block';reasons.push('penetration_outside_interface_contact_region');}
   else if(observation.status!=='clear'){
     decision='allow_with_note';
     if(reference)reasons.push('published_reference_configuration');

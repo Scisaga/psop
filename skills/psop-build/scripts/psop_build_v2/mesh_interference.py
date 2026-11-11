@@ -9,6 +9,7 @@ from __future__ import annotations
 
 from collections import defaultdict
 import hashlib
+import json
 import math
 
 from .mechanics import _mesh
@@ -204,7 +205,7 @@ class MeshInterference:
     def __init__(self,parts,root):
         self.parts={p['id']:p for p in parts};self.root=root;self.meshes={};self.sources={};self.results={}
 
-    def evaluate(self,owner_a,owner_b,r,t,*,diagnostics=False):
+    def evaluate(self,owner_a,owner_b,r,t,*,diagnostics=False,interface_contact=None):
         if any(abs(value-1)>1e-10 for owner in (owner_a,owner_b) for value in self.parts[owner]['scale']):
             return {"method":METHOD,"status":"unresolved","reason":"non_unit_source_scale"}
         inputs=[]
@@ -220,12 +221,13 @@ class MeshInterference:
         # calculations always use the original source registration values.
         key=(inputs[0]['sha256'],inputs[1]['sha256'],tuple(round(v,12) for row in r for v in row),tuple(round(v,12) for v in t))
         if diagnostics:key=key+('diagnostics/1',)
+        if interface_contact:key=key+('interface-contact/1',json.dumps(interface_contact,sort_keys=True,separators=(',',':')))
         if key in self.results:return self.results[key]
         if key in _RESULT_CACHE:
             self.results[key]=_RESULT_CACHE[key]
             return self.results[key]
         from .solid_boolean import evaluate
-        result=evaluate(*inputs,r,t,diagnostics=diagnostics);self.results[key]=result
+        result=evaluate(*inputs,r,t,diagnostics=diagnostics,interface_contact=interface_contact);self.results[key]=result
         if len(_RESULT_CACHE)>=100000:_RESULT_CACHE.clear()
         _RESULT_CACHE[key]=result
         return result

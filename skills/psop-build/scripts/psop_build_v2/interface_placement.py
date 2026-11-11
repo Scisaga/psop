@@ -1,4 +1,4 @@
-"""Seat finite interface boundaries and reject whole-source interference.
+"""Seat finite interfaces and qualify contact separately from rigid overlap.
 
 Published transforms are authoritative for the viewer. No reference assembly
 pose, cosmetic separation gap, device name or counterpart whitelist is used.
@@ -15,6 +15,7 @@ from .mesh_interference import MeshInterference, METHOD, EPSILON_M, add, sub, mu
 
 POLICY_SCHEMA = "psop.fixed-interface-placement-policy/1"
 POLICY_SCHEMA_V2 = "psop.fixed-interface-placement-policy/2"
+POLICY_SCHEMA_V3 = "psop.fixed-interface-placement-policy/3"
 SEATING_METHOD = "finite-interface-boundary-planes/1"
 
 
@@ -64,9 +65,11 @@ def placements(option,features,kind):
 def qualify_placements(result,catalog,policy,parts,root,*,progress=None):
     request=policy['whole_part_interference']
     separate=policy.get('schema')=='psop.interface-matching-policy/3'
-    if request.get('schema')!=(POLICY_SCHEMA_V2 if separate else POLICY_SCHEMA) or request.get('method')!=METHOD or request.get('seating_method')!=SEATING_METHOD or request.get('clear_fixed_pose_required') is not (False if separate else True) or request.get('numerical_contact_allowance_m')!=EPSILON_M or not request.get('statement') or not request.get('evidence_ref'):
+    contact_qualified=separate and request.get('schema')==POLICY_SCHEMA_V3
+    if request.get('schema') not in ({POLICY_SCHEMA_V2,POLICY_SCHEMA_V3} if separate else {POLICY_SCHEMA}) or request.get('method')!=METHOD or request.get('seating_method')!=SEATING_METHOD or request.get('clear_fixed_pose_required') is not (False if separate else True) or request.get('numerical_contact_allowance_m')!=EPSILON_M or not request.get('statement') or not request.get('evidence_ref'):
         raise ValueError('Unsupported whole-source interference policy')
     if separate and request.get('assembly_policy',{}).get('schema')!='psop.assembly-policy/1':raise ValueError('Missing versioned virtual assembly policy')
+    if contact_qualified and request.get('interface_contact_method')!='finite-interface-contact-regions/1':raise ValueError('Missing finite interface contact qualification')
     if root is None:raise ValueError('Whole-source screening requires captured geometry bytes')
     context=MeshInterference(parts,root);features={f['id']:f for f in catalog['features']}
     accepted=[];exclusions=[];totals=Counter();reviewed=0;unseated=0;assessment_cache={}
@@ -84,6 +87,10 @@ def qualify_placements(result,catalog,policy,parts,root,*,progress=None):
                     collision=context.evaluate(*owners,r,t);option['interference']=collision
                     if separate:
                         from .solid_boolean import assess
+                        if contact_qualified and collision['status']=='interference':
+                            contact={'features':[[features[ref]['geometry'] for ref in sorted({p['feature_'+side+'_ref'] for p in option['member_pairs']})] for side in ('a','b')],
+                                'comparison_margin_m':MARGIN_M,'stop_after_obstruction_m':request['assembly_policy']['unrelated_obstacle_depth_m']}
+                            collision=context.evaluate(*owners,r,t,interface_contact=contact);option['interference']=collision
                         assessment_key=(_canonical(collision),kind)
                         if assessment_key not in assessment_cache:assessment_cache[assessment_key]=assess(collision,request['assembly_policy'],kind)
                         option['assembly_assessment']=assessment_cache[assessment_key]
@@ -140,4 +147,5 @@ def qualify_placements(result,catalog,policy,parts,root,*,progress=None):
         result['assembly_policy']=request['assembly_policy']
         result['coverage']['assembly_assessment_schema']='psop.assembly-assessment/1'
         result['coverage']['geometry_is_operation_gate']=False
+        if contact_qualified:result['coverage']['interface_contact_method']='finite-interface-contact-regions/1'
     return result

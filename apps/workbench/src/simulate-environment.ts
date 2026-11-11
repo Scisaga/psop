@@ -3,6 +3,8 @@ import {RoundedBoxGeometry} from 'three/examples/jsm/geometries/RoundedBoxGeomet
 import {createFloorReflection} from './simulate-floor-reflection';
 import {mergeGeometries} from 'three/examples/jsm/utils/BufferGeometryUtils.js';
 import type {WorkshopAssets} from './simulate-environment-assets';
+import {addWorkbenchTools} from './simulate-workbench-tools';
+import {addWritingDesk} from './simulate-writing-desk';
 
 export const WORKSHOP_FLOOR_Z=-.76;
 
@@ -11,13 +13,14 @@ export function createWorkshop(width:number,height:number,assets:WorkshopAssets)
   const group=new THREE.Group();group.name="Tony Stark's Workshop · 私人研发与装配工坊";
   const textures=new Set<THREE.Texture>(),materials=new Set<THREE.Material>(),geometries=new Set<THREE.BufferGeometry>();
   function material(p:THREE.MeshStandardMaterialParameters){const m=new THREE.MeshStandardMaterial(p);materials.add(m);return m;}
+  function unlit(p:THREE.MeshBasicMaterialParameters){const m=new THREE.MeshBasicMaterial(p);materials.add(m);return m;}
   function mesh(g:THREE.BufferGeometry,m:THREE.Material,x=0,y=0,z=0,name=''){
     geometries.add(g);const o=new THREE.Mesh(g,m);o.position.set(x,y,z);o.castShadow=o.receiveShadow=true;o.layers.enable(2);o.name=name;group.add(o);return o;
   }
   function block(w:number,h:number,d:number,m:THREE.Material,x:number,y:number,z:number,r=.002){return mesh(new RoundedBoxGeometry(w,h,d,2,Math.min(r,w/3,h/3,d/3)),m,x,y,z);}
   function rod(a:THREE.Vector3,b:THREE.Vector3,r:number,m:THREE.Material){const o=mesh(new THREE.CylinderGeometry(r,r,a.distanceTo(b),12),m);o.position.copy(a).add(b).multiplyScalar(.5);o.quaternion.setFromUnitVectors(new THREE.Vector3(0,1,0),b.clone().sub(a).normalize());return o;}
   function texture(canvas:HTMLCanvasElement,color=true){const t=new THREE.CanvasTexture(canvas);if(color)t.colorSpace=THREE.SRGBColorSpace;t.anisotropy=8;textures.add(t);return t;}
-  const metal=material({color:'#929ca5',metalness:.82,roughness:.3}),edge=material({color:'#56616b',metalness:.7,roughness:.43}),graphite=material({color:'#202a33',metalness:.65,roughness:.4}),shelfMaterial=material({color:'#28313b',metalness:.6,roughness:.46}),rubber=material({color:'#1c292d',metalness:.02,roughness:.9}),dark=material({color:'#263b3d',metalness:.2,roughness:.6}),warm=material({color:'#ac845d',roughness:.62}),plastic=material({color:'#3a474e',roughness:.62});
+  const metal=material({color:'#929ca5',metalness:.82,roughness:.3}),edge=material({color:'#56616b',metalness:.7,roughness:.43}),graphite=material({color:'#202a33',metalness:.65,roughness:.4}),shelfMaterial=material({color:'#28313b',metalness:.6,roughness:.46}),rubber=material({color:'#1c292d',metalness:.02,roughness:.9}),plastic=material({color:'#3a474e',roughness:.62});
   // Opaque, world-aligned concrete floor. All surrounding architecture is native geometry.
   const bayWidth=12,bayHeight=10;
   for(const t of [assets.floorColor,assets.floorNormal,assets.floorArm]){t.wrapS=t.wrapT=THREE.RepeatWrapping;t.repeat.set(bayWidth/2,bayHeight/2);t.anisotropy=12;}
@@ -69,14 +72,7 @@ export function createWorkshop(width:number,height:number,assets:WorkshopAssets)
   const caseMaterial=material({color:'#40535c',metalness:.15,roughness:.72});
   block(.23,.15,.085,caseMaterial,-width*.2,height*.07,shelfZ+.006+.0425,.008);block(.236,.156,.014,graphite,-width*.2,height*.07,shelfZ+.006+.085+.007,.004);
   for(const x of [-.27,-.13].map(x=>x*width))block(.014,.007,.018,edge,x,height*.07-.077,shelfZ+.006+.075,.002);
-  // The remaining rack, tray and calibration block retain their inventory reservations.
-  const rackx=width*.22,racky=height*.45;block(.105,.045,.04,metal,rackx,racky,.02);
-  for(let i=0;i<4;i++){const x=rackx-.036+i*.024;rod(new THREE.Vector3(x,racky,.02),new THREE.Vector3(x,racky,.105+i*.007),.0017,metal);rod(new THREE.Vector3(x,racky,.07+i*.007),new THREE.Vector3(x,racky,.125+i*.007),.0065,i===1?warm:dark);}
-  const tx=width*.43,ty=-height*.31;block(.112,.085,.003,metal,tx,ty,.0015,.0008);
-  for(const dx of [-1,1])block(.003,.085,.014,metal,tx+dx*.055,ty,.007,.0008);for(const dy of [-1,1])block(.112,.003,.014,metal,tx,ty+dy*.041,.007,.0008);
-  for(let i=0;i<7;i++){const x=tx-.038+(i%4)*.023,y=ty-.023+Math.floor(i/4)*.04;rod(new THREE.Vector3(x,y,.006),new THREE.Vector3(x+.011,y+.008,.006),.0016,metal);const head=mesh(new THREE.CylinderGeometry(.0035,.0035,.0023,6),metal,x,y,.006);head.rotation.z=i*.6;}
-  for(let i=0;i<3;i++){const o=mesh(new THREE.TorusGeometry(.006,.0017,8,24),metal,tx+.027,ty-.02+i*.02,.005);o.rotation.z=i*.7;}
-  block(.078,.038,.014,plastic,-width*.43,-height*.4,.007);
+  addWorkbenchTools(width,height,{mesh,material,texture});
 
 
   // A rectangular room and a small set of carefully finished working objects.
@@ -172,59 +168,6 @@ export function createWorkshop(width:number,height:number,assets:WorkshopAssets)
     for(let n=0;n<10;n++)block(.565,.025,.006,titanium,0,-.043,2.626+n*.021,.001);
     for(const dx of [-.292,.292])for(const dz of [-.105,.105])mesh(new THREE.CylinderGeometry(.003,.003,.004,6),metal,dx,-.036,2.72+dz,'风口固定螺钉');
   });
-  const screenMaterials=new Map<number,THREE.MeshBasicMaterial>();
-  function engineeringScreen(kind:number){
-    kind%=4;const cached=screenMaterials.get(kind);if(cached)return cached;
-    const c=document.createElement('canvas');c.width=1024;c.height=576;const d=c.getContext('2d')!;
-    d.fillStyle='#091d2d';d.fillRect(0,0,1024,576);d.fillStyle='#163447';d.fillRect(14,14,996,36);
-    d.font='20px Segoe UI';d.fillStyle='#8db9c8';d.fillText(['ASSEMBLY / SECTION STUDY','ACTUATOR / EXPLODED STUDY','KINEMATICS / JOINT STUDY','BENCH / INSTRUMENT STUDY'][kind%4],28,40);
-    d.strokeStyle='#1a3e55';d.lineWidth=1;
-    for(let x=22;x<1000;x+=42){d.beginPath();d.moveTo(x,70);d.lineTo(x,552);d.stroke();}
-    for(let y=74;y<550;y+=42){d.beginPath();d.moveTo(22,y);d.lineTo(1000,y);d.stroke();}
-    d.strokeStyle='#80b7cd';d.lineWidth=2;
-    if(kind===0){
-      const points=[[370,108],[440,186],[418,274],[482,352],[454,458],[570,474]];
-      d.lineWidth=19;d.strokeStyle='#25566d';d.beginPath();points.forEach(([x,y],i)=>i?d.lineTo(x,y):d.moveTo(x,y));d.stroke();d.lineWidth=2;d.strokeStyle='#9ac6d5';
-      for(const [x,y] of points){for(const r of [22,8]){d.beginPath();d.arc(x,y,r,0,Math.PI*2);d.stroke();}}
-      for(let i=0;i<6;i++){const y=116+i*61;d.beginPath();d.moveTo(655,y);d.lineTo(938,y);d.stroke();d.fillStyle='#528da6';d.fillRect(655,y+13,60+i*25,4);}
-    }else if(kind===2){
-      const segments=[[[340,116],[340,178],[295,222],[270,302]],[[340,178],[388,222],[414,302]],[[340,178],[340,310],[304,376],[294,472]],[[340,310],[378,376],[392,472]]];
-      d.strokeStyle='#8ebed2';
-      for(const points of segments){d.beginPath();points.forEach(([x,y],i)=>i?d.lineTo(x,y):d.moveTo(x,y));d.stroke();for(const[x,y]of points){d.beginPath();d.arc(x,y,10,0,Math.PI*2);d.stroke();}}
-      d.strokeRect(305,184,72,100);d.strokeRect(316,88,48,36);
-      d.setLineDash([4,6]);d.beginPath();d.moveTo(230,88);d.lineTo(230,478);d.moveTo(214,88);d.lineTo(246,88);d.moveTo(214,478);d.lineTo(246,478);d.stroke();d.setLineDash([]);
-      for(let n=0;n<4;n++){const x=650+(n%2)*150,y=158+Math.floor(n/2)*190;d.beginPath();d.arc(x,y,50,0,Math.PI*2);d.stroke();d.beginPath();d.arc(x,y,28,0,Math.PI*2);d.stroke();d.strokeRect(x-58,y-58,116,116);}
-    }else if(kind===3){
-      const colors=['#8dc3d2','#75aab4','#c2b681'];
-      for(let n=0;n<3;n++){d.strokeStyle=colors[n];d.beginPath();for(let x=40;x<950;x+=2){const y=130+n*130+Math.sin(x*.021+n)*35+Math.cos(x*.053)*12;x===40?d.moveTo(x,y):d.lineTo(x,y);}d.stroke();}
-      d.strokeStyle='#50869d';d.beginPath();d.moveTo(42,488);d.lineTo(957,488);d.stroke();
-    }else{
-      d.setLineDash([5,6]);d.beginPath();d.moveTo(88,368);d.lineTo(890,210);d.stroke();d.setLineDash([]);
-      for(let i=0;i<6;i++){const x=156+i*132,y=350-i*25;for(const r of [35,52]){d.beginPath();d.ellipse(x,y,r*.44,r,Math.PI*.13,0,Math.PI*2);d.stroke();}d.beginPath();d.ellipse(x+40,y-7,24,52,Math.PI*.13,0,Math.PI*2);d.stroke();}
-    }
-    d.fillStyle='#3d6b83';d.fillRect(26,514,972,36);d.font='14px Consolas';d.fillStyle='#92b8c4';d.fillText('PSOP / ENGINEERING STUDY    01:04    LOCAL WORKSPACE',38,538);
-    const t=texture(c),m=new THREE.MeshBasicMaterial({map:t,color:'#b3c2c5'});m.toneMapped=false;materials.add(m);screenMaterials.set(kind,m);return m;
-  }
-  function monitor(x:number,y:number,z:number,w:number,h:number,kind:number,yaw=0){
-    localLayout(x,y,yaw,()=>{
-      context(block(w+.025,.025,h+.024,joint,0,0,0,.006));
-      const screen=context(mesh(new THREE.PlaneGeometry(w,h),engineeringScreen(kind),0,-.013,0,'工程显示器'));screen.rotation.x=Math.PI/2;
-      context(block(.025,.02,.005,cyan,w*.36,-.014,-h/2-.007,.001));
-    },z);
-  }
-  // Instruments have inset screens, control knobs, vent slots and chassis feet.
-  function instrument(x:number,y:number,z:number,kind=3){
-    block(.26,.19,.13,titanium,x,y,z+.065,.006);
-    block(.244,.008,.112,joint,x,y-.097,z+.064,.003);
-    const display=context(mesh(new THREE.PlaneGeometry(.151,.082),engineeringScreen(kind),x-.03,y-.102,z+.071));display.rotation.x=Math.PI/2;
-    for(let n=0;n<3;n++){
-      const knob=context(mesh(new THREE.CylinderGeometry(.011,.011,.014,20),metal,x+.091,y-.111,z+.034+n*.032));
-      context(block(.002,.004,.007,graphite,knob.position.x,knob.position.y-.008,knob.position.z+.003,.0005));
-    }
-    for(let n=0;n<8;n++)context(block(.002,.065,.001,graphite,x-.084+n*.024,y+.018,z+.131,.0003));
-    for(const dx of [-.096,.096])for(const dy of [-.065,.065])context(block(.023,.024,.012,rubber,x+dx,y+dy,z-.004,.002));
-  }
-
   // Transform display models into static batches. Assets owns the imported resources.
   function placeModel(source:THREE.Group,x:number,y:number,z:number,scale=1,yaw=0,anchor:'bounds'|'base'|false='bounds'){
     const root=new THREE.Group();root.add(source);root.scale.setScalar(scale);root.quaternion.setFromEuler(new THREE.Euler(Math.PI/2,0,yaw,'ZXY'));root.updateMatrixWorld(true);
@@ -237,35 +180,20 @@ export function createWorkshop(width:number,height:number,assets:WorkshopAssets)
       }
       root.position.set(x-center.x,y-center.y,z-b.min.z);
     }else root.position.set(x,y,z);
-    root.updateMatrixWorld(true);source.traverse(o=>{if(o instanceof THREE.Mesh){const g=o.geometry.clone().applyMatrix4(o.matrixWorld);mesh(g,o.material as THREE.Material,0,0,0,'精细环境设备');}});source.removeFromParent();
+    let emitter:THREE.Vector3|undefined;
+    root.updateMatrixWorld(true);source.traverse(o=>{if(o instanceof THREE.Mesh){
+      const g=o.geometry.clone().applyMatrix4(o.matrixWorld);mesh(g,o.material as THREE.Material,0,0,0,'精细环境设备');
+      const importedMaterials=Array.isArray(o.material)?o.material:[o.material];
+      if(importedMaterials.some(m=>m.name==='desk_lamp_arm_01_light'))emitter=new THREE.Box3().setFromObject(o).getCenter(new THREE.Vector3());
+    }});source.removeFromParent();return emitter;
   }
-  const stationX=-.88,stationY=1.78,stationTop=WORKSHOP_FLOOR_Z+.84;
-  localLayout(stationX,stationY,0,()=>{
-    block(1.86,.62,.035,metal,0,0,.8225,.005);
-    for(const x of [-.79,.79])for(const y of [-.23,.23]){
-      block(.035,.035,.765,graphite,x,y,.4175,.003);cylinder(.026,.012,rubber,x,y,.018);cylinder(.008,.02,edge,x,y,.034);
-    }
-    for(const y of [-.23,.23])block(1.55,.025,.035,graphite,0,y,.17,.002);
-    block(1.55,.37,.021,shelfMaterial,0,.02,.1975,.003);block(.49,.43,.45,cabinet,-.48,0,.445,.008);
-    for(let n=0;n<3;n++){block(.43,.01,.004,joint,-.48,-.219,.29+n*.13,.001);block(.28,.025,.012,metal,-.48,-.232,.34+n*.13,.002);}
-    equipmentLabel('INSTRUMENTS',.28,.043,-.48,-.24,.57);
-    for(const x of [-.42,.13]){
-      block(.19,.15,.012,titanium,x,.08,.849,.003);rod(new THREE.Vector3(x,.11,.855),new THREE.Vector3(x,.11,1.16),.011,graphite);monitor(x,.075,1.16,.46,.26,x<0?0:2);
-    }
-    instrument(-.56,-.1,.848);
-  });
-  // C-clamp grips both faces of the desk; the model's mounting pin enters its socket.
-  const clampX=-.12,clampY=stationY+.31,clampZ=stationTop;
-  block(.035,.014,.09,graphite,clampX,clampY+.024,clampZ-.012,.002);
-  block(.035,.08,.012,titanium,clampX,clampY-.01,clampZ+.008,.002);
-  block(.034,.052,.002,rubber,clampX,clampY-.014,clampZ+.001,.0005);
-  block(.035,.075,.012,titanium,clampX,clampY-.008,clampZ-.06,.002);
-  cylinder(.004,.071,metal,clampX,clampY-.035,clampZ-.0725);
-  cylinder(.012,.004,rubber,clampX,clampY-.035,clampZ-.037);
-  cylinder(.009,.011,graphite,clampX,clampY-.035,clampZ-.107);
-  rod(new THREE.Vector3(clampX-.022,clampY-.035,clampZ-.112),new THREE.Vector3(clampX+.022,clampY-.035,clampZ-.112),.0025,metal);
-  cylinder(.014,.04,titanium,clampX,clampY+.017,clampZ+.03);
-  placeModel(assets.deskLamp,clampX,clampY+.017,clampZ+.017,.7,-.2,'base');
+  const {lampMount,lampTarget}=addWritingDesk(-.88,1.78,WORKSHOP_FLOOR_Z,{mesh,material,texture,unlit});
+  // The imported arm extends along +Y before yaw; turn it inward over the writing area.
+  const lampEmitter=placeModel(assets.deskLamp,lampMount.x,lampMount.y,lampMount.z,.7,lampMount.yaw,'base');
+  if(lampEmitter){
+    const taskLight=new THREE.SpotLight('#ffe2b4',.22,1.4,Math.PI/3.8,.75,2);taskLight.name='书桌台灯 · 朝向书写区';
+    taskLight.position.copy(lampEmitter);taskLight.target.position.copy(lampTarget);group.add(taskLight,taskLight.target);
+  }
   // One CAD-derived six-axis arm replaces repeated cylinder-and-sphere stand-ins.
   const robotX=1.04,robotY=.27,robotTop=WORKSHOP_FLOOR_Z+.75;
   localLayout(robotX,robotY,0,()=>{

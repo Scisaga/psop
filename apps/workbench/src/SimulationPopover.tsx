@@ -7,7 +7,9 @@ export default function SimulationPopover({children}:{children:ReactNode}){
     const viewport=card.current!.parentElement!;
     const update=()=>{
       const rect=viewport.getBoundingClientRect(),visual=window.visualViewport,visibleTop=visual?.offsetTop??0,visibleBottom=visibleTop+(visual?.height??innerHeight);
-      const next=placePopover({width:viewport.clientWidth,height:viewport.clientHeight,topInset:Math.max(0,visibleTop-rect.top),bottomInset:Math.max(0,rect.bottom-visibleBottom)},{width:360});
+      const size={width:820},view={width:viewport.clientWidth,height:viewport.clientHeight,topInset:Math.max(0,visibleTop-rect.top),bottomInset:Math.max(0,rect.bottom-visibleBottom)},first=placePopover(view,size),selection=viewport.querySelector('.simulation-selection-hud')?.getBoundingClientRect();
+      if(selection&&first.left+first.width>selection.left-rect.left&&first.left<selection.right-rect.left)view.topInset=Math.max(view.topInset,selection.bottom-rect.top+12-72);
+      const next=placePopover(view,size);
       setPlacement(old=>old&&old.left===next.left&&old.bottom===next.bottom&&old.maxHeight===next.maxHeight&&old.width===next.width?old:next);
     };
     update();const observer=new ResizeObserver(update);observer.observe(viewport);window.visualViewport?.addEventListener('resize',update);window.visualViewport?.addEventListener('scroll',update);

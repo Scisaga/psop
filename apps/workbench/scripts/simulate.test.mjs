@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {mkdtemp,readFile,writeFile,rm} from 'node:fs/promises';
+import {mkdtemp,readFile,writeFile,rm,readdir} from 'node:fs/promises';
 import os from 'node:os';
 import path from 'node:path';
 import {Box3,Matrix4,Quaternion,Vector3} from 'three';
@@ -9,6 +9,7 @@ import {Readable} from 'node:stream';
 import {groupsFor,groupFor,occupancyFor,layoutInstances,matrix,registrationMatrix,transformGroup,validPose,transformedBounds} from './simulate-core.mjs';
 import {createSimulationGeometry} from './simulate-geometry.mjs';
 import {withReferencePairs,referenceBranches} from './simulate-reference.mjs';
+import {groupConnectionChoices,connectionPoseCount,sameConnectionPose,connectionChoiceTitle} from '../src/simulate-connection-options.mjs';
 
 const pose=(id,x=0,y=0,z=.01)=>({id,part_ref:id,position:[x,y,z],quaternion:[0,0,0,1]});
 test('connection graph splits only disconnected components, preserving cycles and singleton identity',()=>{
@@ -48,6 +49,45 @@ const input=(s,body)=>({...body,expected_revision:s.revision,request_id:crypto.r
 const instance=id=>'instance:'+id;
 async function candidate(f,s,moving,target){return (await f.store.candidates('w','v',s.id,{instance_id:instance(moving),target_instance_id:instance(target),expected_revision:s.revision})).candidates.find(c=>c.moving_instance_id===instance(moving)&&c.target_instance_id===instance(target));}
 const connectionInput=c=>({type:'connect',candidate_id:c.id,moving_instance_id:c.moving_instance_id,target_instance_id:c.target_instance_id});
+
+test('published neighbor catalog needs no pair shard or geometric qualification and refreshes occupancy after edits',async t=>{
+ const f=await fixture(t),original=f.assets.get('ab.json');f.assets.set('ab.json',Buffer.from('unreadable pair shard'));
+ let s=await f.store.create('w','v'),result=await f.store.candidates('w','v',s.id,{scope:'catalog',instance_id:instance('a'),expected_revision:s.revision});
+ assert.equal(result.basis,'published_interface_index');assert.equal(result.relations_complete,false);assert.deepEqual(new Set(result.targets.map(t=>t.instance_id)),new Set([instance('b'),instance('d')]));assert.equal(result.interfaces.length,3);assert.equal(f.calls.length,0);assert.ok(result.targets.every(t=>t.qualification==='pending'));assert.equal(result.candidates,undefined);
+ f.assets.set('ab.json',original);result=await f.store.candidates('w','v',s.id,{scope:'catalog',include_relations:true,instance_id:instance('a'),expected_revision:s.revision});assert.equal(result.relations_complete,true);assert.ok(result.interfaces.some(i=>i.related.some(r=>r.instance_id===instance('b'))));assert.equal(f.calls.length,0);
+ const selected=s.instances.find(p=>p.id===instance('a'));s=await f.store.command('w','v',s.id,input(s,{type:'move',instance_id:selected.id,pose:{position:[selected.position[0],selected.position[1],.1],quaternion:selected.quaternion}}));result=await f.store.candidates('w','v',s.id,{scope:'catalog',instance_id:selected.id,expected_revision:s.revision});assert.equal(result.targets.length,2);assert.equal(f.calls.length,0);
+ s=await f.store.command('w','v',s.id,input(s,connectionInput(await candidate(f,s,'a','b'))));result=await f.store.candidates('w','v',s.id,{scope:'catalog',instance_id:selected.id,expected_revision:s.revision});assert.ok(result.interfaces.some(i=>i.instance_id===selected.id&&i.occupied));
+ s=await f.store.command('w','v',s.id,input(s,{type:'undo'}));result=await f.store.candidates('w','v',s.id,{scope:'catalog',instance_id:selected.id,expected_revision:s.revision});assert.ok(result.interfaces.every(i=>!i.occupied));
+});
+
+test('source observations survive service restarts and invalidate on worker changes, request changes or corrupt records',async t=>{
+ const directory=await mkdtemp(path.join(os.tmpdir(),'psop-observation-cache-'));t.after(()=>rm(directory,{recursive:true,force:true}));const workerPath=path.join(directory,'worker.mjs'),cacheDirectory=path.join(directory,'cache'),shape={sha256:'cache-shape'},input={a:shape,b:shape,r:[[1,0,0],[0,1,0],[0,0,1]],t:[0,0,0]};
+ const source=generation=>"import readline from 'node:readline';for await(const line of readline.createInterface({input:process.stdin})){process.stdout.write(JSON.stringify({status:'clear',generation:"+generation+"})+'\\n');}\n";
+ await writeFile(workerPath,source(1));let geometry=createSimulationGeometry({workerPath,cacheDirectory});assert.equal((await geometry.evaluate(input)).generation,1);await geometry.close();
+ geometry=createSimulationGeometry({workerPath,cacheDirectory});assert.equal((await geometry.evaluate(input)).generation,1);assert.equal(geometry.stats().disk_hits,1);assert.equal(geometry.stats().workers,0);await geometry.evaluate({...input,t:[.01,0,0]});assert.equal(geometry.stats().workers,1);await geometry.close();
+ await writeFile(workerPath,source(2));geometry=createSimulationGeometry({workerPath,cacheDirectory});assert.equal((await geometry.evaluate(input)).generation,2);assert.equal(geometry.stats().disk_hits,0);await geometry.close();
+ for(const name of await readdir(cacheDirectory)){const file=path.join(cacheDirectory,name),record=JSON.parse(await readFile(file,'utf8'));if(record.observation.generation===2){record.observation.status='interference';await writeFile(file,JSON.stringify(record));}}
+ geometry=createSimulationGeometry({workerPath,cacheDirectory});assert.equal((await geometry.evaluate(input)).status,'clear');assert.equal(geometry.stats().disk_hits,0);await geometry.close();
+});
+
+test('equivalent mechanisms share one pose while distinct resources, mappings, configurations and reference relations stay separate',async t=>{
+ const f=await fixture(t),s=await f.store.create('w','v'),a=await candidate(f,s,'a','b'),b={...structuredClone(a),id:'screw-hypothesis',mechanism:'screw_reception',source_match_ref:'different-mechanism-match'};
+ b.endpoints.forEach(e=>{e.member_refs.reverse();e.resource_keys.reverse();});b.member_pairs.reverse();
+ const before=structuredClone([a,b]),group=groupConnectionChoices([a,b]);assert.equal(group.length,1);assert.equal(group[0].options.length,1);assert.equal(group[0].options[0].alternatives.length,2);assert.equal(connectionChoiceTitle([a,b]),'孔组连接');assert.deepEqual([a,b],before);
+ const rotated={...structuredClone(b),id:'opposite-direction',relative_transform:[-1,0,0,0,0,-1,0,0,0,0,1,0,.02,0,0,1]};assert.equal(connectionPoseCount([a,b,rotated]),2);assert.equal(groupConnectionChoices([a,b,rotated]).length,1);
+ for(const mutate of [c=>c.endpoints[0].resource_keys.push('a|other-channel'),c=>c.member_pairs[0].target_feature_ref='other-wall',c=>c.endpoints[0].member_refs.push('other-member'),c=>c.source_configuration_ref='other-configuration']){const other=structuredClone(a);other.id='distinct';mutate(other);assert.equal(sameConnectionPose(a,other),false);assert.equal(connectionPoseCount([a,b,other]),2);}
+ const reference={...structuredClone(a),id:'reference-one',source_kind:'reference_connection'},otherReference={...structuredClone(reference),id:'reference-two',source_match_ref:'separate-source-relation'};assert.equal(groupConnectionChoices([a,b,reference,otherReference]).length,3);
+});
+
+test('trial assembly retains equivalent fastening hypotheses without selecting a mechanism, through reload, copy, undo and redo',async t=>{
+ const f=await fixture(t),data=JSON.parse(f.assets.get('ab.json')),through=data.candidates[0],screw=structuredClone(through);
+ through.unresolved_conditions=['full_passage_continuity_unverified'];through.connector_requirements=[{role:'through_bolt_with_nut_and_optional_washers',specification_status:'unresolved',catalog_sku_selected:false}];
+ screw.id+=':screw';screw.template_ref='template:screw_reception';screw.interface_matches[0].id+=':screw';screw.unresolved_conditions=['receiving_thread_or_self_tapping_specification_unknown'];screw.connector_requirements=[{role:'screw',specification_status:'unresolved',catalog_sku_selected:false}];data.candidates.push(screw);f.assets.set('ab.json',Buffer.from(JSON.stringify(data)));
+ let s=await f.store.create('w','v');const before=structuredClone(s.instances),q=await f.store.candidates('w','v',s.id,{instance_id:instance('a'),target_instance_id:instance('b'),expected_revision:s.revision});assert.equal(q.candidates.length,2);assert.equal(connectionPoseCount(q.candidates),1);
+ const c=q.candidates.find(c=>c.mechanism==='through_fastener');s=await f.store.command('w','v',s.id,input(s,connectionInput(c)));const connection=structuredClone(s.connections[0]);assert.equal(s.connections.length,1);assert.equal(connection.mechanism,'unresolved');assert.equal(connection.mechanism_status,'unconfirmed');assert.equal(connection.name,'孔组连接');assert.equal(connection.assembly_assessment.mechanism,'unresolved');assert.equal(connection.status,'trial');assert.equal(connection.geometry.status,'clear');assert.equal(connection.mechanics.status,'not_evaluated');assert.deepEqual(new Set(connection.mechanism_options.map(o=>o.mechanism)),new Set(['screw_reception','through_fastener']));assert.ok(connection.mechanism_options.every(o=>o.connector_requirements[0].specification_status==='unresolved'));assert.deepEqual(connection.relative_transform,c.relative_transform);
+ const reloaded=await f.store.get('w','v',s.id),copy=await f.store.create('w','v',{copy_from:s.id});assert.deepEqual(reloaded.connections[0],connection);assert.deepEqual(copy.connections[0],connection);
+ s=await f.store.command('w','v',s.id,input(s,{type:'undo'}));assert.deepEqual(s.instances,before);assert.equal(s.connections.length,0);s=await f.store.command('w','v',s.id,input(s,{type:'redo'}));assert.deepEqual(s.connections[0],connection);
+});
 test('configuration and policy changes preserve poses, persist, copy and undo atomically; policy invalidates assessments',async t=>{
  const f=await fixture(t),scene=JSON.parse(f.assets.get('scene.json'));scene.meta={deviceId:'fixture'};scene.reference_alignment={configuration_ref:'coordinated',placements:[],presentation:{connections:[]}};f.assets.set('scene.json',Buffer.from(JSON.stringify(scene)));
  let s=await f.store.create('w','v');const before=structuredClone(s.instances);assert.equal(s.reference_configuration_ref,'configuration:fixture:source-qpos0');
@@ -74,6 +114,55 @@ test('combining two existing groups moves the whole source group and preserves b
  const f=await fixture(t);let s=await f.store.create('w','v');s=await f.store.command('w','v',s.id,input(s,connectionInput(await candidate(f,s,'b','a'))));s=await f.store.command('w','v',s.id,input(s,connectionInput(await candidate(f,s,'d','c'))));
  const relative=matrix(s.instances.find(p=>p.id===instance('c'))).invert().multiply(matrix(s.instances.find(p=>p.id===instance('d'))));s=await f.store.command('w','v',s.id,input(s,connectionInput(await candidate(f,s,'c','b'))));assert.equal(s.groups.length,1);
  const next=matrix(s.instances.find(p=>p.id===instance('c'))).invert().multiply(matrix(s.instances.find(p=>p.id===instance('d'))));assert.ok(relative.elements.every((v,i)=>Math.abs(v-next.elements[i])<1e-12));
+});
+
+test('a desktop connection automatically lifts both parts without changing registration, and saves or undoes as one operation',async t=>{
+ const f=await fixture(t),sourceParts=structuredClone(f.parts);let s=await f.store.create('w','v');const a=s.instances.find(p=>p.id===instance('a'));
+ s=await f.store.command('w','v',s.id,input(s,{type:'move',instance_id:a.id,pose:{position:a.position,quaternion:new Quaternion().setFromAxisAngle(new Vector3(0,1,0),Math.PI/2).toArray()}}));
+ const before=await f.store.get('w','v',s.id),c=await candidate(f,s,'b','a'),preview=await f.store.preview('w','v',s.id,{...connectionInput(c),expected_revision:s.revision});
+ assert.equal(preview.status,'ready');assert.ok(preview.table_lift.translation[2]>.019);assert.deepEqual(new Set(preview.poses.map(p=>p.id)),new Set([instance('a'),instance('b')]));assert.deepEqual(preview.table_lift.target_instance_ids,[a.id]);
+ assert.deepEqual(await f.store.get('w','v',s.id),before,'hovering must not move the scene');
+ const body=input(s,connectionInput(c));f.failWrites(true);await assert.rejects(f.store.command('w','v',s.id,body),e=>e.status===503);assert.deepEqual(await f.store.get('w','v',s.id),before);f.failWrites(false);
+ s=await f.store.command('w','v',s.id,body);assert.equal(s.operation.type,'connect');assert.deepEqual(s.operation.table_lift,preview.table_lift);assert.deepEqual(await f.store.command('w','v',s.id,body),s);assert.equal(s.history.length,before.history.length+1);
+ for(const p of preview.poses){assert.deepEqual(s.instances.find(i=>i.id===p.id),p);assert.ok(transformedBounds(before.bounds[p.part_ref],p).min.z>=.0002-1e-10);}
+ for(const id of ['c','d'])assert.deepEqual(s.instances.find(p=>p.id===instance(id)),before.instances.find(p=>p.id===instance(id)));
+ const relative=matrix(s.instances.find(p=>p.id===a.id)).invert().multiply(matrix(s.instances.find(p=>p.id===instance('b'))));assert.ok(relative.elements.every((v,i)=>Math.abs(v-c.relative_transform[i])<1e-12));assert.deepEqual(f.parts,sourceParts);
+ const saved=structuredClone(s);assert.deepEqual((await f.store.get('w','v',s.id)).instances,saved.instances);
+ s=await f.store.command('w','v',s.id,input(s,{type:'undo'}));assert.deepEqual(s.instances,before.instances);assert.deepEqual(s.connections,before.connections);
+ s=await f.store.command('w','v',s.id,input(s,{type:'redo'}));assert.deepEqual(s.instances,saved.instances);assert.deepEqual(s.connections,saved.connections);
+});
+
+test('lifting a merged assembly preserves both existing subassemblies and checks all cross-group relationships',async t=>{
+ const f=await fixture(t);let s=await f.store.create('w','v');
+ s=await f.store.command('w','v',s.id,input(s,connectionInput(await candidate(f,s,'b','a'))));s=await f.store.command('w','v',s.id,input(s,connectionInput(await candidate(f,s,'d','c'))));
+ const a=s.instances.find(p=>p.id===instance('a'));s=await f.store.command('w','v',s.id,input(s,{type:'move',instance_id:a.id,pose:{position:[a.position[0],a.position[1],.0302],quaternion:new Quaternion().setFromAxisAngle(new Vector3(0,1,0),Math.PI/2).toArray()}}));
+ const relative=(state,a,b)=>matrix(state.instances.find(p=>p.id===instance(a))).invert().multiply(matrix(state.instances.find(p=>p.id===instance(b)))),ab=relative(s,'a','b'),cd=relative(s,'c','d'),c=await candidate(f,s,'c','b');
+ const preview=await f.store.preview('w','v',s.id,{...connectionInput(c),expected_revision:s.revision});assert.equal(preview.status,'ready');assert.ok(preview.table_lift.translation[2]>.039);assert.equal(preview.poses.length,4);assert.equal(preview.checked_pairs+preview.disjoint_pairs,4);assert.deepEqual(new Set(preview.table_lift.target_instance_ids),new Set([instance('a'),instance('b')]));
+ s=await f.store.command('w','v',s.id,input(s,connectionInput(c)));assert.equal(s.groups.length,1);assert.equal(s.connections.length,3);
+ for(const [previous,current]of [[ab,relative(s,'a','b')],[cd,relative(s,'c','d')]])assert.ok(previous.elements.every((v,i)=>Math.abs(v-current.elements[i])<1e-12));
+ assert.ok(relative(s,'b','c').elements.every((v,i)=>Math.abs(v-c.relative_transform[i])<1e-12));
+});
+
+test('an automatically lifted target must still be checked against unrelated obstacles',async t=>{
+ const f=await fixture(t);let s=await f.store.create('w','v');const a=s.instances.find(p=>p.id===instance('a'));
+ s=await f.store.command('w','v',s.id,input(s,{type:'move',instance_id:a.id,pose:{position:a.position,quaternion:new Quaternion().setFromAxisAngle(new Vector3(0,1,0),Math.PI/2).toArray()}}));
+ s=await f.store.command('w','v',s.id,input(s,{type:'move',instance_id:instance('c'),pose:{position:[a.position[0],a.position[1],.04],quaternion:[0,0,0,1]}}));
+ const before=await f.store.get('w','v',s.id),c=await candidate(f,s,'b','a');f.block();const preview=await f.store.preview('w','v',s.id,{...connectionInput(c),expected_revision:s.revision});
+ assert.equal(preview.status,'blocked');assert.deepEqual(new Set([preview.collision.instance_a,preview.collision.instance_b]),new Set([a.id,instance('c')]));await assert.rejects(f.store.command('w','v',s.id,input(s,connectionInput(c))),/新增或加深穿入/);assert.deepEqual(await f.store.get('w','v',s.id),before);
+});
+
+test('lifting both groups does not skip an unrelated overlap between their non-endpoint members',async t=>{
+ const f=await fixture(t),pair=JSON.parse(f.assets.get('cd.json'));pair.candidates[0].interface_matches[0].alignment_options[0].registration.translation_b_to_a=[-.04,0,0];f.assets.set('cd.json',Buffer.from(JSON.stringify(pair)));
+ let s=await f.store.create('w','v');s=await f.store.command('w','v',s.id,input(s,connectionInput(await candidate(f,s,'b','a'))));s=await f.store.command('w','v',s.id,input(s,connectionInput(await candidate(f,s,'d','c'))));
+ const a=s.instances.find(p=>p.id===instance('a'));s=await f.store.command('w','v',s.id,input(s,{type:'move',instance_id:a.id,pose:{position:[a.position[0],a.position[1],.0302],quaternion:new Quaternion().setFromAxisAngle(new Vector3(0,1,0),Math.PI/2).toArray()}}));
+ const c=await candidate(f,s,'c','b');f.block();const preview=await f.store.preview('w','v',s.id,{...connectionInput(c),expected_revision:s.revision});assert.equal(preview.status,'blocked');assert.deepEqual(new Set([preview.collision.instance_a,preview.collision.instance_b]),new Set([a.id,instance('d')]));assert.equal((await f.store.get('w','v',s.id)).connections.length,2);
+});
+
+test('connections with enough table clearance leave the target group at its chosen height',async t=>{
+ const f=await fixture(t);let s=await f.store.create('w','v');const a=s.instances.find(p=>p.id===instance('a'));
+ s=await f.store.command('w','v',s.id,input(s,{type:'move',instance_id:a.id,pose:{position:[a.position[0],a.position[1],.1],quaternion:new Quaternion().setFromAxisAngle(new Vector3(0,1,0),Math.PI/2).toArray()}}));
+ const c=await candidate(f,s,'b','a'),target=s.instances.find(p=>p.id===a.id),preview=await f.store.preview('w','v',s.id,{...connectionInput(c),expected_revision:s.revision});assert.equal(preview.status,'ready');assert.equal(preview.table_lift,undefined);assert.deepEqual(preview.poses.map(p=>p.id),[instance('b')]);
+ s=await f.store.command('w','v',s.id,input(s,connectionInput(c)));assert.deepEqual(s.instances.find(p=>p.id===a.id),target);
 });
 
 test('disconnect and desktop return save atomically, repeat once and undo as a single complete step',async t=>{
@@ -135,7 +224,7 @@ test('simulation writes enforce same origin, JSON and a bounded request body',as
 });
 
 test('scene progress does not mistake an isolated selected part for exhaustion of all known connections',async t=>{
- const f=await fixture(t),index=JSON.parse(f.assets.get('compatibility.json'));index.pairs=index.pairs.filter(p=>p.id==='ab');f.assets.set('compatibility.json',Buffer.from(JSON.stringify(index)));let s=await f.store.create('w','v');const summary=()=>f.store.candidates('w','v',s.id,{scope:'scene',expected_revision:s.revision});assert.equal((await summary()).status,'connections_available');assert.equal((await f.store.candidates('w','v',s.id,{instance_id:instance('d'),expected_revision:s.revision})).candidates.length,0);s=await f.store.command('w','v',s.id,input(s,connectionInput(await candidate(f,s,'b','a'))));assert.equal((await summary()).status,'no_available_connections');s=await f.store.command('w','v',s.id,input(s,{type:'undo'}));assert.equal((await summary()).status,'connections_available');
+ const f=await fixture(t),index=JSON.parse(f.assets.get('compatibility.json'));index.pairs=index.pairs.filter(p=>p.id==='ab');f.assets.set('compatibility.json',Buffer.from(JSON.stringify(index)));let s=await f.store.create('w','v');const summary=()=>f.store.candidates('w','v',s.id,{scope:'scene',expected_revision:s.revision});assert.equal((await summary()).status,'potential_connections');assert.equal((await f.store.candidates('w','v',s.id,{instance_id:instance('d'),expected_revision:s.revision})).candidates.length,0);s=await f.store.command('w','v',s.id,input(s,connectionInput(await candidate(f,s,'b','a'))));assert.equal((await summary()).status,'no_available_connections');s=await f.store.command('w','v',s.id,input(s,{type:'undo'}));assert.equal((await summary()).status,'potential_connections');
 });
 
 test('published reference interfaces with zero template candidates are discoverable and require their own solid check',async t=>{

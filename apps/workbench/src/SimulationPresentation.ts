@@ -7,7 +7,7 @@ import type {Vec3} from './types';
 
 type Mesh=THREE.Mesh<THREE.BufferGeometry,THREE.MeshStandardMaterial>;
 export type CameraView={position:THREE.Vector3;target:THREE.Vector3};
-type State={mode:'connect'|'settle';start:number;duration:number;from:SimulationPose;to:SimulationPose;matrices:Map<string,THREE.Matrix4>;final:Map<string,SimulationPose>;approach:SimulationPose;approachMatrices:Map<string,THREE.Matrix4>;lift:number;camera?:{bookmark:CameraView;start:CameraView;detail:CameraView};connection?:SimulationConnection};
+type State={mode:'connect'|'settle';start:number;duration:number;from:SimulationPose;to:SimulationPose;matrices:Map<string,THREE.Matrix4>;final:Map<string,SimulationPose>;targetLift:Map<string,{from:SimulationPose;to:SimulationPose}>;approach:SimulationPose;approachMatrices:Map<string,THREE.Matrix4>;lift:number;camera?:{bookmark:CameraView;start:CameraView;detail:CameraView};connection?:SimulationConnection};
 type Context={scene:THREE.Scene;camera:THREE.PerspectiveCamera;orbit:OrbitControls;records:Map<string,{mesh:Mesh}>;dotTexture:THREE.Texture;source:()=>{session:SimulationSession;interfaces:SimulationInterface[]};invalidate:()=>void;onChange:(mode:SimulationPresentationMode)=>void;onAutoProgress?:(progress:AutomaticAssemblyProgress|null)=>void};
 const pose=(mesh:THREE.Object3D):SimulationPose=>({position:mesh.position.toArray() as Vec3,quaternion:mesh.quaternion.toArray()});
 
@@ -63,12 +63,13 @@ export class SimulationPresentation {
     const connect=ready&&transition==='connect'&&!!fresh,settle=ready&&transition==='disconnect'&&changed.size>0;
     if((!connect&&!settle)||matchMedia('(prefers-reduced-motion: reduce)').matches){for(const [id,p]of changed)this.apply(id,p.to);this.bookmark=null;return;}
     const id=connect?fresh!.endpoints[0].instance_id:[...changed.keys()][0],mesh=records.get(id)!.mesh,from=pose(mesh),to=changed.get(id)?.to??from;
-    const matrices=new Map([...changed.keys()].map(id=>{const m=records.get(id)!.mesh;m.updateMatrixWorld();return [id,m.matrixWorld.clone()] as const;})),final=new Map([...changed].map(([id,p])=>[id,p.to])),direction=new THREE.Vector3().fromArray(from.position).sub(new THREE.Vector3().fromArray(to.position));
+    const targetIds=new Set(connect&&session.operation?.type==='connect'?session.operation.table_lift.target_instance_ids:[]),targetLift=new Map([...changed].filter(([id])=>targetIds.has(id)));
+    const matrices=new Map([...changed.keys()].filter(id=>!targetIds.has(id)).map(id=>{const m=records.get(id)!.mesh;m.updateMatrixWorld();return [id,m.matrixWorld.clone()] as const;})),final=new Map([...changed].map(([id,p])=>[id,p.to])),direction=new THREE.Vector3().fromArray(from.position).sub(new THREE.Vector3().fromArray(to.position));
     if(direction.length()<.002)direction.copy(camera.position).sub(orbit.target);direction.normalize();
     const extent=changed.size?this.box([...changed.keys()]).getSize(new THREE.Vector3()).length():.05,offset=direction.multiplyScalar(THREE.MathUtils.clamp(extent*.3,.015,.04)),approach:SimulationPose={position:new THREE.Vector3().fromArray(to.position).add(offset).toArray() as Vec3,quaternion:to.quaternion},approachMatrices=rigidMotion(from,approach,matrices,1);
     let cameraState:State['camera'];
     if(connect){const center=this.endpoint(fresh!,0,true).add(this.endpoint(fresh!,1,true)).multiplyScalar(.5),pairSize=Math.max(...fresh!.endpoints.map(e=>records.get(e.instance_id)!.mesh.geometry.boundingBox!.getSize(new THREE.Vector3()).length())),radius=THREE.MathUtils.clamp(pairSize*.6,.035,.09),box=new THREE.Box3().setFromCenterAndSize(center,new THREE.Vector3(radius*2,radius*2,radius*1.4));cameraState={bookmark:this.bookmark??{position:camera.position.clone(),target:orbit.target.clone()},start:{position:camera.position.clone(),target:orbit.target.clone()},detail:this.framing(box)};}
-    this.state={mode:connect?'connect':'settle',start:performance.now(),duration:connect?CONNECTION_DURATION:850,from,to,matrices,final,approach,approachMatrices,lift:THREE.MathUtils.clamp(extent*.35,.025,.09),camera:cameraState,connection:fresh};
+    this.state={mode:connect?'connect':'settle',start:performance.now(),duration:connect?CONNECTION_DURATION:850,from,to,matrices,final,targetLift,approach,approachMatrices,lift:THREE.MathUtils.clamp(extent*.35,.025,.09),camera:cameraState,connection:fresh};
     orbit.enabled=false;orbit.enableDamping=false;this.context.onChange(this.state.mode);this.context.invalidate();
   }
   private apply(id:string,p:SimulationPose){const mesh=this.context.records.get(id)?.mesh;if(mesh){mesh.position.fromArray(p.position);mesh.quaternion.fromArray(p.quaternion);mesh.updateMatrixWorld();}}
@@ -83,6 +84,7 @@ export class SimulationPresentation {
       orbit.update();this.points.visible=this.line.visible=progress.phase!=='return';
     }else matrices=rigidMotion(state.from,state.to,state.matrices,elapsed/state.duration,new THREE.Vector3(),state.lift);
     for(const [id,m]of matrices){const mesh=records.get(id)?.mesh;if(mesh){m.decompose(mesh.position,mesh.quaternion,mesh.scale);mesh.updateMatrixWorld();}}
+    for(const [id,p]of state.targetLift)this.apply(id,{position:new THREE.Vector3().fromArray(p.from.position).lerp(new THREE.Vector3().fromArray(p.to.position),THREE.MathUtils.smoothstep(elapsed/320,0,1)).toArray() as Vec3,quaternion:p.to.quaternion});
     if(state.connection&&this.points.visible){const positions=this.geometry.getAttribute('position');for(let i=0;i<2;i++){const p=this.endpoint(state.connection,i);positions.setXYZ(i,p.x,p.y,p.z);}positions.needsUpdate=true;}
     this.context.invalidate();if(elapsed>=state.duration)this.finish();
   }

@@ -233,14 +233,15 @@
         }
       ],
       "whole_part_interference": {
-        "schema": "psop.fixed-interface-placement-policy/2",
+        "schema": "psop.fixed-interface-placement-policy/3",
+        "interface_contact_method": "finite-interface-contact-regions/1",
         "method": "closed-source-solid-interference/2",
         "seating_method": "finite-interface-boundary-planes/1",
         "clear_fixed_pose_required": false,
         "numerical_contact_allowance_m": 3e-07,
         "evidence_ref": "evidence:microduck:assembly-design-fidelity-2026-11-11",
         "statement": "不能把刚性网格交集直接作为装配的否决条件，也不应为了消除交集就认定需要移动或修改原设计。",
-        "scope": "完整功能接口的有限落座姿态；保留刚性求交观测，虚拟装配资格与力学状态分别记录。",
+        "scope": "完整功能接口的有限落座姿态；保留刚性求交观测，虚拟装配资格与力学状态分别记录。通用方向须检查选中有限接触区之外的实体穿入见证，来源原装关系单独保留。",
         "assembly_policy": {
           "schema": "psop.assembly-policy/1",
           "version": 1,
