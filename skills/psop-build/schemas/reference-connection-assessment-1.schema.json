@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "psop.reference-connection-assessment/1",
+  "type": "object",
+  "properties": {
+    "schema": {"const": "psop.reference-connection-assessment/1"},
+    "configuration_ref": {"type": "string", "minLength": 1, "maxLength": 256},
+    "purpose": {"enum": ["identified", "unresolved"]},
+    "counterpart": {"enum": ["identified", "unresolved"]},
+    "geometry": {"enum": ["axes_aligned", "review_required", "unverified"]},
+    "fastening": {"enum": ["specified", "unspecified", "not_applicable"]},
+    "summary": {"type": "string", "minLength": 1, "maxLength": 1200},
+    "evidence_refs": {"type": "array", "items": {"type": "string", "minLength": 1, "maxLength": 256}, "minItems": 1, "maxItems": 100, "uniqueItems": true},
+    "open_items": {
+      "type": "array", "maxItems": 20,
+      "items": {
+        "type": "object",
+        "properties": {
+          "kind": {"enum": ["purpose", "counterpart", "geometry", "fastening"]},
+          "note": {"type": "string", "minLength": 1, "maxLength": 1200}
+        },
+        "required": ["kind", "note"], "additionalProperties": false
+      }
+    }
+  },
+  "required": ["schema", "configuration_ref", "purpose", "counterpart", "geometry", "fastening", "summary", "evidence_refs", "open_items"],
+  "additionalProperties": false
+}

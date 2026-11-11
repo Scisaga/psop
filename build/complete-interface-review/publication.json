@@ -1,0 +1,21 @@
+{
+  "ok": true,
+  "command": "finalize",
+  "output": "C:\\Users\\lsh\\Desktop\\workspace\\psop\\build\\microduck\\source-1.15\\microduck-capabilities-6.dkp",
+  "package_digest": "2222613002e6749363481158658a5a35d5d13de07bfd63816ae5d746c6917fb8",
+  "profile": "psop.hardware.source-model/1.15",
+  "counts": {
+    "bodies": 15,
+    "evidence": 364,
+    "geometries": 38,
+    "joints": 14,
+    "parts": 70,
+    "sources": 68,
+    "candidates": 1509,
+    "features": 8703,
+    "instance_pairs": 2415,
+    "interfaces": 411,
+    "resources": 7438
+  },
+  "next": "validate"
+}

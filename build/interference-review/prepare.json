@@ -1,0 +1,24 @@
+{
+  "ok": true,
+  "command": "prepare",
+  "work": "C:\\Users\\lsh\\Desktop\\workspace\\psop\\.runtime\\build-capabilities\\work-release-7-final",
+  "device": {
+    "id": "microduck",
+    "name": "Microduck"
+  },
+  "profile": "psop.hardware.source-model/1.15",
+  "counts": {
+    "features": 8703,
+    "interfaces": 411,
+    "resources": 7438,
+    "candidates": 930,
+    "instance_pairs": 2415
+  },
+  "review": "C:\\Users\\lsh\\Desktop\\workspace\\psop\\.runtime\\build-capabilities\\work-release-7-final\\review.json",
+  "next": "freeze",
+  "performance": {
+    "prepare_seconds": 478.7257635000278,
+    "geometry_and_capture_seconds": 32.45842949999496,
+    "candidate_seconds": 398.35598970000865
+  }
+}

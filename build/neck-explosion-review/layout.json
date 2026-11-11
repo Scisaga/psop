@@ -1,0 +1,2315 @@
+{
+  "snapshot": "psop.microduck@2.0.0-capabilities.4",
+  "records": [
+    {
+      "id": "part:microduck:b364863ffde63eed",
+      "key": "seeed_bearing__configuration__22x16x4",
+      "body": "trunk_base",
+      "kind": "bearing",
+      "boundsMm": {
+        "min": [
+          -5,
+          6.5,
+          115
+        ],
+        "max": [
+          17,
+          28.5,
+          119
+        ]
+      },
+      "centerMm": [
+        6,
+        17.5,
+        117
+      ],
+      "sizeMm": [
+        22,
+        22,
+        4
+      ],
+      "offsetMm": [
+        0,
+        0,
+        -11.335
+      ]
+    },
+    {
+      "id": "part:microduck:9d70b219a5533bf1",
+      "key": "right_shell",
+      "body": "trunk_base",
+      "kind": "shell",
+      "boundsMm": {
+        "min": [
+          -46.398,
+          -32.264,
+          120.334
+        ],
+        "max": [
+          34.5,
+          -0.5,
+          162.026
+        ]
+      },
+      "centerMm": [
+        -5.949,
+        -16.382,
+        141.18
+      ],
+      "sizeMm": [
+        80.898,
+        31.764,
+        41.693
+      ],
+      "offsetMm": [
+        0,
+        -30.168,
+        0
+      ]
+    },
+    {
+      "id": "part:microduck:78cf36c41e4fde06",
+      "key": "banana_pcb_locker",
+      "body": "trunk_base",
+      "kind": "structure",
+      "boundsMm": {
+        "min": [
+          -32.3,
+          -27.025,
+          151.452
+        ],
+        "max": [
+          -28.5,
+          27.025,
+          158.105
+        ]
+      },
+      "centerMm": [
+        -30.4,
+        0,
+        154.779
+      ],
+      "sizeMm": [
+        3.8,
+        54.05,
+        6.652
+      ],
+      "offsetMm": [
+        -41.671,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "part:microduck:203d2686e3321e4a",
+      "key": "trunk_base",
+      "body": "trunk_base",
+      "kind": "structure",
+      "boundsMm": {
+        "min": [
+          -19,
+          -28.5,
+          119
+        ],
+        "max": [
+          17,
+          28.5,
+          122
+        ]
+      },
+      "centerMm": [
+        -1,
+        0,
+        120.5
+      ],
+      "sizeMm": [
+        36,
+        57,
+        3
+      ],
+      "offsetMm": [
+        0,
+        0,
+        -8.168
+      ]
+    },
+    {
+      "id": "part:microduck:a682dc3620df43f5",
+      "key": "xl330",
+      "body": "trunk_base",
+      "kind": "actuator",
+      "boundsMm": {
+        "min": [
+          -18.5,
+          7.5,
+          117
+        ],
+        "max": [
+          15.5,
+          27.5,
+          146
+        ]
+      },
+      "centerMm": [
+        -1.5,
+        17.5,
+        131.5
+      ],
+      "sizeMm": [
+        34,
+        20,
+        29
+      ],
+      "offsetMm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "part:microduck:e7e8275c7d01674c",
+      "key": "power_support",
+      "body": "trunk_base",
+      "kind": "structure",
+      "boundsMm": {
+        "min": [
+          -31,
+          -27.25,
+          75.932
+        ],
+        "max": [
+          -14,
+          27.25,
+          159.422
+        ]
+      },
+      "centerMm": [
+        -22.5,
+        0,
+        117.677
+      ],
+      "sizeMm": [
+        17,
+        54.5,
+        83.49
+      ],
+      "offsetMm": [
+        -36.003,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "part:microduck:f97c1c6580d651d7",
+      "key": "np_f970",
+      "body": "trunk_base",
+      "kind": "electronics",
+      "boundsMm": {
+        "min": [
+          -46.836,
+          -19.308,
+          80.566
+        ],
+        "max": [
+          -25.028,
+          19.3,
+          151.723
+        ]
+      },
+      "centerMm": [
+        -35.932,
+        -0.004,
+        116.145
+      ],
+      "sizeMm": [
+        21.808,
+        38.608,
+        71.157
+      ],
+      "offsetMm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "part:microduck:09cb390e38430c1e",
+      "key": "xl330",
+      "body": "trunk_base",
+      "kind": "actuator",
+      "boundsMm": {
+        "min": [
+          -18.5,
+          -27.5,
+          117
+        ],
+        "max": [
+          15.5,
+          -7.5,
+          146
+        ]
+      },
+      "centerMm": [
+        -1.5,
+        -17.5,
+        131.5
+      ],
+      "sizeMm": [
+        34,
+        20,
+        29
+      ],
+      "offsetMm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "part:microduck:e27cbdd6c07a264e",
+      "key": "left_shell",
+      "body": "trunk_base",
+      "kind": "shell",
+      "boundsMm": {
+        "min": [
+          -46.39,
+          -1.95,
+          120.257
+        ],
+        "max": [
+          34.5,
+          31.764,
+          161.948
+        ]
+      },
+      "centerMm": [
+        -5.945,
+        14.907,
+        141.103
+      ],
+      "sizeMm": [
+        80.89,
+        33.714,
+        41.691
+      ],
+      "offsetMm": [
+        0,
+        32.618,
+        0
+      ]
+    },
+    {
+      "id": "part:microduck:7938fd9143c59ea4",
+      "key": "seeed_bearing__configuration__22x16x4",
+      "body": "trunk_base",
+      "kind": "bearing",
+      "boundsMm": {
+        "min": [
+          -5,
+          -28.5,
+          115
+        ],
+        "max": [
+          17,
+          -6.5,
+          119
+        ]
+      },
+      "centerMm": [
+        6,
+        -17.5,
+        117
+      ],
+      "sizeMm": [
+        22,
+        22,
+        4
+      ],
+      "offsetMm": [
+        0,
+        0,
+        -11.335
+      ]
+    },
+    {
+      "id": "part:microduck:55970da91992f38c",
+      "key": "yaw2roll",
+      "body": "yaw2roll",
+      "kind": "structure",
+      "boundsMm": {
+        "min": [
+          -8.5,
+          6,
+          97.5
+        ],
+        "max": [
+          17.3,
+          29,
+          118
+        ]
+      },
+      "centerMm": [
+        4.4,
+        17.5,
+        107.75
+      ],
+      "sizeMm": [
+        25.8,
+        23,
+        20.5
+      ],
+      "offsetMm": [
+        -3.822,
+        14.785,
+        -19.087
+      ]
+    },
+    {
+      "id": "part:microduck:cd6d48fccc95df41",
+      "key": "xl330",
+      "body": "yaw2roll",
+      "kind": "actuator",
+      "boundsMm": {
+        "min": [
+          -8.5,
+          7.5,
+          78
+        ],
+        "max": [
+          20.5,
+          27.5,
+          112
+        ]
+      },
+      "centerMm": [
+        6,
+        17.5,
+        95
+      ],
+      "sizeMm": [
+        29,
+        20,
+        34
+      ],
+      "offsetMm": [
+        -3.822,
+        14.785,
+        -36.755
+      ]
+    },
+    {
+      "id": "part:microduck:47a950fbb3d0e416",
+      "key": "seeed_bearing__configuration__22x16x4",
+      "body": "yaw2roll",
+      "kind": "bearing",
+      "boundsMm": {
+        "min": [
+          18.5,
+          6.5,
+          91.5
+        ],
+        "max": [
+          22.5,
+          28.5,
+          113.5
+        ]
+      },
+      "centerMm": [
+        20.5,
+        17.5,
+        102.5
+      ],
+      "sizeMm": [
+        4,
+        22,
+        22
+      ],
+      "offsetMm": [
+        7.513,
+        14.785,
+        -36.755
+      ]
+    },
+    {
+      "id": "part:microduck:cb253f38c818b9d8",
+      "key": "bearing_roll",
+      "body": "yaw2roll",
+      "kind": "structure",
+      "boundsMm": {
+        "min": [
+          15.5,
+          6,
+          78
+        ],
+        "max": [
+          18.5,
+          29,
+          118
+        ]
+      },
+      "centerMm": [
+        17,
+        17.5,
+        98
+      ],
+      "sizeMm": [
+        3,
+        23,
+        40
+      ],
+      "offsetMm": [
+        4.346,
+        14.785,
+        -36.755
+      ]
+    },
+    {
+      "id": "part:microduck:bb34e925e25e29f6",
+      "key": "seeed_bearing__configuration__22x16x4",
+      "body": "hip_l",
+      "kind": "bearing",
+      "boundsMm": {
+        "min": [
+          -7,
+          38.5,
+          91.5
+        ],
+        "max": [
+          15,
+          42.5,
+          113.5
+        ]
+      },
+      "centerMm": [
+        4,
+        40.5,
+        102.5
+      ],
+      "sizeMm": [
+        22,
+        4,
+        22
+      ],
+      "offsetMm": [
+        38.681,
+        19.902,
+        -36.755
+      ]
+    },
+    {
+      "id": "part:microduck:fa9ee2f71faafb88",
+      "key": "hip_l",
+      "body": "hip_l",
+      "kind": "structure",
+      "boundsMm": {
+        "min": [
+          -5.5,
+          8,
+          93
+        ],
+        "max": [
+          29,
+          40.45,
+          112
+        ]
+      },
+      "centerMm": [
+        11.75,
+        24.225,
+        102.5
+      ],
+      "sizeMm": [
+        34.5,
+        32.45,
+        19
+      ],
+      "offsetMm": [
+        38.681,
+        14.785,
+        -36.755
+      ]
+    },
+    {
+      "id": "part:microduck:66c73aaad945a993",
+      "key": "upper_leg_left",
+      "body": "upper_leg_left",
+      "kind": "structure",
+      "boundsMm": {
+        "min": [
+          -44.799,
+          42.5,
+          68.308
+        ],
+        "max": [
+          16.197,
+          70.5,
+          115.967
+        ]
+      },
+      "centerMm": [
+        -14.301,
+        56.5,
+        92.138
+      ],
+      "sizeMm": [
+        60.997,
+        28,
+        47.659
+      ],
+      "offsetMm": [
+        38.681,
+        59.406,
+        -36.755
+      ]
+    },
+    {
+      "id": "part:microduck:4cf80d5a57c8cb04",
+      "key": "xl330",
+      "body": "upper_leg_left",
+      "kind": "actuator",
+      "boundsMm": {
+        "min": [
+          -41.777,
+          40.5,
+          71
+        ],
+        "max": [
+          -21.777,
+          69.5,
+          105
+        ]
+      },
+      "centerMm": [
+        -31.777,
+        55,
+        88
+      ],
+      "sizeMm": [
+        20,
+        29,
+        34
+      ],
+      "offsetMm": [
+        38.681,
+        29.238,
+        -36.755
+      ]
+    },
+    {
+      "id": "part:microduck:c75bfc0afb35e000",
+      "key": "upper_leg_rigidity_plate",
+      "body": "upper_leg_left",
+      "kind": "structure",
+      "boundsMm": {
+        "min": [
+          -43.059,
+          42.5,
+          69.504
+        ],
+        "max": [
+          14.999,
+          43.5,
+          114.5
+        ]
+      },
+      "centerMm": [
+        -14.03,
+        43,
+        92.002
+      ],
+      "sizeMm": [
+        58.058,
+        1,
+        44.996
+      ],
+      "offsetMm": [
+        38.681,
+        23.07,
+        -36.755
+      ]
+    },
+    {
+      "id": "part:microduck:e475134639b3f7e1",
+      "key": "seeed_bearing__configuration__22x16x4",
+      "body": "upper_leg_left",
+      "kind": "bearing",
+      "boundsMm": {
+        "min": [
+          -42.777,
+          38.5,
+          69.5
+        ],
+        "max": [
+          -20.777,
+          42.5,
+          91.5
+        ]
+      },
+      "centerMm": [
+        -31.777,
+        40.5,
+        80.5
+      ],
+      "sizeMm": [
+        22,
+        4,
+        22
+      ],
+      "offsetMm": [
+        38.681,
+        19.902,
+        -36.755
+      ]
+    },
+    {
+      "id": "part:microduck:9ffe9d5bcd6bc13a",
+      "key": "xl330",
+      "body": "upper_leg_left",
+      "kind": "actuator",
+      "boundsMm": {
+        "min": [
+          -20.5,
+          40.5,
+          92.5
+        ],
+        "max": [
+          13.5,
+          69.5,
+          112.5
+        ]
+      },
+      "centerMm": [
+        -3.5,
+        55,
+        102.5
+      ],
+      "sizeMm": [
+        34,
+        29,
+        20
+      ],
+      "offsetMm": [
+        38.681,
+        29.238,
+        -36.755
+      ]
+    },
+    {
+      "id": "part:microduck:638f29b46b322e64",
+      "key": "leg",
+      "body": "leg",
+      "kind": "structure",
+      "boundsMm": {
+        "min": [
+          -41.777,
+          32.5,
+          32.5
+        ],
+        "max": [
+          -21.777,
+          40.45,
+          90.5
+        ]
+      },
+      "centerMm": [
+        -31.777,
+        36.475,
+        61.5
+      ],
+      "sizeMm": [
+        20,
+        7.95,
+        58
+      ],
+      "offsetMm": [
+        38.681,
+        11.785,
+        -52.422
+      ]
+    },
+    {
+      "id": "part:microduck:7c130c8489b57c99",
+      "key": "xl330",
+      "body": "leg",
+      "kind": "actuator",
+      "boundsMm": {
+        "min": [
+          -41.777,
+          35.5,
+          29
+        ],
+        "max": [
+          -21.777,
+          64.5,
+          63
+        ]
+      },
+      "centerMm": [
+        -31.777,
+        50,
+        46
+      ],
+      "sizeMm": [
+        20,
+        29,
+        34
+      ],
+      "offsetMm": [
+        38.681,
+        19.902,
+        -52.422
+      ]
+    },
+    {
+      "id": "part:microduck:8b649e45831a1972",
+      "key": "sole_left",
+      "body": "ankle_left",
+      "kind": "structure",
+      "boundsMm": {
+        "min": [
+          -51.777,
+          29.255,
+          13.474
+        ],
+        "max": [
+          2.223,
+          70.354,
+          26.381
+        ]
+      },
+      "centerMm": [
+        -24.777,
+        49.805,
+        19.927
+      ],
+      "sizeMm": [
+        54,
+        41.099,
+        12.907
+      ],
+      "offsetMm": [
+        38.681,
+        19.902,
+        -101.716
+      ]
+    },
+    {
+      "id": "part:microduck:41db565298264db6",
+      "key": "foot_left",
+      "body": "ankle_left",
+      "kind": "structure",
+      "boundsMm": {
+        "min": [
+          -51.777,
+          29.881,
+          15.472
+        ],
+        "max": [
+          2.223,
+          69.966,
+          32.381
+        ]
+      },
+      "centerMm": [
+        -24.777,
+        49.924,
+        23.926
+      ],
+      "sizeMm": [
+        54,
+        40.086,
+        16.909
+      ],
+      "offsetMm": [
+        38.681,
+        19.902,
+        -87.639
+      ]
+    },
+    {
+      "id": "part:microduck:766eaa6e4dd8b09f",
+      "key": "seeed_bearing__configuration_default",
+      "body": "ankle_left",
+      "kind": "bearing",
+      "boundsMm": {
+        "min": [
+          -39.277,
+          32.3,
+          31
+        ],
+        "max": [
+          -24.277,
+          35.3,
+          46
+        ]
+      },
+      "centerMm": [
+        -31.777,
+        33.8,
+        38.5
+      ],
+      "sizeMm": [
+        15,
+        3,
+        15
+      ],
+      "offsetMm": [
+        38.681,
+        11.599,
+        -74.29
+      ]
+    },
+    {
+      "id": "part:microduck:07e507f1e9297aa3",
+      "key": "ankle_left",
+      "body": "ankle_left",
+      "kind": "structure",
+      "boundsMm": {
+        "min": [
+          -46.44,
+          30.164,
+          22.2
+        ],
+        "max": [
+          -9.94,
+          69.654,
+          47.7
+        ]
+      },
+      "centerMm": [
+        -28.19,
+        49.909,
+        34.95
+      ],
+      "sizeMm": [
+        36.5,
+        39.489,
+        25.5
+      ],
+      "offsetMm": [
+        38.681,
+        19.902,
+        -74.29
+      ]
+    },
+    {
+      "id": "part:microduck:6b5602b4416129fe",
+      "key": "neck",
+      "body": "neck",
+      "kind": "structure",
+      "boundsMm": {
+        "min": [
+          16,
+          -13.5,
+          171.921
+        ],
+        "max": [
+          36,
+          -11.5,
+          182.921
+        ]
+      },
+      "centerMm": [
+        26,
+        -12.5,
+        177.421
+      ],
+      "sizeMm": [
+        20,
+        2,
+        11
+      ],
+      "offsetMm": [
+        3.229,
+        -6.168,
+        7.83
+      ]
+    },
+    {
+      "id": "part:microduck:4cef8bb24d37fe6e",
+      "key": "xl330",
+      "body": "neck",
+      "kind": "actuator",
+      "boundsMm": {
+        "min": [
+          16,
+          -14.5,
+          142.922
+        ],
+        "max": [
+          36,
+          14.5,
+          176.921
+        ]
+      },
+      "centerMm": [
+        26,
+        0,
+        159.921
+      ],
+      "sizeMm": [
+        20,
+        29,
+        34
+      ],
+      "offsetMm": [
+        3.229,
+        0,
+        7.83
+      ]
+    },
+    {
+      "id": "part:microduck:44b5600c1a735117",
+      "key": "xl330",
+      "body": "neck",
+      "kind": "actuator",
+      "boundsMm": {
+        "min": [
+          16,
+          -14.5,
+          177.922
+        ],
+        "max": [
+          36,
+          14.5,
+          211.921
+        ]
+      },
+      "centerMm": [
+        26,
+        0,
+        194.922
+      ],
+      "sizeMm": [
+        20,
+        29,
+        34
+      ],
+      "offsetMm": [
+        3.229,
+        0,
+        7.83
+      ]
+    },
+    {
+      "id": "part:microduck:133711c520619e45",
+      "key": "neck",
+      "body": "neck",
+      "kind": "structure",
+      "boundsMm": {
+        "min": [
+          16,
+          11.5,
+          171.921
+        ],
+        "max": [
+          36,
+          13.5,
+          182.921
+        ]
+      },
+      "centerMm": [
+        26,
+        12.5,
+        177.421
+      ],
+      "sizeMm": [
+        20,
+        2,
+        11
+      ],
+      "offsetMm": [
+        3.229,
+        6.168,
+        7.83
+      ]
+    },
+    {
+      "id": "part:microduck:834f5cc892eba41e",
+      "key": "neck_pitch",
+      "body": "neck_pitch",
+      "kind": "structure",
+      "boundsMm": {
+        "min": [
+          17,
+          -17.5,
+          193.421
+        ],
+        "max": [
+          35,
+          17.5,
+          221.115
+        ]
+      },
+      "centerMm": [
+        26,
+        0,
+        207.268
+      ],
+      "sizeMm": [
+        18,
+        35,
+        27.693
+      ],
+      "offsetMm": [
+        3.229,
+        0,
+        29.498
+      ]
+    },
+    {
+      "id": "part:microduck:6b884b140f6e283c",
+      "key": "seeed_bearing__configuration__22x16x4",
+      "body": "neck_pitch",
+      "kind": "bearing",
+      "boundsMm": {
+        "min": [
+          15,
+          -11,
+          219.215
+        ],
+        "max": [
+          37,
+          11,
+          223.215
+        ]
+      },
+      "centerMm": [
+        26,
+        0,
+        221.215
+      ],
+      "sizeMm": [
+        22,
+        22,
+        4
+      ],
+      "offsetMm": [
+        3.229,
+        0,
+        34.566
+      ]
+    },
+    {
+      "id": "part:microduck:d4b9a9e9474a9829",
+      "key": "yaw_roll_motion",
+      "body": "yaw_roll_motion",
+      "kind": "structure",
+      "boundsMm": {
+        "min": [
+          8.1,
+          -24.5,
+          226.615
+        ],
+        "max": [
+          44,
+          9.5,
+          249.115
+        ]
+      },
+      "centerMm": [
+        26.05,
+        -7.5,
+        237.865
+      ],
+      "sizeMm": [
+        35.9,
+        34,
+        22.5
+      ],
+      "offsetMm": [
+        3.229,
+        0,
+        66.501
+      ]
+    },
+    {
+      "id": "part:microduck:a07b37bcb704b29f",
+      "key": "xl330",
+      "body": "yaw_roll_motion",
+      "kind": "actuator",
+      "boundsMm": {
+        "min": [
+          16,
+          -24.5,
+          221.115
+        ],
+        "max": [
+          36,
+          9.5,
+          250.115
+        ]
+      },
+      "centerMm": [
+        26,
+        -7.5,
+        235.615
+      ],
+      "sizeMm": [
+        20,
+        34,
+        29
+      ],
+      "offsetMm": [
+        3.229,
+        0,
+        39.833
+      ]
+    },
+    {
+      "id": "part:microduck:ea69e2c6bba10a23",
+      "key": "seeed_bearing__configuration__22x16x4",
+      "body": "yaw_roll_motion",
+      "kind": "bearing",
+      "boundsMm": {
+        "min": [
+          6,
+          -11,
+          224.615
+        ],
+        "max": [
+          10,
+          11,
+          246.615
+        ]
+      },
+      "centerMm": [
+        8,
+        0,
+        235.615
+      ],
+      "sizeMm": [
+        4,
+        22,
+        22
+      ],
+      "offsetMm": [
+        3.229,
+        0,
+        39.833
+      ]
+    },
+    {
+      "id": "part:microduck:55121c0b36f62219",
+      "key": "seeed_bearing__configuration__22x16x4",
+      "body": "yaw_roll_motion",
+      "kind": "bearing",
+      "boundsMm": {
+        "min": [
+          40,
+          -11,
+          224.615
+        ],
+        "max": [
+          44,
+          11,
+          246.615
+        ]
+      },
+      "centerMm": [
+        42,
+        0,
+        235.615
+      ],
+      "sizeMm": [
+        4,
+        22,
+        22
+      ],
+      "offsetMm": [
+        3.229,
+        0,
+        39.833
+      ]
+    },
+    {
+      "id": "part:microduck:b61b0609c61fc572",
+      "key": "lens",
+      "body": "jaw_soft",
+      "kind": "electronics",
+      "boundsMm": {
+        "min": [
+          70.98,
+          -8.561,
+          242.645
+        ],
+        "max": [
+          89.9,
+          8.379,
+          259.585
+        ]
+      },
+      "centerMm": [
+        80.44,
+        -0.091,
+        251.115
+      ],
+      "sizeMm": [
+        18.92,
+        16.94,
+        16.94
+      ],
+      "offsetMm": [
+        81.894,
+        0,
+        39.833
+      ]
+    },
+    {
+      "id": "part:microduck:afa52198f7fad203",
+      "key": "face_part",
+      "body": "jaw_soft",
+      "kind": "shell",
+      "boundsMm": {
+        "min": [
+          68.9,
+          -43.917,
+          230.315
+        ],
+        "max": [
+          81.4,
+          43.734,
+          274.941
+        ]
+      },
+      "centerMm": [
+        75.15,
+        -0.091,
+        252.628
+      ],
+      "sizeMm": [
+        12.5,
+        87.651,
+        44.626
+      ],
+      "offsetMm": [
+        124.029,
+        0,
+        39.833
+      ]
+    },
+    {
+      "id": "part:microduck:50f0c376d01bb0c1",
+      "key": "xl330",
+      "body": "jaw_soft",
+      "kind": "actuator",
+      "boundsMm": {
+        "min": [
+          16.6,
+          11,
+          228.615
+        ],
+        "max": [
+          50.6,
+          40,
+          248.615
+        ]
+      },
+      "centerMm": [
+        33.6,
+        25.5,
+        238.615
+      ],
+      "sizeMm": [
+        34,
+        29,
+        20
+      ],
+      "offsetMm": [
+        80.796,
+        0,
+        39.833
+      ]
+    },
+    {
+      "id": "part:microduck:f5797f92c2bf01b8",
+      "key": "jaw_soft",
+      "body": "jaw_soft",
+      "kind": "shell",
+      "boundsMm": {
+        "min": [
+          51.601,
+          -43.837,
+          219.867
+        ],
+        "max": [
+          83.835,
+          43.837,
+          228.304
+        ]
+      },
+      "centerMm": [
+        67.718,
+        0,
+        224.086
+      ],
+      "sizeMm": [
+        32.234,
+        87.674,
+        8.438
+      ],
+      "offsetMm": [
+        80.796,
+        0,
+        -28.388
+      ]
+    },
+    {
+      "id": "part:microduck:986b5adf27910138",
+      "key": "motor_support",
+      "body": "jaw_soft",
+      "kind": "structure",
+      "boundsMm": {
+        "min": [
+          -1.9,
+          -39.5,
+          231.515
+        ],
+        "max": [
+          52.3,
+          34,
+          250.315
+        ]
+      },
+      "centerMm": [
+        25.2,
+        -2.75,
+        240.915
+      ],
+      "sizeMm": [
+        54.2,
+        73.5,
+        18.8
+      ],
+      "offsetMm": [
+        80.796,
+        0,
+        67.269
+      ]
+    },
+    {
+      "id": "part:microduck:82d68e991b23c2a3",
+      "key": "top_head_shell",
+      "body": "jaw_soft",
+      "kind": "shell",
+      "boundsMm": {
+        "min": [
+          -30.4,
+          -45.88,
+          231.113
+        ],
+        "max": [
+          92.29,
+          45.88,
+          277.449
+        ]
+      },
+      "centerMm": [
+        30.945,
+        0,
+        254.281
+      ],
+      "sizeMm": [
+        122.69,
+        91.759,
+        46.336
+      ],
+      "offsetMm": [
+        80.796,
+        0,
+        89.638
+      ]
+    },
+    {
+      "id": "part:microduck:96e22c7fa2b976d3",
+      "key": "xl330",
+      "body": "jaw_soft",
+      "kind": "actuator",
+      "boundsMm": {
+        "min": [
+          -20.9,
+          -24.5,
+          225.615
+        ],
+        "max": [
+          8.1,
+          9.5,
+          245.615
+        ]
+      },
+      "centerMm": [
+        -6.4,
+        -7.5,
+        235.615
+      ],
+      "sizeMm": [
+        29,
+        34,
+        20
+      ],
+      "offsetMm": [
+        80.796,
+        0,
+        39.833
+      ]
+    },
+    {
+      "id": "part:microduck:a0775b54397eb21e",
+      "key": "seeed_bearing__configuration_default",
+      "body": "jaw_soft",
+      "kind": "bearing",
+      "boundsMm": {
+        "min": [
+          18.6,
+          -40,
+          231.115
+        ],
+        "max": [
+          33.6,
+          -37,
+          246.115
+        ]
+      },
+      "centerMm": [
+        26.1,
+        -38.5,
+        238.615
+      ],
+      "sizeMm": [
+        15,
+        3,
+        15
+      ],
+      "offsetMm": [
+        80.796,
+        0,
+        39.833
+      ]
+    },
+    {
+      "id": "part:microduck:554503ef38151e67",
+      "key": "elec_rpi_robot_hat_pcb",
+      "body": "jaw_soft",
+      "kind": "electronics",
+      "boundsMm": {
+        "min": [
+          59.16,
+          -32.511,
+          236.045
+        ],
+        "max": [
+          60,
+          32.514,
+          266.07
+        ]
+      },
+      "centerMm": [
+        59.58,
+        0.001,
+        251.057
+      ],
+      "sizeMm": [
+        0.84,
+        65.025,
+        30.025
+      ],
+      "offsetMm": [
+        80.796,
+        0,
+        39.833
+      ]
+    },
+    {
+      "id": "part:microduck:88b7496d63cb41ff",
+      "key": "soft_mouth_top",
+      "body": "jaw_soft",
+      "kind": "shell",
+      "boundsMm": {
+        "min": [
+          51.683,
+          -43.911,
+          226.443
+        ],
+        "max": [
+          84.248,
+          43.911,
+          229.719
+        ]
+      },
+      "centerMm": [
+        67.965,
+        0,
+        228.081
+      ],
+      "sizeMm": [
+        32.565,
+        87.822,
+        3.276
+      ],
+      "offsetMm": [
+        80.796,
+        0,
+        -23.359
+      ]
+    },
+    {
+      "id": "part:microduck:2559a4c412bcda3e",
+      "key": "noenoeil",
+      "body": "jaw_soft",
+      "kind": "shell",
+      "boundsMm": {
+        "min": [
+          79.9,
+          -15.091,
+          236.115
+        ],
+        "max": [
+          89.4,
+          14.909,
+          266.115
+        ]
+      },
+      "centerMm": [
+        84.65,
+        -0.091,
+        251.115
+      ],
+      "sizeMm": [
+        9.5,
+        30,
+        30
+      ],
+      "offsetMm": [
+        128.697,
+        0,
+        39.833
+      ]
+    },
+    {
+      "id": "part:microduck:328011951ac11ee7",
+      "key": "jaw",
+      "body": "jaw_soft",
+      "kind": "shell",
+      "boundsMm": {
+        "min": [
+          17.1,
+          -45.708,
+          218.167
+        ],
+        "max": [
+          85.81,
+          45.708,
+          247.615
+        ]
+      },
+      "centerMm": [
+        51.455,
+        0,
+        232.891
+      ],
+      "sizeMm": [
+        68.71,
+        91.416,
+        29.448
+      ],
+      "offsetMm": [
+        80.796,
+        0,
+        -8.638
+      ]
+    },
+    {
+      "id": "part:microduck:52fdcacf474a463f",
+      "key": "bottom_head_shell",
+      "body": "jaw_soft",
+      "kind": "shell",
+      "boundsMm": {
+        "min": [
+          -30.4,
+          -45.881,
+          218.478
+        ],
+        "max": [
+          86.348,
+          45.882,
+          238.615
+        ]
+      },
+      "centerMm": [
+        27.974,
+        0,
+        228.546
+      ],
+      "sizeMm": [
+        116.748,
+        91.763,
+        20.136
+      ],
+      "offsetMm": [
+        80.796,
+        0,
+        23.666
+      ]
+    },
+    {
+      "id": "part:microduck:2d2cde8ae8ebacac",
+      "key": "m12_lens_holder",
+      "body": "jaw_soft",
+      "kind": "structure",
+      "boundsMm": {
+        "min": [
+          63.68,
+          -12.091,
+          243.115
+        ],
+        "max": [
+          78.48,
+          11.909,
+          259.115
+        ]
+      },
+      "centerMm": [
+        71.08,
+        -0.091,
+        251.115
+      ],
+      "sizeMm": [
+        14.8,
+        24,
+        16
+      ],
+      "offsetMm": [
+        111.282,
+        0,
+        39.833
+      ]
+    },
+    {
+      "id": "part:microduck:ebfcaf98422b7b28",
+      "key": "pcb__raspberry_pi_zero_2_w",
+      "body": "jaw_soft",
+      "kind": "electronics",
+      "boundsMm": {
+        "min": [
+          67.31,
+          -32.511,
+          236.05
+        ],
+        "max": [
+          68.91,
+          32.489,
+          266.05
+        ]
+      },
+      "centerMm": [
+        68.11,
+        -0.011,
+        251.05
+      ],
+      "sizeMm": [
+        1.6,
+        65,
+        30
+      ],
+      "offsetMm": [
+        80.796,
+        0,
+        39.833
+      ]
+    },
+    {
+      "id": "part:microduck:22f2cd114e324ec5",
+      "key": "speaker",
+      "body": "jaw_soft",
+      "kind": "electronics",
+      "boundsMm": {
+        "min": [
+          -17.923,
+          -16.786,
+          245.615
+        ],
+        "max": [
+          7.077,
+          18.214,
+          252.615
+        ]
+      },
+      "centerMm": [
+        -5.423,
+        0.714,
+        249.115
+      ],
+      "sizeMm": [
+        25,
+        35,
+        7
+      ],
+      "offsetMm": [
+        80.796,
+        0,
+        43.001
+      ]
+    },
+    {
+      "id": "part:microduck:48099e14105d3289",
+      "key": "yaw2roll",
+      "body": "bearing_roll",
+      "kind": "structure",
+      "boundsMm": {
+        "min": [
+          -8.5,
+          -29,
+          97.5
+        ],
+        "max": [
+          17.3,
+          -6,
+          118
+        ]
+      },
+      "centerMm": [
+        4.4,
+        -17.5,
+        107.75
+      ],
+      "sizeMm": [
+        25.8,
+        23,
+        20.5
+      ],
+      "offsetMm": [
+        -3.822,
+        -14.785,
+        -19.087
+      ]
+    },
+    {
+      "id": "part:microduck:087d7a46a3ce4ca3",
+      "key": "xl330",
+      "body": "bearing_roll",
+      "kind": "actuator",
+      "boundsMm": {
+        "min": [
+          -8.5,
+          -27.5,
+          78
+        ],
+        "max": [
+          20.5,
+          -7.5,
+          112
+        ]
+      },
+      "centerMm": [
+        6,
+        -17.5,
+        95
+      ],
+      "sizeMm": [
+        29,
+        20,
+        34
+      ],
+      "offsetMm": [
+        -3.822,
+        -14.785,
+        -36.755
+      ]
+    },
+    {
+      "id": "part:microduck:c703574f50f6a46a",
+      "key": "bearing_roll",
+      "body": "bearing_roll",
+      "kind": "structure",
+      "boundsMm": {
+        "min": [
+          15.5,
+          -29,
+          78
+        ],
+        "max": [
+          18.5,
+          -6,
+          118
+        ]
+      },
+      "centerMm": [
+        17,
+        -17.5,
+        98
+      ],
+      "sizeMm": [
+        3,
+        23,
+        40
+      ],
+      "offsetMm": [
+        4.346,
+        -14.785,
+        -36.755
+      ]
+    },
+    {
+      "id": "part:microduck:3fbf0b5c8cea4488",
+      "key": "seeed_bearing__configuration__22x16x4",
+      "body": "bearing_roll",
+      "kind": "bearing",
+      "boundsMm": {
+        "min": [
+          18.5,
+          -28.5,
+          91.5
+        ],
+        "max": [
+          22.5,
+          -6.5,
+          113.5
+        ]
+      },
+      "centerMm": [
+        20.5,
+        -17.5,
+        102.5
+      ],
+      "sizeMm": [
+        4,
+        22,
+        22
+      ],
+      "offsetMm": [
+        7.513,
+        -14.785,
+        -36.755
+      ]
+    },
+    {
+      "id": "part:microduck:c7eeeac0a640d191",
+      "key": "hip_l",
+      "body": "hip_l_2",
+      "kind": "structure",
+      "boundsMm": {
+        "min": [
+          -5.5,
+          -40.45,
+          93
+        ],
+        "max": [
+          29,
+          -8,
+          112
+        ]
+      },
+      "centerMm": [
+        11.75,
+        -24.225,
+        102.5
+      ],
+      "sizeMm": [
+        34.5,
+        32.45,
+        19
+      ],
+      "offsetMm": [
+        38.681,
+        -14.785,
+        -36.755
+      ]
+    },
+    {
+      "id": "part:microduck:d924e1596ffb042a",
+      "key": "seeed_bearing__configuration__22x16x4",
+      "body": "hip_l_2",
+      "kind": "bearing",
+      "boundsMm": {
+        "min": [
+          -7,
+          -42.5,
+          91.5
+        ],
+        "max": [
+          15,
+          -38.5,
+          113.5
+        ]
+      },
+      "centerMm": [
+        4,
+        -40.5,
+        102.5
+      ],
+      "sizeMm": [
+        22,
+        4,
+        22
+      ],
+      "offsetMm": [
+        38.681,
+        -19.902,
+        -36.755
+      ]
+    },
+    {
+      "id": "part:microduck:7038a050dbc33fb0",
+      "key": "xl330",
+      "body": "upper_leg_right",
+      "kind": "actuator",
+      "boundsMm": {
+        "min": [
+          -41.777,
+          -69.5,
+          71
+        ],
+        "max": [
+          -21.777,
+          -40.5,
+          105
+        ]
+      },
+      "centerMm": [
+        -31.777,
+        -55,
+        88
+      ],
+      "sizeMm": [
+        20,
+        29,
+        34
+      ],
+      "offsetMm": [
+        38.681,
+        -29.238,
+        -36.755
+      ]
+    },
+    {
+      "id": "part:microduck:d6a148b5784955d8",
+      "key": "seeed_bearing__configuration__22x16x4",
+      "body": "upper_leg_right",
+      "kind": "bearing",
+      "boundsMm": {
+        "min": [
+          -42.777,
+          -42.5,
+          69.5
+        ],
+        "max": [
+          -20.777,
+          -38.5,
+          91.5
+        ]
+      },
+      "centerMm": [
+        -31.777,
+        -40.5,
+        80.5
+      ],
+      "sizeMm": [
+        22,
+        4,
+        22
+      ],
+      "offsetMm": [
+        38.681,
+        -19.902,
+        -36.755
+      ]
+    },
+    {
+      "id": "part:microduck:7e86db28af59d3cc",
+      "key": "upper_leg_rigidity_plate",
+      "body": "upper_leg_right",
+      "kind": "structure",
+      "boundsMm": {
+        "min": [
+          -43.059,
+          -43.5,
+          69.504
+        ],
+        "max": [
+          14.999,
+          -42.5,
+          114.5
+        ]
+      },
+      "centerMm": [
+        -14.03,
+        -43,
+        92.002
+      ],
+      "sizeMm": [
+        58.058,
+        1,
+        44.996
+      ],
+      "offsetMm": [
+        38.681,
+        -23.07,
+        -36.755
+      ]
+    },
+    {
+      "id": "part:microduck:e40b9945707505e1",
+      "key": "upper_leg_right",
+      "body": "upper_leg_right",
+      "kind": "structure",
+      "boundsMm": {
+        "min": [
+          -44.799,
+          -70.5,
+          68.308
+        ],
+        "max": [
+          16.197,
+          -42.5,
+          115.967
+        ]
+      },
+      "centerMm": [
+        -14.301,
+        -56.5,
+        92.138
+      ],
+      "sizeMm": [
+        60.997,
+        28,
+        47.659
+      ],
+      "offsetMm": [
+        38.681,
+        -59.406,
+        -36.755
+      ]
+    },
+    {
+      "id": "part:microduck:08c5ade0f3fd37db",
+      "key": "xl330",
+      "body": "upper_leg_right",
+      "kind": "actuator",
+      "boundsMm": {
+        "min": [
+          -20.5,
+          -69.5,
+          92.5
+        ],
+        "max": [
+          13.5,
+          -40.5,
+          112.5
+        ]
+      },
+      "centerMm": [
+        -3.5,
+        -55,
+        102.5
+      ],
+      "sizeMm": [
+        34,
+        29,
+        20
+      ],
+      "offsetMm": [
+        38.681,
+        -29.238,
+        -36.755
+      ]
+    },
+    {
+      "id": "part:microduck:0820b4025f26a004",
+      "key": "xl330",
+      "body": "leg_2",
+      "kind": "actuator",
+      "boundsMm": {
+        "min": [
+          -41.777,
+          -64.5,
+          29
+        ],
+        "max": [
+          -21.777,
+          -35.5,
+          63
+        ]
+      },
+      "centerMm": [
+        -31.777,
+        -50,
+        46
+      ],
+      "sizeMm": [
+        20,
+        29,
+        34
+      ],
+      "offsetMm": [
+        38.681,
+        -19.902,
+        -52.422
+      ]
+    },
+    {
+      "id": "part:microduck:7f4fefc3c6de90f1",
+      "key": "leg",
+      "body": "leg_2",
+      "kind": "structure",
+      "boundsMm": {
+        "min": [
+          -41.777,
+          -40.45,
+          32.5
+        ],
+        "max": [
+          -21.777,
+          -32.5,
+          90.5
+        ]
+      },
+      "centerMm": [
+        -31.777,
+        -36.475,
+        61.5
+      ],
+      "sizeMm": [
+        20,
+        7.95,
+        58
+      ],
+      "offsetMm": [
+        38.681,
+        -11.785,
+        -52.422
+      ]
+    },
+    {
+      "id": "part:microduck:b371ac60e2f6757b",
+      "key": "ankle_right",
+      "body": "ankle_right",
+      "kind": "structure",
+      "boundsMm": {
+        "min": [
+          -46.44,
+          -69.654,
+          22.2
+        ],
+        "max": [
+          -9.94,
+          -30.164,
+          47.7
+        ]
+      },
+      "centerMm": [
+        -28.19,
+        -49.909,
+        34.95
+      ],
+      "sizeMm": [
+        36.5,
+        39.489,
+        25.5
+      ],
+      "offsetMm": [
+        38.681,
+        -19.902,
+        -74.29
+      ]
+    },
+    {
+      "id": "part:microduck:2f557a24b2729755",
+      "key": "sole_right",
+      "body": "ankle_right",
+      "kind": "structure",
+      "boundsMm": {
+        "min": [
+          -51.777,
+          -70.354,
+          13.473
+        ],
+        "max": [
+          2.223,
+          -29.255,
+          26.381
+        ]
+      },
+      "centerMm": [
+        -24.777,
+        -49.805,
+        19.927
+      ],
+      "sizeMm": [
+        54,
+        41.099,
+        12.908
+      ],
+      "offsetMm": [
+        38.681,
+        -19.902,
+        -101.716
+      ]
+    },
+    {
+      "id": "part:microduck:e196235810184adf",
+      "key": "seeed_bearing__configuration_default",
+      "body": "ankle_right",
+      "kind": "bearing",
+      "boundsMm": {
+        "min": [
+          -39.277,
+          -35.3,
+          31
+        ],
+        "max": [
+          -24.277,
+          -32.3,
+          46
+        ]
+      },
+      "centerMm": [
+        -31.777,
+        -33.8,
+        38.5
+      ],
+      "sizeMm": [
+        15,
+        3,
+        15
+      ],
+      "offsetMm": [
+        38.681,
+        -11.599,
+        -74.29
+      ]
+    },
+    {
+      "id": "part:microduck:f9955f19a691a1f4",
+      "key": "foot_right",
+      "body": "ankle_right",
+      "kind": "structure",
+      "boundsMm": {
+        "min": [
+          -51.777,
+          -69.966,
+          15.472
+        ],
+        "max": [
+          2.223,
+          -29.881,
+          32.381
+        ]
+      },
+      "centerMm": [
+        -24.777,
+        -49.924,
+        23.926
+      ],
+      "sizeMm": [
+        54,
+        40.086,
+        16.909
+      ],
+      "offsetMm": [
+        38.681,
+        -19.902,
+        -87.639
+      ]
+    }
+  ]
+}

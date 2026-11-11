@@ -1,0 +1,265 @@
+{
+  "schema": "psop.installation-followup-ui/1",
+  "snapshot": "dkp-3955ee11502b1d0c9262",
+  "version": "2.0.0-capabilities.5",
+  "package_digest": "3955ee11502b1d0c926243de719d00f4bba3b811db9c75f7a9f8608be50edc6a",
+  "interfaces": [
+    {
+      "interface_ref": "interface:assembly:55970da91992f38c:hip_support_two_holes",
+      "owner_ref": "part:microduck:55970da91992f38c",
+      "member_count": 2,
+      "relation_count": 1,
+      "highlighted_source_faces": 324,
+      "source_witnesses": 0,
+      "visible_gold_pixels": 1131,
+      "image": "55970da91992f38c-hip_support_two_holes.png",
+      "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-3955ee11502b1d0c9262&part=part%3Amicroduck%3A55970da91992f38c&interface=interface%3Aassembly%3A55970da91992f38c%3Ahip_support_two_holes&explode=0.00&detail=interfaces&inspection=1&view=iso&labels=0"
+    },
+    {
+      "interface_ref": "interface:assembly:cb253f38c818b9d8:hip_support_two_holes",
+      "owner_ref": "part:microduck:cb253f38c818b9d8",
+      "member_count": 2,
+      "relation_count": 1,
+      "highlighted_source_faces": 288,
+      "source_witnesses": 0,
+      "visible_gold_pixels": 269,
+      "image": "cb253f38c818b9d8-hip_support_two_holes.png",
+      "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-3955ee11502b1d0c9262&part=part%3Amicroduck%3Acb253f38c818b9d8&interface=interface%3Aassembly%3Acb253f38c818b9d8%3Ahip_support_two_holes&explode=0.00&detail=interfaces&inspection=1&view=iso&labels=0"
+    },
+    {
+      "interface_ref": "interface:assembly:48099e14105d3289:hip_support_two_holes",
+      "owner_ref": "part:microduck:48099e14105d3289",
+      "member_count": 2,
+      "relation_count": 1,
+      "highlighted_source_faces": 324,
+      "source_witnesses": 0,
+      "visible_gold_pixels": 1131,
+      "image": "48099e14105d3289-hip_support_two_holes.png",
+      "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-3955ee11502b1d0c9262&part=part%3Amicroduck%3A48099e14105d3289&interface=interface%3Aassembly%3A48099e14105d3289%3Ahip_support_two_holes&explode=0.00&detail=interfaces&inspection=1&view=iso&labels=0"
+    },
+    {
+      "interface_ref": "interface:assembly:c703574f50f6a46a:hip_support_two_holes",
+      "owner_ref": "part:microduck:c703574f50f6a46a",
+      "member_count": 2,
+      "relation_count": 1,
+      "highlighted_source_faces": 288,
+      "source_witnesses": 0,
+      "visible_gold_pixels": 269,
+      "image": "c703574f50f6a46a-hip_support_two_holes.png",
+      "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-3955ee11502b1d0c9262&part=part%3Amicroduck%3Ac703574f50f6a46a&interface=interface%3Aassembly%3Ac703574f50f6a46a%3Ahip_support_two_holes&explode=0.00&detail=interfaces&inspection=1&view=iso&labels=0"
+    },
+    {
+      "interface_ref": "interface:assembly:986b5adf27910138:roll_bearing_drive_cradle",
+      "owner_ref": "part:microduck:986b5adf27910138",
+      "member_count": 1,
+      "relation_count": 1,
+      "highlighted_source_faces": 42,
+      "source_witnesses": 0,
+      "visible_gold_pixels": 16736,
+      "image": "986b5adf27910138-roll_bearing_drive_cradle.png",
+      "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-3955ee11502b1d0c9262&part=part%3Amicroduck%3A986b5adf27910138&interface=interface%3Aassembly%3A986b5adf27910138%3Aroll_bearing_drive_cradle&explode=0.00&detail=interfaces&inspection=1&view=iso&labels=0"
+    },
+    {
+      "interface_ref": "interface:assembly:986b5adf27910138:roll_bearing_opposite_cradle",
+      "owner_ref": "part:microduck:986b5adf27910138",
+      "member_count": 1,
+      "relation_count": 1,
+      "highlighted_source_faces": 42,
+      "source_witnesses": 0,
+      "visible_gold_pixels": 11174,
+      "image": "986b5adf27910138-roll_bearing_opposite_cradle.png",
+      "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-3955ee11502b1d0c9262&part=part%3Amicroduck%3A986b5adf27910138&interface=interface%3Aassembly%3A986b5adf27910138%3Aroll_bearing_opposite_cradle&explode=0.00&detail=interfaces&inspection=1&view=iso&labels=0"
+    },
+    {
+      "interface_ref": "interface:assembly:e27cbdd6c07a264e:vertical_servo_fastening",
+      "owner_ref": "part:microduck:e27cbdd6c07a264e",
+      "member_count": 2,
+      "relation_count": 1,
+      "highlighted_source_faces": 279,
+      "source_witnesses": 0,
+      "visible_gold_pixels": 5579,
+      "image": "e27cbdd6c07a264e-vertical_servo_fastening.png",
+      "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-3955ee11502b1d0c9262&part=part%3Amicroduck%3Ae27cbdd6c07a264e&interface=interface%3Aassembly%3Ae27cbdd6c07a264e%3Avertical_servo_fastening&explode=0.00&detail=interfaces&inspection=1&view=iso&labels=0"
+    },
+    {
+      "interface_ref": "interface:assembly:a682dc3620df43f5:vertical_shell_receiver",
+      "owner_ref": "part:microduck:a682dc3620df43f5",
+      "member_count": 1,
+      "relation_count": 1,
+      "highlighted_source_faces": 144,
+      "source_witnesses": 0,
+      "visible_gold_pixels": 5598,
+      "image": "a682dc3620df43f5-vertical_shell_receiver.png",
+      "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-3955ee11502b1d0c9262&part=part%3Amicroduck%3Aa682dc3620df43f5&interface=interface%3Aassembly%3Aa682dc3620df43f5%3Avertical_shell_receiver&explode=0.00&detail=interfaces&inspection=1&view=iso&labels=0"
+    },
+    {
+      "interface_ref": "interface:assembly:9d70b219a5533bf1:vertical_servo_fastening",
+      "owner_ref": "part:microduck:9d70b219a5533bf1",
+      "member_count": 2,
+      "relation_count": 1,
+      "highlighted_source_faces": 278,
+      "source_witnesses": 0,
+      "visible_gold_pixels": 1779,
+      "image": "9d70b219a5533bf1-vertical_servo_fastening.png",
+      "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-3955ee11502b1d0c9262&part=part%3Amicroduck%3A9d70b219a5533bf1&interface=interface%3Aassembly%3A9d70b219a5533bf1%3Avertical_servo_fastening&explode=0.00&detail=interfaces&inspection=1&view=iso&labels=0"
+    },
+    {
+      "interface_ref": "interface:assembly:09cb390e38430c1e:vertical_shell_receiver",
+      "owner_ref": "part:microduck:09cb390e38430c1e",
+      "member_count": 1,
+      "relation_count": 1,
+      "highlighted_source_faces": 144,
+      "source_witnesses": 0,
+      "visible_gold_pixels": 5598,
+      "image": "09cb390e38430c1e-vertical_shell_receiver.png",
+      "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-3955ee11502b1d0c9262&part=part%3Amicroduck%3A09cb390e38430c1e&interface=interface%3Aassembly%3A09cb390e38430c1e%3Avertical_shell_receiver&explode=0.00&detail=interfaces&inspection=1&view=iso&labels=0"
+    },
+    {
+      "interface_ref": "interface:assembly:2559a4c412bcda3e:eye_three_tabs",
+      "owner_ref": "part:microduck:2559a4c412bcda3e",
+      "member_count": 3,
+      "relation_count": 1,
+      "highlighted_source_faces": 60,
+      "source_witnesses": 0,
+      "visible_gold_pixels": 8642,
+      "image": "2559a4c412bcda3e-eye_three_tabs.png",
+      "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-3955ee11502b1d0c9262&part=part%3Amicroduck%3A2559a4c412bcda3e&interface=interface%3Aassembly%3A2559a4c412bcda3e%3Aeye_three_tabs&explode=0.00&detail=interfaces&inspection=1&view=iso&labels=0"
+    },
+    {
+      "interface_ref": "interface:assembly:afa52198f7fad203:eye_three_slots",
+      "owner_ref": "part:microduck:afa52198f7fad203",
+      "member_count": 3,
+      "relation_count": 1,
+      "highlighted_source_faces": 0,
+      "source_witnesses": 3,
+      "visible_gold_pixels": 63,
+      "image": "afa52198f7fad203-eye_three_slots.png",
+      "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-3955ee11502b1d0c9262&part=part%3Amicroduck%3Aafa52198f7fad203&interface=interface%3Aassembly%3Aafa52198f7fad203%3Aeye_three_slots&explode=0.00&detail=interfaces&inspection=1&view=iso&labels=0"
+    },
+    {
+      "interface_ref": "interface:assembly:2d2cde8ae8ebacac:lens_radial_retaining_port",
+      "owner_ref": "part:microduck:2d2cde8ae8ebacac",
+      "member_count": 1,
+      "relation_count": 0,
+      "highlighted_source_faces": 248,
+      "source_witnesses": 0,
+      "visible_gold_pixels": 849,
+      "image": "2d2cde8ae8ebacac-lens_radial_retaining_port.png",
+      "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-3955ee11502b1d0c9262&part=part%3Amicroduck%3A2d2cde8ae8ebacac&interface=interface%3Aassembly%3A2d2cde8ae8ebacac%3Alens_radial_retaining_port&explode=0.00&detail=interfaces&inspection=1&view=iso&labels=0"
+    },
+    {
+      "interface_ref": "interface:assembly:78cf36c41e4fde06:pcb_locating_ears",
+      "owner_ref": "part:microduck:78cf36c41e4fde06",
+      "member_count": 2,
+      "relation_count": 0,
+      "highlighted_source_faces": 16,
+      "source_witnesses": 0,
+      "visible_gold_pixels": 1236,
+      "image": "78cf36c41e4fde06-pcb_locating_ears.png",
+      "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-3955ee11502b1d0c9262&part=part%3Amicroduck%3A78cf36c41e4fde06&interface=interface%3Aassembly%3A78cf36c41e4fde06%3Apcb_locating_ears&explode=0.00&detail=interfaces&inspection=1&view=iso&labels=0"
+    }
+  ],
+  "navigation": [
+    {
+      "from": "interface:assembly:55970da91992f38c:hip_support_two_holes",
+      "to": "interface:assembly:cb253f38c818b9d8:hip_support_two_holes",
+      "connection_ref": "connection:assembly:55970da91992f38c:hip_support_two_holes",
+      "source_conflict": false,
+      "verified": true
+    },
+    {
+      "from": "interface:assembly:cb253f38c818b9d8:hip_support_two_holes",
+      "to": "interface:assembly:55970da91992f38c:hip_support_two_holes",
+      "connection_ref": "connection:assembly:55970da91992f38c:hip_support_two_holes",
+      "source_conflict": false,
+      "verified": true
+    },
+    {
+      "from": "interface:assembly:48099e14105d3289:hip_support_two_holes",
+      "to": "interface:assembly:c703574f50f6a46a:hip_support_two_holes",
+      "connection_ref": "connection:assembly:48099e14105d3289:hip_support_two_holes",
+      "source_conflict": false,
+      "verified": true
+    },
+    {
+      "from": "interface:assembly:c703574f50f6a46a:hip_support_two_holes",
+      "to": "interface:assembly:48099e14105d3289:hip_support_two_holes",
+      "connection_ref": "connection:assembly:48099e14105d3289:hip_support_two_holes",
+      "source_conflict": false,
+      "verified": true
+    },
+    {
+      "from": "interface:assembly:986b5adf27910138:roll_bearing_drive_cradle",
+      "to": "interface:assembly:ea69e2c6bba10a23:outer_ring",
+      "connection_ref": "connection:assembly:986b5adf27910138:roll_bearing_drive_cradle",
+      "source_conflict": false,
+      "verified": true
+    },
+    {
+      "from": "interface:assembly:986b5adf27910138:roll_bearing_opposite_cradle",
+      "to": "interface:assembly:55121c0b36f62219:outer_ring",
+      "connection_ref": "connection:assembly:986b5adf27910138:roll_bearing_opposite_cradle",
+      "source_conflict": false,
+      "verified": true
+    },
+    {
+      "from": "interface:assembly:e27cbdd6c07a264e:vertical_servo_fastening",
+      "to": "interface:assembly:a682dc3620df43f5:vertical_shell_receiver",
+      "connection_ref": "connection:assembly:e27cbdd6c07a264e:vertical_servo_fastening",
+      "source_conflict": false,
+      "verified": true
+    },
+    {
+      "from": "interface:assembly:a682dc3620df43f5:vertical_shell_receiver",
+      "to": "interface:assembly:e27cbdd6c07a264e:vertical_servo_fastening",
+      "connection_ref": "connection:assembly:e27cbdd6c07a264e:vertical_servo_fastening",
+      "source_conflict": false,
+      "verified": true
+    },
+    {
+      "from": "interface:assembly:9d70b219a5533bf1:vertical_servo_fastening",
+      "to": "interface:assembly:09cb390e38430c1e:vertical_shell_receiver",
+      "connection_ref": "connection:assembly:9d70b219a5533bf1:vertical_servo_fastening",
+      "source_conflict": true,
+      "verified": true
+    },
+    {
+      "from": "interface:assembly:09cb390e38430c1e:vertical_shell_receiver",
+      "to": "interface:assembly:9d70b219a5533bf1:vertical_servo_fastening",
+      "connection_ref": "connection:assembly:9d70b219a5533bf1:vertical_servo_fastening",
+      "source_conflict": true,
+      "verified": true
+    },
+    {
+      "from": "interface:assembly:2559a4c412bcda3e:eye_three_tabs",
+      "to": "interface:assembly:afa52198f7fad203:eye_three_slots",
+      "connection_ref": "connection:assembly:2559a4c412bcda3e:eye_three_tabs",
+      "source_conflict": false,
+      "verified": true
+    },
+    {
+      "from": "interface:assembly:afa52198f7fad203:eye_three_slots",
+      "to": "interface:assembly:2559a4c412bcda3e:eye_three_tabs",
+      "connection_ref": "connection:assembly:2559a4c412bcda3e:eye_three_tabs",
+      "source_conflict": false,
+      "verified": true
+    }
+  ],
+  "geometry_associations": [
+    {
+      "feature_ref": "feature:73de4a7931432d81390d:geometry:84530ebce6a93b73e437",
+      "functional_interface_label": "髋连接件与支承片双孔安装",
+      "visible_source_samples": 16,
+      "image": "geometry-association-55970da91992f38c.png",
+      "verified": true
+    },
+    {
+      "feature_ref": "feature:235863d91c3a953cf25b:geometry:71085be1b816cc33630d",
+      "functional_interface_label": "驱动侧横滚轴承局部承座",
+      "visible_source_samples": 16,
+      "image": "geometry-association-986b5adf27910138.png",
+      "verified": true
+    }
+  ],
+  "javascript_errors": []
+}

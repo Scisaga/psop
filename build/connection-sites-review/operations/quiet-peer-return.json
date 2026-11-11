@@ -1,0 +1,908 @@
+{
+  "before": {
+    "kind": "psop.workbench.view/1.0",
+    "workspaceId": "microduck",
+    "packageId": "psop.microduck",
+    "packageVersion": "2.0.0-connection-sites.1",
+    "packageDigest": "8857e0482824621ff8da5ba2c7b8da13f8641ea8c3c10961ed52b3d238993ba9",
+    "snapshotId": "dkp-8857e0482824621ff8da",
+    "sourceCommit": "cb70b792312d559a4da09064d92009079671815f",
+    "selectedId": "part:microduck:07e507f1e9297aa3",
+    "geometrySelection": {
+      "kind": "connection_site",
+      "id": "connection-site:d75dc0566c6b289c5eda3bdeb84bc384",
+      "ownerRef": "part:microduck:07e507f1e9297aa3"
+    },
+    "explosion": 0,
+    "view": "iso",
+    "camera": {
+      "position": [
+        0.18835507835075227,
+        -0.27020150116518327,
+        0.1893562735033879
+      ],
+      "target": [
+        -0.028190307886624154,
+        0.04990906979441647,
+        0.03494999809934561
+      ]
+    },
+    "hiddenIds": [],
+    "isolateId": "part:microduck:07e507f1e9297aa3",
+    "showLabels": false,
+    "showGrid": false,
+    "showGeometryNormals": false,
+    "clipping": false,
+    "xray": false,
+    "showSupplementals": false,
+    "supplementReviewIds": null,
+    "activeConnectionAlternativeIds": [],
+    "inspection": {
+      "active": false,
+      "selection": null,
+      "translucentPartIds": [],
+      "includesOwner": false,
+      "camera": {
+        "position": [
+          0.18835507835075227,
+          -0.27020150116518327,
+          0.1893562735033879
+        ],
+        "target": [
+          -0.028190307886624154,
+          0.04990906979441647,
+          0.03494999809934561
+        ]
+      },
+      "previousCamera": null,
+      "mode": "inactive",
+      "visiblePartIds": [
+        "part:microduck:07e507f1e9297aa3"
+      ],
+      "hiddenPartIds": [
+        "part:microduck:b364863ffde63eed",
+        "part:microduck:9d70b219a5533bf1",
+        "part:microduck:78cf36c41e4fde06",
+        "part:microduck:203d2686e3321e4a",
+        "part:microduck:a682dc3620df43f5",
+        "part:microduck:e7e8275c7d01674c",
+        "part:microduck:f97c1c6580d651d7",
+        "part:microduck:09cb390e38430c1e",
+        "part:microduck:e27cbdd6c07a264e",
+        "part:microduck:7938fd9143c59ea4",
+        "part:microduck:55970da91992f38c",
+        "part:microduck:cd6d48fccc95df41",
+        "part:microduck:47a950fbb3d0e416",
+        "part:microduck:cb253f38c818b9d8",
+        "part:microduck:bb34e925e25e29f6",
+        "part:microduck:fa9ee2f71faafb88",
+        "part:microduck:66c73aaad945a993",
+        "part:microduck:4cf80d5a57c8cb04",
+        "part:microduck:c75bfc0afb35e000",
+        "part:microduck:e475134639b3f7e1",
+        "part:microduck:9ffe9d5bcd6bc13a",
+        "part:microduck:638f29b46b322e64",
+        "part:microduck:7c130c8489b57c99",
+        "part:microduck:8b649e45831a1972",
+        "part:microduck:41db565298264db6",
+        "part:microduck:766eaa6e4dd8b09f",
+        "part:microduck:6b5602b4416129fe",
+        "part:microduck:4cef8bb24d37fe6e",
+        "part:microduck:44b5600c1a735117",
+        "part:microduck:133711c520619e45",
+        "part:microduck:834f5cc892eba41e",
+        "part:microduck:6b884b140f6e283c",
+        "part:microduck:d4b9a9e9474a9829",
+        "part:microduck:a07b37bcb704b29f",
+        "part:microduck:ea69e2c6bba10a23",
+        "part:microduck:55121c0b36f62219",
+        "part:microduck:b61b0609c61fc572",
+        "part:microduck:afa52198f7fad203",
+        "part:microduck:50f0c376d01bb0c1",
+        "part:microduck:f5797f92c2bf01b8",
+        "part:microduck:986b5adf27910138",
+        "part:microduck:82d68e991b23c2a3",
+        "part:microduck:96e22c7fa2b976d3",
+        "part:microduck:a0775b54397eb21e",
+        "part:microduck:554503ef38151e67",
+        "part:microduck:88b7496d63cb41ff",
+        "part:microduck:2559a4c412bcda3e",
+        "part:microduck:328011951ac11ee7",
+        "part:microduck:52fdcacf474a463f",
+        "part:microduck:2d2cde8ae8ebacac",
+        "part:microduck:ebfcaf98422b7b28",
+        "part:microduck:22f2cd114e324ec5",
+        "part:microduck:48099e14105d3289",
+        "part:microduck:087d7a46a3ce4ca3",
+        "part:microduck:c703574f50f6a46a",
+        "part:microduck:3fbf0b5c8cea4488",
+        "part:microduck:c7eeeac0a640d191",
+        "part:microduck:d924e1596ffb042a",
+        "part:microduck:7038a050dbc33fb0",
+        "part:microduck:d6a148b5784955d8",
+        "part:microduck:7e86db28af59d3cc",
+        "part:microduck:e40b9945707505e1",
+        "part:microduck:08c5ade0f3fd37db",
+        "part:microduck:0820b4025f26a004",
+        "part:microduck:7f4fefc3c6de90f1",
+        "part:microduck:b371ac60e2f6757b",
+        "part:microduck:2f557a24b2729755",
+        "part:microduck:e196235810184adf",
+        "part:microduck:f9955f19a691a1f4"
+      ]
+    },
+    "supplementalDisplay": {
+      "enabled": false,
+      "referenceEnabled": false,
+      "activeAlternativeIds": [],
+      "scopeReviewIds": null,
+      "components": [
+        {
+          "id": "supplement:microduck:818ac0f2dee9c3d6:reference-screw-9a31b01a95cfe09e",
+          "visible": false,
+          "usage": "reference_connector",
+          "status": "illustrative_unconfirmed",
+          "domain": "synthetic",
+          "bom_status": "not_confirmed",
+          "position": [
+            -0.02377709994931053,
+            -0.03620000183582308,
+            0.060999987645217954
+          ],
+          "quaternion": [
+            0.7071067811865476,
+            -1.5700924586837752e-16,
+            0,
+            0.7071067811865476
+          ],
+          "displayAnchorPartRef": "part:microduck:7f4fefc3c6de90f1",
+          "displayAnchorOffset": [
+            0,
+            0,
+            0
+          ],
+          "displayOnly": true
+        },
+        {
+          "id": "supplement:microduck:818ac0f2dee9c3d6:reference-screw-e45405b05af5158a",
+          "visible": false,
+          "usage": "reference_connector",
+          "status": "illustrative_unconfirmed",
+          "domain": "synthetic",
+          "bom_status": "not_confirmed",
+          "position": [
+            -0.03977710003196745,
+            -0.03620000183582308,
+            0.060999987645217926
+          ],
+          "quaternion": [
+            0.7071067811865476,
+            -1.5700924586837752e-16,
+            0,
+            0.7071067811865476
+          ],
+          "displayAnchorPartRef": "part:microduck:7f4fefc3c6de90f1",
+          "displayAnchorOffset": [
+            0,
+            0,
+            0
+          ],
+          "displayOnly": true
+        },
+        {
+          "id": "supplement:microduck:d9d7236003552b7a:axis-screw",
+          "visible": false,
+          "usage": "unverified_alternative",
+          "status": "illustrative_unconfirmed",
+          "domain": "synthetic",
+          "bom_status": "not_confirmed",
+          "position": [
+            0.0040000000000000105,
+            -0.0720000013113022,
+            0.10250000000000001
+          ],
+          "quaternion": [
+            -0.7071067811865476,
+            0,
+            0,
+            0.7071067811865476
+          ],
+          "displayAnchorPartRef": "part:microduck:e40b9945707505e1",
+          "displayAnchorOffset": [
+            0,
+            0,
+            0
+          ],
+          "displayOnly": true
+        },
+        {
+          "id": "supplement:microduck:d9d7236003552b7a:idler-cap",
+          "visible": false,
+          "usage": "unverified_alternative",
+          "status": "illustrative_unconfirmed",
+          "domain": "synthetic",
+          "bom_status": "not_confirmed",
+          "position": [
+            0.0040000000000000105,
+            -0.0712500013113022,
+            0.10250000000000001
+          ],
+          "quaternion": [
+            -0.7071067811865476,
+            0,
+            0,
+            0.7071067811865476
+          ],
+          "displayAnchorPartRef": "part:microduck:e40b9945707505e1",
+          "displayAnchorOffset": [
+            0,
+            0,
+            0
+          ],
+          "displayOnly": true
+        },
+        {
+          "id": "supplement:microduck:eb3b847d54e19743:axis-screw",
+          "visible": false,
+          "usage": "unverified_alternative",
+          "status": "illustrative_unconfirmed",
+          "domain": "synthetic",
+          "bom_status": "not_confirmed",
+          "position": [
+            -0.031777087597307234,
+            0.07200000131130221,
+            0.08049999998348158
+          ],
+          "quaternion": [
+            0.7071067811865476,
+            3.140184917367549e-16,
+            0,
+            0.7071067811865475
+          ],
+          "displayAnchorPartRef": "part:microduck:66c73aaad945a993",
+          "displayAnchorOffset": [
+            0,
+            0,
+            0
+          ],
+          "displayOnly": true
+        },
+        {
+          "id": "supplement:microduck:eb3b847d54e19743:idler-cap",
+          "visible": false,
+          "usage": "unverified_alternative",
+          "status": "illustrative_unconfirmed",
+          "domain": "synthetic",
+          "bom_status": "not_confirmed",
+          "position": [
+            -0.031777087597307234,
+            0.07125000131130221,
+            0.08049999998348158
+          ],
+          "quaternion": [
+            0.7071067811865476,
+            3.140184917367549e-16,
+            0,
+            0.7071067811865475
+          ],
+          "displayAnchorPartRef": "part:microduck:66c73aaad945a993",
+          "displayAnchorOffset": [
+            0,
+            0,
+            0
+          ],
+          "displayOnly": true
+        },
+        {
+          "id": "supplement:microduck:420da1d2ae89dcf9:reference-screw-9c3b70ed2f465298",
+          "visible": false,
+          "usage": "reference_connector",
+          "status": "illustrative_unconfirmed",
+          "domain": "synthetic",
+          "bom_status": "not_confirmed",
+          "position": [
+            -0.039777100050689435,
+            0.03620000183582307,
+            0.060999987645217954
+          ],
+          "quaternion": [
+            -0.7071067811865475,
+            -1.570092458683775e-16,
+            0,
+            0.7071067811865477
+          ],
+          "displayAnchorPartRef": "part:microduck:638f29b46b322e64",
+          "displayAnchorOffset": [
+            0,
+            0,
+            0
+          ],
+          "displayOnly": true
+        },
+        {
+          "id": "supplement:microduck:420da1d2ae89dcf9:reference-screw-b9c400a23841cc99",
+          "visible": false,
+          "usage": "reference_connector",
+          "status": "illustrative_unconfirmed",
+          "domain": "synthetic",
+          "bom_status": "not_confirmed",
+          "position": [
+            -0.023777099968032504,
+            0.03620000183582309,
+            0.060999987645217926
+          ],
+          "quaternion": [
+            -0.7071067811865475,
+            -1.570092458683775e-16,
+            0,
+            0.7071067811865477
+          ],
+          "displayAnchorPartRef": "part:microduck:638f29b46b322e64",
+          "displayAnchorOffset": [
+            0,
+            0,
+            0
+          ],
+          "displayOnly": true
+        },
+        {
+          "id": "supplement:microduck:559b800564efaa51:axis-screw",
+          "visible": false,
+          "usage": "unverified_alternative",
+          "status": "illustrative_unconfirmed",
+          "domain": "synthetic",
+          "bom_status": "not_confirmed",
+          "position": [
+            0.003999999999999982,
+            0.07200000131130223,
+            0.10250000000000001
+          ],
+          "quaternion": [
+            0.7071067811865476,
+            3.140184917367549e-16,
+            0,
+            0.7071067811865475
+          ],
+          "displayAnchorPartRef": "part:microduck:66c73aaad945a993",
+          "displayAnchorOffset": [
+            0,
+            0,
+            0
+          ],
+          "displayOnly": true
+        },
+        {
+          "id": "supplement:microduck:559b800564efaa51:idler-cap",
+          "visible": false,
+          "usage": "unverified_alternative",
+          "status": "illustrative_unconfirmed",
+          "domain": "synthetic",
+          "bom_status": "not_confirmed",
+          "position": [
+            0.003999999999999983,
+            0.07125000131130223,
+            0.10250000000000001
+          ],
+          "quaternion": [
+            0.7071067811865476,
+            3.140184917367549e-16,
+            0,
+            0.7071067811865475
+          ],
+          "displayAnchorPartRef": "part:microduck:66c73aaad945a993",
+          "displayAnchorOffset": [
+            0,
+            0,
+            0
+          ],
+          "displayOnly": true
+        },
+        {
+          "id": "supplement:microduck:be212107b92437b8:axis-screw",
+          "visible": false,
+          "usage": "unverified_alternative",
+          "status": "illustrative_unconfirmed",
+          "domain": "synthetic",
+          "bom_status": "not_confirmed",
+          "position": [
+            -0.03177708759730718,
+            -0.07200000131130219,
+            0.08049999998348159
+          ],
+          "quaternion": [
+            -0.7071067811865476,
+            0,
+            0,
+            0.7071067811865476
+          ],
+          "displayAnchorPartRef": "part:microduck:e40b9945707505e1",
+          "displayAnchorOffset": [
+            0,
+            0,
+            0
+          ],
+          "displayOnly": true
+        },
+        {
+          "id": "supplement:microduck:be212107b92437b8:idler-cap",
+          "visible": false,
+          "usage": "unverified_alternative",
+          "status": "illustrative_unconfirmed",
+          "domain": "synthetic",
+          "bom_status": "not_confirmed",
+          "position": [
+            -0.03177708759730718,
+            -0.07125000131130219,
+            0.08049999998348159
+          ],
+          "quaternion": [
+            -0.7071067811865476,
+            0,
+            0,
+            0.7071067811865476
+          ],
+          "displayAnchorPartRef": "part:microduck:e40b9945707505e1",
+          "displayAnchorOffset": [
+            0,
+            0,
+            0
+          ],
+          "displayOnly": true
+        }
+      ]
+    }
+  },
+  "after": {
+    "kind": "psop.workbench.view/1.0",
+    "workspaceId": "microduck",
+    "packageId": "psop.microduck",
+    "packageVersion": "2.0.0-connection-sites.1",
+    "packageDigest": "8857e0482824621ff8da5ba2c7b8da13f8641ea8c3c10961ed52b3d238993ba9",
+    "snapshotId": "dkp-8857e0482824621ff8da",
+    "sourceCommit": "cb70b792312d559a4da09064d92009079671815f",
+    "selectedId": "part:microduck:07e507f1e9297aa3",
+    "geometrySelection": {
+      "kind": "connection_site",
+      "id": "connection-site:d75dc0566c6b289c5eda3bdeb84bc384",
+      "ownerRef": "part:microduck:07e507f1e9297aa3"
+    },
+    "explosion": 0,
+    "view": "iso",
+    "camera": {
+      "position": [
+        0.18835507835075227,
+        -0.27020150116518327,
+        0.1893562735033879
+      ],
+      "target": [
+        -0.028190307886624154,
+        0.04990906979441647,
+        0.03494999809934561
+      ]
+    },
+    "hiddenIds": [],
+    "isolateId": "part:microduck:07e507f1e9297aa3",
+    "showLabels": false,
+    "showGrid": false,
+    "showGeometryNormals": false,
+    "clipping": false,
+    "xray": false,
+    "showSupplementals": false,
+    "supplementReviewIds": null,
+    "activeConnectionAlternativeIds": [],
+    "inspection": {
+      "active": false,
+      "selection": null,
+      "translucentPartIds": [],
+      "includesOwner": false,
+      "camera": {
+        "position": [
+          0.18835507835075227,
+          -0.27020150116518327,
+          0.1893562735033879
+        ],
+        "target": [
+          -0.028190307886624154,
+          0.04990906979441647,
+          0.03494999809934561
+        ]
+      },
+      "previousCamera": null,
+      "mode": "inactive",
+      "visiblePartIds": [
+        "part:microduck:07e507f1e9297aa3"
+      ],
+      "hiddenPartIds": [
+        "part:microduck:b364863ffde63eed",
+        "part:microduck:9d70b219a5533bf1",
+        "part:microduck:78cf36c41e4fde06",
+        "part:microduck:203d2686e3321e4a",
+        "part:microduck:a682dc3620df43f5",
+        "part:microduck:e7e8275c7d01674c",
+        "part:microduck:f97c1c6580d651d7",
+        "part:microduck:09cb390e38430c1e",
+        "part:microduck:e27cbdd6c07a264e",
+        "part:microduck:7938fd9143c59ea4",
+        "part:microduck:55970da91992f38c",
+        "part:microduck:cd6d48fccc95df41",
+        "part:microduck:47a950fbb3d0e416",
+        "part:microduck:cb253f38c818b9d8",
+        "part:microduck:bb34e925e25e29f6",
+        "part:microduck:fa9ee2f71faafb88",
+        "part:microduck:66c73aaad945a993",
+        "part:microduck:4cf80d5a57c8cb04",
+        "part:microduck:c75bfc0afb35e000",
+        "part:microduck:e475134639b3f7e1",
+        "part:microduck:9ffe9d5bcd6bc13a",
+        "part:microduck:638f29b46b322e64",
+        "part:microduck:7c130c8489b57c99",
+        "part:microduck:8b649e45831a1972",
+        "part:microduck:41db565298264db6",
+        "part:microduck:766eaa6e4dd8b09f",
+        "part:microduck:6b5602b4416129fe",
+        "part:microduck:4cef8bb24d37fe6e",
+        "part:microduck:44b5600c1a735117",
+        "part:microduck:133711c520619e45",
+        "part:microduck:834f5cc892eba41e",
+        "part:microduck:6b884b140f6e283c",
+        "part:microduck:d4b9a9e9474a9829",
+        "part:microduck:a07b37bcb704b29f",
+        "part:microduck:ea69e2c6bba10a23",
+        "part:microduck:55121c0b36f62219",
+        "part:microduck:b61b0609c61fc572",
+        "part:microduck:afa52198f7fad203",
+        "part:microduck:50f0c376d01bb0c1",
+        "part:microduck:f5797f92c2bf01b8",
+        "part:microduck:986b5adf27910138",
+        "part:microduck:82d68e991b23c2a3",
+        "part:microduck:96e22c7fa2b976d3",
+        "part:microduck:a0775b54397eb21e",
+        "part:microduck:554503ef38151e67",
+        "part:microduck:88b7496d63cb41ff",
+        "part:microduck:2559a4c412bcda3e",
+        "part:microduck:328011951ac11ee7",
+        "part:microduck:52fdcacf474a463f",
+        "part:microduck:2d2cde8ae8ebacac",
+        "part:microduck:ebfcaf98422b7b28",
+        "part:microduck:22f2cd114e324ec5",
+        "part:microduck:48099e14105d3289",
+        "part:microduck:087d7a46a3ce4ca3",
+        "part:microduck:c703574f50f6a46a",
+        "part:microduck:3fbf0b5c8cea4488",
+        "part:microduck:c7eeeac0a640d191",
+        "part:microduck:d924e1596ffb042a",
+        "part:microduck:7038a050dbc33fb0",
+        "part:microduck:d6a148b5784955d8",
+        "part:microduck:7e86db28af59d3cc",
+        "part:microduck:e40b9945707505e1",
+        "part:microduck:08c5ade0f3fd37db",
+        "part:microduck:0820b4025f26a004",
+        "part:microduck:7f4fefc3c6de90f1",
+        "part:microduck:b371ac60e2f6757b",
+        "part:microduck:2f557a24b2729755",
+        "part:microduck:e196235810184adf",
+        "part:microduck:f9955f19a691a1f4"
+      ]
+    },
+    "supplementalDisplay": {
+      "enabled": false,
+      "referenceEnabled": false,
+      "activeAlternativeIds": [],
+      "scopeReviewIds": null,
+      "components": [
+        {
+          "id": "supplement:microduck:818ac0f2dee9c3d6:reference-screw-9a31b01a95cfe09e",
+          "visible": false,
+          "usage": "reference_connector",
+          "status": "illustrative_unconfirmed",
+          "domain": "synthetic",
+          "bom_status": "not_confirmed",
+          "position": [
+            -0.02377709994931053,
+            -0.03620000183582308,
+            0.060999987645217954
+          ],
+          "quaternion": [
+            0.7071067811865476,
+            -1.5700924586837752e-16,
+            0,
+            0.7071067811865476
+          ],
+          "displayAnchorPartRef": "part:microduck:7f4fefc3c6de90f1",
+          "displayAnchorOffset": [
+            0,
+            0,
+            0
+          ],
+          "displayOnly": true
+        },
+        {
+          "id": "supplement:microduck:818ac0f2dee9c3d6:reference-screw-e45405b05af5158a",
+          "visible": false,
+          "usage": "reference_connector",
+          "status": "illustrative_unconfirmed",
+          "domain": "synthetic",
+          "bom_status": "not_confirmed",
+          "position": [
+            -0.03977710003196745,
+            -0.03620000183582308,
+            0.060999987645217926
+          ],
+          "quaternion": [
+            0.7071067811865476,
+            -1.5700924586837752e-16,
+            0,
+            0.7071067811865476
+          ],
+          "displayAnchorPartRef": "part:microduck:7f4fefc3c6de90f1",
+          "displayAnchorOffset": [
+            0,
+            0,
+            0
+          ],
+          "displayOnly": true
+        },
+        {
+          "id": "supplement:microduck:d9d7236003552b7a:axis-screw",
+          "visible": false,
+          "usage": "unverified_alternative",
+          "status": "illustrative_unconfirmed",
+          "domain": "synthetic",
+          "bom_status": "not_confirmed",
+          "position": [
+            0.0040000000000000105,
+            -0.0720000013113022,
+            0.10250000000000001
+          ],
+          "quaternion": [
+            -0.7071067811865476,
+            0,
+            0,
+            0.7071067811865476
+          ],
+          "displayAnchorPartRef": "part:microduck:e40b9945707505e1",
+          "displayAnchorOffset": [
+            0,
+            0,
+            0
+          ],
+          "displayOnly": true
+        },
+        {
+          "id": "supplement:microduck:d9d7236003552b7a:idler-cap",
+          "visible": false,
+          "usage": "unverified_alternative",
+          "status": "illustrative_unconfirmed",
+          "domain": "synthetic",
+          "bom_status": "not_confirmed",
+          "position": [
+            0.0040000000000000105,
+            -0.0712500013113022,
+            0.10250000000000001
+          ],
+          "quaternion": [
+            -0.7071067811865476,
+            0,
+            0,
+            0.7071067811865476
+          ],
+          "displayAnchorPartRef": "part:microduck:e40b9945707505e1",
+          "displayAnchorOffset": [
+            0,
+            0,
+            0
+          ],
+          "displayOnly": true
+        },
+        {
+          "id": "supplement:microduck:eb3b847d54e19743:axis-screw",
+          "visible": false,
+          "usage": "unverified_alternative",
+          "status": "illustrative_unconfirmed",
+          "domain": "synthetic",
+          "bom_status": "not_confirmed",
+          "position": [
+            -0.031777087597307234,
+            0.07200000131130221,
+            0.08049999998348158
+          ],
+          "quaternion": [
+            0.7071067811865476,
+            3.140184917367549e-16,
+            0,
+            0.7071067811865475
+          ],
+          "displayAnchorPartRef": "part:microduck:66c73aaad945a993",
+          "displayAnchorOffset": [
+            0,
+            0,
+            0
+          ],
+          "displayOnly": true
+        },
+        {
+          "id": "supplement:microduck:eb3b847d54e19743:idler-cap",
+          "visible": false,
+          "usage": "unverified_alternative",
+          "status": "illustrative_unconfirmed",
+          "domain": "synthetic",
+          "bom_status": "not_confirmed",
+          "position": [
+            -0.031777087597307234,
+            0.07125000131130221,
+            0.08049999998348158
+          ],
+          "quaternion": [
+            0.7071067811865476,
+            3.140184917367549e-16,
+            0,
+            0.7071067811865475
+          ],
+          "displayAnchorPartRef": "part:microduck:66c73aaad945a993",
+          "displayAnchorOffset": [
+            0,
+            0,
+            0
+          ],
+          "displayOnly": true
+        },
+        {
+          "id": "supplement:microduck:420da1d2ae89dcf9:reference-screw-9c3b70ed2f465298",
+          "visible": false,
+          "usage": "reference_connector",
+          "status": "illustrative_unconfirmed",
+          "domain": "synthetic",
+          "bom_status": "not_confirmed",
+          "position": [
+            -0.039777100050689435,
+            0.03620000183582307,
+            0.060999987645217954
+          ],
+          "quaternion": [
+            -0.7071067811865475,
+            -1.570092458683775e-16,
+            0,
+            0.7071067811865477
+          ],
+          "displayAnchorPartRef": "part:microduck:638f29b46b322e64",
+          "displayAnchorOffset": [
+            0,
+            0,
+            0
+          ],
+          "displayOnly": true
+        },
+        {
+          "id": "supplement:microduck:420da1d2ae89dcf9:reference-screw-b9c400a23841cc99",
+          "visible": false,
+          "usage": "reference_connector",
+          "status": "illustrative_unconfirmed",
+          "domain": "synthetic",
+          "bom_status": "not_confirmed",
+          "position": [
+            -0.023777099968032504,
+            0.03620000183582309,
+            0.060999987645217926
+          ],
+          "quaternion": [
+            -0.7071067811865475,
+            -1.570092458683775e-16,
+            0,
+            0.7071067811865477
+          ],
+          "displayAnchorPartRef": "part:microduck:638f29b46b322e64",
+          "displayAnchorOffset": [
+            0,
+            0,
+            0
+          ],
+          "displayOnly": true
+        },
+        {
+          "id": "supplement:microduck:559b800564efaa51:axis-screw",
+          "visible": false,
+          "usage": "unverified_alternative",
+          "status": "illustrative_unconfirmed",
+          "domain": "synthetic",
+          "bom_status": "not_confirmed",
+          "position": [
+            0.003999999999999982,
+            0.07200000131130223,
+            0.10250000000000001
+          ],
+          "quaternion": [
+            0.7071067811865476,
+            3.140184917367549e-16,
+            0,
+            0.7071067811865475
+          ],
+          "displayAnchorPartRef": "part:microduck:66c73aaad945a993",
+          "displayAnchorOffset": [
+            0,
+            0,
+            0
+          ],
+          "displayOnly": true
+        },
+        {
+          "id": "supplement:microduck:559b800564efaa51:idler-cap",
+          "visible": false,
+          "usage": "unverified_alternative",
+          "status": "illustrative_unconfirmed",
+          "domain": "synthetic",
+          "bom_status": "not_confirmed",
+          "position": [
+            0.003999999999999983,
+            0.07125000131130223,
+            0.10250000000000001
+          ],
+          "quaternion": [
+            0.7071067811865476,
+            3.140184917367549e-16,
+            0,
+            0.7071067811865475
+          ],
+          "displayAnchorPartRef": "part:microduck:66c73aaad945a993",
+          "displayAnchorOffset": [
+            0,
+            0,
+            0
+          ],
+          "displayOnly": true
+        },
+        {
+          "id": "supplement:microduck:be212107b92437b8:axis-screw",
+          "visible": false,
+          "usage": "unverified_alternative",
+          "status": "illustrative_unconfirmed",
+          "domain": "synthetic",
+          "bom_status": "not_confirmed",
+          "position": [
+            -0.03177708759730718,
+            -0.07200000131130219,
+            0.08049999998348159
+          ],
+          "quaternion": [
+            -0.7071067811865476,
+            0,
+            0,
+            0.7071067811865476
+          ],
+          "displayAnchorPartRef": "part:microduck:e40b9945707505e1",
+          "displayAnchorOffset": [
+            0,
+            0,
+            0
+          ],
+          "displayOnly": true
+        },
+        {
+          "id": "supplement:microduck:be212107b92437b8:idler-cap",
+          "visible": false,
+          "usage": "unverified_alternative",
+          "status": "illustrative_unconfirmed",
+          "domain": "synthetic",
+          "bom_status": "not_confirmed",
+          "position": [
+            -0.03177708759730718,
+            -0.07125000131130219,
+            0.08049999998348159
+          ],
+          "quaternion": [
+            -0.7071067811865476,
+            0,
+            0,
+            0.7071067811865476
+          ],
+          "displayAnchorPartRef": "part:microduck:e40b9945707505e1",
+          "displayAnchorOffset": [
+            0,
+            0,
+            0
+          ],
+          "displayOnly": true
+        }
+      ]
+    }
+  }
+}

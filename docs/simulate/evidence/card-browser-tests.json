@@ -1,0 +1,203 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Users\\lsh\\Desktop\\workspace\\psop\\apps\\workbench\\.runtime\\node-v22.23.4-win-x64\\node.exe",
+      "C:\\Users\\lsh\\Desktop\\workspace\\psop\\apps\\workbench\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--config",
+      "playwright.simulate.config.ts",
+      "tests/simulate.spec.ts",
+      "--grep",
+      "真实部件|当前视角",
+      "--reporter=list,json"
+    ],
+    "configFile": "C:\\Users\\lsh\\Desktop\\workspace\\psop\\apps\\workbench\\playwright.simulate.config.ts",
+    "rootDir": "C:/Users/lsh/Desktop/workspace/psop/apps/workbench/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/lsh/Desktop/workspace/psop/apps/workbench/.runtime/simulate-e2e/results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "C:/Users/lsh/Desktop/workspace/psop/apps/workbench/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "simulate.spec.ts",
+          "workbench.spec.ts",
+          "loading.spec.ts",
+          "compatibility-preview.spec.ts",
+          "rendering.spec.ts"
+        ],
+        "timeout": 90000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\Users\\lsh\\Desktop\\workspace\\psop\\apps\\workbench\\.runtime\\simulate-e2e\\results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "C:\\Users\\lsh\\Desktop\\workspace\\psop\\apps\\workbench\\tests",
+        "snapshotDir": "C:\\Users\\lsh\\Desktop\\workspace\\psop\\apps\\workbench\\tests",
+        "testIgnore": [],
+        "testMatch": [
+          "simulate.spec.ts",
+          "workbench.spec.ts",
+          "loading.spec.ts",
+          "compatibility-preview.spec.ts",
+          "rendering.spec.ts"
+        ],
+        "timeout": 90000,
+        "use": {
+          "baseURL": "http://127.0.0.1:8792",
+          "channel": "chrome",
+          "headless": true,
+          "viewport": {
+            "width": 1600,
+            "height": 1000
+          },
+          "actionTimeout": 15000,
+          "screenshot": "only-on-failure",
+          "trace": "retain-on-failure"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list"
+      ],
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": {
+      "command": "\"C:\\Users\\lsh\\Desktop\\workspace\\psop\\apps\\workbench\\.runtime\\node-v22.23.4-win-x64\\node.exe\" scripts/serve.mjs --port 8792 --registry \"C:\\Users\\lsh\\Desktop\\workspace\\psop\\apps\\workbench\\.runtime\\simulate-e2e\\registry.json\"",
+      "url": "http://127.0.0.1:8792/health",
+      "reuseExistingServer": false,
+      "timeout": 30000
+    }
+  },
+  "suites": [
+    {
+      "title": "simulate.spec.ts",
+      "file": "simulate.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "真实部件连接、预览取消、拆开、历史、刷新和复制",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 22199,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T18:51:09.702Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6063be3a779225c32cca-ff7a5384eee43023e966",
+          "file": "simulate.spec.ts",
+          "line": 29,
+          "column": 1
+        },
+        {
+          "title": "当前视角外包络靠近即可弹卡片，移远关闭，切换方案释放画布",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 150000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 23639,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T18:51:32.218Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6063be3a779225c32cca-a3c5c31b71db3644faac",
+          "file": "simulate.spec.ts",
+          "line": 66,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-10T18:51:08.505Z",
+    "duration": 47962.795,
+    "expected": 2,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

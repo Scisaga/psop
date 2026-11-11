@@ -1,0 +1,17 @@
+{
+  "schema": "psop.reference-repair-regressions/1",
+  "modules": [
+    "test_reference_alignment",
+    "test_assembly_catalog",
+    "test_assembly_fastener_paths",
+    "test_connection_source_intake",
+    "test_connector_paths",
+    "test_pin_hole_fits"
+  ],
+  "tests_run": 55,
+  "success": true,
+  "skipped": 0,
+  "failures": [],
+  "errors": [],
+  "seconds": 9.890604300017003
+}

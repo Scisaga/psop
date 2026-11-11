@@ -1,0 +1,42 @@
+{
+  "captured_at": "2026-11-06T17:41:29.586Z",
+  "viewport": {
+    "width": 1680,
+    "height": 1080
+  },
+  "device_id": "microduck",
+  "snapshot_id": "dkp-8ebaa348952284ed70d8",
+  "registered_snapshot_count": 1,
+  "package_version": "2.0.0-connector-direction.20261106151943.e353b2e9",
+  "package_digest": "8ebaa348952284ed70d82f7eff4ff7ec3ba476fc6e11b10d839587daf584ebcd",
+  "knowledge_profile": "psop.hardware.source-model/1.8",
+  "counts": {
+    "parts": 70,
+    "sources": 62,
+    "geometries": 38
+  },
+  "images": [
+    {
+      "file": "workbench-overview.png",
+      "purpose": "Device workspace, source assembly, tree and object details",
+      "route": "#explorer?workspace=microduck&snapshot=dkp-8ebaa348952284ed70d8&part=part%3Amicroduck%3Ae40b9945707505e1&explode=0.18&detail=overview&view=iso&labels=0&supplements=0",
+      "bytes": 836397,
+      "sha256": "88890e3320cdf9d4c75d60a620595f96cdf9ef9d8643037ec440ea208cefd55a"
+    },
+    {
+      "file": "workbench-interfaces.png",
+      "purpose": "Reference site mappings and explicitly unconfirmed connector schematics",
+      "route": "#explorer?workspace=microduck&snapshot=dkp-8ebaa348952284ed70d8&part=part%3Amicroduck%3A0820b4025f26a004&supplement=supplement%3Amicroduck%3A818ac0f2dee9c3d6%3Areference-screw-9a31b01a95cfe09e&explode=0.32&detail=interfaces&inspection=1&view=iso&hidden=part%3Amicroduck%3Ab364863ffde63eed%2Cpart%3Amicroduck%3A9d70b219a5533bf1%2Cpart%3Amicroduck%3A78cf36c41e4fde06%2Cpart%3Amicroduck%3A203d2686e3321e4a%2Cpart%3Amicroduck%3Aa682dc3620df43f5%2Cpart%3Amicroduck%3Ae7e8275c7d01674c%2Cpart%3Amicroduck%3Af97c1c6580d651d7%2Cpart%3Amicroduck%3A09cb390e38430c1e%2Cpart%3Amicroduck%3Ae27cbdd6c07a264e%2Cpart%3Amicroduck%3A7938fd9143c59ea4%2Cpart%3Amicroduck%3A55970da91992f38c%2Cpart%3Amicroduck%3Acd6d48fccc95df41%2Cpart%3Amicroduck%3A47a950fbb3d0e416%2Cpart%3Amicroduck%3Acb253f38c818b9d8%2Cpart%3Amicroduck%3Abb34e925e25e29f6%2Cpart%3Amicroduck%3Afa9ee2f71faafb88%2Cpart%3Amicroduck%3A66c73aaad945a993%2Cpart%3Amicroduck%3A4cf80d5a57c8cb04%2Cpart%3Amicroduck%3Ac75bfc0afb35e000%2Cpart%3Amicroduck%3Ae475134639b3f7e1%2Cpart%3Amicroduck%3A9ffe9d5bcd6bc13a%2Cpart%3Amicroduck%3A638f29b46b322e64%2Cpart%3Amicroduck%3A7c130c8489b57c99%2Cpart%3Amicroduck%3A8b649e45831a1972%2Cpart%3Amicroduck%3A41db565298264db6%2Cpart%3Amicroduck%3A766eaa6e4dd8b09f%2Cpart%3Amicroduck%3A07e507f1e9297aa3%2Cpart%3Amicroduck%3A6b5602b4416129fe%2Cpart%3Amicroduck%3A4cef8bb24d37fe6e%2Cpart%3Amicroduck%3A44b5600c1a735117%2Cpart%3Amicroduck%3A133711c520619e45%2Cpart%3Amicroduck%3A834f5cc892eba41e%2Cpart%3Amicroduck%3A6b884b140f6e283c%2Cpart%3Amicroduck%3Ad4b9a9e9474a9829%2Cpart%3Amicroduck%3Aa07b37bcb704b29f%2Cpart%3Amicroduck%3Aea69e2c6bba10a23%2Cpart%3Amicroduck%3A55121c0b36f62219%2Cpart%3Amicroduck%3Ab61b0609c61fc572%2Cpart%3Amicroduck%3Aafa52198f7fad203%2Cpart%3Amicroduck%3A50f0c376d01bb0c1%2Cpart%3Amicroduck%3Af5797f92c2bf01b8%2Cpart%3Amicroduck%3A986b5adf27910138%2Cpart%3Amicroduck%3A82d68e991b23c2a3%2Cpart%3Amicroduck%3A96e22c7fa2b976d3%2Cpart%3Amicroduck%3Aa0775b54397eb21e%2Cpart%3Amicroduck%3A554503ef38151e67%2Cpart%3Amicroduck%3A88b7496d63cb41ff%2Cpart%3Amicroduck%3A2559a4c412bcda3e%2Cpart%3Amicroduck%3A328011951ac11ee7%2Cpart%3Amicroduck%3A52fdcacf474a463f%2Cpart%3Amicroduck%3A2d2cde8ae8ebacac%2Cpart%3Amicroduck%3Aebfcaf98422b7b28%2Cpart%3Amicroduck%3A22f2cd114e324ec5%2Cpart%3Amicroduck%3A48099e14105d3289%2Cpart%3Amicroduck%3A087d7a46a3ce4ca3%2Cpart%3Amicroduck%3Ac703574f50f6a46a%2Cpart%3Amicroduck%3A3fbf0b5c8cea4488%2Cpart%3Amicroduck%3Ac7eeeac0a640d191%2Cpart%3Amicroduck%3Ad924e1596ffb042a%2Cpart%3Amicroduck%3A7038a050dbc33fb0%2Cpart%3Amicroduck%3Ad6a148b5784955d8%2Cpart%3Amicroduck%3A7e86db28af59d3cc%2Cpart%3Amicroduck%3Ae40b9945707505e1%2Cpart%3Amicroduck%3A08c5ade0f3fd37db%2Cpart%3Amicroduck%3Ab371ac60e2f6757b%2Cpart%3Amicroduck%3A2f557a24b2729755%2Cpart%3Amicroduck%3Ae196235810184adf%2Cpart%3Amicroduck%3Af9955f19a691a1f4&labels=0&supplements=1&fastenerReviews=connection-review%3Amicroduck%3A818ac0f2dee9c3d6",
+      "bytes": 818032,
+      "sha256": "f18fa61143b214df614b70ed86d3a06fd094256c4ae26346b64e30781f6359bb"
+    },
+    {
+      "file": "workbench-evidence.png",
+      "purpose": "Actual source XML and evidence line navigation",
+      "route": "#explorer?workspace=microduck&snapshot=dkp-8ebaa348952284ed70d8&part=part%3Amicroduck%3A986b5adf27910138&explode=0.00&detail=evidence&view=iso&labels=0&supplements=0&source=SRC-MD-MJCF&evidence=evidence%3A986b5adf27910138%3Axml",
+      "bytes": 253970,
+      "sha256": "cc1f4fa35e53cffdb954f2f2b005257d2fd7698f9ef49a87e183999790419fc5"
+    }
+  ],
+  "browser_errors": []
+}

@@ -1,0 +1,21 @@
+python : test_claim_evidence_does_not_reuse_unrelated_first_file_assertion (test_connection_local_identity.LocalIdentit
+y.test_claim_evidence_does_not_reuse_unrelated_first_file_assertion) ... ok
+所在位置 行:11 字符: 67
++ ... y.log 2>&1; python -B -m unittest discover -s skills/psop-build/tests ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (test_claim_evid...sertion) ... ok:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+test_endpoint_identity_is_member_and_source_bound_not_pair_or_prose (test_connection_local_identity.LocalIdentity.test_
+endpoint_identity_is_member_and_source_bound_not_pair_or_prose) ... ok
+test_independent_site_acceptance_rejects_deleted_member_without_deleting_geometry (test_connection_local_identity.Local
+Identity.test_independent_site_acceptance_rejects_deleted_member_without_deleting_geometry) ... ok
+test_pair_index_keeps_all_local_relations_and_competing_explanations (test_connection_local_identity.LocalIdentity.test
+_pair_index_keeps_all_local_relations_and_competing_explanations) ... ok
+test_revision_classifies_electronics_bom_as_retrieval_and_unlocated_roles_as_unknown (test_connection_local_identity.Lo
+calIdentity.test_revision_classifies_electronics_bom_as_retrieval_and_unlocated_roles_as_unknown) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 1.555s
+
+OK

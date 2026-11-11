@@ -1,0 +1,529 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Users\\lsh\\Desktop\\workspace\\psop\\apps\\workbench\\.runtime\\node-v22.23.4-win-x64\\node.exe",
+      "C:\\Users\\lsh\\Desktop\\workspace\\psop\\apps\\workbench\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--config",
+      "playwright.simulate.config.ts",
+      "tests/simulate.spec.ts",
+      "--reporter=list,json"
+    ],
+    "configFile": "C:\\Users\\lsh\\Desktop\\workspace\\psop\\apps\\workbench\\playwright.simulate.config.ts",
+    "rootDir": "C:/Users/lsh/Desktop/workspace/psop/apps/workbench/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/lsh/Desktop/workspace/psop/apps/workbench/.runtime/simulate-e2e/results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "C:/Users/lsh/Desktop/workspace/psop/apps/workbench/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "simulate.spec.ts",
+          "workbench.spec.ts",
+          "loading.spec.ts",
+          "compatibility-preview.spec.ts",
+          "rendering.spec.ts"
+        ],
+        "timeout": 90000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\Users\\lsh\\Desktop\\workspace\\psop\\apps\\workbench\\.runtime\\simulate-e2e\\results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "C:\\Users\\lsh\\Desktop\\workspace\\psop\\apps\\workbench\\tests",
+        "snapshotDir": "C:\\Users\\lsh\\Desktop\\workspace\\psop\\apps\\workbench\\tests",
+        "testIgnore": [],
+        "testMatch": [
+          "simulate.spec.ts",
+          "workbench.spec.ts",
+          "loading.spec.ts",
+          "compatibility-preview.spec.ts",
+          "rendering.spec.ts"
+        ],
+        "timeout": 90000,
+        "use": {
+          "baseURL": "http://127.0.0.1:8792",
+          "channel": "chrome",
+          "headless": true,
+          "viewport": {
+            "width": 1600,
+            "height": 1000
+          },
+          "actionTimeout": 15000,
+          "screenshot": "only-on-failure",
+          "trace": "retain-on-failure"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list"
+      ],
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": {
+      "command": "\"C:\\Users\\lsh\\Desktop\\workspace\\psop\\apps\\workbench\\.runtime\\node-v22.23.4-win-x64\\node.exe\" scripts/serve.mjs --port 8792 --registry \"C:\\Users\\lsh\\Desktop\\workspace\\psop\\apps\\workbench\\.runtime\\simulate-e2e\\registry.json\"",
+      "url": "http://127.0.0.1:8792/health",
+      "reuseExistingServer": false,
+      "timeout": 30000
+    }
+  },
+  "suites": [
+    {
+      "title": "simulate.spec.ts",
+      "file": "simulate.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "自动组装纠正已有连接，播放完整演出，暂停加速、跳过、撤销和刷新保持一致",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 150000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 45509,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T22:52:49.411Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6063be3a779225c32cca-022a429d83412474b71f",
+          "file": "simulate.spec.ts",
+          "line": 33,
+          "column": 1
+        },
+        {
+          "title": "真实部件连接、预览取消、拆开、历史、刷新和复制",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 20228,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T22:53:35.364Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6063be3a779225c32cca-ff7a5384eee43023e966",
+          "file": "simulate.spec.ts",
+          "line": 65,
+          "column": 1
+        },
+        {
+          "title": "鼠标拖拽只保存一步，Esc 取消，输入框快捷键隔离，窄窗口和手动画质",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8841,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T22:53:55.618Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6063be3a779225c32cca-88b4ced81f0c3ae85a74",
+          "file": "simulate.spec.ts",
+          "line": 93,
+          "column": 1
+        },
+        {
+          "title": "断线后的操作草稿跨刷新重试，候选读取期间不出现无结果文案",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 11548,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T22:54:04.485Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6063be3a779225c32cca-7599d6e22a7781bff74c",
+          "file": "simulate.spec.ts",
+          "line": 103,
+          "column": 1
+        },
+        {
+          "title": "实际靠近才弹卡片，悬停后移远仍关闭，矮窗口完整显示，切换方案释放画布",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 29964,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T22:54:16.058Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6063be3a779225c32cca-48a20c14d63248a87f8a",
+          "file": "simulate.spec.ts",
+          "line": 110,
+          "column": 1
+        },
+        {
+          "title": "复合、包覆和承座接口显示关联对象，右脚原装姿态如实报告实体干涉",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7832,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T22:54:46.050Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6063be3a779225c32cca-557092ffc222d3135b93",
+          "file": "simulate.spec.ts",
+          "line": 145,
+          "column": 1
+        },
+        {
+          "title": "高清环境加载失败可重试，完整就绪后才开放场景",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 16942,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T22:54:53.912Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6063be3a779225c32cca-1e7dcaa5f45f431badb4",
+          "file": "simulate.spec.ts",
+          "line": 157,
+          "column": 1
+        },
+        {
+          "title": "沉浸布局保留完整视口，目录、精确工具和方案菜单按需展开",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8140,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T22:55:10.885Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6063be3a779225c32cca-8e98ee0447e976257b6c",
+          "file": "simulate.spec.ts",
+          "line": 170,
+          "column": 1
+        },
+        {
+          "title": "恢复初始拆散状态只保存一步，并可撤销、重做和刷新",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 11396,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T22:55:19.051Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6063be3a779225c32cca-a9c9190560d5cd5cf919",
+          "file": "simulate.spec.ts",
+          "line": 186,
+          "column": 1
+        },
+        {
+          "title": "金色轮廓的实际深度遮挡在不同视角连续，仍正确遮住被其他对象挡住的部分",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 694,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T22:55:30.482Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "outline-depth-coverage",
+                      "contentType": "application/json",
+                      "body": "WwogIHsKICAgICJwb3NpdGlvbiI6IFsKICAgICAgMC40LAogICAgICAtMC44LAogICAgICAwLjYKICAgIF0sCiAgICAidmlzaWJsZSI6IDU5MiwKICAgICJvY2NsdWRlZCI6IDExMywKICAgICJmYWxzZV9vY2NsdWRlZCI6IDAsCiAgICAiZmFsc2VfdmlzaWJsZSI6IDAKICB9LAogIHsKICAgICJwb3NpdGlvbiI6IFsKICAgICAgLTAuNCwKICAgICAgLTAuNywKICAgICAgMC41CiAgICBdLAogICAgInZpc2libGUiOiA3MzgsCiAgICAib2NjbHVkZWQiOiAxNjYsCiAgICAiZmFsc2Vfb2NjbHVkZWQiOiAwLAogICAgImZhbHNlX3Zpc2libGUiOiAwCiAgfSwKICB7CiAgICAicG9zaXRpb24iOiBbCiAgICAgIDAuMSwKICAgICAgLTAuNiwKICAgICAgMC44CiAgICBdLAogICAgInZpc2libGUiOiA3NDksCiAgICAib2NjbHVkZWQiOiA3NiwKICAgICJmYWxzZV9vY2NsdWRlZCI6IDAsCiAgICAiZmFsc2VfdmlzaWJsZSI6IDAKICB9Cl0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6063be3a779225c32cca-8fb943bdc47c5741b75a",
+          "file": "simulate.spec.ts",
+          "line": 200,
+          "column": 1
+        }
+      ],
+      "suites": [
+        {
+          "title": "原生浏览器窗口",
+          "file": "simulate.spec.ts",
+          "line": 210,
+          "column": 6,
+          "specs": [
+            {
+              "title": "连接卡片跟随真实窗口客户区，不使用固定1080像素模拟高度",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 10324,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-10T22:55:31.212Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "native-window-bounds",
+                          "contentType": "application/json",
+                          "body": "WwogIHsKICAgICJ3aW5kb3ciOiBbCiAgICAgIDEyODAsCiAgICAgIDgwMAogICAgXSwKICAgICJpbm5lciI6IFsKICAgICAgMTI2NCwKICAgICAgNzA1CiAgICBdLAogICAgIm91dGVyIjogWwogICAgICAxMjgwLAogICAgICA4MDAKICAgIF0sCiAgICAiY2FudmFzIjogNzA1LAogICAgImNhcmQiOiB7CiAgICAgICJ4IjogNDUyLAogICAgICAieSI6IDU1Ny4wNjI1LAogICAgICAid2lkdGgiOiAzNjAsCiAgICAgICJoZWlnaHQiOiAxMjcuOTM3NQogICAgfQogIH0sCiAgewogICAgIndpbmRvdyI6IFsKICAgICAgMTYwMCwKICAgICAgMTAwMAogICAgXSwKICAgICJpbm5lciI6IFsKICAgICAgMTU4NCwKICAgICAgOTA1CiAgICBdLAogICAgIm91dGVyIjogWwogICAgICAxNjAwLAogICAgICAxMDAwCiAgICBdLAogICAgImNhbnZhcyI6IDkwNSwKICAgICJjYXJkIjogewogICAgICAieCI6IDYxMiwKICAgICAgInkiOiA3NTcuMDYyNSwKICAgICAgIndpZHRoIjogMzYwLAogICAgICAiaGVpZ2h0IjogMTI3LjkzNzUKICAgIH0KICB9LAogIHsKICAgICJ3aW5kb3ciOiBbCiAgICAgIDEwMDAsCiAgICAgIDcwMAogICAgXSwKICAgICJpbm5lciI6IFsKICAgICAgOTg0LAogICAgICA2MDUKICAgIF0sCiAgICAib3V0ZXIiOiBbCiAgICAgIDEwMDAsCiAgICAgIDcwMAogICAgXSwKICAgICJjYW52YXMiOiA2MDUsCiAgICAiY2FyZCI6IHsKICAgICAgIngiOiAzMTIsCiAgICAgICJ5IjogNDU3LjA2MjUsCiAgICAgICJ3aWR0aCI6IDM2MCwKICAgICAgImhlaWdodCI6IDEyNy45Mzc1CiAgICB9CiAgfQpd"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "6063be3a779225c32cca-19e8bf36128c0dd8ff6e",
+              "file": "simulate.spec.ts",
+              "line": 211,
+              "column": 2
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-10T22:52:46.992Z",
+    "duration": 175424.56,
+    "expected": 11,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

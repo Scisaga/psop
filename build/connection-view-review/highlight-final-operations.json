@@ -1,0 +1,589 @@
+[
+  {
+    "key": "soft_cover_support",
+    "suffix": "",
+    "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-6a841fcb9cb028ba2c63&part=part%3Amicroduck%3A328011951ac11ee7&interface=interface%3Aassembly%3A328011951ac11ee7%3Asoft_cover_support&explode=0.00&detail=interfaces&inspection=1&view=iso&labels=0&camera=0.0182271%2C0.0096079%2C0.4667246%2C0.0701430%2C-0.0048782%2C0.2204987",
+    "view": {
+      "kind": "psop.workbench.view/1.0",
+      "workspaceId": "microduck",
+      "packageId": "psop.microduck",
+      "packageVersion": "2.0.0-assembly.3",
+      "packageDigest": "6a841fcb9cb028ba2c63df67cfd35c43f30e95374fb6f6bc314b7332160789e8",
+      "snapshotId": "dkp-6a841fcb9cb028ba2c63",
+      "sourceCommit": "cb70b792312d559a4da09064d92009079671815f",
+      "selectedId": "part:microduck:328011951ac11ee7",
+      "geometrySelection": {
+        "kind": "interface",
+        "id": "interface:assembly:328011951ac11ee7:soft_cover_support",
+        "ownerRef": "part:microduck:328011951ac11ee7"
+      },
+      "explosion": 0,
+      "view": "iso",
+      "camera": {
+        "position": [
+          0.018227060455816936,
+          0.009607923903271483,
+          0.4667245620414379
+        ],
+        "target": [
+          0.07014301888365301,
+          -0.004878195546162166,
+          0.22049870740008373
+        ]
+      },
+      "hiddenIds": [],
+      "isolateId": null,
+      "showLabels": false,
+      "showGrid": true,
+      "clipping": false,
+      "xray": false,
+      "showFasteners": true,
+      "inspection": {
+        "active": true,
+        "previousCamera": {
+          "position": [
+            0.4082796563696956,
+            -0.5735995078128227,
+            0.42213879158315426
+          ],
+          "target": [
+            0.020256459908080095,
+            1.3877787807814457e-17,
+            0.14546138193226335
+          ]
+        },
+        "camera": {
+          "position": [
+            0.018227060455816936,
+            0.009607923903271483,
+            0.4667245620414379
+          ],
+          "target": [
+            0.07014301888365301,
+            -0.004878195546162166,
+            0.22049870740008373
+          ]
+        },
+        "visiblePartIds": [
+          "part:microduck:328011951ac11ee7"
+        ],
+        "mode": "local",
+        "translucentPartIds": [],
+        "referenceFasteners": []
+      }
+    },
+    "dataset": {
+      "sceneReady": "true",
+      "renderCount": "5",
+      "cameraFlight": "settled",
+      "inspectionActive": "true",
+      "sourcePlacement": "restored",
+      "interfaceId": "interface:assembly:328011951ac11ee7:soft_cover_support",
+      "memberRefs": "",
+      "selectedFeatures": "feature:assembly:328011951ac11ee7:soft_cover_support_contact_surface",
+      "highlightMode": "source_witness",
+      "witnessMarkers": "1",
+      "highlightedSourceFaces": "0",
+      "fastenerPaths": "",
+      "fastenerCount": "0",
+      "fastenerRepresentation": "schematic",
+      "visibleWitnessMarkers": "1"
+    },
+    "panel": "左右方向键调整宽度，按住 Shift 加快；Home 最窄，End 最宽，回车恢复默认。\n对象详情\n外壳\n喙部件\npart:microduck:328011951ac11ee7\n模型对象\n来源已定位\n接口\n信息\n来源\n本件接口\n软套包覆承座\n已确定\n\n原始曲面包覆区\n\n软套内侧曲面与喙托架外周、底面对应，形成包覆和落座。\n\n定位本端\n选择整个接口\n组成\n1 个成员\n1 · 曲面包覆/落座区\n已用\n已确定对端\n\n喙软套包覆面 / 软套包覆承座 · 源几何配合\n\n喙部软质件\n喙软套包覆面 · 曲面包覆/落座区\n查看对端\n定位对端\n\n包覆定位已有源面依据；抗拔、防滑和附着工艺未给出，不指定材料。\n\n曲面仅显示局部见证标记，未将离散三角作为完整接触面铺色。\n\n查看依据\n几何位置 · 源局部 mm\n定位所选几何",
+    "errors": [],
+    "maxCameraDeltaFromBefore": 2.3869795029440866e-15
+  },
+  {
+    "key": "soft_cover_support",
+    "suffix": "-orbit-zoom",
+    "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-6a841fcb9cb028ba2c63&part=part%3Amicroduck%3A328011951ac11ee7&interface=interface%3Aassembly%3A328011951ac11ee7%3Asoft_cover_support&explode=0.00&detail=interfaces&inspection=1&view=iso&labels=0&camera=0.0182271%2C0.0096079%2C0.4667246%2C0.0701430%2C-0.0048782%2C0.2204987",
+    "view": {
+      "kind": "psop.workbench.view/1.0",
+      "workspaceId": "microduck",
+      "packageId": "psop.microduck",
+      "packageVersion": "2.0.0-assembly.3",
+      "packageDigest": "6a841fcb9cb028ba2c63df67cfd35c43f30e95374fb6f6bc314b7332160789e8",
+      "snapshotId": "dkp-6a841fcb9cb028ba2c63",
+      "sourceCommit": "cb70b792312d559a4da09064d92009079671815f",
+      "selectedId": "part:microduck:328011951ac11ee7",
+      "geometrySelection": {
+        "kind": "interface",
+        "id": "interface:assembly:328011951ac11ee7:soft_cover_support",
+        "ownerRef": "part:microduck:328011951ac11ee7"
+      },
+      "explosion": 0,
+      "view": "iso",
+      "camera": {
+        "position": [
+          0.07014291585422523,
+          -0.0048779821020436195,
+          0.45750810535704145
+        ],
+        "target": [
+          0.07014301888365301,
+          -0.004878195546162166,
+          0.22049870740008373
+        ]
+      },
+      "hiddenIds": [],
+      "isolateId": null,
+      "showLabels": false,
+      "showGrid": true,
+      "clipping": false,
+      "xray": false,
+      "showFasteners": true,
+      "inspection": {
+        "active": true,
+        "previousCamera": {
+          "position": [
+            0.4082796563696956,
+            -0.5735995078128227,
+            0.42213879158315426
+          ],
+          "target": [
+            0.020256459908080095,
+            1.3877787807814457e-17,
+            0.14546138193226335
+          ]
+        },
+        "camera": {
+          "position": [
+            0.07014291585422523,
+            -0.0048779821020436195,
+            0.45750810535704145
+          ],
+          "target": [
+            0.07014301888365301,
+            -0.004878195546162166,
+            0.22049870740008373
+          ]
+        },
+        "visiblePartIds": [
+          "part:microduck:328011951ac11ee7"
+        ],
+        "mode": "local",
+        "translucentPartIds": [],
+        "referenceFasteners": []
+      }
+    },
+    "dataset": {
+      "sceneReady": "true",
+      "renderCount": "72",
+      "cameraFlight": "settled",
+      "inspectionActive": "true",
+      "sourcePlacement": "restored",
+      "interfaceId": "interface:assembly:328011951ac11ee7:soft_cover_support",
+      "memberRefs": "",
+      "selectedFeatures": "feature:assembly:328011951ac11ee7:soft_cover_support_contact_surface",
+      "highlightMode": "source_witness",
+      "witnessMarkers": "1",
+      "highlightedSourceFaces": "0",
+      "fastenerPaths": "",
+      "fastenerCount": "0",
+      "fastenerRepresentation": "schematic",
+      "visibleWitnessMarkers": "1"
+    },
+    "panel": "左右方向键调整宽度，按住 Shift 加快；Home 最窄，End 最宽，回车恢复默认。\n对象详情\n外壳\n喙部件\npart:microduck:328011951ac11ee7\n模型对象\n来源已定位\n接口\n信息\n来源\n本件接口\n软套包覆承座\n已确定\n\n原始曲面包覆区\n\n软套内侧曲面与喙托架外周、底面对应，形成包覆和落座。\n\n定位本端\n选择整个接口\n组成\n1 个成员\n1 · 曲面包覆/落座区\n已用\n已确定对端\n\n喙软套包覆面 / 软套包覆承座 · 源几何配合\n\n喙部软质件\n喙软套包覆面 · 曲面包覆/落座区\n查看对端\n定位对端\n\n包覆定位已有源面依据；抗拔、防滑和附着工艺未给出，不指定材料。\n\n曲面仅显示局部见证标记，未将离散三角作为完整接触面铺色。\n\n查看依据\n几何位置 · 源局部 mm\n定位所选几何",
+    "errors": [],
+    "maxCameraDeltaFromBefore": 0.05191585539840839
+  },
+  {
+    "key": "soft_cover_support",
+    "suffix": "-back-hidden",
+    "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-6a841fcb9cb028ba2c63&part=part%3Amicroduck%3A328011951ac11ee7&interface=interface%3Aassembly%3A328011951ac11ee7%3Asoft_cover_support&explode=0.00&detail=interfaces&inspection=1&view=iso&labels=0&camera=0.0182271%2C0.0096079%2C0.4667246%2C0.0701430%2C-0.0048782%2C0.2204987",
+    "view": {
+      "kind": "psop.workbench.view/1.0",
+      "workspaceId": "microduck",
+      "packageId": "psop.microduck",
+      "packageVersion": "2.0.0-assembly.3",
+      "packageDigest": "6a841fcb9cb028ba2c63df67cfd35c43f30e95374fb6f6bc314b7332160789e8",
+      "snapshotId": "dkp-6a841fcb9cb028ba2c63",
+      "sourceCommit": "cb70b792312d559a4da09064d92009079671815f",
+      "selectedId": "part:microduck:328011951ac11ee7",
+      "geometrySelection": {
+        "kind": "interface",
+        "id": "interface:assembly:328011951ac11ee7:soft_cover_support",
+        "ownerRef": "part:microduck:328011951ac11ee7"
+      },
+      "explosion": 0,
+      "view": "iso",
+      "camera": {
+        "position": [
+          0.011575342925759347,
+          0.1164875143819992,
+          0.02552782109523874
+        ],
+        "target": [
+          0.07014301888365301,
+          -0.004878195546162166,
+          0.22049870740008373
+        ]
+      },
+      "hiddenIds": [],
+      "isolateId": null,
+      "showLabels": false,
+      "showGrid": true,
+      "clipping": false,
+      "xray": false,
+      "showFasteners": true,
+      "inspection": {
+        "active": true,
+        "previousCamera": {
+          "position": [
+            0.4082796563696956,
+            -0.5735995078128227,
+            0.42213879158315426
+          ],
+          "target": [
+            0.020256459908080095,
+            1.3877787807814457e-17,
+            0.14546138193226335
+          ]
+        },
+        "camera": {
+          "position": [
+            0.011575342925759347,
+            0.1164875143819992,
+            0.02552782109523874
+          ],
+          "target": [
+            0.07014301888365301,
+            -0.004878195546162166,
+            0.22049870740008373
+          ]
+        },
+        "visiblePartIds": [
+          "part:microduck:328011951ac11ee7"
+        ],
+        "mode": "local",
+        "translucentPartIds": [],
+        "referenceFasteners": []
+      }
+    },
+    "dataset": {
+      "sceneReady": "true",
+      "renderCount": "146",
+      "cameraFlight": "settled",
+      "inspectionActive": "true",
+      "sourcePlacement": "restored",
+      "interfaceId": "interface:assembly:328011951ac11ee7:soft_cover_support",
+      "memberRefs": "",
+      "selectedFeatures": "feature:assembly:328011951ac11ee7:soft_cover_support_contact_surface",
+      "highlightMode": "source_witness",
+      "witnessMarkers": "1",
+      "highlightedSourceFaces": "0",
+      "fastenerPaths": "",
+      "fastenerCount": "0",
+      "fastenerRepresentation": "schematic",
+      "visibleWitnessMarkers": "0"
+    },
+    "panel": "左右方向键调整宽度，按住 Shift 加快；Home 最窄，End 最宽，回车恢复默认。\n对象详情\n外壳\n喙部件\npart:microduck:328011951ac11ee7\n模型对象\n来源已定位\n接口\n信息\n来源\n本件接口\n软套包覆承座\n已确定\n\n原始曲面包覆区\n\n软套内侧曲面与喙托架外周、底面对应，形成包覆和落座。\n\n定位本端\n选择整个接口\n组成\n1 个成员\n1 · 曲面包覆/落座区\n已用\n已确定对端\n\n喙软套包覆面 / 软套包覆承座 · 源几何配合\n\n喙部软质件\n喙软套包覆面 · 曲面包覆/落座区\n查看对端\n定位对端\n\n包覆定位已有源面依据；抗拔、防滑和附着工艺未给出，不指定材料。\n\n曲面仅显示局部见证标记，未将离散三角作为完整接触面铺色。\n\n查看依据\n几何位置 · 源局部 mm\n定位所选几何",
+    "errors": [],
+    "maxCameraDeltaFromBefore": 0.44119674094620154
+  },
+  {
+    "key": "jaw_drive",
+    "suffix": "",
+    "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-6a841fcb9cb028ba2c63&part=part%3Amicroduck%3A328011951ac11ee7&interface=interface%3Aassembly%3A328011951ac11ee7%3Ajaw_drive&explode=0.00&detail=interfaces&inspection=1&view=iso&labels=0&camera=0.0261000%2C0.0086489%2C0.2386146%2C0.0261000%2C0.0420047%2C0.2386146",
+    "view": {
+      "kind": "psop.workbench.view/1.0",
+      "workspaceId": "microduck",
+      "packageId": "psop.microduck",
+      "packageVersion": "2.0.0-assembly.3",
+      "packageDigest": "6a841fcb9cb028ba2c63df67cfd35c43f30e95374fb6f6bc314b7332160789e8",
+      "snapshotId": "dkp-6a841fcb9cb028ba2c63",
+      "sourceCommit": "cb70b792312d559a4da09064d92009079671815f",
+      "selectedId": "part:microduck:328011951ac11ee7",
+      "geometrySelection": {
+        "kind": "interface",
+        "id": "interface:assembly:328011951ac11ee7:jaw_drive",
+        "ownerRef": "part:microduck:328011951ac11ee7"
+      },
+      "explosion": 0,
+      "view": "iso",
+      "camera": {
+        "position": [
+          0.02610000000364781,
+          0.008648875156692673,
+          0.2386145999816274
+        ],
+        "target": [
+          0.026100000003647816,
+          0.042004711460322135,
+          0.2386145999816274
+        ]
+      },
+      "hiddenIds": [],
+      "isolateId": null,
+      "showLabels": false,
+      "showGrid": true,
+      "clipping": false,
+      "xray": false,
+      "showFasteners": true,
+      "inspection": {
+        "active": true,
+        "previousCamera": {
+          "position": [
+            0.4082796563696956,
+            -0.5735995078128227,
+            0.42213879158315426
+          ],
+          "target": [
+            0.020256459908080095,
+            1.3877787807814457e-17,
+            0.14546138193226335
+          ]
+        },
+        "camera": {
+          "position": [
+            0.02610000000364781,
+            0.008648875156692673,
+            0.2386145999816274
+          ],
+          "target": [
+            0.026100000003647816,
+            0.042004711460322135,
+            0.2386145999816274
+          ]
+        },
+        "visiblePartIds": [
+          "part:microduck:328011951ac11ee7"
+        ],
+        "mode": "local",
+        "translucentPartIds": [],
+        "referenceFasteners": []
+      }
+    },
+    "dataset": {
+      "sceneReady": "true",
+      "renderCount": "5",
+      "cameraFlight": "settled",
+      "inspectionActive": "true",
+      "sourcePlacement": "restored",
+      "interfaceId": "interface:assembly:328011951ac11ee7:jaw_drive",
+      "memberRefs": "",
+      "selectedFeatures": "feature:assembly:328011951ac11ee7:jaw_drive_clearance_hole_1,feature:assembly:328011951ac11ee7:jaw_drive_clearance_hole_2,feature:assembly:328011951ac11ee7:jaw_drive_clearance_hole_3,feature:assembly:328011951ac11ee7:jaw_drive_clearance_hole_4",
+      "highlightMode": "source_facet_colors",
+      "witnessMarkers": "0",
+      "highlightedSourceFaces": "720",
+      "fastenerPaths": "",
+      "fastenerCount": "0",
+      "fastenerRepresentation": "schematic"
+    },
+    "panel": "左右方向键调整宽度，按住 Shift 加快；Home 最窄，End 最宽，回车恢复默认。\n对象详情\n外壳\n喙部件\npart:microduck:328011951ac11ee7\n模型对象\n来源已定位\n接口\n信息\n来源\n本件接口\n舵机端盘四孔安装接口\n已确定\n\n4 × Ø2.2 · PCD12\n\n通过本件通孔以螺钉连接指定舵机端盘接收孔\n\n定位本端\n选择整个接口\n组成\n4 个成员\n1 · 有限孔壁\n2 · 有限孔壁\n3 · 有限孔壁\n4 · 有限孔壁\n已确定对端\n\n喙部件与 XL330 端盘四孔螺钉连接 · 装配声明\n\nXL330 舵机 · 头部结构 · 1\nX−端盘四孔\n查看对端\n定位对端\n\n接口用途与对端已由用户确认；实际选孔、螺钉数量及规格、旋入深度和实物紧固状态未给出。\n\n连接件示意\n\n选择一个孔查看螺钉示意；实际选孔数量、规格待核。\n\n可选参考路径 · 4\n查看依据\n几何位置 · 源局部 mm\n定位所选几何",
+    "errors": [],
+    "maxCameraDeltaFromBefore": 4.718447854656915e-16
+  },
+  {
+    "key": "jaw_drive",
+    "suffix": "-orbit-zoom",
+    "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-6a841fcb9cb028ba2c63&part=part%3Amicroduck%3A328011951ac11ee7&interface=interface%3Aassembly%3A328011951ac11ee7%3Ajaw_drive&explode=0.00&detail=interfaces&inspection=1&view=iso&labels=0&camera=0.0261000%2C0.0086489%2C0.2386146%2C0.0261000%2C0.0420047%2C0.2386146",
+    "view": {
+      "kind": "psop.workbench.view/1.0",
+      "workspaceId": "microduck",
+      "packageId": "psop.microduck",
+      "packageVersion": "2.0.0-assembly.3",
+      "packageDigest": "6a841fcb9cb028ba2c63df67cfd35c43f30e95374fb6f6bc314b7332160789e8",
+      "snapshotId": "dkp-6a841fcb9cb028ba2c63",
+      "sourceCommit": "cb70b792312d559a4da09064d92009079671815f",
+      "selectedId": "part:microduck:328011951ac11ee7",
+      "geometrySelection": {
+        "kind": "interface",
+        "id": "interface:assembly:328011951ac11ee7:jaw_drive",
+        "ownerRef": "part:microduck:328011951ac11ee7"
+      },
+      "explosion": 0,
+      "view": "iso",
+      "camera": {
+        "position": [
+          0.003901210870033773,
+          0.02246529207801489,
+          0.24906279733240036
+        ],
+        "target": [
+          0.026100000003647816,
+          0.042004711460322135,
+          0.2386145999816274
+        ]
+      },
+      "hiddenIds": [],
+      "isolateId": null,
+      "showLabels": false,
+      "showGrid": true,
+      "clipping": false,
+      "xray": false,
+      "showFasteners": true,
+      "inspection": {
+        "active": true,
+        "previousCamera": {
+          "position": [
+            0.4082796563696956,
+            -0.5735995078128227,
+            0.42213879158315426
+          ],
+          "target": [
+            0.020256459908080095,
+            1.3877787807814457e-17,
+            0.14546138193226335
+          ]
+        },
+        "camera": {
+          "position": [
+            0.003901210870033773,
+            0.02246529207801489,
+            0.24906279733240036
+          ],
+          "target": [
+            0.026100000003647816,
+            0.042004711460322135,
+            0.2386145999816274
+          ]
+        },
+        "visiblePartIds": [
+          "part:microduck:328011951ac11ee7"
+        ],
+        "mode": "local",
+        "translucentPartIds": [],
+        "referenceFasteners": []
+      }
+    },
+    "dataset": {
+      "sceneReady": "true",
+      "renderCount": "73",
+      "cameraFlight": "settled",
+      "inspectionActive": "true",
+      "sourcePlacement": "restored",
+      "interfaceId": "interface:assembly:328011951ac11ee7:jaw_drive",
+      "memberRefs": "",
+      "selectedFeatures": "feature:assembly:328011951ac11ee7:jaw_drive_clearance_hole_1,feature:assembly:328011951ac11ee7:jaw_drive_clearance_hole_2,feature:assembly:328011951ac11ee7:jaw_drive_clearance_hole_3,feature:assembly:328011951ac11ee7:jaw_drive_clearance_hole_4",
+      "highlightMode": "source_facet_colors",
+      "witnessMarkers": "0",
+      "highlightedSourceFaces": "720",
+      "fastenerPaths": "",
+      "fastenerCount": "0",
+      "fastenerRepresentation": "schematic"
+    },
+    "panel": "左右方向键调整宽度，按住 Shift 加快；Home 最窄，End 最宽，回车恢复默认。\n对象详情\n外壳\n喙部件\npart:microduck:328011951ac11ee7\n模型对象\n来源已定位\n接口\n信息\n来源\n本件接口\n舵机端盘四孔安装接口\n已确定\n\n4 × Ø2.2 · PCD12\n\n通过本件通孔以螺钉连接指定舵机端盘接收孔\n\n定位本端\n选择整个接口\n组成\n4 个成员\n1 · 有限孔壁\n2 · 有限孔壁\n3 · 有限孔壁\n4 · 有限孔壁\n已确定对端\n\n喙部件与 XL330 端盘四孔螺钉连接 · 装配声明\n\nXL330 舵机 · 头部结构 · 1\nX−端盘四孔\n查看对端\n定位对端\n\n接口用途与对端已由用户确认；实际选孔、螺钉数量及规格、旋入深度和实物紧固状态未给出。\n\n连接件示意\n\n选择一个孔查看螺钉示意；实际选孔数量、规格待核。\n\n可选参考路径 · 4\n查看依据\n几何位置 · 源局部 mm\n定位所选几何",
+    "errors": [],
+    "maxCameraDeltaFromBefore": 0.022198789133614037
+  },
+  {
+    "key": "jaw_drive",
+    "suffix": "-single-member",
+    "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-6a841fcb9cb028ba2c63&part=part%3Amicroduck%3A328011951ac11ee7&interface=interface%3Aassembly%3A328011951ac11ee7%3Ajaw_drive&member=interface%3Aassembly%3A328011951ac11ee7%3Ajaw_drive%3Ahole_x_low_z_low&explode=0.00&detail=interfaces&inspection=1&view=iso&labels=0",
+    "view": {
+      "kind": "psop.workbench.view/1.0",
+      "workspaceId": "microduck",
+      "packageId": "psop.microduck",
+      "packageVersion": "2.0.0-assembly.3",
+      "packageDigest": "6a841fcb9cb028ba2c63df67cfd35c43f30e95374fb6f6bc314b7332160789e8",
+      "snapshotId": "dkp-6a841fcb9cb028ba2c63",
+      "sourceCommit": "cb70b792312d559a4da09064d92009079671815f",
+      "selectedId": "part:microduck:328011951ac11ee7",
+      "geometrySelection": {
+        "kind": "interface",
+        "id": "interface:assembly:328011951ac11ee7:jaw_drive",
+        "ownerRef": "part:microduck:328011951ac11ee7",
+        "memberRef": "interface:assembly:328011951ac11ee7:jaw_drive:hole_x_low_z_low"
+      },
+      "explosion": 0,
+      "view": "iso",
+      "camera": {
+        "position": [
+          0.0039004618370003796,
+          0.022466431981371708,
+          0.24906333755451276
+        ],
+        "target": [
+          0.026100000003647816,
+          0.042004711460322135,
+          0.2386145999816274
+        ]
+      },
+      "hiddenIds": [],
+      "isolateId": null,
+      "showLabels": false,
+      "showGrid": true,
+      "clipping": false,
+      "xray": false,
+      "showFasteners": true,
+      "inspection": {
+        "active": true,
+        "previousCamera": {
+          "position": [
+            0.4082796563696956,
+            -0.5735995078128227,
+            0.42213879158315426
+          ],
+          "target": [
+            0.020256459908080095,
+            1.3877787807814457e-17,
+            0.14546138193226335
+          ]
+        },
+        "camera": {
+          "position": [
+            0.0039004618370003796,
+            0.022466431981371708,
+            0.24906333755451276
+          ],
+          "target": [
+            0.026100000003647816,
+            0.042004711460322135,
+            0.2386145999816274
+          ]
+        },
+        "visiblePartIds": [
+          "part:microduck:328011951ac11ee7"
+        ],
+        "mode": "local",
+        "translucentPartIds": [],
+        "referenceFasteners": [
+          {
+            "pathRef": "fastener-path:assembly:328011951ac11ee7:jaw_drive:hole_x_low_z_low",
+            "representation": "schematic",
+            "entry": [
+              0.02610000000066495,
+              0.04369470477104186,
+              0.2326145999951397
+            ],
+            "head": [
+              0.02610000000066495,
+              0.044014704777088534,
+              0.2326145999951397
+            ],
+            "receiver": [
+              0.026099999999999995,
+              0.039999999582767475,
+              0.23261459999754255
+            ],
+            "axis": [
+              -2.2204460492503136e-16,
+              -1,
+              0
+            ]
+          }
+        ]
+      }
+    },
+    "dataset": {
+      "sceneReady": "true",
+      "renderCount": "74",
+      "cameraFlight": "settled",
+      "inspectionActive": "true",
+      "sourcePlacement": "restored",
+      "interfaceId": "interface:assembly:328011951ac11ee7:jaw_drive",
+      "memberRefs": "interface:assembly:328011951ac11ee7:jaw_drive:hole_x_low_z_low",
+      "selectedFeatures": "feature:assembly:328011951ac11ee7:jaw_drive_clearance_hole_1",
+      "highlightMode": "source_facet_colors",
+      "witnessMarkers": "0",
+      "highlightedSourceFaces": "180",
+      "fastenerPaths": "fastener-path:assembly:328011951ac11ee7:jaw_drive:hole_x_low_z_low",
+      "fastenerCount": "1",
+      "fastenerRepresentation": "schematic"
+    },
+    "panel": "左右方向键调整宽度，按住 Shift 加快；Home 最窄，End 最宽，回车恢复默认。\n对象详情\n外壳\n喙部件\npart:microduck:328011951ac11ee7\n模型对象\n来源已定位\n接口\n信息\n来源\n本件接口\n舵机端盘四孔安装接口\n已确定\n\n4 × Ø2.2 · PCD12\n\n通过本件通孔以螺钉连接指定舵机端盘接收孔\n\n定位本端\n选择整个接口\n组成\n4 个成员\n1 · 有限孔壁\n2 · 有限孔壁\n3 · 有限孔壁\n4 · 有限孔壁\n已确定对端\n\n喙部件与 XL330 端盘四孔螺钉连接 · 装配声明\n\nXL330 舵机 · 头部结构 · 1\nX−端盘四孔\n查看对端\n定位对端\n\n接口用途与对端已由用户确认；实际选孔、螺钉数量及规格、旋入深度和实物紧固状态未给出。\n\n连接件示意\n\n选择一个孔查看螺钉示意；实际选孔数量、规格待核。\n\n沿接口轴查看\n可选参考路径 · 4\n查看依据\n几何位置 · 源局部 mm\n定位所选几何",
+    "errors": [],
+    "maxCameraDeltaFromBefore": 0.02219953816664743
+  }
+]

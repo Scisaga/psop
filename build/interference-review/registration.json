@@ -1,0 +1,19 @@
+{
+  "workspace": "microduck",
+  "selected_snapshot": "dkp-e89fd146a8000ccc3556",
+  "active_snapshots": [
+    {
+      "id": "dkp-e89fd146a8000ccc3556",
+      "path": "../build/microduck/source-1.15/microduck-capabilities-7.dkp",
+      "packageDigest": "e89fd146a8000ccc35567ef1bb688f71c7be3320e26b82a79da04fd88e8c825f"
+    }
+  ],
+  "retired_registry_entries": [
+    {
+      "id": "dkp-2222613002e674936348",
+      "path": "../build/microduck/source-1.15/microduck-capabilities-6.dkp",
+      "packageDigest": "2222613002e6749363481158658a5a35d5d13de07bfd63816ae5d746c6917fb8"
+    }
+  ],
+  "old_package_directories_preserved": true
+}

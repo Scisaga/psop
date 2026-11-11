@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <title>模型权重能放下，为什么还可能跑不动</title>
+  <desc>PSOP 第 49 / 65 页教学图；文字与方法图保持可编辑。Microduck 视图由官方来源 STL 和 robot_walk.xml 的 source assembly 渲染，配置为 walk-model-reference、MCD-000001。alpha 软件任务身份与该几何参考的实物对应尚未核验；MD-01、S03、J01 和 EG 为教学定义。</desc>
+  <defs>
+    <linearGradient id="steel" x1="0" y1="0" x2="0.9" y2="1">
+      <stop stop-color="#EAF0F3" />
+      <stop offset=".37" stop-color="#A9BBC6" />
+      <stop offset=".63" stop-color="#F1F5F5" />
+      <stop offset="1" stop-color="#859CA9" />
+    </linearGradient>
+  </defs>
+  <g id="base" transform="translate(0 0)">
+    <rect x="0" y="0" width="1600" height="900" rx="0" fill="#FCFDFB" />
+    <rect x="0" y="0" width="9" height="900" rx="0" fill="#B9752E" />
+    <path d="M64 62 L1536 62" stroke="#D7E1E7" fill="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+    <text x="64.000" y="41.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="18.999" font-weight="400" data-text="PSOP  /  训练、部署与完整案例" aria-label="PSOP  /  训练、部署与完整案例" xml:space="preserve" textLength="273.541" lengthAdjust="spacingAndGlyphs" fill="#526578">PSOP  /  训练、部署与完整案例</text>
+    <text x="1355.287" y="41.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="18.999" font-weight="400" data-text="LESSON 04  ·  49/65" aria-label="LESSON 04  ·  49/65" xml:space="preserve" textLength="180.021" lengthAdjust="spacingAndGlyphs" fill="#526578">LESSON 04  ·  49/65</text>
+  </g>
+  <g id="title" transform="translate(0 0)">
+    <text x="64.000" y="125.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="48.001" font-weight="700" data-text="模型权重能放下，为什么还可能跑不动" aria-label="模型权重能放下，为什么还可能跑不动" xml:space="preserve" textLength="816.001" lengthAdjust="spacingAndGlyphs" fill="#18344C">模型权重能放下，为什么还可能跑不动</text>
+    <text x="64.000" y="177.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="24.001" font-weight="400" data-text="权重存储可按参数量×位数÷8 粗估，但完整运行还包含缓存、激活、量化元数据、引擎与其他模型。部署要同时测资源和任务效果，设备" aria-label="权重存储可按参数量×位数÷8 粗估，但完整运行还包含缓存、激活、量化元数据、引擎与其他模型。部署要同时测资源和任务效果，设备" xml:space="preserve" textLength="1448.778" lengthAdjust="spacingAndGlyphs" fill="#526578">权重存储可按参数量×位数÷8 粗估，但完整运行还包含缓存、激活、量化元数据、引擎与其他模型。部署要同时测资源和任务效果，设备</text>
+    <text x="64.000" y="209.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="24.001" font-weight="400" data-text="位置可以是手机、工位或配套终端。" aria-label="位置可以是手机、工位或配套终端。" xml:space="preserve" textLength="384.001" lengthAdjust="spacingAndGlyphs" fill="#526578">位置可以是手机、工位或配套终端。</text>
+  </g>
+  <g id="beat_01" transform="translate(0 0)">
+    <g id="illustration" transform="translate(64 238)">
+      <text x="0.000" y="29.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.000" font-weight="700" data-text="30 亿参数：只估权重，动态开销另行实测" aria-label="30 亿参数：只估权重，动态开销另行实测" xml:space="preserve" textLength="463.281" lengthAdjust="spacingAndGlyphs" fill="#326BB8">30 亿参数：只估权重，动态开销另行实测</text>
+      <text x="0.000" y="103.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.999" font-weight="700" data-text="16 bit" aria-label="16 bit" xml:space="preserve" textLength="79.122" lengthAdjust="spacingAndGlyphs" fill="#326BB8">16 bit</text>
+      <rect x="152" y="71" width="580.0" height="59" rx="4" fill="#326BB8" />
+      <text x="751.000" y="108.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="29.000" font-weight="700" data-text="6.0 GB" aria-label="6.0 GB" xml:space="preserve" textLength="90.829" lengthAdjust="spacingAndGlyphs" fill="#326BB8">6.0 GB</text>
+      <text x="152.000" y="157.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="3×10⁹ × 16 ÷ 8 = 6.0×10⁹ 字节" aria-label="3×10⁹ × 16 ÷ 8 = 6.0×10⁹ 字节" xml:space="preserve" textLength="392.178" lengthAdjust="spacingAndGlyphs" fill="#526578">3×10⁹ × 16 ÷ 8 = 6.0×10⁹ 字节</text>
+      <text x="0.000" y="219.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.999" font-weight="700" data-text="4 bit" aria-label="4 bit" xml:space="preserve" textLength="63.088" lengthAdjust="spacingAndGlyphs" fill="#14877D">4 bit</text>
+      <rect x="152" y="187" width="145.0" height="59" rx="4" fill="#14877D" />
+      <text x="316.000" y="224.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="29.000" font-weight="700" data-text="1.5 GB" aria-label="1.5 GB" xml:space="preserve" textLength="90.829" lengthAdjust="spacingAndGlyphs" fill="#14877D">1.5 GB</text>
+      <text x="152.000" y="273.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="3×10⁹ × 4 ÷ 8 = 1.5×10⁹ 字节" aria-label="3×10⁹ × 4 ÷ 8 = 1.5×10⁹ 字节" xml:space="preserve" textLength="378.331" lengthAdjust="spacingAndGlyphs" fill="#526578">3×10⁹ × 4 ÷ 8 = 1.5×10⁹ 字节</text>
+      <path d="M0 326 L1000 326" stroke="#D7E1E7" fill="none" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" />
+      <rect x="0" y="350" width="1000" height="99" rx="8" fill="#F1F5F7" stroke="#D7E1E7" stroke-width="1.5" />
+      <path d="M20 448 L89 351" stroke="#D8E1E7" fill="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M45 448 L114 351" stroke="#D8E1E7" fill="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M70 448 L139 351" stroke="#D8E1E7" fill="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M95 448 L164 351" stroke="#D8E1E7" fill="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M120 448 L189 351" stroke="#D8E1E7" fill="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M145 448 L214 351" stroke="#D8E1E7" fill="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M170 448 L239 351" stroke="#D8E1E7" fill="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M195 448 L264 351" stroke="#D8E1E7" fill="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M220 448 L289 351" stroke="#D8E1E7" fill="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M245 448 L314 351" stroke="#D8E1E7" fill="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M270 448 L339 351" stroke="#D8E1E7" fill="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M295 448 L364 351" stroke="#D8E1E7" fill="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M320 448 L389 351" stroke="#D8E1E7" fill="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M345 448 L414 351" stroke="#D8E1E7" fill="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M370 448 L439 351" stroke="#D8E1E7" fill="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M395 448 L464 351" stroke="#D8E1E7" fill="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M420 448 L489 351" stroke="#D8E1E7" fill="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M445 448 L514 351" stroke="#D8E1E7" fill="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M470 448 L539 351" stroke="#D8E1E7" fill="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M495 448 L564 351" stroke="#D8E1E7" fill="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M520 448 L589 351" stroke="#D8E1E7" fill="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M545 448 L614 351" stroke="#D8E1E7" fill="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M570 448 L639 351" stroke="#D8E1E7" fill="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M595 448 L664 351" stroke="#D8E1E7" fill="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M620 448 L689 351" stroke="#D8E1E7" fill="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M645 448 L714 351" stroke="#D8E1E7" fill="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M670 448 L739 351" stroke="#D8E1E7" fill="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M695 448 L764 351" stroke="#D8E1E7" fill="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M720 448 L789 351" stroke="#D8E1E7" fill="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M745 448 L814 351" stroke="#D8E1E7" fill="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M770 448 L839 351" stroke="#D8E1E7" fill="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M795 448 L864 351" stroke="#D8E1E7" fill="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M820 448 L889 351" stroke="#D8E1E7" fill="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M845 448 L914 351" stroke="#D8E1E7" fill="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M870 448 L939 351" stroke="#D8E1E7" fill="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M895 448 L964 351" stroke="#D8E1E7" fill="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M920 448 L989 351" stroke="#D8E1E7" fill="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M945 448 L998 351" stroke="#D8E1E7" fill="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M970 448 L998 351" stroke="#D8E1E7" fill="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M995 448 L998 351" stroke="#D8E1E7" fill="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+      <rect x="14" y="368" width="972" height="64" rx="6" fill="#F1F5F7" />
+      <text x="29.000" y="410.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="24.001" font-weight="700" data-text="另外实测：缓存、激活、引擎、量化元数据与并行模型" aria-label="另外实测：缓存、激活、引擎、量化元数据与并行模型" xml:space="preserve" textLength="576.001" lengthAdjust="spacingAndGlyphs" fill="#B9752E">另外实测：缓存、激活、引擎、量化元数据与并行模型</text>
+      <text x="0.000" y="489.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.000" font-weight="400" data-text="十进制 GB；总资源取决于模型、输入长度、部署引擎与硬件。" aria-label="十进制 GB；总资源取决于模型、输入长度、部署引擎与硬件。" xml:space="preserve" textLength="608.674" lengthAdjust="spacingAndGlyphs" fill="#526578">十进制 GB；总资源取决于模型、输入长度、部署引擎与硬件。</text>
+    </g>
+  </g>
+  <g id="beat_02" transform="translate(0 0)">
+    <text x="1114.000" y="268.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.000" font-weight="700" data-text="粗估给出权重数量级" aria-label="粗估给出权重数量级" xml:space="preserve" textLength="225.000" lengthAdjust="spacingAndGlyphs" fill="#326BB8">粗估给出权重数量级</text>
+    <text x="1114.000" y="310.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="30 亿参数按十进制单位，16 位约 6" aria-label="30 亿参数按十进制单位，16 位约 6" xml:space="preserve" textLength="363.017" lengthAdjust="spacingAndGlyphs" fill="#526578">30 亿参数按十进制单位，16 位约 6</text>
+    <text x="1114.000" y="340.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="GB，4 位约 1.5GB。这只说明权重表" aria-label="GB，4 位约 1.5GB。这只说明权重表" xml:space="preserve" textLength="375.681" lengthAdjust="spacingAndGlyphs" fill="#526578">GB，4 位约 1.5GB。这只说明权重表</text>
+    <text x="1114.000" y="370.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="示，不是整套系统显存承诺。" aria-label="示，不是整套系统显存承诺。" xml:space="preserve" textLength="298.999" lengthAdjust="spacingAndGlyphs" fill="#526578">示，不是整套系统显存承诺。</text>
+    <text x="1114.000" y="435.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.000" font-weight="700" data-text="输入会增加动态开销" aria-label="输入会增加动态开销" xml:space="preserve" textLength="225.000" lengthAdjust="spacingAndGlyphs" fill="#14877D">输入会增加动态开销</text>
+    <text x="1114.000" y="477.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="长上下文、更多图像、高分辨率与并发都" aria-label="长上下文、更多图像、高分辨率与并发都" xml:space="preserve" textLength="413.999" lengthAdjust="spacingAndGlyphs" fill="#526578">长上下文、更多图像、高分辨率与并发都</text>
+    <text x="1114.000" y="507.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="会影响激活和 KV 缓存。加载、首次响应" aria-label="会影响激活和 KV 缓存。加载、首次响应" xml:space="preserve" textLength="411.764" lengthAdjust="spacingAndGlyphs" fill="#526578">会影响激活和 KV 缓存。加载、首次响应</text>
+    <text x="1114.000" y="537.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="与完整任务延迟分别检查。" aria-label="与完整任务延迟分别检查。" xml:space="preserve" textLength="275.999" lengthAdjust="spacingAndGlyphs" fill="#526578">与完整任务延迟分别检查。</text>
+    <text x="1114.000" y="602.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.000" font-weight="700" data-text="量化后重新测试关键能力" aria-label="量化后重新测试关键能力" xml:space="preserve" textLength="275.000" lengthAdjust="spacingAndGlyphs" fill="#7756AA">量化后重新测试关键能力</text>
+    <text x="1114.000" y="644.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="PTQ 在训练后量化，QAT 在训练中考虑" aria-label="PTQ 在训练后量化，QAT 在训练中考虑" xml:space="preserve" textLength="406.722" lengthAdjust="spacingAndGlyphs" fill="#526578">PTQ 在训练后量化，QAT 在训练中考虑</text>
+    <text x="1114.000" y="674.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="量化影响。报告资源收益时，也报告字" aria-label="量化影响。报告资源收益时，也报告字" xml:space="preserve" textLength="390.999" lengthAdjust="spacingAndGlyphs" fill="#526578">量化影响。报告资源收益时，也报告字</text>
+    <text x="1114.000" y="704.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="段、定位、动作与依据是否退化。" aria-label="段、定位、动作与依据是否退化。" xml:space="preserve" textLength="344.999" lengthAdjust="spacingAndGlyphs" fill="#526578">段、定位、动作与依据是否退化。</text>
+  </g>
+  <g id="beat_03" transform="translate(0 0)">
+    <path d="M64 760 L1536 760" stroke="#D7E1E7" fill="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+    <rect x="64" y="782" width="4" height="57" rx="2" fill="#B9752E" />
+    <text x="84.000" y="798.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.000" font-weight="400" data-text="图中两根条仅表示 30 亿参数的权重估算。动态缓存与运行开销未加入固定数值，必须按所选模型、输入和硬件实测。" aria-label="图中两根条仅表示 30 亿参数的权重估算。动态缓存与运行开销未加入固定数值，必须按所选模型、输入和硬件实测。" xml:space="preserve" textLength="1138.822" lengthAdjust="spacingAndGlyphs" fill="#18344C">图中两根条仅表示 30 亿参数的权重估算。动态缓存与运行开销未加入固定数值，必须按所选模型、输入和硬件实测。</text>
+  </g>
+  <g id="footer" transform="translate(0 0)">
+    <text x="64.000" y="877.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="17.000" font-weight="400" data-text="学习手册 §13.1 / 13.2 / 13.3" aria-label="学习手册 §13.1 / 13.2 / 13.3" xml:space="preserve" textLength="217.359" lengthAdjust="spacingAndGlyphs" fill="#8898A8">学习手册 §13.1 / 13.2 / 13.3</text>
+    <text x="1247.000" y="877.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="17.000" font-weight="400" data-text="工程案例与数值示意的来源见逐页备注" aria-label="工程案例与数值示意的来源见逐页备注" xml:space="preserve" textLength="289.000" lengthAdjust="spacingAndGlyphs" fill="#8898A8">工程案例与数值示意的来源见逐页备注</text>
+  </g>
+</svg>

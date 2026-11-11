@@ -1,0 +1,92 @@
+{
+  "name": "connection-hidden-receiver",
+  "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-6a841fcb9cb028ba2c63&part=part%3Amicroduck%3A50f0c376d01bb0c1&interface=interface%3Aassembly%3A50f0c376d01bb0c1%3Aservo_end_minus&member=interface%3Aassembly%3A50f0c376d01bb0c1%3Aservo_end_minus%3Ahole_y_low&relationRef=connection%3Aassembly%3A328011951ac11ee7%3Ajaw_drive&fastener=fastener-path%3Aassembly%3A328011951ac11ee7%3Ajaw_drive%3Ahole_x_low_z_low&fasteners=0&explode=0.00&detail=interfaces&inspection=1&view=iso&labels=0",
+  "view": {
+    "kind": "psop.workbench.view/1.0",
+    "workspaceId": "microduck",
+    "packageId": "psop.microduck",
+    "packageVersion": "2.0.0-assembly.3",
+    "packageDigest": "6a841fcb9cb028ba2c63df67cfd35c43f30e95374fb6f6bc314b7332160789e8",
+    "snapshotId": "dkp-6a841fcb9cb028ba2c63",
+    "sourceCommit": "cb70b792312d559a4da09064d92009079671815f",
+    "selectedId": "part:microduck:50f0c376d01bb0c1",
+    "geometrySelection": {
+      "kind": "interface",
+      "id": "interface:assembly:50f0c376d01bb0c1:servo_end_minus",
+      "ownerRef": "part:microduck:50f0c376d01bb0c1",
+      "memberRef": "interface:assembly:50f0c376d01bb0c1:servo_end_minus:hole_y_low",
+      "relationRef": "connection:assembly:328011951ac11ee7:jaw_drive",
+      "fastenerRef": "fastener-path:assembly:328011951ac11ee7:jaw_drive:hole_x_low_z_low"
+    },
+    "explosion": 0,
+    "view": "iso",
+    "camera": {
+      "position": [
+        0.026099999999999998,
+        0.06499999999999995,
+        0.23261459999999992
+      ],
+      "target": [
+        0.026099999999999995,
+        0.03999999999999998,
+        0.23261459999999992
+      ]
+    },
+    "hiddenIds": [],
+    "isolateId": null,
+    "showLabels": false,
+    "showGrid": true,
+    "clipping": false,
+    "xray": false,
+    "showFasteners": false,
+    "inspection": {
+      "active": true,
+      "previousCamera": {
+        "position": [
+          0.3000000000000001,
+          -0.31999999999999895,
+          0.2299999999999992
+        ],
+        "target": [
+          0,
+          0,
+          0.105
+        ]
+      },
+      "camera": {
+        "position": [
+          0.026099999999999998,
+          0.06499999999999995,
+          0.23261459999999992
+        ],
+        "target": [
+          0.026099999999999995,
+          0.03999999999999998,
+          0.23261459999999992
+        ]
+      },
+      "visiblePartIds": [
+        "part:microduck:50f0c376d01bb0c1"
+      ],
+      "mode": "local",
+      "translucentPartIds": [],
+      "referenceFasteners": []
+    }
+  },
+  "scene": {
+    "sceneReady": "true",
+    "renderCount": "27",
+    "cameraFlight": "settled",
+    "inspectionActive": "true",
+    "sourcePlacement": "restored",
+    "interfaceId": "interface:assembly:50f0c376d01bb0c1:servo_end_minus",
+    "memberRefs": "interface:assembly:50f0c376d01bb0c1:servo_end_minus:hole_y_low",
+    "selectedFeatures": "feature:microduck:50f0c376d01bb0c1:678d6de22520",
+    "highlightMode": "source_facet_colors",
+    "witnessMarkers": "0",
+    "highlightedSourceFaces": "144",
+    "fastenerPaths": "",
+    "fastenerCount": "0",
+    "fastenerRepresentation": "schematic"
+  }
+}

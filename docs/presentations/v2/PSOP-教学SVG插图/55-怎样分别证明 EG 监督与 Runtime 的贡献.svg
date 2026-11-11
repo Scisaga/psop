@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <title>怎样分别证明 EG 监督与 Runtime 的贡献</title>
+  <desc>PSOP 第 55 / 65 页教学图；文字与方法图保持可编辑。Microduck 视图由官方来源 STL 和 robot_walk.xml 的 source assembly 渲染，配置为 walk-model-reference、MCD-000001。alpha 软件任务身份与该几何参考的实物对应尚未核验；MD-01、S03、J01 和 EG 为教学定义。</desc>
+  <defs>
+    <linearGradient id="steel" x1="0" y1="0" x2="0.9" y2="1">
+      <stop stop-color="#EAF0F3" />
+      <stop offset=".37" stop-color="#A9BBC6" />
+      <stop offset=".63" stop-color="#F1F5F5" />
+      <stop offset="1" stop-color="#859CA9" />
+    </linearGradient>
+  </defs>
+  <g id="base" transform="translate(0 0)">
+    <rect x="0" y="0" width="1600" height="900" rx="0" fill="#FCFDFB" />
+    <rect x="0" y="0" width="9" height="900" rx="0" fill="#BE574C" />
+    <path d="M64 62 L1536 62" stroke="#D7E1E7" fill="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+    <text x="64.000" y="41.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="18.999" font-weight="400" data-text="PSOP  /  实验、评测与研究实践" aria-label="PSOP  /  实验、评测与研究实践" xml:space="preserve" textLength="273.541" lengthAdjust="spacingAndGlyphs" fill="#526578">PSOP  /  实验、评测与研究实践</text>
+    <text x="1355.287" y="41.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="18.999" font-weight="400" data-text="LESSON 05  ·  55/65" aria-label="LESSON 05  ·  55/65" xml:space="preserve" textLength="180.021" lengthAdjust="spacingAndGlyphs" fill="#526578">LESSON 05  ·  55/65</text>
+  </g>
+  <g id="title" transform="translate(0 0)">
+    <text x="64.000" y="125.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="48.001" font-weight="700" data-text="怎样分别证明 EG 监督与 Runtime 的贡献" aria-label="怎样分别证明 EG 监督与 Runtime 的贡献" xml:space="preserve" textLength="902.228" lengthAdjust="spacingAndGlyphs" fill="#18344C">怎样分别证明 EG 监督与 Runtime 的贡献</text>
+    <text x="64.000" y="177.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="24.001" font-weight="400" data-text="采用“普通轨迹 / EG 对齐监督 × 无核验 / 有 Runtime”的交叉比较，可以区分训练监督组织与运行支撑。先控制模型、数据来源、样本" aria-label="采用“普通轨迹 / EG 对齐监督 × 无核验 / 有 Runtime”的交叉比较，可以区分训练监督组织与运行支撑。先控制模型、数据来源、样本" xml:space="preserve" textLength="1446.845" lengthAdjust="spacingAndGlyphs" fill="#526578">采用“普通轨迹 / EG 对齐监督 × 无核验 / 有 Runtime”的交叉比较，可以区分训练监督组织与运行支撑。先控制模型、数据来源、样本</text>
+    <text x="64.000" y="209.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="24.001" font-weight="400" data-text="和预算，再研究组合效果及单项消融。" aria-label="和预算，再研究组合效果及单项消融。" xml:space="preserve" textLength="408.001" lengthAdjust="spacingAndGlyphs" fill="#526578">和预算，再研究组合效果及单项消融。</text>
+  </g>
+  <g id="beat_01" transform="translate(0 0)">
+    <g id="illustration" transform="translate(64 237)">
+      <text x="0.000" y="26.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.999" font-weight="700" data-text="训练监督 × 运行核验：四组共享测试与预算" aria-label="训练监督 × 运行核验：四组共享测试与预算" xml:space="preserve" textLength="503.279" lengthAdjust="spacingAndGlyphs" fill="#326BB8">训练监督 × 运行核验：四组共享测试与预算</text>
+      <text x="531.000" y="64.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.000" font-weight="700" data-text="无 Runtime 核验" aria-label="无 Runtime 核验" xml:space="preserve" textLength="196.594" lengthAdjust="spacingAndGlyphs" fill="#B9752E">无 Runtime 核验</text>
+      <text x="1030.000" y="64.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.000" font-weight="700" data-text="有 Runtime 核验" aria-label="有 Runtime 核验" xml:space="preserve" textLength="196.594" lengthAdjust="spacingAndGlyphs" fill="#14877D">有 Runtime 核验</text>
+      <text x="0.000" y="144.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="27.001" font-weight="700" data-text="普通轨迹监督" aria-label="普通轨迹监督" xml:space="preserve" textLength="162.001" lengthAdjust="spacingAndGlyphs" fill="#326BB8">普通轨迹监督</text>
+      <rect x="395" y="90" width="511" height="89" rx="8" fill="#EAF1FA" stroke="#D7E1E7" stroke-width="1.5" />
+      <text x="415.000" y="144.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.000" font-weight="700" data-text="模型行为基线" aria-label="模型行为基线" xml:space="preserve" textLength="150.000" lengthAdjust="spacingAndGlyphs" fill="#18344C">模型行为基线</text>
+      <rect x="937" y="90" width="511" height="89" rx="8" fill="#EAF1FA" stroke="#D7E1E7" stroke-width="1.5" />
+      <text x="957.000" y="144.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.000" font-weight="700" data-text="普通训练 + 运行核验" aria-label="普通训练 + 运行核验" xml:space="preserve" textLength="233.923" lengthAdjust="spacingAndGlyphs" fill="#18344C">普通训练 + 运行核验</text>
+      <path d="M910 134 L932 134" stroke="#14877D" fill="none" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M922.9955289764732 138.3496553411123 L932 134 L922.9955289764732 129.6503446588877" stroke="#14877D" fill="none" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" />
+      <text x="0.000" y="247.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="27.001" font-weight="700" data-text="EG 对齐监督" aria-label="EG 对齐监督" xml:space="preserve" textLength="152.140" lengthAdjust="spacingAndGlyphs" fill="#14877D">EG 对齐监督</text>
+      <rect x="395" y="193" width="511" height="89" rx="8" fill="#E8F5F1" stroke="#D7E1E7" stroke-width="1.5" />
+      <text x="415.000" y="247.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.000" font-weight="700" data-text="监督组织的增量" aria-label="监督组织的增量" xml:space="preserve" textLength="175.000" lengthAdjust="spacingAndGlyphs" fill="#18344C">监督组织的增量</text>
+      <rect x="937" y="193" width="511" height="89" rx="8" fill="#E8F5F1" stroke="#D7E1E7" stroke-width="1.5" />
+      <text x="957.000" y="247.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.000" font-weight="700" data-text="监督与机制组合" aria-label="监督与机制组合" xml:space="preserve" textLength="175.000" lengthAdjust="spacingAndGlyphs" fill="#18344C">监督与机制组合</text>
+      <path d="M910 237 L932 237" stroke="#14877D" fill="none" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M922.9955289764732 241.3496553411123 L932 237 L922.9955289764732 232.6503446588877" stroke="#14877D" fill="none" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M650 182 L650 190" stroke="#326BB8" fill="none" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M645.6503446588877 180.99552897647322 L650 190 L654.3496553411123 180.99552897647322" stroke="#326BB8" fill="none" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M1190 182 L1190 190" stroke="#326BB8" fill="none" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M1185.6503446588877 180.99552897647322 L1190 190 L1194.3496553411123 180.99552897647322" stroke="#326BB8" fill="none" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" />
+      <text x="0.000" y="321.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="横向比较运行机制，纵向比较监督组织；增量用实测结果填写。" aria-label="横向比较运行机制，纵向比较监督组织；增量用实测结果填写。" xml:space="preserve" textLength="643.999" lengthAdjust="spacingAndGlyphs" fill="#526578">横向比较运行机制，纵向比较监督组织；增量用实测结果填写。</text>
+    </g>
+  </g>
+  <g id="beat_02" transform="translate(0 0)">
+    <text x="64.000" y="617.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.000" font-weight="700" data-text="横向比较运行机制" aria-label="横向比较运行机制" xml:space="preserve" textLength="200.000" lengthAdjust="spacingAndGlyphs" fill="#326BB8">横向比较运行机制</text>
+    <text x="64.000" y="656.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="相同训练模型在无核验与有核验条件下测" aria-label="相同训练模型在无核验与有核验条件下测" xml:space="preserve" textLength="413.999" lengthAdjust="spacingAndGlyphs" fill="#526578">相同训练模型在无核验与有核验条件下测</text>
+    <text x="64.000" y="686.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="试，观察接口、非法动作与完整成功率，评" aria-label="试，观察接口、非法动作与完整成功率，评" xml:space="preserve" textLength="436.999" lengthAdjust="spacingAndGlyphs" fill="#526578">试，观察接口、非法动作与完整成功率，评</text>
+    <text x="64.000" y="716.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="价运行条件的增量。" aria-label="价运行条件的增量。" xml:space="preserve" textLength="206.999" lengthAdjust="spacingAndGlyphs" fill="#526578">价运行条件的增量。</text>
+    <text x="570.000" y="617.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.000" font-weight="700" data-text="纵向比较监督组织" aria-label="纵向比较监督组织" xml:space="preserve" textLength="200.000" lengthAdjust="spacingAndGlyphs" fill="#14877D">纵向比较监督组织</text>
+    <text x="570.000" y="656.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="保持运行环境相同，比较普通轨迹与 EG 对" aria-label="保持运行环境相同，比较普通轨迹与 EG 对" xml:space="preserve" textLength="434.360" lengthAdjust="spacingAndGlyphs" fill="#526578">保持运行环境相同，比较普通轨迹与 EG 对</text>
+    <text x="570.000" y="686.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="齐训练，重点测状态、缺证、分支和结果使" aria-label="齐训练，重点测状态、缺证、分支和结果使" xml:space="preserve" textLength="436.999" lengthAdjust="spacingAndGlyphs" fill="#526578">齐训练，重点测状态、缺证、分支和结果使</text>
+    <text x="570.000" y="716.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="用行为。" aria-label="用行为。" xml:space="preserve" textLength="91.999" lengthAdjust="spacingAndGlyphs" fill="#526578">用行为。</text>
+    <text x="1076.000" y="617.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.000" font-weight="700" data-text="消融解释具体信息贡献" aria-label="消融解释具体信息贡献" xml:space="preserve" textLength="250.000" lengthAdjust="spacingAndGlyphs" fill="#7756AA">消融解释具体信息贡献</text>
+    <text x="1076.000" y="656.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="在 EG 对齐设置中去掉状态、结果或某类并" aria-label="在 EG 对齐设置中去掉状态、结果或某类并" xml:space="preserve" textLength="434.360" lengthAdjust="spacingAndGlyphs" fill="#526578">在 EG 对齐设置中去掉状态、结果或某类并</text>
+    <text x="1076.000" y="686.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="行关系，检查独立测试变化。不可避免的预" aria-label="行关系，检查独立测试变化。不可避免的预" xml:space="preserve" textLength="436.999" lengthAdjust="spacingAndGlyphs" fill="#526578">行关系，检查独立测试变化。不可避免的预</text>
+    <text x="1076.000" y="716.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="算与来源差异明确记录。" aria-label="算与来源差异明确记录。" xml:space="preserve" textLength="252.999" lengthAdjust="spacingAndGlyphs" fill="#526578">算与来源差异明确记录。</text>
+  </g>
+  <g id="beat_03" transform="translate(0 0)">
+    <path d="M64 760 L1536 760" stroke="#D7E1E7" fill="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+    <rect x="64" y="782" width="4" height="57" rx="2" fill="#BE574C" />
+    <text x="84.000" y="798.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.000" font-weight="400" data-text="若 EG 对齐组更好，还要问是否用了更多样本或更强模型。固定原始来源、Token 与训练预算，才能更有依据地归因到对齐方法。" aria-label="若 EG 对齐组更好，还要问是否用了更多样本或更强模型。固定原始来源、Token 与训练预算，才能更有依据地归因到对齐方法。" xml:space="preserve" textLength="1256.600" lengthAdjust="spacingAndGlyphs" fill="#18344C">若 EG 对齐组更好，还要问是否用了更多样本或更强模型。固定原始来源、Token 与训练预算，才能更有依据地归因到对齐方法。</text>
+  </g>
+  <g id="footer" transform="translate(0 0)">
+    <text x="64.000" y="877.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="17.000" font-weight="400" data-text="学习手册 §15.6" aria-label="学习手册 §15.6" xml:space="preserve" textLength="114.712" lengthAdjust="spacingAndGlyphs" fill="#8898A8">学习手册 §15.6</text>
+    <text x="1247.000" y="877.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="17.000" font-weight="400" data-text="工程案例与数值示意的来源见逐页备注" aria-label="工程案例与数值示意的来源见逐页备注" xml:space="preserve" textLength="289.000" lengthAdjust="spacingAndGlyphs" fill="#8898A8">工程案例与数值示意的来源见逐页备注</text>
+  </g>
+</svg>

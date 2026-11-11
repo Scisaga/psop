@@ -1,0 +1,605 @@
+{
+  "schema": "psop.reference-use-ui-review/1",
+  "measured_at": "2026-11-08T19:25:12.863Z",
+  "snapshot": "dkp-69f6ee2e13b4051f6f42",
+  "version": "2.0.0-capabilities.4",
+  "package_digest": "69f6ee2e13b4051f6f42522639f77459081b83e9b95d4b5ea5b99c48324fe0e4",
+  "reviewed_part_count": 70,
+  "functional_interface_count": 243,
+  "open_item_count": 7,
+  "rows": [
+    {
+      "owner_ref": "part:microduck:b364863ffde63eed",
+      "name": "轴承外形（22×16×4 配置名）",
+      "body": "trunk_base",
+      "summary": "本件原装角色：内圈配合接口；外圈配合接口。具体关联：XL330 舵机、偏航与横滚连接件、躯干底座；有限承接面、孔组与轴向支承分别记录，未由零件邻近关系推定固定。",
+      "interface_count": 2,
+      "open_items": []
+    },
+    {
+      "owner_ref": "part:microduck:9d70b219a5533bf1",
+      "name": "右侧外壳",
+      "body": "trunk_base",
+      "summary": "外壳闭合区与左壳关联，颈部端盘孔组保留原装配对端；新增竖孔、台阶和导向区域不能因用途未明而删除。",
+      "interface_count": 2,
+      "open_items": [
+        "新增竖孔及部分非圆导向结构的具体原装选用尚未全部核定。"
+      ]
+    },
+    {
+      "owner_ref": "part:microduck:78cf36c41e4fde06",
+      "name": "电路板固定件",
+      "body": "trunk_base",
+      "summary": "锁扣通过自身安装孔与电源支架关联；被锁持板件及真实夹持过程在当前输入中没有完整几何。",
+      "interface_count": 1,
+      "open_items": [
+        "被锁持板件的完整几何和实际夹持方式缺失。"
+      ]
+    },
+    {
+      "owner_ref": "part:microduck:203d2686e3321e4a",
+      "name": "躯干底座",
+      "body": "trunk_base",
+      "summary": "本件原装角色：轴承指定圈端面承接；偏航舵机锥柱定位；电源支架与躯干底座双孔；舵机壳体指定侧安装；舵机壳体承座与限位。具体关联：XL330 舵机、电源支架、轴承外形（22×16×4 配置名）；有限承接面、孔组与轴向支承分别记录，未由零件邻近关系推定固定。",
+      "interface_count": 9,
+      "open_items": []
+    },
+    {
+      "owner_ref": "part:microduck:a682dc3620df43f5",
+      "name": "XL330 舵机",
+      "body": "trunk_base",
+      "summary": "壳体通过自身安装孔及有限承接面与躯干底座关联；端盘传动对端为偏航与横滚连接件。壳体固定、端盘传动与轴承支承分开，保留安装相位及实际选孔条件。",
+      "interface_count": 6,
+      "open_items": []
+    },
+    {
+      "owner_ref": "part:microduck:e7e8275c7d01674c",
+      "name": "电源支架",
+      "body": "trunk_base",
+      "summary": "电源支架安装于躯干底座，承接电池并提供锁扣安装区；电池导向与保持条件分别审查。",
+      "interface_count": 3,
+      "open_items": []
+    },
+    {
+      "owner_ref": "part:microduck:f97c1c6580d651d7",
+      "name": "NP-F970 电池外形",
+      "body": "trunk_base",
+      "summary": "电池包络由电源支架承接，导向侧壁与拔模轮廓已保留；源名称不作为电池型号、锁止或电气插接规格确认。",
+      "interface_count": 1,
+      "open_items": []
+    },
+    {
+      "owner_ref": "part:microduck:09cb390e38430c1e",
+      "name": "XL330 舵机",
+      "body": "trunk_base",
+      "summary": "壳体通过自身安装孔及有限承接面与躯干底座关联；端盘传动对端为偏航与横滚连接件。壳体固定、端盘传动与轴承支承分开，保留安装相位及实际选孔条件。",
+      "interface_count": 6,
+      "open_items": []
+    },
+    {
+      "owner_ref": "part:microduck:e27cbdd6c07a264e",
+      "name": "左侧外壳",
+      "body": "trunk_base",
+      "summary": "外壳闭合区与右壳关联，颈部端盘孔组保留原装配对端；新增竖孔、台阶和导向区域不能因用途未明而删除。",
+      "interface_count": 2,
+      "open_items": [
+        "新增竖孔及部分非圆导向结构的具体原装选用尚未全部核定。"
+      ]
+    },
+    {
+      "owner_ref": "part:microduck:7938fd9143c59ea4",
+      "name": "轴承外形（22×16×4 配置名）",
+      "body": "trunk_base",
+      "summary": "本件原装角色：内圈配合接口；外圈配合接口。具体关联：XL330 舵机、偏航与横滚连接件、躯干底座；有限承接面、孔组与轴向支承分别记录，未由零件邻近关系推定固定。",
+      "interface_count": 2,
+      "open_items": []
+    },
+    {
+      "owner_ref": "part:microduck:55970da91992f38c",
+      "name": "偏航与横滚连接件",
+      "body": "yaw2roll",
+      "summary": "本件原装角色：偏航与横滚连接件 ↔ XL330 舵机；舵机壳体指定侧安装；舵机壳体承座与限位。具体关联：XL330 舵机、轴承外形（22×16×4 配置名）；有限承接面、孔组与轴向支承分别记录，未由零件邻近关系推定固定。",
+      "interface_count": 3,
+      "open_items": []
+    },
+    {
+      "owner_ref": "part:microduck:cd6d48fccc95df41",
+      "name": "XL330 舵机",
+      "body": "yaw2roll",
+      "summary": "壳体通过自身安装孔及有限承接面与偏航与横滚连接件、横滚轴承支承件关联；端盘传动对端为髋部件。壳体固定、端盘传动与轴承支承分开，保留安装相位及实际选孔条件。",
+      "interface_count": 6,
+      "open_items": []
+    },
+    {
+      "owner_ref": "part:microduck:47a950fbb3d0e416",
+      "name": "轴承外形（22×16×4 配置名）",
+      "body": "yaw2roll",
+      "summary": "本件原装角色：内圈配合接口；外圈配合接口。具体关联：XL330 舵机、横滚轴承支承件、髋部件；有限承接面、孔组与轴向支承分别记录，未由零件邻近关系推定固定。",
+      "interface_count": 2,
+      "open_items": []
+    },
+    {
+      "owner_ref": "part:microduck:cb253f38c818b9d8",
+      "name": "横滚轴承支承件",
+      "body": "yaw2roll",
+      "summary": "本件原装角色：轴承支承件双孔与躯干舵机的螺钉连接假设；轴承外圈端面承接接口；舵机壳体承座与限位。具体关联：XL330 舵机、轴承外形（22×16×4 配置名）；有限承接面、孔组与轴向支承分别记录，未由零件邻近关系推定固定。",
+      "interface_count": 3,
+      "open_items": []
+    },
+    {
+      "owner_ref": "part:microduck:bb34e925e25e29f6",
+      "name": "轴承外形（22×16×4 配置名）",
+      "body": "hip_l",
+      "summary": "本件原装角色：内圈配合接口；外圈配合接口。具体关联：XL330 舵机、大腿加强板、髋部件；有限承接面、孔组与轴向支承分别记录，未由零件邻近关系推定固定。",
+      "interface_count": 2,
+      "open_items": []
+    },
+    {
+      "owner_ref": "part:microduck:fa9ee2f71faafb88",
+      "name": "髋部件",
+      "body": "hip_l",
+      "summary": "本件原装角色：源 X 向四孔安装接口；源 Y 向四孔安装接口；源 Y 向 Ø16 支承接口；源 X 向 Ø16 支承接口。具体关联：XL330 舵机、轴承外形（22×16×4 配置名）；有限承接面、孔组与轴向支承分别记录，未由零件邻近关系推定固定。",
+      "interface_count": 4,
+      "open_items": []
+    },
+    {
+      "owner_ref": "part:microduck:66c73aaad945a993",
+      "name": "左大腿部件",
+      "body": "upper_leg_left",
+      "summary": "本件原装角色：大腿一体锥柱双孔定位；舵机壳体承座与限位。具体关联：XL330 舵机；有限承接面、孔组与轴向支承分别记录，未由零件邻近关系推定固定。",
+      "interface_count": 4,
+      "open_items": []
+    },
+    {
+      "owner_ref": "part:microduck:4cf80d5a57c8cb04",
+      "name": "XL330 舵机",
+      "body": "upper_leg_left",
+      "summary": "壳体通过自身安装孔及有限承接面与大腿加强板、左大腿部件关联；端盘传动对端为腿部连杆。壳体固定、端盘传动与轴承支承分开，保留安装相位及实际选孔条件。",
+      "interface_count": 6,
+      "open_items": []
+    },
+    {
+      "owner_ref": "part:microduck:c75bfc0afb35e000",
+      "name": "大腿加强板",
+      "body": "upper_leg_left",
+      "summary": "本件原装角色：轴承外圈端面承接接口；轴承指定圈端面承接；舵机壳体指定侧安装；舵机壳体承座与限位。具体关联：XL330 舵机、轴承外形（22×16×4 配置名）；有限承接面、孔组与轴向支承分别记录，未由零件邻近关系推定固定。",
+      "interface_count": 6,
+      "open_items": []
+    },
+    {
+      "owner_ref": "part:microduck:e475134639b3f7e1",
+      "name": "轴承外形（22×16×4 配置名）",
+      "body": "upper_leg_left",
+      "summary": "本件原装角色：内圈配合接口；外圈配合接口。具体关联：XL330 舵机、大腿加强板、腿部连杆；有限承接面、孔组与轴向支承分别记录，未由零件邻近关系推定固定。",
+      "interface_count": 2,
+      "open_items": []
+    },
+    {
+      "owner_ref": "part:microduck:9ffe9d5bcd6bc13a",
+      "name": "XL330 舵机",
+      "body": "upper_leg_left",
+      "summary": "壳体通过自身安装孔及有限承接面与大腿加强板、左大腿部件关联；端盘传动对端为髋部件。壳体固定、端盘传动与轴承支承分开，保留安装相位及实际选孔条件。",
+      "interface_count": 6,
+      "open_items": []
+    },
+    {
+      "owner_ref": "part:microduck:638f29b46b322e64",
+      "name": "腿部连杆",
+      "body": "leg",
+      "summary": "本件原装角色：腿连杆下部双孔；腿连杆上端四孔安装位；踝随动轴颈接口；膝轴锥颈与轴肩支承接口；舵机壳体承座与限位。具体关联：XL330 舵机、轴承外形（22×16×4 配置名）、轴承外形（默认配置名）；有限承接面、孔组与轴向支承分别记录，未由零件邻近关系推定固定。",
+      "interface_count": 5,
+      "open_items": []
+    },
+    {
+      "owner_ref": "part:microduck:7c130c8489b57c99",
+      "name": "XL330 舵机",
+      "body": "leg",
+      "summary": "壳体通过自身安装孔及有限承接面与腿部连杆关联；端盘传动对端为左踝部件。壳体固定、端盘传动与轴承支承分开，保留安装相位及实际选孔条件。",
+      "interface_count": 6,
+      "open_items": []
+    },
+    {
+      "owner_ref": "part:microduck:8b649e45831a1972",
+      "name": "左脚底",
+      "body": "ankle_left",
+      "summary": "本件原装角色：杯形脚底内腔接口。具体关联：左脚部件；有限承接面、孔组与轴向支承分别记录，未由零件邻近关系推定固定。",
+      "interface_count": 1,
+      "open_items": []
+    },
+    {
+      "owner_ref": "part:microduck:41db565298264db6",
+      "name": "左脚部件",
+      "body": "ankle_left",
+      "summary": "本件原装角色：脚底包覆套合接口；脚与踝的复合安装接口。具体关联：左脚底、左踝部件；有限承接面、孔组与轴向支承分别记录，未由零件邻近关系推定固定。",
+      "interface_count": 2,
+      "open_items": []
+    },
+    {
+      "owner_ref": "part:microduck:766eaa6e4dd8b09f",
+      "name": "轴承外形（默认配置名）",
+      "body": "ankle_left",
+      "summary": "本件原装角色：内圈配合接口；外圈配合接口。具体关联：XL330 舵机、左踝部件、腿部连杆；有限承接面、孔组与轴向支承分别记录，未由零件邻近关系推定固定。",
+      "interface_count": 2,
+      "open_items": []
+    },
+    {
+      "owner_ref": "part:microduck:07e507f1e9297aa3",
+      "name": "左踝部件",
+      "body": "ankle_left",
+      "summary": "本件原装角色：左踝部件 ↔ XL330 舵机；踝与脚的复合安装接口；踝轴承承座接口。具体关联：XL330 舵机、左脚部件、轴承外形（默认配置名）；有限承接面、孔组与轴向支承分别记录，未由零件邻近关系推定固定。",
+      "interface_count": 3,
+      "open_items": []
+    },
+    {
+      "owner_ref": "part:microduck:6b5602b4416129fe",
+      "name": "颈部件",
+      "body": "neck",
+      "summary": "本件原装角色：舵机壳体指定侧安装；舵机壳体承座与限位。具体关联：XL330 舵机；有限承接面、孔组与轴向支承分别记录，未由零件邻近关系推定固定。",
+      "interface_count": 4,
+      "open_items": []
+    },
+    {
+      "owner_ref": "part:microduck:4cef8bb24d37fe6e",
+      "name": "XL330 舵机",
+      "body": "neck",
+      "summary": "壳体通过自身安装孔及有限承接面与颈部件关联；端盘传动对端为右侧外壳、左侧外壳。壳体固定、端盘传动与轴承支承分开，保留安装相位及实际选孔条件。",
+      "interface_count": 5,
+      "open_items": []
+    },
+    {
+      "owner_ref": "part:microduck:44b5600c1a735117",
+      "name": "XL330 舵机",
+      "body": "neck",
+      "summary": "壳体通过自身安装孔及有限承接面与颈部件关联；端盘传动对端为颈俯仰部件。壳体固定、端盘传动与轴承支承分开，保留安装相位及实际选孔条件。",
+      "interface_count": 5,
+      "open_items": []
+    },
+    {
+      "owner_ref": "part:microduck:133711c520619e45",
+      "name": "颈部件",
+      "body": "neck",
+      "summary": "本件原装角色：舵机壳体指定侧安装；舵机壳体承座与限位。具体关联：XL330 舵机；有限承接面、孔组与轴向支承分别记录，未由零件邻近关系推定固定。",
+      "interface_count": 4,
+      "open_items": []
+    },
+    {
+      "owner_ref": "part:microduck:834f5cc892eba41e",
+      "name": "颈俯仰部件",
+      "body": "neck_pitch",
+      "summary": "本件原装角色：颈俯仰部件 ↔ XL330 舵机；头俯仰舵机端盘四孔对应。具体关联：XL330 舵机、轴承外形（22×16×4 配置名）；有限承接面、孔组与轴向支承分别记录，未由零件邻近关系推定固定。",
+      "interface_count": 3,
+      "open_items": []
+    },
+    {
+      "owner_ref": "part:microduck:6b884b140f6e283c",
+      "name": "轴承外形（22×16×4 配置名）",
+      "body": "neck_pitch",
+      "summary": "本件原装角色：内圈配合接口；外圈配合接口。具体关联：XL330 舵机、颈俯仰部件；有限承接面、孔组与轴向支承分别记录，未由零件邻近关系推定固定。",
+      "interface_count": 2,
+      "open_items": [
+        "头部偏航轴承外圈的具体承座/挡面尚未明确；内外圈能力均保留。"
+      ]
+    },
+    {
+      "owner_ref": "part:microduck:d4b9a9e9474a9829",
+      "name": "偏航与横滚传动件",
+      "body": "yaw_roll_motion",
+      "summary": "本件原装角色：XL330 舵机 ↔ 偏航与横滚传动件；轴承轴颈与端部安装接口；舵机壳体指定侧安装；舵机壳体承座与限位。具体关联：XL330 舵机、轴承外形（22×16×4 配置名）；有限承接面、孔组与轴向支承分别记录，未由零件邻近关系推定固定。",
+      "interface_count": 4,
+      "open_items": []
+    },
+    {
+      "owner_ref": "part:microduck:a07b37bcb704b29f",
+      "name": "XL330 舵机",
+      "body": "yaw_roll_motion",
+      "summary": "壳体通过自身安装孔及有限承接面与偏航与横滚传动件关联；端盘传动对端为颈俯仰部件。壳体固定、端盘传动与轴承支承分开，保留安装相位及实际选孔条件。",
+      "interface_count": 6,
+      "open_items": []
+    },
+    {
+      "owner_ref": "part:microduck:ea69e2c6bba10a23",
+      "name": "轴承外形（22×16×4 配置名）",
+      "body": "yaw_roll_motion",
+      "summary": "本件原装角色：内圈配合接口；外圈配合接口。具体关联：XL330 舵机、偏航与横滚传动件、头部下壳；有限承接面、孔组与轴向支承分别记录，未由零件邻近关系推定固定。",
+      "interface_count": 2,
+      "open_items": []
+    },
+    {
+      "owner_ref": "part:microduck:55121c0b36f62219",
+      "name": "轴承外形（22×16×4 配置名）",
+      "body": "yaw_roll_motion",
+      "summary": "本件原装角色：内圈配合接口；外圈配合接口。具体关联：偏航与横滚传动件、头部下壳；有限承接面、孔组与轴向支承分别记录，未由零件邻近关系推定固定。",
+      "interface_count": 2,
+      "open_items": []
+    },
+    {
+      "owner_ref": "part:microduck:b61b0609c61fc572",
+      "name": "镜头外形",
+      "body": "jaw_soft",
+      "summary": "镜筒与 M12 镜头座主孔配合；穿过面部视口属于光学/通行关系，不能当作额外固定。",
+      "interface_count": 1,
+      "open_items": []
+    },
+    {
+      "owner_ref": "part:microduck:afa52198f7fad203",
+      "name": "面部件",
+      "body": "jaw_soft",
+      "summary": "面部件边缘由下壳槽口定位并与上壳槽口配合；眼环平环在正面承接，板件通过四角安装区与其关联。",
+      "interface_count": 4,
+      "open_items": []
+    },
+    {
+      "owner_ref": "part:microduck:50f0c376d01bb0c1",
+      "name": "XL330 舵机",
+      "body": "jaw_soft",
+      "summary": "X−端盘四孔驱动喙部；壳体装入电机支架的有限承槽，由两端止挡、大面和侧肩定位，下侧由头部下壳承托。支架以自身四孔安装接口连接下壳，形成夹置结构；不是用舵机 A/B 侧四孔直接连接支架。",
+      "interface_count": 5,
+      "open_items": []
+    },
+    {
+      "owner_ref": "part:microduck:f5797f92c2bf01b8",
+      "name": "喙部软质件",
+      "body": "jaw_soft",
+      "summary": "本件原装角色：喙软套包覆面。具体关联：喙部件；有限承接面、孔组与轴向支承分别记录，未由零件邻近关系推定固定。",
+      "interface_count": 1,
+      "open_items": []
+    },
+    {
+      "owner_ref": "part:microduck:986b5adf27910138",
+      "name": "电机支架",
+      "body": "jaw_soft",
+      "summary": "该支架同时承接喙部、头部横滚两颗舵机的壳体，通过有限端面、侧壁及肩面定位；支架自身四孔接口连接头部下壳，与舵机端盘四孔是两回事。",
+      "interface_count": 4,
+      "open_items": []
+    },
+    {
+      "owner_ref": "part:microduck:82d68e991b23c2a3",
+      "name": "头部上壳",
+      "body": "jaw_soft",
+      "summary": "上壳通过闭合孔与下壳连接，有限闭合面提供落座基准，槽口与面部件边缘配合；舵机附近的留隙面不自动成为固定连接。",
+      "interface_count": 3,
+      "open_items": []
+    },
+    {
+      "owner_ref": "part:microduck:96e22c7fa2b976d3",
+      "name": "XL330 舵机",
+      "body": "jaw_soft",
+      "summary": "X−端盘与头部偏航/横滚传动件关联；舵机壳体由电机支架的有限承槽定位，头部下壳从相对侧承托。轴承支承、端盘传动和壳体安装分别表达。扬声器包络贴靠不等于其固定工艺已确认。",
+      "interface_count": 6,
+      "open_items": []
+    },
+    {
+      "owner_ref": "part:microduck:a0775b54397eb21e",
+      "name": "轴承外形（默认配置名）",
+      "body": "jaw_soft",
+      "summary": "本件原装角色：内圈配合接口；外圈配合接口。具体关联：喙部件、头部下壳、电机支架；有限承接面、孔组与轴向支承分别记录，未由零件邻近关系推定固定。",
+      "interface_count": 2,
+      "open_items": []
+    },
+    {
+      "owner_ref": "part:microduck:554503ef38151e67",
+      "name": "RPI Robot HAT 电路板外形",
+      "body": "jaw_soft",
+      "summary": "本件原装角色：HAT 与主控板四角安装。具体关联：树莓派 Zero 2 W 电路板外形；有限承接面、孔组与轴向支承分别记录，未由零件邻近关系推定固定。",
+      "interface_count": 1,
+      "open_items": []
+    },
+    {
+      "owner_ref": "part:microduck:88b7496d63cb41ff",
+      "name": "喙上部软质件",
+      "body": "jaw_soft",
+      "summary": "本件原装角色：上唇片落座面。具体关联：头部下壳；有限承接面、孔组与轴向支承分别记录，未由零件邻近关系推定固定。",
+      "interface_count": 1,
+      "open_items": []
+    },
+    {
+      "owner_ref": "part:microduck:2559a4c412bcda3e",
+      "name": "眼部部件",
+      "body": "jaw_soft",
+      "summary": "眼环背部平环与面部承座配合；三个凸耳已作为有限几何保留，其与对端缺口的完整锁止映射尚未核定。",
+      "interface_count": 1,
+      "open_items": [
+        "三个凸耳与对端缺口的完整对应和保持方式尚未确定。"
+      ]
+    },
+    {
+      "owner_ref": "part:microduck:328011951ac11ee7",
+      "name": "喙部件",
+      "body": "jaw_soft",
+      "summary": "本件原装角色：舵机端盘四孔安装接口；软套包覆承座；左侧轴承轴颈安装接口。具体关联：XL330 舵机、喙部软质件、轴承外形（默认配置名）；有限承接面、孔组与轴向支承分别记录，未由零件邻近关系推定固定。",
+      "interface_count": 3,
+      "open_items": []
+    },
+    {
+      "owner_ref": "part:microduck:52fdcacf474a463f",
+      "name": "头部下壳",
+      "body": "jaw_soft",
+      "summary": "下壳承接两颗头部舵机、喙部支承轴承和两侧横滚轴承，提供面部件定位槽及闭壳承接面；支架安装孔、上下壳闭合孔分别表达。",
+      "interface_count": 10,
+      "open_items": []
+    },
+    {
+      "owner_ref": "part:microduck:2d2cde8ae8ebacac",
+      "name": "M12 镜头座",
+      "body": "jaw_soft",
+      "summary": "镜头座主孔承接镜筒，两个安装孔保留独立能力；输入缺少可确认的相机板安装对端，不能把附近主控板包络当作已匹配对端。",
+      "interface_count": 2,
+      "open_items": [
+        "双孔安装所需的相机板对端几何未提供，具体孔映射仍未确定。"
+      ]
+    },
+    {
+      "owner_ref": "part:microduck:ebfcaf98422b7b28",
+      "name": "树莓派 Zero 2 W 电路板外形",
+      "body": "jaw_soft",
+      "summary": "本件原装角色：HAT 与主控板四角安装。具体关联：RPI Robot HAT 电路板外形、面部件；有限承接面、孔组与轴向支承分别记录，未由零件邻近关系推定固定。",
+      "interface_count": 1,
+      "open_items": []
+    },
+    {
+      "owner_ref": "part:microduck:22f2cd114e324ec5",
+      "name": "扬声器外形",
+      "body": "jaw_soft",
+      "summary": "输入只提供扬声器六面包络，来源位置贴靠头部横滚舵机壳面。已明确其几何位置，但实际固定结构尚未给出。",
+      "interface_count": 1,
+      "open_items": [
+        "仅有简化包络，实际螺孔、卡扣或其他固定工艺未提供。"
+      ]
+    },
+    {
+      "owner_ref": "part:microduck:48099e14105d3289",
+      "name": "偏航与横滚连接件",
+      "body": "bearing_roll",
+      "summary": "本件原装角色：XL330 舵机 ↔ 偏航与横滚连接件；舵机壳体指定侧安装；舵机壳体承座与限位。具体关联：XL330 舵机、轴承外形（22×16×4 配置名）；有限承接面、孔组与轴向支承分别记录，未由零件邻近关系推定固定。",
+      "interface_count": 3,
+      "open_items": []
+    },
+    {
+      "owner_ref": "part:microduck:087d7a46a3ce4ca3",
+      "name": "XL330 舵机",
+      "body": "bearing_roll",
+      "summary": "壳体通过自身安装孔及有限承接面与偏航与横滚连接件、横滚轴承支承件关联；端盘传动对端为髋部件。壳体固定、端盘传动与轴承支承分开，保留安装相位及实际选孔条件。",
+      "interface_count": 6,
+      "open_items": []
+    },
+    {
+      "owner_ref": "part:microduck:c703574f50f6a46a",
+      "name": "横滚轴承支承件",
+      "body": "bearing_roll",
+      "summary": "本件原装角色：轴承外圈端面承接接口；舵机壳体指定侧安装；舵机壳体承座与限位。具体关联：XL330 舵机、轴承外形（22×16×4 配置名）；有限承接面、孔组与轴向支承分别记录，未由零件邻近关系推定固定。",
+      "interface_count": 3,
+      "open_items": []
+    },
+    {
+      "owner_ref": "part:microduck:3fbf0b5c8cea4488",
+      "name": "轴承外形（22×16×4 配置名）",
+      "body": "bearing_roll",
+      "summary": "本件原装角色：内圈配合接口；外圈配合接口。具体关联：XL330 舵机、横滚轴承支承件、髋部件；有限承接面、孔组与轴向支承分别记录，未由零件邻近关系推定固定。",
+      "interface_count": 2,
+      "open_items": []
+    },
+    {
+      "owner_ref": "part:microduck:c7eeeac0a640d191",
+      "name": "髋部件",
+      "body": "hip_l_2",
+      "summary": "本件原装角色：源 Y 向四孔安装接口；源 X 向四孔安装接口；源 Y 向 Ø16 支承接口；源 X 向 Ø16 支承接口。具体关联：XL330 舵机、轴承外形（22×16×4 配置名）；有限承接面、孔组与轴向支承分别记录，未由零件邻近关系推定固定。",
+      "interface_count": 4,
+      "open_items": []
+    },
+    {
+      "owner_ref": "part:microduck:d924e1596ffb042a",
+      "name": "轴承外形（22×16×4 配置名）",
+      "body": "hip_l_2",
+      "summary": "本件原装角色：内圈配合接口；外圈配合接口。具体关联：XL330 舵机、大腿加强板、髋部件；有限承接面、孔组与轴向支承分别记录，未由零件邻近关系推定固定。",
+      "interface_count": 2,
+      "open_items": []
+    },
+    {
+      "owner_ref": "part:microduck:7038a050dbc33fb0",
+      "name": "XL330 舵机",
+      "body": "upper_leg_right",
+      "summary": "壳体通过自身安装孔及有限承接面与右大腿部件、大腿加强板关联；端盘传动对端为腿部连杆。壳体固定、端盘传动与轴承支承分开，保留安装相位及实际选孔条件。",
+      "interface_count": 6,
+      "open_items": []
+    },
+    {
+      "owner_ref": "part:microduck:d6a148b5784955d8",
+      "name": "轴承外形（22×16×4 配置名）",
+      "body": "upper_leg_right",
+      "summary": "本件原装角色：内圈配合接口；外圈配合接口。具体关联：XL330 舵机、大腿加强板、腿部连杆；有限承接面、孔组与轴向支承分别记录，未由零件邻近关系推定固定。",
+      "interface_count": 2,
+      "open_items": []
+    },
+    {
+      "owner_ref": "part:microduck:7e86db28af59d3cc",
+      "name": "大腿加强板",
+      "body": "upper_leg_right",
+      "summary": "本件原装角色：轴承外圈端面承接接口；轴承指定圈端面承接；舵机壳体指定侧安装；舵机壳体承座与限位。具体关联：XL330 舵机、轴承外形（22×16×4 配置名）；有限承接面、孔组与轴向支承分别记录，未由零件邻近关系推定固定。",
+      "interface_count": 6,
+      "open_items": []
+    },
+    {
+      "owner_ref": "part:microduck:e40b9945707505e1",
+      "name": "右大腿部件",
+      "body": "upper_leg_right",
+      "summary": "本件原装角色：大腿一体锥柱双孔定位；舵机壳体承座与限位。具体关联：XL330 舵机；有限承接面、孔组与轴向支承分别记录，未由零件邻近关系推定固定。",
+      "interface_count": 4,
+      "open_items": []
+    },
+    {
+      "owner_ref": "part:microduck:08c5ade0f3fd37db",
+      "name": "XL330 舵机",
+      "body": "upper_leg_right",
+      "summary": "壳体通过自身安装孔及有限承接面与右大腿部件、大腿加强板关联；端盘传动对端为髋部件。壳体固定、端盘传动与轴承支承分开，保留安装相位及实际选孔条件。",
+      "interface_count": 6,
+      "open_items": []
+    },
+    {
+      "owner_ref": "part:microduck:0820b4025f26a004",
+      "name": "XL330 舵机",
+      "body": "leg_2",
+      "summary": "壳体通过自身安装孔及有限承接面与腿部连杆关联；端盘传动对端为右踝部件。壳体固定、端盘传动与轴承支承分开，保留安装相位及实际选孔条件。",
+      "interface_count": 6,
+      "open_items": []
+    },
+    {
+      "owner_ref": "part:microduck:7f4fefc3c6de90f1",
+      "name": "腿部连杆",
+      "body": "leg_2",
+      "summary": "本件原装角色：腿连杆下部双孔；腿连杆上端四孔安装位；踝随动轴颈接口；膝轴锥颈与轴肩支承接口；舵机壳体承座与限位。具体关联：XL330 舵机、轴承外形（22×16×4 配置名）、轴承外形（默认配置名）；有限承接面、孔组与轴向支承分别记录，未由零件邻近关系推定固定。",
+      "interface_count": 5,
+      "open_items": []
+    },
+    {
+      "owner_ref": "part:microduck:b371ac60e2f6757b",
+      "name": "右踝部件",
+      "body": "ankle_right",
+      "summary": "本件原装角色：XL330 舵机 ↔ 右踝部件；踝与脚的复合安装接口；踝轴承承座接口。具体关联：XL330 舵机、右脚部件、轴承外形（默认配置名）；有限承接面、孔组与轴向支承分别记录，未由零件邻近关系推定固定。",
+      "interface_count": 3,
+      "open_items": []
+    },
+    {
+      "owner_ref": "part:microduck:2f557a24b2729755",
+      "name": "右脚底",
+      "body": "ankle_right",
+      "summary": "本件原装角色：杯形脚底内腔接口。具体关联：右脚部件；有限承接面、孔组与轴向支承分别记录，未由零件邻近关系推定固定。",
+      "interface_count": 1,
+      "open_items": []
+    },
+    {
+      "owner_ref": "part:microduck:e196235810184adf",
+      "name": "轴承外形（默认配置名）",
+      "body": "ankle_right",
+      "summary": "本件原装角色：内圈配合接口；外圈配合接口。具体关联：XL330 舵机、右踝部件、腿部连杆；有限承接面、孔组与轴向支承分别记录，未由零件邻近关系推定固定。",
+      "interface_count": 2,
+      "open_items": []
+    },
+    {
+      "owner_ref": "part:microduck:f9955f19a691a1f4",
+      "name": "右脚部件",
+      "body": "ankle_right",
+      "summary": "本件原装角色：脚底包覆套合接口；脚与踝的复合安装接口。具体关联：右脚底、右踝部件；有限承接面、孔组与轴向支承分别记录，未由零件邻近关系推定固定。",
+      "interface_count": 2,
+      "open_items": []
+    }
+  ],
+  "navigation": [
+    {
+      "from": "interface:assembly:50f0c376d01bb0c1:servo_body_seating",
+      "to": "interface:assembly:986b5adf27910138:servo_body_50f0c376d01bb0c1_seat",
+      "verified": true
+    },
+    {
+      "from": "interface:assembly:638f29b46b322e64:upper_servo_four_holes",
+      "peer_owner": "part:microduck:4cf80d5a57c8cb04",
+      "verified": true
+    },
+    {
+      "from": "interface:assembly:7f4fefc3c6de90f1:upper_servo_four_holes",
+      "peer_owner": "part:microduck:7038a050dbc33fb0",
+      "verified": true
+    }
+  ],
+  "javascript_errors": [],
+  "scope": "Published functional-use summaries, interface presence and explicit unresolved items for every input instance; selected peer navigation and source phase conditions; no physical assembly qualification"
+}

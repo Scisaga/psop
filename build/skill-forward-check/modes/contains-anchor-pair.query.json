@@ -1,0 +1,4289 @@
+{
+  "schema": "psop.simulate.query/1.0",
+  "ok": true,
+  "status": "proposals",
+  "basis": {
+    "kind": "synthetic",
+    "refs": [
+      "fixture:four-hole-declarative-mount-v1"
+    ]
+  },
+  "execution_performed": false,
+  "definition": {
+    "path": "C:\\Users\\scisa\\Desktop\\psop\\build\\skill-forward-check\\modes\\contains-anchor-pair.definition.json",
+    "sha256": "6c9831f828a07d20f97aee86ee874d93a0a7d5141c66f65a9685cad56538fd37"
+  },
+  "result": {
+    "schema": "psop.assembly.query/1.0-draft.1",
+    "definition_id": "synthetic:four-hole-declarative-mount-v1",
+    "definition_digest": "sha256:4697b9e45a252dc0fc722a78a48ceed6258dd37dbdcde064d8e115e1aa97a4a7",
+    "basis": {
+      "kind": "synthetic",
+      "refs": [
+        "fixture:four-hole-declarative-mount-v1"
+      ]
+    },
+    "status": "proposals",
+    "scope": {
+      "kind": "bounded_rigid_hole_group",
+      "synthetic": true,
+      "axis_relation": "parallel"
+    },
+    "search": {
+      "complete": true,
+      "selection_complete": true,
+      "stop_reason": "exhausted",
+      "mappings_examined": 128
+    },
+    "selections": {
+      "a": {
+        "admissible_sets": [
+          [
+            "A",
+            "B"
+          ],
+          [
+            "C",
+            "D"
+          ],
+          [
+            "A",
+            "B",
+            "C"
+          ],
+          [
+            "A",
+            "B",
+            "D"
+          ],
+          [
+            "A",
+            "C",
+            "D"
+          ],
+          [
+            "B",
+            "C",
+            "D"
+          ],
+          [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        ],
+        "unknown_sets": [],
+        "forbidden_count": 8
+      },
+      "b": {
+        "admissible_sets": [
+          [
+            "A",
+            "B"
+          ],
+          [
+            "C",
+            "D"
+          ],
+          [
+            "A",
+            "B",
+            "C"
+          ],
+          [
+            "A",
+            "B",
+            "D"
+          ],
+          [
+            "A",
+            "C",
+            "D"
+          ],
+          [
+            "B",
+            "C",
+            "D"
+          ],
+          [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        ],
+        "unknown_sets": [],
+        "forbidden_count": 8
+      }
+    },
+    "proposals": [
+      {
+        "selected_roles_a": [
+          "A",
+          "B"
+        ],
+        "selected_roles_b": [
+          "A",
+          "B"
+        ],
+        "member_mapping": [
+          {
+            "role_a": "A",
+            "role_b": "A",
+            "hole_a_ref": "hole:synthetic:left:A",
+            "hole_b_ref": "hole:synthetic:right:A"
+          },
+          {
+            "role_a": "B",
+            "role_b": "B",
+            "hole_a_ref": "hole:synthetic:left:B",
+            "hole_b_ref": "hole:synthetic:right:B"
+          }
+        ],
+        "interface_a_ref": "interface:synthetic:left:mount",
+        "interface_b_ref": "interface:synthetic:right:mount",
+        "mode_a_ref": "contains-anchor-pair",
+        "mode_b_ref": "contains-anchor-pair",
+        "pose": {
+          "status": "determined",
+          "transform": {
+            "rotation": [
+              [
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "translation_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "maps_frame_b_to_a": [
+              "frame:synthetic:right",
+              "frame:synthetic:left"
+            ],
+            "determinant": 1.0
+          }
+        },
+        "selection_results": [
+          {
+            "side": "a",
+            "dimension": "mechanical",
+            "dimension_defaulted": false,
+            "status": "pass"
+          },
+          {
+            "side": "b",
+            "dimension": "mechanical",
+            "dimension_defaulted": false,
+            "status": "pass"
+          }
+        ],
+        "assessments": {
+          "geometry": {
+            "status": "pass",
+            "scope": "rigid_group_registration",
+            "max_position_residual_m": 0.0,
+            "max_axis_residual_rad": 0.0
+          },
+          "mode_eligibility": {
+            "status": "pass",
+            "reasons": [
+              "Declared subset eligibility only; it is not a proof that other physical assemblies are impossible",
+              "a: mechanical (explicit) / pass",
+              "b: mechanical (explicit) / pass"
+            ]
+          },
+          "mechanical": {
+            "status": "unknown",
+            "reasons": [
+              "Unbound third-party role fastener for A/A",
+              "Unbound third-party role fastener for B/B",
+              "Static registration does not evaluate engagement, retaining contact, loads or an internal mechanism state"
+            ]
+          },
+          "engineering": {
+            "status": "unknown",
+            "reasons": [
+              "engineering is not evaluated"
+            ]
+          },
+          "task": {
+            "status": "unknown",
+            "reasons": [
+              "task is not evaluated"
+            ]
+          },
+          "completion": {
+            "status": "unknown",
+            "reasons": [
+              "Unbound third-party role fastener for A/A",
+              "Unbound third-party role fastener for B/B",
+              "Assembly/removal path remains unverified",
+              "Elastic engagement remains unverified",
+              "Selected members are not all evidenced as engaged",
+              "This bounded engine cannot certify physical completion"
+            ]
+          },
+          "occupancy": {
+            "status": "pass",
+            "reasons": [
+              "No conflicting use is inferred from Interface identity alone"
+            ]
+          }
+        },
+        "unresolved_requirements": [
+          "Unbound third-party role fastener for A/A",
+          "Unbound third-party role fastener for B/B",
+          "Assembly/removal path remains unverified",
+          "Elastic engagement remains unverified",
+          "Selected members are not all evidenced as engaged",
+          "Mechanical engagement and retention remain outside this engine's evaluated scope"
+        ],
+        "engaged_member_pairs": [],
+        "synthetic": true,
+        "definition_digest": "sha256:4697b9e45a252dc0fc722a78a48ceed6258dd37dbdcde064d8e115e1aa97a4a7",
+        "id": "proposal:ae07f367ed98164b0c0f"
+      },
+      {
+        "selected_roles_a": [
+          "A",
+          "B"
+        ],
+        "selected_roles_b": [
+          "A",
+          "B"
+        ],
+        "member_mapping": [
+          {
+            "role_a": "A",
+            "role_b": "B",
+            "hole_a_ref": "hole:synthetic:left:A",
+            "hole_b_ref": "hole:synthetic:right:B"
+          },
+          {
+            "role_a": "B",
+            "role_b": "A",
+            "hole_a_ref": "hole:synthetic:left:B",
+            "hole_b_ref": "hole:synthetic:right:A"
+          }
+        ],
+        "interface_a_ref": "interface:synthetic:left:mount",
+        "interface_b_ref": "interface:synthetic:right:mount",
+        "mode_a_ref": "contains-anchor-pair",
+        "mode_b_ref": "contains-anchor-pair",
+        "pose": {
+          "status": "determined",
+          "transform": {
+            "rotation": [
+              [
+                -1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                -1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "translation_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "maps_frame_b_to_a": [
+              "frame:synthetic:right",
+              "frame:synthetic:left"
+            ],
+            "determinant": 1.0
+          }
+        },
+        "selection_results": [
+          {
+            "side": "a",
+            "dimension": "mechanical",
+            "dimension_defaulted": false,
+            "status": "pass"
+          },
+          {
+            "side": "b",
+            "dimension": "mechanical",
+            "dimension_defaulted": false,
+            "status": "pass"
+          }
+        ],
+        "assessments": {
+          "geometry": {
+            "status": "pass",
+            "scope": "rigid_group_registration",
+            "max_position_residual_m": 0.0,
+            "max_axis_residual_rad": 0.0
+          },
+          "mode_eligibility": {
+            "status": "pass",
+            "reasons": [
+              "Declared subset eligibility only; it is not a proof that other physical assemblies are impossible",
+              "a: mechanical (explicit) / pass",
+              "b: mechanical (explicit) / pass"
+            ]
+          },
+          "mechanical": {
+            "status": "unknown",
+            "reasons": [
+              "Unbound third-party role fastener for A/B",
+              "Unbound third-party role fastener for B/A",
+              "Static registration does not evaluate engagement, retaining contact, loads or an internal mechanism state"
+            ]
+          },
+          "engineering": {
+            "status": "unknown",
+            "reasons": [
+              "engineering is not evaluated"
+            ]
+          },
+          "task": {
+            "status": "unknown",
+            "reasons": [
+              "task is not evaluated"
+            ]
+          },
+          "completion": {
+            "status": "unknown",
+            "reasons": [
+              "Unbound third-party role fastener for A/B",
+              "Unbound third-party role fastener for B/A",
+              "Assembly/removal path remains unverified",
+              "Elastic engagement remains unverified",
+              "Selected members are not all evidenced as engaged",
+              "This bounded engine cannot certify physical completion"
+            ]
+          },
+          "occupancy": {
+            "status": "pass",
+            "reasons": [
+              "No conflicting use is inferred from Interface identity alone"
+            ]
+          }
+        },
+        "unresolved_requirements": [
+          "Unbound third-party role fastener for A/B",
+          "Unbound third-party role fastener for B/A",
+          "Assembly/removal path remains unverified",
+          "Elastic engagement remains unverified",
+          "Selected members are not all evidenced as engaged",
+          "Mechanical engagement and retention remain outside this engine's evaluated scope"
+        ],
+        "engaged_member_pairs": [],
+        "synthetic": true,
+        "definition_digest": "sha256:4697b9e45a252dc0fc722a78a48ceed6258dd37dbdcde064d8e115e1aa97a4a7",
+        "id": "proposal:66209456ca87292be67c"
+      },
+      {
+        "selected_roles_a": [
+          "A",
+          "B"
+        ],
+        "selected_roles_b": [
+          "C",
+          "D"
+        ],
+        "member_mapping": [
+          {
+            "role_a": "A",
+            "role_b": "C",
+            "hole_a_ref": "hole:synthetic:left:A",
+            "hole_b_ref": "hole:synthetic:right:C"
+          },
+          {
+            "role_a": "B",
+            "role_b": "D",
+            "hole_a_ref": "hole:synthetic:left:B",
+            "hole_b_ref": "hole:synthetic:right:D"
+          }
+        ],
+        "interface_a_ref": "interface:synthetic:left:mount",
+        "interface_b_ref": "interface:synthetic:right:mount",
+        "mode_a_ref": "contains-anchor-pair",
+        "mode_b_ref": "contains-anchor-pair",
+        "pose": {
+          "status": "determined",
+          "transform": {
+            "rotation": [
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                -1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "translation_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "maps_frame_b_to_a": [
+              "frame:synthetic:right",
+              "frame:synthetic:left"
+            ],
+            "determinant": 1.0
+          }
+        },
+        "selection_results": [
+          {
+            "side": "a",
+            "dimension": "mechanical",
+            "dimension_defaulted": false,
+            "status": "pass"
+          },
+          {
+            "side": "b",
+            "dimension": "mechanical",
+            "dimension_defaulted": false,
+            "status": "pass"
+          }
+        ],
+        "assessments": {
+          "geometry": {
+            "status": "pass",
+            "scope": "rigid_group_registration",
+            "max_position_residual_m": 0.0,
+            "max_axis_residual_rad": 0.0
+          },
+          "mode_eligibility": {
+            "status": "pass",
+            "reasons": [
+              "Declared subset eligibility only; it is not a proof that other physical assemblies are impossible",
+              "a: mechanical (explicit) / pass",
+              "b: mechanical (explicit) / pass"
+            ]
+          },
+          "mechanical": {
+            "status": "unknown",
+            "reasons": [
+              "Unbound third-party role fastener for A/C",
+              "Unbound third-party role fastener for B/D",
+              "Static registration does not evaluate engagement, retaining contact, loads or an internal mechanism state"
+            ]
+          },
+          "engineering": {
+            "status": "unknown",
+            "reasons": [
+              "engineering is not evaluated"
+            ]
+          },
+          "task": {
+            "status": "unknown",
+            "reasons": [
+              "task is not evaluated"
+            ]
+          },
+          "completion": {
+            "status": "unknown",
+            "reasons": [
+              "Unbound third-party role fastener for A/C",
+              "Unbound third-party role fastener for B/D",
+              "Assembly/removal path remains unverified",
+              "Elastic engagement remains unverified",
+              "Selected members are not all evidenced as engaged",
+              "This bounded engine cannot certify physical completion"
+            ]
+          },
+          "occupancy": {
+            "status": "pass",
+            "reasons": [
+              "No conflicting use is inferred from Interface identity alone"
+            ]
+          }
+        },
+        "unresolved_requirements": [
+          "Unbound third-party role fastener for A/C",
+          "Unbound third-party role fastener for B/D",
+          "Assembly/removal path remains unverified",
+          "Elastic engagement remains unverified",
+          "Selected members are not all evidenced as engaged",
+          "Mechanical engagement and retention remain outside this engine's evaluated scope"
+        ],
+        "engaged_member_pairs": [],
+        "synthetic": true,
+        "definition_digest": "sha256:4697b9e45a252dc0fc722a78a48ceed6258dd37dbdcde064d8e115e1aa97a4a7",
+        "id": "proposal:9e1bb564ce32bf163f62"
+      },
+      {
+        "selected_roles_a": [
+          "A",
+          "B"
+        ],
+        "selected_roles_b": [
+          "C",
+          "D"
+        ],
+        "member_mapping": [
+          {
+            "role_a": "A",
+            "role_b": "D",
+            "hole_a_ref": "hole:synthetic:left:A",
+            "hole_b_ref": "hole:synthetic:right:D"
+          },
+          {
+            "role_a": "B",
+            "role_b": "C",
+            "hole_a_ref": "hole:synthetic:left:B",
+            "hole_b_ref": "hole:synthetic:right:C"
+          }
+        ],
+        "interface_a_ref": "interface:synthetic:left:mount",
+        "interface_b_ref": "interface:synthetic:right:mount",
+        "mode_a_ref": "contains-anchor-pair",
+        "mode_b_ref": "contains-anchor-pair",
+        "pose": {
+          "status": "determined",
+          "transform": {
+            "rotation": [
+              [
+                0.0,
+                -1.0,
+                0.0
+              ],
+              [
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "translation_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "maps_frame_b_to_a": [
+              "frame:synthetic:right",
+              "frame:synthetic:left"
+            ],
+            "determinant": 1.0
+          }
+        },
+        "selection_results": [
+          {
+            "side": "a",
+            "dimension": "mechanical",
+            "dimension_defaulted": false,
+            "status": "pass"
+          },
+          {
+            "side": "b",
+            "dimension": "mechanical",
+            "dimension_defaulted": false,
+            "status": "pass"
+          }
+        ],
+        "assessments": {
+          "geometry": {
+            "status": "pass",
+            "scope": "rigid_group_registration",
+            "max_position_residual_m": 0.0,
+            "max_axis_residual_rad": 0.0
+          },
+          "mode_eligibility": {
+            "status": "pass",
+            "reasons": [
+              "Declared subset eligibility only; it is not a proof that other physical assemblies are impossible",
+              "a: mechanical (explicit) / pass",
+              "b: mechanical (explicit) / pass"
+            ]
+          },
+          "mechanical": {
+            "status": "unknown",
+            "reasons": [
+              "Unbound third-party role fastener for A/D",
+              "Unbound third-party role fastener for B/C",
+              "Static registration does not evaluate engagement, retaining contact, loads or an internal mechanism state"
+            ]
+          },
+          "engineering": {
+            "status": "unknown",
+            "reasons": [
+              "engineering is not evaluated"
+            ]
+          },
+          "task": {
+            "status": "unknown",
+            "reasons": [
+              "task is not evaluated"
+            ]
+          },
+          "completion": {
+            "status": "unknown",
+            "reasons": [
+              "Unbound third-party role fastener for A/D",
+              "Unbound third-party role fastener for B/C",
+              "Assembly/removal path remains unverified",
+              "Elastic engagement remains unverified",
+              "Selected members are not all evidenced as engaged",
+              "This bounded engine cannot certify physical completion"
+            ]
+          },
+          "occupancy": {
+            "status": "pass",
+            "reasons": [
+              "No conflicting use is inferred from Interface identity alone"
+            ]
+          }
+        },
+        "unresolved_requirements": [
+          "Unbound third-party role fastener for A/D",
+          "Unbound third-party role fastener for B/C",
+          "Assembly/removal path remains unverified",
+          "Elastic engagement remains unverified",
+          "Selected members are not all evidenced as engaged",
+          "Mechanical engagement and retention remain outside this engine's evaluated scope"
+        ],
+        "engaged_member_pairs": [],
+        "synthetic": true,
+        "definition_digest": "sha256:4697b9e45a252dc0fc722a78a48ceed6258dd37dbdcde064d8e115e1aa97a4a7",
+        "id": "proposal:8958d2c07af35f70132d"
+      },
+      {
+        "selected_roles_a": [
+          "C",
+          "D"
+        ],
+        "selected_roles_b": [
+          "A",
+          "B"
+        ],
+        "member_mapping": [
+          {
+            "role_a": "C",
+            "role_b": "A",
+            "hole_a_ref": "hole:synthetic:left:C",
+            "hole_b_ref": "hole:synthetic:right:A"
+          },
+          {
+            "role_a": "D",
+            "role_b": "B",
+            "hole_a_ref": "hole:synthetic:left:D",
+            "hole_b_ref": "hole:synthetic:right:B"
+          }
+        ],
+        "interface_a_ref": "interface:synthetic:left:mount",
+        "interface_b_ref": "interface:synthetic:right:mount",
+        "mode_a_ref": "contains-anchor-pair",
+        "mode_b_ref": "contains-anchor-pair",
+        "pose": {
+          "status": "determined",
+          "transform": {
+            "rotation": [
+              [
+                0.0,
+                -1.0,
+                0.0
+              ],
+              [
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "translation_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "maps_frame_b_to_a": [
+              "frame:synthetic:right",
+              "frame:synthetic:left"
+            ],
+            "determinant": 1.0
+          }
+        },
+        "selection_results": [
+          {
+            "side": "a",
+            "dimension": "mechanical",
+            "dimension_defaulted": false,
+            "status": "pass"
+          },
+          {
+            "side": "b",
+            "dimension": "mechanical",
+            "dimension_defaulted": false,
+            "status": "pass"
+          }
+        ],
+        "assessments": {
+          "geometry": {
+            "status": "pass",
+            "scope": "rigid_group_registration",
+            "max_position_residual_m": 0.0,
+            "max_axis_residual_rad": 0.0
+          },
+          "mode_eligibility": {
+            "status": "pass",
+            "reasons": [
+              "Declared subset eligibility only; it is not a proof that other physical assemblies are impossible",
+              "a: mechanical (explicit) / pass",
+              "b: mechanical (explicit) / pass"
+            ]
+          },
+          "mechanical": {
+            "status": "unknown",
+            "reasons": [
+              "Unbound third-party role fastener for C/A",
+              "Unbound third-party role fastener for D/B",
+              "Static registration does not evaluate engagement, retaining contact, loads or an internal mechanism state"
+            ]
+          },
+          "engineering": {
+            "status": "unknown",
+            "reasons": [
+              "engineering is not evaluated"
+            ]
+          },
+          "task": {
+            "status": "unknown",
+            "reasons": [
+              "task is not evaluated"
+            ]
+          },
+          "completion": {
+            "status": "unknown",
+            "reasons": [
+              "Unbound third-party role fastener for C/A",
+              "Unbound third-party role fastener for D/B",
+              "Assembly/removal path remains unverified",
+              "Elastic engagement remains unverified",
+              "Selected members are not all evidenced as engaged",
+              "This bounded engine cannot certify physical completion"
+            ]
+          },
+          "occupancy": {
+            "status": "pass",
+            "reasons": [
+              "No conflicting use is inferred from Interface identity alone"
+            ]
+          }
+        },
+        "unresolved_requirements": [
+          "Unbound third-party role fastener for C/A",
+          "Unbound third-party role fastener for D/B",
+          "Assembly/removal path remains unverified",
+          "Elastic engagement remains unverified",
+          "Selected members are not all evidenced as engaged",
+          "Mechanical engagement and retention remain outside this engine's evaluated scope"
+        ],
+        "engaged_member_pairs": [],
+        "synthetic": true,
+        "definition_digest": "sha256:4697b9e45a252dc0fc722a78a48ceed6258dd37dbdcde064d8e115e1aa97a4a7",
+        "id": "proposal:883d9315105fc75c30ec"
+      },
+      {
+        "selected_roles_a": [
+          "C",
+          "D"
+        ],
+        "selected_roles_b": [
+          "A",
+          "B"
+        ],
+        "member_mapping": [
+          {
+            "role_a": "C",
+            "role_b": "B",
+            "hole_a_ref": "hole:synthetic:left:C",
+            "hole_b_ref": "hole:synthetic:right:B"
+          },
+          {
+            "role_a": "D",
+            "role_b": "A",
+            "hole_a_ref": "hole:synthetic:left:D",
+            "hole_b_ref": "hole:synthetic:right:A"
+          }
+        ],
+        "interface_a_ref": "interface:synthetic:left:mount",
+        "interface_b_ref": "interface:synthetic:right:mount",
+        "mode_a_ref": "contains-anchor-pair",
+        "mode_b_ref": "contains-anchor-pair",
+        "pose": {
+          "status": "determined",
+          "transform": {
+            "rotation": [
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                -1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "translation_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "maps_frame_b_to_a": [
+              "frame:synthetic:right",
+              "frame:synthetic:left"
+            ],
+            "determinant": 1.0
+          }
+        },
+        "selection_results": [
+          {
+            "side": "a",
+            "dimension": "mechanical",
+            "dimension_defaulted": false,
+            "status": "pass"
+          },
+          {
+            "side": "b",
+            "dimension": "mechanical",
+            "dimension_defaulted": false,
+            "status": "pass"
+          }
+        ],
+        "assessments": {
+          "geometry": {
+            "status": "pass",
+            "scope": "rigid_group_registration",
+            "max_position_residual_m": 0.0,
+            "max_axis_residual_rad": 0.0
+          },
+          "mode_eligibility": {
+            "status": "pass",
+            "reasons": [
+              "Declared subset eligibility only; it is not a proof that other physical assemblies are impossible",
+              "a: mechanical (explicit) / pass",
+              "b: mechanical (explicit) / pass"
+            ]
+          },
+          "mechanical": {
+            "status": "unknown",
+            "reasons": [
+              "Unbound third-party role fastener for C/B",
+              "Unbound third-party role fastener for D/A",
+              "Static registration does not evaluate engagement, retaining contact, loads or an internal mechanism state"
+            ]
+          },
+          "engineering": {
+            "status": "unknown",
+            "reasons": [
+              "engineering is not evaluated"
+            ]
+          },
+          "task": {
+            "status": "unknown",
+            "reasons": [
+              "task is not evaluated"
+            ]
+          },
+          "completion": {
+            "status": "unknown",
+            "reasons": [
+              "Unbound third-party role fastener for C/B",
+              "Unbound third-party role fastener for D/A",
+              "Assembly/removal path remains unverified",
+              "Elastic engagement remains unverified",
+              "Selected members are not all evidenced as engaged",
+              "This bounded engine cannot certify physical completion"
+            ]
+          },
+          "occupancy": {
+            "status": "pass",
+            "reasons": [
+              "No conflicting use is inferred from Interface identity alone"
+            ]
+          }
+        },
+        "unresolved_requirements": [
+          "Unbound third-party role fastener for C/B",
+          "Unbound third-party role fastener for D/A",
+          "Assembly/removal path remains unverified",
+          "Elastic engagement remains unverified",
+          "Selected members are not all evidenced as engaged",
+          "Mechanical engagement and retention remain outside this engine's evaluated scope"
+        ],
+        "engaged_member_pairs": [],
+        "synthetic": true,
+        "definition_digest": "sha256:4697b9e45a252dc0fc722a78a48ceed6258dd37dbdcde064d8e115e1aa97a4a7",
+        "id": "proposal:1cef16a7357395abf985"
+      },
+      {
+        "selected_roles_a": [
+          "C",
+          "D"
+        ],
+        "selected_roles_b": [
+          "C",
+          "D"
+        ],
+        "member_mapping": [
+          {
+            "role_a": "C",
+            "role_b": "C",
+            "hole_a_ref": "hole:synthetic:left:C",
+            "hole_b_ref": "hole:synthetic:right:C"
+          },
+          {
+            "role_a": "D",
+            "role_b": "D",
+            "hole_a_ref": "hole:synthetic:left:D",
+            "hole_b_ref": "hole:synthetic:right:D"
+          }
+        ],
+        "interface_a_ref": "interface:synthetic:left:mount",
+        "interface_b_ref": "interface:synthetic:right:mount",
+        "mode_a_ref": "contains-anchor-pair",
+        "mode_b_ref": "contains-anchor-pair",
+        "pose": {
+          "status": "determined",
+          "transform": {
+            "rotation": [
+              [
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "translation_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "maps_frame_b_to_a": [
+              "frame:synthetic:right",
+              "frame:synthetic:left"
+            ],
+            "determinant": 1.0
+          }
+        },
+        "selection_results": [
+          {
+            "side": "a",
+            "dimension": "mechanical",
+            "dimension_defaulted": false,
+            "status": "pass"
+          },
+          {
+            "side": "b",
+            "dimension": "mechanical",
+            "dimension_defaulted": false,
+            "status": "pass"
+          }
+        ],
+        "assessments": {
+          "geometry": {
+            "status": "pass",
+            "scope": "rigid_group_registration",
+            "max_position_residual_m": 0.0,
+            "max_axis_residual_rad": 0.0
+          },
+          "mode_eligibility": {
+            "status": "pass",
+            "reasons": [
+              "Declared subset eligibility only; it is not a proof that other physical assemblies are impossible",
+              "a: mechanical (explicit) / pass",
+              "b: mechanical (explicit) / pass"
+            ]
+          },
+          "mechanical": {
+            "status": "unknown",
+            "reasons": [
+              "Unbound third-party role fastener for C/C",
+              "Unbound third-party role fastener for D/D",
+              "Static registration does not evaluate engagement, retaining contact, loads or an internal mechanism state"
+            ]
+          },
+          "engineering": {
+            "status": "unknown",
+            "reasons": [
+              "engineering is not evaluated"
+            ]
+          },
+          "task": {
+            "status": "unknown",
+            "reasons": [
+              "task is not evaluated"
+            ]
+          },
+          "completion": {
+            "status": "unknown",
+            "reasons": [
+              "Unbound third-party role fastener for C/C",
+              "Unbound third-party role fastener for D/D",
+              "Assembly/removal path remains unverified",
+              "Elastic engagement remains unverified",
+              "Selected members are not all evidenced as engaged",
+              "This bounded engine cannot certify physical completion"
+            ]
+          },
+          "occupancy": {
+            "status": "pass",
+            "reasons": [
+              "No conflicting use is inferred from Interface identity alone"
+            ]
+          }
+        },
+        "unresolved_requirements": [
+          "Unbound third-party role fastener for C/C",
+          "Unbound third-party role fastener for D/D",
+          "Assembly/removal path remains unverified",
+          "Elastic engagement remains unverified",
+          "Selected members are not all evidenced as engaged",
+          "Mechanical engagement and retention remain outside this engine's evaluated scope"
+        ],
+        "engaged_member_pairs": [],
+        "synthetic": true,
+        "definition_digest": "sha256:4697b9e45a252dc0fc722a78a48ceed6258dd37dbdcde064d8e115e1aa97a4a7",
+        "id": "proposal:1ad1b0aba193891dff70"
+      },
+      {
+        "selected_roles_a": [
+          "C",
+          "D"
+        ],
+        "selected_roles_b": [
+          "C",
+          "D"
+        ],
+        "member_mapping": [
+          {
+            "role_a": "C",
+            "role_b": "D",
+            "hole_a_ref": "hole:synthetic:left:C",
+            "hole_b_ref": "hole:synthetic:right:D"
+          },
+          {
+            "role_a": "D",
+            "role_b": "C",
+            "hole_a_ref": "hole:synthetic:left:D",
+            "hole_b_ref": "hole:synthetic:right:C"
+          }
+        ],
+        "interface_a_ref": "interface:synthetic:left:mount",
+        "interface_b_ref": "interface:synthetic:right:mount",
+        "mode_a_ref": "contains-anchor-pair",
+        "mode_b_ref": "contains-anchor-pair",
+        "pose": {
+          "status": "determined",
+          "transform": {
+            "rotation": [
+              [
+                -1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                -1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "translation_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "maps_frame_b_to_a": [
+              "frame:synthetic:right",
+              "frame:synthetic:left"
+            ],
+            "determinant": 1.0
+          }
+        },
+        "selection_results": [
+          {
+            "side": "a",
+            "dimension": "mechanical",
+            "dimension_defaulted": false,
+            "status": "pass"
+          },
+          {
+            "side": "b",
+            "dimension": "mechanical",
+            "dimension_defaulted": false,
+            "status": "pass"
+          }
+        ],
+        "assessments": {
+          "geometry": {
+            "status": "pass",
+            "scope": "rigid_group_registration",
+            "max_position_residual_m": 0.0,
+            "max_axis_residual_rad": 0.0
+          },
+          "mode_eligibility": {
+            "status": "pass",
+            "reasons": [
+              "Declared subset eligibility only; it is not a proof that other physical assemblies are impossible",
+              "a: mechanical (explicit) / pass",
+              "b: mechanical (explicit) / pass"
+            ]
+          },
+          "mechanical": {
+            "status": "unknown",
+            "reasons": [
+              "Unbound third-party role fastener for C/D",
+              "Unbound third-party role fastener for D/C",
+              "Static registration does not evaluate engagement, retaining contact, loads or an internal mechanism state"
+            ]
+          },
+          "engineering": {
+            "status": "unknown",
+            "reasons": [
+              "engineering is not evaluated"
+            ]
+          },
+          "task": {
+            "status": "unknown",
+            "reasons": [
+              "task is not evaluated"
+            ]
+          },
+          "completion": {
+            "status": "unknown",
+            "reasons": [
+              "Unbound third-party role fastener for C/D",
+              "Unbound third-party role fastener for D/C",
+              "Assembly/removal path remains unverified",
+              "Elastic engagement remains unverified",
+              "Selected members are not all evidenced as engaged",
+              "This bounded engine cannot certify physical completion"
+            ]
+          },
+          "occupancy": {
+            "status": "pass",
+            "reasons": [
+              "No conflicting use is inferred from Interface identity alone"
+            ]
+          }
+        },
+        "unresolved_requirements": [
+          "Unbound third-party role fastener for C/D",
+          "Unbound third-party role fastener for D/C",
+          "Assembly/removal path remains unverified",
+          "Elastic engagement remains unverified",
+          "Selected members are not all evidenced as engaged",
+          "Mechanical engagement and retention remain outside this engine's evaluated scope"
+        ],
+        "engaged_member_pairs": [],
+        "synthetic": true,
+        "definition_digest": "sha256:4697b9e45a252dc0fc722a78a48ceed6258dd37dbdcde064d8e115e1aa97a4a7",
+        "id": "proposal:4dc099570c44c542f24e"
+      },
+      {
+        "selected_roles_a": [
+          "A",
+          "B",
+          "C"
+        ],
+        "selected_roles_b": [
+          "A",
+          "B",
+          "C"
+        ],
+        "member_mapping": [
+          {
+            "role_a": "A",
+            "role_b": "A",
+            "hole_a_ref": "hole:synthetic:left:A",
+            "hole_b_ref": "hole:synthetic:right:A"
+          },
+          {
+            "role_a": "B",
+            "role_b": "B",
+            "hole_a_ref": "hole:synthetic:left:B",
+            "hole_b_ref": "hole:synthetic:right:B"
+          },
+          {
+            "role_a": "C",
+            "role_b": "C",
+            "hole_a_ref": "hole:synthetic:left:C",
+            "hole_b_ref": "hole:synthetic:right:C"
+          }
+        ],
+        "interface_a_ref": "interface:synthetic:left:mount",
+        "interface_b_ref": "interface:synthetic:right:mount",
+        "mode_a_ref": "contains-anchor-pair",
+        "mode_b_ref": "contains-anchor-pair",
+        "pose": {
+          "status": "determined",
+          "transform": {
+            "rotation": [
+              [
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "translation_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "maps_frame_b_to_a": [
+              "frame:synthetic:right",
+              "frame:synthetic:left"
+            ],
+            "determinant": 1.0
+          }
+        },
+        "selection_results": [
+          {
+            "side": "a",
+            "dimension": "mechanical",
+            "dimension_defaulted": false,
+            "status": "pass"
+          },
+          {
+            "side": "b",
+            "dimension": "mechanical",
+            "dimension_defaulted": false,
+            "status": "pass"
+          }
+        ],
+        "assessments": {
+          "geometry": {
+            "status": "pass",
+            "scope": "rigid_group_registration",
+            "max_position_residual_m": 0.0,
+            "max_axis_residual_rad": 0.0
+          },
+          "mode_eligibility": {
+            "status": "pass",
+            "reasons": [
+              "Declared subset eligibility only; it is not a proof that other physical assemblies are impossible",
+              "a: mechanical (explicit) / pass",
+              "b: mechanical (explicit) / pass"
+            ]
+          },
+          "mechanical": {
+            "status": "unknown",
+            "reasons": [
+              "Unbound third-party role fastener for A/A",
+              "Unbound third-party role fastener for B/B",
+              "Unbound third-party role fastener for C/C",
+              "Static registration does not evaluate engagement, retaining contact, loads or an internal mechanism state"
+            ]
+          },
+          "engineering": {
+            "status": "unknown",
+            "reasons": [
+              "engineering is not evaluated"
+            ]
+          },
+          "task": {
+            "status": "unknown",
+            "reasons": [
+              "task is not evaluated"
+            ]
+          },
+          "completion": {
+            "status": "unknown",
+            "reasons": [
+              "Unbound third-party role fastener for A/A",
+              "Unbound third-party role fastener for B/B",
+              "Unbound third-party role fastener for C/C",
+              "Assembly/removal path remains unverified",
+              "Elastic engagement remains unverified",
+              "Selected members are not all evidenced as engaged",
+              "This bounded engine cannot certify physical completion"
+            ]
+          },
+          "occupancy": {
+            "status": "pass",
+            "reasons": [
+              "No conflicting use is inferred from Interface identity alone"
+            ]
+          }
+        },
+        "unresolved_requirements": [
+          "Unbound third-party role fastener for A/A",
+          "Unbound third-party role fastener for B/B",
+          "Unbound third-party role fastener for C/C",
+          "Assembly/removal path remains unverified",
+          "Elastic engagement remains unverified",
+          "Selected members are not all evidenced as engaged",
+          "Mechanical engagement and retention remain outside this engine's evaluated scope"
+        ],
+        "engaged_member_pairs": [],
+        "synthetic": true,
+        "definition_digest": "sha256:4697b9e45a252dc0fc722a78a48ceed6258dd37dbdcde064d8e115e1aa97a4a7",
+        "id": "proposal:883330c5049833de60e7"
+      },
+      {
+        "selected_roles_a": [
+          "A",
+          "B",
+          "C"
+        ],
+        "selected_roles_b": [
+          "A",
+          "B",
+          "D"
+        ],
+        "member_mapping": [
+          {
+            "role_a": "A",
+            "role_b": "B",
+            "hole_a_ref": "hole:synthetic:left:A",
+            "hole_b_ref": "hole:synthetic:right:B"
+          },
+          {
+            "role_a": "B",
+            "role_b": "A",
+            "hole_a_ref": "hole:synthetic:left:B",
+            "hole_b_ref": "hole:synthetic:right:A"
+          },
+          {
+            "role_a": "C",
+            "role_b": "D",
+            "hole_a_ref": "hole:synthetic:left:C",
+            "hole_b_ref": "hole:synthetic:right:D"
+          }
+        ],
+        "interface_a_ref": "interface:synthetic:left:mount",
+        "interface_b_ref": "interface:synthetic:right:mount",
+        "mode_a_ref": "contains-anchor-pair",
+        "mode_b_ref": "contains-anchor-pair",
+        "pose": {
+          "status": "determined",
+          "transform": {
+            "rotation": [
+              [
+                -1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                -1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "translation_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "maps_frame_b_to_a": [
+              "frame:synthetic:right",
+              "frame:synthetic:left"
+            ],
+            "determinant": 1.0
+          }
+        },
+        "selection_results": [
+          {
+            "side": "a",
+            "dimension": "mechanical",
+            "dimension_defaulted": false,
+            "status": "pass"
+          },
+          {
+            "side": "b",
+            "dimension": "mechanical",
+            "dimension_defaulted": false,
+            "status": "pass"
+          }
+        ],
+        "assessments": {
+          "geometry": {
+            "status": "pass",
+            "scope": "rigid_group_registration",
+            "max_position_residual_m": 0.0,
+            "max_axis_residual_rad": 0.0
+          },
+          "mode_eligibility": {
+            "status": "pass",
+            "reasons": [
+              "Declared subset eligibility only; it is not a proof that other physical assemblies are impossible",
+              "a: mechanical (explicit) / pass",
+              "b: mechanical (explicit) / pass"
+            ]
+          },
+          "mechanical": {
+            "status": "unknown",
+            "reasons": [
+              "Unbound third-party role fastener for A/B",
+              "Unbound third-party role fastener for B/A",
+              "Unbound third-party role fastener for C/D",
+              "Static registration does not evaluate engagement, retaining contact, loads or an internal mechanism state"
+            ]
+          },
+          "engineering": {
+            "status": "unknown",
+            "reasons": [
+              "engineering is not evaluated"
+            ]
+          },
+          "task": {
+            "status": "unknown",
+            "reasons": [
+              "task is not evaluated"
+            ]
+          },
+          "completion": {
+            "status": "unknown",
+            "reasons": [
+              "Unbound third-party role fastener for A/B",
+              "Unbound third-party role fastener for B/A",
+              "Unbound third-party role fastener for C/D",
+              "Assembly/removal path remains unverified",
+              "Elastic engagement remains unverified",
+              "Selected members are not all evidenced as engaged",
+              "This bounded engine cannot certify physical completion"
+            ]
+          },
+          "occupancy": {
+            "status": "pass",
+            "reasons": [
+              "No conflicting use is inferred from Interface identity alone"
+            ]
+          }
+        },
+        "unresolved_requirements": [
+          "Unbound third-party role fastener for A/B",
+          "Unbound third-party role fastener for B/A",
+          "Unbound third-party role fastener for C/D",
+          "Assembly/removal path remains unverified",
+          "Elastic engagement remains unverified",
+          "Selected members are not all evidenced as engaged",
+          "Mechanical engagement and retention remain outside this engine's evaluated scope"
+        ],
+        "engaged_member_pairs": [],
+        "synthetic": true,
+        "definition_digest": "sha256:4697b9e45a252dc0fc722a78a48ceed6258dd37dbdcde064d8e115e1aa97a4a7",
+        "id": "proposal:fd8d0fa4facede8373cf"
+      },
+      {
+        "selected_roles_a": [
+          "A",
+          "B",
+          "C"
+        ],
+        "selected_roles_b": [
+          "A",
+          "C",
+          "D"
+        ],
+        "member_mapping": [
+          {
+            "role_a": "A",
+            "role_b": "D",
+            "hole_a_ref": "hole:synthetic:left:A",
+            "hole_b_ref": "hole:synthetic:right:D"
+          },
+          {
+            "role_a": "B",
+            "role_b": "C",
+            "hole_a_ref": "hole:synthetic:left:B",
+            "hole_b_ref": "hole:synthetic:right:C"
+          },
+          {
+            "role_a": "C",
+            "role_b": "A",
+            "hole_a_ref": "hole:synthetic:left:C",
+            "hole_b_ref": "hole:synthetic:right:A"
+          }
+        ],
+        "interface_a_ref": "interface:synthetic:left:mount",
+        "interface_b_ref": "interface:synthetic:right:mount",
+        "mode_a_ref": "contains-anchor-pair",
+        "mode_b_ref": "contains-anchor-pair",
+        "pose": {
+          "status": "determined",
+          "transform": {
+            "rotation": [
+              [
+                0.0,
+                -1.0,
+                0.0
+              ],
+              [
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "translation_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "maps_frame_b_to_a": [
+              "frame:synthetic:right",
+              "frame:synthetic:left"
+            ],
+            "determinant": 1.0
+          }
+        },
+        "selection_results": [
+          {
+            "side": "a",
+            "dimension": "mechanical",
+            "dimension_defaulted": false,
+            "status": "pass"
+          },
+          {
+            "side": "b",
+            "dimension": "mechanical",
+            "dimension_defaulted": false,
+            "status": "pass"
+          }
+        ],
+        "assessments": {
+          "geometry": {
+            "status": "pass",
+            "scope": "rigid_group_registration",
+            "max_position_residual_m": 0.0,
+            "max_axis_residual_rad": 0.0
+          },
+          "mode_eligibility": {
+            "status": "pass",
+            "reasons": [
+              "Declared subset eligibility only; it is not a proof that other physical assemblies are impossible",
+              "a: mechanical (explicit) / pass",
+              "b: mechanical (explicit) / pass"
+            ]
+          },
+          "mechanical": {
+            "status": "unknown",
+            "reasons": [
+              "Unbound third-party role fastener for A/D",
+              "Unbound third-party role fastener for B/C",
+              "Unbound third-party role fastener for C/A",
+              "Static registration does not evaluate engagement, retaining contact, loads or an internal mechanism state"
+            ]
+          },
+          "engineering": {
+            "status": "unknown",
+            "reasons": [
+              "engineering is not evaluated"
+            ]
+          },
+          "task": {
+            "status": "unknown",
+            "reasons": [
+              "task is not evaluated"
+            ]
+          },
+          "completion": {
+            "status": "unknown",
+            "reasons": [
+              "Unbound third-party role fastener for A/D",
+              "Unbound third-party role fastener for B/C",
+              "Unbound third-party role fastener for C/A",
+              "Assembly/removal path remains unverified",
+              "Elastic engagement remains unverified",
+              "Selected members are not all evidenced as engaged",
+              "This bounded engine cannot certify physical completion"
+            ]
+          },
+          "occupancy": {
+            "status": "pass",
+            "reasons": [
+              "No conflicting use is inferred from Interface identity alone"
+            ]
+          }
+        },
+        "unresolved_requirements": [
+          "Unbound third-party role fastener for A/D",
+          "Unbound third-party role fastener for B/C",
+          "Unbound third-party role fastener for C/A",
+          "Assembly/removal path remains unverified",
+          "Elastic engagement remains unverified",
+          "Selected members are not all evidenced as engaged",
+          "Mechanical engagement and retention remain outside this engine's evaluated scope"
+        ],
+        "engaged_member_pairs": [],
+        "synthetic": true,
+        "definition_digest": "sha256:4697b9e45a252dc0fc722a78a48ceed6258dd37dbdcde064d8e115e1aa97a4a7",
+        "id": "proposal:4961115de1f73d53b96e"
+      },
+      {
+        "selected_roles_a": [
+          "A",
+          "B",
+          "C"
+        ],
+        "selected_roles_b": [
+          "B",
+          "C",
+          "D"
+        ],
+        "member_mapping": [
+          {
+            "role_a": "A",
+            "role_b": "C",
+            "hole_a_ref": "hole:synthetic:left:A",
+            "hole_b_ref": "hole:synthetic:right:C"
+          },
+          {
+            "role_a": "B",
+            "role_b": "D",
+            "hole_a_ref": "hole:synthetic:left:B",
+            "hole_b_ref": "hole:synthetic:right:D"
+          },
+          {
+            "role_a": "C",
+            "role_b": "B",
+            "hole_a_ref": "hole:synthetic:left:C",
+            "hole_b_ref": "hole:synthetic:right:B"
+          }
+        ],
+        "interface_a_ref": "interface:synthetic:left:mount",
+        "interface_b_ref": "interface:synthetic:right:mount",
+        "mode_a_ref": "contains-anchor-pair",
+        "mode_b_ref": "contains-anchor-pair",
+        "pose": {
+          "status": "determined",
+          "transform": {
+            "rotation": [
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                -1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "translation_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "maps_frame_b_to_a": [
+              "frame:synthetic:right",
+              "frame:synthetic:left"
+            ],
+            "determinant": 1.0
+          }
+        },
+        "selection_results": [
+          {
+            "side": "a",
+            "dimension": "mechanical",
+            "dimension_defaulted": false,
+            "status": "pass"
+          },
+          {
+            "side": "b",
+            "dimension": "mechanical",
+            "dimension_defaulted": false,
+            "status": "pass"
+          }
+        ],
+        "assessments": {
+          "geometry": {
+            "status": "pass",
+            "scope": "rigid_group_registration",
+            "max_position_residual_m": 0.0,
+            "max_axis_residual_rad": 0.0
+          },
+          "mode_eligibility": {
+            "status": "pass",
+            "reasons": [
+              "Declared subset eligibility only; it is not a proof that other physical assemblies are impossible",
+              "a: mechanical (explicit) / pass",
+              "b: mechanical (explicit) / pass"
+            ]
+          },
+          "mechanical": {
+            "status": "unknown",
+            "reasons": [
+              "Unbound third-party role fastener for A/C",
+              "Unbound third-party role fastener for B/D",
+              "Unbound third-party role fastener for C/B",
+              "Static registration does not evaluate engagement, retaining contact, loads or an internal mechanism state"
+            ]
+          },
+          "engineering": {
+            "status": "unknown",
+            "reasons": [
+              "engineering is not evaluated"
+            ]
+          },
+          "task": {
+            "status": "unknown",
+            "reasons": [
+              "task is not evaluated"
+            ]
+          },
+          "completion": {
+            "status": "unknown",
+            "reasons": [
+              "Unbound third-party role fastener for A/C",
+              "Unbound third-party role fastener for B/D",
+              "Unbound third-party role fastener for C/B",
+              "Assembly/removal path remains unverified",
+              "Elastic engagement remains unverified",
+              "Selected members are not all evidenced as engaged",
+              "This bounded engine cannot certify physical completion"
+            ]
+          },
+          "occupancy": {
+            "status": "pass",
+            "reasons": [
+              "No conflicting use is inferred from Interface identity alone"
+            ]
+          }
+        },
+        "unresolved_requirements": [
+          "Unbound third-party role fastener for A/C",
+          "Unbound third-party role fastener for B/D",
+          "Unbound third-party role fastener for C/B",
+          "Assembly/removal path remains unverified",
+          "Elastic engagement remains unverified",
+          "Selected members are not all evidenced as engaged",
+          "Mechanical engagement and retention remain outside this engine's evaluated scope"
+        ],
+        "engaged_member_pairs": [],
+        "synthetic": true,
+        "definition_digest": "sha256:4697b9e45a252dc0fc722a78a48ceed6258dd37dbdcde064d8e115e1aa97a4a7",
+        "id": "proposal:b8ba741e901501ba9675"
+      },
+      {
+        "selected_roles_a": [
+          "A",
+          "B",
+          "D"
+        ],
+        "selected_roles_b": [
+          "A",
+          "B",
+          "C"
+        ],
+        "member_mapping": [
+          {
+            "role_a": "A",
+            "role_b": "B",
+            "hole_a_ref": "hole:synthetic:left:A",
+            "hole_b_ref": "hole:synthetic:right:B"
+          },
+          {
+            "role_a": "B",
+            "role_b": "A",
+            "hole_a_ref": "hole:synthetic:left:B",
+            "hole_b_ref": "hole:synthetic:right:A"
+          },
+          {
+            "role_a": "D",
+            "role_b": "C",
+            "hole_a_ref": "hole:synthetic:left:D",
+            "hole_b_ref": "hole:synthetic:right:C"
+          }
+        ],
+        "interface_a_ref": "interface:synthetic:left:mount",
+        "interface_b_ref": "interface:synthetic:right:mount",
+        "mode_a_ref": "contains-anchor-pair",
+        "mode_b_ref": "contains-anchor-pair",
+        "pose": {
+          "status": "determined",
+          "transform": {
+            "rotation": [
+              [
+                -1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                -1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "translation_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "maps_frame_b_to_a": [
+              "frame:synthetic:right",
+              "frame:synthetic:left"
+            ],
+            "determinant": 1.0
+          }
+        },
+        "selection_results": [
+          {
+            "side": "a",
+            "dimension": "mechanical",
+            "dimension_defaulted": false,
+            "status": "pass"
+          },
+          {
+            "side": "b",
+            "dimension": "mechanical",
+            "dimension_defaulted": false,
+            "status": "pass"
+          }
+        ],
+        "assessments": {
+          "geometry": {
+            "status": "pass",
+            "scope": "rigid_group_registration",
+            "max_position_residual_m": 0.0,
+            "max_axis_residual_rad": 0.0
+          },
+          "mode_eligibility": {
+            "status": "pass",
+            "reasons": [
+              "Declared subset eligibility only; it is not a proof that other physical assemblies are impossible",
+              "a: mechanical (explicit) / pass",
+              "b: mechanical (explicit) / pass"
+            ]
+          },
+          "mechanical": {
+            "status": "unknown",
+            "reasons": [
+              "Unbound third-party role fastener for A/B",
+              "Unbound third-party role fastener for B/A",
+              "Unbound third-party role fastener for D/C",
+              "Static registration does not evaluate engagement, retaining contact, loads or an internal mechanism state"
+            ]
+          },
+          "engineering": {
+            "status": "unknown",
+            "reasons": [
+              "engineering is not evaluated"
+            ]
+          },
+          "task": {
+            "status": "unknown",
+            "reasons": [
+              "task is not evaluated"
+            ]
+          },
+          "completion": {
+            "status": "unknown",
+            "reasons": [
+              "Unbound third-party role fastener for A/B",
+              "Unbound third-party role fastener for B/A",
+              "Unbound third-party role fastener for D/C",
+              "Assembly/removal path remains unverified",
+              "Elastic engagement remains unverified",
+              "Selected members are not all evidenced as engaged",
+              "This bounded engine cannot certify physical completion"
+            ]
+          },
+          "occupancy": {
+            "status": "pass",
+            "reasons": [
+              "No conflicting use is inferred from Interface identity alone"
+            ]
+          }
+        },
+        "unresolved_requirements": [
+          "Unbound third-party role fastener for A/B",
+          "Unbound third-party role fastener for B/A",
+          "Unbound third-party role fastener for D/C",
+          "Assembly/removal path remains unverified",
+          "Elastic engagement remains unverified",
+          "Selected members are not all evidenced as engaged",
+          "Mechanical engagement and retention remain outside this engine's evaluated scope"
+        ],
+        "engaged_member_pairs": [],
+        "synthetic": true,
+        "definition_digest": "sha256:4697b9e45a252dc0fc722a78a48ceed6258dd37dbdcde064d8e115e1aa97a4a7",
+        "id": "proposal:9f311fe0e9c4928f7258"
+      },
+      {
+        "selected_roles_a": [
+          "A",
+          "B",
+          "D"
+        ],
+        "selected_roles_b": [
+          "A",
+          "B",
+          "D"
+        ],
+        "member_mapping": [
+          {
+            "role_a": "A",
+            "role_b": "A",
+            "hole_a_ref": "hole:synthetic:left:A",
+            "hole_b_ref": "hole:synthetic:right:A"
+          },
+          {
+            "role_a": "B",
+            "role_b": "B",
+            "hole_a_ref": "hole:synthetic:left:B",
+            "hole_b_ref": "hole:synthetic:right:B"
+          },
+          {
+            "role_a": "D",
+            "role_b": "D",
+            "hole_a_ref": "hole:synthetic:left:D",
+            "hole_b_ref": "hole:synthetic:right:D"
+          }
+        ],
+        "interface_a_ref": "interface:synthetic:left:mount",
+        "interface_b_ref": "interface:synthetic:right:mount",
+        "mode_a_ref": "contains-anchor-pair",
+        "mode_b_ref": "contains-anchor-pair",
+        "pose": {
+          "status": "determined",
+          "transform": {
+            "rotation": [
+              [
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "translation_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "maps_frame_b_to_a": [
+              "frame:synthetic:right",
+              "frame:synthetic:left"
+            ],
+            "determinant": 1.0
+          }
+        },
+        "selection_results": [
+          {
+            "side": "a",
+            "dimension": "mechanical",
+            "dimension_defaulted": false,
+            "status": "pass"
+          },
+          {
+            "side": "b",
+            "dimension": "mechanical",
+            "dimension_defaulted": false,
+            "status": "pass"
+          }
+        ],
+        "assessments": {
+          "geometry": {
+            "status": "pass",
+            "scope": "rigid_group_registration",
+            "max_position_residual_m": 0.0,
+            "max_axis_residual_rad": 0.0
+          },
+          "mode_eligibility": {
+            "status": "pass",
+            "reasons": [
+              "Declared subset eligibility only; it is not a proof that other physical assemblies are impossible",
+              "a: mechanical (explicit) / pass",
+              "b: mechanical (explicit) / pass"
+            ]
+          },
+          "mechanical": {
+            "status": "unknown",
+            "reasons": [
+              "Unbound third-party role fastener for A/A",
+              "Unbound third-party role fastener for B/B",
+              "Unbound third-party role fastener for D/D",
+              "Static registration does not evaluate engagement, retaining contact, loads or an internal mechanism state"
+            ]
+          },
+          "engineering": {
+            "status": "unknown",
+            "reasons": [
+              "engineering is not evaluated"
+            ]
+          },
+          "task": {
+            "status": "unknown",
+            "reasons": [
+              "task is not evaluated"
+            ]
+          },
+          "completion": {
+            "status": "unknown",
+            "reasons": [
+              "Unbound third-party role fastener for A/A",
+              "Unbound third-party role fastener for B/B",
+              "Unbound third-party role fastener for D/D",
+              "Assembly/removal path remains unverified",
+              "Elastic engagement remains unverified",
+              "Selected members are not all evidenced as engaged",
+              "This bounded engine cannot certify physical completion"
+            ]
+          },
+          "occupancy": {
+            "status": "pass",
+            "reasons": [
+              "No conflicting use is inferred from Interface identity alone"
+            ]
+          }
+        },
+        "unresolved_requirements": [
+          "Unbound third-party role fastener for A/A",
+          "Unbound third-party role fastener for B/B",
+          "Unbound third-party role fastener for D/D",
+          "Assembly/removal path remains unverified",
+          "Elastic engagement remains unverified",
+          "Selected members are not all evidenced as engaged",
+          "Mechanical engagement and retention remain outside this engine's evaluated scope"
+        ],
+        "engaged_member_pairs": [],
+        "synthetic": true,
+        "definition_digest": "sha256:4697b9e45a252dc0fc722a78a48ceed6258dd37dbdcde064d8e115e1aa97a4a7",
+        "id": "proposal:709191f7852a415ccc68"
+      },
+      {
+        "selected_roles_a": [
+          "A",
+          "B",
+          "D"
+        ],
+        "selected_roles_b": [
+          "A",
+          "C",
+          "D"
+        ],
+        "member_mapping": [
+          {
+            "role_a": "A",
+            "role_b": "C",
+            "hole_a_ref": "hole:synthetic:left:A",
+            "hole_b_ref": "hole:synthetic:right:C"
+          },
+          {
+            "role_a": "B",
+            "role_b": "D",
+            "hole_a_ref": "hole:synthetic:left:B",
+            "hole_b_ref": "hole:synthetic:right:D"
+          },
+          {
+            "role_a": "D",
+            "role_b": "A",
+            "hole_a_ref": "hole:synthetic:left:D",
+            "hole_b_ref": "hole:synthetic:right:A"
+          }
+        ],
+        "interface_a_ref": "interface:synthetic:left:mount",
+        "interface_b_ref": "interface:synthetic:right:mount",
+        "mode_a_ref": "contains-anchor-pair",
+        "mode_b_ref": "contains-anchor-pair",
+        "pose": {
+          "status": "determined",
+          "transform": {
+            "rotation": [
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                -1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "translation_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "maps_frame_b_to_a": [
+              "frame:synthetic:right",
+              "frame:synthetic:left"
+            ],
+            "determinant": 1.0
+          }
+        },
+        "selection_results": [
+          {
+            "side": "a",
+            "dimension": "mechanical",
+            "dimension_defaulted": false,
+            "status": "pass"
+          },
+          {
+            "side": "b",
+            "dimension": "mechanical",
+            "dimension_defaulted": false,
+            "status": "pass"
+          }
+        ],
+        "assessments": {
+          "geometry": {
+            "status": "pass",
+            "scope": "rigid_group_registration",
+            "max_position_residual_m": 0.0,
+            "max_axis_residual_rad": 0.0
+          },
+          "mode_eligibility": {
+            "status": "pass",
+            "reasons": [
+              "Declared subset eligibility only; it is not a proof that other physical assemblies are impossible",
+              "a: mechanical (explicit) / pass",
+              "b: mechanical (explicit) / pass"
+            ]
+          },
+          "mechanical": {
+            "status": "unknown",
+            "reasons": [
+              "Unbound third-party role fastener for A/C",
+              "Unbound third-party role fastener for B/D",
+              "Unbound third-party role fastener for D/A",
+              "Static registration does not evaluate engagement, retaining contact, loads or an internal mechanism state"
+            ]
+          },
+          "engineering": {
+            "status": "unknown",
+            "reasons": [
+              "engineering is not evaluated"
+            ]
+          },
+          "task": {
+            "status": "unknown",
+            "reasons": [
+              "task is not evaluated"
+            ]
+          },
+          "completion": {
+            "status": "unknown",
+            "reasons": [
+              "Unbound third-party role fastener for A/C",
+              "Unbound third-party role fastener for B/D",
+              "Unbound third-party role fastener for D/A",
+              "Assembly/removal path remains unverified",
+              "Elastic engagement remains unverified",
+              "Selected members are not all evidenced as engaged",
+              "This bounded engine cannot certify physical completion"
+            ]
+          },
+          "occupancy": {
+            "status": "pass",
+            "reasons": [
+              "No conflicting use is inferred from Interface identity alone"
+            ]
+          }
+        },
+        "unresolved_requirements": [
+          "Unbound third-party role fastener for A/C",
+          "Unbound third-party role fastener for B/D",
+          "Unbound third-party role fastener for D/A",
+          "Assembly/removal path remains unverified",
+          "Elastic engagement remains unverified",
+          "Selected members are not all evidenced as engaged",
+          "Mechanical engagement and retention remain outside this engine's evaluated scope"
+        ],
+        "engaged_member_pairs": [],
+        "synthetic": true,
+        "definition_digest": "sha256:4697b9e45a252dc0fc722a78a48ceed6258dd37dbdcde064d8e115e1aa97a4a7",
+        "id": "proposal:a31c8fe1d249ed54680b"
+      },
+      {
+        "selected_roles_a": [
+          "A",
+          "B",
+          "D"
+        ],
+        "selected_roles_b": [
+          "B",
+          "C",
+          "D"
+        ],
+        "member_mapping": [
+          {
+            "role_a": "A",
+            "role_b": "D",
+            "hole_a_ref": "hole:synthetic:left:A",
+            "hole_b_ref": "hole:synthetic:right:D"
+          },
+          {
+            "role_a": "B",
+            "role_b": "C",
+            "hole_a_ref": "hole:synthetic:left:B",
+            "hole_b_ref": "hole:synthetic:right:C"
+          },
+          {
+            "role_a": "D",
+            "role_b": "B",
+            "hole_a_ref": "hole:synthetic:left:D",
+            "hole_b_ref": "hole:synthetic:right:B"
+          }
+        ],
+        "interface_a_ref": "interface:synthetic:left:mount",
+        "interface_b_ref": "interface:synthetic:right:mount",
+        "mode_a_ref": "contains-anchor-pair",
+        "mode_b_ref": "contains-anchor-pair",
+        "pose": {
+          "status": "determined",
+          "transform": {
+            "rotation": [
+              [
+                0.0,
+                -1.0,
+                0.0
+              ],
+              [
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "translation_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "maps_frame_b_to_a": [
+              "frame:synthetic:right",
+              "frame:synthetic:left"
+            ],
+            "determinant": 1.0
+          }
+        },
+        "selection_results": [
+          {
+            "side": "a",
+            "dimension": "mechanical",
+            "dimension_defaulted": false,
+            "status": "pass"
+          },
+          {
+            "side": "b",
+            "dimension": "mechanical",
+            "dimension_defaulted": false,
+            "status": "pass"
+          }
+        ],
+        "assessments": {
+          "geometry": {
+            "status": "pass",
+            "scope": "rigid_group_registration",
+            "max_position_residual_m": 0.0,
+            "max_axis_residual_rad": 0.0
+          },
+          "mode_eligibility": {
+            "status": "pass",
+            "reasons": [
+              "Declared subset eligibility only; it is not a proof that other physical assemblies are impossible",
+              "a: mechanical (explicit) / pass",
+              "b: mechanical (explicit) / pass"
+            ]
+          },
+          "mechanical": {
+            "status": "unknown",
+            "reasons": [
+              "Unbound third-party role fastener for A/D",
+              "Unbound third-party role fastener for B/C",
+              "Unbound third-party role fastener for D/B",
+              "Static registration does not evaluate engagement, retaining contact, loads or an internal mechanism state"
+            ]
+          },
+          "engineering": {
+            "status": "unknown",
+            "reasons": [
+              "engineering is not evaluated"
+            ]
+          },
+          "task": {
+            "status": "unknown",
+            "reasons": [
+              "task is not evaluated"
+            ]
+          },
+          "completion": {
+            "status": "unknown",
+            "reasons": [
+              "Unbound third-party role fastener for A/D",
+              "Unbound third-party role fastener for B/C",
+              "Unbound third-party role fastener for D/B",
+              "Assembly/removal path remains unverified",
+              "Elastic engagement remains unverified",
+              "Selected members are not all evidenced as engaged",
+              "This bounded engine cannot certify physical completion"
+            ]
+          },
+          "occupancy": {
+            "status": "pass",
+            "reasons": [
+              "No conflicting use is inferred from Interface identity alone"
+            ]
+          }
+        },
+        "unresolved_requirements": [
+          "Unbound third-party role fastener for A/D",
+          "Unbound third-party role fastener for B/C",
+          "Unbound third-party role fastener for D/B",
+          "Assembly/removal path remains unverified",
+          "Elastic engagement remains unverified",
+          "Selected members are not all evidenced as engaged",
+          "Mechanical engagement and retention remain outside this engine's evaluated scope"
+        ],
+        "engaged_member_pairs": [],
+        "synthetic": true,
+        "definition_digest": "sha256:4697b9e45a252dc0fc722a78a48ceed6258dd37dbdcde064d8e115e1aa97a4a7",
+        "id": "proposal:97e985eccb4fde2b3e3e"
+      },
+      {
+        "selected_roles_a": [
+          "A",
+          "C",
+          "D"
+        ],
+        "selected_roles_b": [
+          "A",
+          "B",
+          "C"
+        ],
+        "member_mapping": [
+          {
+            "role_a": "A",
+            "role_b": "C",
+            "hole_a_ref": "hole:synthetic:left:A",
+            "hole_b_ref": "hole:synthetic:right:C"
+          },
+          {
+            "role_a": "C",
+            "role_b": "B",
+            "hole_a_ref": "hole:synthetic:left:C",
+            "hole_b_ref": "hole:synthetic:right:B"
+          },
+          {
+            "role_a": "D",
+            "role_b": "A",
+            "hole_a_ref": "hole:synthetic:left:D",
+            "hole_b_ref": "hole:synthetic:right:A"
+          }
+        ],
+        "interface_a_ref": "interface:synthetic:left:mount",
+        "interface_b_ref": "interface:synthetic:right:mount",
+        "mode_a_ref": "contains-anchor-pair",
+        "mode_b_ref": "contains-anchor-pair",
+        "pose": {
+          "status": "determined",
+          "transform": {
+            "rotation": [
+              [
+                0.0,
+                1.0000000000000002,
+                0.0
+              ],
+              [
+                -1.0000000000000002,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0000000000000004
+              ]
+            ],
+            "translation_m": [
+              1.734723475976807e-18,
+              0.0,
+              0.0
+            ],
+            "maps_frame_b_to_a": [
+              "frame:synthetic:right",
+              "frame:synthetic:left"
+            ],
+            "determinant": 1.0000000000000009
+          }
+        },
+        "selection_results": [
+          {
+            "side": "a",
+            "dimension": "mechanical",
+            "dimension_defaulted": false,
+            "status": "pass"
+          },
+          {
+            "side": "b",
+            "dimension": "mechanical",
+            "dimension_defaulted": false,
+            "status": "pass"
+          }
+        ],
+        "assessments": {
+          "geometry": {
+            "status": "pass",
+            "scope": "rigid_group_registration",
+            "max_position_residual_m": 2.4532694666933987e-18,
+            "max_axis_residual_rad": 0.0
+          },
+          "mode_eligibility": {
+            "status": "pass",
+            "reasons": [
+              "Declared subset eligibility only; it is not a proof that other physical assemblies are impossible",
+              "a: mechanical (explicit) / pass",
+              "b: mechanical (explicit) / pass"
+            ]
+          },
+          "mechanical": {
+            "status": "unknown",
+            "reasons": [
+              "Unbound third-party role fastener for A/C",
+              "Unbound third-party role fastener for C/B",
+              "Unbound third-party role fastener for D/A",
+              "Static registration does not evaluate engagement, retaining contact, loads or an internal mechanism state"
+            ]
+          },
+          "engineering": {
+            "status": "unknown",
+            "reasons": [
+              "engineering is not evaluated"
+            ]
+          },
+          "task": {
+            "status": "unknown",
+            "reasons": [
+              "task is not evaluated"
+            ]
+          },
+          "completion": {
+            "status": "unknown",
+            "reasons": [
+              "Unbound third-party role fastener for A/C",
+              "Unbound third-party role fastener for C/B",
+              "Unbound third-party role fastener for D/A",
+              "Assembly/removal path remains unverified",
+              "Elastic engagement remains unverified",
+              "Selected members are not all evidenced as engaged",
+              "This bounded engine cannot certify physical completion"
+            ]
+          },
+          "occupancy": {
+            "status": "pass",
+            "reasons": [
+              "No conflicting use is inferred from Interface identity alone"
+            ]
+          }
+        },
+        "unresolved_requirements": [
+          "Unbound third-party role fastener for A/C",
+          "Unbound third-party role fastener for C/B",
+          "Unbound third-party role fastener for D/A",
+          "Assembly/removal path remains unverified",
+          "Elastic engagement remains unverified",
+          "Selected members are not all evidenced as engaged",
+          "Mechanical engagement and retention remain outside this engine's evaluated scope"
+        ],
+        "engaged_member_pairs": [],
+        "synthetic": true,
+        "definition_digest": "sha256:4697b9e45a252dc0fc722a78a48ceed6258dd37dbdcde064d8e115e1aa97a4a7",
+        "id": "proposal:9fc5e8c9718ede6b1fa9"
+      },
+      {
+        "selected_roles_a": [
+          "A",
+          "C",
+          "D"
+        ],
+        "selected_roles_b": [
+          "A",
+          "B",
+          "D"
+        ],
+        "member_mapping": [
+          {
+            "role_a": "A",
+            "role_b": "D",
+            "hole_a_ref": "hole:synthetic:left:A",
+            "hole_b_ref": "hole:synthetic:right:D"
+          },
+          {
+            "role_a": "C",
+            "role_b": "A",
+            "hole_a_ref": "hole:synthetic:left:C",
+            "hole_b_ref": "hole:synthetic:right:A"
+          },
+          {
+            "role_a": "D",
+            "role_b": "B",
+            "hole_a_ref": "hole:synthetic:left:D",
+            "hole_b_ref": "hole:synthetic:right:B"
+          }
+        ],
+        "interface_a_ref": "interface:synthetic:left:mount",
+        "interface_b_ref": "interface:synthetic:right:mount",
+        "mode_a_ref": "contains-anchor-pair",
+        "mode_b_ref": "contains-anchor-pair",
+        "pose": {
+          "status": "determined",
+          "transform": {
+            "rotation": [
+              [
+                0.0,
+                -1.0000000000000002,
+                0.0
+              ],
+              [
+                1.0000000000000002,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0000000000000004
+              ]
+            ],
+            "translation_m": [
+              1.734723475976807e-18,
+              0.0,
+              0.0
+            ],
+            "maps_frame_b_to_a": [
+              "frame:synthetic:right",
+              "frame:synthetic:left"
+            ],
+            "determinant": 1.0000000000000009
+          }
+        },
+        "selection_results": [
+          {
+            "side": "a",
+            "dimension": "mechanical",
+            "dimension_defaulted": false,
+            "status": "pass"
+          },
+          {
+            "side": "b",
+            "dimension": "mechanical",
+            "dimension_defaulted": false,
+            "status": "pass"
+          }
+        ],
+        "assessments": {
+          "geometry": {
+            "status": "pass",
+            "scope": "rigid_group_registration",
+            "max_position_residual_m": 2.4532694666933987e-18,
+            "max_axis_residual_rad": 0.0
+          },
+          "mode_eligibility": {
+            "status": "pass",
+            "reasons": [
+              "Declared subset eligibility only; it is not a proof that other physical assemblies are impossible",
+              "a: mechanical (explicit) / pass",
+              "b: mechanical (explicit) / pass"
+            ]
+          },
+          "mechanical": {
+            "status": "unknown",
+            "reasons": [
+              "Unbound third-party role fastener for A/D",
+              "Unbound third-party role fastener for C/A",
+              "Unbound third-party role fastener for D/B",
+              "Static registration does not evaluate engagement, retaining contact, loads or an internal mechanism state"
+            ]
+          },
+          "engineering": {
+            "status": "unknown",
+            "reasons": [
+              "engineering is not evaluated"
+            ]
+          },
+          "task": {
+            "status": "unknown",
+            "reasons": [
+              "task is not evaluated"
+            ]
+          },
+          "completion": {
+            "status": "unknown",
+            "reasons": [
+              "Unbound third-party role fastener for A/D",
+              "Unbound third-party role fastener for C/A",
+              "Unbound third-party role fastener for D/B",
+              "Assembly/removal path remains unverified",
+              "Elastic engagement remains unverified",
+              "Selected members are not all evidenced as engaged",
+              "This bounded engine cannot certify physical completion"
+            ]
+          },
+          "occupancy": {
+            "status": "pass",
+            "reasons": [
+              "No conflicting use is inferred from Interface identity alone"
+            ]
+          }
+        },
+        "unresolved_requirements": [
+          "Unbound third-party role fastener for A/D",
+          "Unbound third-party role fastener for C/A",
+          "Unbound third-party role fastener for D/B",
+          "Assembly/removal path remains unverified",
+          "Elastic engagement remains unverified",
+          "Selected members are not all evidenced as engaged",
+          "Mechanical engagement and retention remain outside this engine's evaluated scope"
+        ],
+        "engaged_member_pairs": [],
+        "synthetic": true,
+        "definition_digest": "sha256:4697b9e45a252dc0fc722a78a48ceed6258dd37dbdcde064d8e115e1aa97a4a7",
+        "id": "proposal:f5d30ba833f239fff235"
+      },
+      {
+        "selected_roles_a": [
+          "A",
+          "C",
+          "D"
+        ],
+        "selected_roles_b": [
+          "A",
+          "C",
+          "D"
+        ],
+        "member_mapping": [
+          {
+            "role_a": "A",
+            "role_b": "A",
+            "hole_a_ref": "hole:synthetic:left:A",
+            "hole_b_ref": "hole:synthetic:right:A"
+          },
+          {
+            "role_a": "C",
+            "role_b": "C",
+            "hole_a_ref": "hole:synthetic:left:C",
+            "hole_b_ref": "hole:synthetic:right:C"
+          },
+          {
+            "role_a": "D",
+            "role_b": "D",
+            "hole_a_ref": "hole:synthetic:left:D",
+            "hole_b_ref": "hole:synthetic:right:D"
+          }
+        ],
+        "interface_a_ref": "interface:synthetic:left:mount",
+        "interface_b_ref": "interface:synthetic:right:mount",
+        "mode_a_ref": "contains-anchor-pair",
+        "mode_b_ref": "contains-anchor-pair",
+        "pose": {
+          "status": "determined",
+          "transform": {
+            "rotation": [
+              [
+                1.0000000000000002,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0000000000000002,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0000000000000004
+              ]
+            ],
+            "translation_m": [
+              1.734723475976807e-18,
+              0.0,
+              0.0
+            ],
+            "maps_frame_b_to_a": [
+              "frame:synthetic:right",
+              "frame:synthetic:left"
+            ],
+            "determinant": 1.0000000000000009
+          }
+        },
+        "selection_results": [
+          {
+            "side": "a",
+            "dimension": "mechanical",
+            "dimension_defaulted": false,
+            "status": "pass"
+          },
+          {
+            "side": "b",
+            "dimension": "mechanical",
+            "dimension_defaulted": false,
+            "status": "pass"
+          }
+        ],
+        "assessments": {
+          "geometry": {
+            "status": "pass",
+            "scope": "rigid_group_registration",
+            "max_position_residual_m": 2.4532694666933987e-18,
+            "max_axis_residual_rad": 0.0
+          },
+          "mode_eligibility": {
+            "status": "pass",
+            "reasons": [
+              "Declared subset eligibility only; it is not a proof that other physical assemblies are impossible",
+              "a: mechanical (explicit) / pass",
+              "b: mechanical (explicit) / pass"
+            ]
+          },
+          "mechanical": {
+            "status": "unknown",
+            "reasons": [
+              "Unbound third-party role fastener for A/A",
+              "Unbound third-party role fastener for C/C",
+              "Unbound third-party role fastener for D/D",
+              "Static registration does not evaluate engagement, retaining contact, loads or an internal mechanism state"
+            ]
+          },
+          "engineering": {
+            "status": "unknown",
+            "reasons": [
+              "engineering is not evaluated"
+            ]
+          },
+          "task": {
+            "status": "unknown",
+            "reasons": [
+              "task is not evaluated"
+            ]
+          },
+          "completion": {
+            "status": "unknown",
+            "reasons": [
+              "Unbound third-party role fastener for A/A",
+              "Unbound third-party role fastener for C/C",
+              "Unbound third-party role fastener for D/D",
+              "Assembly/removal path remains unverified",
+              "Elastic engagement remains unverified",
+              "Selected members are not all evidenced as engaged",
+              "This bounded engine cannot certify physical completion"
+            ]
+          },
+          "occupancy": {
+            "status": "pass",
+            "reasons": [
+              "No conflicting use is inferred from Interface identity alone"
+            ]
+          }
+        },
+        "unresolved_requirements": [
+          "Unbound third-party role fastener for A/A",
+          "Unbound third-party role fastener for C/C",
+          "Unbound third-party role fastener for D/D",
+          "Assembly/removal path remains unverified",
+          "Elastic engagement remains unverified",
+          "Selected members are not all evidenced as engaged",
+          "Mechanical engagement and retention remain outside this engine's evaluated scope"
+        ],
+        "engaged_member_pairs": [],
+        "synthetic": true,
+        "definition_digest": "sha256:4697b9e45a252dc0fc722a78a48ceed6258dd37dbdcde064d8e115e1aa97a4a7",
+        "id": "proposal:ebcd72c873fbac0b9d31"
+      },
+      {
+        "selected_roles_a": [
+          "A",
+          "C",
+          "D"
+        ],
+        "selected_roles_b": [
+          "B",
+          "C",
+          "D"
+        ],
+        "member_mapping": [
+          {
+            "role_a": "A",
+            "role_b": "B",
+            "hole_a_ref": "hole:synthetic:left:A",
+            "hole_b_ref": "hole:synthetic:right:B"
+          },
+          {
+            "role_a": "C",
+            "role_b": "D",
+            "hole_a_ref": "hole:synthetic:left:C",
+            "hole_b_ref": "hole:synthetic:right:D"
+          },
+          {
+            "role_a": "D",
+            "role_b": "C",
+            "hole_a_ref": "hole:synthetic:left:D",
+            "hole_b_ref": "hole:synthetic:right:C"
+          }
+        ],
+        "interface_a_ref": "interface:synthetic:left:mount",
+        "interface_b_ref": "interface:synthetic:right:mount",
+        "mode_a_ref": "contains-anchor-pair",
+        "mode_b_ref": "contains-anchor-pair",
+        "pose": {
+          "status": "determined",
+          "transform": {
+            "rotation": [
+              [
+                -1.0000000000000002,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                -1.0000000000000002,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0000000000000004
+              ]
+            ],
+            "translation_m": [
+              1.734723475976807e-18,
+              0.0,
+              0.0
+            ],
+            "maps_frame_b_to_a": [
+              "frame:synthetic:right",
+              "frame:synthetic:left"
+            ],
+            "determinant": 1.0000000000000009
+          }
+        },
+        "selection_results": [
+          {
+            "side": "a",
+            "dimension": "mechanical",
+            "dimension_defaulted": false,
+            "status": "pass"
+          },
+          {
+            "side": "b",
+            "dimension": "mechanical",
+            "dimension_defaulted": false,
+            "status": "pass"
+          }
+        ],
+        "assessments": {
+          "geometry": {
+            "status": "pass",
+            "scope": "rigid_group_registration",
+            "max_position_residual_m": 2.4532694666933987e-18,
+            "max_axis_residual_rad": 0.0
+          },
+          "mode_eligibility": {
+            "status": "pass",
+            "reasons": [
+              "Declared subset eligibility only; it is not a proof that other physical assemblies are impossible",
+              "a: mechanical (explicit) / pass",
+              "b: mechanical (explicit) / pass"
+            ]
+          },
+          "mechanical": {
+            "status": "unknown",
+            "reasons": [
+              "Unbound third-party role fastener for A/B",
+              "Unbound third-party role fastener for C/D",
+              "Unbound third-party role fastener for D/C",
+              "Static registration does not evaluate engagement, retaining contact, loads or an internal mechanism state"
+            ]
+          },
+          "engineering": {
+            "status": "unknown",
+            "reasons": [
+              "engineering is not evaluated"
+            ]
+          },
+          "task": {
+            "status": "unknown",
+            "reasons": [
+              "task is not evaluated"
+            ]
+          },
+          "completion": {
+            "status": "unknown",
+            "reasons": [
+              "Unbound third-party role fastener for A/B",
+              "Unbound third-party role fastener for C/D",
+              "Unbound third-party role fastener for D/C",
+              "Assembly/removal path remains unverified",
+              "Elastic engagement remains unverified",
+              "Selected members are not all evidenced as engaged",
+              "This bounded engine cannot certify physical completion"
+            ]
+          },
+          "occupancy": {
+            "status": "pass",
+            "reasons": [
+              "No conflicting use is inferred from Interface identity alone"
+            ]
+          }
+        },
+        "unresolved_requirements": [
+          "Unbound third-party role fastener for A/B",
+          "Unbound third-party role fastener for C/D",
+          "Unbound third-party role fastener for D/C",
+          "Assembly/removal path remains unverified",
+          "Elastic engagement remains unverified",
+          "Selected members are not all evidenced as engaged",
+          "Mechanical engagement and retention remain outside this engine's evaluated scope"
+        ],
+        "engaged_member_pairs": [],
+        "synthetic": true,
+        "definition_digest": "sha256:4697b9e45a252dc0fc722a78a48ceed6258dd37dbdcde064d8e115e1aa97a4a7",
+        "id": "proposal:dc79b668f1bc82043f0c"
+      },
+      {
+        "selected_roles_a": [
+          "B",
+          "C",
+          "D"
+        ],
+        "selected_roles_b": [
+          "A",
+          "B",
+          "C"
+        ],
+        "member_mapping": [
+          {
+            "role_a": "B",
+            "role_b": "C",
+            "hole_a_ref": "hole:synthetic:left:B",
+            "hole_b_ref": "hole:synthetic:right:C"
+          },
+          {
+            "role_a": "C",
+            "role_b": "A",
+            "hole_a_ref": "hole:synthetic:left:C",
+            "hole_b_ref": "hole:synthetic:right:A"
+          },
+          {
+            "role_a": "D",
+            "role_b": "B",
+            "hole_a_ref": "hole:synthetic:left:D",
+            "hole_b_ref": "hole:synthetic:right:B"
+          }
+        ],
+        "interface_a_ref": "interface:synthetic:left:mount",
+        "interface_b_ref": "interface:synthetic:right:mount",
+        "mode_a_ref": "contains-anchor-pair",
+        "mode_b_ref": "contains-anchor-pair",
+        "pose": {
+          "status": "determined",
+          "transform": {
+            "rotation": [
+              [
+                0.0,
+                -1.0000000000000002,
+                0.0
+              ],
+              [
+                1.0000000000000002,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0000000000000004
+              ]
+            ],
+            "translation_m": [
+              -1.734723475976807e-18,
+              0.0,
+              0.0
+            ],
+            "maps_frame_b_to_a": [
+              "frame:synthetic:right",
+              "frame:synthetic:left"
+            ],
+            "determinant": 1.0000000000000009
+          }
+        },
+        "selection_results": [
+          {
+            "side": "a",
+            "dimension": "mechanical",
+            "dimension_defaulted": false,
+            "status": "pass"
+          },
+          {
+            "side": "b",
+            "dimension": "mechanical",
+            "dimension_defaulted": false,
+            "status": "pass"
+          }
+        ],
+        "assessments": {
+          "geometry": {
+            "status": "pass",
+            "scope": "rigid_group_registration",
+            "max_position_residual_m": 2.4532694666933987e-18,
+            "max_axis_residual_rad": 0.0
+          },
+          "mode_eligibility": {
+            "status": "pass",
+            "reasons": [
+              "Declared subset eligibility only; it is not a proof that other physical assemblies are impossible",
+              "a: mechanical (explicit) / pass",
+              "b: mechanical (explicit) / pass"
+            ]
+          },
+          "mechanical": {
+            "status": "unknown",
+            "reasons": [
+              "Unbound third-party role fastener for B/C",
+              "Unbound third-party role fastener for C/A",
+              "Unbound third-party role fastener for D/B",
+              "Static registration does not evaluate engagement, retaining contact, loads or an internal mechanism state"
+            ]
+          },
+          "engineering": {
+            "status": "unknown",
+            "reasons": [
+              "engineering is not evaluated"
+            ]
+          },
+          "task": {
+            "status": "unknown",
+            "reasons": [
+              "task is not evaluated"
+            ]
+          },
+          "completion": {
+            "status": "unknown",
+            "reasons": [
+              "Unbound third-party role fastener for B/C",
+              "Unbound third-party role fastener for C/A",
+              "Unbound third-party role fastener for D/B",
+              "Assembly/removal path remains unverified",
+              "Elastic engagement remains unverified",
+              "Selected members are not all evidenced as engaged",
+              "This bounded engine cannot certify physical completion"
+            ]
+          },
+          "occupancy": {
+            "status": "pass",
+            "reasons": [
+              "No conflicting use is inferred from Interface identity alone"
+            ]
+          }
+        },
+        "unresolved_requirements": [
+          "Unbound third-party role fastener for B/C",
+          "Unbound third-party role fastener for C/A",
+          "Unbound third-party role fastener for D/B",
+          "Assembly/removal path remains unverified",
+          "Elastic engagement remains unverified",
+          "Selected members are not all evidenced as engaged",
+          "Mechanical engagement and retention remain outside this engine's evaluated scope"
+        ],
+        "engaged_member_pairs": [],
+        "synthetic": true,
+        "definition_digest": "sha256:4697b9e45a252dc0fc722a78a48ceed6258dd37dbdcde064d8e115e1aa97a4a7",
+        "id": "proposal:0bfe8aadc7a769e6e8f4"
+      },
+      {
+        "selected_roles_a": [
+          "B",
+          "C",
+          "D"
+        ],
+        "selected_roles_b": [
+          "A",
+          "B",
+          "D"
+        ],
+        "member_mapping": [
+          {
+            "role_a": "B",
+            "role_b": "D",
+            "hole_a_ref": "hole:synthetic:left:B",
+            "hole_b_ref": "hole:synthetic:right:D"
+          },
+          {
+            "role_a": "C",
+            "role_b": "B",
+            "hole_a_ref": "hole:synthetic:left:C",
+            "hole_b_ref": "hole:synthetic:right:B"
+          },
+          {
+            "role_a": "D",
+            "role_b": "A",
+            "hole_a_ref": "hole:synthetic:left:D",
+            "hole_b_ref": "hole:synthetic:right:A"
+          }
+        ],
+        "interface_a_ref": "interface:synthetic:left:mount",
+        "interface_b_ref": "interface:synthetic:right:mount",
+        "mode_a_ref": "contains-anchor-pair",
+        "mode_b_ref": "contains-anchor-pair",
+        "pose": {
+          "status": "determined",
+          "transform": {
+            "rotation": [
+              [
+                0.0,
+                1.0000000000000002,
+                0.0
+              ],
+              [
+                -1.0000000000000002,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0000000000000004
+              ]
+            ],
+            "translation_m": [
+              -1.734723475976807e-18,
+              0.0,
+              0.0
+            ],
+            "maps_frame_b_to_a": [
+              "frame:synthetic:right",
+              "frame:synthetic:left"
+            ],
+            "determinant": 1.0000000000000009
+          }
+        },
+        "selection_results": [
+          {
+            "side": "a",
+            "dimension": "mechanical",
+            "dimension_defaulted": false,
+            "status": "pass"
+          },
+          {
+            "side": "b",
+            "dimension": "mechanical",
+            "dimension_defaulted": false,
+            "status": "pass"
+          }
+        ],
+        "assessments": {
+          "geometry": {
+            "status": "pass",
+            "scope": "rigid_group_registration",
+            "max_position_residual_m": 2.4532694666933987e-18,
+            "max_axis_residual_rad": 0.0
+          },
+          "mode_eligibility": {
+            "status": "pass",
+            "reasons": [
+              "Declared subset eligibility only; it is not a proof that other physical assemblies are impossible",
+              "a: mechanical (explicit) / pass",
+              "b: mechanical (explicit) / pass"
+            ]
+          },
+          "mechanical": {
+            "status": "unknown",
+            "reasons": [
+              "Unbound third-party role fastener for B/D",
+              "Unbound third-party role fastener for C/B",
+              "Unbound third-party role fastener for D/A",
+              "Static registration does not evaluate engagement, retaining contact, loads or an internal mechanism state"
+            ]
+          },
+          "engineering": {
+            "status": "unknown",
+            "reasons": [
+              "engineering is not evaluated"
+            ]
+          },
+          "task": {
+            "status": "unknown",
+            "reasons": [
+              "task is not evaluated"
+            ]
+          },
+          "completion": {
+            "status": "unknown",
+            "reasons": [
+              "Unbound third-party role fastener for B/D",
+              "Unbound third-party role fastener for C/B",
+              "Unbound third-party role fastener for D/A",
+              "Assembly/removal path remains unverified",
+              "Elastic engagement remains unverified",
+              "Selected members are not all evidenced as engaged",
+              "This bounded engine cannot certify physical completion"
+            ]
+          },
+          "occupancy": {
+            "status": "pass",
+            "reasons": [
+              "No conflicting use is inferred from Interface identity alone"
+            ]
+          }
+        },
+        "unresolved_requirements": [
+          "Unbound third-party role fastener for B/D",
+          "Unbound third-party role fastener for C/B",
+          "Unbound third-party role fastener for D/A",
+          "Assembly/removal path remains unverified",
+          "Elastic engagement remains unverified",
+          "Selected members are not all evidenced as engaged",
+          "Mechanical engagement and retention remain outside this engine's evaluated scope"
+        ],
+        "engaged_member_pairs": [],
+        "synthetic": true,
+        "definition_digest": "sha256:4697b9e45a252dc0fc722a78a48ceed6258dd37dbdcde064d8e115e1aa97a4a7",
+        "id": "proposal:b7b0a2071be815265aae"
+      },
+      {
+        "selected_roles_a": [
+          "B",
+          "C",
+          "D"
+        ],
+        "selected_roles_b": [
+          "A",
+          "C",
+          "D"
+        ],
+        "member_mapping": [
+          {
+            "role_a": "B",
+            "role_b": "A",
+            "hole_a_ref": "hole:synthetic:left:B",
+            "hole_b_ref": "hole:synthetic:right:A"
+          },
+          {
+            "role_a": "C",
+            "role_b": "D",
+            "hole_a_ref": "hole:synthetic:left:C",
+            "hole_b_ref": "hole:synthetic:right:D"
+          },
+          {
+            "role_a": "D",
+            "role_b": "C",
+            "hole_a_ref": "hole:synthetic:left:D",
+            "hole_b_ref": "hole:synthetic:right:C"
+          }
+        ],
+        "interface_a_ref": "interface:synthetic:left:mount",
+        "interface_b_ref": "interface:synthetic:right:mount",
+        "mode_a_ref": "contains-anchor-pair",
+        "mode_b_ref": "contains-anchor-pair",
+        "pose": {
+          "status": "determined",
+          "transform": {
+            "rotation": [
+              [
+                -1.0000000000000002,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                -1.0000000000000002,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0000000000000004
+              ]
+            ],
+            "translation_m": [
+              -1.734723475976807e-18,
+              0.0,
+              0.0
+            ],
+            "maps_frame_b_to_a": [
+              "frame:synthetic:right",
+              "frame:synthetic:left"
+            ],
+            "determinant": 1.0000000000000009
+          }
+        },
+        "selection_results": [
+          {
+            "side": "a",
+            "dimension": "mechanical",
+            "dimension_defaulted": false,
+            "status": "pass"
+          },
+          {
+            "side": "b",
+            "dimension": "mechanical",
+            "dimension_defaulted": false,
+            "status": "pass"
+          }
+        ],
+        "assessments": {
+          "geometry": {
+            "status": "pass",
+            "scope": "rigid_group_registration",
+            "max_position_residual_m": 2.4532694666933987e-18,
+            "max_axis_residual_rad": 0.0
+          },
+          "mode_eligibility": {
+            "status": "pass",
+            "reasons": [
+              "Declared subset eligibility only; it is not a proof that other physical assemblies are impossible",
+              "a: mechanical (explicit) / pass",
+              "b: mechanical (explicit) / pass"
+            ]
+          },
+          "mechanical": {
+            "status": "unknown",
+            "reasons": [
+              "Unbound third-party role fastener for B/A",
+              "Unbound third-party role fastener for C/D",
+              "Unbound third-party role fastener for D/C",
+              "Static registration does not evaluate engagement, retaining contact, loads or an internal mechanism state"
+            ]
+          },
+          "engineering": {
+            "status": "unknown",
+            "reasons": [
+              "engineering is not evaluated"
+            ]
+          },
+          "task": {
+            "status": "unknown",
+            "reasons": [
+              "task is not evaluated"
+            ]
+          },
+          "completion": {
+            "status": "unknown",
+            "reasons": [
+              "Unbound third-party role fastener for B/A",
+              "Unbound third-party role fastener for C/D",
+              "Unbound third-party role fastener for D/C",
+              "Assembly/removal path remains unverified",
+              "Elastic engagement remains unverified",
+              "Selected members are not all evidenced as engaged",
+              "This bounded engine cannot certify physical completion"
+            ]
+          },
+          "occupancy": {
+            "status": "pass",
+            "reasons": [
+              "No conflicting use is inferred from Interface identity alone"
+            ]
+          }
+        },
+        "unresolved_requirements": [
+          "Unbound third-party role fastener for B/A",
+          "Unbound third-party role fastener for C/D",
+          "Unbound third-party role fastener for D/C",
+          "Assembly/removal path remains unverified",
+          "Elastic engagement remains unverified",
+          "Selected members are not all evidenced as engaged",
+          "Mechanical engagement and retention remain outside this engine's evaluated scope"
+        ],
+        "engaged_member_pairs": [],
+        "synthetic": true,
+        "definition_digest": "sha256:4697b9e45a252dc0fc722a78a48ceed6258dd37dbdcde064d8e115e1aa97a4a7",
+        "id": "proposal:fe3629532eacf8efebcb"
+      },
+      {
+        "selected_roles_a": [
+          "B",
+          "C",
+          "D"
+        ],
+        "selected_roles_b": [
+          "B",
+          "C",
+          "D"
+        ],
+        "member_mapping": [
+          {
+            "role_a": "B",
+            "role_b": "B",
+            "hole_a_ref": "hole:synthetic:left:B",
+            "hole_b_ref": "hole:synthetic:right:B"
+          },
+          {
+            "role_a": "C",
+            "role_b": "C",
+            "hole_a_ref": "hole:synthetic:left:C",
+            "hole_b_ref": "hole:synthetic:right:C"
+          },
+          {
+            "role_a": "D",
+            "role_b": "D",
+            "hole_a_ref": "hole:synthetic:left:D",
+            "hole_b_ref": "hole:synthetic:right:D"
+          }
+        ],
+        "interface_a_ref": "interface:synthetic:left:mount",
+        "interface_b_ref": "interface:synthetic:right:mount",
+        "mode_a_ref": "contains-anchor-pair",
+        "mode_b_ref": "contains-anchor-pair",
+        "pose": {
+          "status": "determined",
+          "transform": {
+            "rotation": [
+              [
+                1.0000000000000002,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0000000000000002,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0000000000000004
+              ]
+            ],
+            "translation_m": [
+              -1.734723475976807e-18,
+              0.0,
+              0.0
+            ],
+            "maps_frame_b_to_a": [
+              "frame:synthetic:right",
+              "frame:synthetic:left"
+            ],
+            "determinant": 1.0000000000000009
+          }
+        },
+        "selection_results": [
+          {
+            "side": "a",
+            "dimension": "mechanical",
+            "dimension_defaulted": false,
+            "status": "pass"
+          },
+          {
+            "side": "b",
+            "dimension": "mechanical",
+            "dimension_defaulted": false,
+            "status": "pass"
+          }
+        ],
+        "assessments": {
+          "geometry": {
+            "status": "pass",
+            "scope": "rigid_group_registration",
+            "max_position_residual_m": 2.4532694666933987e-18,
+            "max_axis_residual_rad": 0.0
+          },
+          "mode_eligibility": {
+            "status": "pass",
+            "reasons": [
+              "Declared subset eligibility only; it is not a proof that other physical assemblies are impossible",
+              "a: mechanical (explicit) / pass",
+              "b: mechanical (explicit) / pass"
+            ]
+          },
+          "mechanical": {
+            "status": "unknown",
+            "reasons": [
+              "Unbound third-party role fastener for B/B",
+              "Unbound third-party role fastener for C/C",
+              "Unbound third-party role fastener for D/D",
+              "Static registration does not evaluate engagement, retaining contact, loads or an internal mechanism state"
+            ]
+          },
+          "engineering": {
+            "status": "unknown",
+            "reasons": [
+              "engineering is not evaluated"
+            ]
+          },
+          "task": {
+            "status": "unknown",
+            "reasons": [
+              "task is not evaluated"
+            ]
+          },
+          "completion": {
+            "status": "unknown",
+            "reasons": [
+              "Unbound third-party role fastener for B/B",
+              "Unbound third-party role fastener for C/C",
+              "Unbound third-party role fastener for D/D",
+              "Assembly/removal path remains unverified",
+              "Elastic engagement remains unverified",
+              "Selected members are not all evidenced as engaged",
+              "This bounded engine cannot certify physical completion"
+            ]
+          },
+          "occupancy": {
+            "status": "pass",
+            "reasons": [
+              "No conflicting use is inferred from Interface identity alone"
+            ]
+          }
+        },
+        "unresolved_requirements": [
+          "Unbound third-party role fastener for B/B",
+          "Unbound third-party role fastener for C/C",
+          "Unbound third-party role fastener for D/D",
+          "Assembly/removal path remains unverified",
+          "Elastic engagement remains unverified",
+          "Selected members are not all evidenced as engaged",
+          "Mechanical engagement and retention remain outside this engine's evaluated scope"
+        ],
+        "engaged_member_pairs": [],
+        "synthetic": true,
+        "definition_digest": "sha256:4697b9e45a252dc0fc722a78a48ceed6258dd37dbdcde064d8e115e1aa97a4a7",
+        "id": "proposal:5082547adbffe1b3d62a"
+      },
+      {
+        "selected_roles_a": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "selected_roles_b": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "member_mapping": [
+          {
+            "role_a": "A",
+            "role_b": "A",
+            "hole_a_ref": "hole:synthetic:left:A",
+            "hole_b_ref": "hole:synthetic:right:A"
+          },
+          {
+            "role_a": "B",
+            "role_b": "B",
+            "hole_a_ref": "hole:synthetic:left:B",
+            "hole_b_ref": "hole:synthetic:right:B"
+          },
+          {
+            "role_a": "C",
+            "role_b": "C",
+            "hole_a_ref": "hole:synthetic:left:C",
+            "hole_b_ref": "hole:synthetic:right:C"
+          },
+          {
+            "role_a": "D",
+            "role_b": "D",
+            "hole_a_ref": "hole:synthetic:left:D",
+            "hole_b_ref": "hole:synthetic:right:D"
+          }
+        ],
+        "interface_a_ref": "interface:synthetic:left:mount",
+        "interface_b_ref": "interface:synthetic:right:mount",
+        "mode_a_ref": "contains-anchor-pair",
+        "mode_b_ref": "contains-anchor-pair",
+        "pose": {
+          "status": "determined",
+          "transform": {
+            "rotation": [
+              [
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "translation_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "maps_frame_b_to_a": [
+              "frame:synthetic:right",
+              "frame:synthetic:left"
+            ],
+            "determinant": 1.0
+          }
+        },
+        "selection_results": [
+          {
+            "side": "a",
+            "dimension": "mechanical",
+            "dimension_defaulted": false,
+            "status": "pass"
+          },
+          {
+            "side": "b",
+            "dimension": "mechanical",
+            "dimension_defaulted": false,
+            "status": "pass"
+          }
+        ],
+        "assessments": {
+          "geometry": {
+            "status": "pass",
+            "scope": "rigid_group_registration",
+            "max_position_residual_m": 0.0,
+            "max_axis_residual_rad": 0.0
+          },
+          "mode_eligibility": {
+            "status": "pass",
+            "reasons": [
+              "Declared subset eligibility only; it is not a proof that other physical assemblies are impossible",
+              "a: mechanical (explicit) / pass",
+              "b: mechanical (explicit) / pass"
+            ]
+          },
+          "mechanical": {
+            "status": "unknown",
+            "reasons": [
+              "Unbound third-party role fastener for A/A",
+              "Unbound third-party role fastener for B/B",
+              "Unbound third-party role fastener for C/C",
+              "Unbound third-party role fastener for D/D",
+              "Static registration does not evaluate engagement, retaining contact, loads or an internal mechanism state"
+            ]
+          },
+          "engineering": {
+            "status": "unknown",
+            "reasons": [
+              "engineering is not evaluated"
+            ]
+          },
+          "task": {
+            "status": "unknown",
+            "reasons": [
+              "task is not evaluated"
+            ]
+          },
+          "completion": {
+            "status": "unknown",
+            "reasons": [
+              "Unbound third-party role fastener for A/A",
+              "Unbound third-party role fastener for B/B",
+              "Unbound third-party role fastener for C/C",
+              "Unbound third-party role fastener for D/D",
+              "Assembly/removal path remains unverified",
+              "Elastic engagement remains unverified",
+              "Selected members are not all evidenced as engaged",
+              "This bounded engine cannot certify physical completion"
+            ]
+          },
+          "occupancy": {
+            "status": "pass",
+            "reasons": [
+              "No conflicting use is inferred from Interface identity alone"
+            ]
+          }
+        },
+        "unresolved_requirements": [
+          "Unbound third-party role fastener for A/A",
+          "Unbound third-party role fastener for B/B",
+          "Unbound third-party role fastener for C/C",
+          "Unbound third-party role fastener for D/D",
+          "Assembly/removal path remains unverified",
+          "Elastic engagement remains unverified",
+          "Selected members are not all evidenced as engaged",
+          "Mechanical engagement and retention remain outside this engine's evaluated scope"
+        ],
+        "engaged_member_pairs": [],
+        "synthetic": true,
+        "definition_digest": "sha256:4697b9e45a252dc0fc722a78a48ceed6258dd37dbdcde064d8e115e1aa97a4a7",
+        "id": "proposal:cd501738dbbecff9c795"
+      },
+      {
+        "selected_roles_a": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "selected_roles_b": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "member_mapping": [
+          {
+            "role_a": "A",
+            "role_b": "B",
+            "hole_a_ref": "hole:synthetic:left:A",
+            "hole_b_ref": "hole:synthetic:right:B"
+          },
+          {
+            "role_a": "B",
+            "role_b": "A",
+            "hole_a_ref": "hole:synthetic:left:B",
+            "hole_b_ref": "hole:synthetic:right:A"
+          },
+          {
+            "role_a": "C",
+            "role_b": "D",
+            "hole_a_ref": "hole:synthetic:left:C",
+            "hole_b_ref": "hole:synthetic:right:D"
+          },
+          {
+            "role_a": "D",
+            "role_b": "C",
+            "hole_a_ref": "hole:synthetic:left:D",
+            "hole_b_ref": "hole:synthetic:right:C"
+          }
+        ],
+        "interface_a_ref": "interface:synthetic:left:mount",
+        "interface_b_ref": "interface:synthetic:right:mount",
+        "mode_a_ref": "contains-anchor-pair",
+        "mode_b_ref": "contains-anchor-pair",
+        "pose": {
+          "status": "determined",
+          "transform": {
+            "rotation": [
+              [
+                -1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                -1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "translation_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "maps_frame_b_to_a": [
+              "frame:synthetic:right",
+              "frame:synthetic:left"
+            ],
+            "determinant": 1.0
+          }
+        },
+        "selection_results": [
+          {
+            "side": "a",
+            "dimension": "mechanical",
+            "dimension_defaulted": false,
+            "status": "pass"
+          },
+          {
+            "side": "b",
+            "dimension": "mechanical",
+            "dimension_defaulted": false,
+            "status": "pass"
+          }
+        ],
+        "assessments": {
+          "geometry": {
+            "status": "pass",
+            "scope": "rigid_group_registration",
+            "max_position_residual_m": 0.0,
+            "max_axis_residual_rad": 0.0
+          },
+          "mode_eligibility": {
+            "status": "pass",
+            "reasons": [
+              "Declared subset eligibility only; it is not a proof that other physical assemblies are impossible",
+              "a: mechanical (explicit) / pass",
+              "b: mechanical (explicit) / pass"
+            ]
+          },
+          "mechanical": {
+            "status": "unknown",
+            "reasons": [
+              "Unbound third-party role fastener for A/B",
+              "Unbound third-party role fastener for B/A",
+              "Unbound third-party role fastener for C/D",
+              "Unbound third-party role fastener for D/C",
+              "Static registration does not evaluate engagement, retaining contact, loads or an internal mechanism state"
+            ]
+          },
+          "engineering": {
+            "status": "unknown",
+            "reasons": [
+              "engineering is not evaluated"
+            ]
+          },
+          "task": {
+            "status": "unknown",
+            "reasons": [
+              "task is not evaluated"
+            ]
+          },
+          "completion": {
+            "status": "unknown",
+            "reasons": [
+              "Unbound third-party role fastener for A/B",
+              "Unbound third-party role fastener for B/A",
+              "Unbound third-party role fastener for C/D",
+              "Unbound third-party role fastener for D/C",
+              "Assembly/removal path remains unverified",
+              "Elastic engagement remains unverified",
+              "Selected members are not all evidenced as engaged",
+              "This bounded engine cannot certify physical completion"
+            ]
+          },
+          "occupancy": {
+            "status": "pass",
+            "reasons": [
+              "No conflicting use is inferred from Interface identity alone"
+            ]
+          }
+        },
+        "unresolved_requirements": [
+          "Unbound third-party role fastener for A/B",
+          "Unbound third-party role fastener for B/A",
+          "Unbound third-party role fastener for C/D",
+          "Unbound third-party role fastener for D/C",
+          "Assembly/removal path remains unverified",
+          "Elastic engagement remains unverified",
+          "Selected members are not all evidenced as engaged",
+          "Mechanical engagement and retention remain outside this engine's evaluated scope"
+        ],
+        "engaged_member_pairs": [],
+        "synthetic": true,
+        "definition_digest": "sha256:4697b9e45a252dc0fc722a78a48ceed6258dd37dbdcde064d8e115e1aa97a4a7",
+        "id": "proposal:352046a207574c22d9ca"
+      },
+      {
+        "selected_roles_a": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "selected_roles_b": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "member_mapping": [
+          {
+            "role_a": "A",
+            "role_b": "C",
+            "hole_a_ref": "hole:synthetic:left:A",
+            "hole_b_ref": "hole:synthetic:right:C"
+          },
+          {
+            "role_a": "B",
+            "role_b": "D",
+            "hole_a_ref": "hole:synthetic:left:B",
+            "hole_b_ref": "hole:synthetic:right:D"
+          },
+          {
+            "role_a": "C",
+            "role_b": "B",
+            "hole_a_ref": "hole:synthetic:left:C",
+            "hole_b_ref": "hole:synthetic:right:B"
+          },
+          {
+            "role_a": "D",
+            "role_b": "A",
+            "hole_a_ref": "hole:synthetic:left:D",
+            "hole_b_ref": "hole:synthetic:right:A"
+          }
+        ],
+        "interface_a_ref": "interface:synthetic:left:mount",
+        "interface_b_ref": "interface:synthetic:right:mount",
+        "mode_a_ref": "contains-anchor-pair",
+        "mode_b_ref": "contains-anchor-pair",
+        "pose": {
+          "status": "determined",
+          "transform": {
+            "rotation": [
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                -1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "translation_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "maps_frame_b_to_a": [
+              "frame:synthetic:right",
+              "frame:synthetic:left"
+            ],
+            "determinant": 1.0
+          }
+        },
+        "selection_results": [
+          {
+            "side": "a",
+            "dimension": "mechanical",
+            "dimension_defaulted": false,
+            "status": "pass"
+          },
+          {
+            "side": "b",
+            "dimension": "mechanical",
+            "dimension_defaulted": false,
+            "status": "pass"
+          }
+        ],
+        "assessments": {
+          "geometry": {
+            "status": "pass",
+            "scope": "rigid_group_registration",
+            "max_position_residual_m": 0.0,
+            "max_axis_residual_rad": 0.0
+          },
+          "mode_eligibility": {
+            "status": "pass",
+            "reasons": [
+              "Declared subset eligibility only; it is not a proof that other physical assemblies are impossible",
+              "a: mechanical (explicit) / pass",
+              "b: mechanical (explicit) / pass"
+            ]
+          },
+          "mechanical": {
+            "status": "unknown",
+            "reasons": [
+              "Unbound third-party role fastener for A/C",
+              "Unbound third-party role fastener for B/D",
+              "Unbound third-party role fastener for C/B",
+              "Unbound third-party role fastener for D/A",
+              "Static registration does not evaluate engagement, retaining contact, loads or an internal mechanism state"
+            ]
+          },
+          "engineering": {
+            "status": "unknown",
+            "reasons": [
+              "engineering is not evaluated"
+            ]
+          },
+          "task": {
+            "status": "unknown",
+            "reasons": [
+              "task is not evaluated"
+            ]
+          },
+          "completion": {
+            "status": "unknown",
+            "reasons": [
+              "Unbound third-party role fastener for A/C",
+              "Unbound third-party role fastener for B/D",
+              "Unbound third-party role fastener for C/B",
+              "Unbound third-party role fastener for D/A",
+              "Assembly/removal path remains unverified",
+              "Elastic engagement remains unverified",
+              "Selected members are not all evidenced as engaged",
+              "This bounded engine cannot certify physical completion"
+            ]
+          },
+          "occupancy": {
+            "status": "pass",
+            "reasons": [
+              "No conflicting use is inferred from Interface identity alone"
+            ]
+          }
+        },
+        "unresolved_requirements": [
+          "Unbound third-party role fastener for A/C",
+          "Unbound third-party role fastener for B/D",
+          "Unbound third-party role fastener for C/B",
+          "Unbound third-party role fastener for D/A",
+          "Assembly/removal path remains unverified",
+          "Elastic engagement remains unverified",
+          "Selected members are not all evidenced as engaged",
+          "Mechanical engagement and retention remain outside this engine's evaluated scope"
+        ],
+        "engaged_member_pairs": [],
+        "synthetic": true,
+        "definition_digest": "sha256:4697b9e45a252dc0fc722a78a48ceed6258dd37dbdcde064d8e115e1aa97a4a7",
+        "id": "proposal:9759a6a2eb393dc3330c"
+      },
+      {
+        "selected_roles_a": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "selected_roles_b": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "member_mapping": [
+          {
+            "role_a": "A",
+            "role_b": "D",
+            "hole_a_ref": "hole:synthetic:left:A",
+            "hole_b_ref": "hole:synthetic:right:D"
+          },
+          {
+            "role_a": "B",
+            "role_b": "C",
+            "hole_a_ref": "hole:synthetic:left:B",
+            "hole_b_ref": "hole:synthetic:right:C"
+          },
+          {
+            "role_a": "C",
+            "role_b": "A",
+            "hole_a_ref": "hole:synthetic:left:C",
+            "hole_b_ref": "hole:synthetic:right:A"
+          },
+          {
+            "role_a": "D",
+            "role_b": "B",
+            "hole_a_ref": "hole:synthetic:left:D",
+            "hole_b_ref": "hole:synthetic:right:B"
+          }
+        ],
+        "interface_a_ref": "interface:synthetic:left:mount",
+        "interface_b_ref": "interface:synthetic:right:mount",
+        "mode_a_ref": "contains-anchor-pair",
+        "mode_b_ref": "contains-anchor-pair",
+        "pose": {
+          "status": "determined",
+          "transform": {
+            "rotation": [
+              [
+                0.0,
+                -1.0,
+                0.0
+              ],
+              [
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "translation_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "maps_frame_b_to_a": [
+              "frame:synthetic:right",
+              "frame:synthetic:left"
+            ],
+            "determinant": 1.0
+          }
+        },
+        "selection_results": [
+          {
+            "side": "a",
+            "dimension": "mechanical",
+            "dimension_defaulted": false,
+            "status": "pass"
+          },
+          {
+            "side": "b",
+            "dimension": "mechanical",
+            "dimension_defaulted": false,
+            "status": "pass"
+          }
+        ],
+        "assessments": {
+          "geometry": {
+            "status": "pass",
+            "scope": "rigid_group_registration",
+            "max_position_residual_m": 0.0,
+            "max_axis_residual_rad": 0.0
+          },
+          "mode_eligibility": {
+            "status": "pass",
+            "reasons": [
+              "Declared subset eligibility only; it is not a proof that other physical assemblies are impossible",
+              "a: mechanical (explicit) / pass",
+              "b: mechanical (explicit) / pass"
+            ]
+          },
+          "mechanical": {
+            "status": "unknown",
+            "reasons": [
+              "Unbound third-party role fastener for A/D",
+              "Unbound third-party role fastener for B/C",
+              "Unbound third-party role fastener for C/A",
+              "Unbound third-party role fastener for D/B",
+              "Static registration does not evaluate engagement, retaining contact, loads or an internal mechanism state"
+            ]
+          },
+          "engineering": {
+            "status": "unknown",
+            "reasons": [
+              "engineering is not evaluated"
+            ]
+          },
+          "task": {
+            "status": "unknown",
+            "reasons": [
+              "task is not evaluated"
+            ]
+          },
+          "completion": {
+            "status": "unknown",
+            "reasons": [
+              "Unbound third-party role fastener for A/D",
+              "Unbound third-party role fastener for B/C",
+              "Unbound third-party role fastener for C/A",
+              "Unbound third-party role fastener for D/B",
+              "Assembly/removal path remains unverified",
+              "Elastic engagement remains unverified",
+              "Selected members are not all evidenced as engaged",
+              "This bounded engine cannot certify physical completion"
+            ]
+          },
+          "occupancy": {
+            "status": "pass",
+            "reasons": [
+              "No conflicting use is inferred from Interface identity alone"
+            ]
+          }
+        },
+        "unresolved_requirements": [
+          "Unbound third-party role fastener for A/D",
+          "Unbound third-party role fastener for B/C",
+          "Unbound third-party role fastener for C/A",
+          "Unbound third-party role fastener for D/B",
+          "Assembly/removal path remains unverified",
+          "Elastic engagement remains unverified",
+          "Selected members are not all evidenced as engaged",
+          "Mechanical engagement and retention remain outside this engine's evaluated scope"
+        ],
+        "engaged_member_pairs": [],
+        "synthetic": true,
+        "definition_digest": "sha256:4697b9e45a252dc0fc722a78a48ceed6258dd37dbdcde064d8e115e1aa97a4a7",
+        "id": "proposal:94ae662143b4fdde322d"
+      }
+    ],
+    "limitations": [
+      "This is a bounded selection and common proper rigid hole-group registration query, not a physics, contact, path or elastic solver.",
+      "Functional warrants are supplied explicitly; citation content, engineering suitability and actual engagement are not established by registration.",
+      "Selected S is a proposed role binding, not the set of already engaged holes; no connector or interface capacity=1 is invented.",
+      "A missing proposal only concerns the declared finite modes and search bounds; it does not prove that no assembly method exists."
+    ]
+  },
+  "limitations": [
+    "Bounded rigid group reasoning is not a physics, insertion-path, elasticity or load validation engine.",
+    "A selected subset S is a proposed selection, not the set of already engaged holes."
+  ]
+}

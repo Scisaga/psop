@@ -1,0 +1,15 @@
+{
+  "old_digest": "a123162d9c7bdc946e6ca0ac627c644daf59ecc3b25074d458d3a82b363e21fd",
+  "new_digest": "68c7c493a38d95f2eb47cacdd0b1cc6ef96ad6e79752f316ea0bc96fff5924b1",
+  "unchanged_file_count": 2540,
+  "part_shards": 70,
+  "pair_shards": 2415,
+  "source_assets": 55,
+  "unchanged_source_part_count": 70,
+  "candidate_count": 9796,
+  "new_entries": [
+    "indexes/reference-alignment.json",
+    "schemas/reference-adjustments-1.schema.json",
+    "sources/SRC-REFERENCE-ADJUSTMENTS.json"
+  ]
+}

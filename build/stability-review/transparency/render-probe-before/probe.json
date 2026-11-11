@@ -1,0 +1,56 @@
+[
+  {
+    "mode": "coverage",
+    "materials": [
+      {
+        "partId": "part:microduck:cd6d48fccc95df41",
+        "opacity": 0.08,
+        "alphaToCoverage": true,
+        "alphaHash": false
+      }
+    ],
+    "samples": 4
+  },
+  {
+    "mode": "hash",
+    "materials": [
+      {
+        "partId": "part:microduck:cd6d48fccc95df41",
+        "opacity": 0.08,
+        "alphaToCoverage": false,
+        "alphaHash": true
+      }
+    ],
+    "samples": 4
+  },
+  {
+    "ordering": {
+      "sourceOrder": [
+        "part:microduck:47a950fbb3d0e416",
+        "part:microduck:cb253f38c818b9d8",
+        "part:microduck:cd6d48fccc95df41"
+      ],
+      "translucentPartIds": [
+        "part:microduck:cd6d48fccc95df41",
+        "part:microduck:47a950fbb3d0e416",
+        "part:microduck:cb253f38c818b9d8"
+      ],
+      "camera": {
+        "position": [
+          -0.006292647609018303,
+          0.05501934502906711,
+          0.04814488594655085
+        ],
+        "target": [
+          0.02055000075697899,
+          0.01750000007450581,
+          0.09649999994784593
+        ]
+      },
+      "changedPixels": 4402,
+      "maxDelta": 20,
+      "rmse": 0.31853332080565205,
+      "totalPixels": 683760
+    }
+  }
+]

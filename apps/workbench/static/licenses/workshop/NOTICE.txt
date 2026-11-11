@@ -1,0 +1,5 @@
+ABB IRB 120 display mesh
+Source: ros-industrial/abb, abb_irb120_support 1.3.1 (kinetic-devel)
+Package authors: Mark Culleton and Kevin Kelly, Trinity College Dublin.
+Package license: Apache-2.0. Original visual facets retained. Display materials and a fixed pose added by PSOP.
+The original joint definition and package attribution accompany this asset.

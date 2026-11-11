@@ -1,0 +1,627 @@
+{
+  "baseline": {
+    "head": "9f714f6e21f59b0c86f83dfc637cda2b319f2191",
+    "packageVersion": "2.0.0-interface-relations.1",
+    "digest": "1c8eeda600249ce33b99ec622417a744d5cdaf43a512f1495a4780ae0030cb00",
+    "snapshot": "dkp-1c8eeda600249ce33b99",
+    "base": "http://127.0.0.1:8780",
+    "run": "before"
+  },
+  "modified": {
+    "head": "working-tree",
+    "packageVersion": "2.0.0-interface-relations.1",
+    "digest": "1c8eeda600249ce33b99ec622417a744d5cdaf43a512f1495a4780ae0030cb00",
+    "snapshot": "dkp-1c8eeda600249ce33b99",
+    "base": "http://127.0.0.1:8780",
+    "apiBase": "http://127.0.0.1:8780",
+    "run": "after"
+  },
+  "sourcePositionAndTopologyChanges": false,
+  "causes": [
+    {
+      "kind": "state_switching_during_camera_motion",
+      "samples": 9,
+      "correlatedTransitions": 51,
+      "matched": 51,
+      "examplePart": "part:microduck:c75bfc0afb35e000",
+      "sampleHits": [
+        9,
+        0,
+        6,
+        0
+      ]
+    },
+    {
+      "kind": "object_alpha_order_dependence",
+      "beforeOrder": {
+        "sourceOrder": [
+          "part:microduck:47a950fbb3d0e416",
+          "part:microduck:cb253f38c818b9d8",
+          "part:microduck:cd6d48fccc95df41"
+        ],
+        "translucentPartIds": [
+          "part:microduck:cd6d48fccc95df41",
+          "part:microduck:47a950fbb3d0e416",
+          "part:microduck:cb253f38c818b9d8"
+        ],
+        "camera": {
+          "position": [
+            -0.006292647609018303,
+            0.05501934502906711,
+            0.04814488594655085
+          ],
+          "target": [
+            0.02055000075697899,
+            0.01750000007450581,
+            0.09649999994784593
+          ]
+        },
+        "changedPixels": 4402,
+        "maxDelta": 20,
+        "rmse": 0.31853332080565205,
+        "totalPixels": 683760
+      },
+      "afterOrder": {
+        "sourceOrder": [],
+        "translucentPartIds": [
+          "part:microduck:cd6d48fccc95df41",
+          "part:microduck:47a950fbb3d0e416",
+          "part:microduck:cb253f38c818b9d8"
+        ],
+        "camera": {
+          "position": [
+            -0.006292647609018303,
+            0.05501934502906711,
+            0.04814488594655085
+          ],
+          "target": [
+            0.02055000075697899,
+            0.01750000007450581,
+            0.09649999994784593
+          ]
+        },
+        "changedPixels": 0,
+        "maxDelta": 0,
+        "rmse": 0,
+        "totalPixels": 683760
+      }
+    }
+  ],
+  "policy": {
+    "cameraQuietMs": 180,
+    "enterMinimumHits": 2,
+    "retainMinimumHits": 1,
+    "enterMs": 160,
+    "exitMs": 420,
+    "checkIntervalMs": 120,
+    "freezeDuringCameraGestureAndDamping": true,
+    "skipResolvedStationaryRaycasts": true,
+    "rendering": "MSAA sample coverage with per-sample depth writes",
+    "msaaSamples": 4
+  },
+  "initialCameraDifferenceM": 0,
+  "initialBefore": {
+    "camera": {
+      "position": [
+        -0.04252944550671914,
+        0.03957780626680017,
+        0.09649999994784593
+      ],
+      "target": [
+        0.02055000075697899,
+        0.01750000007450581,
+        0.09649999994784593
+      ],
+      "quaternion": [
+        -0.4091605966096606,
+        0.576704088924317,
+        0.576704088924317,
+        -0.4091605966096607
+      ]
+    },
+    "flight": false
+  },
+  "initialAfter": {
+    "camera": {
+      "position": [
+        -0.04252944550671914,
+        0.03957780626680017,
+        0.09649999994784593
+      ],
+      "target": [
+        0.02055000075697899,
+        0.01750000007450581,
+        0.09649999994784593
+      ],
+      "quaternion": [
+        -0.4091605966096606,
+        0.576704088924317,
+        0.576704088924317,
+        -0.4091605966096607
+      ]
+    },
+    "flight": false
+  },
+  "beforePhases": [
+    {
+      "phase": "initial",
+      "durationMs": 3685,
+      "frames": 142,
+      "fps": 38.26322930800543,
+      "transitions": 1
+    },
+    {
+      "phase": "initial-selected",
+      "durationMs": 1466.7999999821186,
+      "frames": 63,
+      "fps": 42.268884647365574,
+      "transitions": 0
+    },
+    {
+      "phase": "focus",
+      "durationMs": 2901.699999988079,
+      "frames": 121,
+      "fps": 41.355067719093284,
+      "transitions": 0
+    },
+    {
+      "phase": "rotate-10s",
+      "durationMs": 16583.30000001192,
+      "frames": 535,
+      "fps": 32.20106975087082,
+      "transitions": 41
+    },
+    {
+      "phase": "rotation-settle",
+      "durationMs": 2916.5999999940395,
+      "frames": 125,
+      "fps": 42.5152574916867,
+      "transitions": 0
+    },
+    {
+      "phase": "zoom-10s",
+      "durationMs": 18349.30000001192,
+      "frames": 801,
+      "fps": 43.59839339917492,
+      "transitions": 0
+    },
+    {
+      "phase": "zoom-settle",
+      "durationMs": 2850.100000023842,
+      "frames": 132,
+      "fps": 45.96329953296521,
+      "transitions": 0
+    },
+    {
+      "phase": "alternate",
+      "durationMs": 10821.5,
+      "frames": 526,
+      "fps": 48.514531257219424,
+      "transitions": 10
+    },
+    {
+      "phase": "other-opening",
+      "durationMs": 3450,
+      "frames": 149,
+      "fps": 42.89855072463768,
+      "transitions": 1
+    },
+    {
+      "phase": "restore",
+      "durationMs": 3583.300000011921,
+      "frames": 191,
+      "fps": 53.023749057954376,
+      "transitions": 0
+    }
+  ],
+  "afterPhases": [
+    {
+      "phase": "initial",
+      "durationMs": 3175.899999976158,
+      "frames": 160,
+      "fps": 50.064548632259715,
+      "transitions": 1
+    },
+    {
+      "phase": "initial-selected",
+      "durationMs": 1416.5999999940395,
+      "frames": 79,
+      "fps": 55.06141465503896,
+      "transitions": 0
+    },
+    {
+      "phase": "focus",
+      "durationMs": 2389,
+      "frames": 141,
+      "fps": 58.60192549183759,
+      "transitions": 0
+    },
+    {
+      "phase": "rotate-10s",
+      "durationMs": 13775.200000017881,
+      "frames": 822,
+      "fps": 59.59986061900621,
+      "transitions": 0
+    },
+    {
+      "phase": "rotation-settle",
+      "durationMs": 2517.2000000178814,
+      "frames": 137,
+      "fps": 54.02828539608847,
+      "transitions": 1
+    },
+    {
+      "phase": "zoom-10s",
+      "durationMs": 15882.90000000596,
+      "frames": 954,
+      "fps": 60.001636980629634,
+      "transitions": 0
+    },
+    {
+      "phase": "zoom-settle",
+      "durationMs": 2750.199999988079,
+      "frames": 150,
+      "fps": 54.177877972745925,
+      "transitions": 0
+    },
+    {
+      "phase": "alternate",
+      "durationMs": 9759.90000000596,
+      "frames": 564,
+      "fps": 57.68501726448592,
+      "transitions": 2
+    },
+    {
+      "phase": "other-opening",
+      "durationMs": 3199.7999999821186,
+      "frames": 163,
+      "fps": 50.62816426054919,
+      "transitions": 1
+    },
+    {
+      "phase": "restore",
+      "durationMs": 3218,
+      "frames": 176,
+      "fps": 54.381603480422626,
+      "transitions": 0
+    },
+    {
+      "phase": "clear-selection",
+      "durationMs": 1901.5999999940395,
+      "frames": 98,
+      "fps": 51.009676062423246,
+      "transitions": 0
+    }
+  ],
+  "raycastCounts": {
+    "before": 517,
+    "after": 24
+  },
+  "cameraGestureTransparencyChanges": 0,
+  "finalAllSourceMaterialsRestored": true,
+  "correlation": [
+    {
+      "time": 13155.100000023842,
+      "phase": "rotate-10s",
+      "rayTime": 13148.90000000596,
+      "matches": true
+    },
+    {
+      "time": 13360.40000000596,
+      "phase": "rotate-10s",
+      "rayTime": 13356.40000000596,
+      "matches": true
+    },
+    {
+      "time": 13638,
+      "phase": "rotate-10s",
+      "rayTime": 13630.700000017881,
+      "matches": true
+    },
+    {
+      "time": 13790.800000011921,
+      "phase": "rotate-10s",
+      "rayTime": 13787.40000000596,
+      "matches": true
+    },
+    {
+      "time": 13912.800000011921,
+      "phase": "rotate-10s",
+      "rayTime": 13909.40000000596,
+      "matches": true
+    },
+    {
+      "time": 14038,
+      "phase": "rotate-10s",
+      "rayTime": 14035.100000023842,
+      "matches": true
+    },
+    {
+      "time": 14174.200000017881,
+      "phase": "rotate-10s",
+      "rayTime": 14170.90000000596,
+      "matches": true
+    },
+    {
+      "time": 14318.40000000596,
+      "phase": "rotate-10s",
+      "rayTime": 14312.300000011921,
+      "matches": true
+    },
+    {
+      "time": 14892.40000000596,
+      "phase": "rotate-10s",
+      "rayTime": 14887.800000011921,
+      "matches": true
+    },
+    {
+      "time": 15187.300000011921,
+      "phase": "rotate-10s",
+      "rayTime": 15180,
+      "matches": true
+    },
+    {
+      "time": 15535.300000011921,
+      "phase": "rotate-10s",
+      "rayTime": 15530,
+      "matches": true
+    },
+    {
+      "time": 15662.100000023842,
+      "phase": "rotate-10s",
+      "rayTime": 15658,
+      "matches": true
+    },
+    {
+      "time": 15761.100000023842,
+      "phase": "rotate-10s",
+      "rayTime": 15758.300000011921,
+      "matches": true
+    },
+    {
+      "time": 16025.200000017881,
+      "phase": "rotate-10s",
+      "rayTime": 16022.5,
+      "matches": true
+    },
+    {
+      "time": 17224.90000000596,
+      "phase": "rotate-10s",
+      "rayTime": 17221.90000000596,
+      "matches": true
+    },
+    {
+      "time": 17361.70000001788,
+      "phase": "rotate-10s",
+      "rayTime": 17359.30000001192,
+      "matches": true
+    },
+    {
+      "time": 17772.100000023842,
+      "phase": "rotate-10s",
+      "rayTime": 17768.600000023842,
+      "matches": true
+    },
+    {
+      "time": 18040,
+      "phase": "rotate-10s",
+      "rayTime": 18037.30000001192,
+      "matches": true
+    },
+    {
+      "time": 18437.30000001192,
+      "phase": "rotate-10s",
+      "rayTime": 18433.90000000596,
+      "matches": true
+    },
+    {
+      "time": 19114,
+      "phase": "rotate-10s",
+      "rayTime": 19111.20000001788,
+      "matches": true
+    },
+    {
+      "time": 19551.600000023842,
+      "phase": "rotate-10s",
+      "rayTime": 19544.70000001788,
+      "matches": true
+    },
+    {
+      "time": 19827.90000000596,
+      "phase": "rotate-10s",
+      "rayTime": 19824.30000001192,
+      "matches": true
+    },
+    {
+      "time": 19950.40000000596,
+      "phase": "rotate-10s",
+      "rayTime": 19945.100000023842,
+      "matches": true
+    },
+    {
+      "time": 21639.100000023842,
+      "phase": "rotate-10s",
+      "rayTime": 21631,
+      "matches": true
+    },
+    {
+      "time": 22127.20000001788,
+      "phase": "rotate-10s",
+      "rayTime": 22123.80000001192,
+      "matches": true
+    },
+    {
+      "time": 22276.90000000596,
+      "phase": "rotate-10s",
+      "rayTime": 22273,
+      "matches": true
+    },
+    {
+      "time": 22669.5,
+      "phase": "rotate-10s",
+      "rayTime": 22663.600000023842,
+      "matches": true
+    },
+    {
+      "time": 22920.80000001192,
+      "phase": "rotate-10s",
+      "rayTime": 22916,
+      "matches": true
+    },
+    {
+      "time": 23687.600000023842,
+      "phase": "rotate-10s",
+      "rayTime": 23683.5,
+      "matches": true
+    },
+    {
+      "time": 24090.100000023842,
+      "phase": "rotate-10s",
+      "rayTime": 24086.30000001192,
+      "matches": true
+    },
+    {
+      "time": 24345.20000001788,
+      "phase": "rotate-10s",
+      "rayTime": 24342.600000023842,
+      "matches": true
+    },
+    {
+      "time": 24482.5,
+      "phase": "rotate-10s",
+      "rayTime": 24478.90000000596,
+      "matches": true
+    },
+    {
+      "time": 24779,
+      "phase": "rotate-10s",
+      "rayTime": 24775.600000023842,
+      "matches": true
+    },
+    {
+      "time": 25138.80000001192,
+      "phase": "rotate-10s",
+      "rayTime": 25136.20000001788,
+      "matches": true
+    },
+    {
+      "time": 25670.600000023842,
+      "phase": "rotate-10s",
+      "rayTime": 25664.5,
+      "matches": true
+    },
+    {
+      "time": 26061.30000001192,
+      "phase": "rotate-10s",
+      "rayTime": 26058.90000000596,
+      "matches": true
+    },
+    {
+      "time": 26192.80000001192,
+      "phase": "rotate-10s",
+      "rayTime": 26190,
+      "matches": true
+    },
+    {
+      "time": 27671.80000001192,
+      "phase": "rotate-10s",
+      "rayTime": 27663.70000001788,
+      "matches": true
+    },
+    {
+      "time": 28058.30000001192,
+      "phase": "rotate-10s",
+      "rayTime": 28055.40000000596,
+      "matches": true
+    },
+    {
+      "time": 28325.20000001788,
+      "phase": "rotate-10s",
+      "rayTime": 28322.100000023842,
+      "matches": true
+    },
+    {
+      "time": 28445.5,
+      "phase": "rotate-10s",
+      "rayTime": 28442.80000001192,
+      "matches": true
+    },
+    {
+      "time": 53843,
+      "phase": "alternate",
+      "rayTime": 53840.10000002384,
+      "matches": true
+    },
+    {
+      "time": 53972.20000001788,
+      "phase": "alternate",
+      "rayTime": 53969.70000001788,
+      "matches": true
+    },
+    {
+      "time": 55322,
+      "phase": "alternate",
+      "rayTime": 55319.30000001192,
+      "matches": true
+    },
+    {
+      "time": 55469.70000001788,
+      "phase": "alternate",
+      "rayTime": 55467.40000000596,
+      "matches": true
+    },
+    {
+      "time": 57021.90000000596,
+      "phase": "alternate",
+      "rayTime": 57019.30000001192,
+      "matches": true
+    },
+    {
+      "time": 57155.40000000596,
+      "phase": "alternate",
+      "rayTime": 57152.70000001788,
+      "matches": true
+    },
+    {
+      "time": 58505.60000002384,
+      "phase": "alternate",
+      "rayTime": 58503.30000001192,
+      "matches": true
+    },
+    {
+      "time": 58652.30000001192,
+      "phase": "alternate",
+      "rayTime": 58649,
+      "matches": true
+    },
+    {
+      "time": 60205.70000001788,
+      "phase": "alternate",
+      "rayTime": 60203.30000001192,
+      "matches": true
+    },
+    {
+      "time": 60344.80000001192,
+      "phase": "alternate",
+      "rayTime": 60341.90000000596,
+      "matches": true
+    }
+  ],
+  "visuallyInspected": [
+    "before/01-initial-selected.png",
+    "before/03-during-rotation.png",
+    "before/06-after-alternate.png",
+    "after/01-initial-selected.png",
+    "after/04-after-rotation.png",
+    "after/05-after-zoom.png",
+    "after/06-after-alternate.png",
+    "after/07-other-opening.png",
+    "after/09-cleared-selection.png",
+    "render-probe-before/03-multi-default-order.png",
+    "render-probe-after/03-multi-default-order.png"
+  ],
+  "limits": [
+    "Source mesh lip and tessellation irregularities remain visible; transparency does not change source geometry.",
+    "Render stability was visually checked on Chrome with 4 MSAA samples. The alpha-hash fallback for a context without MSAA was not accepted as an equivalent visual result."
+  ]
+}

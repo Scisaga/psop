@@ -1,0 +1,108 @@
+{
+  "type": "object",
+  "properties": {
+    "reference_uses": {"type":"object","required":["source_ref","sha256"],"properties":{"source_ref":{"type":"string","minLength":1},"sha256":{"type":"string","pattern":"^[a-f0-9]{64}$"}},"additionalProperties":false},
+    "reference_adjustments": {"type":"object","required":["sha256","configuration_ref"],"properties":{"sha256":{"type":"string","pattern":"^[a-f0-9]{64}$"},"configuration_ref":{"type":"string","minLength":1}},"additionalProperties":false},
+    "schema": {
+      "const": "psop.assembly.requirements/2"
+    },
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "date": {
+      "type": "string",
+      "minLength": 1
+    },
+    "method": {
+      "type": "string",
+      "minLength": 1
+    },
+    "provenance": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "meshes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "source_ref": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source_sha256": {
+            "type": "string",
+            "minLength": 1
+          },
+          "mesh_key": {
+            "type": "string",
+            "minLength": 1
+          },
+          "review_basis": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "review_scope": {
+            "type": "string",
+            "minLength": 1
+          },
+          "finding_refs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "regions": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          }
+        },
+        "required": [
+          "source_ref",
+          "source_sha256",
+          "mesh_key",
+          "review_basis",
+          "review_scope",
+          "finding_refs",
+          "regions"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "first_regression_findings": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "limits": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  },
+  "required": [
+    "schema",
+    "id",
+    "date",
+    "method",
+    "provenance",
+    "meshes",
+    "first_regression_findings",
+    "limits"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "psop.assembly.requirements/2"
+}

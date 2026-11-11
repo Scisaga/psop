@@ -1,0 +1,172 @@
+{
+  "schema": "psop.simulate.query/1.0",
+  "ok": true,
+  "status": "proposals",
+  "basis": {
+    "kind": "synthetic",
+    "refs": [
+      "fixture:four-hole-declarative-mount-v1"
+    ]
+  },
+  "execution_performed": false,
+  "definition": {
+    "path": "C:\\Users\\scisa\\Desktop\\psop\\build\\skill-forward-check\\modes\\single-hole.definition.json",
+    "sha256": "f27c22c72fb5224918aba2027c6696f24f62ce1277d02a0d89db687b38f5a03e"
+  },
+  "result": {
+    "schema": "psop.assembly.query/1.0-draft.1",
+    "definition_id": "synthetic:four-hole-declarative-mount-v1",
+    "definition_digest": "sha256:014894d484a78fe26d57d7a91b612a68aad0e2a5a6750380218dffc9734000fd",
+    "basis": {
+      "kind": "synthetic",
+      "refs": [
+        "fixture:four-hole-declarative-mount-v1"
+      ]
+    },
+    "status": "proposals",
+    "scope": {
+      "kind": "bounded_rigid_hole_group",
+      "synthetic": true,
+      "axis_relation": "parallel"
+    },
+    "search": {
+      "complete": true,
+      "selection_complete": true,
+      "stop_reason": "exhausted",
+      "mappings_examined": 1
+    },
+    "selections": {
+      "a": {
+        "admissible_sets": [
+          [
+            "A"
+          ]
+        ],
+        "unknown_sets": [],
+        "forbidden_count": 14
+      },
+      "b": {
+        "admissible_sets": [
+          [
+            "A"
+          ]
+        ],
+        "unknown_sets": [],
+        "forbidden_count": 14
+      }
+    },
+    "proposals": [
+      {
+        "selected_roles_a": [
+          "A"
+        ],
+        "selected_roles_b": [
+          "A"
+        ],
+        "member_mapping": [
+          {
+            "role_a": "A",
+            "role_b": "A",
+            "hole_a_ref": "hole:synthetic:left:A",
+            "hole_b_ref": "hole:synthetic:right:A"
+          }
+        ],
+        "interface_a_ref": "interface:synthetic:left:mount",
+        "interface_b_ref": "interface:synthetic:right:mount",
+        "mode_a_ref": "single-hole",
+        "mode_b_ref": "single-hole",
+        "pose": {
+          "status": "underdetermined",
+          "transform": null,
+          "reason": "The selected point/axis constraints leave a continuous twist or pose family"
+        },
+        "selection_results": [
+          {
+            "side": "a",
+            "dimension": "mechanical",
+            "dimension_defaulted": false,
+            "status": "pass"
+          },
+          {
+            "side": "b",
+            "dimension": "mechanical",
+            "dimension_defaulted": false,
+            "status": "pass"
+          }
+        ],
+        "assessments": {
+          "geometry": {
+            "status": "unknown",
+            "scope": "rigid_group_registration",
+            "max_position_residual_m": null,
+            "max_axis_residual_rad": null
+          },
+          "mode_eligibility": {
+            "status": "pass",
+            "reasons": [
+              "Declared subset eligibility only; it is not a proof that other physical assemblies are impossible",
+              "a: mechanical (explicit) / pass",
+              "b: mechanical (explicit) / pass"
+            ]
+          },
+          "mechanical": {
+            "status": "unknown",
+            "reasons": [
+              "Unbound third-party role fastener for A/A",
+              "Static registration does not evaluate engagement, retaining contact, loads or an internal mechanism state"
+            ]
+          },
+          "engineering": {
+            "status": "unknown",
+            "reasons": [
+              "engineering is not evaluated"
+            ]
+          },
+          "task": {
+            "status": "unknown",
+            "reasons": [
+              "task is not evaluated"
+            ]
+          },
+          "completion": {
+            "status": "unknown",
+            "reasons": [
+              "Unbound third-party role fastener for A/A",
+              "Assembly/removal path remains unverified",
+              "Elastic engagement remains unverified",
+              "Selected members are not all evidenced as engaged",
+              "This bounded engine cannot certify physical completion"
+            ]
+          },
+          "occupancy": {
+            "status": "pass",
+            "reasons": [
+              "No conflicting use is inferred from Interface identity alone"
+            ]
+          }
+        },
+        "unresolved_requirements": [
+          "Unbound third-party role fastener for A/A",
+          "Assembly/removal path remains unverified",
+          "Elastic engagement remains unverified",
+          "Selected members are not all evidenced as engaged",
+          "Mechanical engagement and retention remain outside this engine's evaluated scope"
+        ],
+        "engaged_member_pairs": [],
+        "synthetic": true,
+        "definition_digest": "sha256:014894d484a78fe26d57d7a91b612a68aad0e2a5a6750380218dffc9734000fd",
+        "id": "proposal:13ff111ea74710a47847"
+      }
+    ],
+    "limitations": [
+      "This is a bounded selection and common proper rigid hole-group registration query, not a physics, contact, path or elastic solver.",
+      "Functional warrants are supplied explicitly; citation content, engineering suitability and actual engagement are not established by registration.",
+      "Selected S is a proposed role binding, not the set of already engaged holes; no connector or interface capacity=1 is invented.",
+      "A missing proposal only concerns the declared finite modes and search bounds; it does not prove that no assembly method exists."
+    ]
+  },
+  "limitations": [
+    "Bounded rigid group reasoning is not a physics, insertion-path, elasticity or load validation engine.",
+    "A selected subset S is a proposed selection, not the set of already engaged holes."
+  ]
+}

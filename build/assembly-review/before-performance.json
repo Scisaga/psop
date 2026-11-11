@@ -1,0 +1,145 @@
+{
+  "phase": "before",
+  "snapshot": "dkp-8857e0482824621ff8da",
+  "readyMs": 2838,
+  "heapMiB": 55.537540435791016,
+  "taskSeconds": 0.8532820000000003,
+  "scriptSeconds": 0.3408380000000001,
+  "frames": 122,
+  "medianFrameMs": 16.699999999999818,
+  "resources": [
+    {
+      "bytes": 44711893,
+      "duration": 1159.0999999046326
+    }
+  ],
+  "longTasks": [
+    {
+      "start": 85.79999995231628,
+      "duration": 50
+    },
+    {
+      "start": 1342.2999999523163,
+      "duration": 169
+    },
+    {
+      "start": 1520,
+      "duration": 753
+    },
+    {
+      "start": 2631,
+      "duration": 188
+    }
+  ],
+  "topSamples": [
+    {
+      "name": "(idle)",
+      "url": "",
+      "line": -1,
+      "hits": 910
+    },
+    {
+      "name": "(program)",
+      "url": "",
+      "line": -1,
+      "hits": 209
+    },
+    {
+      "name": "P",
+      "url": "http://127.0.0.1:8780/assets/index-CGRDHGhI.js",
+      "line": 4237,
+      "hits": 38
+    },
+    {
+      "name": "re",
+      "url": "http://127.0.0.1:8780/assets/index-CGRDHGhI.js",
+      "line": 4237,
+      "hits": 20
+    },
+    {
+      "name": "st",
+      "url": "http://127.0.0.1:8780/assets/index-CGRDHGhI.js",
+      "line": 4232,
+      "hits": 16
+    },
+    {
+      "name": "setAttribute",
+      "url": "",
+      "line": -1,
+      "hits": 10
+    },
+    {
+      "name": "r",
+      "url": "http://127.0.0.1:8780/assets/index-CGRDHGhI.js",
+      "line": 4232,
+      "hits": 9
+    },
+    {
+      "name": "ct",
+      "url": "http://127.0.0.1:8780/assets/index-CGRDHGhI.js",
+      "line": 4232,
+      "hits": 8
+    },
+    {
+      "name": "renderBufferDirect",
+      "url": "http://127.0.0.1:8780/assets/index-CGRDHGhI.js",
+      "line": 4232,
+      "hits": 6
+    },
+    {
+      "name": "a",
+      "url": "http://127.0.0.1:8780/assets/index-CGRDHGhI.js",
+      "line": 4232,
+      "hits": 6
+    },
+    {
+      "name": "s",
+      "url": "http://127.0.0.1:8780/assets/index-CGRDHGhI.js",
+      "line": 3830,
+      "hits": 6
+    },
+    {
+      "name": "et",
+      "url": "http://127.0.0.1:8780/assets/index-CGRDHGhI.js",
+      "line": 4232,
+      "hits": 5
+    },
+    {
+      "name": "Ze",
+      "url": "http://127.0.0.1:8780/assets/index-CGRDHGhI.js",
+      "line": 4232,
+      "hits": 4
+    },
+    {
+      "name": "o",
+      "url": "http://127.0.0.1:8780/assets/index-CGRDHGhI.js",
+      "line": 12,
+      "hits": 4
+    },
+    {
+      "name": "jd",
+      "url": "http://127.0.0.1:8780/assets/index-CGRDHGhI.js",
+      "line": 4130,
+      "hits": 4
+    },
+    {
+      "name": "Vd",
+      "url": "http://127.0.0.1:8780/assets/index-CGRDHGhI.js",
+      "line": 4130,
+      "hits": 4
+    },
+    {
+      "name": "Nd",
+      "url": "http://127.0.0.1:8780/assets/index-CGRDHGhI.js",
+      "line": 4130,
+      "hits": 4
+    },
+    {
+      "name": "upload",
+      "url": "http://127.0.0.1:8780/assets/index-CGRDHGhI.js",
+      "line": 4130,
+      "hits": 3
+    }
+  ],
+  "panel": "左右方向键调整宽度，按住 Shift 加快；Home 最窄，End 最宽，回车恢复默认。\n对象详情\n执行器\nXL330 舵机\npart:microduck:0820b4025f26a004\n模型对象\n来源已定位\n概览\n几何\n接口\n关联\n证据\n3\n本件连接部位\n源局部坐标\n\n选择部位或成员；点击定位进入局部查看。\n\nX 向四孔组\n4 × Ø2 · PCD 34 mm\n腿部连杆 · leg_2 · 右腿与足部 · 已有定义\nX 向四孔组\n4 × Ø1.6 · PCD 12 mm\n右踝部件 · ankle_right · 右腿与足部 · 假设\n其他几何线索 · 用途未定\n7\n关联与调查\n含间接关系、排除结果与检索记录\n打开全机连接审查\n分析覆盖与待完善能力\n在场景中聚焦"
+}

@@ -1,0 +1,75 @@
+[
+  {
+    "name": "doctor",
+    "argv": [
+      "C:\\Python314\\python.exe",
+      "-B",
+      "C:\\Users\\scisa\\Desktop\\psop\\skills\\psop-simulate\\scripts\\psop_simulate.py",
+      "doctor"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.102,
+    "stdout_bytes": 804,
+    "stdout_sha256": "cf4de46b6b75964790470ac10b06fbf374ad60463e056a6ec2fc32e328a8aed0",
+    "stderr": ""
+  },
+  {
+    "name": "query-help",
+    "argv": [
+      "C:\\Python314\\python.exe",
+      "-B",
+      "C:\\Users\\scisa\\Desktop\\psop\\skills\\psop-simulate\\scripts\\psop_simulate.py",
+      "query",
+      "--help"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.126,
+    "stdout_bytes": 485,
+    "stdout_sha256": "3969df2d614f2ee0ee543b71cb7db201e9232ce5d6e51cfc71415eeec2f35342",
+    "stderr": ""
+  },
+  {
+    "name": "right-thigh-servo",
+    "argv": [
+      "C:\\Python314\\python.exe",
+      "-B",
+      "C:\\Users\\scisa\\Desktop\\psop\\skills\\psop-simulate\\scripts\\psop_simulate.py",
+      "query",
+      "--dkp",
+      "C:\\Users\\scisa\\Desktop\\psop\\build\\v2\\microduck\\packages\\microduck-20261105225147-55d95fd0.dkp",
+      "--part-a",
+      "part:microduck:e40b9945707505e1",
+      "--part-b",
+      "part:microduck:08c5ade0f3fd37db",
+      "--output",
+      "C:\\Users\\scisa\\Desktop\\psop\\build\\skill-forward-check\\connection-1.6\\right-thigh-servo-query.json"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 67.972,
+    "stdout_bytes": 1202028,
+    "stdout_sha256": "be1b384e9dbf14b9f66893302d4c999e5b1f20dd68803bd3dd0ffc162d2cf631",
+    "stderr": ""
+  },
+  {
+    "name": "standard-leg-servo",
+    "argv": [
+      "C:\\Python314\\python.exe",
+      "-B",
+      "C:\\Users\\scisa\\Desktop\\psop\\skills\\psop-simulate\\scripts\\psop_simulate.py",
+      "query",
+      "--dkp",
+      "C:\\Users\\scisa\\Desktop\\psop\\build\\v2\\microduck\\packages\\microduck-20261105225147-55d95fd0.dkp",
+      "--part-a",
+      "part:microduck:7f4fefc3c6de90f1",
+      "--part-b",
+      "part:microduck:0820b4025f26a004",
+      "--output",
+      "C:\\Users\\scisa\\Desktop\\psop\\build\\skill-forward-check\\connection-1.6\\standard-leg-servo-query.json"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 69.876,
+    "stdout_bytes": 1510580,
+    "stdout_sha256": "224ddbc621e8c172100c05fc8c06a3b3ca3df457eb5ad8cc80c84154f1314d74",
+    "stderr": ""
+  }
+]

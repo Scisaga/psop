@@ -1,0 +1,184 @@
+[
+  {
+    "name": "042a-inner_ring",
+    "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-6a841fcb9cb028ba2c63&part=part%3Amicroduck%3Ad924e1596ffb042a&interface=interface%3Aassembly%3Ad924e1596ffb042a%3Ainner_ring&explode=0.00&detail=interfaces&inspection=1&view=iso&labels=0&grid=0",
+    "view": {
+      "kind": "psop.workbench.view/1.0",
+      "workspaceId": "microduck",
+      "packageId": "psop.microduck",
+      "packageVersion": "2.0.0-assembly.3",
+      "packageDigest": "6a841fcb9cb028ba2c63df67cfd35c43f30e95374fb6f6bc314b7332160789e8",
+      "snapshotId": "dkp-6a841fcb9cb028ba2c63",
+      "sourceCommit": "cb70b792312d559a4da09064d92009079671815f",
+      "selectedId": "part:microduck:d924e1596ffb042a",
+      "geometrySelection": {
+        "kind": "interface",
+        "id": "interface:assembly:d924e1596ffb042a:inner_ring",
+        "ownerRef": "part:microduck:d924e1596ffb042a"
+      },
+      "explosion": 0,
+      "view": "iso",
+      "camera": {
+        "position": [
+          0.004000000000000004,
+          -0.08224085760382556,
+          0.1025
+        ],
+        "target": [
+          0.004000000000000007,
+          -0.040499999926832966,
+          0.1025
+        ]
+      },
+      "hiddenIds": [],
+      "isolateId": null,
+      "showLabels": false,
+      "showGrid": false,
+      "clipping": false,
+      "xray": false,
+      "showFasteners": true,
+      "inspection": {
+        "active": true,
+        "previousCamera": {
+          "position": [
+            0.3000000000000001,
+            -0.31999999999999895,
+            0.2299999999999992
+          ],
+          "target": [
+            0,
+            0,
+            0.105
+          ]
+        },
+        "camera": {
+          "position": [
+            0.004000000000000004,
+            -0.08224085760382556,
+            0.1025
+          ],
+          "target": [
+            0.004000000000000007,
+            -0.040499999926832966,
+            0.1025
+          ]
+        },
+        "visiblePartIds": [
+          "part:microduck:d924e1596ffb042a"
+        ],
+        "mode": "local",
+        "translucentPartIds": [],
+        "referenceFasteners": []
+      }
+    },
+    "scene": {
+      "sceneReady": "true",
+      "renderCount": "8",
+      "cameraFlight": "settled",
+      "inspectionActive": "true",
+      "sourcePlacement": "restored",
+      "interfaceId": "interface:assembly:d924e1596ffb042a:inner_ring",
+      "memberRefs": "",
+      "selectedFeatures": "feature:microduck:d924e1596ffb042a:dcf8d998412a,feature:assembly:d924e1596ffb042a:inner_ring_end_low,feature:microduck:d924e1596ffb042a:plane-d24650d4762c",
+      "highlightMode": "source_facet_colors",
+      "witnessMarkers": "1",
+      "highlightedSourceFaces": "288",
+      "fastenerPaths": "",
+      "fastenerCount": "0",
+      "fastenerRepresentation": "schematic",
+      "visibleWitnessMarkers": "1"
+    },
+    "memberSelections": []
+  },
+  {
+    "name": "042a-outer_ring",
+    "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-6a841fcb9cb028ba2c63&part=part%3Amicroduck%3Ad924e1596ffb042a&interface=interface%3Aassembly%3Ad924e1596ffb042a%3Aouter_ring&explode=0.00&detail=interfaces&inspection=1&view=iso&labels=0&grid=0",
+    "view": {
+      "kind": "psop.workbench.view/1.0",
+      "workspaceId": "microduck",
+      "packageId": "psop.microduck",
+      "packageVersion": "2.0.0-assembly.3",
+      "packageDigest": "6a841fcb9cb028ba2c63df67cfd35c43f30e95374fb6f6bc314b7332160789e8",
+      "snapshotId": "dkp-6a841fcb9cb028ba2c63",
+      "sourceCommit": "cb70b792312d559a4da09064d92009079671815f",
+      "selectedId": "part:microduck:d924e1596ffb042a",
+      "geometrySelection": {
+        "kind": "interface",
+        "id": "interface:assembly:d924e1596ffb042a:outer_ring",
+        "ownerRef": "part:microduck:d924e1596ffb042a"
+      },
+      "explosion": 0,
+      "view": "iso",
+      "camera": {
+        "position": [
+          -0.03293684955286913,
+          0.00409445760902119,
+          0.12748669234458793
+        ],
+        "target": [
+          0.004000000000000008,
+          -0.04049999999743886,
+          0.10250000000000001
+        ]
+      },
+      "hiddenIds": [],
+      "isolateId": null,
+      "showLabels": false,
+      "showGrid": false,
+      "clipping": false,
+      "xray": false,
+      "showFasteners": true,
+      "inspection": {
+        "active": true,
+        "previousCamera": {
+          "position": [
+            0.3000000000000001,
+            -0.31999999999999895,
+            0.2299999999999992
+          ],
+          "target": [
+            0,
+            0,
+            0.105
+          ]
+        },
+        "camera": {
+          "position": [
+            -0.03293684955286913,
+            0.00409445760902119,
+            0.12748669234458793
+          ],
+          "target": [
+            0.004000000000000008,
+            -0.04049999999743886,
+            0.10250000000000001
+          ]
+        },
+        "visiblePartIds": [
+          "part:microduck:d924e1596ffb042a"
+        ],
+        "mode": "local",
+        "translucentPartIds": [],
+        "referenceFasteners": []
+      }
+    },
+    "scene": {
+      "sceneReady": "true",
+      "renderCount": "16",
+      "cameraFlight": "settled",
+      "inspectionActive": "true",
+      "sourcePlacement": "restored",
+      "interfaceId": "interface:assembly:d924e1596ffb042a:outer_ring",
+      "memberRefs": "",
+      "selectedFeatures": "feature:microduck:d924e1596ffb042a:4b70f665bd37,feature:microduck:d924e1596ffb042a:plane-fb252222b539,feature:assembly:d924e1596ffb042a:outer_ring_end_high",
+      "highlightMode": "source_facet_colors",
+      "witnessMarkers": "1",
+      "highlightedSourceFaces": "288",
+      "fastenerPaths": "",
+      "fastenerCount": "0",
+      "fastenerRepresentation": "schematic",
+      "visibleWitnessMarkers": "1"
+    },
+    "memberSelections": []
+  }
+]

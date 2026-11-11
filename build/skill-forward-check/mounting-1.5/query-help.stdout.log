@@ -1,0 +1,14 @@
+usage: psop_simulate.py query [-h] (--dkp DKP | --definition DEFINITION)
+                              [--part-a PART_A] [--part-b PART_B]
+                              [--output OUTPUT]
+
+Read validated Build mounting knowledge or historical source geometry, or
+query explicit bounded rigid definitions; no assembly execution.
+
+options:
+  -h, --help            show this help message and exit
+  --dkp DKP
+  --definition DEFINITION
+  --part-a PART_A
+  --part-b PART_B
+  --output OUTPUT

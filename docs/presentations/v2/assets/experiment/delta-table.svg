@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="150" viewBox="0 0 1600 150" role="img" aria-label="配对增量：B减A">
+  <style>
+    text{font-family:"Space Grotesk","Helvetica Neue","PingFang SC","Microsoft YaHei","Noto Sans CJK SC","Arial",sans-serif}
+    .header{font-size:18px;font-weight:700;fill:#496A82}
+    .model{font-size:18px;font-weight:700;fill:#102A43}
+    .number{font-size:18px;font-weight:600;fill:#496A82}
+    .positive{font-size:18px;font-weight:700;fill:#24577A}
+    .overall{font-size:18px;font-weight:800;fill:#123B5D}
+  </style>
+  <rect width="1600" height="25" fill="#EAF2F7"/>
+  <rect y="125" width="1600" height="25" fill="#E7F4FA"/>
+  <text x="34" y="18" class="header" text-anchor="start">模拟使用者</text>
+  <text x="272" y="18" class="header" text-anchor="middle">n</text>
+  <text x="401" y="18" class="header" text-anchor="middle">状态判断</text>
+  <text x="570" y="18" class="header" text-anchor="middle">下一动作</text>
+  <text x="734" y="18" class="header" text-anchor="middle">关键覆盖</text>
+  <text x="893" y="18" class="header" text-anchor="middle">顺序依赖</text>
+  <text x="1068" y="18" class="header" text-anchor="middle">验证闭环</text>
+  <text x="1249" y="18" class="header" text-anchor="middle">成功率</text>
+  <text x="1466" y="18" class="header" text-anchor="middle">五维均值 Δ</text>
+  <line x1="0" y1="25" x2="1600" y2="25" stroke="#C8DBE7" stroke-width="1"/>
+    <line x1="10" y1="38" x2="27" y2="38" stroke="#24577A" stroke-width="3" stroke-linecap="round"/><circle cx="18.5" cy="38" r="4" fill="#24577A" stroke="#fff" stroke-width="1.5"/>
+    <text x="34" y="43" class="model" text-anchor="start">qwen3-vl-32b-instruct</text>
+    <text x="272" y="43" class="number" text-anchor="middle">60</text>
+    <text x="401" y="43" class="positive" text-anchor="middle">+28.3</text>
+    <text x="570" y="43" class="positive" text-anchor="middle">+32.5</text>
+    <text x="734" y="43" class="positive" text-anchor="middle">+43.3</text>
+    <text x="893" y="43" class="positive" text-anchor="middle">+40.8</text>
+    <text x="1068" y="43" class="positive" text-anchor="middle">+49.2</text>
+    <text x="1249" y="43" class="positive" text-anchor="middle">+43.3</text>
+    <text x="1466" y="43" class="positive" text-anchor="middle">+38.8</text>
+  <line x1="0" y1="50" x2="1600" y2="50" stroke="#C8DBE7" stroke-width="1"/>
+    <line x1="10" y1="63" x2="27" y2="63" stroke="#3AAFE6" stroke-width="3" stroke-linecap="round"/><circle cx="18.5" cy="63" r="4" fill="#3AAFE6" stroke="#fff" stroke-width="1.5"/>
+    <text x="34" y="68" class="model" text-anchor="start">Qwen3.6-27b</text>
+    <text x="272" y="68" class="number" text-anchor="middle">60</text>
+    <text x="401" y="68" class="positive" text-anchor="middle">+20.8</text>
+    <text x="570" y="68" class="positive" text-anchor="middle">+23.3</text>
+    <text x="734" y="68" class="positive" text-anchor="middle">+24.2</text>
+    <text x="893" y="68" class="positive" text-anchor="middle">+17.5</text>
+    <text x="1068" y="68" class="positive" text-anchor="middle">+14.2</text>
+    <text x="1249" y="68" class="positive" text-anchor="middle">+30.0</text>
+    <text x="1466" y="68" class="positive" text-anchor="middle">+20.0</text>
+  <line x1="0" y1="75" x2="1600" y2="75" stroke="#C8DBE7" stroke-width="1"/>
+    <line x1="10" y1="88" x2="27" y2="88" stroke="#1AAE9F" stroke-width="3" stroke-linecap="round"/><circle cx="18.5" cy="88" r="4" fill="#1AAE9F" stroke="#fff" stroke-width="1.5"/>
+    <text x="34" y="93" class="model" text-anchor="start">Qwen3.7-plus</text>
+    <text x="272" y="93" class="number" text-anchor="middle">60</text>
+    <text x="401" y="93" class="positive" text-anchor="middle">+15.8</text>
+    <text x="570" y="93" class="positive" text-anchor="middle">+39.2</text>
+    <text x="734" y="93" class="positive" text-anchor="middle">+16.7</text>
+    <text x="893" y="93" class="positive" text-anchor="middle">+28.3</text>
+    <text x="1068" y="93" class="positive" text-anchor="middle">+11.7</text>
+    <text x="1249" y="93" class="positive" text-anchor="middle">+11.7</text>
+    <text x="1466" y="93" class="positive" text-anchor="middle">+22.3</text>
+  <line x1="0" y1="100" x2="1600" y2="100" stroke="#C8DBE7" stroke-width="1"/>
+    <line x1="10" y1="113" x2="27" y2="113" stroke="#D99427" stroke-width="3" stroke-linecap="round"/><circle cx="18.5" cy="113" r="4" fill="#D99427" stroke="#fff" stroke-width="1.5"/>
+    <text x="34" y="118" class="model" text-anchor="start">Qwen3.8-max</text>
+    <text x="272" y="118" class="number" text-anchor="middle">60</text>
+    <text x="401" y="118" class="positive" text-anchor="middle">+12.5</text>
+    <text x="570" y="118" class="positive" text-anchor="middle">+18.3</text>
+    <text x="734" y="118" class="positive" text-anchor="middle">+27.5</text>
+    <text x="893" y="118" class="positive" text-anchor="middle">+16.7</text>
+    <text x="1068" y="118" class="positive" text-anchor="middle">+38.3</text>
+    <text x="1249" y="118" class="positive" text-anchor="middle">+40.0</text>
+    <text x="1466" y="118" class="positive" text-anchor="middle">+22.7</text>
+  <line x1="0" y1="125" x2="1600" y2="125" stroke="#C8DBE7" stroke-width="1"/>
+
+    <text x="34" y="143" class="overall" text-anchor="start">总体</text>
+    <text x="272" y="143" class="overall" text-anchor="middle">240</text>
+    <text x="401" y="143" class="overall" text-anchor="middle">+19.4</text>
+    <text x="570" y="143" class="overall" text-anchor="middle">+28.3</text>
+    <text x="734" y="143" class="overall" text-anchor="middle">+27.9</text>
+    <text x="893" y="143" class="overall" text-anchor="middle">+25.8</text>
+    <text x="1068" y="143" class="overall" text-anchor="middle">+28.3</text>
+    <text x="1249" y="143" class="overall" text-anchor="middle">+31.3</text>
+    <text x="1466" y="143" class="overall" text-anchor="middle">+26.0</text>
+  <line x1="0" y1="149" x2="1600" y2="149" stroke="#C8DBE7" stroke-width="1"/>
+</svg>

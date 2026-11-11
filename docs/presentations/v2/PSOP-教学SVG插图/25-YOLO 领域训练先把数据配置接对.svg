@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <title>YOLO 领域训练先把数据配置接对</title>
+  <desc>PSOP 第 25 / 65 页教学图；文字与方法图保持可编辑。Microduck 视图由官方来源 STL 和 robot_walk.xml 的 source assembly 渲染，配置为 walk-model-reference、MCD-000001。alpha 软件任务身份与该几何参考的实物对应尚未核验；MD-01、S03、J01 和 EG 为教学定义。</desc>
+  <defs>
+    <linearGradient id="steel" x1="0" y1="0" x2="0.9" y2="1">
+      <stop stop-color="#EAF0F3" />
+      <stop offset=".37" stop-color="#A9BBC6" />
+      <stop offset=".63" stop-color="#F1F5F5" />
+      <stop offset="1" stop-color="#859CA9" />
+    </linearGradient>
+  </defs>
+  <g id="base" transform="translate(0 0)">
+    <rect x="0" y="0" width="1600" height="900" rx="0" fill="#FCFDFB" />
+    <rect x="0" y="0" width="9" height="900" rx="0" fill="#14877D" />
+    <path d="M64 62 L1536 62" stroke="#D7E1E7" fill="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+    <text x="64.000" y="41.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="18.999" font-weight="400" data-text="PSOP  /  四个模型与多模态协作" aria-label="PSOP  /  四个模型与多模态协作" xml:space="preserve" textLength="273.541" lengthAdjust="spacingAndGlyphs" fill="#526578">PSOP  /  四个模型与多模态协作</text>
+    <text x="1355.287" y="41.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="18.999" font-weight="400" data-text="LESSON 02  ·  25/65" aria-label="LESSON 02  ·  25/65" xml:space="preserve" textLength="180.021" lengthAdjust="spacingAndGlyphs" fill="#526578">LESSON 02  ·  25/65</text>
+  </g>
+  <g id="title" transform="translate(0 0)">
+    <text x="64.000" y="125.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="48.001" font-weight="700" data-text="YOLO 领域训练先把数据配置接对" aria-label="YOLO 领域训练先把数据配置接对" xml:space="preserve" textLength="726.235" lengthAdjust="spacingAndGlyphs" fill="#18344C">YOLO 领域训练先把数据配置接对</text>
+    <text x="64.000" y="177.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="24.001" font-weight="400" data-text="通用推理用于确认输入与返回字段；领域训练需要真实类别、图像和配对标签。数据配置指定训练、验证、测试路径及类别映射，训练器" aria-label="通用推理用于确认输入与返回字段；领域训练需要真实类别、图像和配对标签。数据配置指定训练、验证、测试路径及类别映射，训练器" xml:space="preserve" textLength="1440.001" lengthAdjust="spacingAndGlyphs" fill="#526578">通用推理用于确认输入与返回字段；领域训练需要真实类别、图像和配对标签。数据配置指定训练、验证、测试路径及类别映射，训练器</text>
+    <text x="64.000" y="209.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="24.001" font-weight="400" data-text="据此更新参数，验证集再帮助选择设置。" aria-label="据此更新参数，验证集再帮助选择设置。" xml:space="preserve" textLength="432.001" lengthAdjust="spacingAndGlyphs" fill="#526578">据此更新参数，验证集再帮助选择设置。</text>
+  </g>
+  <g id="beat_01" transform="translate(0 0)">
+    <g id="illustration" transform="translate(64 238)">
+      <rect x="0" y="0" width="884" height="498" rx="12" fill="#18344C" />
+      <rect x="0" y="0" width="884" height="47" rx="12" fill="#25445D" />
+      <rect x="0" y="25" width="884" height="22" rx="0" fill="#25445D" />
+      <circle cx="23" cy="24" r="5" fill="#BE574C" />
+      <circle cx="46" cy="24" r="5" fill="#B9752E" />
+      <circle cx="69" cy="24" r="5" fill="#14877D" />
+      <text x="113.000" y="31.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="21.000" font-weight="400" data-text="yolo_domain_train.py" aria-label="yolo_domain_train.py" xml:space="preserve" textLength="251.768" lengthAdjust="spacingAndGlyphs" fill="#DCE8F0">yolo_domain_train.py</text>
+      <text x="29.765" y="82.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="17.000" font-weight="400" data-text="1" aria-label="1" xml:space="preserve" textLength="9.350" lengthAdjust="spacingAndGlyphs" fill="#7293A9">1</text>
+      <text x="61.000" y="82.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="21.000" font-weight="400" data-text="from ultralytics import YOLO" aria-label="from ultralytics import YOLO" xml:space="preserve" textLength="352.913" lengthAdjust="spacingAndGlyphs" fill="#C5ABEB">from ultralytics import YOLO</text>
+      <text x="29.765" y="112.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="17.000" font-weight="400" data-text="2" aria-label="2" xml:space="preserve" textLength="9.350" lengthAdjust="spacingAndGlyphs" fill="#7293A9">2</text>
+      <text x="61.000" y="112.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="21.000" font-weight="400" data-text="model = YOLO(&quot;yolo26n.pt&quot;)" aria-label="model = YOLO(&quot;yolo26n.pt&quot;)" xml:space="preserve" textLength="327.627" lengthAdjust="spacingAndGlyphs" fill="#DCE8F0">model = YOLO("yolo26n.pt")</text>
+      <text x="29.765" y="142.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="17.000" font-weight="400" data-text="3" aria-label="3" xml:space="preserve" textLength="9.350" lengthAdjust="spacingAndGlyphs" fill="#7293A9">3</text>
+      <text x="61.000" y="142.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="21.000" font-weight="400" data-text="result = model.predict(" aria-label="result = model.predict(" xml:space="preserve" textLength="289.697" lengthAdjust="spacingAndGlyphs" fill="#DCE8F0">result = model.predict(</text>
+      <text x="29.765" y="172.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="17.000" font-weight="400" data-text="4" aria-label="4" xml:space="preserve" textLength="9.350" lengthAdjust="spacingAndGlyphs" fill="#7293A9">4</text>
+      <text x="111.572" y="172.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="21.000" font-weight="400" data-text="    &quot;s03.jpg&quot;, conf=0.25" aria-label="    &quot;s03.jpg&quot;, conf=0.25" xml:space="preserve" textLength="251.769" lengthAdjust="spacingAndGlyphs" fill="#DCE8F0">    "s03.jpg", conf=0.25</text>
+      <text x="29.765" y="202.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="17.000" font-weight="400" data-text="5" aria-label="5" xml:space="preserve" textLength="9.350" lengthAdjust="spacingAndGlyphs" fill="#7293A9">5</text>
+      <text x="61.000" y="202.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="21.000" font-weight="400" data-text=")[0]" aria-label=")[0]" xml:space="preserve" textLength="49.479" lengthAdjust="spacingAndGlyphs" fill="#DCE8F0">)[0]</text>
+      <text x="29.765" y="232.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="17.000" font-weight="400" data-text="6" aria-label="6" xml:space="preserve" textLength="9.350" lengthAdjust="spacingAndGlyphs" fill="#7293A9">6</text>
+      <text x="61.000" y="232.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="21.000" font-weight="400" data-text="if __name__ == &quot;__main__&quot;:" aria-label="if __name__ == &quot;__main__&quot;:" xml:space="preserve" textLength="327.627" lengthAdjust="spacingAndGlyphs" fill="#C5ABEB">if __name__ == "__main__":</text>
+      <text x="29.765" y="262.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="17.000" font-weight="400" data-text="7" aria-label="7" xml:space="preserve" textLength="9.350" lengthAdjust="spacingAndGlyphs" fill="#7293A9">7</text>
+      <text x="111.572" y="262.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="21.000" font-weight="400" data-text="    model.train(" aria-label="    model.train(" xml:space="preserve" textLength="150.624" lengthAdjust="spacingAndGlyphs" fill="#DCE8F0">    model.train(</text>
+      <text x="29.765" y="292.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="17.000" font-weight="400" data-text="8" aria-label="8" xml:space="preserve" textLength="9.350" lengthAdjust="spacingAndGlyphs" fill="#7293A9">8</text>
+      <text x="162.145" y="292.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="21.000" font-weight="400" data-text="        data=&quot;microduck.yaml&quot;," aria-label="        data=&quot;microduck.yaml&quot;," xml:space="preserve" textLength="239.125" lengthAdjust="spacingAndGlyphs" fill="#DCE8F0">        data="microduck.yaml",</text>
+      <text x="29.765" y="322.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="17.000" font-weight="400" data-text="9" aria-label="9" xml:space="preserve" textLength="9.350" lengthAdjust="spacingAndGlyphs" fill="#7293A9">9</text>
+      <text x="162.145" y="322.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="21.000" font-weight="400" data-text="        epochs=30, imgsz=640, batch=4" aria-label="        epochs=30, imgsz=640, batch=4" xml:space="preserve" textLength="365.555" lengthAdjust="spacingAndGlyphs" fill="#DCE8F0">        epochs=30, imgsz=640, batch=4</text>
+      <text x="19.530" y="352.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="17.000" font-weight="400" data-text="10" aria-label="10" xml:space="preserve" textLength="19.585" lengthAdjust="spacingAndGlyphs" fill="#7293A9">10</text>
+      <text x="111.572" y="352.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="21.000" font-weight="400" data-text="    )" aria-label="    )" xml:space="preserve" textLength="11.550" lengthAdjust="spacingAndGlyphs" fill="#DCE8F0">    )</text>
+      <path d="M61 437 L856 437" stroke="#526A7D" fill="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+      <text x="61.000" y="473.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="20.001" font-weight="400" data-text="通用权重用于跑通；领域训练需要图像与标签。" aria-label="通用权重用于跑通；领域训练需要图像与标签。" xml:space="preserve" textLength="420.001" lengthAdjust="spacingAndGlyphs" fill="#ABD3D7">通用权重用于跑通；领域训练需要图像与标签。</text>
+    </g>
+  </g>
+  <g id="beat_02" transform="translate(0 0)">
+    <text x="995.000" y="268.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.000" font-weight="700" data-text="先检查类别与目录" aria-label="先检查类别与目录" xml:space="preserve" textLength="200.000" lengthAdjust="spacingAndGlyphs" fill="#326BB8">先检查类别与目录</text>
+    <text x="995.000" y="310.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="images/train 与 labels/train 等目录需要实际存" aria-label="images/train 与 labels/train 等目录需要实际存" xml:space="preserve" textLength="489.917" lengthAdjust="spacingAndGlyphs" fill="#526578">images/train 与 labels/train 等目录需要实际存</text>
+    <text x="995.000" y="340.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="在。类别 0、1 与 names 映射一致，空场景及遮挡" aria-label="在。类别 0、1 与 names 映射一致，空场景及遮挡" xml:space="preserve" textLength="517.331" lengthAdjust="spacingAndGlyphs" fill="#526578">在。类别 0、1 与 names 映射一致，空场景及遮挡</text>
+    <text x="995.000" y="370.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="规则也应定义。" aria-label="规则也应定义。" xml:space="preserve" textLength="160.999" lengthAdjust="spacingAndGlyphs" fill="#526578">规则也应定义。</text>
+    <text x="995.000" y="435.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.000" font-weight="700" data-text="区分阈值、轮数和分辨率" aria-label="区分阈值、轮数和分辨率" xml:space="preserve" textLength="275.000" lengthAdjust="spacingAndGlyphs" fill="#14877D">区分阈值、轮数和分辨率</text>
+    <text x="995.000" y="477.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="conf 控制预测筛选，epochs 和 imgsz 改变" aria-label="conf 控制预测筛选，epochs 和 imgsz 改变" xml:space="preserve" textLength="448.566" lengthAdjust="spacingAndGlyphs" fill="#526578">conf 控制预测筛选，epochs 和 imgsz 改变</text>
+    <text x="995.000" y="507.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="训练设置。示例值是练习起点，应按验证结果" aria-label="训练设置。示例值是练习起点，应按验证结果" xml:space="preserve" textLength="459.999" lengthAdjust="spacingAndGlyphs" fill="#526578">训练设置。示例值是练习起点，应按验证结果</text>
+    <text x="995.000" y="537.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="和设备资源调整。" aria-label="和设备资源调整。" xml:space="preserve" textLength="183.999" lengthAdjust="spacingAndGlyphs" fill="#526578">和设备资源调整。</text>
+    <text x="995.000" y="602.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.000" font-weight="700" data-text="训练后回到真实任务评价" aria-label="训练后回到真实任务评价" xml:space="preserve" textLength="275.000" lengthAdjust="spacingAndGlyphs" fill="#7756AA">训练后回到真实任务评价</text>
+    <text x="995.000" y="644.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="按类别看漏检、误报和位置质量；独立作业用于测" aria-label="按类别看漏检、误报和位置质量；独立作业用于测" xml:space="preserve" textLength="505.999" lengthAdjust="spacingAndGlyphs" fill="#526578">按类别看漏检、误报和位置质量；独立作业用于测</text>
+    <text x="995.000" y="674.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="试。低训练损失并不证明换光照或工位后仍有效。" aria-label="试。低训练损失并不证明换光照或工位后仍有效。" xml:space="preserve" textLength="505.999" lengthAdjust="spacingAndGlyphs" fill="#526578">试。低训练损失并不证明换光照或工位后仍有效。</text>
+  </g>
+  <g id="beat_03" transform="translate(0 0)">
+    <path d="M64 760 L1536 760" stroke="#D7E1E7" fill="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+    <rect x="64" y="782" width="4" height="57" rx="2" fill="#14877D" />
+    <text x="84.000" y="798.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.000" font-weight="400" data-text="练习先取少量不同视角图片检查标签，再建立固定测试。Windows 训练脚本使用主入口保护；完整数据格式和调用见手册 6.9。" aria-label="练习先取少量不同视角图片检查标签，再建立固定测试。Windows 训练脚本使用主入口保护；完整数据格式和调用见手册 6.9。" xml:space="preserve" textLength="1241.528" lengthAdjust="spacingAndGlyphs" fill="#18344C">练习先取少量不同视角图片检查标签，再建立固定测试。Windows 训练脚本使用主入口保护；完整数据格式和调用见手册 6.9。</text>
+  </g>
+  <g id="footer" transform="translate(0 0)">
+    <text x="64.000" y="877.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="17.000" font-weight="400" data-text="学习手册 §06.9.3 / 06.9.4" aria-label="学习手册 §06.9.3 / 06.9.4" xml:space="preserve" textLength="194.159" lengthAdjust="spacingAndGlyphs" fill="#8898A8">学习手册 §06.9.3 / 06.9.4</text>
+    <text x="1247.000" y="877.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="17.000" font-weight="400" data-text="工程案例与数值示意的来源见逐页备注" aria-label="工程案例与数值示意的来源见逐页备注" xml:space="preserve" textLength="289.000" lengthAdjust="spacingAndGlyphs" fill="#8898A8">工程案例与数值示意的来源见逐页备注</text>
+  </g>
+</svg>

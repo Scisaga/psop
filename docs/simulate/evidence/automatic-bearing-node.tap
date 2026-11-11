@@ -1,0 +1,316 @@
+TAP version 13
+# Subtest: reference target uses published corrections, actual bounds, and preserves all source bytes
+ok 1 - reference target uses published corrections, actual bounds, and preserves all source bytes
+  ---
+  duration_ms: 17.5401
+  type: 'test'
+  ...
+# Subtest: correct rigid groups survive arbitrary world rotations; incompatible assembly connections are removed
+ok 2 - correct rigid groups survive arbitrary world rotations; incompatible assembly connections are removed
+  ---
+  duration_ms: 34.561
+  type: 'test'
+  ...
+# Subtest: explicit ports and alias resources remain exclusive; source structure bindings do not invent ports
+ok 3 - explicit ports and alias resources remain exclusive; source structure bindings do not invent ports
+  ---
+  duration_ms: 2.0518
+  type: 'test'
+  ...
+# Subtest: missing member selection and source interference never become geometry-clear claims
+ok 4 - missing member selection and source interference never become geometry-clear claims
+  ---
+  duration_ms: 1.8629
+  type: 'test'
+  ...
+# Subtest: staging and assembly preserve rigid groups and every final part remains above the tabletop
+ok 5 - staging and assembly preserve rigid groups and every final part remains above the tabletop
+  ---
+  duration_ms: 1.9111
+  type: 'test'
+  ...
+# Subtest: incomplete source coverage and cyclic parent chains fail without changing the session
+ok 6 - incomplete source coverage and cyclic parent chains fail without changing the session
+  ---
+  duration_ms: 1.2054
+  type: 'test'
+  ...
+# Subtest: bearing seats are preassembled axially before any main unit or closure, then move as one rigid unit
+ok 7 - bearing seats are preassembled axially before any main unit or closure, then move as one rigid unit
+  ---
+  duration_ms: 4.601
+  type: 'test'
+  ...
+# Subtest: closed correct structures open for bearing access in the presentation while retaining their saved connection IDs
+ok 8 - closed correct structures open for bearing access in the presentation while retaining their saved connection IDs
+  ---
+  duration_ms: 3.1028
+  type: 'test'
+  ...
+# Subtest: missing bearing axis refuses the presentation instead of inventing an insertion direction
+ok 9 - missing bearing axis refuses the presentation instead of inventing an insertion direction
+  ---
+  duration_ms: 1.7012
+  type: 'test'
+  ...
+# Subtest: automatic reference assembly saves once, deduplicates retries, and restores exact metadata in persistent history
+ok 10 - automatic reference assembly saves once, deduplicates retries, and restores exact metadata in persistent history
+  ---
+  duration_ms: 88.8985
+  type: 'test'
+  ...
+# Subtest: failed save, stale revision, and unsupported modes leave the previous complete state intact
+ok 11 - failed save, stale revision, and unsupported modes leave the previous complete state intact
+  ---
+  duration_ms: 35.0742
+  type: 'test'
+  ...
+# Subtest: editing or resetting a reference product clears completion status; undo restores it
+ok 12 - editing or resetting a reference product clears completion status; undo restores it
+  ---
+  duration_ms: 69.5547
+  type: 'test'
+  ...
+# Subtest: nearest desktop slot keeps clearance, stays in bounds and finds narrow free strips
+ok 13 - nearest desktop slot keeps clearance, stays in bounds and finds narrow free strips
+  ---
+  duration_ms: 2.416
+  type: 'test'
+  ...
+# Subtest: detach keeps the larger group and moves the smaller rigid group to the nearest clear desktop area
+ok 14 - detach keeps the larger group and moves the smaller rigid group to the nearest clear desktop area
+  ---
+  duration_ms: 3.6876
+  type: 'test'
+  ...
+# Subtest: equal-sized splits keep the fixed target, while a remaining graph path never moves either endpoint
+ok 15 - equal-sized splits keep the fixed target, while a remaining graph path never moves either endpoint
+  ---
+  duration_ms: 0.9677
+  type: 'test'
+  ...
+# Subtest: table dimensions depend on original inventory rather than edited positions
+ok 16 - table dimensions depend on original inventory rather than edited positions
+  ---
+  duration_ms: 1.2826
+  type: 'test'
+  ...
+# Subtest: connection cards keep a fixed bottom edge and reserve only the actually visible height
+ok 17 - connection cards keep a fixed bottom edge and reserve only the actually visible height
+  ---
+  duration_ms: 3.2813
+  type: 'test'
+  ...
+# Subtest: nearby model connection labels avoid each other, viewport edges and the tool rail
+ok 18 - nearby model connection labels avoid each other, viewport edges and the tool rail
+  ---
+  duration_ms: 1.0693
+  type: 'test'
+  ...
+# Subtest: animated assemblies retain every relative transform through rotations and lift
+ok 19 - animated assemblies retain every relative transform through rotations and lift
+  ---
+  duration_ms: 1.8234
+  type: 'test'
+  ...
+# Subtest: committed connection uses an interface closeup and restores the exact bookmarked camera, including skip
+ok 20 - committed connection uses an interface closeup and restores the exact bookmarked camera, including skip
+  ---
+  duration_ms: 16.3679
+  type: 'test'
+  ...
+# Subtest: cinematic shots fit tall products on narrow screens and choose a view around occluding parts
+ok 21 - cinematic shots fit tall products on narrow screens and choose a view around occluding parts
+  ---
+  duration_ms: 5.8219
+  type: 'test'
+  ...
+# Subtest: automatic presentation pauses without movement, changes speed, and skipping lands on the committed hero view
+ok 22 - automatic presentation pauses without movement, changes speed, and skipping lands on the committed hero view
+  ---
+  duration_ms: 13.6182
+  type: 'test'
+  ...
+# Subtest: reduced-motion presentation immediately reaches the persisted result and releases controls
+ok 23 - reduced-motion presentation immediately reaches the persisted result and releases controls
+  ---
+  duration_ms: 4.6267
+  type: 'test'
+  ...
+# Subtest: bearing route aligns before entry and its final travel remains coaxial without rotation or a curved shortcut
+ok 24 - bearing route aligns before entry and its final travel remains coaxial without rotation or a curved shortcut
+  ---
+  duration_ms: 1.9147
+  type: 'test'
+  ...
+# Subtest: cinematic bearing preassembly uses the declared axis and leaves the host stationary
+ok 25 - cinematic bearing preassembly uses the declared axis and leaves the host stationary
+  ---
+  duration_ms: 3.4132
+  type: 'test'
+  ...
+# Subtest: underside bearing entry goes around the raised support before translating underneath and seating upward
+ok 26 - underside bearing entry goes around the raised support before translating underneath and seating upward
+  ---
+  duration_ms: 3.6136
+  type: 'test'
+  ...
+# Subtest: projected overlap never opens or retains a card across a large physical separation
+ok 27 - projected overlap never opens or retains a card across a large physical separation
+  ---
+  duration_ms: 2.9774
+  type: 'test'
+  ...
+# Subtest: physical approach also needs a small visible gap, with a narrow exit hysteresis
+ok 28 - physical approach also needs a small visible gap, with a narrow exit hysteresis
+  ---
+  duration_ms: 1.2982
+  type: 'test'
+  ...
+# Subtest: screen bounding rectangles alone do not mistake disjoint diagonal envelopes for overlap
+ok 29 - screen bounding rectangles alone do not mistake disjoint diagonal envelopes for overlap
+  ---
+  duration_ms: 0.4399
+  type: 'test'
+  ...
+# Subtest: member envelopes respect camera rotations, world transforms and visibility
+ok 30 - member envelopes respect camera rotations, world transforms and visibility
+  ---
+  duration_ms: 4.2313
+  type: 'test'
+  ...
+# Subtest: connection graph splits only disconnected components, preserving cycles and singleton identity
+ok 31 - connection graph splits only disconnected components, preserving cycles and singleton identity
+  ---
+  duration_ms: 2.6117
+  type: 'test'
+  ...
+# Subtest: a common world transform preserves every existing relative pose at arbitrary rotations
+ok 32 - a common world transform preserves every existing relative pose at arbitrary rotations
+  ---
+  duration_ms: 3.8171
+  type: 'test'
+  ...
+# Subtest: different interface names cannot reuse the same underlying channel
+ok 33 - different interface names cannot reuse the same underlying channel
+  ---
+  duration_ms: 0.7595
+  type: 'test'
+  ...
+# Subtest: multi-part assembly, detach, reuse, persistent undo/redo, rename and copy use one consistent saved state
+ok 34 - multi-part assembly, detach, reuse, persistent undo/redo, rename and copy use one consistent saved state
+  ---
+  duration_ms: 158.3196
+  type: 'test'
+  ...
+# Subtest: combining two existing groups moves the whole source group and preserves both internal relations
+ok 35 - combining two existing groups moves the whole source group and preserves both internal relations
+  ---
+  duration_ms: 55.5506
+  type: 'test'
+  ...
+# Subtest: disconnect and desktop return save atomically, repeat once and undo as a single complete step
+ok 36 - disconnect and desktop return save atomically, repeat once and undo as a single complete step
+  ---
+  duration_ms: 56.8011
+  type: 'test'
+  ...
+# Subtest: idempotent commands, stale revisions and failed commands never leave partial graph or occupancy changes
+ok 37 - idempotent commands, stale revisions and failed commands never leave partial graph or occupancy changes
+  ---
+  duration_ms: 32.7791
+  type: 'test'
+  ...
+# Subtest: an unrelated scene part obstructing a terminal pose blocks the entire connection
+ok 38 - an unrelated scene part obstructing a terminal pose blocks the entire connection
+  ---
+  duration_ms: 31.1069
+  type: 'test'
+  ...
+# Subtest: initial layout stays above the table and never overlaps even with nonidentity source rotations
+ok 39 - initial layout stays above the table and never overlaps even with nonidentity source rotations
+  ---
+  duration_ms: 0.9384
+  type: 'test'
+  ...
+# Subtest: the actual pinned solid worker distinguishes surface contact, overlap and containment
+ok 40 - the actual pinned solid worker distinguishes surface contact, overlap and containment
+  ---
+  duration_ms: 125.7582
+  type: 'test'
+  ...
+# Subtest: scenes remain isolated across workspace, snapshot and scene identifiers even when packages share a digest
+ok 41 - scenes remain isolated across workspace, snapshot and scene identifiers even when packages share a digest
+  ---
+  duration_ms: 37.2764
+  type: 'test'
+  ...
+# Subtest: unassessed terminal checks cannot commit and cancellation never changes a session
+ok 42 - unassessed terminal checks cannot commit and cancellation never changes a session
+  ---
+  duration_ms: 31.346
+  type: 'test'
+  ...
+# Subtest: only two geometry workers run concurrently, timeouts remain unassessed and are retryable
+ok 43 - only two geometry workers run concurrently, timeouts remain unassessed and are retryable
+  ---
+  duration_ms: 232.5019
+  type: 'test'
+  ...
+# Subtest: a failed atomic write retains poses, graph, revision and the ability to retry the same request
+ok 44 - a failed atomic write retains poses, graph, revision and the ability to retry the same request
+  ---
+  duration_ms: 30.1598
+  type: 'test'
+  ...
+# Subtest: two tabs cannot overwrite each other and the persistent history is limited to 100 complete steps
+ok 45 - two tabs cannot overwrite each other and the persistent history is limited to 100 complete steps
+  ---
+  duration_ms: 1466.1173
+  type: 'test'
+  ...
+# Subtest: simulation writes enforce same origin, JSON and a bounded request body
+ok 46 - simulation writes enforce same origin, JSON and a bounded request body
+  ---
+  duration_ms: 2.8161
+  type: 'test'
+  ...
+# Subtest: scene progress does not mistake an isolated selected part for exhaustion of all known connections
+ok 47 - scene progress does not mistake an isolated selected part for exhaustion of all known connections
+  ---
+  duration_ms: 41.1801
+  type: 'test'
+  ...
+# Subtest: published reference interfaces with zero template candidates are discoverable and require their own solid check
+ok 48 - published reference interfaces with zero template candidates are discoverable and require their own solid check
+  ---
+  duration_ms: 20.471
+  type: 'test'
+  ...
+# Subtest: a published reconciled configuration can qualify a previously excluded reference without altering its source pose
+ok 49 - a published reconciled configuration can qualify a previously excluded reference without altering its source pose
+  ---
+  duration_ms: 0.7735
+  type: 'test'
+  ...
+# Subtest: reference relations without a published member selection stay visible and cannot be submitted
+ok 50 - reference relations without a published member selection stay visible and cannot be submitted
+  ---
+  duration_ms: 0.4017
+  type: 'test'
+  ...
+# Subtest: reset restores the canonical loose layout, releases all resources and persists as one undoable operation
+ok 51 - reset restores the canonical loose layout, releases all resources and persists as one undoable operation
+  ---
+  duration_ms: 92.5846
+  type: 'test'
+  ...
+1..51
+# tests 51
+# suites 0
+# pass 51
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 2721.018

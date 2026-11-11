@@ -1,0 +1,58 @@
+{
+  "ok": true,
+  "valid": true,
+  "schema": "psop.dkp/2.0-draft.1",
+  "profile": "psop.hardware.source-model/1.15",
+  "package_id": "psop.microduck",
+  "package_version": "2.0.0-capabilities.7",
+  "device": {
+    "id": "microduck",
+    "name": "Microduck"
+  },
+  "capabilities": {
+    "cross_part_candidates": {
+      "scope": "Every distinct source-instance pair has a disposition for every declared local-geometry template; unresolved specifications are retained",
+      "status": "complete"
+    },
+    "mechanical_validation": {
+      "scope": "Complete functional interfaces and whole unchanged closed source solids at published finite boundary seats; paths, retention, moving subframes and loads remain unqualified",
+      "status": "partial"
+    },
+    "part_capabilities": {
+      "scope": "Finite measured geometry, physical resources, potential modes and explicit residual source regions; independent scope is published",
+      "status": "partial"
+    },
+    "path_validation": {
+      "scope": "Assembly and insertion paths remain Simulate work",
+      "status": "unavailable"
+    },
+    "reference_assembly": {
+      "scope": "Attributed reference uses and configuration-bound conflicts, separate from potential compatibility",
+      "status": "partial"
+    },
+    "source_registry": {
+      "scope": "Captured unchanged source bytes and separate source-instance identities",
+      "status": "complete"
+    },
+    "variant_design_execution": {
+      "scope": "Build publishes consumable capabilities; Simulate search and interactive assembly are not implemented",
+      "status": "unavailable"
+    }
+  },
+  "package_digest": "e89fd146a8000ccc35567ef1bb688f71c7be3320e26b82a79da04fd88e8c825f",
+  "counts": {
+    "bodies": 15,
+    "candidates": 930,
+    "evidence": 365,
+    "features": 8703,
+    "geometries": 38,
+    "instance_pairs": 2415,
+    "interfaces": 411,
+    "joints": 14,
+    "parts": 70,
+    "resources": 7438,
+    "sources": 68
+  },
+  "validation_seconds": 180.23595389997354,
+  "scope": "Independent finite geometry requirements and complete pose-independent candidate template coverage; no solved assembly"
+}

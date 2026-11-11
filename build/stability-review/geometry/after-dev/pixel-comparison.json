@@ -1,0 +1,877 @@
+{
+  "before": "build/stability-review/geometry/before-final",
+  "after": "build/stability-review/geometry/after-dev",
+  "records": [
+    {
+      "target": "right-y42-z52",
+      "mode": "source-facets",
+      "width": 814,
+      "height": 840,
+      "changedPixels": 0,
+      "changedOver10Pixels": 0,
+      "meanMaximumChannelDifference": 0,
+      "changedBounds": null,
+      "goldBefore": 836,
+      "goldAfter": 836,
+      "sourcePositionSha256Before": "7a8911256d344b1ce4d1f593408099d8e091011c081b14fd13aa7021256f8dac",
+      "sourcePositionSha256After": "7a8911256d344b1ce4d1f593408099d8e091011c081b14fd13aa7021256f8dac",
+      "sourcePositionsEqual": true,
+      "cameraBefore": {
+        "position": [
+          -0.029676099058512324,
+          0.03315498749083738,
+          0.15666478014261725
+        ],
+        "target": [
+          -0.03800000020621599,
+          -0.0008000000142492285,
+          0.15499999991307653
+        ]
+      },
+      "cameraAfter": {
+        "position": [
+          -0.029676099058512324,
+          0.03315498749083738,
+          0.15666478014261725
+        ],
+        "target": [
+          -0.03800000020621599,
+          -0.0008000000142492285,
+          0.15499999991307653
+        ]
+      },
+      "beforePngSha256": "c77840a30757682ad09d3ae89172909ce69bc22c46a72d6304152fd04e25037a",
+      "afterPngSha256": "c77840a30757682ad09d3ae89172909ce69bc22c46a72d6304152fd04e25037a"
+    },
+    {
+      "target": "right-y42-z52",
+      "mode": "display-normals",
+      "width": 814,
+      "height": 840,
+      "changedPixels": 0,
+      "changedOver10Pixels": 0,
+      "meanMaximumChannelDifference": 0,
+      "changedBounds": null,
+      "goldBefore": 836,
+      "goldAfter": 836,
+      "sourcePositionSha256Before": "7a8911256d344b1ce4d1f593408099d8e091011c081b14fd13aa7021256f8dac",
+      "sourcePositionSha256After": "7a8911256d344b1ce4d1f593408099d8e091011c081b14fd13aa7021256f8dac",
+      "sourcePositionsEqual": true,
+      "cameraBefore": {
+        "position": [
+          -0.029676099058512324,
+          0.03315498749083738,
+          0.15666478014261725
+        ],
+        "target": [
+          -0.03800000020621599,
+          -0.0008000000142492285,
+          0.15499999991307653
+        ]
+      },
+      "cameraAfter": {
+        "position": [
+          -0.029676099058512324,
+          0.03315498749083738,
+          0.15666478014261725
+        ],
+        "target": [
+          -0.03800000020621599,
+          -0.0008000000142492285,
+          0.15499999991307653
+        ]
+      },
+      "beforePngSha256": "d1828b830f8e2362cfc2770f7494b1c6ae71b75cd5b28f94ea5d32ec759bf684",
+      "afterPngSha256": "d1828b830f8e2362cfc2770f7494b1c6ae71b75cd5b28f94ea5d32ec759bf684"
+    },
+    {
+      "target": "right-y42-z52",
+      "mode": "opening-outline",
+      "width": 814,
+      "height": 840,
+      "changedPixels": 105,
+      "changedOver10Pixels": 104,
+      "meanMaximumChannelDifference": 0.011375336375336375,
+      "changedBounds": {
+        "xmin": 376,
+        "xmax": 412,
+        "ymin": 388,
+        "ymax": 451
+      },
+      "goldBefore": 973,
+      "goldAfter": 1024,
+      "sourcePositionSha256Before": "7a8911256d344b1ce4d1f593408099d8e091011c081b14fd13aa7021256f8dac",
+      "sourcePositionSha256After": "7a8911256d344b1ce4d1f593408099d8e091011c081b14fd13aa7021256f8dac",
+      "sourcePositionsEqual": true,
+      "cameraBefore": {
+        "position": [
+          -0.029676099058512324,
+          0.03315498749083738,
+          0.15666478014261725
+        ],
+        "target": [
+          -0.03800000020621599,
+          -0.0008000000142492285,
+          0.15499999991307653
+        ]
+      },
+      "cameraAfter": {
+        "position": [
+          -0.029676099058512324,
+          0.03315498749083738,
+          0.15666478014261725
+        ],
+        "target": [
+          -0.03800000020621599,
+          -0.0008000000142492285,
+          0.15499999991307653
+        ]
+      },
+      "beforePngSha256": "0cc00c2ff1c9f196b9a0eb2d2c58e86fa5909ad3cf26e18731b19931b050446f",
+      "afterPngSha256": "82eb3826ccb5a92f725c42ab3c0308f8dc2ecb671ffefb9e7d4557a79c7f9282"
+    },
+    {
+      "target": "right-y42-z52",
+      "mode": "all-overlays",
+      "width": 814,
+      "height": 840,
+      "changedPixels": 104,
+      "changedOver10Pixels": 104,
+      "meanMaximumChannelDifference": 0.011373873873873874,
+      "changedBounds": {
+        "xmin": 376,
+        "xmax": 412,
+        "ymin": 388,
+        "ymax": 451
+      },
+      "goldBefore": 973,
+      "goldAfter": 1024,
+      "sourcePositionSha256Before": "7a8911256d344b1ce4d1f593408099d8e091011c081b14fd13aa7021256f8dac",
+      "sourcePositionSha256After": "7a8911256d344b1ce4d1f593408099d8e091011c081b14fd13aa7021256f8dac",
+      "sourcePositionsEqual": true,
+      "cameraBefore": {
+        "position": [
+          -0.029676099058512324,
+          0.03315498749083738,
+          0.15666478014261725
+        ],
+        "target": [
+          -0.03800000020621599,
+          -0.0008000000142492285,
+          0.15499999991307653
+        ]
+      },
+      "cameraAfter": {
+        "position": [
+          -0.029676099058512324,
+          0.03315498749083738,
+          0.15666478014261725
+        ],
+        "target": [
+          -0.03800000020621599,
+          -0.0008000000142492285,
+          0.15499999991307653
+        ]
+      },
+      "beforePngSha256": "0cc00c2ff1c9f196b9a0eb2d2c58e86fa5909ad3cf26e18731b19931b050446f",
+      "afterPngSha256": "9aa488a7022f7f7b7019ad2806b53b7a0ffabc6635d343f5dda17181c97cd2b8"
+    },
+    {
+      "target": "right-y42-z52",
+      "mode": "final",
+      "width": 814,
+      "height": 840,
+      "changedPixels": 105,
+      "changedOver10Pixels": 104,
+      "meanMaximumChannelDifference": 0.011375336375336375,
+      "changedBounds": {
+        "xmin": 376,
+        "xmax": 412,
+        "ymin": 388,
+        "ymax": 451
+      },
+      "goldBefore": 973,
+      "goldAfter": 1024,
+      "sourcePositionSha256Before": "7a8911256d344b1ce4d1f593408099d8e091011c081b14fd13aa7021256f8dac",
+      "sourcePositionSha256After": "7a8911256d344b1ce4d1f593408099d8e091011c081b14fd13aa7021256f8dac",
+      "sourcePositionsEqual": true,
+      "cameraBefore": {
+        "position": [
+          -0.029676099058512324,
+          0.03315498749083738,
+          0.15666478014261725
+        ],
+        "target": [
+          -0.03800000020621599,
+          -0.0008000000142492285,
+          0.15499999991307653
+        ]
+      },
+      "cameraAfter": {
+        "position": [
+          -0.029676099058512324,
+          0.03315498749083738,
+          0.15666478014261725
+        ],
+        "target": [
+          -0.03800000020621599,
+          -0.0008000000142492285,
+          0.15499999991307653
+        ]
+      },
+      "beforePngSha256": "c51d107d9899bc98105630fb6faecdf6533cb86c33c31e5a08570d7c9c7b0872",
+      "afterPngSha256": "5ab76afa247a9a3dfedbf17cac5ac209b899563135564c08d84a99f3c6ad0eff"
+    },
+    {
+      "target": "right-y42-z52",
+      "mode": "oblique",
+      "width": 814,
+      "height": 840,
+      "changedPixels": 34,
+      "changedOver10Pixels": 34,
+      "meanMaximumChannelDifference": 0.0026953901953901955,
+      "changedBounds": {
+        "xmin": 404,
+        "xmax": 425,
+        "ymin": 398,
+        "ymax": 441
+      },
+      "goldBefore": 922,
+      "goldAfter": 931,
+      "sourcePositionsEqual": true,
+      "cameraBefore": [
+        -0.06447567844987083,
+        0.044199999985750776,
+        0.14970486426434557,
+        -0.038000000206215995,
+        -0.0008000000142492285,
+        0.15499999991307653
+      ],
+      "cameraAfter": [
+        -0.06447567844987083,
+        0.044199999985750776,
+        0.14970486426434557,
+        -0.038000000206215995,
+        -0.0008000000142492285,
+        0.15499999991307653
+      ],
+      "beforePngSha256": "27dc184ab060ebdd14ba5637b3aeb87d7c542dcddab026b8fea2a883d0621292",
+      "afterPngSha256": "439254bd0e53ca81e7d26a3c79c733179e6e9c15bccdde0917225b7e4873b41c"
+    },
+    {
+      "target": "right-y42-z52",
+      "mode": "zoom-out",
+      "width": 814,
+      "height": 840,
+      "changedPixels": 54,
+      "changedOver10Pixels": 52,
+      "meanMaximumChannelDifference": 0.004510354510354511,
+      "changedBounds": {
+        "xmin": 389,
+        "xmax": 409,
+        "ymin": 401,
+        "ymax": 437
+      },
+      "goldBefore": 922,
+      "goldAfter": 937,
+      "sourcePositionsEqual": true,
+      "cameraBefore": [
+        -0.023291290070852178,
+        0.05919999998575077,
+        0.1579417419401493,
+        -0.038000000206215995,
+        -0.0008000000142492285,
+        0.15499999991307653
+      ],
+      "cameraAfter": [
+        -0.023291290070852178,
+        0.05919999998575077,
+        0.1579417419401493,
+        -0.038000000206215995,
+        -0.0008000000142492285,
+        0.15499999991307653
+      ],
+      "beforePngSha256": "99738ceeb78774a02908f891706e622309fde485afc635d64ce73809954c74ea",
+      "afterPngSha256": "2a840e217e9437b064c45ae497b7066ce6b4042376c06e60c7471c3c2cca29f6"
+    },
+    {
+      "target": "right-x25-y9",
+      "mode": "source-facets",
+      "width": 814,
+      "height": 840,
+      "changedPixels": 0,
+      "changedOver10Pixels": 0,
+      "meanMaximumChannelDifference": 0,
+      "changedBounds": null,
+      "goldBefore": 836,
+      "goldAfter": 836,
+      "sourcePositionSha256Before": "7a8911256d344b1ce4d1f593408099d8e091011c081b14fd13aa7021256f8dac",
+      "sourcePositionSha256After": "7a8911256d344b1ce4d1f593408099d8e091011c081b14fd13aa7021256f8dac",
+      "sourcePositionsEqual": true,
+      "cameraBefore": {
+        "position": [
+          0.021630711204078973,
+          -0.023560711183241035,
+          0.1789549908759272
+        ],
+        "target": [
+          0.0135,
+          -0.026,
+          0.145
+        ]
+      },
+      "cameraAfter": {
+        "position": [
+          0.021630711204078973,
+          -0.023560711183241035,
+          0.1789549908759272
+        ],
+        "target": [
+          0.0135,
+          -0.026,
+          0.145
+        ]
+      },
+      "beforePngSha256": "fbf38d308281c2fadbb2e1d08c95d543d60bc7946b48b4fa27cd5da96266dad8",
+      "afterPngSha256": "fbf38d308281c2fadbb2e1d08c95d543d60bc7946b48b4fa27cd5da96266dad8"
+    },
+    {
+      "target": "right-x25-y9",
+      "mode": "display-normals",
+      "width": 814,
+      "height": 840,
+      "changedPixels": 0,
+      "changedOver10Pixels": 0,
+      "meanMaximumChannelDifference": 0,
+      "changedBounds": null,
+      "goldBefore": 836,
+      "goldAfter": 836,
+      "sourcePositionSha256Before": "7a8911256d344b1ce4d1f593408099d8e091011c081b14fd13aa7021256f8dac",
+      "sourcePositionSha256After": "7a8911256d344b1ce4d1f593408099d8e091011c081b14fd13aa7021256f8dac",
+      "sourcePositionsEqual": true,
+      "cameraBefore": {
+        "position": [
+          0.021630711204078973,
+          -0.023560711183241035,
+          0.1789549908759272
+        ],
+        "target": [
+          0.0135,
+          -0.026,
+          0.145
+        ]
+      },
+      "cameraAfter": {
+        "position": [
+          0.021630711204078973,
+          -0.023560711183241035,
+          0.1789549908759272
+        ],
+        "target": [
+          0.0135,
+          -0.026,
+          0.145
+        ]
+      },
+      "beforePngSha256": "17ebd1f199227d2e0eee8b2e32be504a9a69faecbca12cf549f941e541f3e588",
+      "afterPngSha256": "17ebd1f199227d2e0eee8b2e32be504a9a69faecbca12cf549f941e541f3e588"
+    },
+    {
+      "target": "right-x25-y9",
+      "mode": "opening-outline",
+      "width": 814,
+      "height": 840,
+      "changedPixels": 134,
+      "changedOver10Pixels": 129,
+      "meanMaximumChannelDifference": 0.013548613548613548,
+      "changedBounds": {
+        "xmin": 363,
+        "xmax": 450,
+        "ymin": 420,
+        "ymax": 461
+      },
+      "goldBefore": 1034,
+      "goldAfter": 1085,
+      "sourcePositionSha256Before": "7a8911256d344b1ce4d1f593408099d8e091011c081b14fd13aa7021256f8dac",
+      "sourcePositionSha256After": "7a8911256d344b1ce4d1f593408099d8e091011c081b14fd13aa7021256f8dac",
+      "sourcePositionsEqual": true,
+      "cameraBefore": {
+        "position": [
+          0.021630711204078973,
+          -0.023560711183241035,
+          0.1789549908759272
+        ],
+        "target": [
+          0.0135,
+          -0.026,
+          0.145
+        ]
+      },
+      "cameraAfter": {
+        "position": [
+          0.021630711204078973,
+          -0.023560711183241035,
+          0.1789549908759272
+        ],
+        "target": [
+          0.0135,
+          -0.026,
+          0.145
+        ]
+      },
+      "beforePngSha256": "f63e56b407d2d83b56b337ec59e10d9be7e64e41809f5a86e286760530a65261",
+      "afterPngSha256": "0a55305fc48dbfa314e0f11778c9f4495fe881c60886551e7f1bc863016f4bf1"
+    },
+    {
+      "target": "right-x25-y9",
+      "mode": "all-overlays",
+      "width": 814,
+      "height": 840,
+      "changedPixels": 129,
+      "changedOver10Pixels": 129,
+      "meanMaximumChannelDifference": 0.013541301041301041,
+      "changedBounds": {
+        "xmin": 363,
+        "xmax": 450,
+        "ymin": 420,
+        "ymax": 461
+      },
+      "goldBefore": 1034,
+      "goldAfter": 1085,
+      "sourcePositionSha256Before": "7a8911256d344b1ce4d1f593408099d8e091011c081b14fd13aa7021256f8dac",
+      "sourcePositionSha256After": "7a8911256d344b1ce4d1f593408099d8e091011c081b14fd13aa7021256f8dac",
+      "sourcePositionsEqual": true,
+      "cameraBefore": {
+        "position": [
+          0.021630711204078973,
+          -0.023560711183241035,
+          0.1789549908759272
+        ],
+        "target": [
+          0.0135,
+          -0.026,
+          0.145
+        ]
+      },
+      "cameraAfter": {
+        "position": [
+          0.021630711204078973,
+          -0.023560711183241035,
+          0.1789549908759272
+        ],
+        "target": [
+          0.0135,
+          -0.026,
+          0.145
+        ]
+      },
+      "beforePngSha256": "1a61aa1041696976f914d1c28f6230090c707f401761d89b178c18dce5c2893d",
+      "afterPngSha256": "135f2f38a68b3abb4724d6f65c6bbb176ce60f16f104e828f237b867a4d23bd2"
+    },
+    {
+      "target": "right-x25-y9",
+      "mode": "final",
+      "width": 814,
+      "height": 840,
+      "changedPixels": 134,
+      "changedOver10Pixels": 129,
+      "meanMaximumChannelDifference": 0.013548613548613548,
+      "changedBounds": {
+        "xmin": 363,
+        "xmax": 450,
+        "ymin": 420,
+        "ymax": 461
+      },
+      "goldBefore": 1034,
+      "goldAfter": 1085,
+      "sourcePositionSha256Before": "7a8911256d344b1ce4d1f593408099d8e091011c081b14fd13aa7021256f8dac",
+      "sourcePositionSha256After": "7a8911256d344b1ce4d1f593408099d8e091011c081b14fd13aa7021256f8dac",
+      "sourcePositionsEqual": true,
+      "cameraBefore": {
+        "position": [
+          0.021630711204078973,
+          -0.023560711183241035,
+          0.1789549908759272
+        ],
+        "target": [
+          0.0135,
+          -0.026,
+          0.145
+        ]
+      },
+      "cameraAfter": {
+        "position": [
+          0.021630711204078973,
+          -0.023560711183241035,
+          0.1789549908759272
+        ],
+        "target": [
+          0.0135,
+          -0.026,
+          0.145
+        ]
+      },
+      "beforePngSha256": "3e3e14e85ee591c25466e1c6a63e15d130d29f9fdb14c5b6995f96cf39926139",
+      "afterPngSha256": "de1ce958278c9b2d7703cae7de9a2da0f882328758c33ae81edab204efdbdac5"
+    },
+    {
+      "target": "right-x25-y9",
+      "mode": "oblique",
+      "width": 814,
+      "height": 840,
+      "changedPixels": 0,
+      "changedOver10Pixels": 0,
+      "meanMaximumChannelDifference": 0,
+      "changedBounds": null,
+      "goldBefore": 833,
+      "goldAfter": 833,
+      "sourcePositionsEqual": true,
+      "cameraBefore": [
+        -0.012361309651539455,
+        -0.033758392817792256,
+        0.1900000004470348,
+        0.01350000004943163,
+        -0.025999999907500928,
+        0.14500000044703482
+      ],
+      "cameraAfter": [
+        -0.012361309651539455,
+        -0.033758392817792256,
+        0.1900000004470348,
+        0.01350000004943163,
+        -0.025999999907500928,
+        0.14500000044703482
+      ],
+      "beforePngSha256": "c77ae32efe74ffe5ad5fe6662c081f81aa59d22b9c1cf3f3f8244cd069a9548c",
+      "afterPngSha256": "c77ae32efe74ffe5ad5fe6662c081f81aa59d22b9c1cf3f3f8244cd069a9548c"
+    },
+    {
+      "target": "right-x25-y9",
+      "mode": "zoom-out",
+      "width": 814,
+      "height": 840,
+      "changedPixels": 77,
+      "changedOver10Pixels": 70,
+      "meanMaximumChannelDifference": 0.005931905931905932,
+      "changedBounds": {
+        "xmin": 36,
+        "xmax": 431,
+        "ymin": 421,
+        "ymax": 792
+      },
+      "goldBefore": 937,
+      "goldAfter": 958,
+      "sourcePositionsEqual": true,
+      "cameraBefore": [
+        0.0278673943277489,
+        -0.021689781624005748,
+        0.2050000004470348,
+        0.01350000004943163,
+        -0.025999999907500928,
+        0.14500000044703482
+      ],
+      "cameraAfter": [
+        0.0278673943277489,
+        -0.021689781624005748,
+        0.2050000004470348,
+        0.01350000004943163,
+        -0.025999999907500928,
+        0.14500000044703482
+      ],
+      "beforePngSha256": "89707a7f4e2177b3242256069db78ae0743429363b708eebe07bdd70773f6951",
+      "afterPngSha256": "38b00b8372274520599610a4680d0f06129f2735e7d1d62b14a430e2607cf916"
+    },
+    {
+      "target": "hip-x17-z6",
+      "mode": "source-facets",
+      "width": 814,
+      "height": 840,
+      "changedPixels": 5,
+      "changedOver10Pixels": 0,
+      "meanMaximumChannelDifference": 0.000007312507312507313,
+      "changedBounds": null,
+      "goldBefore": 834,
+      "goldAfter": 834,
+      "sourcePositionSha256Before": "4aee8736c5311c80033d1d53d86ac7f10d913d7f4d4213b014bd43cb0efc1cbf",
+      "sourcePositionSha256After": "4aee8736c5311c80033d1d53d86ac7f10d913d7f4d4213b014bd43cb0efc1cbf",
+      "sourcePositionsEqual": true,
+      "cameraBefore": {
+        "position": [
+          0.05745498513390924,
+          0.024563014185465713,
+          0.10120880188284802
+        ],
+        "target": [
+          0.0235,
+          0.0175,
+          0.0965
+        ]
+      },
+      "cameraAfter": {
+        "position": [
+          0.05745498513390924,
+          0.024563014185465713,
+          0.10120880188284802
+        ],
+        "target": [
+          0.0235,
+          0.0175,
+          0.0965
+        ]
+      },
+      "beforePngSha256": "fea290af73747f9c43bb33d7f0038c3c3e7ae6306c9c5a3fc24b4b411fbab67b",
+      "afterPngSha256": "56edc691c9ea6f5a75c4145e0aaa45afbbfb310a705338edfa978972065e2205"
+    },
+    {
+      "target": "hip-x17-z6",
+      "mode": "display-normals",
+      "width": 814,
+      "height": 840,
+      "changedPixels": 0,
+      "changedOver10Pixels": 0,
+      "meanMaximumChannelDifference": 0,
+      "changedBounds": null,
+      "goldBefore": 834,
+      "goldAfter": 834,
+      "sourcePositionSha256Before": "4aee8736c5311c80033d1d53d86ac7f10d913d7f4d4213b014bd43cb0efc1cbf",
+      "sourcePositionSha256After": "4aee8736c5311c80033d1d53d86ac7f10d913d7f4d4213b014bd43cb0efc1cbf",
+      "sourcePositionsEqual": true,
+      "cameraBefore": {
+        "position": [
+          0.05745498513390924,
+          0.024563014185465713,
+          0.10120880188284802
+        ],
+        "target": [
+          0.0235,
+          0.0175,
+          0.0965
+        ]
+      },
+      "cameraAfter": {
+        "position": [
+          0.05745498513390924,
+          0.024563014185465713,
+          0.10120880188284802
+        ],
+        "target": [
+          0.0235,
+          0.0175,
+          0.0965
+        ]
+      },
+      "beforePngSha256": "9a79046c2a1ec1d647a39fb4aafb21c5413156960ea9b0fa3f3e7b9cf0de8e59",
+      "afterPngSha256": "9a79046c2a1ec1d647a39fb4aafb21c5413156960ea9b0fa3f3e7b9cf0de8e59"
+    },
+    {
+      "target": "hip-x17-z6",
+      "mode": "opening-outline",
+      "width": 814,
+      "height": 840,
+      "changedPixels": 173,
+      "changedOver10Pixels": 171,
+      "meanMaximumChannelDifference": 0.014345676845676846,
+      "changedBounds": {
+        "xmin": 381,
+        "xmax": 453,
+        "ymin": 372,
+        "ymax": 459
+      },
+      "goldBefore": 1067,
+      "goldAfter": 1148,
+      "sourcePositionSha256Before": "4aee8736c5311c80033d1d53d86ac7f10d913d7f4d4213b014bd43cb0efc1cbf",
+      "sourcePositionSha256After": "4aee8736c5311c80033d1d53d86ac7f10d913d7f4d4213b014bd43cb0efc1cbf",
+      "sourcePositionsEqual": true,
+      "cameraBefore": {
+        "position": [
+          0.05745498513390924,
+          0.024563014185465713,
+          0.10120880188284802
+        ],
+        "target": [
+          0.0235,
+          0.0175,
+          0.0965
+        ]
+      },
+      "cameraAfter": {
+        "position": [
+          0.05745498513390924,
+          0.024563014185465713,
+          0.10120880188284802
+        ],
+        "target": [
+          0.0235,
+          0.0175,
+          0.0965
+        ]
+      },
+      "beforePngSha256": "141682b072ddf191f1c1863da5a8439c2f51d8f5b5895d382402fe20a2112cd0",
+      "afterPngSha256": "21b029b29c6af8edc18e20eae25db991a92d04d7bc2f6c8ad0d6b925955814bd"
+    },
+    {
+      "target": "hip-x17-z6",
+      "mode": "all-overlays",
+      "width": 814,
+      "height": 840,
+      "changedPixels": 171,
+      "changedOver10Pixels": 171,
+      "meanMaximumChannelDifference": 0.014342751842751843,
+      "changedBounds": {
+        "xmin": 381,
+        "xmax": 453,
+        "ymin": 372,
+        "ymax": 459
+      },
+      "goldBefore": 1067,
+      "goldAfter": 1148,
+      "sourcePositionSha256Before": "4aee8736c5311c80033d1d53d86ac7f10d913d7f4d4213b014bd43cb0efc1cbf",
+      "sourcePositionSha256After": "4aee8736c5311c80033d1d53d86ac7f10d913d7f4d4213b014bd43cb0efc1cbf",
+      "sourcePositionsEqual": true,
+      "cameraBefore": {
+        "position": [
+          0.05745498513390924,
+          0.024563014185465713,
+          0.10120880188284802
+        ],
+        "target": [
+          0.0235,
+          0.0175,
+          0.0965
+        ]
+      },
+      "cameraAfter": {
+        "position": [
+          0.05745498513390924,
+          0.024563014185465713,
+          0.10120880188284802
+        ],
+        "target": [
+          0.0235,
+          0.0175,
+          0.0965
+        ]
+      },
+      "beforePngSha256": "80831f82aa44dd7af558fcd8da143ed3a10c10ebc901010985e3f882564b6bd4",
+      "afterPngSha256": "ea2cf14083603e14a70b591eb59ffdbf8ed632728e85826b52ef0fc3f86d6ef8"
+    },
+    {
+      "target": "hip-x17-z6",
+      "mode": "final",
+      "width": 814,
+      "height": 840,
+      "changedPixels": 171,
+      "changedOver10Pixels": 171,
+      "meanMaximumChannelDifference": 0.014342751842751843,
+      "changedBounds": {
+        "xmin": 381,
+        "xmax": 453,
+        "ymin": 372,
+        "ymax": 459
+      },
+      "goldBefore": 1067,
+      "goldAfter": 1148,
+      "sourcePositionSha256Before": "4aee8736c5311c80033d1d53d86ac7f10d913d7f4d4213b014bd43cb0efc1cbf",
+      "sourcePositionSha256After": "4aee8736c5311c80033d1d53d86ac7f10d913d7f4d4213b014bd43cb0efc1cbf",
+      "sourcePositionsEqual": true,
+      "cameraBefore": {
+        "position": [
+          0.05745498513390924,
+          0.024563014185465713,
+          0.10120880188284802
+        ],
+        "target": [
+          0.0235,
+          0.0175,
+          0.0965
+        ]
+      },
+      "cameraAfter": {
+        "position": [
+          0.05745498513390924,
+          0.024563014185465713,
+          0.10120880188284802
+        ],
+        "target": [
+          0.0235,
+          0.0175,
+          0.0965
+        ]
+      },
+      "beforePngSha256": "141682b072ddf191f1c1863da5a8439c2f51d8f5b5895d382402fe20a2112cd0",
+      "afterPngSha256": "b3665e0342f7b82ee94a0098ba69b342a2184c3932a743f010c6f8f8f4928aca"
+    },
+    {
+      "target": "hip-x17-z6",
+      "mode": "oblique",
+      "width": 814,
+      "height": 840,
+      "changedPixels": 52,
+      "changedOver10Pixels": 52,
+      "meanMaximumChannelDifference": 0.0036357786357786356,
+      "changedBounds": {
+        "xmin": 378,
+        "xmax": 422,
+        "ymin": 392,
+        "ymax": 450
+      },
+      "goldBefore": 978,
+      "goldAfter": 999,
+      "sourcePositionsEqual": true,
+      "cameraBefore": [
+        0.06850000040233134,
+        -0.004965357872616007,
+        0.08152309470892533,
+        0.023500000402331352,
+        0.0175000000745058,
+        0.0965000000070065
+      ],
+      "cameraAfter": [
+        0.06850000040233134,
+        -0.004965357872616007,
+        0.08152309470892533,
+        0.023500000402331352,
+        0.0175000000745058,
+        0.0965000000070065
+      ],
+      "beforePngSha256": "1bd5e24c839871f62974b48cb7c7c38fdbe1be12b9a3d7c1c21eb93d935af7ce",
+      "afterPngSha256": "b382cc39b6da82d88195c0d87e0e843cc851dd28d099c10cd88ba6f66554d49f"
+    },
+    {
+      "target": "hip-x17-z6",
+      "mode": "zoom-out",
+      "width": 814,
+      "height": 840,
+      "changedPixels": 76,
+      "changedOver10Pixels": 76,
+      "meanMaximumChannelDifference": 0.005545805545805546,
+      "changedBounds": {
+        "xmin": 392,
+        "xmax": 433,
+        "ymin": 393,
+        "ymax": 442
+      },
+      "goldBefore": 971,
+      "goldAfter": 1002,
+      "sourcePositionsEqual": true,
+      "cameraBefore": [
+        0.08350000040233135,
+        0.02998075448957343,
+        0.10482050295038492,
+        0.023500000402331352,
+        0.0175000000745058,
+        0.0965000000070065
+      ],
+      "cameraAfter": [
+        0.08350000040233135,
+        0.02998075448957343,
+        0.10482050295038492,
+        0.023500000402331352,
+        0.0175000000745058,
+        0.0965000000070065
+      ],
+      "beforePngSha256": "84e9f837af60f198f8c3145d0168c60307035105647d3f7976b3d4c6fa7ee0fc",
+      "afterPngSha256": "0dba7788cc44d59ab0b3b0c95804d4b238d54f6b06b31905d9477edae44ee9ce"
+    }
+  ]
+}

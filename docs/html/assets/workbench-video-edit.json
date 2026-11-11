@@ -1,0 +1,64 @@
+{
+  "schema": "psop.homepage-video-edit/1",
+  "connection_capture": "docs/html/assets/workbench-connection-capture.json",
+  "timecode_basis": "Raw-video seconds checked against decoded frames; capture event wall-clock times include page-creation delay and are not used as raw-video timecodes.",
+  "editing": "The opening shows a white upper head shell joining the orange lower shell through the source-original three-point closure. The other 68 instances are hidden using native scene visibility controls; meshes and mating transforms are unchanged. Two isolated scenes from the same snapshot are used. Waiting and intermediate automatic-assembly footage are cut; native automatic-assembly playback is 4×. No synthetic scene or motion.",
+  "sources": [
+    {
+      "id": "head_shell",
+      "file": ".runtime/homepage-connection/page@136ea9791d3602d453b25757d6d2d479.webm",
+      "capture": "docs/html/assets/workbench-connection-capture.json",
+      "sha256": "48052ff24ee64a90f0446a88229573a1370a1e134a1f598d2135407a1974ec70"
+    },
+    {
+      "id": "automatic",
+      "file": ".runtime/homepage-capture/page@65950f6608dc252e175d945b115249dd.webm",
+      "capture": "docs/html/assets/workbench-capture.json",
+      "sha256": "3bae3c734c440a8d8a89883b87df47ba42dfd216a9caca23958e9e5d52ef0149"
+    }
+  ],
+  "segments": [
+    {
+      "source": "head_shell",
+      "from": 9.6,
+      "to": 12,
+      "label": "选择 · 白色上壳与橙色下壳"
+    },
+    {
+      "source": "head_shell",
+      "from": 12,
+      "to": 17.75,
+      "label": "连接 · 头部上下壳合拢"
+    },
+    {
+      "source": "head_shell",
+      "from": 17.75,
+      "to": 18.9,
+      "label": "拆分 · 两片外壳重新分开"
+    },
+    {
+      "source": "head_shell",
+      "from": 21.1,
+      "to": 22.4,
+      "label": "拆分 · 两片外壳重新分开"
+    },
+    {
+      "source": "head_shell",
+      "from": 22.4,
+      "to": 24.3,
+      "label": "撤销 · 恢复闭合状态"
+    },
+    {
+      "source": "automatic",
+      "from": 94,
+      "to": 102,
+      "label": "自动还原 · 来源原装构型 · 4×"
+    },
+    {
+      "source": "automatic",
+      "from": 118,
+      "to": 127.5,
+      "label": "自动还原 · 来源原装构型 · 4×"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "schema": "psop.mounting.knowledge/1.0-draft.1",
+  "device_id": "microduck",
+  "provenance": {
+    "kind": "user_statement",
+    "recorded_at": "2026-11-06",
+    "statement": "应该有8个可安装孔位 并说明至少同侧两个相邻的孔位可作为安装接口 同时还要标识那两个孔位与腿部连杆的孔位相连接",
+    "interpretation": "按用户前述说明，XL330 壳体两侧各四个孔位，标准参考装配使用同侧两个孔位连接腿部连杆。此交付将相邻显式解释为矩形边，保留 16 mm 短边与 30 mm 长边，排除对角；这是可复审的项目解释，不是厂家认证。本文件不指定螺纹、允许旋入深度、紧固扭矩或实际接合状态。"
+  },
+  "interface_families": [
+    {
+      "id": "xl330-housing-mount",
+      "selector": {
+        "mesh_key": "xl330",
+        "geometry_sha256": "96238ed0d020ce0009cf1a5aa4b6926176c800840318ee65e4375be2298d2744"
+      },
+      "layout": {
+        "type": "rectangular",
+        "hole_diameter_m": 0.002,
+        "spacing_m": [0.016, 0.03],
+        "side_count": 2
+      },
+      "mechanism": "fastener_mount",
+      "role": "housing_mount",
+      "selection": {
+        "same_side": true,
+        "min_count": 2,
+        "require_adjacent_pair": true,
+        "adjacency": "rectangle_edges"
+      },
+      "statement": "A、B 两侧各四个可寻址安装孔位。一次安装选择同一侧至少两个成员，并包含矩形边上的一对相邻孔位；16 mm 短边与 30 mm 长边分别保留，不将对角线当成邻接。额外选孔仍须与对端、连接件和共同安装位姿相容。"
+    }
+  ],
+  "reference_assemblies": [
+    {
+      "id": "xl330-leg-standard",
+      "interface_family_ref": "xl330-housing-mount",
+      "counterpart_selector": {
+        "mesh_key": "leg",
+        "geometry_sha256": "9a91cc1ae31ecd9e0c1ba93f3bb2ad8a12e29bff24ec27d1ac66c0c3037d9fcf"
+      },
+      "occurrence_selector": "same_source_body",
+      "counterpart": {
+        "hole_diameter_m": 0.0024,
+        "hole_spacing_m": 0.016
+      },
+      "expected_pair_count": 2,
+      "role": "bracket_mount",
+      "statement": "在来源 qpos0 的标准参考装配中，与腿部连杆同属所指定来源 body 的 XL330 壳体采用同侧两个相邻孔位连接该连杆。共同来源 body 仅限定本条用户声明的实例范围，不自动证明其他同 body 部件之间存在物理连接。具体孔位映射由两孔孔距、共同参考位姿和孔轴对应复核；螺钉实体、允许长度、螺纹、保持状态及装配路径未在本说明中指定。"
+    }
+  ]
+}

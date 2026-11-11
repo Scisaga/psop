@@ -1,0 +1,10 @@
+{
+  "requested_snapshot": "dkp-2222613002e674936348",
+  "active_snapshot": "dkp-e89fd146a8000ccc3556",
+  "part": "part:microduck:07e507f1e9297aa3",
+  "camera": [
+    "0.1799421,0.32377509999999976,0.18942219999999996",
+    "0.0202565,0,0.1454614"
+  ],
+  "recovered": true
+}

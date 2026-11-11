@@ -1,0 +1,169 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Users\\lsh\\Desktop\\workspace\\psop\\apps\\workbench\\.runtime\\node-v22.23.4-win-x64\\node.exe",
+      "C:\\Users\\lsh\\Desktop\\workspace\\psop\\apps\\workbench\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--config",
+      "playwright.simulate.config.ts",
+      "tests/simulate.spec.ts",
+      "--grep",
+      "沉浸布局",
+      "--reporter=list,json"
+    ],
+    "configFile": "C:\\Users\\lsh\\Desktop\\workspace\\psop\\apps\\workbench\\playwright.simulate.config.ts",
+    "rootDir": "C:/Users/lsh/Desktop/workspace/psop/apps/workbench/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/lsh/Desktop/workspace/psop/apps/workbench/.runtime/simulate-e2e/results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "C:/Users/lsh/Desktop/workspace/psop/apps/workbench/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "simulate.spec.ts",
+          "workbench.spec.ts",
+          "loading.spec.ts",
+          "compatibility-preview.spec.ts",
+          "rendering.spec.ts"
+        ],
+        "timeout": 90000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\Users\\lsh\\Desktop\\workspace\\psop\\apps\\workbench\\.runtime\\simulate-e2e\\results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "C:\\Users\\lsh\\Desktop\\workspace\\psop\\apps\\workbench\\tests",
+        "snapshotDir": "C:\\Users\\lsh\\Desktop\\workspace\\psop\\apps\\workbench\\tests",
+        "testIgnore": [],
+        "testMatch": [
+          "simulate.spec.ts",
+          "workbench.spec.ts",
+          "loading.spec.ts",
+          "compatibility-preview.spec.ts",
+          "rendering.spec.ts"
+        ],
+        "timeout": 90000,
+        "use": {
+          "baseURL": "http://127.0.0.1:8792",
+          "channel": "chrome",
+          "headless": true,
+          "viewport": {
+            "width": 1600,
+            "height": 1000
+          },
+          "actionTimeout": 15000,
+          "screenshot": "only-on-failure",
+          "trace": "retain-on-failure"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list"
+      ],
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": {
+      "command": "\"C:\\Users\\lsh\\Desktop\\workspace\\psop\\apps\\workbench\\.runtime\\node-v22.23.4-win-x64\\node.exe\" scripts/serve.mjs --port 8792 --registry \"C:\\Users\\lsh\\Desktop\\workspace\\psop\\apps\\workbench\\.runtime\\simulate-e2e\\registry.json\"",
+      "url": "http://127.0.0.1:8792/health",
+      "reuseExistingServer": false,
+      "timeout": 30000
+    }
+  },
+  "suites": [
+    {
+      "title": "simulate.spec.ts",
+      "file": "simulate.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "沉浸布局保留完整视口，目录、精确工具和方案菜单按需展开",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10627,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T18:56:41.571Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6063be3a779225c32cca-8e98ee0447e976257b6c",
+          "file": "simulate.spec.ts",
+          "line": 112,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-10T18:56:40.117Z",
+    "duration": 12826.956,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

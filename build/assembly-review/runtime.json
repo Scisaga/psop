@@ -1,0 +1,73 @@
+{
+  "url": "http://127.0.0.1:8780",
+  "server_pid": 18380,
+  "health": {
+    "app": "psop-workbench",
+    "mode": "local",
+    "dkpSchema": "psop.dkp/2.0-draft.1"
+  },
+  "meta": {
+    "title": "Microduck",
+    "ontologyVersion": "psop.hardware/2.0-draft.4",
+    "scope": "官方模型参考 · qpos0；不等同 alpha 实机配置或工程验收",
+    "sourceCommit": "cb70b792312d559a4da09064d92009079671815f",
+    "counts": {
+      "sources": 62,
+      "geometries": 38,
+      "parts": 70,
+      "bodies": 15,
+      "joints": 14,
+      "evidence": 343
+    },
+    "version": "2.0.0-assembly.2",
+    "snapshot": "psop.microduck@2.0.0-assembly.2",
+    "generatedAt": "2026-11-07T19:08:39+00:00",
+    "packageId": "psop.microduck",
+    "packageVersion": "2.0.0-assembly.2",
+    "packageDigest": "700958f225110d20315d5865fa00ea899e1437622a8a2bed4cdc60db8e576f2e",
+    "dkpSchema": "psop.dkp/2.0-draft.1",
+    "inputKind": "dkp",
+    "capabilities": {
+      "source_registry": {
+        "status": "complete",
+        "scope": "Captured original source bytes, locators and SHA-256.",
+        "description": "Captured original source bytes, locators and SHA-256."
+      },
+      "source_model_projection": {
+        "status": "complete",
+        "scope": "Frozen source assembly at qpos0; visual motion offsets are separate.",
+        "description": "Frozen source assembly at qpos0; visual motion offsets are separate."
+      },
+      "assembly_interfaces": {
+        "status": "partial",
+        "scope": "Assembly-led interfaces, finite member geometry and explicit counterpart bindings; open device-specific questions remain.",
+        "description": "Assembly-led interfaces, finite member geometry and explicit counterpart bindings; open device-specific questions remain."
+      },
+      "mechanical_validation": {
+        "status": "unavailable",
+        "scope": "Reference assembly and source fits do not confirm physical preload, tolerances or loads.",
+        "description": "Reference assembly and source fits do not confirm physical preload, tolerances or loads."
+      }
+    },
+    "validation": {
+      "valid": true,
+      "profile": "psop.hardware.source-model/1.13"
+    }
+  },
+  "assets": [
+    {
+      "url": "/assets/index-D4oPSYFo.js",
+      "sha256": "80d5dba7698f28843fc567b60c53a0e1dffbf28a6b6d61bc773180ebb0809ab1"
+    },
+    {
+      "url": "/assets/index-D6QcFeET.css",
+      "sha256": "be9b2ad393897a37fa4701af81468b1f212bfebcbc34559381d6b0e66ee22f70"
+    }
+  ],
+  "assembly": {
+    "features": 539,
+    "interfaces": 193,
+    "connections": 104,
+    "part_notes": 5
+  }
+}

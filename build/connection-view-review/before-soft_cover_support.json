@@ -1,0 +1,70 @@
+{
+  "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-700958f225110d20315d&part=part%3Amicroduck%3A328011951ac11ee7&interface=interface%3Aassembly%3A328011951ac11ee7%3Asoft_cover_support&explode=0.00&detail=interfaces&inspection=1&view=iso&labels=0",
+  "view": {
+    "kind": "psop.workbench.view/1.0",
+    "workspaceId": "microduck",
+    "packageId": "psop.microduck",
+    "packageVersion": "2.0.0-assembly.2",
+    "packageDigest": "700958f225110d20315d5865fa00ea899e1437622a8a2bed4cdc60db8e576f2e",
+    "snapshotId": "dkp-700958f225110d20315d",
+    "sourceCommit": "cb70b792312d559a4da09064d92009079671815f",
+    "selectedId": "part:microduck:328011951ac11ee7",
+    "geometrySelection": {
+      "kind": "interface",
+      "id": "interface:assembly:328011951ac11ee7:soft_cover_support",
+      "ownerRef": "part:microduck:328011951ac11ee7"
+    },
+    "explosion": 0,
+    "view": "iso",
+    "camera": {
+      "position": [
+        0.01822706045581684,
+        0.00960792390327151,
+        0.4667245620414403
+      ],
+      "target": [
+        0.07014301888365301,
+        -0.004878195546162166,
+        0.22049870740008373
+      ]
+    },
+    "hiddenIds": [],
+    "isolateId": null,
+    "showLabels": false,
+    "showGrid": true,
+    "clipping": false,
+    "xray": false,
+    "inspection": {
+      "active": true,
+      "previousCamera": {
+        "position": [
+          0.4082796563696956,
+          -0.5735995078128227,
+          0.42213879158315426
+        ],
+        "target": [
+          0.020256459908080095,
+          1.3877787807814457e-17,
+          0.14546138193226335
+        ]
+      },
+      "camera": {
+        "position": [
+          0.01822706045581684,
+          0.00960792390327151,
+          0.4667245620414403
+        ],
+        "target": [
+          0.07014301888365301,
+          -0.004878195546162166,
+          0.22049870740008373
+        ]
+      },
+      "visiblePartIds": [
+        "part:microduck:328011951ac11ee7"
+      ],
+      "mode": "local",
+      "translucentPartIds": []
+    }
+  }
+}

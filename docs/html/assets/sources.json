@@ -1,0 +1,1350 @@
+{
+  "schema_version": "psop.static-homepage-assets/1",
+  "created": "2026-10-15",
+  "geometry_source": "Official Microduck walk-reference XML/STL assembly: 38 source meshes, 70 assembly instances, SRC-000048 / qpos0; source geometry preserved",
+  "geometry_license": "Creative Commons BY-SA-NC; upstream statement does not name a version",
+  "case_boundaries": [
+    "Product screenshots and the edited assembly recording come from the actual current workbench and the recorded .10 snapshot.",
+    "Build runs through the CLI; the webpage displays registered knowledge snapshots. Compile execution services are not connected.",
+    "The assembly movie combines two isolated scenes from the same snapshot. The head-shell close-up hides the other 68 instances through native visibility controls. Waiting, camera adjustment and intermediate automatic-assembly footage are cut. Automatic playback is native 4x; scene and motions are real recordings.",
+    "Source geometry, colors and original assembly matrices are preserved. Exploded display offsets do not certify an assembly path.",
+    "Rigid intersections, assembly operation eligibility and mechanical verification are distinct records; reference overlap alone does not invalidate assembly.",
+    "EG and Microduck AR are teaching examples. installation-process.webp is an existing generated illustration, not a field photograph.",
+    "240 paired experiments and ar-demo-25s.mp4 concern the earlier mechanical-arm work, not current Microduck measurements.",
+    "psop-overview.pdf is a historical research presentation, not the current product specification."
+  ],
+  "serving": "Standalone local assets only; no runtime API, CDN or external font. Video and PDF are requested only on explicit interaction. Non-hero images and 3D dependencies load on demand.",
+  "assets": [
+    {
+      "file": "microduck-assembled.webp",
+      "role": "Static source-original model fallback in the device-knowledge viewer",
+      "source": "docs/presentations/v2/assets/generated/microduck/model-assembled.png",
+      "source_sha256": "fbb0a2f11c7f8cea786811606190ef5337e988bc8d05d8de093b9982e281d724",
+      "sha256": "1bbe9e7eb403e908fb72387a5aed670328b376c16c43f4aea4217b6f75da3276",
+      "bytes": 96866,
+      "size": [
+        900,
+        1200
+      ],
+      "source_size": [
+        900,
+        1200
+      ],
+      "mode": "RGBA",
+      "transform": "Lossless WebP encoding with exact transparent-pixel RGB retained; dimensions, alpha and all RGBA pixel values are identical to the source PNG",
+      "kind": "source_assembly_render",
+      "attribution": "build/microduck-official-assembled/microduck-official-assembled-v1.2.1.build.dkp/apps/build/data/scene-manifest.json",
+      "rights": "Creative Commons BY-SA-NC; upstream source does not name a version",
+      "source_alpha_bounds": [
+        168,
+        120,
+        817,
+        1097
+      ],
+      "alpha_bounds": [
+        168,
+        120,
+        817,
+        1097
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "source_model_metadata": {
+        "source": {
+          "assembly_status": "source_reference",
+          "configurations": [
+            "walk-model-reference"
+          ],
+          "coordinate_system": {
+            "handedness": "right",
+            "transform_layout": "row-major",
+            "up_axis": "+Z"
+          },
+          "mesh_count": 38,
+          "object_count": 70,
+          "pose": "qpos0",
+          "source_id": "SRC-000048",
+          "source_digest": "sha256:80fc4424ed71e430ec4919110dfdb5c714dc1c4e1138e1832a16865cf31eb8c8",
+          "path": "../../sources/SRC-000048--robot_walk/original/robot_walk.xml",
+          "reference_device_id": "DEV-000003",
+          "sourceCommit": "cb70b792312d559a4da09064d92009079671815f",
+          "sourceBounds": [
+            [
+              -0.05177709943375588,
+              -0.07050000131130217,
+              0.013473379386577666
+            ],
+            [
+              0.09229001924991602,
+              0.07050000131130217,
+              0.2774493844779491
+            ]
+          ],
+          "precision": "uint16 positions per mesh bounds; source face normals int16; triangles unchanged",
+          "license": "Creative Commons BY-SA-NC (upstream statement does not name a version)",
+          "alphaMapping": "Not verified; alpha software identity is separate from this walk reference"
+        },
+        "imageSize": [
+          900,
+          1200
+        ],
+        "options": {},
+        "assemblyBounds": [
+          75.02740857568584,
+          64.28571428571452,
+          824.9725914243138,
+          1135.714285714286
+        ],
+        "jointRegionBounds": [
+          463.9779860673681,
+          695.9360615741965,
+          602.3714259804974,
+          861.5037068979698
+        ],
+        "jointRegionAnchor": [
+          533.1747060239328,
+          778.7198842360832
+        ],
+        "jointRegionSourceBody": "trunk_base/yaw2roll",
+        "jointRegionMeaning": "walk reference left_hip_yaw body; alpha ID 20 correspondence is not verified",
+        "instanceCount": 70,
+        "alphaBounds": [
+          168,
+          120,
+          817,
+          1097
+        ],
+        "file": "model-assembled.png",
+        "sha256": "fbb0a2f11c7f8cea786811606190ef5337e988bc8d05d8de093b9982e281d724",
+        "errors": [],
+        "background": "transparent"
+      }
+    },
+    {
+      "file": "microduck-exploded.webp",
+      "role": "Build: transparent complete source assembly exploded view",
+      "source": "docs/presentations/v2/assets/generated/microduck/cover-build-exploded.png",
+      "source_sha256": "e9aefce9bfd2a244a23e199b432af566517f5e2250c6f39aa21fc550990aaf33",
+      "sha256": "32ee7c81d1ae670b0adf590a40d2bd3e5af9251f7998486e31692d78c4218eea",
+      "bytes": 74568,
+      "size": [
+        1000,
+        1150
+      ],
+      "source_size": [
+        1000,
+        1150
+      ],
+      "mode": "RGBA",
+      "transform": "Lossless WebP encoding with exact transparent-pixel RGB retained; dimensions, alpha and all RGBA pixel values are identical to the source PNG",
+      "kind": "source_assembly_render",
+      "attribution": "build/microduck-official-assembled/microduck-official-assembled-v1.2.1.build.dkp/apps/build/data/scene-manifest.json",
+      "rights": "Creative Commons BY-SA-NC; upstream source does not name a version",
+      "source_alpha_bounds": [
+        298,
+        100,
+        831,
+        1061
+      ],
+      "alpha_bounds": [
+        298,
+        100,
+        831,
+        1061
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "source_model_metadata": {
+        "source": {
+          "assembly_status": "source_reference",
+          "configurations": [
+            "walk-model-reference"
+          ],
+          "coordinate_system": {
+            "handedness": "right",
+            "transform_layout": "row-major",
+            "up_axis": "+Z"
+          },
+          "mesh_count": 38,
+          "object_count": 70,
+          "pose": "qpos0",
+          "source_id": "SRC-000048",
+          "source_digest": "sha256:80fc4424ed71e430ec4919110dfdb5c714dc1c4e1138e1832a16865cf31eb8c8",
+          "path": "../../sources/SRC-000048--robot_walk/original/robot_walk.xml",
+          "reference_device_id": "DEV-000003",
+          "sourceCommit": "cb70b792312d559a4da09064d92009079671815f",
+          "sourceBounds": [
+            [
+              -0.05177709943375588,
+              -0.07050000131130217,
+              0.013473379386577666
+            ],
+            [
+              0.09229001924991602,
+              0.07050000131130217,
+              0.2774493844779491
+            ]
+          ],
+          "precision": "uint16 positions per mesh bounds; source face normals int16; triangles unchanged",
+          "maxPositionQuantizationErrorMeters": 9.360648376168416e-7,
+          "sourceManifestSha256": "c3279ec14d88c6b9e4f60b25bd0ba9bfd85c1015daf8d63efe4cb2efef4dc965",
+          "license": "Creative Commons BY-SA-NC (upstream statement does not name a version)",
+          "alphaMapping": "Not verified; alpha software identity is separate from this walk reference"
+        },
+        "imageSize": [
+          1000,
+          1150
+        ],
+        "options": {
+          "coverExploded": true
+        },
+        "assemblyBounds": [
+          164.92262793762413,
+          61.607142857143025,
+          835.0773720623758,
+          1088.392857142857
+        ],
+        "jointRegionBounds": [
+          528.4634560951715,
+          686.2048046976058,
+          604.0556198148827,
+          776.6398467043504
+        ],
+        "jointRegionAnchor": [
+          566.259537955027,
+          731.4223257009781
+        ],
+        "jointRegionSourceBody": "trunk_base/yaw2roll",
+        "jointRegionMeaning": "walk reference left_hip_yaw body; alpha ID 20 correspondence is not verified",
+        "instanceCount": 70,
+        "displayOffsets": {
+          "SRC-000048:geom:0": [
+            0,
+            0,
+            0
+          ],
+          "SRC-000048:geom:1": [
+            -74,
+            4,
+            0
+          ],
+          "SRC-000048:geom:2": [
+            0,
+            0,
+            0
+          ],
+          "SRC-000048:geom:3": [
+            0,
+            0,
+            0
+          ],
+          "SRC-000048:geom:4": [
+            0,
+            0,
+            0
+          ],
+          "SRC-000048:geom:5": [
+            0,
+            0,
+            0
+          ],
+          "SRC-000048:geom:7": [
+            0,
+            0,
+            0
+          ],
+          "SRC-000048:geom:8": [
+            0,
+            0,
+            0
+          ],
+          "SRC-000048:geom:9": [
+            74,
+            4,
+            0
+          ],
+          "SRC-000048:geom:10": [
+            0,
+            0,
+            0
+          ],
+          "SRC-000048:geom:11": [
+            64,
+            -20,
+            0
+          ],
+          "SRC-000048:geom:12": [
+            64,
+            -20,
+            0
+          ],
+          "SRC-000048:geom:13": [
+            64,
+            -20,
+            0
+          ],
+          "SRC-000048:geom:14": [
+            64,
+            -20,
+            0
+          ],
+          "SRC-000048:geom:15": [
+            64,
+            -20,
+            0
+          ],
+          "SRC-000048:geom:16": [
+            64,
+            -20,
+            0
+          ],
+          "SRC-000048:geom:17": [
+            64,
+            -20,
+            0
+          ],
+          "SRC-000048:geom:18": [
+            64,
+            -20,
+            0
+          ],
+          "SRC-000048:geom:19": [
+            64,
+            -20,
+            0
+          ],
+          "SRC-000048:geom:20": [
+            64,
+            -20,
+            0
+          ],
+          "SRC-000048:geom:21": [
+            64,
+            -20,
+            0
+          ],
+          "SRC-000048:geom:22": [
+            64,
+            -20,
+            0
+          ],
+          "SRC-000048:geom:24": [
+            64,
+            -20,
+            0
+          ],
+          "SRC-000048:geom:25": [
+            64,
+            -72,
+            0
+          ],
+          "SRC-000048:geom:27": [
+            64,
+            -72,
+            0
+          ],
+          "SRC-000048:geom:28": [
+            64,
+            -72,
+            0
+          ],
+          "SRC-000048:geom:29": [
+            64,
+            -72,
+            0
+          ],
+          "SRC-000048:geom:30": [
+            0,
+            40,
+            0
+          ],
+          "SRC-000048:geom:31": [
+            0,
+            40,
+            0
+          ],
+          "SRC-000048:geom:32": [
+            0,
+            40,
+            0
+          ],
+          "SRC-000048:geom:33": [
+            0,
+            40,
+            0
+          ],
+          "SRC-000048:geom:34": [
+            0,
+            40,
+            0
+          ],
+          "SRC-000048:geom:35": [
+            0,
+            40,
+            0
+          ],
+          "SRC-000048:geom:36": [
+            0,
+            40,
+            0
+          ],
+          "SRC-000048:geom:37": [
+            0,
+            40,
+            0
+          ],
+          "SRC-000048:geom:38": [
+            0,
+            40,
+            0
+          ],
+          "SRC-000048:geom:39": [
+            0,
+            40,
+            0
+          ],
+          "SRC-000048:geom:40": [
+            0,
+            94,
+            38
+          ],
+          "SRC-000048:geom:41": [
+            0,
+            94,
+            38
+          ],
+          "SRC-000048:geom:42": [
+            0,
+            94,
+            0
+          ],
+          "SRC-000048:geom:43": [
+            0,
+            94,
+            0
+          ],
+          "SRC-000048:geom:44": [
+            0,
+            94,
+            0
+          ],
+          "SRC-000048:geom:45": [
+            0,
+            132,
+            0
+          ],
+          "SRC-000048:geom:46": [
+            0,
+            94,
+            0
+          ],
+          "SRC-000048:geom:47": [
+            0,
+            94,
+            0
+          ],
+          "SRC-000048:geom:48": [
+            0,
+            94,
+            0
+          ],
+          "SRC-000048:geom:49": [
+            0,
+            94,
+            0
+          ],
+          "SRC-000048:geom:50": [
+            0,
+            94,
+            38
+          ],
+          "SRC-000048:geom:51": [
+            0,
+            94,
+            0
+          ],
+          "SRC-000048:geom:52": [
+            0,
+            70,
+            0
+          ],
+          "SRC-000048:geom:53": [
+            0,
+            94,
+            38
+          ],
+          "SRC-000048:geom:54": [
+            0,
+            94,
+            0
+          ],
+          "SRC-000048:geom:55": [
+            0,
+            94,
+            0
+          ],
+          "SRC-000048:geom:56": [
+            -64,
+            -20,
+            0
+          ],
+          "SRC-000048:geom:57": [
+            -64,
+            -20,
+            0
+          ],
+          "SRC-000048:geom:58": [
+            -64,
+            -20,
+            0
+          ],
+          "SRC-000048:geom:59": [
+            -64,
+            -20,
+            0
+          ],
+          "SRC-000048:geom:60": [
+            -64,
+            -20,
+            0
+          ],
+          "SRC-000048:geom:61": [
+            -64,
+            -20,
+            0
+          ],
+          "SRC-000048:geom:62": [
+            -64,
+            -20,
+            0
+          ],
+          "SRC-000048:geom:63": [
+            -64,
+            -20,
+            0
+          ],
+          "SRC-000048:geom:64": [
+            -64,
+            -20,
+            0
+          ],
+          "SRC-000048:geom:65": [
+            -64,
+            -20,
+            0
+          ],
+          "SRC-000048:geom:66": [
+            -64,
+            -20,
+            0
+          ],
+          "SRC-000048:geom:67": [
+            -64,
+            -20,
+            0
+          ],
+          "SRC-000048:geom:68": [
+            -64,
+            -20,
+            0
+          ],
+          "SRC-000048:geom:70": [
+            -64,
+            -72,
+            0
+          ],
+          "SRC-000048:geom:71": [
+            -64,
+            -72,
+            0
+          ],
+          "SRC-000048:geom:73": [
+            -64,
+            -72,
+            0
+          ],
+          "SRC-000048:geom:74": [
+            -64,
+            -72,
+            0
+          ]
+        },
+        "sourceMatricesPreserved": true,
+        "alphaBounds": [
+          298,
+          100,
+          831,
+          1061
+        ],
+        "file": "cover-build-exploded.png",
+        "sha256": "e9aefce9bfd2a244a23e199b432af566517f5e2250c6f39aa21fc550990aaf33",
+        "errors": [],
+        "background": "transparent"
+      }
+    },
+    {
+      "file": "microduck-installation.webp",
+      "role": "Simulate: transparent stage 2 alignment preview; detached hip/leg component",
+      "source": "docs/presentations/v2/assets/generated/microduck/cover-installation.png",
+      "source_sha256": "55b7420536f72ddf48a5441b005e59980414ab74961f403485347d45f36c5824",
+      "sha256": "8c7621e340ac3d009a7bb197633e5c73a178f238a6407d0e137faf6e0050fd1b",
+      "bytes": 103186,
+      "size": [
+        1200,
+        1100
+      ],
+      "source_size": [
+        1200,
+        1100
+      ],
+      "mode": "RGBA",
+      "transform": "Lossless WebP encoding with exact transparent-pixel RGB retained; dimensions, alpha and all RGBA pixel values are identical to the source PNG",
+      "kind": "source_assembly_render",
+      "attribution": "build/microduck-official-assembled/microduck-official-assembled-v1.2.1.build.dkp/apps/build/data/scene-manifest.json",
+      "rights": "Creative Commons BY-SA-NC; upstream source does not name a version",
+      "source_alpha_bounds": [
+        173,
+        109,
+        1084,
+        967
+      ],
+      "alpha_bounds": [
+        173,
+        109,
+        1084,
+        967
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "source_model_metadata": {
+        "source": {
+          "assembly_status": "source_reference",
+          "configurations": [
+            "walk-model-reference"
+          ],
+          "coordinate_system": {
+            "handedness": "right",
+            "transform_layout": "row-major",
+            "up_axis": "+Z"
+          },
+          "mesh_count": 38,
+          "object_count": 70,
+          "pose": "qpos0",
+          "source_id": "SRC-000048",
+          "source_digest": "sha256:80fc4424ed71e430ec4919110dfdb5c714dc1c4e1138e1832a16865cf31eb8c8",
+          "path": "../../sources/SRC-000048--robot_walk/original/robot_walk.xml",
+          "reference_device_id": "DEV-000003",
+          "sourceCommit": "cb70b792312d559a4da09064d92009079671815f",
+          "sourceBounds": [
+            [
+              -0.05177709943375588,
+              -0.07050000131130217,
+              0.013473379386577666
+            ],
+            [
+              0.09229001924991602,
+              0.07050000131130217,
+              0.2774493844779491
+            ]
+          ],
+          "precision": "uint16 positions per mesh bounds; source face normals int16; triangles unchanged",
+          "maxPositionQuantizationErrorMeters": 9.360648376168416e-7,
+          "sourceManifestSha256": "c3279ec14d88c6b9e4f60b25bd0ba9bfd85c1015daf8d63efe4cb2efef4dc965",
+          "license": "Creative Commons BY-SA-NC (upstream statement does not name a version)",
+          "alphaMapping": "Not verified; alpha software identity is separate from this walk reference"
+        },
+        "imageSize": [
+          1200,
+          1100
+        ],
+        "options": {
+          "installationStage": 2
+        },
+        "assemblyBounds": [
+          89.65455776911458,
+          58.92857142857171,
+          1110.3454422308853,
+          1041.0714285714284
+        ],
+        "jointRegionBounds": [
+          768.3330154448074,
+          556.0381780986781,
+          892.1061864115366,
+          704.1147956325846
+        ],
+        "jointRegionAnchor": [
+          830.219600928172,
+          630.0764868656313
+        ],
+        "jointRegionSourceBody": "trunk_base/yaw2roll",
+        "jointRegionMeaning": "walk reference left_hip_yaw body; alpha ID 20 correspondence is not verified",
+        "instanceCount": 70,
+        "displayOffsets": {},
+        "sourceMatricesPreserved": true,
+        "installationStage": 2,
+        "installationMeaning": "display-only stage 2 alignment of the walk reference left hip/leg chain; no physical installation acceptance",
+        "sourceTargetAnchor": [
+          499.40189702595893,
+          697.8879232392278
+        ],
+        "sourceTargetBounds": [
+          437.5153115425944,
+          623.8496144722745,
+          561.2884825093234,
+          771.9262320061811
+        ],
+        "movingJointAnchor": [
+          830.219600928172,
+          630.0764868656313
+        ],
+        "movingJointBounds": [
+          768.3330154448074,
+          556.0381780986781,
+          892.1061864115366,
+          704.1147956325846
+        ],
+        "movingAssemblyBounds": [
+          755.8827208447494,
+          543.9417439099303,
+          1091.1911439439548,
+          931.665904803908
+        ],
+        "movingInstanceCount": 17,
+        "fixedInstanceCount": 53,
+        "movingSourceBodies": [
+          "trunk_base/yaw2roll",
+          "trunk_base/yaw2roll/hip_l",
+          "trunk_base/yaw2roll/hip_l/upper_leg_left",
+          "trunk_base/yaw2roll/hip_l/upper_leg_left/leg",
+          "trunk_base/yaw2roll/hip_l/upper_leg_left/leg/ankle_left"
+        ],
+        "projectionCoordinates": "image pixels, origin top-left, x right, y down",
+        "alphaBounds": [
+          173,
+          109,
+          1084,
+          967
+        ],
+        "file": "cover-installation.png",
+        "sha256": "55b7420536f72ddf48a5441b005e59980414ab74961f403485347d45f36c5824",
+        "errors": [],
+        "background": "transparent"
+      }
+    },
+    {
+      "file": "installation-process.webp",
+      "role": "AR/mobile: generated in-progress installation illustration, hands and tool visible",
+      "source": "docs/presentations/v2/assets/generated/microduck/installation-process.png",
+      "source_sha256": "2566e9e8610868a7b2e72192ca4893d00ed42fb5f78af56bf5718bd51faf2303",
+      "sha256": "51963ee6b3b8a17ddc5655c88dd83c21e4cd2e33bd97b520dab2b8b50ac77cc4",
+      "bytes": 140788,
+      "size": [
+        1600,
+        900
+      ],
+      "source_size": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "transform": "Lanczos resize from [1672, 941] to width 1600; WebP encoding, lossless=False, quality=89",
+      "kind": "generated_installation_illustration",
+      "attribution": "imagegen installation-process illustration using official-closeup.webp and source-derived model renders as references",
+      "rights": "Generated process illustration; references retain their source attribution",
+      "installation_target": {
+        "source_pixel": [
+          883,
+          527
+        ],
+        "source_size": [
+          1672,
+          941
+        ],
+        "normalized": [
+          0.52811004784689,
+          0.5600425079702445
+        ],
+        "note": "Tightening location on the right hip connector in the generated process illustration; visual pointer, not measured pose evidence"
+      }
+    },
+    {
+      "file": "workbench-build.webp",
+      "purpose": "Published snapshot, provenance and capability declarations",
+      "kind": "actual_workbench_capture",
+      "route": "#build?workspace=microduck&snapshot=dkp-c9a2c6afd8358f836d0f&explode=0.00&detail=interfaces&view=iso",
+      "dimensions": [
+        1600,
+        1000
+      ],
+      "bytes": 99852,
+      "sha256": "e31841ef12767d0b7a6c15960dda672c4b7d95b12a915e3116e6ab47310f5dd4",
+      "role": "Published snapshot, provenance and capability declarations",
+      "source": "scripts/capture-homepage.mjs",
+      "source_capture": "workbench-capture.json",
+      "captured_at": "2026-11-11T13:54:33.049Z",
+      "package_version": "2.0.0-capabilities.10",
+      "package_digest": "c9a2c6afd8358f836d0f46deae682e35a77710d384653dee5ba6f27716e79c57",
+      "transform": "Actual Chromium UI screenshot encoded as WebP quality 0.94; no scene recoloring or geometry edits."
+    },
+    {
+      "file": "workbench-compile.webp",
+      "purpose": "Current Compile page: execution service not connected",
+      "kind": "actual_workbench_capture",
+      "route": "#compile?workspace=microduck&snapshot=dkp-c9a2c6afd8358f836d0f&explode=0.00&detail=interfaces&view=iso",
+      "dimensions": [
+        1600,
+        1000
+      ],
+      "bytes": 64180,
+      "sha256": "6779b3604303c435a03b95c1f893000b49e3764bdc32d884038a695f347e8413",
+      "role": "Current Compile page: execution service not connected",
+      "source": "scripts/capture-homepage.mjs",
+      "source_capture": "workbench-capture.json",
+      "captured_at": "2026-11-11T13:54:33.049Z",
+      "package_version": "2.0.0-capabilities.10",
+      "package_digest": "c9a2c6afd8358f836d0f46deae682e35a77710d384653dee5ba6f27716e79c57",
+      "transform": "Actual Chromium UI screenshot encoded as WebP quality 0.94; no scene recoloring or geometry edits."
+    },
+    {
+      "file": "workbench-simulate.webp",
+      "purpose": "Current immersive assembly workshop, initial loose parts",
+      "kind": "actual_workbench_capture",
+      "route": "#simulate?workspace=microduck&snapshot=dkp-c9a2c6afd8358f836d0f&explode=0.00&detail=interfaces&view=iso&session=a1de1aed-4d44-4a45-8a6e-08b6dcab37cb",
+      "dimensions": [
+        1600,
+        1000
+      ],
+      "bytes": 187208,
+      "sha256": "511ee39ec58c840fe904e3b2c172e9cb3d95d764ed6bd9365fbe371bcb1530fb",
+      "role": "Current immersive assembly workshop, initial loose parts",
+      "source": "scripts/capture-homepage.mjs",
+      "source_capture": "workbench-capture.json",
+      "captured_at": "2026-11-11T13:54:33.049Z",
+      "package_version": "2.0.0-capabilities.10",
+      "package_digest": "c9a2c6afd8358f836d0f46deae682e35a77710d384653dee5ba6f27716e79c57",
+      "transform": "Actual Chromium UI screenshot encoded as WebP quality 0.94; no scene recoloring or geometry edits."
+    },
+    {
+      "file": "sim-step-01.webp",
+      "role": "Lazy installation preview stage 1: 准备部件",
+      "source": "docs/presentations/v2/assets/generated/microduck/sim-step-01.png",
+      "source_sha256": "d26da62a85974bcae0efd82bb14b1472bce80a26f11c139b4d761f565d50f92a",
+      "sha256": "31fd2886919c475086ed90d692b120924fad55addf081b597418aeda550fc29c",
+      "bytes": 143756,
+      "size": [
+        1680,
+        720
+      ],
+      "source_size": [
+        1680,
+        720
+      ],
+      "mode": "RGB",
+      "transform": "WebP encoding only; pixel layout and dimensions retained; lossless=True, quality=90",
+      "kind": "prototype_browser_capture",
+      "attribution": "PSOP task illustration or prototype",
+      "rights": "Native PSOP diagram or prototype; embedded geometry retains upstream attribution",
+      "stage": {
+        "stage": 1,
+        "name": "准备部件",
+        "guard": false,
+        "success": false,
+        "recheckPresent": false,
+        "movingSourceInstances": 17,
+        "sourceMatricesSha256": "ac1595f620c9369c2a86541117e5187bda48bbb6870957e585b15932408ba8b9",
+        "displayMatricesSha256": "8e590fd0c09bf7d071ecd799cd089b26713bbe4d0108adc9b2212d270753ccdb",
+        "source_target_anchor": [
+          17.49999960884452,
+          84.52662080713743,
+          -13.256460001212325
+        ]
+      }
+    },
+    {
+      "file": "sim-step-02.webp",
+      "role": "Lazy installation preview stage 2: 对齐髋部支架",
+      "source": "docs/presentations/v2/assets/generated/microduck/sim-step-02.png",
+      "source_sha256": "cafc37b02efe826a04103a4055a9e3ed965035aab55661a449556e67a1567e40",
+      "sha256": "e7a26c7dc99996b94e0bb9f50ad5d3f110447ae1343db12ecf9446d96dcaaaaf",
+      "bytes": 145050,
+      "size": [
+        1680,
+        720
+      ],
+      "source_size": [
+        1680,
+        720
+      ],
+      "mode": "RGB",
+      "transform": "WebP encoding only; pixel layout and dimensions retained; lossless=True, quality=90",
+      "kind": "prototype_browser_capture",
+      "attribution": "PSOP task illustration or prototype",
+      "rights": "Native PSOP diagram or prototype; embedded geometry retains upstream attribution",
+      "stage": {
+        "stage": 2,
+        "name": "对齐髋部支架",
+        "guard": false,
+        "success": false,
+        "recheckPresent": false,
+        "movingSourceInstances": 17,
+        "sourceMatricesSha256": "ac1595f620c9369c2a86541117e5187bda48bbb6870957e585b15932408ba8b9",
+        "displayMatricesSha256": "3b31ac7591e0d03a4e502c94e9daa819940385140cafd83d2cba92208caef250",
+        "source_target_anchor": [
+          17.49999960884452,
+          84.52662080713743,
+          -13.256460001212325
+        ]
+      }
+    },
+    {
+      "file": "sim-step-03.webp",
+      "role": "Lazy installation preview stage 3: 安装舵机与连接件",
+      "source": "docs/presentations/v2/assets/generated/microduck/sim-step-03.png",
+      "source_sha256": "97df742bb502bede739e737bd6619d6f60f72be5741bf61d1ddf6f71783f1d40",
+      "sha256": "a8e625b4fd42d6c51df4157134cef28105878af12aeecb09768af76afd19ee06",
+      "bytes": 146108,
+      "size": [
+        1680,
+        720
+      ],
+      "source_size": [
+        1680,
+        720
+      ],
+      "mode": "RGB",
+      "transform": "WebP encoding only; pixel layout and dimensions retained; lossless=True, quality=90",
+      "kind": "prototype_browser_capture",
+      "attribution": "PSOP task illustration or prototype",
+      "rights": "Native PSOP diagram or prototype; embedded geometry retains upstream attribution",
+      "stage": {
+        "stage": 3,
+        "name": "安装舵机与连接件",
+        "guard": false,
+        "success": false,
+        "recheckPresent": false,
+        "movingSourceInstances": 17,
+        "sourceMatricesSha256": "ac1595f620c9369c2a86541117e5187bda48bbb6870957e585b15932408ba8b9",
+        "displayMatricesSha256": "fd430cb60ef2087be7e6858ce6245f75680e8c53cbbea358d92760125ac41625",
+        "source_target_anchor": [
+          17.49999960884452,
+          84.52662080713743,
+          -13.256460001212325
+        ]
+      }
+    },
+    {
+      "file": "sim-step-04.webp",
+      "role": "Lazy installation preview stage 4: 固定与连接",
+      "source": "docs/presentations/v2/assets/generated/microduck/sim-step-04.png",
+      "source_sha256": "58da66707d8d8a816241397738c88697c0a3eb0bef00d4246af9cd7dd094eaff",
+      "sha256": "8fda20dbc7b0641b71a2f85dd4b140e6bf6d65732949eb45ded846504a07676f",
+      "bytes": 137876,
+      "size": [
+        1680,
+        720
+      ],
+      "source_size": [
+        1680,
+        720
+      ],
+      "mode": "RGB",
+      "transform": "WebP encoding only; pixel layout and dimensions retained; lossless=True, quality=90",
+      "kind": "prototype_browser_capture",
+      "attribution": "PSOP task illustration or prototype",
+      "rights": "Native PSOP diagram or prototype; embedded geometry retains upstream attribution",
+      "stage": {
+        "stage": 4,
+        "name": "固定与连接",
+        "guard": false,
+        "success": false,
+        "recheckPresent": false,
+        "movingSourceInstances": 17,
+        "sourceMatricesSha256": "ac1595f620c9369c2a86541117e5187bda48bbb6870957e585b15932408ba8b9",
+        "displayMatricesSha256": "e89e3b780e445433f527180fa87d2c06ddae661ad34c369dc612f193f92f4bdf",
+        "source_target_anchor": [
+          17.49999960884452,
+          84.52662080713743,
+          -13.256460001212325
+        ]
+      }
+    },
+    {
+      "file": "sim-step-05.webp",
+      "role": "Lazy installation preview stage 5: 复检待完成",
+      "source": "docs/presentations/v2/assets/generated/microduck/sim-step-05.png",
+      "source_sha256": "9ad66b1b968c3fb3a56ea94055f5f7a29de249fb887317f5baa3b50f05294d70",
+      "sha256": "1be73182444ea01369759be9f24edba92e17ecba4eca80cf4dcd9b54ad07b2a2",
+      "bytes": 136664,
+      "size": [
+        1680,
+        720
+      ],
+      "source_size": [
+        1680,
+        720
+      ],
+      "mode": "RGB",
+      "transform": "WebP encoding only; pixel layout and dimensions retained; lossless=True, quality=90",
+      "kind": "prototype_browser_capture",
+      "attribution": "PSOP task illustration or prototype",
+      "rights": "Native PSOP diagram or prototype; embedded geometry retains upstream attribution",
+      "stage": {
+        "stage": 5,
+        "name": "复检待完成",
+        "guard": false,
+        "success": false,
+        "recheckPresent": false,
+        "movingSourceInstances": 17,
+        "sourceMatricesSha256": "ac1595f620c9369c2a86541117e5187bda48bbb6870957e585b15932408ba8b9",
+        "displayMatricesSha256": "e89e3b780e445433f527180fa87d2c06ddae661ad34c369dc612f193f92f4bdf",
+        "source_target_anchor": [
+          17.49999960884452,
+          84.52662080713743,
+          -13.256460001212325
+        ]
+      }
+    },
+    {
+      "file": "ar-demo-poster.webp",
+      "role": "AR video poster: original mechanical-arm assembly demonstration; separate from Microduck teaching case",
+      "source": "docs/presentations/v2/assets/generated/ar-demo-poster.png",
+      "source_sha256": "1f7199c886451fab1ceb3a3f311fd11779084188ab3c4f7b94483ba076f791ff",
+      "sha256": "f8cf8d7d813407ea4e0427d38498e81fc5d0a3f26e930c6611d79a192f70042c",
+      "bytes": 209160,
+      "size": [
+        1280,
+        720
+      ],
+      "source_size": [
+        1280,
+        720
+      ],
+      "mode": "RGB",
+      "transform": "WebP encoding only; pixel layout and dimensions retained; lossless=False, quality=87",
+      "kind": "original_mechanical_arm_video_poster",
+      "attribution": "PSOP teaching prototype",
+      "rights": "Native PSOP illustration; embedded source geometry retains original attribution"
+    },
+    {
+      "file": "ar-demo-25s.mp4",
+      "role": "Click-to-load original mechanical-arm AR assembly demonstration, approximately 25 seconds",
+      "source": "docs/presentations/v2/assets/media/ar-demo-25s.mp4",
+      "source_sha256": "f7196a70d861a6e6870d36ed4728ea4c8627fce9a66ac6aacb29bf4e9f8cd08b",
+      "sha256": "f7196a70d861a6e6870d36ed4728ea4c8627fce9a66ac6aacb29bf4e9f8cd08b",
+      "bytes": 12214576,
+      "kind": "original_mechanical_arm_video",
+      "transform": "Byte-for-byte local copy",
+      "attribution": "Original PSOP presentation demonstration; not a Microduck recording"
+    },
+    {
+      "file": "psop-overview.pdf",
+      "role": "Click-to-open historical 25-page research presentation; not current product capabilities",
+      "source": "docs/presentations/v2/psop-v2.pdf",
+      "source_sha256": "80f4dcbd49ba2a777414969f2df9cead0760ac5d18858034e7b94a8cb6db7104",
+      "sha256": "80f4dcbd49ba2a777414969f2df9cead0760ac5d18858034e7b94a8cb6db7104",
+      "bytes": 20991714,
+      "kind": "historical_psop_research_presentation",
+      "transform": "Byte-for-byte local copy",
+      "attribution": "PSOP v2 presentation; individual embedded references retain their original attribution",
+      "loading": "Download only after explicit click; no preload or background fetch"
+    },
+    {
+      "file": "workbench-overview.webp",
+      "purpose": "Current workspace, source assembly, structure tree and object details",
+      "kind": "actual_workbench_capture",
+      "route": "#explorer?workspace=microduck&snapshot=dkp-c9a2c6afd8358f836d0f&part=part%3Amicroduck%3Ae40b9945707505e1&explode=0.00&detail=overview&view=iso&labels=0",
+      "dimensions": [
+        1600,
+        1000
+      ],
+      "bytes": 165440,
+      "sha256": "d5cf89b53ef1623c5db8b6228b4ee53614e66f689d76c0a3ea3c8175db14fa4f",
+      "role": "Current workspace, source assembly, structure tree and object details",
+      "source": "scripts/capture-homepage.mjs",
+      "source_capture": "workbench-capture.json",
+      "captured_at": "2026-11-11T13:54:33.049Z",
+      "package_version": "2.0.0-capabilities.10",
+      "package_digest": "c9a2c6afd8358f836d0f46deae682e35a77710d384653dee5ba6f27716e79c57",
+      "transform": "Actual Chromium UI screenshot encoded as WebP quality 0.94; no scene recoloring or geometry edits."
+    },
+    {
+      "file": "workbench-interfaces.webp",
+      "purpose": "Actual part interfaces and source-reference connections",
+      "kind": "actual_workbench_capture",
+      "route": "#explorer?workspace=microduck&snapshot=dkp-c9a2c6afd8358f836d0f&part=part%3Amicroduck%3Aa682dc3620df43f5&explode=0.00&detail=interfaces&view=iso&labels=0",
+      "dimensions": [
+        1600,
+        1000
+      ],
+      "bytes": 181104,
+      "sha256": "9b81bf9a8c3d623014804924a306dd8d0bd16082fe3e621c187224909e129430",
+      "role": "Actual part interfaces and source-reference connections",
+      "source": "scripts/capture-homepage.mjs",
+      "source_capture": "workbench-capture.json",
+      "captured_at": "2026-11-11T13:54:33.049Z",
+      "package_version": "2.0.0-capabilities.10",
+      "package_digest": "c9a2c6afd8358f836d0f46deae682e35a77710d384653dee5ba6f27716e79c57",
+      "transform": "Actual Chromium UI screenshot encoded as WebP quality 0.94; no scene recoloring or geometry edits."
+    },
+    {
+      "file": "workbench-evidence.webp",
+      "purpose": "Original XML and cited evidence lines",
+      "kind": "actual_workbench_capture",
+      "route": "#explorer?workspace=microduck&snapshot=dkp-c9a2c6afd8358f836d0f&part=part%3Amicroduck%3A986b5adf27910138&explode=0.00&detail=evidence&view=iso&labels=0&source=SRC-MD-MJCF&evidence=evidence%3A986b5adf27910138%3Axml",
+      "dimensions": [
+        1600,
+        1000
+      ],
+      "bytes": 143664,
+      "sha256": "50c07c641355808ccd175bf6a95799996ec7b6354e10f92a6c9af55897cc1fb1",
+      "role": "Original XML and cited evidence lines",
+      "source": "scripts/capture-homepage.mjs",
+      "source_capture": "workbench-capture.json",
+      "captured_at": "2026-11-11T13:54:33.049Z",
+      "package_version": "2.0.0-capabilities.10",
+      "package_digest": "c9a2c6afd8358f836d0f46deae682e35a77710d384653dee5ba6f27716e79c57",
+      "transform": "Actual Chromium UI screenshot encoded as WebP quality 0.94; no scene recoloring or geometry edits."
+    },
+    {
+      "file": "workbench-connection.webp",
+      "purpose": "Real eligible reference connection card with geometric records",
+      "kind": "actual_workbench_capture",
+      "route": "#simulate?workspace=microduck&snapshot=dkp-c9a2c6afd8358f836d0f&explode=0.00&detail=interfaces&view=iso&session=a1de1aed-4d44-4a45-8a6e-08b6dcab37cb",
+      "dimensions": [
+        1600,
+        1000
+      ],
+      "bytes": 259900,
+      "sha256": "005497092a7952eda5d2a20dadaf929faea7fdababbe94e8a1fb9f7ceb7f71d7",
+      "role": "Real eligible reference connection card with geometric records",
+      "source": "scripts/capture-homepage.mjs",
+      "source_capture": "workbench-capture.json",
+      "captured_at": "2026-11-11T13:54:33.049Z",
+      "package_version": "2.0.0-capabilities.10",
+      "package_digest": "c9a2c6afd8358f836d0f46deae682e35a77710d384653dee5ba6f27716e79c57",
+      "transform": "Actual Chromium UI screenshot encoded as WebP quality 0.94; no scene recoloring or geometry edits."
+    },
+    {
+      "file": "workbench-simulate-poster.webp",
+      "purpose": "Completed source-original reference assembly in the real workshop",
+      "kind": "actual_workbench_capture",
+      "route": "#simulate?workspace=microduck&snapshot=dkp-c9a2c6afd8358f836d0f&explode=0.00&detail=interfaces&view=iso&session=a1de1aed-4d44-4a45-8a6e-08b6dcab37cb",
+      "dimensions": [
+        1600,
+        1000
+      ],
+      "bytes": 206304,
+      "sha256": "459d291770908e84c819e14cf689d432c49b58e90eab607dd6c7dcdaaaf51420",
+      "role": "Completed source-original reference assembly in the real workshop",
+      "source": "scripts/capture-homepage.mjs",
+      "source_capture": "workbench-capture.json",
+      "captured_at": "2026-11-11T13:54:33.049Z",
+      "package_version": "2.0.0-capabilities.10",
+      "package_digest": "c9a2c6afd8358f836d0f46deae682e35a77710d384653dee5ba6f27716e79c57",
+      "transform": "Actual Chromium UI screenshot encoded as WebP quality 0.94; no scene recoloring or geometry edits."
+    },
+    {
+      "file": "workbench-simulate-demo.webm",
+      "kind": "actual_workbench_recording",
+      "encoding": "WebM / VP9",
+      "edited_at": "2026-11-11T14:36:42.071Z",
+      "dimensions": [
+        1600,
+        1000
+      ],
+      "fps": 20,
+      "edit_recipe": "docs/html/assets/workbench-video-edit.json",
+      "connection_capture": "docs/html/assets/workbench-connection-capture.json",
+      "sources": [
+        {
+          "id": "head_shell",
+          "file": ".runtime/homepage-connection/page@136ea9791d3602d453b25757d6d2d479.webm",
+          "capture": "docs/html/assets/workbench-connection-capture.json",
+          "sha256": "48052ff24ee64a90f0446a88229573a1370a1e134a1f598d2135407a1974ec70",
+          "duration_seconds": 24.36
+        },
+        {
+          "id": "automatic",
+          "file": ".runtime/homepage-capture/page@65950f6608dc252e175d945b115249dd.webm",
+          "capture": "docs/html/assets/workbench-capture.json",
+          "sha256": "3bae3c734c440a8d8a89883b87df47ba42dfd216a9caca23958e9e5d52ef0149",
+          "duration_seconds": 127.8
+        }
+      ],
+      "segments": [
+        {
+          "source": "head_shell",
+          "from": 9.6,
+          "to": 12,
+          "label": "选择 · 白色上壳与橙色下壳"
+        },
+        {
+          "source": "head_shell",
+          "from": 12,
+          "to": 17.75,
+          "label": "连接 · 头部上下壳合拢"
+        },
+        {
+          "source": "head_shell",
+          "from": 17.75,
+          "to": 18.9,
+          "label": "拆分 · 两片外壳重新分开"
+        },
+        {
+          "source": "head_shell",
+          "from": 21.1,
+          "to": 22.4,
+          "label": "拆分 · 两片外壳重新分开"
+        },
+        {
+          "source": "head_shell",
+          "from": 22.4,
+          "to": 24.3,
+          "label": "撤销 · 恢复闭合状态"
+        },
+        {
+          "source": "automatic",
+          "from": 94,
+          "to": 102,
+          "label": "自动还原 · 来源原装构型 · 4×"
+        },
+        {
+          "source": "automatic",
+          "from": 118,
+          "to": 127.5,
+          "label": "自动还原 · 来源原装构型 · 4×"
+        }
+      ],
+      "duration_target_seconds": 30,
+      "editing": "The opening shows a white upper head shell joining the orange lower shell through the source-original three-point closure. The other 68 instances are hidden using native scene visibility controls; meshes and mating transforms are unchanged. Two isolated scenes from the same snapshot are used. Waiting and intermediate automatic-assembly footage are cut; native automatic-assembly playback is 4×. No synthetic scene or motion.",
+      "bytes": 7652615,
+      "sha256": "6f49b755db0cec8a3035ce8314bdc368e8af9b83359bb596c4957007d9e5db8c",
+      "role": "Click-to-play head-shell connection, split, undo and full-device automatic assembly",
+      "source_captures": [
+        "workbench-capture.json",
+        "workbench-connection-capture.json"
+      ],
+      "package_version": "2.0.0-capabilities.10",
+      "package_digest": "c9a2c6afd8358f836d0f46deae682e35a77710d384653dee5ba6f27716e79c57"
+    },
+    {
+      "file": "brand/psop-mark.svg",
+      "source": "assets/brand/psop-mark.svg",
+      "kind": "canonical_brand_copy",
+      "role": "Current folded-space brand asset",
+      "bytes": 2046,
+      "sha256": "dfe99d1692da98a448cd294bc8e64990098ed71f066b077ab1be37ab1837fd1c"
+    },
+    {
+      "file": "brand/psop-favicon.svg",
+      "source": "assets/brand/favicon.svg",
+      "kind": "canonical_brand_copy",
+      "role": "Current folded-space brand asset",
+      "bytes": 2046,
+      "sha256": "dfe99d1692da98a448cd294bc8e64990098ed71f066b077ab1be37ab1837fd1c"
+    },
+    {
+      "file": "brand/favicon.ico",
+      "source": "assets/brand/favicon.ico",
+      "kind": "canonical_brand_copy",
+      "role": "Current folded-space brand asset",
+      "bytes": 40409,
+      "sha256": "5d28bd874c591cf7bd8db4466b806ccb6ad3f064661c27ab6a4f1f41d4044272"
+    },
+    {
+      "file": "brand/apple-touch-icon.png",
+      "source": "assets/brand/psop-app-icon-180.png",
+      "kind": "canonical_brand_copy",
+      "role": "Current folded-space brand asset",
+      "bytes": 13341,
+      "sha256": "d8e1cc4fa25cc7c09e0a3c6accff9a622add1a3ab76e03a82201700da7009d85"
+    },
+    {
+      "file": "workbench-capture.json",
+      "source": "scripts/capture-homepage.mjs",
+      "kind": "actual_capture_manifest",
+      "role": "Actual screenshot, operation and movie provenance",
+      "bytes": 9305,
+      "sha256": "8800155ec6db19aa0714651693009f26c4cea3535b220fac8d849c232395ae35"
+    },
+    {
+      "file": "workbench-head-before.webp",
+      "purpose": "Only the white upper head shell and orange lower shell, separated on the tabletop",
+      "kind": "actual_workbench_capture",
+      "dimensions": [
+        1600,
+        1000
+      ],
+      "bytes": 179190,
+      "sha256": "8ae16e969d31e5470ec6eb633ee745fbaf3efdd5518a93fd0c40d23df8411f73",
+      "role": "Only the white upper head shell and orange lower shell, separated on the tabletop",
+      "source": "scripts/capture-homepage-connection.mjs",
+      "source_capture": "workbench-connection-capture.json",
+      "captured_at": "2026-11-11T14:23:21.990Z",
+      "package_version": "2.0.0-capabilities.10",
+      "package_digest": "c9a2c6afd8358f836d0f46deae682e35a77710d384653dee5ba6f27716e79c57",
+      "transform": "Actual Chromium UI screenshot encoded as WebP quality 0.94; no scene recoloring or geometry edits."
+    },
+    {
+      "file": "workbench-head-after.webp",
+      "purpose": "Source-original upper and lower shells joined into a clearly recognizable head housing",
+      "kind": "actual_workbench_capture",
+      "dimensions": [
+        1600,
+        1000
+      ],
+      "bytes": 149070,
+      "sha256": "cbe1707402134837f561cdaaf5d7ceed2cd5de9740337c3257f401c0f4c1baf1",
+      "role": "Source-original upper and lower shells joined into a clearly recognizable head housing",
+      "source": "scripts/capture-homepage-connection.mjs",
+      "source_capture": "workbench-connection-capture.json",
+      "captured_at": "2026-11-11T14:23:21.990Z",
+      "package_version": "2.0.0-capabilities.10",
+      "package_digest": "c9a2c6afd8358f836d0f46deae682e35a77710d384653dee5ba6f27716e79c57",
+      "transform": "Actual Chromium UI screenshot encoded as WebP quality 0.94; no scene recoloring or geometry edits."
+    },
+    {
+      "file": "workbench-connection-capture.json",
+      "source": "scripts/capture-homepage-connection.mjs",
+      "kind": "actual_capture_manifest",
+      "role": "Actual screenshot, operation and movie provenance",
+      "bytes": 3780,
+      "sha256": "f667133d6aa83a5984a1389e41d1dd23fd0be9033af2a4c74f0c7c431ca1a2e6"
+    },
+    {
+      "file": "workbench-video-edit.json",
+      "source": "scripts/prepare-homepage-video.mjs",
+      "kind": "actual_recording_edit_recipe",
+      "role": "Source recording digests, visually checked raw-video timecodes and editorial captions",
+      "bytes": 2259,
+      "sha256": "f5075270d863591182e078049345207ab6e53ea5658bb61cd091ec0ca0c30b58"
+    }
+  ],
+  "updated_at": "2026-11-11T14:37:10.539Z",
+  "product_basis": {
+    "workbench_capture": "workbench-capture.json",
+    "package_version": "2.0.0-capabilities.10",
+    "package_digest": "c9a2c6afd8358f836d0f46deae682e35a77710d384653dee5ba6f27716e79c57",
+    "snapshot_id": "dkp-c9a2c6afd8358f836d0f",
+    "counts": {
+      "parts": 70,
+      "geometries": 38,
+      "sources": 69
+    },
+    "source_commit": "d2a84a22637c1006f3ae3880d476357271634da4",
+    "source_dirty": true,
+    "reference_configuration": "source_original"
+  },
+  "historical_research": {
+    "source_slide_manifest": "docs/presentations/v2/slides/manifest.json",
+    "source_slide_manifest_sha256": "2759d1e4df3e44833987bf268d5f47d0b4c723ab2c9eb3aa6e8e5b4c08f44b3c",
+    "case_manifest_sha256": "e2d956ee283c5162fad865497ca0a177596de65dd66864a20bff2501452a3151",
+    "description": "Earlier 25-page research/solution presentation; not the current product capability specification."
+  }
+}

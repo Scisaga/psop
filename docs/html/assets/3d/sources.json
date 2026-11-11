@@ -1,0 +1,787 @@
+{
+  "schema_version": "psop.homepage-microduck-3d/1",
+  "created": "2026-10-15",
+  "runtime_script": "docs/html/scripts/microduck-3d.js",
+  "runtime_script_sha256": "b2dd07658976da9d93a60599e369db3367d352a84f82937434a11078b98e9782",
+  "source": {
+    "assembly_status": "source_reference",
+    "configurations": [
+      "walk-model-reference"
+    ],
+    "coordinate_system": {
+      "handedness": "right",
+      "transform_layout": "row-major",
+      "up_axis": "+Z"
+    },
+    "mesh_count": 38,
+    "object_count": 70,
+    "pose": "qpos0",
+    "source_id": "SRC-000048",
+    "source_digest": "sha256:80fc4424ed71e430ec4919110dfdb5c714dc1c4e1138e1832a16865cf31eb8c8",
+    "path": "../../sources/SRC-000048--robot_walk/original/robot_walk.xml",
+    "reference_device_id": "DEV-000003",
+    "sourceCommit": "cb70b792312d559a4da09064d92009079671815f",
+    "sourceBounds": [
+      [
+        -0.05177709943375588,
+        -0.07050000131130217,
+        0.013473379386577666
+      ],
+      [
+        0.09229001924991602,
+        0.07050000131130217,
+        0.2774493844779491
+      ]
+    ],
+    "precision": "uint16 positions per mesh bounds; source face normals int16; triangles unchanged",
+    "maxPositionQuantizationErrorMeters": 9.360648376168416e-07,
+    "sourceManifestSha256": "c3279ec14d88c6b9e4f60b25bd0ba9bfd85c1015daf8d63efe4cb2efef4dc965",
+    "license": "Creative Commons BY-SA-NC (upstream statement does not name a version)",
+    "alphaMapping": "Not verified; alpha software identity is separate from this walk reference"
+  },
+  "upstream": {
+    "repository": "https://github.com/pollen-robotics/microduck_rl",
+    "assembly": "https://github.com/pollen-robotics/microduck_rl/blob/cb70b792312d559a4da09064d92009079671815f/src/mjlab_microduck/robot/microduck/robot_walk.xml",
+    "meshes": "https://github.com/pollen-robotics/microduck_rl/tree/cb70b792312d559a4da09064d92009079671815f/src/mjlab_microduck/robot/microduck/assets",
+    "license_statement": "https://github.com/pollen-robotics/microduck_rl/blob/cb70b792312d559a4da09064d92009079671815f/README.md#license",
+    "license": "Creative Commons BY-SA-NC; upstream declaration does not identify a version",
+    "attribution": "Pollen Robotics · Microduck · walk-reference geometry; display explosion animation by PSOP"
+  },
+  "files": [
+    {
+      "file": "microduck-source.js",
+      "source": "docs/presentations/v2/prototypes/microduck-source.js",
+      "sha256": "12efa5b9300a799cfd72dfdc78c5f95be5bb2003a251f083674f983a1f6a16c5",
+      "bytes": 8164287,
+      "byte_identical_to_source": true,
+      "license": "Creative Commons BY-SA-NC; version unspecified"
+    },
+    {
+      "file": "three.min.js",
+      "source": "docs/presentations/v2/prototypes/vendor/three.min.js",
+      "sha256": "170c6789f43217c96b3170f4b42fafe135de7f7cd48497a4218f9757ee1d49fa",
+      "bytes": 669884,
+      "byte_identical_to_source": true,
+      "license": "MIT",
+      "upstream": "https://github.com/mrdoob/three.js",
+      "license_file": "THREE-LICENSE.txt"
+    },
+    {
+      "file": "THREE-LICENSE.txt",
+      "sha256": "852e0e8699169bf9f6fdc6bda3e682d078dcbc738b5d33e74df594721bff271d",
+      "license": "MIT"
+    }
+  ],
+  "source_matrix": {
+    "input_coordinates": "+Z up, +X forward, right handed; metres",
+    "input_transform_layout": "row-major; source original 4×4 matrix per instance",
+    "runtime_import": "THREE.Matrix4.set(...source.assembled_transform); storage conversion only, no rest-pose alteration",
+    "display_transform": "source matrix plus metre-valued translation during exploded view; rotation and source scale preserved",
+    "at_zero_explosion": "All 70 instance matrices match their source assembly transform exactly",
+    "instance_matrix_digest": "ac3aae59581b3bd94e272b7807250ddfec93ffbb733d8e345dd22b4202a613a2",
+    "colour_policy": "Original source rgba, converted from sRGB to linear for physically lit rendering",
+    "geometry_policy": "Original mesh triangle indices and normals; positions use the source uint16 quantization with its recorded sub-micrometre maximum error",
+    "source_meshes": 38,
+    "assembly_instances": 70,
+    "unique_triangles": 431802,
+    "drawn_instance_triangles": 796844
+  },
+  "display_explosion": {
+    "mechanical_interpretation": "Teaching display offsets only; no claim that the illustrated separation is the actual service disassembly order",
+    "head_shells": "Top shell +0.126 m Z, bottom shell +0.060 m Z; front optical assembly +0.043 m X and +0.092 m Z",
+    "neck": "Source neck chain +0.032 m Z",
+    "torso_shells": "Source shells ±0.082 m Y and +0.009 m Z",
+    "legs": "Source left/right leg chains ±0.076 m Y and -0.025 m Z",
+    "feet": "Source left/right ankle and foot chains ±0.076 m Y and -0.072 m Z",
+    "animation": "Assembled introduction for 4.2 seconds, followed by a restrained 18-second display cycle up to 88% separation; manual control supports 100%; exact source assembly at zero",
+    "no_invented_parts": true
+  },
+  "interaction": {
+    "api": "window.PSOP3D.init({canvas,container,range,toggle,reset,loading}) → {setExplode(0…1), reset(), getState(), destroy()}",
+    "auto_dom_ids": [
+      "microduck-canvas",
+      "microduck-viewer",
+      "explode-range",
+      "explode-toggle",
+      "model-reset",
+      "model-loading"
+    ],
+    "features": [
+      "drag rotation",
+      "arrow-key rotation; Home key reset",
+      "double-click reset",
+      "keyboard-accessible range",
+      "manual explode/reassemble",
+      "reduced-motion manual controls",
+      "responsive camera framing",
+      "visibility and offscreen pause",
+      "local fallback image"
+    ],
+    "events": [
+      "psop:3d-ready",
+      "psop:3d-update",
+      "psop:3d-fallback"
+    ],
+    "deployment": "Classic local scripts; no runtime network or CDN; supports file:// and HTTP",
+    "mobile": "30 fps maximum; hardware pixel ratio capped at 1.25, detected software-renderer ratio 0.80; vertical touch scroll preserved",
+    "desktop": "50 fps maximum; hardware pixel ratio capped at 1.75 with antialiasing; detected software-renderer ratio 0.72 without MSAA",
+    "software_profile": "WEBGL_debug_renderer_info identifies SwiftShader / llvmpipe / software / Basic Render / GDI Generic; lower framebuffer density and disable MSAA only. All source triangles, assemblies, materials and lighting remain unchanged.",
+    "reduced_motion": "No automatic motion; the user can inspect by manual controls"
+  },
+  "browser_checks": {
+    "result": "passed",
+    "protocol": "file://",
+    "errors": [],
+    "source_matrix_preservation": true,
+    "drawn_instances": 70,
+    "range_updates_geometry": true,
+    "pointer_drag_changes_view": true,
+    "reset_returns_assembled": true,
+    "offscreen_paused": true,
+    "reduced_motion_auto_paused": true,
+    "reduced_motion_manual_works": true,
+    "automatic_motion": true,
+    "keyboard_rotation": true,
+    "visibility_handler_paused": true,
+    "webgl_fallback_works": true,
+    "fallback_manual_controls_work": true,
+    "local_only_requests": true,
+    "three_revision": "160",
+    "rendered_frames": {
+      "assembled": {
+        "bounds": [
+          187,
+          86,
+          517,
+          585
+        ],
+        "canvas": [
+          660,
+          661
+        ],
+        "visible": true,
+        "within_canvas": true,
+        "sha256": "285f808414a5c8e18d137449d8d22d9498af11d64250095bdaad26ff48bf1734"
+      },
+      "exploded": {
+        "bounds": [
+          208,
+          77,
+          522,
+          591
+        ],
+        "canvas": [
+          660,
+          661
+        ],
+        "visible": true,
+        "within_canvas": true,
+        "sha256": "05286868ba18a6fe8af713e9e3459f4404761b5d80a82f420d672789f4ba3b8b"
+      },
+      "rotated": {
+        "bounds": [
+          154,
+          80,
+          487,
+          572
+        ],
+        "canvas": [
+          660,
+          661
+        ],
+        "visible": true,
+        "within_canvas": true,
+        "sha256": "75b390a3e23ed8cd5e68e119792a34b58ef85349b5df433bbee94ed098491039"
+      },
+      "mobile-exploded": {
+        "bounds": [
+          94,
+          62,
+          315,
+          424
+        ],
+        "canvas": [
+          360,
+          481
+        ],
+        "visible": true,
+        "within_canvas": true,
+        "sha256": "52b073924f9f246e97de5f3a00e64e29a7e29c580aebe61b2b52190b4da979df"
+      }
+    },
+    "software_profile_verification": {
+      "result": "passed",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "initial_model_ready_ms": 2281,
+      "baseline_fps": 2.8,
+      "steady_measured_fps": 14.3,
+      "relative_to_baseline": 5.11,
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "software_profile": {
+        "pixel_ratio": 0.72,
+        "antialias": false
+      },
+      "hardware_profile": "Unchanged high quality: antialias on desktop; DPR ≤1.75 / ≤1.25 mobile",
+      "unchanged": [
+        "source triangles",
+        "38 source geometries",
+        "70 assembly instances",
+        "source matrices",
+        "source rgba",
+        "PBR materials",
+        "lighting"
+      ],
+      "errors": [],
+      "console_errors": []
+    },
+    "homepage_integration": {
+      "desktop": {
+        "result": "passed",
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "initial_model_ready_ms": 1902,
+        "steady_measured_fps": 2.8,
+        "renderer": "Headless Chromium / ANGLE SwiftShader software WebGL",
+        "assembled_intro_hold_verified": true,
+        "exploded_projected_bounds": [
+          -0.47277267576981663,
+          -0.8468679942468783,
+          0.4721994500281352,
+          0.8480472599904098
+        ],
+        "display": {
+          "ready": true,
+          "fallbackHidden": true,
+          "loadingHidden": true,
+          "canvasVisible": true,
+          "horizontalOverflow": true
+        },
+        "errors": [],
+        "console_errors": []
+      },
+      "mobile": {
+        "result": "passed",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "initial_model_ready_ms": 1024,
+        "steady_measured_fps": 13.9,
+        "renderer": "Headless Chromium / ANGLE SwiftShader software WebGL",
+        "assembled_intro_hold_verified": true,
+        "exploded_projected_bounds": [
+          -0.6849594524197294,
+          -0.819283115877122,
+          0.6843909300782958,
+          0.8200611464179601
+        ],
+        "display": {
+          "ready": true,
+          "fallbackHidden": true,
+          "loadingHidden": true,
+          "canvasVisible": true,
+          "horizontalOverflow": false
+        },
+        "errors": [],
+        "console_errors": []
+      }
+    }
+  },
+  "instance_provenance": [
+    {
+      "instance": "SRC-000048:geom:0",
+      "mesh": "seeed_bearing__configuration__22x16x4",
+      "body": "trunk_base",
+      "source_id": "SRC-000034",
+      "source_digest": "sha256:295ee68ed9766c91fe06d3a2a49d39f7c2f56cc943395d293afdeb013123435e"
+    },
+    {
+      "instance": "SRC-000048:geom:1",
+      "mesh": "right_shell",
+      "body": "trunk_base",
+      "source_id": "SRC-000033",
+      "source_digest": "sha256:3efba3e193cc6aa49d49a9c92cdded0504917397c9e2c5b8fe002a958e2f2d2b"
+    },
+    {
+      "instance": "SRC-000048:geom:2",
+      "mesh": "banana_pcb_locker",
+      "body": "trunk_base",
+      "source_id": "SRC-000012",
+      "source_digest": "sha256:42ddde9d01bf5d91f88b99847017f14d97d2537ee27383c6d41dd8bf30a51134"
+    },
+    {
+      "instance": "SRC-000048:geom:3",
+      "mesh": "trunk_base",
+      "body": "trunk_base",
+      "source_id": "SRC-000041",
+      "source_digest": "sha256:aa4f853ae555a8b765e585ce4519c0bbff325ce298ec15a1437792c52a0beac1"
+    },
+    {
+      "instance": "SRC-000048:geom:4",
+      "mesh": "xl330",
+      "body": "trunk_base",
+      "source_id": "SRC-000045",
+      "source_digest": "sha256:96238ed0d020ce0009cf1a5aa4b6926176c800840318ee65e4375be2298d2744"
+    },
+    {
+      "instance": "SRC-000048:geom:5",
+      "mesh": "power_support",
+      "body": "trunk_base",
+      "source_id": "SRC-000032",
+      "source_digest": "sha256:ee45e397d3f3422f34940a4b61156c3c11c7e8c2b240451ce5f9ddd1622a130e"
+    },
+    {
+      "instance": "SRC-000048:geom:7",
+      "mesh": "np_f970",
+      "body": "trunk_base",
+      "source_id": "SRC-000030",
+      "source_digest": "sha256:0e55a48281331b3b7b1a363d2e93b6012f37c52045b6dc922a149ca7c1b38388"
+    },
+    {
+      "instance": "SRC-000048:geom:8",
+      "mesh": "xl330",
+      "body": "trunk_base",
+      "source_id": "SRC-000045",
+      "source_digest": "sha256:96238ed0d020ce0009cf1a5aa4b6926176c800840318ee65e4375be2298d2744"
+    },
+    {
+      "instance": "SRC-000048:geom:9",
+      "mesh": "left_shell",
+      "body": "trunk_base",
+      "source_id": "SRC-000022",
+      "source_digest": "sha256:2abde8e2b79c9b011cdb11957c67ab4287b45d7301affd4235ab81141118e331"
+    },
+    {
+      "instance": "SRC-000048:geom:10",
+      "mesh": "seeed_bearing__configuration__22x16x4",
+      "body": "trunk_base",
+      "source_id": "SRC-000034",
+      "source_digest": "sha256:295ee68ed9766c91fe06d3a2a49d39f7c2f56cc943395d293afdeb013123435e"
+    },
+    {
+      "instance": "SRC-000048:geom:11",
+      "mesh": "yaw2roll",
+      "body": "trunk_base/yaw2roll",
+      "source_id": "SRC-000046",
+      "source_digest": "sha256:6c8f193ec7cb40be0f48eeb5fba81bce2c87f12e1aab3f77f1bc4981386e1495"
+    },
+    {
+      "instance": "SRC-000048:geom:12",
+      "mesh": "xl330",
+      "body": "trunk_base/yaw2roll",
+      "source_id": "SRC-000045",
+      "source_digest": "sha256:96238ed0d020ce0009cf1a5aa4b6926176c800840318ee65e4375be2298d2744"
+    },
+    {
+      "instance": "SRC-000048:geom:13",
+      "mesh": "seeed_bearing__configuration__22x16x4",
+      "body": "trunk_base/yaw2roll",
+      "source_id": "SRC-000034",
+      "source_digest": "sha256:295ee68ed9766c91fe06d3a2a49d39f7c2f56cc943395d293afdeb013123435e"
+    },
+    {
+      "instance": "SRC-000048:geom:14",
+      "mesh": "bearing_roll",
+      "body": "trunk_base/yaw2roll",
+      "source_id": "SRC-000013",
+      "source_digest": "sha256:b5603a64b2d965ad75ea847767b5798130852e12a658fde7b5068fc457e2adcc"
+    },
+    {
+      "instance": "SRC-000048:geom:15",
+      "mesh": "seeed_bearing__configuration__22x16x4",
+      "body": "trunk_base/yaw2roll/hip_l",
+      "source_id": "SRC-000034",
+      "source_digest": "sha256:295ee68ed9766c91fe06d3a2a49d39f7c2f56cc943395d293afdeb013123435e"
+    },
+    {
+      "instance": "SRC-000048:geom:16",
+      "mesh": "hip_l",
+      "body": "trunk_base/yaw2roll/hip_l",
+      "source_id": "SRC-000019",
+      "source_digest": "sha256:e175896932d76dc7648cf939aa39cb7b1d188b783d91745adb9a4cec65e9052c"
+    },
+    {
+      "instance": "SRC-000048:geom:17",
+      "mesh": "upper_leg_left",
+      "body": "trunk_base/yaw2roll/hip_l/upper_leg_left",
+      "source_id": "SRC-000042",
+      "source_digest": "sha256:8cb1c12dfa6d366a318bb1ec16f585427b9a185afeb7738d0a6f41f5db46a07d"
+    },
+    {
+      "instance": "SRC-000048:geom:18",
+      "mesh": "xl330",
+      "body": "trunk_base/yaw2roll/hip_l/upper_leg_left",
+      "source_id": "SRC-000045",
+      "source_digest": "sha256:96238ed0d020ce0009cf1a5aa4b6926176c800840318ee65e4375be2298d2744"
+    },
+    {
+      "instance": "SRC-000048:geom:19",
+      "mesh": "upper_leg_rigidity_plate",
+      "body": "trunk_base/yaw2roll/hip_l/upper_leg_left",
+      "source_id": "SRC-000044",
+      "source_digest": "sha256:231b3e5f1e24d146d735dc158cbcfec0c95a0d0ca8c500f61f04d15d0b665652"
+    },
+    {
+      "instance": "SRC-000048:geom:20",
+      "mesh": "seeed_bearing__configuration__22x16x4",
+      "body": "trunk_base/yaw2roll/hip_l/upper_leg_left",
+      "source_id": "SRC-000034",
+      "source_digest": "sha256:295ee68ed9766c91fe06d3a2a49d39f7c2f56cc943395d293afdeb013123435e"
+    },
+    {
+      "instance": "SRC-000048:geom:21",
+      "mesh": "xl330",
+      "body": "trunk_base/yaw2roll/hip_l/upper_leg_left",
+      "source_id": "SRC-000045",
+      "source_digest": "sha256:96238ed0d020ce0009cf1a5aa4b6926176c800840318ee65e4375be2298d2744"
+    },
+    {
+      "instance": "SRC-000048:geom:22",
+      "mesh": "leg",
+      "body": "trunk_base/yaw2roll/hip_l/upper_leg_left/leg",
+      "source_id": "SRC-000023",
+      "source_digest": "sha256:9a91cc1ae31ecd9e0c1ba93f3bb2ad8a12e29bff24ec27d1ac66c0c3037d9fcf"
+    },
+    {
+      "instance": "SRC-000048:geom:24",
+      "mesh": "xl330",
+      "body": "trunk_base/yaw2roll/hip_l/upper_leg_left/leg",
+      "source_id": "SRC-000045",
+      "source_digest": "sha256:96238ed0d020ce0009cf1a5aa4b6926176c800840318ee65e4375be2298d2744"
+    },
+    {
+      "instance": "SRC-000048:geom:25",
+      "mesh": "sole_left",
+      "body": "trunk_base/yaw2roll/hip_l/upper_leg_left/leg/ankle_left",
+      "source_id": "SRC-000037",
+      "source_digest": "sha256:e028c8b09fecd4cb354d042bf7fd95a1a1bc2d524d760d62137fa8d74093fc23"
+    },
+    {
+      "instance": "SRC-000048:geom:27",
+      "mesh": "foot_left",
+      "body": "trunk_base/yaw2roll/hip_l/upper_leg_left/leg/ankle_left",
+      "source_id": "SRC-000017",
+      "source_digest": "sha256:a1f5d43456d0f522bd60870153795f1e8112c1adf9b8b4373b59608d9545c044"
+    },
+    {
+      "instance": "SRC-000048:geom:28",
+      "mesh": "seeed_bearing__configuration_default",
+      "body": "trunk_base/yaw2roll/hip_l/upper_leg_left/leg/ankle_left",
+      "source_id": "SRC-000035",
+      "source_digest": "sha256:e815f3483a2e7b80844f3c0938a47e53db38b12faed9b2d364414c19e4322da4"
+    },
+    {
+      "instance": "SRC-000048:geom:29",
+      "mesh": "ankle_left",
+      "body": "trunk_base/yaw2roll/hip_l/upper_leg_left/leg/ankle_left",
+      "source_id": "SRC-000010",
+      "source_digest": "sha256:2ec1bd89205b407efebaa9a8898ad9fea741389d87b80ecc5c96b21d1668119e"
+    },
+    {
+      "instance": "SRC-000048:geom:30",
+      "mesh": "neck",
+      "body": "trunk_base/neck",
+      "source_id": "SRC-000028",
+      "source_digest": "sha256:b6e86b886153be8a8a776c1cb219c074ee9e89c8bd431117662a2d9e504d7cb5"
+    },
+    {
+      "instance": "SRC-000048:geom:31",
+      "mesh": "xl330",
+      "body": "trunk_base/neck",
+      "source_id": "SRC-000045",
+      "source_digest": "sha256:96238ed0d020ce0009cf1a5aa4b6926176c800840318ee65e4375be2298d2744"
+    },
+    {
+      "instance": "SRC-000048:geom:32",
+      "mesh": "xl330",
+      "body": "trunk_base/neck",
+      "source_id": "SRC-000045",
+      "source_digest": "sha256:96238ed0d020ce0009cf1a5aa4b6926176c800840318ee65e4375be2298d2744"
+    },
+    {
+      "instance": "SRC-000048:geom:33",
+      "mesh": "neck",
+      "body": "trunk_base/neck",
+      "source_id": "SRC-000028",
+      "source_digest": "sha256:b6e86b886153be8a8a776c1cb219c074ee9e89c8bd431117662a2d9e504d7cb5"
+    },
+    {
+      "instance": "SRC-000048:geom:34",
+      "mesh": "neck_pitch",
+      "body": "trunk_base/neck/neck_pitch",
+      "source_id": "SRC-000027",
+      "source_digest": "sha256:a685ce65348ae4d0d49417c69a7a8871f8bbd54a6e3419362be9c334abd5d2ae"
+    },
+    {
+      "instance": "SRC-000048:geom:35",
+      "mesh": "seeed_bearing__configuration__22x16x4",
+      "body": "trunk_base/neck/neck_pitch",
+      "source_id": "SRC-000034",
+      "source_digest": "sha256:295ee68ed9766c91fe06d3a2a49d39f7c2f56cc943395d293afdeb013123435e"
+    },
+    {
+      "instance": "SRC-000048:geom:36",
+      "mesh": "yaw_roll_motion",
+      "body": "trunk_base/neck/neck_pitch/yaw_roll_motion",
+      "source_id": "SRC-000047",
+      "source_digest": "sha256:b0c9902dee19f06cdb7fa930292e0e1c91e2dc59baa971211495b58ff76c3c60"
+    },
+    {
+      "instance": "SRC-000048:geom:37",
+      "mesh": "xl330",
+      "body": "trunk_base/neck/neck_pitch/yaw_roll_motion",
+      "source_id": "SRC-000045",
+      "source_digest": "sha256:96238ed0d020ce0009cf1a5aa4b6926176c800840318ee65e4375be2298d2744"
+    },
+    {
+      "instance": "SRC-000048:geom:38",
+      "mesh": "seeed_bearing__configuration__22x16x4",
+      "body": "trunk_base/neck/neck_pitch/yaw_roll_motion",
+      "source_id": "SRC-000034",
+      "source_digest": "sha256:295ee68ed9766c91fe06d3a2a49d39f7c2f56cc943395d293afdeb013123435e"
+    },
+    {
+      "instance": "SRC-000048:geom:39",
+      "mesh": "seeed_bearing__configuration__22x16x4",
+      "body": "trunk_base/neck/neck_pitch/yaw_roll_motion",
+      "source_id": "SRC-000034",
+      "source_digest": "sha256:295ee68ed9766c91fe06d3a2a49d39f7c2f56cc943395d293afdeb013123435e"
+    },
+    {
+      "instance": "SRC-000048:geom:40",
+      "mesh": "lens",
+      "body": "trunk_base/neck/neck_pitch/yaw_roll_motion/jaw_soft",
+      "source_id": "SRC-000024",
+      "source_digest": "sha256:b1c717432ff7666398de58adec6a1b7e03a7e45aa155dbfe27a6152ef19663e5"
+    },
+    {
+      "instance": "SRC-000048:geom:41",
+      "mesh": "face_part",
+      "body": "trunk_base/neck/neck_pitch/yaw_roll_motion/jaw_soft",
+      "source_id": "SRC-000016",
+      "source_digest": "sha256:d0e89a173e7bdc8038c4d413f458140d8f42f1a2f098f67a887c2388eff31718"
+    },
+    {
+      "instance": "SRC-000048:geom:42",
+      "mesh": "xl330",
+      "body": "trunk_base/neck/neck_pitch/yaw_roll_motion/jaw_soft",
+      "source_id": "SRC-000045",
+      "source_digest": "sha256:96238ed0d020ce0009cf1a5aa4b6926176c800840318ee65e4375be2298d2744"
+    },
+    {
+      "instance": "SRC-000048:geom:43",
+      "mesh": "jaw_soft",
+      "body": "trunk_base/neck/neck_pitch/yaw_roll_motion/jaw_soft",
+      "source_id": "SRC-000020",
+      "source_digest": "sha256:2d2ade4e86df4b37ce313bb9b96023109dd04bab39dba08b154e76d332fbce2e"
+    },
+    {
+      "instance": "SRC-000048:geom:44",
+      "mesh": "motor_support",
+      "body": "trunk_base/neck/neck_pitch/yaw_roll_motion/jaw_soft",
+      "source_id": "SRC-000026",
+      "source_digest": "sha256:ce0aa5bef82c7474512d302568c341b9769b3005e0bdb91a19c2eaaba6dad480"
+    },
+    {
+      "instance": "SRC-000048:geom:45",
+      "mesh": "top_head_shell",
+      "body": "trunk_base/neck/neck_pitch/yaw_roll_motion/jaw_soft",
+      "source_id": "SRC-000040",
+      "source_digest": "sha256:6d01f396f514c9d2185cf6b8250b1d8382ac3fa0702eb525bcb284f706196291"
+    },
+    {
+      "instance": "SRC-000048:geom:46",
+      "mesh": "xl330",
+      "body": "trunk_base/neck/neck_pitch/yaw_roll_motion/jaw_soft",
+      "source_id": "SRC-000045",
+      "source_digest": "sha256:96238ed0d020ce0009cf1a5aa4b6926176c800840318ee65e4375be2298d2744"
+    },
+    {
+      "instance": "SRC-000048:geom:47",
+      "mesh": "seeed_bearing__configuration_default",
+      "body": "trunk_base/neck/neck_pitch/yaw_roll_motion/jaw_soft",
+      "source_id": "SRC-000035",
+      "source_digest": "sha256:e815f3483a2e7b80844f3c0938a47e53db38b12faed9b2d364414c19e4322da4"
+    },
+    {
+      "instance": "SRC-000048:geom:48",
+      "mesh": "elec_rpi_robot_hat_pcb",
+      "body": "trunk_base/neck/neck_pitch/yaw_roll_motion/jaw_soft",
+      "source_id": "SRC-000015",
+      "source_digest": "sha256:1a61582759d82b5b4df9b7d11099bf1bb3944fc77e6b74d3237adf24dd5d03d7"
+    },
+    {
+      "instance": "SRC-000048:geom:49",
+      "mesh": "soft_mouth_top",
+      "body": "trunk_base/neck/neck_pitch/yaw_roll_motion/jaw_soft",
+      "source_id": "SRC-000036",
+      "source_digest": "sha256:3c2b52b0b6e2ce944a1e1b5a0838e1216be1ad3a34c8cdf91be186e634aec57b"
+    },
+    {
+      "instance": "SRC-000048:geom:50",
+      "mesh": "noenoeil",
+      "body": "trunk_base/neck/neck_pitch/yaw_roll_motion/jaw_soft",
+      "source_id": "SRC-000029",
+      "source_digest": "sha256:e1167b3d5ad7fbbe6e63296bcd0c6b61556611e6bc1367b15ecfd27e3abb72f5"
+    },
+    {
+      "instance": "SRC-000048:geom:51",
+      "mesh": "jaw",
+      "body": "trunk_base/neck/neck_pitch/yaw_roll_motion/jaw_soft",
+      "source_id": "SRC-000021",
+      "source_digest": "sha256:45cdbd319a4583095d8daa0db07dee726522a743d59acb82d27d82ded500a1cf"
+    },
+    {
+      "instance": "SRC-000048:geom:52",
+      "mesh": "bottom_head_shell",
+      "body": "trunk_base/neck/neck_pitch/yaw_roll_motion/jaw_soft",
+      "source_id": "SRC-000014",
+      "source_digest": "sha256:1820f7cf96646b0fc0c431f07da87b91b13111bfa9857ab1bf2b1fc3388f8da2"
+    },
+    {
+      "instance": "SRC-000048:geom:53",
+      "mesh": "m12_lens_holder",
+      "body": "trunk_base/neck/neck_pitch/yaw_roll_motion/jaw_soft",
+      "source_id": "SRC-000025",
+      "source_digest": "sha256:031d5ffaf6247328cf6d020f6b6695ffb3f8d3f22cf923b85811351d89ecfd7c"
+    },
+    {
+      "instance": "SRC-000048:geom:54",
+      "mesh": "pcb__raspberry_pi_zero_2_w",
+      "body": "trunk_base/neck/neck_pitch/yaw_roll_motion/jaw_soft",
+      "source_id": "SRC-000031",
+      "source_digest": "sha256:802cc66fc5447c67fc642d1339e55160df10f2ad04a65efd130e35fb7b2d3c90"
+    },
+    {
+      "instance": "SRC-000048:geom:55",
+      "mesh": "speaker",
+      "body": "trunk_base/neck/neck_pitch/yaw_roll_motion/jaw_soft",
+      "source_id": "SRC-000039",
+      "source_digest": "sha256:75a35f9bcf94cd8e52f99b3fd6ae667b48f52503f9075ee2f699eebe8e7b3ddf"
+    },
+    {
+      "instance": "SRC-000048:geom:56",
+      "mesh": "yaw2roll",
+      "body": "trunk_base/bearing_roll",
+      "source_id": "SRC-000046",
+      "source_digest": "sha256:6c8f193ec7cb40be0f48eeb5fba81bce2c87f12e1aab3f77f1bc4981386e1495"
+    },
+    {
+      "instance": "SRC-000048:geom:57",
+      "mesh": "xl330",
+      "body": "trunk_base/bearing_roll",
+      "source_id": "SRC-000045",
+      "source_digest": "sha256:96238ed0d020ce0009cf1a5aa4b6926176c800840318ee65e4375be2298d2744"
+    },
+    {
+      "instance": "SRC-000048:geom:58",
+      "mesh": "bearing_roll",
+      "body": "trunk_base/bearing_roll",
+      "source_id": "SRC-000013",
+      "source_digest": "sha256:b5603a64b2d965ad75ea847767b5798130852e12a658fde7b5068fc457e2adcc"
+    },
+    {
+      "instance": "SRC-000048:geom:59",
+      "mesh": "seeed_bearing__configuration__22x16x4",
+      "body": "trunk_base/bearing_roll",
+      "source_id": "SRC-000034",
+      "source_digest": "sha256:295ee68ed9766c91fe06d3a2a49d39f7c2f56cc943395d293afdeb013123435e"
+    },
+    {
+      "instance": "SRC-000048:geom:60",
+      "mesh": "hip_l",
+      "body": "trunk_base/bearing_roll/hip_l_2",
+      "source_id": "SRC-000019",
+      "source_digest": "sha256:e175896932d76dc7648cf939aa39cb7b1d188b783d91745adb9a4cec65e9052c"
+    },
+    {
+      "instance": "SRC-000048:geom:61",
+      "mesh": "seeed_bearing__configuration__22x16x4",
+      "body": "trunk_base/bearing_roll/hip_l_2",
+      "source_id": "SRC-000034",
+      "source_digest": "sha256:295ee68ed9766c91fe06d3a2a49d39f7c2f56cc943395d293afdeb013123435e"
+    },
+    {
+      "instance": "SRC-000048:geom:62",
+      "mesh": "xl330",
+      "body": "trunk_base/bearing_roll/hip_l_2/upper_leg_right",
+      "source_id": "SRC-000045",
+      "source_digest": "sha256:96238ed0d020ce0009cf1a5aa4b6926176c800840318ee65e4375be2298d2744"
+    },
+    {
+      "instance": "SRC-000048:geom:63",
+      "mesh": "seeed_bearing__configuration__22x16x4",
+      "body": "trunk_base/bearing_roll/hip_l_2/upper_leg_right",
+      "source_id": "SRC-000034",
+      "source_digest": "sha256:295ee68ed9766c91fe06d3a2a49d39f7c2f56cc943395d293afdeb013123435e"
+    },
+    {
+      "instance": "SRC-000048:geom:64",
+      "mesh": "upper_leg_rigidity_plate",
+      "body": "trunk_base/bearing_roll/hip_l_2/upper_leg_right",
+      "source_id": "SRC-000044",
+      "source_digest": "sha256:231b3e5f1e24d146d735dc158cbcfec0c95a0d0ca8c500f61f04d15d0b665652"
+    },
+    {
+      "instance": "SRC-000048:geom:65",
+      "mesh": "upper_leg_right",
+      "body": "trunk_base/bearing_roll/hip_l_2/upper_leg_right",
+      "source_id": "SRC-000043",
+      "source_digest": "sha256:5caf996cc3e151b01f393cdc6a6a6a940c1d86179d8b7c7f5f85cf1f1ac2fb63"
+    },
+    {
+      "instance": "SRC-000048:geom:66",
+      "mesh": "xl330",
+      "body": "trunk_base/bearing_roll/hip_l_2/upper_leg_right",
+      "source_id": "SRC-000045",
+      "source_digest": "sha256:96238ed0d020ce0009cf1a5aa4b6926176c800840318ee65e4375be2298d2744"
+    },
+    {
+      "instance": "SRC-000048:geom:67",
+      "mesh": "xl330",
+      "body": "trunk_base/bearing_roll/hip_l_2/upper_leg_right/leg_2",
+      "source_id": "SRC-000045",
+      "source_digest": "sha256:96238ed0d020ce0009cf1a5aa4b6926176c800840318ee65e4375be2298d2744"
+    },
+    {
+      "instance": "SRC-000048:geom:68",
+      "mesh": "leg",
+      "body": "trunk_base/bearing_roll/hip_l_2/upper_leg_right/leg_2",
+      "source_id": "SRC-000023",
+      "source_digest": "sha256:9a91cc1ae31ecd9e0c1ba93f3bb2ad8a12e29bff24ec27d1ac66c0c3037d9fcf"
+    },
+    {
+      "instance": "SRC-000048:geom:70",
+      "mesh": "ankle_right",
+      "body": "trunk_base/bearing_roll/hip_l_2/upper_leg_right/leg_2/ankle_right",
+      "source_id": "SRC-000011",
+      "source_digest": "sha256:f83f388ae00787415e76b8ecaab769f08f25b8c4e90c1937ff0fc4d68d81722e"
+    },
+    {
+      "instance": "SRC-000048:geom:71",
+      "mesh": "sole_right",
+      "body": "trunk_base/bearing_roll/hip_l_2/upper_leg_right/leg_2/ankle_right",
+      "source_id": "SRC-000038",
+      "source_digest": "sha256:3f5068872f3add10eb967327651445bdfca635f5a8a01befa0ef05e462b72b4c"
+    },
+    {
+      "instance": "SRC-000048:geom:73",
+      "mesh": "seeed_bearing__configuration_default",
+      "body": "trunk_base/bearing_roll/hip_l_2/upper_leg_right/leg_2/ankle_right",
+      "source_id": "SRC-000035",
+      "source_digest": "sha256:e815f3483a2e7b80844f3c0938a47e53db38b12faed9b2d364414c19e4322da4"
+    },
+    {
+      "instance": "SRC-000048:geom:74",
+      "mesh": "foot_right",
+      "body": "trunk_base/bearing_roll/hip_l_2/upper_leg_right/leg_2/ankle_right",
+      "source_id": "SRC-000018",
+      "source_digest": "sha256:54f97fa1f0e0e611d31329df9f3c3b17ffcca2d695c579d1d32cbe99e8a6c7ef"
+    }
+  ]
+}

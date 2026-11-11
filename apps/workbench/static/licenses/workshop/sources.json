@@ -1,0 +1,131 @@
+{
+  "prepared_on": "2026-11-11",
+  "models": [
+    {
+      "file": "desk_lamp_arm_01.glb",
+      "bytes": 8471528,
+      "sha256": "d2f3deb24f6634c000c46fc62adaf6372e6326ba5bbdb22188838eb6d2e261fe"
+    },
+    {
+      "file": "precision-assistant.glb",
+      "bytes": 2886552,
+      "sha256": "89a6816eec7af38938c06dc60395f1fb5d179bc4bd4b7ba5edac46b991998efd"
+    }
+  ],
+  "floor": [
+    {
+      "file": "../smooth-floor-color-4k.jpg",
+      "bytes": 13621107,
+      "sha256": "bb93c409d7908ee0bf4e97f6d02a028ffa4b06d3345138ebc38e4c7d38591ff1",
+      "resolution": "4k"
+    },
+    {
+      "file": "../smooth-floor-normal-2k.jpg",
+      "bytes": 2819837,
+      "sha256": "0f698e2f3ca8f1b74c79765c8d51489772af05c969715d326490eafb1e92ae79",
+      "resolution": "2k"
+    },
+    {
+      "file": "../smooth-floor-arm-2k.jpg",
+      "bytes": 2932778,
+      "sha256": "5f8a3baf0be96f01b3fb5f8486af55f00e7800f303d7986e9487640edb0c20e8",
+      "resolution": "2k"
+    }
+  ],
+  "downloads": [
+    {
+      "url": "https://cdn.jsdelivr.net/gh/ros-industrial/abb@kinetic-devel/abb_irb120_support/meshes/irb120_3_58/visual/base_link.stl",
+      "bytes": 685684,
+      "sha256": "49a02590535dbfad67698375ee47f000ed078b8bb8594f9d4b1b083ee61a5223"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/ros-industrial/abb@kinetic-devel/abb_irb120_support/meshes/irb120_3_58/visual/link_1.stl",
+      "bytes": 144484,
+      "sha256": "402c5fc5107fbea74a23d519267c79b1e4800683065468d7f27e2933f7720a9a"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/ros-industrial/abb@kinetic-devel/abb_irb120_support/meshes/irb120_3_58/visual/link_2.stl",
+      "bytes": 287084,
+      "sha256": "e90166c9e96ccfbab5dd4d0e9d93a8826a5666b86fd91948412be52b4affecaa"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/ros-industrial/abb@kinetic-devel/abb_irb120_support/meshes/irb120_3_58/visual/link_3.stl",
+      "bytes": 246684,
+      "sha256": "e110970dba3b4f437afb08a908cebfb56e4d4ca4475f4a44050198d42bf22d03"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/ros-industrial/abb@kinetic-devel/abb_irb120_support/meshes/irb120_3_58/visual/link_4.stl",
+      "bytes": 315084,
+      "sha256": "09665ea995035a5e68d203d343cac7b78e5437d2ac7aa8c528dd6662700839b2"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/ros-industrial/abb@kinetic-devel/abb_irb120_support/meshes/irb120_3_58/visual/link_5.stl",
+      "bytes": 277584,
+      "sha256": "693fd935384f0cbbd0acfd52a8a54f7311a8461ba523d889d793d2a2e0525ee1"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/ros-industrial/abb@kinetic-devel/abb_irb120_support/meshes/irb120_3_58/visual/link_6.stl",
+      "bytes": 44984,
+      "sha256": "c38e09e1e787164fbeacb52105d0d3016a34eaa495063a474a64718647a6ffbc"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/ros-industrial/abb@kinetic-devel/abb_irb120_support/package.xml",
+      "bytes": 2225,
+      "sha256": "e77b1da2cd66f0058f04a88c4164e999f2b6a10d42a43641c5c9d697c6498a8e"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/ros-industrial/abb@kinetic-devel/abb_irb120_support/urdf/irb120_3_58_macro.xacro",
+      "bytes": 8793,
+      "sha256": "25f1b00a7388d02c35422b4a34b865a5f0ec1c76630edf6a613e56224bc74522"
+    },
+    {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/2k/desk_lamp_arm_01/desk_lamp_arm_01.bin",
+      "bytes": 736804,
+      "sha256": "07f34e32abecbaa63d28b9d12d6a0eb82b775a0f50c92327655909d72ff8489b"
+    },
+    {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/2k/desk_lamp_arm_01/desk_lamp_arm_01_2k.gltf",
+      "bytes": 4453,
+      "sha256": "b3f03ff2c7c186ec73682f7447b3594db2362cbfc0d72a89d2d8967111d2a2b6"
+    },
+    {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/desk_lamp_arm_01/desk_lamp_arm_01_arm_2k.jpg",
+      "bytes": 2801607,
+      "sha256": "d2d55bb3d929ab583d4068adc3dce4e45d29852fd37602ddbb992183a9471b79"
+    },
+    {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/desk_lamp_arm_01/desk_lamp_arm_01_diff_2k.jpg",
+      "bytes": 2438937,
+      "sha256": "c5f8c5be367a40585f89ce0aeac0224e36146eef63c12864222af080a9784869"
+    },
+    {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/desk_lamp_arm_01/desk_lamp_arm_01_nor_gl_2k.jpg",
+      "bytes": 2491219,
+      "sha256": "289e2b9a9d0dcbc02dd8d8dbe612380c13dc48fb7c4484fb39c303f6cf822379"
+    },
+    {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/smooth_concrete_floor/smooth_concrete_floor_arm_2k.jpg",
+      "bytes": 2932778,
+      "sha256": "5f8a3baf0be96f01b3fb5f8486af55f00e7800f303d7986e9487640edb0c20e8"
+    },
+    {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/smooth_concrete_floor/smooth_concrete_floor_nor_gl_2k.jpg",
+      "bytes": 2819837,
+      "sha256": "0f698e2f3ca8f1b74c79765c8d51489772af05c969715d326490eafb1e92ae79"
+    },
+    {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/4k/smooth_concrete_floor/smooth_concrete_floor_diff_4k.jpg",
+      "bytes": 13621107,
+      "sha256": "bb93c409d7908ee0bf4e97f6d02a028ffa4b06d3345138ebc38e4c7d38591ff1"
+    },
+    {
+      "url": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    }
+  ],
+  "license_pages": [
+    "https://polyhaven.com/license",
+    "https://github.com/ros-industrial/abb/blob/kinetic-devel/abb_irb120_support/package.xml"
+  ]
+}

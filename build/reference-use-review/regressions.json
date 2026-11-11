@@ -1,0 +1,18 @@
+{
+  "schema": "psop.reference-use-regression-summary/1",
+  "date": "2026-11-09",
+  "passed_distinct_tests": 124,
+  "groups": [
+    {"suite": "skills/psop-build/tests/test_capability*.py", "passed": 52, "note": "51 passed together; subsequent use-explanation tamper case passed with all 9 package-module tests"},
+    {"suite": "skills/psop-build/tests/test_reference*.py", "passed": 23},
+    {"suite": "skills/psop-build/tests/test_compatibility.py", "passed": 23},
+    {"suite": "device-materials/assembly/tests", "passed": 9, "note": "Updated the maintenance baseline to the independently reviewed 755 features / 243 functional interfaces / 138 relations"},
+    {"suite": "apps/workbench test:capabilities", "passed": 17}
+  ],
+  "typescript_build": "passed",
+  "vite_build": "passed",
+  "package_validation": "package-validation.json",
+  "historical_package_validation": "history-validation.json",
+  "all_part_browser_review": "audit.json",
+  "scope": "Relevant changed behavior and independent omission/tamper acceptance; not a rerun of the entire historical Build suite or physical assembly qualification"
+}

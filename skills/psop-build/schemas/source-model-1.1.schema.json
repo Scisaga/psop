@@ -1,0 +1,898 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "psop.hardware.source-model/1.1",
+  "title": "Model-domain mesh measurements, interface candidates and source-reference relationships; no confirmed mechanical interactions",
+  "type": "object",
+  "properties": {
+    "schema": {
+      "const": "psop.hardware.source-model/1.1"
+    },
+    "ontology_target": {
+      "const": "psop.hardware/2.0-draft.4"
+    },
+    "device_id": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^[a-z][a-z0-9-]{1,63}$"
+    },
+    "parts": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/part"
+      },
+      "minItems": 1
+    },
+    "configurations": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/configuration"
+      },
+      "minItems": 1,
+      "maxItems": 1
+    },
+    "interfaces": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/interface"
+      },
+      "minItems": 0
+    },
+    "interface_connections": {
+      "type": "array",
+      "items": {},
+      "maxItems": 0
+    },
+    "frames": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/frame"
+      },
+      "minItems": 0
+    },
+    "features": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/feature"
+      },
+      "minItems": 0
+    },
+    "connection_candidates": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/connection_candidate"
+      },
+      "minItems": 0
+    },
+    "reference_relations": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/reference_relation"
+      },
+      "minItems": 0
+    },
+    "analysis": {
+      "$ref": "#/$defs/analysis"
+    }
+  },
+  "required": [
+    "schema",
+    "ontology_target",
+    "device_id",
+    "parts",
+    "configurations",
+    "interfaces",
+    "interface_connections",
+    "frames",
+    "features",
+    "connection_candidates",
+    "reference_relations",
+    "analysis"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "part": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^part:[a-z][a-z0-9-]{1,63}:[a-f0-9]{16}$"
+        },
+        "type": {
+          "const": "Part"
+        },
+        "domain": {
+          "const": "model"
+        },
+        "revision": {
+          "type": "string",
+          "minLength": 1
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "geometry_source_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_locator": {
+          "type": "object",
+          "properties": {
+            "source_ref": {
+              "type": "string",
+              "minLength": 1
+            },
+            "path": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "source_ref",
+            "path"
+          ],
+          "additionalProperties": false
+        },
+        "interfaces": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "interface_status": {
+          "enum": [
+            "candidates_extracted",
+            "no_candidate_in_supported_scope"
+          ]
+        },
+        "rigid_segments": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/rigid_segment"
+          },
+          "minItems": 1,
+          "maxItems": 1
+        }
+      },
+      "required": [
+        "id",
+        "type",
+        "domain",
+        "revision",
+        "name",
+        "source_refs",
+        "evidence_refs",
+        "geometry_source_ref",
+        "source_locator",
+        "interfaces",
+        "interface_status",
+        "rigid_segments"
+      ],
+      "additionalProperties": false
+    },
+    "configuration": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^configuration:[a-z][a-z0-9-]{1,63}:source-qpos0$"
+        },
+        "type": {
+          "const": "Configuration"
+        },
+        "domain": {
+          "const": "model"
+        },
+        "revision": {
+          "type": "string",
+          "minLength": 1
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "part_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "source_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "unit": {
+          "const": "m"
+        },
+        "quaternion_order": {
+          "const": "xyzw"
+        },
+        "placements": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "part_ref": {
+                "type": "string",
+                "minLength": 1
+              },
+              "position": {
+                "type": "array",
+                "items": {
+                  "type": "number"
+                },
+                "minItems": 3,
+                "maxItems": 3
+              },
+              "quaternion": {
+                "type": "array",
+                "items": {
+                  "type": "number"
+                },
+                "minItems": 4,
+                "maxItems": 4
+              }
+            },
+            "required": [
+              "part_ref",
+              "position",
+              "quaternion"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 1
+        },
+        "connection_status": {
+          "const": "candidates_extracted"
+        },
+        "interface_connections": {
+          "type": "array",
+          "items": {},
+          "maxItems": 0
+        },
+        "mechanical_status": {
+          "const": "not_evaluated"
+        }
+      },
+      "required": [
+        "id",
+        "type",
+        "domain",
+        "revision",
+        "name",
+        "part_refs",
+        "source_refs",
+        "unit",
+        "quaternion_order",
+        "placements",
+        "connection_status",
+        "interface_connections",
+        "mechanical_status"
+      ],
+      "additionalProperties": false
+    },
+    "rigid_segment": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "geometry_source_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "assumption": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "id",
+        "geometry_source_ref",
+        "assumption"
+      ],
+      "additionalProperties": false
+    },
+    "frame": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "owner_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "attached_to": {
+          "type": "string",
+          "minLength": 1
+        },
+        "pose": {
+          "type": "object",
+          "properties": {
+            "expressed_in": {
+              "type": "string",
+              "minLength": 1
+            },
+            "position": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 3,
+              "maxItems": 3
+            },
+            "quaternion": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 4,
+              "maxItems": 4
+            }
+          },
+          "required": [
+            "expressed_in",
+            "position",
+            "quaternion"
+          ],
+          "additionalProperties": false
+        },
+        "revision": {
+          "type": "string",
+          "minLength": 1
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "id",
+        "owner_ref",
+        "attached_to",
+        "pose",
+        "revision",
+        "evidence_refs"
+      ],
+      "additionalProperties": false
+    },
+    "feature": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "owner_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "frame_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "kind": {
+          "enum": [
+            "bore_wall",
+            "shaft_wall"
+          ]
+        },
+        "geometry": {
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "cylinder"
+            },
+            "axis": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 3,
+              "maxItems": 3
+            },
+            "origin": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 3,
+              "maxItems": 3
+            },
+            "radius_m": {
+              "type": "number",
+              "minimum": 0
+            },
+            "axial_range_m": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 2,
+              "maxItems": 2
+            },
+            "triangle_indices": {
+              "type": "array",
+              "items": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "minItems": 1,
+              "uniqueItems": true
+            }
+          },
+          "required": [
+            "type",
+            "axis",
+            "origin",
+            "radius_m",
+            "axial_range_m",
+            "triangle_indices"
+          ],
+          "additionalProperties": false
+        },
+        "geometry_source_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "geometry_digest": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^sha256:[a-f0-9]{64}$"
+        },
+        "measurement": {
+          "type": "object",
+          "properties": {
+            "basis": {
+              "const": "calculated"
+            },
+            "method": {
+              "type": "string",
+              "minLength": 1
+            },
+            "fit_rms_m": {
+              "type": "number",
+              "minimum": 0
+            },
+            "fit_max_m": {
+              "type": "number",
+              "minimum": 0
+            },
+            "coverage": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            }
+          },
+          "required": [
+            "basis",
+            "method",
+            "fit_rms_m",
+            "fit_max_m",
+            "coverage"
+          ],
+          "additionalProperties": false
+        },
+        "source_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "id",
+        "owner_ref",
+        "frame_ref",
+        "kind",
+        "geometry",
+        "geometry_source_ref",
+        "geometry_digest",
+        "measurement",
+        "source_refs",
+        "evidence_refs"
+      ],
+      "additionalProperties": false
+    },
+    "interface": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "owner_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "frame_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "feature_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "status": {
+          "const": "candidate"
+        },
+        "mechanism_candidates": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "fastened_mount",
+              "cylindrical_fit"
+            ]
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "unresolved_requirements": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "source_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "id",
+        "owner_ref",
+        "frame_ref",
+        "feature_refs",
+        "status",
+        "mechanism_candidates",
+        "unresolved_requirements",
+        "source_refs",
+        "evidence_refs"
+      ],
+      "additionalProperties": false
+    },
+    "endpoint": {
+      "type": "object",
+      "properties": {
+        "part_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "interface_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "feature_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "part_ref",
+        "interface_ref",
+        "feature_refs"
+      ],
+      "additionalProperties": false
+    },
+    "geometric_check": {
+      "type": "object",
+      "properties": {
+        "kind": {
+          "enum": [
+            "axis_angle",
+            "axis_distance",
+            "finite_axial_gap",
+            "finite_axial_overlap",
+            "radial_clearance",
+            "bore_radius_difference"
+          ]
+        },
+        "result": {
+          "const": "pass"
+        },
+        "residual": {
+          "type": "number"
+        },
+        "threshold": {
+          "type": "number",
+          "minimum": 0
+        },
+        "unit": {
+          "enum": [
+            "rad",
+            "m"
+          ]
+        }
+      },
+      "required": [
+        "kind",
+        "result",
+        "residual",
+        "threshold",
+        "unit"
+      ],
+      "additionalProperties": false
+    },
+    "connection_candidate": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "configuration_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "endpoint_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/endpoint"
+          },
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "status": {
+          "const": "geometric_candidate"
+        },
+        "checks": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/geometric_check"
+          },
+          "minItems": 1
+        },
+        "unresolved_requirements": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "source_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "id",
+        "configuration_ref",
+        "endpoint_refs",
+        "status",
+        "checks",
+        "unresolved_requirements",
+        "source_refs",
+        "evidence_refs"
+      ],
+      "additionalProperties": false
+    },
+    "reference_relation": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "kind": {
+          "enum": [
+            "same_source_body",
+            "source_joint"
+          ]
+        },
+        "part_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "source_body_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_joint_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "part_refs",
+        "source_body_ref",
+        "evidence_refs"
+      ],
+      "additionalProperties": false
+    },
+    "analysis": {
+      "type": "object",
+      "properties": {
+        "method": {
+          "type": "string",
+          "minLength": 1
+        },
+        "unit": {
+          "const": "m"
+        },
+        "features_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "interfaces_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "connection_candidates_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "meshes_analyzed": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "limitations": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "coverage": {
+          "type": "object",
+          "properties": {
+            "mesh_count": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "part_count": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "parts_with_features": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "parts_without_features": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "primitive_types": {
+              "type": "array",
+              "items": {
+                "const": "cylinder"
+              },
+              "minItems": 1,
+              "maxItems": 1
+            }
+          },
+          "required": [
+            "mesh_count",
+            "part_count",
+            "parts_with_features",
+            "parts_without_features",
+            "primitive_types"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "method",
+        "unit",
+        "features_count",
+        "interfaces_count",
+        "connection_candidates_count",
+        "meshes_analyzed",
+        "limitations",
+        "coverage"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

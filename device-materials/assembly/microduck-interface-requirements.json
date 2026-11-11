@@ -1,0 +1,6811 @@
+{
+  "schema": "psop.assembly.requirements/1",
+  "device_id": "microduck",
+  "sources": [
+    {
+      "id": "SRC-000010",
+      "sha256": "2ec1bd89205b407efebaa9a8898ad9fea741389d87b80ecc5c96b21d1668119e"
+    },
+    {
+      "id": "SRC-000011",
+      "sha256": "f83f388ae00787415e76b8ecaab769f08f25b8c4e90c1937ff0fc4d68d81722e"
+    },
+    {
+      "id": "SRC-000017",
+      "sha256": "a1f5d43456d0f522bd60870153795f1e8112c1adf9b8b4373b59608d9545c044"
+    },
+    {
+      "id": "SRC-000018",
+      "sha256": "54f97fa1f0e0e611d31329df9f3c3b17ffcca2d695c579d1d32cbe99e8a6c7ef"
+    },
+    {
+      "id": "SRC-000034",
+      "sha256": "295ee68ed9766c91fe06d3a2a49d39f7c2f56cc943395d293afdeb013123435e"
+    },
+    {
+      "id": "SRC-000035",
+      "sha256": "e815f3483a2e7b80844f3c0938a47e53db38b12faed9b2d364414c19e4322da4"
+    },
+    {
+      "id": "SRC-000037",
+      "sha256": "e028c8b09fecd4cb354d042bf7fd95a1a1bc2d524d760d62137fa8d74093fc23"
+    },
+    {
+      "id": "SRC-000038",
+      "sha256": "3f5068872f3add10eb967327651445bdfca635f5a8a01befa0ef05e462b72b4c"
+    },
+    {
+      "id": "SRC-000045",
+      "sha256": "96238ed0d020ce0009cf1a5aa4b6926176c800840318ee65e4375be2298d2744"
+    },
+    {
+      "id": "SRC-000014",
+      "sha256": "1820f7cf96646b0fc0c431f07da87b91b13111bfa9857ab1bf2b1fc3388f8da2"
+    },
+    {
+      "id": "SRC-000023",
+      "sha256": "9a91cc1ae31ecd9e0c1ba93f3bb2ad8a12e29bff24ec27d1ac66c0c3037d9fcf"
+    },
+    {
+      "id": "SRC-000030",
+      "sha256": "0e55a48281331b3b7b1a363d2e93b6012f37c52045b6dc922a149ca7c1b38388"
+    },
+    {
+      "id": "SRC-000032",
+      "sha256": "ee45e397d3f3422f34940a4b61156c3c11c7e8c2b240451ce5f9ddd1622a130e"
+    },
+    {
+      "id": "SRC-000020",
+      "sha256": "2d2ade4e86df4b37ce313bb9b96023109dd04bab39dba08b154e76d332fbce2e"
+    },
+    {
+      "id": "SRC-000021",
+      "sha256": "45cdbd319a4583095d8daa0db07dee726522a743d59acb82d27d82ded500a1cf"
+    },
+    {
+      "id": "SRC-000036",
+      "sha256": "3c2b52b0b6e2ce944a1e1b5a0838e1216be1ad3a34c8cdf91be186e634aec57b"
+    },
+    {
+      "id": "SRC-000029",
+      "sha256": "e1167b3d5ad7fbbe6e63296bcd0c6b61556611e6bc1367b15ecfd27e3abb72f5"
+    },
+    {
+      "id": "SRC-000016",
+      "sha256": "d0e89a173e7bdc8038c4d413f458140d8f42f1a2f098f67a887c2388eff31718"
+    },
+    {
+      "id": "SRC-000019",
+      "sha256": "e175896932d76dc7648cf939aa39cb7b1d188b783d91745adb9a4cec65e9052c"
+    }
+  ],
+  "interfaces": [
+    {
+      "owner_ref": "part:microduck:a682dc3620df43f5",
+      "key": "servo_end_minus",
+      "members": [
+        {
+          "position": [
+            -0.0145,
+            -0.006,
+            0
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0145,
+            0,
+            -0.006
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0145,
+            0,
+            0.006
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0145,
+            0.006,
+            0
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:a682dc3620df43f5",
+      "key": "servo_end_plus",
+      "members": [
+        {
+          "position": [
+            0.0145,
+            -0.006,
+            0
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0145,
+            0,
+            -0.006
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0145,
+            0,
+            0.006
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0145,
+            0.006,
+            0
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:a682dc3620df43f5",
+      "key": "servo_housing_a",
+      "members": [
+        {
+          "position": [
+            -0.0115,
+            -0.008,
+            0.0075
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0115,
+            -0.008,
+            -0.0225
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0115,
+            0.008,
+            -0.0225
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0115,
+            0.008,
+            0.0075
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:a682dc3620df43f5",
+      "key": "servo_housing_b",
+      "members": [
+        {
+          "position": [
+            0.0115,
+            -0.008,
+            0.0075
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0115,
+            -0.008,
+            -0.0225
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0115,
+            0.008,
+            -0.0225
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0115,
+            0.008,
+            0.0075
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:09cb390e38430c1e",
+      "key": "servo_end_minus",
+      "members": [
+        {
+          "position": [
+            -0.0145,
+            -0.006,
+            0
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0145,
+            0,
+            -0.006
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0145,
+            0,
+            0.006
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0145,
+            0.006,
+            0
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:09cb390e38430c1e",
+      "key": "servo_end_plus",
+      "members": [
+        {
+          "position": [
+            0.0145,
+            -0.006,
+            0
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0145,
+            0,
+            -0.006
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0145,
+            0,
+            0.006
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0145,
+            0.006,
+            0
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:09cb390e38430c1e",
+      "key": "servo_housing_a",
+      "members": [
+        {
+          "position": [
+            -0.0115,
+            -0.008,
+            0.0075
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0115,
+            -0.008,
+            -0.0225
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0115,
+            0.008,
+            -0.0225
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0115,
+            0.008,
+            0.0075
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:09cb390e38430c1e",
+      "key": "servo_housing_b",
+      "members": [
+        {
+          "position": [
+            0.0115,
+            -0.008,
+            0.0075
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0115,
+            -0.008,
+            -0.0225
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0115,
+            0.008,
+            -0.0225
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0115,
+            0.008,
+            0.0075
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:cd6d48fccc95df41",
+      "key": "servo_end_minus",
+      "members": [
+        {
+          "position": [
+            -0.0145,
+            -0.006,
+            0
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0145,
+            0,
+            -0.006
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0145,
+            0,
+            0.006
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0145,
+            0.006,
+            0
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:cd6d48fccc95df41",
+      "key": "servo_end_plus",
+      "members": [
+        {
+          "position": [
+            0.0145,
+            -0.006,
+            0
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0145,
+            0,
+            -0.006
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0145,
+            0,
+            0.006
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0145,
+            0.006,
+            0
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:cd6d48fccc95df41",
+      "key": "servo_housing_a",
+      "members": [
+        {
+          "position": [
+            -0.0115,
+            -0.008,
+            0.0075
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0115,
+            -0.008,
+            -0.0225
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0115,
+            0.008,
+            -0.0225
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0115,
+            0.008,
+            0.0075
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:cd6d48fccc95df41",
+      "key": "servo_housing_b",
+      "members": [
+        {
+          "position": [
+            0.0115,
+            -0.008,
+            0.0075
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0115,
+            -0.008,
+            -0.0225
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0115,
+            0.008,
+            -0.0225
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0115,
+            0.008,
+            0.0075
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:4cf80d5a57c8cb04",
+      "key": "servo_end_minus",
+      "members": [
+        {
+          "position": [
+            -0.0145,
+            -0.006,
+            0
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0145,
+            0,
+            -0.006
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0145,
+            0,
+            0.006
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0145,
+            0.006,
+            0
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:4cf80d5a57c8cb04",
+      "key": "servo_end_plus",
+      "members": [
+        {
+          "position": [
+            0.0145,
+            -0.006,
+            0
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0145,
+            0,
+            -0.006
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0145,
+            0,
+            0.006
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0145,
+            0.006,
+            0
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:4cf80d5a57c8cb04",
+      "key": "servo_housing_a",
+      "members": [
+        {
+          "position": [
+            -0.0115,
+            -0.008,
+            0.0075
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0115,
+            -0.008,
+            -0.0225
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0115,
+            0.008,
+            -0.0225
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0115,
+            0.008,
+            0.0075
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:4cf80d5a57c8cb04",
+      "key": "servo_housing_b",
+      "members": [
+        {
+          "position": [
+            0.0115,
+            -0.008,
+            0.0075
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0115,
+            -0.008,
+            -0.0225
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0115,
+            0.008,
+            -0.0225
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0115,
+            0.008,
+            0.0075
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:9ffe9d5bcd6bc13a",
+      "key": "servo_end_minus",
+      "members": [
+        {
+          "position": [
+            -0.0145,
+            -0.006,
+            0
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0145,
+            0,
+            -0.006
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0145,
+            0,
+            0.006
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0145,
+            0.006,
+            0
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:9ffe9d5bcd6bc13a",
+      "key": "servo_end_plus",
+      "members": [
+        {
+          "position": [
+            0.0145,
+            -0.006,
+            0
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0145,
+            0,
+            -0.006
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0145,
+            0,
+            0.006
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0145,
+            0.006,
+            0
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:9ffe9d5bcd6bc13a",
+      "key": "servo_housing_a",
+      "members": [
+        {
+          "position": [
+            -0.0115,
+            -0.008,
+            0.0075
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0115,
+            -0.008,
+            -0.0225
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0115,
+            0.008,
+            -0.0225
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0115,
+            0.008,
+            0.0075
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:9ffe9d5bcd6bc13a",
+      "key": "servo_housing_b",
+      "members": [
+        {
+          "position": [
+            0.0115,
+            -0.008,
+            0.0075
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0115,
+            -0.008,
+            -0.0225
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0115,
+            0.008,
+            -0.0225
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0115,
+            0.008,
+            0.0075
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:7c130c8489b57c99",
+      "key": "servo_end_minus",
+      "members": [
+        {
+          "position": [
+            -0.0145,
+            -0.006,
+            0
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0145,
+            0,
+            -0.006
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0145,
+            0,
+            0.006
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0145,
+            0.006,
+            0
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:7c130c8489b57c99",
+      "key": "servo_end_plus",
+      "members": [
+        {
+          "position": [
+            0.0145,
+            -0.006,
+            0
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0145,
+            0,
+            -0.006
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0145,
+            0,
+            0.006
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0145,
+            0.006,
+            0
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:7c130c8489b57c99",
+      "key": "servo_housing_a",
+      "members": [
+        {
+          "position": [
+            -0.0115,
+            -0.008,
+            0.0075
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0115,
+            -0.008,
+            -0.0225
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0115,
+            0.008,
+            -0.0225
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0115,
+            0.008,
+            0.0075
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:7c130c8489b57c99",
+      "key": "servo_housing_b",
+      "members": [
+        {
+          "position": [
+            0.0115,
+            -0.008,
+            0.0075
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0115,
+            -0.008,
+            -0.0225
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0115,
+            0.008,
+            -0.0225
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0115,
+            0.008,
+            0.0075
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:4cef8bb24d37fe6e",
+      "key": "servo_end_minus",
+      "members": [
+        {
+          "position": [
+            -0.0145,
+            -0.006,
+            0
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0145,
+            0,
+            -0.006
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0145,
+            0,
+            0.006
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0145,
+            0.006,
+            0
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:4cef8bb24d37fe6e",
+      "key": "servo_end_plus",
+      "members": [
+        {
+          "position": [
+            0.0145,
+            -0.006,
+            0
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0145,
+            0,
+            -0.006
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0145,
+            0,
+            0.006
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0145,
+            0.006,
+            0
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:4cef8bb24d37fe6e",
+      "key": "servo_housing_a",
+      "members": [
+        {
+          "position": [
+            -0.0115,
+            -0.008,
+            0.0075
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0115,
+            -0.008,
+            -0.0225
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0115,
+            0.008,
+            -0.0225
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0115,
+            0.008,
+            0.0075
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:4cef8bb24d37fe6e",
+      "key": "servo_housing_b",
+      "members": [
+        {
+          "position": [
+            0.0115,
+            -0.008,
+            0.0075
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0115,
+            -0.008,
+            -0.0225
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0115,
+            0.008,
+            -0.0225
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0115,
+            0.008,
+            0.0075
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:44b5600c1a735117",
+      "key": "servo_end_minus",
+      "members": [
+        {
+          "position": [
+            -0.0145,
+            -0.006,
+            0
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0145,
+            0,
+            -0.006
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0145,
+            0,
+            0.006
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0145,
+            0.006,
+            0
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:44b5600c1a735117",
+      "key": "servo_end_plus",
+      "members": [
+        {
+          "position": [
+            0.0145,
+            -0.006,
+            0
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0145,
+            0,
+            -0.006
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0145,
+            0,
+            0.006
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0145,
+            0.006,
+            0
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:44b5600c1a735117",
+      "key": "servo_housing_a",
+      "members": [
+        {
+          "position": [
+            -0.0115,
+            -0.008,
+            0.0075
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0115,
+            -0.008,
+            -0.0225
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0115,
+            0.008,
+            -0.0225
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0115,
+            0.008,
+            0.0075
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:44b5600c1a735117",
+      "key": "servo_housing_b",
+      "members": [
+        {
+          "position": [
+            0.0115,
+            -0.008,
+            0.0075
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0115,
+            -0.008,
+            -0.0225
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0115,
+            0.008,
+            -0.0225
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0115,
+            0.008,
+            0.0075
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:a07b37bcb704b29f",
+      "key": "servo_end_minus",
+      "members": [
+        {
+          "position": [
+            -0.0145,
+            -0.006,
+            0
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0145,
+            0,
+            -0.006
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0145,
+            0,
+            0.006
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0145,
+            0.006,
+            0
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:a07b37bcb704b29f",
+      "key": "servo_end_plus",
+      "members": [
+        {
+          "position": [
+            0.0145,
+            -0.006,
+            0
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0145,
+            0,
+            -0.006
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0145,
+            0,
+            0.006
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0145,
+            0.006,
+            0
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:a07b37bcb704b29f",
+      "key": "servo_housing_a",
+      "members": [
+        {
+          "position": [
+            -0.0115,
+            -0.008,
+            0.0075
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0115,
+            -0.008,
+            -0.0225
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0115,
+            0.008,
+            -0.0225
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0115,
+            0.008,
+            0.0075
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:a07b37bcb704b29f",
+      "key": "servo_housing_b",
+      "members": [
+        {
+          "position": [
+            0.0115,
+            -0.008,
+            0.0075
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0115,
+            -0.008,
+            -0.0225
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0115,
+            0.008,
+            -0.0225
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0115,
+            0.008,
+            0.0075
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:50f0c376d01bb0c1",
+      "key": "servo_end_minus",
+      "members": [
+        {
+          "position": [
+            -0.0145,
+            -0.006,
+            0
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0145,
+            0,
+            -0.006
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0145,
+            0,
+            0.006
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0145,
+            0.006,
+            0
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:50f0c376d01bb0c1",
+      "key": "servo_end_plus",
+      "members": [
+        {
+          "position": [
+            0.0145,
+            -0.006,
+            0
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0145,
+            0,
+            -0.006
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0145,
+            0,
+            0.006
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0145,
+            0.006,
+            0
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:50f0c376d01bb0c1",
+      "key": "servo_housing_a",
+      "members": [
+        {
+          "position": [
+            -0.0115,
+            -0.008,
+            0.0075
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0115,
+            -0.008,
+            -0.0225
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0115,
+            0.008,
+            -0.0225
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0115,
+            0.008,
+            0.0075
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:50f0c376d01bb0c1",
+      "key": "servo_housing_b",
+      "members": [
+        {
+          "position": [
+            0.0115,
+            -0.008,
+            0.0075
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0115,
+            -0.008,
+            -0.0225
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0115,
+            0.008,
+            -0.0225
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0115,
+            0.008,
+            0.0075
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:96e22c7fa2b976d3",
+      "key": "servo_end_minus",
+      "members": [
+        {
+          "position": [
+            -0.0145,
+            -0.006,
+            0
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0145,
+            0,
+            -0.006
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0145,
+            0,
+            0.006
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0145,
+            0.006,
+            0
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:96e22c7fa2b976d3",
+      "key": "servo_end_plus",
+      "members": [
+        {
+          "position": [
+            0.0145,
+            -0.006,
+            0
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0145,
+            0,
+            -0.006
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0145,
+            0,
+            0.006
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0145,
+            0.006,
+            0
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:96e22c7fa2b976d3",
+      "key": "servo_housing_a",
+      "members": [
+        {
+          "position": [
+            -0.0115,
+            -0.008,
+            0.0075
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0115,
+            -0.008,
+            -0.0225
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0115,
+            0.008,
+            -0.0225
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0115,
+            0.008,
+            0.0075
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:96e22c7fa2b976d3",
+      "key": "servo_housing_b",
+      "members": [
+        {
+          "position": [
+            0.0115,
+            -0.008,
+            0.0075
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0115,
+            -0.008,
+            -0.0225
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0115,
+            0.008,
+            -0.0225
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0115,
+            0.008,
+            0.0075
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:087d7a46a3ce4ca3",
+      "key": "servo_end_minus",
+      "members": [
+        {
+          "position": [
+            -0.0145,
+            -0.006,
+            0
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0145,
+            0,
+            -0.006
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0145,
+            0,
+            0.006
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0145,
+            0.006,
+            0
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:087d7a46a3ce4ca3",
+      "key": "servo_end_plus",
+      "members": [
+        {
+          "position": [
+            0.0145,
+            -0.006,
+            0
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0145,
+            0,
+            -0.006
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0145,
+            0,
+            0.006
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0145,
+            0.006,
+            0
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:087d7a46a3ce4ca3",
+      "key": "servo_housing_a",
+      "members": [
+        {
+          "position": [
+            -0.0115,
+            -0.008,
+            0.0075
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0115,
+            -0.008,
+            -0.0225
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0115,
+            0.008,
+            -0.0225
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0115,
+            0.008,
+            0.0075
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:087d7a46a3ce4ca3",
+      "key": "servo_housing_b",
+      "members": [
+        {
+          "position": [
+            0.0115,
+            -0.008,
+            0.0075
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0115,
+            -0.008,
+            -0.0225
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0115,
+            0.008,
+            -0.0225
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0115,
+            0.008,
+            0.0075
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:7038a050dbc33fb0",
+      "key": "servo_end_minus",
+      "members": [
+        {
+          "position": [
+            -0.0145,
+            -0.006,
+            0
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0145,
+            0,
+            -0.006
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0145,
+            0,
+            0.006
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0145,
+            0.006,
+            0
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:7038a050dbc33fb0",
+      "key": "servo_end_plus",
+      "members": [
+        {
+          "position": [
+            0.0145,
+            -0.006,
+            0
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0145,
+            0,
+            -0.006
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0145,
+            0,
+            0.006
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0145,
+            0.006,
+            0
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:7038a050dbc33fb0",
+      "key": "servo_housing_a",
+      "members": [
+        {
+          "position": [
+            -0.0115,
+            -0.008,
+            0.0075
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0115,
+            -0.008,
+            -0.0225
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0115,
+            0.008,
+            -0.0225
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0115,
+            0.008,
+            0.0075
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:7038a050dbc33fb0",
+      "key": "servo_housing_b",
+      "members": [
+        {
+          "position": [
+            0.0115,
+            -0.008,
+            0.0075
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0115,
+            -0.008,
+            -0.0225
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0115,
+            0.008,
+            -0.0225
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0115,
+            0.008,
+            0.0075
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:08c5ade0f3fd37db",
+      "key": "servo_end_minus",
+      "members": [
+        {
+          "position": [
+            -0.0145,
+            -0.006,
+            0
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0145,
+            0,
+            -0.006
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0145,
+            0,
+            0.006
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0145,
+            0.006,
+            0
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:08c5ade0f3fd37db",
+      "key": "servo_end_plus",
+      "members": [
+        {
+          "position": [
+            0.0145,
+            -0.006,
+            0
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0145,
+            0,
+            -0.006
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0145,
+            0,
+            0.006
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0145,
+            0.006,
+            0
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:08c5ade0f3fd37db",
+      "key": "servo_housing_a",
+      "members": [
+        {
+          "position": [
+            -0.0115,
+            -0.008,
+            0.0075
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0115,
+            -0.008,
+            -0.0225
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0115,
+            0.008,
+            -0.0225
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0115,
+            0.008,
+            0.0075
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:08c5ade0f3fd37db",
+      "key": "servo_housing_b",
+      "members": [
+        {
+          "position": [
+            0.0115,
+            -0.008,
+            0.0075
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0115,
+            -0.008,
+            -0.0225
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0115,
+            0.008,
+            -0.0225
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0115,
+            0.008,
+            0.0075
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:0820b4025f26a004",
+      "key": "servo_end_minus",
+      "members": [
+        {
+          "position": [
+            -0.0145,
+            -0.006,
+            0
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0145,
+            0,
+            -0.006
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0145,
+            0,
+            0.006
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0145,
+            0.006,
+            0
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:0820b4025f26a004",
+      "key": "servo_end_plus",
+      "members": [
+        {
+          "position": [
+            0.0145,
+            -0.006,
+            0
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0145,
+            0,
+            -0.006
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0145,
+            0,
+            0.006
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0145,
+            0.006,
+            0
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0008,
+          "feature_kind": "bore_wall"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:0820b4025f26a004",
+      "key": "servo_housing_a",
+      "members": [
+        {
+          "position": [
+            -0.0115,
+            -0.008,
+            0.0075
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0115,
+            -0.008,
+            -0.0225
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0115,
+            0.008,
+            -0.0225
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            -0.0115,
+            0.008,
+            0.0075
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:0820b4025f26a004",
+      "key": "servo_housing_b",
+      "members": [
+        {
+          "position": [
+            0.0115,
+            -0.008,
+            0.0075
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0115,
+            -0.008,
+            -0.0225
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0115,
+            0.008,
+            -0.0225
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.0115,
+            0.008,
+            0.0075
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.001,
+          "feature_kind": "bore_wall"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:f9955f19a691a1f4",
+      "key": "sole_fit",
+      "members": [
+        {
+          "position": [
+            -0.06840000301599503,
+            0.01609274052909498,
+            -0.02144701198772487
+          ],
+          "geometry_type": "plane",
+          "feature_kind": "planar_patch"
+        },
+        {
+          "position": [
+            -0.031599998474121094,
+            0.01605303273771377,
+            -0.022570488767585536
+          ],
+          "geometry_type": "plane",
+          "feature_kind": "planar_patch"
+        },
+        {
+          "position": [
+            -0.05083999681176889,
+            0.015245473618679268,
+            -0.018341924995183945
+          ],
+          "geometry_type": "plane",
+          "feature_kind": "planar_patch"
+        }
+      ],
+      "exact_members": false
+    },
+    {
+      "owner_ref": "part:microduck:2f557a24b2729755",
+      "key": "foot_fit",
+      "members": [
+        {
+          "position": [
+            -0.06840000301599503,
+            0.016093149294670976,
+            -0.021447034684198063
+          ],
+          "geometry_type": "plane",
+          "feature_kind": "planar_patch"
+        },
+        {
+          "position": [
+            -0.031599998474121094,
+            0.016052718079336076,
+            -0.02257041087856774
+          ],
+          "geometry_type": "plane",
+          "feature_kind": "planar_patch"
+        },
+        {
+          "position": [
+            -0.05083887750865787,
+            0.015246011980393964,
+            -0.018341924995183945
+          ],
+          "geometry_type": "plane",
+          "feature_kind": "planar_patch"
+        }
+      ],
+      "exact_members": false
+    },
+    {
+      "owner_ref": "part:microduck:f9955f19a691a1f4",
+      "key": "ankle_mount",
+      "members": [
+        {
+          "position": [
+            -0.05,
+            0.000563208,
+            -0.014341925
+          ],
+          "geometry_type": "source_region"
+        },
+        {
+          "position": [
+            -0.05,
+            0.036263207,
+            -0.014341925
+          ],
+          "geometry_type": "source_region"
+        }
+      ],
+      "exact_members": false
+    },
+    {
+      "owner_ref": "part:microduck:b371ac60e2f6757b",
+      "key": "foot_mount",
+      "members": [
+        {
+          "position": [
+            -0.05,
+            0.000863208,
+            -0.014641925
+          ],
+          "geometry_type": "source_region"
+        },
+        {
+          "position": [
+            -0.05,
+            0.035963208,
+            -0.014641925
+          ],
+          "geometry_type": "source_region"
+        }
+      ],
+      "exact_members": false
+    },
+    {
+      "owner_ref": "part:microduck:41db565298264db6",
+      "key": "sole_fit",
+      "members": [
+        {
+          "position": [
+            0.031599998474121094,
+            0.01605304460337921,
+            -0.022570494318147043
+          ],
+          "geometry_type": "plane",
+          "feature_kind": "planar_patch"
+        },
+        {
+          "position": [
+            0.06840000301599503,
+            0.016092809804031327,
+            -0.02144700615777596
+          ],
+          "geometry_type": "plane",
+          "feature_kind": "planar_patch"
+        },
+        {
+          "position": [
+            0.05083999681176889,
+            0.015245473618679268,
+            -0.018341924995183945
+          ],
+          "geometry_type": "plane",
+          "feature_kind": "planar_patch"
+        }
+      ],
+      "exact_members": false
+    },
+    {
+      "owner_ref": "part:microduck:8b649e45831a1972",
+      "key": "foot_fit",
+      "members": [
+        {
+          "position": [
+            0.031599998474121094,
+            0.016052718083367112,
+            -0.0225704107629105
+          ],
+          "geometry_type": "plane",
+          "feature_kind": "planar_patch"
+        },
+        {
+          "position": [
+            0.06840000301599503,
+            0.016092982060887488,
+            -0.02144700183594276
+          ],
+          "geometry_type": "plane",
+          "feature_kind": "planar_patch"
+        },
+        {
+          "position": [
+            0.05083989891957718,
+            0.015244777966682799,
+            -0.018341924995183945
+          ],
+          "geometry_type": "plane",
+          "feature_kind": "planar_patch"
+        }
+      ],
+      "exact_members": false
+    },
+    {
+      "owner_ref": "part:microduck:41db565298264db6",
+      "key": "ankle_mount",
+      "members": [
+        {
+          "position": [
+            0.05,
+            0.000563208,
+            -0.014341925
+          ],
+          "geometry_type": "source_region"
+        },
+        {
+          "position": [
+            0.05,
+            0.036263207,
+            -0.014341925
+          ],
+          "geometry_type": "source_region"
+        }
+      ],
+      "exact_members": false
+    },
+    {
+      "owner_ref": "part:microduck:07e507f1e9297aa3",
+      "key": "foot_mount",
+      "members": [
+        {
+          "position": [
+            0.05,
+            0.000863208,
+            -0.014641925
+          ],
+          "geometry_type": "source_region"
+        },
+        {
+          "position": [
+            0.05,
+            0.035963208,
+            -0.014641925
+          ],
+          "geometry_type": "source_region"
+        }
+      ],
+      "exact_members": false
+    },
+    {
+      "owner_ref": "part:microduck:b364863ffde63eed",
+      "key": "inner_ring",
+      "members": [
+        {
+          "position": [
+            0,
+            0,
+            0.002
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ]
+        },
+        {
+          "position": [
+            0,
+            0,
+            0.004
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:b364863ffde63eed",
+      "key": "outer_ring",
+      "members": [
+        {
+          "position": [
+            0,
+            0,
+            0.002
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.011,
+          "feature_kind": "shaft_wall"
+        },
+        {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ]
+        },
+        {
+          "position": [
+            0,
+            0,
+            0.004
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:7938fd9143c59ea4",
+      "key": "inner_ring",
+      "members": [
+        {
+          "position": [
+            0,
+            0,
+            0.002
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ]
+        },
+        {
+          "position": [
+            0,
+            0,
+            0.004
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:7938fd9143c59ea4",
+      "key": "outer_ring",
+      "members": [
+        {
+          "position": [
+            0,
+            0,
+            0.002
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.011,
+          "feature_kind": "shaft_wall"
+        },
+        {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ]
+        },
+        {
+          "position": [
+            0,
+            0,
+            0.004
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:47a950fbb3d0e416",
+      "key": "inner_ring",
+      "members": [
+        {
+          "position": [
+            0,
+            0,
+            0.002
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ]
+        },
+        {
+          "position": [
+            0,
+            0,
+            0.004
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:47a950fbb3d0e416",
+      "key": "outer_ring",
+      "members": [
+        {
+          "position": [
+            0,
+            0,
+            0.002
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.011,
+          "feature_kind": "shaft_wall"
+        },
+        {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ]
+        },
+        {
+          "position": [
+            0,
+            0,
+            0.004
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:bb34e925e25e29f6",
+      "key": "inner_ring",
+      "members": [
+        {
+          "position": [
+            0,
+            0,
+            0.002
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ]
+        },
+        {
+          "position": [
+            0,
+            0,
+            0.004
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:bb34e925e25e29f6",
+      "key": "outer_ring",
+      "members": [
+        {
+          "position": [
+            0,
+            0,
+            0.002
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.011,
+          "feature_kind": "shaft_wall"
+        },
+        {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ]
+        },
+        {
+          "position": [
+            0,
+            0,
+            0.004
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:e475134639b3f7e1",
+      "key": "inner_ring",
+      "members": [
+        {
+          "position": [
+            0,
+            0,
+            0.002
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ]
+        },
+        {
+          "position": [
+            0,
+            0,
+            0.004
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:e475134639b3f7e1",
+      "key": "outer_ring",
+      "members": [
+        {
+          "position": [
+            0,
+            0,
+            0.002
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.011,
+          "feature_kind": "shaft_wall"
+        },
+        {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ]
+        },
+        {
+          "position": [
+            0,
+            0,
+            0.004
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:766eaa6e4dd8b09f",
+      "key": "inner_ring",
+      "members": [
+        {
+          "position": [
+            0,
+            0,
+            0.0015
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.005,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ]
+        },
+        {
+          "position": [
+            0,
+            0,
+            0.003
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:766eaa6e4dd8b09f",
+      "key": "outer_ring",
+      "members": [
+        {
+          "position": [
+            0,
+            0,
+            0.0015
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0075,
+          "feature_kind": "shaft_wall"
+        },
+        {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ]
+        },
+        {
+          "position": [
+            0,
+            0,
+            0.003
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:6b884b140f6e283c",
+      "key": "inner_ring",
+      "members": [
+        {
+          "position": [
+            0,
+            0,
+            0.002
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ]
+        },
+        {
+          "position": [
+            0,
+            0,
+            0.004
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:6b884b140f6e283c",
+      "key": "outer_ring",
+      "members": [
+        {
+          "position": [
+            0,
+            0,
+            0.002
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.011,
+          "feature_kind": "shaft_wall"
+        },
+        {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ]
+        },
+        {
+          "position": [
+            0,
+            0,
+            0.004
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:ea69e2c6bba10a23",
+      "key": "inner_ring",
+      "members": [
+        {
+          "position": [
+            0,
+            0,
+            0.002
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ]
+        },
+        {
+          "position": [
+            0,
+            0,
+            0.004
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:ea69e2c6bba10a23",
+      "key": "outer_ring",
+      "members": [
+        {
+          "position": [
+            0,
+            0,
+            0.002
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.011,
+          "feature_kind": "shaft_wall"
+        },
+        {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ]
+        },
+        {
+          "position": [
+            0,
+            0,
+            0.004
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:55121c0b36f62219",
+      "key": "inner_ring",
+      "members": [
+        {
+          "position": [
+            0,
+            0,
+            0.002
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ]
+        },
+        {
+          "position": [
+            0,
+            0,
+            0.004
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:55121c0b36f62219",
+      "key": "outer_ring",
+      "members": [
+        {
+          "position": [
+            0,
+            0,
+            0.002
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.011,
+          "feature_kind": "shaft_wall"
+        },
+        {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ]
+        },
+        {
+          "position": [
+            0,
+            0,
+            0.004
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:a0775b54397eb21e",
+      "key": "inner_ring",
+      "members": [
+        {
+          "position": [
+            0,
+            0,
+            0.0015
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.005,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ]
+        },
+        {
+          "position": [
+            0,
+            0,
+            0.003
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:a0775b54397eb21e",
+      "key": "outer_ring",
+      "members": [
+        {
+          "position": [
+            0,
+            0,
+            0.0015
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0075,
+          "feature_kind": "shaft_wall"
+        },
+        {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ]
+        },
+        {
+          "position": [
+            0,
+            0,
+            0.003
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:3fbf0b5c8cea4488",
+      "key": "inner_ring",
+      "members": [
+        {
+          "position": [
+            0,
+            0,
+            0.002
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ]
+        },
+        {
+          "position": [
+            0,
+            0,
+            0.004
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:3fbf0b5c8cea4488",
+      "key": "outer_ring",
+      "members": [
+        {
+          "position": [
+            0,
+            0,
+            0.002
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.011,
+          "feature_kind": "shaft_wall"
+        },
+        {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ]
+        },
+        {
+          "position": [
+            0,
+            0,
+            0.004
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:d924e1596ffb042a",
+      "key": "inner_ring",
+      "members": [
+        {
+          "position": [
+            0,
+            0,
+            0.002
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ]
+        },
+        {
+          "position": [
+            0,
+            0,
+            0.004
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:d924e1596ffb042a",
+      "key": "outer_ring",
+      "members": [
+        {
+          "position": [
+            0,
+            0,
+            0.002
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.011,
+          "feature_kind": "shaft_wall"
+        },
+        {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ]
+        },
+        {
+          "position": [
+            0,
+            0,
+            0.004
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:d6a148b5784955d8",
+      "key": "inner_ring",
+      "members": [
+        {
+          "position": [
+            0,
+            0,
+            0.002
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.008,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ]
+        },
+        {
+          "position": [
+            0,
+            0,
+            0.004
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:d6a148b5784955d8",
+      "key": "outer_ring",
+      "members": [
+        {
+          "position": [
+            0,
+            0,
+            0.002
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.011,
+          "feature_kind": "shaft_wall"
+        },
+        {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ]
+        },
+        {
+          "position": [
+            0,
+            0,
+            0.004
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:e196235810184adf",
+      "key": "inner_ring",
+      "members": [
+        {
+          "position": [
+            0,
+            0,
+            0.0015
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.005,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ]
+        },
+        {
+          "position": [
+            0,
+            0,
+            0.003
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:e196235810184adf",
+      "key": "outer_ring",
+      "members": [
+        {
+          "position": [
+            0,
+            0,
+            0.0015
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0075,
+          "feature_kind": "shaft_wall"
+        },
+        {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ]
+        },
+        {
+          "position": [
+            0,
+            0,
+            0.003
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:638f29b46b322e64",
+      "key": "knee_bearing_support",
+      "members": [
+        {
+          "position": [
+            0.0384999998,
+            0.0220000001,
+            0.0357770874
+          ],
+          "geometry_type": "conical_frustum",
+          "feature_kind": "shaft_wall"
+        },
+        {
+          "position": [
+            0.0385,
+            0.022,
+            0.035777087
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "plane",
+          "feature_kind": "planar_patch"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:7f4fefc3c6de90f1",
+      "key": "knee_bearing_support",
+      "members": [
+        {
+          "position": [
+            0.0384999998,
+            0.0220000001,
+            0.0357770874
+          ],
+          "geometry_type": "conical_frustum",
+          "feature_kind": "shaft_wall"
+        },
+        {
+          "position": [
+            0.0385,
+            0.022,
+            0.035777087
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "geometry_type": "plane",
+          "feature_kind": "planar_patch"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:52fdcacf474a463f",
+      "key": "head_roll_drive_side_socket",
+      "members": [
+        {
+          "position": [
+            -7.061284151033477e-20,
+            0.018050000071525574,
+            0.0045000001026638675
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0111,
+          "feature_kind": "bore_wall"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:52fdcacf474a463f",
+      "key": "head_roll_opposite_side_socket",
+      "members": [
+        {
+          "position": [
+            -7.061284151033481e-20,
+            -0.016050000675022602,
+            0.0045000001026638675
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0111,
+          "feature_kind": "bore_wall"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:f97c1c6580d651d7",
+      "key": "battery_cradle_contact",
+      "members": [
+        {
+          "position": [
+            0.018200523770304018,
+            -0.007200233254136861,
+            -0.006449983154164324
+          ],
+          "geometry_type": "plane",
+          "feature_kind": "planar_patch"
+        },
+        {
+          "position": [
+            -0.0182255489647302,
+            -0.00715022785911498,
+            -0.006449984386563301
+          ],
+          "geometry_type": "plane",
+          "feature_kind": "planar_patch"
+        },
+        {
+          "position": [
+            0.004276866142895595,
+            -0.0022484878254800432,
+            0.035349976070838535
+          ],
+          "geometry_type": "plane",
+          "feature_kind": "planar_patch"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:e7e8275c7d01674c",
+      "key": "battery_support_contact",
+      "members": [
+        {
+          "position": [
+            -0.01848814776370475,
+            0.03205000062007455,
+            0.020023058170622155
+          ],
+          "geometry_type": "plane",
+          "feature_kind": "planar_patch"
+        },
+        {
+          "position": [
+            0.0,
+            0.028989136994387488,
+            -0.021830369975734062
+          ],
+          "geometry_type": "plane",
+          "feature_kind": "planar_patch"
+        },
+        {
+          "position": [
+            0.018488147763704745,
+            0.03205000062007455,
+            0.020023058170622155
+          ],
+          "geometry_type": "plane",
+          "feature_kind": "planar_patch"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:f5797f92c2bf01b8",
+      "key": "jaw_cover_seating",
+      "members": [
+        {
+          "position": [
+            -0.004792333746047175,
+            -0.045927914014992174,
+            -0.010559667882331411
+          ],
+          "direction": [
+            0.01166357929993079,
+            0.008383571180763058,
+            -0.999896833004371
+          ],
+          "geometry_type": "source_region"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:328011951ac11ee7",
+      "key": "soft_cover_support",
+      "members": [
+        {
+          "position": [
+            -0.004878195546162159,
+            -0.04404301888365302,
+            -0.010615892599916217
+          ],
+          "direction": [
+            -0.011207102444852277,
+            -0.00830189894670775,
+            0.9999027349340881
+          ],
+          "geometry_type": "source_region"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:88b7496d63cb41ff",
+      "key": "upper_mouth_seating",
+      "members": [
+        {
+          "position": [
+            0.0,
+            -0.057952645598187705,
+            -0.0035660099412596177
+          ],
+          "direction": [
+            0.0,
+            -0.9910826347167576,
+            -0.13324868165535442
+          ],
+          "geometry_type": "plane"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:52fdcacf474a463f",
+      "key": "upper_mouth_support",
+      "members": [
+        {
+          "position": [
+            0.0,
+            -0.05815262317104305,
+            -0.002829078270445385
+          ],
+          "direction": [
+            0.0,
+            0.9910827528769592,
+            0.13324780279549928
+          ],
+          "geometry_type": "plane"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:2559a4c412bcda3e",
+      "key": "eye_ring_seating",
+      "members": [
+        {
+          "position": [
+            -1.0024659453074484e-19,
+            -0.05550000071525574,
+            0.019999999854123922
+          ],
+          "direction": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "geometry_type": "plane"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:afa52198f7fad203",
+      "key": "eye_ring_support",
+      "members": [
+        {
+          "position": [
+            -0.0004145440828235831,
+            -0.05550000071525573,
+            0.01922397541764591
+          ],
+          "direction": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "geometry_type": "plane"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:cd6d48fccc95df41",
+      "key": "disk_bearing_support_minus",
+      "members": [
+        {
+          "position": [
+            -0.013,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.008,
+          "feature_kind": "shaft_wall"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:9ffe9d5bcd6bc13a",
+      "key": "disk_bearing_support_minus",
+      "members": [
+        {
+          "position": [
+            -0.013,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.008,
+          "feature_kind": "shaft_wall"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:087d7a46a3ce4ca3",
+      "key": "disk_bearing_support_minus",
+      "members": [
+        {
+          "position": [
+            -0.013,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.008,
+          "feature_kind": "shaft_wall"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:08c5ade0f3fd37db",
+      "key": "disk_bearing_support_minus",
+      "members": [
+        {
+          "position": [
+            -0.013,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.008,
+          "feature_kind": "shaft_wall"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:a682dc3620df43f5",
+      "key": "disk_bearing_support_minus",
+      "members": [
+        {
+          "position": [
+            -0.013,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.008,
+          "feature_kind": "shaft_wall"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:09cb390e38430c1e",
+      "key": "disk_bearing_support_minus",
+      "members": [
+        {
+          "position": [
+            -0.013,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.008,
+          "feature_kind": "shaft_wall"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:4cf80d5a57c8cb04",
+      "key": "disk_bearing_support_minus",
+      "members": [
+        {
+          "position": [
+            -0.013,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.008,
+          "feature_kind": "shaft_wall"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:7038a050dbc33fb0",
+      "key": "disk_bearing_support_minus",
+      "members": [
+        {
+          "position": [
+            -0.013,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.008,
+          "feature_kind": "shaft_wall"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:a07b37bcb704b29f",
+      "key": "disk_bearing_support_minus",
+      "members": [
+        {
+          "position": [
+            -0.013,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.008,
+          "feature_kind": "shaft_wall"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:96e22c7fa2b976d3",
+      "key": "disk_bearing_support_minus",
+      "members": [
+        {
+          "position": [
+            -0.013,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.008,
+          "feature_kind": "shaft_wall"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:7c130c8489b57c99",
+      "key": "disk_bearing_support_plus",
+      "members": [
+        {
+          "position": [
+            0.013,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.008,
+          "feature_kind": "shaft_wall"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:0820b4025f26a004",
+      "key": "disk_bearing_support_plus",
+      "members": [
+        {
+          "position": [
+            0.013,
+            0,
+            0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.008,
+          "feature_kind": "shaft_wall"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:fa9ee2f71faafb88",
+      "key": "source_x_four_holes",
+      "members": [
+        {
+          "position": [
+            0.03897500038146973,
+            -0.005999999992993506,
+            1.3397587642793305e-20
+          ],
+          "direction": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0012,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.03897500038146973,
+            -1.6956094272621467e-20,
+            -0.005999999992993506
+          ],
+          "direction": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0012,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.03897500038146973,
+            7.655766027804474e-21,
+            0.005999999992993506
+          ],
+          "direction": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0012,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.03897500038146973,
+            0.005999999992993506,
+            1.3397583188817831e-20
+          ],
+          "direction": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0012,
+          "feature_kind": "bore_wall"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:fa9ee2f71faafb88",
+      "key": "source_x_bearing_support",
+      "members": [
+        {
+          "position": [
+            0.03947499953210354,
+            1.4400880661569193e-11,
+            1.4400881095250062e-11
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.008,
+          "feature_kind": "shaft_wall"
+        },
+        {
+          "position": [
+            0.03849999979138374,
+            1.5692516208615923e-21,
+            3.7662038900678215e-21
+          ],
+          "geometry_type": "plane",
+          "feature_kind": "planar_patch"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:fa9ee2f71faafb88",
+      "key": "source_y_four_holes",
+      "members": [
+        {
+          "position": [
+            0.01150000001311063,
+            -0.01802500057965517,
+            -1.314826498138745e-20
+          ],
+          "direction": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0012,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.017500000074505806,
+            -0.01802500057965517,
+            -0.005999999992993497
+          ],
+          "direction": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0012,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.017500000074505806,
+            -0.01802500057965517,
+            0.005999999992993497
+          ],
+          "direction": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0012,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.023500000026991114,
+            -0.01802500057965517,
+            -1.2898963269842741e-20
+          ],
+          "direction": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0012,
+          "feature_kind": "bore_wall"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:fa9ee2f71faafb88",
+      "key": "source_y_bearing_support",
+      "members": [
+        {
+          "position": [
+            0.01749999997653739,
+            -0.017525000497698784,
+            6.993628766382987e-11
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.008,
+          "feature_kind": "shaft_wall"
+        },
+        {
+          "position": [
+            0.017500000468362344,
+            -0.01850000023841858,
+            -2.824652732790353e-21
+          ],
+          "geometry_type": "plane",
+          "feature_kind": "planar_patch"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:c7eeeac0a640d191",
+      "key": "source_x_four_holes",
+      "members": [
+        {
+          "position": [
+            0.03897500038146973,
+            -0.005999999992993506,
+            1.3397587642793305e-20
+          ],
+          "direction": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0012,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.03897500038146973,
+            -1.6956094272621467e-20,
+            -0.005999999992993506
+          ],
+          "direction": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0012,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.03897500038146973,
+            7.655766027804474e-21,
+            0.005999999992993506
+          ],
+          "direction": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0012,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.03897500038146973,
+            0.005999999992993506,
+            1.3397583188817831e-20
+          ],
+          "direction": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0012,
+          "feature_kind": "bore_wall"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:c7eeeac0a640d191",
+      "key": "source_x_bearing_support",
+      "members": [
+        {
+          "position": [
+            0.03947499953210354,
+            1.4400880661569193e-11,
+            1.4400881095250062e-11
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.008,
+          "feature_kind": "shaft_wall"
+        },
+        {
+          "position": [
+            0.03849999979138374,
+            1.5692516208615923e-21,
+            3.7662038900678215e-21
+          ],
+          "geometry_type": "plane",
+          "feature_kind": "planar_patch"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:c7eeeac0a640d191",
+      "key": "source_y_four_holes",
+      "members": [
+        {
+          "position": [
+            0.01150000001311063,
+            -0.01802500057965517,
+            -1.314826498138745e-20
+          ],
+          "direction": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0012,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.017500000074505806,
+            -0.01802500057965517,
+            -0.005999999992993497
+          ],
+          "direction": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0012,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.017500000074505806,
+            -0.01802500057965517,
+            0.005999999992993497
+          ],
+          "direction": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0012,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.023500000026991114,
+            -0.01802500057965517,
+            -1.2898963269842741e-20
+          ],
+          "direction": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0012,
+          "feature_kind": "bore_wall"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:c7eeeac0a640d191",
+      "key": "source_y_bearing_support",
+      "members": [
+        {
+          "position": [
+            0.01749999997653739,
+            -0.017525000497698784,
+            6.993628766382987e-11
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.008,
+          "feature_kind": "shaft_wall"
+        },
+        {
+          "position": [
+            0.017500000468362344,
+            -0.01850000023841858,
+            -2.824652732790353e-21
+          ],
+          "geometry_type": "plane",
+          "feature_kind": "planar_patch"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:638f29b46b322e64",
+      "key": "upper_servo_four_holes",
+      "members": [
+        {
+          "position": [
+            0.03907500021159649,
+            0.017757359264196634,
+            0.04001972847784195
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0011,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.03907500021159649,
+            0.017757359264196956,
+            0.03153444680042046
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0011,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.03907500021159649,
+            0.026242640631788442,
+            0.031534446800420404
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0011,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.03907500021159649,
+            0.026242640631788626,
+            0.040019728477841916
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0011,
+          "feature_kind": "bore_wall"
+        }
+      ],
+      "exact_members": true
+    },
+    {
+      "owner_ref": "part:microduck:7f4fefc3c6de90f1",
+      "key": "upper_servo_four_holes",
+      "members": [
+        {
+          "position": [
+            0.03907500021159649,
+            0.017757359264196634,
+            0.04001972847784195
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0011,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.03907500021159649,
+            0.017757359264196956,
+            0.03153444680042046
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0011,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.03907500021159649,
+            0.026242640631788442,
+            0.031534446800420404
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0011,
+          "feature_kind": "bore_wall"
+        },
+        {
+          "position": [
+            0.03907500021159649,
+            0.026242640631788626,
+            0.040019728477841916
+          ],
+          "geometry_type": "cylinder",
+          "radius_m": 0.0011,
+          "feature_kind": "bore_wall"
+        }
+      ],
+      "exact_members": true
+    }
+  ],
+  "connections": [
+    {
+      "endpoints": [
+        {
+          "owner_ref": "part:microduck:f9955f19a691a1f4",
+          "key": "sole_fit"
+        },
+        {
+          "owner_ref": "part:microduck:2f557a24b2729755",
+          "key": "foot_fit"
+        }
+      ],
+      "basis": "source_fit"
+    },
+    {
+      "endpoints": [
+        {
+          "owner_ref": "part:microduck:f9955f19a691a1f4",
+          "key": "ankle_mount"
+        },
+        {
+          "owner_ref": "part:microduck:b371ac60e2f6757b",
+          "key": "foot_mount"
+        }
+      ],
+      "basis": "hypothesis"
+    },
+    {
+      "endpoints": [
+        {
+          "owner_ref": "part:microduck:41db565298264db6",
+          "key": "sole_fit"
+        },
+        {
+          "owner_ref": "part:microduck:8b649e45831a1972",
+          "key": "foot_fit"
+        }
+      ],
+      "basis": "source_fit"
+    },
+    {
+      "endpoints": [
+        {
+          "owner_ref": "part:microduck:41db565298264db6",
+          "key": "ankle_mount"
+        },
+        {
+          "owner_ref": "part:microduck:07e507f1e9297aa3",
+          "key": "foot_mount"
+        }
+      ],
+      "basis": "hypothesis"
+    },
+    {
+      "endpoints": [
+        {
+          "owner_ref": "part:microduck:638f29b46b322e64",
+          "key": "lower_servo_housing"
+        },
+        {
+          "owner_ref": "part:microduck:7c130c8489b57c99",
+          "key": "servo_housing_b"
+        }
+      ],
+      "basis": "declared"
+    },
+    {
+      "endpoints": [
+        {
+          "owner_ref": "part:microduck:7f4fefc3c6de90f1",
+          "key": "lower_servo_housing"
+        },
+        {
+          "owner_ref": "part:microduck:0820b4025f26a004",
+          "key": "servo_housing_b"
+        }
+      ],
+      "basis": "declared"
+    },
+    {
+      "endpoints": [
+        {
+          "owner_ref": "part:microduck:66c73aaad945a993",
+          "key": "pitch_servo_location"
+        },
+        {
+          "owner_ref": "part:microduck:9ffe9d5bcd6bc13a",
+          "key": "servo_housing_b"
+        }
+      ],
+      "basis": "source_fit"
+    },
+    {
+      "endpoints": [
+        {
+          "owner_ref": "part:microduck:66c73aaad945a993",
+          "key": "knee_servo_location"
+        },
+        {
+          "owner_ref": "part:microduck:4cf80d5a57c8cb04",
+          "key": "servo_housing_b"
+        }
+      ],
+      "basis": "source_fit"
+    },
+    {
+      "endpoints": [
+        {
+          "owner_ref": "part:microduck:e40b9945707505e1",
+          "key": "pitch_servo_location"
+        },
+        {
+          "owner_ref": "part:microduck:08c5ade0f3fd37db",
+          "key": "servo_housing_b"
+        }
+      ],
+      "basis": "source_fit"
+    },
+    {
+      "endpoints": [
+        {
+          "owner_ref": "part:microduck:e40b9945707505e1",
+          "key": "knee_servo_location"
+        },
+        {
+          "owner_ref": "part:microduck:7038a050dbc33fb0",
+          "key": "servo_housing_b"
+        }
+      ],
+      "basis": "source_fit"
+    },
+    {
+      "endpoints": [
+        {
+          "owner_ref": "part:microduck:ea69e2c6bba10a23",
+          "key": "outer_ring"
+        },
+        {
+          "owner_ref": "part:microduck:52fdcacf474a463f",
+          "key": "head_roll_drive_side_socket"
+        }
+      ],
+      "basis": "incompatible"
+    },
+    {
+      "endpoints": [
+        {
+          "owner_ref": "part:microduck:55121c0b36f62219",
+          "key": "outer_ring"
+        },
+        {
+          "owner_ref": "part:microduck:52fdcacf474a463f",
+          "key": "head_roll_opposite_side_socket"
+        }
+      ],
+      "basis": "incompatible"
+    },
+    {
+      "endpoints": [
+        {
+          "owner_ref": "part:microduck:f97c1c6580d651d7",
+          "key": "battery_cradle_contact"
+        },
+        {
+          "owner_ref": "part:microduck:e7e8275c7d01674c",
+          "key": "battery_support_contact"
+        }
+      ],
+      "basis": "source_fit"
+    },
+    {
+      "endpoints": [
+        {
+          "owner_ref": "part:microduck:f5797f92c2bf01b8",
+          "key": "jaw_cover_seating"
+        },
+        {
+          "owner_ref": "part:microduck:328011951ac11ee7",
+          "key": "soft_cover_support"
+        }
+      ],
+      "basis": "source_fit"
+    },
+    {
+      "endpoints": [
+        {
+          "owner_ref": "part:microduck:88b7496d63cb41ff",
+          "key": "upper_mouth_seating"
+        },
+        {
+          "owner_ref": "part:microduck:52fdcacf474a463f",
+          "key": "upper_mouth_support"
+        }
+      ],
+      "basis": "source_fit"
+    },
+    {
+      "endpoints": [
+        {
+          "owner_ref": "part:microduck:2559a4c412bcda3e",
+          "key": "eye_ring_seating"
+        },
+        {
+          "owner_ref": "part:microduck:afa52198f7fad203",
+          "key": "eye_ring_support"
+        }
+      ],
+      "basis": "source_fit"
+    },
+    {
+      "endpoints": [
+        {
+          "owner_ref": "part:microduck:7c130c8489b57c99",
+          "key": "disk_bearing_support_plus"
+        },
+        {
+          "owner_ref": "part:microduck:766eaa6e4dd8b09f",
+          "key": "inner_ring"
+        }
+      ],
+      "basis": "incompatible"
+    },
+    {
+      "endpoints": [
+        {
+          "owner_ref": "part:microduck:0820b4025f26a004",
+          "key": "disk_bearing_support_plus"
+        },
+        {
+          "owner_ref": "part:microduck:e196235810184adf",
+          "key": "inner_ring"
+        }
+      ],
+      "basis": "incompatible"
+    },
+    {
+      "endpoints": [
+        {
+          "owner_ref": "part:microduck:fa9ee2f71faafb88",
+          "key": "source_y_four_holes"
+        },
+        {
+          "owner_ref": "part:microduck:cd6d48fccc95df41",
+          "key": "servo_end_minus"
+        }
+      ],
+      "basis": "hypothesis"
+    },
+    {
+      "endpoints": [
+        {
+          "owner_ref": "part:microduck:fa9ee2f71faafb88",
+          "key": "source_y_bearing_support"
+        },
+        {
+          "owner_ref": "part:microduck:47a950fbb3d0e416",
+          "key": "inner_ring"
+        }
+      ],
+      "basis": "source_fit"
+    },
+    {
+      "endpoints": [
+        {
+          "owner_ref": "part:microduck:fa9ee2f71faafb88",
+          "key": "source_x_four_holes"
+        },
+        {
+          "owner_ref": "part:microduck:9ffe9d5bcd6bc13a",
+          "key": "servo_end_minus"
+        }
+      ],
+      "basis": "hypothesis"
+    },
+    {
+      "endpoints": [
+        {
+          "owner_ref": "part:microduck:fa9ee2f71faafb88",
+          "key": "source_x_bearing_support"
+        },
+        {
+          "owner_ref": "part:microduck:bb34e925e25e29f6",
+          "key": "inner_ring"
+        }
+      ],
+      "basis": "source_fit"
+    },
+    {
+      "endpoints": [
+        {
+          "owner_ref": "part:microduck:c7eeeac0a640d191",
+          "key": "source_y_four_holes"
+        },
+        {
+          "owner_ref": "part:microduck:087d7a46a3ce4ca3",
+          "key": "servo_end_minus"
+        }
+      ],
+      "basis": "hypothesis"
+    },
+    {
+      "endpoints": [
+        {
+          "owner_ref": "part:microduck:c7eeeac0a640d191",
+          "key": "source_y_bearing_support"
+        },
+        {
+          "owner_ref": "part:microduck:3fbf0b5c8cea4488",
+          "key": "inner_ring"
+        }
+      ],
+      "basis": "source_fit"
+    },
+    {
+      "endpoints": [
+        {
+          "owner_ref": "part:microduck:c7eeeac0a640d191",
+          "key": "source_x_four_holes"
+        },
+        {
+          "owner_ref": "part:microduck:08c5ade0f3fd37db",
+          "key": "servo_end_minus"
+        }
+      ],
+      "basis": "hypothesis"
+    },
+    {
+      "endpoints": [
+        {
+          "owner_ref": "part:microduck:c7eeeac0a640d191",
+          "key": "source_x_bearing_support"
+        },
+        {
+          "owner_ref": "part:microduck:d924e1596ffb042a",
+          "key": "inner_ring"
+        }
+      ],
+      "basis": "source_fit"
+    },
+    {
+      "endpoints": [
+        {
+          "owner_ref": "part:microduck:638f29b46b322e64",
+          "key": "knee_bearing_support"
+        },
+        {
+          "owner_ref": "part:microduck:e475134639b3f7e1",
+          "key": "inner_ring"
+        }
+      ],
+      "basis": "source_fit"
+    },
+    {
+      "endpoints": [
+        {
+          "owner_ref": "part:microduck:7f4fefc3c6de90f1",
+          "key": "knee_bearing_support"
+        },
+        {
+          "owner_ref": "part:microduck:d6a148b5784955d8",
+          "key": "inner_ring"
+        }
+      ],
+      "basis": "source_fit"
+    },
+    {
+      "endpoints": [
+        {
+          "owner_ref": "part:microduck:328011951ac11ee7",
+          "key": "jaw_drive"
+        },
+        {
+          "owner_ref": "part:microduck:50f0c376d01bb0c1",
+          "key": "servo_end_minus"
+        }
+      ],
+      "basis": "declared"
+    }
+  ]
+}

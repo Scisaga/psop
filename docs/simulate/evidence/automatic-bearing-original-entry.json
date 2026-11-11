@@ -1,0 +1,802 @@
+{
+  "recorded_at": "2026-11-10T23:36:35.614Z",
+  "origin": "http://127.0.0.1:8780",
+  "assets": [
+    {
+      "asset": "/assets/index-BnEFfHzR.js",
+      "sha256": "00a8376e3b0ae47b1cdab2903e39dc4987a394ef5830ed3add8825d6af077cbb"
+    },
+    {
+      "asset": "/assets/index-BCRkOLcP.css",
+      "sha256": "db10f2453c3c20ac7122f9bfc76bdbddeefa73c76f0e4b1d161922257680d2ac"
+    }
+  ],
+  "source_scene": "2ff0a3e2-51fb-4a60-85a5-7556d25362f3",
+  "source_revision": 5,
+  "source_unchanged": true,
+  "acceptance_scene": "41c9b541-5955-42df-9e1d-e085101f55e8",
+  "parts": 70,
+  "groups": 1,
+  "connections": 69,
+  "assembly_report": {
+    "mode": "reference",
+    "configuration_ref": "configuration:microduck:reconciled-qpos0",
+    "configuration_label": "修正成品参考",
+    "part_count": 70,
+    "retained_connection_count": 0,
+    "removed_connection_count": 3,
+    "bearing_preassembly_count": 14,
+    "access_opened_connection_count": 0,
+    "reference_connection_count": 69,
+    "structure_binding_count": 7,
+    "geometry_status": "not_evaluated",
+    "completed_at": "2026-11-10T23:36:07.532Z"
+  },
+  "paused_step": 4,
+  "paused_step_progress": 0.8,
+  "bearing_steps": [
+    {
+      "kind": "preassemble",
+      "chapter": "轴承预装",
+      "label": "躯干底座 · 同轴对准，沿轴线装入轴承外形（22×16×4 配置名）",
+      "duration_ms": 1450,
+      "focus_ids": [
+        "instance:part:microduck:b364863ffde63eed",
+        "instance:part:microduck:203d2686e3321e4a"
+      ],
+      "motions": [
+        {
+          "instance_ids": [
+            "instance:part:microduck:b364863ffde63eed"
+          ],
+          "poses": [
+            {
+              "id": "instance:part:microduck:b364863ffde63eed",
+              "part_ref": "part:microduck:b364863ffde63eed",
+              "position": [
+                -0.20792362466912273,
+                0.06683550263941287,
+                0.037099999999999994
+              ],
+              "quaternion": [
+                0,
+                0,
+                0,
+                1
+              ]
+            }
+          ],
+          "lift_m": 0.04,
+          "approach_offset_m": [
+            0,
+            0,
+            -0.012
+          ],
+          "insertion": {
+            "kind": "bearing_axial",
+            "bearing_instance_id": "instance:part:microduck:b364863ffde63eed",
+            "host_instance_id": "instance:part:microduck:203d2686e3321e4a",
+            "axis": [
+              0,
+              0,
+              1
+            ],
+            "axis_interface_ref": "interface:assembly:b364863ffde63eed:inner_ring",
+            "axis_member_ref": "interface:assembly:b364863ffde63eed:inner_ring:bore",
+            "seat_interface_ref": "interface:assembly:203d2686e3321e4a:left_hip_yaw_outer_abutment",
+            "candidate_id": "candidate:8b2d477b0abe91fd092905ffb8ac0c6b080c01fddcf23cd6ee091dc95b0cb465"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "preassemble",
+      "chapter": "轴承预装",
+      "label": "躯干底座 · 同轴对准，沿轴线装入轴承外形（22×16×4 配置名）",
+      "duration_ms": 1450,
+      "focus_ids": [
+        "instance:part:microduck:7938fd9143c59ea4",
+        "instance:part:microduck:203d2686e3321e4a"
+      ],
+      "motions": [
+        {
+          "instance_ids": [
+            "instance:part:microduck:7938fd9143c59ea4"
+          ],
+          "poses": [
+            {
+              "id": "instance:part:microduck:7938fd9143c59ea4",
+              "part_ref": "part:microduck:7938fd9143c59ea4",
+              "position": [
+                -0.20792362466912273,
+                0.031835502639412865,
+                0.037099999999999994
+              ],
+              "quaternion": [
+                0,
+                0,
+                0,
+                1
+              ]
+            }
+          ],
+          "lift_m": 0.04,
+          "approach_offset_m": [
+            0,
+            0,
+            -0.012
+          ],
+          "insertion": {
+            "kind": "bearing_axial",
+            "bearing_instance_id": "instance:part:microduck:7938fd9143c59ea4",
+            "host_instance_id": "instance:part:microduck:203d2686e3321e4a",
+            "axis": [
+              0,
+              0,
+              1
+            ],
+            "axis_interface_ref": "interface:assembly:7938fd9143c59ea4:inner_ring",
+            "axis_member_ref": "interface:assembly:7938fd9143c59ea4:inner_ring:bore",
+            "seat_interface_ref": "interface:assembly:203d2686e3321e4a:right_hip_yaw_outer_abutment",
+            "candidate_id": "candidate:5279a0de519fb52da17817ac3d685250872e262d366f3f440899f2792b08169c"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "preassemble",
+      "chapter": "轴承预装",
+      "label": "横滚轴承支承件 · 同轴对准，沿轴线装入轴承外形（22×16×4 配置名）",
+      "duration_ms": 1450,
+      "focus_ids": [
+        "instance:part:microduck:47a950fbb3d0e416",
+        "instance:part:microduck:cb253f38c818b9d8"
+      ],
+      "motions": [
+        {
+          "instance_ids": [
+            "instance:part:microduck:47a950fbb3d0e416"
+          ],
+          "poses": [
+            {
+              "id": "instance:part:microduck:47a950fbb3d0e416",
+              "part_ref": "part:microduck:47a950fbb3d0e416",
+              "position": [
+                0.2013440540655658,
+                0.028999999642372116,
+                0.049699999359250076
+              ],
+              "quaternion": [
+                0,
+                -0.7071067811865476,
+                0,
+                0.7071067811865476
+              ]
+            }
+          ],
+          "lift_m": 0.04,
+          "approach_offset_m": [
+            0.012,
+            0,
+            2.664535259100375e-18
+          ],
+          "insertion": {
+            "kind": "bearing_axial",
+            "bearing_instance_id": "instance:part:microduck:47a950fbb3d0e416",
+            "host_instance_id": "instance:part:microduck:cb253f38c818b9d8",
+            "axis": [
+              -1,
+              0,
+              -2.2204460492503126e-16
+            ],
+            "axis_interface_ref": "interface:assembly:47a950fbb3d0e416:inner_ring",
+            "axis_member_ref": "interface:assembly:47a950fbb3d0e416:inner_ring:bore",
+            "seat_interface_ref": "interface:assembly:cb253f38c818b9d8:bearing_outer_ring_abutment",
+            "candidate_id": "candidate:2c5bc349636ac3f1ccc7a6c8ad7de43f8add6afc7177438aa38e39c93d417e96"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "preassemble",
+      "chapter": "轴承预装",
+      "label": "大腿加强板 · 同轴对准，沿轴线装入轴承外形（22×16×4 配置名）",
+      "duration_ms": 1450,
+      "focus_ids": [
+        "instance:part:microduck:bb34e925e25e29f6",
+        "instance:part:microduck:c75bfc0afb35e000"
+      ],
+      "motions": [
+        {
+          "instance_ids": [
+            "instance:part:microduck:bb34e925e25e29f6"
+          ],
+          "poses": [
+            {
+              "id": "instance:part:microduck:bb34e925e25e29f6",
+              "part_ref": "part:microduck:bb34e925e25e29f6",
+              "position": [
+                -0.11903355928223135,
+                0.08886448795869949,
+                0.058199999940395354
+              ],
+              "quaternion": [
+                -0.5,
+                -0.5000000000000001,
+                -0.5000000000000001,
+                0.5000000000000001
+              ]
+            }
+          ],
+          "lift_m": 0.04,
+          "approach_offset_m": [
+            1.3322676295501873e-18,
+            -0.012,
+            2.6645352591003746e-18
+          ],
+          "insertion": {
+            "kind": "bearing_axial",
+            "bearing_instance_id": "instance:part:microduck:bb34e925e25e29f6",
+            "host_instance_id": "instance:part:microduck:c75bfc0afb35e000",
+            "axis": [
+              -1.110223024625156e-16,
+              1,
+              -2.220446049250312e-16
+            ],
+            "axis_interface_ref": "interface:assembly:bb34e925e25e29f6:inner_ring",
+            "axis_member_ref": "interface:assembly:bb34e925e25e29f6:inner_ring:bore",
+            "seat_interface_ref": "interface:assembly:c75bfc0afb35e000:bearing_outer_ring_abutment",
+            "candidate_id": "candidate:b0d29b3db3957d669b12fdaaa31334a35e5b204745e0a280772c2b9a2cf07337"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "preassemble",
+      "chapter": "轴承预装",
+      "label": "大腿加强板 · 同轴对准，沿轴线装入轴承外形（22×16×4 配置名）",
+      "duration_ms": 1450,
+      "focus_ids": [
+        "instance:part:microduck:e475134639b3f7e1",
+        "instance:part:microduck:c75bfc0afb35e000"
+      ],
+      "motions": [
+        {
+          "instance_ids": [
+            "instance:part:microduck:e475134639b3f7e1"
+          ],
+          "poses": [
+            {
+              "id": "instance:part:microduck:e475134639b3f7e1",
+              "part_ref": "part:microduck:e475134639b3f7e1",
+              "position": [
+                -0.15481065928223134,
+                0.0888644879586995,
+                0.03619999994039536
+              ],
+              "quaternion": [
+                -0.5,
+                -0.5000000000000001,
+                -0.5000000000000001,
+                0.5000000000000001
+              ]
+            }
+          ],
+          "lift_m": 0.04,
+          "approach_offset_m": [
+            1.3322676295501873e-18,
+            -0.012,
+            2.6645352591003746e-18
+          ],
+          "insertion": {
+            "kind": "bearing_axial",
+            "bearing_instance_id": "instance:part:microduck:e475134639b3f7e1",
+            "host_instance_id": "instance:part:microduck:c75bfc0afb35e000",
+            "axis": [
+              -1.110223024625156e-16,
+              1,
+              -2.220446049250312e-16
+            ],
+            "axis_interface_ref": "interface:assembly:e475134639b3f7e1:inner_ring",
+            "axis_member_ref": "interface:assembly:e475134639b3f7e1:inner_ring:bore",
+            "seat_interface_ref": "interface:assembly:c75bfc0afb35e000:left_knee_outer_abutment",
+            "candidate_id": "candidate:75a481d68b8f65af1e560733d32f77df6293ae54b19ac73c6a98f68f0110a07c"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "preassemble",
+      "chapter": "轴承预装",
+      "label": "左踝部件 · 同轴对准，沿轴线装入轴承外形（默认配置名）",
+      "duration_ms": 1450,
+      "focus_ids": [
+        "instance:part:microduck:766eaa6e4dd8b09f",
+        "instance:part:microduck:07e507f1e9297aa3"
+      ],
+      "motions": [
+        {
+          "instance_ids": [
+            "instance:part:microduck:766eaa6e4dd8b09f"
+          ],
+          "poses": [
+            {
+              "id": "instance:part:microduck:766eaa6e4dd8b09f",
+              "part_ref": "part:microduck:766eaa6e4dd8b09f",
+              "position": [
+                -0.21148986710546056,
+                0.09887100418433543,
+                0.04150000142940523
+              ],
+              "quaternion": [
+                -0.7071067811865476,
+                -5.551115123125785e-17,
+                0,
+                0.7071067811865477
+              ]
+            }
+          ],
+          "lift_m": 0.04,
+          "approach_offset_m": [
+            1.0311975946657904e-18,
+            -0.013135501530021406,
+            2.9166672477257466e-18
+          ],
+          "insertion": {
+            "kind": "bearing_axial",
+            "bearing_instance_id": "instance:part:microduck:766eaa6e4dd8b09f",
+            "host_instance_id": "instance:part:microduck:07e507f1e9297aa3",
+            "axis": [
+              -7.85046229341888e-17,
+              1,
+              -2.2204460492503126e-16
+            ],
+            "axis_interface_ref": "interface:assembly:766eaa6e4dd8b09f:inner_ring",
+            "axis_member_ref": "interface:assembly:766eaa6e4dd8b09f:inner_ring:bore",
+            "seat_interface_ref": "interface:assembly:07e507f1e9297aa3:idler_bearing_pocket",
+            "candidate_id": "candidate:92969207237fdec242d061c00b165958849737f07a022210dec3ebd11a14d3b5"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "preassemble",
+      "chapter": "轴承预装",
+      "label": "颈俯仰部件 · 同轴对准，沿轴线装入轴承外形（22×16×4 配置名）",
+      "duration_ms": 1450,
+      "focus_ids": [
+        "instance:part:microduck:6b884b140f6e283c",
+        "instance:part:microduck:834f5cc892eba41e"
+      ],
+      "motions": [
+        {
+          "instance_ids": [
+            "instance:part:microduck:6b884b140f6e283c"
+          ],
+          "poses": [
+            {
+              "id": "instance:part:microduck:6b884b140f6e283c",
+              "part_ref": "part:microduck:6b884b140f6e283c",
+              "position": [
+                0.18009861022691728,
+                -0.0712079225033522,
+                0.05499311478137972
+              ],
+              "quaternion": [
+                0,
+                -1,
+                0,
+                0
+              ]
+            }
+          ],
+          "lift_m": 0.04,
+          "approach_offset_m": [
+            0,
+            0,
+            0.012
+          ],
+          "insertion": {
+            "kind": "bearing_axial",
+            "bearing_instance_id": "instance:part:microduck:6b884b140f6e283c",
+            "host_instance_id": "instance:part:microduck:834f5cc892eba41e",
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "axis_interface_ref": "interface:assembly:6b884b140f6e283c:inner_ring",
+            "axis_member_ref": "interface:assembly:6b884b140f6e283c:inner_ring:bore",
+            "seat_interface_ref": "interface:assembly:834f5cc892eba41e:head_yaw_drive",
+            "candidate_id": "candidate:dd7b2f7f4285e169b40a5270541ce51ee685825b63909625ea66b3f44768085c"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "preassemble",
+      "chapter": "轴承预装",
+      "label": "电机支架 · 同轴对准，沿轴线装入轴承外形（22×16×4 配置名）",
+      "duration_ms": 1450,
+      "focus_ids": [
+        "instance:part:microduck:ea69e2c6bba10a23",
+        "instance:part:microduck:986b5adf27910138"
+      ],
+      "motions": [
+        {
+          "instance_ids": [
+            "instance:part:microduck:ea69e2c6bba10a23"
+          ],
+          "poses": [
+            {
+              "id": "instance:part:microduck:ea69e2c6bba10a23",
+              "part_ref": "part:microduck:ea69e2c6bba10a23",
+              "position": [
+                -0.10095645912129877,
+                -0.14050000315904618,
+                0.036199999940395355
+              ],
+              "quaternion": [
+                0,
+                0.7071067811865475,
+                0,
+                -0.7071067811865475
+              ]
+            }
+          ],
+          "lift_m": 0.04,
+          "approach_offset_m": [
+            -0.019900000864267367,
+            0,
+            4.41868782991403e-18
+          ],
+          "insertion": {
+            "kind": "bearing_axial",
+            "bearing_instance_id": "instance:part:microduck:ea69e2c6bba10a23",
+            "host_instance_id": "instance:part:microduck:986b5adf27910138",
+            "axis": [
+              -1,
+              0,
+              2.2204460492503136e-16
+            ],
+            "axis_interface_ref": "interface:assembly:ea69e2c6bba10a23:inner_ring",
+            "axis_member_ref": "interface:assembly:ea69e2c6bba10a23:inner_ring:bore",
+            "seat_interface_ref": "interface:assembly:986b5adf27910138:roll_bearing_drive_cradle",
+            "candidate_id": "candidate:16897c75226995a5546de3108110a3a72b68d159b3c43c6e6c546226178dd2f9"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "preassemble",
+      "chapter": "轴承预装",
+      "label": "头部下壳 · 同轴对准，沿轴线装入轴承外形（22×16×4 配置名）",
+      "duration_ms": 1450,
+      "focus_ids": [
+        "instance:part:microduck:55121c0b36f62219",
+        "instance:part:microduck:52fdcacf474a463f"
+      ],
+      "motions": [
+        {
+          "instance_ids": [
+            "instance:part:microduck:55121c0b36f62219"
+          ],
+          "poses": [
+            {
+              "id": "instance:part:microduck:55121c0b36f62219",
+              "part_ref": "part:microduck:55121c0b36f62219",
+              "position": [
+                0.023743540091919896,
+                -0.1523815520703793,
+                0.04233625716790557
+              ],
+              "quaternion": [
+                0,
+                0.7071067811865475,
+                0,
+                -0.7071067811865475
+              ]
+            }
+          ],
+          "lift_m": 0.04,
+          "approach_offset_m": [
+            0.05434827827140689,
+            0,
+            -1.206774197713021e-17
+          ],
+          "insertion": {
+            "kind": "bearing_axial",
+            "bearing_instance_id": "instance:part:microduck:55121c0b36f62219",
+            "host_instance_id": "instance:part:microduck:52fdcacf474a463f",
+            "axis": [
+              -1,
+              0,
+              2.2204460492503136e-16
+            ],
+            "axis_interface_ref": "interface:assembly:55121c0b36f62219:inner_ring",
+            "axis_member_ref": "interface:assembly:55121c0b36f62219:inner_ring:bore",
+            "seat_interface_ref": "interface:assembly:52fdcacf474a463f:head_roll_opposite_side_socket",
+            "candidate_id": "candidate:7e3d3215625a940435ca979844eefd1f5efae71efacbef5479cf0e24e64c3077"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "preassemble",
+      "chapter": "轴承预装",
+      "label": "电机支架 · 同轴对准，沿轴线装入轴承外形（默认配置名）",
+      "duration_ms": 1450,
+      "focus_ids": [
+        "instance:part:microduck:a0775b54397eb21e",
+        "instance:part:microduck:986b5adf27910138"
+      ],
+      "motions": [
+        {
+          "instance_ids": [
+            "instance:part:microduck:a0775b54397eb21e"
+          ],
+          "poses": [
+            {
+              "id": "instance:part:microduck:a0775b54397eb21e",
+              "part_ref": "part:microduck:a0775b54397eb21e",
+              "position": [
+                -0.08485645912129879,
+                -0.18050000315904619,
+                0.03920000010803343
+              ],
+              "quaternion": [
+                0.7071067811865475,
+                0,
+                0,
+                -0.7071067811865475
+              ]
+            }
+          ],
+          "lift_m": 0.04,
+          "approach_offset_m": [
+            0,
+            -0.012,
+            -2.6645352591003765e-18
+          ],
+          "insertion": {
+            "kind": "bearing_axial",
+            "bearing_instance_id": "instance:part:microduck:a0775b54397eb21e",
+            "host_instance_id": "instance:part:microduck:986b5adf27910138",
+            "axis": [
+              0,
+              1,
+              2.2204460492503136e-16
+            ],
+            "axis_interface_ref": "interface:assembly:a0775b54397eb21e:inner_ring",
+            "axis_member_ref": "interface:assembly:a0775b54397eb21e:inner_ring:bore",
+            "seat_interface_ref": "interface:assembly:986b5adf27910138:jaw_bearing_seat",
+            "candidate_id": "candidate:350f713c0860bc75f513d597f0af66bee96db4a0f0f3752f43be37aa892d1f70"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "preassemble",
+      "chapter": "轴承预装",
+      "label": "横滚轴承支承件 · 同轴对准，沿轴线装入轴承外形（22×16×4 配置名）",
+      "duration_ms": 1450,
+      "focus_ids": [
+        "instance:part:microduck:3fbf0b5c8cea4488",
+        "instance:part:microduck:c703574f50f6a46a"
+      ],
+      "motions": [
+        {
+          "instance_ids": [
+            "instance:part:microduck:3fbf0b5c8cea4488"
+          ],
+          "poses": [
+            {
+              "id": "instance:part:microduck:3fbf0b5c8cea4488",
+              "part_ref": "part:microduck:3fbf0b5c8cea4488",
+              "position": [
+                0.1354918184080303,
+                -0.1610299490988255,
+                0.049699999359250076
+              ],
+              "quaternion": [
+                0,
+                -0.7071067811865476,
+                0,
+                0.7071067811865476
+              ]
+            }
+          ],
+          "lift_m": 0.04,
+          "approach_offset_m": [
+            0.012,
+            0,
+            2.664535259100375e-18
+          ],
+          "insertion": {
+            "kind": "bearing_axial",
+            "bearing_instance_id": "instance:part:microduck:3fbf0b5c8cea4488",
+            "host_instance_id": "instance:part:microduck:c703574f50f6a46a",
+            "axis": [
+              -1,
+              0,
+              -2.2204460492503126e-16
+            ],
+            "axis_interface_ref": "interface:assembly:3fbf0b5c8cea4488:inner_ring",
+            "axis_member_ref": "interface:assembly:3fbf0b5c8cea4488:inner_ring:bore",
+            "seat_interface_ref": "interface:assembly:c703574f50f6a46a:bearing_outer_ring_abutment",
+            "candidate_id": "candidate:e8cacf76c4f3070db1019b28f1e891ef0ceda0b4bd66c4e48412756b0c7f7203"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "preassemble",
+      "chapter": "轴承预装",
+      "label": "大腿加强板 · 同轴对准，沿轴线装入轴承外形（22×16×4 配置名）",
+      "duration_ms": 1450,
+      "focus_ids": [
+        "instance:part:microduck:d924e1596ffb042a",
+        "instance:part:microduck:7e86db28af59d3cc"
+      ],
+      "motions": [
+        {
+          "instance_ids": [
+            "instance:part:microduck:d924e1596ffb042a"
+          ],
+          "poses": [
+            {
+              "id": "instance:part:microduck:d924e1596ffb042a",
+              "part_ref": "part:microduck:d924e1596ffb042a",
+              "position": [
+                -0.1437564601159513,
+                -0.12691448906586955,
+                0.05819999994039535
+              ],
+              "quaternion": [
+                -0.5,
+                -0.5,
+                -0.5,
+                0.49999999999999994
+              ]
+            }
+          ],
+          "lift_m": 0.04,
+          "approach_offset_m": [
+            6.661338147750939e-19,
+            0.012,
+            0
+          ],
+          "insertion": {
+            "kind": "bearing_axial",
+            "bearing_instance_id": "instance:part:microduck:d924e1596ffb042a",
+            "host_instance_id": "instance:part:microduck:7e86db28af59d3cc",
+            "axis": [
+              5.551115123125783e-17,
+              1,
+              0
+            ],
+            "axis_interface_ref": "interface:assembly:d924e1596ffb042a:inner_ring",
+            "axis_member_ref": "interface:assembly:d924e1596ffb042a:inner_ring:bore",
+            "seat_interface_ref": "interface:assembly:7e86db28af59d3cc:bearing_outer_ring_abutment",
+            "candidate_id": "candidate:5becf24aa40e343014e34733b574b724c8d83a7492c2725ed7b66ee9d525f09f"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "preassemble",
+      "chapter": "轴承预装",
+      "label": "大腿加强板 · 同轴对准，沿轴线装入轴承外形（22×16×4 配置名）",
+      "duration_ms": 1450,
+      "focus_ids": [
+        "instance:part:microduck:d6a148b5784955d8",
+        "instance:part:microduck:7e86db28af59d3cc"
+      ],
+      "motions": [
+        {
+          "instance_ids": [
+            "instance:part:microduck:d6a148b5784955d8"
+          ],
+          "poses": [
+            {
+              "id": "instance:part:microduck:d6a148b5784955d8",
+              "part_ref": "part:microduck:d6a148b5784955d8",
+              "position": [
+                -0.17953356011595129,
+                -0.12691448906586955,
+                0.036199999940395355
+              ],
+              "quaternion": [
+                -0.5,
+                -0.5,
+                -0.5,
+                0.49999999999999994
+              ]
+            }
+          ],
+          "lift_m": 0.04,
+          "approach_offset_m": [
+            6.661338147750939e-19,
+            0.012,
+            0
+          ],
+          "insertion": {
+            "kind": "bearing_axial",
+            "bearing_instance_id": "instance:part:microduck:d6a148b5784955d8",
+            "host_instance_id": "instance:part:microduck:7e86db28af59d3cc",
+            "axis": [
+              5.551115123125783e-17,
+              1,
+              0
+            ],
+            "axis_interface_ref": "interface:assembly:d6a148b5784955d8:inner_ring",
+            "axis_member_ref": "interface:assembly:d6a148b5784955d8:inner_ring:bore",
+            "seat_interface_ref": "interface:assembly:7e86db28af59d3cc:right_knee_outer_abutment",
+            "candidate_id": "candidate:842e9caa2da6895956b8731f49f679e385258aec9200691b11ea270b27a13d99"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "preassemble",
+      "chapter": "轴承预装",
+      "label": "右踝部件 · 同轴对准，沿轴线装入轴承外形（默认配置名）",
+      "duration_ms": 1450,
+      "focus_ids": [
+        "instance:part:microduck:e196235810184adf",
+        "instance:part:microduck:b371ac60e2f6757b"
+      ],
+      "motions": [
+        {
+          "instance_ids": [
+            "instance:part:microduck:e196235810184adf"
+          ],
+          "poses": [
+            {
+              "id": "instance:part:microduck:e196235810184adf",
+              "part_ref": "part:microduck:e196235810184adf",
+              "position": [
+                -0.22358986881834902,
+                -0.0672355013392866,
+                0.04150000142940523
+              ],
+              "quaternion": [
+                0.7071067811865477,
+                0,
+                5.551115123125785e-17,
+                -0.7071067811865476
+              ]
+            }
+          ],
+          "lift_m": 0.04,
+          "approach_offset_m": [
+            1.0311975926186234e-18,
+            0.01313550150394438,
+            -5.833334483870967e-18
+          ],
+          "insertion": {
+            "kind": "bearing_axial",
+            "bearing_instance_id": "instance:part:microduck:e196235810184adf",
+            "host_instance_id": "instance:part:microduck:b371ac60e2f6757b",
+            "axis": [
+              7.85046229341888e-17,
+              1,
+              -4.440892098500625e-16
+            ],
+            "axis_interface_ref": "interface:assembly:e196235810184adf:inner_ring",
+            "axis_member_ref": "interface:assembly:e196235810184adf:inner_ring:bore",
+            "seat_interface_ref": "interface:assembly:b371ac60e2f6757b:idler_bearing_pocket",
+            "candidate_id": "candidate:33fefdc1db0beaedb1fbd25e7ec5c91be97cb4a0c2b91e5bd72f481f5e1986ad"
+          }
+        }
+      ]
+    }
+  ],
+  "complete_animation": true,
+  "page_errors": [],
+  "screenshots": [
+    "bearing-original-entry-preassembly-1600.png",
+    "bearing-original-entry-unit-1600.png",
+    "bearing-original-entry-complete-1600.png"
+  ]
+}

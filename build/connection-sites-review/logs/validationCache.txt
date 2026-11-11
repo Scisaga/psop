@@ -1,0 +1,19 @@
+
+> psop-workbench@0.2.0 test:validation-cache
+> node --test scripts/validation-cache.test.mjs
+
+✔ shares concurrent validation and reuses the result in a new server instance (51.5305ms)
+✔ a same-size source change with restored timestamps cannot use persisted validation (33.064ms)
+✔ missing, extra, and changed manifest files invalidate cached package identity (39.4846ms)
+✔ a changed validator identity requires a new full validation (27.9558ms)
+✔ malformed cache and results for another package require validation again (45.7911ms)
+✔ failed validation is not persisted or retained as an in-memory failure (28.3784ms)
+✔ a package changed during semantic replay cannot produce a valid cache (18.8183ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 377.8837

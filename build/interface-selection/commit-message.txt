@@ -1,0 +1,11 @@
+fix: clarify geometry selection and publish interface hypotheses
+
+Remove default whole-mesh edge highlights, preserve source geometry while
+improving display normals, and organize inspector details by physical location.
+
+Publish source-model/1.10 evidence-backed installation hypotheses with
+independent geometry and relationship validation and read-only query support.
+Keep existing definitions and historical package semantics intact.
+
+Validation: Build 164 passed/1 skipped; Chrome 40 passed/2 skipped;
+API 7 passed; source sections 27 passed; display normal tests 3 passed.

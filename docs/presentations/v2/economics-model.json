@@ -1,0 +1,274 @@
+{
+  "schema_version": "psop.value-creation/2",
+  "date": "2026-10-15",
+  "revision": 2,
+  "status": "measurement_framework_with_unfilled_baselines_not_forecast",
+  "scope": "设备交付准备、操作检查、服务与任务复用；Microduck MD-01 / MD-SERVO-CHECK-01 Rev.A",
+  "currency": "CNY",
+  "measurement_window": null,
+  "matched_comparison_group": null,
+  "domains": [
+    {
+      "id": "research",
+      "title": "交付准备",
+      "mechanism": "关联部件关系、配置与操作依据，减少可避免的重复配置、整理与试验迭代；保留必要验证",
+      "headline_formula": "可比任务净减少工程工时；可归因的重复验证避免支出单独计量",
+      "metrics": [
+        {
+          "id": "research_labor",
+          "label": "资料与配置净释放工时",
+          "unit": "person_hours",
+          "formula": "matched_tasks * (baseline_hours_per_task - observed_hours_per_task) * attribution_fraction",
+          "inputs": {
+            "matched_tasks": null,
+            "baseline_hours_per_task": null,
+            "observed_hours_per_task": null,
+            "attribution_fraction": null
+          },
+          "result": null,
+          "evidence_required": [
+            "同类任务工作量",
+            "前后人工工时记录（含新增审核）",
+            "配置版本与任务复杂度匹配",
+            "增量归因记录"
+          ]
+        },
+        {
+          "id": "research_cycle",
+          "label": "配置与验证周期变化",
+          "unit": "elapsed_hours_per_task",
+          "formula": "baseline_elapsed_hours_per_task - observed_elapsed_hours_per_task",
+          "inputs": {
+            "baseline_elapsed_hours_per_task": null,
+            "observed_elapsed_hours_per_task": null
+          },
+          "result": null,
+          "evidence_required": [
+            "任务开始与就绪时间戳",
+            "等待与并行活动记录"
+          ]
+        },
+        {
+          "id": "avoidable_iteration_cash",
+          "label": "可避免重复验证的净现金变化",
+          "unit": "CNY",
+          "formula": "(matched_baseline_avoidable_iteration_cash - observed_avoidable_iteration_cash) * attribution_fraction - incremental_validation_cash",
+          "inputs": {
+            "matched_baseline_avoidable_iteration_cash": null,
+            "observed_avoidable_iteration_cash": null,
+            "attribution_fraction": null,
+            "incremental_validation_cash": null
+          },
+          "result": null,
+          "evidence_required": [
+            "可比配置版本、约束与必要验证要求",
+            "试验原因及材料、耗材、外协实际支付",
+            "新增验证费用",
+            "同一凭证不得重复进入质量成本"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "onsite",
+      "title": "现场效率",
+      "mechanism": "将部件位置、工具反馈和任务要求对齐，减少可避免的查找、重复核对与设备等待",
+      "headline_formula": "检查次数 × 单次净减少核对时间；设备有效时间另行计量",
+      "metrics": [
+        {
+          "id": "onsite_labor",
+          "label": "现场检查与处置净释放工时",
+          "unit": "person_hours",
+          "formula": "matched_checks * (baseline_minutes_per_check - observed_minutes_per_check) / 60 * attribution_fraction",
+          "inputs": {
+            "matched_checks": null,
+            "baseline_minutes_per_check": null,
+            "observed_minutes_per_check": null,
+            "attribution_fraction": null
+          },
+          "result": null,
+          "evidence_required": [
+            "检查任务次数",
+            "人员工时（含补证与复核）",
+            "设备与配置条件匹配",
+            "归因记录"
+          ]
+        },
+        {
+          "id": "equipment_availability",
+          "label": "可用设备时间变化",
+          "unit": "equipment_hours",
+          "formula": "matched_checks * (baseline_avoidable_wait_minutes - observed_avoidable_wait_minutes) / 60 * attribution_fraction",
+          "inputs": {
+            "matched_checks": null,
+            "baseline_avoidable_wait_minutes": null,
+            "observed_avoidable_wait_minutes": null,
+            "attribution_fraction": null
+          },
+          "result": null,
+          "evidence_required": [
+            "设备状态日志",
+            "等待原因编码",
+            "设备使用需求匹配",
+            "确认等待可归因于操作与任务协同"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quality",
+      "title": "服务质量",
+      "mechanism": "按相同完成要求比较复检、远程指导、返工及部件更换路径，减少可归因的总处置成本",
+      "headline_formula": "可比工单基准处置总成本 − 实际处置总成本，按因果证据归因",
+      "metrics": [
+        {
+          "id": "disposition_cash",
+          "label": "异常处理净现金改善",
+          "unit": "CNY",
+          "formula": "matched_jobs * (baseline_total_disposition_cash_per_job - observed_total_disposition_cash_per_job) * attribution_fraction",
+          "inputs": {
+            "matched_jobs": null,
+            "baseline_total_disposition_cash_per_job": null,
+            "observed_total_disposition_cash_per_job": null,
+            "attribution_fraction": null
+          },
+          "result": null,
+          "evidence_required": [
+            "故障类别、严重程度、型号和工单复杂度可比",
+            "相同最终合格要求与验收记录",
+            "总成本包含复检、远程指导、差旅、返工、部件更换及失败后的重复处理等全部发生项",
+            "排除固定薪酬、折旧与重复凭证",
+            "剔除故障率、使用负载、配置变更等混杂因素"
+          ]
+        },
+        {
+          "id": "first_pass",
+          "label": "一次通过率变化",
+          "unit": "percentage_points",
+          "formula": "(observed_first_pass_rate - baseline_first_pass_rate) * 100",
+          "inputs": {
+            "observed_first_pass_rate": null,
+            "baseline_first_pass_rate": null
+          },
+          "result": null,
+          "evidence_required": [
+            "一致验收口径",
+            "分母为同类任务",
+            "通过与不通过记录"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reuse",
+      "title": "知识复利",
+      "mechanism": "复用经验证的设备对象与操作条件、EG、操作轨迹、语音词域和评测集，降低后续适配工作量",
+      "headline_formula": "复用次数 × 单次减少适配工时 − 新增维护工时",
+      "metrics": [
+        {
+          "id": "reuse_labor",
+          "label": "后续适配净释放工时",
+          "unit": "person_hours",
+          "formula": "eligible_reuses * (baseline_new_adaptation_hours - observed_reuse_adaptation_hours) - incremental_maintenance_hours",
+          "inputs": {
+            "eligible_reuses": null,
+            "baseline_new_adaptation_hours": null,
+            "observed_reuse_adaptation_hours": null,
+            "incremental_maintenance_hours": null
+          },
+          "result": null,
+          "evidence_required": [
+            "排除首次建设投入",
+            "同类任务适配工时",
+            "版本审核与维护工时",
+            "与研发工时事件ID去重"
+          ]
+        },
+        {
+          "id": "reuse_share",
+          "label": "已验证任务资产复用比例",
+          "unit": "ratio",
+          "formula": "validated_reused_assets / eligible_assets",
+          "inputs": {
+            "validated_reused_assets": null,
+            "eligible_assets": null
+          },
+          "result": null,
+          "evidence_required": [
+            "资产与版本清单",
+            "适用性验证记录"
+          ]
+        }
+      ]
+    }
+  ],
+  "aggregation": {
+    "cash_savings_CNY": null,
+    "labor_capacity_person_hours": null,
+    "equipment_availability_hours": null,
+    "cycle_change_hours_per_task": null,
+    "net_cash_contribution_CNY": null,
+    "roi": null,
+    "payback_months": null,
+    "status": "not_calculated_until_baselines_costs_and_attribution_are_filled",
+    "rules": [
+      "工时、设备时间、周期和现金分别展示，不混加为一个总额",
+      "以event_id/person_id/time_interval去重；同一时间只进入一个工时类别",
+      "周期变化不乘工时单价；并行环节缩短不直接等于交付周期缩短",
+      "设备释放时间仅表示可用时间，未有使用需求与实际产出记录不折算新增收入",
+      "同一返工支出、差旅或外协凭证只入账一次",
+      "允许有符号负增量，不截断恶化或新增审核工作量",
+      "未填参数为null，不能按0填补或计算总收益",
+      "交付准备、现场任务、异常处理使用不同事件集合；同一凭证只进入一个现金指标",
+      "处置路径包含失败分支的实际费用，不能只核算成功修复样本",
+      "若处置总成本已包含复检与验证，不再在净现金贡献中重复扣减",
+      "质量改善需在相同验收要求和可比故障群体中比较"
+    ]
+  },
+  "project_costs": {
+    "one_time_cash_CNY": {
+      "domain_data_and_annotation": null,
+      "engineering_model_and_integration": null,
+      "validation_and_training": null,
+      "new_terminals": null,
+      "device_tool_integration": null
+    },
+    "recurring_cash_CNY": {
+      "software_and_service": null,
+      "compute_and_storage": null,
+      "operations_and_maintenance": null,
+      "model_evaluation_and_update": null
+    },
+    "internal_labor_person_hours": {
+      "domain_review": null,
+      "data_governance": null,
+      "model_evaluation": null
+    },
+    "rule": "内部工时若已包含在领域净工时中，不再次扣除；成本按合同/工时/资源记录核算"
+  },
+  "commercial_model": {
+    "revenue_paths": [
+      "设备任务与行业软件持续服务",
+      "经验证的领域任务模型服务",
+      "同类任务资产与设备接口适配"
+    ],
+    "pricing_CNY": null,
+    "recognized_revenue_CNY": null,
+    "attributable_delivery_and_service_cash_CNY": null,
+    "direct_contribution_CNY": null,
+    "fixed_operating_cost_CNY": null,
+    "net_profit_CNY": null,
+    "formula": "direct_contribution_CNY = recognized_revenue_CNY - attributable_delivery_and_service_cash_CNY",
+    "rule": "复用降低重复交付工作；价格和盈利须由实际合同及成本验证，直接贡献不称净利润"
+  },
+  "unit_sensitivities": [],
+  "exclusions": [
+    "不将设备自身性能变化全额归因于平台",
+    "机械臂 Runtime 实验增量不直接换算经济收益",
+    "必要操作检查、兼容测试和验收计入成本",
+    "工时释放不自动等同现金减少",
+    "未填基线不产生年度收益、回收期或规模收入预测",
+    "质量改善保持同一完成条件",
+    "失败、返工与部件更换的实际成本全部记录"
+  ]
+}

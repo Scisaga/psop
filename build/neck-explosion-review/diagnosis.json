@@ -1,0 +1,72 @@
+{
+  "scope": "Diagnosis of the supplied 96% exploded view; application code was not modified.",
+  "snapshot": "dkp-69f6ee2e13b4051f6f42",
+  "amount": 0.96,
+  "metrics": {
+    "pitchBracketRelativeToUpperNeckServoMm": [
+      0,
+      0,
+      20.801021
+    ],
+    "rollBracketRelativeToRollBearingMm": [
+      0,
+      0,
+      25.601006
+    ],
+    "headCoreRelativeToRollBearingMm": [
+      74.465006,
+      0,
+      0
+    ]
+  },
+  "causes": [
+    {
+      "file": "apps/workbench/src/explosion-layout.ts",
+      "line": 179,
+      "finding": "Center-to-center progression overrides the head-pitch joint world Y axis with world Z; at 96%, neck_pitch moves 20.801 mm in Z relative to the upper neck motor."
+    },
+    {
+      "file": "apps/workbench/src/explosion-layout.ts",
+      "line": 57,
+      "finding": "The yaw_roll_motion bracket is treated as a thin Z part; its bearings already clear the motor AABB and receive no internal displacement. The two roll journal/inner-ring axes become 25.601 mm apart at 96%."
+    },
+    {
+      "file": "apps/workbench/src/explosion-layout.ts",
+      "line": 66,
+      "finding": "Parent attachments are inferred from proximity, without consulting the published connection endpoints."
+    },
+    {
+      "file": "apps/workbench/src/SceneCanvas.tsx",
+      "line": 227,
+      "finding": "The explosion planner receives part AABBs, bodies and joints, but no assembly interfaces or connections."
+    }
+  ],
+  "verification": {
+    "actualServedPageReproduced": true,
+    "readActualRendererOffsets": true,
+    "browserPageErrors": [],
+    "unitTests": {
+      "passed": 10,
+      "failed": 0
+    },
+    "existingRealModelLayoutTests": {
+      "passed": 3,
+      "failed": 0
+    },
+    "headAssemblyRelationshipTestsPresent": false,
+    "fullExpansionAabbIntersections": 0,
+    "sourceVsCorrectedMaxExplosionOffsetDifferenceMm": 0.19999983236193564
+  },
+  "evidence": {
+    "screenshots": [
+      "current-scene.png",
+      "assembled-scene.png",
+      "full-scene.png"
+    ],
+    "actualRenderer": "browser.json",
+    "layout": "layout.json",
+    "instrumentedTrace": "trace.json",
+    "radialConnections": "radial-connections.json"
+  },
+  "interpretation": "These measurements identify a display-layout and assembly-readability defect. They do not establish that any single-axis physical disassembly path is required or validated."
+}

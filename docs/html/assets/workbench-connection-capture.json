@@ -1,0 +1,129 @@
+{
+  "schema": "psop.homepage-connection-capture/1",
+  "captured_at": "2026-11-11T14:23:21.990Z",
+  "timezone": "Asia/Shanghai",
+  "events_time_basis": "Wall-clock seconds since page creation begins. Raw-video timecodes are selected by inspecting decoded frames; recording initialization is not included in the video.",
+  "package_version": "2.0.0-capabilities.10",
+  "package_digest": "c9a2c6afd8358f836d0f46deae682e35a77710d384653dee5ba6f27716e79c57",
+  "snapshot_id": "dkp-c9a2c6afd8358f836d0f",
+  "isolation": {
+    "registry": ".runtime/homepage-connection/registry.json",
+    "user_scenes_modified": false
+  },
+  "viewport": {
+    "width": 1600,
+    "height": 1000
+  },
+  "preparation": [
+    {
+      "type": "move",
+      "part": "头部下壳",
+      "instance_id": "instance:part:microduck:52fdcacf474a463f",
+      "pose": {
+        "position": [
+          0.3,
+          0,
+          0.013036257335543632
+        ],
+        "quaternion": [
+          0,
+          0,
+          -0.7071067811865474,
+          -0.7071067811865474
+        ]
+      },
+      "revision": 1
+    },
+    {
+      "type": "move",
+      "part": "头部上壳",
+      "instance_id": "instance:part:microduck:82d68e991b23c2a3",
+      "pose": {
+        "position": [
+          0.3,
+          -0.15,
+          0.0004013558080809162
+        ],
+        "quaternion": [
+          0,
+          0,
+          -0.7071067811865474,
+          -0.7071067811865474
+        ]
+      },
+      "revision": 2
+    }
+  ],
+  "operations": [
+    {
+      "type": "connect",
+      "revision": 3,
+      "connections": 1,
+      "candidate_id": "candidate:beec0201c2b30f4ec49148f76f4540d4d4d0b45bc94890e4af5d7c7e8f1b1102"
+    },
+    {
+      "type": "disconnect",
+      "revision": 4,
+      "connections": 0
+    },
+    {
+      "type": "undo",
+      "revision": 5,
+      "connections": 1
+    }
+  ],
+  "images": [
+    {
+      "file": "workbench-head-before.webp",
+      "purpose": "Only the white upper head shell and orange lower shell, separated on the tabletop",
+      "kind": "actual_workbench_capture",
+      "dimensions": [
+        1600,
+        1000
+      ],
+      "bytes": 179190,
+      "sha256": "8ae16e969d31e5470ec6eb633ee745fbaf3efdd5518a93fd0c40d23df8411f73"
+    },
+    {
+      "file": "workbench-head-after.webp",
+      "purpose": "Source-original upper and lower shells joined into a clearly recognizable head housing",
+      "kind": "actual_workbench_capture",
+      "dimensions": [
+        1600,
+        1000
+      ],
+      "bytes": 149070,
+      "sha256": "cbe1707402134837f561cdaaf5d7ceed2cd5de9740337c3257f401c0f4c1baf1"
+    }
+  ],
+  "events": {
+    "start": 10.16,
+    "connect_start": 12.546,
+    "connected": 15.204,
+    "disconnect_start": 18.316,
+    "disconnected": 19.288,
+    "undo_start": 22.941,
+    "restored": 23.596,
+    "end": 24.906
+  },
+  "browser_errors": [],
+  "scene_id": "4f9c949e-84de-495a-99da-99b01c447974",
+  "demonstration": {
+    "moving_part": "头部上壳",
+    "target_part": "头部下壳",
+    "candidate_id": "candidate:beec0201c2b30f4ec49148f76f4540d4d4d0b45bc94890e4af5d7c7e8f1b1102",
+    "title": "头部上下壳三点闭合",
+    "source_kind": "reference_connection",
+    "configuration_ref": "configuration:microduck:source-qpos0",
+    "visible_instances": [
+      "instance:part:microduck:82d68e991b23c2a3",
+      "instance:part:microduck:52fdcacf474a463f"
+    ],
+    "hidden_other_instances": 68,
+    "staging": "Loose parts placed on the tabletop in their source orientations; original meshes and mating transform unchanged.",
+    "preview_status": "ready"
+  },
+  "visible_projection_count": 2,
+  "raw_video": ".runtime/homepage-connection/page@136ea9791d3602d453b25757d6d2d479.webm",
+  "raw_sha256": "48052ff24ee64a90f0446a88229573a1370a1e134a1f598d2135407a1974ec70"
+}

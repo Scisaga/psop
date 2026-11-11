@@ -1,0 +1,13 @@
+{
+  "ok": true,
+  "command": "freeze",
+  "work": "C:\\Users\\lsh\\Desktop\\workspace\\psop\\.runtime\\build-capabilities\\work-release-6",
+  "digest": "a7af3d307e2d461e217693154e43545aa0ece121032b9ef263e10677adb9d232",
+  "counts": {
+    "candidates": 1509,
+    "features": 8703,
+    "instance_pairs": 2415,
+    "interfaces": 411,
+    "resources": 7438
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "schema": "psop.mounting.knowledge/1.1-draft.1",
+  "device_id": "microduck",
+  "provenance": {
+    "kind": "user_statement",
+    "recorded_at": "2026-11-06",
+    "statement": "应该有8个可安装孔位 并说明至少同侧两个相邻的孔位可作为安装接口 同时还要标识那两个孔位与腿部连杆的孔位相连接",
+    "interpretation": "按用户前述说明，XL330 壳体两侧各四个孔位，标准参考装配使用同侧两个孔位连接腿部连杆。此交付将相邻显式解释为矩形边，保留 16 mm 短边与 30 mm 长边，排除对角；这是可复审的项目解释，不是厂家认证。本文件不指定螺纹、允许旋入深度、紧固扭矩或实际接合状态。"
+  },
+  "interface_families": [
+    {
+      "id": "xl330-housing-mount",
+      "selector": {
+        "mesh_key": "xl330",
+        "geometry_sha256": "96238ed0d020ce0009cf1a5aa4b6926176c800840318ee65e4375be2298d2744"
+      },
+      "layout": {
+        "type": "rectangular",
+        "hole_diameter_m": 0.002,
+        "spacing_m": [
+          0.016,
+          0.03
+        ],
+        "side_count": 2
+      },
+      "mechanism": "fastener_mount",
+      "role": "housing_mount",
+      "selection": {
+        "same_side": true,
+        "min_count": 2,
+        "require_adjacent_pair": true,
+        "adjacency": "rectangle_edges"
+      },
+      "statement": "A、B 两侧各四个可寻址安装孔位。一次安装选择同一侧至少两个成员，并包含矩形边上的一对相邻孔位；16 mm 短边与 30 mm 长边分别保留，不将对角线当成邻接。额外选孔仍须与对端、连接件和共同安装位姿相容。"
+    }
+  ],
+  "reference_assemblies": [
+    {
+      "id": "xl330-leg-standard",
+      "interface_family_ref": "xl330-housing-mount",
+      "counterpart_selector": {
+        "mesh_key": "leg",
+        "geometry_sha256": "9a91cc1ae31ecd9e0c1ba93f3bb2ad8a12e29bff24ec27d1ac66c0c3037d9fcf"
+      },
+      "occurrence_selector": "same_source_body",
+      "counterpart": {
+        "hole_diameter_m": 0.0024,
+        "hole_spacing_m": 0.016
+      },
+      "expected_pair_count": 2,
+      "role": "bracket_mount",
+      "statement": "在来源 qpos0 的标准参考装配中，与腿部连杆同属所指定来源 body 的 XL330 壳体采用同侧两个相邻孔位连接该连杆。共同来源 body 仅限定本条用户声明的实例范围，不自动证明其他同 body 部件之间存在物理连接。具体孔位映射由两孔孔距、共同参考位姿和孔轴对应复核；螺钉实体、允许长度、螺纹、保持状态及装配路径未在本说明中指定。"
+    }
+  ],
+  "mounting_assertions": [
+    {
+      "id": "leg-upper-four-mounting-sites",
+      "label": "连杆上端四孔安装位",
+      "provenance": {
+        "kind": "user_statement",
+        "recorded_at": "2026-11-06",
+        "statement": "腿部连杆上方的四个安装孔位没有识别出来",
+        "interpretation": "用户指出上端四个孔是安装位置。源网格实测为四条直径 2.2 mm 的孔道、PCD 12 mm。仅将正 X 方向完整入口作为本次四个可寻址安装位置，依据是该入口朝向参考上方舵机近面；另一侧入口及非平齐扩孔保留几何身份。本说明未推定双向均可安装，未给出最少孔数、四孔必选、螺钉或输出活动框架。"
+      },
+      "selectors": [
+        {
+          "mesh_key": "leg",
+          "geometry_sha256": "9a91cc1ae31ecd9e0c1ba93f3bb2ad8a12e29bff24ec27d1ac66c0c3037d9fcf"
+        }
+      ],
+      "layout": {
+        "type": "circular",
+        "member_count": 4,
+        "hole_diameter_m": 0.0022,
+        "pitch_circle_diameter_m": 0.012,
+        "entry_side": "positive_axis"
+      },
+      "mechanism": "unknown",
+      "role": "bracket_mount",
+      "selection": {
+        "status": "unknown"
+      },
+      "statement": "上端四个安装位置独立寻址；PCD 分组仅说明几何组织。源 qpos0 与邻近舵机的四孔相位相差 45 度，不发布已对齐或已装配。未知选用规则不构成永久排除其他合理安装方式。"
+    },
+    {
+      "id": "thigh-integral-mounting-pins",
+      "label": "大腿定位销",
+      "provenance": {
+        "kind": "user_statement",
+        "recorded_at": "2026-11-06",
+        "statement": "右大腿部件的安装接口没有识别出来",
+        "interpretation": "用户指出右大腿具有安装接口；结合此前要求同类不遗漏，对来源左右镜像大腿作一致核查。源三角拓扑显示每件有四个带闭合圆尖端的外向锥形实体安装特征，约 3 度拔模，尖端直径 1.59037 mm；不能称为安装孔。四销按实测 16 mm 间距分成两个几何安装组，参考姿态下各对应同侧一台舵机的两个壳体入口。这里没有推定两个必须一起使用、指定保持方式或保证装配可执行。"
+      },
+      "selectors": [
+        {
+          "mesh_key": "upper_leg_right",
+          "geometry_sha256": "5caf996cc3e151b01f393cdc6a6a6a940c1d86179d8b7c7f5f85cf1f1ac2fb63"
+        },
+        {
+          "mesh_key": "upper_leg_left",
+          "geometry_sha256": "8cb1c12dfa6d366a318bb1ec16f585427b9a185afeb7738d0a6f41f5db46a07d"
+        }
+      ],
+      "layout": {
+        "type": "linear_pins",
+        "member_count": 2,
+        "tip_diameter_m": 0.00159037,
+        "pin_spacing_m": 0.016
+      },
+      "mechanism": "unknown",
+      "role": "mounting_feature",
+      "selection": {
+        "status": "unknown"
+      },
+      "statement": "整体锥销是可定位的安装特征，非圆孔。按有限源壁面和闭合圆尖端发布，壳体截切的基部不补成完整锥体；参考对轴只属于几何事实，最少选用数、机构、保持、工程限值及运动归属仍待确认。"
+    }
+  ]
+}

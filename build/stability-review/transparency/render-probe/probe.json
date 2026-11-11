@@ -1,0 +1,26 @@
+[
+  {
+    "mode": "coverage",
+    "materials": [
+      {
+        "partId": "part:microduck:cd6d48fccc95df41",
+        "opacity": 0.08,
+        "alphaToCoverage": true,
+        "alphaHash": false
+      }
+    ],
+    "samples": 4
+  },
+  {
+    "mode": "hash",
+    "materials": [
+      {
+        "partId": "part:microduck:cd6d48fccc95df41",
+        "opacity": 0.08,
+        "alphaToCoverage": false,
+        "alphaHash": true
+      }
+    ],
+    "samples": 4
+  }
+]

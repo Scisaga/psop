@@ -1,0 +1,662 @@
+{
+  "measured_at": "2026-11-08T00:20:39.218Z",
+  "origin": "http://127.0.0.1:8780",
+  "viewport": [
+    1600,
+    1000
+  ],
+  "api_state": "First server read is recorded separately; browser runs then reuse the validated server snapshot.",
+  "results": [
+    {
+      "label": "before",
+      "snapshot": "dkp-6a841fcb9cb028ba2c63",
+      "version": "2.0.0-assembly.3",
+      "digest": "6a841fcb9cb028ba2c63df67cfd35c43f30e95374fb6f6bc314b7332160789e8",
+      "profile": "psop.hardware.source-model/1.14",
+      "api_first_read_ms": 141.21500000000003,
+      "view_json_decoded_bytes": 1879810,
+      "ui_model_ready_ms": 1679.2051000000001,
+      "ui_part_geometry_ready_ms": null,
+      "idle_renders_per_second": 0,
+      "selected_part": "part:microduck:e27cbdd6c07a264e",
+      "network": [
+        {
+          "path": "/api/workspaces",
+          "status": 200,
+          "encoded_bytes": 966,
+          "encoding": "identity"
+        },
+        {
+          "path": "/api/workspaces/microduck/snapshots/dkp-6a841fcb9cb028ba2c63/view",
+          "status": 200,
+          "encoded_bytes": 1879810,
+          "encoding": "identity"
+        },
+        {
+          "path": "/api/workspaces/microduck/snapshots/dkp-6a841fcb9cb028ba2c63/assets/sources/SRC-000034.stl",
+          "status": 200,
+          "encoded_bytes": 1048584,
+          "encoding": "identity"
+        },
+        {
+          "path": "/api/workspaces/microduck/snapshots/dkp-6a841fcb9cb028ba2c63/assets/sources/SRC-000033.stl",
+          "status": 200,
+          "encoded_bytes": 1048584,
+          "encoding": "identity"
+        },
+        {
+          "path": "/api/workspaces/microduck/snapshots/dkp-6a841fcb9cb028ba2c63/assets/sources/SRC-000012.stl",
+          "status": 200,
+          "encoded_bytes": 69484,
+          "encoding": "identity"
+        },
+        {
+          "path": "/api/workspaces/microduck/snapshots/dkp-6a841fcb9cb028ba2c63/assets/sources/SRC-000045.stl",
+          "status": 200,
+          "encoded_bytes": 206384,
+          "encoding": "identity"
+        },
+        {
+          "path": "/api/workspaces/microduck/snapshots/dkp-6a841fcb9cb028ba2c63/assets/sources/SRC-000032.stl",
+          "status": 200,
+          "encoded_bytes": 641684,
+          "encoding": "identity"
+        },
+        {
+          "path": "/api/workspaces/microduck/snapshots/dkp-6a841fcb9cb028ba2c63/assets/sources/SRC-000041.stl",
+          "status": 200,
+          "encoded_bytes": 184984,
+          "encoding": "identity"
+        },
+        {
+          "path": "/api/workspaces/microduck/snapshots/dkp-6a841fcb9cb028ba2c63/assets/sources/SRC-000030.stl",
+          "status": 200,
+          "encoded_bytes": 1048584,
+          "encoding": "identity"
+        },
+        {
+          "path": "/api/workspaces/microduck/snapshots/dkp-6a841fcb9cb028ba2c63/assets/sources/SRC-000022.stl",
+          "status": 200,
+          "encoded_bytes": 1048584,
+          "encoding": "identity"
+        },
+        {
+          "path": "/api/workspaces/microduck/snapshots/dkp-6a841fcb9cb028ba2c63/assets/sources/SRC-000013.stl",
+          "status": 200,
+          "encoded_bytes": 121084,
+          "encoding": "identity"
+        },
+        {
+          "path": "/api/workspaces/microduck/snapshots/dkp-6a841fcb9cb028ba2c63/assets/sources/SRC-000046.stl",
+          "status": 200,
+          "encoded_bytes": 620284,
+          "encoding": "identity"
+        },
+        {
+          "path": "/api/workspaces/microduck/snapshots/dkp-6a841fcb9cb028ba2c63/assets/sources/SRC-000019.stl",
+          "status": 200,
+          "encoded_bytes": 1048584,
+          "encoding": "identity"
+        },
+        {
+          "path": "/api/workspaces/microduck/snapshots/dkp-6a841fcb9cb028ba2c63/assets/sources/SRC-000042.stl",
+          "status": 200,
+          "encoded_bytes": 612584,
+          "encoding": "identity"
+        },
+        {
+          "path": "/api/workspaces/microduck/snapshots/dkp-6a841fcb9cb028ba2c63/assets/sources/SRC-000044.stl",
+          "status": 200,
+          "encoded_bytes": 180084,
+          "encoding": "identity"
+        },
+        {
+          "path": "/api/workspaces/microduck/snapshots/dkp-6a841fcb9cb028ba2c63/assets/sources/SRC-000023.stl",
+          "status": 200,
+          "encoded_bytes": 738884,
+          "encoding": "identity"
+        },
+        {
+          "path": "/api/workspaces/microduck/snapshots/dkp-6a841fcb9cb028ba2c63/assets/sources/SRC-000037.stl",
+          "status": 200,
+          "encoded_bytes": 789484,
+          "encoding": "identity"
+        },
+        {
+          "path": "/api/workspaces/microduck/snapshots/dkp-6a841fcb9cb028ba2c63/assets/sources/SRC-000017.stl",
+          "status": 200,
+          "encoded_bytes": 996184,
+          "encoding": "identity"
+        },
+        {
+          "path": "/api/workspaces/microduck/snapshots/dkp-6a841fcb9cb028ba2c63/assets/sources/SRC-000010.stl",
+          "status": 200,
+          "encoded_bytes": 248984,
+          "encoding": "identity"
+        },
+        {
+          "path": "/api/workspaces/microduck/snapshots/dkp-6a841fcb9cb028ba2c63/assets/sources/SRC-000035.stl",
+          "status": 200,
+          "encoded_bytes": 1048584,
+          "encoding": "identity"
+        },
+        {
+          "path": "/api/workspaces/microduck/snapshots/dkp-6a841fcb9cb028ba2c63/assets/sources/SRC-000028.stl",
+          "status": 200,
+          "encoded_bytes": 73484,
+          "encoding": "identity"
+        },
+        {
+          "path": "/api/workspaces/microduck/snapshots/dkp-6a841fcb9cb028ba2c63/assets/sources/SRC-000027.stl",
+          "status": 200,
+          "encoded_bytes": 356084,
+          "encoding": "identity"
+        },
+        {
+          "path": "/api/workspaces/microduck/snapshots/dkp-6a841fcb9cb028ba2c63/assets/sources/SRC-000047.stl",
+          "status": 200,
+          "encoded_bytes": 290784,
+          "encoding": "identity"
+        },
+        {
+          "path": "/api/workspaces/microduck/snapshots/dkp-6a841fcb9cb028ba2c63/assets/sources/SRC-000024.stl",
+          "status": 200,
+          "encoded_bytes": 93684,
+          "encoding": "identity"
+        },
+        {
+          "path": "/api/workspaces/microduck/snapshots/dkp-6a841fcb9cb028ba2c63/assets/sources/SRC-000016.stl",
+          "status": 200,
+          "encoded_bytes": 570684,
+          "encoding": "identity"
+        },
+        {
+          "path": "/api/workspaces/microduck/snapshots/dkp-6a841fcb9cb028ba2c63/assets/sources/SRC-000026.stl",
+          "status": 200,
+          "encoded_bytes": 180884,
+          "encoding": "identity"
+        },
+        {
+          "path": "/api/workspaces/microduck/snapshots/dkp-6a841fcb9cb028ba2c63/assets/sources/SRC-000020.stl",
+          "status": 200,
+          "encoded_bytes": 336384,
+          "encoding": "identity"
+        },
+        {
+          "path": "/api/workspaces/microduck/snapshots/dkp-6a841fcb9cb028ba2c63/assets/sources/SRC-000015.stl",
+          "status": 200,
+          "encoded_bytes": 942884,
+          "encoding": "identity"
+        },
+        {
+          "path": "/api/workspaces/microduck/snapshots/dkp-6a841fcb9cb028ba2c63/assets/sources/SRC-000040.stl",
+          "status": 200,
+          "encoded_bytes": 806084,
+          "encoding": "identity"
+        },
+        {
+          "path": "/api/workspaces/microduck/snapshots/dkp-6a841fcb9cb028ba2c63/assets/sources/SRC-000029.stl",
+          "status": 200,
+          "encoded_bytes": 49284,
+          "encoding": "identity"
+        },
+        {
+          "path": "/api/workspaces/microduck/snapshots/dkp-6a841fcb9cb028ba2c63/assets/sources/SRC-000036.stl",
+          "status": 200,
+          "encoded_bytes": 393584,
+          "encoding": "identity"
+        },
+        {
+          "path": "/api/workspaces/microduck/snapshots/dkp-6a841fcb9cb028ba2c63/assets/sources/SRC-000021.stl",
+          "status": 200,
+          "encoded_bytes": 495984,
+          "encoding": "identity"
+        },
+        {
+          "path": "/api/workspaces/microduck/snapshots/dkp-6a841fcb9cb028ba2c63/assets/sources/SRC-000025.stl",
+          "status": 200,
+          "encoded_bytes": 549684,
+          "encoding": "identity"
+        },
+        {
+          "path": "/api/workspaces/microduck/snapshots/dkp-6a841fcb9cb028ba2c63/assets/sources/SRC-000014.stl",
+          "status": 200,
+          "encoded_bytes": 1048584,
+          "encoding": "identity"
+        },
+        {
+          "path": "/api/workspaces/microduck/snapshots/dkp-6a841fcb9cb028ba2c63/assets/sources/SRC-000031.stl",
+          "status": 200,
+          "encoded_bytes": 1048584,
+          "encoding": "identity"
+        },
+        {
+          "path": "/api/workspaces/microduck/snapshots/dkp-6a841fcb9cb028ba2c63/assets/sources/SRC-000039.stl",
+          "status": 200,
+          "encoded_bytes": 684,
+          "encoding": "identity"
+        },
+        {
+          "path": "/api/workspaces/microduck/snapshots/dkp-6a841fcb9cb028ba2c63/assets/sources/SRC-000043.stl",
+          "status": 200,
+          "encoded_bytes": 612584,
+          "encoding": "identity"
+        },
+        {
+          "path": "/api/workspaces/microduck/snapshots/dkp-6a841fcb9cb028ba2c63/assets/sources/SRC-000011.stl",
+          "status": 200,
+          "encoded_bytes": 248884,
+          "encoding": "identity"
+        },
+        {
+          "path": "/api/workspaces/microduck/snapshots/dkp-6a841fcb9cb028ba2c63/assets/sources/SRC-000038.stl",
+          "status": 200,
+          "encoded_bytes": 795184,
+          "encoding": "identity"
+        },
+        {
+          "path": "/api/workspaces/microduck/snapshots/dkp-6a841fcb9cb028ba2c63/assets/sources/SRC-000018.stl",
+          "status": 200,
+          "encoded_bytes": 997684,
+          "encoding": "identity"
+        }
+      ],
+      "page_errors": []
+    },
+    {
+      "label": "after",
+      "snapshot": "dkp-aed80087d09929af30eb",
+      "version": "2.0.0-capabilities.1",
+      "digest": "aed80087d09929af30eb845764705dda5885425446fecf72bc26110c85e8838f",
+      "profile": "psop.hardware.source-model/1.15",
+      "api_first_read_ms": 85.50540000000001,
+      "view_json_decoded_bytes": 1897696,
+      "ui_model_ready_ms": 1502.9371999999994,
+      "ui_part_geometry_ready_ms": 1506.071,
+      "idle_renders_per_second": 0,
+      "selected_part": "part:microduck:e27cbdd6c07a264e",
+      "part_detail": {
+        "encoded_bytes": 161898,
+        "decoded_bytes": 851463,
+        "feature_count": 182
+      },
+      "vertical_holes": [
+        {
+          "id": "feature:78156b29446e9a422675:geometry:1168ea080ffa51178542",
+          "radius_m": 0.0010999999395409441,
+          "z_range_m": [
+            0.040559347718954086,
+            0.042500000447034836
+          ],
+          "measurement_method": "finite-source-surface-discovery/1",
+          "source_triangle_count": 180,
+          "selection_camera_delta": 0,
+          "focus_ms": 475.4430000000011,
+          "visible_source_samples": 16,
+          "source_sample_count": 16,
+          "focused_camera": {
+            "position": [
+              0.013500000042998304,
+              0.025499974952135525,
+              0.16895117408298196
+            ],
+            "target": [
+              0.013500000042998304,
+              0.02549999995324675,
+              0.14395117408299446
+            ]
+          }
+        },
+        {
+          "id": "feature:78156b29446e9a422675:geometry:8e06e0f84fc1c747ab50",
+          "radius_m": 0.002499999011233655,
+          "z_range_m": [
+            0.042500000447034836,
+            0.045021433383226395
+          ],
+          "measurement_method": "finite-source-surface-discovery/1",
+          "source_triangle_count": 99,
+          "selection_camera_delta": 0,
+          "focus_ms": 433.8057000000008,
+          "visible_source_samples": 16,
+          "source_sample_count": 16,
+          "focused_camera": {
+            "position": [
+              0.013499999987706976,
+              0.025499975652278448,
+              0.17118221691511812
+            ],
+            "target": [
+              0.013499999987706976,
+              0.025500000653389674,
+              0.14618221691513061
+            ]
+          }
+        }
+      ],
+      "new_pair": {
+        "id": "pair:de76dc6622b6acca81ac",
+        "owner_refs": [
+          "part:microduck:07e507f1e9297aa3",
+          "part:microduck:e27cbdd6c07a264e"
+        ],
+        "already_in_reference": false,
+        "open_ms": 144.6219999999994,
+        "encoded_bytes": 32241,
+        "decoded_bytes": 633783,
+        "candidate_count": 6,
+        "template_ref": "mechanism:through_fastener:1",
+        "connector_requirements": [
+          {
+            "assumptions": [
+              "A suitable standard connector may be supplied; it is not added to the real inventory"
+            ],
+            "catalog_sku_selected": false,
+            "inventory_status": "not_established",
+            "length_status": "requires_common_placement_and_stack",
+            "possible_shank_diameter_upper_bounds_m": [
+              0.0021999998790818882,
+              0.0021999999171954665,
+              0.002199999937151532,
+              0.002199999970847456,
+              0.0022000000180296283,
+              0.0022000000261195537,
+              0.0022000000391444547,
+              0.0022000000662025223,
+              0.002200000092796425,
+              0.002200000205054675,
+              0.002200000261294579,
+              0.003499999431158662,
+              0.00439999993884881,
+              0.004399999972284253,
+              0.00439999998562797,
+              0.00440000000064291,
+              0.004400000053099334,
+              0.00499999802246731
+            ],
+            "role": "through_bolt_with_nut_and_optional_washers",
+            "specification_status": "unresolved"
+          }
+        ],
+        "unresolved_conditions": [
+          "common_motion_ownership_not_verified",
+          "connector_specification_and_length_unresolved",
+          "finite_axial_registration_and_insertion_depth_not_evaluated",
+          "full_passage_continuity_unverified",
+          "head_seat_and_tool_access_unknown",
+          "nonparallel_handedness_and_common_placement_unverified",
+          "nut_seat_and_multilayer_stack_unresolved",
+          "placement_and_common_axis_not_evaluated",
+          "relative_entry_sides_and_direction_mapping_unverified",
+          "retention_not_evaluated",
+          "source_coordinate_frame_does_not_prove_common_rigid_motion"
+        ]
+      },
+      "peer_switch_ms": 178.0043000000005,
+      "peer_selection_camera_delta": 0,
+      "stl_requests_added_by_hydration": 0,
+      "idle_renders_after_navigation": 0,
+      "network": [
+        {
+          "path": "/api/workspaces",
+          "status": 200,
+          "encoded_bytes": 966,
+          "encoding": "identity"
+        },
+        {
+          "path": "/api/workspaces/microduck/snapshots/dkp-aed80087d09929af30eb/view",
+          "status": 200,
+          "encoded_bytes": 1897696,
+          "encoding": "identity"
+        },
+        {
+          "path": "/api/workspaces/microduck/snapshots/dkp-aed80087d09929af30eb/assets/details/parts/78156b29446e9a422675.json.gz",
+          "status": 200,
+          "encoded_bytes": 161898,
+          "encoding": "gzip"
+        },
+        {
+          "path": "/api/workspaces/microduck/snapshots/dkp-aed80087d09929af30eb/assets/sources/SRC-000033.stl",
+          "status": 200,
+          "encoded_bytes": 1048584,
+          "encoding": "identity"
+        },
+        {
+          "path": "/api/workspaces/microduck/snapshots/dkp-aed80087d09929af30eb/assets/sources/SRC-000034.stl",
+          "status": 200,
+          "encoded_bytes": 1048584,
+          "encoding": "identity"
+        },
+        {
+          "path": "/api/workspaces/microduck/snapshots/dkp-aed80087d09929af30eb/assets/sources/SRC-000012.stl",
+          "status": 200,
+          "encoded_bytes": 69484,
+          "encoding": "identity"
+        },
+        {
+          "path": "/api/workspaces/microduck/snapshots/dkp-aed80087d09929af30eb/assets/sources/SRC-000041.stl",
+          "status": 200,
+          "encoded_bytes": 184984,
+          "encoding": "identity"
+        },
+        {
+          "path": "/api/workspaces/microduck/snapshots/dkp-aed80087d09929af30eb/assets/sources/SRC-000045.stl",
+          "status": 200,
+          "encoded_bytes": 206384,
+          "encoding": "identity"
+        },
+        {
+          "path": "/api/workspaces/microduck/snapshots/dkp-aed80087d09929af30eb/assets/sources/SRC-000032.stl",
+          "status": 200,
+          "encoded_bytes": 641684,
+          "encoding": "identity"
+        },
+        {
+          "path": "/api/workspaces/microduck/snapshots/dkp-aed80087d09929af30eb/assets/sources/SRC-000046.stl",
+          "status": 200,
+          "encoded_bytes": 620284,
+          "encoding": "identity"
+        },
+        {
+          "path": "/api/workspaces/microduck/snapshots/dkp-aed80087d09929af30eb/assets/sources/SRC-000030.stl",
+          "status": 200,
+          "encoded_bytes": 1048584,
+          "encoding": "identity"
+        },
+        {
+          "path": "/api/workspaces/microduck/snapshots/dkp-aed80087d09929af30eb/assets/sources/SRC-000022.stl",
+          "status": 200,
+          "encoded_bytes": 1048584,
+          "encoding": "identity"
+        },
+        {
+          "path": "/api/workspaces/microduck/snapshots/dkp-aed80087d09929af30eb/assets/sources/SRC-000013.stl",
+          "status": 200,
+          "encoded_bytes": 121084,
+          "encoding": "identity"
+        },
+        {
+          "path": "/api/workspaces/microduck/snapshots/dkp-aed80087d09929af30eb/assets/sources/SRC-000042.stl",
+          "status": 200,
+          "encoded_bytes": 612584,
+          "encoding": "identity"
+        },
+        {
+          "path": "/api/workspaces/microduck/snapshots/dkp-aed80087d09929af30eb/assets/sources/SRC-000019.stl",
+          "status": 200,
+          "encoded_bytes": 1048584,
+          "encoding": "identity"
+        },
+        {
+          "path": "/api/workspaces/microduck/snapshots/dkp-aed80087d09929af30eb/assets/sources/SRC-000044.stl",
+          "status": 200,
+          "encoded_bytes": 180084,
+          "encoding": "identity"
+        },
+        {
+          "path": "/api/workspaces/microduck/snapshots/dkp-aed80087d09929af30eb/assets/sources/SRC-000023.stl",
+          "status": 200,
+          "encoded_bytes": 738884,
+          "encoding": "identity"
+        },
+        {
+          "path": "/api/workspaces/microduck/snapshots/dkp-aed80087d09929af30eb/assets/sources/SRC-000017.stl",
+          "status": 200,
+          "encoded_bytes": 996184,
+          "encoding": "identity"
+        },
+        {
+          "path": "/api/workspaces/microduck/snapshots/dkp-aed80087d09929af30eb/assets/sources/SRC-000037.stl",
+          "status": 200,
+          "encoded_bytes": 789484,
+          "encoding": "identity"
+        },
+        {
+          "path": "/api/workspaces/microduck/snapshots/dkp-aed80087d09929af30eb/assets/sources/SRC-000010.stl",
+          "status": 200,
+          "encoded_bytes": 248984,
+          "encoding": "identity"
+        },
+        {
+          "path": "/api/workspaces/microduck/snapshots/dkp-aed80087d09929af30eb/assets/sources/SRC-000035.stl",
+          "status": 200,
+          "encoded_bytes": 1048584,
+          "encoding": "identity"
+        },
+        {
+          "path": "/api/workspaces/microduck/snapshots/dkp-aed80087d09929af30eb/assets/sources/SRC-000028.stl",
+          "status": 200,
+          "encoded_bytes": 73484,
+          "encoding": "identity"
+        },
+        {
+          "path": "/api/workspaces/microduck/snapshots/dkp-aed80087d09929af30eb/assets/sources/SRC-000027.stl",
+          "status": 200,
+          "encoded_bytes": 356084,
+          "encoding": "identity"
+        },
+        {
+          "path": "/api/workspaces/microduck/snapshots/dkp-aed80087d09929af30eb/assets/sources/SRC-000024.stl",
+          "status": 200,
+          "encoded_bytes": 93684,
+          "encoding": "identity"
+        },
+        {
+          "path": "/api/workspaces/microduck/snapshots/dkp-aed80087d09929af30eb/assets/sources/SRC-000047.stl",
+          "status": 200,
+          "encoded_bytes": 290784,
+          "encoding": "identity"
+        },
+        {
+          "path": "/api/workspaces/microduck/snapshots/dkp-aed80087d09929af30eb/assets/sources/SRC-000016.stl",
+          "status": 200,
+          "encoded_bytes": 570684,
+          "encoding": "identity"
+        },
+        {
+          "path": "/api/workspaces/microduck/snapshots/dkp-aed80087d09929af30eb/assets/sources/SRC-000020.stl",
+          "status": 200,
+          "encoded_bytes": 336384,
+          "encoding": "identity"
+        },
+        {
+          "path": "/api/workspaces/microduck/snapshots/dkp-aed80087d09929af30eb/assets/sources/SRC-000026.stl",
+          "status": 200,
+          "encoded_bytes": 180884,
+          "encoding": "identity"
+        },
+        {
+          "path": "/api/workspaces/microduck/snapshots/dkp-aed80087d09929af30eb/assets/sources/SRC-000040.stl",
+          "status": 200,
+          "encoded_bytes": 806084,
+          "encoding": "identity"
+        },
+        {
+          "path": "/api/workspaces/microduck/snapshots/dkp-aed80087d09929af30eb/assets/sources/SRC-000036.stl",
+          "status": 200,
+          "encoded_bytes": 393584,
+          "encoding": "identity"
+        },
+        {
+          "path": "/api/workspaces/microduck/snapshots/dkp-aed80087d09929af30eb/assets/sources/SRC-000015.stl",
+          "status": 200,
+          "encoded_bytes": 942884,
+          "encoding": "identity"
+        },
+        {
+          "path": "/api/workspaces/microduck/snapshots/dkp-aed80087d09929af30eb/assets/sources/SRC-000029.stl",
+          "status": 200,
+          "encoded_bytes": 49284,
+          "encoding": "identity"
+        },
+        {
+          "path": "/api/workspaces/microduck/snapshots/dkp-aed80087d09929af30eb/assets/sources/SRC-000021.stl",
+          "status": 200,
+          "encoded_bytes": 495984,
+          "encoding": "identity"
+        },
+        {
+          "path": "/api/workspaces/microduck/snapshots/dkp-aed80087d09929af30eb/assets/sources/SRC-000014.stl",
+          "status": 200,
+          "encoded_bytes": 1048584,
+          "encoding": "identity"
+        },
+        {
+          "path": "/api/workspaces/microduck/snapshots/dkp-aed80087d09929af30eb/assets/sources/SRC-000025.stl",
+          "status": 200,
+          "encoded_bytes": 549684,
+          "encoding": "identity"
+        },
+        {
+          "path": "/api/workspaces/microduck/snapshots/dkp-aed80087d09929af30eb/assets/sources/SRC-000031.stl",
+          "status": 200,
+          "encoded_bytes": 1048584,
+          "encoding": "identity"
+        },
+        {
+          "path": "/api/workspaces/microduck/snapshots/dkp-aed80087d09929af30eb/assets/sources/SRC-000039.stl",
+          "status": 200,
+          "encoded_bytes": 684,
+          "encoding": "identity"
+        },
+        {
+          "path": "/api/workspaces/microduck/snapshots/dkp-aed80087d09929af30eb/assets/sources/SRC-000043.stl",
+          "status": 200,
+          "encoded_bytes": 612584,
+          "encoding": "identity"
+        },
+        {
+          "path": "/api/workspaces/microduck/snapshots/dkp-aed80087d09929af30eb/assets/sources/SRC-000011.stl",
+          "status": 200,
+          "encoded_bytes": 248884,
+          "encoding": "identity"
+        },
+        {
+          "path": "/api/workspaces/microduck/snapshots/dkp-aed80087d09929af30eb/assets/sources/SRC-000038.stl",
+          "status": 200,
+          "encoded_bytes": 795184,
+          "encoding": "identity"
+        },
+        {
+          "path": "/api/workspaces/microduck/snapshots/dkp-aed80087d09929af30eb/assets/sources/SRC-000018.stl",
+          "status": 200,
+          "encoded_bytes": 997684,
+          "encoding": "identity"
+        },
+        {
+          "path": "/api/workspaces/microduck/snapshots/dkp-aed80087d09929af30eb/assets/details/pairs/de76dc6622b6acca81ac.json.gz",
+          "status": 200,
+          "encoded_bytes": 32241,
+          "encoding": "gzip"
+        },
+        {
+          "path": "/api/workspaces/microduck/snapshots/dkp-aed80087d09929af30eb/assets/details/parts/59d569a5a0600fdda83b.json.gz",
+          "status": 200,
+          "encoded_bytes": 78678,
+          "encoding": "gzip"
+        }
+      ],
+      "page_errors": []
+    }
+  ]
+}

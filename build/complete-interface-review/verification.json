@@ -1,0 +1,30 @@
+{
+  "status": "complete",
+  "package_version": "2.0.0-capabilities.6",
+  "package_digest": "2222613002e6749363481158658a5a35d5d13de07bfd63816ae5d746c6917fb8",
+  "active_snapshot": "dkp-2222613002e674936348",
+  "all_instance_pairs_reviewed": 2415,
+  "functional_interfaces_reviewed": 257,
+  "required_complete_rotor_patterns": 30,
+  "qualified_part_pairs": 755,
+  "local_geometry_only_pairs": 1660,
+  "qualified_mechanism_candidates": 1509,
+  "independently_checked_registrations": 53532,
+  "maximum_axis_residual_m": 5.125129268038336e-10,
+  "checks": {
+    "immutable_publication_validation": true,
+    "independent_all_pair_audit": true,
+    "builder_and_reference_tests": {
+      "run": 101,
+      "skipped": 2
+    },
+    "device_assembly_tests": 16,
+    "node_tests": 37,
+    "browser_preview_and_navigation_tests": 5,
+    "neck_rendering_views": 3,
+    "camera_and_renderer_restored": true,
+    "browser_errors": []
+  },
+  "old_package_cleanup": "preserved locally and ignored by Git",
+  "engineering_scope": "Complete selected interface geometry; whole-part collision, path and retaining qualification remain separate"
+}

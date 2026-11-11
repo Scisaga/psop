@@ -1,0 +1,344 @@
+{
+  "schema": "psop.reference-adjustments/1",
+  "device_id": "microduck",
+  "title": "头部承座与轴承的最小参考位姿修正",
+  "rationale": "用户要求合理修正上游的小位置偏差。原始网格不变；由舵机承托面贴合、喙部轴颈与轴承对中、支架轴承承座对中三组约束共同确定最小平移。下壳与其承接的轴承一起移动，保持两者相对位置；复核四个支架孔轴、三个头壳闭合孔轴以及两处横滚轴承承座。0.3 mm 是本次参考数据修正预算，2e-8 m 是计算容差，均不作为制造公差或允许实物穿透的依据。",
+  "maximum_translation_m": 0.0003,
+  "numerical_tolerance_m": 2e-08,
+  "source_locks": {
+    "SRC-000045": "96238ed0d020ce0009cf1a5aa4b6926176c800840318ee65e4375be2298d2744",
+    "SRC-000014": "1820f7cf96646b0fc0c431f07da87b91b13111bfa9857ab1bf2b1fc3388f8da2",
+    "SRC-000021": "45cdbd319a4583095d8daa0db07dee726522a743d59acb82d27d82ded500a1cf",
+    "SRC-000035": "e815f3483a2e7b80844f3c0938a47e53db38b12faed9b2d364414c19e4322da4",
+    "SRC-000026": "ce0aa5bef82c7474512d302568c341b9769b3005e0bdb91a19c2eaaba6dad480",
+    "SRC-000034": "295ee68ed9766c91fe06d3a2a49d39f7c2f56cc943395d293afdeb013123435e",
+    "SRC-000040": "6d01f396f514c9d2185cf6b8250b1d8382ac3fa0702eb525bcb284f706196291",
+    "SRC-000016": "d0e89a173e7bdc8038c4d413f458140d8f42f1a2f098f67a887c2388eff31718"
+  },
+  "actions": [
+    {
+      "id": "head-reference-seating",
+      "part_refs": [
+        "part:microduck:52fdcacf474a463f",
+        "part:microduck:a0775b54397eb21e"
+      ],
+      "rationale": "以现有有限承托面和两组轴承配合为相互核验的基准，采用满足约束的最小刚性平移；避免单独移动下壳而造成喙部轴承与承座错位。",
+      "evidence_refs": [
+        "evidence:50f0c376d01bb0c1:xml",
+        "evidence:52fdcacf474a463f:stl",
+        "evidence:a0775b54397eb21e:stl"
+      ],
+      "constraints": [
+        {
+          "id": "servo-bottom-seating",
+          "role": "repair",
+          "kind": "plane_contact",
+          "feature_a_ref": "feature:c7902bb09473023310e1:geometry:2b89d1e1ab9c1f21e41e",
+          "feature_b_ref": "feature:c867e5d8b115def927fa:geometry:74513e9618258cc54391",
+          "target_gap_m": 0,
+          "minimum_overlap_area_m2": 5e-05
+        },
+        {
+          "id": "jaw-journal-inner-ring",
+          "role": "repair",
+          "kind": "cylindrical_fit",
+          "feature_a_ref": "feature:68f356e051ada2dccee4:geometry:9f325869743cbf61522c",
+          "feature_b_ref": "feature:35852355befb1e462251:geometry:78f9a57255ff2856ebfa",
+          "minimum_axial_overlap_m": 0.0025
+        },
+        {
+          "id": "jaw-bearing-support-seat",
+          "role": "repair",
+          "kind": "cylindrical_fit",
+          "feature_a_ref": "feature:35852355befb1e462251:geometry:04d71406a010923f1757",
+          "feature_b_ref": "feature:235863d91c3a953cf25b:geometry:52f1d9f1e3b76a68df90",
+          "minimum_axial_overlap_m": 0.0019
+        },
+        {
+          "id": "jaw-bearing-lower-seat",
+          "role": "neighbor",
+          "kind": "cylindrical_fit",
+          "feature_a_ref": "feature:35852355befb1e462251:geometry:04d71406a010923f1757",
+          "feature_b_ref": "feature:c867e5d8b115def927fa:geometry:436efea2a1d1215e9c8b",
+          "minimum_axial_overlap_m": 0.0019
+        },
+        {
+          "id": "head-roll-minus",
+          "role": "neighbor",
+          "kind": "cylindrical_fit",
+          "feature_a_ref": "feature:0395903c64dec04f20d5:geometry:46b20c8149ec410c8d13",
+          "feature_b_ref": "feature:c867e5d8b115def927fa:geometry:43b0df40f077cf1d3094",
+          "minimum_axial_overlap_m": 0.001,
+          "minimum_radial_clearance_m": 0
+        },
+        {
+          "id": "head-roll-plus",
+          "role": "neighbor",
+          "kind": "cylindrical_fit",
+          "feature_a_ref": "feature:2c175feebc4cbaa68290:geometry:46b20c8149ec410c8d13",
+          "feature_b_ref": "feature:c867e5d8b115def927fa:geometry:9ff8ea87c62d9a4a2b50",
+          "minimum_axial_overlap_m": 0.001,
+          "minimum_radial_clearance_m": 0
+        },
+        {
+          "id": "support-mount-6",
+          "role": "neighbor",
+          "kind": "axis_alignment",
+          "feature_a_ref": "feature:235863d91c3a953cf25b:geometry:70802591f32c4992b418",
+          "feature_b_ref": "feature:c867e5d8b115def927fa:geometry:834bdef7f523ea395fd8",
+          "maximum_axial_gap_m": 0.00100000001364387,
+          "minimum_axial_overlap_m": 0
+        },
+        {
+          "id": "support-mount-7",
+          "role": "neighbor",
+          "kind": "axis_alignment",
+          "feature_a_ref": "feature:235863d91c3a953cf25b:geometry:2d2ed2fea6768b35d9f2",
+          "feature_b_ref": "feature:c867e5d8b115def927fa:geometry:996dc086a7c1575d49f8",
+          "maximum_axial_gap_m": 0.00100000001364387,
+          "minimum_axial_overlap_m": 0
+        },
+        {
+          "id": "support-mount-8",
+          "role": "neighbor",
+          "kind": "axis_alignment",
+          "feature_a_ref": "feature:235863d91c3a953cf25b:geometry:015cb2df0735f62b9220",
+          "feature_b_ref": "feature:c867e5d8b115def927fa:geometry:1ff27127f7fbeaf20d07",
+          "maximum_axial_gap_m": 0.00100000001364387,
+          "minimum_axial_overlap_m": 0
+        },
+        {
+          "id": "support-mount-9",
+          "role": "neighbor",
+          "kind": "axis_alignment",
+          "feature_a_ref": "feature:235863d91c3a953cf25b:geometry:1bdf8aedf2e5c78b9730",
+          "feature_b_ref": "feature:c867e5d8b115def927fa:geometry:2a39145ddaf7e3c95b5d",
+          "maximum_axial_gap_m": 0.00100000001364387,
+          "minimum_axial_overlap_m": 0
+        },
+        {
+          "id": "head-shell-closure-1",
+          "role": "neighbor",
+          "kind": "axis_alignment",
+          "feature_a_ref": "feature:d341a575eb6bf884194d:geometry:3fbc8453fd5593d77103",
+          "feature_b_ref": "feature:c867e5d8b115def927fa:geometry:094a10673889ab13ee05",
+          "maximum_axial_gap_m": 0.0031035900417715253,
+          "minimum_axial_overlap_m": 0
+        },
+        {
+          "id": "head-shell-closure-2",
+          "role": "neighbor",
+          "kind": "axis_alignment",
+          "feature_a_ref": "feature:d341a575eb6bf884194d:geometry:9bfcde5f1b4d590a8afd",
+          "feature_b_ref": "feature:c867e5d8b115def927fa:geometry:bb583c1b3a52caf63388",
+          "maximum_axial_gap_m": 0.0023035897709429206,
+          "minimum_axial_overlap_m": 0
+        },
+        {
+          "id": "head-shell-closure-3",
+          "role": "neighbor",
+          "kind": "axis_alignment",
+          "feature_a_ref": "feature:d341a575eb6bf884194d:geometry:f31b9a7eb7243bc6ec23",
+          "feature_b_ref": "feature:c867e5d8b115def927fa:geometry:935fee7a29ac728c3530",
+          "maximum_axial_gap_m": 0.0023035897709429206,
+          "minimum_axial_overlap_m": 0
+        },
+        {
+          "id": "head-roll-servo-bottom-seating",
+          "role": "neighbor",
+          "kind": "plane_contact",
+          "feature_a_ref": "feature:c867e5d8b115def927fa:geometry:b7780b23774d41953ef1",
+          "feature_b_ref": "feature:57285f43e9ab3677a056:geometry:2b89d1e1ab9c1f21e41e",
+          "target_gap_m": 0.0,
+          "minimum_overlap_area_m2": 3.821766406998355e-05
+        },
+        {
+          "id": "head-shell-seam-1",
+          "role": "neighbor",
+          "kind": "plane_contact",
+          "feature_a_ref": "feature:d341a575eb6bf884194d:geometry:25639945e409d953cffc",
+          "feature_b_ref": "feature:c867e5d8b115def927fa:geometry:47ed49f3f8d65b0f8df1",
+          "target_gap_m": 0.0,
+          "minimum_overlap_area_m2": 5.126473581253898e-05
+        },
+        {
+          "id": "head-shell-seam-2",
+          "role": "neighbor",
+          "kind": "plane_contact",
+          "feature_a_ref": "feature:d341a575eb6bf884194d:geometry:f6eb0f1261d498bc043d",
+          "feature_b_ref": "feature:c867e5d8b115def927fa:geometry:4dc3c3f3dffb7dd9cdd0",
+          "target_gap_m": 0.0,
+          "minimum_overlap_area_m2": 4.7759610213139636e-05
+        },
+        {
+          "id": "head-shell-seam-3",
+          "role": "neighbor",
+          "kind": "plane_contact",
+          "feature_a_ref": "feature:d341a575eb6bf884194d:geometry:f8ea88d6e1f4ac411343",
+          "feature_b_ref": "feature:c867e5d8b115def927fa:geometry:bffcb6896199cfdde925",
+          "target_gap_m": 0.0,
+          "minimum_overlap_area_m2": 1.6488993042789535e-05
+        },
+        {
+          "id": "head-shell-seam-4",
+          "role": "neighbor",
+          "kind": "plane_contact",
+          "feature_a_ref": "feature:d341a575eb6bf884194d:geometry:9c2cc3567949c79afc39",
+          "feature_b_ref": "feature:c867e5d8b115def927fa:geometry:d8a7e8236cfd6d3183af",
+          "target_gap_m": 0.0,
+          "minimum_overlap_area_m2": 1.4061673309836423e-05
+        },
+        {
+          "id": "head-shell-seam-5",
+          "role": "neighbor",
+          "kind": "plane_contact",
+          "feature_a_ref": "feature:d341a575eb6bf884194d:geometry:0dcb4cfd238cae42454a",
+          "feature_b_ref": "feature:c867e5d8b115def927fa:geometry:b4713f6adf4f439a91e1",
+          "target_gap_m": 0.0,
+          "minimum_overlap_area_m2": 1.4020975216091109e-05
+        },
+        {
+          "id": "face-lower-registration-seating",
+          "role": "neighbor",
+          "kind": "plane_contact",
+          "feature_a_ref": "feature:c867e5d8b115def927fa:geometry:13bc2c42b0e5b88fbb8d",
+          "feature_b_ref": "feature:b5365c5af3f22770e1b1:geometry:a6f89415d4b83984e642",
+          "target_gap_m": 0.0,
+          "minimum_overlap_area_m2": 2.8724499593739653e-05
+        }
+      ]
+    }
+  ],
+  "presentation": {
+    "part_notes": [
+      {
+        "owner_ref": "part:microduck:52fdcacf474a463f",
+        "text": "推断修正参考配置：下壳与喙部支承轴承按共同配合约束作约0.2 mm最小平移，舵机承托面的负间隙及相关轴承偏心已消除。原始网格、原始来源位姿和历史冲突保留，可切换查看。连接件规格、保持及载荷条件按具体设计核定。"
+      },
+      {
+        "owner_ref": "part:microduck:a0775b54397eb21e",
+        "text": "推断修正参考配置：下壳与喙部支承轴承按共同配合约束作约0.2 mm最小平移，舵机承托面的负间隙及相关轴承偏心已消除。原始网格、原始来源位姿和历史冲突保留，可切换查看。连接件规格、保持及载荷条件按具体设计核定。"
+      },
+      {
+        "owner_ref": "part:microduck:328011951ac11ee7",
+        "text": "推断修正参考配置：下壳与喙部支承轴承按共同配合约束作约0.2 mm最小平移，舵机承托面的负间隙及相关轴承偏心已消除。原始网格、原始来源位姿和历史冲突保留，可切换查看。连接件规格、保持及载荷条件按具体设计核定。"
+      },
+      {
+        "owner_ref": "part:microduck:986b5adf27910138",
+        "text": "推断修正参考配置：下壳与喙部支承轴承按共同配合约束作约0.2 mm最小平移，舵机承托面的负间隙及相关轴承偏心已消除。原始网格、原始来源位姿和历史冲突保留，可切换查看。连接件规格、保持及载荷条件按具体设计核定。"
+      },
+      {
+        "owner_ref": "part:microduck:ea69e2c6bba10a23",
+        "text": "推断修正参考配置：下壳与喙部支承轴承按共同配合约束作约0.2 mm最小平移，舵机承托面的负间隙及相关轴承偏心已消除。原始网格、原始来源位姿和历史冲突保留，可切换查看。连接件规格、保持及载荷条件按具体设计核定。"
+      },
+      {
+        "owner_ref": "part:microduck:55121c0b36f62219",
+        "text": "推断修正参考配置：下壳与喙部支承轴承按共同配合约束作约0.2 mm最小平移，舵机承托面的负间隙及相关轴承偏心已消除。原始网格、原始来源位姿和历史冲突保留，可切换查看。连接件规格、保持及载荷条件按具体设计核定。"
+      }
+    ],
+    "interfaces": [
+      {
+        "interface_ref": "interface:assembly:328011951ac11ee7:jaw_bearing_journal",
+        "geometry_summary": "Ø10 有限轴颈 · 修正配置已对中",
+        "note": "有限壁段保持原始实测尺寸；修正配置中与对应轴承配合，轴向保持仍按具体设计核定。"
+      },
+      {
+        "interface_ref": "interface:assembly:52fdcacf474a463f:head_roll_drive_side_socket",
+        "geometry_summary": "Ø22.2 部分承座 · 修正配置已对中",
+        "note": "原始位姿偏心已通过有依据的参考平移消除；保留有限部分壁段，不补成完整孔。"
+      },
+      {
+        "interface_ref": "interface:assembly:52fdcacf474a463f:head_roll_opposite_side_socket",
+        "geometry_summary": "Ø22.2 部分承座 · 修正配置已对中",
+        "note": "原始位姿偏心已通过有依据的参考平移消除；保留有限部分壁段，不补成完整孔。"
+      },
+      {
+        "interface_ref": "interface:assembly:52fdcacf474a463f:jaw_bearing_seat",
+        "geometry_summary": "Ø15 部分承座 · 修正配置已对中",
+        "note": "有限壁段保持原始实测尺寸；修正配置中与对应轴承配合，轴向保持仍按具体设计核定。"
+      },
+      {
+        "interface_ref": "interface:assembly:986b5adf27910138:jaw_bearing_seat",
+        "geometry_summary": "Ø15 部分承座 · 修正配置已对中",
+        "note": "有限壁段保持原始实测尺寸；修正配置中与对应轴承配合，轴向保持仍按具体设计核定。"
+      }
+    ],
+    "connections": [
+      {
+        "connection_ref": "connection:assembly:a0775b54397eb21e:jaw_journal_inner_ring",
+        "check_refs": [
+          "jaw-journal-inner-ring"
+        ],
+        "note": "修正参考配置中有限配合区已对中；原始配置的0.2 mm偏差作为历史来源记录保留。此结论属于有依据的工程推断，不代表保持、装入路径或载荷已经验证。"
+      },
+      {
+        "connection_ref": "connection:assembly:ea69e2c6bba10a23:head_roll_drive_side_socket_exclusion",
+        "check_refs": [
+          "head-roll-minus"
+        ],
+        "note": "修正参考配置中有限配合区已对中；原始配置的0.2 mm偏差作为历史来源记录保留。此结论属于有依据的工程推断，不代表保持、装入路径或载荷已经验证。",
+        "basis": "inferred_fit"
+      },
+      {
+        "connection_ref": "connection:assembly:55121c0b36f62219:head_roll_opposite_side_socket_exclusion",
+        "check_refs": [
+          "head-roll-plus"
+        ],
+        "note": "修正参考配置中有限配合区已对中；原始配置的0.2 mm偏差作为历史来源记录保留。此结论属于有依据的工程推断，不代表保持、装入路径或载荷已经验证。",
+        "basis": "inferred_fit"
+      },
+      {
+        "connection_ref": "connection:assembly:a0775b54397eb21e:jaw_outer_ring_lower_seat",
+        "check_refs": [
+          "jaw-bearing-lower-seat"
+        ],
+        "note": "修正参考配置中有限配合区已对中；原始配置的0.2 mm偏差作为历史来源记录保留。此结论属于有依据的工程推断，不代表保持、装入路径或载荷已经验证。",
+        "basis": "inferred_fit"
+      },
+      {
+        "connection_ref": "connection:assembly:a0775b54397eb21e:jaw_outer_ring_support_seat",
+        "check_refs": [
+          "jaw-bearing-support-seat"
+        ],
+        "note": "修正参考配置中有限配合区已对中；原始配置的0.2 mm偏差作为历史来源记录保留。此结论属于有依据的工程推断，不代表保持、装入路径或载荷已经验证。",
+        "basis": "inferred_fit"
+      },
+      {
+        "connection_ref": "connection:assembly:50f0c376d01bb0c1:body_seating_52fdcacf474a463f",
+        "basis": "inferred_fit",
+        "check_refs": [
+          "servo-bottom-seating"
+        ],
+        "note": "修正配置下有限承接面已复核；原始来源位置及其冲突单独保留。结构角色已明确，实际紧固规格、预紧及路径仍按各自依据核定。"
+      },
+      {
+        "connection_ref": "connection:assembly:96e22c7fa2b976d3:body_seating_52fdcacf474a463f",
+        "basis": "inferred_fit",
+        "check_refs": [
+          "head-roll-servo-bottom-seating"
+        ],
+        "note": "修正配置下有限承接面已复核；原始来源位置及其冲突单独保留。结构角色已明确，实际紧固规格、预紧及路径仍按各自依据核定。"
+      },
+      {
+        "connection_ref": "connection:assembly:52fdcacf474a463f:head_shell_seam",
+        "basis": "inferred_fit",
+        "check_refs": [
+          "head-shell-seam-1",
+          "head-shell-seam-2",
+          "head-shell-seam-3",
+          "head-shell-seam-4",
+          "head-shell-seam-5"
+        ],
+        "note": "修正配置下有限承接面已复核；原始来源位置及其冲突单独保留。结构角色已明确，实际紧固规格、预紧及路径仍按各自依据核定。"
+      },
+      {
+        "connection_ref": "connection:assembly:afa52198f7fad203:face_lower_registration",
+        "basis": "inferred_fit",
+        "check_refs": [
+          "face-lower-registration-seating"
+        ],
+        "note": "修正配置下有限承接面已复核；原始来源位置及其冲突单独保留。结构角色已明确，实际紧固规格、预紧及路径仍按各自依据核定。"
+      }
+    ]
+  }
+}

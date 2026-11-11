@@ -1,0 +1,20 @@
+{
+  "schema": "psop.package-retention/1",
+  "date": "2026-11-09",
+  "selected_snapshot": "dkp-3955ee11502b1d0c9262",
+  "current_version": "2.0.0-capabilities.5",
+  "current_package_digest": "3955ee11502b1d0c926243de719d00f4bba3b811db9c75f7a9f8608be50edc6a",
+  "current_manifest_sha256": "0f04a7af0b8183b1720f61ce6ca04f1db760365e3461ee6e169551ca36fc126d",
+  "verified_assets": 2572,
+  "strict_file_inventory_matches": true,
+  "all_asset_bytes_and_sha256_match": true,
+  "retired_package": "build/microduck/source-1.15/microduck-capabilities-4.dkp",
+  "retired_package_digest": "69f6ee2e13b4051f6f42522639f77459081b83e9b95d4b5ea5b99c48324fe0e4",
+  "retired_files": 2572,
+  "retired_bytes": 172247786,
+  "retired_package_exists": false,
+  "registered_snapshot_count": 1,
+  "retained_manifests": [
+    "build/microduck/source-1.15/microduck-capabilities-5.dkp/manifest.json"
+  ]
+}

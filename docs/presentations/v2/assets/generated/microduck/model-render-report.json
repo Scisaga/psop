@@ -1,0 +1,821 @@
+{
+  "model-assembled": {
+    "source": {
+      "assembly_status": "source_reference",
+      "configurations": [
+        "walk-model-reference"
+      ],
+      "coordinate_system": {
+        "handedness": "right",
+        "transform_layout": "row-major",
+        "up_axis": "+Z"
+      },
+      "mesh_count": 38,
+      "object_count": 70,
+      "pose": "qpos0",
+      "source_id": "SRC-000048",
+      "source_digest": "sha256:80fc4424ed71e430ec4919110dfdb5c714dc1c4e1138e1832a16865cf31eb8c8",
+      "path": "../../sources/SRC-000048--robot_walk/original/robot_walk.xml",
+      "reference_device_id": "DEV-000003",
+      "sourceCommit": "cb70b792312d559a4da09064d92009079671815f",
+      "sourceBounds": [
+        [
+          -0.05177709943375588,
+          -0.07050000131130217,
+          0.013473379386577666
+        ],
+        [
+          0.09229001924991602,
+          0.07050000131130217,
+          0.2774493844779491
+        ]
+      ],
+      "precision": "uint16 positions per mesh bounds; source face normals int16; triangles unchanged",
+      "license": "Creative Commons BY-SA-NC (upstream statement does not name a version)",
+      "alphaMapping": "Not verified; alpha software identity is separate from this walk reference"
+    },
+    "imageSize": [
+      900,
+      1200
+    ],
+    "options": {},
+    "assemblyBounds": [
+      75.02740857568584,
+      64.28571428571452,
+      824.9725914243138,
+      1135.714285714286
+    ],
+    "jointRegionBounds": [
+      463.9779860673681,
+      695.9360615741965,
+      602.3714259804974,
+      861.5037068979698
+    ],
+    "jointRegionAnchor": [
+      533.1747060239328,
+      778.7198842360832
+    ],
+    "jointRegionSourceBody": "trunk_base/yaw2roll",
+    "jointRegionMeaning": "walk reference left_hip_yaw body; alpha ID 20 correspondence is not verified",
+    "instanceCount": 70,
+    "alphaBounds": [
+      168,
+      120,
+      817,
+      1097
+    ],
+    "file": "model-assembled.png",
+    "sha256": "fbb0a2f11c7f8cea786811606190ef5337e988bc8d05d8de093b9982e281d724",
+    "errors": [],
+    "background": "transparent"
+  },
+  "model-exploded": {
+    "source": {
+      "assembly_status": "source_reference",
+      "configurations": [
+        "walk-model-reference"
+      ],
+      "coordinate_system": {
+        "handedness": "right",
+        "transform_layout": "row-major",
+        "up_axis": "+Z"
+      },
+      "mesh_count": 38,
+      "object_count": 70,
+      "pose": "qpos0",
+      "source_id": "SRC-000048",
+      "source_digest": "sha256:80fc4424ed71e430ec4919110dfdb5c714dc1c4e1138e1832a16865cf31eb8c8",
+      "path": "../../sources/SRC-000048--robot_walk/original/robot_walk.xml",
+      "reference_device_id": "DEV-000003",
+      "sourceCommit": "cb70b792312d559a4da09064d92009079671815f",
+      "sourceBounds": [
+        [
+          -0.05177709943375588,
+          -0.07050000131130217,
+          0.013473379386577666
+        ],
+        [
+          0.09229001924991602,
+          0.07050000131130217,
+          0.2774493844779491
+        ]
+      ],
+      "precision": "uint16 positions per mesh bounds; source face normals int16; triangles unchanged",
+      "license": "Creative Commons BY-SA-NC (upstream statement does not name a version)",
+      "alphaMapping": "Not verified; alpha software identity is separate from this walk reference"
+    },
+    "imageSize": [
+      1000,
+      1100
+    ],
+    "options": {
+      "exploded": true
+    },
+    "assemblyBounds": [
+      129.66059654346972,
+      58.92857142857159,
+      870.3394034565299,
+      1041.0714285714287
+    ],
+    "jointRegionBounds": [
+      602.7075856155329,
+      711.7877329789476,
+      705.308808325209,
+      834.5351902431378
+    ],
+    "jointRegionAnchor": [
+      654.008196970371,
+      773.1614616110427
+    ],
+    "jointRegionSourceBody": "trunk_base/yaw2roll",
+    "jointRegionMeaning": "walk reference left_hip_yaw body; alpha ID 20 correspondence is not verified",
+    "instanceCount": 70,
+    "alphaBounds": [
+      277,
+      109,
+      864,
+      1009
+    ],
+    "file": "model-exploded.png",
+    "sha256": "35eb1781ffc296c63adb426198dc4a53c72e014069f63c786f1052c45816761b",
+    "errors": [],
+    "background": "transparent"
+  },
+  "model-joint-detail": {
+    "source": {
+      "assembly_status": "source_reference",
+      "configurations": [
+        "walk-model-reference"
+      ],
+      "coordinate_system": {
+        "handedness": "right",
+        "transform_layout": "row-major",
+        "up_axis": "+Z"
+      },
+      "mesh_count": 38,
+      "object_count": 70,
+      "pose": "qpos0",
+      "source_id": "SRC-000048",
+      "source_digest": "sha256:80fc4424ed71e430ec4919110dfdb5c714dc1c4e1138e1832a16865cf31eb8c8",
+      "path": "../../sources/SRC-000048--robot_walk/original/robot_walk.xml",
+      "reference_device_id": "DEV-000003",
+      "sourceCommit": "cb70b792312d559a4da09064d92009079671815f",
+      "sourceBounds": [
+        [
+          -0.05177709943375588,
+          -0.07050000131130217,
+          0.013473379386577666
+        ],
+        [
+          0.09229001924991602,
+          0.07050000131130217,
+          0.2774493844779491
+        ]
+      ],
+      "precision": "uint16 positions per mesh bounds; source face normals int16; triangles unchanged",
+      "license": "Creative Commons BY-SA-NC (upstream statement does not name a version)",
+      "alphaMapping": "Not verified; alpha software identity is separate from this walk reference"
+    },
+    "imageSize": [
+      1100,
+      850
+    ],
+    "options": {
+      "detail": true
+    },
+    "assemblyBounds": [
+      -756.3394952748395,
+      -1669.8695995179592,
+      1384.9152646275593,
+      1518.9110503478958
+    ],
+    "jointRegionBounds": [
+      350.99352402516774,
+      174.99999999999957,
+      749.006475974832,
+      674.9999999999995
+    ],
+    "jointRegionAnchor": [
+      549.9999999999999,
+      424.99999999999955
+    ],
+    "jointRegionSourceBody": "trunk_base/yaw2roll",
+    "jointRegionMeaning": "walk reference left_hip_yaw body; alpha ID 20 correspondence is not verified",
+    "instanceCount": 70,
+    "alphaBounds": [
+      0,
+      0,
+      1100,
+      850
+    ],
+    "file": "model-joint-detail.png",
+    "sha256": "167269d5d7e562cb82a53db1a2ce7cd650dd812fbad34d2e2e0befffb232f413",
+    "errors": [],
+    "background": "transparent"
+  },
+  "model-servo-module": {
+    "source": {
+      "assembly_status": "source_reference",
+      "configurations": [
+        "walk-model-reference"
+      ],
+      "coordinate_system": {
+        "handedness": "right",
+        "transform_layout": "row-major",
+        "up_axis": "+Z"
+      },
+      "mesh_count": 38,
+      "object_count": 70,
+      "pose": "qpos0",
+      "source_id": "SRC-000048",
+      "source_digest": "sha256:80fc4424ed71e430ec4919110dfdb5c714dc1c4e1138e1832a16865cf31eb8c8",
+      "path": "../../sources/SRC-000048--robot_walk/original/robot_walk.xml",
+      "reference_device_id": "DEV-000003",
+      "sourceCommit": "cb70b792312d559a4da09064d92009079671815f",
+      "sourceBounds": [
+        [
+          -0.05177709943375588,
+          -0.07050000131130217,
+          0.013473379386577666
+        ],
+        [
+          0.09229001924991602,
+          0.07050000131130217,
+          0.2774493844779491
+        ]
+      ],
+      "precision": "uint16 positions per mesh bounds; source face normals int16; triangles unchanged",
+      "license": "Creative Commons BY-SA-NC (upstream statement does not name a version)",
+      "alphaMapping": "Not verified; alpha software identity is separate from this walk reference"
+    },
+    "imageSize": [
+      700,
+      800
+    ],
+    "options": {
+      "component": "xl330"
+    },
+    "assemblyBounds": [
+      37.49999999999882,
+      124.98886470753749,
+      662.499999999999,
+      675.0111352924611
+    ],
+    "jointRegionBounds": null,
+    "jointRegionAnchor": null,
+    "jointRegionSourceBody": "trunk_base/yaw2roll",
+    "jointRegionMeaning": "walk reference left_hip_yaw body; alpha ID 20 correspondence is not verified",
+    "instanceCount": 1,
+    "alphaBounds": [
+      37,
+      153,
+      663,
+      666
+    ],
+    "file": "model-servo-module.png",
+    "sha256": "fcad8f2ba007ca47a1a8548b3ab35e400ed4c9f1c9230fd486b4f462e35cf2f4",
+    "errors": [],
+    "background": "transparent"
+  },
+  "cover-build-exploded": {
+    "source": {
+      "assembly_status": "source_reference",
+      "configurations": [
+        "walk-model-reference"
+      ],
+      "coordinate_system": {
+        "handedness": "right",
+        "transform_layout": "row-major",
+        "up_axis": "+Z"
+      },
+      "mesh_count": 38,
+      "object_count": 70,
+      "pose": "qpos0",
+      "source_id": "SRC-000048",
+      "source_digest": "sha256:80fc4424ed71e430ec4919110dfdb5c714dc1c4e1138e1832a16865cf31eb8c8",
+      "path": "../../sources/SRC-000048--robot_walk/original/robot_walk.xml",
+      "reference_device_id": "DEV-000003",
+      "sourceCommit": "cb70b792312d559a4da09064d92009079671815f",
+      "sourceBounds": [
+        [
+          -0.05177709943375588,
+          -0.07050000131130217,
+          0.013473379386577666
+        ],
+        [
+          0.09229001924991602,
+          0.07050000131130217,
+          0.2774493844779491
+        ]
+      ],
+      "precision": "uint16 positions per mesh bounds; source face normals int16; triangles unchanged",
+      "maxPositionQuantizationErrorMeters": 9.360648376168416e-07,
+      "sourceManifestSha256": "c3279ec14d88c6b9e4f60b25bd0ba9bfd85c1015daf8d63efe4cb2efef4dc965",
+      "license": "Creative Commons BY-SA-NC (upstream statement does not name a version)",
+      "alphaMapping": "Not verified; alpha software identity is separate from this walk reference"
+    },
+    "imageSize": [
+      1000,
+      1150
+    ],
+    "options": {
+      "coverExploded": true
+    },
+    "assemblyBounds": [
+      164.92262793762413,
+      61.607142857143025,
+      835.0773720623758,
+      1088.392857142857
+    ],
+    "jointRegionBounds": [
+      528.4634560951715,
+      686.2048046976058,
+      604.0556198148827,
+      776.6398467043504
+    ],
+    "jointRegionAnchor": [
+      566.259537955027,
+      731.4223257009781
+    ],
+    "jointRegionSourceBody": "trunk_base/yaw2roll",
+    "jointRegionMeaning": "walk reference left_hip_yaw body; alpha ID 20 correspondence is not verified",
+    "instanceCount": 70,
+    "displayOffsets": {
+      "SRC-000048:geom:0": [
+        0,
+        0,
+        0
+      ],
+      "SRC-000048:geom:1": [
+        -74,
+        4,
+        0
+      ],
+      "SRC-000048:geom:2": [
+        0,
+        0,
+        0
+      ],
+      "SRC-000048:geom:3": [
+        0,
+        0,
+        0
+      ],
+      "SRC-000048:geom:4": [
+        0,
+        0,
+        0
+      ],
+      "SRC-000048:geom:5": [
+        0,
+        0,
+        0
+      ],
+      "SRC-000048:geom:7": [
+        0,
+        0,
+        0
+      ],
+      "SRC-000048:geom:8": [
+        0,
+        0,
+        0
+      ],
+      "SRC-000048:geom:9": [
+        74,
+        4,
+        0
+      ],
+      "SRC-000048:geom:10": [
+        0,
+        0,
+        0
+      ],
+      "SRC-000048:geom:11": [
+        64,
+        -20,
+        0
+      ],
+      "SRC-000048:geom:12": [
+        64,
+        -20,
+        0
+      ],
+      "SRC-000048:geom:13": [
+        64,
+        -20,
+        0
+      ],
+      "SRC-000048:geom:14": [
+        64,
+        -20,
+        0
+      ],
+      "SRC-000048:geom:15": [
+        64,
+        -20,
+        0
+      ],
+      "SRC-000048:geom:16": [
+        64,
+        -20,
+        0
+      ],
+      "SRC-000048:geom:17": [
+        64,
+        -20,
+        0
+      ],
+      "SRC-000048:geom:18": [
+        64,
+        -20,
+        0
+      ],
+      "SRC-000048:geom:19": [
+        64,
+        -20,
+        0
+      ],
+      "SRC-000048:geom:20": [
+        64,
+        -20,
+        0
+      ],
+      "SRC-000048:geom:21": [
+        64,
+        -20,
+        0
+      ],
+      "SRC-000048:geom:22": [
+        64,
+        -20,
+        0
+      ],
+      "SRC-000048:geom:24": [
+        64,
+        -20,
+        0
+      ],
+      "SRC-000048:geom:25": [
+        64,
+        -72,
+        0
+      ],
+      "SRC-000048:geom:27": [
+        64,
+        -72,
+        0
+      ],
+      "SRC-000048:geom:28": [
+        64,
+        -72,
+        0
+      ],
+      "SRC-000048:geom:29": [
+        64,
+        -72,
+        0
+      ],
+      "SRC-000048:geom:30": [
+        0,
+        40,
+        0
+      ],
+      "SRC-000048:geom:31": [
+        0,
+        40,
+        0
+      ],
+      "SRC-000048:geom:32": [
+        0,
+        40,
+        0
+      ],
+      "SRC-000048:geom:33": [
+        0,
+        40,
+        0
+      ],
+      "SRC-000048:geom:34": [
+        0,
+        40,
+        0
+      ],
+      "SRC-000048:geom:35": [
+        0,
+        40,
+        0
+      ],
+      "SRC-000048:geom:36": [
+        0,
+        40,
+        0
+      ],
+      "SRC-000048:geom:37": [
+        0,
+        40,
+        0
+      ],
+      "SRC-000048:geom:38": [
+        0,
+        40,
+        0
+      ],
+      "SRC-000048:geom:39": [
+        0,
+        40,
+        0
+      ],
+      "SRC-000048:geom:40": [
+        0,
+        94,
+        38
+      ],
+      "SRC-000048:geom:41": [
+        0,
+        94,
+        38
+      ],
+      "SRC-000048:geom:42": [
+        0,
+        94,
+        0
+      ],
+      "SRC-000048:geom:43": [
+        0,
+        94,
+        0
+      ],
+      "SRC-000048:geom:44": [
+        0,
+        94,
+        0
+      ],
+      "SRC-000048:geom:45": [
+        0,
+        132,
+        0
+      ],
+      "SRC-000048:geom:46": [
+        0,
+        94,
+        0
+      ],
+      "SRC-000048:geom:47": [
+        0,
+        94,
+        0
+      ],
+      "SRC-000048:geom:48": [
+        0,
+        94,
+        0
+      ],
+      "SRC-000048:geom:49": [
+        0,
+        94,
+        0
+      ],
+      "SRC-000048:geom:50": [
+        0,
+        94,
+        38
+      ],
+      "SRC-000048:geom:51": [
+        0,
+        94,
+        0
+      ],
+      "SRC-000048:geom:52": [
+        0,
+        70,
+        0
+      ],
+      "SRC-000048:geom:53": [
+        0,
+        94,
+        38
+      ],
+      "SRC-000048:geom:54": [
+        0,
+        94,
+        0
+      ],
+      "SRC-000048:geom:55": [
+        0,
+        94,
+        0
+      ],
+      "SRC-000048:geom:56": [
+        -64,
+        -20,
+        0
+      ],
+      "SRC-000048:geom:57": [
+        -64,
+        -20,
+        0
+      ],
+      "SRC-000048:geom:58": [
+        -64,
+        -20,
+        0
+      ],
+      "SRC-000048:geom:59": [
+        -64,
+        -20,
+        0
+      ],
+      "SRC-000048:geom:60": [
+        -64,
+        -20,
+        0
+      ],
+      "SRC-000048:geom:61": [
+        -64,
+        -20,
+        0
+      ],
+      "SRC-000048:geom:62": [
+        -64,
+        -20,
+        0
+      ],
+      "SRC-000048:geom:63": [
+        -64,
+        -20,
+        0
+      ],
+      "SRC-000048:geom:64": [
+        -64,
+        -20,
+        0
+      ],
+      "SRC-000048:geom:65": [
+        -64,
+        -20,
+        0
+      ],
+      "SRC-000048:geom:66": [
+        -64,
+        -20,
+        0
+      ],
+      "SRC-000048:geom:67": [
+        -64,
+        -20,
+        0
+      ],
+      "SRC-000048:geom:68": [
+        -64,
+        -20,
+        0
+      ],
+      "SRC-000048:geom:70": [
+        -64,
+        -72,
+        0
+      ],
+      "SRC-000048:geom:71": [
+        -64,
+        -72,
+        0
+      ],
+      "SRC-000048:geom:73": [
+        -64,
+        -72,
+        0
+      ],
+      "SRC-000048:geom:74": [
+        -64,
+        -72,
+        0
+      ]
+    },
+    "sourceMatricesPreserved": true,
+    "alphaBounds": [
+      298,
+      100,
+      831,
+      1061
+    ],
+    "file": "cover-build-exploded.png",
+    "sha256": "e9aefce9bfd2a244a23e199b432af566517f5e2250c6f39aa21fc550990aaf33",
+    "errors": [],
+    "background": "transparent"
+  },
+  "cover-installation": {
+    "source": {
+      "assembly_status": "source_reference",
+      "configurations": [
+        "walk-model-reference"
+      ],
+      "coordinate_system": {
+        "handedness": "right",
+        "transform_layout": "row-major",
+        "up_axis": "+Z"
+      },
+      "mesh_count": 38,
+      "object_count": 70,
+      "pose": "qpos0",
+      "source_id": "SRC-000048",
+      "source_digest": "sha256:80fc4424ed71e430ec4919110dfdb5c714dc1c4e1138e1832a16865cf31eb8c8",
+      "path": "../../sources/SRC-000048--robot_walk/original/robot_walk.xml",
+      "reference_device_id": "DEV-000003",
+      "sourceCommit": "cb70b792312d559a4da09064d92009079671815f",
+      "sourceBounds": [
+        [
+          -0.05177709943375588,
+          -0.07050000131130217,
+          0.013473379386577666
+        ],
+        [
+          0.09229001924991602,
+          0.07050000131130217,
+          0.2774493844779491
+        ]
+      ],
+      "precision": "uint16 positions per mesh bounds; source face normals int16; triangles unchanged",
+      "maxPositionQuantizationErrorMeters": 9.360648376168416e-07,
+      "sourceManifestSha256": "c3279ec14d88c6b9e4f60b25bd0ba9bfd85c1015daf8d63efe4cb2efef4dc965",
+      "license": "Creative Commons BY-SA-NC (upstream statement does not name a version)",
+      "alphaMapping": "Not verified; alpha software identity is separate from this walk reference"
+    },
+    "imageSize": [
+      1200,
+      1100
+    ],
+    "options": {
+      "installationStage": 2
+    },
+    "assemblyBounds": [
+      89.65455776911458,
+      58.92857142857171,
+      1110.3454422308853,
+      1041.0714285714284
+    ],
+    "jointRegionBounds": [
+      768.3330154448074,
+      556.0381780986781,
+      892.1061864115366,
+      704.1147956325846
+    ],
+    "jointRegionAnchor": [
+      830.219600928172,
+      630.0764868656313
+    ],
+    "jointRegionSourceBody": "trunk_base/yaw2roll",
+    "jointRegionMeaning": "walk reference left_hip_yaw body; alpha ID 20 correspondence is not verified",
+    "instanceCount": 70,
+    "displayOffsets": {},
+    "sourceMatricesPreserved": true,
+    "installationStage": 2,
+    "installationMeaning": "display-only stage 2 alignment of the walk reference left hip/leg chain; no physical installation acceptance",
+    "sourceTargetAnchor": [
+      499.40189702595893,
+      697.8879232392278
+    ],
+    "sourceTargetBounds": [
+      437.5153115425944,
+      623.8496144722745,
+      561.2884825093234,
+      771.9262320061811
+    ],
+    "movingJointAnchor": [
+      830.219600928172,
+      630.0764868656313
+    ],
+    "movingJointBounds": [
+      768.3330154448074,
+      556.0381780986781,
+      892.1061864115366,
+      704.1147956325846
+    ],
+    "movingAssemblyBounds": [
+      755.8827208447494,
+      543.9417439099303,
+      1091.1911439439548,
+      931.665904803908
+    ],
+    "movingInstanceCount": 17,
+    "fixedInstanceCount": 53,
+    "movingSourceBodies": [
+      "trunk_base/yaw2roll",
+      "trunk_base/yaw2roll/hip_l",
+      "trunk_base/yaw2roll/hip_l/upper_leg_left",
+      "trunk_base/yaw2roll/hip_l/upper_leg_left/leg",
+      "trunk_base/yaw2roll/hip_l/upper_leg_left/leg/ankle_left"
+    ],
+    "projectionCoordinates": "image pixels, origin top-left, x right, y down",
+    "alphaBounds": [
+      173,
+      109,
+      1084,
+      967
+    ],
+    "file": "cover-installation.png",
+    "sha256": "55b7420536f72ddf48a5441b005e59980414ab74961f403485347d45f36c5824",
+    "errors": [],
+    "background": "transparent"
+  }
+}

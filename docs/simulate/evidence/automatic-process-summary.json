@@ -1,0 +1,256 @@
+{
+  "recorded_at": "2026-11-11T00:48:56.828Z",
+  "package_digest": "7c4dd301829f4e2cbd236f0440bb0d6f971b24635301a6bfc6b478ff48914cb1",
+  "build": [
+    {
+      "asset": "/assets/index-D48yBXqI.js",
+      "sha256": "61d2e36271b2e29b32a89ebdb963b0c5dadc009f58b5e5427b617f7dc08c1225"
+    },
+    {
+      "asset": "/assets/index-DpD1r5ZD.css",
+      "sha256": "c702dd2e63843ac9fa7e901f2df69111254717579a9b62204aac86ca485f0bad"
+    }
+  ],
+  "sources": [
+    {
+      "file": "scripts/simulate-assembly-process.mjs",
+      "sha256": "528d78a3cd8d2a5772522d76ef50880df27a8db899fde51200e5c2bd6a3364e1"
+    },
+    {
+      "file": "scripts/simulate-path-geometry.mjs",
+      "sha256": "1f6cc425ec456d35c0d6856dd1befcdb523dc002f1e1aa6de028d00ce323ffdc"
+    },
+    {
+      "file": "scripts/simulate-process-optimize.mjs",
+      "sha256": "7998c8b74b5393cc1b693c9f4d73d7d9bd8d5cf845f577ba8b336ed7e2169872"
+    },
+    {
+      "file": "scripts/simulate-process-routes.mjs",
+      "sha256": "69c6266189d2e7946fbceae58fe2d39fc8301a1ecdabaaa3c4aa9d720690ad55"
+    },
+    {
+      "file": "scripts/simulate-process-worker.mjs",
+      "sha256": "a369f84ebbfc385319ed5238f9cd7efa31ddefae4ef4255befd5aa1199f013e9"
+    },
+    {
+      "file": "scripts/simulate-process-pool.mjs",
+      "sha256": "74ba038798d3e8a1f36a5b8a294fc20d6cd33cc07ad635e01b70039040f8b429"
+    },
+    {
+      "file": "scripts/simulate-process-audit.mjs",
+      "sha256": "db73f411032d516f44195c8d71f8dd2659b6afb5b44ac60a38cc1907b079c74a"
+    },
+    {
+      "file": "scripts/simulate-store.mjs",
+      "sha256": "a94d2d47dfaefe58df088f9fe8eb81d2de872719483461327c952a35c132df82"
+    },
+    {
+      "file": "src/SimulationCinematic.ts",
+      "sha256": "a5085affd97a99f54cf3cafb094a380612d66e42ab3a854c07c326fb28080436"
+    },
+    {
+      "file": "src/SimulationAutoAssemblyHUD.tsx",
+      "sha256": "ab12976bc96dd99967cfe845bd9f28138fe64a125cc734b19670a4bfb9937f4e"
+    },
+    {
+      "file": "src/SimulatePage.tsx",
+      "sha256": "127fce6697c902b755000badfe863b4e59e4addf8e2fdd2c274fed7d905627f8"
+    },
+    {
+      "file": "src/SimulationCanvas.tsx",
+      "sha256": "717bfcef6022b417fab380a7865d6d4aa0fab6b7b3232025fc903f7e8754e304"
+    },
+    {
+      "file": "src/simulate.css",
+      "sha256": "b186279de9357af464382c327f3dbc3a04fb93bcd0a845fe5c845bceeab76684"
+    }
+  ],
+  "node": {
+    "passed": 61,
+    "failed": 0,
+    "scope": "State, service, source contacts, sweep witnesses, transport, rigid playback and camera control"
+  },
+  "real": {
+    "parts": 70,
+    "connections": 69,
+    "bearings": 14,
+    "subassemblies": 4,
+    "steps": 95,
+    "planning_ms": 25389.104799999997,
+    "duration_ms": 127000,
+    "independent_audit_snapshots": 2279,
+    "independent_audit_issues": 0,
+    "reference_handoffs": 5
+  },
+  "before": {
+    "steps": 73,
+    "issues": 239,
+    "affected_steps": 41,
+    "sample_fractions": [
+      0.2,
+      0.4,
+      0.6,
+      0.8,
+      0.95
+    ]
+  },
+  "after": {
+    "steps": 95,
+    "snapshots": 2274,
+    "issues": 0,
+    "reference_handoffs": 5,
+    "sample_fractions": [
+      0.2,
+      0.4,
+      0.6,
+      0.8,
+      0.95
+    ],
+    "waypoint_samples": true
+  },
+  "browser": {
+    "startTime": "2026-11-11T00:39:56.774Z",
+    "duration": 282045.63300000003,
+    "expected": 13,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "original_entry": {
+    "recorded_at": "2026-11-11T00:47:19.224Z",
+    "origin": "http://127.0.0.1:8780",
+    "assets": [
+      {
+        "asset": "/assets/index-D48yBXqI.js",
+        "sha256": "61d2e36271b2e29b32a89ebdb963b0c5dadc009f58b5e5427b617f7dc08c1225"
+      },
+      {
+        "asset": "/assets/index-DpD1r5ZD.css",
+        "sha256": "c702dd2e63843ac9fa7e901f2df69111254717579a9b62204aac86ca485f0bad"
+      }
+    ],
+    "source_scene": "2ff0a3e2-51fb-4a60-85a5-7556d25362f3",
+    "source_revision": 5,
+    "source_unchanged": true,
+    "acceptance_scene": "e1b8d9c5-463e-4466-b644-dec8430d69d2",
+    "request_ms": 8541.3007,
+    "health_during_planning_ms": [
+      341.6360999999997,
+      2.9804000000003725,
+      2.5491000000001804,
+      2.558999999999287,
+      2.569800000000214
+    ],
+    "browser": "157.0.8103.39",
+    "gpu": "ANGLE (NVIDIA, NVIDIA GeForce RTX 2080 Ti (0x00001E07) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "viewport": {
+      "width": 1600,
+      "height": 1000
+    },
+    "quality": "high",
+    "report": {
+      "mode": "reference",
+      "configuration_ref": "configuration:microduck:reconciled-qpos0",
+      "configuration_label": "修正成品参考",
+      "part_count": 70,
+      "retained_connection_count": 0,
+      "removed_connection_count": 3,
+      "bearing_preassembly_count": 14,
+      "access_opened_connection_count": 0,
+      "reference_connection_count": 69,
+      "structure_binding_count": 7,
+      "geometry_status": "not_evaluated",
+      "completed_at": "2026-11-11T00:46:36.021Z",
+      "process_version": "source-process/2",
+      "process_check": {
+        "method": "source-surface-swept-translation/1",
+        "surface_spacing_m": 0.002,
+        "contact_margin_m": 0.0004,
+        "part_count": 70,
+        "ordered_insertion_count": 69,
+        "subassembly_count": 4,
+        "checked_motion_count": 88,
+        "reference_handoff_count": 5,
+        "conditions": [
+          {
+            "instance_ids": [
+              "instance:part:microduck:328011951ac11ee7"
+            ],
+            "reason": "来源限形关系保留；刚性装入和保持工艺待核。"
+          },
+          {
+            "instance_ids": [
+              "instance:part:microduck:88b7496d63cb41ff"
+            ],
+            "reason": "来源限形关系保留；刚性装入和保持工艺待核。"
+          },
+          {
+            "instance_ids": [
+              "instance:part:microduck:f5797f92c2bf01b8"
+            ],
+            "reason": "来源限形关系保留；刚性装入和保持工艺待核。"
+          },
+          {
+            "instance_ids": [
+              "instance:part:microduck:f9955f19a691a1f4"
+            ],
+            "reason": "来源限形关系保留；刚性装入和保持工艺待核。"
+          },
+          {
+            "instance_ids": [
+              "instance:part:microduck:41db565298264db6"
+            ],
+            "reason": "来源限形关系保留；刚性装入和保持工艺待核。"
+          }
+        ],
+        "proxy_parts": [],
+        "physics_status": "not_evaluated",
+        "scope": "Finite source-surface sweeps, conservative box transport; source nominal contacts preserved.",
+        "audit": {
+          "method": "sampled-source-mesh-transit-audit/1",
+          "snapshot_count": 2294,
+          "pair_checks": 628,
+          "new_intrusion_observations": 0,
+          "reference_handoff_count": 5,
+          "continuous_rigid_path_status": "not_certified"
+        },
+        "planning_ms": 7652.97629999998
+      }
+    },
+    "step_count": 96,
+    "total_duration_ms": 128100,
+    "complete_animation": true,
+    "default_view_preserved": true,
+    "free_mouse_orbit_pan_zoom": true,
+    "view_buttons_do_not_skip": true,
+    "no_process_warnings_visible": true,
+    "page_errors": [],
+    "failed_requests": [],
+    "screenshots": [
+      "process-inline-default-1600.png",
+      "process-axial-entry-1600.png",
+      "process-complete-1600.png"
+    ]
+  },
+  "screenshots": [
+    {
+      "file": "simulate-process-default-1600.png",
+      "sha256": "c0f2c42e84a35c37e0928a6085fb56cdf4c3fd33e4a7057798d4f9e50b0e6c9f"
+    },
+    {
+      "file": "simulate-process-entry-1600.png",
+      "sha256": "db45baa57c3f4eb7509dcc51e6847a1d91e9a656f9a95aa3cf1bbdeff1540de7"
+    },
+    {
+      "file": "simulate-process-complete-1600.png",
+      "sha256": "7f259a15b6769bce2c5d22357e0145ff9768e598a9e10c416e644470cf39f8a5"
+    }
+  ],
+  "limits": [
+    "Finite 2 mm source-surface sampling and sampled playback; not complete continuous rigid collision detection.",
+    "0.4 mm transit observation margin; preserves measured source contact depths, not a universal engineering fit criterion.",
+    "Five source cover/soft-part handoffs retain unresolved process and physics records; the UI hides process warnings at the user request.",
+    "Published geometry, reference target, resource ownership and mechanics status are unchanged.",
+    "Timing is first native planning and warm planning/HTTP responsiveness, not a new GPU framerate benchmark."
+  ]
+}

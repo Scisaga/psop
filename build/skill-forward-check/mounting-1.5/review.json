@@ -1,0 +1,173 @@
+{
+  "ok": true,
+  "basis": "documented_simulate_cli_on_real_published_dkp",
+  "documentation": [
+    "skills/psop-simulate/SKILL.md",
+    "skills/psop-simulate/references/contracts-and-api.md",
+    "skills/psop-simulate/references/implementation-status.md",
+    "docs/architecture/assembly-interfaces.md"
+  ],
+  "package": {
+    "path": "C:\\Users\\scisa\\Desktop\\psop\\build\\v2\\microduck\\packages\\microduck-20261105211617-7c368d14.dkp",
+    "profile": "psop.hardware.source-model/1.5",
+    "digest": "9c406da2e5f0349d240f1dde6606f3486cbff981bd935de6ab13fa9cc51434c8"
+  },
+  "right_thigh": {
+    "part_ref": "part:microduck:e40b9945707505e1",
+    "qualified_integral_pin_count": 4,
+    "interface_count": 2,
+    "unknown_selection_rules": true,
+    "unknown_mechanisms": true,
+    "fabricated_holes": false,
+    "qpos0_axis_alignment_is_geometry_only": true,
+    "sites": [
+      {
+        "id": "mounting-site:microduck:e40b9945707505e1:ea191da92852bc52",
+        "label": "P1.1",
+        "position": [
+          -0.06449999660253525,
+          -0.00800000000977104,
+          0.02249999996274708
+        ],
+        "entry_direction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "hole_ref": null,
+        "portal_ref": null,
+        "feature_refs": [
+          "feature:microduck:e40b9945707505e1:c184d47cd1fe51a0"
+        ]
+      },
+      {
+        "id": "mounting-site:microduck:e40b9945707505e1:6c375e7a7b512468",
+        "label": "P2.1",
+        "position": [
+          -0.06449999660253525,
+          -0.0004999999986658964,
+          0.04377708770334719
+        ],
+        "entry_direction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "hole_ref": null,
+        "portal_ref": null,
+        "feature_refs": [
+          "feature:microduck:e40b9945707505e1:0825132694990cce"
+        ]
+      },
+      {
+        "id": "mounting-site:microduck:e40b9945707505e1:f06d9ea8a334cede",
+        "label": "P2.2",
+        "position": [
+          -0.06449999660253525,
+          -0.0004999999986658921,
+          0.02777708759963744
+        ],
+        "entry_direction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "hole_ref": null,
+        "portal_ref": null,
+        "feature_refs": [
+          "feature:microduck:e40b9945707505e1:f2d0f20555cb700b"
+        ]
+      },
+      {
+        "id": "mounting-site:microduck:e40b9945707505e1:69d6cd3ac5be2f73",
+        "label": "P1.2",
+        "position": [
+          -0.06449999660253525,
+          0.00800000000977104,
+          0.02249999996274708
+        ],
+        "entry_direction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "hole_ref": null,
+        "portal_ref": null,
+        "feature_refs": [
+          "feature:microduck:e40b9945707505e1:2369c5a1a6fc8b50"
+        ]
+      }
+    ]
+  },
+  "leg": {
+    "part_ref": "part:microduck:7f4fefc3c6de90f1",
+    "upper_site_count": 4,
+    "upper_selection_rule": {
+      "status": "unknown",
+      "same_side": null,
+      "min_count": null,
+      "require_adjacent_pair": null,
+      "allowed_adjacent_pairs": [],
+      "adjacency_basis": "not_assessed"
+    },
+    "upper_source_axes_unaligned": true,
+    "lower_site_count": 2,
+    "lower_selection_rule": {
+      "same_side": true,
+      "min_count": 2,
+      "require_adjacent_pair": true,
+      "allowed_adjacent_pairs": [
+        [
+          "mounting-site:microduck:7f4fefc3c6de90f1:02edf4282ded8347",
+          "mounting-site:microduck:7f4fefc3c6de90f1:0cac534d827851e1"
+        ]
+      ],
+      "adjacency_basis": "reference_pair"
+    }
+  },
+  "requested_upper_pairs": {
+    "returned_reference_mounts": 0,
+    "new_alignment_or_installation_invented": false
+  },
+  "published_reference_scope": [
+    {
+      "id": "reference-mount:microduck:16ee23a9de58883b",
+      "part_refs": [
+        "part:microduck:7c130c8489b57c99",
+        "part:microduck:638f29b46b322e64"
+      ],
+      "site_pair_count": 2,
+      "assessment": {
+        "reference_alignment": "pass",
+        "mechanical": "unknown",
+        "engineering": "unknown",
+        "task": "unknown",
+        "completion": "unknown"
+      }
+    },
+    {
+      "id": "reference-mount:microduck:c3aab3776d13124a",
+      "part_refs": [
+        "part:microduck:0820b4025f26a004",
+        "part:microduck:7f4fefc3c6de90f1"
+      ],
+      "site_pair_count": 2,
+      "assessment": {
+        "reference_alignment": "pass",
+        "mechanical": "unknown",
+        "engineering": "unknown",
+        "task": "unknown",
+        "completion": "unknown"
+      }
+    }
+  ],
+  "execution_performed": false,
+  "enumeration_performed": false,
+  "remaining_gaps": [
+    "Unknown mechanisms and subset constraints are not replaced with a minimum-two rule.",
+    "Upper leg qpos0 phase mismatch has no aligned reference mount; other common configurations remain unresolved.",
+    "Pin alignment does not establish retention, contact, engineering acceptance or completed installation.",
+    "No physical action, continuous path, deformation or exhaustive alternative assembly search is available."
+  ],
+  "input_package_unchanged": true
+}

@@ -1,0 +1,17 @@
+{
+  "schema": "psop.reference-use-coverage/1",
+  "status": "reviewed_declared_scope_with_explicit_open_items",
+  "source_ref": "SRC-CAPABILITY-REVIEW-fbce7cdc2e335613",
+  "source_sha256": "fbce7cdc2e33561387ec09875065371256946c1dc08dffcb991a6d79ffec1de3",
+  "part_count": 70,
+  "functional_interface_count": 243,
+  "reference_connection_count": 138,
+  "open_item_count": 7,
+  "surface_pair_disposition_count": 105,
+  "scope": "全部70个输入实例的功能接口及输入参考用法审查；所有有限几何/潜在新用途和真实制造装配的完全识别仍不由本审查保证。",
+  "limits": [
+    "原三角处置完成、候选遍历完成与功能/原装用法完整分别验收。",
+    "未观察到原装使用不等于真实实物不可能使用。",
+    "简化包络、缺失对端、未知保持及未确认相位分别保留；不声称装配已完成。"
+  ]
+}

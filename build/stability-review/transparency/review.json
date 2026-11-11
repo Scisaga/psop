@@ -1,0 +1,418 @@
+{
+  "status": "accepted after production 8780 recording and direct image review",
+  "renderer": "stable_alpha",
+  "baseline": {
+    "head": "9f714f6e21f59b0c86f83dfc637cda2b319f2191",
+    "packageVersion": "2.0.0-interface-relations.1",
+    "digest": "1c8eeda600249ce33b99ec622417a744d5cdaf43a512f1495a4780ae0030cb00",
+    "snapshot": "dkp-1c8eeda600249ce33b99",
+    "base": "http://127.0.0.1:8780",
+    "run": "before"
+  },
+  "sourcePositionAndTopologyChanges": false,
+  "causes": [
+    {
+      "kind": "state_switching_during_camera_motion",
+      "samples": 9,
+      "correlatedTransitions": 51,
+      "matched": 51,
+      "examplePart": "part:microduck:c75bfc0afb35e000",
+      "sampleHits": [
+        9,
+        0,
+        6,
+        0
+      ]
+    },
+    {
+      "kind": "camera_dependent_object_sorting",
+      "description": "Default center-depth ordering could change during an orbit independently of the obstruction set. Source order is now held through a gesture and damping, and recomputed from the settled camera."
+    }
+  ],
+  "policy": {
+    "cameraQuietMs": 180,
+    "enterMinimumHits": 2,
+    "retainMinimumHits": 1,
+    "enterMs": 160,
+    "exitMs": 420,
+    "checkIntervalMs": 120,
+    "freezeMembershipDuringCameraGestureAndDamping": true,
+    "skipResolvedStationaryRaycasts": true,
+    "sourceOpacity": {
+      "localContext": 0.18,
+      "otherObstruction": 0.08,
+      "xray": 0.22
+    },
+    "sourceDepthWrite": "false for translucent source parts; true for opaque parts",
+    "alphaToCoverage": false,
+    "alphaHash": false,
+    "sortSeed": "Far to near by world-space bounding-sphere centers along the desired focus camera view; source ID only breaks exact ties.",
+    "sortDuringMotion": "Retain the last source-relative order through pointer interaction, wheel gestures, automatic flight and orbit damping.",
+    "sortAfterSettling": "Recompute far-to-near source order using the actual settled camera; visibility decisions have independent entry and exit persistence.",
+    "sourceRenderOrder": 2,
+    "renderOrderMeaning": "Layer source ghosts after decorative floor and before local evidence overlays; source-to-source ordering remains actual view depth.",
+    "opaqueActuatorDepthPriority": "Existing display polygon offset retained; no source placement changes."
+  },
+  "directionVerification": {
+    "artifact": "source-order-stable-alpha/summary.json",
+    "cases": [
+      {
+        "selection": "connection-review:microduck:27d56794bd7c8a86",
+        "durationMs": 16110.09999999404,
+        "fps": 58.72092662369259,
+        "membershipChanges": 0,
+        "pairOrderChanges": [],
+        "settledOrderChecks": [
+          {
+            "name": "03-settled-90",
+            "expected": [
+              "part:microduck:fa9ee2f71faafb88",
+              "part:microduck:47a950fbb3d0e416",
+              "part:microduck:cb253f38c818b9d8",
+              "part:microduck:cd6d48fccc95df41",
+              "part:microduck:087d7a46a3ce4ca3",
+              "part:microduck:c7eeeac0a640d191",
+              "part:microduck:08c5ade0f3fd37db"
+            ],
+            "actual": [
+              "part:microduck:fa9ee2f71faafb88",
+              "part:microduck:47a950fbb3d0e416",
+              "part:microduck:cb253f38c818b9d8",
+              "part:microduck:cd6d48fccc95df41",
+              "part:microduck:087d7a46a3ce4ca3",
+              "part:microduck:c7eeeac0a640d191",
+              "part:microduck:08c5ade0f3fd37db"
+            ],
+            "matches": true
+          },
+          {
+            "name": "03-settled-180",
+            "expected": [
+              "part:microduck:cd6d48fccc95df41",
+              "part:microduck:fa9ee2f71faafb88",
+              "part:microduck:47a950fbb3d0e416"
+            ],
+            "actual": [
+              "part:microduck:cd6d48fccc95df41",
+              "part:microduck:fa9ee2f71faafb88",
+              "part:microduck:47a950fbb3d0e416"
+            ],
+            "matches": true
+          },
+          {
+            "name": "03-settled-270",
+            "expected": [
+              "part:microduck:cd6d48fccc95df41",
+              "part:microduck:47a950fbb3d0e416",
+              "part:microduck:fa9ee2f71faafb88"
+            ],
+            "actual": [
+              "part:microduck:cd6d48fccc95df41",
+              "part:microduck:47a950fbb3d0e416",
+              "part:microduck:fa9ee2f71faafb88"
+            ],
+            "matches": true
+          },
+          {
+            "name": "03-settled-360",
+            "expected": [
+              "part:microduck:47a950fbb3d0e416",
+              "part:microduck:fa9ee2f71faafb88",
+              "part:microduck:cd6d48fccc95df41",
+              "part:microduck:55970da91992f38c"
+            ],
+            "actual": [
+              "part:microduck:47a950fbb3d0e416",
+              "part:microduck:fa9ee2f71faafb88",
+              "part:microduck:cd6d48fccc95df41",
+              "part:microduck:55970da91992f38c"
+            ],
+            "matches": true
+          }
+        ],
+        "errors": []
+      },
+      {
+        "selection": "connection-review:microduck:926a5beb2c028185",
+        "durationMs": 15531.40000000596,
+        "fps": 59.17045469176296,
+        "membershipChanges": 0,
+        "pairOrderChanges": [],
+        "settledOrderChecks": [
+          {
+            "name": "03-settled-90",
+            "expected": [
+              "part:microduck:fa9ee2f71faafb88",
+              "part:microduck:bb34e925e25e29f6",
+              "part:microduck:9ffe9d5bcd6bc13a"
+            ],
+            "actual": [
+              "part:microduck:fa9ee2f71faafb88",
+              "part:microduck:bb34e925e25e29f6",
+              "part:microduck:9ffe9d5bcd6bc13a"
+            ],
+            "matches": true
+          },
+          {
+            "name": "03-settled-180",
+            "expected": [
+              "part:microduck:9ffe9d5bcd6bc13a",
+              "part:microduck:fa9ee2f71faafb88",
+              "part:microduck:cd6d48fccc95df41",
+              "part:microduck:087d7a46a3ce4ca3"
+            ],
+            "actual": [
+              "part:microduck:9ffe9d5bcd6bc13a",
+              "part:microduck:fa9ee2f71faafb88",
+              "part:microduck:cd6d48fccc95df41",
+              "part:microduck:087d7a46a3ce4ca3"
+            ],
+            "matches": true
+          },
+          {
+            "name": "03-settled-270",
+            "expected": [
+              "part:microduck:9ffe9d5bcd6bc13a",
+              "part:microduck:bb34e925e25e29f6",
+              "part:microduck:fa9ee2f71faafb88"
+            ],
+            "actual": [
+              "part:microduck:9ffe9d5bcd6bc13a",
+              "part:microduck:bb34e925e25e29f6",
+              "part:microduck:fa9ee2f71faafb88"
+            ],
+            "matches": true
+          },
+          {
+            "name": "03-settled-360",
+            "expected": [
+              "part:microduck:fa9ee2f71faafb88",
+              "part:microduck:9ffe9d5bcd6bc13a",
+              "part:microduck:66c73aaad945a993"
+            ],
+            "actual": [
+              "part:microduck:fa9ee2f71faafb88",
+              "part:microduck:9ffe9d5bcd6bc13a",
+              "part:microduck:66c73aaad945a993"
+            ],
+            "matches": true
+          }
+        ],
+        "errors": []
+      },
+      {
+        "selection": "opening:microduck:fa9ee2f71faafb88:12a19b5328586872",
+        "durationMs": 15577.5,
+        "fps": 58.80276039159043,
+        "membershipChanges": 0,
+        "pairOrderChanges": [],
+        "settledOrderChecks": [
+          {
+            "name": "03-settled-90",
+            "expected": [
+              "part:microduck:47a950fbb3d0e416",
+              "part:microduck:cb253f38c818b9d8",
+              "part:microduck:cd6d48fccc95df41",
+              "part:microduck:087d7a46a3ce4ca3",
+              "part:microduck:c7eeeac0a640d191",
+              "part:microduck:08c5ade0f3fd37db"
+            ],
+            "actual": [
+              "part:microduck:47a950fbb3d0e416",
+              "part:microduck:cb253f38c818b9d8",
+              "part:microduck:cd6d48fccc95df41",
+              "part:microduck:087d7a46a3ce4ca3",
+              "part:microduck:c7eeeac0a640d191",
+              "part:microduck:08c5ade0f3fd37db"
+            ],
+            "matches": true
+          },
+          {
+            "name": "03-settled-180",
+            "expected": [
+              "part:microduck:fa9ee2f71faafb88"
+            ],
+            "actual": [
+              "part:microduck:fa9ee2f71faafb88"
+            ],
+            "matches": true
+          },
+          {
+            "name": "03-settled-270",
+            "expected": [
+              "part:microduck:47a950fbb3d0e416",
+              "part:microduck:fa9ee2f71faafb88"
+            ],
+            "actual": [
+              "part:microduck:47a950fbb3d0e416",
+              "part:microduck:fa9ee2f71faafb88"
+            ],
+            "matches": true
+          },
+          {
+            "name": "03-settled-360",
+            "expected": [
+              "part:microduck:cd6d48fccc95df41"
+            ],
+            "actual": [
+              "part:microduck:cd6d48fccc95df41"
+            ],
+            "matches": true
+          }
+        ],
+        "errors": []
+      }
+    ],
+    "actualImagesInspected": [
+      "27d56794bd7c8a86-00-initial.png",
+      "27d56794bd7c8a86-01-moving-180.png",
+      "27d56794bd7c8a86-03-settled-90.png",
+      "27d56794bd7c8a86-03-settled-180.png",
+      "27d56794bd7c8a86-03-settled-270.png",
+      "926a5beb2c028185-00-initial.png",
+      "926a5beb2c028185-01-moving-180.png",
+      "926a5beb2c028185-03-settled-90.png",
+      "926a5beb2c028185-03-settled-180.png",
+      "926a5beb2c028185-03-settled-270.png",
+      "hip-single-hole-00-initial.png",
+      "hip-single-hole-01-moving-180.png",
+      "hip-single-hole-03-settled-90.png",
+      "hip-single-hole-03-settled-180.png",
+      "hip-single-hole-03-settled-270.png"
+    ],
+    "visualConclusion": "The two relation selections recover blue/orange structure contrast without the rejected renderer white stripes. Front, rear and both side settled views retain the marked target geometry."
+  },
+  "productionFinal": {
+    "status": "passed",
+    "source": {
+      "head": "working-tree",
+      "packageVersion": "2.0.0-connection-analysis.1",
+      "digest": "84f6829a25a82fefaf1da6cc00b399088a5db6e41923b4074c39a08d1988b6db",
+      "snapshot": "dkp-84f6829a25a82fefaf1d",
+      "base": "http://127.0.0.1:8780",
+      "apiBase": "http://127.0.0.1:8780",
+      "run": "final"
+    },
+    "artifact": "final/frames.json",
+    "summary": "final/summary.json",
+    "sourceRendererModes": [
+      "stable_alpha"
+    ],
+    "initialCameraDifferenceM": 0,
+    "initialTargetDifferenceM": 0,
+    "initialFlight": false,
+    "phases": [
+      {
+        "phase": "initial",
+        "durationMs": 3270.699999988079,
+        "frames": 162,
+        "fps": 49.22493655810279,
+        "transitions": 1
+      },
+      {
+        "phase": "initial-selected",
+        "durationMs": 1349.7999999821186,
+        "frames": 77,
+        "fps": 56.304637724853166,
+        "transitions": 0
+      },
+      {
+        "phase": "focus",
+        "durationMs": 2410.5,
+        "frames": 141,
+        "fps": 58.079236672889444,
+        "transitions": 0
+      },
+      {
+        "phase": "rotate-10s",
+        "durationMs": 13659.700000017881,
+        "frames": 814,
+        "fps": 59.51814461510397,
+        "transitions": 0
+      },
+      {
+        "phase": "rotation-settle",
+        "durationMs": 2567.199999988079,
+        "frames": 137,
+        "fps": 52.97600498622294,
+        "transitions": 1
+      },
+      {
+        "phase": "zoom-10s",
+        "durationMs": 15732.90000000596,
+        "frames": 945,
+        "fps": 60.00165258786634,
+        "transitions": 0
+      },
+      {
+        "phase": "zoom-settle",
+        "durationMs": 2916.199999988079,
+        "frames": 157,
+        "fps": 53.49427336967207,
+        "transitions": 0
+      },
+      {
+        "phase": "alternate",
+        "durationMs": 9941.199999988079,
+        "frames": 571,
+        "fps": 57.33714239736486,
+        "transitions": 2
+      },
+      {
+        "phase": "other-opening",
+        "durationMs": 3463.2000000178814,
+        "frames": 173,
+        "fps": 49.66504966479323,
+        "transitions": 1
+      },
+      {
+        "phase": "restore",
+        "durationMs": 3700,
+        "frames": 199,
+        "fps": 53.513513513513516,
+        "transitions": 0
+      },
+      {
+        "phase": "clear-selection",
+        "durationMs": 2107.4000000059605,
+        "frames": 103,
+        "fps": 48.40087311365261,
+        "transitions": 0
+      }
+    ],
+    "raycasts": 24,
+    "sourceMaterialStateDictionaries": 6,
+    "continuousGestureRelativeSourceOrderChanges": [],
+    "allSourceMaterialsRestored": true,
+    "errors": [],
+    "visuallyInspected": [
+      "final/01-initial-selected.png",
+      "final/04-after-rotation.png",
+      "final/06-after-alternate.png",
+      "final/07-other-opening.png",
+      "final/09-cleared-selection.png"
+    ]
+  },
+  "rejectedApproach": {
+    "name": "MSAA alpha-to-coverage source translucency",
+    "status": "withdrawn; not the final renderer",
+    "history": "rejected-coverage/review.json",
+    "probes": "relation-render-probe/probes.json",
+    "findings": [
+      "Several layers share correlated coverage masks and collapse toward the white background; source-only screenshots reproduce the washout.",
+      "A coverage source writes depth, but translucent actuators had lost the existing contact-face depth priority. Enabling only that offset removed the strong stripes while coverage and opacity stayed identical.",
+      "Restoring actuator priority did not restore four-hole contrast. Removing overlays did not remove either source-level failure.",
+      "Reversing object alpha order produced zero changes for coverage but did not prove acceptable readability. That former assertion is not final acceptance evidence."
+    ]
+  },
+  "limits": [
+    "A newly encountered solid obstruction can temporarily cover the target during a gesture because membership is held. In the four-hole full-circle run the 180-degree moving view is obscured; the stopped rear view automatically fades that obstruction and clearly shows all four marked holes.",
+    "Alpha blending and whole-source center sorting approximate intersecting translucent shells; this work does not claim physically exact order-independent transparency. Actual before/rear/side and full-circle views were inspected.",
+    "Raw source lip contours, tessellation facets and pre-existing source contact irregularities remain. No source vertices, topology, triangle IDs or placements were modified."
+  ],
+  "afterDirectory": {
+    "status": "withdrawn alpha-to-coverage experiment; historical evidence only",
+    "acceptedAfterChangeArtifact": "final/frames.json",
+    "duplicateArchive": "rejected-coverage/after"
+  }
+}

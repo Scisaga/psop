@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <title>Precision、Recall、IoU 分别检查什么</title>
+  <desc>PSOP 第 54 / 65 页教学图；文字与方法图保持可编辑。Microduck 视图由官方来源 STL 和 robot_walk.xml 的 source assembly 渲染，配置为 walk-model-reference、MCD-000001。alpha 软件任务身份与该几何参考的实物对应尚未核验；MD-01、S03、J01 和 EG 为教学定义。</desc>
+  <defs>
+    <linearGradient id="steel" x1="0" y1="0" x2="0.9" y2="1">
+      <stop stop-color="#EAF0F3" />
+      <stop offset=".37" stop-color="#A9BBC6" />
+      <stop offset=".63" stop-color="#F1F5F5" />
+      <stop offset="1" stop-color="#859CA9" />
+    </linearGradient>
+  </defs>
+  <g id="base" transform="translate(0 0)">
+    <rect x="0" y="0" width="1600" height="900" rx="0" fill="#FCFDFB" />
+    <rect x="0" y="0" width="9" height="900" rx="0" fill="#BE574C" />
+    <path d="M64 62 L1536 62" stroke="#D7E1E7" fill="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+    <text x="64.000" y="41.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="18.999" font-weight="400" data-text="PSOP  /  实验、评测与研究实践" aria-label="PSOP  /  实验、评测与研究实践" xml:space="preserve" textLength="273.541" lengthAdjust="spacingAndGlyphs" fill="#526578">PSOP  /  实验、评测与研究实践</text>
+    <text x="1355.287" y="41.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="18.999" font-weight="400" data-text="LESSON 05  ·  54/65" aria-label="LESSON 05  ·  54/65" xml:space="preserve" textLength="180.021" lengthAdjust="spacingAndGlyphs" fill="#526578">LESSON 05  ·  54/65</text>
+  </g>
+  <g id="title" transform="translate(0 0)">
+    <text x="64.000" y="125.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="48.001" font-weight="700" data-text="Precision、Recall、IoU 分别检查什么" aria-label="Precision、Recall、IoU 分别检查什么" xml:space="preserve" textLength="844.970" lengthAdjust="spacingAndGlyphs" fill="#18344C">Precision、Recall、IoU 分别检查什么</text>
+    <text x="64.000" y="177.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="24.001" font-weight="400" data-text="查准率看检出的结果中有多少正确，查全率看参考目标中有多少被找到。检测还需用位置匹配规则确定“正确检出”，" aria-label="查准率看检出的结果中有多少正确，查全率看参考目标中有多少被找到。检测还需用位置匹配规则确定“正确检出”，" xml:space="preserve" textLength="1248.001" lengthAdjust="spacingAndGlyphs" fill="#526578">查准率看检出的结果中有多少正确，查全率看参考目标中有多少被找到。检测还需用位置匹配规则确定“正确检出”，</text>
+    <text x="64.000" y="209.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="24.001" font-weight="400" data-text="IoU 通过交集与并集刻画框的位置重叠。" aria-label="IoU 通过交集与并集刻画框的位置重叠。" xml:space="preserve" textLength="431.333" lengthAdjust="spacingAndGlyphs" fill="#526578">IoU 通过交集与并集刻画框的位置重叠。</text>
+  </g>
+  <g id="beat_01" transform="translate(0 0)">
+    <g id="illustration" transform="translate(64 238)">
+      <text x="0.000" y="27.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.999" font-weight="700" data-text="计数示例：参考 20 个，正确检出 16 个" aria-label="计数示例：参考 20 个，正确检出 16 个" xml:space="preserve" textLength="459.112" lengthAdjust="spacingAndGlyphs" fill="#326BB8">计数示例：参考 20 个，正确检出 16 个</text>
+      <circle cx="33" cy="77" r="17" fill="#14877D" stroke="#14877D" stroke-width="2" />
+      <text x="27.582" y="83.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="18.000" font-weight="400" data-text="✓" aria-label="✓" xml:space="preserve" textLength="18.000" lengthAdjust="spacingAndGlyphs" fill="#FFFFFF">✓</text>
+      <circle cx="110" cy="77" r="17" fill="#14877D" stroke="#14877D" stroke-width="2" />
+      <text x="104.582" y="83.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="18.000" font-weight="400" data-text="✓" aria-label="✓" xml:space="preserve" textLength="18.000" lengthAdjust="spacingAndGlyphs" fill="#FFFFFF">✓</text>
+      <circle cx="187" cy="77" r="17" fill="#14877D" stroke="#14877D" stroke-width="2" />
+      <text x="181.582" y="83.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="18.000" font-weight="400" data-text="✓" aria-label="✓" xml:space="preserve" textLength="18.000" lengthAdjust="spacingAndGlyphs" fill="#FFFFFF">✓</text>
+      <circle cx="264" cy="77" r="17" fill="#14877D" stroke="#14877D" stroke-width="2" />
+      <text x="258.582" y="83.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="18.000" font-weight="400" data-text="✓" aria-label="✓" xml:space="preserve" textLength="18.000" lengthAdjust="spacingAndGlyphs" fill="#FFFFFF">✓</text>
+      <circle cx="341" cy="77" r="17" fill="#14877D" stroke="#14877D" stroke-width="2" />
+      <text x="335.582" y="83.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="18.000" font-weight="400" data-text="✓" aria-label="✓" xml:space="preserve" textLength="18.000" lengthAdjust="spacingAndGlyphs" fill="#FFFFFF">✓</text>
+      <circle cx="33" cy="135" r="17" fill="#14877D" stroke="#14877D" stroke-width="2" />
+      <text x="27.582" y="141.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="18.000" font-weight="400" data-text="✓" aria-label="✓" xml:space="preserve" textLength="18.000" lengthAdjust="spacingAndGlyphs" fill="#FFFFFF">✓</text>
+      <circle cx="110" cy="135" r="17" fill="#14877D" stroke="#14877D" stroke-width="2" />
+      <text x="104.582" y="141.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="18.000" font-weight="400" data-text="✓" aria-label="✓" xml:space="preserve" textLength="18.000" lengthAdjust="spacingAndGlyphs" fill="#FFFFFF">✓</text>
+      <circle cx="187" cy="135" r="17" fill="#14877D" stroke="#14877D" stroke-width="2" />
+      <text x="181.582" y="141.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="18.000" font-weight="400" data-text="✓" aria-label="✓" xml:space="preserve" textLength="18.000" lengthAdjust="spacingAndGlyphs" fill="#FFFFFF">✓</text>
+      <circle cx="264" cy="135" r="17" fill="#14877D" stroke="#14877D" stroke-width="2" />
+      <text x="258.582" y="141.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="18.000" font-weight="400" data-text="✓" aria-label="✓" xml:space="preserve" textLength="18.000" lengthAdjust="spacingAndGlyphs" fill="#FFFFFF">✓</text>
+      <circle cx="341" cy="135" r="17" fill="#14877D" stroke="#14877D" stroke-width="2" />
+      <text x="335.582" y="141.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="18.000" font-weight="400" data-text="✓" aria-label="✓" xml:space="preserve" textLength="18.000" lengthAdjust="spacingAndGlyphs" fill="#FFFFFF">✓</text>
+      <circle cx="33" cy="193" r="17" fill="#14877D" stroke="#14877D" stroke-width="2" />
+      <text x="27.582" y="199.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="18.000" font-weight="400" data-text="✓" aria-label="✓" xml:space="preserve" textLength="18.000" lengthAdjust="spacingAndGlyphs" fill="#FFFFFF">✓</text>
+      <circle cx="110" cy="193" r="17" fill="#14877D" stroke="#14877D" stroke-width="2" />
+      <text x="104.582" y="199.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="18.000" font-weight="400" data-text="✓" aria-label="✓" xml:space="preserve" textLength="18.000" lengthAdjust="spacingAndGlyphs" fill="#FFFFFF">✓</text>
+      <circle cx="187" cy="193" r="17" fill="#14877D" stroke="#14877D" stroke-width="2" />
+      <text x="181.582" y="199.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="18.000" font-weight="400" data-text="✓" aria-label="✓" xml:space="preserve" textLength="18.000" lengthAdjust="spacingAndGlyphs" fill="#FFFFFF">✓</text>
+      <circle cx="264" cy="193" r="17" fill="#14877D" stroke="#14877D" stroke-width="2" />
+      <text x="258.582" y="199.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="18.000" font-weight="400" data-text="✓" aria-label="✓" xml:space="preserve" textLength="18.000" lengthAdjust="spacingAndGlyphs" fill="#FFFFFF">✓</text>
+      <circle cx="341" cy="193" r="17" fill="#14877D" stroke="#14877D" stroke-width="2" />
+      <text x="335.582" y="199.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="18.000" font-weight="400" data-text="✓" aria-label="✓" xml:space="preserve" textLength="18.000" lengthAdjust="spacingAndGlyphs" fill="#FFFFFF">✓</text>
+      <circle cx="33" cy="251" r="17" fill="#14877D" stroke="#14877D" stroke-width="2" />
+      <text x="27.582" y="257.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="18.000" font-weight="400" data-text="✓" aria-label="✓" xml:space="preserve" textLength="18.000" lengthAdjust="spacingAndGlyphs" fill="#FFFFFF">✓</text>
+      <circle cx="110" cy="251" r="17" fill="#FFFFFF" stroke="#B9752E" stroke-width="2" />
+      <text x="105.733" y="257.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="18.000" font-weight="700" data-text="?" aria-label="?" xml:space="preserve" textLength="9.900" lengthAdjust="spacingAndGlyphs" fill="#B9752E">?</text>
+      <circle cx="187" cy="251" r="17" fill="#FFFFFF" stroke="#B9752E" stroke-width="2" />
+      <text x="182.733" y="257.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="18.000" font-weight="700" data-text="?" aria-label="?" xml:space="preserve" textLength="9.900" lengthAdjust="spacingAndGlyphs" fill="#B9752E">?</text>
+      <circle cx="264" cy="251" r="17" fill="#FFFFFF" stroke="#B9752E" stroke-width="2" />
+      <text x="259.733" y="257.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="18.000" font-weight="700" data-text="?" aria-label="?" xml:space="preserve" textLength="9.900" lengthAdjust="spacingAndGlyphs" fill="#B9752E">?</text>
+      <circle cx="341" cy="251" r="17" fill="#FFFFFF" stroke="#B9752E" stroke-width="2" />
+      <text x="336.733" y="257.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="18.000" font-weight="700" data-text="?" aria-label="?" xml:space="preserve" textLength="9.900" lengthAdjust="spacingAndGlyphs" fill="#B9752E">?</text>
+      <text x="0.000" y="293.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.000" font-weight="700" data-text="16 TP" aria-label="16 TP" xml:space="preserve" textLength="67.668" lengthAdjust="spacingAndGlyphs" fill="#14877D">16 TP</text>
+      <text x="214.000" y="293.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.000" font-weight="700" data-text="4 FN" aria-label="4 FN" xml:space="preserve" textLength="50.566" lengthAdjust="spacingAndGlyphs" fill="#B9752E">4 FN</text>
+      <circle cx="480" cy="87" r="17" fill="#FFFFFF" stroke="#BE574C" stroke-width="2" />
+      <path d="M475 82 l10 10 M485 82 l-10 10" stroke="#BE574C" fill="none" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+      <circle cx="553" cy="87" r="17" fill="#FFFFFF" stroke="#BE574C" stroke-width="2" />
+      <path d="M548 82 l10 10 M558 82 l-10 10" stroke="#BE574C" fill="none" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+      <circle cx="626" cy="87" r="17" fill="#FFFFFF" stroke="#BE574C" stroke-width="2" />
+      <path d="M621 82 l10 10 M631 82 l-10 10" stroke="#BE574C" fill="none" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+      <circle cx="699" cy="87" r="17" fill="#FFFFFF" stroke="#BE574C" stroke-width="2" />
+      <path d="M694 82 l10 10 M704 82 l-10 10" stroke="#BE574C" fill="none" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+      <text x="459.000" y="141.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.000" font-weight="700" data-text="另有 4 FP" aria-label="另有 4 FP" xml:space="preserve" textLength="108.013" lengthAdjust="spacingAndGlyphs" fill="#BE574C">另有 4 FP</text>
+      <text x="459.000" y="210.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="Precision = 16 / (16+4)" aria-label="Precision = 16 / (16+4)" xml:space="preserve" textLength="317.287" lengthAdjust="spacingAndGlyphs" fill="#18344C">Precision = 16 / (16+4)</text>
+      <text x="459.000" y="248.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="Recall = 16 / (16+4)" aria-label="Recall = 16 / (16+4)" xml:space="preserve" textLength="275.745" lengthAdjust="spacingAndGlyphs" fill="#18344C">Recall = 16 / (16+4)</text>
+      <text x="459.000" y="294.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="24.001" font-weight="700" data-text="二者都是 80%，分母含义不同" aria-label="二者都是 80%，分母含义不同" xml:space="preserve" textLength="323.099" lengthAdjust="spacingAndGlyphs" fill="#326BB8">二者都是 80%，分母含义不同</text>
+      <path d="M0 329 L993 329" stroke="#D7E1E7" fill="none" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" />
+      <rect x="28" y="355" width="185" height="105" rx="1" fill="#EAF1FA" stroke="#326BB8" stroke-width="2" />
+      <rect x="134" y="379" width="185" height="105" rx="1" fill="none" stroke="#14877D" stroke-width="2" />
+      <rect x="134" y="379" width="79" height="81" rx="0" fill="#CCE7DF" />
+      <text x="369.000" y="377.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="27.001" font-weight="700" data-text="IoU = 交集面积 / 并集面积" aria-label="IoU = 交集面积 / 并集面积" xml:space="preserve" textLength="329.248" lengthAdjust="spacingAndGlyphs" fill="#7756AA">IoU = 交集面积 / 并集面积</text>
+      <text x="369.000" y="417.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="21.000" font-weight="400" data-text="此例：79×81 / (2×185×105 −79×81)" aria-label="此例：79×81 / (2×185×105 −79×81)" xml:space="preserve" textLength="390.627" lengthAdjust="spacingAndGlyphs" fill="#526578">此例：79×81 / (2×185×105 −79×81)</text>
+      <text x="369.000" y="459.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.000" font-weight="400" data-text="≈ 0.197；这是位置重叠，不是类别正确率。" aria-label="≈ 0.197；这是位置重叠，不是类别正确率。" xml:space="preserve" textLength="431.750" lengthAdjust="spacingAndGlyphs" fill="#526578">≈ 0.197；这是位置重叠，不是类别正确率。</text>
+    </g>
+  </g>
+  <g id="beat_02" transform="translate(0 0)">
+    <text x="1114.000" y="268.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.000" font-weight="700" data-text="先固定匹配与计数规则" aria-label="先固定匹配与计数规则" xml:space="preserve" textLength="250.000" lengthAdjust="spacingAndGlyphs" fill="#326BB8">先固定匹配与计数规则</text>
+    <text x="1114.000" y="310.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="明确类别、位置阈值、重复框处理和采样" aria-label="明确类别、位置阈值、重复框处理和采样" xml:space="preserve" textLength="413.999" lengthAdjust="spacingAndGlyphs" fill="#526578">明确类别、位置阈值、重复框处理和采样</text>
+    <text x="1114.000" y="340.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="单位，再统计 TP、FP 与 FN。否则相同" aria-label="单位，再统计 TP、FP 与 FN。否则相同" xml:space="preserve" textLength="403.880" lengthAdjust="spacingAndGlyphs" fill="#526578">单位，再统计 TP、FP 与 FN。否则相同</text>
+    <text x="1114.000" y="370.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="框可能得到不同结果。" aria-label="框可能得到不同结果。" xml:space="preserve" textLength="229.999" lengthAdjust="spacingAndGlyphs" fill="#526578">框可能得到不同结果。</text>
+    <text x="1114.000" y="435.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.000" font-weight="700" data-text="查准与查全的分母不同" aria-label="查准与查全的分母不同" xml:space="preserve" textLength="250.000" lengthAdjust="spacingAndGlyphs" fill="#14877D">查准与查全的分母不同</text>
+    <text x="1114.000" y="477.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="参考 20 个目标、正确检出 16 个、误报" aria-label="参考 20 个目标、正确检出 16 个、误报" xml:space="preserve" textLength="403.173" lengthAdjust="spacingAndGlyphs" fill="#526578">参考 20 个目标、正确检出 16 个、误报</text>
+    <text x="1114.000" y="507.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="4 个：Precision=16/(16+4)，Recall=" aria-label="4 个：Precision=16/(16+4)，Recall=" xml:space="preserve" textLength="392.362" lengthAdjust="spacingAndGlyphs" fill="#526578">4 个：Precision=16/(16+4)，Recall=</text>
+    <text x="1114.000" y="537.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="16/20，二者都是 80%。" aria-label="16/20，二者都是 80%。" xml:space="preserve" textLength="256.020" lengthAdjust="spacingAndGlyphs" fill="#526578">16/20，二者都是 80%。</text>
+    <text x="1114.000" y="602.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.000" font-weight="700" data-text="IoU 和 mAP 说明定位条件" aria-label="IoU 和 mAP 说明定位条件" xml:space="preserve" textLength="301.343" lengthAdjust="spacingAndGlyphs" fill="#7756AA">IoU 和 mAP 说明定位条件</text>
+    <text x="1114.000" y="644.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="IoU=交集面积/并集面积。AP 综合查准" aria-label="IoU=交集面积/并集面积。AP 综合查准" xml:space="preserve" textLength="401.499" lengthAdjust="spacingAndGlyphs" fill="#526578">IoU=交集面积/并集面积。AP 综合查准</text>
+    <text x="1114.000" y="674.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="查全曲线，mAP 汇总类别或条件，报告" aria-label="查全曲线，mAP 汇总类别或条件，报告" xml:space="preserve" textLength="403.611" lengthAdjust="spacingAndGlyphs" fill="#526578">查全曲线，mAP 汇总类别或条件，报告</text>
+    <text x="1114.000" y="704.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="时注明定义与测试集。" aria-label="时注明定义与测试集。" xml:space="preserve" textLength="229.999" lengthAdjust="spacingAndGlyphs" fill="#526578">时注明定义与测试集。</text>
+  </g>
+  <g id="beat_03" transform="translate(0 0)">
+    <path d="M64 760 L1536 760" stroke="#D7E1E7" fill="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+    <rect x="64" y="782" width="4" height="57" rx="2" fill="#BE574C" />
+    <text x="84.000" y="798.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.000" font-weight="400" data-text="本页图示用 16 个正确、4 个漏检与 4 个误报解释分母；框重叠用于 IoU 概念。它们是教学例子，未作为项目实测成绩。" aria-label="本页图示用 16 个正确、4 个漏检与 4 个误报解释分母；框重叠用于 IoU 概念。它们是教学例子，未作为项目实测成绩。" xml:space="preserve" textLength="1168.052" lengthAdjust="spacingAndGlyphs" fill="#18344C">本页图示用 16 个正确、4 个漏检与 4 个误报解释分母；框重叠用于 IoU 概念。它们是教学例子，未作为项目实测成绩。</text>
+  </g>
+  <g id="footer" transform="translate(0 0)">
+    <text x="64.000" y="877.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="17.000" font-weight="400" data-text="学习手册 §15.3 / 15.4 / 22.14" aria-label="学习手册 §15.3 / 15.4 / 22.14" xml:space="preserve" textLength="227.329" lengthAdjust="spacingAndGlyphs" fill="#8898A8">学习手册 §15.3 / 15.4 / 22.14</text>
+    <text x="1247.000" y="877.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="17.000" font-weight="400" data-text="工程案例与数值示意的来源见逐页备注" aria-label="工程案例与数值示意的来源见逐页备注" xml:space="preserve" textLength="289.000" lengthAdjust="spacingAndGlyphs" fill="#8898A8">工程案例与数值示意的来源见逐页备注</text>
+  </g>
+</svg>

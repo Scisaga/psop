@@ -1,0 +1,184 @@
+[
+  {
+    "name": "a1f4-sole_fit",
+    "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-6a841fcb9cb028ba2c63&part=part%3Amicroduck%3Af9955f19a691a1f4&interface=interface%3Aassembly%3Af9955f19a691a1f4%3Asole_fit&explode=0.00&detail=interfaces&inspection=1&view=iso&labels=0&grid=0",
+    "view": {
+      "kind": "psop.workbench.view/1.0",
+      "workspaceId": "microduck",
+      "packageId": "psop.microduck",
+      "packageVersion": "2.0.0-assembly.3",
+      "packageDigest": "6a841fcb9cb028ba2c63df67cfd35c43f30e95374fb6f6bc314b7332160789e8",
+      "snapshotId": "dkp-6a841fcb9cb028ba2c63",
+      "sourceCommit": "cb70b792312d559a4da09064d92009079671815f",
+      "selectedId": "part:microduck:f9955f19a691a1f4",
+      "geometrySelection": {
+        "kind": "interface",
+        "id": "interface:assembly:f9955f19a691a1f4:sole_fit",
+        "ownerRef": "part:microduck:f9955f19a691a1f4"
+      },
+      "explosion": 0,
+      "view": "iso",
+      "camera": {
+        "position": [
+          -0.02634618300127391,
+          -0.004841233061220349,
+          -0.09200860436053337
+        ],
+        "target": [
+          -0.026341576878992405,
+          -0.05002471988686885,
+          0.02211185707798194
+        ]
+      },
+      "hiddenIds": [],
+      "isolateId": null,
+      "showLabels": false,
+      "showGrid": false,
+      "clipping": false,
+      "xray": false,
+      "showFasteners": true,
+      "inspection": {
+        "active": true,
+        "previousCamera": {
+          "position": [
+            0.3000000000000001,
+            -0.31999999999999895,
+            0.2299999999999992
+          ],
+          "target": [
+            0,
+            0,
+            0.105
+          ]
+        },
+        "camera": {
+          "position": [
+            -0.02634618300127391,
+            -0.004841233061220349,
+            -0.09200860436053337
+          ],
+          "target": [
+            -0.026341576878992405,
+            -0.05002471988686885,
+            0.02211185707798194
+          ]
+        },
+        "visiblePartIds": [
+          "part:microduck:f9955f19a691a1f4"
+        ],
+        "mode": "local",
+        "translucentPartIds": [],
+        "referenceFasteners": []
+      }
+    },
+    "scene": {
+      "sceneReady": "true",
+      "renderCount": "7",
+      "cameraFlight": "settled",
+      "inspectionActive": "true",
+      "sourcePlacement": "restored",
+      "interfaceId": "interface:assembly:f9955f19a691a1f4:sole_fit",
+      "memberRefs": "",
+      "selectedFeatures": "feature:microduck:f9955f19a691a1f4:plane-eeeac045c044,feature:microduck:f9955f19a691a1f4:plane-7b48b5c0d25c,feature:microduck:f9955f19a691a1f4:plane-b65ae65a5dc4,feature:microduck:f9955f19a691a1f4:plane-24238712b807,feature:microduck:f9955f19a691a1f4:plane-30d2d7c63c79,feature:microduck:f9955f19a691a1f4:plane-350557ffea2c,feature:microduck:f9955f19a691a1f4:plane-b86b8dfbb035,feature:assembly:f9955f19a691a1f4:rib_bed_support_sample_5",
+      "highlightMode": "source_facet_colors",
+      "witnessMarkers": "1",
+      "highlightedSourceFaces": "258",
+      "fastenerPaths": "",
+      "fastenerCount": "0",
+      "fastenerRepresentation": "schematic",
+      "visibleWitnessMarkers": "1"
+    },
+    "memberSelections": []
+  },
+  {
+    "name": "a1f4-ankle_mount",
+    "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-6a841fcb9cb028ba2c63&part=part%3Amicroduck%3Af9955f19a691a1f4&interface=interface%3Aassembly%3Af9955f19a691a1f4%3Aankle_mount&explode=0.00&detail=interfaces&inspection=1&view=iso&labels=0&grid=0",
+    "view": {
+      "kind": "psop.workbench.view/1.0",
+      "workspaceId": "microduck",
+      "packageId": "psop.microduck",
+      "packageVersion": "2.0.0-assembly.3",
+      "packageDigest": "6a841fcb9cb028ba2c63df67cfd35c43f30e95374fb6f6bc314b7332160789e8",
+      "snapshotId": "dkp-6a841fcb9cb028ba2c63",
+      "sourceCommit": "cb70b792312d559a4da09064d92009079671815f",
+      "selectedId": "part:microduck:f9955f19a691a1f4",
+      "geometrySelection": {
+        "kind": "interface",
+        "id": "interface:assembly:f9955f19a691a1f4:ankle_mount",
+        "ownerRef": "part:microduck:f9955f19a691a1f4"
+      },
+      "explosion": 0,
+      "view": "iso",
+      "camera": {
+        "position": [
+          -0.017290446662468206,
+          -0.05006805688077012,
+          0.14015726834309788
+        ],
+        "target": [
+          -0.023553239134072076,
+          -0.04980000057427997,
+          0.029297651528679976
+        ]
+      },
+      "hiddenIds": [],
+      "isolateId": null,
+      "showLabels": false,
+      "showGrid": false,
+      "clipping": false,
+      "xray": false,
+      "showFasteners": true,
+      "inspection": {
+        "active": true,
+        "previousCamera": {
+          "position": [
+            0.3000000000000001,
+            -0.31999999999999895,
+            0.2299999999999992
+          ],
+          "target": [
+            0,
+            0,
+            0.105
+          ]
+        },
+        "camera": {
+          "position": [
+            -0.017290446662468206,
+            -0.05006805688077012,
+            0.14015726834309788
+          ],
+          "target": [
+            -0.023553239134072076,
+            -0.04980000057427997,
+            0.029297651528679976
+          ]
+        },
+        "visiblePartIds": [
+          "part:microduck:f9955f19a691a1f4"
+        ],
+        "mode": "local",
+        "translucentPartIds": [],
+        "referenceFasteners": []
+      }
+    },
+    "scene": {
+      "sceneReady": "true",
+      "renderCount": "14",
+      "cameraFlight": "settled",
+      "inspectionActive": "true",
+      "sourcePlacement": "restored",
+      "interfaceId": "interface:assembly:f9955f19a691a1f4:ankle_mount",
+      "memberRefs": "",
+      "selectedFeatures": "feature:assembly:f9955f19a691a1f4:front_hook_and_ledge_underside,feature:assembly:f9955f19a691a1f4:front_hook_and_ledge_lead_in_ramp,feature:assembly:f9955f19a691a1f4:front_hook_and_ledge_stem_back_face,feature:assembly:f9955f19a691a1f4:rear_hook_and_ledge_underside,feature:assembly:f9955f19a691a1f4:rear_hook_and_ledge_lead_in_ramp,feature:assembly:f9955f19a691a1f4:rear_hook_and_ledge_stem_back_face,feature:microduck:f9955f19a691a1f4:00ba6d19982b,feature:microduck:f9955f19a691a1f4:feb031e24ebb",
+      "highlightMode": "source_facet_colors",
+      "witnessMarkers": "6",
+      "highlightedSourceFaces": "291",
+      "fastenerPaths": "",
+      "fastenerCount": "0",
+      "fastenerRepresentation": "schematic",
+      "visibleWitnessMarkers": "3"
+    },
+    "memberSelections": []
+  }
+]

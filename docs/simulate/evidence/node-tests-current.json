@@ -1,0 +1,17 @@
+{
+  "recorded_on": "2026-11-11",
+  "timezone": "Asia/Shanghai",
+  "runtime": "Node v22.23.4",
+  "command": "node --test scripts/simulate.test.mjs scripts/simulate-proximity.test.mjs scripts/simulate-placement.test.mjs scripts/simulate-presentation.test.mjs",
+  "tests": 33,
+  "passed": 33,
+  "failed": 0,
+  "duration_ms": 2949.309,
+  "coverage": [
+    "Graph/occupancy/persistence/geometry workers/reference configurations and atomic undoable reset: 21",
+    "Physical distance AND projected member envelopes, separation and hysteresis: 4",
+    "Desktop placement: 4",
+    "Bottom-center popover, labels, rigid animation and camera bookmark: 4"
+  ],
+  "note": "Current 33-test run passed. Reset restores the canonical DKP loose layout, releases resources, retries failed writes, deduplicates requests, and survives undo/redo/reload."
+}

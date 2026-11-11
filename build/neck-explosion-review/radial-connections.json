@@ -1,0 +1,97 @@
+[
+  {
+    "id": "connection:assembly:6b884b140f6e283c:head_yaw_radial_journal",
+    "parts": [
+      "seeed_bearing__configuration__22x16x4@neck_pitch",
+      "neck_pitch@neck_pitch"
+    ],
+    "axis": [
+      0,
+      0,
+      -1
+    ],
+    "sourceRadialMm": 0,
+    "expanded96RadialMm": 0,
+    "offset96DeltaMm": [
+      0,
+      0,
+      -4.865
+    ]
+  },
+  {
+    "id": "connection:assembly:6b884b140f6e283c:head_yaw_radial_servo",
+    "parts": [
+      "seeed_bearing__configuration__22x16x4@neck_pitch",
+      "xl330@yaw_roll_motion"
+    ],
+    "axis": [
+      0,
+      0,
+      -1
+    ],
+    "sourceRadialMm": 0,
+    "expanded96RadialMm": 0,
+    "offset96DeltaMm": [
+      0,
+      0,
+      5.057
+    ]
+  },
+  {
+    "id": "connection:assembly:ea69e2c6bba10a23:head_roll_drive_side_radial_journal",
+    "parts": [
+      "seeed_bearing__configuration__22x16x4@yaw_roll_motion",
+      "yaw_roll_motion@yaw_roll_motion"
+    ],
+    "axis": [
+      -1,
+      0,
+      0
+    ],
+    "sourceRadialMm": 0,
+    "expanded96RadialMm": 25.601,
+    "offset96DeltaMm": [
+      0,
+      0,
+      25.601
+    ]
+  },
+  {
+    "id": "connection:assembly:ea69e2c6bba10a23:head_roll_drive_side_radial_servo",
+    "parts": [
+      "seeed_bearing__configuration__22x16x4@yaw_roll_motion",
+      "xl330@jaw_soft"
+    ],
+    "axis": [
+      -1,
+      0,
+      0
+    ],
+    "sourceRadialMm": 0,
+    "expanded96RadialMm": 0,
+    "offset96DeltaMm": [
+      74.465,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "connection:assembly:55121c0b36f62219:head_roll_opposite_side_radial_journal",
+    "parts": [
+      "seeed_bearing__configuration__22x16x4@yaw_roll_motion",
+      "yaw_roll_motion@yaw_roll_motion"
+    ],
+    "axis": [
+      -1,
+      0,
+      0
+    ],
+    "sourceRadialMm": 0,
+    "expanded96RadialMm": 25.601,
+    "offset96DeltaMm": [
+      0,
+      0,
+      25.601
+    ]
+  }
+]

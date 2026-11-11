@@ -1,0 +1,69 @@
+{
+  "ok": true,
+  "package_version": "2.0.0-capabilities.7",
+  "package_digest": "e89fd146a8000ccc35567ef1bb688f71c7be3320e26b82a79da04fd88e8c825f",
+  "snapshot": "dkp-e89fd146a8000ccc3556",
+  "tool": {
+    "name": "psop-build",
+    "sha256": "017a2fac47845b2aa7860243e83fe913917c73aa2c4495cd8f826dad633967a9",
+    "version": "3.0.0-draft.20"
+  },
+  "parts": 70,
+  "source_geometries": 38,
+  "checked_pairs": 2415,
+  "compatible_pairs": 465,
+  "previous_compatible_pairs": 755,
+  "newly_excluded_pairs": 290,
+  "mechanism_candidates": 930,
+  "interface_matches": 3650,
+  "fixed_pose_dispositions": {
+    "clear": 17126,
+    "interference": 160652
+  },
+  "unique_source_poses_screened": 5594,
+  "independent_replay": {
+    "published_clear_poses": 17126,
+    "unique_source_poses": 702,
+    "issues": 0,
+    "kernel": {
+      "name": "manifold-3d",
+      "version": "3.5.4",
+      "javascript_sha256": "ca3c8a88df63bb3083013d1eb7f700bf23216594f6e98a2566e34f55d7341ce8",
+      "wasm_sha256": "73e3b419ad31294f6b1cc478173944e50efc4a34bfdeeff0107bdfc12975f11c",
+      "documentation": "https://manifoldcad.org/docs/jsapi/classes/manifold.Manifold.html"
+    }
+  },
+  "original_leg_motor_overlap_mm3": 562.434473394761,
+  "checks": {
+    "full_package_validation": true,
+    "python_regressions": {
+      "passed": 111,
+      "skipped": 2,
+      "total": 113
+    },
+    "device_maintenance_tests": 16,
+    "frontend_geometry_tests": 38,
+    "validation_cache_and_runtime_tests": 17,
+    "browser_scenarios": 9,
+    "source_pair_shards_identical_after_io_cache": 2415,
+    "camera_restored": true,
+    "source_renderer_preserved": true,
+    "leg_pair_only_four_hole": true,
+    "browser_errors": []
+  },
+  "scope": "Complete selected interfaces and whole unchanged closed source solids at finite fixed seating poses. Source precision contacts are distinguished from substantial intersections. Assembly paths, retention, loads and moving subframes remain unqualified.",
+  "retention": "Only snapshot 7 is registered; previous local directories are preserved and ignored.",
+  "pair_dispositions": {
+    "compatible": 465,
+    "no_clear_fixed_placement": 290,
+    "local_geometry_only": 1660
+  },
+  "live_workbench": {
+    "ok": true,
+    "status": 200,
+    "snapshot": "dkp-e89fd146a8000ccc3556",
+    "version": "2.0.0-capabilities.7",
+    "parts": 70,
+    "elapsed_ms": 275
+  }
+}

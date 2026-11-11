@@ -1,0 +1,99 @@
+{
+  "checked_on": "2026-11-07",
+  "client_timezone": "Asia/Shanghai",
+  "part_ref": "part:microduck:9d70b219a5533bf1",
+  "geometry_sha256": "3efba3e193cc6aa49d49a9c92cdded0504917397c9e2c5b8fe002a958e2f2d2b",
+  "baseline_snapshot": "dkp-59ce1b25aea434fc3367",
+  "baseline_digest": "59ce1b25aea434fc336718cfa6bca6f570d34037c87194ba1f45773fbcd3c9a1",
+  "released_snapshot": "dkp-1c8eeda600249ce33b99",
+  "released_digest": "1c8eeda600249ce33b99ec622417a744d5cdaf43a512f1495a4780ae0030cb00",
+  "renderer_sha256": "f4a40c1b778bbc74a555fe0eebdbbf03e806810ad681747aafafe88694795fda",
+  "comparisons": [
+    {
+      "target": "y42-z52",
+      "opening_ref": "opening:microduck:9d70b219a5533bf1:ce6aaab539c0f712",
+      "camera": [
+        -0.033587387165606844,
+        0.01719999998575077,
+        0.15588252252119836,
+        -0.038000000206215995,
+        -0.0008000000142492285,
+        0.15499999991307653
+      ],
+      "before_image": "right-shell-x-before.png",
+      "after_image": "right-shell-x-after.png",
+      "before_url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-59ce1b25aea434fc3367&part=part%3Amicroduck%3A9d70b219a5533bf1&opening=opening%3Amicroduck%3A9d70b219a5533bf1%3Ace6aaab539c0f712&explode=0.00&detail=geometry&view=iso&isolate=part%3Amicroduck%3A9d70b219a5533bf1&labels=0&grid=0&supplements=0&camera=-0.0335874%2C0.0172000%2C0.1558825%2C-0.0380000%2C-0.0008000%2C0.1550000",
+      "after_url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-1c8eeda600249ce33b99&part=part%3Amicroduck%3A9d70b219a5533bf1&opening=opening%3Amicroduck%3A9d70b219a5533bf1%3Ace6aaab539c0f712&explode=0.00&detail=geometry&view=iso&isolate=part%3Amicroduck%3A9d70b219a5533bf1&labels=0&grid=0&supplements=0&camera=-0.0335874%2C0.0172000%2C0.1558825%2C-0.0380000%2C-0.0008000%2C0.1550000",
+      "camera_and_selection_match": true,
+      "images_actually_reviewed": true
+    },
+    {
+      "target": "x25-y9",
+      "opening_ref": "opening:microduck:9d70b219a5533bf1:4450b2102e065a82",
+      "camera": [
+        0.01781021833292681,
+        -0.024706934422452375,
+        0.1630000004470348,
+        0.01350000004943163,
+        -0.025999999907500928,
+        0.14500000044703482
+      ],
+      "before_image": "right-shell-z-before.png",
+      "after_image": "right-shell-z-after.png",
+      "before_url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-59ce1b25aea434fc3367&part=part%3Amicroduck%3A9d70b219a5533bf1&opening=opening%3Amicroduck%3A9d70b219a5533bf1%3A4450b2102e065a82&explode=0.00&detail=geometry&view=iso&isolate=part%3Amicroduck%3A9d70b219a5533bf1&labels=0&grid=0&supplements=0&camera=0.0178102%2C-0.0247069%2C0.1630000%2C0.0135000%2C-0.0260000%2C0.1450000",
+      "after_url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-1c8eeda600249ce33b99&part=part%3Amicroduck%3A9d70b219a5533bf1&opening=opening%3Amicroduck%3A9d70b219a5533bf1%3A4450b2102e065a82&explode=0.00&detail=geometry&view=iso&isolate=part%3Amicroduck%3A9d70b219a5533bf1&labels=0&grid=0&supplements=0&camera=0.0178102%2C-0.0247069%2C0.1630000%2C0.0135000%2C-0.0260000%2C0.1450000",
+      "camera_and_selection_match": true,
+      "images_actually_reviewed": true
+    }
+  ],
+  "matrix": {
+    "case_count": 12,
+    "targets": [
+      "y42-z52",
+      "x25-y9"
+    ],
+    "variants": [
+      "normal",
+      "isolated",
+      "close",
+      "oblique",
+      "local",
+      "cleared"
+    ],
+    "all_final_images_actually_reviewed": true,
+    "record_path": "build/interface-selection/after/capture.json",
+    "normal_camera": {
+      "camera": [
+        0.41369870604584125,
+        -0.581610276899299,
+        0.4260028096131018,
+        0.020256459908080095,
+        1.3877787807814457e-17,
+        0.14546138193226335
+      ],
+      "sourceSnapshot": "dkp-59ce1b25aea434fc3367",
+      "sourceDigest": "59ce1b25aea434fc336718cfa6bca6f570d34037c87194ba1f45773fbcd3c9a1",
+      "method": "Fit all source assembly bounds with the unchanged fitAll framing implementation."
+    },
+    "scope": "Normal shows complete assembly context and retains true occlusion. The two close comparisons preserve the original before camera; the extra overview/oblique acceptance cameras were corrected after visual review."
+  },
+  "interface_view": {
+    "hypotheses_checked": 3,
+    "images": 12,
+    "all_main_views_actually_reviewed": true,
+    "evidence_source_and_peer_views_reviewed": true,
+    "record_path": "build/interface-selection/after/interfaces.json",
+    "source_locators_verified_against_current_owner": true
+  },
+  "visual_regression": {
+    "baseline_images_actually_reviewed": true,
+    "source_file": "apps/workbench/tests/interface-selection.spec.ts",
+    "style_fixture": "apps/workbench/tests/fixtures/selection-capture.css",
+    "negative_control": "Opening whole-mesh edges must differ from the normal pixels, then disabling edges must restore the normal image. Only analysis controls are hidden during screenshot capture."
+  },
+  "limitations": [
+    "Real source inner-lip creases remain. No source vertex, bore diameter, step or topology was edited.",
+    "Opaque normal views may hide the local target; isolation and explicit local translucency expose it without disabling depth tests."
+  ],
+  "page_errors": []
+}

@@ -1,0 +1,1219 @@
+{
+  "right_shell_round_2026_11_07": {
+    "checked_on": "2026-11-07",
+    "timezone": "Asia/Shanghai",
+    "start_branch": "main",
+    "start_head": "0c33581",
+    "start_worktree_clean": true,
+    "skill_entrypoint": "skills/psop-build/SKILL.md",
+    "release": {
+      "path": "build/microduck/source-1.10/microduck-1.dkp",
+      "work": "build/microduck/source-1.10/work-final-2",
+      "version": "2.0.0-interface-relations.1",
+      "profile": "psop.hardware.source-model/1.10",
+      "digest": "1c8eeda600249ce33b99ec622417a744d5cdaf43a512f1495a4780ae0030cb00",
+      "tool": {
+        "name": "psop-build",
+        "version": "3.0.0-draft.11",
+        "sha256": "36ff93e1e499aad07ff21d26fcbbfe5dd531c89d9463ace4e37aa0716998f449"
+      },
+      "investigation": {
+        "path": "sources/SRC-INTERFACE-INVESTIGATION.json",
+        "sha256": "4027932ed7225231bfc836852a7a47293b3be6aed2cd180c4acab723a1ce098a"
+      },
+      "snapshot": "dkp-1c8eeda600249ce33b99",
+      "registered_and_selected": true,
+      "historical_snapshot_retained": "dkp-59ce1b25aea434fc3367"
+    },
+    "outcomes": {
+      "independent_source_sections": {
+        "expected": 27,
+        "located": 27,
+        "raw_source_check_passed": 27
+      },
+      "source_candidates": 2345,
+      "investigation_records": 5,
+      "supported_installation_hypotheses": 3,
+      "existing_installation_definitions": 23,
+      "qualified_interfaces": 0,
+      "actual_interface_connections": 0,
+      "engineering_executed": false,
+      "whole_part_or_device_complete": false
+    },
+    "hypotheses": [
+      {
+        "id": "installation-hypothesis:right-shell-neck-four",
+        "title": "右外壳四孔与颈部舵机的螺钉连接假设",
+        "participants": [
+          {
+            "part_ref": "part:microduck:9d70b219a5533bf1",
+            "role": "clearance_carrier",
+            "label": "右壳四个 Ø2.2 mm 通过孔",
+            "structure_refs": [
+              "structure:2cd5a2dbd80f69cdd85e",
+              "structure:3569c2e705aa00bf1efd",
+              "structure:a855f5fc3f54056437ab",
+              "structure:d99fe035f3ab63322fda"
+            ],
+            "feature_refs": [
+              "feature:microduck:9d70b219a5533bf1:02b891a8496e",
+              "feature:microduck:9d70b219a5533bf1:1e89d942ea4b",
+              "feature:microduck:9d70b219a5533bf1:43634f953cdd",
+              "feature:microduck:9d70b219a5533bf1:bab6d7409267"
+            ],
+            "opening_refs": [
+              "opening:microduck:9d70b219a5533bf1:34a30f4f21600ab5",
+              "opening:microduck:9d70b219a5533bf1:34d82b6c12af988f",
+              "opening:microduck:9d70b219a5533bf1:769993f70d58dc73",
+              "opening:microduck:9d70b219a5533bf1:78a3e9d47db8a8a3"
+            ],
+            "position_local_m": [
+              -0.01624999986961484,
+              -0.021999999993748423,
+              0.04999999983498629
+            ]
+          },
+          {
+            "part_ref": "part:microduck:4cef8bb24d37fe6e",
+            "role": "receiver",
+            "label": "颈部舵机正 X 侧四个 Ø1.6 mm 接收孔",
+            "structure_refs": [
+              "structure:4766ab585ae2bd43b2a9",
+              "structure:4ba2b0eaf6ca03135c40",
+              "structure:4d062ae4273cbf1cdc84",
+              "structure:8da664ed1e6a8e8139a2"
+            ],
+            "feature_refs": [
+              "feature:microduck:4cef8bb24d37fe6e:4b0c63cf9ce9",
+              "feature:microduck:4cef8bb24d37fe6e:683c8a3a9cd3",
+              "feature:microduck:4cef8bb24d37fe6e:a5c13f70c66e",
+              "feature:microduck:4cef8bb24d37fe6e:ae41d6a7004e"
+            ],
+            "opening_refs": [
+              "opening:microduck:4cef8bb24d37fe6e:1436e008636dbf66",
+              "opening:microduck:4cef8bb24d37fe6e:49bb4402b4f9ba89",
+              "opening:microduck:4cef8bb24d37fe6e:709dc499cf3b9924",
+              "opening:microduck:4cef8bb24d37fe6e:a415ed93ce195e4c"
+            ],
+            "position_local_m": [
+              0.011500000022351742,
+              2.5943000010974015e-21,
+              1.621894611117961e-20
+            ]
+          }
+        ],
+        "mechanism": {
+          "kind": "screw_clamp",
+          "summary": "螺钉通过右壳四孔进入颈部舵机一侧接收结构的夹持假设；孔组和机制有依据，实际接合尚未确认。"
+        },
+        "retention_status": "unknown"
+      },
+      {
+        "id": "installation-hypothesis:right-left-shell-closure",
+        "title": "左右外壳接缝处的螺钉闭壳假设",
+        "participants": [
+          {
+            "part_ref": "part:microduck:9d70b219a5533bf1",
+            "role": "receiver",
+            "label": "右壳 Y42 / Z52.5 mm 的 Ø1.6 mm 接收孔",
+            "structure_refs": [
+              "structure:703806a1274347ebaa13"
+            ],
+            "feature_refs": [
+              "feature:microduck:9d70b219a5533bf1:1dc11aa71737"
+            ],
+            "opening_refs": [
+              "opening:microduck:9d70b219a5533bf1:399b8f558890eaf9",
+              "opening:microduck:9d70b219a5533bf1:ce6aaab539c0f712"
+            ],
+            "position_local_m": [
+              -0.0026499999512452632,
+              0.042000000206216005,
+              0.052499999913076544
+            ]
+          },
+          {
+            "part_ref": "part:microduck:e27cbdd6c07a264e",
+            "role": "clearance_carrier",
+            "label": "左壳对应的 Ø2.2 mm 通过孔",
+            "structure_refs": [
+              "structure:f96be67694f3b2ab0871"
+            ],
+            "feature_refs": [
+              "feature:microduck:e27cbdd6c07a264e:dd72780c0241"
+            ],
+            "opening_refs": [
+              "opening:microduck:e27cbdd6c07a264e:9ac1374f419b196b"
+            ],
+            "position_local_m": [
+              0.0010000000474974513,
+              0.04200000022981466,
+              0.05249999991931729
+            ]
+          }
+        ],
+        "mechanism": {
+          "kind": "screw_clamp",
+          "summary": "螺钉穿过左壳的较大孔，进入右壳较小接收孔以闭合接缝的项目假设；不确认螺钉已安装或壳体已保持。"
+        },
+        "retention_status": "unknown"
+      },
+      {
+        "id": "installation-hypothesis:bearing-roll-housing-pair",
+        "title": "轴承支承件双孔与躯干舵机的螺钉连接假设",
+        "participants": [
+          {
+            "part_ref": "part:microduck:cb253f38c818b9d8",
+            "role": "clearance_carrier",
+            "label": "支承件 Z−22.5 mm 的两个 Ø2.2 mm 孔",
+            "structure_refs": [
+              "structure:6aa1d8439d4b4b69aedb",
+              "structure:b010227041e62a5ea9e2"
+            ],
+            "feature_refs": [
+              "feature:microduck:cb253f38c818b9d8:46c80faf663c",
+              "feature:microduck:cb253f38c818b9d8:66eefc6432ee"
+            ],
+            "opening_refs": [
+              "opening:microduck:cb253f38c818b9d8:00c8100f13816dfb",
+              "opening:microduck:cb253f38c818b9d8:9c90b5d5ec69b2b3",
+              "opening:microduck:cb253f38c818b9d8:e68385b0d043bc37",
+              "opening:microduck:cb253f38c818b9d8:edaf58910f2694cf"
+            ],
+            "position_local_m": [
+              0.017499999978466293,
+              -0.013999999966472387,
+              -0.022500000131732638
+            ]
+          },
+          {
+            "part_ref": "part:microduck:cd6d48fccc95df41",
+            "role": "receiver",
+            "label": "躯干舵机对应的两个 Ø2 mm 壳体孔",
+            "structure_refs": [
+              "structure:0fd551982de50c727a33",
+              "structure:ace8697536e36ab39f3b"
+            ],
+            "feature_refs": [
+              "feature:microduck:cd6d48fccc95df41:2dbd8ea8d698",
+              "feature:microduck:cd6d48fccc95df41:db633e82ba91"
+            ],
+            "opening_refs": [
+              "opening:microduck:cd6d48fccc95df41:1eeff530b7573a4c",
+              "opening:microduck:cd6d48fccc95df41:3a31ace5dc61662b",
+              "opening:microduck:cd6d48fccc95df41:d5ccd32b8f9b436d",
+              "opening:microduck:cd6d48fccc95df41:e9645f2314797d14"
+            ],
+            "position_local_m": [
+              0.0,
+              0.0,
+              -0.02249999996274709
+            ]
+          }
+        ],
+        "mechanism": {
+          "kind": "screw_clamp",
+          "summary": "螺钉通过支承件双孔进入躯干舵机壳体安装区域的夹持假设；16 mm 对应组距和有限几何有依据，实际紧固待证。"
+        },
+        "retention_status": "unknown"
+      }
+    ],
+    "unfinished": [
+      {
+        "id": "investigation:right-shell-z-boss",
+        "part_ref": "part:microduck:9d70b219a5533bf1",
+        "title": "右壳 Z 向台阶孔：对端与用途仍未确定",
+        "work_status": "investigated",
+        "evidence_status": "insufficient",
+        "missing_evidence": [
+          "匹配 STL 修订的逐孔 CAD、装配图与具体对端。",
+          "扩口承座用途、可能第三件与装入侧仍缺证。"
+        ]
+      },
+      {
+        "id": "investigation:bearing-roll-link-pair",
+        "part_ref": "part:microduck:cb253f38c818b9d8",
+        "title": "支承件另一双孔：缺少接收件与保持机制",
+        "work_status": "investigated",
+        "evidence_status": "insufficient",
+        "missing_evidence": [
+          "明确螺母、嵌件或螺纹接收区域及第三件 BOM。",
+          "大孔、轴承肩部接触和轴向保持另需源 CAD 或装配图。"
+        ]
+      }
+    ],
+    "validation": {
+      "build": {
+        "ok": true,
+        "command": "npm run build"
+      },
+      "python_build": {
+        "total": 165,
+        "passed": 164,
+        "skipped": 1,
+        "failed": 0,
+        "log": "build/interface-selection/build-tests.log",
+        "skip_reason": "Original published 1.8 package is not installed; 1.9 was actually read and validated."
+      },
+      "browser": {
+        "total": 42,
+        "passed": 40,
+        "skipped": 2,
+        "failed": 0,
+        "log": "build/interface-selection/e2e-verified.log",
+        "skipped_profiles": [
+          "1.2",
+          "1.8"
+        ],
+        "visual_baselines_reviewed": true
+      },
+      "api": {
+        "passed": 7,
+        "failed": 0
+      },
+      "display_normals": {
+        "passed": 3,
+        "failed": 0,
+        "actual_assets_vertex_sha_preserved": 38,
+        "right_shell_facet_count": 20970,
+        "positions_and_facet_order": "identity"
+      },
+      "simulate_boundary": {
+        "passed": 5,
+        "failed": 0
+      },
+      "queries": {
+        "cases": 5,
+        "positive_relationships": 3,
+        "negative_no_promotion": 2,
+        "full_validations": 2,
+        "immutable_validation_reuse": 3,
+        "checked_files_per_query": 77,
+        "summary": "build/interface-selection/queries/verification.json",
+        "scope": "The first two successful unmodified queries performed complete package.validate. The remaining three reuse that proof after checking the unchanged manifest, exact contained path set and every registered file's bytes/SHA. This is not five independent full CLI validations."
+      },
+      "backward_arrays": [
+        {
+          "key": "features",
+          "unchanged": true,
+          "count": 1394
+        },
+        {
+          "key": "logical_holes",
+          "unchanged": true,
+          "count": 446
+        },
+        {
+          "key": "feature_patterns",
+          "unchanged": true,
+          "count": 134
+        },
+        {
+          "key": "reference_observations",
+          "unchanged": true,
+          "count": 188
+        },
+        {
+          "key": "mounting_sites",
+          "unchanged": true,
+          "count": 626
+        },
+        {
+          "key": "mounting_interfaces",
+          "unchanged": true,
+          "count": 23
+        },
+        {
+          "key": "reference_mounts",
+          "unchanged": true,
+          "count": 2
+        },
+        {
+          "key": "slot_features",
+          "unchanged": true,
+          "count": 18
+        },
+        {
+          "key": "circular_openings",
+          "unchanged": true,
+          "count": 852
+        },
+        {
+          "key": "passage_hypotheses",
+          "unchanged": true,
+          "count": 458
+        },
+        {
+          "key": "pair_screenings",
+          "unchanged": true,
+          "count": 2415
+        },
+        {
+          "key": "connection_reviews",
+          "unchanged": true,
+          "count": 211
+        },
+        {
+          "key": "supplemental_components",
+          "unchanged": true,
+          "count": 12
+        },
+        {
+          "key": "pin_hole_fits",
+          "unchanged": true,
+          "count": 4
+        },
+        {
+          "key": "interfaces",
+          "unchanged": true,
+          "count": 0
+        },
+        {
+          "key": "interface_connections",
+          "unchanged": true,
+          "count": 0
+        }
+      ],
+      "historical_read": {
+        "profile": "psop.hardware.source-model/1.9",
+        "packageVersion": "2.0.0-interface-investigation.2",
+        "digest": "59ce1b25aea434fc336718cfa6bca6f570d34037c87194ba1f45773fbcd3c9a1",
+        "hasInstallationHypotheses": false,
+        "hasInvestigationRecords": false
+      },
+      "diff_check": {
+        "passed": true
+      }
+    },
+    "visual_acceptance": "right-shell-visual-acceptance.json",
+    "external_access": "onshape-access-2026-11-07.json",
+    "bounded_upstream_read": "upstream-access-2026-11-07.json",
+    "scope": "Three evidence-grounded hypotheses and two explicitly unfinished studies. Candidate/sample counts are not a completed-interface or engineering-acceptance ratio."
+  },
+  "recorded_on": "2026-11-07",
+  "start_branch": "v2",
+  "start_head": "f5a7d659dd8ea3d3f992eb8c5bb12f090d56bf4a",
+  "skill_runtime": {
+    "entrypoint": "skills/psop-build/SKILL.md",
+    "installed_psop_build_found": false,
+    "tool_version": "3.0.0-draft.10",
+    "profile": "psop.hardware.source-model/1.9"
+  },
+  "baseline": {
+    "package_version": "2.0.0-connector-direction.20261106151943.e353b2e9",
+    "package_digest": "8ebaa348952284ed70d82f7eff4ff7ec3ba476fc6e11b10d839587daf584ebcd",
+    "independent_features": {
+      "status": "incomplete",
+      "expected_count": 11,
+      "located_count": 10,
+      "matches": [
+        {
+          "id": "LS-01",
+          "part_ref": "part:microduck:e27cbdd6c07a264e",
+          "center_local_m": [
+            0.0005,
+            0.042,
+            0.0525
+          ],
+          "candidate_refs": [
+            "structure:f96be67694f3b2ab0871"
+          ]
+        },
+        {
+          "id": "LS-02",
+          "part_ref": "part:microduck:e27cbdd6c07a264e",
+          "center_local_m": [
+            0.01625,
+            -0.028,
+            0.05
+          ],
+          "candidate_refs": [
+            "structure:0256c819bc593ac3805f"
+          ]
+        },
+        {
+          "id": "LS-03",
+          "part_ref": "part:microduck:e27cbdd6c07a264e",
+          "center_local_m": [
+            0.01625,
+            -0.022,
+            0.056
+          ],
+          "candidate_refs": [
+            "structure:e6c707207445ed2960e6"
+          ]
+        },
+        {
+          "id": "LS-04",
+          "part_ref": "part:microduck:e27cbdd6c07a264e",
+          "center_local_m": [
+            0.01625,
+            -0.022,
+            0.044
+          ],
+          "candidate_refs": [
+            "structure:d759a79e73f6251ccd45"
+          ]
+        },
+        {
+          "id": "LS-05",
+          "part_ref": "part:microduck:e27cbdd6c07a264e",
+          "center_local_m": [
+            0.01625,
+            -0.016,
+            0.05
+          ],
+          "candidate_refs": [
+            "structure:e49b4e4d5f7f13bf794a"
+          ]
+        },
+        {
+          "id": "LG-01",
+          "part_ref": "part:microduck:638f29b46b322e64",
+          "center_local_m": [
+            0.039,
+            0.0262426407,
+            0.0315344471
+          ],
+          "candidate_refs": [
+            "structure:e4430536936ac9f61003"
+          ]
+        },
+        {
+          "id": "LG-02",
+          "part_ref": "part:microduck:638f29b46b322e64",
+          "center_local_m": [
+            0.039,
+            0.0262426407,
+            0.0400197285
+          ],
+          "candidate_refs": [
+            "structure:13d5566705eedd240ab9"
+          ]
+        },
+        {
+          "id": "LG-03",
+          "part_ref": "part:microduck:638f29b46b322e64",
+          "center_local_m": [
+            0.039,
+            0.0177573593,
+            0.0315344471
+          ],
+          "candidate_refs": [
+            "structure:90f373f31887ac26859b"
+          ]
+        },
+        {
+          "id": "LG-04",
+          "part_ref": "part:microduck:638f29b46b322e64",
+          "center_local_m": [
+            0.039,
+            0.0177573593,
+            0.0400197285
+          ],
+          "candidate_refs": [
+            "structure:4ccf24585ebebf95152c"
+          ]
+        },
+        {
+          "id": "LG-05",
+          "part_ref": "part:microduck:638f29b46b322e64",
+          "center_local_m": [
+            0.033,
+            0.022,
+            -0.006222912
+          ],
+          "candidate_refs": [
+            "structure:9219bfdb22cb6ac20185"
+          ]
+        }
+      ],
+      "missing": [
+        {
+          "id": "LS-06",
+          "part_ref": "part:microduck:e27cbdd6c07a264e",
+          "center_local_m": [
+            0.0255,
+            -0.0095,
+            0.04153
+          ],
+          "candidate_refs": [],
+          "reason": "No source-triangle, local-position, finite-extent and direction match",
+          "next_action": "核对匹配版本的壳体装配图、实际连接件与孔的装入侧；检查有限壁段及邻件，不从几何圆孔推断紧固。"
+        }
+      ],
+      "scope": "Only source-SHA-bound independently annotated samples",
+      "limitations": [
+        "No whole-device or arbitrary-geometry recall claim; unannotated and occluded regions remain open."
+      ]
+    }
+  },
+  "published": {
+    "path": "build/microduck/source-1.9/microduck-2.dkp",
+    "package_version": "2.0.0-interface-investigation.2",
+    "profile": "psop.hardware.source-model/1.9",
+    "package_digest": "59ce1b25aea434fc336718cfa6bca6f570d34037c87194ba1f45773fbcd3c9a1",
+    "tool_sha256": "aff3f77a5d378038ea82a574e18d48289a53772f3c8b3a39179b219fb97d6ca8",
+    "counts": {
+      "sources": 68,
+      "geometries": 38,
+      "parts": 70,
+      "bodies": 15,
+      "joints": 14,
+      "evidence": 223
+    },
+    "investigation_sha256": "60cdfb7b41ffdb9226d885b9afd6759e6915eba85de1afffa904ca0b9ee2faa8",
+    "captured_originals": [
+      {
+        "id": "upstream-model-readme",
+        "path": "sources/SRC-INVESTIGATION-B2DF4346FF46A912F975.md",
+        "sha256": "b5e606efe7ff71f4f6324820b36152d401a0b1be6e2f908bbaca01ffee81638d"
+      },
+      {
+        "id": "upstream-model-docs",
+        "path": "sources/SRC-INVESTIGATION-CCC7685787AB63E7B0D3.json",
+        "sha256": "0756917217a37d3e2abe84def0f5d46960bc87d18b00a21468f0e3c34bd99ab3"
+      },
+      {
+        "id": "upstream-microduck-design-tree",
+        "path": "sources/SRC-INVESTIGATION-FC374631ED68A28D7D8E.json",
+        "sha256": "8d379daa2a1ce0fc9218e8ca113c9b77118c60c1b4e661141e72165363bf43ab"
+      },
+      {
+        "id": "local-xl330-assembly",
+        "path": "sources/SRC-INVESTIGATION-F99EF4933CDDF90F93D4.md",
+        "sha256": "ea5859ff3975edf15a823a8f4c9f8ba6adcdc9981a65f8b219641a9950f67740"
+      },
+      {
+        "id": "upstream-model-export-config",
+        "path": "sources/SRC-INVESTIGATION-7E5AD7382A245A7C6490.json",
+        "sha256": "978dcc845ae4072d74618bd7a3ac752079c3592ebc0fd2ec3079db00c0ceb954"
+      }
+    ]
+  },
+  "comparison": [
+    {
+      "mesh_key": "left_shell",
+      "part_ref": "part:microduck:e27cbdd6c07a264e",
+      "source_ref": "SRC-000022",
+      "before_cylinder_wall_segments": 5,
+      "new_discovery_wall_segments": 7,
+      "published_cylinder_wall_observations": 7,
+      "added_wall_observations": [
+        {
+          "id": "structure:2f4619dc0b3a74d95a37",
+          "kind": "bore_wall",
+          "center_local_m": [
+            0.025499999953279402,
+            -0.009500000042998351,
+            0.04152967408299446
+          ],
+          "axis_local": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "radius_m": 0.0010999999400219034,
+          "source_triangle_count": 180,
+          "coverage": 1.0,
+          "function_status": "unknown"
+        },
+        {
+          "id": "structure:ce74e0946ae63dfc33e1",
+          "kind": "bore_wall",
+          "center_local_m": [
+            0.025500000034308596,
+            -0.009499999988153901,
+            0.043760716915130615
+          ],
+          "axis_local": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "radius_m": 0.002499999477657203,
+          "source_triangle_count": 99,
+          "coverage": 0.5055555675905682,
+          "function_status": "unknown"
+        }
+      ]
+    },
+    {
+      "mesh_key": "leg",
+      "part_ref": "part:microduck:638f29b46b322e64",
+      "source_ref": "SRC-000023",
+      "before_cylinder_wall_segments": 14,
+      "new_discovery_wall_segments": 18,
+      "published_cylinder_wall_observations": 20,
+      "added_wall_observations": [
+        {
+          "id": "structure:025c1af7c03b52c67024",
+          "kind": "bore_wall",
+          "center_local_m": [
+            0.03545000031590462,
+            0.017757359204968983,
+            0.0315344470246563
+          ],
+          "axis_local": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "radius_m": 0.002199999969245906,
+          "source_triangle_count": 204,
+          "coverage": 1.0,
+          "function_status": "unknown"
+        },
+        {
+          "id": "structure:1826c67eea102a57f786",
+          "kind": "bore_wall",
+          "center_local_m": [
+            0.034800074994564056,
+            0.013999999876337038,
+            0.016277087750333867
+          ],
+          "axis_local": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "radius_m": 0.0024200001025757507,
+          "source_triangle_count": 138,
+          "coverage": 0.5585026101239786,
+          "function_status": "unknown"
+        },
+        {
+          "id": "structure:2b197745f7140ecb9b51",
+          "kind": "bore_wall",
+          "center_local_m": [
+            0.03545000031590462,
+            0.017757359248464704,
+            0.04001972829774803
+          ],
+          "axis_local": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "radius_m": 0.0022000000042841183,
+          "source_triangle_count": 259,
+          "coverage": 1.0,
+          "function_status": "unknown"
+        },
+        {
+          "id": "structure:5922b191e0b54030aef8",
+          "kind": "bore_wall",
+          "center_local_m": [
+            0.03545000031590462,
+            0.026242640665652746,
+            0.040019728354856274
+          ],
+          "axis_local": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "radius_m": 0.002200000093828116,
+          "source_triangle_count": 259,
+          "coverage": 1.0,
+          "function_status": "unknown"
+        },
+        {
+          "id": "structure:a59f5c1bcb1509fabdc7",
+          "kind": "bore_wall",
+          "center_local_m": [
+            0.034800074994564056,
+            0.030000000258308117,
+            0.016277087656211248
+          ],
+          "axis_local": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "radius_m": 0.002420000133633097,
+          "source_triangle_count": 138,
+          "coverage": 0.5585026350251341,
+          "function_status": "unknown"
+        },
+        {
+          "id": "structure:bcc80a20076dacd9e087",
+          "kind": "bore_wall",
+          "center_local_m": [
+            0.03545000031590462,
+            0.02624264063547419,
+            0.03153444701135872
+          ],
+          "axis_local": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "radius_m": 0.0022000000186006194,
+          "source_triangle_count": 204,
+          "coverage": 1.0,
+          "function_status": "unknown"
+        }
+      ]
+    }
+  ],
+  "coverage": {
+    "schema": "psop.interface-review-coverage/1.0",
+    "region_review": {
+      "total": 433,
+      "reviewed": 11,
+      "auto_screened": 420,
+      "blocked": 0,
+      "unreviewed": 2,
+      "complete": false
+    },
+    "independent_features": {
+      "status": "pass",
+      "expected_count": 11,
+      "located_count": 11,
+      "matches": [
+        {
+          "id": "LS-01",
+          "part_ref": "part:microduck:e27cbdd6c07a264e",
+          "center_local_m": [
+            0.0005,
+            0.042,
+            0.0525
+          ],
+          "candidate_refs": [
+            "structure:f96be67694f3b2ab0871"
+          ]
+        },
+        {
+          "id": "LS-02",
+          "part_ref": "part:microduck:e27cbdd6c07a264e",
+          "center_local_m": [
+            0.01625,
+            -0.028,
+            0.05
+          ],
+          "candidate_refs": [
+            "structure:0256c819bc593ac3805f"
+          ]
+        },
+        {
+          "id": "LS-03",
+          "part_ref": "part:microduck:e27cbdd6c07a264e",
+          "center_local_m": [
+            0.01625,
+            -0.022,
+            0.056
+          ],
+          "candidate_refs": [
+            "structure:e6c707207445ed2960e6"
+          ]
+        },
+        {
+          "id": "LS-04",
+          "part_ref": "part:microduck:e27cbdd6c07a264e",
+          "center_local_m": [
+            0.01625,
+            -0.022,
+            0.044
+          ],
+          "candidate_refs": [
+            "structure:d759a79e73f6251ccd45"
+          ]
+        },
+        {
+          "id": "LS-05",
+          "part_ref": "part:microduck:e27cbdd6c07a264e",
+          "center_local_m": [
+            0.01625,
+            -0.016,
+            0.05
+          ],
+          "candidate_refs": [
+            "structure:e49b4e4d5f7f13bf794a"
+          ]
+        },
+        {
+          "id": "LS-06",
+          "part_ref": "part:microduck:e27cbdd6c07a264e",
+          "center_local_m": [
+            0.0255,
+            -0.0095,
+            0.04153
+          ],
+          "candidate_refs": [
+            "structure:2f4619dc0b3a74d95a37"
+          ]
+        },
+        {
+          "id": "LG-01",
+          "part_ref": "part:microduck:638f29b46b322e64",
+          "center_local_m": [
+            0.039,
+            0.0262426407,
+            0.0315344471
+          ],
+          "candidate_refs": [
+            "structure:e4430536936ac9f61003"
+          ]
+        },
+        {
+          "id": "LG-02",
+          "part_ref": "part:microduck:638f29b46b322e64",
+          "center_local_m": [
+            0.039,
+            0.0262426407,
+            0.0400197285
+          ],
+          "candidate_refs": [
+            "structure:13d5566705eedd240ab9"
+          ]
+        },
+        {
+          "id": "LG-03",
+          "part_ref": "part:microduck:638f29b46b322e64",
+          "center_local_m": [
+            0.039,
+            0.0177573593,
+            0.0315344471
+          ],
+          "candidate_refs": [
+            "structure:90f373f31887ac26859b"
+          ]
+        },
+        {
+          "id": "LG-04",
+          "part_ref": "part:microduck:638f29b46b322e64",
+          "center_local_m": [
+            0.039,
+            0.0177573593,
+            0.0400197285
+          ],
+          "candidate_refs": [
+            "structure:4ccf24585ebebf95152c"
+          ]
+        },
+        {
+          "id": "LG-05",
+          "part_ref": "part:microduck:638f29b46b322e64",
+          "center_local_m": [
+            0.033,
+            0.022,
+            -0.006222912
+          ],
+          "candidate_refs": [
+            "structure:9219bfdb22cb6ac20185"
+          ]
+        }
+      ],
+      "missing": [],
+      "scope": "Only source-SHA-bound independently annotated samples",
+      "limitations": [
+        "No whole-device or arbitrary-geometry recall claim; unannotated and occluded regions remain open."
+      ]
+    },
+    "part_count": 70,
+    "geometry_asset_count": 38,
+    "function_status": {
+      "unknown": 2265,
+      "installation_evidence_available": 80
+    }
+  },
+  "intentionally_omitted_LS_06": {
+    "status": "incomplete",
+    "expected_count": 11,
+    "located_count": 10,
+    "matches": [
+      {
+        "id": "LS-01",
+        "part_ref": "part:microduck:e27cbdd6c07a264e",
+        "center_local_m": [
+          0.0005,
+          0.042,
+          0.0525
+        ],
+        "candidate_refs": [
+          "structure:f96be67694f3b2ab0871"
+        ]
+      },
+      {
+        "id": "LS-02",
+        "part_ref": "part:microduck:e27cbdd6c07a264e",
+        "center_local_m": [
+          0.01625,
+          -0.028,
+          0.05
+        ],
+        "candidate_refs": [
+          "structure:0256c819bc593ac3805f"
+        ]
+      },
+      {
+        "id": "LS-03",
+        "part_ref": "part:microduck:e27cbdd6c07a264e",
+        "center_local_m": [
+          0.01625,
+          -0.022,
+          0.056
+        ],
+        "candidate_refs": [
+          "structure:e6c707207445ed2960e6"
+        ]
+      },
+      {
+        "id": "LS-04",
+        "part_ref": "part:microduck:e27cbdd6c07a264e",
+        "center_local_m": [
+          0.01625,
+          -0.022,
+          0.044
+        ],
+        "candidate_refs": [
+          "structure:d759a79e73f6251ccd45"
+        ]
+      },
+      {
+        "id": "LS-05",
+        "part_ref": "part:microduck:e27cbdd6c07a264e",
+        "center_local_m": [
+          0.01625,
+          -0.016,
+          0.05
+        ],
+        "candidate_refs": [
+          "structure:e49b4e4d5f7f13bf794a"
+        ]
+      },
+      {
+        "id": "LG-01",
+        "part_ref": "part:microduck:638f29b46b322e64",
+        "center_local_m": [
+          0.039,
+          0.0262426407,
+          0.0315344471
+        ],
+        "candidate_refs": [
+          "structure:e4430536936ac9f61003"
+        ]
+      },
+      {
+        "id": "LG-02",
+        "part_ref": "part:microduck:638f29b46b322e64",
+        "center_local_m": [
+          0.039,
+          0.0262426407,
+          0.0400197285
+        ],
+        "candidate_refs": [
+          "structure:13d5566705eedd240ab9"
+        ]
+      },
+      {
+        "id": "LG-03",
+        "part_ref": "part:microduck:638f29b46b322e64",
+        "center_local_m": [
+          0.039,
+          0.0177573593,
+          0.0315344471
+        ],
+        "candidate_refs": [
+          "structure:90f373f31887ac26859b"
+        ]
+      },
+      {
+        "id": "LG-04",
+        "part_ref": "part:microduck:638f29b46b322e64",
+        "center_local_m": [
+          0.039,
+          0.0177573593,
+          0.0400197285
+        ],
+        "candidate_refs": [
+          "structure:4ccf24585ebebf95152c"
+        ]
+      },
+      {
+        "id": "LG-05",
+        "part_ref": "part:microduck:638f29b46b322e64",
+        "center_local_m": [
+          0.033,
+          0.022,
+          -0.006222912
+        ],
+        "candidate_refs": [
+          "structure:9219bfdb22cb6ac20185"
+        ]
+      }
+    ],
+    "missing": [
+      {
+        "id": "LS-06",
+        "part_ref": "part:microduck:e27cbdd6c07a264e",
+        "center_local_m": [
+          0.0255,
+          -0.0095,
+          0.04153
+        ],
+        "candidate_refs": [],
+        "reason": "No source-triangle, local-position, finite-extent and direction match",
+        "next_action": "核对匹配版本的壳体装配图、实际连接件与孔的装入侧；检查有限壁段及邻件，不从几何圆孔推断紧固。"
+      }
+    ],
+    "scope": "Only source-SHA-bound independently annotated samples",
+    "limitations": [
+      "No whole-device or arbitrary-geometry recall claim; unannotated and occluded regions remain open."
+    ]
+  },
+  "unresolved": {
+    "region_review_complete": false,
+    "function_status": {
+      "unknown": 2265,
+      "installation_evidence_available": 80
+    },
+    "no_source_pose_counterpart_proposal": 1040,
+    "specific": [
+      "LS-06 functional purpose, actual connector and retention unknown",
+      "Left shell coaxial radius 2.5 mm wall has only partial angular support",
+      "Left shell lips, narrow slots, shoulders and enlarged entrance are not independently exhausted",
+      "Leg central slot, side openings and flanges remain outside the selected section review",
+      "Other source instances and unannotated regions require separate functional and multiview review",
+      "Referenced Onshape workspace was inaccessible; fixed CAD revision and actual assembly drawings remain missing"
+    ]
+  },
+  "validation": {
+    "published_validate": {
+      "valid": true,
+      "package_digest": "59ce1b25aea434fc336718cfa6bca6f570d34037c87194ba1f45773fbcd3c9a1",
+      "elapsed_seconds": 167.9166671,
+      "log": ".runtime/investigation-validate-1.9.json"
+    },
+    "workspace": {
+      "id": "microduck",
+      "selected_snapshot_id": "dkp-59ce1b25aea434fc3367",
+      "package_digest": "59ce1b25aea434fc336718cfa6bca6f570d34037c87194ba1f45773fbcd3c9a1"
+    },
+    "independent_source_sections": {
+      "passed": 11,
+      "expected": 11,
+      "command": "python -B device-materials/interface-review/independent_sections.py"
+    },
+    "build_suite": {
+      "tests": 152,
+      "initial_status": "two_subtest_failures_in_one_test_due_to_concurrent_tool_change",
+      "log": ".runtime/build-tests-1.9.log",
+      "cause": "Producer changed while the suite was running; version lock rejected changed prepared work before input-byte-specific assertions.",
+      "final_publication_rerun": {
+        "tests": 6,
+        "passed": 6,
+        "status": "pass",
+        "log": ".runtime/investigation-publication-rerun.log",
+        "command": "python -B -m unittest discover -s skills/psop-build/tests -p test_investigation_publication.py -v"
+      }
+    },
+    "structure_investigation_unit": {
+      "tests": 8,
+      "passed": 8,
+      "status": "pass"
+    },
+    "structure_discovery_unit": {
+      "tests": 7,
+      "passed": 7,
+      "status": "pass"
+    },
+    "shared_assembly": {
+      "tests": 21,
+      "passed": 21,
+      "status": "pass",
+      "log": ".runtime/assembly-tests-1.9.log"
+    },
+    "simulate_queries": {
+      "tests": 5,
+      "passed": 5,
+      "status": "pass",
+      "log": ".runtime/simulate-tests-1.9.log"
+    },
+    "skill_validation": {
+      "status": "pass",
+      "method": "skill-creator quick_validate.py using existing local YAML dependency and Python UTF-8 mode"
+    },
+    "workbench": {
+      "status": "pass",
+      "frontend_build": "pass",
+      "legacy_api_tests": 7,
+      "legacy_api_passed": 7,
+      "api_tests": 7,
+      "api_passed": 7,
+      "api_log": ".runtime/workbench-api-1.9.log",
+      "browser": {
+        "command": "npm run test:e2e",
+        "result": "pass",
+        "total": 36,
+        "passed": 35,
+        "skipped": 1,
+        "failed": 0,
+        "reported_duration": "3.0m",
+        "stdout_summary": "1 skipped; 35 passed (3.0m)",
+        "exec_session_id": 96411,
+        "result_file": "apps/workbench/test-results/.last-run.json",
+        "result_file_sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903",
+        "skipped_scope": "Historical source-model/1.2 surface snapshot is not registered. Actual 1.8 compatibility was exercised and passed."
+      },
+      "artifacts": [
+        "docs/build/interface-review/left-shell-ls06-workbench-1.9.png",
+        "docs/build/interface-review/workbench-1.9-screenshot.json",
+        "docs/build/interface-review/left-shell-ls06-closeup-1.9.png",
+        "docs/build/interface-review/left-shell-ls06-closeup-1.9.json"
+      ],
+      "covered": [
+        "LS-06 source SHA, triangle witnesses, position, 3D overlay, source viewing, unknown/reviewed separation, export and reload",
+        "LG-01 independent finite wall, source-region status and Build coverage",
+        "Partial diameter-5-mm source wall angular coverage and fit residuals remain visible, without inventing a full hole",
+        "Historical 1.8 reading and current-snapshot notice",
+        "Existing full workbench browsing, mounting, source, narrow-screen and sharing regressions"
+      ],
+      "initial_assertion_update": "The 1.9 geometry browser defaults to structure investigations. The legacy thigh browsing test now explicitly selects its circular-opening category before retaining the original location, grouping and 3D checks. Targeted rerun passed; the complete 36-case run subsequently passed with the single unavailable historical-1.2 case skipped."
+    },
+    "diff_check": "pass",
+    "published_query": {
+      "ok": true,
+      "profile": "psop.hardware.source-model/1.9",
+      "package_digest": "59ce1b25aea434fc336718cfa6bca6f570d34037c87194ba1f45773fbcd3c9a1",
+      "structures": 66,
+      "review_regions": 25,
+      "execution_performed": false,
+      "independent_input_source_visible": true,
+      "unresolved_evidence_sources": [],
+      "artifact": ".runtime/investigation-query-1.9.json",
+      "process_exit_code": 0
+    },
+    "preserved_parallel_worktree_changes": "BrandMark, brand icons and associated unrelated changes were preserved and are outside this investigation scope."
+  },
+  "unregistered_intermediate_artifact": {
+    "path": "build/microduck/source-1.9/microduck.dkp",
+    "status": "removed",
+    "cleanup": "Removal was initially rejected by the execution layer; after manual commands were supplied, filesystem verification confirmed removal."
+  },
+  "complete_review_index": "docs/build/interface-review/investigation-index.json",
+  "maintenance_after_user_request": {
+    "instruction": "Keep only the latest snapshot; remove older packages and intermediate builds; commit and push all source changes.",
+    "registered_snapshots": 1,
+    "selected_snapshot_id": "dkp-59ce1b25aea434fc3367",
+    "filesystem_cleanup": "completed_after_manual_commands",
+    "rejection": "blocked by policy",
+    "remaining_old_and_intermediate_directories": [],
+    "planned_bytes": 1820241011,
+    "package_unchanged": true,
+    "source_compatibility_contracts_retained": true,
+    "removed_old_and_intermediate_directories": [
+      "build/microduck/source-1.9/microduck.dkp",
+      "build/microduck/source-1.9/work",
+      "build/microduck/source-1.9-probe",
+      "build/microduck/source-1.9-final",
+      "build/microduck/source-1.9-final-2",
+      "build/microduck/source-1.9-final-3",
+      "build/v2/microduck",
+      "build/v2-build-check",
+      "build/interface-analysis"
+    ],
+    "verification": "All nine planned directories are absent; final .2 manifest SHA-256 is unchanged; registry contains only the latest snapshot."
+  }
+}

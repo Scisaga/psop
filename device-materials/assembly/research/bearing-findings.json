@@ -1,0 +1,4996 @@
+{
+  "schema": "psop.readonly-assembly-audit/1",
+  "head": "796518c",
+  "source_model_commit": "cb70b792312d559a4da09064d92009079671815f",
+  "configuration_ref": "configuration:microduck:source-qpos0",
+  "units": "mm for geometry fields, source placement positions remain m as labeled by original schema",
+  "source_mesh_regions": {
+    "SRC-000034": {
+      "source_ref": "SRC-000034",
+      "sha256": "295ee68ed9766c91fe06d3a2a49d39f7c2f56cc943395d293afdeb013123435e",
+      "triangle_count": 20970,
+      "inner_diameter_mm": 16,
+      "outer_diameter_mm": 22,
+      "thickness_mm": 4,
+      "bore_finite_z_mm": [
+        0.2,
+        3.8
+      ],
+      "outer_cylinder_finite_z_mm": [
+        0.3,
+        3.7
+      ],
+      "ring_end_regions": {
+        "outer_ring_end:z0": "raw-region:SRC-000034:outer_ring_end:z0",
+        "inner_ring_end:z0": "raw-region:SRC-000034:inner_ring_end:z0",
+        "outer_ring_end:z4": "raw-region:SRC-000034:outer_ring_end:z4",
+        "inner_ring_end:z4": "raw-region:SRC-000034:inner_ring_end:z4"
+      },
+      "interface_groups": {
+        "inner_ring": {
+          "bore_region_ref": "raw-region:SRC-000034:bore_wall",
+          "end_region_refs": [
+            "raw-region:SRC-000034:inner_ring_end:z0",
+            "raw-region:SRC-000034:inner_ring_end:z4"
+          ]
+        },
+        "outer_ring": {
+          "cylinder_region_ref": "raw-region:SRC-000034:outer_cylinder",
+          "end_region_refs": [
+            "raw-region:SRC-000034:outer_ring_end:z0",
+            "raw-region:SRC-000034:outer_ring_end:z4"
+          ]
+        }
+      },
+      "bore_wall_region_ref": "raw-region:SRC-000034:bore_wall",
+      "outer_cylinder_region_ref": "raw-region:SRC-000034:outer_cylinder"
+    },
+    "SRC-000035": {
+      "source_ref": "SRC-000035",
+      "sha256": "e815f3483a2e7b80844f3c0938a47e53db38b12faed9b2d364414c19e4322da4",
+      "triangle_count": 20970,
+      "inner_diameter_mm": 10,
+      "outer_diameter_mm": 15.0,
+      "thickness_mm": 3,
+      "bore_finite_z_mm": [
+        0.2,
+        2.8
+      ],
+      "outer_cylinder_finite_z_mm": [
+        0.3,
+        2.7
+      ],
+      "ring_end_regions": {
+        "outer_ring_end:z0": "raw-region:SRC-000035:outer_ring_end:z0",
+        "inner_ring_end:z0": "raw-region:SRC-000035:inner_ring_end:z0",
+        "outer_ring_end:z3": "raw-region:SRC-000035:outer_ring_end:z3",
+        "inner_ring_end:z3": "raw-region:SRC-000035:inner_ring_end:z3"
+      },
+      "interface_groups": {
+        "inner_ring": {
+          "bore_region_ref": "raw-region:SRC-000035:bore_wall",
+          "end_region_refs": [
+            "raw-region:SRC-000035:inner_ring_end:z0",
+            "raw-region:SRC-000035:inner_ring_end:z3"
+          ]
+        },
+        "outer_ring": {
+          "cylinder_region_ref": "raw-region:SRC-000035:outer_cylinder",
+          "end_region_refs": [
+            "raw-region:SRC-000035:outer_ring_end:z0",
+            "raw-region:SRC-000035:outer_ring_end:z3"
+          ]
+        }
+      },
+      "bore_wall_region_ref": "raw-region:SRC-000035:bore_wall",
+      "outer_cylinder_region_ref": "raw-region:SRC-000035:outer_cylinder"
+    }
+  },
+  "hip_bearing_stacks": [
+    {
+      "joint_label": "left_roll",
+      "bearing_part_ref": "part:microduck:47a950fbb3d0e416",
+      "bearing_source_frame": {
+        "part_ref": "part:microduck:47a950fbb3d0e416",
+        "position": [
+          0.0225,
+          0.0175,
+          0.1025
+        ],
+        "quaternion": [
+          0.0,
+          -0.7071067811865475,
+          0.0,
+          0.7071067811865475
+        ]
+      },
+      "inner_bore_region_ref": "region:feature:microduck:47a950fbb3d0e416:dcf8d998412a",
+      "inner_ring_radial_mates": [
+        {
+          "part_ref": "part:microduck:fa9ee2f71faafb88",
+          "region_ref": "region:feature:microduck:fa9ee2f71faafb88:0f97108977c9",
+          "diameter_mm": 16.0,
+          "center_bearing_local_mm": [
+            0.0,
+            -0.0,
+            0.975
+          ],
+          "axis_bearing_local": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "finite_z_bearing_local_mm": [
+            -0.0,
+            1.949999
+          ]
+        },
+        {
+          "part_ref": "part:microduck:cd6d48fccc95df41",
+          "region_ref": "region:feature:microduck:cd6d48fccc95df41:4c6adb5a4bd2",
+          "diameter_mm": 16.0,
+          "center_bearing_local_mm": [
+            0.0,
+            -0.0,
+            3.5
+          ],
+          "axis_bearing_local": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "finite_z_bearing_local_mm": [
+            2.0,
+            5.0
+          ]
+        }
+      ],
+      "inner_ring_axial_end": {
+        "bearing_region_ref": "raw-region:SRC-000034:inner_ring_end:z0",
+        "peer": {
+          "part_ref": "part:microduck:fa9ee2f71faafb88",
+          "region_ref": "region:feature:microduck:fa9ee2f71faafb88:plane-5da8ab6659b8",
+          "contact_role": "hip_inner_ring_shoulder",
+          "z_bearing_local_mm": 0
+        }
+      },
+      "outer_ring_axial_end": {
+        "bearing_region_ref": "raw-region:SRC-000034:outer_ring_end:z4",
+        "peer": {
+          "part_ref": "part:microduck:cb253f38c818b9d8",
+          "region_ref": "region:feature:microduck:cb253f38c818b9d8:plane-99b8b38dfeb3",
+          "contact_role": "support_outer_ring_abutment",
+          "z_bearing_local_mm": 4
+        }
+      },
+      "outer_cylinder_region_ref": "region:feature:microduck:47a950fbb3d0e416:4b70f665bd37",
+      "outer_cylinder_radial_mate": null,
+      "clearance_between_servo_disk_and_hip_journal_mm": 0.05,
+      "bore_overlap_hip_mm": 1.75,
+      "bore_overlap_servo_mm": 1.8,
+      "fastener_path": {
+        "kind": "screws_through_hip_into_servo_disk",
+        "pcd_mm": 12,
+        "hip_clearance_diameter_mm": 2.4,
+        "servo_receiver_diameter_mm": 1.6,
+        "hip_region_refs": [
+          "region:feature:microduck:fa9ee2f71faafb88:296a39d9819c",
+          "region:feature:microduck:fa9ee2f71faafb88:b1c955159fb3",
+          "region:feature:microduck:fa9ee2f71faafb88:7c88d6e0ea46",
+          "region:feature:microduck:fa9ee2f71faafb88:ed90b2c80473"
+        ],
+        "servo_region_refs": [
+          "region:feature:microduck:cd6d48fccc95df41:678d6de22520",
+          "region:feature:microduck:cd6d48fccc95df41:ee2340944a76",
+          "region:feature:microduck:cd6d48fccc95df41:c762f0d8139b",
+          "region:feature:microduck:cd6d48fccc95df41:f4716268e4b3"
+        ],
+        "screws_modelled": false,
+        "factory_front_back_mapping": "unresolved_source_mesh_disks_symmetric"
+      },
+      "stack_interpretation": "Opposed inner-ring hip shoulder and outer-ring support face span the 4 mm bearing; the hip-to-disk screw path can close the stack. No published OD22 cylindrical seat is established."
+    },
+    {
+      "joint_label": "left_pitch",
+      "bearing_part_ref": "part:microduck:bb34e925e25e29f6",
+      "bearing_source_frame": {
+        "part_ref": "part:microduck:bb34e925e25e29f6",
+        "position": [
+          0.004000000000000007,
+          0.03849999999999999,
+          0.1025
+        ],
+        "quaternion": [
+          -0.49999999999999983,
+          -0.4999999999999999,
+          -0.4999999999999999,
+          0.4999999999999999
+        ]
+      },
+      "inner_bore_region_ref": "region:feature:microduck:bb34e925e25e29f6:dcf8d998412a",
+      "inner_ring_radial_mates": [
+        {
+          "part_ref": "part:microduck:fa9ee2f71faafb88",
+          "region_ref": "region:feature:microduck:fa9ee2f71faafb88:2ee7062c1815",
+          "diameter_mm": 16.0,
+          "center_bearing_local_mm": [
+            0.0,
+            -0.0,
+            0.975
+          ],
+          "axis_bearing_local": [
+            -0.0,
+            0.0,
+            1.0
+          ],
+          "finite_z_bearing_local_mm": [
+            -0.0,
+            1.949999
+          ]
+        },
+        {
+          "part_ref": "part:microduck:9ffe9d5bcd6bc13a",
+          "region_ref": "region:feature:microduck:9ffe9d5bcd6bc13a:4c6adb5a4bd2",
+          "diameter_mm": 16.0,
+          "center_bearing_local_mm": [
+            -0.0,
+            0.0,
+            3.5
+          ],
+          "axis_bearing_local": [
+            -0.0,
+            0.0,
+            1.0
+          ],
+          "finite_z_bearing_local_mm": [
+            2.0,
+            5.0
+          ]
+        }
+      ],
+      "inner_ring_axial_end": {
+        "bearing_region_ref": "raw-region:SRC-000034:inner_ring_end:z0",
+        "peer": {
+          "part_ref": "part:microduck:fa9ee2f71faafb88",
+          "region_ref": "region:feature:microduck:fa9ee2f71faafb88:plane-e63b5358fc46",
+          "contact_role": "hip_inner_ring_shoulder",
+          "z_bearing_local_mm": 0
+        }
+      },
+      "outer_ring_axial_end": {
+        "bearing_region_ref": "raw-region:SRC-000034:outer_ring_end:z4",
+        "peer": {
+          "part_ref": "part:microduck:c75bfc0afb35e000",
+          "region_ref": "region:feature:microduck:c75bfc0afb35e000:plane-8524d14e63e5",
+          "contact_role": "support_outer_ring_abutment",
+          "z_bearing_local_mm": 4
+        }
+      },
+      "outer_cylinder_region_ref": "region:feature:microduck:bb34e925e25e29f6:4b70f665bd37",
+      "outer_cylinder_radial_mate": null,
+      "clearance_between_servo_disk_and_hip_journal_mm": 0.05,
+      "bore_overlap_hip_mm": 1.75,
+      "bore_overlap_servo_mm": 1.8,
+      "fastener_path": {
+        "kind": "screws_through_hip_into_servo_disk",
+        "pcd_mm": 12,
+        "hip_clearance_diameter_mm": 2.4,
+        "servo_receiver_diameter_mm": 1.6,
+        "hip_region_refs": [
+          "region:feature:microduck:fa9ee2f71faafb88:2ae52bb39653",
+          "region:feature:microduck:fa9ee2f71faafb88:9e6a15bfabec",
+          "region:feature:microduck:fa9ee2f71faafb88:968274710e8e",
+          "region:feature:microduck:fa9ee2f71faafb88:40aa9fcc7543"
+        ],
+        "servo_region_refs": [
+          "region:feature:microduck:9ffe9d5bcd6bc13a:678d6de22520",
+          "region:feature:microduck:9ffe9d5bcd6bc13a:ee2340944a76",
+          "region:feature:microduck:9ffe9d5bcd6bc13a:c762f0d8139b",
+          "region:feature:microduck:9ffe9d5bcd6bc13a:f4716268e4b3"
+        ],
+        "screws_modelled": false,
+        "factory_front_back_mapping": "unresolved_source_mesh_disks_symmetric"
+      },
+      "stack_interpretation": "Opposed inner-ring hip shoulder and outer-ring support face span the 4 mm bearing; the hip-to-disk screw path can close the stack. No published OD22 cylindrical seat is established."
+    },
+    {
+      "joint_label": "right_roll",
+      "bearing_part_ref": "part:microduck:3fbf0b5c8cea4488",
+      "bearing_source_frame": {
+        "part_ref": "part:microduck:3fbf0b5c8cea4488",
+        "position": [
+          0.0225,
+          -0.0175,
+          0.1025
+        ],
+        "quaternion": [
+          0.0,
+          -0.7071067811865475,
+          0.0,
+          0.7071067811865475
+        ]
+      },
+      "inner_bore_region_ref": "region:feature:microduck:3fbf0b5c8cea4488:dcf8d998412a",
+      "inner_ring_radial_mates": [
+        {
+          "part_ref": "part:microduck:c7eeeac0a640d191",
+          "region_ref": "region:feature:microduck:c7eeeac0a640d191:0f97108977c9",
+          "diameter_mm": 16.0,
+          "center_bearing_local_mm": [
+            -0.0,
+            0.0,
+            0.975
+          ],
+          "axis_bearing_local": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "finite_z_bearing_local_mm": [
+            -0.0,
+            1.949999
+          ]
+        },
+        {
+          "part_ref": "part:microduck:087d7a46a3ce4ca3",
+          "region_ref": "region:feature:microduck:087d7a46a3ce4ca3:4c6adb5a4bd2",
+          "diameter_mm": 16.0,
+          "center_bearing_local_mm": [
+            0.0,
+            -0.0,
+            3.5
+          ],
+          "axis_bearing_local": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "finite_z_bearing_local_mm": [
+            2.0,
+            5.0
+          ]
+        }
+      ],
+      "inner_ring_axial_end": {
+        "bearing_region_ref": "raw-region:SRC-000034:inner_ring_end:z0",
+        "peer": {
+          "part_ref": "part:microduck:c7eeeac0a640d191",
+          "region_ref": "region:feature:microduck:c7eeeac0a640d191:plane-5da8ab6659b8",
+          "contact_role": "hip_inner_ring_shoulder",
+          "z_bearing_local_mm": 0
+        }
+      },
+      "outer_ring_axial_end": {
+        "bearing_region_ref": "raw-region:SRC-000034:outer_ring_end:z4",
+        "peer": {
+          "part_ref": "part:microduck:c703574f50f6a46a",
+          "region_ref": "region:feature:microduck:c703574f50f6a46a:plane-99b8b38dfeb3",
+          "contact_role": "support_outer_ring_abutment",
+          "z_bearing_local_mm": 4
+        }
+      },
+      "outer_cylinder_region_ref": "region:feature:microduck:3fbf0b5c8cea4488:4b70f665bd37",
+      "outer_cylinder_radial_mate": null,
+      "clearance_between_servo_disk_and_hip_journal_mm": 0.05,
+      "bore_overlap_hip_mm": 1.75,
+      "bore_overlap_servo_mm": 1.8,
+      "fastener_path": {
+        "kind": "screws_through_hip_into_servo_disk",
+        "pcd_mm": 12,
+        "hip_clearance_diameter_mm": 2.4,
+        "servo_receiver_diameter_mm": 1.6,
+        "hip_region_refs": [
+          "region:feature:microduck:c7eeeac0a640d191:296a39d9819c",
+          "region:feature:microduck:c7eeeac0a640d191:b1c955159fb3",
+          "region:feature:microduck:c7eeeac0a640d191:7c88d6e0ea46",
+          "region:feature:microduck:c7eeeac0a640d191:ed90b2c80473"
+        ],
+        "servo_region_refs": [
+          "region:feature:microduck:087d7a46a3ce4ca3:678d6de22520",
+          "region:feature:microduck:087d7a46a3ce4ca3:ee2340944a76",
+          "region:feature:microduck:087d7a46a3ce4ca3:c762f0d8139b",
+          "region:feature:microduck:087d7a46a3ce4ca3:f4716268e4b3"
+        ],
+        "screws_modelled": false,
+        "factory_front_back_mapping": "unresolved_source_mesh_disks_symmetric"
+      },
+      "stack_interpretation": "Opposed inner-ring hip shoulder and outer-ring support face span the 4 mm bearing; the hip-to-disk screw path can close the stack. No published OD22 cylindrical seat is established."
+    },
+    {
+      "joint_label": "right_pitch",
+      "bearing_part_ref": "part:microduck:d924e1596ffb042a",
+      "bearing_source_frame": {
+        "part_ref": "part:microduck:d924e1596ffb042a",
+        "position": [
+          0.004000000000000007,
+          -0.042499999999999996,
+          0.1025
+        ],
+        "quaternion": [
+          -0.4999999999999999,
+          -0.4999999999999999,
+          -0.4999999999999999,
+          0.49999999999999983
+        ]
+      },
+      "inner_bore_region_ref": "region:feature:microduck:d924e1596ffb042a:dcf8d998412a",
+      "inner_ring_radial_mates": [
+        {
+          "part_ref": "part:microduck:c7eeeac0a640d191",
+          "region_ref": "region:feature:microduck:c7eeeac0a640d191:2ee7062c1815",
+          "diameter_mm": 16.0,
+          "center_bearing_local_mm": [
+            -0.0,
+            -0.0,
+            3.025
+          ],
+          "axis_bearing_local": [
+            -0.0,
+            0.0,
+            -1.0
+          ],
+          "finite_z_bearing_local_mm": [
+            2.050001,
+            4.0
+          ]
+        },
+        {
+          "part_ref": "part:microduck:08c5ade0f3fd37db",
+          "region_ref": "region:feature:microduck:08c5ade0f3fd37db:4c6adb5a4bd2",
+          "diameter_mm": 16.0,
+          "center_bearing_local_mm": [
+            -0.0,
+            -0.0,
+            0.5
+          ],
+          "axis_bearing_local": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "finite_z_bearing_local_mm": [
+            -1.0,
+            2.0
+          ]
+        }
+      ],
+      "inner_ring_axial_end": {
+        "bearing_region_ref": "raw-region:SRC-000034:inner_ring_end:z4",
+        "peer": {
+          "part_ref": "part:microduck:c7eeeac0a640d191",
+          "region_ref": "region:feature:microduck:c7eeeac0a640d191:plane-e63b5358fc46",
+          "contact_role": "hip_inner_ring_shoulder",
+          "z_bearing_local_mm": 4
+        }
+      },
+      "outer_ring_axial_end": {
+        "bearing_region_ref": "raw-region:SRC-000034:outer_ring_end:z0",
+        "peer": {
+          "part_ref": "part:microduck:7e86db28af59d3cc",
+          "region_ref": "region:feature:microduck:7e86db28af59d3cc:plane-2ffd093d8c8b",
+          "contact_role": "support_outer_ring_abutment",
+          "z_bearing_local_mm": 0
+        }
+      },
+      "outer_cylinder_region_ref": "region:feature:microduck:d924e1596ffb042a:4b70f665bd37",
+      "outer_cylinder_radial_mate": null,
+      "clearance_between_servo_disk_and_hip_journal_mm": 0.05,
+      "bore_overlap_hip_mm": 1.75,
+      "bore_overlap_servo_mm": 1.8,
+      "fastener_path": {
+        "kind": "screws_through_hip_into_servo_disk",
+        "pcd_mm": 12,
+        "hip_clearance_diameter_mm": 2.4,
+        "servo_receiver_diameter_mm": 1.6,
+        "hip_region_refs": [
+          "region:feature:microduck:c7eeeac0a640d191:2ae52bb39653",
+          "region:feature:microduck:c7eeeac0a640d191:9e6a15bfabec",
+          "region:feature:microduck:c7eeeac0a640d191:968274710e8e",
+          "region:feature:microduck:c7eeeac0a640d191:40aa9fcc7543"
+        ],
+        "servo_region_refs": [
+          "region:feature:microduck:08c5ade0f3fd37db:678d6de22520",
+          "region:feature:microduck:08c5ade0f3fd37db:ee2340944a76",
+          "region:feature:microduck:08c5ade0f3fd37db:c762f0d8139b",
+          "region:feature:microduck:08c5ade0f3fd37db:f4716268e4b3"
+        ],
+        "screws_modelled": false,
+        "factory_front_back_mapping": "unresolved_source_mesh_disks_symmetric"
+      },
+      "stack_interpretation": "Opposed inner-ring hip shoulder and outer-ring support face span the 4 mm bearing; the hip-to-disk screw path can close the stack. No published OD22 cylindrical seat is established."
+    }
+  ],
+  "default_bearing_stacks": [
+    {
+      "bearing_part_ref": "part:microduck:766eaa6e4dd8b09f",
+      "location": "ankle",
+      "inner_bore_region_ref": "region:feature:microduck:766eaa6e4dd8b09f:fc832e63214c",
+      "inner_bore_mate": {
+        "part_ref": "part:microduck:638f29b46b322e64",
+        "region_ref": "region:feature:microduck:638f29b46b322e64:717b409bfac1",
+        "diameter_mm": 10.0,
+        "center_bearing_local_mm": [
+          -0.0,
+          1.2e-05,
+          1.7
+        ],
+        "axis_bearing_local": [
+          -0.0,
+          0.0,
+          1.0
+        ],
+        "finite_z_bearing_local_mm": [
+          0.199999,
+          3.200001
+        ]
+      },
+      "inner_bore_overlap_mm": 2.6,
+      "outer_cylinder_region_ref": "region:feature:microduck:766eaa6e4dd8b09f:9fde08e1192d",
+      "outer_cylinder_mate": {
+        "part_ref": "part:microduck:07e507f1e9297aa3",
+        "region_ref": "region:feature:microduck:07e507f1e9297aa3:6c93b825281d",
+        "diameter_mm": 15.0,
+        "center_bearing_local_mm": [
+          0.0,
+          2e-06,
+          1.15
+        ],
+        "axis_bearing_local": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "finite_z_bearing_local_mm": [
+          -1e-06,
+          2.3
+        ]
+      },
+      "outer_cylinder_overlap_mm": 2.0,
+      "outer_ring_axial_end": {
+        "bearing_region_ref": "raw-region:SRC-000035:outer_ring_end:z0",
+        "peer": {
+          "part_ref": "part:microduck:07e507f1e9297aa3",
+          "region_ref": "region:feature:microduck:07e507f1e9297aa3:plane-da86c790cf37",
+          "contact_role": "ankle_pocket_outer_ring_lip",
+          "z_bearing_local_mm": 0
+        },
+        "nominal_common_radial_band_mm": [
+          7,
+          7.2
+        ]
+      },
+      "servo_adjacent_disk": {
+        "part_ref": "part:microduck:7c130c8489b57c99",
+        "region_ref": "region:feature:microduck:7c130c8489b57c99:928f2c9e7baa",
+        "diameter_mm": 16.0,
+        "center_bearing_local_mm": [
+          0.0,
+          0.0,
+          4.7
+        ],
+        "axis_bearing_local": [
+          0.0,
+          -0.0,
+          -1.0
+        ],
+        "finite_z_bearing_local_mm": [
+          3.2,
+          6.2
+        ]
+      },
+      "servo_direct_bore_fit": false,
+      "servo_bore_fit_exclusion": "Servo disk OD16 versus bearing ID10; their finite cylinder walls have 0.4 mm axial gap. The leg OD10 journal is the actual bore mate.",
+      "central_leg_bore_regions": [
+        "region:feature:microduck:638f29b46b322e64:c18affb71802",
+        "region:feature:microduck:638f29b46b322e64:b388ddca3427"
+      ],
+      "mechanism": "Leg journal ID10 support inside bearing; bearing OD15 sits in ankle pocket and outer-ring end reaches its lip. Servo X+ disk and leg lie beside the journal base, not inside bearing ID10. The shaft axis is shared with ankle rotation; exact central idler screw/cap is not present in the mesh."
+    },
+    {
+      "bearing_part_ref": "part:microduck:e196235810184adf",
+      "location": "ankle",
+      "inner_bore_region_ref": "region:feature:microduck:e196235810184adf:fc832e63214c",
+      "inner_bore_mate": {
+        "part_ref": "part:microduck:7f4fefc3c6de90f1",
+        "region_ref": "region:feature:microduck:7f4fefc3c6de90f1:717b409bfac1",
+        "diameter_mm": 10.0,
+        "center_bearing_local_mm": [
+          0.0,
+          1.2e-05,
+          1.3
+        ],
+        "axis_bearing_local": [
+          -0.0,
+          0.0,
+          -1.0
+        ],
+        "finite_z_bearing_local_mm": [
+          -0.200001,
+          2.800001
+        ]
+      },
+      "inner_bore_overlap_mm": 2.6,
+      "outer_cylinder_region_ref": "region:feature:microduck:e196235810184adf:9fde08e1192d",
+      "outer_cylinder_mate": {
+        "part_ref": "part:microduck:b371ac60e2f6757b",
+        "region_ref": "region:feature:microduck:b371ac60e2f6757b:6d95551e9ded",
+        "diameter_mm": 15.0,
+        "center_bearing_local_mm": [
+          0.0,
+          2e-06,
+          1.85
+        ],
+        "axis_bearing_local": [
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "finite_z_bearing_local_mm": [
+          0.7,
+          3.000001
+        ]
+      },
+      "outer_cylinder_overlap_mm": 2.0,
+      "outer_ring_axial_end": {
+        "bearing_region_ref": "raw-region:SRC-000035:outer_ring_end:z3",
+        "peer": {
+          "part_ref": "part:microduck:b371ac60e2f6757b",
+          "region_ref": "region:feature:microduck:b371ac60e2f6757b:plane-99643cd15526",
+          "contact_role": "ankle_pocket_outer_ring_lip",
+          "z_bearing_local_mm": 3
+        },
+        "nominal_common_radial_band_mm": [
+          7,
+          7.2
+        ]
+      },
+      "servo_adjacent_disk": {
+        "part_ref": "part:microduck:0820b4025f26a004",
+        "region_ref": "region:feature:microduck:0820b4025f26a004:928f2c9e7baa",
+        "diameter_mm": 16.0,
+        "center_bearing_local_mm": [
+          0.0,
+          0.0,
+          -1.7
+        ],
+        "axis_bearing_local": [
+          0.0,
+          -0.0,
+          1.0
+        ],
+        "finite_z_bearing_local_mm": [
+          -3.2,
+          -0.2
+        ]
+      },
+      "servo_direct_bore_fit": false,
+      "servo_bore_fit_exclusion": "Servo disk OD16 versus bearing ID10; their finite cylinder walls have 0.4 mm axial gap. The leg OD10 journal is the actual bore mate.",
+      "central_leg_bore_regions": [
+        "region:feature:microduck:7f4fefc3c6de90f1:c18affb71802",
+        "region:feature:microduck:7f4fefc3c6de90f1:b388ddca3427"
+      ],
+      "mechanism": "Leg journal ID10 support inside bearing; bearing OD15 sits in ankle pocket and outer-ring end reaches its lip. Servo X+ disk and leg lie beside the journal base, not inside bearing ID10. The shaft axis is shared with ankle rotation; exact central idler screw/cap is not present in the mesh."
+    },
+    {
+      "bearing_part_ref": "part:microduck:a0775b54397eb21e",
+      "location": "head_jaw",
+      "inner_bore_region_ref": "region:feature:microduck:a0775b54397eb21e:fc832e63214c",
+      "inner_bore_candidate": {
+        "part_ref": "part:microduck:328011951ac11ee7",
+        "region_ref": "region:feature:microduck:328011951ac11ee7:ac5d07c8f7a8",
+        "diameter_mm": 10.0,
+        "center_bearing_local_mm": [
+          0.0,
+          0.2,
+          1.649999
+        ],
+        "axis_bearing_local": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "finite_z_bearing_local_mm": [
+          0.299999,
+          3.0
+        ]
+      },
+      "inner_bore_axial_overlap_mm": 2.5,
+      "outer_cylinder_region_ref": "region:feature:microduck:a0775b54397eb21e:9fde08e1192d",
+      "outer_socket_candidates": [
+        {
+          "part_ref": "part:microduck:52fdcacf474a463f",
+          "region_ref": "region:feature:microduck:52fdcacf474a463f:193add95de61",
+          "diameter_mm": 15.0,
+          "center_bearing_local_mm": [
+            -0.0,
+            0.0,
+            1.499998
+          ],
+          "axis_bearing_local": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "finite_z_bearing_local_mm": [
+            0.499998,
+            2.499999
+          ]
+        },
+        {
+          "part_ref": "part:microduck:986b5adf27910138",
+          "region_ref": "region:feature:microduck:986b5adf27910138:8939777744e8",
+          "diameter_mm": 15.0,
+          "center_bearing_local_mm": [
+            -0.0,
+            0.2,
+            1.499998
+          ],
+          "axis_bearing_local": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "finite_z_bearing_local_mm": [
+            0.499998,
+            2.499999
+          ]
+        }
+      ],
+      "source_configuration_axis_offset_jaw_and_motor_support_mm": 0.2,
+      "source_configuration_status": "Nominal ID10/OD15 mate candidates have incompatible source placements: jaw OD10 and motor-support OD15 axis are shifted 0.2 mm from bearing; jaw OD12 short step spans bearing z0 to0.3 and intrudes into the bearing bore neighborhood. Jaw z0 plane r6 to8 projects onto outer-ring end, not inner-ring end; do not publish a realized concentric fit or a valid inner-ring shoulder.",
+      "mechanism": "Jaw OD10 journal to bearing bore; bottom-head shell and motor-support partial OD15 sockets surround outer ring. No direct servo disk interface identified.",
+      "jaw_short_OD12_step_region_ref": "region:feature:microduck:328011951ac11ee7:2169e69917dc",
+      "jaw_plane_z0_outer_ring_projection_region_ref": "region:feature:microduck:328011951ac11ee7:plane-debb7a497649"
+    }
+  ],
+  "regions": {
+    "raw-region:SRC-000034:outer_ring_end:z0": {
+      "source_ref": "SRC-000034",
+      "source_sha256": "295ee68ed9766c91fe06d3a2a49d39f7c2f56cc943395d293afdeb013123435e",
+      "geometry_source_local": {
+        "type": "annular_plane",
+        "z_mm": 0,
+        "normal": [
+          0,
+          0,
+          -1
+        ],
+        "radial_range_mm": [
+          10.0,
+          10.7
+        ],
+        "area_mm2": 45.4639159
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          17596,
+          17739
+        ]
+      ],
+      "raw_triangle_count": 144,
+      "published_feature_refs": [
+        "feature:microduck:d924e1596ffb042a:plane-fb252222b539",
+        "feature:microduck:d6a148b5784955d8:plane-fb252222b539"
+      ]
+    },
+    "raw-region:SRC-000034:inner_ring_end:z0": {
+      "source_ref": "SRC-000034",
+      "source_sha256": "295ee68ed9766c91fe06d3a2a49d39f7c2f56cc943395d293afdeb013123435e",
+      "geometry_source_local": {
+        "type": "annular_plane",
+        "z_mm": 0,
+        "normal": [
+          0,
+          0,
+          -1
+        ],
+        "radial_range_mm": [
+          8.2,
+          9.0
+        ],
+        "area_mm2": 43.1734669
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          19513,
+          19656
+        ]
+      ],
+      "raw_triangle_count": 144,
+      "published_feature_refs": [
+        "feature:microduck:b364863ffde63eed:plane-61bdfcca3695",
+        "feature:microduck:7938fd9143c59ea4:plane-61bdfcca3695",
+        "feature:microduck:47a950fbb3d0e416:plane-61bdfcca3695",
+        "feature:microduck:bb34e925e25e29f6:plane-61bdfcca3695",
+        "feature:microduck:e475134639b3f7e1:plane-61bdfcca3695",
+        "feature:microduck:ea69e2c6bba10a23:plane-61bdfcca3695",
+        "feature:microduck:3fbf0b5c8cea4488:plane-61bdfcca3695"
+      ]
+    },
+    "raw-region:SRC-000034:outer_ring_end:z4": {
+      "source_ref": "SRC-000034",
+      "source_sha256": "295ee68ed9766c91fe06d3a2a49d39f7c2f56cc943395d293afdeb013123435e",
+      "geometry_source_local": {
+        "type": "annular_plane",
+        "z_mm": 4,
+        "normal": [
+          0,
+          0,
+          1
+        ],
+        "radial_range_mm": [
+          10.0,
+          10.7
+        ],
+        "area_mm2": 45.4639159
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          16980,
+          17123
+        ]
+      ],
+      "raw_triangle_count": 144,
+      "published_feature_refs": [
+        "feature:microduck:b364863ffde63eed:plane-1f85b4e53604",
+        "feature:microduck:7938fd9143c59ea4:plane-1f85b4e53604",
+        "feature:microduck:47a950fbb3d0e416:plane-1f85b4e53604",
+        "feature:microduck:bb34e925e25e29f6:plane-1f85b4e53604",
+        "feature:microduck:e475134639b3f7e1:plane-1f85b4e53604",
+        "feature:microduck:ea69e2c6bba10a23:plane-1f85b4e53604",
+        "feature:microduck:3fbf0b5c8cea4488:plane-1f85b4e53604"
+      ]
+    },
+    "raw-region:SRC-000034:inner_ring_end:z4": {
+      "source_ref": "SRC-000034",
+      "source_sha256": "295ee68ed9766c91fe06d3a2a49d39f7c2f56cc943395d293afdeb013123435e",
+      "geometry_source_local": {
+        "type": "annular_plane",
+        "z_mm": 4,
+        "normal": [
+          0,
+          0,
+          1
+        ],
+        "radial_range_mm": [
+          8.2,
+          9.0
+        ],
+        "area_mm2": 43.1734669
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          17740,
+          17883
+        ]
+      ],
+      "raw_triangle_count": 144,
+      "published_feature_refs": [
+        "feature:microduck:6b884b140f6e283c:plane-d24650d4762c",
+        "feature:microduck:55121c0b36f62219:plane-d24650d4762c",
+        "feature:microduck:d924e1596ffb042a:plane-d24650d4762c",
+        "feature:microduck:d6a148b5784955d8:plane-d24650d4762c"
+      ]
+    },
+    "raw-region:SRC-000035:outer_ring_end:z0": {
+      "source_ref": "SRC-000035",
+      "source_sha256": "e815f3483a2e7b80844f3c0938a47e53db38b12faed9b2d364414c19e4322da4",
+      "geometry_source_local": {
+        "type": "annular_plane",
+        "z_mm": 0,
+        "normal": [
+          0,
+          0,
+          -1
+        ],
+        "radial_range_mm": [
+          6.75,
+          7.2
+        ],
+        "area_mm2": 19.6963251
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          17668,
+          17811
+        ]
+      ],
+      "raw_triangle_count": 144,
+      "published_feature_refs": [
+        "feature:microduck:766eaa6e4dd8b09f:plane-b98299bbca5c",
+        "feature:microduck:a0775b54397eb21e:plane-b98299bbca5c"
+      ]
+    },
+    "raw-region:SRC-000035:inner_ring_end:z0": {
+      "source_ref": "SRC-000035",
+      "source_sha256": "e815f3483a2e7b80844f3c0938a47e53db38b12faed9b2d364414c19e4322da4",
+      "geometry_source_local": {
+        "type": "annular_plane",
+        "z_mm": 0,
+        "normal": [
+          0,
+          0,
+          -1
+        ],
+        "radial_range_mm": [
+          5.2,
+          5.75
+        ],
+        "area_mm2": 18.8962406
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          19595,
+          19738
+        ]
+      ],
+      "raw_triangle_count": 144,
+      "published_feature_refs": []
+    },
+    "raw-region:SRC-000035:outer_ring_end:z3": {
+      "source_ref": "SRC-000035",
+      "source_sha256": "e815f3483a2e7b80844f3c0938a47e53db38b12faed9b2d364414c19e4322da4",
+      "geometry_source_local": {
+        "type": "annular_plane",
+        "z_mm": 3,
+        "normal": [
+          0,
+          0,
+          1
+        ],
+        "radial_range_mm": [
+          6.75,
+          7.2
+        ],
+        "area_mm2": 19.6963251
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          17055,
+          17198
+        ]
+      ],
+      "raw_triangle_count": 144,
+      "published_feature_refs": [
+        "feature:microduck:e196235810184adf:plane-25316af4a6d2"
+      ]
+    },
+    "raw-region:SRC-000035:inner_ring_end:z3": {
+      "source_ref": "SRC-000035",
+      "source_sha256": "e815f3483a2e7b80844f3c0938a47e53db38b12faed9b2d364414c19e4322da4",
+      "geometry_source_local": {
+        "type": "annular_plane",
+        "z_mm": 3,
+        "normal": [
+          0,
+          0,
+          1
+        ],
+        "radial_range_mm": [
+          5.2,
+          5.75
+        ],
+        "area_mm2": 18.8962406
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          17812,
+          17955
+        ]
+      ],
+      "raw_triangle_count": 144,
+      "published_feature_refs": []
+    },
+    "region:feature:microduck:fa9ee2f71faafb88:0f97108977c9": {
+      "source_ref": "SRC-000019",
+      "source_sha256": "e175896932d76dc7648cf939aa39cb7b1d188b783d91745adb9a4cec65e9052c",
+      "owner_part_ref": "part:microduck:fa9ee2f71faafb88",
+      "existing_feature_ref": "feature:microduck:fa9ee2f71faafb88:0f97108977c9",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "origin_mm": [
+          17.5,
+          -17.5250005,
+          1e-07
+        ],
+        "axial_range_mm": [
+          -0.9749997,
+          0.9749997
+        ],
+        "radius_mm": 8.0
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          7294,
+          7387
+        ]
+      ]
+    },
+    "region:feature:microduck:cd6d48fccc95df41:4c6adb5a4bd2": {
+      "source_ref": "SRC-000045",
+      "source_sha256": "96238ed0d020ce0009cf1a5aa4b6926176c800840318ee65e4375be2298d2744",
+      "owner_part_ref": "part:microduck:cd6d48fccc95df41",
+      "existing_feature_ref": "feature:microduck:cd6d48fccc95df41:4c6adb5a4bd2",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "origin_mm": [
+          -12.9999998,
+          0.0,
+          0.0
+        ],
+        "axial_range_mm": [
+          -1.4999998,
+          1.4999998
+        ],
+        "radius_mm": 7.9999999
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          677,
+          820
+        ]
+      ]
+    },
+    "region:feature:microduck:fa9ee2f71faafb88:296a39d9819c": {
+      "source_ref": "SRC-000019",
+      "source_sha256": "e175896932d76dc7648cf939aa39cb7b1d188b783d91745adb9a4cec65e9052c",
+      "owner_part_ref": "part:microduck:fa9ee2f71faafb88",
+      "existing_feature_ref": "feature:microduck:fa9ee2f71faafb88:296a39d9819c",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "origin_mm": [
+          11.5,
+          -18.0250006,
+          -0.0
+        ],
+        "axial_range_mm": [
+          -1.4749998,
+          1.4749998
+        ],
+        "radius_mm": 1.2
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          11543,
+          11686
+        ]
+      ]
+    },
+    "region:feature:microduck:fa9ee2f71faafb88:b1c955159fb3": {
+      "source_ref": "SRC-000019",
+      "source_sha256": "e175896932d76dc7648cf939aa39cb7b1d188b783d91745adb9a4cec65e9052c",
+      "owner_part_ref": "part:microduck:fa9ee2f71faafb88",
+      "existing_feature_ref": "feature:microduck:fa9ee2f71faafb88:b1c955159fb3",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "origin_mm": [
+          17.5000001,
+          -18.0250006,
+          -6.0
+        ],
+        "axial_range_mm": [
+          -1.4749998,
+          1.4749998
+        ],
+        "radius_mm": 1.2000001
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          15677,
+          15820
+        ]
+      ]
+    },
+    "region:feature:microduck:fa9ee2f71faafb88:7c88d6e0ea46": {
+      "source_ref": "SRC-000019",
+      "source_sha256": "e175896932d76dc7648cf939aa39cb7b1d188b783d91745adb9a4cec65e9052c",
+      "owner_part_ref": "part:microduck:fa9ee2f71faafb88",
+      "existing_feature_ref": "feature:microduck:fa9ee2f71faafb88:7c88d6e0ea46",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "origin_mm": [
+          17.5000001,
+          -18.0250006,
+          6.0
+        ],
+        "axial_range_mm": [
+          -1.4749998,
+          1.4749998
+        ],
+        "radius_mm": 1.2000001
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          13115,
+          13258
+        ]
+      ]
+    },
+    "region:feature:microduck:fa9ee2f71faafb88:ed90b2c80473": {
+      "source_ref": "SRC-000019",
+      "source_sha256": "e175896932d76dc7648cf939aa39cb7b1d188b783d91745adb9a4cec65e9052c",
+      "owner_part_ref": "part:microduck:fa9ee2f71faafb88",
+      "existing_feature_ref": "feature:microduck:fa9ee2f71faafb88:ed90b2c80473",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "origin_mm": [
+          23.5,
+          -18.0250006,
+          -0.0
+        ],
+        "axial_range_mm": [
+          -1.4749998,
+          1.4749998
+        ],
+        "radius_mm": 1.2
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          11109,
+          11252
+        ]
+      ]
+    },
+    "region:feature:microduck:cd6d48fccc95df41:678d6de22520": {
+      "source_ref": "SRC-000045",
+      "source_sha256": "96238ed0d020ce0009cf1a5aa4b6926176c800840318ee65e4375be2298d2744",
+      "owner_part_ref": "part:microduck:cd6d48fccc95df41",
+      "existing_feature_ref": "feature:microduck:cd6d48fccc95df41:678d6de22520",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "origin_mm": [
+          -11.5,
+          -6.0,
+          -0.0
+        ],
+        "axial_range_mm": [
+          -2.9999996,
+          2.9999996
+        ],
+        "radius_mm": 0.8
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          2831,
+          2974
+        ]
+      ]
+    },
+    "region:feature:microduck:cd6d48fccc95df41:ee2340944a76": {
+      "source_ref": "SRC-000045",
+      "source_sha256": "96238ed0d020ce0009cf1a5aa4b6926176c800840318ee65e4375be2298d2744",
+      "owner_part_ref": "part:microduck:cd6d48fccc95df41",
+      "existing_feature_ref": "feature:microduck:cd6d48fccc95df41:ee2340944a76",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "origin_mm": [
+          -11.5,
+          0.0,
+          -6.0
+        ],
+        "axial_range_mm": [
+          -2.9999996,
+          2.9999996
+        ],
+        "radius_mm": 0.8
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          2072,
+          2215
+        ]
+      ]
+    },
+    "region:feature:microduck:cd6d48fccc95df41:c762f0d8139b": {
+      "source_ref": "SRC-000045",
+      "source_sha256": "96238ed0d020ce0009cf1a5aa4b6926176c800840318ee65e4375be2298d2744",
+      "owner_part_ref": "part:microduck:cd6d48fccc95df41",
+      "existing_feature_ref": "feature:microduck:cd6d48fccc95df41:c762f0d8139b",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "origin_mm": [
+          -11.5,
+          0.0,
+          6.0
+        ],
+        "axial_range_mm": [
+          -2.9999996,
+          2.9999996
+        ],
+        "radius_mm": 0.8
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          3982,
+          4125
+        ]
+      ]
+    },
+    "region:feature:microduck:cd6d48fccc95df41:f4716268e4b3": {
+      "source_ref": "SRC-000045",
+      "source_sha256": "96238ed0d020ce0009cf1a5aa4b6926176c800840318ee65e4375be2298d2744",
+      "owner_part_ref": "part:microduck:cd6d48fccc95df41",
+      "existing_feature_ref": "feature:microduck:cd6d48fccc95df41:f4716268e4b3",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "origin_mm": [
+          -11.5,
+          6.0,
+          0.0
+        ],
+        "axial_range_mm": [
+          -2.9999996,
+          2.9999996
+        ],
+        "radius_mm": 0.8
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          1712,
+          1855
+        ]
+      ]
+    },
+    "region:feature:microduck:47a950fbb3d0e416:dcf8d998412a": {
+      "source_ref": "SRC-000034",
+      "source_sha256": "295ee68ed9766c91fe06d3a2a49d39f7c2f56cc943395d293afdeb013123435e",
+      "owner_part_ref": "part:microduck:47a950fbb3d0e416",
+      "existing_feature_ref": "feature:microduck:47a950fbb3d0e416:dcf8d998412a",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "origin_mm": [
+          0.0,
+          0.0,
+          2.0
+        ],
+        "axial_range_mm": [
+          -1.8,
+          1.8
+        ],
+        "radius_mm": 7.9999999
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          17268,
+          17411
+        ]
+      ]
+    },
+    "region:feature:microduck:fa9ee2f71faafb88:plane-5da8ab6659b8": {
+      "source_ref": "SRC-000019",
+      "source_sha256": "e175896932d76dc7648cf939aa39cb7b1d188b783d91745adb9a4cec65e9052c",
+      "owner_part_ref": "part:microduck:fa9ee2f71faafb88",
+      "existing_feature_ref": "feature:microduck:fa9ee2f71faafb88:plane-5da8ab6659b8",
+      "geometry_source_local": {
+        "type": "plane",
+        "normal": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "origin_mm": [
+          17.5000005,
+          -18.5000002,
+          -0.0
+        ],
+        "area_mm2": 82.3621766
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          5864,
+          6007
+        ]
+      ]
+    },
+    "region:feature:microduck:cb253f38c818b9d8:plane-99b8b38dfeb3": {
+      "source_ref": "SRC-000013",
+      "source_sha256": "b5603a64b2d965ad75ea847767b5798130852e12a658fde7b5068fc457e2adcc",
+      "owner_part_ref": "part:microduck:cb253f38c818b9d8",
+      "existing_feature_ref": "feature:microduck:cb253f38c818b9d8:plane-99b8b38dfeb3",
+      "geometry_source_local": {
+        "type": "plane",
+        "normal": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "origin_mm": [
+          17.4999994,
+          -14.4999996,
+          -6.5554275
+        ],
+        "area_mm2": 616.2549719
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          1627,
+          2076
+        ]
+      ]
+    },
+    "region:feature:microduck:47a950fbb3d0e416:4b70f665bd37": {
+      "source_ref": "SRC-000034",
+      "source_sha256": "295ee68ed9766c91fe06d3a2a49d39f7c2f56cc943395d293afdeb013123435e",
+      "owner_part_ref": "part:microduck:47a950fbb3d0e416",
+      "existing_feature_ref": "feature:microduck:47a950fbb3d0e416:4b70f665bd37",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "origin_mm": [
+          -0.0,
+          0.0,
+          2.0
+        ],
+        "axial_range_mm": [
+          -1.7,
+          1.7
+        ],
+        "radius_mm": 11.0000001
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          19369,
+          19512
+        ]
+      ]
+    },
+    "region:feature:microduck:fa9ee2f71faafb88:2ee7062c1815": {
+      "source_ref": "SRC-000019",
+      "source_sha256": "e175896932d76dc7648cf939aa39cb7b1d188b783d91745adb9a4cec65e9052c",
+      "owner_part_ref": "part:microduck:fa9ee2f71faafb88",
+      "existing_feature_ref": "feature:microduck:fa9ee2f71faafb88:2ee7062c1815",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "origin_mm": [
+          39.4749995,
+          0.0,
+          0.0
+        ],
+        "axial_range_mm": [
+          -0.9749997,
+          0.9749997
+        ],
+        "radius_mm": 7.9999999
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          10204,
+          10295
+        ],
+        [
+          10348,
+          10349
+        ]
+      ]
+    },
+    "region:feature:microduck:9ffe9d5bcd6bc13a:4c6adb5a4bd2": {
+      "source_ref": "SRC-000045",
+      "source_sha256": "96238ed0d020ce0009cf1a5aa4b6926176c800840318ee65e4375be2298d2744",
+      "owner_part_ref": "part:microduck:9ffe9d5bcd6bc13a",
+      "existing_feature_ref": "feature:microduck:9ffe9d5bcd6bc13a:4c6adb5a4bd2",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "origin_mm": [
+          -12.9999998,
+          0.0,
+          0.0
+        ],
+        "axial_range_mm": [
+          -1.4999998,
+          1.4999998
+        ],
+        "radius_mm": 7.9999999
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          677,
+          820
+        ]
+      ]
+    },
+    "region:feature:microduck:fa9ee2f71faafb88:2ae52bb39653": {
+      "source_ref": "SRC-000019",
+      "source_sha256": "e175896932d76dc7648cf939aa39cb7b1d188b783d91745adb9a4cec65e9052c",
+      "owner_part_ref": "part:microduck:fa9ee2f71faafb88",
+      "existing_feature_ref": "feature:microduck:fa9ee2f71faafb88:2ae52bb39653",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "origin_mm": [
+          38.9750004,
+          -6.0,
+          0.0
+        ],
+        "axial_range_mm": [
+          -1.4749989,
+          1.4749989
+        ],
+        "radius_mm": 1.2
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          12913,
+          13056
+        ]
+      ]
+    },
+    "region:feature:microduck:fa9ee2f71faafb88:9e6a15bfabec": {
+      "source_ref": "SRC-000019",
+      "source_sha256": "e175896932d76dc7648cf939aa39cb7b1d188b783d91745adb9a4cec65e9052c",
+      "owner_part_ref": "part:microduck:fa9ee2f71faafb88",
+      "existing_feature_ref": "feature:microduck:fa9ee2f71faafb88:9e6a15bfabec",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "origin_mm": [
+          38.9750004,
+          -0.0,
+          -6.0
+        ],
+        "axial_range_mm": [
+          -1.4749989,
+          1.4749989
+        ],
+        "radius_mm": 1.2
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          7516,
+          7659
+        ]
+      ]
+    },
+    "region:feature:microduck:fa9ee2f71faafb88:968274710e8e": {
+      "source_ref": "SRC-000019",
+      "source_sha256": "e175896932d76dc7648cf939aa39cb7b1d188b783d91745adb9a4cec65e9052c",
+      "owner_part_ref": "part:microduck:fa9ee2f71faafb88",
+      "existing_feature_ref": "feature:microduck:fa9ee2f71faafb88:968274710e8e",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "origin_mm": [
+          38.9750004,
+          0.0,
+          6.0
+        ],
+        "axial_range_mm": [
+          -1.4749989,
+          1.4749989
+        ],
+        "radius_mm": 1.2
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          10965,
+          11108
+        ]
+      ]
+    },
+    "region:feature:microduck:fa9ee2f71faafb88:40aa9fcc7543": {
+      "source_ref": "SRC-000019",
+      "source_sha256": "e175896932d76dc7648cf939aa39cb7b1d188b783d91745adb9a4cec65e9052c",
+      "owner_part_ref": "part:microduck:fa9ee2f71faafb88",
+      "existing_feature_ref": "feature:microduck:fa9ee2f71faafb88:40aa9fcc7543",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "origin_mm": [
+          38.9750004,
+          6.0,
+          0.0
+        ],
+        "axial_range_mm": [
+          -1.4749989,
+          1.4749989
+        ],
+        "radius_mm": 1.2
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          3972,
+          4115
+        ]
+      ]
+    },
+    "region:feature:microduck:9ffe9d5bcd6bc13a:678d6de22520": {
+      "source_ref": "SRC-000045",
+      "source_sha256": "96238ed0d020ce0009cf1a5aa4b6926176c800840318ee65e4375be2298d2744",
+      "owner_part_ref": "part:microduck:9ffe9d5bcd6bc13a",
+      "existing_feature_ref": "feature:microduck:9ffe9d5bcd6bc13a:678d6de22520",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "origin_mm": [
+          -11.5,
+          -6.0,
+          -0.0
+        ],
+        "axial_range_mm": [
+          -2.9999996,
+          2.9999996
+        ],
+        "radius_mm": 0.8
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          2831,
+          2974
+        ]
+      ]
+    },
+    "region:feature:microduck:9ffe9d5bcd6bc13a:ee2340944a76": {
+      "source_ref": "SRC-000045",
+      "source_sha256": "96238ed0d020ce0009cf1a5aa4b6926176c800840318ee65e4375be2298d2744",
+      "owner_part_ref": "part:microduck:9ffe9d5bcd6bc13a",
+      "existing_feature_ref": "feature:microduck:9ffe9d5bcd6bc13a:ee2340944a76",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "origin_mm": [
+          -11.5,
+          0.0,
+          -6.0
+        ],
+        "axial_range_mm": [
+          -2.9999996,
+          2.9999996
+        ],
+        "radius_mm": 0.8
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          2072,
+          2215
+        ]
+      ]
+    },
+    "region:feature:microduck:9ffe9d5bcd6bc13a:c762f0d8139b": {
+      "source_ref": "SRC-000045",
+      "source_sha256": "96238ed0d020ce0009cf1a5aa4b6926176c800840318ee65e4375be2298d2744",
+      "owner_part_ref": "part:microduck:9ffe9d5bcd6bc13a",
+      "existing_feature_ref": "feature:microduck:9ffe9d5bcd6bc13a:c762f0d8139b",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "origin_mm": [
+          -11.5,
+          0.0,
+          6.0
+        ],
+        "axial_range_mm": [
+          -2.9999996,
+          2.9999996
+        ],
+        "radius_mm": 0.8
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          3982,
+          4125
+        ]
+      ]
+    },
+    "region:feature:microduck:9ffe9d5bcd6bc13a:f4716268e4b3": {
+      "source_ref": "SRC-000045",
+      "source_sha256": "96238ed0d020ce0009cf1a5aa4b6926176c800840318ee65e4375be2298d2744",
+      "owner_part_ref": "part:microduck:9ffe9d5bcd6bc13a",
+      "existing_feature_ref": "feature:microduck:9ffe9d5bcd6bc13a:f4716268e4b3",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "origin_mm": [
+          -11.5,
+          6.0,
+          0.0
+        ],
+        "axial_range_mm": [
+          -2.9999996,
+          2.9999996
+        ],
+        "radius_mm": 0.8
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          1712,
+          1855
+        ]
+      ]
+    },
+    "region:feature:microduck:bb34e925e25e29f6:dcf8d998412a": {
+      "source_ref": "SRC-000034",
+      "source_sha256": "295ee68ed9766c91fe06d3a2a49d39f7c2f56cc943395d293afdeb013123435e",
+      "owner_part_ref": "part:microduck:bb34e925e25e29f6",
+      "existing_feature_ref": "feature:microduck:bb34e925e25e29f6:dcf8d998412a",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "origin_mm": [
+          0.0,
+          0.0,
+          2.0
+        ],
+        "axial_range_mm": [
+          -1.8,
+          1.8
+        ],
+        "radius_mm": 7.9999999
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          17268,
+          17411
+        ]
+      ]
+    },
+    "region:feature:microduck:fa9ee2f71faafb88:plane-e63b5358fc46": {
+      "source_ref": "SRC-000019",
+      "source_sha256": "e175896932d76dc7648cf939aa39cb7b1d188b783d91745adb9a4cec65e9052c",
+      "owner_part_ref": "part:microduck:fa9ee2f71faafb88",
+      "existing_feature_ref": "feature:microduck:fa9ee2f71faafb88:plane-e63b5358fc46",
+      "geometry_source_local": {
+        "type": "plane",
+        "normal": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "origin_mm": [
+          38.4999998,
+          0.0,
+          0.0
+        ],
+        "area_mm2": 82.3621712
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          8840,
+          8983
+        ]
+      ]
+    },
+    "region:feature:microduck:c75bfc0afb35e000:plane-8524d14e63e5": {
+      "source_ref": "SRC-000044",
+      "source_sha256": "231b3e5f1e24d146d735dc158cbcfec0c95a0d0ca8c500f61f04d15d0b665652",
+      "owner_part_ref": "part:microduck:c75bfc0afb35e000",
+      "geometry_source_local": {
+        "type": "plane",
+        "normal": [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        "origin_mm": [
+          42.5000004,
+          2.9808763,
+          26.5356213
+        ],
+        "area_mm2": 747.7880721
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          632,
+          1571
+        ]
+      ],
+      "existing_feature_ref": "feature:microduck:c75bfc0afb35e000:plane-8524d14e63e5"
+    },
+    "region:feature:microduck:bb34e925e25e29f6:4b70f665bd37": {
+      "source_ref": "SRC-000034",
+      "source_sha256": "295ee68ed9766c91fe06d3a2a49d39f7c2f56cc943395d293afdeb013123435e",
+      "owner_part_ref": "part:microduck:bb34e925e25e29f6",
+      "existing_feature_ref": "feature:microduck:bb34e925e25e29f6:4b70f665bd37",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "origin_mm": [
+          -0.0,
+          0.0,
+          2.0
+        ],
+        "axial_range_mm": [
+          -1.7,
+          1.7
+        ],
+        "radius_mm": 11.0000001
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          19369,
+          19512
+        ]
+      ]
+    },
+    "region:feature:microduck:c7eeeac0a640d191:0f97108977c9": {
+      "source_ref": "SRC-000019",
+      "source_sha256": "e175896932d76dc7648cf939aa39cb7b1d188b783d91745adb9a4cec65e9052c",
+      "owner_part_ref": "part:microduck:c7eeeac0a640d191",
+      "existing_feature_ref": "feature:microduck:c7eeeac0a640d191:0f97108977c9",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "origin_mm": [
+          17.5,
+          -17.5250005,
+          1e-07
+        ],
+        "axial_range_mm": [
+          -0.9749997,
+          0.9749997
+        ],
+        "radius_mm": 8.0
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          7294,
+          7387
+        ]
+      ]
+    },
+    "region:feature:microduck:087d7a46a3ce4ca3:4c6adb5a4bd2": {
+      "source_ref": "SRC-000045",
+      "source_sha256": "96238ed0d020ce0009cf1a5aa4b6926176c800840318ee65e4375be2298d2744",
+      "owner_part_ref": "part:microduck:087d7a46a3ce4ca3",
+      "existing_feature_ref": "feature:microduck:087d7a46a3ce4ca3:4c6adb5a4bd2",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "origin_mm": [
+          -12.9999998,
+          0.0,
+          0.0
+        ],
+        "axial_range_mm": [
+          -1.4999998,
+          1.4999998
+        ],
+        "radius_mm": 7.9999999
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          677,
+          820
+        ]
+      ]
+    },
+    "region:feature:microduck:c7eeeac0a640d191:296a39d9819c": {
+      "source_ref": "SRC-000019",
+      "source_sha256": "e175896932d76dc7648cf939aa39cb7b1d188b783d91745adb9a4cec65e9052c",
+      "owner_part_ref": "part:microduck:c7eeeac0a640d191",
+      "existing_feature_ref": "feature:microduck:c7eeeac0a640d191:296a39d9819c",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "origin_mm": [
+          11.5,
+          -18.0250006,
+          -0.0
+        ],
+        "axial_range_mm": [
+          -1.4749998,
+          1.4749998
+        ],
+        "radius_mm": 1.2
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          11543,
+          11686
+        ]
+      ]
+    },
+    "region:feature:microduck:c7eeeac0a640d191:b1c955159fb3": {
+      "source_ref": "SRC-000019",
+      "source_sha256": "e175896932d76dc7648cf939aa39cb7b1d188b783d91745adb9a4cec65e9052c",
+      "owner_part_ref": "part:microduck:c7eeeac0a640d191",
+      "existing_feature_ref": "feature:microduck:c7eeeac0a640d191:b1c955159fb3",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "origin_mm": [
+          17.5000001,
+          -18.0250006,
+          -6.0
+        ],
+        "axial_range_mm": [
+          -1.4749998,
+          1.4749998
+        ],
+        "radius_mm": 1.2000001
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          15677,
+          15820
+        ]
+      ]
+    },
+    "region:feature:microduck:c7eeeac0a640d191:7c88d6e0ea46": {
+      "source_ref": "SRC-000019",
+      "source_sha256": "e175896932d76dc7648cf939aa39cb7b1d188b783d91745adb9a4cec65e9052c",
+      "owner_part_ref": "part:microduck:c7eeeac0a640d191",
+      "existing_feature_ref": "feature:microduck:c7eeeac0a640d191:7c88d6e0ea46",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "origin_mm": [
+          17.5000001,
+          -18.0250006,
+          6.0
+        ],
+        "axial_range_mm": [
+          -1.4749998,
+          1.4749998
+        ],
+        "radius_mm": 1.2000001
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          13115,
+          13258
+        ]
+      ]
+    },
+    "region:feature:microduck:c7eeeac0a640d191:ed90b2c80473": {
+      "source_ref": "SRC-000019",
+      "source_sha256": "e175896932d76dc7648cf939aa39cb7b1d188b783d91745adb9a4cec65e9052c",
+      "owner_part_ref": "part:microduck:c7eeeac0a640d191",
+      "existing_feature_ref": "feature:microduck:c7eeeac0a640d191:ed90b2c80473",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "origin_mm": [
+          23.5,
+          -18.0250006,
+          -0.0
+        ],
+        "axial_range_mm": [
+          -1.4749998,
+          1.4749998
+        ],
+        "radius_mm": 1.2
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          11109,
+          11252
+        ]
+      ]
+    },
+    "region:feature:microduck:087d7a46a3ce4ca3:678d6de22520": {
+      "source_ref": "SRC-000045",
+      "source_sha256": "96238ed0d020ce0009cf1a5aa4b6926176c800840318ee65e4375be2298d2744",
+      "owner_part_ref": "part:microduck:087d7a46a3ce4ca3",
+      "existing_feature_ref": "feature:microduck:087d7a46a3ce4ca3:678d6de22520",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "origin_mm": [
+          -11.5,
+          -6.0,
+          -0.0
+        ],
+        "axial_range_mm": [
+          -2.9999996,
+          2.9999996
+        ],
+        "radius_mm": 0.8
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          2831,
+          2974
+        ]
+      ]
+    },
+    "region:feature:microduck:087d7a46a3ce4ca3:ee2340944a76": {
+      "source_ref": "SRC-000045",
+      "source_sha256": "96238ed0d020ce0009cf1a5aa4b6926176c800840318ee65e4375be2298d2744",
+      "owner_part_ref": "part:microduck:087d7a46a3ce4ca3",
+      "existing_feature_ref": "feature:microduck:087d7a46a3ce4ca3:ee2340944a76",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "origin_mm": [
+          -11.5,
+          0.0,
+          -6.0
+        ],
+        "axial_range_mm": [
+          -2.9999996,
+          2.9999996
+        ],
+        "radius_mm": 0.8
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          2072,
+          2215
+        ]
+      ]
+    },
+    "region:feature:microduck:087d7a46a3ce4ca3:c762f0d8139b": {
+      "source_ref": "SRC-000045",
+      "source_sha256": "96238ed0d020ce0009cf1a5aa4b6926176c800840318ee65e4375be2298d2744",
+      "owner_part_ref": "part:microduck:087d7a46a3ce4ca3",
+      "existing_feature_ref": "feature:microduck:087d7a46a3ce4ca3:c762f0d8139b",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "origin_mm": [
+          -11.5,
+          0.0,
+          6.0
+        ],
+        "axial_range_mm": [
+          -2.9999996,
+          2.9999996
+        ],
+        "radius_mm": 0.8
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          3982,
+          4125
+        ]
+      ]
+    },
+    "region:feature:microduck:087d7a46a3ce4ca3:f4716268e4b3": {
+      "source_ref": "SRC-000045",
+      "source_sha256": "96238ed0d020ce0009cf1a5aa4b6926176c800840318ee65e4375be2298d2744",
+      "owner_part_ref": "part:microduck:087d7a46a3ce4ca3",
+      "existing_feature_ref": "feature:microduck:087d7a46a3ce4ca3:f4716268e4b3",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "origin_mm": [
+          -11.5,
+          6.0,
+          0.0
+        ],
+        "axial_range_mm": [
+          -2.9999996,
+          2.9999996
+        ],
+        "radius_mm": 0.8
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          1712,
+          1855
+        ]
+      ]
+    },
+    "region:feature:microduck:3fbf0b5c8cea4488:dcf8d998412a": {
+      "source_ref": "SRC-000034",
+      "source_sha256": "295ee68ed9766c91fe06d3a2a49d39f7c2f56cc943395d293afdeb013123435e",
+      "owner_part_ref": "part:microduck:3fbf0b5c8cea4488",
+      "existing_feature_ref": "feature:microduck:3fbf0b5c8cea4488:dcf8d998412a",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "origin_mm": [
+          0.0,
+          0.0,
+          2.0
+        ],
+        "axial_range_mm": [
+          -1.8,
+          1.8
+        ],
+        "radius_mm": 7.9999999
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          17268,
+          17411
+        ]
+      ]
+    },
+    "region:feature:microduck:c7eeeac0a640d191:plane-5da8ab6659b8": {
+      "source_ref": "SRC-000019",
+      "source_sha256": "e175896932d76dc7648cf939aa39cb7b1d188b783d91745adb9a4cec65e9052c",
+      "owner_part_ref": "part:microduck:c7eeeac0a640d191",
+      "existing_feature_ref": "feature:microduck:c7eeeac0a640d191:plane-5da8ab6659b8",
+      "geometry_source_local": {
+        "type": "plane",
+        "normal": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "origin_mm": [
+          17.5000005,
+          -18.5000002,
+          -0.0
+        ],
+        "area_mm2": 82.3621766
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          5864,
+          6007
+        ]
+      ]
+    },
+    "region:feature:microduck:c703574f50f6a46a:plane-99b8b38dfeb3": {
+      "source_ref": "SRC-000013",
+      "source_sha256": "b5603a64b2d965ad75ea847767b5798130852e12a658fde7b5068fc457e2adcc",
+      "owner_part_ref": "part:microduck:c703574f50f6a46a",
+      "existing_feature_ref": "feature:microduck:c703574f50f6a46a:plane-99b8b38dfeb3",
+      "geometry_source_local": {
+        "type": "plane",
+        "normal": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "origin_mm": [
+          17.4999994,
+          -14.4999996,
+          -6.5554275
+        ],
+        "area_mm2": 616.2549719
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          1627,
+          2076
+        ]
+      ]
+    },
+    "region:feature:microduck:3fbf0b5c8cea4488:4b70f665bd37": {
+      "source_ref": "SRC-000034",
+      "source_sha256": "295ee68ed9766c91fe06d3a2a49d39f7c2f56cc943395d293afdeb013123435e",
+      "owner_part_ref": "part:microduck:3fbf0b5c8cea4488",
+      "existing_feature_ref": "feature:microduck:3fbf0b5c8cea4488:4b70f665bd37",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "origin_mm": [
+          -0.0,
+          0.0,
+          2.0
+        ],
+        "axial_range_mm": [
+          -1.7,
+          1.7
+        ],
+        "radius_mm": 11.0000001
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          19369,
+          19512
+        ]
+      ]
+    },
+    "region:feature:microduck:c7eeeac0a640d191:2ee7062c1815": {
+      "source_ref": "SRC-000019",
+      "source_sha256": "e175896932d76dc7648cf939aa39cb7b1d188b783d91745adb9a4cec65e9052c",
+      "owner_part_ref": "part:microduck:c7eeeac0a640d191",
+      "existing_feature_ref": "feature:microduck:c7eeeac0a640d191:2ee7062c1815",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "origin_mm": [
+          39.4749995,
+          0.0,
+          0.0
+        ],
+        "axial_range_mm": [
+          -0.9749997,
+          0.9749997
+        ],
+        "radius_mm": 7.9999999
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          10204,
+          10295
+        ],
+        [
+          10348,
+          10349
+        ]
+      ]
+    },
+    "region:feature:microduck:08c5ade0f3fd37db:4c6adb5a4bd2": {
+      "source_ref": "SRC-000045",
+      "source_sha256": "96238ed0d020ce0009cf1a5aa4b6926176c800840318ee65e4375be2298d2744",
+      "owner_part_ref": "part:microduck:08c5ade0f3fd37db",
+      "existing_feature_ref": "feature:microduck:08c5ade0f3fd37db:4c6adb5a4bd2",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "origin_mm": [
+          -12.9999998,
+          0.0,
+          0.0
+        ],
+        "axial_range_mm": [
+          -1.4999998,
+          1.4999998
+        ],
+        "radius_mm": 7.9999999
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          677,
+          820
+        ]
+      ]
+    },
+    "region:feature:microduck:c7eeeac0a640d191:2ae52bb39653": {
+      "source_ref": "SRC-000019",
+      "source_sha256": "e175896932d76dc7648cf939aa39cb7b1d188b783d91745adb9a4cec65e9052c",
+      "owner_part_ref": "part:microduck:c7eeeac0a640d191",
+      "existing_feature_ref": "feature:microduck:c7eeeac0a640d191:2ae52bb39653",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "origin_mm": [
+          38.9750004,
+          -6.0,
+          0.0
+        ],
+        "axial_range_mm": [
+          -1.4749989,
+          1.4749989
+        ],
+        "radius_mm": 1.2
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          12913,
+          13056
+        ]
+      ]
+    },
+    "region:feature:microduck:c7eeeac0a640d191:9e6a15bfabec": {
+      "source_ref": "SRC-000019",
+      "source_sha256": "e175896932d76dc7648cf939aa39cb7b1d188b783d91745adb9a4cec65e9052c",
+      "owner_part_ref": "part:microduck:c7eeeac0a640d191",
+      "existing_feature_ref": "feature:microduck:c7eeeac0a640d191:9e6a15bfabec",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "origin_mm": [
+          38.9750004,
+          -0.0,
+          -6.0
+        ],
+        "axial_range_mm": [
+          -1.4749989,
+          1.4749989
+        ],
+        "radius_mm": 1.2
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          7516,
+          7659
+        ]
+      ]
+    },
+    "region:feature:microduck:c7eeeac0a640d191:968274710e8e": {
+      "source_ref": "SRC-000019",
+      "source_sha256": "e175896932d76dc7648cf939aa39cb7b1d188b783d91745adb9a4cec65e9052c",
+      "owner_part_ref": "part:microduck:c7eeeac0a640d191",
+      "existing_feature_ref": "feature:microduck:c7eeeac0a640d191:968274710e8e",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "origin_mm": [
+          38.9750004,
+          0.0,
+          6.0
+        ],
+        "axial_range_mm": [
+          -1.4749989,
+          1.4749989
+        ],
+        "radius_mm": 1.2
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          10965,
+          11108
+        ]
+      ]
+    },
+    "region:feature:microduck:c7eeeac0a640d191:40aa9fcc7543": {
+      "source_ref": "SRC-000019",
+      "source_sha256": "e175896932d76dc7648cf939aa39cb7b1d188b783d91745adb9a4cec65e9052c",
+      "owner_part_ref": "part:microduck:c7eeeac0a640d191",
+      "existing_feature_ref": "feature:microduck:c7eeeac0a640d191:40aa9fcc7543",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "origin_mm": [
+          38.9750004,
+          6.0,
+          0.0
+        ],
+        "axial_range_mm": [
+          -1.4749989,
+          1.4749989
+        ],
+        "radius_mm": 1.2
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          3972,
+          4115
+        ]
+      ]
+    },
+    "region:feature:microduck:08c5ade0f3fd37db:678d6de22520": {
+      "source_ref": "SRC-000045",
+      "source_sha256": "96238ed0d020ce0009cf1a5aa4b6926176c800840318ee65e4375be2298d2744",
+      "owner_part_ref": "part:microduck:08c5ade0f3fd37db",
+      "existing_feature_ref": "feature:microduck:08c5ade0f3fd37db:678d6de22520",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "origin_mm": [
+          -11.5,
+          -6.0,
+          -0.0
+        ],
+        "axial_range_mm": [
+          -2.9999996,
+          2.9999996
+        ],
+        "radius_mm": 0.8
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          2831,
+          2974
+        ]
+      ]
+    },
+    "region:feature:microduck:08c5ade0f3fd37db:ee2340944a76": {
+      "source_ref": "SRC-000045",
+      "source_sha256": "96238ed0d020ce0009cf1a5aa4b6926176c800840318ee65e4375be2298d2744",
+      "owner_part_ref": "part:microduck:08c5ade0f3fd37db",
+      "existing_feature_ref": "feature:microduck:08c5ade0f3fd37db:ee2340944a76",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "origin_mm": [
+          -11.5,
+          0.0,
+          -6.0
+        ],
+        "axial_range_mm": [
+          -2.9999996,
+          2.9999996
+        ],
+        "radius_mm": 0.8
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          2072,
+          2215
+        ]
+      ]
+    },
+    "region:feature:microduck:08c5ade0f3fd37db:c762f0d8139b": {
+      "source_ref": "SRC-000045",
+      "source_sha256": "96238ed0d020ce0009cf1a5aa4b6926176c800840318ee65e4375be2298d2744",
+      "owner_part_ref": "part:microduck:08c5ade0f3fd37db",
+      "existing_feature_ref": "feature:microduck:08c5ade0f3fd37db:c762f0d8139b",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "origin_mm": [
+          -11.5,
+          0.0,
+          6.0
+        ],
+        "axial_range_mm": [
+          -2.9999996,
+          2.9999996
+        ],
+        "radius_mm": 0.8
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          3982,
+          4125
+        ]
+      ]
+    },
+    "region:feature:microduck:08c5ade0f3fd37db:f4716268e4b3": {
+      "source_ref": "SRC-000045",
+      "source_sha256": "96238ed0d020ce0009cf1a5aa4b6926176c800840318ee65e4375be2298d2744",
+      "owner_part_ref": "part:microduck:08c5ade0f3fd37db",
+      "existing_feature_ref": "feature:microduck:08c5ade0f3fd37db:f4716268e4b3",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "origin_mm": [
+          -11.5,
+          6.0,
+          0.0
+        ],
+        "axial_range_mm": [
+          -2.9999996,
+          2.9999996
+        ],
+        "radius_mm": 0.8
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          1712,
+          1855
+        ]
+      ]
+    },
+    "region:feature:microduck:d924e1596ffb042a:dcf8d998412a": {
+      "source_ref": "SRC-000034",
+      "source_sha256": "295ee68ed9766c91fe06d3a2a49d39f7c2f56cc943395d293afdeb013123435e",
+      "owner_part_ref": "part:microduck:d924e1596ffb042a",
+      "existing_feature_ref": "feature:microduck:d924e1596ffb042a:dcf8d998412a",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "origin_mm": [
+          0.0,
+          0.0,
+          2.0
+        ],
+        "axial_range_mm": [
+          -1.8,
+          1.8
+        ],
+        "radius_mm": 7.9999999
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          17268,
+          17411
+        ]
+      ]
+    },
+    "region:feature:microduck:c7eeeac0a640d191:plane-e63b5358fc46": {
+      "source_ref": "SRC-000019",
+      "source_sha256": "e175896932d76dc7648cf939aa39cb7b1d188b783d91745adb9a4cec65e9052c",
+      "owner_part_ref": "part:microduck:c7eeeac0a640d191",
+      "existing_feature_ref": "feature:microduck:c7eeeac0a640d191:plane-e63b5358fc46",
+      "geometry_source_local": {
+        "type": "plane",
+        "normal": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "origin_mm": [
+          38.4999998,
+          0.0,
+          0.0
+        ],
+        "area_mm2": 82.3621712
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          8840,
+          8983
+        ]
+      ]
+    },
+    "region:feature:microduck:7e86db28af59d3cc:plane-2ffd093d8c8b": {
+      "source_ref": "SRC-000044",
+      "source_sha256": "231b3e5f1e24d146d735dc158cbcfec0c95a0d0ca8c500f61f04d15d0b665652",
+      "owner_part_ref": "part:microduck:7e86db28af59d3cc",
+      "geometry_source_local": {
+        "type": "plane",
+        "normal": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "origin_mm": [
+          43.4999987,
+          2.9808763,
+          26.5356213
+        ],
+        "area_mm2": 747.7880721
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          1664,
+          2603
+        ]
+      ],
+      "existing_feature_ref": "feature:microduck:7e86db28af59d3cc:plane-2ffd093d8c8b"
+    },
+    "region:feature:microduck:d924e1596ffb042a:4b70f665bd37": {
+      "source_ref": "SRC-000034",
+      "source_sha256": "295ee68ed9766c91fe06d3a2a49d39f7c2f56cc943395d293afdeb013123435e",
+      "owner_part_ref": "part:microduck:d924e1596ffb042a",
+      "existing_feature_ref": "feature:microduck:d924e1596ffb042a:4b70f665bd37",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "origin_mm": [
+          -0.0,
+          0.0,
+          2.0
+        ],
+        "axial_range_mm": [
+          -1.7,
+          1.7
+        ],
+        "radius_mm": 11.0000001
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          19369,
+          19512
+        ]
+      ]
+    },
+    "region:feature:microduck:766eaa6e4dd8b09f:fc832e63214c": {
+      "source_ref": "SRC-000035",
+      "source_sha256": "e815f3483a2e7b80844f3c0938a47e53db38b12faed9b2d364414c19e4322da4",
+      "owner_part_ref": "part:microduck:766eaa6e4dd8b09f",
+      "existing_feature_ref": "feature:microduck:766eaa6e4dd8b09f:fc832e63214c",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "origin_mm": [
+          -0.0,
+          0.0,
+          1.4999999
+        ],
+        "axial_range_mm": [
+          -1.3,
+          1.3
+        ],
+        "radius_mm": 5.0
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          17343,
+          17486
+        ]
+      ]
+    },
+    "region:feature:microduck:638f29b46b322e64:717b409bfac1": {
+      "source_ref": "SRC-000023",
+      "source_sha256": "9a91cc1ae31ecd9e0c1ba93f3bb2ad8a12e29bff24ec27d1ac66c0c3037d9fcf",
+      "owner_part_ref": "part:microduck:638f29b46b322e64",
+      "existing_feature_ref": "feature:microduck:638f29b46b322e64:717b409bfac1",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "origin_mm": [
+          34.0,
+          22.0000001,
+          -6.2229124
+        ],
+        "axial_range_mm": [
+          -1.5000012,
+          1.5000012
+        ],
+        "radius_mm": 4.9999999
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          8013,
+          8156
+        ]
+      ]
+    },
+    "region:feature:microduck:766eaa6e4dd8b09f:9fde08e1192d": {
+      "source_ref": "SRC-000035",
+      "source_sha256": "e815f3483a2e7b80844f3c0938a47e53db38b12faed9b2d364414c19e4322da4",
+      "owner_part_ref": "part:microduck:766eaa6e4dd8b09f",
+      "existing_feature_ref": "feature:microduck:766eaa6e4dd8b09f:9fde08e1192d",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "origin_mm": [
+          -0.0,
+          0.0,
+          1.5
+        ],
+        "axial_range_mm": [
+          -1.2,
+          1.2
+        ],
+        "radius_mm": 7.4999999
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          19451,
+          19594
+        ]
+      ]
+    },
+    "region:feature:microduck:07e507f1e9297aa3:6c93b825281d": {
+      "source_ref": "SRC-000010",
+      "source_sha256": "2ec1bd89205b407efebaa9a8898ad9fea741389d87b80ecc5c96b21d1668119e",
+      "owner_part_ref": "part:microduck:07e507f1e9297aa3",
+      "existing_feature_ref": "feature:microduck:07e507f1e9297aa3:6c93b825281d",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "origin_mm": [
+          33.6499996,
+          22.0,
+          -6.2229124
+        ],
+        "axial_range_mm": [
+          -1.1500008,
+          1.1500008
+        ],
+        "radius_mm": 7.5
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          4789,
+          4932
+        ]
+      ]
+    },
+    "region:feature:microduck:07e507f1e9297aa3:plane-da86c790cf37": {
+      "source_ref": "SRC-000010",
+      "source_sha256": "2ec1bd89205b407efebaa9a8898ad9fea741389d87b80ecc5c96b21d1668119e",
+      "owner_part_ref": "part:microduck:07e507f1e9297aa3",
+      "existing_feature_ref": "feature:microduck:07e507f1e9297aa3:plane-da86c790cf37",
+      "geometry_source_local": {
+        "type": "plane",
+        "normal": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "origin_mm": [
+          32.4999988,
+          21.9999996,
+          -6.2229128
+        ],
+        "area_mm2": 22.7476475
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          4501,
+          4644
+        ]
+      ]
+    },
+    "region:feature:microduck:7c130c8489b57c99:928f2c9e7baa": {
+      "source_ref": "SRC-000045",
+      "source_sha256": "96238ed0d020ce0009cf1a5aa4b6926176c800840318ee65e4375be2298d2744",
+      "owner_part_ref": "part:microduck:7c130c8489b57c99",
+      "existing_feature_ref": "feature:microduck:7c130c8489b57c99:928f2c9e7baa",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "origin_mm": [
+          12.9999998,
+          -0.0,
+          0.0
+        ],
+        "axial_range_mm": [
+          -1.4999998,
+          1.4999998
+        ],
+        "radius_mm": 7.9999999
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          574,
+          667
+        ]
+      ]
+    },
+    "region:feature:microduck:638f29b46b322e64:c18affb71802": {
+      "source_ref": "SRC-000023",
+      "source_sha256": "9a91cc1ae31ecd9e0c1ba93f3bb2ad8a12e29bff24ec27d1ac66c0c3037d9fcf",
+      "owner_part_ref": "part:microduck:638f29b46b322e64",
+      "existing_feature_ref": "feature:microduck:638f29b46b322e64:c18affb71802",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "origin_mm": [
+          34.2499986,
+          22.0,
+          -6.2229123
+        ],
+        "axial_range_mm": [
+          -1.7499998,
+          1.7499998
+        ],
+        "radius_mm": 2.7499999
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          8665,
+          8808
+        ]
+      ]
+    },
+    "region:feature:microduck:638f29b46b322e64:b388ddca3427": {
+      "source_ref": "SRC-000023",
+      "source_sha256": "9a91cc1ae31ecd9e0c1ba93f3bb2ad8a12e29bff24ec27d1ac66c0c3037d9fcf",
+      "owner_part_ref": "part:microduck:638f29b46b322e64",
+      "existing_feature_ref": "feature:microduck:638f29b46b322e64:b388ddca3427",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "origin_mm": [
+          38.1499995,
+          22.0,
+          -6.2229123
+        ],
+        "axial_range_mm": [
+          -2.150001,
+          2.150001
+        ],
+        "radius_mm": 1.35
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          5722,
+          5865
+        ]
+      ]
+    },
+    "region:feature:microduck:e196235810184adf:fc832e63214c": {
+      "source_ref": "SRC-000035",
+      "source_sha256": "e815f3483a2e7b80844f3c0938a47e53db38b12faed9b2d364414c19e4322da4",
+      "owner_part_ref": "part:microduck:e196235810184adf",
+      "existing_feature_ref": "feature:microduck:e196235810184adf:fc832e63214c",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "origin_mm": [
+          -0.0,
+          0.0,
+          1.4999999
+        ],
+        "axial_range_mm": [
+          -1.3,
+          1.3
+        ],
+        "radius_mm": 5.0
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          17343,
+          17486
+        ]
+      ]
+    },
+    "region:feature:microduck:7f4fefc3c6de90f1:717b409bfac1": {
+      "source_ref": "SRC-000023",
+      "source_sha256": "9a91cc1ae31ecd9e0c1ba93f3bb2ad8a12e29bff24ec27d1ac66c0c3037d9fcf",
+      "owner_part_ref": "part:microduck:7f4fefc3c6de90f1",
+      "existing_feature_ref": "feature:microduck:7f4fefc3c6de90f1:717b409bfac1",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "origin_mm": [
+          34.0,
+          22.0000001,
+          -6.2229124
+        ],
+        "axial_range_mm": [
+          -1.5000012,
+          1.5000012
+        ],
+        "radius_mm": 4.9999999
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          8013,
+          8156
+        ]
+      ]
+    },
+    "region:feature:microduck:e196235810184adf:9fde08e1192d": {
+      "source_ref": "SRC-000035",
+      "source_sha256": "e815f3483a2e7b80844f3c0938a47e53db38b12faed9b2d364414c19e4322da4",
+      "owner_part_ref": "part:microduck:e196235810184adf",
+      "existing_feature_ref": "feature:microduck:e196235810184adf:9fde08e1192d",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "origin_mm": [
+          -0.0,
+          0.0,
+          1.5
+        ],
+        "axial_range_mm": [
+          -1.2,
+          1.2
+        ],
+        "radius_mm": 7.4999999
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          19451,
+          19594
+        ]
+      ]
+    },
+    "region:feature:microduck:b371ac60e2f6757b:6d95551e9ded": {
+      "source_ref": "SRC-000011",
+      "source_sha256": "f83f388ae00787415e76b8ecaab769f08f25b8c4e90c1937ff0fc4d68d81722e",
+      "owner_part_ref": "part:microduck:b371ac60e2f6757b",
+      "existing_feature_ref": "feature:microduck:b371ac60e2f6757b:6d95551e9ded",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "origin_mm": [
+          -33.6499996,
+          22.0,
+          -6.2229124
+        ],
+        "axial_range_mm": [
+          -1.1500008,
+          1.1500008
+        ],
+        "radius_mm": 7.5
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          4458,
+          4601
+        ]
+      ]
+    },
+    "region:feature:microduck:b371ac60e2f6757b:plane-99643cd15526": {
+      "source_ref": "SRC-000011",
+      "source_sha256": "f83f388ae00787415e76b8ecaab769f08f25b8c4e90c1937ff0fc4d68d81722e",
+      "owner_part_ref": "part:microduck:b371ac60e2f6757b",
+      "existing_feature_ref": "feature:microduck:b371ac60e2f6757b:plane-99643cd15526",
+      "geometry_source_local": {
+        "type": "plane",
+        "normal": [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        "origin_mm": [
+          -32.4999988,
+          21.9999996,
+          -6.2229128
+        ],
+        "area_mm2": 22.7476475
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          4312,
+          4455
+        ]
+      ]
+    },
+    "region:feature:microduck:0820b4025f26a004:928f2c9e7baa": {
+      "source_ref": "SRC-000045",
+      "source_sha256": "96238ed0d020ce0009cf1a5aa4b6926176c800840318ee65e4375be2298d2744",
+      "owner_part_ref": "part:microduck:0820b4025f26a004",
+      "existing_feature_ref": "feature:microduck:0820b4025f26a004:928f2c9e7baa",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "origin_mm": [
+          12.9999998,
+          -0.0,
+          0.0
+        ],
+        "axial_range_mm": [
+          -1.4999998,
+          1.4999998
+        ],
+        "radius_mm": 7.9999999
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          574,
+          667
+        ]
+      ]
+    },
+    "region:feature:microduck:7f4fefc3c6de90f1:c18affb71802": {
+      "source_ref": "SRC-000023",
+      "source_sha256": "9a91cc1ae31ecd9e0c1ba93f3bb2ad8a12e29bff24ec27d1ac66c0c3037d9fcf",
+      "owner_part_ref": "part:microduck:7f4fefc3c6de90f1",
+      "existing_feature_ref": "feature:microduck:7f4fefc3c6de90f1:c18affb71802",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "origin_mm": [
+          34.2499986,
+          22.0,
+          -6.2229123
+        ],
+        "axial_range_mm": [
+          -1.7499998,
+          1.7499998
+        ],
+        "radius_mm": 2.7499999
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          8665,
+          8808
+        ]
+      ]
+    },
+    "region:feature:microduck:7f4fefc3c6de90f1:b388ddca3427": {
+      "source_ref": "SRC-000023",
+      "source_sha256": "9a91cc1ae31ecd9e0c1ba93f3bb2ad8a12e29bff24ec27d1ac66c0c3037d9fcf",
+      "owner_part_ref": "part:microduck:7f4fefc3c6de90f1",
+      "existing_feature_ref": "feature:microduck:7f4fefc3c6de90f1:b388ddca3427",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "origin_mm": [
+          38.1499995,
+          22.0,
+          -6.2229123
+        ],
+        "axial_range_mm": [
+          -2.150001,
+          2.150001
+        ],
+        "radius_mm": 1.35
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          5722,
+          5865
+        ]
+      ]
+    },
+    "region:feature:microduck:a0775b54397eb21e:fc832e63214c": {
+      "source_ref": "SRC-000035",
+      "source_sha256": "e815f3483a2e7b80844f3c0938a47e53db38b12faed9b2d364414c19e4322da4",
+      "owner_part_ref": "part:microduck:a0775b54397eb21e",
+      "existing_feature_ref": "feature:microduck:a0775b54397eb21e:fc832e63214c",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "origin_mm": [
+          -0.0,
+          0.0,
+          1.4999999
+        ],
+        "axial_range_mm": [
+          -1.3,
+          1.3
+        ],
+        "radius_mm": 5.0
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          17343,
+          17486
+        ]
+      ]
+    },
+    "region:feature:microduck:328011951ac11ee7:ac5d07c8f7a8": {
+      "source_ref": "SRC-000021",
+      "source_sha256": "45cdbd319a4583095d8daa0db07dee726522a743d59acb82d27d82ded500a1cf",
+      "owner_part_ref": "part:microduck:328011951ac11ee7",
+      "existing_feature_ref": "feature:microduck:328011951ac11ee7:ac5d07c8f7a8",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "origin_mm": [
+          -38.350001,
+          -0.0,
+          7.4999999
+        ],
+        "axial_range_mm": [
+          -1.3500005,
+          1.3500005
+        ],
+        "radius_mm": 5.0
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          4635,
+          4778
+        ]
+      ]
+    },
+    "region:feature:microduck:a0775b54397eb21e:9fde08e1192d": {
+      "source_ref": "SRC-000035",
+      "source_sha256": "e815f3483a2e7b80844f3c0938a47e53db38b12faed9b2d364414c19e4322da4",
+      "owner_part_ref": "part:microduck:a0775b54397eb21e",
+      "existing_feature_ref": "feature:microduck:a0775b54397eb21e:9fde08e1192d",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "origin_mm": [
+          -0.0,
+          0.0,
+          1.5
+        ],
+        "axial_range_mm": [
+          -1.2,
+          1.2
+        ],
+        "radius_mm": 7.4999999
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          19451,
+          19594
+        ]
+      ]
+    },
+    "region:feature:microduck:52fdcacf474a463f:193add95de61": {
+      "source_ref": "SRC-000014",
+      "source_sha256": "1820f7cf96646b0fc0c431f07da87b91b13111bfa9857ab1bf2b1fc3388f8da2",
+      "owner_part_ref": "part:microduck:52fdcacf474a463f",
+      "existing_feature_ref": "feature:microduck:52fdcacf474a463f:193add95de61",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "origin_mm": [
+          -38.5000017,
+          -0.0,
+          7.5
+        ],
+        "axial_range_mm": [
+          -1.0000002,
+          1.0000002
+        ],
+        "radius_mm": 7.4999999
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          6535,
+          6606
+        ]
+      ]
+    },
+    "region:feature:microduck:986b5adf27910138:8939777744e8": {
+      "source_ref": "SRC-000026",
+      "source_sha256": "ce0aa5bef82c7474512d302568c341b9769b3005e0bdb91a19c2eaaba6dad480",
+      "owner_part_ref": "part:microduck:986b5adf27910138",
+      "existing_feature_ref": "feature:microduck:986b5adf27910138:8939777744e8",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "origin_mm": [
+          -38.5000017,
+          0.0,
+          7.5
+        ],
+        "axial_range_mm": [
+          -1.0000002,
+          1.0000002
+        ],
+        "radius_mm": 7.4999999
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          2891,
+          2950
+        ]
+      ]
+    },
+    "region:feature:microduck:b364863ffde63eed:dcf8d998412a": {
+      "source_ref": "SRC-000034",
+      "source_sha256": "295ee68ed9766c91fe06d3a2a49d39f7c2f56cc943395d293afdeb013123435e",
+      "owner_part_ref": "part:microduck:b364863ffde63eed",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "origin_mm": [
+          0.0,
+          0.0,
+          2.0
+        ],
+        "axial_range_mm": [
+          -1.8,
+          1.8
+        ],
+        "radius_mm": 7.9999999
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          17268,
+          17411
+        ]
+      ],
+      "existing_feature_ref": "feature:microduck:b364863ffde63eed:dcf8d998412a"
+    },
+    "raw-region:SRC-000034:bore_wall": {
+      "source_ref": "SRC-000034",
+      "source_sha256": "295ee68ed9766c91fe06d3a2a49d39f7c2f56cc943395d293afdeb013123435e",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "origin_mm": [
+          0.0,
+          0.0,
+          2.0
+        ],
+        "axial_range_mm": [
+          -1.8,
+          1.8
+        ],
+        "radius_mm": 7.9999999
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          17268,
+          17411
+        ]
+      ]
+    },
+    "region:feature:microduck:b364863ffde63eed:4b70f665bd37": {
+      "source_ref": "SRC-000034",
+      "source_sha256": "295ee68ed9766c91fe06d3a2a49d39f7c2f56cc943395d293afdeb013123435e",
+      "owner_part_ref": "part:microduck:b364863ffde63eed",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "origin_mm": [
+          -0.0,
+          0.0,
+          2.0
+        ],
+        "axial_range_mm": [
+          -1.7,
+          1.7
+        ],
+        "radius_mm": 11.0000001
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          19369,
+          19512
+        ]
+      ],
+      "existing_feature_ref": "feature:microduck:b364863ffde63eed:4b70f665bd37"
+    },
+    "raw-region:SRC-000034:outer_cylinder": {
+      "source_ref": "SRC-000034",
+      "source_sha256": "295ee68ed9766c91fe06d3a2a49d39f7c2f56cc943395d293afdeb013123435e",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "origin_mm": [
+          -0.0,
+          0.0,
+          2.0
+        ],
+        "axial_range_mm": [
+          -1.7,
+          1.7
+        ],
+        "radius_mm": 11.0000001
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          19369,
+          19512
+        ]
+      ]
+    },
+    "raw-region:SRC-000035:bore_wall": {
+      "source_ref": "SRC-000035",
+      "source_sha256": "e815f3483a2e7b80844f3c0938a47e53db38b12faed9b2d364414c19e4322da4",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "origin_mm": [
+          -0.0,
+          0.0,
+          1.4999999
+        ],
+        "axial_range_mm": [
+          -1.3,
+          1.3
+        ],
+        "radius_mm": 5.0
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          17343,
+          17486
+        ]
+      ]
+    },
+    "raw-region:SRC-000035:outer_cylinder": {
+      "source_ref": "SRC-000035",
+      "source_sha256": "e815f3483a2e7b80844f3c0938a47e53db38b12faed9b2d364414c19e4322da4",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "origin_mm": [
+          -0.0,
+          0.0,
+          1.5
+        ],
+        "axial_range_mm": [
+          -1.2,
+          1.2
+        ],
+        "radius_mm": 7.4999999
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          19451,
+          19594
+        ]
+      ]
+    },
+    "region:feature:microduck:328011951ac11ee7:2169e69917dc": {
+      "source_ref": "SRC-000021",
+      "source_sha256": "45cdbd319a4583095d8daa0db07dee726522a743d59acb82d27d82ded500a1cf",
+      "owner_part_ref": "part:microduck:328011951ac11ee7",
+      "existing_feature_ref": "feature:microduck:328011951ac11ee7:2169e69917dc",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "origin_mm": [
+          -39.8500003,
+          0.0,
+          7.4999999
+        ],
+        "axial_range_mm": [
+          -0.1499988,
+          0.1499988
+        ],
+        "radius_mm": 6.0
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          1610,
+          1753
+        ]
+      ]
+    },
+    "region:feature:microduck:328011951ac11ee7:plane-debb7a497649": {
+      "source_ref": "SRC-000021",
+      "source_sha256": "45cdbd319a4583095d8daa0db07dee726522a743d59acb82d27d82ded500a1cf",
+      "owner_part_ref": "part:microduck:328011951ac11ee7",
+      "existing_feature_ref": "feature:microduck:328011951ac11ee7:plane-debb7a497649",
+      "geometry_source_local": {
+        "type": "plane",
+        "normal": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "origin_mm": [
+          -39.9999991,
+          -0.0,
+          7.5
+        ],
+        "area_mm2": 87.852987
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          180,
+          323
+        ]
+      ]
+    },
+    "region:feature:microduck:55970da91992f38c:168f431abc3d": {
+      "source_ref": "SRC-000046",
+      "source_sha256": "6c8f193ec7cb40be0f48eeb5fba81bce2c87f12e1aab3f77f1bc4981386e1495",
+      "owner_part_ref": "part:microduck:55970da91992f38c",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "origin_mm": [
+          17.5,
+          -2.0,
+          13.4749999
+        ],
+        "axial_range_mm": [
+          -0.9749997,
+          0.9749997
+        ],
+        "radius_mm": 8.0
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          7871,
+          8014
+        ]
+      ],
+      "existing_feature_ref": "feature:microduck:55970da91992f38c:168f431abc3d"
+    },
+    "region:feature:microduck:a682dc3620df43f5:4c6adb5a4bd2": {
+      "source_ref": "SRC-000045",
+      "source_sha256": "96238ed0d020ce0009cf1a5aa4b6926176c800840318ee65e4375be2298d2744",
+      "owner_part_ref": "part:microduck:a682dc3620df43f5",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "origin_mm": [
+          -12.9999998,
+          0.0,
+          0.0
+        ],
+        "axial_range_mm": [
+          -1.4999998,
+          1.4999998
+        ],
+        "radius_mm": 7.9999999
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          677,
+          820
+        ]
+      ],
+      "existing_feature_ref": "feature:microduck:a682dc3620df43f5:4c6adb5a4bd2"
+    },
+    "region:feature:microduck:55970da91992f38c:plane-1b16e63b0553": {
+      "source_ref": "SRC-000046",
+      "source_sha256": "6c8f193ec7cb40be0f48eeb5fba81bce2c87f12e1aab3f77f1bc4981386e1495",
+      "owner_part_ref": "part:microduck:55970da91992f38c",
+      "geometry_source_local": {
+        "type": "plane",
+        "normal": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "origin_mm": [
+          17.5000005,
+          -2.0000002,
+          12.5000002
+        ],
+        "area_mm2": 82.3621826
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          8508,
+          8651
+        ]
+      ],
+      "existing_feature_ref": "feature:microduck:55970da91992f38c:plane-1b16e63b0553"
+    },
+    "region:feature:microduck:203d2686e3321e4a:plane-39bf7b6366a5": {
+      "source_ref": "SRC-000041",
+      "source_sha256": "aa4f853ae555a8b765e585ce4519c0bbff325ce298ec15a1437792c52a0beac1",
+      "owner_part_ref": "part:microduck:203d2686e3321e4a",
+      "geometry_source_local": {
+        "type": "plane",
+        "normal": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "origin_mm": [
+          -0.0,
+          7.7025593,
+          16.4999999
+        ],
+        "area_mm2": 1397.064048
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          2224,
+          2857
+        ]
+      ],
+      "existing_feature_ref": "feature:microduck:203d2686e3321e4a:plane-39bf7b6366a5"
+    },
+    "region:feature:microduck:48099e14105d3289:168f431abc3d": {
+      "source_ref": "SRC-000046",
+      "source_sha256": "6c8f193ec7cb40be0f48eeb5fba81bce2c87f12e1aab3f77f1bc4981386e1495",
+      "owner_part_ref": "part:microduck:48099e14105d3289",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "origin_mm": [
+          17.5,
+          -2.0,
+          13.4749999
+        ],
+        "axial_range_mm": [
+          -0.9749997,
+          0.9749997
+        ],
+        "radius_mm": 8.0
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          7871,
+          8014
+        ]
+      ],
+      "existing_feature_ref": "feature:microduck:48099e14105d3289:168f431abc3d"
+    },
+    "region:feature:microduck:09cb390e38430c1e:4c6adb5a4bd2": {
+      "source_ref": "SRC-000045",
+      "source_sha256": "96238ed0d020ce0009cf1a5aa4b6926176c800840318ee65e4375be2298d2744",
+      "owner_part_ref": "part:microduck:09cb390e38430c1e",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "origin_mm": [
+          -12.9999998,
+          0.0,
+          0.0
+        ],
+        "axial_range_mm": [
+          -1.4999998,
+          1.4999998
+        ],
+        "radius_mm": 7.9999999
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          677,
+          820
+        ]
+      ],
+      "existing_feature_ref": "feature:microduck:09cb390e38430c1e:4c6adb5a4bd2"
+    },
+    "region:feature:microduck:7938fd9143c59ea4:dcf8d998412a": {
+      "source_ref": "SRC-000034",
+      "source_sha256": "295ee68ed9766c91fe06d3a2a49d39f7c2f56cc943395d293afdeb013123435e",
+      "owner_part_ref": "part:microduck:7938fd9143c59ea4",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "origin_mm": [
+          0.0,
+          0.0,
+          2.0
+        ],
+        "axial_range_mm": [
+          -1.8,
+          1.8
+        ],
+        "radius_mm": 7.9999999
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          17268,
+          17411
+        ]
+      ],
+      "existing_feature_ref": "feature:microduck:7938fd9143c59ea4:dcf8d998412a"
+    },
+    "region:feature:microduck:48099e14105d3289:plane-1b16e63b0553": {
+      "source_ref": "SRC-000046",
+      "source_sha256": "6c8f193ec7cb40be0f48eeb5fba81bce2c87f12e1aab3f77f1bc4981386e1495",
+      "owner_part_ref": "part:microduck:48099e14105d3289",
+      "geometry_source_local": {
+        "type": "plane",
+        "normal": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "origin_mm": [
+          17.5000005,
+          -2.0000002,
+          12.5000002
+        ],
+        "area_mm2": 82.3621826
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          8508,
+          8651
+        ]
+      ],
+      "existing_feature_ref": "feature:microduck:48099e14105d3289:plane-1b16e63b0553"
+    },
+    "region:feature:microduck:7938fd9143c59ea4:4b70f665bd37": {
+      "source_ref": "SRC-000034",
+      "source_sha256": "295ee68ed9766c91fe06d3a2a49d39f7c2f56cc943395d293afdeb013123435e",
+      "owner_part_ref": "part:microduck:7938fd9143c59ea4",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "origin_mm": [
+          -0.0,
+          0.0,
+          2.0
+        ],
+        "axial_range_mm": [
+          -1.7,
+          1.7
+        ],
+        "radius_mm": 11.0000001
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          19369,
+          19512
+        ]
+      ],
+      "existing_feature_ref": "feature:microduck:7938fd9143c59ea4:4b70f665bd37"
+    },
+    "region:raw-audit:638f29b46b322e64:knee-tapered-journal": {
+      "source_ref": "SRC-000023",
+      "source_sha256": "9a91cc1ae31ecd9e0c1ba93f3bb2ad8a12e29bff24ec27d1ac66c0c3037d9fcf",
+      "owner_part_ref": "part:microduck:638f29b46b322e64",
+      "geometry_source_local": {
+        "type": "conical_frustum",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "origin_mm": [
+          38.4999998,
+          22.0000001,
+          35.7770874
+        ],
+        "radius_start_mm": 7.9825396,
+        "radius_end_mm": 7.9144444,
+        "length_mm": 1.9499995
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          1970,
+          2117
+        ]
+      ]
+    },
+    "region:feature:microduck:4cf80d5a57c8cb04:4c6adb5a4bd2": {
+      "source_ref": "SRC-000045",
+      "source_sha256": "96238ed0d020ce0009cf1a5aa4b6926176c800840318ee65e4375be2298d2744",
+      "owner_part_ref": "part:microduck:4cf80d5a57c8cb04",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "origin_mm": [
+          -12.9999998,
+          0.0,
+          0.0
+        ],
+        "axial_range_mm": [
+          -1.4999998,
+          1.4999998
+        ],
+        "radius_mm": 7.9999999
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          677,
+          820
+        ]
+      ],
+      "existing_feature_ref": "feature:microduck:4cf80d5a57c8cb04:4c6adb5a4bd2"
+    },
+    "region:feature:microduck:e475134639b3f7e1:dcf8d998412a": {
+      "source_ref": "SRC-000034",
+      "source_sha256": "295ee68ed9766c91fe06d3a2a49d39f7c2f56cc943395d293afdeb013123435e",
+      "owner_part_ref": "part:microduck:e475134639b3f7e1",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "origin_mm": [
+          0.0,
+          0.0,
+          2.0
+        ],
+        "axial_range_mm": [
+          -1.8,
+          1.8
+        ],
+        "radius_mm": 7.9999999
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          17268,
+          17411
+        ]
+      ],
+      "existing_feature_ref": "feature:microduck:e475134639b3f7e1:dcf8d998412a"
+    },
+    "region:feature:microduck:638f29b46b322e64:plane-78c010a4e942": {
+      "source_ref": "SRC-000023",
+      "source_sha256": "9a91cc1ae31ecd9e0c1ba93f3bb2ad8a12e29bff24ec27d1ac66c0c3037d9fcf",
+      "owner_part_ref": "part:microduck:638f29b46b322e64",
+      "geometry_source_local": {
+        "type": "plane",
+        "normal": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "origin_mm": [
+          38.4999998,
+          22.0,
+          35.7770868
+        ],
+        "area_mm2": 112.7347038
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          8521,
+          8664
+        ]
+      ],
+      "existing_feature_ref": "feature:microduck:638f29b46b322e64:plane-78c010a4e942"
+    },
+    "region:feature:microduck:e475134639b3f7e1:4b70f665bd37": {
+      "source_ref": "SRC-000034",
+      "source_sha256": "295ee68ed9766c91fe06d3a2a49d39f7c2f56cc943395d293afdeb013123435e",
+      "owner_part_ref": "part:microduck:e475134639b3f7e1",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "origin_mm": [
+          -0.0,
+          0.0,
+          2.0
+        ],
+        "axial_range_mm": [
+          -1.7,
+          1.7
+        ],
+        "radius_mm": 11.0000001
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          19369,
+          19512
+        ]
+      ],
+      "existing_feature_ref": "feature:microduck:e475134639b3f7e1:4b70f665bd37"
+    },
+    "region:raw-audit:7f4fefc3c6de90f1:knee-tapered-journal": {
+      "source_ref": "SRC-000023",
+      "source_sha256": "9a91cc1ae31ecd9e0c1ba93f3bb2ad8a12e29bff24ec27d1ac66c0c3037d9fcf",
+      "owner_part_ref": "part:microduck:7f4fefc3c6de90f1",
+      "geometry_source_local": {
+        "type": "conical_frustum",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "origin_mm": [
+          38.4999998,
+          22.0000001,
+          35.7770874
+        ],
+        "radius_start_mm": 7.9825396,
+        "radius_end_mm": 7.9144444,
+        "length_mm": 1.9499995
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          1970,
+          2117
+        ]
+      ]
+    },
+    "region:feature:microduck:7038a050dbc33fb0:4c6adb5a4bd2": {
+      "source_ref": "SRC-000045",
+      "source_sha256": "96238ed0d020ce0009cf1a5aa4b6926176c800840318ee65e4375be2298d2744",
+      "owner_part_ref": "part:microduck:7038a050dbc33fb0",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "origin_mm": [
+          -12.9999998,
+          0.0,
+          0.0
+        ],
+        "axial_range_mm": [
+          -1.4999998,
+          1.4999998
+        ],
+        "radius_mm": 7.9999999
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          677,
+          820
+        ]
+      ],
+      "existing_feature_ref": "feature:microduck:7038a050dbc33fb0:4c6adb5a4bd2"
+    },
+    "region:feature:microduck:d6a148b5784955d8:dcf8d998412a": {
+      "source_ref": "SRC-000034",
+      "source_sha256": "295ee68ed9766c91fe06d3a2a49d39f7c2f56cc943395d293afdeb013123435e",
+      "owner_part_ref": "part:microduck:d6a148b5784955d8",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "origin_mm": [
+          0.0,
+          0.0,
+          2.0
+        ],
+        "axial_range_mm": [
+          -1.8,
+          1.8
+        ],
+        "radius_mm": 7.9999999
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          17268,
+          17411
+        ]
+      ],
+      "existing_feature_ref": "feature:microduck:d6a148b5784955d8:dcf8d998412a"
+    },
+    "region:feature:microduck:7f4fefc3c6de90f1:plane-78c010a4e942": {
+      "source_ref": "SRC-000023",
+      "source_sha256": "9a91cc1ae31ecd9e0c1ba93f3bb2ad8a12e29bff24ec27d1ac66c0c3037d9fcf",
+      "owner_part_ref": "part:microduck:7f4fefc3c6de90f1",
+      "geometry_source_local": {
+        "type": "plane",
+        "normal": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "origin_mm": [
+          38.4999998,
+          22.0,
+          35.7770868
+        ],
+        "area_mm2": 112.7347038
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          8521,
+          8664
+        ]
+      ],
+      "existing_feature_ref": "feature:microduck:7f4fefc3c6de90f1:plane-78c010a4e942"
+    },
+    "region:feature:microduck:d6a148b5784955d8:4b70f665bd37": {
+      "source_ref": "SRC-000034",
+      "source_sha256": "295ee68ed9766c91fe06d3a2a49d39f7c2f56cc943395d293afdeb013123435e",
+      "owner_part_ref": "part:microduck:d6a148b5784955d8",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "origin_mm": [
+          -0.0,
+          0.0,
+          2.0
+        ],
+        "axial_range_mm": [
+          -1.7,
+          1.7
+        ],
+        "radius_mm": 11.0000001
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          19369,
+          19512
+        ]
+      ],
+      "existing_feature_ref": "feature:microduck:d6a148b5784955d8:4b70f665bd37"
+    },
+    "region:feature:microduck:834f5cc892eba41e:25444783b640": {
+      "source_ref": "SRC-000027",
+      "source_sha256": "a685ce65348ae4d0d49417c69a7a8871f8bbd54a6e3419362be9c334abd5d2ae",
+      "owner_part_ref": "part:microduck:834f5cc892eba41e",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "origin_mm": [
+          0.0,
+          0.0,
+          -11.0499999
+        ],
+        "axial_range_mm": [
+          -0.9500002,
+          0.9500002
+        ],
+        "radius_mm": 7.9999999
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          3508,
+          3605
+        ]
+      ],
+      "existing_feature_ref": "feature:microduck:834f5cc892eba41e:25444783b640"
+    },
+    "region:feature:microduck:a07b37bcb704b29f:4c6adb5a4bd2": {
+      "source_ref": "SRC-000045",
+      "source_sha256": "96238ed0d020ce0009cf1a5aa4b6926176c800840318ee65e4375be2298d2744",
+      "owner_part_ref": "part:microduck:a07b37bcb704b29f",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "origin_mm": [
+          -12.9999998,
+          0.0,
+          0.0
+        ],
+        "axial_range_mm": [
+          -1.4999998,
+          1.4999998
+        ],
+        "radius_mm": 7.9999999
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          677,
+          820
+        ]
+      ],
+      "existing_feature_ref": "feature:microduck:a07b37bcb704b29f:4c6adb5a4bd2"
+    },
+    "region:feature:microduck:6b884b140f6e283c:dcf8d998412a": {
+      "source_ref": "SRC-000034",
+      "source_sha256": "295ee68ed9766c91fe06d3a2a49d39f7c2f56cc943395d293afdeb013123435e",
+      "owner_part_ref": "part:microduck:6b884b140f6e283c",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "origin_mm": [
+          0.0,
+          0.0,
+          2.0
+        ],
+        "axial_range_mm": [
+          -1.8,
+          1.8
+        ],
+        "radius_mm": 7.9999999
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          17268,
+          17411
+        ]
+      ],
+      "existing_feature_ref": "feature:microduck:6b884b140f6e283c:dcf8d998412a"
+    },
+    "region:feature:microduck:834f5cc892eba41e:plane-a9e7ee348da5": {
+      "source_ref": "SRC-000027",
+      "source_sha256": "a685ce65348ae4d0d49417c69a7a8871f8bbd54a6e3419362be9c334abd5d2ae",
+      "owner_part_ref": "part:microduck:834f5cc892eba41e",
+      "geometry_source_local": {
+        "type": "plane",
+        "normal": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "origin_mm": [
+          0.0,
+          0.0,
+          -12.0000001
+        ],
+        "area_mm2": 53.3393128
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          1962,
+          2105
+        ]
+      ],
+      "existing_feature_ref": "feature:microduck:834f5cc892eba41e:plane-a9e7ee348da5"
+    },
+    "region:feature:microduck:6b884b140f6e283c:4b70f665bd37": {
+      "source_ref": "SRC-000034",
+      "source_sha256": "295ee68ed9766c91fe06d3a2a49d39f7c2f56cc943395d293afdeb013123435e",
+      "owner_part_ref": "part:microduck:6b884b140f6e283c",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "origin_mm": [
+          -0.0,
+          0.0,
+          2.0
+        ],
+        "axial_range_mm": [
+          -1.7,
+          1.7
+        ],
+        "radius_mm": 11.0000001
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          19369,
+          19512
+        ]
+      ],
+      "existing_feature_ref": "feature:microduck:6b884b140f6e283c:4b70f665bd37"
+    },
+    "region:feature:microduck:d4b9a9e9474a9829:353050075859": {
+      "source_ref": "SRC-000047",
+      "source_sha256": "b0c9902dee19f06cdb7fa930292e0e1c91e2dc59baa971211495b58ff76c3c60",
+      "owner_part_ref": "part:microduck:d4b9a9e9474a9829",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "origin_mm": [
+          0.0,
+          16.9500001,
+          4.5
+        ],
+        "axial_range_mm": [
+          -0.9499993,
+          0.9499993
+        ],
+        "radius_mm": 8.0
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          2593,
+          2688
+        ],
+        [
+          2737,
+          2738
+        ]
+      ],
+      "existing_feature_ref": "feature:microduck:d4b9a9e9474a9829:353050075859"
+    },
+    "region:feature:microduck:96e22c7fa2b976d3:4c6adb5a4bd2": {
+      "source_ref": "SRC-000045",
+      "source_sha256": "96238ed0d020ce0009cf1a5aa4b6926176c800840318ee65e4375be2298d2744",
+      "owner_part_ref": "part:microduck:96e22c7fa2b976d3",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "origin_mm": [
+          -12.9999998,
+          0.0,
+          0.0
+        ],
+        "axial_range_mm": [
+          -1.4999998,
+          1.4999998
+        ],
+        "radius_mm": 7.9999999
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          677,
+          820
+        ]
+      ],
+      "existing_feature_ref": "feature:microduck:96e22c7fa2b976d3:4c6adb5a4bd2"
+    },
+    "region:feature:microduck:ea69e2c6bba10a23:dcf8d998412a": {
+      "source_ref": "SRC-000034",
+      "source_sha256": "295ee68ed9766c91fe06d3a2a49d39f7c2f56cc943395d293afdeb013123435e",
+      "owner_part_ref": "part:microduck:ea69e2c6bba10a23",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "origin_mm": [
+          0.0,
+          0.0,
+          2.0
+        ],
+        "axial_range_mm": [
+          -1.8,
+          1.8
+        ],
+        "radius_mm": 7.9999999
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          17268,
+          17411
+        ]
+      ],
+      "existing_feature_ref": "feature:microduck:ea69e2c6bba10a23:dcf8d998412a"
+    },
+    "region:feature:microduck:d4b9a9e9474a9829:plane-b164e4f667e0": {
+      "source_ref": "SRC-000047",
+      "source_sha256": "b0c9902dee19f06cdb7fa930292e0e1c91e2dc59baa971211495b58ff76c3c60",
+      "owner_part_ref": "part:microduck:d4b9a9e9474a9829",
+      "geometry_source_local": {
+        "type": "plane",
+        "normal": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "origin_mm": [
+          -0.0,
+          16.0000008,
+          4.4999999
+        ],
+        "area_mm2": 53.3393102
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          13,
+          156
+        ]
+      ],
+      "existing_feature_ref": "feature:microduck:d4b9a9e9474a9829:plane-b164e4f667e0"
+    },
+    "region:feature:microduck:ea69e2c6bba10a23:4b70f665bd37": {
+      "source_ref": "SRC-000034",
+      "source_sha256": "295ee68ed9766c91fe06d3a2a49d39f7c2f56cc943395d293afdeb013123435e",
+      "owner_part_ref": "part:microduck:ea69e2c6bba10a23",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "origin_mm": [
+          -0.0,
+          0.0,
+          2.0
+        ],
+        "axial_range_mm": [
+          -1.7,
+          1.7
+        ],
+        "radius_mm": 11.0000001
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          19369,
+          19512
+        ]
+      ],
+      "existing_feature_ref": "feature:microduck:ea69e2c6bba10a23:4b70f665bd37"
+    },
+    "region:feature:microduck:52fdcacf474a463f:35a87098a8b5": {
+      "source_ref": "SRC-000014",
+      "source_sha256": "1820f7cf96646b0fc0c431f07da87b91b13111bfa9857ab1bf2b1fc3388f8da2",
+      "owner_part_ref": "part:microduck:52fdcacf474a463f",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "origin_mm": [
+          -0.0,
+          18.0500001,
+          4.5000001
+        ],
+        "axial_range_mm": [
+          -2.0499993,
+          2.0499993
+        ],
+        "radius_mm": 11.1
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          12415,
+          12486
+        ]
+      ],
+      "existing_feature_ref": "feature:microduck:52fdcacf474a463f:35a87098a8b5"
+    },
+    "region:feature:microduck:d4b9a9e9474a9829:05985f081666": {
+      "source_ref": "SRC-000047",
+      "source_sha256": "b0c9902dee19f06cdb7fa930292e0e1c91e2dc59baa971211495b58ff76c3c60",
+      "owner_part_ref": "part:microduck:d4b9a9e9474a9829",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "origin_mm": [
+          0.0,
+          -15.9999998,
+          4.5
+        ],
+        "axial_range_mm": [
+          -1.9999994,
+          1.9999994
+        ],
+        "radius_mm": 8.0
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          462,
+          605
+        ]
+      ],
+      "existing_feature_ref": "feature:microduck:d4b9a9e9474a9829:05985f081666"
+    },
+    "region:feature:microduck:55121c0b36f62219:dcf8d998412a": {
+      "source_ref": "SRC-000034",
+      "source_sha256": "295ee68ed9766c91fe06d3a2a49d39f7c2f56cc943395d293afdeb013123435e",
+      "owner_part_ref": "part:microduck:55121c0b36f62219",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "origin_mm": [
+          0.0,
+          0.0,
+          2.0
+        ],
+        "axial_range_mm": [
+          -1.8,
+          1.8
+        ],
+        "radius_mm": 7.9999999
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          17268,
+          17411
+        ]
+      ],
+      "existing_feature_ref": "feature:microduck:55121c0b36f62219:dcf8d998412a"
+    },
+    "region:feature:microduck:d4b9a9e9474a9829:plane-af8e1b9dce53": {
+      "source_ref": "SRC-000047",
+      "source_sha256": "b0c9902dee19f06cdb7fa930292e0e1c91e2dc59baa971211495b58ff76c3c60",
+      "owner_part_ref": "part:microduck:d4b9a9e9474a9829",
+      "geometry_source_local": {
+        "type": "plane",
+        "normal": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "origin_mm": [
+          -0.0,
+          -14.0000004,
+          4.4999999
+        ],
+        "area_mm2": 53.3393102
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          1109,
+          1252
+        ]
+      ],
+      "existing_feature_ref": "feature:microduck:d4b9a9e9474a9829:plane-af8e1b9dce53"
+    },
+    "region:feature:microduck:55121c0b36f62219:4b70f665bd37": {
+      "source_ref": "SRC-000034",
+      "source_sha256": "295ee68ed9766c91fe06d3a2a49d39f7c2f56cc943395d293afdeb013123435e",
+      "owner_part_ref": "part:microduck:55121c0b36f62219",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "origin_mm": [
+          -0.0,
+          0.0,
+          2.0
+        ],
+        "axial_range_mm": [
+          -1.7,
+          1.7
+        ],
+        "radius_mm": 11.0000001
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          19369,
+          19512
+        ]
+      ],
+      "existing_feature_ref": "feature:microduck:55121c0b36f62219:4b70f665bd37"
+    },
+    "region:feature:microduck:52fdcacf474a463f:89dbaad168fb": {
+      "source_ref": "SRC-000014",
+      "source_sha256": "1820f7cf96646b0fc0c431f07da87b91b13111bfa9857ab1bf2b1fc3388f8da2",
+      "owner_part_ref": "part:microduck:52fdcacf474a463f",
+      "geometry_source_local": {
+        "type": "cylinder",
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "origin_mm": [
+          -0.0,
+          -16.0500007,
+          4.5000001
+        ],
+        "axial_range_mm": [
+          -2.0500002,
+          2.0500002
+        ],
+        "radius_mm": 11.1
+      },
+      "raw_triangle_index_runs_0based_inclusive": [
+        [
+          1660,
+          1731
+        ]
+      ],
+      "existing_feature_ref": "feature:microduck:52fdcacf474a463f:89dbaad168fb"
+    }
+  },
+  "limitations": [
+    "Mesh geometry supports interface intent and finite contact regions, not manufacturing tolerance or screw lengths.",
+    "All ring end planes have been recovered from exact binary STL face order; published feature references are included only where the current package contains the identical face set.",
+    "A single MJCF bearing visual body does not define independent inner and outer ring motion."
+  ],
+  "official_sources": {
+    "mjcf": "https://github.com/pollen-robotics/microduck_rl/blob/cb70b792312d559a4da09064d92009079671815f/src/mjlab_microduck/robot/microduck/robot_walk.xml",
+    "robotis_assembly": "https://emanual.robotis.com/docs/en/dxl/x/xl330-m288/#how-to-assemble",
+    "onshape": "https://cad.onshape.com/documents/804927696f06d877f3f1803e/w/5b75db19292e71970de02dee/e/ef6e972847fec8d82570b35e"
+  },
+  "additional_bearing_stacks": [
+    {
+      "joint_label": "left_hip_yaw",
+      "bearing_part_ref": "part:microduck:b364863ffde63eed",
+      "inner_bore_region_ref": "region:feature:microduck:b364863ffde63eed:dcf8d998412a",
+      "inner_ring_radial_mates": [
+        {
+          "part_ref": "part:microduck:55970da91992f38c",
+          "region_ref": "region:feature:microduck:55970da91992f38c:168f431abc3d",
+          "wall_type": "cylinder",
+          "center_bearing_local_mm": [
+            -0.0,
+            0.0,
+            0.975
+          ],
+          "axis_bearing_local": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "finite_z_bearing_local_mm": [
+            0.0,
+            1.95
+          ],
+          "bore_overlap_mm": 1.75,
+          "diameter_mm": 16.0
+        },
+        {
+          "part_ref": "part:microduck:a682dc3620df43f5",
+          "region_ref": "region:feature:microduck:a682dc3620df43f5:4c6adb5a4bd2",
+          "wall_type": "cylinder",
+          "center_bearing_local_mm": [
+            0.0,
+            -0.0,
+            3.5
+          ],
+          "axis_bearing_local": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "finite_z_bearing_local_mm": [
+            2.0,
+            5.0
+          ],
+          "bore_overlap_mm": 1.8,
+          "diameter_mm": 16.0
+        }
+      ],
+      "inner_ring_axial_end": {
+        "bearing_region_ref": "raw-region:SRC-000034:inner_ring_end:z0",
+        "peer": {
+          "part_ref": "part:microduck:55970da91992f38c",
+          "region_ref": "region:feature:microduck:55970da91992f38c:plane-1b16e63b0553",
+          "z_bearing_local_mm": 0
+        }
+      },
+      "outer_cylinder_region_ref": "region:feature:microduck:b364863ffde63eed:4b70f665bd37",
+      "outer_ring_axial_end": {
+        "bearing_region_ref": "raw-region:SRC-000034:outer_ring_end:z4",
+        "peer": {
+          "part_ref": "part:microduck:203d2686e3321e4a",
+          "region_ref": "region:feature:microduck:203d2686e3321e4a:plane-39bf7b6366a5",
+          "z_bearing_local_mm": 4
+        }
+      },
+      "note": "No OD22 cylindrical seat established; a finite support plane opposes the journal-side shoulder."
+    },
+    {
+      "joint_label": "right_hip_yaw",
+      "bearing_part_ref": "part:microduck:7938fd9143c59ea4",
+      "inner_bore_region_ref": "region:feature:microduck:7938fd9143c59ea4:dcf8d998412a",
+      "inner_ring_radial_mates": [
+        {
+          "part_ref": "part:microduck:48099e14105d3289",
+          "region_ref": "region:feature:microduck:48099e14105d3289:168f431abc3d",
+          "wall_type": "cylinder",
+          "center_bearing_local_mm": [
+            -0.0,
+            0.0,
+            0.975
+          ],
+          "axis_bearing_local": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "finite_z_bearing_local_mm": [
+            0.0,
+            1.95
+          ],
+          "bore_overlap_mm": 1.75,
+          "diameter_mm": 16.0
+        },
+        {
+          "part_ref": "part:microduck:09cb390e38430c1e",
+          "region_ref": "region:feature:microduck:09cb390e38430c1e:4c6adb5a4bd2",
+          "wall_type": "cylinder",
+          "center_bearing_local_mm": [
+            0.0,
+            -0.0,
+            3.5
+          ],
+          "axis_bearing_local": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "finite_z_bearing_local_mm": [
+            2.0,
+            5.0
+          ],
+          "bore_overlap_mm": 1.8,
+          "diameter_mm": 16.0
+        }
+      ],
+      "inner_ring_axial_end": {
+        "bearing_region_ref": "raw-region:SRC-000034:inner_ring_end:z0",
+        "peer": {
+          "part_ref": "part:microduck:48099e14105d3289",
+          "region_ref": "region:feature:microduck:48099e14105d3289:plane-1b16e63b0553",
+          "z_bearing_local_mm": 0
+        }
+      },
+      "outer_cylinder_region_ref": "region:feature:microduck:7938fd9143c59ea4:4b70f665bd37",
+      "outer_ring_axial_end": {
+        "bearing_region_ref": "raw-region:SRC-000034:outer_ring_end:z4",
+        "peer": {
+          "part_ref": "part:microduck:203d2686e3321e4a",
+          "region_ref": "region:feature:microduck:203d2686e3321e4a:plane-39bf7b6366a5",
+          "z_bearing_local_mm": 4
+        }
+      },
+      "note": "No OD22 cylindrical seat established; a finite support plane opposes the journal-side shoulder."
+    },
+    {
+      "joint_label": "left_knee",
+      "bearing_part_ref": "part:microduck:e475134639b3f7e1",
+      "inner_bore_region_ref": "region:feature:microduck:e475134639b3f7e1:dcf8d998412a",
+      "inner_ring_radial_mates": [
+        {
+          "part_ref": "part:microduck:638f29b46b322e64",
+          "region_ref": "region:raw-audit:638f29b46b322e64:knee-tapered-journal",
+          "wall_type": "conical_frustum",
+          "center_bearing_local_mm": [
+            -1.3e-05,
+            -0.0,
+            -0.0
+          ],
+          "axis_bearing_local": [
+            0.0,
+            -0.0,
+            1.0
+          ],
+          "finite_z_bearing_local_mm": [
+            -0.0,
+            1.949999
+          ],
+          "bore_overlap_mm": 1.749999,
+          "diameter_range_mm": [
+            15.82888873977073,
+            15.96507921283994
+          ]
+        },
+        {
+          "part_ref": "part:microduck:4cf80d5a57c8cb04",
+          "region_ref": "region:feature:microduck:4cf80d5a57c8cb04:4c6adb5a4bd2",
+          "wall_type": "cylinder",
+          "center_bearing_local_mm": [
+            -0.0,
+            0.0,
+            3.5
+          ],
+          "axis_bearing_local": [
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "finite_z_bearing_local_mm": [
+            2.0,
+            5.0
+          ],
+          "bore_overlap_mm": 1.8,
+          "diameter_mm": 16.0
+        }
+      ],
+      "inner_ring_axial_end": {
+        "bearing_region_ref": "raw-region:SRC-000034:inner_ring_end:z0",
+        "peer": {
+          "part_ref": "part:microduck:638f29b46b322e64",
+          "region_ref": "region:feature:microduck:638f29b46b322e64:plane-78c010a4e942",
+          "z_bearing_local_mm": 0
+        }
+      },
+      "outer_cylinder_region_ref": "region:feature:microduck:e475134639b3f7e1:4b70f665bd37",
+      "outer_ring_axial_end": {
+        "bearing_region_ref": "raw-region:SRC-000034:outer_ring_end:z4",
+        "peer": {
+          "part_ref": "part:microduck:c75bfc0afb35e000",
+          "region_ref": "region:feature:microduck:c75bfc0afb35e000:plane-8524d14e63e5",
+          "z_bearing_local_mm": 4
+        }
+      },
+      "note": "Leg journal is a 2 degree tapered surface, diameter15.96508 to15.82889 mm over1.95 mm, not a cylindrical16 fit. Its source radial clearance to bearing ID16 is0.01746 to0.08556 mm; mesh clearance is not manufacturing tolerance. Raw148 face region supplied; shoulder face has not yet been recovered."
+    },
+    {
+      "joint_label": "right_knee",
+      "bearing_part_ref": "part:microduck:d6a148b5784955d8",
+      "inner_bore_region_ref": "region:feature:microduck:d6a148b5784955d8:dcf8d998412a",
+      "inner_ring_radial_mates": [
+        {
+          "part_ref": "part:microduck:7f4fefc3c6de90f1",
+          "region_ref": "region:raw-audit:7f4fefc3c6de90f1:knee-tapered-journal",
+          "wall_type": "conical_frustum",
+          "center_bearing_local_mm": [
+            -1.3e-05,
+            0.0,
+            4.0
+          ],
+          "axis_bearing_local": [
+            0.0,
+            -0.0,
+            -1.0
+          ],
+          "finite_z_bearing_local_mm": [
+            2.050001,
+            4.0
+          ],
+          "bore_overlap_mm": 1.749999,
+          "diameter_range_mm": [
+            15.82888873977073,
+            15.96507921283994
+          ]
+        },
+        {
+          "part_ref": "part:microduck:7038a050dbc33fb0",
+          "region_ref": "region:feature:microduck:7038a050dbc33fb0:4c6adb5a4bd2",
+          "wall_type": "cylinder",
+          "center_bearing_local_mm": [
+            -0.0,
+            0.0,
+            0.5
+          ],
+          "axis_bearing_local": [
+            0.0,
+            -0.0,
+            -1.0
+          ],
+          "finite_z_bearing_local_mm": [
+            -1.0,
+            2.0
+          ],
+          "bore_overlap_mm": 1.8,
+          "diameter_mm": 16.0
+        }
+      ],
+      "inner_ring_axial_end": {
+        "bearing_region_ref": "raw-region:SRC-000034:inner_ring_end:z4",
+        "peer": {
+          "part_ref": "part:microduck:7f4fefc3c6de90f1",
+          "region_ref": "region:feature:microduck:7f4fefc3c6de90f1:plane-78c010a4e942",
+          "z_bearing_local_mm": 4
+        }
+      },
+      "outer_cylinder_region_ref": "region:feature:microduck:d6a148b5784955d8:4b70f665bd37",
+      "outer_ring_axial_end": {
+        "bearing_region_ref": "raw-region:SRC-000034:outer_ring_end:z0",
+        "peer": {
+          "part_ref": "part:microduck:7e86db28af59d3cc",
+          "region_ref": "region:feature:microduck:7e86db28af59d3cc:plane-2ffd093d8c8b",
+          "z_bearing_local_mm": 0
+        }
+      },
+      "note": "Leg journal is a 2 degree tapered surface, diameter15.96508 to15.82889 mm over1.95 mm, not a cylindrical16 fit. Its source radial clearance to bearing ID16 is0.01746 to0.08556 mm; mesh clearance is not manufacturing tolerance. Raw148 face region supplied; shoulder face has not yet been recovered."
+    },
+    {
+      "joint_label": "head_yaw",
+      "bearing_part_ref": "part:microduck:6b884b140f6e283c",
+      "inner_bore_region_ref": "region:feature:microduck:6b884b140f6e283c:dcf8d998412a",
+      "inner_ring_radial_mates": [
+        {
+          "part_ref": "part:microduck:834f5cc892eba41e",
+          "region_ref": "region:feature:microduck:834f5cc892eba41e:25444783b640",
+          "wall_type": "cylinder",
+          "center_bearing_local_mm": [
+            0.0,
+            0.0,
+            3.05
+          ],
+          "axis_bearing_local": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "finite_z_bearing_local_mm": [
+            2.1,
+            4.0
+          ],
+          "bore_overlap_mm": 1.7,
+          "diameter_mm": 16.0
+        },
+        {
+          "part_ref": "part:microduck:a07b37bcb704b29f",
+          "region_ref": "region:feature:microduck:a07b37bcb704b29f:4c6adb5a4bd2",
+          "wall_type": "cylinder",
+          "center_bearing_local_mm": [
+            -0.0,
+            0.0,
+            0.6
+          ],
+          "axis_bearing_local": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "finite_z_bearing_local_mm": [
+            -0.9,
+            2.1
+          ],
+          "bore_overlap_mm": 1.9,
+          "diameter_mm": 16.0
+        }
+      ],
+      "inner_ring_axial_end": {
+        "bearing_region_ref": "raw-region:SRC-000034:inner_ring_end:z4",
+        "peer": {
+          "part_ref": "part:microduck:834f5cc892eba41e",
+          "region_ref": "region:feature:microduck:834f5cc892eba41e:plane-a9e7ee348da5",
+          "z_bearing_local_mm": 4
+        }
+      },
+      "outer_cylinder_region_ref": "region:feature:microduck:6b884b140f6e283c:4b70f665bd37",
+      "outer_ring_axial_end": null,
+      "note": "Concrete inner journal/shoulder; outer-ring receiver requires separate finite-region work. No source-body motion binding."
+    },
+    {
+      "joint_label": "head_roll_drive_side",
+      "bearing_part_ref": "part:microduck:ea69e2c6bba10a23",
+      "inner_bore_region_ref": "region:feature:microduck:ea69e2c6bba10a23:dcf8d998412a",
+      "inner_ring_radial_mates": [
+        {
+          "part_ref": "part:microduck:d4b9a9e9474a9829",
+          "region_ref": "region:feature:microduck:d4b9a9e9474a9829:353050075859",
+          "wall_type": "cylinder",
+          "center_bearing_local_mm": [
+            0.0,
+            0.0,
+            0.95
+          ],
+          "axis_bearing_local": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "finite_z_bearing_local_mm": [
+            1e-06,
+            1.899999
+          ],
+          "bore_overlap_mm": 1.699999,
+          "diameter_mm": 16.0
+        },
+        {
+          "part_ref": "part:microduck:96e22c7fa2b976d3",
+          "region_ref": "region:feature:microduck:96e22c7fa2b976d3:4c6adb5a4bd2",
+          "wall_type": "cylinder",
+          "center_bearing_local_mm": [
+            0.0,
+            0.0,
+            3.4
+          ],
+          "axis_bearing_local": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "finite_z_bearing_local_mm": [
+            1.9,
+            4.9
+          ],
+          "bore_overlap_mm": 1.9,
+          "diameter_mm": 16.0
+        }
+      ],
+      "inner_ring_axial_end": {
+        "bearing_region_ref": "raw-region:SRC-000034:inner_ring_end:z0",
+        "peer": {
+          "part_ref": "part:microduck:d4b9a9e9474a9829",
+          "region_ref": "region:feature:microduck:d4b9a9e9474a9829:plane-b164e4f667e0",
+          "z_bearing_local_mm": 0
+        }
+      },
+      "outer_cylinder_region_ref": "region:feature:microduck:ea69e2c6bba10a23:4b70f665bd37",
+      "outer_ring_axial_end": null,
+      "note": "Bottom-shell partial socket22.2 has0.2 mm axis offset from bearing22. Nominal radial clearance0.1 mm is smaller than offset, causing about0.1 mm interference. Preserve candidate/exclusion instead of claiming a realized fit.",
+      "outer_socket_candidate": {
+        "part_ref": "part:microduck:52fdcacf474a463f",
+        "region_ref": "region:feature:microduck:52fdcacf474a463f:35a87098a8b5",
+        "wall_type": "cylinder",
+        "center_bearing_local_mm": [
+          0.2,
+          -0.0,
+          1.95
+        ],
+        "axis_bearing_local": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "finite_z_bearing_local_mm": [
+          -0.099999,
+          3.999999
+        ],
+        "bore_overlap_mm": 3.6,
+        "diameter_mm": 22.2
+      },
+      "outer_socket_status": "incompatible_source_pose"
+    },
+    {
+      "joint_label": "head_roll_opposite_side",
+      "bearing_part_ref": "part:microduck:55121c0b36f62219",
+      "inner_bore_region_ref": "region:feature:microduck:55121c0b36f62219:dcf8d998412a",
+      "inner_ring_radial_mates": [
+        {
+          "part_ref": "part:microduck:d4b9a9e9474a9829",
+          "region_ref": "region:feature:microduck:d4b9a9e9474a9829:05985f081666",
+          "wall_type": "cylinder",
+          "center_bearing_local_mm": [
+            0.0,
+            0.0,
+            2.0
+          ],
+          "axis_bearing_local": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "finite_z_bearing_local_mm": [
+            1e-06,
+            4.0
+          ],
+          "bore_overlap_mm": 3.6,
+          "diameter_mm": 16.0
+        }
+      ],
+      "inner_ring_axial_end": {
+        "bearing_region_ref": "raw-region:SRC-000034:inner_ring_end:z4",
+        "peer": {
+          "part_ref": "part:microduck:d4b9a9e9474a9829",
+          "region_ref": "region:feature:microduck:d4b9a9e9474a9829:plane-af8e1b9dce53",
+          "z_bearing_local_mm": 4
+        }
+      },
+      "outer_cylinder_region_ref": "region:feature:microduck:55121c0b36f62219:4b70f665bd37",
+      "outer_ring_axial_end": null,
+      "note": "Bottom-shell partial socket22.2 has0.2 mm axis offset from bearing22. Nominal radial clearance0.1 mm is smaller than offset, causing about0.1 mm interference. Preserve candidate/exclusion instead of claiming a realized fit.",
+      "outer_socket_candidate": {
+        "part_ref": "part:microduck:52fdcacf474a463f",
+        "region_ref": "region:feature:microduck:52fdcacf474a463f:89dbaad168fb",
+        "wall_type": "cylinder",
+        "center_bearing_local_mm": [
+          0.2,
+          -0.0,
+          1.849999
+        ],
+        "axis_bearing_local": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "finite_z_bearing_local_mm": [
+          -0.200001,
+          3.9
+        ],
+        "bore_overlap_mm": 3.6,
+        "diameter_mm": 22.2
+      },
+      "outer_socket_status": "incompatible_source_pose"
+    }
+  ]
+}

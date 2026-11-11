@@ -1,0 +1,3089 @@
+{
+  "ok": true,
+  "valid": true,
+  "schema": "psop.dkp/2.0-draft.1",
+  "profile": "psop.hardware.source-model/1.11",
+  "package_id": "psop.microduck",
+  "package_version": "2.0.0-connection-analysis.1",
+  "package_digest": "84f6829a25a82fefaf1da6cc00b399088a5db6e41923b4074c39a08d1988b6db",
+  "device": {
+    "id": "microduck",
+    "name": "Microduck"
+  },
+  "counts": {
+    "sources": 71,
+    "geometries": 38,
+    "parts": 70,
+    "bodies": 15,
+    "joints": 14,
+    "evidence": 226
+  },
+  "capabilities": {
+    "source_registry": {
+      "status": "complete",
+      "scope": "captured source bytes, paths and digests"
+    },
+    "source_model_projection": {
+      "status": "complete",
+      "scope": "frozen Microduck MJCF visual model at qpos0"
+    },
+    "hardware_knowledge": {
+      "status": "partial",
+      "scope": "source geometry, finite pin/housing reference-pair location evidence and separately identified unverified connector alternatives; retention remains unknown"
+    },
+    "mechanical_validation": {
+      "status": "unavailable",
+      "scope": "no confirmed interface connection, retaining, motion constraint, assembly path or mechanical success is published"
+    },
+    "engineering_validation": {
+      "status": "unavailable",
+      "scope": "materials, tolerances, manufacturing and load acceptance not established"
+    },
+    "path_validation": {
+      "status": "unavailable",
+      "scope": "presentation explosion is not a disassembly or motion proof"
+    },
+    "training_data": {
+      "status": "unavailable",
+      "scope": "no training dataset, canonical multiview render or use authorization is published"
+    },
+    "geometric_analysis": {
+      "status": "partial",
+      "scope": "finite arbitrary-axis cylindrical discovery with strict source witnesses, legacy finite geometry and per-instance raw mesh regions; unsupported structures remain open"
+    },
+    "interface_analysis": {
+      "status": "partial",
+      "scope": "connection reviews separate declared knowledge from project-inferred roles and manufacturer-general examples; no complete physical interface qualification"
+    },
+    "connection_candidates": {
+      "status": "unavailable",
+      "scope": "raw geometry observations are not qualified interfaces or mechanism-level connection candidates"
+    },
+    "reference_mounting": {
+      "status": "partial",
+      "scope": "supplied standard-assembly assertions checked against the frozen source placements and mapped site axes; no executed engagement is published"
+    },
+    "connection_review": {
+      "status": "partial",
+      "scope": "source-pose pin/housing fits support installation-location inference only; outer circular openings and manufacturer-general illustrations do not establish retaining roles"
+    },
+    "supplemental_components": {
+      "status": "partial",
+      "scope": "reference connector schematics use explicit through-bracket hypotheses with independently checked finite entrance, head seat, shaft direction and target coverage; actual installation side, thread, continuous path and retention remain unverified"
+    },
+    "structure_investigation": {
+      "status": "partial",
+      "scope": "every source Part and mesh normal region is inventoried before functional interpretation; unknown function has explicit evidence gaps and next actions"
+    },
+    "independent_review": {
+      "status": "partial",
+      "scope": "locked source-SHA-bound independent annotations establish expected sample features; automatic screening is distinct from completed region review"
+    },
+    "installation_hypotheses": {
+      "status": "partial",
+      "scope": "frozen completed research, source-bound finite counterpart geometry, dimensional complementarity and evidence support bounded mechanism hypotheses; no actual retaining or engineering confirmation"
+    },
+    "connection_analysis": {
+      "status": "partial",
+      "scope": "every connection review has finite local evidence and an explicit investigation stage; frozen executed investigations support bounded mechanisms, multi-Part context and independent omission acceptance without qualifying Interfaces"
+    }
+  },
+  "review_coverage": {
+    "schema": "psop.interface-review-coverage/1.0",
+    "region_review": {
+      "total": 449,
+      "reviewed": 27,
+      "auto_screened": 420,
+      "blocked": 0,
+      "unreviewed": 2,
+      "complete": false
+    },
+    "independent_features": {
+      "status": "pass",
+      "expected_count": 247,
+      "located_count": 247,
+      "matches": [
+        {
+          "id": "LS-01",
+          "part_ref": "part:microduck:e27cbdd6c07a264e",
+          "center_local_m": [
+            0.0005,
+            0.042,
+            0.0525
+          ],
+          "candidate_refs": [
+            "structure:f96be67694f3b2ab0871"
+          ]
+        },
+        {
+          "id": "LS-02",
+          "part_ref": "part:microduck:e27cbdd6c07a264e",
+          "center_local_m": [
+            0.01625,
+            -0.028,
+            0.05
+          ],
+          "candidate_refs": [
+            "structure:0256c819bc593ac3805f"
+          ]
+        },
+        {
+          "id": "LS-03",
+          "part_ref": "part:microduck:e27cbdd6c07a264e",
+          "center_local_m": [
+            0.01625,
+            -0.022,
+            0.056
+          ],
+          "candidate_refs": [
+            "structure:e6c707207445ed2960e6"
+          ]
+        },
+        {
+          "id": "LS-04",
+          "part_ref": "part:microduck:e27cbdd6c07a264e",
+          "center_local_m": [
+            0.01625,
+            -0.022,
+            0.044
+          ],
+          "candidate_refs": [
+            "structure:d759a79e73f6251ccd45"
+          ]
+        },
+        {
+          "id": "LS-05",
+          "part_ref": "part:microduck:e27cbdd6c07a264e",
+          "center_local_m": [
+            0.01625,
+            -0.016,
+            0.05
+          ],
+          "candidate_refs": [
+            "structure:e49b4e4d5f7f13bf794a"
+          ]
+        },
+        {
+          "id": "LS-06",
+          "part_ref": "part:microduck:e27cbdd6c07a264e",
+          "center_local_m": [
+            0.0255,
+            -0.0095,
+            0.04153
+          ],
+          "candidate_refs": [
+            "structure:2f4619dc0b3a74d95a37"
+          ]
+        },
+        {
+          "id": "CR-SECTION-6baf593c8ec3",
+          "part_ref": "part:microduck:e27cbdd6c07a264e",
+          "center_local_m": [
+            0.01624999986961484,
+            -0.021999999881576623,
+            0.04399999999607228
+          ],
+          "candidate_refs": [
+            "structure:d759a79e73f6251ccd45"
+          ]
+        },
+        {
+          "id": "CR-SECTION-e123a730a4a2",
+          "part_ref": "part:microduck:e27cbdd6c07a264e",
+          "center_local_m": [
+            0.01624999986961484,
+            -0.016000000109909956,
+            0.049999999687251565
+          ],
+          "candidate_refs": [
+            "structure:e49b4e4d5f7f13bf794a"
+          ]
+        },
+        {
+          "id": "CR-SECTION-e01d63510a22",
+          "part_ref": "part:microduck:e27cbdd6c07a264e",
+          "center_local_m": [
+            0.01624999986961484,
+            -0.021999999881576793,
+            0.05599999996936978
+          ],
+          "candidate_refs": [
+            "structure:e6c707207445ed2960e6"
+          ]
+        },
+        {
+          "id": "CR-SECTION-e5404fc65645",
+          "part_ref": "part:microduck:e27cbdd6c07a264e",
+          "center_local_m": [
+            0.01624999986961484,
+            -0.028000000101930322,
+            0.04999999968725154
+          ],
+          "candidate_refs": [
+            "structure:0256c819bc593ac3805f"
+          ]
+        },
+        {
+          "id": "LG-01",
+          "part_ref": "part:microduck:638f29b46b322e64",
+          "center_local_m": [
+            0.039,
+            0.0262426407,
+            0.0315344471
+          ],
+          "candidate_refs": [
+            "structure:e4430536936ac9f61003"
+          ]
+        },
+        {
+          "id": "LG-02",
+          "part_ref": "part:microduck:638f29b46b322e64",
+          "center_local_m": [
+            0.039,
+            0.0262426407,
+            0.0400197285
+          ],
+          "candidate_refs": [
+            "structure:13d5566705eedd240ab9"
+          ]
+        },
+        {
+          "id": "LG-03",
+          "part_ref": "part:microduck:638f29b46b322e64",
+          "center_local_m": [
+            0.039,
+            0.0177573593,
+            0.0315344471
+          ],
+          "candidate_refs": [
+            "structure:90f373f31887ac26859b"
+          ]
+        },
+        {
+          "id": "LG-04",
+          "part_ref": "part:microduck:638f29b46b322e64",
+          "center_local_m": [
+            0.039,
+            0.0177573593,
+            0.0400197285
+          ],
+          "candidate_refs": [
+            "structure:4ccf24585ebebf95152c"
+          ]
+        },
+        {
+          "id": "LG-05",
+          "part_ref": "part:microduck:638f29b46b322e64",
+          "center_local_m": [
+            0.033,
+            0.022,
+            -0.006222912
+          ],
+          "candidate_refs": [
+            "structure:9219bfdb22cb6ac20185"
+          ]
+        },
+        {
+          "id": "CR-SECTION-bd2199a2b8f6",
+          "part_ref": "part:microduck:638f29b46b322e64",
+          "center_local_m": [
+            0.03710000030696392,
+            0.030000000050689438,
+            0.016277087645217927
+          ],
+          "candidate_refs": [
+            "structure:aaea62baf7aba0bcb0a9"
+          ]
+        },
+        {
+          "id": "CR-SECTION-c47b1cf38960",
+          "part_ref": "part:microduck:638f29b46b322e64",
+          "center_local_m": [
+            0.03710000030696392,
+            0.013999999968032514,
+            0.016277087645217896
+          ],
+          "candidate_refs": [
+            "structure:2cd28e42bd3897479459"
+          ]
+        },
+        {
+          "id": "RS-DISPLAY-X",
+          "part_ref": "part:microduck:9d70b219a5533bf1",
+          "center_local_m": [
+            -0.0025,
+            0.042,
+            0.0525
+          ],
+          "candidate_refs": [
+            "structure:703806a1274347ebaa13"
+          ]
+        },
+        {
+          "id": "RS-DISPLAY-Z",
+          "part_ref": "part:microduck:9d70b219a5533bf1",
+          "center_local_m": [
+            -0.0255,
+            -0.0095,
+            0.04153
+          ],
+          "candidate_refs": [
+            "structure:7af674db6217c5ccd32c"
+          ]
+        },
+        {
+          "id": "RS-HORN-1",
+          "part_ref": "part:microduck:9d70b219a5533bf1",
+          "center_local_m": [
+            -0.01625,
+            -0.022,
+            0.044
+          ],
+          "candidate_refs": [
+            "structure:3569c2e705aa00bf1efd"
+          ]
+        },
+        {
+          "id": "RS-HORN-2",
+          "part_ref": "part:microduck:9d70b219a5533bf1",
+          "center_local_m": [
+            -0.01625,
+            -0.028,
+            0.05
+          ],
+          "candidate_refs": [
+            "structure:a855f5fc3f54056437ab"
+          ]
+        },
+        {
+          "id": "RS-HORN-3",
+          "part_ref": "part:microduck:9d70b219a5533bf1",
+          "center_local_m": [
+            -0.01625,
+            -0.016,
+            0.05
+          ],
+          "candidate_refs": [
+            "structure:d99fe035f3ab63322fda"
+          ]
+        },
+        {
+          "id": "RS-HORN-4",
+          "part_ref": "part:microduck:9d70b219a5533bf1",
+          "center_local_m": [
+            -0.01625,
+            -0.022,
+            0.056
+          ],
+          "candidate_refs": [
+            "structure:2cd5a2dbd80f69cdd85e"
+          ]
+        },
+        {
+          "id": "NECK-HORN-1",
+          "part_ref": "part:microduck:4cef8bb24d37fe6e",
+          "center_local_m": [
+            0.0115,
+            0,
+            0.006
+          ],
+          "candidate_refs": [
+            "structure:4d062ae4273cbf1cdc84"
+          ]
+        },
+        {
+          "id": "NECK-HORN-2",
+          "part_ref": "part:microduck:4cef8bb24d37fe6e",
+          "center_local_m": [
+            0.0115,
+            -0.006,
+            0
+          ],
+          "candidate_refs": [
+            "structure:4766ab585ae2bd43b2a9"
+          ]
+        },
+        {
+          "id": "NECK-HORN-3",
+          "part_ref": "part:microduck:4cef8bb24d37fe6e",
+          "center_local_m": [
+            0.0115,
+            0.006,
+            0
+          ],
+          "candidate_refs": [
+            "structure:8da664ed1e6a8e8139a2"
+          ]
+        },
+        {
+          "id": "NECK-HORN-4",
+          "part_ref": "part:microduck:4cef8bb24d37fe6e",
+          "center_local_m": [
+            0.0115,
+            0,
+            -0.006
+          ],
+          "candidate_refs": [
+            "structure:4ba2b0eaf6ca03135c40"
+          ]
+        },
+        {
+          "id": "CR-SECTION-c945923ccd14",
+          "part_ref": "part:microduck:4cef8bb24d37fe6e",
+          "center_local_m": [
+            0,
+            0.008000000064252154,
+            -0.02249999996274709
+          ],
+          "candidate_refs": [
+            "structure:0f697c00636965b23874"
+          ]
+        },
+        {
+          "id": "CR-SECTION-f37766542b91",
+          "part_ref": "part:microduck:4cef8bb24d37fe6e",
+          "center_local_m": [
+            0,
+            -0.008000000064252154,
+            -0.02249999996274709
+          ],
+          "candidate_refs": [
+            "structure:13414307c126fed2a870"
+          ]
+        },
+        {
+          "id": "CR-SECTION-11cfcd571e90",
+          "part_ref": "part:microduck:4cef8bb24d37fe6e",
+          "center_local_m": [
+            -0.011500000022351742,
+            5.188600139661211e-21,
+            0.006000000002457397
+          ],
+          "candidate_refs": [
+            "structure:fab5c9e2791fcf127e3b"
+          ]
+        },
+        {
+          "id": "CR-SECTION-009c3a4be356",
+          "part_ref": "part:microduck:4cef8bb24d37fe6e",
+          "center_local_m": [
+            -0.011500000022351742,
+            0.006000000002457397,
+            3.4672845294492454e-20
+          ],
+          "candidate_refs": [
+            "structure:91865d54f9556abf1972"
+          ]
+        },
+        {
+          "id": "CR-SECTION-3961fc6c0466",
+          "part_ref": "part:microduck:4cef8bb24d37fe6e",
+          "center_local_m": [
+            -0.011500000022351742,
+            5.188599864728396e-21,
+            -0.006000000002457397
+          ],
+          "candidate_refs": [
+            "structure:58410ea63fe018814126"
+          ]
+        },
+        {
+          "id": "CR-SECTION-b81891282027",
+          "part_ref": "part:microduck:4cef8bb24d37fe6e",
+          "center_local_m": [
+            -0.011500000022351742,
+            -0.006000000002457397,
+            -1.1966797320826464e-20
+          ],
+          "candidate_refs": [
+            "structure:85917040146c5e193ac4"
+          ]
+        },
+        {
+          "id": "BR-SERVO-1",
+          "part_ref": "part:microduck:cb253f38c818b9d8",
+          "center_local_m": [
+            0.0095,
+            -0.014,
+            -0.0225
+          ],
+          "candidate_refs": [
+            "structure:b010227041e62a5ea9e2"
+          ]
+        },
+        {
+          "id": "BR-SERVO-2",
+          "part_ref": "part:microduck:cb253f38c818b9d8",
+          "center_local_m": [
+            0.0255,
+            -0.014,
+            -0.0225
+          ],
+          "candidate_refs": [
+            "structure:6aa1d8439d4b4b69aedb"
+          ]
+        },
+        {
+          "id": "BR-LINK-1",
+          "part_ref": "part:microduck:cb253f38c818b9d8",
+          "center_local_m": [
+            0.0085,
+            -0.014,
+            0.0125
+          ],
+          "candidate_refs": [
+            "structure:b9f0adcc0b030775a98d"
+          ]
+        },
+        {
+          "id": "BR-LINK-2",
+          "part_ref": "part:microduck:cb253f38c818b9d8",
+          "center_local_m": [
+            0.0265,
+            -0.014,
+            0.0125
+          ],
+          "candidate_refs": [
+            "structure:acb87c9bc0d29f0d9c91"
+          ]
+        },
+        {
+          "id": "CR-SECTION-43323b54ea62",
+          "part_ref": "part:microduck:cb253f38c818b9d8",
+          "center_local_m": [
+            0.00850000003732599,
+            -0.013999999966472387,
+            0.012499999912157988
+          ],
+          "candidate_refs": [
+            "structure:b9f0adcc0b030775a98d"
+          ]
+        },
+        {
+          "id": "CR-SECTION-97d1520b73a0",
+          "part_ref": "part:microduck:cb253f38c818b9d8",
+          "center_local_m": [
+            0.026499999807771447,
+            -0.013999999966472387,
+            0.012499999912157991
+          ],
+          "candidate_refs": [
+            "structure:acb87c9bc0d29f0d9c91"
+          ]
+        },
+        {
+          "id": "TORSO-HOUSING-1",
+          "part_ref": "part:microduck:cd6d48fccc95df41",
+          "center_local_m": [
+            0.0007,
+            0.008,
+            -0.0225
+          ],
+          "candidate_refs": [
+            "structure:0fd551982de50c727a33"
+          ]
+        },
+        {
+          "id": "TORSO-HOUSING-2",
+          "part_ref": "part:microduck:cd6d48fccc95df41",
+          "center_local_m": [
+            0.0007,
+            -0.008,
+            -0.0225
+          ],
+          "candidate_refs": [
+            "structure:ace8697536e36ab39f3b"
+          ]
+        },
+        {
+          "id": "ACTUATOR-X-1",
+          "part_ref": "part:microduck:cd6d48fccc95df41",
+          "center_local_m": [
+            -0.0114,
+            -0.006,
+            0
+          ],
+          "candidate_refs": [
+            "structure:254d5b63ec47411c9903"
+          ]
+        },
+        {
+          "id": "ACTUATOR-X-2",
+          "part_ref": "part:microduck:cd6d48fccc95df41",
+          "center_local_m": [
+            -0.0114,
+            0,
+            -0.006
+          ],
+          "candidate_refs": [
+            "structure:4f30e8c92bb7d64dec0f"
+          ]
+        },
+        {
+          "id": "ACTUATOR-X-3",
+          "part_ref": "part:microduck:cd6d48fccc95df41",
+          "center_local_m": [
+            -0.0114,
+            0,
+            0.006
+          ],
+          "candidate_refs": [
+            "structure:467e0219a57edc657334"
+          ]
+        },
+        {
+          "id": "ACTUATOR-X-4",
+          "part_ref": "part:microduck:cd6d48fccc95df41",
+          "center_local_m": [
+            -0.0114,
+            0.006,
+            0
+          ],
+          "candidate_refs": [
+            "structure:31881025cda6cec8e758"
+          ]
+        },
+        {
+          "id": "CR-SECTION-a8114388a041",
+          "part_ref": "part:microduck:cd6d48fccc95df41",
+          "center_local_m": [
+            0,
+            0.008000000064252192,
+            0.007500000056878147
+          ],
+          "candidate_refs": [
+            "structure:4bae0a7a974eaf089dde"
+          ]
+        },
+        {
+          "id": "CR-SECTION-0b25d4eeb3df",
+          "part_ref": "part:microduck:cd6d48fccc95df41",
+          "center_local_m": [
+            0,
+            -0.008000000064252192,
+            0.007500000056878147
+          ],
+          "candidate_refs": [
+            "structure:cdde6c7dfd2e4b8cb556"
+          ]
+        },
+        {
+          "id": "CR-SECTION-009c3a4be356",
+          "part_ref": "part:microduck:cd6d48fccc95df41",
+          "center_local_m": [
+            -0.011500000022351742,
+            0.006000000002457397,
+            3.4672845294492454e-20
+          ],
+          "candidate_refs": [
+            "structure:31881025cda6cec8e758"
+          ]
+        },
+        {
+          "id": "CR-SECTION-b81891282027",
+          "part_ref": "part:microduck:cd6d48fccc95df41",
+          "center_local_m": [
+            -0.011500000022351742,
+            -0.006000000002457397,
+            -1.1966797320826464e-20
+          ],
+          "candidate_refs": [
+            "structure:254d5b63ec47411c9903"
+          ]
+        },
+        {
+          "id": "CR-SECTION-11cfcd571e90",
+          "part_ref": "part:microduck:cd6d48fccc95df41",
+          "center_local_m": [
+            -0.011500000022351742,
+            5.188600139661211e-21,
+            0.006000000002457397
+          ],
+          "candidate_refs": [
+            "structure:467e0219a57edc657334"
+          ]
+        },
+        {
+          "id": "CR-SECTION-3961fc6c0466",
+          "part_ref": "part:microduck:cd6d48fccc95df41",
+          "center_local_m": [
+            -0.011500000022351742,
+            5.188599864728396e-21,
+            -0.006000000002457397
+          ],
+          "candidate_refs": [
+            "structure:4f30e8c92bb7d64dec0f"
+          ]
+        },
+        {
+          "id": "HIP-Y-1",
+          "part_ref": "part:microduck:fa9ee2f71faafb88",
+          "center_local_m": [
+            0.0235,
+            -0.018025,
+            0
+          ],
+          "candidate_refs": [
+            "structure:b90338acf15ad4108d19"
+          ]
+        },
+        {
+          "id": "HIP-Y-2",
+          "part_ref": "part:microduck:fa9ee2f71faafb88",
+          "center_local_m": [
+            0.0175,
+            -0.018025,
+            -0.006
+          ],
+          "candidate_refs": [
+            "structure:d5bd64b5aa05d238c0ab"
+          ]
+        },
+        {
+          "id": "HIP-Y-3",
+          "part_ref": "part:microduck:fa9ee2f71faafb88",
+          "center_local_m": [
+            0.0175,
+            -0.018025,
+            0.006
+          ],
+          "candidate_refs": [
+            "structure:691a6552d9a82afe9998"
+          ]
+        },
+        {
+          "id": "HIP-Y-4",
+          "part_ref": "part:microduck:fa9ee2f71faafb88",
+          "center_local_m": [
+            0.0115,
+            -0.018025,
+            0
+          ],
+          "candidate_refs": [
+            "structure:251e653b3c03986ce087"
+          ]
+        },
+        {
+          "id": "HIP-X-1",
+          "part_ref": "part:microduck:fa9ee2f71faafb88",
+          "center_local_m": [
+            0.038975,
+            0,
+            -0.006
+          ],
+          "candidate_refs": [
+            "structure:11173f52f2df89abe32c"
+          ]
+        },
+        {
+          "id": "HIP-X-2",
+          "part_ref": "part:microduck:fa9ee2f71faafb88",
+          "center_local_m": [
+            0.038975,
+            -0.006,
+            0
+          ],
+          "candidate_refs": [
+            "structure:434796536a6c45bbcca7"
+          ]
+        },
+        {
+          "id": "HIP-X-3",
+          "part_ref": "part:microduck:fa9ee2f71faafb88",
+          "center_local_m": [
+            0.038975,
+            0.006,
+            0
+          ],
+          "candidate_refs": [
+            "structure:451727d87b3cd9f77f5c"
+          ]
+        },
+        {
+          "id": "HIP-X-4",
+          "part_ref": "part:microduck:fa9ee2f71faafb88",
+          "center_local_m": [
+            0.038975,
+            0,
+            0.006
+          ],
+          "candidate_refs": [
+            "structure:bb703ed1dab7f7151b2d"
+          ]
+        },
+        {
+          "id": "CR-SECTION-bbf43e18143e",
+          "part_ref": "part:microduck:fa9ee2f71faafb88",
+          "center_local_m": [
+            0.03897500038146973,
+            7.655766027804471e-21,
+            0.005999999992993506
+          ],
+          "candidate_refs": [
+            "structure:bb703ed1dab7f7151b2d"
+          ]
+        },
+        {
+          "id": "CR-SECTION-59cbb62fb897",
+          "part_ref": "part:microduck:fa9ee2f71faafb88",
+          "center_local_m": [
+            0.03897500038146973,
+            0.005999999992993506,
+            1.3397583188817833e-20
+          ],
+          "candidate_refs": [
+            "structure:451727d87b3cd9f77f5c"
+          ]
+        },
+        {
+          "id": "CR-SECTION-5f47efff9194",
+          "part_ref": "part:microduck:fa9ee2f71faafb88",
+          "center_local_m": [
+            0.03897500038146973,
+            -0.005999999992993506,
+            1.3397587642793305e-20
+          ],
+          "candidate_refs": [
+            "structure:434796536a6c45bbcca7"
+          ]
+        },
+        {
+          "id": "CR-SECTION-c9e78a6d87df",
+          "part_ref": "part:microduck:fa9ee2f71faafb88",
+          "center_local_m": [
+            0.03897500038146973,
+            -1.695609427262147e-20,
+            -0.005999999992993506
+          ],
+          "candidate_refs": [
+            "structure:11173f52f2df89abe32c"
+          ]
+        },
+        {
+          "id": "CR-SECTION-506752305792",
+          "part_ref": "part:microduck:fa9ee2f71faafb88",
+          "center_local_m": [
+            0.01150000001311063,
+            -0.01802500057965517,
+            -1.3148264981387447e-20
+          ],
+          "candidate_refs": [
+            "structure:251e653b3c03986ce087"
+          ]
+        },
+        {
+          "id": "CR-SECTION-cb475a9c0986",
+          "part_ref": "part:microduck:fa9ee2f71faafb88",
+          "center_local_m": [
+            0.023500000026991114,
+            -0.01802500057965517,
+            -1.2898963269842734e-20
+          ],
+          "candidate_refs": [
+            "structure:b90338acf15ad4108d19"
+          ]
+        },
+        {
+          "id": "CR-SECTION-78dc68b55b62",
+          "part_ref": "part:microduck:fa9ee2f71faafb88",
+          "center_local_m": [
+            0.017500000074505806,
+            -0.01802500057965517,
+            0.005999999992993497
+          ],
+          "candidate_refs": [
+            "structure:691a6552d9a82afe9998"
+          ]
+        },
+        {
+          "id": "CR-SECTION-fb552ed0eb77",
+          "part_ref": "part:microduck:fa9ee2f71faafb88",
+          "center_local_m": [
+            0.017500000074505806,
+            -0.01802500057965517,
+            -0.005999999992993497
+          ],
+          "candidate_refs": [
+            "structure:d5bd64b5aa05d238c0ab"
+          ]
+        },
+        {
+          "id": "HIP-Y-1",
+          "part_ref": "part:microduck:c7eeeac0a640d191",
+          "center_local_m": [
+            0.0235,
+            -0.018025,
+            0
+          ],
+          "candidate_refs": [
+            "structure:22e82199fcae88d962ee"
+          ]
+        },
+        {
+          "id": "HIP-Y-2",
+          "part_ref": "part:microduck:c7eeeac0a640d191",
+          "center_local_m": [
+            0.0175,
+            -0.018025,
+            -0.006
+          ],
+          "candidate_refs": [
+            "structure:262fa3afb69f956c51b3"
+          ]
+        },
+        {
+          "id": "HIP-Y-3",
+          "part_ref": "part:microduck:c7eeeac0a640d191",
+          "center_local_m": [
+            0.0175,
+            -0.018025,
+            0.006
+          ],
+          "candidate_refs": [
+            "structure:cd3a63a2bb1dcbc1b79b"
+          ]
+        },
+        {
+          "id": "HIP-Y-4",
+          "part_ref": "part:microduck:c7eeeac0a640d191",
+          "center_local_m": [
+            0.0115,
+            -0.018025,
+            0
+          ],
+          "candidate_refs": [
+            "structure:781ff0bb3544d47b5ee9"
+          ]
+        },
+        {
+          "id": "HIP-X-1",
+          "part_ref": "part:microduck:c7eeeac0a640d191",
+          "center_local_m": [
+            0.038975,
+            0,
+            -0.006
+          ],
+          "candidate_refs": [
+            "structure:b916b03e2009313214de"
+          ]
+        },
+        {
+          "id": "HIP-X-2",
+          "part_ref": "part:microduck:c7eeeac0a640d191",
+          "center_local_m": [
+            0.038975,
+            -0.006,
+            0
+          ],
+          "candidate_refs": [
+            "structure:77868e6578e44d811434"
+          ]
+        },
+        {
+          "id": "HIP-X-3",
+          "part_ref": "part:microduck:c7eeeac0a640d191",
+          "center_local_m": [
+            0.038975,
+            0.006,
+            0
+          ],
+          "candidate_refs": [
+            "structure:370c8de0de55e62e973c"
+          ]
+        },
+        {
+          "id": "HIP-X-4",
+          "part_ref": "part:microduck:c7eeeac0a640d191",
+          "center_local_m": [
+            0.038975,
+            0,
+            0.006
+          ],
+          "candidate_refs": [
+            "structure:8aa5a11df74e2320e5c3"
+          ]
+        },
+        {
+          "id": "CR-SECTION-506752305792",
+          "part_ref": "part:microduck:c7eeeac0a640d191",
+          "center_local_m": [
+            0.01150000001311063,
+            -0.01802500057965517,
+            -1.3148264981387447e-20
+          ],
+          "candidate_refs": [
+            "structure:781ff0bb3544d47b5ee9"
+          ]
+        },
+        {
+          "id": "CR-SECTION-cb475a9c0986",
+          "part_ref": "part:microduck:c7eeeac0a640d191",
+          "center_local_m": [
+            0.023500000026991114,
+            -0.01802500057965517,
+            -1.2898963269842734e-20
+          ],
+          "candidate_refs": [
+            "structure:22e82199fcae88d962ee"
+          ]
+        },
+        {
+          "id": "CR-SECTION-78dc68b55b62",
+          "part_ref": "part:microduck:c7eeeac0a640d191",
+          "center_local_m": [
+            0.017500000074505806,
+            -0.01802500057965517,
+            0.005999999992993497
+          ],
+          "candidate_refs": [
+            "structure:cd3a63a2bb1dcbc1b79b"
+          ]
+        },
+        {
+          "id": "CR-SECTION-fb552ed0eb77",
+          "part_ref": "part:microduck:c7eeeac0a640d191",
+          "center_local_m": [
+            0.017500000074505806,
+            -0.01802500057965517,
+            -0.005999999992993497
+          ],
+          "candidate_refs": [
+            "structure:262fa3afb69f956c51b3"
+          ]
+        },
+        {
+          "id": "CR-SECTION-c9e78a6d87df",
+          "part_ref": "part:microduck:c7eeeac0a640d191",
+          "center_local_m": [
+            0.03897500038146973,
+            -1.695609427262147e-20,
+            -0.005999999992993506
+          ],
+          "candidate_refs": [
+            "structure:b916b03e2009313214de"
+          ]
+        },
+        {
+          "id": "CR-SECTION-5f47efff9194",
+          "part_ref": "part:microduck:c7eeeac0a640d191",
+          "center_local_m": [
+            0.03897500038146973,
+            -0.005999999992993506,
+            1.3397587642793305e-20
+          ],
+          "candidate_refs": [
+            "structure:77868e6578e44d811434"
+          ]
+        },
+        {
+          "id": "CR-SECTION-59cbb62fb897",
+          "part_ref": "part:microduck:c7eeeac0a640d191",
+          "center_local_m": [
+            0.03897500038146973,
+            0.005999999992993506,
+            1.3397583188817833e-20
+          ],
+          "candidate_refs": [
+            "structure:370c8de0de55e62e973c"
+          ]
+        },
+        {
+          "id": "CR-SECTION-bbf43e18143e",
+          "part_ref": "part:microduck:c7eeeac0a640d191",
+          "center_local_m": [
+            0.03897500038146973,
+            7.655766027804471e-21,
+            0.005999999992993506
+          ],
+          "candidate_refs": [
+            "structure:8aa5a11df74e2320e5c3"
+          ]
+        },
+        {
+          "id": "ACTUATOR-X-1",
+          "part_ref": "part:microduck:9ffe9d5bcd6bc13a",
+          "center_local_m": [
+            -0.0114,
+            -0.006,
+            0
+          ],
+          "candidate_refs": [
+            "structure:3539484151432f43bedc"
+          ]
+        },
+        {
+          "id": "ACTUATOR-X-2",
+          "part_ref": "part:microduck:9ffe9d5bcd6bc13a",
+          "center_local_m": [
+            -0.0114,
+            0,
+            -0.006
+          ],
+          "candidate_refs": [
+            "structure:24bcad473b6b18c584e8"
+          ]
+        },
+        {
+          "id": "ACTUATOR-X-3",
+          "part_ref": "part:microduck:9ffe9d5bcd6bc13a",
+          "center_local_m": [
+            -0.0114,
+            0,
+            0.006
+          ],
+          "candidate_refs": [
+            "structure:ca56cb9d7db8223b0398"
+          ]
+        },
+        {
+          "id": "ACTUATOR-X-4",
+          "part_ref": "part:microduck:9ffe9d5bcd6bc13a",
+          "center_local_m": [
+            -0.0114,
+            0.006,
+            0
+          ],
+          "candidate_refs": [
+            "structure:4a14aa3c6bc59325d5ab"
+          ]
+        },
+        {
+          "id": "CR-SECTION-c945923ccd14",
+          "part_ref": "part:microduck:9ffe9d5bcd6bc13a",
+          "center_local_m": [
+            0,
+            0.008000000064252154,
+            -0.02249999996274709
+          ],
+          "candidate_refs": [
+            "structure:d6909724d57fb76aab79"
+          ]
+        },
+        {
+          "id": "CR-SECTION-f37766542b91",
+          "part_ref": "part:microduck:9ffe9d5bcd6bc13a",
+          "center_local_m": [
+            0,
+            -0.008000000064252154,
+            -0.02249999996274709
+          ],
+          "candidate_refs": [
+            "structure:43965dc972e22e83f3de"
+          ]
+        },
+        {
+          "id": "CR-SECTION-009c3a4be356",
+          "part_ref": "part:microduck:9ffe9d5bcd6bc13a",
+          "center_local_m": [
+            -0.011500000022351742,
+            0.006000000002457397,
+            3.4672845294492454e-20
+          ],
+          "candidate_refs": [
+            "structure:4a14aa3c6bc59325d5ab"
+          ]
+        },
+        {
+          "id": "CR-SECTION-3961fc6c0466",
+          "part_ref": "part:microduck:9ffe9d5bcd6bc13a",
+          "center_local_m": [
+            -0.011500000022351742,
+            5.188599864728396e-21,
+            -0.006000000002457397
+          ],
+          "candidate_refs": [
+            "structure:24bcad473b6b18c584e8"
+          ]
+        },
+        {
+          "id": "CR-SECTION-11cfcd571e90",
+          "part_ref": "part:microduck:9ffe9d5bcd6bc13a",
+          "center_local_m": [
+            -0.011500000022351742,
+            5.188600139661211e-21,
+            0.006000000002457397
+          ],
+          "candidate_refs": [
+            "structure:ca56cb9d7db8223b0398"
+          ]
+        },
+        {
+          "id": "CR-SECTION-b81891282027",
+          "part_ref": "part:microduck:9ffe9d5bcd6bc13a",
+          "center_local_m": [
+            -0.011500000022351742,
+            -0.006000000002457397,
+            -1.1966797320826464e-20
+          ],
+          "candidate_refs": [
+            "structure:3539484151432f43bedc"
+          ]
+        },
+        {
+          "id": "ACTUATOR-X-1",
+          "part_ref": "part:microduck:087d7a46a3ce4ca3",
+          "center_local_m": [
+            -0.0114,
+            -0.006,
+            0
+          ],
+          "candidate_refs": [
+            "structure:4778c244b48ce6837a6a"
+          ]
+        },
+        {
+          "id": "ACTUATOR-X-2",
+          "part_ref": "part:microduck:087d7a46a3ce4ca3",
+          "center_local_m": [
+            -0.0114,
+            0,
+            -0.006
+          ],
+          "candidate_refs": [
+            "structure:26e486e89e4832611480"
+          ]
+        },
+        {
+          "id": "ACTUATOR-X-3",
+          "part_ref": "part:microduck:087d7a46a3ce4ca3",
+          "center_local_m": [
+            -0.0114,
+            0,
+            0.006
+          ],
+          "candidate_refs": [
+            "structure:e13828c8e0620fcaa260"
+          ]
+        },
+        {
+          "id": "ACTUATOR-X-4",
+          "part_ref": "part:microduck:087d7a46a3ce4ca3",
+          "center_local_m": [
+            -0.0114,
+            0.006,
+            0
+          ],
+          "candidate_refs": [
+            "structure:ee7b2b6a323106a70c0e"
+          ]
+        },
+        {
+          "id": "CR-SECTION-a8114388a041",
+          "part_ref": "part:microduck:087d7a46a3ce4ca3",
+          "center_local_m": [
+            0,
+            0.008000000064252192,
+            0.007500000056878147
+          ],
+          "candidate_refs": [
+            "structure:24d67ed1fc9efafb5868"
+          ]
+        },
+        {
+          "id": "CR-SECTION-0b25d4eeb3df",
+          "part_ref": "part:microduck:087d7a46a3ce4ca3",
+          "center_local_m": [
+            0,
+            -0.008000000064252192,
+            0.007500000056878147
+          ],
+          "candidate_refs": [
+            "structure:a04845fdd660c54320b1"
+          ]
+        },
+        {
+          "id": "CR-SECTION-c945923ccd14",
+          "part_ref": "part:microduck:087d7a46a3ce4ca3",
+          "center_local_m": [
+            0,
+            0.008000000064252154,
+            -0.02249999996274709
+          ],
+          "candidate_refs": [
+            "structure:b9349e49334e0337fec9"
+          ]
+        },
+        {
+          "id": "CR-SECTION-f37766542b91",
+          "part_ref": "part:microduck:087d7a46a3ce4ca3",
+          "center_local_m": [
+            0,
+            -0.008000000064252154,
+            -0.02249999996274709
+          ],
+          "candidate_refs": [
+            "structure:f006e8bc4ad0261d57af"
+          ]
+        },
+        {
+          "id": "CR-SECTION-b81891282027",
+          "part_ref": "part:microduck:087d7a46a3ce4ca3",
+          "center_local_m": [
+            -0.011500000022351742,
+            -0.006000000002457397,
+            -1.1966797320826464e-20
+          ],
+          "candidate_refs": [
+            "structure:4778c244b48ce6837a6a"
+          ]
+        },
+        {
+          "id": "CR-SECTION-009c3a4be356",
+          "part_ref": "part:microduck:087d7a46a3ce4ca3",
+          "center_local_m": [
+            -0.011500000022351742,
+            0.006000000002457397,
+            3.4672845294492454e-20
+          ],
+          "candidate_refs": [
+            "structure:ee7b2b6a323106a70c0e"
+          ]
+        },
+        {
+          "id": "CR-SECTION-3961fc6c0466",
+          "part_ref": "part:microduck:087d7a46a3ce4ca3",
+          "center_local_m": [
+            -0.011500000022351742,
+            5.188599864728396e-21,
+            -0.006000000002457397
+          ],
+          "candidate_refs": [
+            "structure:26e486e89e4832611480"
+          ]
+        },
+        {
+          "id": "CR-SECTION-11cfcd571e90",
+          "part_ref": "part:microduck:087d7a46a3ce4ca3",
+          "center_local_m": [
+            -0.011500000022351742,
+            5.188600139661211e-21,
+            0.006000000002457397
+          ],
+          "candidate_refs": [
+            "structure:e13828c8e0620fcaa260"
+          ]
+        },
+        {
+          "id": "ACTUATOR-X-1",
+          "part_ref": "part:microduck:08c5ade0f3fd37db",
+          "center_local_m": [
+            -0.0114,
+            -0.006,
+            0
+          ],
+          "candidate_refs": [
+            "structure:fdd891e8dc1d2889caa7"
+          ]
+        },
+        {
+          "id": "ACTUATOR-X-2",
+          "part_ref": "part:microduck:08c5ade0f3fd37db",
+          "center_local_m": [
+            -0.0114,
+            0,
+            -0.006
+          ],
+          "candidate_refs": [
+            "structure:bd94aeb66d32ec1c7268"
+          ]
+        },
+        {
+          "id": "ACTUATOR-X-3",
+          "part_ref": "part:microduck:08c5ade0f3fd37db",
+          "center_local_m": [
+            -0.0114,
+            0,
+            0.006
+          ],
+          "candidate_refs": [
+            "structure:f4aebaf5cc9f97d9b7b5"
+          ]
+        },
+        {
+          "id": "ACTUATOR-X-4",
+          "part_ref": "part:microduck:08c5ade0f3fd37db",
+          "center_local_m": [
+            -0.0114,
+            0.006,
+            0
+          ],
+          "candidate_refs": [
+            "structure:5846ac30dc19ed3f7904"
+          ]
+        },
+        {
+          "id": "CR-SECTION-c945923ccd14",
+          "part_ref": "part:microduck:08c5ade0f3fd37db",
+          "center_local_m": [
+            0,
+            0.008000000064252154,
+            -0.02249999996274709
+          ],
+          "candidate_refs": [
+            "structure:8d8565504ce949e6f561"
+          ]
+        },
+        {
+          "id": "CR-SECTION-f37766542b91",
+          "part_ref": "part:microduck:08c5ade0f3fd37db",
+          "center_local_m": [
+            0,
+            -0.008000000064252154,
+            -0.02249999996274709
+          ],
+          "candidate_refs": [
+            "structure:ba0dd13a19324c706f6e"
+          ]
+        },
+        {
+          "id": "CR-SECTION-b81891282027",
+          "part_ref": "part:microduck:08c5ade0f3fd37db",
+          "center_local_m": [
+            -0.011500000022351742,
+            -0.006000000002457397,
+            -1.1966797320826464e-20
+          ],
+          "candidate_refs": [
+            "structure:fdd891e8dc1d2889caa7"
+          ]
+        },
+        {
+          "id": "CR-SECTION-11cfcd571e90",
+          "part_ref": "part:microduck:08c5ade0f3fd37db",
+          "center_local_m": [
+            -0.011500000022351742,
+            5.188600139661211e-21,
+            0.006000000002457397
+          ],
+          "candidate_refs": [
+            "structure:f4aebaf5cc9f97d9b7b5"
+          ]
+        },
+        {
+          "id": "CR-SECTION-3961fc6c0466",
+          "part_ref": "part:microduck:08c5ade0f3fd37db",
+          "center_local_m": [
+            -0.011500000022351742,
+            5.188599864728396e-21,
+            -0.006000000002457397
+          ],
+          "candidate_refs": [
+            "structure:bd94aeb66d32ec1c7268"
+          ]
+        },
+        {
+          "id": "CR-SECTION-009c3a4be356",
+          "part_ref": "part:microduck:08c5ade0f3fd37db",
+          "center_local_m": [
+            -0.011500000022351742,
+            0.006000000002457397,
+            3.4672845294492454e-20
+          ],
+          "candidate_refs": [
+            "structure:5846ac30dc19ed3f7904"
+          ]
+        },
+        {
+          "id": "CR-SECTION-d6c422a1c615",
+          "part_ref": "part:microduck:07e507f1e9297aa3",
+          "center_local_m": [
+            0.06560000032186508,
+            0.02199999988157676,
+            -0.00022291236226093265
+          ],
+          "candidate_refs": [
+            "structure:67af95413a3bc6b125f2"
+          ]
+        },
+        {
+          "id": "CR-SECTION-19094ab3bfaa",
+          "part_ref": "part:microduck:07e507f1e9297aa3",
+          "center_local_m": [
+            0.06560000032186508,
+            0.028000000101930312,
+            -0.006222912411138887
+          ],
+          "candidate_refs": [
+            "structure:af947cda0813fce9b785"
+          ]
+        },
+        {
+          "id": "CR-SECTION-6f5df550e67e",
+          "part_ref": "part:microduck:07e507f1e9297aa3",
+          "center_local_m": [
+            0.06560000032186508,
+            0.016000000109909953,
+            -0.006222912411138889
+          ],
+          "candidate_refs": [
+            "structure:5831f347cf1f57dc99b8"
+          ]
+        },
+        {
+          "id": "CR-SECTION-7ffa664b82a1",
+          "part_ref": "part:microduck:07e507f1e9297aa3",
+          "center_local_m": [
+            0.06560000032186508,
+            0.02199999988157676,
+            -0.012222912436648851
+          ],
+          "candidate_refs": [
+            "structure:7d0e2a11bf47c3f4e4f3"
+          ]
+        },
+        {
+          "id": "CR-SECTION-3961fc6c0466",
+          "part_ref": "part:microduck:7c130c8489b57c99",
+          "center_local_m": [
+            -0.011500000022351742,
+            5.188599864728396e-21,
+            -0.006000000002457397
+          ],
+          "candidate_refs": [
+            "structure:89b6eb658bff921f9a85"
+          ]
+        },
+        {
+          "id": "CR-SECTION-009c3a4be356",
+          "part_ref": "part:microduck:7c130c8489b57c99",
+          "center_local_m": [
+            -0.011500000022351742,
+            0.006000000002457397,
+            3.4672845294492454e-20
+          ],
+          "candidate_refs": [
+            "structure:1a562b75b4469a627b98"
+          ]
+        },
+        {
+          "id": "CR-SECTION-b81891282027",
+          "part_ref": "part:microduck:7c130c8489b57c99",
+          "center_local_m": [
+            -0.011500000022351742,
+            -0.006000000002457397,
+            -1.1966797320826464e-20
+          ],
+          "candidate_refs": [
+            "structure:09ebe47537c9897a1bca"
+          ]
+        },
+        {
+          "id": "CR-SECTION-11cfcd571e90",
+          "part_ref": "part:microduck:7c130c8489b57c99",
+          "center_local_m": [
+            -0.011500000022351742,
+            5.188600139661211e-21,
+            0.006000000002457397
+          ],
+          "candidate_refs": [
+            "structure:c9e1006508dd084651db"
+          ]
+        },
+        {
+          "id": "CR-SECTION-c945923ccd14",
+          "part_ref": "part:microduck:7c130c8489b57c99",
+          "center_local_m": [
+            0,
+            0.008000000064252154,
+            -0.02249999996274709
+          ],
+          "candidate_refs": [
+            "structure:f1490cdde20eaba65082"
+          ]
+        },
+        {
+          "id": "CR-SECTION-f37766542b91",
+          "part_ref": "part:microduck:7c130c8489b57c99",
+          "center_local_m": [
+            0,
+            -0.008000000064252154,
+            -0.02249999996274709
+          ],
+          "candidate_refs": [
+            "structure:a5a0b79d999ff0cbf78f"
+          ]
+        },
+        {
+          "id": "CR-SECTION-c945923ccd14",
+          "part_ref": "part:microduck:0820b4025f26a004",
+          "center_local_m": [
+            0,
+            0.008000000064252154,
+            -0.02249999996274709
+          ],
+          "candidate_refs": [
+            "structure:699629befe1ac64edfae"
+          ]
+        },
+        {
+          "id": "CR-SECTION-f37766542b91",
+          "part_ref": "part:microduck:0820b4025f26a004",
+          "center_local_m": [
+            0,
+            -0.008000000064252154,
+            -0.02249999996274709
+          ],
+          "candidate_refs": [
+            "structure:5dda64a8ecac6d4e4d97"
+          ]
+        },
+        {
+          "id": "CR-SECTION-3961fc6c0466",
+          "part_ref": "part:microduck:0820b4025f26a004",
+          "center_local_m": [
+            -0.011500000022351742,
+            5.188599864728396e-21,
+            -0.006000000002457397
+          ],
+          "candidate_refs": [
+            "structure:28e3cbc048ae424584c2"
+          ]
+        },
+        {
+          "id": "CR-SECTION-b81891282027",
+          "part_ref": "part:microduck:0820b4025f26a004",
+          "center_local_m": [
+            -0.011500000022351742,
+            -0.006000000002457397,
+            -1.1966797320826464e-20
+          ],
+          "candidate_refs": [
+            "structure:8fce3a4fa23637754aea"
+          ]
+        },
+        {
+          "id": "CR-SECTION-009c3a4be356",
+          "part_ref": "part:microduck:0820b4025f26a004",
+          "center_local_m": [
+            -0.011500000022351742,
+            0.006000000002457397,
+            3.4672845294492454e-20
+          ],
+          "candidate_refs": [
+            "structure:40e3f586e9dba5029b67"
+          ]
+        },
+        {
+          "id": "CR-SECTION-11cfcd571e90",
+          "part_ref": "part:microduck:0820b4025f26a004",
+          "center_local_m": [
+            -0.011500000022351742,
+            5.188600139661211e-21,
+            0.006000000002457397
+          ],
+          "candidate_refs": [
+            "structure:a29b98523f8d75103d37"
+          ]
+        },
+        {
+          "id": "CR-SECTION-bd2199a2b8f6",
+          "part_ref": "part:microduck:7f4fefc3c6de90f1",
+          "center_local_m": [
+            0.03710000030696392,
+            0.030000000050689438,
+            0.016277087645217927
+          ],
+          "candidate_refs": [
+            "structure:ab2117fe198922302d0f"
+          ]
+        },
+        {
+          "id": "CR-SECTION-c47b1cf38960",
+          "part_ref": "part:microduck:7f4fefc3c6de90f1",
+          "center_local_m": [
+            0.03710000030696392,
+            0.013999999968032514,
+            0.016277087645217896
+          ],
+          "candidate_refs": [
+            "structure:978fd4a48030d4173d32"
+          ]
+        },
+        {
+          "id": "CR-SECTION-cc101dfac60b",
+          "part_ref": "part:microduck:b371ac60e2f6757b",
+          "center_local_m": [
+            -0.06560000032186508,
+            0.02199999988157676,
+            -0.00022291236226093265
+          ],
+          "candidate_refs": [
+            "structure:9bbf6baf148e4b1440e4"
+          ]
+        },
+        {
+          "id": "CR-SECTION-c7a15f5fd783",
+          "part_ref": "part:microduck:b371ac60e2f6757b",
+          "center_local_m": [
+            -0.06560000032186508,
+            0.028000000101930312,
+            -0.006222912411138887
+          ],
+          "candidate_refs": [
+            "structure:c32d1a417684d2d823ef"
+          ]
+        },
+        {
+          "id": "CR-SECTION-620f49b16591",
+          "part_ref": "part:microduck:b371ac60e2f6757b",
+          "center_local_m": [
+            -0.06560000032186508,
+            0.016000000109909953,
+            -0.006222912411138889
+          ],
+          "candidate_refs": [
+            "structure:bcfa52a1f45a7c680719"
+          ]
+        },
+        {
+          "id": "CR-SECTION-17517a797535",
+          "part_ref": "part:microduck:b371ac60e2f6757b",
+          "center_local_m": [
+            -0.06560000032186508,
+            0.02199999988157676,
+            -0.012222912436648851
+          ],
+          "candidate_refs": [
+            "structure:e9a5019584c667e56b73"
+          ]
+        },
+        {
+          "id": "CR-SECTION-1e4dd33092b8",
+          "part_ref": "part:microduck:48099e14105d3289",
+          "center_local_m": [
+            0.009499999970020906,
+            0.00989999994635582,
+            0.007499999978291339
+          ],
+          "candidate_refs": [
+            "structure:025da246a90bebb6c48f"
+          ]
+        },
+        {
+          "id": "CR-SECTION-c6346099e661",
+          "part_ref": "part:microduck:48099e14105d3289",
+          "center_local_m": [
+            0.025500000155499993,
+            0.00989999994635582,
+            0.007499999978291328
+          ],
+          "candidate_refs": [
+            "structure:8b9c7bc953e3076c0b23"
+          ]
+        },
+        {
+          "id": "CR-SECTION-bd6b2a15fca0",
+          "part_ref": "part:microduck:48099e14105d3289",
+          "center_local_m": [
+            0.011499999971004612,
+            -0.0019999999890813313,
+            0.012974999845027924
+          ],
+          "candidate_refs": [
+            "structure:b5cc4b15c6c6a19ed5d6"
+          ]
+        },
+        {
+          "id": "CR-SECTION-8046746e4e04",
+          "part_ref": "part:microduck:48099e14105d3289",
+          "center_local_m": [
+            0.023499999957674315,
+            -0.0019999999890813304,
+            0.012974999845027924
+          ],
+          "candidate_refs": [
+            "structure:e8d40d53c6c3bbf17e40"
+          ]
+        },
+        {
+          "id": "CR-SECTION-163fda7566a1",
+          "part_ref": "part:microduck:48099e14105d3289",
+          "center_local_m": [
+            0.01750000007371976,
+            -0.008000000009847328,
+            0.012974999845027924
+          ],
+          "candidate_refs": [
+            "structure:55a30895cb426d0ea4ad"
+          ]
+        },
+        {
+          "id": "CR-SECTION-8d4685bb3e92",
+          "part_ref": "part:microduck:48099e14105d3289",
+          "center_local_m": [
+            0.01750000007371975,
+            0.0040000000406622115,
+            0.012974999845027924
+          ],
+          "candidate_refs": [
+            "structure:f0e5d8967a3a41ffc5aa"
+          ]
+        },
+        {
+          "id": "CR-SECTION-20930ae92712",
+          "part_ref": "part:microduck:48099e14105d3289",
+          "center_local_m": [
+            0.008499999924812993,
+            -0.01129999989643693,
+            0.012500000001457436
+          ],
+          "candidate_refs": [
+            "structure:05d27fe14b653147409d",
+            "structure:837ebff46da00e822bc9"
+          ]
+        },
+        {
+          "id": "CR-SECTION-5f69d861039d",
+          "part_ref": "part:microduck:48099e14105d3289",
+          "center_local_m": [
+            0.026500000181756,
+            -0.01129999989643693,
+            0.012499999999940765
+          ],
+          "candidate_refs": [
+            "structure:a9f7732637fac380c446",
+            "structure:df5d474e6368f52db6eb"
+          ]
+        },
+        {
+          "id": "CR-SECTION-a9accaef816a",
+          "part_ref": "part:microduck:c703574f50f6a46a",
+          "center_local_m": [
+            0.009500000049431632,
+            -0.013999999966472387,
+            -0.02250000013173265
+          ],
+          "candidate_refs": [
+            "structure:cee75e7064e5f4d7be94"
+          ]
+        },
+        {
+          "id": "CR-SECTION-6bf2902a757e",
+          "part_ref": "part:microduck:c703574f50f6a46a",
+          "center_local_m": [
+            0.025499999907500955,
+            -0.013999999966472387,
+            -0.022500000131732627
+          ],
+          "candidate_refs": [
+            "structure:3575b03f05c35bb9592f"
+          ]
+        },
+        {
+          "id": "CR-SECTION-43323b54ea62",
+          "part_ref": "part:microduck:c703574f50f6a46a",
+          "center_local_m": [
+            0.00850000003732599,
+            -0.013999999966472387,
+            0.012499999912157988
+          ],
+          "candidate_refs": [
+            "structure:6fbe75417d2ad9c959a6"
+          ]
+        },
+        {
+          "id": "CR-SECTION-97d1520b73a0",
+          "part_ref": "part:microduck:c703574f50f6a46a",
+          "center_local_m": [
+            0.026499999807771447,
+            -0.013999999966472387,
+            0.012499999912157991
+          ],
+          "candidate_refs": [
+            "structure:adbf590538045201763d"
+          ]
+        },
+        {
+          "id": "CR-SECTION-8999ea74a555",
+          "part_ref": "part:microduck:7e86db28af59d3cc",
+          "center_local_m": [
+            0.04299999959766865,
+            0.008000000009847297,
+            0.022500000131732662
+          ],
+          "candidate_refs": [
+            "structure:51e4efd1f10463606a99"
+          ]
+        },
+        {
+          "id": "CR-SECTION-f53928e4579e",
+          "part_ref": "part:microduck:7e86db28af59d3cc",
+          "center_local_m": [
+            0.04299999959766865,
+            -0.008000000009847297,
+            0.022500000131732662
+          ],
+          "candidate_refs": [
+            "structure:de46890d6b995380886d"
+          ]
+        },
+        {
+          "id": "CR-SECTION-37e1ce76212f",
+          "part_ref": "part:microduck:7e86db28af59d3cc",
+          "center_local_m": [
+            0.04299999959766865,
+            -0.0004999999902139924,
+            0.043777087599866975
+          ],
+          "candidate_refs": [
+            "structure:c01dd90900cf49f4b2d2"
+          ]
+        },
+        {
+          "id": "CR-SECTION-4e14f53cb192",
+          "part_ref": "part:microduck:7e86db28af59d3cc",
+          "center_local_m": [
+            0.04299999959766865,
+            -0.0004999999902139913,
+            0.027777087605365035
+          ],
+          "candidate_refs": [
+            "structure:d8501e1e78a0d793abc7"
+          ]
+        },
+        {
+          "id": "CR-SECTION-f37766542b91",
+          "part_ref": "part:microduck:09cb390e38430c1e",
+          "center_local_m": [
+            0,
+            -0.008000000064252154,
+            -0.02249999996274709
+          ],
+          "candidate_refs": [
+            "structure:91960921d6c85dfb5441"
+          ]
+        },
+        {
+          "id": "CR-SECTION-c945923ccd14",
+          "part_ref": "part:microduck:09cb390e38430c1e",
+          "center_local_m": [
+            0,
+            0.008000000064252154,
+            -0.02249999996274709
+          ],
+          "candidate_refs": [
+            "structure:303209fc8ce5b61167a2"
+          ]
+        },
+        {
+          "id": "CR-SECTION-009c3a4be356",
+          "part_ref": "part:microduck:09cb390e38430c1e",
+          "center_local_m": [
+            -0.011500000022351742,
+            0.006000000002457397,
+            3.4672845294492454e-20
+          ],
+          "candidate_refs": [
+            "structure:f9500f69dd3f442de508"
+          ]
+        },
+        {
+          "id": "CR-SECTION-b81891282027",
+          "part_ref": "part:microduck:09cb390e38430c1e",
+          "center_local_m": [
+            -0.011500000022351742,
+            -0.006000000002457397,
+            -1.1966797320826464e-20
+          ],
+          "candidate_refs": [
+            "structure:ea70b9b77cc0cbc1b11d"
+          ]
+        },
+        {
+          "id": "CR-SECTION-11cfcd571e90",
+          "part_ref": "part:microduck:09cb390e38430c1e",
+          "center_local_m": [
+            -0.011500000022351742,
+            5.188600139661211e-21,
+            0.006000000002457397
+          ],
+          "candidate_refs": [
+            "structure:7b912735ab934c323302"
+          ]
+        },
+        {
+          "id": "CR-SECTION-3961fc6c0466",
+          "part_ref": "part:microduck:09cb390e38430c1e",
+          "center_local_m": [
+            -0.011500000022351742,
+            5.188599864728396e-21,
+            -0.006000000002457397
+          ],
+          "candidate_refs": [
+            "structure:a9e0e5d32921a7f2467a"
+          ]
+        },
+        {
+          "id": "CR-SECTION-a6e51a6ad7e7",
+          "part_ref": "part:microduck:203d2686e3321e4a",
+          "center_local_m": [
+            -0.009500000026750213,
+            0.020500000228055072,
+            0.01699999999254942
+          ],
+          "candidate_refs": [
+            "structure:fa7cb2af717ae35805f0"
+          ]
+        },
+        {
+          "id": "CR-SECTION-bb6267d6d3ac",
+          "part_ref": "part:microduck:203d2686e3321e4a",
+          "center_local_m": [
+            -0.02549999982337694,
+            0.020500000228055065,
+            0.01699999999254942
+          ],
+          "candidate_refs": [
+            "structure:12c7571bfbb4edf649f5"
+          ]
+        },
+        {
+          "id": "CR-SECTION-5166f736cbc7",
+          "part_ref": "part:microduck:203d2686e3321e4a",
+          "center_local_m": [
+            0.009500000026750213,
+            0.020500000228055072,
+            0.01699999999254942
+          ],
+          "candidate_refs": [
+            "structure:8bd2399921ea2a520ecc"
+          ]
+        },
+        {
+          "id": "CR-SECTION-1cfd63cbd405",
+          "part_ref": "part:microduck:203d2686e3321e4a",
+          "center_local_m": [
+            0.02549999982337694,
+            0.020500000228055065,
+            0.01699999999254942
+          ],
+          "candidate_refs": [
+            "structure:eead1d89028a3e5a3aa2"
+          ]
+        },
+        {
+          "id": "CR-SECTION-2ed833fb2b24",
+          "part_ref": "part:microduck:133711c520619e45",
+          "center_local_m": [
+            0.0010000000474974513,
+            -0.013999999966472328,
+            0.07749999974269292
+          ],
+          "candidate_refs": [
+            "structure:02112a6ca7e374512a5e"
+          ]
+        },
+        {
+          "id": "CR-SECTION-89b8429d49b5",
+          "part_ref": "part:microduck:133711c520619e45",
+          "center_local_m": [
+            0.0010000000474974513,
+            -0.030000000025911622,
+            0.07749999974269263
+          ],
+          "candidate_refs": [
+            "structure:310422c2fa49cf61056b"
+          ]
+        },
+        {
+          "id": "CR-SECTION-e4c9e8eba2b1",
+          "part_ref": "part:microduck:133711c520619e45",
+          "center_local_m": [
+            0.0010000000474974513,
+            -0.013999999966472403,
+            0.07249999975007733
+          ],
+          "candidate_refs": [
+            "structure:8293bd4b2a5aa5558266"
+          ]
+        },
+        {
+          "id": "CR-SECTION-871eefc7ea78",
+          "part_ref": "part:microduck:133711c520619e45",
+          "center_local_m": [
+            0.0010000000474974513,
+            -0.030000000025911383,
+            0.07249999975007725
+          ],
+          "candidate_refs": [
+            "structure:a632f200c6261bad7162"
+          ]
+        },
+        {
+          "id": "CR-SECTION-f37766542b91",
+          "part_ref": "part:microduck:44b5600c1a735117",
+          "center_local_m": [
+            0,
+            -0.008000000064252154,
+            -0.02249999996274709
+          ],
+          "candidate_refs": [
+            "structure:d8c7809a492cff1daaaa"
+          ]
+        },
+        {
+          "id": "CR-SECTION-c945923ccd14",
+          "part_ref": "part:microduck:44b5600c1a735117",
+          "center_local_m": [
+            0,
+            0.008000000064252154,
+            -0.02249999996274709
+          ],
+          "candidate_refs": [
+            "structure:8ca654d2b5b8a7185db9"
+          ]
+        },
+        {
+          "id": "CR-SECTION-b81891282027",
+          "part_ref": "part:microduck:44b5600c1a735117",
+          "center_local_m": [
+            -0.011500000022351742,
+            -0.006000000002457397,
+            -1.1966797320826464e-20
+          ],
+          "candidate_refs": [
+            "structure:3a35232d5a4e8db1b966"
+          ]
+        },
+        {
+          "id": "CR-SECTION-009c3a4be356",
+          "part_ref": "part:microduck:44b5600c1a735117",
+          "center_local_m": [
+            -0.011500000022351742,
+            0.006000000002457397,
+            3.4672845294492454e-20
+          ],
+          "candidate_refs": [
+            "structure:dc30d87ab014a478f0aa"
+          ]
+        },
+        {
+          "id": "CR-SECTION-3961fc6c0466",
+          "part_ref": "part:microduck:44b5600c1a735117",
+          "center_local_m": [
+            -0.011500000022351742,
+            5.188599864728396e-21,
+            -0.006000000002457397
+          ],
+          "candidate_refs": [
+            "structure:0bff67d19db5b89f3ccc"
+          ]
+        },
+        {
+          "id": "CR-SECTION-11cfcd571e90",
+          "part_ref": "part:microduck:44b5600c1a735117",
+          "center_local_m": [
+            -0.011500000022351742,
+            5.188600139661211e-21,
+            0.006000000002457397
+          ],
+          "candidate_refs": [
+            "structure:2240bb32d7ad48c4e296"
+          ]
+        },
+        {
+          "id": "CR-SECTION-8f3e4b481ae5",
+          "part_ref": "part:microduck:44b5600c1a735117",
+          "center_local_m": [
+            0.011500000022351742,
+            0.006000000002457397,
+            5.2908987123891973e-20
+          ],
+          "candidate_refs": [
+            "structure:572018d7e2c2b35df006"
+          ]
+        },
+        {
+          "id": "CR-SECTION-49c62c6d5535",
+          "part_ref": "part:microduck:44b5600c1a735117",
+          "center_local_m": [
+            0.011500000022351742,
+            -0.006000000002457397,
+            1.1966797320826469e-20
+          ],
+          "candidate_refs": [
+            "structure:78fb0a69a6ead5c37377"
+          ]
+        },
+        {
+          "id": "CR-SECTION-41c33ac1fd80",
+          "part_ref": "part:microduck:44b5600c1a735117",
+          "center_local_m": [
+            0.011500000022351742,
+            5.188600139661214e-21,
+            -0.006000000002457397
+          ],
+          "candidate_refs": [
+            "structure:0c7e6b13168ad9889ff2"
+          ]
+        },
+        {
+          "id": "CR-SECTION-893fa258859f",
+          "part_ref": "part:microduck:44b5600c1a735117",
+          "center_local_m": [
+            0.011500000022351742,
+            5.188599864728392e-21,
+            0.006000000002457397
+          ],
+          "candidate_refs": [
+            "structure:8799825da6c70e9e97da"
+          ]
+        },
+        {
+          "id": "CR-SECTION-c945923ccd14",
+          "part_ref": "part:microduck:a682dc3620df43f5",
+          "center_local_m": [
+            0,
+            0.008000000064252154,
+            -0.02249999996274709
+          ],
+          "candidate_refs": [
+            "structure:de5cd643b51c1a0ba367"
+          ]
+        },
+        {
+          "id": "CR-SECTION-f37766542b91",
+          "part_ref": "part:microduck:a682dc3620df43f5",
+          "center_local_m": [
+            0,
+            -0.008000000064252154,
+            -0.02249999996274709
+          ],
+          "candidate_refs": [
+            "structure:d50919fc5d48e198ed95"
+          ]
+        },
+        {
+          "id": "CR-SECTION-009c3a4be356",
+          "part_ref": "part:microduck:a682dc3620df43f5",
+          "center_local_m": [
+            -0.011500000022351742,
+            0.006000000002457397,
+            3.4672845294492454e-20
+          ],
+          "candidate_refs": [
+            "structure:42ceb2cd11ea0f0a200b"
+          ]
+        },
+        {
+          "id": "CR-SECTION-b81891282027",
+          "part_ref": "part:microduck:a682dc3620df43f5",
+          "center_local_m": [
+            -0.011500000022351742,
+            -0.006000000002457397,
+            -1.1966797320826464e-20
+          ],
+          "candidate_refs": [
+            "structure:40b15b4eb45acc5bc3d8"
+          ]
+        },
+        {
+          "id": "CR-SECTION-11cfcd571e90",
+          "part_ref": "part:microduck:a682dc3620df43f5",
+          "center_local_m": [
+            -0.011500000022351742,
+            5.188600139661211e-21,
+            0.006000000002457397
+          ],
+          "candidate_refs": [
+            "structure:df4757af9686aaeedc07"
+          ]
+        },
+        {
+          "id": "CR-SECTION-3961fc6c0466",
+          "part_ref": "part:microduck:a682dc3620df43f5",
+          "center_local_m": [
+            -0.011500000022351742,
+            5.188599864728396e-21,
+            -0.006000000002457397
+          ],
+          "candidate_refs": [
+            "structure:1f03379398e7c4a3eca3"
+          ]
+        },
+        {
+          "id": "CR-SECTION-35b393e312e6",
+          "part_ref": "part:microduck:328011951ac11ee7",
+          "center_local_m": [
+            0.0418473519384861,
+            -6.64940548031515e-13,
+            0.001499999995139748
+          ],
+          "candidate_refs": [
+            "structure:b4e95ecd77c085cb1ccb"
+          ]
+        },
+        {
+          "id": "CR-SECTION-0b2fa7cd0f02",
+          "part_ref": "part:microduck:328011951ac11ee7",
+          "center_local_m": [
+            0.041879987344145775,
+            0.006000000015425269,
+            0.00749999997952786
+          ],
+          "candidate_refs": [
+            "structure:05b559d593d33063ae84"
+          ]
+        },
+        {
+          "id": "CR-SECTION-7bf21513783a",
+          "part_ref": "part:microduck:328011951ac11ee7",
+          "center_local_m": [
+            0.04212943650782108,
+            -0.006000000029331092,
+            0.007499999984735067
+          ],
+          "candidate_refs": [
+            "structure:4927af4ec60b44c9cde4"
+          ]
+        },
+        {
+          "id": "CR-SECTION-771ec23fe588",
+          "part_ref": "part:microduck:328011951ac11ee7",
+          "center_local_m": [
+            0.04216207005083561,
+            -2.036965665920666e-14,
+            0.013499999967107287
+          ],
+          "candidate_refs": [
+            "structure:6c006b8cb56e63e6adb9"
+          ]
+        },
+        {
+          "id": "CR-SECTION-b81891282027",
+          "part_ref": "part:microduck:50f0c376d01bb0c1",
+          "center_local_m": [
+            -0.011500000022351742,
+            -0.006000000002457397,
+            -1.1966797320826464e-20
+          ],
+          "candidate_refs": [
+            "structure:cab300e16b007190fcb3"
+          ]
+        },
+        {
+          "id": "CR-SECTION-11cfcd571e90",
+          "part_ref": "part:microduck:50f0c376d01bb0c1",
+          "center_local_m": [
+            -0.011500000022351742,
+            5.188600139661211e-21,
+            0.006000000002457397
+          ],
+          "candidate_refs": [
+            "structure:fc93c738960536dc4644"
+          ]
+        },
+        {
+          "id": "CR-SECTION-3961fc6c0466",
+          "part_ref": "part:microduck:50f0c376d01bb0c1",
+          "center_local_m": [
+            -0.011500000022351742,
+            5.188599864728396e-21,
+            -0.006000000002457397
+          ],
+          "candidate_refs": [
+            "structure:43e46a3c47d34dec2037"
+          ]
+        },
+        {
+          "id": "CR-SECTION-009c3a4be356",
+          "part_ref": "part:microduck:50f0c376d01bb0c1",
+          "center_local_m": [
+            -0.011500000022351742,
+            0.006000000002457397,
+            3.4672845294492454e-20
+          ],
+          "candidate_refs": [
+            "structure:189b0925b58c33881065"
+          ]
+        },
+        {
+          "id": "CR-SECTION-2ed833fb2b24",
+          "part_ref": "part:microduck:6b5602b4416129fe",
+          "center_local_m": [
+            0.0010000000474974513,
+            -0.013999999966472328,
+            0.07749999974269292
+          ],
+          "candidate_refs": [
+            "structure:ef30137a9f791f7727d4"
+          ]
+        },
+        {
+          "id": "CR-SECTION-89b8429d49b5",
+          "part_ref": "part:microduck:6b5602b4416129fe",
+          "center_local_m": [
+            0.0010000000474974513,
+            -0.030000000025911622,
+            0.07749999974269263
+          ],
+          "candidate_refs": [
+            "structure:1cc5e90fa08cd26ac55b"
+          ]
+        },
+        {
+          "id": "CR-SECTION-e4c9e8eba2b1",
+          "part_ref": "part:microduck:6b5602b4416129fe",
+          "center_local_m": [
+            0.0010000000474974513,
+            -0.013999999966472403,
+            0.07249999975007733
+          ],
+          "candidate_refs": [
+            "structure:a8cf147387a877392ec2"
+          ]
+        },
+        {
+          "id": "CR-SECTION-871eefc7ea78",
+          "part_ref": "part:microduck:6b5602b4416129fe",
+          "center_local_m": [
+            0.0010000000474974513,
+            -0.030000000025911383,
+            0.07249999975007725
+          ],
+          "candidate_refs": [
+            "structure:e0212586c1cfcc2e3320"
+          ]
+        },
+        {
+          "id": "CR-SECTION-249c95867256",
+          "part_ref": "part:microduck:834f5cc892eba41e",
+          "center_local_m": [
+            0.015999999828636646,
+            0.0060000000163751835,
+            -0.028793114068501754
+          ],
+          "candidate_refs": [
+            "structure:4ddd3f101adc10c067df"
+          ]
+        },
+        {
+          "id": "CR-SECTION-a75d4beee989",
+          "part_ref": "part:microduck:834f5cc892eba41e",
+          "center_local_m": [
+            0.015999999828636646,
+            -0.0060000000163751835,
+            -0.028793114068501754
+          ],
+          "candidate_refs": [
+            "structure:fcc378713f248bb6f536"
+          ]
+        },
+        {
+          "id": "CR-SECTION-d43813f0f5d1",
+          "part_ref": "part:microduck:834f5cc892eba41e",
+          "center_local_m": [
+            0.015999999828636646,
+            -8.388989002748957e-21,
+            -0.03479311418616115
+          ],
+          "candidate_refs": [
+            "structure:ef44ad5e4dda677b3bc5"
+          ]
+        },
+        {
+          "id": "CR-SECTION-1fd44c279ec3",
+          "part_ref": "part:microduck:834f5cc892eba41e",
+          "center_local_m": [
+            0.015999999828636646,
+            -8.59309245815644e-21,
+            -0.022793114185333252
+          ],
+          "candidate_refs": [
+            "structure:7172bcff88cba6309bfd"
+          ]
+        },
+        {
+          "id": "CR-SECTION-370305c643b3",
+          "part_ref": "part:microduck:834f5cc892eba41e",
+          "center_local_m": [
+            -0.015999999828636646,
+            -0.0060000000163751835,
+            -0.028793114068501754
+          ],
+          "candidate_refs": [
+            "structure:ee8de3af35308133b5ec"
+          ]
+        },
+        {
+          "id": "CR-SECTION-91ddb7ce9c46",
+          "part_ref": "part:microduck:834f5cc892eba41e",
+          "center_local_m": [
+            -0.015999999828636646,
+            0.0060000000163751835,
+            -0.028793114068501754
+          ],
+          "candidate_refs": [
+            "structure:a44c2746c494c48ab5b4"
+          ]
+        },
+        {
+          "id": "CR-SECTION-8177b0a62fb2",
+          "part_ref": "part:microduck:834f5cc892eba41e",
+          "center_local_m": [
+            -0.015999999828636646,
+            -8.388989002748957e-21,
+            -0.03479311418616115
+          ],
+          "candidate_refs": [
+            "structure:d230e35e3d8c391a3f7b"
+          ]
+        },
+        {
+          "id": "CR-SECTION-5918370cadb9",
+          "part_ref": "part:microduck:834f5cc892eba41e",
+          "center_local_m": [
+            -0.015999999828636646,
+            -8.59309245815644e-21,
+            -0.022793114185333252
+          ],
+          "candidate_refs": [
+            "structure:700eb1d1470eaf0283cf"
+          ]
+        },
+        {
+          "id": "CR-SECTION-1e38800f6db2",
+          "part_ref": "part:microduck:834f5cc892eba41e",
+          "center_local_m": [
+            -9.28103801426852e-21,
+            -0.0060000000163751765,
+            -0.011549999937415123
+          ],
+          "candidate_refs": [
+            "structure:0cce602fb57eec431d67"
+          ]
+        },
+        {
+          "id": "CR-SECTION-3b336ae33e17",
+          "part_ref": "part:microduck:834f5cc892eba41e",
+          "center_local_m": [
+            0.0060000000163751765,
+            -1.7787179391548055e-20,
+            -0.011549999937415123
+          ],
+          "candidate_refs": [
+            "structure:0fc94c49d8e7e6cad900"
+          ]
+        },
+        {
+          "id": "CR-SECTION-87f19b47dc7b",
+          "part_ref": "part:microduck:834f5cc892eba41e",
+          "center_local_m": [
+            -1.2207527953102033e-20,
+            0.0060000000163751765,
+            -0.011549999937415123
+          ],
+          "candidate_refs": [
+            "structure:6beefb7cb99ad9cf1340"
+          ]
+        },
+        {
+          "id": "CR-SECTION-74849b7c63c8",
+          "part_ref": "part:microduck:834f5cc892eba41e",
+          "center_local_m": [
+            -0.0060000000163751765,
+            8.641374716983086e-21,
+            -0.011549999937415123
+          ],
+          "candidate_refs": [
+            "structure:3d560371f1ecd7a336d1"
+          ]
+        },
+        {
+          "id": "CR-SECTION-c945923ccd14",
+          "part_ref": "part:microduck:4cf80d5a57c8cb04",
+          "center_local_m": [
+            0,
+            0.008000000064252154,
+            -0.02249999996274709
+          ],
+          "candidate_refs": [
+            "structure:63770fa7e4a3a058a1f5"
+          ]
+        },
+        {
+          "id": "CR-SECTION-f37766542b91",
+          "part_ref": "part:microduck:4cf80d5a57c8cb04",
+          "center_local_m": [
+            0,
+            -0.008000000064252154,
+            -0.02249999996274709
+          ],
+          "candidate_refs": [
+            "structure:573c2cf004d872077d88"
+          ]
+        },
+        {
+          "id": "CR-SECTION-4e14f53cb192",
+          "part_ref": "part:microduck:c75bfc0afb35e000",
+          "center_local_m": [
+            0.04299999959766865,
+            -0.0004999999902139913,
+            0.027777087605365035
+          ],
+          "candidate_refs": [
+            "structure:82666f25a2438309f882"
+          ]
+        },
+        {
+          "id": "CR-SECTION-37e1ce76212f",
+          "part_ref": "part:microduck:c75bfc0afb35e000",
+          "center_local_m": [
+            0.04299999959766865,
+            -0.0004999999902139924,
+            0.043777087599866975
+          ],
+          "candidate_refs": [
+            "structure:d6eda7b86ead4cd8458b"
+          ]
+        },
+        {
+          "id": "CR-SECTION-f53928e4579e",
+          "part_ref": "part:microduck:c75bfc0afb35e000",
+          "center_local_m": [
+            0.04299999959766865,
+            -0.008000000009847297,
+            0.022500000131732662
+          ],
+          "candidate_refs": [
+            "structure:66deb623238c310d5286"
+          ]
+        },
+        {
+          "id": "CR-SECTION-8999ea74a555",
+          "part_ref": "part:microduck:c75bfc0afb35e000",
+          "center_local_m": [
+            0.04299999959766865,
+            0.008000000009847297,
+            0.022500000131732662
+          ],
+          "candidate_refs": [
+            "structure:2c10bad35e8b824b51db"
+          ]
+        },
+        {
+          "id": "CR-SECTION-bd6b2a15fca0",
+          "part_ref": "part:microduck:55970da91992f38c",
+          "center_local_m": [
+            0.011499999971004612,
+            -0.0019999999890813313,
+            0.012974999845027924
+          ],
+          "candidate_refs": [
+            "structure:d3439d20ffc05a1076c2"
+          ]
+        },
+        {
+          "id": "CR-SECTION-8046746e4e04",
+          "part_ref": "part:microduck:55970da91992f38c",
+          "center_local_m": [
+            0.023499999957674315,
+            -0.0019999999890813304,
+            0.012974999845027924
+          ],
+          "candidate_refs": [
+            "structure:21a8558a956d1f812e60"
+          ]
+        },
+        {
+          "id": "CR-SECTION-163fda7566a1",
+          "part_ref": "part:microduck:55970da91992f38c",
+          "center_local_m": [
+            0.01750000007371976,
+            -0.008000000009847328,
+            0.012974999845027924
+          ],
+          "candidate_refs": [
+            "structure:f2f2a1686d4112fcc16c"
+          ]
+        },
+        {
+          "id": "CR-SECTION-8d4685bb3e92",
+          "part_ref": "part:microduck:55970da91992f38c",
+          "center_local_m": [
+            0.01750000007371975,
+            0.0040000000406622115,
+            0.012974999845027924
+          ],
+          "candidate_refs": [
+            "structure:f4f4c902a361f144db9e"
+          ]
+        },
+        {
+          "id": "CR-SECTION-20930ae92712",
+          "part_ref": "part:microduck:55970da91992f38c",
+          "center_local_m": [
+            0.008499999924812993,
+            -0.01129999989643693,
+            0.012500000001457436
+          ],
+          "candidate_refs": [
+            "structure:38a16bea5ca93fc4a86b",
+            "structure:8589d62e8104a1a2df0b"
+          ]
+        },
+        {
+          "id": "CR-SECTION-5f69d861039d",
+          "part_ref": "part:microduck:55970da91992f38c",
+          "center_local_m": [
+            0.026500000181756,
+            -0.01129999989643693,
+            0.012499999999940765
+          ],
+          "candidate_refs": [
+            "structure:11a3beea2da3672010ad",
+            "structure:ffff67ab18e3d9161978"
+          ]
+        },
+        {
+          "id": "CR-SECTION-1e4dd33092b8",
+          "part_ref": "part:microduck:55970da91992f38c",
+          "center_local_m": [
+            0.009499999970020906,
+            0.00989999994635582,
+            0.007499999978291339
+          ],
+          "candidate_refs": [
+            "structure:0bd3c7226a02af4def88"
+          ]
+        },
+        {
+          "id": "CR-SECTION-c6346099e661",
+          "part_ref": "part:microduck:55970da91992f38c",
+          "center_local_m": [
+            0.025500000155499993,
+            0.00989999994635582,
+            0.007499999978291328
+          ],
+          "candidate_refs": [
+            "structure:6abf59613a1126d99cab"
+          ]
+        },
+        {
+          "id": "CR-SECTION-c945923ccd14",
+          "part_ref": "part:microduck:7038a050dbc33fb0",
+          "center_local_m": [
+            0,
+            0.008000000064252154,
+            -0.02249999996274709
+          ],
+          "candidate_refs": [
+            "structure:2b67536a13cea6f2d288"
+          ]
+        },
+        {
+          "id": "CR-SECTION-f37766542b91",
+          "part_ref": "part:microduck:7038a050dbc33fb0",
+          "center_local_m": [
+            0,
+            -0.008000000064252154,
+            -0.02249999996274709
+          ],
+          "candidate_refs": [
+            "structure:dad30275345da4a28289"
+          ]
+        },
+        {
+          "id": "CR-SECTION-009c3a4be356",
+          "part_ref": "part:microduck:a07b37bcb704b29f",
+          "center_local_m": [
+            -0.011500000022351742,
+            0.006000000002457397,
+            3.4672845294492454e-20
+          ],
+          "candidate_refs": [
+            "structure:bfc948e70b527ba437bc"
+          ]
+        },
+        {
+          "id": "CR-SECTION-11cfcd571e90",
+          "part_ref": "part:microduck:a07b37bcb704b29f",
+          "center_local_m": [
+            -0.011500000022351742,
+            5.188600139661211e-21,
+            0.006000000002457397
+          ],
+          "candidate_refs": [
+            "structure:e3e9f5876671fdc9a8cf"
+          ]
+        },
+        {
+          "id": "CR-SECTION-b81891282027",
+          "part_ref": "part:microduck:a07b37bcb704b29f",
+          "center_local_m": [
+            -0.011500000022351742,
+            -0.006000000002457397,
+            -1.1966797320826464e-20
+          ],
+          "candidate_refs": [
+            "structure:915430746c579d2d249a"
+          ]
+        },
+        {
+          "id": "CR-SECTION-3961fc6c0466",
+          "part_ref": "part:microduck:a07b37bcb704b29f",
+          "center_local_m": [
+            -0.011500000022351742,
+            5.188599864728396e-21,
+            -0.006000000002457397
+          ],
+          "candidate_refs": [
+            "structure:e57e1e3cf0cb3ba876c6"
+          ]
+        },
+        {
+          "id": "CR-SECTION-f37766542b91",
+          "part_ref": "part:microduck:a07b37bcb704b29f",
+          "center_local_m": [
+            0,
+            -0.008000000064252154,
+            -0.02249999996274709
+          ],
+          "candidate_refs": [
+            "structure:8f307417a79da96b7de1"
+          ]
+        },
+        {
+          "id": "CR-SECTION-c945923ccd14",
+          "part_ref": "part:microduck:a07b37bcb704b29f",
+          "center_local_m": [
+            0,
+            0.008000000064252154,
+            -0.02249999996274709
+          ],
+          "candidate_refs": [
+            "structure:af75d2cb15b60ce64c92"
+          ]
+        },
+        {
+          "id": "CR-SECTION-0b25d4eeb3df",
+          "part_ref": "part:microduck:a07b37bcb704b29f",
+          "center_local_m": [
+            0,
+            -0.008000000064252192,
+            0.007500000056878147
+          ],
+          "candidate_refs": [
+            "structure:759d797b35cc180165d6"
+          ]
+        },
+        {
+          "id": "CR-SECTION-a8114388a041",
+          "part_ref": "part:microduck:a07b37bcb704b29f",
+          "center_local_m": [
+            0,
+            0.008000000064252192,
+            0.007500000056878147
+          ],
+          "candidate_refs": [
+            "structure:2ef224a5adde07545c4d"
+          ]
+        },
+        {
+          "id": "CR-SECTION-b81891282027",
+          "part_ref": "part:microduck:96e22c7fa2b976d3",
+          "center_local_m": [
+            -0.011500000022351742,
+            -0.006000000002457397,
+            -1.1966797320826464e-20
+          ],
+          "candidate_refs": [
+            "structure:70474106d5a4426ded4e"
+          ]
+        },
+        {
+          "id": "CR-SECTION-3961fc6c0466",
+          "part_ref": "part:microduck:96e22c7fa2b976d3",
+          "center_local_m": [
+            -0.011500000022351742,
+            5.188599864728396e-21,
+            -0.006000000002457397
+          ],
+          "candidate_refs": [
+            "structure:165483a67a7df98650df"
+          ]
+        },
+        {
+          "id": "CR-SECTION-11cfcd571e90",
+          "part_ref": "part:microduck:96e22c7fa2b976d3",
+          "center_local_m": [
+            -0.011500000022351742,
+            5.188600139661211e-21,
+            0.006000000002457397
+          ],
+          "candidate_refs": [
+            "structure:2cc9ff5c832db04ec462"
+          ]
+        },
+        {
+          "id": "CR-SECTION-009c3a4be356",
+          "part_ref": "part:microduck:96e22c7fa2b976d3",
+          "center_local_m": [
+            -0.011500000022351742,
+            0.006000000002457397,
+            3.4672845294492454e-20
+          ],
+          "candidate_refs": [
+            "structure:c8784242a8e09bde2bd0"
+          ]
+        },
+        {
+          "id": "CR-SECTION-f148bd6bbd57",
+          "part_ref": "part:microduck:d4b9a9e9474a9829",
+          "center_local_m": [
+            -8.354993245536129e-21,
+            0.01619999948889017,
+            -0.0014999999955238568
+          ],
+          "candidate_refs": [
+            "structure:bfd3364f7aaf8776e638"
+          ]
+        },
+        {
+          "id": "CR-SECTION-16d45a2b4920",
+          "part_ref": "part:microduck:d4b9a9e9474a9829",
+          "center_local_m": [
+            -0.006000000016375176,
+            0.01619999948889017,
+            0.004499999969535177
+          ],
+          "candidate_refs": [
+            "structure:0a888f8d9e601221141d"
+          ]
+        },
+        {
+          "id": "CR-SECTION-635d3fbb72fe",
+          "part_ref": "part:microduck:d4b9a9e9474a9829",
+          "center_local_m": [
+            0.006000000016375176,
+            0.01619999948889017,
+            0.004499999969535177
+          ],
+          "candidate_refs": [
+            "structure:c3f1a6ec96d0bc7fbe4b"
+          ]
+        },
+        {
+          "id": "CR-SECTION-8bc5f8649db0",
+          "part_ref": "part:microduck:d4b9a9e9474a9829",
+          "center_local_m": [
+            -1.5402529572225884e-21,
+            0.01619999948889017,
+            0.010500000112057591
+          ],
+          "candidate_refs": [
+            "structure:8791db1f056bfbbf9253"
+          ]
+        },
+        {
+          "id": "CR-SECTION-7ece7dad5241",
+          "part_ref": "part:microduck:d4b9a9e9474a9829",
+          "center_local_m": [
+            -0.0224999999627471,
+            0.007999999962715588,
+            0.01699999999254942
+          ],
+          "candidate_refs": [
+            "structure:68137391942a3ad6f0fd"
+          ]
+        },
+        {
+          "id": "CR-SECTION-52143691a576",
+          "part_ref": "part:microduck:d4b9a9e9474a9829",
+          "center_local_m": [
+            -0.0224999999627471,
+            -0.007999999962715588,
+            0.01699999999254942
+          ],
+          "candidate_refs": [
+            "structure:ad6f6d95c253c50af28f"
+          ]
+        },
+        {
+          "id": "CR-SECTION-b158ef511b2d",
+          "part_ref": "part:microduck:d4b9a9e9474a9829",
+          "center_local_m": [
+            0.007499999969248882,
+            0.007999999962715613,
+            0.016750000417232513
+          ],
+          "candidate_refs": [
+            "structure:60344837fe5797fa851c"
+          ]
+        },
+        {
+          "id": "CR-SECTION-1e318054000e",
+          "part_ref": "part:microduck:d4b9a9e9474a9829",
+          "center_local_m": [
+            0.007499999969248882,
+            -0.007999999962715613,
+            0.016750000417232513
+          ],
+          "candidate_refs": [
+            "structure:e3befcc639ff6d5e315a"
+          ]
+        },
+        {
+          "id": "CR-SECTION-f5fac6abcecf",
+          "part_ref": "part:microduck:afa52198f7fad203",
+          "center_local_m": [
+            -0.028919999747970965,
+            -0.04600000008940697,
+            0.00856500004264319
+          ],
+          "candidate_refs": [
+            "structure:71f4467c03b9c95cf226"
+          ]
+        },
+        {
+          "id": "CR-SECTION-c5f425079051",
+          "part_ref": "part:microduck:afa52198f7fad203",
+          "center_local_m": [
+            -0.02891999974797114,
+            -0.04600000008940697,
+            0.03143500011472888
+          ],
+          "candidate_refs": [
+            "structure:ab7310eab2d5dfdc7d10"
+          ]
+        },
+        {
+          "id": "CR-SECTION-8f41c2c2c001",
+          "part_ref": "part:microduck:ebfcaf98422b7b28",
+          "center_local_m": [
+            -0.029000000093737238,
+            0,
+            0.011499999920824639
+          ],
+          "candidate_refs": [
+            "structure:ee1d19a723ee1f1ff89e"
+          ]
+        },
+        {
+          "id": "CR-SECTION-67501dfc85e4",
+          "part_ref": "part:microduck:ebfcaf98422b7b28",
+          "center_local_m": [
+            -0.029000000093737238,
+            0,
+            -0.011499999920824639
+          ],
+          "candidate_refs": [
+            "structure:5445561dc0d89d6e64a2"
+          ]
+        }
+      ],
+      "missing": [],
+      "scope": "Only source-SHA-bound independently annotated samples",
+      "limitations": [
+        "No whole-device or arbitrary-geometry recall claim; unannotated and occluded regions remain open."
+      ]
+    },
+    "part_count": 70,
+    "geometry_asset_count": 38,
+    "function_status": {
+      "unknown": 2157,
+      "installation_hypothesis_available": 108,
+      "installation_evidence_available": 80
+    }
+  }
+}

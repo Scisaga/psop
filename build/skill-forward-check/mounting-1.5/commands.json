@@ -1,0 +1,67 @@
+[
+  {
+    "name": "doctor",
+    "cwd": "C:\\Users\\scisa\\Desktop\\psop",
+    "argv": [
+      "C:\\Python314\\python.exe",
+      "-B",
+      "C:\\Users\\scisa\\Desktop\\psop\\skills\\psop-simulate\\scripts\\psop_simulate.py",
+      "doctor"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.072
+  },
+  {
+    "name": "query-help",
+    "cwd": "C:\\Users\\scisa\\Desktop\\psop",
+    "argv": [
+      "C:\\Python314\\python.exe",
+      "-B",
+      "C:\\Users\\scisa\\Desktop\\psop\\skills\\psop-simulate\\scripts\\psop_simulate.py",
+      "query",
+      "--help"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.121
+  },
+  {
+    "name": "right-thigh-upper-servo",
+    "cwd": "C:\\Users\\scisa\\Desktop\\psop",
+    "argv": [
+      "C:\\Python314\\python.exe",
+      "-B",
+      "C:\\Users\\scisa\\Desktop\\psop\\skills\\psop-simulate\\scripts\\psop_simulate.py",
+      "query",
+      "--dkp",
+      "C:\\Users\\scisa\\Desktop\\psop\\build\\v2\\microduck\\packages\\microduck-20261105211617-7c368d14.dkp",
+      "--part-a",
+      "part:microduck:e40b9945707505e1",
+      "--part-b",
+      "part:microduck:7038a050dbc33fb0",
+      "--output",
+      "C:\\Users\\scisa\\Desktop\\psop\\build\\skill-forward-check\\mounting-1.5\\right-thigh-upper-servo.query.json"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 51.523
+  },
+  {
+    "name": "leg-upper-servo",
+    "cwd": "C:\\Users\\scisa\\Desktop\\psop",
+    "argv": [
+      "C:\\Python314\\python.exe",
+      "-B",
+      "C:\\Users\\scisa\\Desktop\\psop\\skills\\psop-simulate\\scripts\\psop_simulate.py",
+      "query",
+      "--dkp",
+      "C:\\Users\\scisa\\Desktop\\psop\\build\\v2\\microduck\\packages\\microduck-20261105211617-7c368d14.dkp",
+      "--part-a",
+      "part:microduck:7f4fefc3c6de90f1",
+      "--part-b",
+      "part:microduck:7038a050dbc33fb0",
+      "--output",
+      "C:\\Users\\scisa\\Desktop\\psop\\build\\skill-forward-check\\mounting-1.5\\leg-upper-servo.query.json"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 46.993
+  }
+]

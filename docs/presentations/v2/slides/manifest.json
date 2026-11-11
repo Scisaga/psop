@@ -1,0 +1,1174 @@
+{
+  "schema_version": "psop.svg-deck/2",
+  "revision": 2,
+  "date": "2026-10-15",
+  "deliverable": "standalone_svg_pages",
+  "source": "../script.md",
+  "source_sha256": "fffb5a004b6a31854ff4dfce5d32ed0aa1404105ce45f3229b377a668186789c",
+  "industry_sources": "../industry-sources.md",
+  "industry_sources_sha256": "de18f4f4115dd642d9efc0812c052057471e4019f365c33a4f4795ab31bfbbc8",
+  "canvas": [
+    1600,
+    900
+  ],
+  "fonts": [
+    "Microsoft YaHei",
+    "Noto Sans CJK SC",
+    "Arial"
+  ],
+  "page_count": 25,
+  "pages": [
+    {
+      "page": 1,
+      "file": "01-cover.svg",
+      "title": "PSOP｜理解设备状态，指导操作与验证",
+      "source_title": "PSOP｜理解设备状态，指导操作与验证",
+      "sha256": "5681514de19ab57f17bfdf53e4defa234d4a9512357ff79d01812d4bc7a9371c",
+      "bytes": 3121326,
+      "width": 1600,
+      "height": 900,
+      "groups": [
+        "base",
+        "title",
+        "beat_01",
+        "beat_02",
+        "beat_03",
+        "beat_04",
+        "beat_05",
+        "beat_06"
+      ],
+      "legacy_page": 1
+    },
+    {
+      "page": 2,
+      "file": "02-ai-trends.svg",
+      "title": "2026：模型能力正在进入设备现场",
+      "source_title": "2026：模型能力正在进入设备现场",
+      "sha256": "456e8406d2e485d1b32c12c45d104555799334492dd886f6eac9d5494adef73c",
+      "bytes": 6924963,
+      "width": 1600,
+      "height": 900,
+      "groups": [
+        "base",
+        "title",
+        "beat_01",
+        "beat_02",
+        "beat_03"
+      ],
+      "legacy_page": 2
+    },
+    {
+      "page": 3,
+      "file": "03-device-problems.svg",
+      "title": "设备任务，需要回答具体的操作问题",
+      "source_title": "设备任务，需要回答具体的操作问题",
+      "sha256": "a89112e46195da189c4178d59996dd763f5c18b1a7c232d24fa0288d500ca777",
+      "bytes": 908441,
+      "width": 1600,
+      "height": 900,
+      "groups": [
+        "base",
+        "title",
+        "beat_01",
+        "beat_02"
+      ],
+      "legacy_page": 3
+    },
+    {
+      "page": 4,
+      "file": "04-three-workspaces.svg",
+      "title": "一套设备知识，形成可运行与可学习的任务",
+      "source_title": "一套设备知识，形成可运行与可学习的任务",
+      "sha256": "cd0838e5f11aca19ad1cb0262075cf69d062f02ada603f4de31ceef88c729ab4",
+      "bytes": 9171,
+      "width": 1600,
+      "height": 900,
+      "groups": [
+        "base",
+        "title",
+        "beat_01",
+        "beat_02",
+        "beat_03",
+        "beat_04"
+      ],
+      "legacy_page": 4
+    },
+    {
+      "page": 5,
+      "file": "05-system-integration.svg",
+      "title": "连接现有系统，让设备服务走到现场",
+      "source_title": "连接既有系统，贯通现场服务执行",
+      "sha256": "1eac5a4956baef1a9670fb7590b9e602fe00d894d58056500e08a4e3872e0d0c",
+      "bytes": 14294,
+      "width": 1600,
+      "height": 900,
+      "groups": [
+        "base",
+        "title",
+        "beat_01",
+        "beat_02",
+        "beat_03",
+        "beat_04"
+      ],
+      "solution_source_page": 11
+    },
+    {
+      "page": 6,
+      "file": "06-solution-positioning.svg",
+      "title": "从信息服务延伸到设备任务执行",
+      "source_title": "面向设备服务执行的 AI 工程系统",
+      "sha256": "75c7f208605c5c73672cbec48fd8aca2428b7ee4b303f449f7e7e32f6393627b",
+      "bytes": 18362,
+      "width": 1600,
+      "height": 900,
+      "groups": [
+        "base",
+        "title",
+        "beat_01",
+        "beat_02"
+      ],
+      "solution_source_page": 12
+    },
+    {
+      "page": 7,
+      "file": "07-customer-self-service.svg",
+      "title": "客户通过设备 AI 进入自助服务",
+      "source_title": "客户拍摄设备，获得逐步操作指导",
+      "sha256": "3d3c86027b59578261b889f7dc33b8b388ed77a96509a1729d2dc0f13e79407d",
+      "bytes": 3094630,
+      "width": 1600,
+      "height": 900,
+      "groups": [
+        "base",
+        "title",
+        "beat_01",
+        "beat_02",
+        "beat_03",
+        "beat_04",
+        "beat_05",
+        "beat_06"
+      ],
+      "solution_source_page": 13
+    },
+    {
+      "page": 8,
+      "file": "08-engineer-collaboration.svg",
+      "title": "工程师带着任务上下文接手现场",
+      "source_title": "工程师接续上下文，协同判断与维修",
+      "sha256": "23fb8cb08f317096b5012295cea532e680499220fdb8dbba548209086ab3a39c",
+      "bytes": 2714913,
+      "width": 1600,
+      "height": 900,
+      "groups": [
+        "base",
+        "title",
+        "beat_01",
+        "beat_02",
+        "beat_03",
+        "beat_04",
+        "beat_05",
+        "beat_06",
+        "beat_07"
+      ],
+      "solution_source_page": 14
+    },
+    {
+      "page": 9,
+      "file": "09-service-continuity.svg",
+      "title": "让设备服务共享同一套上下文",
+      "source_title": "从扫码到服务完成，保持同一设备上下文",
+      "sha256": "4b05391fd60a80b1b07b4df9be32bd544c07ae4e132f7ed32bb540626646f983",
+      "bytes": 229461,
+      "width": 1600,
+      "height": 900,
+      "groups": [
+        "base",
+        "title",
+        "beat_01",
+        "beat_02",
+        "beat_03",
+        "beat_04",
+        "beat_05",
+        "beat_06",
+        "beat_07",
+        "beat_08"
+      ],
+      "solution_source_page": 15
+    },
+    {
+      "page": 10,
+      "file": "10-service-capacity.svg",
+      "title": "让服务能力随设备一起扩展",
+      "source_title": "让服务能力随设备覆盖持续扩展",
+      "sha256": "ef97b7fcea50367cecd5599e3369c21279c54540b4855e9254382485b857d0e0",
+      "bytes": 14054,
+      "width": 1600,
+      "height": 900,
+      "groups": [
+        "base",
+        "title",
+        "beat_01",
+        "beat_02",
+        "beat_03",
+        "beat_04"
+      ],
+      "solution_source_page": 16
+    },
+    {
+      "page": 11,
+      "file": "11-pilot-validation.svg",
+      "title": "从一款 Microduck 开始验证",
+      "source_title": "从一款设备、三至五项任务开始验证",
+      "sha256": "7118b83b05f4c205232e9b53af9857f456e5d5637395d8e8f608030b6715490a",
+      "bytes": 229480,
+      "width": 1600,
+      "height": 900,
+      "groups": [
+        "base",
+        "title",
+        "beat_01",
+        "beat_02",
+        "beat_03"
+      ],
+      "solution_source_page": 17
+    },
+    {
+      "page": 12,
+      "file": "12-rollout-replication.svg",
+      "title": "从单设备验证走向持续复制",
+      "source_title": "从试点到同系列与存量设备复制",
+      "sha256": "b778d123f87c29a00a065a46f82d5968dccd1def200541ff5e94d7cebc866f3e",
+      "bytes": 225650,
+      "width": 1600,
+      "height": 900,
+      "groups": [
+        "base",
+        "title",
+        "beat_01",
+        "beat_02",
+        "beat_03",
+        "beat_04"
+      ],
+      "solution_source_page": 18
+    },
+    {
+      "page": 13,
+      "file": "13-device-ai-engineer.svg",
+      "title": "让每台设备拥有自己的 AI 工程师",
+      "source_title": "让每台设备拥有持续学习的 AI 工程师",
+      "sha256": "53f40e9fd9dc19e88a1f976ce5c0f857fc68d2ad0c8fddd8c4b2ea71d3b65f8b",
+      "bytes": 225761,
+      "width": 1600,
+      "height": 900,
+      "groups": [
+        "base",
+        "title",
+        "beat_01",
+        "beat_02",
+        "beat_03",
+        "beat_04"
+      ],
+      "solution_source_page": 19
+    },
+    {
+      "page": 14,
+      "file": "14-runtime-evidence.svg",
+      "title": "PSOP 更适配设备领域任务",
+      "source_title": "PSOP 更适配设备领域任务",
+      "sha256": "dfe75954a8538c1385d6078c020f10d8e935f0314745f7b98a4a92fcb6754bce",
+      "bytes": 47292,
+      "width": 1600,
+      "height": 900,
+      "groups": [
+        "base",
+        "title",
+        "beat_01",
+        "beat_02",
+        "beat_03"
+      ],
+      "legacy_page": 5
+    },
+    {
+      "page": 15,
+      "file": "15-build-workbench.svg",
+      "title": "build：把部件、连接与操作依据组织起来",
+      "source_title": "build：把部件、连接与操作依据组织起来",
+      "sha256": "5003ad84bc350c9487478e1ebf97878b4a06b1c65c1d26e1828baa7de3e51287",
+      "bytes": 724254,
+      "width": 1600,
+      "height": 900,
+      "groups": [
+        "base",
+        "title",
+        "beat_01"
+      ],
+      "legacy_page": 6
+    },
+    {
+      "page": 16,
+      "file": "16-compile-eg.svg",
+      "title": "compile：把识别与复检条件编译为 EG",
+      "source_title": "compile：把识别与复检条件编译为 EG",
+      "sha256": "43eb2f6c41e92eca67760bdd28d493991b7d0ddfb20492578e5c6fe52d14580c",
+      "bytes": 609720,
+      "width": 1600,
+      "height": 900,
+      "groups": [
+        "base",
+        "title",
+        "beat_01",
+        "beat_02"
+      ],
+      "legacy_page": 7
+    },
+    {
+      "page": 17,
+      "file": "17-simulate-workbench.svg",
+      "title": "simulate：预演设备安装步骤",
+      "source_title": "simulate：预演设备安装步骤",
+      "sha256": "2df1a6db1faa06b9a9ef824afe403cef09ca1363a0b923a5bc21747b417d4891",
+      "bytes": 642744,
+      "width": 1600,
+      "height": 900,
+      "groups": [
+        "base",
+        "title",
+        "beat_01"
+      ],
+      "legacy_page": 8
+    },
+    {
+      "page": 18,
+      "file": "18-edge-runtime.svg",
+      "title": "端侧先理解现场，Runtime 始终掌握状态",
+      "source_title": "端侧先理解现场，Runtime 始终掌握状态",
+      "sha256": "8a2ce66c0686334f94cfbb37c5d214057d03b2895c1be1c107a71d0fef06fbe1",
+      "bytes": 277350,
+      "width": 1600,
+      "height": 900,
+      "groups": [
+        "base",
+        "title",
+        "beat_01",
+        "beat_02",
+        "beat_03",
+        "beat_04",
+        "beat_05",
+        "beat_06"
+      ],
+      "legacy_page": 9
+    },
+    {
+      "page": 19,
+      "file": "19-mobile-workbench.svg",
+      "title": "手机与 AR：让现场观察进入设备任务",
+      "source_title": "手机与 AR：让现场观察进入设备任务",
+      "sha256": "9f9efd4f45c4c4206907c8c70216b9d9c6fcbc640868176326abe4e2312f7ce4",
+      "bytes": 3584283,
+      "width": 1600,
+      "height": 900,
+      "groups": [
+        "base",
+        "title",
+        "beat_01",
+        "beat_02"
+      ],
+      "legacy_page": 10
+    },
+    {
+      "page": 20,
+      "file": "20-ar-demo.svg",
+      "title": "机械臂装配实证，支撑现场交互能力迁移",
+      "source_title": "机械臂装配实证，支撑现场交互能力迁移",
+      "sha256": "677c9a8dd589b9505c2d8bb0f934c47f5d9f1bcb81be8856d2d778424caa919a",
+      "bytes": 2517681,
+      "width": 1600,
+      "height": 900,
+      "groups": [
+        "base",
+        "title",
+        "beat_01",
+        "beat_02"
+      ],
+      "legacy_page": 11,
+      "media": {
+        "path": "../assets/media/ar-demo-25s.mp4",
+        "duration_seconds": 20.367,
+        "poster": "../assets/generated/ar-demo-poster.png",
+        "rect": [
+          64,
+          256,
+          970,
+          545.625
+        ]
+      }
+    },
+    {
+      "page": 21,
+      "file": "21-feasibility.svg",
+      "title": "已有产品与实证，支撑设备任务持续研发",
+      "source_title": "已有产品与实证，支撑设备任务持续研发",
+      "sha256": "0180129ec3648fd9a4364b8ae3675de163d41d9a6093ff340131bc31b5da22b2",
+      "bytes": 1968865,
+      "width": 1600,
+      "height": 900,
+      "groups": [
+        "base",
+        "title",
+        "beat_01",
+        "beat_02",
+        "beat_03"
+      ],
+      "legacy_page": 12
+    },
+    {
+      "page": 22,
+      "file": "22-experience-loop.svg",
+      "title": "经验证的设备操作，持续更新知识与任务模型",
+      "source_title": "经验证的设备操作，持续更新知识与任务模型",
+      "sha256": "27ab508713424f68bce5a1ad4f677b9292f708337186c342f6b36f1c01e4c556",
+      "bytes": 31615,
+      "width": 1600,
+      "height": 900,
+      "groups": [
+        "base",
+        "title",
+        "beat_01",
+        "beat_02",
+        "beat_03",
+        "beat_04",
+        "beat_05"
+      ],
+      "legacy_page": 13
+    },
+    {
+      "page": 23,
+      "file": "23-platform-architecture.svg",
+      "title": "设备知识与任务资产，连接模型、工具和现场",
+      "source_title": "设备知识与任务资产，连接模型、工具和现场",
+      "sha256": "a3a1eb8d2bcfbc7d0b305d417c2a0c17a8e14aabd40e9c799f30491a41d8262d",
+      "bytes": 30657,
+      "width": 1600,
+      "height": 900,
+      "groups": [
+        "base",
+        "title",
+        "beat_01",
+        "beat_02",
+        "beat_03",
+        "beat_04",
+        "beat_05"
+      ],
+      "legacy_page": 14
+    },
+    {
+      "page": 24,
+      "file": "24-economic-value.svg",
+      "title": "以全生命周期成本，衡量设备服务的经济价值",
+      "source_title": "以全生命周期成本，衡量设备服务的经济价值",
+      "sha256": "54b346eb8d1ac6362f1db35a0e03b8d87b60c3a422bfc73d51984993f718ce05",
+      "bytes": 16218,
+      "width": 1600,
+      "height": 900,
+      "groups": [
+        "base",
+        "title",
+        "beat_01",
+        "beat_02",
+        "beat_03"
+      ],
+      "legacy_page": 15
+    },
+    {
+      "page": 25,
+      "file": "25-social-value.svg",
+      "title": "让设备操作经验成为可传承、可验证的能力",
+      "source_title": "让设备操作经验成为可传承、可验证的能力",
+      "sha256": "b62abd1c6318b013631f231b6043c09c9e0a573a75a1e06f9b579fd11e458a03",
+      "bytes": 19431,
+      "width": 1600,
+      "height": 900,
+      "groups": [
+        "base",
+        "title",
+        "beat_01",
+        "beat_02",
+        "beat_03",
+        "beat_04",
+        "beat_05"
+      ],
+      "legacy_page": 16
+    }
+  ],
+  "legacy_page_map": {
+    "1": 1,
+    "2": 2,
+    "3": 3,
+    "4": 4,
+    "5": 14,
+    "6": 15,
+    "7": 16,
+    "8": 17,
+    "9": 18,
+    "10": 19,
+    "11": 20,
+    "12": 21,
+    "13": 22,
+    "14": 23,
+    "15": 24,
+    "16": 25
+  },
+  "solution_visual_references": {
+    "05-system-integration.svg": {
+      "page": 5,
+      "file": "05-system-integration.svg",
+      "source_page": 11,
+      "source": "../../../ppt/视觉稿/第11页.png",
+      "source_sha256": "0977a3bdfd5e8c6dd35f168d2464176ae6ae16c4f0f4db0a1824cab179ce0601",
+      "module": "solutions_11_14",
+      "function": "systems_solution",
+      "module_sha256": "0e5c882f4c5458ac04fc882a262223993ee058107cedd2f3ae1a76227f4a326d"
+    },
+    "06-solution-positioning.svg": {
+      "page": 6,
+      "file": "06-solution-positioning.svg",
+      "source_page": 12,
+      "source": "../../../ppt/视觉稿/第12页.png",
+      "source_sha256": "a0e08eac91c908dc01d34dea149cda5d2d3c83e8d322bf5a0cbf6d523b9e2a8e",
+      "module": "solutions_11_14",
+      "function": "comparison_solution",
+      "module_sha256": "0e5c882f4c5458ac04fc882a262223993ee058107cedd2f3ae1a76227f4a326d"
+    },
+    "07-customer-self-service.svg": {
+      "page": 7,
+      "file": "07-customer-self-service.svg",
+      "source_page": 13,
+      "source": "../../../ppt/视觉稿/第13页.png",
+      "source_sha256": "aaefdf1bc74ea6d3b56a6c7eae31c0778c9bcbe464d95da356ae993ec70a9897",
+      "module": "solutions_11_14",
+      "function": "customer_solution",
+      "module_sha256": "0e5c882f4c5458ac04fc882a262223993ee058107cedd2f3ae1a76227f4a326d"
+    },
+    "08-engineer-collaboration.svg": {
+      "page": 8,
+      "file": "08-engineer-collaboration.svg",
+      "source_page": 14,
+      "source": "../../../ppt/视觉稿/第14页.png",
+      "source_sha256": "cbcf2311df79d95056e490556f5c6afd8b46a86c51320533cddc0414da2146a1",
+      "module": "solutions_11_14",
+      "function": "engineer_solution",
+      "module_sha256": "0e5c882f4c5458ac04fc882a262223993ee058107cedd2f3ae1a76227f4a326d"
+    },
+    "09-service-continuity.svg": {
+      "page": 9,
+      "file": "09-service-continuity.svg",
+      "source_page": 15,
+      "source": "../../../ppt/视觉稿/第15页.png",
+      "source_sha256": "7a97fe49ba843cf39aa0335cc76be7469972d254c160eaef41f497fc20e2625c",
+      "module": "solutions_15_19",
+      "function": "service_continuity",
+      "module_sha256": "a0fb1feea333e468e6b6c885a56742d4de6837c271bd0447475f0c1830bf3baf"
+    },
+    "10-service-capacity.svg": {
+      "page": 10,
+      "file": "10-service-capacity.svg",
+      "source_page": 16,
+      "source": "../../../ppt/视觉稿/第16页.png",
+      "source_sha256": "e9e6016e3a4f9ad2091f83c8d96ab08133428ed12c2721c0f05d8de77f10ae45",
+      "module": "solutions_15_19",
+      "function": "service_capacity",
+      "module_sha256": "a0fb1feea333e468e6b6c885a56742d4de6837c271bd0447475f0c1830bf3baf"
+    },
+    "11-pilot-validation.svg": {
+      "page": 11,
+      "file": "11-pilot-validation.svg",
+      "source_page": 17,
+      "source": "../../../ppt/视觉稿/第17页.png",
+      "source_sha256": "885a0e05aee86d4ced1f03cde1c429853863f0b7471dde8cfce4f9b3d72e1568",
+      "module": "solutions_15_19",
+      "function": "single_device_poc",
+      "module_sha256": "a0fb1feea333e468e6b6c885a56742d4de6837c271bd0447475f0c1830bf3baf"
+    },
+    "12-rollout-replication.svg": {
+      "page": 12,
+      "file": "12-rollout-replication.svg",
+      "source_page": 18,
+      "source": "../../../ppt/视觉稿/第18页.png",
+      "source_sha256": "7424caae7c9e48b905cf8f9f6ab8c13609edabbff0eeae0d4b77aa66e3b9732d",
+      "module": "solutions_15_19",
+      "function": "scalable_delivery",
+      "module_sha256": "a0fb1feea333e468e6b6c885a56742d4de6837c271bd0447475f0c1830bf3baf"
+    },
+    "13-device-ai-engineer.svg": {
+      "page": 13,
+      "file": "13-device-ai-engineer.svg",
+      "source_page": 19,
+      "source": "../../../ppt/视觉稿/第19页.png",
+      "source_sha256": "95915ddde0e59b17391e57c920de74612891df6019d1e5a8827af1f5f56ca8cf",
+      "module": "solutions_15_19",
+      "function": "device_ai_engineer",
+      "module_sha256": "a0fb1feea333e468e6b6c885a56742d4de6837c271bd0447475f0c1830bf3baf"
+    }
+  },
+  "experiment_sources": {
+    "control.svg": "09a4a850b2f9a9d26afe2e4f9a3104653dbd5dad609227bc41833af387f4d8bf",
+    "runtime.svg": "b51677e4da76d6094f552dab553b3c5925a293f8a89f2d0d450b014069b31205",
+    "delta-table.svg": "c7cc4974f532066ba9c458063c0544411105fc4f19591e65bab27a7d1cf8d049"
+  },
+  "created_assets": {
+    "ar-demo-poster.png": "1f7199c886451fab1ceb3a3f311fd11779084188ab3c4f7b94483ba076f791ff",
+    "microduck\\cover-build-exploded.png": "e9aefce9bfd2a244a23e199b432af566517f5e2250c6f39aa21fc550990aaf33",
+    "microduck\\cover-installation.png": "55b7420536f72ddf48a5441b005e59980414ab74961f403485347d45f36c5824",
+    "microduck\\cover-simulate.png": "c14dcc0477d2fa88621bb04015909d6931fcbefd375f308966b24f0193f227f9",
+    "microduck\\device-knowledge.svg": "684be43ccc182af71222fd19b73969b113d6801267e088084bd14e0d095e9251",
+    "microduck\\installation-process.png": "2566e9e8610868a7b2e72192ca4893d00ed42fb5f78af56bf5718bd51faf2303",
+    "microduck\\learning-trace.svg": "72ef0797537fa1d4f4946b274881076aa422d622d89c7a6d74f49a01c85ed8d0",
+    "microduck\\microduck-joint.svg": "25f67c0c531275f4bb49e3e1808368700fe8d7ad3a2852def81f8d26829cb296",
+    "microduck\\microduck-overview.svg": "6710a1f56a619729974ff8c572d9e14e5889191af9740ea280028f038cf7177c",
+    "microduck\\model-assembled.png": "fbb0a2f11c7f8cea786811606190ef5337e988bc8d05d8de093b9982e281d724",
+    "microduck\\model-exploded.png": "35eb1781ffc296c63adb426198dc4a53c72e014069f63c786f1052c45816761b",
+    "microduck\\model-joint-detail.png": "167269d5d7e562cb82a53db1a2ce7cd650dd812fbad34d2e2e0befffb232f413",
+    "microduck\\model-servo-module.png": "fcad8f2ba007ca47a1a8548b3ab35e400ed4c9f1c9230fd486b4f462e35cf2f4",
+    "microduck\\sim-step-01.png": "d26da62a85974bcae0efd82bb14b1472bce80a26f11c139b4d761f565d50f92a",
+    "microduck\\sim-step-02.png": "cafc37b02efe826a04103a4055a9e3ed965035aab55661a449556e67a1567e40",
+    "microduck\\sim-step-03.png": "97df742bb502bede739e737bd6619d6f60f72be5741bf61d1ddf6f71783f1d40",
+    "microduck\\sim-step-04.png": "58da66707d8d8a816241397738c88697c0a3eb0bef00d4246af9cd7dd094eaff",
+    "microduck\\sim-step-05.png": "9ad66b1b968c3fb3a56ea94055f5f7a29de249fb887317f5baa3b50f05294d70",
+    "microduck\\task-checks.svg": "77b75c592d54a295ada4840c217b6fba8aeb54ac6fa01e8574345b08010bdb8f",
+    "microduck\\ui-build.png": "636ac3b3325ed20933dd1573e8db54394c0b6d20ca7c2304389a610201ae11a8",
+    "microduck\\ui-compile.png": "901fd7293d165e3c287aedee53d7fd0982cae530631c3424f9b6f8e90cd53cda",
+    "microduck\\ui-mobile.png": "9b573d879aa28f7b960f05dc5036683783d6a9ebc8319ed13c8cf91f59a15b22",
+    "microduck\\ui-simulate.png": "d1d753aaf510fea8008fc8f8405f2e2063936cff7d538fb4b023c74cc46499c3"
+  },
+  "official_product_assets": {
+    "reference-products-2026\\cosmos3.png": "86eb7a533315c5ab60cfc1252b6a40e395d3fe001099693437fda0290fafd8fc",
+    "reference-products-2026\\gemma4.png": "6984b86365d7974f6b80beccc071733cd331792865a9b337f4d4c974abc6976c",
+    "reference-products-2026\\minicpm-v.png": "fdbb75c7bd59adb41fa236d82e23938e53b2652eace68811e6134edd73cf80c8",
+    "reference-products-2026\\muse-gadget.png": "5a76a20ad72b6d5a6cea9dd32f33d77054e9ce095db5efc86c21ecc632d3811d",
+    "reference-products-2026\\qwen-asr-overview.png": "7b31b27b4c5361d9e765c53ec5684e9421ad943e51b83692fd461558beed9820",
+    "reference-products-2026\\qwen-asr.png": "4aa54a2d6dccb5de7a8107575adb6061c6cb8240e131109f8b066b18ef34bdf9",
+    "reference-products-2026\\relateanything.png": "3e6bb84624a4dff86c52ede4c211d546ab6182b6cf02ac6cccf2a2c5afeabb74",
+    "reference-products-2026\\yolov26.png": "da1cc4533c892218e66703991abfbcd7a3a121c7a01c2d39d8d3db6af0929066"
+  },
+  "prototype_sources": "../prototypes/index.html",
+  "case_asset_manifest": {
+    "path": "../assets/generated/microduck/manifest.json",
+    "sha256": "e2d956ee283c5162fad865497ca0a177596de65dd66864a20bff2501452a3151"
+  },
+  "source_assembly": {
+    "path": "../assets/generated/microduck/model-source-report.json",
+    "sha256": "f0c29c4f16f25ef1395203cb59c1f424d23be8d68634a32b871bf36c0bc7a394",
+    "configuration": "walk-model-reference / qpos0",
+    "mesh_count": 38,
+    "assembly_instances": 70,
+    "software_identity": "alpha software identity is recorded separately from the source geometry"
+  },
+  "cover_native_eg": {
+    "path": "../tools/cover_task_eg.py",
+    "sha256": "3654badc56ffe4bc107880ff09228abfa8a73397f226db16b6395f3b70a7ba23",
+    "function": "cover_task_eg",
+    "metadata_function": "cover_task_eg_metadata",
+    "metadata": {
+      "viewbox": [
+        0,
+        0,
+        900,
+        250
+      ],
+      "nodes": [
+        {
+          "id": "p_task",
+          "kind": "place",
+          "x": 40,
+          "y": 55,
+          "label": "任务",
+          "source_node": "p_task",
+          "tone": "normal",
+          "token": false,
+          "current": false,
+          "font_size": 24,
+          "label_offset": 44
+        },
+        {
+          "id": "p_device",
+          "kind": "place",
+          "x": 40,
+          "y": 175,
+          "label": "设备",
+          "source_node": "p_cell",
+          "tone": "normal",
+          "token": false,
+          "current": false,
+          "font_size": 24,
+          "label_offset": 44
+        },
+        {
+          "id": "t_bind",
+          "kind": "transition",
+          "x": 135,
+          "y": 115,
+          "label": "绑定",
+          "source_node": "t_load",
+          "tone": "normal",
+          "token": false,
+          "current": false,
+          "font_size": 24,
+          "label_offset": 44
+        },
+        {
+          "id": "p_align",
+          "kind": "place",
+          "x": 235,
+          "y": 115,
+          "label": "待对齐",
+          "source_node": null,
+          "tone": "normal",
+          "token": true,
+          "current": true,
+          "font_size": 24,
+          "label_offset": 44
+        },
+        {
+          "id": "t_install_macro",
+          "kind": "transition",
+          "x": 345,
+          "y": 115,
+          "label": "对齐安装",
+          "source_node": null,
+          "tone": "current",
+          "token": false,
+          "current": true,
+          "font_size": 24,
+          "label_offset": 44
+        },
+        {
+          "id": "p_identity_pending",
+          "kind": "place",
+          "x": 455,
+          "y": 55,
+          "label": "身份记录",
+          "source_node": "p_config",
+          "tone": "normal",
+          "token": false,
+          "current": false,
+          "font_size": 22,
+          "label_offset": 44
+        },
+        {
+          "id": "p_recheck_pending",
+          "kind": "place",
+          "x": 455,
+          "y": 175,
+          "label": "复检记录",
+          "source_node": "p_cal",
+          "tone": "normal",
+          "token": false,
+          "current": false,
+          "font_size": 22,
+          "label_offset": 44
+        },
+        {
+          "id": "t_identity",
+          "kind": "transition",
+          "x": 555,
+          "y": 55,
+          "label": "身份核验",
+          "source_node": "t_config",
+          "tone": "verify",
+          "token": false,
+          "current": false,
+          "font_size": 22,
+          "label_offset": 44
+        },
+        {
+          "id": "t_recheck",
+          "kind": "transition",
+          "x": 555,
+          "y": 175,
+          "label": "复检核验",
+          "source_node": "t_cal",
+          "tone": "verify",
+          "token": false,
+          "current": false,
+          "font_size": 22,
+          "label_offset": 44
+        },
+        {
+          "id": "p_identity_ok",
+          "kind": "place",
+          "x": 650,
+          "y": 55,
+          "label": "身份通过",
+          "source_node": "p_configok",
+          "tone": "verify",
+          "token": false,
+          "current": false,
+          "font_size": 22,
+          "label_offset": 44
+        },
+        {
+          "id": "p_recheck_ok",
+          "kind": "place",
+          "x": 650,
+          "y": 175,
+          "label": "复检通过",
+          "source_node": "p_calok",
+          "tone": "verify",
+          "token": false,
+          "current": false,
+          "font_size": 22,
+          "label_offset": 44
+        },
+        {
+          "id": "t_join",
+          "kind": "transition",
+          "x": 750,
+          "y": 115,
+          "label": "条件汇合",
+          "source_node": "t_join",
+          "tone": "verify",
+          "token": false,
+          "current": false,
+          "font_size": 24,
+          "label_offset": 88
+        },
+        {
+          "id": "p_next",
+          "kind": "place",
+          "x": 855,
+          "y": 115,
+          "label": "下一步",
+          "source_node": "p_ready",
+          "tone": "verify",
+          "token": false,
+          "current": false,
+          "font_size": 24,
+          "label_offset": 44
+        }
+      ],
+      "edges": [
+        {
+          "source": "p_task",
+          "target": "t_bind",
+          "path": "M60 55C94 55 101 109 123 112",
+          "tone": "normal",
+          "guard": null
+        },
+        {
+          "source": "p_device",
+          "target": "t_bind",
+          "path": "M60 175C94 175 101 121 123 118",
+          "tone": "normal",
+          "guard": null
+        },
+        {
+          "source": "t_bind",
+          "target": "p_align",
+          "path": "M145 115H213",
+          "tone": "normal",
+          "guard": null
+        },
+        {
+          "source": "p_align",
+          "target": "t_install_macro",
+          "path": "M257 115H333",
+          "tone": "normal",
+          "guard": null
+        },
+        {
+          "source": "t_install_macro",
+          "target": "p_identity_pending",
+          "path": "M355 115C399 115 406 55 432 55",
+          "tone": "normal",
+          "guard": null
+        },
+        {
+          "source": "t_install_macro",
+          "target": "p_recheck_pending",
+          "path": "M355 115C399 115 406 175 432 175",
+          "tone": "normal",
+          "guard": null
+        },
+        {
+          "source": "p_identity_pending",
+          "target": "t_identity",
+          "path": "M476 55H543",
+          "tone": "verify",
+          "guard": null
+        },
+        {
+          "source": "t_identity",
+          "target": "p_identity_ok",
+          "path": "M565 55H627",
+          "tone": "verify",
+          "guard": null
+        },
+        {
+          "source": "p_recheck_pending",
+          "target": "t_recheck",
+          "path": "M476 175H543",
+          "tone": "verify",
+          "guard": "recheck_record_complete"
+        },
+        {
+          "source": "t_recheck",
+          "target": "p_recheck_ok",
+          "path": "M565 175H627",
+          "tone": "verify",
+          "guard": null
+        },
+        {
+          "source": "p_identity_ok",
+          "target": "t_join",
+          "path": "M671 55C707 55 715 109 738 112",
+          "tone": "verify",
+          "guard": null
+        },
+        {
+          "source": "p_recheck_ok",
+          "target": "t_join",
+          "path": "M671 175C707 175 715 121 738 118",
+          "tone": "verify",
+          "guard": null
+        },
+        {
+          "source": "t_join",
+          "target": "p_next",
+          "path": "M760 115H832",
+          "tone": "verify",
+          "guard": "identity_reviewed AND recheck_reviewed AND same_device_joint_task"
+        }
+      ],
+      "transition_guards": {
+        "t_bind": "task and device identifiers match the teaching target MD-01 / J01",
+        "t_install_macro": "homepage macro: align, install, fix/connect and collect the corresponding existing records; the displayed stage 2 preview has not completed these actions",
+        "t_identity": "software identity evidence reviewed and target binding confirmed",
+        "t_recheck": "recheck evidence complete and reviewed; missing evidence disables this action",
+        "t_join": "both identity and recheck review tokens are required, with the same device/joint/task binding"
+      },
+      "checks": {
+        "node_count": 13,
+        "place_count": 8,
+        "transition_count": 5,
+        "edge_count": 13,
+        "homepage_abstraction": true,
+        "bipartite_edges": true,
+        "all_transitions_have_input_and_output": true,
+        "no_return_loops": true,
+        "current_token": "p_align",
+        "current_transition": "t_install_macro",
+        "current_stage": 2,
+        "success_marking_empty": true,
+        "join_requires_both_reviews": true,
+        "next_step_has_only_and_join_input": true,
+        "missing_recheck_disables_review": true,
+        "preserved_source_evidence_edges": 7,
+        "minimum_node_label_size": 22
+      },
+      "teaching_source": {
+        "kind": "homepage abstraction",
+        "evidence_subnet": "docs/presentations/v2/prototypes/eg-cpn.svg",
+        "evidence_subnet_sha256": "8c2babc793d77a15f68c5e46e5f4b2b39b7e91989a1e9f2fe26de5b7c7fde231",
+        "preserved_logic": "parallel identity/recheck record reviews followed by a two-input AND join; 7 source evidence arcs retain their endpoint mapping",
+        "installation_macro": "teaching design: preparation/alignment/installation/fixation/record collection are merged into one homepage action",
+        "abstraction_boundary": "the cover is a reduced overview, not the full original EG or an assertion of network equivalence",
+        "details_in_compile": "see compile for the detailed identity/recheck task network and simulate for individual installation stages",
+        "omitted_detail": "repositioning, missing-record feedback loops and intermediate installation places are omitted from the homepage",
+        "snapshot": "stage 2 alignment preview; the only token is pending alignment and every success/output place is empty",
+        "physical_boundary": "display geometry and the task diagram do not prove real fixation, connection or recheck success",
+        "identity_boundary": "walk geometry and alpha software identity require separate target/version review; no alpha ID assertion is displayed",
+        "operational_order": "perform software identification before physical recheck; parallel review of existing records does not change operation order",
+        "release_boundary": "homepage teaching task overview, not a published/validated runtime task"
+      }
+    },
+    "metadata_sha256": "6808c23a05a0138c2612c55d481743585dfbe970ed6285f1a85cbae2942c3c6f",
+    "nodes_sha256": "40e71fed52418eb0a64148a4675ebd5ac49c4d25a61cac9dba0730473c1ddb9c",
+    "edges_sha256": "914f98c2594b504d828f5fe3f038ae2ec25002032bbb7ad45e22d4956fbeceaa",
+    "teaching_source_sha256": "0096d117ec115089c2c29898edcbe0e0aeb047722578b627d5e7ef52ff59946f"
+  },
+  "content_notes": [
+    "以 Microduck 舵机识别与复检串联部件知识、操作条件、工具反馈与验证学习",
+    "首页同时展示 build 来源爆炸模型、compile 原生 EG、simulate 安装预演，以及 AR / mobile 现场使用",
+    "全套25页；第5–13页为据视觉稿文件11–19重绘的解决方案；原第5–16页顺延至14–25页",
+    "第15/16/17页依次展示build、compile、simulate；第18页展示端侧感知、条件协同与Runtime核验",
+    "第14页保留机械臂组装240次完整配对实验，第20页保留机械臂原视频；不作为Microduck实测结论",
+    "SVG与PDF第20页为静态视频帧；HTML总览支持播放原视频",
+    "Microduck安装预演默认处于对齐支架阶段，身份待核对；识别与复检证据子任务默认身份记录已到达、复检待补；第19页呈现安装进行中",
+    "设备几何采用官方38个STL与70个源装配实例；walk几何配置与alpha软件身份分别记录适用范围",
+    "第19页为安装过程AI生成示意；固定、软件身份与复检结果需关联真实工具反馈",
+    "simulate 分为准备部件、对齐支架、安装舵机与连接件、固定与连接、复检待完成五个阶段；安装位移为教学预演",
+    "Microduck 工作台、EG、三维回放与训练示例为教学原型，训练与设备控制效果须独立验证",
+    "知识与 EG 经适用性审核后更新，领域模型通过独立评测与版本发布复用"
+  ],
+  "native_page_sources": {
+    "01-cover.svg": {
+      "source": "../tools/pages_01_08.py",
+      "module": "pages_01_08",
+      "function": "slide01",
+      "source_sha256": "69997a1afa4c9b2e5e9f8488524a1523d2476c3f3aad305e10fffc964445c245"
+    },
+    "02-ai-trends.svg": {
+      "source": "../tools/pages_01_08.py",
+      "module": "pages_01_08",
+      "function": "slide02",
+      "source_sha256": "69997a1afa4c9b2e5e9f8488524a1523d2476c3f3aad305e10fffc964445c245"
+    },
+    "03-device-problems.svg": {
+      "source": "../tools/pages_01_08.py",
+      "module": "pages_01_08",
+      "function": "slide03",
+      "source_sha256": "69997a1afa4c9b2e5e9f8488524a1523d2476c3f3aad305e10fffc964445c245"
+    },
+    "04-three-workspaces.svg": {
+      "source": "../tools/pages_01_08.py",
+      "module": "pages_01_08",
+      "function": "slide04",
+      "source_sha256": "69997a1afa4c9b2e5e9f8488524a1523d2476c3f3aad305e10fffc964445c245"
+    },
+    "05-system-integration.svg": {
+      "source": "../tools/solutions_11_14.py",
+      "module": "solutions_11_14",
+      "function": "systems_solution",
+      "source_sha256": "0e5c882f4c5458ac04fc882a262223993ee058107cedd2f3ae1a76227f4a326d"
+    },
+    "06-solution-positioning.svg": {
+      "source": "../tools/solutions_11_14.py",
+      "module": "solutions_11_14",
+      "function": "comparison_solution",
+      "source_sha256": "0e5c882f4c5458ac04fc882a262223993ee058107cedd2f3ae1a76227f4a326d"
+    },
+    "07-customer-self-service.svg": {
+      "source": "../tools/solutions_11_14.py",
+      "module": "solutions_11_14",
+      "function": "customer_solution",
+      "source_sha256": "0e5c882f4c5458ac04fc882a262223993ee058107cedd2f3ae1a76227f4a326d"
+    },
+    "08-engineer-collaboration.svg": {
+      "source": "../tools/solutions_11_14.py",
+      "module": "solutions_11_14",
+      "function": "engineer_solution",
+      "source_sha256": "0e5c882f4c5458ac04fc882a262223993ee058107cedd2f3ae1a76227f4a326d"
+    },
+    "09-service-continuity.svg": {
+      "source": "../tools/solutions_15_19.py",
+      "module": "solutions_15_19",
+      "function": "service_continuity",
+      "source_sha256": "a0fb1feea333e468e6b6c885a56742d4de6837c271bd0447475f0c1830bf3baf"
+    },
+    "10-service-capacity.svg": {
+      "source": "../tools/solutions_15_19.py",
+      "module": "solutions_15_19",
+      "function": "service_capacity",
+      "source_sha256": "a0fb1feea333e468e6b6c885a56742d4de6837c271bd0447475f0c1830bf3baf"
+    },
+    "11-pilot-validation.svg": {
+      "source": "../tools/solutions_15_19.py",
+      "module": "solutions_15_19",
+      "function": "single_device_poc",
+      "source_sha256": "a0fb1feea333e468e6b6c885a56742d4de6837c271bd0447475f0c1830bf3baf"
+    },
+    "12-rollout-replication.svg": {
+      "source": "../tools/solutions_15_19.py",
+      "module": "solutions_15_19",
+      "function": "scalable_delivery",
+      "source_sha256": "a0fb1feea333e468e6b6c885a56742d4de6837c271bd0447475f0c1830bf3baf"
+    },
+    "13-device-ai-engineer.svg": {
+      "source": "../tools/solutions_15_19.py",
+      "module": "solutions_15_19",
+      "function": "device_ai_engineer",
+      "source_sha256": "a0fb1feea333e468e6b6c885a56742d4de6837c271bd0447475f0c1830bf3baf"
+    },
+    "14-runtime-evidence.svg": {
+      "source": "../tools/pages_01_08.py",
+      "module": "pages_01_08",
+      "function": "slide05",
+      "source_sha256": "69997a1afa4c9b2e5e9f8488524a1523d2476c3f3aad305e10fffc964445c245"
+    },
+    "15-build-workbench.svg": {
+      "source": "../tools/pages_01_08.py",
+      "module": "pages_01_08",
+      "function": "slide06",
+      "source_sha256": "69997a1afa4c9b2e5e9f8488524a1523d2476c3f3aad305e10fffc964445c245"
+    },
+    "16-compile-eg.svg": {
+      "source": "../tools/pages_01_08.py",
+      "module": "pages_01_08",
+      "function": "slide07",
+      "source_sha256": "69997a1afa4c9b2e5e9f8488524a1523d2476c3f3aad305e10fffc964445c245"
+    },
+    "17-simulate-workbench.svg": {
+      "source": "../tools/pages_01_08.py",
+      "module": "pages_01_08",
+      "function": "slide08",
+      "source_sha256": "69997a1afa4c9b2e5e9f8488524a1523d2476c3f3aad305e10fffc964445c245"
+    },
+    "18-edge-runtime.svg": {
+      "source": "../tools/pages_09_16.py",
+      "module": "pages_09_16",
+      "function": "slide09",
+      "source_sha256": "228dbc680769ef1d8048ff44291aa8e3128430b8ea7e3f6c89debb5e209abf34"
+    },
+    "19-mobile-workbench.svg": {
+      "source": "../tools/pages_09_16.py",
+      "module": "pages_09_16",
+      "function": "slide10",
+      "source_sha256": "228dbc680769ef1d8048ff44291aa8e3128430b8ea7e3f6c89debb5e209abf34"
+    },
+    "20-ar-demo.svg": {
+      "source": "../tools/pages_09_16.py",
+      "module": "pages_09_16",
+      "function": "slide11",
+      "source_sha256": "228dbc680769ef1d8048ff44291aa8e3128430b8ea7e3f6c89debb5e209abf34"
+    },
+    "21-feasibility.svg": {
+      "source": "../tools/pages_09_16.py",
+      "module": "pages_09_16",
+      "function": "slide12",
+      "source_sha256": "228dbc680769ef1d8048ff44291aa8e3128430b8ea7e3f6c89debb5e209abf34"
+    },
+    "22-experience-loop.svg": {
+      "source": "../tools/pages_09_16.py",
+      "module": "pages_09_16",
+      "function": "slide13",
+      "source_sha256": "228dbc680769ef1d8048ff44291aa8e3128430b8ea7e3f6c89debb5e209abf34"
+    },
+    "23-platform-architecture.svg": {
+      "source": "../tools/pages_09_16.py",
+      "module": "pages_09_16",
+      "function": "slide14",
+      "source_sha256": "228dbc680769ef1d8048ff44291aa8e3128430b8ea7e3f6c89debb5e209abf34"
+    },
+    "24-economic-value.svg": {
+      "source": "../tools/pages_09_16.py",
+      "module": "pages_09_16",
+      "function": "slide15",
+      "source_sha256": "228dbc680769ef1d8048ff44291aa8e3128430b8ea7e3f6c89debb5e209abf34"
+    },
+    "25-social-value.svg": {
+      "source": "../tools/pages_09_16.py",
+      "module": "pages_09_16",
+      "function": "slide16",
+      "source_sha256": "228dbc680769ef1d8048ff44291aa8e3128430b8ea7e3f6c89debb5e209abf34"
+    }
+  },
+  "edge_runtime_page_sources": {
+    "18-edge-runtime.svg": {
+      "source": "../tools/edge_runtime_page.py",
+      "function": "edge_runtime",
+      "source_sha256": "d178b91b3e3abf20bdfd791971d2eda9a664cc4269c8a23590a2f562123eed4d"
+    }
+  },
+  "learning_page_sources": {
+    "22-experience-loop.svg": {
+      "source": "../tools/learning_platform_pages.py",
+      "function": "experience_loop",
+      "source_sha256": "8fbee2d64944e86a2210488e41e9bd438aff282c930685cdeac612e9c631c82b"
+    },
+    "23-platform-architecture.svg": {
+      "source": "../tools/learning_platform_pages.py",
+      "function": "platform_architecture",
+      "source_sha256": "8fbee2d64944e86a2210488e41e9bd438aff282c930685cdeac612e9c631c82b"
+    }
+  }
+}

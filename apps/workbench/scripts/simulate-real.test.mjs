@@ -1,0 +1,148 @@
+import test,{before} from 'node:test';
+import assert from 'node:assert/strict';
+import {mkdtemp,rm,readFile,mkdir,writeFile} from 'node:fs/promises';
+import path from 'node:path';
+import os from 'node:os';
+import {createHash,randomUUID} from 'node:crypto';
+import {gunzipSync} from 'node:zlib';
+import {Quaternion,Vector3} from 'three';
+import {defaultRegistry,readRegistry,findSnapshot,readPackageEntry} from './dkp.mjs';
+import {createSimulationStore} from './simulate-store.mjs';
+import {matrix,transformedBounds} from './simulate-core.mjs';
+import {createMotionGeometry} from './simulate-path-geometry.mjs';
+import {auditSimulationProcess} from './simulate-process-audit.mjs';
+
+let packageContext;
+function realContext(){
+ if(!packageContext)packageContext=(async()=>{const started=performance.now(),registry=await readRegistry(),workspace=registry.workspaces.find(w=>w.id==='microduck'),snapshot=workspace.selectedSnapshotId,bundle=await findSnapshot(workspace.id,snapshot,defaultRegistry);console.log(JSON.stringify({package_load_and_validation_ms:performance.now()-started,snapshot}));return {workspace,snapshot,bundle};})();return packageContext;
+}
+// Cold immutable-package validation is measured separately from per-operation timeouts.
+before(()=>realContext(),{timeout:600000});
+
+test('real desktop layout lays all plates and bearings flat while preserving original assembly data',{timeout:90000},async t=>{
+ const {workspace,snapshot,bundle}=await realContext(),sceneBytes=await readPackageEntry(bundle,bundle.manifest.entrypoints.scene),scene=JSON.parse(sceneBytes.toString());
+ const directory=await mkdtemp(path.join(os.tmpdir(),'psop-flat-desktop-'));t.after(()=>rm(directory,{recursive:true,force:true}));
+ const store=createSimulationStore({registryFile:path.join(directory,'registry.json'),load:async()=>bundle});t.after(()=>store.close());
+ const created=await store.create(workspace.id,snapshot),s=await store.get(workspace.id,snapshot,created.id),byPart=new Map(scene.parts.map(p=>[p.id,p]));
+ const boxes=s.instances.map(p=>transformedBounds(s.bounds[p.part_ref],p,byPart.get(p.part_ref).scale)),checked=[];
+ for(let n=0;n<s.instances.length;n++){
+  const p=s.instances[n],source=byPart.get(p.part_ref),bounds=s.bounds[p.part_ref],minimum=Math.min(...bounds[1].map((v,k)=>(v-bounds[0][k])*Math.abs(source.scale[k]))),box=boxes[n];
+  assert.ok(Math.abs(box.min.z-.0002)<1e-8,source.name+' must touch the tabletop');
+  assert.ok(box.getSize(new Vector3()).z<=minimum+1e-7,source.name+' must rest on a broad face');
+  assert.ok(box.min.x>=-s.table.width/2&&box.max.x<=s.table.width/2&&box.min.y>=-s.table.height/2&&box.max.y<=s.table.height/2);
+  for(let k=0;k<n;k++)assert.equal(box.clone().expandByScalar(.0089).intersectsBox(boxes[k]),false,source.name+' inventory clearance');
+  if(/加强板|颈部件|轴承|电路板|支承件|腿部连杆/.test(source.name))checked.push({name:source.name,height_mm:box.getSize(new Vector3()).z*1000});
+ }
+ assert.equal(s.instances.length,70);assert.equal(s.connections.length,0);
+ const reset=await store.command(workspace.id,snapshot,s.id,{type:'reset',request_id:randomUUID(),expected_revision:s.revision});assert.deepEqual(reset.instances,s.instances);
+ const reloaded=await store.get(workspace.id,snapshot,s.id);assert.deepEqual(reloaded.instances,s.instances);
+ assert.deepEqual(await readPackageEntry(bundle,bundle.manifest.entrypoints.scene),sceneBytes);
+ console.log(JSON.stringify({desktop_layout:{part_count:70,checked_flat_parts:checked,table:s.table,source_scene_unchanged:true}}));
+});
+
+test('real head shells: both connection methods share the selected source/coordinated configuration and retain measured overlap',{timeout:180000},async t=>{
+ const {workspace,snapshot,bundle}=await realContext();
+ const scene=JSON.parse((await readPackageEntry(bundle,bundle.manifest.entrypoints.scene)).toString()),directory=await mkdtemp(path.join(os.tmpdir(),'psop-head-policy-'));
+ t.after(()=>rm(directory,{recursive:true,force:true}));const store=createSimulationStore({registryFile:path.join(directory,'registry.json'),load:async()=>bundle});t.after(()=>store.close());
+ let s=await store.create(workspace.id,snapshot,{name:'原装头壳策略验收'});const rows=[];
+ const command=async body=>s=await store.command(workspace.id,snapshot,s.id,{...body,expected_revision:s.revision,request_id:randomUUID()});
+ const upper='instance:part:microduck:82d68e991b23c2a3',lower='instance:part:microduck:52fdcacf474a463f';
+ await command({type:'move',instance_id:lower,pose:{position:[0,0,.3],quaternion:s.instances.find(p=>p.id===lower).quaternion}});
+ for(const configuration of s.reference_configurations){
+  if(s.reference_configuration_ref!==configuration.id){const before=structuredClone(s.instances);await command({type:'set_reference_configuration',configuration_ref:configuration.id});assert.deepEqual(s.instances,before);}
+  const query=await store.candidates(workspace.id,snapshot,s.id,{instance_id:upper,target_instance_id:lower,expected_revision:s.revision});
+  const methods=query.candidates.filter(c=>c.source_kind==='reference_connection'&&/head_shell_(seam|closure)$/.test(c.source_match_ref));assert.equal(methods.length,2);
+  assert.deepEqual(methods[0].relative_transform,methods[1].relative_transform);assert.ok(methods.every(c=>c.source_configuration_ref===configuration.id));
+  const results=[];for(const c of methods){const input={candidate_id:c.id,moving_instance_id:c.moving_instance_id,target_instance_id:c.target_instance_id,expected_revision:s.revision,diagnostics:true},rawStarted=performance.now(),fast=await store.preview(workspace.id,snapshot,s.id,{...input,diagnostics:false}),raw_preview_ms=performance.now()-rawStarted,cold=performance.now(),preview=await store.preview(workspace.id,snapshot,s.id,input);const cold_ms=performance.now()-cold;
+   assert.equal(preview.status,'ready',preview.reason);assert.equal(preview.geometry.status,'interference');assert.equal(preview.assembly_assessment.decision,'allow_with_note');assert.equal(preview.mechanics.status,'not_evaluated');
+   const observed=preview.geometry.observations.find(o=>[o.instance_a,o.instance_b].includes(upper)&&[o.instance_a,o.instance_b].includes(lower));assert.ok(observed);const volume=observed.intersection_volume_m3*1e9;
+   assert.ok(Math.abs(volume-(configuration.kind==='source'?67.89369775908723:.003054413150777607))<(configuration.kind==='source'?.001:.00001));
+   const warm=[];for(let n=0;n<12;n++){const started=performance.now();await store.preview(workspace.id,snapshot,s.id,input);warm.push(performance.now()-started);}warm.sort((a,b)=>a-b);
+   assert.equal(fast.status,'ready');results.push({method:c.source_match_ref,volume_mm3:volume,raw_preview_ms,cold_ms,warm_p95_ms:warm[Math.floor(warm.length*.95)],diagnostics:observed.diagnostics});
+  }
+  const c=methods[0],before=structuredClone(s.instances);await command({type:'connect',candidate_id:c.id,moving_instance_id:upper,target_instance_id:lower});assert.equal(s.connections[0].geometry.status,'interference');assert.equal(s.connections[0].source_configuration_ref,configuration.id);
+  await command({type:'undo'});assert.deepEqual(s.instances,before);assert.equal(s.connections.length,0);rows.push({configuration,results});
+ }
+ const report={date:new Date().toISOString(),snapshot,package_digest:bundle.manifest.package_digest,source_part_count:scene.parts.length,configurations:rows};
+ await mkdir(new URL('../.runtime/simulate-review/',import.meta.url),{recursive:true});await writeFile(new URL('../.runtime/simulate-review/head-shell-policy.json',import.meta.url),JSON.stringify(report,null,2));console.log(JSON.stringify(rows.map(r=>({configuration:r.configuration.label,results:r.results.map(({diagnostics,...v})=>v)}))));
+});
+
+test('real automatic reference assembly: 70 parts, source provenance, one-step recovery and repeat stability',{timeout:120000},async t=>{
+ const {workspace,snapshot,bundle}=await realContext();const manifest=await readFile(path.join(bundle.root,'manifest.json'));
+ const directory=await mkdtemp(path.join(os.tmpdir(),'psop-real-auto-'));t.after(()=>rm(directory,{recursive:true,force:true}));
+ const options={registryFile:path.join(directory,'registry.json'),load:async()=>bundle,geometry:{evaluate(){assert.fail('Reference assembly must never manufacture a geometry-clear result.');},close(){}}},store=createSimulationStore(options);t.after(()=>store.close());
+ let s=await store.create(workspace.id,snapshot,{name:'真实自动组装参考验收'});const before=JSON.parse(JSON.stringify(s)),started=performance.now(),command=async body=>s=await store.command(workspace.id,snapshot,s.id,{...body,expected_revision:s.revision,request_id:randomUUID()});
+ await command({type:'auto_assemble',mode:'reference'});const planning_ms=performance.now()-started,complete=JSON.parse(JSON.stringify(s));assert.equal(s.instances.length,70);assert.equal(s.groups.length,1);assert.equal(s.connections.length,69);assert.equal(s.history.length,1);assert.ok(s.reference_assembly.structure_binding_count>0);
+ const sourceScene=JSON.parse((await readPackageEntry(bundle,bundle.manifest.entrypoints.scene)).toString()),parts=new Map(sourceScene.parts.map(p=>[p.id,p])),sourceBearings=sourceScene.parts.filter(p=>p.kind==='bearing'),seating=s.operation.steps.filter(step=>step.motions.some(m=>m.insertion?.kind==='bearing_axial'));assert.equal(sourceBearings.length,14);assert.equal(seating.length,14);assert.equal(s.reference_assembly.bearing_preassembly_count,14);assert.equal(s.reference_assembly.process_check.part_count,70);assert.equal(s.reference_assembly.process_check.reference_handoff_count,5);assert.equal(s.reference_assembly.process_check.audit.new_intrusion_observations,0);assert.deepEqual(s.reference_assembly.process_check.proxy_parts,[]);
+ const working=new Map(before.instances.map(p=>[p.id,p])),bearing_checks=[];
+ for(const step of s.operation.steps){
+  if(step.motions.some(m=>m.insertion?.kind==='bearing_axial')){
+   const m=step.motions[0],p=m.poses[0],part=parts.get(p.part_ref),entry=sourceScene.assembly.capability_index.parts[p.part_ref],raw=await readPackageEntry(bundle,entry.path),definition=JSON.parse((raw[0]===31?gunzipSync(raw):raw).toString()),ring=definition.interfaces.find(i=>i.id===m.insertion.axis_interface_ref),member=ring.members.find(v=>v.id===m.insertion.axis_member_ref),expectedAxis=new Vector3().fromArray(member.direction).applyQuaternion(new Quaternion().fromArray(p.quaternion)).normalize(),offset=new Vector3().fromArray(m.approach_offset_m);
+   assert.ok(offset.clone().cross(expectedAxis).length()<1e-10);assert.ok(offset.length()>=.001);const last=m.waypoints.at(-1),previous=m.waypoints.at(-2),finalLeg=new Vector3().fromArray(previous.position).sub(new Vector3().fromArray(last.position));assert.ok(finalLeg.clone().cross(expectedAxis).length()<1e-10);assert.ok(new Quaternion().fromArray(last.quaternion).angleTo(new Quaternion().fromArray(previous.quaternion))<1e-7);bearing_checks.push({instance:p.id,host:m.insertion.host_instance_id,axis_interface_ref:ring.id,axis_member_ref:member.id,axis:expectedAxis.toArray(),approach_offset_m:m.approach_offset_m,final_leg_axial:true});
+  }
+  if(step.kind==='stage')assert.equal(step.motions.length,1);for(const m of step.motions){assert.ok(m.waypoints.length>=2);assert.equal(m.waypoints[0].at,0);assert.equal(m.waypoints.at(-1).at,1);const last=m.waypoints.at(-1);if(m.presentation!=='reference_handoff'){assert.deepEqual(last.position,m.poses[0].position);assert.deepEqual(last.quaternion,m.poses[0].quaternion);}for(const p of m.poses)working.set(p.id,p);}
+ }
+ assert.deepEqual([...working.values()],s.instances);
+ const geometries=[];for(const key of new Set(sourceScene.parts.map(p=>p.geometryUrl)))geometries.push({key,bytes:await readPackageEntry(bundle,key)});const motionGeometry=await createMotionGeometry({parts:sourceScene.parts,geometries,reference_instances:complete.instances});let processAudit;try{processAudit=auditSimulationProcess({scene:sourceScene,initial:before.instances,operation:complete.operation,geometry:motionGeometry,fractions:[.13,.37,.61,.83,.99],sampleWaypoints:true});assert.deepEqual(processAudit.issues,[]);assert.equal(processAudit.reference_handoff_count,5);}finally{motionGeometry.close();}
+ for(const c of s.connections){assert.equal(c.status,'reference');assert.equal(c.geometry.status,'not_evaluated');if(c.source_kind==='source_structure'){assert.ok(c.source_structure_ref);assert.ok(c.source_body_refs.length);assert.ok(c.endpoints.every(e=>e.interface_ref===null&&e.member_refs.length===0&&e.resource_keys.length===0));}}
+ await command({type:'undo'});assert.deepEqual(s.instances,before.instances);assert.deepEqual(s.connections,before.connections);assert.equal(s.reference_assembly,null);await command({type:'redo'});assert.deepEqual(s.instances,complete.instances);assert.deepEqual(s.connections,complete.connections);
+ const reopened=createSimulationStore(options);t.after(()=>reopened.close());const loaded=await reopened.get(workspace.id,snapshot,s.id);assert.deepEqual(loaded.reference_assembly,complete.reference_assembly);assert.deepEqual(loaded.instances,complete.instances);assert.equal(loaded.operation,undefined);
+ await command({type:'auto_assemble',mode:'reference'});assert.deepEqual(s.connections,complete.connections);assert.equal(s.reference_assembly.retained_connection_count,69);assert.equal(s.reference_assembly.removed_connection_count,0);assert.deepEqual(await readFile(path.join(bundle.root,'manifest.json')),manifest);
+ const report={recorded_at:new Date().toISOString(),workspace:workspace.id,snapshot,package_digest:bundle.manifest.package_digest,planning_ms,report:complete.reference_assembly,total_duration_ms:complete.operation.total_duration_ms,bearing_checks,steps:complete.operation.steps,final_instances:complete.instances,final_connections:complete.connections,process_audit:processAudit,checks:['70 source instances form one reference group','69 exclusive reference or explicit source-structure edges','14 bearings with published axes and straight final entry','dependency-based reverse disassembly and nested preassembly','one object transported at a time','independent replay at different fractions and all waypoint segments','5 explicit reference handoffs; no certified rigid-path or mechanics claim','no invented interface members or geometry-clear claims','one history step','exact undo and redo','reload does not replay animation','repeat retains all connection IDs','DKP manifest unchanged']};
+ await mkdir(new URL('../.runtime/simulate-review/',import.meta.url),{recursive:true});await writeFile(new URL('../.runtime/simulate-review/automatic-process-real.json',import.meta.url),JSON.stringify(report,null,2));console.log(JSON.stringify({parts:70,connections:69,planning_ms,checks:report.checks}));
+});
+
+test('real coordinated automatic assembly preserves the explicitly selected global configuration',{timeout:180000},async t=>{
+ const {workspace,snapshot,bundle}=await realContext(),scene=JSON.parse((await readPackageEntry(bundle,bundle.manifest.entrypoints.scene)).toString()),directory=await mkdtemp(path.join(os.tmpdir(),'psop-coordinated-auto-'));
+ t.after(()=>rm(directory,{recursive:true,force:true}));const store=createSimulationStore({registryFile:path.join(directory,'registry.json'),load:async()=>bundle});t.after(()=>store.close());let s=await store.create(workspace.id,snapshot);
+ const command=async body=>s=await store.command(workspace.id,snapshot,s.id,{...body,expected_revision:s.revision,request_id:randomUUID()});
+ const configuration=s.reference_configurations.find(c=>c.kind==='coordinated');assert.ok(configuration);const loose=JSON.parse(JSON.stringify(s.instances));await command({type:'set_reference_configuration',configuration_ref:configuration.id});assert.deepEqual(s.instances,loose);await command({type:'auto_assemble',mode:'reference'});
+ assert.equal(s.groups.length,1);assert.equal(s.instances.length,70);assert.equal(s.reference_assembly.configuration_ref,configuration.id);assert.equal(s.reference_assembly.bearing_preassembly_count,14);assert.equal(s.reference_assembly.process_check.audit.new_intrusion_observations,0);
+ const overrides=new Map(scene.reference_alignment.placements.map(p=>[p.part_ref,p])),parts=new Map(scene.parts.map(p=>[p.id,{...p,...overrides.get(p.id)}])),anchor=s.instances[0],sourceAnchor=parts.get(anchor.part_ref);
+ for(const p of s.instances){const expected=matrix(sourceAnchor).invert().multiply(matrix(parts.get(p.part_ref))),actual=matrix(anchor).invert().multiply(matrix(p));assert.ok(expected.elements.every((v,n)=>Math.abs(v-actual.elements[n])<1e-10));}
+ for(const c of s.connections){assert.equal(c.source_configuration_ref,configuration.id);assert.equal(c.geometry.status,'not_evaluated');assert.notEqual(c.assembly_assessment.decision,'block');assert.equal(c.mechanics.status,'not_evaluated');}
+ const saved=JSON.parse(JSON.stringify(s.instances));await command({type:'undo'});assert.deepEqual(s.instances,loose);assert.equal(s.reference_configuration_ref,configuration.id);await command({type:'redo'});assert.deepEqual(s.instances,saved);
+ const report={snapshot,package_digest:bundle.manifest.package_digest,configuration,report:s.reference_assembly,source_poses_preserved:true,undo_redo_passed:true};await writeFile(new URL('../.runtime/simulate-review/coordinated-assembly-policy.json',import.meta.url),JSON.stringify(report,null,2));
+});
+
+test('registered Microduck: single, third part, two groups, detach, reuse and durable recovery', {timeout:1200000}, async t=>{
+ const {workspace,snapshot,bundle}=await realContext();const manifest=await readFile(path.join(bundle.root,'manifest.json'));
+ const scene=JSON.parse((await readPackageEntry(bundle,bundle.manifest.entrypoints.scene)).toString()),parts=new Map(scene.parts.map(p=>[p.id,p])),directory=await mkdtemp(path.join(os.tmpdir(),'psop-real-simulate-'));t.after(()=>rm(directory,{recursive:true,force:true}));
+ const options={registryFile:path.join(directory,'registry.json'),load:async()=>bundle},store=createSimulationStore(options);t.after(()=>store.close());let s=await store.create(workspace.id,snapshot,{name:'真实装配验收'});const log=[];
+ const command=async body=>{s=await store.command(workspace.id,snapshot,s.id,{...body,expected_revision:s.revision,request_id:randomUUID()});log.push({request:body,revision:s.revision,connections:s.connections.length,groups:s.groups.filter(g=>g.instance_ids.length>1).map(g=>g.instance_ids)});return s;};
+ const query=(id,target)=>store.candidates(workspace.id,snapshot,s.id,{instance_id:id,target_instance_id:target,expected_revision:s.revision});
+ const preview=c=>store.preview(workspace.id,snapshot,s.id,{candidate_id:c.id,moving_instance_id:c.moving_instance_id,target_instance_id:c.target_instance_id,expected_revision:s.revision});
+ const connect=c=>command({type:'connect',candidate_id:c.id,moving_instance_id:c.moving_instance_id,target_instance_id:c.target_instance_id});
+ const anchor=s.instances.find(p=>parts.get(p.part_ref).name.includes('XL330'));assert.ok(anchor);await command({type:'move',instance_id:anchor.id,pose:{position:[0,0,.25],quaternion:anchor.quaternion}});
+ const initial=(await query(anchor.id)).candidates.filter(c=>c.source_kind==='compatibility').sort((a,b)=>b.member_count-a.member_count);let ab;
+ for(const c of initial){const reverse=(await query(c.target_instance_id,anchor.id)).candidates.find(r=>r.branch_key===c.branch_key);if(reverse&&(await preview(reverse)).status==='ready'){ab=reverse;await connect(reverse);break;}}
+ assert.ok(ab);assert.equal(s.connections.length,1);console.log('Real DKP: two single parts connected.');
+ const firstGroup=s.groups.find(g=>g.instance_ids.includes(anchor.id));let third;
+ for(const c of (await query(anchor.id)).candidates){if(firstGroup.instance_ids.includes(c.target_instance_id))continue;if((await preview(c)).status==='ready'){third=c;await connect(c);break;}}
+ assert.ok(third);assert.equal(s.groups.find(g=>g.instance_ids.includes(anchor.id)).instance_ids.length,3);await command({type:'undo'});assert.equal(s.connections.length,1);console.log('Real DKP: third-part continuation and undo verified.');
+ const abMembers=s.groups.find(g=>g.instance_ids.includes(anchor.id)).instance_ids;let bridge,secondEdge;const seen=new Set();
+ for(const c of (await query(anchor.id)).candidates){
+   if(abMembers.includes(c.target_instance_id)||seen.has(c.target_instance_id))continue;seen.add(c.target_instance_id);const target=s.instances.find(p=>p.id===c.target_instance_id);
+   await command({type:'move',instance_id:target.id,pose:{position:[.22,.03,.25],quaternion:target.quaternion}});
+   const candidates=(await query(target.id)).candidates.filter(d=>d.source_kind==='compatibility'&&!abMembers.includes(d.target_instance_id)&&!abMembers.includes(d.moving_instance_id)).sort((a,b)=>b.member_count-a.member_count);
+   const tried=new Set();for(const d of candidates){if(tried.has(d.target_instance_id))continue;tried.add(d.target_instance_id);const reverse=(await query(d.target_instance_id,target.id)).candidates.filter(r=>r.branch_key===d.branch_key)[0];if(!reverse||(await preview(reverse)).status!=='ready')continue;
+     await connect(reverse);secondEdge=s.connections.at(-1);const secondMembers=s.groups.find(g=>g.instance_ids.includes(target.id)).instance_ids;const options=(await query(anchor.id)).candidates.filter(b=>b.source_kind==='compatibility'&&secondMembers.includes(b.target_instance_id));
+     for(const option of options.slice(0,512))if((await preview(option)).status==='ready'){bridge=option;break;}
+     if(bridge)break;await command({type:'undo'});secondEdge=null;
+   }if(bridge)break;
+ }
+ assert.ok(bridge&&secondEdge,'Two separate real-data assemblies must have a feasible bridge.');const movingMembers=s.groups.find(g=>g.instance_ids.includes(bridge.moving_instance_id)).instance_ids,targetMembers=s.groups.find(g=>g.instance_ids.includes(bridge.target_instance_id)).instance_ids;assert.equal(movingMembers.length,2);assert.equal(targetMembers.length,2);
+ const before=new Map(s.instances.map(p=>[p.id,p])),relative=matrix(before.get(movingMembers[0])).invert().multiply(matrix(before.get(movingMembers[1])));await connect(bridge);const after=new Map(s.instances.map(p=>[p.id,p])),actual=matrix(after.get(movingMembers[0])).invert().multiply(matrix(after.get(movingMembers[1])));assert.ok(relative.elements.every((v,i)=>Math.abs(v-actual.elements[i])<1e-10));for(const id of targetMembers)assert.deepEqual(after.get(id),before.get(id));assert.equal(s.groups.find(g=>g.instance_ids.includes(anchor.id)).instance_ids.length,4);console.log('Real DKP: 2 + 2 group assembly verified.');
+ const edge=s.connections.at(-1),saved=structuredClone(s.instances);await command({type:'disconnect',connection_id:edge.id});assert.equal(s.operation.status,'placed');assert.deepEqual(s.operation.stationary_instance_ids,targetMembers);for(const id of targetMembers)assert.deepEqual(s.instances.find(p=>p.id===id),saved.find(p=>p.id===id));const settledRelative=matrix(s.instances.find(p=>p.id===movingMembers[0])).invert().multiply(matrix(s.instances.find(p=>p.id===movingMembers[1])));assert.ok(relative.elements.every((v,i)=>Math.abs(v-settledRelative.elements[i])<1e-10));assert.notDeepEqual(s.instances,saved);assert.equal(s.connections.length,2);let reuse;const reuseReasons=[];
+ for(const c of (await query(anchor.id)).candidates){if(c.target_instance_id===bridge.target_instance_id||abMembers.includes(c.target_instance_id))continue;const endpoint=c.endpoints.find(e=>edge.endpoints.some(old=>old.instance_id===e.instance_id&&old.interface_ref===e.interface_ref));if(!endpoint)continue;
+  // A released interface may target inventory resting on the table; stage that target before checking a new elevated assembly.
+  const target=s.instances.find(p=>p.id===c.target_instance_id);await command({type:'move',instance_id:target.id,pose:{position:[.32,-.18,.3],quaternion:target.quaternion}});
+  const result=await preview(c);if(result.status==='ready'){reuse=c;await connect(c);break;}reuseReasons.push({candidate:c.id,reason:result.reason});
+ }
+ assert.ok(reuse,'A released real interface must connect to another object: '+JSON.stringify({freed:edge.endpoints.map(e=>e.interface_ref),bridge:bridge.source_kind,reasons:reuseReasons.slice(0,6)}));const connected=structuredClone(s.instances);await command({type:'undo'});await command({type:'redo'});assert.deepEqual(s.instances,connected);
+ const reopened=createSimulationStore(options);t.after(()=>reopened.close());const recovered=await reopened.get(workspace.id,snapshot,s.id);assert.deepEqual(recovered.instances,s.instances);assert.deepEqual(recovered.connections,s.connections);assert.ok(recovered.can_undo);const copy=await reopened.create(workspace.id,snapshot,{copy_from:s.id});assert.deepEqual(copy.instances,s.instances);assert.deepEqual(copy.connections,s.connections);assert.equal(copy.can_undo,false);
+ const sourceQueries=await query(anchor.id);assert.ok(sourceQueries.complete);for(const c of sourceQueries.candidates)for(const e of c.endpoints)assert.ok(!s.connections.some(edge=>edge.endpoints.some(used=>used.instance_id===e.instance_id&&used.interface_ref===e.interface_ref)));
+ assert.deepEqual(await readFile(path.join(bundle.root,'manifest.json')),manifest);for(const file of new Set(scene.parts.map(p=>p.geometryUrl)))await readPackageEntry(bundle,file);
+ const report={date:new Date().toISOString(),workspace:workspace.id,snapshot,package_digest:bundle.manifest.package_digest,instances:s.instances.length,parts:Object.fromEntries(s.instances.filter(p=>movingMembers.includes(p.id)||targetMembers.includes(p.id)).map(p=>[p.id,parts.get(p.part_ref).name])),first_match:ab.source_match_ref,third_match:third.source_match_ref,group_bridge_match:bridge.source_match_ref,reused_match:reuse.source_match_ref,source_manifest_sha256:createHash('sha256').update(manifest).digest('hex'),source_assets_unchanged:true,final_instances:s.instances,final_connections:s.connections,checks:['single + single','third part + group','group + group','fixed target and preserved internal poses','detach, larger component fixed and smaller rigid group returns to a clear desktop slot','reuse released interface on another object','undo + redo','new store reload','copy resets history','occupied interfaces excluded','DKP unchanged'],operations:log};
+ await mkdir(new URL('../.runtime/simulate-review/',import.meta.url),{recursive:true});await writeFile(new URL('../.runtime/simulate-review/real-operations.json',import.meta.url),JSON.stringify(report,null,2));console.log(JSON.stringify({checks:report.checks,revision:s.revision}));
+});

@@ -1,0 +1,40 @@
+{
+  "schema": "psop.reference-alignment-ui-review/1",
+  "measured_at": "2026-11-08T18:01:46.698Z",
+  "snapshot": "dkp-68c7c493a38d95f2eb47",
+  "version": "2.0.0-capabilities.3",
+  "package_digest": "68c7c493a38d95f2eb47cacdd0b1cc6ef96ad6e79752f316ea0bc96fff5924b1",
+  "placements": [
+    {
+      "part_ref": "part:microduck:52fdcacf474a463f",
+      "source_mm": [
+        "26.10",
+        "0.00",
+        "231.31"
+      ],
+      "corrected_mm": [
+        "26.10",
+        "0.00",
+        "231.11"
+      ]
+    },
+    {
+      "part_ref": "part:microduck:a0775b54397eb21e",
+      "source_mm": [
+        "26.10",
+        "-40.00",
+        "238.81"
+      ],
+      "corrected_mm": [
+        "26.10",
+        "-40.00",
+        "238.61"
+      ]
+    }
+  ],
+  "passed_constraint_count": 13,
+  "corrected_text": "本件接口\n内圈配合接口\n已确定\n\nØ10 · 厚 3 · 两端独立环面\n\n承接轴颈的径向配合，并独立保留内圈两端环面\n\n定位本端\n选择整个接口\n组成\n3 个成员\n1 · 内孔有限壁\n已用\n2 · 低 Z 端环\n3 · 高 Z 端环\n已确定对端\n\n喙部左侧轴颈与头部轴承内圈 · 装配声明\n\n喙部件\n左侧轴承轴颈安装接口 · Ø10 有限轴颈\n查看对端\n定位对端\n\n修正参考配置中有限配合区已对中；原始配置的0.2 mm偏差作为历史来源记录保留。此结论属于有依据的工程推断，不代表保持、装入路径或载荷已经验证。\n\n已定位局部曲面，完整接触范围待核实。\n\n查看依据\n几何位置 · 源局部 mm",
+  "source_text": "本件接口\n内圈配合接口\n已确定\n\nØ10 · 厚 3 · 两端独立环面\n\n承接轴颈的径向配合，并独立保留内圈两端环面\n\n定位本端\n选择整个接口\n组成\n3 个成员\n1 · 内孔有限壁\n已用\n2 · 低 Z 端环\n3 · 高 Z 端环\n已确定对端\n\n喙部左侧轴颈与头部轴承内圈 · 装配声明\n\n喙部件\n左侧轴承轴颈安装接口 · Ø10 有限轴颈\n查看对端\n定位对端\n\n原装配接口及对端由用户补充。Ø10 轴颈约2.7 mm、轴承直孔壁约2.6 mm；qpos0 轴线偏心约0.2 mm，肩面轴向落座仍待核对，不表示位姿冲突已解决或工程验证通过。\n\n已定位局部曲面，完整接触范围待核实。\n\n查看依据\n几何位置 · 源局部 mm",
+  "javascript_errors": [],
+  "scope": "Declared finite mating regions and neighboring constraints; no whole-assembly collision, path, retention or load qualification"
+}

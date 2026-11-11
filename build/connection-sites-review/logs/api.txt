@@ -1,0 +1,19 @@
+
+> psop-workbench@0.2.0 test:api
+> node --test scripts/workspaces.test.mjs
+
+✔ registers validated v2 data packages, preserves snapshots, and returns mounted view URLs (500.7057ms)
+✔ allows an empty device workspace but refuses cross-device package registration (29.471ms)
+✔ rejects retired package contracts and contained-path violations (6.4196ms)
+✔ checks asset identity on every read, including after initial package validation (5.6636ms)
+✔ workspace state stays outside the published package (9.3697ms)
+✔ catalog verifies registered manifest metadata and defers content replay until selection (15.7882ms)
+✔ registration checks historical version identity without replaying unrelated historical content (14.4438ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 218558.1401

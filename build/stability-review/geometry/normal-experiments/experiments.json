@@ -1,0 +1,172 @@
+{
+  "records": [
+    {
+      "target": "right-x25-y9",
+      "variant": "angle35",
+      "image": "right-x25-y9-angle35.png",
+      "camera": [
+        0.01781021833292681,
+        -0.024706934422452375,
+        0.1630000004470348,
+        0.01350000004943163,
+        -0.025999999907500928,
+        0.14500000044703482
+      ],
+      "url": "http://127.0.0.1:8791/#explorer?workspace=microduck&snapshot=dkp-1c8eeda600249ce33b99&part=part%3Amicroduck%3A9d70b219a5533bf1&opening=opening%3Amicroduck%3A9d70b219a5533bf1%3A4450b2102e065a82&explode=0.00&detail=geometry&view=iso&isolate=part%3Amicroduck%3A9d70b219a5533bf1&labels=0&grid=0&supplements=0&camera=0.0178102%2C-0.0247069%2C0.1630000%2C0.0135000%2C-0.0260000%2C0.1450000"
+    },
+    {
+      "target": "hip-x17-z6",
+      "variant": "angle35",
+      "image": "hip-x17-z6-angle35.png",
+      "camera": [
+        0.04150000040233135,
+        0.021244226399026088,
+        0.09899615089002002,
+        0.023500000402331352,
+        0.0175000000745058,
+        0.0965000000070065
+      ],
+      "url": "http://127.0.0.1:8791/#explorer?workspace=microduck&snapshot=dkp-1c8eeda600249ce33b99&part=part%3Amicroduck%3Afa9ee2f71faafb88&opening=opening%3Amicroduck%3Afa9ee2f71faafb88%3Ac620cf250a66d5e3&explode=0.00&detail=geometry&view=iso&isolate=part%3Amicroduck%3Afa9ee2f71faafb88&labels=0&grid=0&supplements=0&camera=0.0415000%2C0.0212442%2C0.0989962%2C0.0235000%2C0.0175000%2C0.0965000"
+    },
+    {
+      "target": "right-x25-y9",
+      "variant": "angle60",
+      "image": "right-x25-y9-angle60.png",
+      "camera": [
+        0.01781021833292681,
+        -0.024706934422452375,
+        0.1630000004470348,
+        0.01350000004943163,
+        -0.025999999907500928,
+        0.14500000044703482
+      ],
+      "url": "http://127.0.0.1:8791/#explorer?workspace=microduck&snapshot=dkp-1c8eeda600249ce33b99&part=part%3Amicroduck%3A9d70b219a5533bf1&opening=opening%3Amicroduck%3A9d70b219a5533bf1%3A4450b2102e065a82&explode=0.00&detail=geometry&view=iso&isolate=part%3Amicroduck%3A9d70b219a5533bf1&labels=0&grid=0&supplements=0&camera=0.0178102%2C-0.0247069%2C0.1630000%2C0.0135000%2C-0.0260000%2C0.1450000"
+    },
+    {
+      "target": "hip-x17-z6",
+      "variant": "angle60",
+      "image": "hip-x17-z6-angle60.png",
+      "camera": [
+        0.04150000040233135,
+        0.021244226399026088,
+        0.09899615089002002,
+        0.023500000402331352,
+        0.0175000000745058,
+        0.0965000000070065
+      ],
+      "url": "http://127.0.0.1:8791/#explorer?workspace=microduck&snapshot=dkp-1c8eeda600249ce33b99&part=part%3Amicroduck%3Afa9ee2f71faafb88&opening=opening%3Amicroduck%3Afa9ee2f71faafb88%3Ac620cf250a66d5e3&explode=0.00&detail=geometry&view=iso&isolate=part%3Amicroduck%3Afa9ee2f71faafb88&labels=0&grid=0&supplements=0&camera=0.0415000%2C0.0212442%2C0.0989962%2C0.0235000%2C0.0175000%2C0.0965000"
+    },
+    {
+      "target": "right-x25-y9",
+      "variant": "angle85",
+      "image": "right-x25-y9-angle85.png",
+      "camera": [
+        0.01781021833292681,
+        -0.024706934422452375,
+        0.1630000004470348,
+        0.01350000004943163,
+        -0.025999999907500928,
+        0.14500000044703482
+      ],
+      "url": "http://127.0.0.1:8791/#explorer?workspace=microduck&snapshot=dkp-1c8eeda600249ce33b99&part=part%3Amicroduck%3A9d70b219a5533bf1&opening=opening%3Amicroduck%3A9d70b219a5533bf1%3A4450b2102e065a82&explode=0.00&detail=geometry&view=iso&isolate=part%3Amicroduck%3A9d70b219a5533bf1&labels=0&grid=0&supplements=0&camera=0.0178102%2C-0.0247069%2C0.1630000%2C0.0135000%2C-0.0260000%2C0.1450000"
+    },
+    {
+      "target": "hip-x17-z6",
+      "variant": "angle85",
+      "image": "hip-x17-z6-angle85.png",
+      "camera": [
+        0.04150000040233135,
+        0.021244226399026088,
+        0.09899615089002002,
+        0.023500000402331352,
+        0.0175000000745058,
+        0.0965000000070065
+      ],
+      "url": "http://127.0.0.1:8791/#explorer?workspace=microduck&snapshot=dkp-1c8eeda600249ce33b99&part=part%3Amicroduck%3Afa9ee2f71faafb88&opening=opening%3Amicroduck%3Afa9ee2f71faafb88%3Ac620cf250a66d5e3&explode=0.00&detail=geometry&view=iso&isolate=part%3Amicroduck%3Afa9ee2f71faafb88&labels=0&grid=0&supplements=0&camera=0.0415000%2C0.0212442%2C0.0989962%2C0.0235000%2C0.0175000%2C0.0965000"
+    },
+    {
+      "target": "right-x25-y9",
+      "variant": "area35",
+      "image": "right-x25-y9-area35.png",
+      "camera": [
+        0.01781021833292681,
+        -0.024706934422452375,
+        0.1630000004470348,
+        0.01350000004943163,
+        -0.025999999907500928,
+        0.14500000044703482
+      ],
+      "url": "http://127.0.0.1:8791/#explorer?workspace=microduck&snapshot=dkp-1c8eeda600249ce33b99&part=part%3Amicroduck%3A9d70b219a5533bf1&opening=opening%3Amicroduck%3A9d70b219a5533bf1%3A4450b2102e065a82&explode=0.00&detail=geometry&view=iso&isolate=part%3Amicroduck%3A9d70b219a5533bf1&labels=0&grid=0&supplements=0&camera=0.0178102%2C-0.0247069%2C0.1630000%2C0.0135000%2C-0.0260000%2C0.1450000"
+    },
+    {
+      "target": "hip-x17-z6",
+      "variant": "area35",
+      "image": "hip-x17-z6-area35.png",
+      "camera": [
+        0.04150000040233135,
+        0.021244226399026088,
+        0.09899615089002002,
+        0.023500000402331352,
+        0.0175000000745058,
+        0.0965000000070065
+      ],
+      "url": "http://127.0.0.1:8791/#explorer?workspace=microduck&snapshot=dkp-1c8eeda600249ce33b99&part=part%3Amicroduck%3Afa9ee2f71faafb88&opening=opening%3Amicroduck%3Afa9ee2f71faafb88%3Ac620cf250a66d5e3&explode=0.00&detail=geometry&view=iso&isolate=part%3Amicroduck%3Afa9ee2f71faafb88&labels=0&grid=0&supplements=0&camera=0.0415000%2C0.0212442%2C0.0989962%2C0.0235000%2C0.0175000%2C0.0965000"
+    },
+    {
+      "target": "right-x25-y9",
+      "variant": "area60",
+      "image": "right-x25-y9-area60.png",
+      "camera": [
+        0.01781021833292681,
+        -0.024706934422452375,
+        0.1630000004470348,
+        0.01350000004943163,
+        -0.025999999907500928,
+        0.14500000044703482
+      ],
+      "url": "http://127.0.0.1:8791/#explorer?workspace=microduck&snapshot=dkp-1c8eeda600249ce33b99&part=part%3Amicroduck%3A9d70b219a5533bf1&opening=opening%3Amicroduck%3A9d70b219a5533bf1%3A4450b2102e065a82&explode=0.00&detail=geometry&view=iso&isolate=part%3Amicroduck%3A9d70b219a5533bf1&labels=0&grid=0&supplements=0&camera=0.0178102%2C-0.0247069%2C0.1630000%2C0.0135000%2C-0.0260000%2C0.1450000"
+    },
+    {
+      "target": "hip-x17-z6",
+      "variant": "area60",
+      "image": "hip-x17-z6-area60.png",
+      "camera": [
+        0.04150000040233135,
+        0.021244226399026088,
+        0.09899615089002002,
+        0.023500000402331352,
+        0.0175000000745058,
+        0.0965000000070065
+      ],
+      "url": "http://127.0.0.1:8791/#explorer?workspace=microduck&snapshot=dkp-1c8eeda600249ce33b99&part=part%3Amicroduck%3Afa9ee2f71faafb88&opening=opening%3Amicroduck%3Afa9ee2f71faafb88%3Ac620cf250a66d5e3&explode=0.00&detail=geometry&view=iso&isolate=part%3Amicroduck%3Afa9ee2f71faafb88&labels=0&grid=0&supplements=0&camera=0.0415000%2C0.0212442%2C0.0989962%2C0.0235000%2C0.0175000%2C0.0965000"
+    },
+    {
+      "target": "right-x25-y9",
+      "variant": "area85",
+      "image": "right-x25-y9-area85.png",
+      "camera": [
+        0.01781021833292681,
+        -0.024706934422452375,
+        0.1630000004470348,
+        0.01350000004943163,
+        -0.025999999907500928,
+        0.14500000044703482
+      ],
+      "url": "http://127.0.0.1:8791/#explorer?workspace=microduck&snapshot=dkp-1c8eeda600249ce33b99&part=part%3Amicroduck%3A9d70b219a5533bf1&opening=opening%3Amicroduck%3A9d70b219a5533bf1%3A4450b2102e065a82&explode=0.00&detail=geometry&view=iso&isolate=part%3Amicroduck%3A9d70b219a5533bf1&labels=0&grid=0&supplements=0&camera=0.0178102%2C-0.0247069%2C0.1630000%2C0.0135000%2C-0.0260000%2C0.1450000"
+    },
+    {
+      "target": "hip-x17-z6",
+      "variant": "area85",
+      "image": "hip-x17-z6-area85.png",
+      "camera": [
+        0.04150000040233135,
+        0.021244226399026088,
+        0.09899615089002002,
+        0.023500000402331352,
+        0.0175000000745058,
+        0.0965000000070065
+      ],
+      "url": "http://127.0.0.1:8791/#explorer?workspace=microduck&snapshot=dkp-1c8eeda600249ce33b99&part=part%3Amicroduck%3Afa9ee2f71faafb88&opening=opening%3Amicroduck%3Afa9ee2f71faafb88%3Ac620cf250a66d5e3&explode=0.00&detail=geometry&view=iso&isolate=part%3Amicroduck%3Afa9ee2f71faafb88&labels=0&grid=0&supplements=0&camera=0.0415000%2C0.0212442%2C0.0989962%2C0.0235000%2C0.0175000%2C0.0965000"
+    }
+  ]
+}

@@ -1,0 +1,226 @@
+[
+  {
+    "item": {
+      "key": "27d56794bd7c8a86",
+      "selectionId": "connection-review:microduck:27d56794bd7c8a86",
+      "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-84f6829a25a82fefaf1d&part=part%3Amicroduck%3Afa9ee2f71faafb88&review=connection-review%3Amicroduck%3A27d56794bd7c8a86&explode=0.00&detail=interfaces&inspection=1&view=iso&labels=0&grid=0&supplements=0"
+    },
+    "summary": {
+      "durationMs": 16110.09999999404,
+      "fps": 58.72092662369259,
+      "membershipChanges": 0,
+      "pairOrderChanges": [],
+      "settledOrderChecks": [
+        {
+          "name": "03-settled-90",
+          "expected": [
+            "part:microduck:fa9ee2f71faafb88",
+            "part:microduck:47a950fbb3d0e416",
+            "part:microduck:cb253f38c818b9d8",
+            "part:microduck:cd6d48fccc95df41",
+            "part:microduck:087d7a46a3ce4ca3",
+            "part:microduck:c7eeeac0a640d191",
+            "part:microduck:08c5ade0f3fd37db"
+          ],
+          "actual": [
+            "part:microduck:fa9ee2f71faafb88",
+            "part:microduck:47a950fbb3d0e416",
+            "part:microduck:cb253f38c818b9d8",
+            "part:microduck:cd6d48fccc95df41",
+            "part:microduck:087d7a46a3ce4ca3",
+            "part:microduck:c7eeeac0a640d191",
+            "part:microduck:08c5ade0f3fd37db"
+          ],
+          "matches": true
+        },
+        {
+          "name": "03-settled-180",
+          "expected": [
+            "part:microduck:cd6d48fccc95df41",
+            "part:microduck:fa9ee2f71faafb88",
+            "part:microduck:47a950fbb3d0e416"
+          ],
+          "actual": [
+            "part:microduck:cd6d48fccc95df41",
+            "part:microduck:fa9ee2f71faafb88",
+            "part:microduck:47a950fbb3d0e416"
+          ],
+          "matches": true
+        },
+        {
+          "name": "03-settled-270",
+          "expected": [
+            "part:microduck:cd6d48fccc95df41",
+            "part:microduck:47a950fbb3d0e416",
+            "part:microduck:fa9ee2f71faafb88"
+          ],
+          "actual": [
+            "part:microduck:cd6d48fccc95df41",
+            "part:microduck:47a950fbb3d0e416",
+            "part:microduck:fa9ee2f71faafb88"
+          ],
+          "matches": true
+        },
+        {
+          "name": "03-settled-360",
+          "expected": [
+            "part:microduck:47a950fbb3d0e416",
+            "part:microduck:fa9ee2f71faafb88",
+            "part:microduck:cd6d48fccc95df41",
+            "part:microduck:55970da91992f38c"
+          ],
+          "actual": [
+            "part:microduck:47a950fbb3d0e416",
+            "part:microduck:fa9ee2f71faafb88",
+            "part:microduck:cd6d48fccc95df41",
+            "part:microduck:55970da91992f38c"
+          ],
+          "matches": true
+        }
+      ],
+      "errors": []
+    }
+  },
+  {
+    "item": {
+      "key": "926a5beb2c028185",
+      "selectionId": "connection-review:microduck:926a5beb2c028185",
+      "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-84f6829a25a82fefaf1d&part=part%3Amicroduck%3Afa9ee2f71faafb88&review=connection-review%3Amicroduck%3A926a5beb2c028185&explode=0.00&detail=interfaces&inspection=1&view=iso&labels=0&grid=0&supplements=0"
+    },
+    "summary": {
+      "durationMs": 15531.40000000596,
+      "fps": 59.17045469176296,
+      "membershipChanges": 0,
+      "pairOrderChanges": [],
+      "settledOrderChecks": [
+        {
+          "name": "03-settled-90",
+          "expected": [
+            "part:microduck:fa9ee2f71faafb88",
+            "part:microduck:bb34e925e25e29f6",
+            "part:microduck:9ffe9d5bcd6bc13a"
+          ],
+          "actual": [
+            "part:microduck:fa9ee2f71faafb88",
+            "part:microduck:bb34e925e25e29f6",
+            "part:microduck:9ffe9d5bcd6bc13a"
+          ],
+          "matches": true
+        },
+        {
+          "name": "03-settled-180",
+          "expected": [
+            "part:microduck:9ffe9d5bcd6bc13a",
+            "part:microduck:fa9ee2f71faafb88",
+            "part:microduck:cd6d48fccc95df41",
+            "part:microduck:087d7a46a3ce4ca3"
+          ],
+          "actual": [
+            "part:microduck:9ffe9d5bcd6bc13a",
+            "part:microduck:fa9ee2f71faafb88",
+            "part:microduck:cd6d48fccc95df41",
+            "part:microduck:087d7a46a3ce4ca3"
+          ],
+          "matches": true
+        },
+        {
+          "name": "03-settled-270",
+          "expected": [
+            "part:microduck:9ffe9d5bcd6bc13a",
+            "part:microduck:bb34e925e25e29f6",
+            "part:microduck:fa9ee2f71faafb88"
+          ],
+          "actual": [
+            "part:microduck:9ffe9d5bcd6bc13a",
+            "part:microduck:bb34e925e25e29f6",
+            "part:microduck:fa9ee2f71faafb88"
+          ],
+          "matches": true
+        },
+        {
+          "name": "03-settled-360",
+          "expected": [
+            "part:microduck:fa9ee2f71faafb88",
+            "part:microduck:9ffe9d5bcd6bc13a",
+            "part:microduck:66c73aaad945a993"
+          ],
+          "actual": [
+            "part:microduck:fa9ee2f71faafb88",
+            "part:microduck:9ffe9d5bcd6bc13a",
+            "part:microduck:66c73aaad945a993"
+          ],
+          "matches": true
+        }
+      ],
+      "errors": []
+    }
+  },
+  {
+    "item": {
+      "key": "hip-single-hole",
+      "selectionId": "opening:microduck:fa9ee2f71faafb88:12a19b5328586872",
+      "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-84f6829a25a82fefaf1d&part=part%3Amicroduck%3Afa9ee2f71faafb88&explode=0.00&detail=geometry&inspection=1&view=iso&labels=0&grid=0&supplements=0&opening=opening%3Amicroduck%3Afa9ee2f71faafb88%3A12a19b5328586872"
+    },
+    "summary": {
+      "durationMs": 15577.5,
+      "fps": 58.80276039159043,
+      "membershipChanges": 0,
+      "pairOrderChanges": [],
+      "settledOrderChecks": [
+        {
+          "name": "03-settled-90",
+          "expected": [
+            "part:microduck:47a950fbb3d0e416",
+            "part:microduck:cb253f38c818b9d8",
+            "part:microduck:cd6d48fccc95df41",
+            "part:microduck:087d7a46a3ce4ca3",
+            "part:microduck:c7eeeac0a640d191",
+            "part:microduck:08c5ade0f3fd37db"
+          ],
+          "actual": [
+            "part:microduck:47a950fbb3d0e416",
+            "part:microduck:cb253f38c818b9d8",
+            "part:microduck:cd6d48fccc95df41",
+            "part:microduck:087d7a46a3ce4ca3",
+            "part:microduck:c7eeeac0a640d191",
+            "part:microduck:08c5ade0f3fd37db"
+          ],
+          "matches": true
+        },
+        {
+          "name": "03-settled-180",
+          "expected": [
+            "part:microduck:fa9ee2f71faafb88"
+          ],
+          "actual": [
+            "part:microduck:fa9ee2f71faafb88"
+          ],
+          "matches": true
+        },
+        {
+          "name": "03-settled-270",
+          "expected": [
+            "part:microduck:47a950fbb3d0e416",
+            "part:microduck:fa9ee2f71faafb88"
+          ],
+          "actual": [
+            "part:microduck:47a950fbb3d0e416",
+            "part:microduck:fa9ee2f71faafb88"
+          ],
+          "matches": true
+        },
+        {
+          "name": "03-settled-360",
+          "expected": [
+            "part:microduck:cd6d48fccc95df41"
+          ],
+          "actual": [
+            "part:microduck:cd6d48fccc95df41"
+          ],
+          "matches": true
+        }
+      ],
+      "errors": []
+    }
+  }
+]

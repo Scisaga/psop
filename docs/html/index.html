@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#F4F7F7">
+  <meta name="description" content="PSOP 设备知识、三维装配与模型研发工作台。将设备资料、部件、装配关系和来源证据组织到同一个工作区，通过 Build 构建知识，在 Simulate 中交互装配，并为模型研发准备上下文。">
+  <title>PSOP — 读懂设备，开始装配。</title>
+  <link rel="icon" type="image/svg+xml" href="assets/brand/psop-favicon.svg?v=3">
+  <link rel="alternate icon" href="assets/brand/favicon.ico?v=3">
+  <link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png?v=3">
+  <link rel="preload" as="image" href="assets/workbench-overview.webp">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="eg-refined.css">
+  <script defer src="scripts/microduck-3d.js"></script>
+  <script defer src="scripts/demos.js"></script>
+  <script defer src="scripts/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到正文</a>
+  <svg class="icon-definitions" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15M13 5l7 7-7 7"/></symbol>
+    <symbol id="i-diagonal" viewBox="0 0 24 24"><path d="M5 19 19 5M5 5h14v14"/></symbol>
+    <symbol id="i-cube" viewBox="0 0 24 24"><path d="m12 2 9 5v10l-9 5-9-5V7l9-5Zm0 10v10M3 7l9 5 9-5"/></symbol>
+    <symbol id="i-flow" viewBox="0 0 24 24"><rect x="2" y="2" width="6" height="6" rx="1"/><rect x="16" y="16" width="6" height="6" rx="1"/><path d="M5 8v11h11M8 5h11v11"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="m8 4 13 8-13 8V4Z"/></symbol>
+    <symbol id="i-scan" viewBox="0 0 24 24"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5M6 12h12"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="i-reset" viewBox="0 0 24 24"><path d="M4 9a8 8 0 1 1 0 6M4 3v6h6"/></symbol>
+    <symbol id="i-person" viewBox="0 0 24 24"><circle cx="12" cy="7" r="4"/><path d="M4 22v-3a8 8 0 0 1 16 0v3"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12 2 10 5-10 5L2 7l10-5ZM2 12l10 5 10-5M2 17l10 5 10-5"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="m12 2 9 4v6c0 5-5 8-9 10-4-2-9-5-9-10V6l9-4Z"/><path d="m8 12 3 3 5-6"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v13m-5-5 5 5 5-5M4 17v4h16v-4"/></symbol>
+  </svg>
+
+  <div class="reading-progress" aria-hidden="true"><span id="reading-progress"></span></div>
+  <header class="site-header" id="site-header">
+    <div class="shell nav-inner">
+      <a class="brand" href="#top" aria-label="PSOP 首页"><img class="brand-mark" src="assets/brand/psop-mark.svg?v=3" width="34" height="34" alt="" aria-hidden="true"><span>PSOP</span></a>
+      <nav class="desktop-nav" aria-label="主导航"><a href="#workspace">工作台</a><a href="#knowledge">设备知识</a><a href="#assembly">三维装配</a><a href="#research">研究案例</a></nav>
+      <div class="nav-actions"><a class="button button-primary button-small" href="#start">快速开始 <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a><button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="打开导航"><span></span><span></span></button></div>
+    </div>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="移动端导航" hidden><a href="#workspace">工作台</a><a href="#knowledge">设备知识</a><a href="#assembly">三维装配</a><a href="#research">研究案例</a><a href="#start">快速开始 <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></nav>
+  </header>
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="shell hero-grid">
+        <div class="hero-copy"><div class="eyebrow"><span class="eyebrow-square"></span> DEVICE KNOWLEDGE, IN PRACTICE</div>
+          <h1 id="hero-title">读懂设备，<br>开始<span class="accent-word">装配。</span></h1>
+          <p class="hero-description">将设备资料、三维部件、装配关系和来源证据组织到同一个工作台，从知识构建走向交互装配与模型研发。</p>
+          <div class="hero-buttons"><a class="button button-primary" href="#workspace">探索工作台 <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a><a class="button button-secondary" href="#assembly"><svg class="icon" aria-hidden="true"><use href="#i-play"/></svg> 观看装配演示</a></div>
+          <p class="hero-caption"><span class="status-dot"></span> 同一设备 · 同一知识版本 · 连贯的工作上下文</p>
+        </div>
+        <figure class="hero-visual interface-frame"><figcaption><span><svg class="icon" aria-hidden="true"><use href="#i-cube"/></svg> Microduck <i>/</i> 设备工作区</span><span class="frame-label">实际运行界面</span></figcaption><button class="image-trigger" type="button" data-preview="设备总览" aria-label="放大查看设备总览" aria-haspopup="dialog" aria-controls="image-modal"><img src="assets/workbench-overview.webp" width="1600" height="1000" fetchpriority="high" alt="当前 PSOP 工作台：朱红折带标识、Microduck 来源装配、结构树和部件详情"><span class="image-zoom-label">放大查看 <svg class="icon" aria-hidden="true"><use href="#i-diagonal"/></svg></span></button><div class="frame-bottom"><span>来源原装构型</span><span>KNOWLEDGE → ASSEMBLY</span></div></figure>
+      </div>
+      <div class="shell facts-rail" aria-label="当前示例工作区"><div><strong>70<span>个</span></strong><span>部件实例</span></div><div><strong>38<span>份</span></strong><span>几何资产</span></div><div><strong><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg> 来源可追溯</strong><span>从结论定位原始资料</span></div><div><strong><svg class="icon" aria-hidden="true"><use href="#i-layers"/></svg> 独立方案保存</strong><span>装配编辑与知识版本分别保留</span></div></div>
+    </section>
+
+    <section class="workspace section" id="workspace" aria-labelledby="workspace-title"><div class="shell">
+      <div class="section-heading"><div><div class="eyebrow"><span class="section-number">01 /</span> ONE DEVICE. SHARED CONTEXT.</div><h2 id="workspace-title">一台设备，<br>同一份上下文。</h2></div><p>设备、知识版本与来源保持关联。<br>构建知识、探索装配与组织模型研发，<br>都从同一个工作区出发。</p></div>
+      <div class="workspace-tabs" role="tablist" aria-label="工作台能力"><button id="tab-build" role="tab" aria-selected="true" aria-controls="panel-build" data-workspace="build" class="is-active"><span><svg class="icon" aria-hidden="true"><use href="#i-cube"/></svg> <b>Build</b></span><small>知识构建</small></button><button id="tab-simulate" role="tab" aria-selected="false" aria-controls="panel-simulate" data-workspace="simulate" tabindex="-1"><span><svg class="icon" aria-hidden="true"><use href="#i-play"/></svg> <b>Simulate</b></span><small>交互装配</small></button><button id="tab-compile" role="tab" aria-selected="false" aria-controls="panel-compile" data-workspace="compile" tabindex="-1"><span><svg class="icon" aria-hidden="true"><use href="#i-flow"/></svg> <b>Compile</b></span><small>语料与模型</small></button></div>
+      <div class="workspace-panels">
+        <div class="workspace-panel" id="panel-build" role="tabpanel" aria-labelledby="tab-build" data-panel="build"><div class="workspace-story"><span class="capability-state">知识包已接入</span><h3>把设备资料，<br>变成可追溯的知识。</h3><p>从原始资料建立设备知识，固定来源、部件关系和发布版本。构建通过 CLI 完成，工作台呈现已登记的真实产物。</p><ul class="feature-list"><li>部件、接口与来源依据</li><li>知识快照与校验声明</li><li>版本引用与原件定位</li></ul><a class="text-link" href="#knowledge">看看知识如何关联 <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a><div class="workspace-output"><span>BUILD OUTPUT</span><strong>版本化设备知识包 · DKP</strong></div></div><figure class="interface-frame"><figcaption><span>Build <i>/</i> 当前知识快照</span><span class="frame-label">实际运行界面</span></figcaption><button class="image-trigger" type="button" data-preview="Build 知识构建" aria-label="放大查看Build 知识构建" aria-haspopup="dialog" aria-controls="image-modal"><img src="assets/workbench-build.webp" width="1600" height="1000" loading="lazy" alt="Build 真实页面，展示已登记的设备知识版本、来源、内容摘要和能力声明"><span class="image-zoom-label">放大查看 <svg class="icon" aria-hidden="true"><use href="#i-diagonal"/></svg></span></button></figure></div>
+        <div class="workspace-panel" id="panel-simulate" role="tabpanel" aria-labelledby="tab-simulate" data-panel="simulate" hidden><div class="workspace-story"><span class="capability-state">交互装配已实现</span><h3>选中部件，<br>探索下一种连接。</h3><p>在三维空间中查看兼容关系，连续连接与拆分部件，保留装配方案。参考还原与工程验证分别记录。</p><ul class="feature-list"><li>拾取、移动与兼容连接</li><li>拆分、撤销与自动还原</li><li>多方案自动保存</li></ul><a class="text-link" href="#assembly">观看真实操作 <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a><div class="workspace-output"><span>SIMULATE OUTPUT</span><strong>独立装配方案与操作记录</strong></div></div><figure class="interface-frame"><figcaption><span>Simulate <i>/</i> 三维装配空间</span><span class="frame-label">实际运行界面</span></figcaption><button class="image-trigger" type="button" data-preview="Simulate 交互装配" aria-label="放大查看Simulate 交互装配" aria-haspopup="dialog" aria-controls="image-modal"><img src="assets/workbench-simulate.webp" width="1600" height="1000" loading="lazy" alt="Simulate 真实三维工坊，来源部件独立放置在装配台上"><span class="image-zoom-label">放大查看 <svg class="icon" aria-hidden="true"><use href="#i-diagonal"/></svg></span></button></figure></div>
+        <div class="workspace-panel" id="panel-compile" role="tabpanel" aria-labelledby="tab-compile" data-panel="compile" hidden><div class="workspace-story"><span class="capability-state is-planned">执行服务未接入</span><h3>为模型研发，<br>组织同一设备的上下文。</h3><p>围绕设备组织训练语料、实验、模型产物与评估的目标位置。当前页面展示能力规划，数据集发布、训练和推理执行尚待接入。</p><ul class="feature-list"><li>训练语料与版本划分</li><li>实验运行与模型产物</li><li>独立评估与问题记录</li></ul><a class="text-link" href="#start">阅读项目与使用说明 <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a><div class="workspace-output"><span>COMPILE DIRECTION</span><strong>数据集 · 模型 · 评估工件</strong></div></div><figure class="interface-frame"><figcaption><span>Compile <i>/</i> 语料与模型</span><span class="frame-label">当前能力状态</span></figcaption><button class="image-trigger" type="button" data-preview="Compile 当前状态" aria-label="放大查看Compile 当前状态" aria-haspopup="dialog" aria-controls="image-modal"><img src="assets/workbench-compile.webp" width="1600" height="1000" loading="lazy" alt="Compile 当前真实页面，明确展示执行服务未接入和尚无已登记数据集"><span class="image-zoom-label">放大查看 <svg class="icon" aria-hidden="true"><use href="#i-diagonal"/></svg></span></button></figure></div>
+      </div>
+    </div></section>
+
+    <section class="knowledge section" id="knowledge" aria-labelledby="knowledge-title"><div class="shell">
+      <div class="section-heading"><div><div class="eyebrow"><span class="section-number">02 /</span> FOLLOW THE EVIDENCE.</div><h2 id="knowledge-title">从部件，<br>追到原始依据。</h2></div><p>模型中的一个部件，连接到具体的接口、<br>装配关系和来源位置。<br>知道结论，也能检查结论从何而来。</p></div>
+      <div class="knowledge-grid"><div class="model-card"><div class="model-card-heading"><span><svg class="icon" aria-hidden="true"><use href="#i-cube"/></svg> Microduck</span><span class="capability-state">来源原装构型</span></div><div id="microduck-viewer" class="microduck-viewer"><div class="model-floor" aria-hidden="true"></div><img id="model-fallback" class="model-fallback" src="assets/microduck-assembled.webp" width="900" height="1200" loading="lazy" alt="Microduck 来源装配模型，保留原始部件形状、颜色和来源位姿"><canvas id="microduck-canvas" tabindex="0" aria-label="Microduck 三维模型。拖动或使用方向键旋转，用下方滑杆展开部件，Home 复位。"></canvas><div id="model-loading" class="model-loading" role="status" hidden>正在准备三维结构…</div></div><div class="model-controls"><button id="explode-toggle" class="button button-secondary" aria-pressed="false"><svg class="icon" aria-hidden="true"><use href="#i-layers"/></svg><span data-explode-label>展开结构</span></button><label class="range-label" for="explode-range"><span class="sr-only">部件展开程度</span><input id="explode-range" type="range" min="0" max="100" value="0" step="1" aria-label="部件展开程度"><span aria-hidden="true">100%</span></label><button id="model-reset" class="icon-button" aria-label="恢复初始视角" title="恢复初始视角"><svg class="icon" aria-hidden="true"><use href="#i-reset"/></svg></button></div><p class="model-hint">拖拽旋转 · 方向键查看 · 展开仅用于浏览</p></div>
+        <div class="knowledge-steps"><article><span>01</span><div><h3>选择一个真实部件</h3><p>结构树与三维拾取联动，保留部件身份和来源构型。</p></div></article><article><span>02</span><div><h3>查看接口与装配关系</h3><p>区分本件几何、功能接口、原装配关系与兼容候选。</p></div></article><article><span>03</span><div><h3>打开结论的具体依据</h3><p>查看支持记录、未决条件和来源位置，按需追溯原件。</p></div></article><article><span>04</span><div><h3>定位到原始资料</h3><p>将知识定位到 XML、说明和相关原始资料中的具体位置。</p></div></article><div class="principle-note"><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg><p>保留来源设计与原装关系。几何观测、装配操作资格和工程验证状态分别表达。</p></div></div></div>
+      <div class="knowledge-evidence"><figure class="interface-frame"><figcaption><span>查看接口与原装关系</span><span class="frame-label">PART → INTERFACE</span></figcaption><button class="image-trigger" type="button" data-preview="部件接口与关系" aria-label="放大查看部件接口与关系" aria-haspopup="dialog" aria-controls="image-modal"><img src="assets/workbench-interfaces.webp" width="1600" height="1000" loading="lazy" alt="工作台中选中的真实舵机及其接口、原装配关系和来源依据"><span class="image-zoom-label">放大查看 <svg class="icon" aria-hidden="true"><use href="#i-diagonal"/></svg></span></button></figure><figure class="interface-frame"><figcaption><span>从结论定位 XML 原件</span><span class="frame-label">EVIDENCE → SOURCE</span></figcaption><button class="image-trigger" type="button" data-preview="原始资料与证据" aria-label="放大查看原始资料与证据" aria-haspopup="dialog" aria-controls="image-modal"><img src="assets/workbench-evidence.webp" width="1600" height="1000" loading="lazy" alt="工作台打开来源 robot_walk.xml，并定位到支持部件知识的原始行"><span class="image-zoom-label">放大查看 <svg class="icon" aria-hidden="true"><use href="#i-diagonal"/></svg></span></button></figure></div>
+    </div></section>
+
+    <section class="assembly section section-dark" id="assembly" aria-labelledby="assembly-title"><div class="shell">
+      <div class="section-heading"><div><div class="eyebrow"><span class="section-number">03 /</span> ASSEMBLY, IN YOUR HANDS.</div><h2 id="assembly-title">把连接关系，<br>放到三维空间里操作。</h2></div><p>在同一个工坊里选择、连接与拆开部件。<br>记录每一步，随时撤销，<br>也可以按来源构型还原。</p></div>
+      <div class="assembly-player"><video id="assembly-video" width="1600" height="1000" poster="assets/workbench-simulate-poster.webp" data-src="assets/workbench-simulate-demo.webm?v=head-shell-20261111" preload="none" controls playsinline aria-label="PSOP 当前工作台真实装配录像：头部外壳合拢、拆分与整机自动还原"></video><button id="play-assembly-video" class="assembly-play" aria-label="播放真实装配演示"><span class="play-circle"><svg class="icon" aria-hidden="true"><use href="#i-play"/></svg></span><strong>观看真实装配操作</strong><span>上壳与下壳合拢 · 拆分 · 自动还原</span></button></div>
+      <div class="video-caption"><span><i class="status-dot"></i> 当前工作台实录 · 头部外壳近景</span><span id="assembly-duration">约 30 秒实录剪辑 · 自动还原 4× · 已剪去等待与部分过程</span></div><p class="media-status" id="assembly-media-status" role="status" hidden></p>
+      <div class="assembly-features"><article><span>01 / EXPLORE</span><h3>让连接依据可见</h3><p>查看候选、接口和当前条件，再选择具体连接方式。</p></article><article><span>02 / EDIT</span><h3>保留每一步操作</h3><p>连续连接与拆分，撤销重做，独立保存不同装配方案。</p></article><article><span>03 / RESTORE</span><h3>回到来源构型</h3><p>自动还原保留原装关系；参考演示与工程验证分别记录。</p></article></div>
+      <p class="assembly-note">原装接触重叠保留测量记录，不单凭刚性网格交集否定装配或改动设计。当前能力不等于动力学、承载或连续装入路径的完备认证。</p>
+    </div></section>
+
+    <section class="solutions section" id="solutions" aria-labelledby="solutions-title"><div class="shell"><div class="section-heading"><div><div class="eyebrow"><span class="section-number">04 /</span> BUILT AROUND THE DEVICE.</div><h2 id="solutions-title">从设备研发，<br>走向可复用的操作经验。</h2></div><p>先建立可检查的设备上下文，<br>再围绕具体任务扩展用途。</p></div><div class="solution-columns"><article><div class="solution-icon"><svg class="icon" aria-hidden="true"><use href="#i-cube"/></svg><span class="capability-state">当前可用</span></div><h3>装配方案探索</h3><p>检查部件、接口与来源关系，在独立方案中探索连接、拆分和参考还原。</p><a class="text-link" href="#assembly">查看装配操作 <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></article><article><div class="solution-icon"><svg class="icon" aria-hidden="true"><use href="#i-person"/></svg><span class="capability-state">展示与交互</span></div><h3>工程教学与培训</h3><p>围绕真实模型讲解结构和接口，用操作演示与来源依据帮助理解设备。</p><a class="text-link" href="#knowledge">理解设备结构 <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></article><article><div class="solution-icon"><svg class="icon" aria-hidden="true"><use href="#i-flow"/></svg><span class="capability-state is-planned">后续方向</span></div><h3>模型研发准备</h3><p>组织语料、模型和评估的上下文。数据集发布、训练及推理执行服务仍待接入。</p><a class="text-link" href="#workspace" data-select-workspace="compile">查看 Compile 状态 <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></article></div></div></section>
+
+    <section class="research section" id="research" aria-labelledby="research-title"><div class="shell"><div class="section-heading"><div><div class="eyebrow"><span class="section-number">05 /</span> RESEARCH, WITH CONTEXT.</div><h2 id="research-title">保留研究路径，<br>也保留证据的边界。</h2></div><p>任务执行、现场交互与受控实验，<br>分别保留其设备、来源和演示性质。</p></div>
+      <details class="research-case" id="execution"><summary><span class="case-index">01</span><span><strong>EG 任务执行与条件核验</strong><small>Microduck 教学示例 · 非当前 Compile 功能</small></span><span class="details-toggle" aria-hidden="true">+</span></summary><div class="research-content section-dark"><div class="research-intro"><h3 id="execution-title">每一次推进，都有明确的依据。</h3><p>演示身份与复检两路记录如何汇合。缺少复检记录时保持当前步骤，补充教学记录后再推进。</p></div><div class="eg-demo reveal" id="eg-demo" data-eg-state="ready">
+          <div class="eg-topline"><span class="mono">MD–01 / J01 <i>安装与复检</i></span><span class="live-badge"><i class="status-dot"></i> EG 执行示例</span></div>
+          <div class="eg-viewport" tabindex="0" role="region" aria-label="任务执行图，可左右滚动查看">
+            <svg xmlns="http://www.w3.org/2000/svg" id="eg-graph" viewBox="0 0 900 280" width="900" height="280" role="img" aria-labelledby="eg-title eg-desc">
+<title id="eg-title">Microduck 安装与核验任务 EG</title>
+<desc id="eg-desc">任务绑定设备后进入对齐安装，身份与复检两路记录经核验后汇合。只有两路记录同时满足条件时才可推进。所有通过状态在播放执行示例后显示，空状态节点不表示已完成。</desc>
+<defs>
+  <radialGradient id="eg-place-surface" cx="35%" cy="24%" r="80%"><stop stop-color="#243c44" /><stop offset="1" stop-color="#14262e" /></radialGradient>
+  <radialGradient id="eg-place-active" cx="40%" cy="28%" r="78%"><stop stop-color="#224a4a" /><stop offset="1" stop-color="#193538" /></radialGradient>
+  <radialGradient id="eg-place-passed" cx="35%" cy="24%" r="80%"><stop stop-color="#24474a" /><stop offset="1" stop-color="#193239" /></radialGradient>
+  <linearGradient id="eg-gate-surface" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#365a62" /><stop offset=".45" stop-color="#73949b" /><stop offset="1" stop-color="#2c4650" /></linearGradient>
+  <linearGradient id="eg-gate-active" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#399d95" /><stop offset=".46" stop-color="#78d6c3" /><stop offset="1" stop-color="#277e7e" /></linearGradient>
+  <linearGradient id="eg-gate-passed" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#689e9b" /><stop offset=".46" stop-color="#b7e4db" /><stop offset="1" stop-color="#548e8b" /></linearGradient>
+  <linearGradient id="eg-gate-blocked" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#5b513c" /><stop offset=".46" stop-color="#c2aa76" /><stop offset="1" stop-color="#524733" /></linearGradient>
+  <radialGradient id="eg-token-core" cx="33%" cy="25%" r="75%"><stop stop-color="#e2faf4" /><stop offset=".35" stop-color="#78d6c3" /><stop offset="1" stop-color="#46b8a5" /></radialGradient>
+  <filter id="eg-token-glow" x="-160%" y="-160%" width="420%" height="420%" color-interpolation-filters="sRGB"><feGaussianBlur in="SourceGraphic" stdDeviation="2.5" /><feComponentTransfer><feFuncA type="linear" slope=".48" /></feComponentTransfer><feMerge><feMergeNode /><feMergeNode in="SourceGraphic" /></feMerge></filter>
+  <marker id="eg-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5.5" markerHeight="5.5" markerUnits="userSpaceOnUse" orient="auto"><path d="M2 2L8 5L2 8" fill="none" stroke="context-stroke" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round" /></marker>
+</defs>
+<g aria-hidden="true">
+<rect class="eg-surface" x="0" y="0" width="900" height="280" />
+<path class="eg-guide" d="M15 17H154 M210 17H365 M416 17H684 M726 17H884" />
+<g class="eg-phase"><text x="16" y="9"><tspan class="eg-phase-number">01 / </tspan>CONTEXT</text><text x="210" y="9"><tspan class="eg-phase-number">02 / </tspan>INSTALLATION</text><text x="416" y="9"><tspan class="eg-phase-number">03 / </tspan>PARALLEL VERIFICATION</text><text x="726" y="9"><tspan class="eg-phase-number">04 / </tspan>ADVANCE</text></g>
+</g>
+<g class="eg-edges" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path data-eg-source="p_task" data-eg-target="t_bind" d="M60 55C94 55 101 109 123 112" />
+<path data-eg-source="p_device" data-eg-target="t_bind" d="M60 175C94 175 101 121 123 118" />
+<path data-eg-source="t_bind" data-eg-target="p_align" d="M145 115H213" />
+<path data-eg-source="p_align" data-eg-target="t_install_macro" d="M257 115H333" />
+<path data-eg-source="t_install_macro" data-eg-target="p_identity_pending" d="M355 115C399 115 406 55 432 55" />
+<path data-eg-source="t_install_macro" data-eg-target="p_recheck_pending" d="M355 115C399 115 406 175 432 175" />
+<path data-eg-source="p_identity_pending" data-eg-target="t_identity" d="M476 55H543" />
+<path data-eg-source="t_identity" data-eg-target="p_identity_ok" d="M565 55H627" />
+<path data-eg-source="p_recheck_pending" data-eg-target="t_recheck" d="M476 175H543" />
+<path data-eg-source="t_recheck" data-eg-target="p_recheck_ok" d="M565 175H627" />
+<path data-eg-source="p_identity_ok" data-eg-target="t_join" d="M671 55C707 55 715 109 738 112" />
+<path data-eg-source="p_recheck_ok" data-eg-target="t_join" d="M671 175C707 175 715 121 738 118" />
+<path data-eg-source="t_join" data-eg-target="p_next" d="M760 115H832" />
+</g><g class="eg-nodes" text-anchor="middle">
+<g id="eg-node-p_task" data-eg-node="p_task" data-eg-kind="place">
+<circle class="eg-place" cx="40" cy="55" r="17" /><circle class="eg-place-ring" cx="40" cy="55" r="13.7" /><circle class="eg-place-halo" cx="40" cy="55" r="21.5" />
+<path class="eg-precision" d="M37.5 38H42.5 M37.5 72H42.5 M23 52.5V57.5 M57 52.5V57.5" />
+<path class="eg-glyph" d="M35.7 49.5H41.3L44.3 52.6V60.5H35.7Z M41.3 49.5V52.6H44.3 M37.9 55.2H42 M37.9 57.6H41" />
+<text class="eg-node-label" x="40" y="91">任务</text>
+<text class="eg-node-meta" x="40" y="106">TASK / 01</text>
+</g>
+<g id="eg-node-p_device" data-eg-node="p_device" data-eg-kind="place">
+<circle class="eg-place" cx="40" cy="175" r="17" /><circle class="eg-place-ring" cx="40" cy="175" r="13.7" /><circle class="eg-place-halo" cx="40" cy="175" r="21.5" />
+<path class="eg-precision" d="M37.5 158H42.5 M37.5 192H42.5 M23 172.5V177.5 M57 172.5V177.5" />
+<path class="eg-glyph" d="M40 169L45.5 172V178.2L40 181.3L34.5 178.2V172Z M34.5 172L40 175.1L45.5 172 M40 175.1V181.3" />
+<text class="eg-node-label" x="40" y="211">设备</text>
+<text class="eg-node-meta" x="40" y="226">MD–01</text>
+</g>
+<g id="eg-node-t_bind" data-eg-node="t_bind" data-eg-kind="transition">
+<rect class="eg-transition" x="128.5" y="97" width="13" height="36" rx="1.7" /><path class="eg-gate-detail" d="M131.5 100.5V129.5 M131.5 100.5H138.8 M131.5 129.5H138.8" />
+<text class="eg-node-label" x="135" y="151">绑定</text>
+<text class="eg-node-meta" x="135" y="166">CONTEXT</text>
+</g>
+<g id="eg-node-p_align" data-eg-node="p_align" data-eg-kind="place" class="is-active">
+<circle class="eg-place" cx="235" cy="115" r="17" /><circle class="eg-place-ring" cx="235" cy="115" r="13.7" /><circle class="eg-place-halo" cx="235" cy="115" r="21.5" />
+<path class="eg-precision" d="M232.5 98H237.5 M232.5 132H237.5 M218 112.5V117.5 M252 112.5V117.5" />
+<path class="eg-glyph" d="M229 112.5V109H232.5 M237.5 109H241V112.5 M241 117.5V121H237.5 M232.5 121H229V117.5" />
+<text class="eg-node-label" x="235" y="151">待对齐</text>
+<text class="eg-node-meta" x="235" y="166">ALIGNMENT</text>
+</g>
+<g id="eg-node-t_install_macro" data-eg-node="t_install_macro" data-eg-kind="transition">
+<rect class="eg-transition" x="338.5" y="97" width="13" height="36" rx="1.7" /><path class="eg-gate-detail" d="M341.5 100.5V129.5 M341.5 100.5H348.8 M341.5 129.5H348.8" />
+<text class="eg-node-label" x="345" y="151">对齐安装</text>
+<text class="eg-node-meta" x="345" y="166">J01 / INSTALL</text>
+</g>
+<g id="eg-node-p_identity_pending" data-eg-node="p_identity_pending" data-eg-kind="place">
+<circle class="eg-place" cx="455" cy="55" r="17" /><circle class="eg-place-ring" cx="455" cy="55" r="13.7" /><circle class="eg-place-halo" cx="455" cy="55" r="21.5" />
+<path class="eg-precision" d="M452.5 38H457.5 M452.5 72H457.5 M438 52.5V57.5 M472 52.5V57.5" />
+<path class="eg-glyph" d="M450.7 49.5H456.3L459.3 52.6V60.5H450.7Z M456.3 49.5V52.6H459.3 M452.9 55.2H457 M452.9 57.6H456" />
+<text class="eg-node-label" x="455" y="91">身份记录</text>
+<text class="eg-node-meta" x="455" y="106">IDENTITY</text>
+</g>
+<g id="eg-node-p_recheck_pending" data-eg-node="p_recheck_pending" data-eg-kind="place">
+<circle class="eg-place" cx="455" cy="175" r="17" /><circle class="eg-place-ring" cx="455" cy="175" r="13.7" /><circle class="eg-place-halo" cx="455" cy="175" r="21.5" />
+<path class="eg-precision" d="M452.5 158H457.5 M452.5 192H457.5 M438 172.5V177.5 M472 172.5V177.5" />
+<path class="eg-glyph" d="M450.7 169.5H456.3L459.3 172.6V180.5H450.7Z M456.3 169.5V172.6H459.3 M452.9 175.2H457 M452.9 177.6H456" />
+<text class="eg-node-label" x="455" y="211">复检记录</text>
+<text class="eg-node-meta" x="455" y="226">S03 / RECHECK</text>
+</g>
+<g id="eg-node-t_identity" data-eg-node="t_identity" data-eg-kind="transition">
+<rect class="eg-transition" x="548.5" y="37" width="13" height="36" rx="1.7" /><path class="eg-gate-detail" d="M551.5 40.5V69.5 M551.5 40.5H558.8 M551.5 69.5H558.8" />
+<text class="eg-node-label" x="555" y="91">身份核验</text>
+</g>
+<g id="eg-node-t_recheck" data-eg-node="t_recheck" data-eg-kind="transition">
+<rect class="eg-transition" x="548.5" y="157" width="13" height="36" rx="1.7" /><path class="eg-gate-detail" d="M551.5 160.5V189.5 M551.5 160.5H558.8 M551.5 189.5H558.8" />
+<text class="eg-node-label" x="555" y="211">复检核验</text>
+</g>
+<g id="eg-node-p_identity_ok" data-eg-node="p_identity_ok" data-eg-kind="place">
+<circle class="eg-place" cx="650" cy="55" r="17" /><circle class="eg-place-ring" cx="650" cy="55" r="13.7" /><circle class="eg-place-halo" cx="650" cy="55" r="21.5" />
+<path class="eg-precision" d="M647.5 38H652.5 M647.5 72H652.5 M633 52.5V57.5 M667 52.5V57.5" />
+<path class="eg-glyph eg-glyph-await" d="M645 52V58 M655 52V58 M648 55H652" /><path class="eg-glyph eg-glyph-check" d="M645.5 55L649 58.4L655 51.5" />
+<text class="eg-node-label" x="650" y="91">身份通过</text>
+</g>
+<g id="eg-node-p_recheck_ok" data-eg-node="p_recheck_ok" data-eg-kind="place">
+<circle class="eg-place" cx="650" cy="175" r="17" /><circle class="eg-place-ring" cx="650" cy="175" r="13.7" /><circle class="eg-place-halo" cx="650" cy="175" r="21.5" />
+<path class="eg-precision" d="M647.5 158H652.5 M647.5 192H652.5 M633 172.5V177.5 M667 172.5V177.5" />
+<path class="eg-glyph eg-glyph-await" d="M645 172V178 M655 172V178 M648 175H652" /><path class="eg-glyph eg-glyph-check" d="M645.5 175L649 178.4L655 171.5" />
+<text class="eg-node-label" x="650" y="211">复检通过</text>
+</g>
+<g id="eg-node-t_join" data-eg-node="t_join" data-eg-kind="transition">
+<rect class="eg-transition" x="743.5" y="97" width="13" height="36" rx="1.7" /><path class="eg-gate-detail" d="M746.5 100.5V129.5 M746.5 100.5H753.8 M746.5 129.5H753.8" />
+<path class="eg-gate-detail" d="M750.4 110H753.5 M750.4 120H753.5" /><path class="eg-join-leader" d="M750 141V181" />
+<text class="eg-node-label" x="750" y="203">条件汇合</text>
+<text class="eg-node-meta" x="750" y="218">AND / 2 INPUTS</text>
+</g>
+<g id="eg-node-p_next" data-eg-node="p_next" data-eg-kind="place">
+<circle class="eg-place" cx="855" cy="115" r="17" /><circle class="eg-place-ring" cx="855" cy="115" r="13.7" /><circle class="eg-place-halo" cx="855" cy="115" r="21.5" />
+<path class="eg-precision" d="M852.5 98H857.5 M852.5 132H857.5 M838 112.5V117.5 M872 112.5V117.5" />
+<path class="eg-glyph" d="M851 115H859 M855.7 111.7L859 115L855.7 118.3" />
+<text class="eg-node-label" x="855" y="151">下一步</text>
+<text class="eg-node-meta" x="855" y="166">NEXT</text>
+</g>
+</g><g id="eg-tokens" aria-hidden="true" /></svg>
+          </div><span class="eg-mobile-hint">左右滑动查看完整任务图 <span aria-hidden="true">↔</span></span>
+          <div class="eg-console"><div class="eg-state-block"><span id="eg-step" class="mono">01 / 05</span><div aria-live="polite" aria-atomic="true"><h3 id="eg-state">准备对齐安装</h3><p id="eg-detail">播放示例，观察任务状态如何根据记录推进。</p></div></div><div class="eg-actions"><button id="eg-play" class="button button-light"><svg class="icon"><use href="#i-play"/></svg> 播放执行过程</button><button id="eg-evidence" class="button button-mint" disabled>补充复检记录 <svg class="icon"><use href="#i-arrow"/></svg></button><button id="eg-reset" class="icon-button" aria-label="重新开始 EG 演示" title="重新开始"><svg class="icon"><use href="#i-reset"/></svg></button></div></div>
+          <div class="eg-progress-track" aria-hidden="true"><span id="eg-progress"></span></div>
+          <div class="eg-legend"><span><i class="legend-place"></i> 状态</span><span><i class="legend-transition"></i> 动作</span><span><i class="legend-token"></i> 当前 token</span><em>教学示例 · 完成状态仅演示条件齐备后的推进逻辑</em></div>
+        </div><p class="case-note">这是任务条件核验的教学示例，不向真实设备提交操作，也不代表当前工作台已接入现场执行服务。</p></div></details>
+      <details class="research-case" id="field"><summary><span class="case-index">02</span><span><strong>AR 现场指导与装配演示</strong><small>Microduck 交互原型 / 已有机械臂实录</small></span><span class="details-toggle" aria-hidden="true">+</span></summary><div class="research-content"><div class="research-intro"><h3 id="field-title">把下一步，带到操作的这一刻。</h3><p>下方 Microduck 场景使用生成安装示意与教学标记；机械臂录像保留原始案例归属。</p></div><div id="ar-demo" class="ar-demo reveal" data-ar-stage="0" data-ar-state="recognizing">
+          <div class="ar-visual">
+            <div class="ar-scene-wrap"><img id="ar-scene" src="assets/installation-process.webp" width="1600" height="900" loading="lazy" alt="Microduck 正在工作台上安装，双手与工具对齐髋部支架，腿脚组件尚未装好"><div class="ar-vignette" aria-hidden="true"></div><div id="ar-scan" class="ar-scan is-scanning" aria-hidden="true"></div><div class="ar-camera-top"><span class="ar-live"><i></i> FIELD VIEW</span><span>MD–01 <b>/ J01</b></span></div><div class="ar-frame-corner c-tl" aria-hidden="true"></div><div class="ar-frame-corner c-tr" aria-hidden="true"></div><div class="ar-frame-corner c-bl" aria-hidden="true"></div><div class="ar-frame-corner c-br" aria-hidden="true"></div><div id="ar-target" class="ar-target is-recognizing" aria-hidden="true"><i></i><span></span><b>J01</b></div><div class="ar-guide-line" aria-hidden="true"></div><div class="ar-floating-label"><span class="mono">TARGET / J01</span><strong>髋部安装接口</strong><small>关联设备 · 关联任务</small></div><div class="ar-scene-caption"><svg class="icon"><use href="#i-scan"/></svg><span>目标部件与安装位置，直接呈现在当前画面。</span><span class="mono">S03</span></div></div>
+            <div class="ar-scene-note">Microduck 安装过程生成示意 · 界面与 AR 标记为交互原型</div>
+          </div>
+          <div class="phone-side"><div class="phone-glow" aria-hidden="true"></div><div class="phone"><div class="phone-island" aria-hidden="true"></div><div class="phone-status"><span>09:41</span><span aria-hidden="true">▮▮▮ · ◒</span></div><div class="phone-header"><span><img class="phone-brand-mark" src="assets/brand/psop-mark.svg?v=3" width="19" height="19" alt="" aria-hidden="true">PSOP</span><small>FIELD ASSIST</small></div><div class="phone-task"><span>MD–01 / J01</span><strong>髋部组件安装与复检</strong><div><span>当前操作</span><b id="ar-step-count">01 / 03</b></div></div><div class="phone-camera"><img src="assets/installation-process.webp" width="1600" height="900" loading="lazy" alt="移动端中的同一 Microduck 安装场景"><span class="phone-target" aria-hidden="true"></span><span class="phone-camera-label">J01 / 目标部件</span></div><div class="phone-instruction" aria-live="polite"><span class="phone-eyebrow">下一步指导</span><h3 id="ar-title">识别当前安装对象</h3><p id="ar-description">将当前画面与设备、关节和任务绑定，确认操作对象。</p></div><div class="phone-result"><i class="status-dot"></i><span id="ar-status">对象核对中</span></div><div class="phone-home" aria-hidden="true"></div></div><div class="phone-bottom-label"><span class="status-dot"></span> AR / MOBILE · 教学交互原型</div></div>
+          <div class="ar-step-controls" aria-label="AR 演示阶段"><button data-ar-step="0" class="is-active" aria-pressed="true"><span>01</span><strong>识别对象</strong><small>让画面关联当前任务</small><svg class="icon"><use href="#i-diagonal"/></svg></button><button data-ar-step="1" aria-pressed="false"><span>02</span><strong>对齐安装</strong><small>让提示落在目标位置</small><svg class="icon"><use href="#i-diagonal"/></svg></button><button data-ar-step="2" aria-pressed="false"><span>03</span><strong>等待复检</strong><small>取得记录后核验推进</small><svg class="icon"><use href="#i-diagonal"/></svg></button></div>
+        </div><div class="ar-video-link"><div><span class="small-label">EXISTING MECHANICAL-ARM RECORDING</span><h3>真实装配中的 AR 交互。</h3><p>已有机械臂演示：部件高亮、步骤提示与双手装配。</p></div><button id="play-ar-video" class="video-preview" aria-haspopup="dialog" aria-controls="video-modal"><img src="assets/ar-demo-poster.webp" width="960" height="540" loading="lazy" alt="已有机械臂装配 AR 录像预览"><span class="video-play-circle"><svg class="icon" aria-hidden="true"><use href="#i-play"/></svg></span><span class="video-link-label">播放 AR 录像 <svg class="icon" aria-hidden="true"><use href="#i-diagonal"/></svg></span></button></div></div></details>
+      <section class="evidence section-dark" id="evidence" aria-labelledby="evidence-title"><div class="evidence-top"><div><span class="small-label">EXISTING CONTROLLED EXPERIMENTS</span><h3 id="evidence-title">机械臂组装受控模拟</h3><p>4 个模型 × 6 个场景 × 10 次重复</p><a class="text-link" href="assets/psop-overview.pdf#page=14" target="_blank" rel="noopener">查看历史实验依据 <svg class="icon" aria-hidden="true"><use href="#i-diagonal"/></svg></a></div><div class="volume-number">240<span>组</span></div></div><div class="evidence-charts"><article class="result-chart"><h4>五维任务质量均值 <small>/ 100</small></h4><div class="result-numbers"><span>42.3</span><i>→</i><strong>68.3</strong><b>+26.0 分</b></div><div class="comparison-bars" role="img" aria-label="任务质量均值由42.3分增加到68.3分"><div><span>基线</span><i style="--bar-width:42.3%"></i></div><div><span>PSOP</span><i style="--bar-width:68.3%"></i></div></div></article><article class="result-chart"><h4>下一动作成功率</h4><div class="result-numbers"><span>7.9<small>%</small></span><i>→</i><strong>39.2<small>%</small></strong><b>+31.3 个百分点</b></div><div class="comparison-bars" role="img" aria-label="下一动作成功率由7.9%增加到39.2%"><div><span>基线</span><i style="--bar-width:7.9%"></i></div><div><span>PSOP</span><i style="--bar-width:39.2%"></i></div></div></article></div><p class="evidence-note">以上为历史机械臂实验结果，不能外推为当前 Microduck 的实机安装、识别复检或模型训练效果。</p></section>
+    </div></section>
+
+    <section class="closing section" id="start" aria-labelledby="closing-title"><div class="shell start-grid"><div><div class="eyebrow"><span class="eyebrow-square"></span> START WITH ONE DEVICE.</div><h2 id="closing-title">从第一台设备，<br>建立可追溯的工作区。</h2><p>准备设备资料与知识包，在本地打开工作台。<br>先读懂结构，再探索装配与下一步研发。</p><div class="closing-buttons"><a class="button button-primary" href="https://git.sefo.cc:233/servforce.ai/psop/-/blob/main/README.md" target="_blank" rel="noopener">阅读快速开始 <svg class="icon" aria-hidden="true"><use href="#i-diagonal"/></svg></a><a class="button button-secondary" href="https://git.sefo.cc:233/servforce.ai/psop" target="_blank" rel="noopener">源码仓库 <svg class="icon" aria-hidden="true"><use href="#i-diagonal"/></svg></a></div><a class="historical-link" href="assets/psop-overview.pdf" target="_blank" rel="noopener">历史研究方案 · 25 页 PDF <svg class="icon" aria-hidden="true"><use href="#i-diagonal"/></svg></a></div><div class="start-note"><span class="small-label">YOUR FIRST WORKSPACE</span><ol><li><span>01</span><div><strong>准备运行环境</strong><p>Node.js 22.12+、Python 3.11+、Git LFS。</p></div></li><li><span>02</span><div><strong>准备并登记设备知识</strong><p>按项目使用指南构建或还原 Microduck 示例。</p></div></li><li><span>03</span><div><strong>打开工作台</strong><p>浏览部件与来源，进入独立三维装配方案。</p></div></li></ol></div></div></section>
+  </main>
+  <footer class="site-footer"><div class="shell"><div class="footer-top"><a class="brand" href="#top" aria-label="回到首页"><img class="brand-mark" src="assets/brand/psop-mark.svg?v=3" width="34" height="34" alt="" aria-hidden="true"><span>PSOP</span></a><p>连接设备知识与操作经验。</p><div class="footer-links"><a href="#start">使用指南</a><a href="assets/psop-overview.pdf" target="_blank" rel="noopener">历史研究方案</a><button id="open-sources" aria-haspopup="dialog" aria-controls="sources-modal">资料与模型来源 <svg class="icon" aria-hidden="true"><use href="#i-diagonal"/></svg></button></div></div><div class="footer-bottom"><span>© 2026 PSOP · 设备知识、三维装配与模型研发</span><a href="#top">回到顶部 ↑</a></div></div></footer>
+  <dialog id="video-modal" class="video-modal" aria-labelledby="video-title"><div class="dialog-head"><div><span class="small-label">EXISTING AR RECORDING</span><h2 id="video-title">机械臂装配 · AR 演示</h2></div><button id="close-video" class="dialog-close" aria-label="关闭视频">×</button></div><video id="ar-video" data-src="assets/ar-demo-25s.mp4" poster="assets/ar-demo-poster.webp" controls playsinline preload="none"></video><p>已有机械臂录像，展示部件高亮、步骤提示和双手装配。Microduck 现场交互需独立标定与验证。</p></dialog>
+  <dialog id="sources-modal" class="sources-modal" aria-labelledby="sources-title"><div class="dialog-head"><div><span class="small-label">CONTENT & MODEL REFERENCES</span><h2 id="sources-title">资料与模型来源</h2></div><button id="close-sources" class="dialog-close" aria-label="关闭来源说明">×</button></div><div class="source-items"><article><span>01</span><div><h3>当前工作台实景</h3><p>产品截图和装配录像采集自当前 PSOP 工作台与 Microduck 2.0.0-capabilities.10 知识快照，使用独立演示方案。Compile 执行服务仍未接入。</p><a href="assets/workbench-capture.json" target="_blank" rel="noopener">查看素材采集记录 <svg class="icon" aria-hidden="true"><use href="#i-diagonal"/></svg></a></div></article><article><span>02</span><div><h3>Microduck 来源装配</h3><p>三维展示保留 walk 来源模型的 38 份几何、70 个部件实例、颜色与原装配矩阵。展开是浏览偏移，不代表已验证拆装路径。</p><p>上游许可注明 Creative Commons BY-SA-NC，未注明版本。软件身份与几何配置分别核对。</p></div></article><article><span>03</span><div><h3>教学示例与历史研究</h3><p>EG 与 Microduck AR 为教学交互，安装过程照片为生成示意；240 组受控实验与 AR 录像属于已有机械臂研究。PDF 是历史研究方案。</p><a href="assets/psop-overview.pdf" target="_blank" rel="noopener">查看历史研究方案 <svg class="icon" aria-hidden="true"><use href="#i-diagonal"/></svg></a></div></article></div><a class="text-link" href="assets/sources.json" target="_blank" rel="noopener">查看资源来源清单 <svg class="icon" aria-hidden="true"><use href="#i-diagonal"/></svg></a></dialog>
+  <dialog id="image-modal" class="image-modal" aria-labelledby="image-title"><div class="dialog-head"><div><span class="small-label">ACTUAL WORKBENCH CAPTURE</span><h2 id="image-title">工作台界面</h2></div><button id="close-image" class="dialog-close" aria-label="关闭界面预览">×</button></div><div class="image-view-controls"><span>滚动查看界面细节</span><button id="image-fit" aria-pressed="false">适应窗口</button><button id="image-detail" class="is-active" aria-pressed="true">原尺寸</button></div><div class="image-viewport" tabindex="0" role="region" aria-label="可滚动的工作台界面"><img id="image-preview" alt=""></div></dialog>
+  <noscript><style>.workspace-panel[hidden]{display:grid!important}.workspace-panel{margin-top:32px}.workspace-tabs,.model-controls,.model-hint,.eg-actions,.ar-step-controls,.menu-toggle,.assembly-play{display:none!important}.desktop-nav{display:flex!important}.image-trigger{pointer-events:none}.image-zoom-label{display:none}</style><div class="noscript-note">JavaScript 未启用。产品介绍、来源资料与静态界面仍可浏览；<a href="assets/workbench-simulate-demo.webm?v=head-shell-20261111">直接观看装配录像</a>。</div></noscript>
+</body>
+</html>

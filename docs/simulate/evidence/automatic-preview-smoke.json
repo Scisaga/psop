@@ -1,0 +1,23 @@
+{
+  "port": 8781,
+  "production_bundle": "index-DF-Col1H.js",
+  "original_scene": "2ff0a3e2-51fb-4a60-85a5-7556d25362f3",
+  "original_revision": 5,
+  "original_connections": 3,
+  "original_unchanged": true,
+  "smoke_scene": "25d83e8a-8838-4dd9-8c86-12c250f7103a",
+  "parts": 70,
+  "groups": 1,
+  "report": {
+    "mode": "reference",
+    "configuration_ref": "configuration:microduck:reconciled-qpos0",
+    "configuration_label": "修正成品参考",
+    "part_count": 70,
+    "retained_connection_count": 0,
+    "removed_connection_count": 3,
+    "reference_connection_count": 69,
+    "structure_binding_count": 7,
+    "geometry_status": "not_evaluated",
+    "completed_at": "2026-11-10T22:57:21.737Z"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "schema": "psop.build-full-regression-review/1",
+  "initial_full_suite": {
+    "tests_run": 282,
+    "seconds": 1283.3,
+    "passed": 273,
+    "failures": 7,
+    "errors": 1,
+    "skipped": 1,
+    "skipped_reason": "No published source-model/1.8 fixture; PSOP_LEGACY_18_DKP not set",
+    "baseline_failures": {
+      "test_assembly_catalog": [
+        "test_real_catalog_keeps_the_independent_frozen_requirements"
+      ],
+      "test_assembly_fastener_paths": [
+        "test_confirmation_adds_evidence_without_rewriting_existing_sources",
+        "test_only_jaw_confirmation_changes_connection_basis"
+      ],
+      "test_connection_source_intake": [
+        "test_capture_preserves_original_bytes_and_distinguishes_inference_and_general_examples",
+        "test_fake_png_with_matching_metadata_is_not_an_image_source",
+        "test_parent_path_and_source_id_collisions_do_not_expand_the_input_scope"
+      ],
+      "test_connector_paths": [
+        "test_historical_contracts_are_not_rewritten"
+      ],
+      "test_pin_hole_fits": [
+        "test_new_default_preserves_the_frozen_profile_contract"
+      ]
+    }
+  },
+  "resolution": "Bind historical tests to their captured releases and explicit frozen contracts; retain original requirements exactly while allowing independently reviewed additions. Every initially failing test is included in the passing targeted module rerun.",
+  "targeted_rerun": {
+    "schema": "psop.reference-repair-regressions/1",
+    "modules": [
+      "test_reference_alignment",
+      "test_assembly_catalog",
+      "test_assembly_fastener_paths",
+      "test_connection_source_intake",
+      "test_connector_paths",
+      "test_pin_hole_fits"
+    ],
+    "tests_run": 55,
+    "success": true,
+    "skipped": 0,
+    "failures": [],
+    "errors": [],
+    "seconds": 9.890604300017003
+  },
+  "full_suite_repeated_after_fixes": false,
+  "unresolved_initial_failures": []
+}

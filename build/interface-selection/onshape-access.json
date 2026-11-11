@@ -1,0 +1,52 @@
+{
+  "recorded_at_utc": "2026-11-06 20:48:55 UTC",
+  "client_timezone": "Asia/Shanghai",
+  "checked_on": "2026-11-07",
+  "scope": "Read-only anonymous access attempt after freezing the source-model/1.10 research input; no CAD content or new assembly conclusion obtained.",
+  "requests": [
+    {
+      "method": "Anonymous Chrome page navigation, DOMContentLoaded",
+      "url": "https://cad.onshape.com/documents/804927696f06d877f3f1803e/w/5b75db19292e71970de02dee/e/ef6e972847fec8d82570b35e",
+      "http_status": 200,
+      "title": "Onshape",
+      "observed_body_text": "",
+      "result": "An HTML application shell was returned; no CAD assembly geometry, drawing or feature identification was obtained."
+    },
+    {
+      "method": "GET using the same anonymous browser request context",
+      "url": "https://cad.onshape.com/api/assemblies/d/804927696f06d877f3f1803e/w/5b75db19292e71970de02dee/e/ef6e972847fec8d82570b35e",
+      "http_status": 401,
+      "body": {
+        "message": "Unauthenticated API request",
+        "status": 401
+      },
+      "result": "This anonymous assembly endpoint did not supply the requested CAD assembly data."
+    }
+  ],
+  "limitations": [
+    "The 401 applies to this anonymous endpoint request; it does not establish permanent inaccessibility of the document or the entire service.",
+    "The source link identifies a changing workspace rather than a CAD revision fixed to the frozen STL SHA.",
+    "No authentication credentials, cookies, tokens or sensitive headers were recorded.",
+    "Frozen investigation inputs and the released hypotheses were not changed by this access attempt."
+  ],
+  "application_load_followup": {
+    "record_path": "build/interface-selection/onshape-loaded-access.json",
+    "image_path": "build/interface-selection/onshape-loaded-25s.png",
+    "method": "Isolated anonymous Chrome navigation, then 25-second application-load observation",
+    "started_at_utc": "2026-11-06T20:54:04.406Z",
+    "completed_at_utc": "2026-11-06T20:54:45.589Z",
+    "final_url": "https://cad.onshape.com/signin",
+    "title": "Sign in",
+    "public_permissionset_status": 403,
+    "observed_controls": [
+      "Email",
+      "Continue",
+      "Sign up"
+    ],
+    "failed_request_count": 0,
+    "page_error_count": 0,
+    "image_inspected": true,
+    "result": "After allowing the application to load for 25 seconds, this isolated anonymous Chrome session was redirected to a Sign in page. The document permissionset API returned403. No CAD assembly canvas, guest view or export control was exposed in this session; no credentials were entered and no CAD content was obtained.",
+    "boundary": "This describes only the observed anonymous session and endpoint responses; other authorized access or a supplied fixed export may differ."
+  }
+}

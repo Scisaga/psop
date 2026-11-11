@@ -1,0 +1,4000 @@
+{
+  "valid": true,
+  "meta": {
+    "title": "Microduck",
+    "ontologyVersion": "psop.hardware/2.0-draft.4",
+    "scope": "官方模型参考 · qpos0；不等同 alpha 实机配置或工程验收",
+    "sourceCommit": "cb70b792312d559a4da09064d92009079671815f",
+    "counts": {
+      "sources": 71,
+      "geometries": 38,
+      "parts": 70,
+      "bodies": 15,
+      "joints": 14,
+      "evidence": 226
+    },
+    "version": "2.0.0-connection-analysis.1",
+    "snapshot": "psop.microduck@2.0.0-connection-analysis.1",
+    "generatedAt": "2026-11-07T09:35:40+00:00",
+    "packageId": "psop.microduck",
+    "packageVersion": "2.0.0-connection-analysis.1",
+    "packageDigest": "84f6829a25a82fefaf1da6cc00b399088a5db6e41923b4074c39a08d1988b6db",
+    "dkpSchema": "psop.dkp/2.0-draft.1",
+    "inputKind": "dkp",
+    "capabilities": {
+      "source_registry": {
+        "status": "complete",
+        "scope": "captured source bytes, paths and digests",
+        "description": "captured source bytes, paths and digests"
+      },
+      "source_model_projection": {
+        "status": "complete",
+        "scope": "frozen Microduck MJCF visual model at qpos0",
+        "description": "frozen Microduck MJCF visual model at qpos0"
+      },
+      "hardware_knowledge": {
+        "status": "partial",
+        "scope": "source geometry, finite pin/housing reference-pair location evidence and separately identified unverified connector alternatives; retention remains unknown",
+        "description": "source geometry, finite pin/housing reference-pair location evidence and separately identified unverified connector alternatives; retention remains unknown"
+      },
+      "mechanical_validation": {
+        "status": "unavailable",
+        "scope": "no confirmed interface connection, retaining, motion constraint, assembly path or mechanical success is published",
+        "description": "no confirmed interface connection, retaining, motion constraint, assembly path or mechanical success is published"
+      },
+      "engineering_validation": {
+        "status": "unavailable",
+        "scope": "materials, tolerances, manufacturing and load acceptance not established",
+        "description": "materials, tolerances, manufacturing and load acceptance not established"
+      },
+      "path_validation": {
+        "status": "unavailable",
+        "scope": "presentation explosion is not a disassembly or motion proof",
+        "description": "presentation explosion is not a disassembly or motion proof"
+      },
+      "training_data": {
+        "status": "unavailable",
+        "scope": "no training dataset, canonical multiview render or use authorization is published",
+        "description": "no training dataset, canonical multiview render or use authorization is published"
+      },
+      "geometric_analysis": {
+        "status": "partial",
+        "scope": "finite arbitrary-axis cylindrical discovery with strict source witnesses, legacy finite geometry and per-instance raw mesh regions; unsupported structures remain open",
+        "description": "finite arbitrary-axis cylindrical discovery with strict source witnesses, legacy finite geometry and per-instance raw mesh regions; unsupported structures remain open"
+      },
+      "interface_analysis": {
+        "status": "partial",
+        "scope": "connection reviews separate declared knowledge from project-inferred roles and manufacturer-general examples; no complete physical interface qualification",
+        "description": "connection reviews separate declared knowledge from project-inferred roles and manufacturer-general examples; no complete physical interface qualification"
+      },
+      "connection_candidates": {
+        "status": "unavailable",
+        "scope": "raw geometry observations are not qualified interfaces or mechanism-level connection candidates",
+        "description": "raw geometry observations are not qualified interfaces or mechanism-level connection candidates"
+      },
+      "reference_mounting": {
+        "status": "partial",
+        "scope": "supplied standard-assembly assertions checked against the frozen source placements and mapped site axes; no executed engagement is published",
+        "description": "supplied standard-assembly assertions checked against the frozen source placements and mapped site axes; no executed engagement is published"
+      },
+      "connection_review": {
+        "status": "partial",
+        "scope": "source-pose pin/housing fits support installation-location inference only; outer circular openings and manufacturer-general illustrations do not establish retaining roles",
+        "description": "source-pose pin/housing fits support installation-location inference only; outer circular openings and manufacturer-general illustrations do not establish retaining roles"
+      },
+      "supplemental_components": {
+        "status": "partial",
+        "scope": "reference connector schematics use explicit through-bracket hypotheses with independently checked finite entrance, head seat, shaft direction and target coverage; actual installation side, thread, continuous path and retention remain unverified",
+        "description": "reference connector schematics use explicit through-bracket hypotheses with independently checked finite entrance, head seat, shaft direction and target coverage; actual installation side, thread, continuous path and retention remain unverified"
+      },
+      "structure_investigation": {
+        "status": "partial",
+        "scope": "every source Part and mesh normal region is inventoried before functional interpretation; unknown function has explicit evidence gaps and next actions",
+        "description": "every source Part and mesh normal region is inventoried before functional interpretation; unknown function has explicit evidence gaps and next actions"
+      },
+      "independent_review": {
+        "status": "partial",
+        "scope": "locked source-SHA-bound independent annotations establish expected sample features; automatic screening is distinct from completed region review",
+        "description": "locked source-SHA-bound independent annotations establish expected sample features; automatic screening is distinct from completed region review"
+      },
+      "installation_hypotheses": {
+        "status": "partial",
+        "scope": "frozen completed research, source-bound finite counterpart geometry, dimensional complementarity and evidence support bounded mechanism hypotheses; no actual retaining or engineering confirmation",
+        "description": "frozen completed research, source-bound finite counterpart geometry, dimensional complementarity and evidence support bounded mechanism hypotheses; no actual retaining or engineering confirmation"
+      },
+      "connection_analysis": {
+        "status": "partial",
+        "scope": "every connection review has finite local evidence and an explicit investigation stage; frozen executed investigations support bounded mechanisms, multi-Part context and independent omission acceptance without qualifying Interfaces",
+        "description": "every connection review has finite local evidence and an explicit investigation stage; frozen executed investigations support bounded mechanisms, multi-Part context and independent omission acceptance without qualifying Interfaces"
+      }
+    },
+    "validation": {
+      "valid": true,
+      "profile": "psop.hardware.source-model/1.11"
+    }
+  },
+  "snapshot": "dkp-84f6829a25a82fefaf1d",
+  "package": "C:\\Users\\lsh\\Desktop\\workspace\\psop\\build\\microduck\\source-1.11\\microduck-connection-analysis.dkp",
+  "preserved": {
+    "parts_and_source_placements": 70,
+    "original_sources_with_exact_sha": 68,
+    "original_hypotheses": 3,
+    "geometry_and_installation_collections_equal": true,
+    "historical_snapshots": 2
+  },
+  "coverage": {
+    "parts_count": 70,
+    "reviews_count": 211,
+    "work_status": {
+      "not_investigated": 168,
+      "investigated": 43
+    },
+    "evidence_status": {
+      "geometry_only": 168,
+      "supported_hypothesis": 15,
+      "insufficient": 28
+    },
+    "multi_part_contexts_count": 2,
+    "independent_review_findings": {
+      "expected_count": 7,
+      "located_count": 7,
+      "matches": [
+        {
+          "id": "EXPECT-97e1e2f7a5a627de",
+          "finding_ref": "connection-finding:97e1e2f7a5a627de",
+          "hypothesis_refs": [
+            "installation-hypothesis:review-97e1e2f7a5a627de"
+          ]
+        },
+        {
+          "id": "EXPECT-27d56794bd7c8a86",
+          "finding_ref": "connection-finding:27d56794bd7c8a86",
+          "hypothesis_refs": []
+        },
+        {
+          "id": "EXPECT-f81f10dc6482cb07",
+          "finding_ref": "connection-finding:f81f10dc6482cb07",
+          "hypothesis_refs": []
+        },
+        {
+          "id": "EXPECT-926a5beb2c028185",
+          "finding_ref": "connection-finding:926a5beb2c028185",
+          "hypothesis_refs": [
+            "installation-hypothesis:review-926a5beb2c028185"
+          ]
+        },
+        {
+          "id": "EXPECT-c2e8a8093a4b8563",
+          "finding_ref": "connection-finding:c2e8a8093a4b8563",
+          "hypothesis_refs": []
+        },
+        {
+          "id": "EXPECT-d22c650fc9abdaca",
+          "finding_ref": "connection-finding:d22c650fc9abdaca",
+          "hypothesis_refs": []
+        },
+        {
+          "id": "EXPECT-e42fab2d8700637e",
+          "finding_ref": "connection-finding:e42fab2d8700637e",
+          "hypothesis_refs": [
+            "installation-hypothesis:review-e42fab2d8700637e"
+          ]
+        }
+      ],
+      "missing": []
+    },
+    "complete": false,
+    "scope": "All Part instances and existing reviews are inventoried. Geometry pairing, executed research, hypotheses, installation definitions and actual engagement remain distinct; unreviewed source regions remain open."
+  },
+  "independent_mutations": {
+    "deleted_hypothesis": "installation-hypothesis:review-97e1e2f7a5a627de",
+    "deletion_missing": [
+      "EXPECT-97e1e2f7a5a627de"
+    ],
+    "generic_actions_missing": [
+      "EXPECT-97e1e2f7a5a627de"
+    ],
+    "coverage_recomputed": true
+  },
+  "six_hip_results": [
+    {
+      "id": "connection-finding:27d56794bd7c8a86",
+      "review_ref": "connection-review:microduck:27d56794bd7c8a86",
+      "configuration_ref": "configuration:microduck:source-qpos0",
+      "title": "髋部件 ↔ 轴承外形（22×16×4 配置名） · 已调查待证",
+      "work_status": "investigated",
+      "evidence_status": "insufficient",
+      "participants": [
+        {
+          "part_ref": "part:microduck:fa9ee2f71faafb88",
+          "feature_refs": [],
+          "opening_refs": [],
+          "site_refs": [],
+          "structure_refs": [
+            "structure:2ffd2d70d94388821cac"
+          ],
+          "position_local_m": [
+            0.017500000005070827,
+            -0.017525000497698784,
+            -6.684875973627692e-13
+          ],
+          "label": "髋部件 · 源局部有限结构",
+          "role": "local_structure_carrier",
+          "geometry_sha256": "e175896932d76dc7648cf939aa39cb7b1d188b783d91745adb9a4cec65e9052c"
+        },
+        {
+          "part_ref": "part:microduck:47a950fbb3d0e416",
+          "feature_refs": [
+            "feature:microduck:47a950fbb3d0e416:dcf8d998412a"
+          ],
+          "opening_refs": [],
+          "site_refs": [],
+          "structure_refs": [
+            "structure:2d3d4880e1a0e82cd228"
+          ],
+          "position_local_m": [
+            2.2968722047256557e-38,
+            1.37802427771761e-19,
+            0.002000000029511284
+          ],
+          "label": "轴承外形（22×16×4 配置名） · 源局部有限结构",
+          "role": "local_structure_carrier",
+          "geometry_sha256": "295ee68ed9766c91fe06d3a2a49d39f7c2f56cc943395d293afdeb013123435e"
+        }
+      ],
+      "local_pairings": [
+        {
+          "participant_refs": [
+            "part:microduck:47a950fbb3d0e416",
+            "part:microduck:fa9ee2f71faafb88"
+          ],
+          "structure_refs": [
+            "structure:2d3d4880e1a0e82cd228",
+            "structure:2ffd2d70d94388821cac"
+          ],
+          "feature_refs": [
+            "feature:microduck:47a950fbb3d0e416:dcf8d998412a"
+          ],
+          "kinds": [
+            "bore_wall",
+            "shaft_wall"
+          ],
+          "geometry_checks": [
+            {
+              "name": "孔／轴径",
+              "value": [
+                0.01599999984695226,
+                0.015999999994425976
+              ],
+              "unit": "m"
+            },
+            {
+              "name": "轴距",
+              "value": 5.114700016706742e-12,
+              "unit": "m"
+            },
+            {
+              "name": "有限间隔",
+              "value": 0,
+              "unit": "m"
+            },
+            {
+              "name": "有限重叠",
+              "value": 0.001749999248073439,
+              "unit": "m"
+            },
+            {
+              "name": "壁长",
+              "value": [
+                0.003600000069127418,
+                0.0019499994814395905
+              ],
+              "unit": "m"
+            }
+          ],
+          "statement": "两侧 16.000/16.000 mm 圆柱结构，轴距 0.0000 mm，有限间隔 0.0000 mm，重叠 1.7500 mm。",
+          "status": "geometry_only"
+        },
+        {
+          "participant_refs": [
+            "part:microduck:47a950fbb3d0e416",
+            "part:microduck:fa9ee2f71faafb88"
+          ],
+          "structure_refs": [
+            "structure:45138b47765755227c73",
+            "structure:2ffd2d70d94388821cac"
+          ],
+          "feature_refs": [
+            "feature:microduck:47a950fbb3d0e416:4b70f665bd37"
+          ],
+          "kinds": [
+            "shaft_wall",
+            "shaft_wall"
+          ],
+          "geometry_checks": [
+            {
+              "name": "孔／轴径",
+              "value": [
+                0.022000000209829736,
+                0.015999999994425976
+              ],
+              "unit": "m"
+            },
+            {
+              "name": "轴距",
+              "value": 5.114700016706742e-12,
+              "unit": "m"
+            },
+            {
+              "name": "有限间隔",
+              "value": 0,
+              "unit": "m"
+            },
+            {
+              "name": "有限重叠",
+              "value": 0.0016499992287717787,
+              "unit": "m"
+            },
+            {
+              "name": "壁长",
+              "value": [
+                0.0033999999868683517,
+                0.0019499994814395905
+              ],
+              "unit": "m"
+            }
+          ],
+          "statement": "两侧 22.000/16.000 mm 圆柱结构，轴距 0.0000 mm，有限间隔 0.0000 mm，重叠 1.6500 mm。",
+          "status": "geometry_only"
+        },
+        {
+          "participant_refs": [
+            "part:microduck:47a950fbb3d0e416",
+            "part:microduck:fa9ee2f71faafb88"
+          ],
+          "structure_refs": [
+            "structure:2d3d4880e1a0e82cd228",
+            "structure:af9f602683617eb156b1"
+          ],
+          "feature_refs": [
+            "feature:microduck:47a950fbb3d0e416:dcf8d998412a"
+          ],
+          "kinds": [
+            "bore_wall",
+            "bore_wall"
+          ],
+          "geometry_checks": [
+            {
+              "name": "孔／轴径",
+              "value": [
+                0.01599999984695226,
+                0.006000000062744922
+              ],
+              "unit": "m"
+            },
+            {
+              "name": "轴距",
+              "value": 2.7159378683698183e-11,
+              "unit": "m"
+            },
+            {
+              "name": "有限间隔",
+              "value": 0,
+              "unit": "m"
+            },
+            {
+              "name": "有限重叠",
+              "value": 0.001749999248073439,
+              "unit": "m"
+            },
+            {
+              "name": "壁长",
+              "value": [
+                0.003600000069127418,
+                0.0019499994814395905
+              ],
+              "unit": "m"
+            }
+          ],
+          "statement": "两侧 16.000/6.000 mm 孔壁，轴距 0.0000 mm，有限间隔 0.0000 mm，重叠 1.7500 mm。",
+          "status": "geometry_only"
+        },
+        {
+          "participant_refs": [
+            "part:microduck:47a950fbb3d0e416",
+            "part:microduck:fa9ee2f71faafb88"
+          ],
+          "structure_refs": [
+            "structure:45138b47765755227c73",
+            "structure:af9f602683617eb156b1"
+          ],
+          "feature_refs": [
+            "feature:microduck:47a950fbb3d0e416:4b70f665bd37"
+          ],
+          "kinds": [
+            "shaft_wall",
+            "bore_wall"
+          ],
+          "geometry_checks": [
+            {
+              "name": "孔／轴径",
+              "value": [
+                0.022000000209829736,
+                0.006000000062744922
+              ],
+              "unit": "m"
+            },
+            {
+              "name": "轴距",
+              "value": 2.7159378683698183e-11,
+              "unit": "m"
+            },
+            {
+              "name": "有限间隔",
+              "value": 0,
+              "unit": "m"
+            },
+            {
+              "name": "有限重叠",
+              "value": 0.0016499992287717787,
+              "unit": "m"
+            },
+            {
+              "name": "壁长",
+              "value": [
+                0.0033999999868683517,
+                0.0019499994814395905
+              ],
+              "unit": "m"
+            }
+          ],
+          "statement": "两侧 22.000/6.000 mm 圆柱结构，轴距 0.0000 mm，有限间隔 0.0000 mm，重叠 1.6500 mm。",
+          "status": "geometry_only"
+        },
+        {
+          "participant_refs": [
+            "part:microduck:47a950fbb3d0e416",
+            "part:microduck:fa9ee2f71faafb88"
+          ],
+          "structure_refs": [
+            "structure:2d3d4880e1a0e82cd228",
+            "structure:7163b4123df99a70362c"
+          ],
+          "feature_refs": [
+            "feature:microduck:47a950fbb3d0e416:dcf8d998412a",
+            "feature:microduck:fa9ee2f71faafb88:8c530854bffc"
+          ],
+          "kinds": [
+            "bore_wall",
+            "shaft_wall"
+          ],
+          "geometry_checks": [
+            {
+              "name": "孔／轴径",
+              "value": [
+                0.01599999984695226,
+                0.018999999510267977
+              ],
+              "unit": "m"
+            },
+            {
+              "name": "轴距",
+              "value": 5.039173349430381e-10,
+              "unit": "m"
+            },
+            {
+              "name": "有限间隔",
+              "value": 0.00020000023336615462,
+              "unit": "m"
+            },
+            {
+              "name": "有限重叠",
+              "value": 0,
+              "unit": "m"
+            },
+            {
+              "name": "壁长",
+              "value": [
+                0.003600000069127418,
+                0.000499999150633812
+              ],
+              "unit": "m"
+            }
+          ],
+          "statement": "两侧 16.000/19.000 mm 圆柱结构，轴距 0.0000 mm，有限间隔 0.2000 mm，重叠 0.0000 mm。",
+          "status": "geometry_only"
+        },
+        {
+          "participant_refs": [
+            "part:microduck:47a950fbb3d0e416",
+            "part:microduck:fa9ee2f71faafb88"
+          ],
+          "structure_refs": [
+            "structure:45138b47765755227c73",
+            "structure:7163b4123df99a70362c"
+          ],
+          "feature_refs": [
+            "feature:microduck:47a950fbb3d0e416:4b70f665bd37",
+            "feature:microduck:fa9ee2f71faafb88:8c530854bffc"
+          ],
+          "kinds": [
+            "shaft_wall",
+            "shaft_wall"
+          ],
+          "geometry_checks": [
+            {
+              "name": "孔／轴径",
+              "value": [
+                0.022000000209829736,
+                0.018999999510267977
+              ],
+              "unit": "m"
+            },
+            {
+              "name": "轴距",
+              "value": 5.039173349430381e-10,
+              "unit": "m"
+            },
+            {
+              "name": "有限间隔",
+              "value": 0.000300000252667815,
+              "unit": "m"
+            },
+            {
+              "name": "有限重叠",
+              "value": 0,
+              "unit": "m"
+            },
+            {
+              "name": "壁长",
+              "value": [
+                0.0033999999868683517,
+                0.000499999150633812
+              ],
+              "unit": "m"
+            }
+          ],
+          "statement": "两侧 22.000/19.000 mm 圆柱结构，轴距 0.0000 mm，有限间隔 0.3000 mm，重叠 0.0000 mm。",
+          "status": "geometry_only"
+        }
+      ],
+      "geometry_observation_refs": [
+        "reference-observation:microduck:surface-27d56794bd7c8a86"
+      ],
+      "reference_mount_refs": [],
+      "mechanism_candidates": [
+        {
+          "kind": "bearing_journal",
+          "status": "geometric_support",
+          "summary": "髋轴颈位于轴承内圈的名义径向位置，肩面可解释单向轴向承接；轴承两环可能相对转动，实际环归属和抗拔未确认。"
+        }
+      ],
+      "roles": [
+        {
+          "role": "location",
+          "status": "geometric_support",
+          "statement": "Ø16轴颈与完整Ø16内壁及有限重叠支持名义径向定位；不由入口倒角推断间隙等级。",
+          "participant_refs": [
+            "part:microduck:fa9ee2f71faafb88",
+            "part:microduck:47a950fbb3d0e416"
+          ]
+        },
+        {
+          "role": "retention",
+          "status": "unknown",
+          "statement": "肩端最多支持一侧轴向承接；反向抗拔、压配或盖件无依据，实际保持未知。",
+          "participant_refs": [
+            "part:microduck:fa9ee2f71faafb88",
+            "part:microduck:47a950fbb3d0e416"
+          ]
+        },
+        {
+          "role": "motion",
+          "status": "unknown",
+          "statement": "轴承两环间的转动是具体机制候选，髋、内圈、外圈和对端活动框架仍需分体CAD/装配图确定。",
+          "participant_refs": [
+            "part:microduck:fa9ee2f71faafb88",
+            "part:microduck:47a950fbb3d0e416"
+          ]
+        },
+        {
+          "role": "limit",
+          "status": "unknown",
+          "statement": "端面可能限定单向轴向位置；没有完整轴向堆叠/止推/行程限位依据。",
+          "participant_refs": [
+            "part:microduck:fa9ee2f71faafb88",
+            "part:microduck:47a950fbb3d0e416"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "method": "实际读取双方原始 STL 并重新求三角-平面交线；在唯一来源 qpos0 下核对有限壁段、孔径与全部组距",
+          "source_refs": [
+            "SRC-000019",
+            "SRC-000034",
+            "SRC-INVESTIGATION-0BDDD07C70CE1FE5F182",
+            "SRC-INVESTIGATION-F0BEA6257AB7813726E4",
+            "SRC-MD-INDEX",
+            "SRC-MD-MJCF"
+          ],
+          "observation": "髋部完整外向轴颈Ø16 mm，轴承完整内壁Ø16 mm；口部Ø16.4 mm是倒角，不是配合壁直径。 在唯一qpos0配置中双方同轴，有限壁段重叠约1.75 mm；相等的名义尺寸不证明过盈等级或已接合。"
+        },
+        {
+          "method": "重新读取模型版本说明、材料总说明、HAT C1 说明与两份板级 CSV，查找该组的机械 BOM/活动区依据",
+          "source_refs": [
+            "SRC-000008",
+            "SRC-000049",
+            "SRC-000053",
+            "SRC-000054",
+            "SRC-000055"
+          ],
+          "observation": "这些原件没有该组紧固件、保持和活动区的逐孔依据；板级 BOM 不能补成机械 BOM。"
+        }
+      ],
+      "findings": [
+        "髋部完整外向轴颈Ø16 mm，轴承完整内壁Ø16 mm；口部Ø16.4 mm是倒角，不是配合壁直径。",
+        "在唯一qpos0配置中双方同轴，有限壁段重叠约1.75 mm；相等的名义尺寸不证明过盈等级或已接合。"
+      ],
+      "counterevidence": [
+        "源模型名义零间隙不能证明压配；轴承外壁Ø22和入口倒角不能代替完整Ø16内壁。"
+      ],
+      "alternatives": [
+        "可能为松配定位、带独立套筒或仅参考外形留置，不能确认实机已安装或已保持。"
+      ],
+      "intermediate_components": [
+        {
+          "kind": "axial_retainer",
+          "requirement": "possible",
+          "status": "unconfirmed",
+          "statement": "反向保持可能需要压盖、卡环或相邻夹持件；当前未定位真实件，不能自动创建示意保持实体。"
+        }
+      ],
+      "missing_evidence": [
+        "轴承具体型号/修订、真实内外圈尺寸及髋轴颈制造公差尚无依据。",
+        "内外圈分别跟随哪个部件，以及完整轴向保持件/载荷和润滑未确认。"
+      ],
+      "next_actions": [
+        "按双方明确局部位置隔离/剖切，检查环、孔周端面、轴向挡肩及实际中间件；需匹配修订的分体CAD或逐件装配图。"
+      ],
+      "hypothesis_refs": [],
+      "source_refs": [
+        "SRC-000008",
+        "SRC-000019",
+        "SRC-000034",
+        "SRC-000049",
+        "SRC-000053",
+        "SRC-000054",
+        "SRC-000055",
+        "SRC-INVESTIGATION-0BDDD07C70CE1FE5F182",
+        "SRC-INVESTIGATION-F0BEA6257AB7813726E4",
+        "SRC-MD-INDEX",
+        "SRC-MD-MJCF"
+      ],
+      "evidence_refs": [
+        "evidence:07e507f1e9297aa3:csv",
+        "evidence:07e507f1e9297aa3:xml",
+        "evidence:0820b4025f26a004:csv",
+        "evidence:0820b4025f26a004:xml",
+        "evidence:087d7a46a3ce4ca3:csv",
+        "evidence:087d7a46a3ce4ca3:xml",
+        "evidence:08c5ade0f3fd37db:csv",
+        "evidence:08c5ade0f3fd37db:xml",
+        "evidence:09cb390e38430c1e:csv",
+        "evidence:09cb390e38430c1e:xml",
+        "evidence:133711c520619e45:csv",
+        "evidence:133711c520619e45:xml",
+        "evidence:203d2686e3321e4a:csv",
+        "evidence:203d2686e3321e4a:xml",
+        "evidence:22f2cd114e324ec5:csv",
+        "evidence:22f2cd114e324ec5:xml",
+        "evidence:2559a4c412bcda3e:csv",
+        "evidence:2559a4c412bcda3e:xml",
+        "evidence:2d2cde8ae8ebacac:csv",
+        "evidence:2d2cde8ae8ebacac:xml",
+        "evidence:2f557a24b2729755:csv",
+        "evidence:2f557a24b2729755:xml",
+        "evidence:328011951ac11ee7:csv",
+        "evidence:328011951ac11ee7:xml",
+        "evidence:3fbf0b5c8cea4488:csv",
+        "evidence:3fbf0b5c8cea4488:stl",
+        "evidence:3fbf0b5c8cea4488:xml",
+        "evidence:41db565298264db6:csv",
+        "evidence:41db565298264db6:xml",
+        "evidence:44b5600c1a735117:csv",
+        "evidence:44b5600c1a735117:xml",
+        "evidence:47a950fbb3d0e416:csv",
+        "evidence:47a950fbb3d0e416:stl",
+        "evidence:47a950fbb3d0e416:xml",
+        "evidence:48099e14105d3289:csv",
+        "evidence:48099e14105d3289:xml",
+        "evidence:4cef8bb24d37fe6e:csv",
+        "evidence:4cef8bb24d37fe6e:xml",
+        "evidence:4cf80d5a57c8cb04:csv",
+        "evidence:4cf80d5a57c8cb04:xml",
+        "evidence:50f0c376d01bb0c1:csv",
+        "evidence:50f0c376d01bb0c1:xml",
+        "evidence:52fdcacf474a463f:csv",
+        "evidence:52fdcacf474a463f:xml",
+        "evidence:55121c0b36f62219:csv",
+        "evidence:55121c0b36f62219:stl",
+        "evidence:55121c0b36f62219:xml",
+        "evidence:554503ef38151e67:csv",
+        "evidence:554503ef38151e67:xml",
+        "evidence:55970da91992f38c:csv",
+        "evidence:55970da91992f38c:xml",
+        "evidence:638f29b46b322e64:csv",
+        "evidence:638f29b46b322e64:xml",
+        "evidence:66c73aaad945a993:csv",
+        "evidence:66c73aaad945a993:xml",
+        "evidence:6b5602b4416129fe:csv",
+        "evidence:6b5602b4416129fe:xml",
+        "evidence:6b884b140f6e283c:csv",
+        "evidence:6b884b140f6e283c:stl",
+        "evidence:6b884b140f6e283c:xml",
+        "evidence:7038a050dbc33fb0:csv",
+        "evidence:7038a050dbc33fb0:xml",
+        "evidence:766eaa6e4dd8b09f:csv",
+        "evidence:766eaa6e4dd8b09f:xml",
+        "evidence:78cf36c41e4fde06:csv",
+        "evidence:78cf36c41e4fde06:xml",
+        "evidence:7938fd9143c59ea4:csv",
+        "evidence:7938fd9143c59ea4:stl",
+        "evidence:7938fd9143c59ea4:xml",
+        "evidence:7c130c8489b57c99:csv",
+        "evidence:7c130c8489b57c99:xml",
+        "evidence:7e86db28af59d3cc:csv",
+        "evidence:7e86db28af59d3cc:xml",
+        "evidence:7f4fefc3c6de90f1:csv",
+        "evidence:7f4fefc3c6de90f1:xml",
+        "evidence:82d68e991b23c2a3:csv",
+        "evidence:82d68e991b23c2a3:xml",
+        "evidence:834f5cc892eba41e:csv",
+        "evidence:834f5cc892eba41e:xml",
+        "evidence:88b7496d63cb41ff:csv",
+        "evidence:88b7496d63cb41ff:xml",
+        "evidence:8b649e45831a1972:csv",
+        "evidence:8b649e45831a1972:xml",
+        "evidence:96e22c7fa2b976d3:csv",
+        "evidence:96e22c7fa2b976d3:xml",
+        "evidence:986b5adf27910138:csv",
+        "evidence:986b5adf27910138:xml",
+        "evidence:9d70b219a5533bf1:csv",
+        "evidence:9d70b219a5533bf1:xml",
+        "evidence:9ffe9d5bcd6bc13a:csv",
+        "evidence:9ffe9d5bcd6bc13a:xml",
+        "evidence:a0775b54397eb21e:csv",
+        "evidence:a0775b54397eb21e:xml",
+        "evidence:a07b37bcb704b29f:csv",
+        "evidence:a07b37bcb704b29f:xml",
+        "evidence:a682dc3620df43f5:csv",
+        "evidence:a682dc3620df43f5:xml",
+        "evidence:afa52198f7fad203:csv",
+        "evidence:afa52198f7fad203:xml",
+        "evidence:b364863ffde63eed:csv",
+        "evidence:b364863ffde63eed:stl",
+        "evidence:b364863ffde63eed:xml",
+        "evidence:b371ac60e2f6757b:csv",
+        "evidence:b371ac60e2f6757b:xml",
+        "evidence:b61b0609c61fc572:csv",
+        "evidence:b61b0609c61fc572:xml",
+        "evidence:bb34e925e25e29f6:csv",
+        "evidence:bb34e925e25e29f6:stl",
+        "evidence:bb34e925e25e29f6:xml",
+        "evidence:c703574f50f6a46a:csv",
+        "evidence:c703574f50f6a46a:xml",
+        "evidence:c75bfc0afb35e000:csv",
+        "evidence:c75bfc0afb35e000:xml",
+        "evidence:c7eeeac0a640d191:csv",
+        "evidence:c7eeeac0a640d191:stl",
+        "evidence:c7eeeac0a640d191:xml",
+        "evidence:cb253f38c818b9d8:csv",
+        "evidence:cb253f38c818b9d8:xml",
+        "evidence:cd6d48fccc95df41:csv",
+        "evidence:cd6d48fccc95df41:xml",
+        "evidence:d4b9a9e9474a9829:csv",
+        "evidence:d4b9a9e9474a9829:xml",
+        "evidence:d6a148b5784955d8:csv",
+        "evidence:d6a148b5784955d8:stl",
+        "evidence:d6a148b5784955d8:xml",
+        "evidence:d924e1596ffb042a:csv",
+        "evidence:d924e1596ffb042a:stl",
+        "evidence:d924e1596ffb042a:xml",
+        "evidence:e196235810184adf:csv",
+        "evidence:e196235810184adf:xml",
+        "evidence:e27cbdd6c07a264e:csv",
+        "evidence:e27cbdd6c07a264e:xml",
+        "evidence:e40b9945707505e1:csv",
+        "evidence:e40b9945707505e1:xml",
+        "evidence:e475134639b3f7e1:csv",
+        "evidence:e475134639b3f7e1:stl",
+        "evidence:e475134639b3f7e1:xml",
+        "evidence:e7e8275c7d01674c:csv",
+        "evidence:e7e8275c7d01674c:xml",
+        "evidence:ea69e2c6bba10a23:csv",
+        "evidence:ea69e2c6bba10a23:stl",
+        "evidence:ea69e2c6bba10a23:xml",
+        "evidence:ebfcaf98422b7b28:csv",
+        "evidence:ebfcaf98422b7b28:xml",
+        "evidence:f5797f92c2bf01b8:csv",
+        "evidence:f5797f92c2bf01b8:xml",
+        "evidence:f97c1c6580d651d7:csv",
+        "evidence:f97c1c6580d651d7:xml",
+        "evidence:f9955f19a691a1f4:csv",
+        "evidence:f9955f19a691a1f4:xml",
+        "evidence:fa9ee2f71faafb88:csv",
+        "evidence:fa9ee2f71faafb88:stl",
+        "evidence:fa9ee2f71faafb88:xml",
+        "evidence:interface-investigation:input:0bddd07c70ce1fe5f182",
+        "evidence:interface-investigation:input:f0bea6257ab7813726e4"
+      ],
+      "stop_reason": "已完成原网格具体结构与共同参考构型比较，保留支持/反证；固定本地原件缺少分体活动区、真实保持及机械BOM。",
+      "study_ref": "review-27d56794bd7c8a86"
+    },
+    {
+      "id": "connection-finding:f81f10dc6482cb07",
+      "review_ref": "connection-review:microduck:f81f10dc6482cb07",
+      "configuration_ref": "configuration:microduck:source-qpos0",
+      "title": "髋部件 ↔ 偏航与横滚连接件 · 已调查待证",
+      "work_status": "investigated",
+      "evidence_status": "insufficient",
+      "participants": [
+        {
+          "part_ref": "part:microduck:fa9ee2f71faafb88",
+          "feature_refs": [],
+          "opening_refs": [],
+          "site_refs": [],
+          "structure_refs": [
+            "structure:2ffd2d70d94388821cac"
+          ],
+          "position_local_m": [
+            0.017500000005070827,
+            -0.017525000497698784,
+            -6.684875973627692e-13
+          ],
+          "label": "髋部件 · 源局部有限结构",
+          "role": "local_structure_carrier",
+          "geometry_sha256": "e175896932d76dc7648cf939aa39cb7b1d188b783d91745adb9a4cec65e9052c"
+        },
+        {
+          "part_ref": "part:microduck:55970da91992f38c",
+          "feature_refs": [
+            "feature:microduck:55970da91992f38c:168f431abc3d"
+          ],
+          "opening_refs": [],
+          "site_refs": [],
+          "structure_refs": [
+            "structure:f9d862e39f1a071dfaa7"
+          ],
+          "position_local_m": [
+            0.017500000009553377,
+            -0.0019999999543971357,
+            0.01347499992698431
+          ],
+          "label": "偏航与横滚连接件 · 源局部有限结构",
+          "role": "local_structure_carrier",
+          "geometry_sha256": "6c8f193ec7cb40be0f48eeb5fba81bce2c87f12e1aab3f77f1bc4981386e1495"
+        }
+      ],
+      "local_pairings": [],
+      "geometry_observation_refs": [],
+      "reference_mount_refs": [],
+      "mechanism_candidates": [
+        {
+          "kind": "indirect_mechanism_context",
+          "status": "insufficient",
+          "summary": "可能经舵机、轴承和横滚支承件构成间接机构；当前未建立此两件的直接固定、卡扣或轴孔机制。"
+        }
+      ],
+      "roles": [
+        {
+          "role": "location",
+          "status": "geometric_support",
+          "statement": "未定位直接接触/互补结构；显示的双方轴颈仅标明实际调查区域，不声称它们相配。",
+          "participant_refs": [
+            "part:microduck:fa9ee2f71faafb88",
+            "part:microduck:55970da91992f38c"
+          ]
+        },
+        {
+          "role": "retention",
+          "status": "unknown",
+          "statement": "没有直接紧固/保持结构依据，不能套用厂家螺钉图补齐本对。",
+          "participant_refs": [
+            "part:microduck:fa9ee2f71faafb88",
+            "part:microduck:55970da91992f38c"
+          ]
+        },
+        {
+          "role": "motion",
+          "status": "unknown",
+          "statement": "仅能在更大舵机/轴承机构语境讨论相对运动，源body/相邻不能证明刚性固定。",
+          "participant_refs": [
+            "part:microduck:fa9ee2f71faafb88",
+            "part:microduck:55970da91992f38c"
+          ]
+        },
+        {
+          "role": "limit",
+          "status": "unknown",
+          "statement": "没有本对独立的止转、止推或行程限位依据。",
+          "participant_refs": [
+            "part:microduck:fa9ee2f71faafb88",
+            "part:microduck:55970da91992f38c"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "method": "实际读取双方原始 STL 并重新求三角-平面交线；在唯一来源 qpos0 下核对有限壁段、孔径与全部组距",
+          "source_refs": [
+            "SRC-000019",
+            "SRC-000046",
+            "SRC-INVESTIGATION-0BDDD07C70CE1FE5F182",
+            "SRC-INVESTIGATION-F0BEA6257AB7813726E4",
+            "SRC-MD-INDEX",
+            "SRC-MD-MJCF"
+          ],
+          "observation": "已比较双方全部有限圆柱结构：在唯一参考构型下，没有轴距≤0.15 mm且有限间隔≤5 mm的直接局部配对。 旧审查只有包围盒相关，没有geometry_observation_refs、局部孔组或补全件；共享仿真body不是物理连接依据。"
+        },
+        {
+          "method": "重新读取模型版本说明、材料总说明、HAT C1 说明与两份板级 CSV，查找该组的机械 BOM/活动区依据",
+          "source_refs": [
+            "SRC-000008",
+            "SRC-000049",
+            "SRC-000053",
+            "SRC-000054",
+            "SRC-000055"
+          ],
+          "observation": "这些原件没有该组紧固件、保持和活动区的逐孔依据；板级 BOM 不能补成机械 BOM。"
+        }
+      ],
+      "findings": [
+        "已比较双方全部有限圆柱结构：在唯一参考构型下，没有轴距≤0.15 mm且有限间隔≤5 mm的直接局部配对。",
+        "旧审查只有包围盒相关，没有geometry_observation_refs、局部孔组或补全件；共享仿真body不是物理连接依据。"
+      ],
+      "counterevidence": [
+        "包围盒重叠及共body不提供有限接触、互补尺寸或保持路径。"
+      ],
+      "alternatives": [
+        "两件可能仅在同一机构中经其他零件间接关联，也可能在不同运动构型接近；缺直接配对不代表永久不能安装。"
+      ],
+      "intermediate_components": [],
+      "missing_evidence": [
+        "同修订CAD中局部非圆面、槽或分体接触以及经过哪些实际中间件的机构链尚缺。",
+        "直接连接、紧固件或活动框架关系没有装配说明支持。"
+      ],
+      "next_actions": [
+        "按双方明确局部位置隔离/剖切，检查环、孔周端面、轴向挡肩及实际中间件；需匹配修订的分体CAD或逐件装配图。"
+      ],
+      "hypothesis_refs": [],
+      "source_refs": [
+        "SRC-000008",
+        "SRC-000019",
+        "SRC-000046",
+        "SRC-000049",
+        "SRC-000053",
+        "SRC-000054",
+        "SRC-000055",
+        "SRC-INVESTIGATION-0BDDD07C70CE1FE5F182",
+        "SRC-INVESTIGATION-F0BEA6257AB7813726E4",
+        "SRC-MD-INDEX",
+        "SRC-MD-MJCF"
+      ],
+      "evidence_refs": [
+        "evidence:07e507f1e9297aa3:csv",
+        "evidence:07e507f1e9297aa3:xml",
+        "evidence:0820b4025f26a004:csv",
+        "evidence:0820b4025f26a004:xml",
+        "evidence:087d7a46a3ce4ca3:csv",
+        "evidence:087d7a46a3ce4ca3:xml",
+        "evidence:08c5ade0f3fd37db:csv",
+        "evidence:08c5ade0f3fd37db:xml",
+        "evidence:09cb390e38430c1e:csv",
+        "evidence:09cb390e38430c1e:xml",
+        "evidence:133711c520619e45:csv",
+        "evidence:133711c520619e45:xml",
+        "evidence:203d2686e3321e4a:csv",
+        "evidence:203d2686e3321e4a:xml",
+        "evidence:22f2cd114e324ec5:csv",
+        "evidence:22f2cd114e324ec5:xml",
+        "evidence:2559a4c412bcda3e:csv",
+        "evidence:2559a4c412bcda3e:xml",
+        "evidence:2d2cde8ae8ebacac:csv",
+        "evidence:2d2cde8ae8ebacac:xml",
+        "evidence:2f557a24b2729755:csv",
+        "evidence:2f557a24b2729755:xml",
+        "evidence:328011951ac11ee7:csv",
+        "evidence:328011951ac11ee7:xml",
+        "evidence:3fbf0b5c8cea4488:csv",
+        "evidence:3fbf0b5c8cea4488:xml",
+        "evidence:41db565298264db6:csv",
+        "evidence:41db565298264db6:xml",
+        "evidence:44b5600c1a735117:csv",
+        "evidence:44b5600c1a735117:xml",
+        "evidence:47a950fbb3d0e416:csv",
+        "evidence:47a950fbb3d0e416:xml",
+        "evidence:48099e14105d3289:csv",
+        "evidence:48099e14105d3289:stl",
+        "evidence:48099e14105d3289:xml",
+        "evidence:4cef8bb24d37fe6e:csv",
+        "evidence:4cef8bb24d37fe6e:xml",
+        "evidence:4cf80d5a57c8cb04:csv",
+        "evidence:4cf80d5a57c8cb04:xml",
+        "evidence:50f0c376d01bb0c1:csv",
+        "evidence:50f0c376d01bb0c1:xml",
+        "evidence:52fdcacf474a463f:csv",
+        "evidence:52fdcacf474a463f:xml",
+        "evidence:55121c0b36f62219:csv",
+        "evidence:55121c0b36f62219:xml",
+        "evidence:554503ef38151e67:csv",
+        "evidence:554503ef38151e67:xml",
+        "evidence:55970da91992f38c:csv",
+        "evidence:55970da91992f38c:stl",
+        "evidence:55970da91992f38c:xml",
+        "evidence:638f29b46b322e64:csv",
+        "evidence:638f29b46b322e64:xml",
+        "evidence:66c73aaad945a993:csv",
+        "evidence:66c73aaad945a993:xml",
+        "evidence:6b5602b4416129fe:csv",
+        "evidence:6b5602b4416129fe:xml",
+        "evidence:6b884b140f6e283c:csv",
+        "evidence:6b884b140f6e283c:xml",
+        "evidence:7038a050dbc33fb0:csv",
+        "evidence:7038a050dbc33fb0:xml",
+        "evidence:766eaa6e4dd8b09f:csv",
+        "evidence:766eaa6e4dd8b09f:xml",
+        "evidence:78cf36c41e4fde06:csv",
+        "evidence:78cf36c41e4fde06:xml",
+        "evidence:7938fd9143c59ea4:csv",
+        "evidence:7938fd9143c59ea4:xml",
+        "evidence:7c130c8489b57c99:csv",
+        "evidence:7c130c8489b57c99:xml",
+        "evidence:7e86db28af59d3cc:csv",
+        "evidence:7e86db28af59d3cc:xml",
+        "evidence:7f4fefc3c6de90f1:csv",
+        "evidence:7f4fefc3c6de90f1:xml",
+        "evidence:82d68e991b23c2a3:csv",
+        "evidence:82d68e991b23c2a3:xml",
+        "evidence:834f5cc892eba41e:csv",
+        "evidence:834f5cc892eba41e:xml",
+        "evidence:88b7496d63cb41ff:csv",
+        "evidence:88b7496d63cb41ff:xml",
+        "evidence:8b649e45831a1972:csv",
+        "evidence:8b649e45831a1972:xml",
+        "evidence:96e22c7fa2b976d3:csv",
+        "evidence:96e22c7fa2b976d3:xml",
+        "evidence:986b5adf27910138:csv",
+        "evidence:986b5adf27910138:xml",
+        "evidence:9d70b219a5533bf1:csv",
+        "evidence:9d70b219a5533bf1:xml",
+        "evidence:9ffe9d5bcd6bc13a:csv",
+        "evidence:9ffe9d5bcd6bc13a:xml",
+        "evidence:a0775b54397eb21e:csv",
+        "evidence:a0775b54397eb21e:xml",
+        "evidence:a07b37bcb704b29f:csv",
+        "evidence:a07b37bcb704b29f:xml",
+        "evidence:a682dc3620df43f5:csv",
+        "evidence:a682dc3620df43f5:xml",
+        "evidence:afa52198f7fad203:csv",
+        "evidence:afa52198f7fad203:xml",
+        "evidence:b364863ffde63eed:csv",
+        "evidence:b364863ffde63eed:xml",
+        "evidence:b371ac60e2f6757b:csv",
+        "evidence:b371ac60e2f6757b:xml",
+        "evidence:b61b0609c61fc572:csv",
+        "evidence:b61b0609c61fc572:xml",
+        "evidence:bb34e925e25e29f6:csv",
+        "evidence:bb34e925e25e29f6:xml",
+        "evidence:c703574f50f6a46a:csv",
+        "evidence:c703574f50f6a46a:xml",
+        "evidence:c75bfc0afb35e000:csv",
+        "evidence:c75bfc0afb35e000:xml",
+        "evidence:c7eeeac0a640d191:csv",
+        "evidence:c7eeeac0a640d191:stl",
+        "evidence:c7eeeac0a640d191:xml",
+        "evidence:cb253f38c818b9d8:csv",
+        "evidence:cb253f38c818b9d8:xml",
+        "evidence:cd6d48fccc95df41:csv",
+        "evidence:cd6d48fccc95df41:xml",
+        "evidence:d4b9a9e9474a9829:csv",
+        "evidence:d4b9a9e9474a9829:xml",
+        "evidence:d6a148b5784955d8:csv",
+        "evidence:d6a148b5784955d8:xml",
+        "evidence:d924e1596ffb042a:csv",
+        "evidence:d924e1596ffb042a:xml",
+        "evidence:e196235810184adf:csv",
+        "evidence:e196235810184adf:xml",
+        "evidence:e27cbdd6c07a264e:csv",
+        "evidence:e27cbdd6c07a264e:xml",
+        "evidence:e40b9945707505e1:csv",
+        "evidence:e40b9945707505e1:xml",
+        "evidence:e475134639b3f7e1:csv",
+        "evidence:e475134639b3f7e1:xml",
+        "evidence:e7e8275c7d01674c:csv",
+        "evidence:e7e8275c7d01674c:xml",
+        "evidence:ea69e2c6bba10a23:csv",
+        "evidence:ea69e2c6bba10a23:xml",
+        "evidence:ebfcaf98422b7b28:csv",
+        "evidence:ebfcaf98422b7b28:xml",
+        "evidence:f5797f92c2bf01b8:csv",
+        "evidence:f5797f92c2bf01b8:xml",
+        "evidence:f97c1c6580d651d7:csv",
+        "evidence:f97c1c6580d651d7:xml",
+        "evidence:f9955f19a691a1f4:csv",
+        "evidence:f9955f19a691a1f4:xml",
+        "evidence:fa9ee2f71faafb88:csv",
+        "evidence:fa9ee2f71faafb88:stl",
+        "evidence:fa9ee2f71faafb88:xml",
+        "evidence:interface-investigation:input:0bddd07c70ce1fe5f182",
+        "evidence:interface-investigation:input:f0bea6257ab7813726e4"
+      ],
+      "stop_reason": "已完成原网格具体结构与共同参考构型比较，保留支持/反证；固定本地原件缺少分体活动区、真实保持及机械BOM。",
+      "study_ref": "review-f81f10dc6482cb07"
+    },
+    {
+      "id": "connection-finding:926a5beb2c028185",
+      "review_ref": "connection-review:microduck:926a5beb2c028185",
+      "configuration_ref": "configuration:microduck:source-qpos0",
+      "title": "XL330 舵机 ↔ 髋部件 · 四孔螺钉夹持假设",
+      "work_status": "investigated",
+      "evidence_status": "supported_hypothesis",
+      "participants": [
+        {
+          "part_ref": "part:microduck:9ffe9d5bcd6bc13a",
+          "feature_refs": [
+            "feature:microduck:9ffe9d5bcd6bc13a:678d6de22520",
+            "feature:microduck:9ffe9d5bcd6bc13a:c762f0d8139b",
+            "feature:microduck:9ffe9d5bcd6bc13a:ee2340944a76",
+            "feature:microduck:9ffe9d5bcd6bc13a:f4716268e4b3"
+          ],
+          "opening_refs": [],
+          "site_refs": [],
+          "structure_refs": [
+            "structure:4a14aa3c6bc59325d5ab",
+            "structure:24bcad473b6b18c584e8",
+            "structure:ca56cb9d7db8223b0398",
+            "structure:3539484151432f43bedc"
+          ],
+          "position_local_m": [
+            -0.011500000022351742,
+            2.5943000010974015e-21,
+            5.676511993416497e-21
+          ],
+          "label": "XL330 舵机 · 本次有限孔组",
+          "role": "local_structure_carrier",
+          "geometry_sha256": "96238ed0d020ce0009cf1a5aa4b6926176c800840318ee65e4375be2298d2744",
+          "annotation_refs": [
+            "CR-SECTION-009c3a4be356",
+            "CR-SECTION-3961fc6c0466",
+            "CR-SECTION-11cfcd571e90",
+            "CR-SECTION-b81891282027"
+          ]
+        },
+        {
+          "part_ref": "part:microduck:fa9ee2f71faafb88",
+          "feature_refs": [
+            "feature:microduck:fa9ee2f71faafb88:2ae52bb39653",
+            "feature:microduck:fa9ee2f71faafb88:40aa9fcc7543",
+            "feature:microduck:fa9ee2f71faafb88:968274710e8e",
+            "feature:microduck:fa9ee2f71faafb88:9e6a15bfabec"
+          ],
+          "opening_refs": [],
+          "site_refs": [],
+          "structure_refs": [
+            "structure:bb703ed1dab7f7151b2d",
+            "structure:451727d87b3cd9f77f5c",
+            "structure:434796536a6c45bbcca7",
+            "structure:11173f52f2df89abe32c"
+          ],
+          "position_local_m": [
+            0.03897500038146973,
+            -2.3250820612042498e-21,
+            6.698792707902785e-21
+          ],
+          "label": "髋部件 · 本次有限孔组",
+          "role": "local_structure_carrier",
+          "geometry_sha256": "e175896932d76dc7648cf939aa39cb7b1d188b783d91745adb9a4cec65e9052c",
+          "annotation_refs": [
+            "CR-SECTION-bbf43e18143e",
+            "CR-SECTION-59cbb62fb897",
+            "CR-SECTION-5f47efff9194",
+            "CR-SECTION-c9e78a6d87df"
+          ]
+        }
+      ],
+      "local_pairings": [
+        {
+          "participant_refs": [
+            "part:microduck:9ffe9d5bcd6bc13a",
+            "part:microduck:fa9ee2f71faafb88"
+          ],
+          "structure_refs": [
+            "structure:4a14aa3c6bc59325d5ab",
+            "structure:bb703ed1dab7f7151b2d"
+          ],
+          "feature_refs": [
+            "feature:microduck:9ffe9d5bcd6bc13a:f4716268e4b3",
+            "feature:microduck:fa9ee2f71faafb88:968274710e8e"
+          ],
+          "kinds": [
+            "bore_wall",
+            "bore_wall"
+          ],
+          "geometry_checks": [
+            {
+              "name": "孔／轴径",
+              "value": [
+                0.001600000030233365,
+                0.002399999963130545
+              ],
+              "unit": "m"
+            },
+            {
+              "name": "轴距",
+              "value": 9.463887755412794e-12,
+              "unit": "m"
+            },
+            {
+              "name": "有限间隔",
+              "value": 5.000114440918517e-05,
+              "unit": "m"
+            },
+            {
+              "name": "有限重叠",
+              "value": 0,
+              "unit": "m"
+            },
+            {
+              "name": "壁长",
+              "value": [
+                0.0059999991208314896,
+                0.0029499977827072144
+              ],
+              "unit": "m"
+            }
+          ],
+          "statement": "两侧 1.600/2.400 mm 孔壁，轴距 0.0000 mm，有限间隔 0.0500 mm，重叠 0.0000 mm。",
+          "status": "geometry_only"
+        },
+        {
+          "participant_refs": [
+            "part:microduck:9ffe9d5bcd6bc13a",
+            "part:microduck:fa9ee2f71faafb88"
+          ],
+          "structure_refs": [
+            "structure:24bcad473b6b18c584e8",
+            "structure:451727d87b3cd9f77f5c"
+          ],
+          "feature_refs": [
+            "feature:microduck:9ffe9d5bcd6bc13a:ee2340944a76",
+            "feature:microduck:fa9ee2f71faafb88:40aa9fcc7543"
+          ],
+          "kinds": [
+            "bore_wall",
+            "bore_wall"
+          ],
+          "geometry_checks": [
+            {
+              "name": "孔／轴径",
+              "value": [
+                0.001600000030233365,
+                0.002399999963130545
+              ],
+              "unit": "m"
+            },
+            {
+              "name": "轴距",
+              "value": 9.463889490136209e-12,
+              "unit": "m"
+            },
+            {
+              "name": "有限间隔",
+              "value": 5.000114440919211e-05,
+              "unit": "m"
+            },
+            {
+              "name": "有限重叠",
+              "value": 0,
+              "unit": "m"
+            },
+            {
+              "name": "壁长",
+              "value": [
+                0.0059999991208314896,
+                0.0029499977827072144
+              ],
+              "unit": "m"
+            }
+          ],
+          "statement": "两侧 1.600/2.400 mm 孔壁，轴距 0.0000 mm，有限间隔 0.0500 mm，重叠 0.0000 mm。",
+          "status": "geometry_only"
+        },
+        {
+          "participant_refs": [
+            "part:microduck:9ffe9d5bcd6bc13a",
+            "part:microduck:fa9ee2f71faafb88"
+          ],
+          "structure_refs": [
+            "structure:ca56cb9d7db8223b0398",
+            "structure:434796536a6c45bbcca7"
+          ],
+          "feature_refs": [
+            "feature:microduck:9ffe9d5bcd6bc13a:c762f0d8139b",
+            "feature:microduck:fa9ee2f71faafb88:2ae52bb39653"
+          ],
+          "kinds": [
+            "bore_wall",
+            "bore_wall"
+          ],
+          "geometry_checks": [
+            {
+              "name": "孔／轴径",
+              "value": [
+                0.001600000030233365,
+                0.002399999963130545
+              ],
+              "unit": "m"
+            },
+            {
+              "name": "轴距",
+              "value": 9.463891727235558e-12,
+              "unit": "m"
+            },
+            {
+              "name": "有限间隔",
+              "value": 5.000114440919211e-05,
+              "unit": "m"
+            },
+            {
+              "name": "有限重叠",
+              "value": 0,
+              "unit": "m"
+            },
+            {
+              "name": "壁长",
+              "value": [
+                0.0059999991208314896,
+                0.0029499977827072144
+              ],
+              "unit": "m"
+            }
+          ],
+          "statement": "两侧 1.600/2.400 mm 孔壁，轴距 0.0000 mm，有限间隔 0.0500 mm，重叠 0.0000 mm。",
+          "status": "geometry_only"
+        },
+        {
+          "participant_refs": [
+            "part:microduck:9ffe9d5bcd6bc13a",
+            "part:microduck:fa9ee2f71faafb88"
+          ],
+          "structure_refs": [
+            "structure:3539484151432f43bedc",
+            "structure:11173f52f2df89abe32c"
+          ],
+          "feature_refs": [
+            "feature:microduck:9ffe9d5bcd6bc13a:678d6de22520",
+            "feature:microduck:fa9ee2f71faafb88:9e6a15bfabec"
+          ],
+          "kinds": [
+            "bore_wall",
+            "bore_wall"
+          ],
+          "geometry_checks": [
+            {
+              "name": "孔／轴径",
+              "value": [
+                0.001600000030233365,
+                0.002399999963130545
+              ],
+              "unit": "m"
+            },
+            {
+              "name": "轴距",
+              "value": 9.463902135576475e-12,
+              "unit": "m"
+            },
+            {
+              "name": "有限间隔",
+              "value": 5.000114440919211e-05,
+              "unit": "m"
+            },
+            {
+              "name": "有限重叠",
+              "value": 0,
+              "unit": "m"
+            },
+            {
+              "name": "壁长",
+              "value": [
+                0.0059999991208314896,
+                0.0029499977827072144
+              ],
+              "unit": "m"
+            }
+          ],
+          "statement": "两侧 1.600/2.400 mm 孔壁，轴距 0.0000 mm，有限间隔 0.0500 mm，重叠 0.0000 mm。",
+          "status": "geometry_only"
+        },
+        {
+          "participant_refs": [
+            "part:microduck:9ffe9d5bcd6bc13a",
+            "part:microduck:fa9ee2f71faafb88"
+          ],
+          "structure_refs": [
+            "structure:68d70208a170322b2a42",
+            "structure:e0564288c2c04c8a5954"
+          ],
+          "feature_refs": [
+            "feature:microduck:9ffe9d5bcd6bc13a:4c6adb5a4bd2"
+          ],
+          "kinds": [
+            "shaft_wall",
+            "shaft_wall"
+          ],
+          "geometry_checks": [
+            {
+              "name": "孔／轴径",
+              "value": [
+                0.01599999984695226,
+                0.015999999847990422
+              ],
+              "unit": "m"
+            },
+            {
+              "name": "轴距",
+              "value": 5.156038420690883e-13,
+              "unit": "m"
+            },
+            {
+              "name": "有限间隔",
+              "value": 5.000114440919254e-05,
+              "unit": "m"
+            },
+            {
+              "name": "有限重叠",
+              "value": 0,
+              "unit": "m"
+            },
+            {
+              "name": "壁长",
+              "value": [
+                0.0029999995604157448,
+                0.0019499994814395905
+              ],
+              "unit": "m"
+            }
+          ],
+          "statement": "两侧 16.000/16.000 mm 圆柱结构，轴距 0.0000 mm，有限间隔 0.0500 mm，重叠 0.0000 mm。",
+          "status": "geometry_only"
+        },
+        {
+          "participant_refs": [
+            "part:microduck:9ffe9d5bcd6bc13a",
+            "part:microduck:fa9ee2f71faafb88"
+          ],
+          "structure_refs": [
+            "structure:68d70208a170322b2a42",
+            "structure:db99e1c9109bfad3ba8a"
+          ],
+          "feature_refs": [
+            "feature:microduck:9ffe9d5bcd6bc13a:4c6adb5a4bd2",
+            "feature:microduck:fa9ee2f71faafb88:ab529a63313e"
+          ],
+          "kinds": [
+            "shaft_wall",
+            "bore_wall"
+          ],
+          "geometry_checks": [
+            {
+              "name": "孔／轴径",
+              "value": [
+                0.01599999984695226,
+                0.00599999993287064
+              ],
+              "unit": "m"
+            },
+            {
+              "name": "轴距",
+              "value": 3.2115194498539047e-11,
+              "unit": "m"
+            },
+            {
+              "name": "有限间隔",
+              "value": 5.000114440919254e-05,
+              "unit": "m"
+            },
+            {
+              "name": "有限重叠",
+              "value": 0,
+              "unit": "m"
+            },
+            {
+              "name": "壁长",
+              "value": [
+                0.0029999995604157448,
+                0.0019499994814395905
+              ],
+              "unit": "m"
+            }
+          ],
+          "statement": "两侧 16.000/6.000 mm 圆柱结构，轴距 0.0000 mm，有限间隔 0.0500 mm，重叠 0.0000 mm。",
+          "status": "geometry_only"
+        },
+        {
+          "participant_refs": [
+            "part:microduck:9ffe9d5bcd6bc13a",
+            "part:microduck:fa9ee2f71faafb88"
+          ],
+          "structure_refs": [
+            "structure:68d70208a170322b2a42",
+            "structure:83c72207d3a7869dfff7"
+          ],
+          "feature_refs": [
+            "feature:microduck:9ffe9d5bcd6bc13a:4c6adb5a4bd2",
+            "feature:microduck:fa9ee2f71faafb88:ec1d9aeca1f6"
+          ],
+          "kinds": [
+            "shaft_wall",
+            "shaft_wall"
+          ],
+          "geometry_checks": [
+            {
+              "name": "孔／轴径",
+              "value": [
+                0.01599999984695226,
+                0.01899999949920251
+              ],
+              "unit": "m"
+            },
+            {
+              "name": "轴距",
+              "value": 1.0547357758017295e-10,
+              "unit": "m"
+            },
+            {
+              "name": "有限间隔",
+              "value": 0.0020000006258487687,
+              "unit": "m"
+            },
+            {
+              "name": "有限重叠",
+              "value": 0,
+              "unit": "m"
+            },
+            {
+              "name": "壁长",
+              "value": [
+                0.0029999995604157448,
+                0.0005000010132789612
+              ],
+              "unit": "m"
+            }
+          ],
+          "statement": "两侧 16.000/19.000 mm 圆柱结构，轴距 0.0000 mm，有限间隔 2.0000 mm，重叠 0.0000 mm。",
+          "status": "geometry_only"
+        },
+        {
+          "participant_refs": [
+            "part:microduck:9ffe9d5bcd6bc13a",
+            "part:microduck:fa9ee2f71faafb88"
+          ],
+          "structure_refs": [
+            "structure:4a14aa3c6bc59325d5ab",
+            "structure:8df298a7e66fd664aa57"
+          ],
+          "feature_refs": [
+            "feature:microduck:9ffe9d5bcd6bc13a:f4716268e4b3",
+            "feature:microduck:fa9ee2f71faafb88:f3519facbf1d"
+          ],
+          "kinds": [
+            "bore_wall",
+            "bore_wall"
+          ],
+          "geometry_checks": [
+            {
+              "name": "孔／轴径",
+              "value": [
+                0.001600000030233365,
+                0.004839999952177426
+              ],
+              "unit": "m"
+            },
+            {
+              "name": "轴距",
+              "value": 1.62200942871465e-11,
+              "unit": "m"
+            },
+            {
+              "name": "有限间隔",
+              "value": 0.002999998927116384,
+              "unit": "m"
+            },
+            {
+              "name": "有限重叠",
+              "value": 0,
+              "unit": "m"
+            },
+            {
+              "name": "壁长",
+              "value": [
+                0.0059999991208314896,
+                0.0032999999821186066
+              ],
+              "unit": "m"
+            }
+          ],
+          "statement": "两侧 1.600/4.840 mm 孔壁，轴距 0.0000 mm，有限间隔 3.0000 mm，重叠 0.0000 mm。",
+          "status": "geometry_only"
+        },
+        {
+          "participant_refs": [
+            "part:microduck:9ffe9d5bcd6bc13a",
+            "part:microduck:fa9ee2f71faafb88"
+          ],
+          "structure_refs": [
+            "structure:ca56cb9d7db8223b0398",
+            "structure:59fb588a4d559a1107d7"
+          ],
+          "feature_refs": [
+            "feature:microduck:9ffe9d5bcd6bc13a:c762f0d8139b",
+            "feature:microduck:fa9ee2f71faafb88:d0acc192b12c"
+          ],
+          "kinds": [
+            "bore_wall",
+            "bore_wall"
+          ],
+          "geometry_checks": [
+            {
+              "name": "孔／轴径",
+              "value": [
+                0.001600000030233365,
+                0.004839999952177426
+              ],
+              "unit": "m"
+            },
+            {
+              "name": "轴距",
+              "value": 1.6220100340637328e-11,
+              "unit": "m"
+            },
+            {
+              "name": "有限间隔",
+              "value": 0.002999998927116391,
+              "unit": "m"
+            },
+            {
+              "name": "有限重叠",
+              "value": 0,
+              "unit": "m"
+            },
+            {
+              "name": "壁长",
+              "value": [
+                0.0059999991208314896,
+                0.0032999999821186066
+              ],
+              "unit": "m"
+            }
+          ],
+          "statement": "两侧 1.600/4.840 mm 孔壁，轴距 0.0000 mm，有限间隔 3.0000 mm，重叠 0.0000 mm。",
+          "status": "geometry_only"
+        },
+        {
+          "participant_refs": [
+            "part:microduck:9ffe9d5bcd6bc13a",
+            "part:microduck:fa9ee2f71faafb88"
+          ],
+          "structure_refs": [
+            "structure:3539484151432f43bedc",
+            "structure:ccc6efa04a75341a388b"
+          ],
+          "feature_refs": [
+            "feature:microduck:9ffe9d5bcd6bc13a:678d6de22520",
+            "feature:microduck:fa9ee2f71faafb88:7f1abed92893"
+          ],
+          "kinds": [
+            "bore_wall",
+            "bore_wall"
+          ],
+          "geometry_checks": [
+            {
+              "name": "孔／轴径",
+              "value": [
+                0.001600000030233365,
+                0.004839999952177426
+              ],
+              "unit": "m"
+            },
+            {
+              "name": "轴距",
+              "value": 1.6220109014254757e-11,
+              "unit": "m"
+            },
+            {
+              "name": "有限间隔",
+              "value": 0.002999998927116391,
+              "unit": "m"
+            },
+            {
+              "name": "有限重叠",
+              "value": 0,
+              "unit": "m"
+            },
+            {
+              "name": "壁长",
+              "value": [
+                0.0059999991208314896,
+                0.0032999999821186066
+              ],
+              "unit": "m"
+            }
+          ],
+          "statement": "两侧 1.600/4.840 mm 孔壁，轴距 0.0000 mm，有限间隔 3.0000 mm，重叠 0.0000 mm。",
+          "status": "geometry_only"
+        },
+        {
+          "participant_refs": [
+            "part:microduck:9ffe9d5bcd6bc13a",
+            "part:microduck:fa9ee2f71faafb88"
+          ],
+          "structure_refs": [
+            "structure:24bcad473b6b18c584e8",
+            "structure:5be1aef05a79729248ee"
+          ],
+          "feature_refs": [
+            "feature:microduck:9ffe9d5bcd6bc13a:ee2340944a76",
+            "feature:microduck:fa9ee2f71faafb88:6e552d1db777"
+          ],
+          "kinds": [
+            "bore_wall",
+            "bore_wall"
+          ],
+          "geometry_checks": [
+            {
+              "name": "孔／轴径",
+              "value": [
+                0.001600000030233365,
+                0.004840684649455233
+              ],
+              "unit": "m"
+            },
+            {
+              "name": "轴距",
+              "value": 4.99391038359795e-07,
+              "unit": "m"
+            },
+            {
+              "name": "有限间隔",
+              "value": 0.002999998927116391,
+              "unit": "m"
+            },
+            {
+              "name": "有限重叠",
+              "value": 0,
+              "unit": "m"
+            },
+            {
+              "name": "壁长",
+              "value": [
+                0.0059999991208314896,
+                0.003318190574645996
+              ],
+              "unit": "m"
+            }
+          ],
+          "statement": "两侧 1.600/4.841 mm 孔壁，轴距 0.0005 mm，有限间隔 3.0000 mm，重叠 0.0000 mm。",
+          "status": "geometry_only"
+        }
+      ],
+      "geometry_observation_refs": [
+        "reference-observation:microduck:0b2b6325b6e3b76b",
+        "reference-observation:microduck:abbbd288302590d2",
+        "reference-observation:microduck:5f35e1b4a5bc8b62",
+        "reference-observation:microduck:aff4871daa1c4691"
+      ],
+      "reference_mount_refs": [],
+      "mechanism_candidates": [
+        {
+          "kind": "screw_clamp",
+          "status": "supported_hypothesis",
+          "summary": "螺钉通过髋部件的本组大孔，进入XL330 舵机接收结构形成夹持。有几何与一般机制依据，实际保持未知。"
+        }
+      ],
+      "roles": [
+        {
+          "role": "location",
+          "status": "supported_hypothesis",
+          "statement": "4组有限孔壁和所有对应轴/组距为连接件轴线与板件相位提供几何定位解释；未将源body当固定依据。",
+          "participant_refs": [
+            "part:microduck:9ffe9d5bcd6bc13a",
+            "part:microduck:fa9ee2f71faafb88"
+          ]
+        },
+        {
+          "role": "retention",
+          "status": "unknown",
+          "statement": "条件性保持路径为螺钉头压板→接收螺纹/螺母；源模型无螺钉及螺纹，实际夹紧、抗拔与承载仍未知。",
+          "participant_refs": [
+            "part:microduck:9ffe9d5bcd6bc13a",
+            "part:microduck:fa9ee2f71faafb88"
+          ]
+        },
+        {
+          "role": "motion",
+          "status": "unknown",
+          "statement": "必须分别确认舵机壳体/输出件的局部归属；同一个STL网格或同一个仿真body不证明整件刚性随动。",
+          "participant_refs": [
+            "part:microduck:9ffe9d5bcd6bc13a",
+            "part:microduck:fa9ee2f71faafb88"
+          ]
+        },
+        {
+          "role": "limit",
+          "status": "unknown",
+          "statement": "孔壁、台阶或扩口不自动证明行程限位、止转或允许旋入深度，需核对实物承座与干涉。",
+          "participant_refs": [
+            "part:microduck:9ffe9d5bcd6bc13a",
+            "part:microduck:fa9ee2f71faafb88"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "method": "实际读取双方原始 STL 并重新求三角-平面交线；在唯一来源 qpos0 下核对有限壁段、孔径与全部组距",
+          "source_refs": [
+            "SRC-000019",
+            "SRC-000045",
+            "SRC-INVESTIGATION-0BDDD07C70CE1FE5F182",
+            "SRC-INVESTIGATION-F0BEA6257AB7813726E4",
+            "SRC-MD-INDEX",
+            "SRC-MD-MJCF"
+          ],
+          "observation": "双方具体源局部位置：XL330 舵机 (-11.500, 6.000, 0.000) mm；(-11.500, 0.000, -6.000) mm；(-11.500, 0.000, 6.000) mm；(-11.500, -6.000, -0.000) mm；髋部件 (38.975, 0.000, 6.000) mm；(38.975, 6.000, 0.000) mm；(38.975, -6.000, 0.000) mm；(38.975, -0.000, -6.000) mm。 实际独立截面及共同构型比较了 4 组有限孔壁。两侧 1.600/2.400 mm 孔壁，轴距 0.0000 mm，有限间隔 0.0500 mm，重叠 0.0000 mm。 两侧 1.600/2.400 mm 孔壁，轴距 0.0000 mm，有限间隔 0.0500 mm，重叠 0.0000 mm。 两侧 1.600/2.400 mm 孔壁，轴距 0.0000 mm，有限间隔 0.0500 mm，重叠 0.0000 mm。 两侧 1.600/2.400 mm 孔壁，轴距 0.0000 mm，有限间隔 0.0500 mm，重叠 0.0000 mm。 四条轴线与孔组在一个固定构型中对应；Ø1.6 mm接收孔/较大通过孔与厂家穿板装配图共同支持螺钉夹持解释，不确认实物螺纹或紧固。"
+        },
+        {
+          "method": "重新读取模型版本说明、材料总说明、HAT C1 说明与两份板级 CSV，查找该组的机械 BOM/活动区依据",
+          "source_refs": [
+            "SRC-000008",
+            "SRC-000049",
+            "SRC-000053",
+            "SRC-000054",
+            "SRC-000055"
+          ],
+          "observation": "这些原件没有该组紧固件、保持和活动区的逐孔依据；板级 BOM 不能补成机械 BOM。"
+        },
+        {
+          "method": "实际查看固定 ROBOTIS 前后框架/惰轮装配图及舵盘螺钉图，比较穿板接收机制与长度限制",
+          "source_refs": [
+            "SRC-MD-XL330-ASSEMBLY-DRAWING",
+            "SRC-MD-XL330-HORN-SCREW"
+          ],
+          "observation": "原图支持穿板进入舵机接收结构的机制；前后框架、惰轮盖与舵盘不可混为同一活动区域，图上螺钉规格/数量不直接移植。"
+        }
+      ],
+      "findings": [
+        "双方具体源局部位置：XL330 舵机 (-11.500, 6.000, 0.000) mm；(-11.500, 0.000, -6.000) mm；(-11.500, 0.000, 6.000) mm；(-11.500, -6.000, -0.000) mm；髋部件 (38.975, 0.000, 6.000) mm；(38.975, 6.000, 0.000) mm；(38.975, -6.000, 0.000) mm；(38.975, -0.000, -6.000) mm。",
+        "实际独立截面及共同构型比较了 4 组有限孔壁。两侧 1.600/2.400 mm 孔壁，轴距 0.0000 mm，有限间隔 0.0500 mm，重叠 0.0000 mm。 两侧 1.600/2.400 mm 孔壁，轴距 0.0000 mm，有限间隔 0.0500 mm，重叠 0.0000 mm。 两侧 1.600/2.400 mm 孔壁，轴距 0.0000 mm，有限间隔 0.0500 mm，重叠 0.0000 mm。 两侧 1.600/2.400 mm 孔壁，轴距 0.0000 mm，有限间隔 0.0500 mm，重叠 0.0000 mm。",
+        "四条轴线与孔组在一个固定构型中对应；Ø1.6 mm接收孔/较大通过孔与厂家穿板装配图共同支持螺钉夹持解释，不确认实物螺纹或紧固。"
+      ],
+      "counterevidence": [
+        "STL为简化的参考外形，所见圆柱不包含制造螺纹、真实紧固件或预紧；几何阈值不是公差。"
+      ],
+      "alternatives": [
+        "也可能通过分离舵盘、独立嵌件或穿透螺钉/螺母承接；这些部件在当前源模型未分体确认。"
+      ],
+      "intermediate_components": [
+        {
+          "kind": "screw",
+          "requirement": "required",
+          "status": "unconfirmed",
+          "statement": "若采用所述夹持机制，必须有独立螺钉；实际数量、规格及保持状态没有BOM依据。"
+        }
+      ],
+      "missing_evidence": [
+        "髋部件这组孔的装入侧、完整头部承座及实际使用孔数尚未由装配图确认。",
+        "XL330 舵机对应孔的实际螺纹/螺母/嵌件身份、螺钉长度、材料与制造公差缺证。",
+        "该局部接收区域归舵机壳体、输出舵盘还是其他活动件，以及实际保持、限位、连续路径与载荷未确认。"
+      ],
+      "next_actions": [
+        "按列出的局部坐标复核XL330 舵机内外侧承座/入口；取得同修订分体CAD或逐孔装配图以确认接收区域和真实紧固件。",
+        "按列出的局部坐标复核髋部件内外侧承座/入口；取得同修订分体CAD或逐孔装配图以确认接收区域和真实紧固件。"
+      ],
+      "hypothesis_refs": [
+        "installation-hypothesis:review-926a5beb2c028185"
+      ],
+      "source_refs": [
+        "SRC-000008",
+        "SRC-000019",
+        "SRC-000045",
+        "SRC-000049",
+        "SRC-000053",
+        "SRC-000054",
+        "SRC-000055",
+        "SRC-INVESTIGATION-0BDDD07C70CE1FE5F182",
+        "SRC-INVESTIGATION-F0BEA6257AB7813726E4",
+        "SRC-MD-INDEX",
+        "SRC-MD-MJCF",
+        "SRC-MD-XL330-ASSEMBLY-DRAWING",
+        "SRC-MD-XL330-HORN-SCREW"
+      ],
+      "evidence_refs": [
+        "evidence:07e507f1e9297aa3:csv",
+        "evidence:07e507f1e9297aa3:xml",
+        "evidence:0820b4025f26a004:csv",
+        "evidence:0820b4025f26a004:stl",
+        "evidence:0820b4025f26a004:xml",
+        "evidence:087d7a46a3ce4ca3:csv",
+        "evidence:087d7a46a3ce4ca3:stl",
+        "evidence:087d7a46a3ce4ca3:xml",
+        "evidence:08c5ade0f3fd37db:csv",
+        "evidence:08c5ade0f3fd37db:stl",
+        "evidence:08c5ade0f3fd37db:xml",
+        "evidence:09cb390e38430c1e:csv",
+        "evidence:09cb390e38430c1e:stl",
+        "evidence:09cb390e38430c1e:xml",
+        "evidence:133711c520619e45:csv",
+        "evidence:133711c520619e45:xml",
+        "evidence:203d2686e3321e4a:csv",
+        "evidence:203d2686e3321e4a:xml",
+        "evidence:22f2cd114e324ec5:csv",
+        "evidence:22f2cd114e324ec5:xml",
+        "evidence:2559a4c412bcda3e:csv",
+        "evidence:2559a4c412bcda3e:xml",
+        "evidence:2d2cde8ae8ebacac:csv",
+        "evidence:2d2cde8ae8ebacac:xml",
+        "evidence:2f557a24b2729755:csv",
+        "evidence:2f557a24b2729755:xml",
+        "evidence:328011951ac11ee7:csv",
+        "evidence:328011951ac11ee7:xml",
+        "evidence:3fbf0b5c8cea4488:csv",
+        "evidence:3fbf0b5c8cea4488:xml",
+        "evidence:41db565298264db6:csv",
+        "evidence:41db565298264db6:xml",
+        "evidence:44b5600c1a735117:csv",
+        "evidence:44b5600c1a735117:stl",
+        "evidence:44b5600c1a735117:xml",
+        "evidence:47a950fbb3d0e416:csv",
+        "evidence:47a950fbb3d0e416:xml",
+        "evidence:48099e14105d3289:csv",
+        "evidence:48099e14105d3289:xml",
+        "evidence:4cef8bb24d37fe6e:csv",
+        "evidence:4cef8bb24d37fe6e:stl",
+        "evidence:4cef8bb24d37fe6e:xml",
+        "evidence:4cf80d5a57c8cb04:csv",
+        "evidence:4cf80d5a57c8cb04:stl",
+        "evidence:4cf80d5a57c8cb04:xml",
+        "evidence:50f0c376d01bb0c1:csv",
+        "evidence:50f0c376d01bb0c1:stl",
+        "evidence:50f0c376d01bb0c1:xml",
+        "evidence:52fdcacf474a463f:csv",
+        "evidence:52fdcacf474a463f:xml",
+        "evidence:55121c0b36f62219:csv",
+        "evidence:55121c0b36f62219:xml",
+        "evidence:554503ef38151e67:csv",
+        "evidence:554503ef38151e67:xml",
+        "evidence:55970da91992f38c:csv",
+        "evidence:55970da91992f38c:xml",
+        "evidence:638f29b46b322e64:csv",
+        "evidence:638f29b46b322e64:xml",
+        "evidence:66c73aaad945a993:csv",
+        "evidence:66c73aaad945a993:xml",
+        "evidence:6b5602b4416129fe:csv",
+        "evidence:6b5602b4416129fe:xml",
+        "evidence:6b884b140f6e283c:csv",
+        "evidence:6b884b140f6e283c:xml",
+        "evidence:7038a050dbc33fb0:csv",
+        "evidence:7038a050dbc33fb0:stl",
+        "evidence:7038a050dbc33fb0:xml",
+        "evidence:766eaa6e4dd8b09f:csv",
+        "evidence:766eaa6e4dd8b09f:xml",
+        "evidence:78cf36c41e4fde06:csv",
+        "evidence:78cf36c41e4fde06:xml",
+        "evidence:7938fd9143c59ea4:csv",
+        "evidence:7938fd9143c59ea4:xml",
+        "evidence:7c130c8489b57c99:csv",
+        "evidence:7c130c8489b57c99:stl",
+        "evidence:7c130c8489b57c99:xml",
+        "evidence:7e86db28af59d3cc:csv",
+        "evidence:7e86db28af59d3cc:xml",
+        "evidence:7f4fefc3c6de90f1:csv",
+        "evidence:7f4fefc3c6de90f1:xml",
+        "evidence:82d68e991b23c2a3:csv",
+        "evidence:82d68e991b23c2a3:xml",
+        "evidence:834f5cc892eba41e:csv",
+        "evidence:834f5cc892eba41e:xml",
+        "evidence:88b7496d63cb41ff:csv",
+        "evidence:88b7496d63cb41ff:xml",
+        "evidence:8b649e45831a1972:csv",
+        "evidence:8b649e45831a1972:xml",
+        "evidence:96e22c7fa2b976d3:csv",
+        "evidence:96e22c7fa2b976d3:stl",
+        "evidence:96e22c7fa2b976d3:xml",
+        "evidence:986b5adf27910138:csv",
+        "evidence:986b5adf27910138:xml",
+        "evidence:9d70b219a5533bf1:csv",
+        "evidence:9d70b219a5533bf1:xml",
+        "evidence:9ffe9d5bcd6bc13a:csv",
+        "evidence:9ffe9d5bcd6bc13a:stl",
+        "evidence:9ffe9d5bcd6bc13a:xml",
+        "evidence:a0775b54397eb21e:csv",
+        "evidence:a0775b54397eb21e:xml",
+        "evidence:a07b37bcb704b29f:csv",
+        "evidence:a07b37bcb704b29f:stl",
+        "evidence:a07b37bcb704b29f:xml",
+        "evidence:a682dc3620df43f5:csv",
+        "evidence:a682dc3620df43f5:stl",
+        "evidence:a682dc3620df43f5:xml",
+        "evidence:afa52198f7fad203:csv",
+        "evidence:afa52198f7fad203:xml",
+        "evidence:b364863ffde63eed:csv",
+        "evidence:b364863ffde63eed:xml",
+        "evidence:b371ac60e2f6757b:csv",
+        "evidence:b371ac60e2f6757b:xml",
+        "evidence:b61b0609c61fc572:csv",
+        "evidence:b61b0609c61fc572:xml",
+        "evidence:bb34e925e25e29f6:csv",
+        "evidence:bb34e925e25e29f6:xml",
+        "evidence:c703574f50f6a46a:csv",
+        "evidence:c703574f50f6a46a:xml",
+        "evidence:c75bfc0afb35e000:csv",
+        "evidence:c75bfc0afb35e000:xml",
+        "evidence:c7eeeac0a640d191:csv",
+        "evidence:c7eeeac0a640d191:stl",
+        "evidence:c7eeeac0a640d191:xml",
+        "evidence:cb253f38c818b9d8:csv",
+        "evidence:cb253f38c818b9d8:xml",
+        "evidence:cd6d48fccc95df41:csv",
+        "evidence:cd6d48fccc95df41:stl",
+        "evidence:cd6d48fccc95df41:xml",
+        "evidence:d4b9a9e9474a9829:csv",
+        "evidence:d4b9a9e9474a9829:xml",
+        "evidence:d6a148b5784955d8:csv",
+        "evidence:d6a148b5784955d8:xml",
+        "evidence:d924e1596ffb042a:csv",
+        "evidence:d924e1596ffb042a:xml",
+        "evidence:e196235810184adf:csv",
+        "evidence:e196235810184adf:xml",
+        "evidence:e27cbdd6c07a264e:csv",
+        "evidence:e27cbdd6c07a264e:xml",
+        "evidence:e40b9945707505e1:csv",
+        "evidence:e40b9945707505e1:xml",
+        "evidence:e475134639b3f7e1:csv",
+        "evidence:e475134639b3f7e1:xml",
+        "evidence:e7e8275c7d01674c:csv",
+        "evidence:e7e8275c7d01674c:xml",
+        "evidence:ea69e2c6bba10a23:csv",
+        "evidence:ea69e2c6bba10a23:xml",
+        "evidence:ebfcaf98422b7b28:csv",
+        "evidence:ebfcaf98422b7b28:xml",
+        "evidence:f5797f92c2bf01b8:csv",
+        "evidence:f5797f92c2bf01b8:xml",
+        "evidence:f97c1c6580d651d7:csv",
+        "evidence:f97c1c6580d651d7:xml",
+        "evidence:f9955f19a691a1f4:csv",
+        "evidence:f9955f19a691a1f4:xml",
+        "evidence:fa9ee2f71faafb88:csv",
+        "evidence:fa9ee2f71faafb88:stl",
+        "evidence:fa9ee2f71faafb88:xml",
+        "evidence:interface-investigation:input:0bddd07c70ce1fe5f182",
+        "evidence:interface-investigation:input:f0bea6257ab7813726e4",
+        "evidence:microduck:supporting-document:SRC-MD-XL330-ASSEMBLY-DRAWING",
+        "evidence:microduck:supporting-document:SRC-MD-XL330-HORN-SCREW"
+      ],
+      "stop_reason": "已执行原STL独立截面、完整共同位姿/孔组、版本与厂家机制图比较；固定原件没有实际螺纹、保持及活动区资料。",
+      "study_ref": "review-926a5beb2c028185"
+    },
+    {
+      "id": "connection-finding:c2e8a8093a4b8563",
+      "review_ref": "connection-review:microduck:c2e8a8093a4b8563",
+      "configuration_ref": "configuration:microduck:source-qpos0",
+      "title": "髋部件 ↔ 轴承外形（22×16×4 配置名） · 已调查待证",
+      "work_status": "investigated",
+      "evidence_status": "insufficient",
+      "participants": [
+        {
+          "part_ref": "part:microduck:fa9ee2f71faafb88",
+          "feature_refs": [],
+          "opening_refs": [],
+          "site_refs": [],
+          "structure_refs": [
+            "structure:e0564288c2c04c8a5954"
+          ],
+          "position_local_m": [
+            0.03947499953210354,
+            3.6458831694776914e-13,
+            3.6458822208007904e-13
+          ],
+          "label": "髋部件 · 源局部有限结构",
+          "role": "local_structure_carrier",
+          "geometry_sha256": "e175896932d76dc7648cf939aa39cb7b1d188b783d91745adb9a4cec65e9052c"
+        },
+        {
+          "part_ref": "part:microduck:bb34e925e25e29f6",
+          "feature_refs": [
+            "feature:microduck:bb34e925e25e29f6:dcf8d998412a"
+          ],
+          "opening_refs": [],
+          "site_refs": [],
+          "structure_refs": [
+            "structure:1a05480e3155c0e0fd45"
+          ],
+          "position_local_m": [
+            2.2968722047256557e-38,
+            1.37802427771761e-19,
+            0.002000000029511284
+          ],
+          "label": "轴承外形（22×16×4 配置名） · 源局部有限结构",
+          "role": "local_structure_carrier",
+          "geometry_sha256": "295ee68ed9766c91fe06d3a2a49d39f7c2f56cc943395d293afdeb013123435e"
+        }
+      ],
+      "local_pairings": [
+        {
+          "participant_refs": [
+            "part:microduck:bb34e925e25e29f6",
+            "part:microduck:fa9ee2f71faafb88"
+          ],
+          "structure_refs": [
+            "structure:1c6b98d9632ff8dda726",
+            "structure:e0564288c2c04c8a5954"
+          ],
+          "feature_refs": [
+            "feature:microduck:bb34e925e25e29f6:4b70f665bd37"
+          ],
+          "kinds": [
+            "shaft_wall",
+            "shaft_wall"
+          ],
+          "geometry_checks": [
+            {
+              "name": "孔／轴径",
+              "value": [
+                0.022000000209829736,
+                0.015999999847990422
+              ],
+              "unit": "m"
+            },
+            {
+              "name": "轴距",
+              "value": 5.156037243063025e-13,
+              "unit": "m"
+            },
+            {
+              "name": "有限间隔",
+              "value": 0,
+              "unit": "m"
+            },
+            {
+              "name": "有限重叠",
+              "value": 0.0016499992585740923,
+              "unit": "m"
+            },
+            {
+              "name": "壁长",
+              "value": [
+                0.0033999999868683517,
+                0.0019499994814395905
+              ],
+              "unit": "m"
+            }
+          ],
+          "statement": "两侧 22.000/16.000 mm 圆柱结构，轴距 0.0000 mm，有限间隔 0.0000 mm，重叠 1.6500 mm。",
+          "status": "geometry_only"
+        },
+        {
+          "participant_refs": [
+            "part:microduck:bb34e925e25e29f6",
+            "part:microduck:fa9ee2f71faafb88"
+          ],
+          "structure_refs": [
+            "structure:1a05480e3155c0e0fd45",
+            "structure:e0564288c2c04c8a5954"
+          ],
+          "feature_refs": [
+            "feature:microduck:bb34e925e25e29f6:dcf8d998412a"
+          ],
+          "kinds": [
+            "bore_wall",
+            "shaft_wall"
+          ],
+          "geometry_checks": [
+            {
+              "name": "孔／轴径",
+              "value": [
+                0.01599999984695226,
+                0.015999999847990422
+              ],
+              "unit": "m"
+            },
+            {
+              "name": "轴距",
+              "value": 5.156037243063042e-13,
+              "unit": "m"
+            },
+            {
+              "name": "有限间隔",
+              "value": 0,
+              "unit": "m"
+            },
+            {
+              "name": "有限重叠",
+              "value": 0.0017499992778757527,
+              "unit": "m"
+            },
+            {
+              "name": "壁长",
+              "value": [
+                0.003600000069127418,
+                0.0019499994814395905
+              ],
+              "unit": "m"
+            }
+          ],
+          "statement": "两侧 16.000/16.000 mm 圆柱结构，轴距 0.0000 mm，有限间隔 0.0000 mm，重叠 1.7500 mm。",
+          "status": "geometry_only"
+        },
+        {
+          "participant_refs": [
+            "part:microduck:bb34e925e25e29f6",
+            "part:microduck:fa9ee2f71faafb88"
+          ],
+          "structure_refs": [
+            "structure:1a05480e3155c0e0fd45",
+            "structure:db99e1c9109bfad3ba8a"
+          ],
+          "feature_refs": [
+            "feature:microduck:bb34e925e25e29f6:dcf8d998412a",
+            "feature:microduck:fa9ee2f71faafb88:ab529a63313e"
+          ],
+          "kinds": [
+            "bore_wall",
+            "bore_wall"
+          ],
+          "geometry_checks": [
+            {
+              "name": "孔／轴径",
+              "value": [
+                0.01599999984695226,
+                0.00599999993287064
+              ],
+              "unit": "m"
+            },
+            {
+              "name": "轴距",
+              "value": 3.211519461567297e-11,
+              "unit": "m"
+            },
+            {
+              "name": "有限间隔",
+              "value": 0,
+              "unit": "m"
+            },
+            {
+              "name": "有限重叠",
+              "value": 0.0017499992778757527,
+              "unit": "m"
+            },
+            {
+              "name": "壁长",
+              "value": [
+                0.003600000069127418,
+                0.0019499994814395905
+              ],
+              "unit": "m"
+            }
+          ],
+          "statement": "两侧 16.000/6.000 mm 孔壁，轴距 0.0000 mm，有限间隔 0.0000 mm，重叠 1.7500 mm。",
+          "status": "geometry_only"
+        },
+        {
+          "participant_refs": [
+            "part:microduck:bb34e925e25e29f6",
+            "part:microduck:fa9ee2f71faafb88"
+          ],
+          "structure_refs": [
+            "structure:1c6b98d9632ff8dda726",
+            "structure:db99e1c9109bfad3ba8a"
+          ],
+          "feature_refs": [
+            "feature:microduck:bb34e925e25e29f6:4b70f665bd37",
+            "feature:microduck:fa9ee2f71faafb88:ab529a63313e"
+          ],
+          "kinds": [
+            "shaft_wall",
+            "bore_wall"
+          ],
+          "geometry_checks": [
+            {
+              "name": "孔／轴径",
+              "value": [
+                0.022000000209829736,
+                0.00599999993287064
+              ],
+              "unit": "m"
+            },
+            {
+              "name": "轴距",
+              "value": 3.211519461567297e-11,
+              "unit": "m"
+            },
+            {
+              "name": "有限间隔",
+              "value": 0,
+              "unit": "m"
+            },
+            {
+              "name": "有限重叠",
+              "value": 0.0016499992585740923,
+              "unit": "m"
+            },
+            {
+              "name": "壁长",
+              "value": [
+                0.0033999999868683517,
+                0.0019499994814395905
+              ],
+              "unit": "m"
+            }
+          ],
+          "statement": "两侧 22.000/6.000 mm 圆柱结构，轴距 0.0000 mm，有限间隔 0.0000 mm，重叠 1.6500 mm。",
+          "status": "geometry_only"
+        },
+        {
+          "participant_refs": [
+            "part:microduck:bb34e925e25e29f6",
+            "part:microduck:fa9ee2f71faafb88"
+          ],
+          "structure_refs": [
+            "structure:1a05480e3155c0e0fd45",
+            "structure:83c72207d3a7869dfff7"
+          ],
+          "feature_refs": [
+            "feature:microduck:bb34e925e25e29f6:dcf8d998412a",
+            "feature:microduck:fa9ee2f71faafb88:ec1d9aeca1f6"
+          ],
+          "kinds": [
+            "bore_wall",
+            "shaft_wall"
+          ],
+          "geometry_checks": [
+            {
+              "name": "孔／轴径",
+              "value": [
+                0.01599999984695226,
+                0.01899999949920251
+              ],
+              "unit": "m"
+            },
+            {
+              "name": "轴距",
+              "value": 1.0547357766343964e-10,
+              "unit": "m"
+            },
+            {
+              "name": "有限间隔",
+              "value": 0.00020000020356382344,
+              "unit": "m"
+            },
+            {
+              "name": "有限重叠",
+              "value": 0,
+              "unit": "m"
+            },
+            {
+              "name": "壁长",
+              "value": [
+                0.003600000069127418,
+                0.0005000010132789612
+              ],
+              "unit": "m"
+            }
+          ],
+          "statement": "两侧 16.000/19.000 mm 圆柱结构，轴距 0.0000 mm，有限间隔 0.2000 mm，重叠 0.0000 mm。",
+          "status": "geometry_only"
+        },
+        {
+          "participant_refs": [
+            "part:microduck:bb34e925e25e29f6",
+            "part:microduck:fa9ee2f71faafb88"
+          ],
+          "structure_refs": [
+            "structure:1c6b98d9632ff8dda726",
+            "structure:83c72207d3a7869dfff7"
+          ],
+          "feature_refs": [
+            "feature:microduck:bb34e925e25e29f6:4b70f665bd37",
+            "feature:microduck:fa9ee2f71faafb88:ec1d9aeca1f6"
+          ],
+          "kinds": [
+            "shaft_wall",
+            "shaft_wall"
+          ],
+          "geometry_checks": [
+            {
+              "name": "孔／轴径",
+              "value": [
+                0.022000000209829736,
+                0.01899999949920251
+              ],
+              "unit": "m"
+            },
+            {
+              "name": "轴距",
+              "value": 1.0547357766343964e-10,
+              "unit": "m"
+            },
+            {
+              "name": "有限间隔",
+              "value": 0.0003000002228654838,
+              "unit": "m"
+            },
+            {
+              "name": "有限重叠",
+              "value": 0,
+              "unit": "m"
+            },
+            {
+              "name": "壁长",
+              "value": [
+                0.0033999999868683517,
+                0.0005000010132789612
+              ],
+              "unit": "m"
+            }
+          ],
+          "statement": "两侧 22.000/19.000 mm 圆柱结构，轴距 0.0000 mm，有限间隔 0.3000 mm，重叠 0.0000 mm。",
+          "status": "geometry_only"
+        }
+      ],
+      "geometry_observation_refs": [
+        "reference-observation:microduck:surface-c2e8a8093a4b8563"
+      ],
+      "reference_mount_refs": [],
+      "mechanism_candidates": [
+        {
+          "kind": "bearing_journal",
+          "status": "geometric_support",
+          "summary": "髋轴颈位于轴承内圈的名义径向位置，肩面可解释单向轴向承接；轴承两环可能相对转动，实际环归属和抗拔未确认。"
+        }
+      ],
+      "roles": [
+        {
+          "role": "location",
+          "status": "geometric_support",
+          "statement": "Ø16轴颈与完整Ø16内壁及有限重叠支持名义径向定位；不由入口倒角推断间隙等级。",
+          "participant_refs": [
+            "part:microduck:fa9ee2f71faafb88",
+            "part:microduck:bb34e925e25e29f6"
+          ]
+        },
+        {
+          "role": "retention",
+          "status": "unknown",
+          "statement": "肩端最多支持一侧轴向承接；反向抗拔、压配或盖件无依据，实际保持未知。",
+          "participant_refs": [
+            "part:microduck:fa9ee2f71faafb88",
+            "part:microduck:bb34e925e25e29f6"
+          ]
+        },
+        {
+          "role": "motion",
+          "status": "unknown",
+          "statement": "轴承两环间的转动是具体机制候选，髋、内圈、外圈和对端活动框架仍需分体CAD/装配图确定。",
+          "participant_refs": [
+            "part:microduck:fa9ee2f71faafb88",
+            "part:microduck:bb34e925e25e29f6"
+          ]
+        },
+        {
+          "role": "limit",
+          "status": "unknown",
+          "statement": "端面可能限定单向轴向位置；没有完整轴向堆叠/止推/行程限位依据。",
+          "participant_refs": [
+            "part:microduck:fa9ee2f71faafb88",
+            "part:microduck:bb34e925e25e29f6"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "method": "实际读取双方原始 STL 并重新求三角-平面交线；在唯一来源 qpos0 下核对有限壁段、孔径与全部组距",
+          "source_refs": [
+            "SRC-000019",
+            "SRC-000034",
+            "SRC-INVESTIGATION-0BDDD07C70CE1FE5F182",
+            "SRC-INVESTIGATION-F0BEA6257AB7813726E4",
+            "SRC-MD-INDEX",
+            "SRC-MD-MJCF"
+          ],
+          "observation": "髋部完整外向轴颈Ø16 mm，轴承完整内壁Ø16 mm；口部Ø16.4 mm是倒角，不是配合壁直径。 在唯一qpos0配置中双方同轴，有限壁段重叠约1.75 mm；相等的名义尺寸不证明过盈等级或已接合。"
+        },
+        {
+          "method": "重新读取模型版本说明、材料总说明、HAT C1 说明与两份板级 CSV，查找该组的机械 BOM/活动区依据",
+          "source_refs": [
+            "SRC-000008",
+            "SRC-000049",
+            "SRC-000053",
+            "SRC-000054",
+            "SRC-000055"
+          ],
+          "observation": "这些原件没有该组紧固件、保持和活动区的逐孔依据；板级 BOM 不能补成机械 BOM。"
+        }
+      ],
+      "findings": [
+        "髋部完整外向轴颈Ø16 mm，轴承完整内壁Ø16 mm；口部Ø16.4 mm是倒角，不是配合壁直径。",
+        "在唯一qpos0配置中双方同轴，有限壁段重叠约1.75 mm；相等的名义尺寸不证明过盈等级或已接合。"
+      ],
+      "counterevidence": [
+        "源模型名义零间隙不能证明压配；轴承外壁Ø22和入口倒角不能代替完整Ø16内壁。"
+      ],
+      "alternatives": [
+        "可能为松配定位、带独立套筒或仅参考外形留置，不能确认实机已安装或已保持。"
+      ],
+      "intermediate_components": [
+        {
+          "kind": "axial_retainer",
+          "requirement": "possible",
+          "status": "unconfirmed",
+          "statement": "反向保持可能需要压盖、卡环或相邻夹持件；当前未定位真实件，不能自动创建示意保持实体。"
+        }
+      ],
+      "missing_evidence": [
+        "轴承具体型号/修订、真实内外圈尺寸及髋轴颈制造公差尚无依据。",
+        "内外圈分别跟随哪个部件，以及完整轴向保持件/载荷和润滑未确认。"
+      ],
+      "next_actions": [
+        "按双方明确局部位置隔离/剖切，检查环、孔周端面、轴向挡肩及实际中间件；需匹配修订的分体CAD或逐件装配图。"
+      ],
+      "hypothesis_refs": [],
+      "source_refs": [
+        "SRC-000008",
+        "SRC-000019",
+        "SRC-000034",
+        "SRC-000049",
+        "SRC-000053",
+        "SRC-000054",
+        "SRC-000055",
+        "SRC-INVESTIGATION-0BDDD07C70CE1FE5F182",
+        "SRC-INVESTIGATION-F0BEA6257AB7813726E4",
+        "SRC-MD-INDEX",
+        "SRC-MD-MJCF"
+      ],
+      "evidence_refs": [
+        "evidence:07e507f1e9297aa3:csv",
+        "evidence:07e507f1e9297aa3:xml",
+        "evidence:0820b4025f26a004:csv",
+        "evidence:0820b4025f26a004:xml",
+        "evidence:087d7a46a3ce4ca3:csv",
+        "evidence:087d7a46a3ce4ca3:xml",
+        "evidence:08c5ade0f3fd37db:csv",
+        "evidence:08c5ade0f3fd37db:xml",
+        "evidence:09cb390e38430c1e:csv",
+        "evidence:09cb390e38430c1e:xml",
+        "evidence:133711c520619e45:csv",
+        "evidence:133711c520619e45:xml",
+        "evidence:203d2686e3321e4a:csv",
+        "evidence:203d2686e3321e4a:xml",
+        "evidence:22f2cd114e324ec5:csv",
+        "evidence:22f2cd114e324ec5:xml",
+        "evidence:2559a4c412bcda3e:csv",
+        "evidence:2559a4c412bcda3e:xml",
+        "evidence:2d2cde8ae8ebacac:csv",
+        "evidence:2d2cde8ae8ebacac:xml",
+        "evidence:2f557a24b2729755:csv",
+        "evidence:2f557a24b2729755:xml",
+        "evidence:328011951ac11ee7:csv",
+        "evidence:328011951ac11ee7:xml",
+        "evidence:3fbf0b5c8cea4488:csv",
+        "evidence:3fbf0b5c8cea4488:stl",
+        "evidence:3fbf0b5c8cea4488:xml",
+        "evidence:41db565298264db6:csv",
+        "evidence:41db565298264db6:xml",
+        "evidence:44b5600c1a735117:csv",
+        "evidence:44b5600c1a735117:xml",
+        "evidence:47a950fbb3d0e416:csv",
+        "evidence:47a950fbb3d0e416:stl",
+        "evidence:47a950fbb3d0e416:xml",
+        "evidence:48099e14105d3289:csv",
+        "evidence:48099e14105d3289:xml",
+        "evidence:4cef8bb24d37fe6e:csv",
+        "evidence:4cef8bb24d37fe6e:xml",
+        "evidence:4cf80d5a57c8cb04:csv",
+        "evidence:4cf80d5a57c8cb04:xml",
+        "evidence:50f0c376d01bb0c1:csv",
+        "evidence:50f0c376d01bb0c1:xml",
+        "evidence:52fdcacf474a463f:csv",
+        "evidence:52fdcacf474a463f:xml",
+        "evidence:55121c0b36f62219:csv",
+        "evidence:55121c0b36f62219:stl",
+        "evidence:55121c0b36f62219:xml",
+        "evidence:554503ef38151e67:csv",
+        "evidence:554503ef38151e67:xml",
+        "evidence:55970da91992f38c:csv",
+        "evidence:55970da91992f38c:xml",
+        "evidence:638f29b46b322e64:csv",
+        "evidence:638f29b46b322e64:xml",
+        "evidence:66c73aaad945a993:csv",
+        "evidence:66c73aaad945a993:xml",
+        "evidence:6b5602b4416129fe:csv",
+        "evidence:6b5602b4416129fe:xml",
+        "evidence:6b884b140f6e283c:csv",
+        "evidence:6b884b140f6e283c:stl",
+        "evidence:6b884b140f6e283c:xml",
+        "evidence:7038a050dbc33fb0:csv",
+        "evidence:7038a050dbc33fb0:xml",
+        "evidence:766eaa6e4dd8b09f:csv",
+        "evidence:766eaa6e4dd8b09f:xml",
+        "evidence:78cf36c41e4fde06:csv",
+        "evidence:78cf36c41e4fde06:xml",
+        "evidence:7938fd9143c59ea4:csv",
+        "evidence:7938fd9143c59ea4:stl",
+        "evidence:7938fd9143c59ea4:xml",
+        "evidence:7c130c8489b57c99:csv",
+        "evidence:7c130c8489b57c99:xml",
+        "evidence:7e86db28af59d3cc:csv",
+        "evidence:7e86db28af59d3cc:xml",
+        "evidence:7f4fefc3c6de90f1:csv",
+        "evidence:7f4fefc3c6de90f1:xml",
+        "evidence:82d68e991b23c2a3:csv",
+        "evidence:82d68e991b23c2a3:xml",
+        "evidence:834f5cc892eba41e:csv",
+        "evidence:834f5cc892eba41e:xml",
+        "evidence:88b7496d63cb41ff:csv",
+        "evidence:88b7496d63cb41ff:xml",
+        "evidence:8b649e45831a1972:csv",
+        "evidence:8b649e45831a1972:xml",
+        "evidence:96e22c7fa2b976d3:csv",
+        "evidence:96e22c7fa2b976d3:xml",
+        "evidence:986b5adf27910138:csv",
+        "evidence:986b5adf27910138:xml",
+        "evidence:9d70b219a5533bf1:csv",
+        "evidence:9d70b219a5533bf1:xml",
+        "evidence:9ffe9d5bcd6bc13a:csv",
+        "evidence:9ffe9d5bcd6bc13a:xml",
+        "evidence:a0775b54397eb21e:csv",
+        "evidence:a0775b54397eb21e:xml",
+        "evidence:a07b37bcb704b29f:csv",
+        "evidence:a07b37bcb704b29f:xml",
+        "evidence:a682dc3620df43f5:csv",
+        "evidence:a682dc3620df43f5:xml",
+        "evidence:afa52198f7fad203:csv",
+        "evidence:afa52198f7fad203:xml",
+        "evidence:b364863ffde63eed:csv",
+        "evidence:b364863ffde63eed:stl",
+        "evidence:b364863ffde63eed:xml",
+        "evidence:b371ac60e2f6757b:csv",
+        "evidence:b371ac60e2f6757b:xml",
+        "evidence:b61b0609c61fc572:csv",
+        "evidence:b61b0609c61fc572:xml",
+        "evidence:bb34e925e25e29f6:csv",
+        "evidence:bb34e925e25e29f6:stl",
+        "evidence:bb34e925e25e29f6:xml",
+        "evidence:c703574f50f6a46a:csv",
+        "evidence:c703574f50f6a46a:xml",
+        "evidence:c75bfc0afb35e000:csv",
+        "evidence:c75bfc0afb35e000:xml",
+        "evidence:c7eeeac0a640d191:csv",
+        "evidence:c7eeeac0a640d191:stl",
+        "evidence:c7eeeac0a640d191:xml",
+        "evidence:cb253f38c818b9d8:csv",
+        "evidence:cb253f38c818b9d8:xml",
+        "evidence:cd6d48fccc95df41:csv",
+        "evidence:cd6d48fccc95df41:xml",
+        "evidence:d4b9a9e9474a9829:csv",
+        "evidence:d4b9a9e9474a9829:xml",
+        "evidence:d6a148b5784955d8:csv",
+        "evidence:d6a148b5784955d8:stl",
+        "evidence:d6a148b5784955d8:xml",
+        "evidence:d924e1596ffb042a:csv",
+        "evidence:d924e1596ffb042a:stl",
+        "evidence:d924e1596ffb042a:xml",
+        "evidence:e196235810184adf:csv",
+        "evidence:e196235810184adf:xml",
+        "evidence:e27cbdd6c07a264e:csv",
+        "evidence:e27cbdd6c07a264e:xml",
+        "evidence:e40b9945707505e1:csv",
+        "evidence:e40b9945707505e1:xml",
+        "evidence:e475134639b3f7e1:csv",
+        "evidence:e475134639b3f7e1:stl",
+        "evidence:e475134639b3f7e1:xml",
+        "evidence:e7e8275c7d01674c:csv",
+        "evidence:e7e8275c7d01674c:xml",
+        "evidence:ea69e2c6bba10a23:csv",
+        "evidence:ea69e2c6bba10a23:stl",
+        "evidence:ea69e2c6bba10a23:xml",
+        "evidence:ebfcaf98422b7b28:csv",
+        "evidence:ebfcaf98422b7b28:xml",
+        "evidence:f5797f92c2bf01b8:csv",
+        "evidence:f5797f92c2bf01b8:xml",
+        "evidence:f97c1c6580d651d7:csv",
+        "evidence:f97c1c6580d651d7:xml",
+        "evidence:f9955f19a691a1f4:csv",
+        "evidence:f9955f19a691a1f4:xml",
+        "evidence:fa9ee2f71faafb88:csv",
+        "evidence:fa9ee2f71faafb88:stl",
+        "evidence:fa9ee2f71faafb88:xml",
+        "evidence:interface-investigation:input:0bddd07c70ce1fe5f182",
+        "evidence:interface-investigation:input:f0bea6257ab7813726e4"
+      ],
+      "stop_reason": "已完成原网格具体结构与共同参考构型比较，保留支持/反证；固定本地原件缺少分体活动区、真实保持及机械BOM。",
+      "study_ref": "review-c2e8a8093a4b8563"
+    },
+    {
+      "id": "connection-finding:d22c650fc9abdaca",
+      "review_ref": "connection-review:microduck:d22c650fc9abdaca",
+      "configuration_ref": "configuration:microduck:source-qpos0",
+      "title": "髋部件 ↔ 横滚轴承支承件 · 已调查待证",
+      "work_status": "investigated",
+      "evidence_status": "insufficient",
+      "participants": [
+        {
+          "part_ref": "part:microduck:fa9ee2f71faafb88",
+          "feature_refs": [],
+          "opening_refs": [],
+          "site_refs": [],
+          "structure_refs": [
+            "structure:2ffd2d70d94388821cac"
+          ],
+          "position_local_m": [
+            0.017500000005070827,
+            -0.017525000497698784,
+            -6.684875973627692e-13
+          ],
+          "label": "髋部件 · 源局部有限结构",
+          "role": "local_structure_carrier",
+          "geometry_sha256": "e175896932d76dc7648cf939aa39cb7b1d188b783d91745adb9a4cec65e9052c"
+        },
+        {
+          "part_ref": "part:microduck:cb253f38c818b9d8",
+          "feature_refs": [
+            "feature:microduck:cb253f38c818b9d8:b56323acf8fb"
+          ],
+          "opening_refs": [],
+          "site_refs": [],
+          "structure_refs": [
+            "structure:97e98fd96bfa23d25d33"
+          ],
+          "position_local_m": [
+            0.017500000143143776,
+            -0.013999999966472387,
+            1.2605917074555935e-19
+          ],
+          "label": "横滚轴承支承件 · 源局部有限结构",
+          "role": "local_structure_carrier",
+          "geometry_sha256": "b5603a64b2d965ad75ea847767b5798130852e12a658fde7b5068fc457e2adcc"
+        }
+      ],
+      "local_pairings": [
+        {
+          "participant_refs": [
+            "part:microduck:cb253f38c818b9d8",
+            "part:microduck:fa9ee2f71faafb88"
+          ],
+          "structure_refs": [
+            "structure:97e98fd96bfa23d25d33",
+            "structure:af9f602683617eb156b1"
+          ],
+          "feature_refs": [
+            "feature:microduck:cb253f38c818b9d8:b56323acf8fb"
+          ],
+          "kinds": [
+            "bore_wall",
+            "bore_wall"
+          ],
+          "geometry_checks": [
+            {
+              "name": "孔／轴径",
+              "value": [
+                0.018999999981601748,
+                0.006000000062744922
+              ],
+              "unit": "m"
+            },
+            {
+              "name": "轴距",
+              "value": 1.1637575739926825e-10,
+              "unit": "m"
+            },
+            {
+              "name": "有限间隔",
+              "value": 0.002050001174211501,
+              "unit": "m"
+            },
+            {
+              "name": "有限重叠",
+              "value": 0,
+              "unit": "m"
+            },
+            {
+              "name": "壁长",
+              "value": [
+                0.0009999992325901985,
+                0.0019499994814395905
+              ],
+              "unit": "m"
+            }
+          ],
+          "statement": "两侧 19.000/6.000 mm 孔壁，轴距 0.0000 mm，有限间隔 2.0500 mm，重叠 0.0000 mm。",
+          "status": "geometry_only"
+        },
+        {
+          "participant_refs": [
+            "part:microduck:cb253f38c818b9d8",
+            "part:microduck:fa9ee2f71faafb88"
+          ],
+          "structure_refs": [
+            "structure:97e98fd96bfa23d25d33",
+            "structure:2ffd2d70d94388821cac"
+          ],
+          "feature_refs": [
+            "feature:microduck:cb253f38c818b9d8:b56323acf8fb"
+          ],
+          "kinds": [
+            "bore_wall",
+            "shaft_wall"
+          ],
+          "geometry_checks": [
+            {
+              "name": "孔／轴径",
+              "value": [
+                0.018999999981601748,
+                0.015999999994425976
+              ],
+              "unit": "m"
+            },
+            {
+              "name": "轴距",
+              "value": 1.3807456718371586e-10,
+              "unit": "m"
+            },
+            {
+              "name": "有限间隔",
+              "value": 0.002050001174211501,
+              "unit": "m"
+            },
+            {
+              "name": "有限重叠",
+              "value": 0,
+              "unit": "m"
+            },
+            {
+              "name": "壁长",
+              "value": [
+                0.0009999992325901985,
+                0.0019499994814395905
+              ],
+              "unit": "m"
+            }
+          ],
+          "statement": "两侧 19.000/16.000 mm 圆柱结构，轴距 0.0000 mm，有限间隔 2.0500 mm，重叠 0.0000 mm。",
+          "status": "geometry_only"
+        },
+        {
+          "participant_refs": [
+            "part:microduck:cb253f38c818b9d8",
+            "part:microduck:fa9ee2f71faafb88"
+          ],
+          "structure_refs": [
+            "structure:97e98fd96bfa23d25d33",
+            "structure:7163b4123df99a70362c"
+          ],
+          "feature_refs": [
+            "feature:microduck:cb253f38c818b9d8:b56323acf8fb",
+            "feature:microduck:fa9ee2f71faafb88:8c530854bffc"
+          ],
+          "kinds": [
+            "bore_wall",
+            "shaft_wall"
+          ],
+          "geometry_checks": [
+            {
+              "name": "孔／轴径",
+              "value": [
+                0.018999999981601748,
+                0.018999999510267977
+              ],
+              "unit": "m"
+            },
+            {
+              "name": "轴距",
+              "value": 3.607735603317064e-10,
+              "unit": "m"
+            },
+            {
+              "name": "有限间隔",
+              "value": 0.004000000655651095,
+              "unit": "m"
+            },
+            {
+              "name": "有限重叠",
+              "value": 0,
+              "unit": "m"
+            },
+            {
+              "name": "壁长",
+              "value": [
+                0.0009999992325901985,
+                0.000499999150633812
+              ],
+              "unit": "m"
+            }
+          ],
+          "statement": "两侧 19.000/19.000 mm 圆柱结构，轴距 0.0000 mm，有限间隔 4.0000 mm，重叠 0.0000 mm。",
+          "status": "geometry_only"
+        }
+      ],
+      "geometry_observation_refs": [],
+      "reference_mount_refs": [],
+      "mechanism_candidates": [
+        {
+          "kind": "indirect_bearing_support",
+          "status": "insufficient",
+          "summary": "保留髋轴颈—真实源轴承—支承件端面/孔周承接的间接支承候选，排除直接轴孔精确配合；完整保持未证。"
+        }
+      ],
+      "roles": [
+        {
+          "role": "location",
+          "status": "contradicted",
+          "statement": "直接Ø16/Ø19径向尺寸和有限范围不互补；定位如存在，应经中间轴承的两环传递。",
+          "participant_refs": [
+            "part:microduck:fa9ee2f71faafb88",
+            "part:microduck:cb253f38c818b9d8"
+          ]
+        },
+        {
+          "role": "retention",
+          "status": "unknown",
+          "statement": "支承件孔周可能提供端面挡肩，但不证明夹持外圈、抗拔或另一侧保持。",
+          "participant_refs": [
+            "part:microduck:fa9ee2f71faafb88",
+            "part:microduck:cb253f38c818b9d8"
+          ]
+        },
+        {
+          "role": "motion",
+          "status": "unknown",
+          "statement": "可能由轴承环间转动解耦髋和支承件，不能把同body或同轴解释为固定。",
+          "participant_refs": [
+            "part:microduck:fa9ee2f71faafb88",
+            "part:microduck:cb253f38c818b9d8"
+          ]
+        },
+        {
+          "role": "limit",
+          "status": "unknown",
+          "statement": "孔周端面可能为单向挡肩；限位、实际接触和全堆叠尚缺依据。",
+          "participant_refs": [
+            "part:microduck:fa9ee2f71faafb88",
+            "part:microduck:cb253f38c818b9d8"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "method": "实际读取双方原始 STL 并重新求三角-平面交线；在唯一来源 qpos0 下核对有限壁段、孔径与全部组距",
+          "source_refs": [
+            "SRC-000013",
+            "SRC-000019",
+            "SRC-INVESTIGATION-0BDDD07C70CE1FE5F182",
+            "SRC-INVESTIGATION-F0BEA6257AB7813726E4",
+            "SRC-MD-INDEX",
+            "SRC-MD-MJCF"
+          ],
+          "observation": "髋Ø16轴颈与横滚支承件Ø19孔同轴，但有限壁相隔约2.05 mm，径向差1.5 mm，没有直接插入/径向贴合。 中间已有真实源轴承part:microduck:47a950fbb3d0e416：轴承内圈对髋轴颈、外圈端面靠支承件孔周面是三件支承链候选；Ø19孔不能径向压配Ø22外圈。"
+        },
+        {
+          "method": "重新读取模型版本说明、材料总说明、HAT C1 说明与两份板级 CSV，查找该组的机械 BOM/活动区依据",
+          "source_refs": [
+            "SRC-000008",
+            "SRC-000049",
+            "SRC-000053",
+            "SRC-000054",
+            "SRC-000055"
+          ],
+          "observation": "这些原件没有该组紧固件、保持和活动区的逐孔依据；板级 BOM 不能补成机械 BOM。"
+        }
+      ],
+      "findings": [
+        "髋Ø16轴颈与横滚支承件Ø19孔同轴，但有限壁相隔约2.05 mm，径向差1.5 mm，没有直接插入/径向贴合。",
+        "中间已有真实源轴承part:microduck:47a950fbb3d0e416：轴承内圈对髋轴颈、外圈端面靠支承件孔周面是三件支承链候选；Ø19孔不能径向压配Ø22外圈。"
+      ],
+      "counterevidence": [
+        "Ø19孔小于Ø22外圈，不能作为外圈径向压配座；Ø16轴颈和Ø19孔自身又没有径向贴合或有限插入。"
+      ],
+      "alternatives": [
+        "可能以孔周端面挡住轴承外圈，也可能只是让位；不能从孔名确定保持。"
+      ],
+      "intermediate_components": [
+        {
+          "kind": "source_bearing",
+          "requirement": "candidate_path",
+          "status": "source_present",
+          "statement": "具体第三件为part:microduck:47a950fbb3d0e416，只确认源模型中存在，不声明接触或已保持。"
+        }
+      ],
+      "missing_evidence": [
+        "轴承外圈端面与支承件孔周的真实接触和完整轴向保持件缺证。",
+        "髋/轴承两环/支承件的活动归属、公差及载荷需匹配修订CAD或装配图。"
+      ],
+      "next_actions": [
+        "按双方明确局部位置隔离/剖切，检查环、孔周端面、轴向挡肩及实际中间件；需匹配修订的分体CAD或逐件装配图。"
+      ],
+      "hypothesis_refs": [],
+      "source_refs": [
+        "SRC-000008",
+        "SRC-000013",
+        "SRC-000019",
+        "SRC-000049",
+        "SRC-000053",
+        "SRC-000054",
+        "SRC-000055",
+        "SRC-INVESTIGATION-0BDDD07C70CE1FE5F182",
+        "SRC-INVESTIGATION-F0BEA6257AB7813726E4",
+        "SRC-MD-INDEX",
+        "SRC-MD-MJCF"
+      ],
+      "evidence_refs": [
+        "evidence:07e507f1e9297aa3:csv",
+        "evidence:07e507f1e9297aa3:xml",
+        "evidence:0820b4025f26a004:csv",
+        "evidence:0820b4025f26a004:xml",
+        "evidence:087d7a46a3ce4ca3:csv",
+        "evidence:087d7a46a3ce4ca3:xml",
+        "evidence:08c5ade0f3fd37db:csv",
+        "evidence:08c5ade0f3fd37db:xml",
+        "evidence:09cb390e38430c1e:csv",
+        "evidence:09cb390e38430c1e:xml",
+        "evidence:133711c520619e45:csv",
+        "evidence:133711c520619e45:xml",
+        "evidence:203d2686e3321e4a:csv",
+        "evidence:203d2686e3321e4a:xml",
+        "evidence:22f2cd114e324ec5:csv",
+        "evidence:22f2cd114e324ec5:xml",
+        "evidence:2559a4c412bcda3e:csv",
+        "evidence:2559a4c412bcda3e:xml",
+        "evidence:2d2cde8ae8ebacac:csv",
+        "evidence:2d2cde8ae8ebacac:xml",
+        "evidence:2f557a24b2729755:csv",
+        "evidence:2f557a24b2729755:xml",
+        "evidence:328011951ac11ee7:csv",
+        "evidence:328011951ac11ee7:xml",
+        "evidence:3fbf0b5c8cea4488:csv",
+        "evidence:3fbf0b5c8cea4488:xml",
+        "evidence:41db565298264db6:csv",
+        "evidence:41db565298264db6:xml",
+        "evidence:44b5600c1a735117:csv",
+        "evidence:44b5600c1a735117:xml",
+        "evidence:47a950fbb3d0e416:csv",
+        "evidence:47a950fbb3d0e416:xml",
+        "evidence:48099e14105d3289:csv",
+        "evidence:48099e14105d3289:xml",
+        "evidence:4cef8bb24d37fe6e:csv",
+        "evidence:4cef8bb24d37fe6e:xml",
+        "evidence:4cf80d5a57c8cb04:csv",
+        "evidence:4cf80d5a57c8cb04:xml",
+        "evidence:50f0c376d01bb0c1:csv",
+        "evidence:50f0c376d01bb0c1:xml",
+        "evidence:52fdcacf474a463f:csv",
+        "evidence:52fdcacf474a463f:xml",
+        "evidence:55121c0b36f62219:csv",
+        "evidence:55121c0b36f62219:xml",
+        "evidence:554503ef38151e67:csv",
+        "evidence:554503ef38151e67:xml",
+        "evidence:55970da91992f38c:csv",
+        "evidence:55970da91992f38c:xml",
+        "evidence:638f29b46b322e64:csv",
+        "evidence:638f29b46b322e64:xml",
+        "evidence:66c73aaad945a993:csv",
+        "evidence:66c73aaad945a993:xml",
+        "evidence:6b5602b4416129fe:csv",
+        "evidence:6b5602b4416129fe:xml",
+        "evidence:6b884b140f6e283c:csv",
+        "evidence:6b884b140f6e283c:xml",
+        "evidence:7038a050dbc33fb0:csv",
+        "evidence:7038a050dbc33fb0:xml",
+        "evidence:766eaa6e4dd8b09f:csv",
+        "evidence:766eaa6e4dd8b09f:xml",
+        "evidence:78cf36c41e4fde06:csv",
+        "evidence:78cf36c41e4fde06:xml",
+        "evidence:7938fd9143c59ea4:csv",
+        "evidence:7938fd9143c59ea4:xml",
+        "evidence:7c130c8489b57c99:csv",
+        "evidence:7c130c8489b57c99:xml",
+        "evidence:7e86db28af59d3cc:csv",
+        "evidence:7e86db28af59d3cc:xml",
+        "evidence:7f4fefc3c6de90f1:csv",
+        "evidence:7f4fefc3c6de90f1:xml",
+        "evidence:82d68e991b23c2a3:csv",
+        "evidence:82d68e991b23c2a3:xml",
+        "evidence:834f5cc892eba41e:csv",
+        "evidence:834f5cc892eba41e:xml",
+        "evidence:88b7496d63cb41ff:csv",
+        "evidence:88b7496d63cb41ff:xml",
+        "evidence:8b649e45831a1972:csv",
+        "evidence:8b649e45831a1972:xml",
+        "evidence:96e22c7fa2b976d3:csv",
+        "evidence:96e22c7fa2b976d3:xml",
+        "evidence:986b5adf27910138:csv",
+        "evidence:986b5adf27910138:xml",
+        "evidence:9d70b219a5533bf1:csv",
+        "evidence:9d70b219a5533bf1:xml",
+        "evidence:9ffe9d5bcd6bc13a:csv",
+        "evidence:9ffe9d5bcd6bc13a:xml",
+        "evidence:a0775b54397eb21e:csv",
+        "evidence:a0775b54397eb21e:xml",
+        "evidence:a07b37bcb704b29f:csv",
+        "evidence:a07b37bcb704b29f:xml",
+        "evidence:a682dc3620df43f5:csv",
+        "evidence:a682dc3620df43f5:xml",
+        "evidence:afa52198f7fad203:csv",
+        "evidence:afa52198f7fad203:xml",
+        "evidence:b364863ffde63eed:csv",
+        "evidence:b364863ffde63eed:xml",
+        "evidence:b371ac60e2f6757b:csv",
+        "evidence:b371ac60e2f6757b:xml",
+        "evidence:b61b0609c61fc572:csv",
+        "evidence:b61b0609c61fc572:xml",
+        "evidence:bb34e925e25e29f6:csv",
+        "evidence:bb34e925e25e29f6:xml",
+        "evidence:c703574f50f6a46a:csv",
+        "evidence:c703574f50f6a46a:stl",
+        "evidence:c703574f50f6a46a:xml",
+        "evidence:c75bfc0afb35e000:csv",
+        "evidence:c75bfc0afb35e000:xml",
+        "evidence:c7eeeac0a640d191:csv",
+        "evidence:c7eeeac0a640d191:stl",
+        "evidence:c7eeeac0a640d191:xml",
+        "evidence:cb253f38c818b9d8:csv",
+        "evidence:cb253f38c818b9d8:stl",
+        "evidence:cb253f38c818b9d8:xml",
+        "evidence:cd6d48fccc95df41:csv",
+        "evidence:cd6d48fccc95df41:xml",
+        "evidence:d4b9a9e9474a9829:csv",
+        "evidence:d4b9a9e9474a9829:xml",
+        "evidence:d6a148b5784955d8:csv",
+        "evidence:d6a148b5784955d8:xml",
+        "evidence:d924e1596ffb042a:csv",
+        "evidence:d924e1596ffb042a:xml",
+        "evidence:e196235810184adf:csv",
+        "evidence:e196235810184adf:xml",
+        "evidence:e27cbdd6c07a264e:csv",
+        "evidence:e27cbdd6c07a264e:xml",
+        "evidence:e40b9945707505e1:csv",
+        "evidence:e40b9945707505e1:xml",
+        "evidence:e475134639b3f7e1:csv",
+        "evidence:e475134639b3f7e1:xml",
+        "evidence:e7e8275c7d01674c:csv",
+        "evidence:e7e8275c7d01674c:xml",
+        "evidence:ea69e2c6bba10a23:csv",
+        "evidence:ea69e2c6bba10a23:xml",
+        "evidence:ebfcaf98422b7b28:csv",
+        "evidence:ebfcaf98422b7b28:xml",
+        "evidence:f5797f92c2bf01b8:csv",
+        "evidence:f5797f92c2bf01b8:xml",
+        "evidence:f97c1c6580d651d7:csv",
+        "evidence:f97c1c6580d651d7:xml",
+        "evidence:f9955f19a691a1f4:csv",
+        "evidence:f9955f19a691a1f4:xml",
+        "evidence:fa9ee2f71faafb88:csv",
+        "evidence:fa9ee2f71faafb88:stl",
+        "evidence:fa9ee2f71faafb88:xml",
+        "evidence:interface-investigation:input:0bddd07c70ce1fe5f182",
+        "evidence:interface-investigation:input:f0bea6257ab7813726e4"
+      ],
+      "stop_reason": "已完成原网格具体结构与共同参考构型比较，保留支持/反证；固定本地原件缺少分体活动区、真实保持及机械BOM。",
+      "study_ref": "review-d22c650fc9abdaca"
+    },
+    {
+      "id": "connection-finding:e42fab2d8700637e",
+      "review_ref": "connection-review:microduck:e42fab2d8700637e",
+      "configuration_ref": "configuration:microduck:source-qpos0",
+      "title": "XL330 舵机 ↔ 髋部件 · 四孔螺钉夹持假设",
+      "work_status": "investigated",
+      "evidence_status": "supported_hypothesis",
+      "participants": [
+        {
+          "part_ref": "part:microduck:cd6d48fccc95df41",
+          "feature_refs": [
+            "feature:microduck:cd6d48fccc95df41:678d6de22520",
+            "feature:microduck:cd6d48fccc95df41:c762f0d8139b",
+            "feature:microduck:cd6d48fccc95df41:ee2340944a76",
+            "feature:microduck:cd6d48fccc95df41:f4716268e4b3"
+          ],
+          "opening_refs": [],
+          "site_refs": [],
+          "structure_refs": [
+            "structure:31881025cda6cec8e758",
+            "structure:254d5b63ec47411c9903",
+            "structure:467e0219a57edc657334",
+            "structure:4f30e8c92bb7d64dec0f"
+          ],
+          "position_local_m": [
+            -0.011500000022351742,
+            2.5943000010974015e-21,
+            5.676511993416497e-21
+          ],
+          "label": "XL330 舵机 · 本次有限孔组",
+          "role": "local_structure_carrier",
+          "geometry_sha256": "96238ed0d020ce0009cf1a5aa4b6926176c800840318ee65e4375be2298d2744",
+          "annotation_refs": [
+            "CR-SECTION-009c3a4be356",
+            "CR-SECTION-b81891282027",
+            "CR-SECTION-11cfcd571e90",
+            "CR-SECTION-3961fc6c0466"
+          ]
+        },
+        {
+          "part_ref": "part:microduck:fa9ee2f71faafb88",
+          "feature_refs": [
+            "feature:microduck:fa9ee2f71faafb88:296a39d9819c",
+            "feature:microduck:fa9ee2f71faafb88:7c88d6e0ea46",
+            "feature:microduck:fa9ee2f71faafb88:b1c955159fb3",
+            "feature:microduck:fa9ee2f71faafb88:ed90b2c80473"
+          ],
+          "opening_refs": [],
+          "site_refs": [],
+          "structure_refs": [
+            "structure:251e653b3c03986ce087",
+            "structure:b90338acf15ad4108d19",
+            "structure:691a6552d9a82afe9998",
+            "structure:d5bd64b5aa05d238c0ab"
+          ],
+          "position_local_m": [
+            0.01750000004727834,
+            -0.01802500057965517,
+            -6.511807062807545e-21
+          ],
+          "label": "髋部件 · 本次有限孔组",
+          "role": "local_structure_carrier",
+          "geometry_sha256": "e175896932d76dc7648cf939aa39cb7b1d188b783d91745adb9a4cec65e9052c",
+          "annotation_refs": [
+            "CR-SECTION-506752305792",
+            "CR-SECTION-cb475a9c0986",
+            "CR-SECTION-78dc68b55b62",
+            "CR-SECTION-fb552ed0eb77"
+          ]
+        }
+      ],
+      "local_pairings": [
+        {
+          "participant_refs": [
+            "part:microduck:cd6d48fccc95df41",
+            "part:microduck:fa9ee2f71faafb88"
+          ],
+          "structure_refs": [
+            "structure:31881025cda6cec8e758",
+            "structure:251e653b3c03986ce087"
+          ],
+          "feature_refs": [
+            "feature:microduck:cd6d48fccc95df41:f4716268e4b3",
+            "feature:microduck:fa9ee2f71faafb88:296a39d9819c"
+          ],
+          "kinds": [
+            "bore_wall",
+            "bore_wall"
+          ],
+          "geometry_checks": [
+            {
+              "name": "孔／轴径",
+              "value": [
+                0.001600000030233365,
+                0.00240000007218066
+              ],
+              "unit": "m"
+            },
+            {
+              "name": "轴距",
+              "value": 1.5568029504420654e-11,
+              "unit": "m"
+            },
+            {
+              "name": "有限间隔",
+              "value": 5.0001174211498564e-05,
+              "unit": "m"
+            },
+            {
+              "name": "有限重叠",
+              "value": 0,
+              "unit": "m"
+            },
+            {
+              "name": "壁长",
+              "value": [
+                0.0059999991208314896,
+                0.0029499996453523636
+              ],
+              "unit": "m"
+            }
+          ],
+          "statement": "两侧 1.600/2.400 mm 孔壁，轴距 0.0000 mm，有限间隔 0.0500 mm，重叠 0.0000 mm。",
+          "status": "geometry_only"
+        },
+        {
+          "participant_refs": [
+            "part:microduck:cd6d48fccc95df41",
+            "part:microduck:fa9ee2f71faafb88"
+          ],
+          "structure_refs": [
+            "structure:254d5b63ec47411c9903",
+            "structure:b90338acf15ad4108d19"
+          ],
+          "feature_refs": [
+            "feature:microduck:cd6d48fccc95df41:678d6de22520",
+            "feature:microduck:fa9ee2f71faafb88:ed90b2c80473"
+          ],
+          "kinds": [
+            "bore_wall",
+            "bore_wall"
+          ],
+          "geometry_checks": [
+            {
+              "name": "孔／轴径",
+              "value": [
+                0.001600000030233365,
+                0.0023999999871814827
+              ],
+              "unit": "m"
+            },
+            {
+              "name": "轴距",
+              "value": 2.453371533706086e-11,
+              "unit": "m"
+            },
+            {
+              "name": "有限间隔",
+              "value": 5.0001174211498564e-05,
+              "unit": "m"
+            },
+            {
+              "name": "有限重叠",
+              "value": 0,
+              "unit": "m"
+            },
+            {
+              "name": "壁长",
+              "value": [
+                0.0059999991208314896,
+                0.0029499996453523636
+              ],
+              "unit": "m"
+            }
+          ],
+          "statement": "两侧 1.600/2.400 mm 孔壁，轴距 0.0000 mm，有限间隔 0.0500 mm，重叠 0.0000 mm。",
+          "status": "geometry_only"
+        },
+        {
+          "participant_refs": [
+            "part:microduck:cd6d48fccc95df41",
+            "part:microduck:fa9ee2f71faafb88"
+          ],
+          "structure_refs": [
+            "structure:467e0219a57edc657334",
+            "structure:691a6552d9a82afe9998"
+          ],
+          "feature_refs": [
+            "feature:microduck:cd6d48fccc95df41:c762f0d8139b",
+            "feature:microduck:fa9ee2f71faafb88:7c88d6e0ea46"
+          ],
+          "kinds": [
+            "bore_wall",
+            "bore_wall"
+          ],
+          "geometry_checks": [
+            {
+              "name": "孔／轴径",
+              "value": [
+                0.001600000030233365,
+                0.0024000001866354113
+              ],
+              "unit": "m"
+            },
+            {
+              "name": "轴距",
+              "value": 7.510446092725173e-11,
+              "unit": "m"
+            },
+            {
+              "name": "有限间隔",
+              "value": 5.0001174211498564e-05,
+              "unit": "m"
+            },
+            {
+              "name": "有限重叠",
+              "value": 0,
+              "unit": "m"
+            },
+            {
+              "name": "壁长",
+              "value": [
+                0.0059999991208314896,
+                0.0029499996453523636
+              ],
+              "unit": "m"
+            }
+          ],
+          "statement": "两侧 1.600/2.400 mm 孔壁，轴距 0.0000 mm，有限间隔 0.0500 mm，重叠 0.0000 mm。",
+          "status": "geometry_only"
+        },
+        {
+          "participant_refs": [
+            "part:microduck:cd6d48fccc95df41",
+            "part:microduck:fa9ee2f71faafb88"
+          ],
+          "structure_refs": [
+            "structure:4f30e8c92bb7d64dec0f",
+            "structure:d5bd64b5aa05d238c0ab"
+          ],
+          "feature_refs": [
+            "feature:microduck:cd6d48fccc95df41:ee2340944a76",
+            "feature:microduck:fa9ee2f71faafb88:b1c955159fb3"
+          ],
+          "kinds": [
+            "bore_wall",
+            "bore_wall"
+          ],
+          "geometry_checks": [
+            {
+              "name": "孔／轴径",
+              "value": [
+                0.001600000030233365,
+                0.0024000001866354113
+              ],
+              "unit": "m"
+            },
+            {
+              "name": "轴距",
+              "value": 7.510446092725173e-11,
+              "unit": "m"
+            },
+            {
+              "name": "有限间隔",
+              "value": 5.0001174211498564e-05,
+              "unit": "m"
+            },
+            {
+              "name": "有限重叠",
+              "value": 0,
+              "unit": "m"
+            },
+            {
+              "name": "壁长",
+              "value": [
+                0.0059999991208314896,
+                0.0029499996453523636
+              ],
+              "unit": "m"
+            }
+          ],
+          "statement": "两侧 1.600/2.400 mm 孔壁，轴距 0.0000 mm，有限间隔 0.0500 mm，重叠 0.0000 mm。",
+          "status": "geometry_only"
+        },
+        {
+          "participant_refs": [
+            "part:microduck:cd6d48fccc95df41",
+            "part:microduck:fa9ee2f71faafb88"
+          ],
+          "structure_refs": [
+            "structure:fc476574baf44901de3a",
+            "structure:2ffd2d70d94388821cac"
+          ],
+          "feature_refs": [
+            "feature:microduck:cd6d48fccc95df41:4c6adb5a4bd2"
+          ],
+          "kinds": [
+            "shaft_wall",
+            "shaft_wall"
+          ],
+          "geometry_checks": [
+            {
+              "name": "孔／轴径",
+              "value": [
+                0.01599999984695226,
+                0.015999999994425976
+              ],
+              "unit": "m"
+            },
+            {
+              "name": "轴距",
+              "value": 5.114700016707385e-12,
+              "unit": "m"
+            },
+            {
+              "name": "有限间隔",
+              "value": 5.000117421150594e-05,
+              "unit": "m"
+            },
+            {
+              "name": "有限重叠",
+              "value": 0,
+              "unit": "m"
+            },
+            {
+              "name": "壁长",
+              "value": [
+                0.0029999995604157448,
+                0.0019499994814395905
+              ],
+              "unit": "m"
+            }
+          ],
+          "statement": "两侧 16.000/16.000 mm 圆柱结构，轴距 0.0000 mm，有限间隔 0.0500 mm，重叠 0.0000 mm。",
+          "status": "geometry_only"
+        },
+        {
+          "participant_refs": [
+            "part:microduck:cd6d48fccc95df41",
+            "part:microduck:fa9ee2f71faafb88"
+          ],
+          "structure_refs": [
+            "structure:fc476574baf44901de3a",
+            "structure:af9f602683617eb156b1"
+          ],
+          "feature_refs": [
+            "feature:microduck:cd6d48fccc95df41:4c6adb5a4bd2"
+          ],
+          "kinds": [
+            "shaft_wall",
+            "bore_wall"
+          ],
+          "geometry_checks": [
+            {
+              "name": "孔／轴径",
+              "value": [
+                0.01599999984695226,
+                0.006000000062744922
+              ],
+              "unit": "m"
+            },
+            {
+              "name": "轴距",
+              "value": 2.7159378683698306e-11,
+              "unit": "m"
+            },
+            {
+              "name": "有限间隔",
+              "value": 5.000117421150594e-05,
+              "unit": "m"
+            },
+            {
+              "name": "有限重叠",
+              "value": 0,
+              "unit": "m"
+            },
+            {
+              "name": "壁长",
+              "value": [
+                0.0029999995604157448,
+                0.0019499994814395905
+              ],
+              "unit": "m"
+            }
+          ],
+          "statement": "两侧 16.000/6.000 mm 圆柱结构，轴距 0.0000 mm，有限间隔 0.0500 mm，重叠 0.0000 mm。",
+          "status": "geometry_only"
+        },
+        {
+          "participant_refs": [
+            "part:microduck:cd6d48fccc95df41",
+            "part:microduck:fa9ee2f71faafb88"
+          ],
+          "structure_refs": [
+            "structure:fc476574baf44901de3a",
+            "structure:7163b4123df99a70362c"
+          ],
+          "feature_refs": [
+            "feature:microduck:cd6d48fccc95df41:4c6adb5a4bd2",
+            "feature:microduck:fa9ee2f71faafb88:8c530854bffc"
+          ],
+          "kinds": [
+            "shaft_wall",
+            "shaft_wall"
+          ],
+          "geometry_checks": [
+            {
+              "name": "孔／轴径",
+              "value": [
+                0.01599999984695226,
+                0.018999999510267977
+              ],
+              "unit": "m"
+            },
+            {
+              "name": "轴距",
+              "value": 5.039173349430381e-10,
+              "unit": "m"
+            },
+            {
+              "name": "有限间隔",
+              "value": 0.0020000006556510994,
+              "unit": "m"
+            },
+            {
+              "name": "有限重叠",
+              "value": 0,
+              "unit": "m"
+            },
+            {
+              "name": "壁长",
+              "value": [
+                0.0029999995604157448,
+                0.000499999150633812
+              ],
+              "unit": "m"
+            }
+          ],
+          "statement": "两侧 16.000/19.000 mm 圆柱结构，轴距 0.0000 mm，有限间隔 2.0000 mm，重叠 0.0000 mm。",
+          "status": "geometry_only"
+        },
+        {
+          "participant_refs": [
+            "part:microduck:cd6d48fccc95df41",
+            "part:microduck:fa9ee2f71faafb88"
+          ],
+          "structure_refs": [
+            "structure:254d5b63ec47411c9903",
+            "structure:cc4786810bbf1970026b"
+          ],
+          "feature_refs": [
+            "feature:microduck:cd6d48fccc95df41:678d6de22520",
+            "feature:microduck:fa9ee2f71faafb88:61ab5d99f5cd"
+          ],
+          "kinds": [
+            "bore_wall",
+            "bore_wall"
+          ],
+          "geometry_checks": [
+            {
+              "name": "孔／轴径",
+              "value": [
+                0.001600000030233365,
+                0.004840069709634474
+              ],
+              "unit": "m"
+            },
+            {
+              "name": "轴距",
+              "value": 6.974073945093698e-08,
+              "unit": "m"
+            },
+            {
+              "name": "有限间隔",
+              "value": 0.003000000819563864,
+              "unit": "m"
+            },
+            {
+              "name": "有限重叠",
+              "value": 0,
+              "unit": "m"
+            },
+            {
+              "name": "壁长",
+              "value": [
+                0.0059999991208314896,
+                0.005318479612469673
+              ],
+              "unit": "m"
+            }
+          ],
+          "statement": "两侧 1.600/4.840 mm 孔壁，轴距 0.0001 mm，有限间隔 3.0000 mm，重叠 0.0000 mm。",
+          "status": "geometry_only"
+        }
+      ],
+      "geometry_observation_refs": [
+        "reference-observation:microduck:c345ad7f1b468ab7",
+        "reference-observation:microduck:68d2d5a3e9ed875a",
+        "reference-observation:microduck:7d3d0209b862326a",
+        "reference-observation:microduck:38e254c46010924f",
+        "reference-observation:pattern:6f4c37655a5d853d"
+      ],
+      "reference_mount_refs": [],
+      "mechanism_candidates": [
+        {
+          "kind": "screw_clamp",
+          "status": "supported_hypothesis",
+          "summary": "螺钉通过髋部件的本组大孔，进入XL330 舵机接收结构形成夹持。有几何与一般机制依据，实际保持未知。"
+        }
+      ],
+      "roles": [
+        {
+          "role": "location",
+          "status": "supported_hypothesis",
+          "statement": "4组有限孔壁和所有对应轴/组距为连接件轴线与板件相位提供几何定位解释；未将源body当固定依据。",
+          "participant_refs": [
+            "part:microduck:cd6d48fccc95df41",
+            "part:microduck:fa9ee2f71faafb88"
+          ]
+        },
+        {
+          "role": "retention",
+          "status": "unknown",
+          "statement": "条件性保持路径为螺钉头压板→接收螺纹/螺母；源模型无螺钉及螺纹，实际夹紧、抗拔与承载仍未知。",
+          "participant_refs": [
+            "part:microduck:cd6d48fccc95df41",
+            "part:microduck:fa9ee2f71faafb88"
+          ]
+        },
+        {
+          "role": "motion",
+          "status": "unknown",
+          "statement": "必须分别确认舵机壳体/输出件的局部归属；同一个STL网格或同一个仿真body不证明整件刚性随动。",
+          "participant_refs": [
+            "part:microduck:cd6d48fccc95df41",
+            "part:microduck:fa9ee2f71faafb88"
+          ]
+        },
+        {
+          "role": "limit",
+          "status": "unknown",
+          "statement": "孔壁、台阶或扩口不自动证明行程限位、止转或允许旋入深度，需核对实物承座与干涉。",
+          "participant_refs": [
+            "part:microduck:cd6d48fccc95df41",
+            "part:microduck:fa9ee2f71faafb88"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "method": "实际读取双方原始 STL 并重新求三角-平面交线；在唯一来源 qpos0 下核对有限壁段、孔径与全部组距",
+          "source_refs": [
+            "SRC-000019",
+            "SRC-000045",
+            "SRC-INVESTIGATION-0BDDD07C70CE1FE5F182",
+            "SRC-INVESTIGATION-F0BEA6257AB7813726E4",
+            "SRC-MD-INDEX",
+            "SRC-MD-MJCF"
+          ],
+          "observation": "双方具体源局部位置：XL330 舵机 (-11.500, 6.000, 0.000) mm；(-11.500, -6.000, -0.000) mm；(-11.500, 0.000, 6.000) mm；(-11.500, 0.000, -6.000) mm；髋部件 (11.500, -18.025, -0.000) mm；(23.500, -18.025, -0.000) mm；(17.500, -18.025, 6.000) mm；(17.500, -18.025, -6.000) mm。 实际独立截面及共同构型比较了 4 组有限孔壁。两侧 1.600/2.400 mm 孔壁，轴距 0.0000 mm，有限间隔 0.0500 mm，重叠 0.0000 mm。 两侧 1.600/2.400 mm 孔壁，轴距 0.0000 mm，有限间隔 0.0500 mm，重叠 0.0000 mm。 两侧 1.600/2.400 mm 孔壁，轴距 0.0000 mm，有限间隔 0.0500 mm，重叠 0.0000 mm。 两侧 1.600/2.400 mm 孔壁，轴距 0.0000 mm，有限间隔 0.0500 mm，重叠 0.0000 mm。 四条轴线与孔组在一个固定构型中对应；Ø1.6 mm接收孔/较大通过孔与厂家穿板装配图共同支持螺钉夹持解释，不确认实物螺纹或紧固。"
+        },
+        {
+          "method": "重新读取模型版本说明、材料总说明、HAT C1 说明与两份板级 CSV，查找该组的机械 BOM/活动区依据",
+          "source_refs": [
+            "SRC-000008",
+            "SRC-000049",
+            "SRC-000053",
+            "SRC-000054",
+            "SRC-000055"
+          ],
+          "observation": "这些原件没有该组紧固件、保持和活动区的逐孔依据；板级 BOM 不能补成机械 BOM。"
+        },
+        {
+          "method": "实际查看固定 ROBOTIS 前后框架/惰轮装配图及舵盘螺钉图，比较穿板接收机制与长度限制",
+          "source_refs": [
+            "SRC-MD-XL330-ASSEMBLY-DRAWING",
+            "SRC-MD-XL330-HORN-SCREW"
+          ],
+          "observation": "原图支持穿板进入舵机接收结构的机制；前后框架、惰轮盖与舵盘不可混为同一活动区域，图上螺钉规格/数量不直接移植。"
+        }
+      ],
+      "findings": [
+        "双方具体源局部位置：XL330 舵机 (-11.500, 6.000, 0.000) mm；(-11.500, -6.000, -0.000) mm；(-11.500, 0.000, 6.000) mm；(-11.500, 0.000, -6.000) mm；髋部件 (11.500, -18.025, -0.000) mm；(23.500, -18.025, -0.000) mm；(17.500, -18.025, 6.000) mm；(17.500, -18.025, -6.000) mm。",
+        "实际独立截面及共同构型比较了 4 组有限孔壁。两侧 1.600/2.400 mm 孔壁，轴距 0.0000 mm，有限间隔 0.0500 mm，重叠 0.0000 mm。 两侧 1.600/2.400 mm 孔壁，轴距 0.0000 mm，有限间隔 0.0500 mm，重叠 0.0000 mm。 两侧 1.600/2.400 mm 孔壁，轴距 0.0000 mm，有限间隔 0.0500 mm，重叠 0.0000 mm。 两侧 1.600/2.400 mm 孔壁，轴距 0.0000 mm，有限间隔 0.0500 mm，重叠 0.0000 mm。",
+        "四条轴线与孔组在一个固定构型中对应；Ø1.6 mm接收孔/较大通过孔与厂家穿板装配图共同支持螺钉夹持解释，不确认实物螺纹或紧固。"
+      ],
+      "counterevidence": [
+        "STL为简化的参考外形，所见圆柱不包含制造螺纹、真实紧固件或预紧；几何阈值不是公差。"
+      ],
+      "alternatives": [
+        "也可能通过分离舵盘、独立嵌件或穿透螺钉/螺母承接；这些部件在当前源模型未分体确认。"
+      ],
+      "intermediate_components": [
+        {
+          "kind": "screw",
+          "requirement": "required",
+          "status": "unconfirmed",
+          "statement": "若采用所述夹持机制，必须有独立螺钉；实际数量、规格及保持状态没有BOM依据。"
+        }
+      ],
+      "missing_evidence": [
+        "髋部件这组孔的装入侧、完整头部承座及实际使用孔数尚未由装配图确认。",
+        "XL330 舵机对应孔的实际螺纹/螺母/嵌件身份、螺钉长度、材料与制造公差缺证。",
+        "该局部接收区域归舵机壳体、输出舵盘还是其他活动件，以及实际保持、限位、连续路径与载荷未确认。"
+      ],
+      "next_actions": [
+        "按列出的局部坐标复核XL330 舵机内外侧承座/入口；取得同修订分体CAD或逐孔装配图以确认接收区域和真实紧固件。",
+        "按列出的局部坐标复核髋部件内外侧承座/入口；取得同修订分体CAD或逐孔装配图以确认接收区域和真实紧固件。"
+      ],
+      "hypothesis_refs": [
+        "installation-hypothesis:review-e42fab2d8700637e"
+      ],
+      "source_refs": [
+        "SRC-000008",
+        "SRC-000019",
+        "SRC-000045",
+        "SRC-000049",
+        "SRC-000053",
+        "SRC-000054",
+        "SRC-000055",
+        "SRC-INVESTIGATION-0BDDD07C70CE1FE5F182",
+        "SRC-INVESTIGATION-F0BEA6257AB7813726E4",
+        "SRC-MD-INDEX",
+        "SRC-MD-MJCF",
+        "SRC-MD-XL330-ASSEMBLY-DRAWING",
+        "SRC-MD-XL330-HORN-SCREW"
+      ],
+      "evidence_refs": [
+        "evidence:07e507f1e9297aa3:csv",
+        "evidence:07e507f1e9297aa3:xml",
+        "evidence:0820b4025f26a004:csv",
+        "evidence:0820b4025f26a004:stl",
+        "evidence:0820b4025f26a004:xml",
+        "evidence:087d7a46a3ce4ca3:csv",
+        "evidence:087d7a46a3ce4ca3:stl",
+        "evidence:087d7a46a3ce4ca3:xml",
+        "evidence:08c5ade0f3fd37db:csv",
+        "evidence:08c5ade0f3fd37db:stl",
+        "evidence:08c5ade0f3fd37db:xml",
+        "evidence:09cb390e38430c1e:csv",
+        "evidence:09cb390e38430c1e:stl",
+        "evidence:09cb390e38430c1e:xml",
+        "evidence:133711c520619e45:csv",
+        "evidence:133711c520619e45:xml",
+        "evidence:203d2686e3321e4a:csv",
+        "evidence:203d2686e3321e4a:xml",
+        "evidence:22f2cd114e324ec5:csv",
+        "evidence:22f2cd114e324ec5:xml",
+        "evidence:2559a4c412bcda3e:csv",
+        "evidence:2559a4c412bcda3e:xml",
+        "evidence:2d2cde8ae8ebacac:csv",
+        "evidence:2d2cde8ae8ebacac:xml",
+        "evidence:2f557a24b2729755:csv",
+        "evidence:2f557a24b2729755:xml",
+        "evidence:328011951ac11ee7:csv",
+        "evidence:328011951ac11ee7:xml",
+        "evidence:3fbf0b5c8cea4488:csv",
+        "evidence:3fbf0b5c8cea4488:xml",
+        "evidence:41db565298264db6:csv",
+        "evidence:41db565298264db6:xml",
+        "evidence:44b5600c1a735117:csv",
+        "evidence:44b5600c1a735117:stl",
+        "evidence:44b5600c1a735117:xml",
+        "evidence:47a950fbb3d0e416:csv",
+        "evidence:47a950fbb3d0e416:xml",
+        "evidence:48099e14105d3289:csv",
+        "evidence:48099e14105d3289:xml",
+        "evidence:4cef8bb24d37fe6e:csv",
+        "evidence:4cef8bb24d37fe6e:stl",
+        "evidence:4cef8bb24d37fe6e:xml",
+        "evidence:4cf80d5a57c8cb04:csv",
+        "evidence:4cf80d5a57c8cb04:stl",
+        "evidence:4cf80d5a57c8cb04:xml",
+        "evidence:50f0c376d01bb0c1:csv",
+        "evidence:50f0c376d01bb0c1:stl",
+        "evidence:50f0c376d01bb0c1:xml",
+        "evidence:52fdcacf474a463f:csv",
+        "evidence:52fdcacf474a463f:xml",
+        "evidence:55121c0b36f62219:csv",
+        "evidence:55121c0b36f62219:xml",
+        "evidence:554503ef38151e67:csv",
+        "evidence:554503ef38151e67:xml",
+        "evidence:55970da91992f38c:csv",
+        "evidence:55970da91992f38c:xml",
+        "evidence:638f29b46b322e64:csv",
+        "evidence:638f29b46b322e64:xml",
+        "evidence:66c73aaad945a993:csv",
+        "evidence:66c73aaad945a993:xml",
+        "evidence:6b5602b4416129fe:csv",
+        "evidence:6b5602b4416129fe:xml",
+        "evidence:6b884b140f6e283c:csv",
+        "evidence:6b884b140f6e283c:xml",
+        "evidence:7038a050dbc33fb0:csv",
+        "evidence:7038a050dbc33fb0:stl",
+        "evidence:7038a050dbc33fb0:xml",
+        "evidence:766eaa6e4dd8b09f:csv",
+        "evidence:766eaa6e4dd8b09f:xml",
+        "evidence:78cf36c41e4fde06:csv",
+        "evidence:78cf36c41e4fde06:xml",
+        "evidence:7938fd9143c59ea4:csv",
+        "evidence:7938fd9143c59ea4:xml",
+        "evidence:7c130c8489b57c99:csv",
+        "evidence:7c130c8489b57c99:stl",
+        "evidence:7c130c8489b57c99:xml",
+        "evidence:7e86db28af59d3cc:csv",
+        "evidence:7e86db28af59d3cc:xml",
+        "evidence:7f4fefc3c6de90f1:csv",
+        "evidence:7f4fefc3c6de90f1:xml",
+        "evidence:82d68e991b23c2a3:csv",
+        "evidence:82d68e991b23c2a3:xml",
+        "evidence:834f5cc892eba41e:csv",
+        "evidence:834f5cc892eba41e:xml",
+        "evidence:88b7496d63cb41ff:csv",
+        "evidence:88b7496d63cb41ff:xml",
+        "evidence:8b649e45831a1972:csv",
+        "evidence:8b649e45831a1972:xml",
+        "evidence:96e22c7fa2b976d3:csv",
+        "evidence:96e22c7fa2b976d3:stl",
+        "evidence:96e22c7fa2b976d3:xml",
+        "evidence:986b5adf27910138:csv",
+        "evidence:986b5adf27910138:xml",
+        "evidence:9d70b219a5533bf1:csv",
+        "evidence:9d70b219a5533bf1:xml",
+        "evidence:9ffe9d5bcd6bc13a:csv",
+        "evidence:9ffe9d5bcd6bc13a:stl",
+        "evidence:9ffe9d5bcd6bc13a:xml",
+        "evidence:a0775b54397eb21e:csv",
+        "evidence:a0775b54397eb21e:xml",
+        "evidence:a07b37bcb704b29f:csv",
+        "evidence:a07b37bcb704b29f:stl",
+        "evidence:a07b37bcb704b29f:xml",
+        "evidence:a682dc3620df43f5:csv",
+        "evidence:a682dc3620df43f5:stl",
+        "evidence:a682dc3620df43f5:xml",
+        "evidence:afa52198f7fad203:csv",
+        "evidence:afa52198f7fad203:xml",
+        "evidence:b364863ffde63eed:csv",
+        "evidence:b364863ffde63eed:xml",
+        "evidence:b371ac60e2f6757b:csv",
+        "evidence:b371ac60e2f6757b:xml",
+        "evidence:b61b0609c61fc572:csv",
+        "evidence:b61b0609c61fc572:xml",
+        "evidence:bb34e925e25e29f6:csv",
+        "evidence:bb34e925e25e29f6:xml",
+        "evidence:c703574f50f6a46a:csv",
+        "evidence:c703574f50f6a46a:xml",
+        "evidence:c75bfc0afb35e000:csv",
+        "evidence:c75bfc0afb35e000:xml",
+        "evidence:c7eeeac0a640d191:csv",
+        "evidence:c7eeeac0a640d191:stl",
+        "evidence:c7eeeac0a640d191:xml",
+        "evidence:cb253f38c818b9d8:csv",
+        "evidence:cb253f38c818b9d8:xml",
+        "evidence:cd6d48fccc95df41:csv",
+        "evidence:cd6d48fccc95df41:stl",
+        "evidence:cd6d48fccc95df41:xml",
+        "evidence:d4b9a9e9474a9829:csv",
+        "evidence:d4b9a9e9474a9829:xml",
+        "evidence:d6a148b5784955d8:csv",
+        "evidence:d6a148b5784955d8:xml",
+        "evidence:d924e1596ffb042a:csv",
+        "evidence:d924e1596ffb042a:xml",
+        "evidence:e196235810184adf:csv",
+        "evidence:e196235810184adf:xml",
+        "evidence:e27cbdd6c07a264e:csv",
+        "evidence:e27cbdd6c07a264e:xml",
+        "evidence:e40b9945707505e1:csv",
+        "evidence:e40b9945707505e1:xml",
+        "evidence:e475134639b3f7e1:csv",
+        "evidence:e475134639b3f7e1:xml",
+        "evidence:e7e8275c7d01674c:csv",
+        "evidence:e7e8275c7d01674c:xml",
+        "evidence:ea69e2c6bba10a23:csv",
+        "evidence:ea69e2c6bba10a23:xml",
+        "evidence:ebfcaf98422b7b28:csv",
+        "evidence:ebfcaf98422b7b28:xml",
+        "evidence:f5797f92c2bf01b8:csv",
+        "evidence:f5797f92c2bf01b8:xml",
+        "evidence:f97c1c6580d651d7:csv",
+        "evidence:f97c1c6580d651d7:xml",
+        "evidence:f9955f19a691a1f4:csv",
+        "evidence:f9955f19a691a1f4:xml",
+        "evidence:fa9ee2f71faafb88:csv",
+        "evidence:fa9ee2f71faafb88:stl",
+        "evidence:fa9ee2f71faafb88:xml",
+        "evidence:interface-investigation:input:0bddd07c70ce1fe5f182",
+        "evidence:interface-investigation:input:f0bea6257ab7813726e4",
+        "evidence:microduck:supporting-document:SRC-MD-XL330-ASSEMBLY-DRAWING",
+        "evidence:microduck:supporting-document:SRC-MD-XL330-HORN-SCREW"
+      ],
+      "stop_reason": "已执行原STL独立截面、完整共同位姿/孔组、版本与厂家机制图比较；固定原件没有实际螺纹、保持及活动区资料。",
+      "study_ref": "review-e42fab2d8700637e"
+    }
+  ],
+  "knowledge_query": {
+    "package": {
+      "path": "C:\\Users\\lsh\\Desktop\\workspace\\psop\\build\\microduck\\source-1.11\\microduck-connection-analysis.dkp",
+      "profile": "psop.hardware.source-model/1.11",
+      "package_id": "psop.microduck",
+      "package_version": "2.0.0-connection-analysis.1",
+      "package_digest": "84f6829a25a82fefaf1da6cc00b399088a5db6e41923b4074c39a08d1988b6db"
+    },
+    "status": "installation_hypotheses",
+    "execution_performed": false,
+    "finding_refs": [
+      "connection-finding:e42fab2d8700637e"
+    ],
+    "hypothesis_refs": [
+      "installation-hypothesis:review-e42fab2d8700637e"
+    ]
+  }
+}

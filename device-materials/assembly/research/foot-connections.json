@@ -1,0 +1,1733 @@
+{
+  "schema": "psop.research.foot-assembly-audit/1",
+  "recorded_on": "2026-11-08",
+  "configuration_ref": "configuration:microduck:source-qpos0",
+  "source_revision": "microduck_rl/cb70b792312d559a4da09064d92009079671815f",
+  "status": "research_artifact_only",
+  "units": "m unless key explicitly says mm",
+  "certainty": {
+    "foot_sole": "Source geometry supports enveloping sleeve fit with rim seating and rib-bed support; actual pull-off retention process unknown.",
+    "foot_ankle": "Source geometry supports two latch-head/ledge pairs plus a central screw-clamping hypothesis; actual fastener, material and assembly process unknown."
+  },
+  "limitations": [
+    "No proof of adhesive, interference, TPU, real fastener specification or installed retention.",
+    "No continuous insertion-path, elasticity, strength or engineering validation.",
+    "Surface areas and residuals are mesh observations, not tolerances or verified bearing areas."
+  ],
+  "sides": [
+    {
+      "side": "right",
+      "parts": [
+        {
+          "part_ref": "part:microduck:f9955f19a691a1f4",
+          "source_ref": "SRC-000018",
+          "source_path": "sources/SRC-000018.stl",
+          "sha256": "54f97fa1f0e0e611d31329df9f3c3b17ffcca2d695c579d1d32cbe99e8a6c7ef",
+          "placement": {
+            "part_ref": "part:microduck:f9955f19a691a1f4",
+            "position": [
+              -0.009777099999999986,
+              0.0001999999999999641,
+              0.044722910000000005
+            ],
+            "quaternion": [
+              8.326672684688674e-17,
+              -2.7755575615628914e-17,
+              -0.7071067811865472,
+              -0.7071067811865472
+            ]
+          }
+        },
+        {
+          "part_ref": "part:microduck:2f557a24b2729755",
+          "source_ref": "SRC-000038",
+          "source_path": "sources/SRC-000038.stl",
+          "sha256": "3f5068872f3add10eb967327651445bdfca635f5a8a01befa0ef05e462b72b4c",
+          "placement": {
+            "part_ref": "part:microduck:2f557a24b2729755",
+            "position": [
+              -0.009777099999999986,
+              0.0001999999999999641,
+              0.044722910000000005
+            ],
+            "quaternion": [
+              8.326672684688674e-17,
+              -2.7755575615628914e-17,
+              -0.7071067811865472,
+              -0.7071067811865472
+            ]
+          }
+        },
+        {
+          "part_ref": "part:microduck:b371ac60e2f6757b",
+          "source_ref": "SRC-000011",
+          "source_path": "sources/SRC-000011.stl",
+          "sha256": "f83f388ae00787415e76b8ecaab769f08f25b8c4e90c1937ff0fc4d68d81722e",
+          "placement": {
+            "part_ref": "part:microduck:b371ac60e2f6757b",
+            "position": [
+              -0.009777099999999986,
+              0.0001999999999999641,
+              0.044722910000000005
+            ],
+            "quaternion": [
+              8.326672684688674e-17,
+              -2.7755575615628914e-17,
+              -0.7071067811865472,
+              -0.7071067811865472
+            ]
+          }
+        }
+      ],
+      "foot_sole": {
+        "kind": "enveloping_sleeve_fit",
+        "participants": [
+          "part:microduck:f9955f19a691a1f4",
+          "part:microduck:2f557a24b2729755"
+        ],
+        "members": [
+          {
+            "id": "side_wall_x_min",
+            "role": "lateral_location",
+            "coordinate_local_m": -0.0684,
+            "foot": {
+              "part_ref": "part:microduck:f9955f19a691a1f4",
+              "source_ref": "SRC-000018",
+              "feature_refs": [
+                "feature:microduck:f9955f19a691a1f4:plane-eeeac045c044"
+              ],
+              "source_triangle_index_base": 0,
+              "bounds_local_mm": [
+                [
+                  -68.400003,
+                  -5.0,
+                  -24.956282
+                ],
+                [
+                  -68.400003,
+                  36.499999,
+                  -18.341925
+                ]
+              ]
+            },
+            "sole": {
+              "part_ref": "part:microduck:2f557a24b2729755",
+              "source_ref": "SRC-000038",
+              "feature_refs": [
+                "feature:microduck:2f557a24b2729755:plane-974d821ace34"
+              ],
+              "source_triangle_index_base": 0,
+              "bounds_local_mm": [
+                [
+                  -68.400003,
+                  -5.0,
+                  -24.956282
+                ],
+                [
+                  -68.400003,
+                  36.499999,
+                  -18.341925
+                ]
+              ]
+            },
+            "mechanism_claim": "Matched finite side walls; no axial pull-off retention claim."
+          },
+          {
+            "id": "side_wall_x_max",
+            "role": "lateral_location",
+            "coordinate_local_m": -0.0316,
+            "foot": {
+              "part_ref": "part:microduck:f9955f19a691a1f4",
+              "source_ref": "SRC-000018",
+              "feature_refs": [
+                "feature:microduck:f9955f19a691a1f4:plane-7b48b5c0d25c"
+              ],
+              "source_triangle_index_base": 0,
+              "bounds_local_mm": [
+                [
+                  -31.599998,
+                  -5.0,
+                  -27.295733
+                ],
+                [
+                  -31.599998,
+                  36.499999,
+                  -18.341925
+                ]
+              ]
+            },
+            "sole": {
+              "part_ref": "part:microduck:2f557a24b2729755",
+              "source_ref": "SRC-000038",
+              "feature_refs": [
+                "feature:microduck:2f557a24b2729755:plane-e5105fca258d"
+              ],
+              "source_triangle_index_base": 0,
+              "bounds_local_mm": [
+                [
+                  -31.599998,
+                  -5.0,
+                  -27.295822
+                ],
+                [
+                  -31.599998,
+                  36.499999,
+                  -18.341925
+                ]
+              ]
+            },
+            "mechanism_claim": "Matched finite side walls; no axial pull-off retention claim."
+          },
+          {
+            "id": "rim_and_shoulder",
+            "role": "seating_and_downward_stop_geometry",
+            "foot": {
+              "part_ref": "part:microduck:f9955f19a691a1f4",
+              "source_ref": "SRC-000018",
+              "feature_refs": [
+                "feature:microduck:f9955f19a691a1f4:plane-b65ae65a5dc4"
+              ],
+              "source_triangle_index_base": 0,
+              "bounds_local_mm": [
+                [
+                  -70.166312,
+                  -12.0,
+                  -18.341925
+                ],
+                [
+                  -30.08081,
+                  41.999999,
+                  -18.341925
+                ]
+              ]
+            },
+            "sole": {
+              "part_ref": "part:microduck:2f557a24b2729755",
+              "source_ref": "SRC-000038",
+              "feature_refs": [
+                "feature:microduck:2f557a24b2729755:plane-fb09e2a80638"
+              ],
+              "source_triangle_index_base": 0,
+              "bounds_local_mm": [
+                [
+                  -70.166312,
+                  -12.0,
+                  -18.341925
+                ],
+                [
+                  -30.08081,
+                  41.999999,
+                  -18.341925
+                ]
+              ]
+            }
+          },
+          {
+            "id": "transverse_rib_ends_and_inner_bed",
+            "role": "distributed_support_geometry",
+            "samples": [
+              {
+                "foot": {
+                  "part_ref": "part:microduck:f9955f19a691a1f4",
+                  "source_ref": "SRC-000018",
+                  "feature_refs": [
+                    "feature:microduck:f9955f19a691a1f4:plane-24238712b807"
+                  ],
+                  "source_triangle_index_base": 0,
+                  "bounds_local_mm": [
+                    [
+                      -50.614826,
+                      1.288208,
+                      -28.204629
+                    ],
+                    [
+                      -48.676211,
+                      3.038208,
+                      -28.037496
+                    ]
+                  ]
+                },
+                "sole": {
+                  "part_ref": "part:microduck:2f557a24b2729755",
+                  "source_ref": "SRC-000038",
+                  "feature_refs": [
+                    "feature:microduck:2f557a24b2729755:plane-12d2e787516e"
+                  ],
+                  "source_triangle_index_base": 0,
+                  "bounds_local_mm": [
+                    [
+                      -50.614826,
+                      -1.371788,
+                      -28.18732
+                    ],
+                    [
+                      -48.880994,
+                      3.080351,
+                      -28.037496
+                    ]
+                  ]
+                },
+                "sample_local_mm": [
+                  -49.968621,
+                  2.454874,
+                  -28.093207
+                ],
+                "centroid_to_counterpart_triangle_distance_mm": 0.00012822923028331596,
+                "normal_dot": -0.9999999804571709
+              },
+              {
+                "foot": {
+                  "part_ref": "part:microduck:f9955f19a691a1f4",
+                  "source_ref": "SRC-000018",
+                  "feature_refs": [
+                    "feature:microduck:f9955f19a691a1f4:plane-30d2d7c63c79"
+                  ],
+                  "source_triangle_index_base": 0,
+                  "bounds_local_mm": [
+                    [
+                      -50.614826,
+                      11.788208,
+                      -28.190766
+                    ],
+                    [
+                      -48.823196,
+                      13.538208,
+                      -28.037496
+                    ]
+                  ]
+                },
+                "sole": {
+                  "part_ref": "part:microduck:2f557a24b2729755",
+                  "source_ref": "SRC-000038",
+                  "feature_refs": [],
+                  "source_triangle_indices": [
+                    1027
+                  ],
+                  "source_triangle_index_base": 0,
+                  "bounds_local_mm": [
+                    [
+                      -49.910173,
+                      8.92584,
+                      -28.25469
+                    ],
+                    [
+                      -48.053827,
+                      13.71013,
+                      -28.09879
+                    ]
+                  ]
+                },
+                "sample_local_mm": [
+                  -49.420413,
+                  12.371541,
+                  -28.139604
+                ],
+                "centroid_to_counterpart_triangle_distance_mm": 0.00045731830845798747,
+                "normal_dot": -0.9999994285554691
+              },
+              {
+                "foot": {
+                  "part_ref": "part:microduck:f9955f19a691a1f4",
+                  "source_ref": "SRC-000018",
+                  "feature_refs": [
+                    "feature:microduck:f9955f19a691a1f4:plane-350557ffea2c"
+                  ],
+                  "source_triangle_index_base": 0,
+                  "bounds_local_mm": [
+                    [
+                      -50.166991,
+                      18.788207,
+                      -28.11515
+                    ],
+                    [
+                      -49.71911,
+                      20.538207,
+                      -28.076544
+                    ]
+                  ]
+                },
+                "sole": {
+                  "part_ref": "part:microduck:2f557a24b2729755",
+                  "source_ref": "SRC-000038",
+                  "feature_refs": [
+                    "feature:microduck:2f557a24b2729755:plane-fafdc5671e93"
+                  ],
+                  "source_triangle_index_base": 0,
+                  "bounds_local_mm": [
+                    [
+                      -50.614826,
+                      18.132901,
+                      -28.110866
+                    ],
+                    [
+                      -49.768608,
+                      22.0,
+                      -28.037496
+                    ]
+                  ]
+                },
+                "sample_local_mm": [
+                  -50.017696,
+                  19.371541,
+                  -28.089422
+                ],
+                "centroid_to_counterpart_triangle_distance_mm": 0.023042810600568772,
+                "normal_dot": -0.9999999816536583
+              },
+              {
+                "foot": {
+                  "part_ref": "part:microduck:f9955f19a691a1f4",
+                  "source_ref": "SRC-000018",
+                  "feature_refs": [
+                    "feature:microduck:f9955f19a691a1f4:plane-b86b8dfbb035"
+                  ],
+                  "source_triangle_index_base": 0,
+                  "bounds_local_mm": [
+                    [
+                      -50.614826,
+                      25.788208,
+                      -28.187148
+                    ],
+                    [
+                      -48.894327,
+                      27.538208,
+                      -28.037496
+                    ]
+                  ]
+                },
+                "sole": {
+                  "part_ref": "part:microduck:2f557a24b2729755",
+                  "source_ref": "SRC-000038",
+                  "feature_refs": [
+                    "feature:microduck:2f557a24b2729755:plane-82fc7f3031c3"
+                  ],
+                  "source_triangle_index_base": 0,
+                  "bounds_local_mm": [
+                    [
+                      -50.614826,
+                      22.0,
+                      -28.16757
+                    ],
+                    [
+                      -49.12059,
+                      26.937913,
+                      -28.037496
+                    ]
+                  ]
+                },
+                "sample_local_mm": [
+                  -49.754585,
+                  26.371542,
+                  -28.112416
+                ],
+                "centroid_to_counterpart_triangle_distance_mm": 3.591439921135059e-05,
+                "normal_dot": -0.9999999132151706
+              },
+              {
+                "foot": {
+                  "part_ref": "part:microduck:f9955f19a691a1f4",
+                  "source_ref": "SRC-000018",
+                  "feature_refs": [],
+                  "source_triangle_indices": [
+                    17035
+                  ],
+                  "source_triangle_index_base": 0,
+                  "bounds_local_mm": [
+                    [
+                      -50.614826,
+                      32.788206,
+                      -28.206388
+                    ],
+                    [
+                      -48.559085,
+                      34.380235,
+                      -28.037496
+                    ]
+                  ]
+                },
+                "sole": {
+                  "part_ref": "part:microduck:2f557a24b2729755",
+                  "source_ref": "SRC-000038",
+                  "feature_refs": [],
+                  "source_triangle_indices": [
+                    5160
+                  ],
+                  "source_triangle_index_base": 0,
+                  "bounds_local_mm": [
+                    [
+                      -50.614826,
+                      31.61357,
+                      -28.208436
+                    ],
+                    [
+                      -48.60368,
+                      34.239892,
+                      -28.037496
+                    ]
+                  ]
+                },
+                "sample_local_mm": [
+                  -49.343244,
+                  33.318882,
+                  -28.144901
+                ],
+                "centroid_to_counterpart_triangle_distance_mm": 0.0018210691380727833,
+                "normal_dot": -0.9999844419156657
+              }
+            ],
+            "annotation_scope": "Five sampled source facets, not an exhaustive contact-area claim."
+          }
+        ],
+        "candidate_insertion_direction_of_foot_in_sole": [
+          0,
+          0,
+          -1
+        ],
+        "pull_off_retention": "unconfirmed; reviewed sole sections show no separate hook/undercut/locking groove"
+      },
+      "foot_ankle": {
+        "kind": "compound_latch_and_central_fastener_hypothesis",
+        "participants": [
+          "part:microduck:f9955f19a691a1f4",
+          "part:microduck:b371ac60e2f6757b"
+        ],
+        "members": [
+          {
+            "id": "front_hook_and_ledge",
+            "role": "potential_axial_pull_off_capture",
+            "foot_hook_underside": {
+              "part_ref": "part:microduck:f9955f19a691a1f4",
+              "source_ref": "SRC-000018",
+              "feature_refs": [],
+              "source_triangle_indices": [
+                390,
+                391
+              ],
+              "source_triangle_index_base": 0,
+              "bounds_local_mm": [
+                [
+                  -55.0,
+                  0.063208,
+                  -14.341925
+                ],
+                [
+                  -45.000002,
+                  1.063208,
+                  -14.341925
+                ]
+              ]
+            },
+            "foot_hook_shape": {
+              "lead_in_ramp": {
+                "part_ref": "part:microduck:f9955f19a691a1f4",
+                "source_ref": "SRC-000018",
+                "feature_refs": [],
+                "source_triangle_indices": [
+                  386,
+                  387
+                ],
+                "source_triangle_index_base": 0,
+                "bounds_local_mm": [
+                  [
+                    -55.0,
+                    0.363,
+                    -13.341925
+                  ],
+                  [
+                    -45.000002,
+                    1.063208,
+                    -12.341925
+                  ]
+                ]
+              },
+              "stem_back_face": {
+                "part_ref": "part:microduck:f9955f19a691a1f4",
+                "source_ref": "SRC-000018",
+                "feature_refs": [],
+                "source_triangle_indices": [
+                  382,
+                  383
+                ],
+                "source_triangle_index_base": 0,
+                "bounds_local_mm": [
+                  [
+                    -55.0,
+                    -1.387372,
+                    -20.897141
+                  ],
+                  [
+                    -45.000002,
+                    -0.436792,
+                    -12.341925
+                  ]
+                ]
+              }
+            },
+            "ankle_ledge_top": {
+              "part_ref": "part:microduck:b371ac60e2f6757b",
+              "source_ref": "SRC-000011",
+              "feature_refs": [],
+              "source_triangle_indices": [
+                1495,
+                1496
+              ],
+              "source_triangle_index_base": 0,
+              "bounds_local_mm": [
+                [
+                  -56.000002,
+                  0.163208,
+                  -14.641925
+                ],
+                [
+                  -44.0,
+                  1.563208,
+                  -14.641925
+                ]
+              ]
+            },
+            "normal_gap_mm": 0.3,
+            "projected_overlap_xy_mm2": 9.0,
+            "annotation_scope": "Actual hook underside and mating ledge; not inferred from a hole search.",
+            "unresolved": [
+              "Elasticity, assembly sequence, cyclic durability and installed preload unknown."
+            ]
+          },
+          {
+            "id": "rear_hook_and_ledge",
+            "role": "potential_axial_pull_off_capture",
+            "foot_hook_underside": {
+              "part_ref": "part:microduck:f9955f19a691a1f4",
+              "source_ref": "SRC-000018",
+              "feature_refs": [],
+              "source_triangle_indices": [
+                332,
+                333
+              ],
+              "source_triangle_index_base": 0,
+              "bounds_local_mm": [
+                [
+                  -55.0,
+                  35.763208,
+                  -14.341925
+                ],
+                [
+                  -45.000002,
+                  36.763206,
+                  -14.341925
+                ]
+              ]
+            },
+            "foot_hook_shape": {
+              "lead_in_ramp": {
+                "part_ref": "part:microduck:f9955f19a691a1f4",
+                "source_ref": "SRC-000018",
+                "feature_refs": [],
+                "source_triangle_indices": [
+                  336,
+                  337
+                ],
+                "source_triangle_index_base": 0,
+                "bounds_local_mm": [
+                  [
+                    -55.0,
+                    35.763208,
+                    -13.341925
+                  ],
+                  [
+                    -45.000002,
+                    36.463413,
+                    -12.341925
+                  ]
+                ]
+              },
+              "stem_back_face": {
+                "part_ref": "part:microduck:f9955f19a691a1f4",
+                "source_ref": "SRC-000018",
+                "feature_refs": [],
+                "source_triangle_indices": [
+                  330,
+                  331
+                ],
+                "source_triangle_index_base": 0,
+                "bounds_local_mm": [
+                  [
+                    -55.0,
+                    37.263207,
+                    -20.897141
+                  ],
+                  [
+                    -45.000002,
+                    38.213786,
+                    -12.341925
+                  ]
+                ]
+              }
+            },
+            "ankle_ledge_top": {
+              "part_ref": "part:microduck:b371ac60e2f6757b",
+              "source_ref": "SRC-000011",
+              "feature_refs": [],
+              "source_triangle_indices": [
+                4100,
+                4101
+              ],
+              "source_triangle_index_base": 0,
+              "bounds_local_mm": [
+                [
+                  -56.000002,
+                  35.263207,
+                  -14.641925
+                ],
+                [
+                  -44.0,
+                  36.663208,
+                  -14.641925
+                ]
+              ]
+            },
+            "normal_gap_mm": 0.3,
+            "projected_overlap_xy_mm2": 9.0,
+            "annotation_scope": "Actual hook underside and mating ledge; not inferred from a hole search.",
+            "unresolved": [
+              "Elasticity, assembly sequence, cyclic durability and installed preload unknown."
+            ]
+          },
+          {
+            "id": "central_stepped_holes",
+            "role": "screw_clamping_hypothesis",
+            "axis_local": [
+              0,
+              0,
+              1
+            ],
+            "center_xy_local_mm": [
+              -50,
+              4.502003
+            ],
+            "ankle_passage": {
+              "part_ref": "part:microduck:b371ac60e2f6757b",
+              "source_ref": "SRC-000011",
+              "feature_refs": [
+                "feature:microduck:b371ac60e2f6757b:58054b809019"
+              ],
+              "source_triangle_index_base": 0,
+              "bounds_local_mm": [
+                [
+                  -51.100001,
+                  3.402003,
+                  -15.841926
+                ],
+                [
+                  -48.900001,
+                  5.602003,
+                  -14.341925
+                ]
+              ],
+              "geometry": {
+                "type": "cylinder",
+                "axis": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "origin": [
+                  -0.04999999968725165,
+                  0.0045020028895079904,
+                  -0.015091925393790007
+                ],
+                "radius_m": 0.001099999968575766,
+                "axial_range_m": [
+                  -0.0007500001229345798,
+                  0.0007500001229345798
+                ]
+              }
+            },
+            "ankle_counterbore": {
+              "part_ref": "part:microduck:b371ac60e2f6757b",
+              "source_ref": "SRC-000011",
+              "feature_refs": [
+                "feature:microduck:b371ac60e2f6757b:a24af45fbb8f"
+              ],
+              "source_triangle_index_base": 0,
+              "bounds_local_mm": [
+                [
+                  -52.200001,
+                  2.302003,
+                  -14.341925
+                ],
+                [
+                  -47.800001,
+                  6.702003,
+                  -13.341925
+                ]
+              ],
+              "geometry": {
+                "type": "cylinder",
+                "axis": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "origin": [
+                  -0.05000000020598015,
+                  0.0045020028579003625,
+                  -0.01384192518889904
+                ],
+                "radius_m": 0.002199999986142126,
+                "axial_range_m": [
+                  -0.0005000000819563866,
+                  0.0005000000819563866
+                ]
+              }
+            },
+            "foot_receiver": {
+              "part_ref": "part:microduck:f9955f19a691a1f4",
+              "source_ref": "SRC-000018",
+              "feature_refs": [
+                "feature:microduck:f9955f19a691a1f4:00ba6d19982b"
+              ],
+              "source_triangle_index_base": 0,
+              "bounds_local_mm": [
+                [
+                  -50.799999,
+                  3.702003,
+                  -21.841925
+                ],
+                [
+                  -49.199998,
+                  5.302003,
+                  -16.341925
+                ]
+              ],
+              "geometry": {
+                "type": "cylinder",
+                "axis": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "origin": [
+                  -0.05000000000233868,
+                  0.004502002791745581,
+                  -0.019091924652457237
+                ],
+                "radius_m": 0.0007999999040520896,
+                "axial_range_m": [
+                  -0.002749999985098839,
+                  0.002749999985098839
+                ]
+              }
+            },
+            "foot_entry": {
+              "part_ref": "part:microduck:f9955f19a691a1f4",
+              "source_ref": "SRC-000018",
+              "feature_refs": [
+                "feature:microduck:f9955f19a691a1f4:feb031e24ebb"
+              ],
+              "source_triangle_index_base": 0,
+              "bounds_local_mm": [
+                [
+                  -51.5,
+                  3.002003,
+                  -16.341925
+                ],
+                [
+                  -48.500001,
+                  6.002003,
+                  -15.841926
+                ]
+              ],
+              "geometry": {
+                "type": "cylinder",
+                "axis": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "origin": [
+                  -0.05000000046310869,
+                  0.004502002816324731,
+                  -0.016091925092041492
+                ],
+                "radius_m": 0.0014999999551656789,
+                "axial_range_m": [
+                  -0.000249999575316906,
+                  0.000249999575316906
+                ]
+              }
+            },
+            "unresolved": [
+              "Actual fastener and threads are absent from the source model.",
+              "Do not reuse this hole as the sole interface."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "side": "left",
+      "parts": [
+        {
+          "part_ref": "part:microduck:41db565298264db6",
+          "source_ref": "SRC-000017",
+          "source_path": "sources/SRC-000017.stl",
+          "sha256": "a1f5d43456d0f522bd60870153795f1e8112c1adf9b8b4373b59608d9545c044",
+          "placement": {
+            "part_ref": "part:microduck:41db565298264db6",
+            "position": [
+              -0.009777099999999986,
+              -0.0001999999999999641,
+              0.04472291000000002
+            ],
+            "quaternion": [
+              -5.551115123125783e-17,
+              5.551115123125783e-17,
+              -0.7071067811865472,
+              -0.7071067811865472
+            ]
+          }
+        },
+        {
+          "part_ref": "part:microduck:8b649e45831a1972",
+          "source_ref": "SRC-000037",
+          "source_path": "sources/SRC-000037.stl",
+          "sha256": "e028c8b09fecd4cb354d042bf7fd95a1a1bc2d524d760d62137fa8d74093fc23",
+          "placement": {
+            "part_ref": "part:microduck:8b649e45831a1972",
+            "position": [
+              -0.009777099999999986,
+              -0.0001999999999999641,
+              0.04472291000000002
+            ],
+            "quaternion": [
+              -5.551115123125783e-17,
+              5.551115123125783e-17,
+              -0.7071067811865472,
+              -0.7071067811865472
+            ]
+          }
+        },
+        {
+          "part_ref": "part:microduck:07e507f1e9297aa3",
+          "source_ref": "SRC-000010",
+          "source_path": "sources/SRC-000010.stl",
+          "sha256": "2ec1bd89205b407efebaa9a8898ad9fea741389d87b80ecc5c96b21d1668119e",
+          "placement": {
+            "part_ref": "part:microduck:07e507f1e9297aa3",
+            "position": [
+              -0.009777099999999986,
+              -0.0001999999999999641,
+              0.04472291000000002
+            ],
+            "quaternion": [
+              -5.551115123125783e-17,
+              5.551115123125783e-17,
+              -0.7071067811865472,
+              -0.7071067811865472
+            ]
+          }
+        }
+      ],
+      "foot_sole": {
+        "kind": "enveloping_sleeve_fit",
+        "participants": [
+          "part:microduck:41db565298264db6",
+          "part:microduck:8b649e45831a1972"
+        ],
+        "members": [
+          {
+            "id": "side_wall_x_min",
+            "role": "lateral_location",
+            "coordinate_local_m": 0.0316,
+            "foot": {
+              "part_ref": "part:microduck:41db565298264db6",
+              "source_ref": "SRC-000017",
+              "feature_refs": [
+                "feature:microduck:41db565298264db6:plane-40a0eae5fb2e"
+              ],
+              "source_triangle_index_base": 0,
+              "bounds_local_mm": [
+                [
+                  31.599998,
+                  -5.0,
+                  -27.295733
+                ],
+                [
+                  31.599998,
+                  36.499999,
+                  -18.341925
+                ]
+              ]
+            },
+            "sole": {
+              "part_ref": "part:microduck:8b649e45831a1972",
+              "source_ref": "SRC-000037",
+              "feature_refs": [
+                "feature:microduck:8b649e45831a1972:plane-7e444b2a6cf6"
+              ],
+              "source_triangle_index_base": 0,
+              "bounds_local_mm": [
+                [
+                  31.599998,
+                  -5.0,
+                  -27.295822
+                ],
+                [
+                  31.599998,
+                  36.499999,
+                  -18.341925
+                ]
+              ]
+            },
+            "mechanism_claim": "Matched finite side walls; no axial pull-off retention claim."
+          },
+          {
+            "id": "side_wall_x_max",
+            "role": "lateral_location",
+            "coordinate_local_m": 0.0684,
+            "foot": {
+              "part_ref": "part:microduck:41db565298264db6",
+              "source_ref": "SRC-000017",
+              "feature_refs": [
+                "feature:microduck:41db565298264db6:plane-6d030e3df4db"
+              ],
+              "source_triangle_index_base": 0,
+              "bounds_local_mm": [
+                [
+                  68.400003,
+                  -5.0,
+                  -24.956282
+                ],
+                [
+                  68.400003,
+                  36.499999,
+                  -18.341925
+                ]
+              ]
+            },
+            "sole": {
+              "part_ref": "part:microduck:8b649e45831a1972",
+              "source_ref": "SRC-000037",
+              "feature_refs": [
+                "feature:microduck:8b649e45831a1972:plane-e19b21798728"
+              ],
+              "source_triangle_index_base": 0,
+              "bounds_local_mm": [
+                [
+                  68.400003,
+                  -5.0,
+                  -24.956282
+                ],
+                [
+                  68.400003,
+                  36.499999,
+                  -18.341925
+                ]
+              ]
+            },
+            "mechanism_claim": "Matched finite side walls; no axial pull-off retention claim."
+          },
+          {
+            "id": "rim_and_shoulder",
+            "role": "seating_and_downward_stop_geometry",
+            "foot": {
+              "part_ref": "part:microduck:41db565298264db6",
+              "source_ref": "SRC-000017",
+              "feature_refs": [
+                "feature:microduck:41db565298264db6:plane-a2a2f6f1d719"
+              ],
+              "source_triangle_index_base": 0,
+              "bounds_local_mm": [
+                [
+                  30.08081,
+                  -12.0,
+                  -18.341925
+                ],
+                [
+                  70.166312,
+                  41.999999,
+                  -18.341925
+                ]
+              ]
+            },
+            "sole": {
+              "part_ref": "part:microduck:8b649e45831a1972",
+              "source_ref": "SRC-000037",
+              "feature_refs": [
+                "feature:microduck:8b649e45831a1972:plane-fd72937098da"
+              ],
+              "source_triangle_index_base": 0,
+              "bounds_local_mm": [
+                [
+                  30.08081,
+                  -12.0,
+                  -18.341925
+                ],
+                [
+                  70.166312,
+                  41.999999,
+                  -18.341925
+                ]
+              ]
+            }
+          },
+          {
+            "id": "transverse_rib_ends_and_inner_bed",
+            "role": "distributed_support_geometry",
+            "samples": [
+              {
+                "foot": {
+                  "part_ref": "part:microduck:41db565298264db6",
+                  "source_ref": "SRC-000017",
+                  "feature_refs": [],
+                  "source_triangle_indices": [
+                    16630
+                  ],
+                  "source_triangle_index_base": 0,
+                  "bounds_local_mm": [
+                    [
+                      47.383219,
+                      4.788208,
+                      -28.310914
+                    ],
+                    [
+                      50.614826,
+                      6.538208,
+                      -28.037496
+                    ]
+                  ]
+                },
+                "sole": {
+                  "part_ref": "part:microduck:8b649e45831a1972",
+                  "source_ref": "SRC-000037",
+                  "feature_refs": [],
+                  "source_triangle_indices": [
+                    1915
+                  ],
+                  "source_triangle_index_base": 0,
+                  "bounds_local_mm": [
+                    [
+                      48.053827,
+                      3.080351,
+                      -28.25469
+                    ],
+                    [
+                      49.447019,
+                      8.92584,
+                      -28.138684
+                    ]
+                  ]
+                },
+                "sample_local_mm": [
+                  48.973456,
+                  5.371541,
+                  -28.177231
+                ],
+                "centroid_to_counterpart_triangle_distance_mm": 0.0017117144048178123,
+                "normal_dot": -0.9999978084927713
+              },
+              {
+                "foot": {
+                  "part_ref": "part:microduck:41db565298264db6",
+                  "source_ref": "SRC-000017",
+                  "feature_refs": [
+                    "feature:microduck:41db565298264db6:plane-9d79c60ed61f"
+                  ],
+                  "source_triangle_index_base": 0,
+                  "bounds_local_mm": [
+                    [
+                      48.823215,
+                      11.788208,
+                      -28.190766
+                    ],
+                    [
+                      50.614826,
+                      13.538208,
+                      -28.037496
+                    ]
+                  ]
+                },
+                "sole": {
+                  "part_ref": "part:microduck:8b649e45831a1972",
+                  "source_ref": "SRC-000037",
+                  "feature_refs": [
+                    "feature:microduck:8b649e45831a1972:plane-cc5c4e2b3eab"
+                  ],
+                  "source_triangle_index_base": 0,
+                  "bounds_local_mm": [
+                    [
+                      49.910173,
+                      8.397073,
+                      -28.09879
+                    ],
+                    [
+                      50.614826,
+                      12.875719,
+                      -28.037496
+                    ]
+                  ]
+                },
+                "sample_local_mm": [
+                  50.017623,
+                  12.371541,
+                  -28.088586
+                ],
+                "centroid_to_counterpart_triangle_distance_mm": 0.0008544789699934089,
+                "normal_dot": -0.9999989838423973
+              },
+              {
+                "foot": {
+                  "part_ref": "part:microduck:41db565298264db6",
+                  "source_ref": "SRC-000017",
+                  "feature_refs": [
+                    "feature:microduck:41db565298264db6:plane-b6cf4a03ea32"
+                  ],
+                  "source_triangle_index_base": 0,
+                  "bounds_local_mm": [
+                    [
+                      49.71911,
+                      18.788207,
+                      -28.11515
+                    ],
+                    [
+                      50.39091,
+                      20.538207,
+                      -28.057067
+                    ]
+                  ]
+                },
+                "sole": {
+                  "part_ref": "part:microduck:8b649e45831a1972",
+                  "source_ref": "SRC-000037",
+                  "feature_refs": [
+                    "feature:microduck:8b649e45831a1972:plane-690b0cc8f89e"
+                  ],
+                  "source_triangle_index_base": 0,
+                  "bounds_local_mm": [
+                    [
+                      49.768608,
+                      18.132901,
+                      -28.110866
+                    ],
+                    [
+                      50.614826,
+                      22.0,
+                      -28.037496
+                    ]
+                  ]
+                },
+                "sample_local_mm": [
+                  50.092336,
+                  19.371541,
+                  -28.08292
+                ],
+                "centroid_to_counterpart_triangle_distance_mm": 6.245036804322434e-05,
+                "normal_dot": -0.9999999935355058
+              },
+              {
+                "foot": {
+                  "part_ref": "part:microduck:41db565298264db6",
+                  "source_ref": "SRC-000017",
+                  "feature_refs": [
+                    "feature:microduck:41db565298264db6:plane-fafb62081012"
+                  ],
+                  "source_triangle_index_base": 0,
+                  "bounds_local_mm": [
+                    [
+                      49.754601,
+                      25.788208,
+                      -28.112605
+                    ],
+                    [
+                      50.614826,
+                      27.538208,
+                      -28.037496
+                    ]
+                  ]
+                },
+                "sole": {
+                  "part_ref": "part:microduck:8b649e45831a1972",
+                  "source_ref": "SRC-000037",
+                  "feature_refs": [
+                    "feature:microduck:8b649e45831a1972:plane-45803626d347"
+                  ],
+                  "source_triangle_index_base": 0,
+                  "bounds_local_mm": [
+                    [
+                      49.12059,
+                      22.0,
+                      -28.16757
+                    ],
+                    [
+                      50.614826,
+                      26.937913,
+                      -28.037496
+                    ]
+                  ]
+                },
+                "sample_local_mm": [
+                  50.328085,
+                  26.371542,
+                  -28.062532
+                ],
+                "centroid_to_counterpart_triangle_distance_mm": 7.511709627803488e-05,
+                "normal_dot": -0.9999999659460714
+              },
+              {
+                "foot": {
+                  "part_ref": "part:microduck:41db565298264db6",
+                  "source_ref": "SRC-000017",
+                  "feature_refs": [
+                    "feature:microduck:41db565298264db6:plane-638918573736"
+                  ],
+                  "source_triangle_index_base": 0,
+                  "bounds_local_mm": [
+                    [
+                      48.855823,
+                      32.788206,
+                      -28.19082
+                    ],
+                    [
+                      50.614826,
+                      34.174871,
+                      -28.037496
+                    ]
+                  ]
+                },
+                "sole": {
+                  "part_ref": "part:microduck:8b649e45831a1972",
+                  "source_ref": "SRC-000037",
+                  "feature_refs": [],
+                  "source_triangle_indices": [
+                    2778
+                  ],
+                  "source_triangle_index_base": 0,
+                  "bounds_local_mm": [
+                    [
+                      48.60368,
+                      31.89937,
+                      -28.208436
+                    ],
+                    [
+                      50.614826,
+                      34.239892,
+                      -28.037496
+                    ]
+                  ]
+                },
+                "sample_local_mm": [
+                  50.028492,
+                  33.250427,
+                  -28.088604
+                ],
+                "centroid_to_counterpart_triangle_distance_mm": 0.0012668828013750017,
+                "normal_dot": -0.9999976833248918
+              }
+            ],
+            "annotation_scope": "Five sampled source facets, not an exhaustive contact-area claim."
+          }
+        ],
+        "candidate_insertion_direction_of_foot_in_sole": [
+          0,
+          0,
+          -1
+        ],
+        "pull_off_retention": "unconfirmed; reviewed sole sections show no separate hook/undercut/locking groove"
+      },
+      "foot_ankle": {
+        "kind": "compound_latch_and_central_fastener_hypothesis",
+        "participants": [
+          "part:microduck:41db565298264db6",
+          "part:microduck:07e507f1e9297aa3"
+        ],
+        "members": [
+          {
+            "id": "front_hook_and_ledge",
+            "role": "potential_axial_pull_off_capture",
+            "foot_hook_underside": {
+              "part_ref": "part:microduck:41db565298264db6",
+              "source_ref": "SRC-000017",
+              "feature_refs": [],
+              "source_triangle_indices": [
+                1703,
+                1704
+              ],
+              "source_triangle_index_base": 0,
+              "bounds_local_mm": [
+                [
+                  45.000002,
+                  0.063208,
+                  -14.341925
+                ],
+                [
+                  55.0,
+                  1.063208,
+                  -14.341925
+                ]
+              ]
+            },
+            "foot_hook_shape": {
+              "lead_in_ramp": {
+                "part_ref": "part:microduck:41db565298264db6",
+                "source_ref": "SRC-000017",
+                "feature_refs": [],
+                "source_triangle_indices": [
+                  1674,
+                  1675
+                ],
+                "source_triangle_index_base": 0,
+                "bounds_local_mm": [
+                  [
+                    45.000002,
+                    0.363,
+                    -13.341925
+                  ],
+                  [
+                    55.0,
+                    1.063208,
+                    -12.341925
+                  ]
+                ]
+              },
+              "stem_back_face": {
+                "part_ref": "part:microduck:41db565298264db6",
+                "source_ref": "SRC-000017",
+                "feature_refs": [],
+                "source_triangle_indices": [
+                  9240,
+                  9241
+                ],
+                "source_triangle_index_base": 0,
+                "bounds_local_mm": [
+                  [
+                    45.000002,
+                    -1.387372,
+                    -20.897141
+                  ],
+                  [
+                    55.0,
+                    -0.436792,
+                    -12.341925
+                  ]
+                ]
+              }
+            },
+            "ankle_ledge_top": {
+              "part_ref": "part:microduck:07e507f1e9297aa3",
+              "source_ref": "SRC-000010",
+              "feature_refs": [],
+              "source_triangle_indices": [
+                170,
+                171
+              ],
+              "source_triangle_index_base": 0,
+              "bounds_local_mm": [
+                [
+                  44.0,
+                  0.163208,
+                  -14.641925
+                ],
+                [
+                  56.000002,
+                  1.563208,
+                  -14.641925
+                ]
+              ]
+            },
+            "normal_gap_mm": 0.3,
+            "projected_overlap_xy_mm2": 9.0,
+            "annotation_scope": "Actual hook underside and mating ledge; not inferred from a hole search.",
+            "unresolved": [
+              "Elasticity, assembly sequence, cyclic durability and installed preload unknown."
+            ]
+          },
+          {
+            "id": "rear_hook_and_ledge",
+            "role": "potential_axial_pull_off_capture",
+            "foot_hook_underside": {
+              "part_ref": "part:microduck:41db565298264db6",
+              "source_ref": "SRC-000017",
+              "feature_refs": [],
+              "source_triangle_indices": [
+                12231,
+                12232
+              ],
+              "source_triangle_index_base": 0,
+              "bounds_local_mm": [
+                [
+                  45.000002,
+                  35.763208,
+                  -14.341925
+                ],
+                [
+                  55.0,
+                  36.763206,
+                  -14.341925
+                ]
+              ]
+            },
+            "foot_hook_shape": {
+              "lead_in_ramp": {
+                "part_ref": "part:microduck:41db565298264db6",
+                "source_ref": "SRC-000017",
+                "feature_refs": [],
+                "source_triangle_indices": [
+                  330,
+                  331
+                ],
+                "source_triangle_index_base": 0,
+                "bounds_local_mm": [
+                  [
+                    45.000002,
+                    35.763208,
+                    -13.341925
+                  ],
+                  [
+                    55.0,
+                    36.463413,
+                    -12.341925
+                  ]
+                ]
+              },
+              "stem_back_face": {
+                "part_ref": "part:microduck:41db565298264db6",
+                "source_ref": "SRC-000017",
+                "feature_refs": [],
+                "source_triangle_indices": [
+                  2836,
+                  2837
+                ],
+                "source_triangle_index_base": 0,
+                "bounds_local_mm": [
+                  [
+                    45.000002,
+                    37.263207,
+                    -20.897141
+                  ],
+                  [
+                    55.0,
+                    38.213786,
+                    -12.341925
+                  ]
+                ]
+              }
+            },
+            "ankle_ledge_top": {
+              "part_ref": "part:microduck:07e507f1e9297aa3",
+              "source_ref": "SRC-000010",
+              "feature_refs": [],
+              "source_triangle_indices": [
+                4954,
+                4955
+              ],
+              "source_triangle_index_base": 0,
+              "bounds_local_mm": [
+                [
+                  44.0,
+                  35.263207,
+                  -14.641925
+                ],
+                [
+                  56.000002,
+                  36.663208,
+                  -14.641925
+                ]
+              ]
+            },
+            "normal_gap_mm": 0.3,
+            "projected_overlap_xy_mm2": 9.0,
+            "annotation_scope": "Actual hook underside and mating ledge; not inferred from a hole search.",
+            "unresolved": [
+              "Elasticity, assembly sequence, cyclic durability and installed preload unknown."
+            ]
+          },
+          {
+            "id": "central_stepped_holes",
+            "role": "screw_clamping_hypothesis",
+            "axis_local": [
+              0,
+              0,
+              1
+            ],
+            "center_xy_local_mm": [
+              50,
+              4.502003
+            ],
+            "ankle_passage": {
+              "part_ref": "part:microduck:07e507f1e9297aa3",
+              "source_ref": "SRC-000010",
+              "feature_refs": [
+                "feature:microduck:07e507f1e9297aa3:1de098e8af86"
+              ],
+              "source_triangle_index_base": 0,
+              "bounds_local_mm": [
+                [
+                  48.900001,
+                  3.402003,
+                  -15.841926
+                ],
+                [
+                  51.100001,
+                  5.602003,
+                  -14.341925
+                ]
+              ],
+              "geometry": {
+                "type": "cylinder",
+                "axis": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "origin": [
+                  0.04999999968725165,
+                  0.0045020028895079904,
+                  -0.015091925393790007
+                ],
+                "radius_m": 0.001099999968575766,
+                "axial_range_m": [
+                  -0.0007500001229345798,
+                  0.0007500001229345798
+                ]
+              }
+            },
+            "ankle_counterbore": {
+              "part_ref": "part:microduck:07e507f1e9297aa3",
+              "source_ref": "SRC-000010",
+              "feature_refs": [
+                "feature:microduck:07e507f1e9297aa3:ba532f6cd406"
+              ],
+              "source_triangle_index_base": 0,
+              "bounds_local_mm": [
+                [
+                  47.800001,
+                  2.302003,
+                  -14.341925
+                ],
+                [
+                  52.200001,
+                  6.702003,
+                  -13.341925
+                ]
+              ],
+              "geometry": {
+                "type": "cylinder",
+                "axis": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "origin": [
+                  0.05000000020598015,
+                  0.0045020028579003625,
+                  -0.01384192518889904
+                ],
+                "radius_m": 0.002199999986142126,
+                "axial_range_m": [
+                  -0.0005000000819563866,
+                  0.0005000000819563866
+                ]
+              }
+            },
+            "foot_receiver": {
+              "part_ref": "part:microduck:41db565298264db6",
+              "source_ref": "SRC-000017",
+              "feature_refs": [
+                "feature:microduck:41db565298264db6:089ba35aff83"
+              ],
+              "source_triangle_index_base": 0,
+              "bounds_local_mm": [
+                [
+                  49.199998,
+                  3.702003,
+                  -21.841925
+                ],
+                [
+                  50.799999,
+                  5.302003,
+                  -16.341925
+                ]
+              ],
+              "geometry": {
+                "type": "cylinder",
+                "axis": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "origin": [
+                  0.05000000000233868,
+                  0.004502002791745581,
+                  -0.019091924652457237
+                ],
+                "radius_m": 0.0007999999040520896,
+                "axial_range_m": [
+                  -0.002749999985098839,
+                  0.002749999985098839
+                ]
+              }
+            },
+            "foot_entry": {
+              "part_ref": "part:microduck:41db565298264db6",
+              "source_ref": "SRC-000017",
+              "feature_refs": [
+                "feature:microduck:41db565298264db6:5275acec465a"
+              ],
+              "source_triangle_index_base": 0,
+              "bounds_local_mm": [
+                [
+                  48.500001,
+                  3.002003,
+                  -16.341925
+                ],
+                [
+                  51.5,
+                  6.002003,
+                  -15.841926
+                ]
+              ],
+              "geometry": {
+                "type": "cylinder",
+                "axis": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "origin": [
+                  0.05000000046310869,
+                  0.004502002816324731,
+                  -0.016091925092041492
+                ],
+                "radius_m": 0.0014999999551656789,
+                "axial_range_m": [
+                  -0.000249999575316906,
+                  0.000249999575316906
+                ]
+              }
+            },
+            "unresolved": [
+              "Actual fastener and threads are absent from the source model.",
+              "Do not reuse this hole as the sole interface."
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "current_package_gap": {
+    "id": "connection-finding:8f7b7df18a917501",
+    "review_ref": "connection-review:microduck:8f7b7df18a917501",
+    "title": "右脚底 ↔ 右脚部件",
+    "work_status": "not_investigated",
+    "evidence_status": "geometry_only",
+    "findings": [
+      "当前审查只有来源包围盒或面投影线索；在相同参考构型下，未检出轴距≤0.15 mm 且有限间隔≤5 mm 的双方圆柱结构配对。"
+    ],
+    "mechanism_candidates": [],
+    "local_pairings": [],
+    "roles": [],
+    "actions": [],
+    "hypothesis_refs": [],
+    "explanation": "Finite side walls and rim were already present, but no noncircular compound assembly interface was constructed. The finding reports absence of cylindrical pairs."
+  }
+}

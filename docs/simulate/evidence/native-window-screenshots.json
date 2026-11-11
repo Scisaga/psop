@@ -1,0 +1,38 @@
+[
+  {
+    "file": "simulate-native-window-1280.png",
+    "client": [
+      1264,
+      705
+    ],
+    "outer": [
+      1280,
+      800
+    ],
+    "sha256": "f9cd822e22185bfb87c85056784ba54debbe74f7bfde22d06e7e904b935e359b"
+  },
+  {
+    "file": "simulate-native-window-1600.png",
+    "client": [
+      1584,
+      905
+    ],
+    "outer": [
+      1600,
+      1000
+    ],
+    "sha256": "04169d16f4c22d9860d8c874009795eaddd4e14402415d8205cc84edcbd29446"
+  },
+  {
+    "file": "simulate-native-window-1000.png",
+    "client": [
+      984,
+      605
+    ],
+    "outer": [
+      1000,
+      700
+    ],
+    "sha256": "b0c7f1fee1c1fbe3330c8cd42e3f2b89f832ca38a6f523d3c2d5e98fd0ba4a86"
+  }
+]

@@ -1,0 +1,88 @@
+{
+  "checkedAt": "2026-11-07T17:36:19.411Z",
+  "service": "http://127.0.0.1:8780",
+  "applicationVersion": "0.2.0",
+  "snapshot": "dkp-8857e0482824621ff8da",
+  "packagePath": "build/microduck/source-1.12/microduck-connection-sites.dkp",
+  "packageVersion": "2.0.0-connection-sites.1",
+  "profile": "psop.hardware.source-model/1.12",
+  "packageDigest": "8857e0482824621ff8da5ba2c7b8da13f8641ea8c3c10961ed52b3d238993ba9",
+  "toolchain": {
+    "name": "psop-build",
+    "version": "3.0.0-draft.13",
+    "sha256": "ccc48c4146583d47971bdcc9ed667271fbb6242d9aef75ef455153aeaeb4e5c0"
+  },
+  "counts": {
+    "sources": 71,
+    "geometries": 38,
+    "parts": 70,
+    "bodies": 15,
+    "joints": 14,
+    "evidence": 550
+  },
+  "frontend": [
+    {
+      "asset": "/assets/index-CGRDHGhI.js",
+      "sha256": "ccc4b3e56577ea44bb682950460e81968af61599e1aed9a894dc3e06ce5fa3e6",
+      "bytes": 1194026,
+      "servedBytesMatch": true
+    },
+    {
+      "asset": "/assets/index-BnGLjiCt.css",
+      "sha256": "bf5a1f01d6e7d952826ca776edc948cad314bb12059ddab2dd1d28bcecbcf689",
+      "bytes": 175885,
+      "servedBytesMatch": true
+    }
+  ],
+  "apiStatus": 200,
+  "independentLocalSites": {
+    "expected_count": 8,
+    "missing": []
+  },
+  "unchangedStlFiles": 38,
+  "frozen11FilesChecked": 79,
+  "frozenInterpreterSha256": "867dbfad7bc3d052680ca794ea64d0e11dac732aa0c4f1bf839d87336d4b08a9",
+  "frozenAuthorSha256": "1612a99ba6ba01fb4459cfd0957f933b7f69d10584add53ba036f65ff7f1ef2a",
+  "tests": {
+    "browser": {
+      "passed": 54,
+      "skipped": 2,
+      "reason": "Historical profiles 1.2 and 1.8 are not registered locally"
+    },
+    "directory": 8,
+    "buildRelated": 30,
+    "identityAndEvidence": 5,
+    "api": 7,
+    "visibilityAndNormals": 6,
+    "validationCache": 7
+  },
+  "comparison": {
+    "camera": "0.30,-0.32,0.23,0,0,0.105",
+    "desktop": [
+      1600,
+      900
+    ],
+    "narrow": [
+      1100,
+      800
+    ],
+    "panelWidth": 360,
+    "beforeSnapshot": "dkp-84f6829a25a82fefaf1d"
+  },
+  "operations": {
+    "left": "operations/fb88-operations.json",
+    "right": "operations/d191-operations.json",
+    "quietReturn": "operations/quiet-peer-return.json",
+    "picking": "picking/source-triangle-pick.json"
+  },
+  "regressionObjects": {
+    "formal": "part:microduck:a682dc3620df43f5",
+    "geometry": "part:microduck:b364863ffde63eed",
+    "snapshot": "dkp-8857e0482824621ff8da"
+  },
+  "limitations": [
+    "本轮必需操作项已完成；历史 1.2/1.8 的两个页面用例因本机未登记而跳过。",
+    "实际选孔/螺钉数量、螺纹、旋入深度、活动区归属与轴向保持仍未确认。",
+    "独立原件验收覆盖已标注样例，不宣称整件或整机接口发现完整。"
+  ]
+}

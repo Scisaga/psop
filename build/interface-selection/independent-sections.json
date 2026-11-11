@@ -1,0 +1,195 @@
+{
+  "method": "independent-source-plane-sections/1",
+  "passed": 27,
+  "features": [
+    {
+      "id": "LS-01",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.868320735574235e-07,
+      "max_outward_radial_dot": -0.9998936321745105
+    },
+    {
+      "id": "LS-02",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.0484027505917957e-06,
+      "max_outward_radial_dot": -0.9998936433830905
+    },
+    {
+      "id": "LS-03",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.0479505786577855e-06,
+      "max_outward_radial_dot": -0.9998937467045232
+    },
+    {
+      "id": "LS-04",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.0481077896043033e-06,
+      "max_outward_radial_dot": -0.9998936324475569
+    },
+    {
+      "id": "LS-05",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.04844266759661e-06,
+      "max_outward_radial_dot": -0.9998937390025573
+    },
+    {
+      "id": "LS-06",
+      "source_triangles": 180,
+      "closed_section": true,
+      "max_radius_residual_m": 1.0474331260999867e-06,
+      "max_outward_radial_dot": -0.9997611948847388
+    },
+    {
+      "id": "LG-01",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.0452364139596718e-06,
+      "max_outward_radial_dot": -0.999893758058404
+    },
+    {
+      "id": "LG-02",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.0448889071039153e-06,
+      "max_outward_radial_dot": -0.9998936207724108
+    },
+    {
+      "id": "LG-03",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.0453971534198254e-06,
+      "max_outward_radial_dot": -0.9998937608415984
+    },
+    {
+      "id": "LG-04",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.0452890367037247e-06,
+      "max_outward_radial_dot": -0.9998936177412312
+    },
+    {
+      "id": "LG-05",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.282614865968923e-06,
+      "max_outward_radial_dot": -0.9998940198328421
+    },
+    {
+      "id": "RS-DISPLAY-X",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.60046101250353e-07,
+      "max_outward_radial_dot": -0.9998933871915294
+    },
+    {
+      "id": "RS-DISPLAY-Z",
+      "source_triangles": 180,
+      "closed_section": true,
+      "max_radius_residual_m": 1.0474253337696207e-06,
+      "max_outward_radial_dot": -0.9997611944666103
+    },
+    {
+      "id": "RS-HORN-1",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.0481077896832332e-06,
+      "max_outward_radial_dot": -0.9998936324475569
+    },
+    {
+      "id": "RS-HORN-2",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.0484027506236712e-06,
+      "max_outward_radial_dot": -0.9998936433830905
+    },
+    {
+      "id": "RS-HORN-3",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.048442667629353e-06,
+      "max_outward_radial_dot": -0.9998937390025573
+    },
+    {
+      "id": "RS-HORN-4",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.0479505785628094e-06,
+      "max_outward_radial_dot": -0.9998937467045232
+    },
+    {
+      "id": "NECK-HORN-1",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.61540943377062e-07,
+      "max_outward_radial_dot": -0.9998940450377382
+    },
+    {
+      "id": "NECK-HORN-2",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.61540943377062e-07,
+      "max_outward_radial_dot": -0.9998940450377382
+    },
+    {
+      "id": "NECK-HORN-3",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.61540943377062e-07,
+      "max_outward_radial_dot": -0.9998940450377382
+    },
+    {
+      "id": "NECK-HORN-4",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.61540943377062e-07,
+      "max_outward_radial_dot": -0.9998940450377382
+    },
+    {
+      "id": "BR-SERVO-1",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.0476356260696873e-06,
+      "max_outward_radial_dot": -0.9998938965159121
+    },
+    {
+      "id": "BR-SERVO-2",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.0477316510308903e-06,
+      "max_outward_radial_dot": -0.9998938239398311
+    },
+    {
+      "id": "BR-LINK-1",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.047290828197359e-06,
+      "max_outward_radial_dot": -0.9998939990085758
+    },
+    {
+      "id": "BR-LINK-2",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.0478166341094074e-06,
+      "max_outward_radial_dot": -0.9998938843362793
+    },
+    {
+      "id": "TORSO-HOUSING-1",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 9.491098645491875e-07,
+      "max_outward_radial_dot": -0.9998939205508899
+    },
+    {
+      "id": "TORSO-HOUSING-2",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 9.491042046296059e-07,
+      "max_outward_radial_dot": -0.9998939205508899
+    }
+  ]
+}

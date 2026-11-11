@@ -1,0 +1,1361 @@
+{
+  "method": "sampled-source-mesh-transit-audit/1",
+  "sample_fractions": [
+    0.2,
+    0.4,
+    0.6,
+    0.8,
+    0.95
+  ],
+  "waypoint_samples": true,
+  "snapshot_count": 2274,
+  "pair_checks": 623,
+  "step_count": 95,
+  "moving_step_count": 93,
+  "reference_handoff_count": 5,
+  "continuous_rigid_path_status": "not_certified",
+  "issues": [],
+  "steps": [
+    {
+      "index": 0,
+      "kind": "establish",
+      "label": "核对全部 70 个部件 · 接口方向与装入顺序",
+      "moving_ids": [],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 1,
+      "kind": "stage",
+      "label": "逐件避让 · 头部下壳",
+      "moving_ids": [
+        "instance:part:microduck:52fdcacf474a463f"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 2,
+      "kind": "stage",
+      "label": "逐件避让 · 喙部件",
+      "moving_ids": [
+        "instance:part:microduck:328011951ac11ee7"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 3,
+      "kind": "stage",
+      "label": "逐件避让 · 电源支架",
+      "moving_ids": [
+        "instance:part:microduck:e7e8275c7d01674c"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 4,
+      "kind": "stage",
+      "label": "逐件避让 · 左侧外壳",
+      "moving_ids": [
+        "instance:part:microduck:e27cbdd6c07a264e"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 5,
+      "kind": "stage",
+      "label": "逐件避让 · 喙上部软质件",
+      "moving_ids": [
+        "instance:part:microduck:88b7496d63cb41ff"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 6,
+      "kind": "stage",
+      "label": "逐件避让 · NP-F970 电池外形",
+      "moving_ids": [
+        "instance:part:microduck:f97c1c6580d651d7"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 7,
+      "kind": "stage",
+      "label": "逐件避让 · 大腿加强板",
+      "moving_ids": [
+        "instance:part:microduck:c75bfc0afb35e000"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 8,
+      "kind": "stage",
+      "label": "逐件避让 · 大腿加强板",
+      "moving_ids": [
+        "instance:part:microduck:7e86db28af59d3cc"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 9,
+      "kind": "stage",
+      "label": "逐件避让 · 腿部连杆",
+      "moving_ids": [
+        "instance:part:microduck:638f29b46b322e64"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 10,
+      "kind": "stage",
+      "label": "逐件避让 · 偏航与横滚传动件",
+      "moving_ids": [
+        "instance:part:microduck:d4b9a9e9474a9829"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 11,
+      "kind": "stage",
+      "label": "逐件避让 · XL330 舵机",
+      "moving_ids": [
+        "instance:part:microduck:09cb390e38430c1e"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 12,
+      "kind": "stage",
+      "label": "逐件避让 · XL330 舵机",
+      "moving_ids": [
+        "instance:part:microduck:9ffe9d5bcd6bc13a"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 13,
+      "kind": "stage",
+      "label": "逐件避让 · XL330 舵机",
+      "moving_ids": [
+        "instance:part:microduck:a07b37bcb704b29f"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 14,
+      "kind": "stage",
+      "label": "逐件避让 · 眼部部件",
+      "moving_ids": [
+        "instance:part:microduck:2559a4c412bcda3e"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 15,
+      "kind": "stage",
+      "label": "逐件避让 · 轴承外形（22×16×4 配置名）",
+      "moving_ids": [
+        "instance:part:microduck:e475134639b3f7e1"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 16,
+      "kind": "stage",
+      "label": "逐件避让 · 轴承外形（22×16×4 配置名）",
+      "moving_ids": [
+        "instance:part:microduck:6b884b140f6e283c"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 17,
+      "kind": "stage",
+      "label": "逐件避让 · 轴承外形（22×16×4 配置名）",
+      "moving_ids": [
+        "instance:part:microduck:ea69e2c6bba10a23"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 18,
+      "kind": "stage",
+      "label": "逐件避让 · 轴承外形（22×16×4 配置名）",
+      "moving_ids": [
+        "instance:part:microduck:55121c0b36f62219"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 19,
+      "kind": "stage",
+      "label": "逐件避让 · 轴承外形（22×16×4 配置名）",
+      "moving_ids": [
+        "instance:part:microduck:d6a148b5784955d8"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 20,
+      "kind": "join",
+      "label": "躯干底座 · 定位基准",
+      "moving_ids": [
+        "instance:part:microduck:203d2686e3321e4a"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 21,
+      "kind": "preassemble",
+      "label": "偏航与横滚传动件 · 定位基准",
+      "moving_ids": [
+        "instance:part:microduck:d4b9a9e9474a9829"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 22,
+      "kind": "preassemble",
+      "label": "轴承外形（22×16×4 配置名）",
+      "moving_ids": [
+        "instance:part:microduck:55121c0b36f62219"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 23,
+      "kind": "preassemble",
+      "label": "轴承外形（22×16×4 配置名）",
+      "moving_ids": [
+        "instance:part:microduck:ea69e2c6bba10a23"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 24,
+      "kind": "preassemble",
+      "label": "XL330 舵机",
+      "moving_ids": [
+        "instance:part:microduck:96e22c7fa2b976d3"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 25,
+      "kind": "preassemble",
+      "label": "头部下壳",
+      "moving_ids": [
+        "instance:part:microduck:52fdcacf474a463f"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 26,
+      "kind": "preassemble",
+      "label": "喙部件 · 参考构型示意",
+      "moving_ids": [
+        "instance:part:microduck:328011951ac11ee7"
+      ],
+      "reference_handoff": true,
+      "issue_count": 0
+    },
+    {
+      "index": 27,
+      "kind": "preassemble",
+      "label": "喙上部软质件 · 参考构型示意",
+      "moving_ids": [
+        "instance:part:microduck:88b7496d63cb41ff"
+      ],
+      "reference_handoff": true,
+      "issue_count": 0
+    },
+    {
+      "index": 28,
+      "kind": "preassemble",
+      "label": "喙部软质件 · 参考构型示意",
+      "moving_ids": [
+        "instance:part:microduck:f5797f92c2bf01b8"
+      ],
+      "reference_handoff": true,
+      "issue_count": 0
+    },
+    {
+      "index": 29,
+      "kind": "preassemble",
+      "label": "轴承外形（默认配置名）",
+      "moving_ids": [
+        "instance:part:microduck:a0775b54397eb21e"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 30,
+      "kind": "join",
+      "label": "安装预装组合 · 9 个部件",
+      "moving_ids": [
+        "instance:part:microduck:d4b9a9e9474a9829",
+        "instance:part:microduck:ea69e2c6bba10a23",
+        "instance:part:microduck:55121c0b36f62219",
+        "instance:part:microduck:f5797f92c2bf01b8",
+        "instance:part:microduck:96e22c7fa2b976d3",
+        "instance:part:microduck:a0775b54397eb21e",
+        "instance:part:microduck:88b7496d63cb41ff",
+        "instance:part:microduck:328011951ac11ee7",
+        "instance:part:microduck:52fdcacf474a463f"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 31,
+      "kind": "preassemble",
+      "label": "右踝部件 · 定位基准",
+      "moving_ids": [
+        "instance:part:microduck:b371ac60e2f6757b"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 32,
+      "kind": "preassemble",
+      "label": "右脚部件 · 参考构型示意",
+      "moving_ids": [
+        "instance:part:microduck:f9955f19a691a1f4"
+      ],
+      "reference_handoff": true,
+      "issue_count": 0
+    },
+    {
+      "index": 33,
+      "kind": "preassemble",
+      "label": "轴承外形（默认配置名）",
+      "moving_ids": [
+        "instance:part:microduck:e196235810184adf"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 34,
+      "kind": "preassemble",
+      "label": "腿部连杆",
+      "moving_ids": [
+        "instance:part:microduck:7f4fefc3c6de90f1"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 35,
+      "kind": "preassemble",
+      "label": "右脚底",
+      "moving_ids": [
+        "instance:part:microduck:2f557a24b2729755"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 36,
+      "kind": "join",
+      "label": "安装预装组合 · 5 个部件",
+      "moving_ids": [
+        "instance:part:microduck:7f4fefc3c6de90f1",
+        "instance:part:microduck:b371ac60e2f6757b",
+        "instance:part:microduck:2f557a24b2729755",
+        "instance:part:microduck:e196235810184adf",
+        "instance:part:microduck:f9955f19a691a1f4"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 37,
+      "kind": "preassemble",
+      "label": "腿部连杆 · 定位基准",
+      "moving_ids": [
+        "instance:part:microduck:638f29b46b322e64"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 38,
+      "kind": "preassemble",
+      "label": "轴承外形（默认配置名）",
+      "moving_ids": [
+        "instance:part:microduck:766eaa6e4dd8b09f"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 39,
+      "kind": "preassemble",
+      "label": "左踝部件 · 定位基准",
+      "moving_ids": [
+        "instance:part:microduck:07e507f1e9297aa3"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 40,
+      "kind": "preassemble",
+      "label": "左脚部件 · 参考构型示意",
+      "moving_ids": [
+        "instance:part:microduck:41db565298264db6"
+      ],
+      "reference_handoff": true,
+      "issue_count": 0
+    },
+    {
+      "index": 41,
+      "kind": "preassemble",
+      "label": "安装预装组合 · 2 个部件",
+      "moving_ids": [
+        "instance:part:microduck:41db565298264db6",
+        "instance:part:microduck:07e507f1e9297aa3"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 42,
+      "kind": "preassemble",
+      "label": "左脚底",
+      "moving_ids": [
+        "instance:part:microduck:8b649e45831a1972"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 43,
+      "kind": "join",
+      "label": "安装预装组合 · 5 个部件",
+      "moving_ids": [
+        "instance:part:microduck:638f29b46b322e64",
+        "instance:part:microduck:8b649e45831a1972",
+        "instance:part:microduck:41db565298264db6",
+        "instance:part:microduck:766eaa6e4dd8b09f",
+        "instance:part:microduck:07e507f1e9297aa3"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 44,
+      "kind": "join",
+      "label": "XL330 舵机",
+      "moving_ids": [
+        "instance:part:microduck:0820b4025f26a004"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 45,
+      "kind": "join",
+      "label": "轴承外形（22×16×4 配置名）",
+      "moving_ids": [
+        "instance:part:microduck:d6a148b5784955d8"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 46,
+      "kind": "join",
+      "label": "轴承外形（22×16×4 配置名）",
+      "moving_ids": [
+        "instance:part:microduck:7938fd9143c59ea4"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 47,
+      "kind": "join",
+      "label": "偏航与横滚连接件",
+      "moving_ids": [
+        "instance:part:microduck:48099e14105d3289"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 48,
+      "kind": "join",
+      "label": "XL330 舵机",
+      "moving_ids": [
+        "instance:part:microduck:087d7a46a3ce4ca3"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 49,
+      "kind": "join",
+      "label": "横滚轴承支承件",
+      "moving_ids": [
+        "instance:part:microduck:c703574f50f6a46a"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 50,
+      "kind": "join",
+      "label": "轴承外形（22×16×4 配置名）",
+      "moving_ids": [
+        "instance:part:microduck:3fbf0b5c8cea4488"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 51,
+      "kind": "join",
+      "label": "髋部件",
+      "moving_ids": [
+        "instance:part:microduck:c7eeeac0a640d191"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 52,
+      "kind": "join",
+      "label": "轴承外形（22×16×4 配置名）",
+      "moving_ids": [
+        "instance:part:microduck:d924e1596ffb042a"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 53,
+      "kind": "join",
+      "label": "XL330 舵机",
+      "moving_ids": [
+        "instance:part:microduck:a07b37bcb704b29f"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 54,
+      "kind": "join",
+      "label": "轴承外形（22×16×4 配置名）",
+      "moving_ids": [
+        "instance:part:microduck:6b884b140f6e283c"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 55,
+      "kind": "join",
+      "label": "XL330 舵机",
+      "moving_ids": [
+        "instance:part:microduck:7c130c8489b57c99"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 56,
+      "kind": "join",
+      "label": "轴承外形（22×16×4 配置名）",
+      "moving_ids": [
+        "instance:part:microduck:e475134639b3f7e1"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 57,
+      "kind": "join",
+      "label": "轴承外形（22×16×4 配置名）",
+      "moving_ids": [
+        "instance:part:microduck:b364863ffde63eed"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 58,
+      "kind": "join",
+      "label": "偏航与横滚连接件",
+      "moving_ids": [
+        "instance:part:microduck:55970da91992f38c"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 59,
+      "kind": "join",
+      "label": "XL330 舵机",
+      "moving_ids": [
+        "instance:part:microduck:cd6d48fccc95df41"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 60,
+      "kind": "join",
+      "label": "横滚轴承支承件",
+      "moving_ids": [
+        "instance:part:microduck:cb253f38c818b9d8"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 61,
+      "kind": "join",
+      "label": "轴承外形（22×16×4 配置名）",
+      "moving_ids": [
+        "instance:part:microduck:47a950fbb3d0e416"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 62,
+      "kind": "join",
+      "label": "髋部件",
+      "moving_ids": [
+        "instance:part:microduck:fa9ee2f71faafb88"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 63,
+      "kind": "join",
+      "label": "轴承外形（22×16×4 配置名）",
+      "moving_ids": [
+        "instance:part:microduck:bb34e925e25e29f6"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 64,
+      "kind": "join",
+      "label": "大腿加强板",
+      "moving_ids": [
+        "instance:part:microduck:7e86db28af59d3cc"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 65,
+      "kind": "join",
+      "label": "XL330 舵机",
+      "moving_ids": [
+        "instance:part:microduck:08c5ade0f3fd37db"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 66,
+      "kind": "join",
+      "label": "XL330 舵机",
+      "moving_ids": [
+        "instance:part:microduck:7038a050dbc33fb0"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 67,
+      "kind": "join",
+      "label": "XL330 舵机",
+      "moving_ids": [
+        "instance:part:microduck:50f0c376d01bb0c1"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 68,
+      "kind": "join",
+      "label": "颈俯仰部件",
+      "moving_ids": [
+        "instance:part:microduck:834f5cc892eba41e"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 69,
+      "kind": "join",
+      "label": "XL330 舵机",
+      "moving_ids": [
+        "instance:part:microduck:44b5600c1a735117"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 70,
+      "kind": "join",
+      "label": "XL330 舵机",
+      "moving_ids": [
+        "instance:part:microduck:09cb390e38430c1e"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 71,
+      "kind": "join",
+      "label": "XL330 舵机",
+      "moving_ids": [
+        "instance:part:microduck:a682dc3620df43f5"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 72,
+      "kind": "join",
+      "label": "XL330 舵机",
+      "moving_ids": [
+        "instance:part:microduck:4cef8bb24d37fe6e"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 73,
+      "kind": "join",
+      "label": "大腿加强板",
+      "moving_ids": [
+        "instance:part:microduck:c75bfc0afb35e000"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 74,
+      "kind": "join",
+      "label": "XL330 舵机",
+      "moving_ids": [
+        "instance:part:microduck:9ffe9d5bcd6bc13a"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 75,
+      "kind": "join",
+      "label": "XL330 舵机",
+      "moving_ids": [
+        "instance:part:microduck:4cf80d5a57c8cb04"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 76,
+      "kind": "join",
+      "label": "右大腿部件",
+      "moving_ids": [
+        "instance:part:microduck:e40b9945707505e1"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 77,
+      "kind": "join",
+      "label": "面部件",
+      "moving_ids": [
+        "instance:part:microduck:afa52198f7fad203"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 78,
+      "kind": "join",
+      "label": "M12 镜头座",
+      "moving_ids": [
+        "instance:part:microduck:2d2cde8ae8ebacac"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 79,
+      "kind": "join",
+      "label": "电机支架",
+      "moving_ids": [
+        "instance:part:microduck:986b5adf27910138"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 80,
+      "kind": "join",
+      "label": "颈部件",
+      "moving_ids": [
+        "instance:part:microduck:133711c520619e45"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 81,
+      "kind": "join",
+      "label": "颈部件",
+      "moving_ids": [
+        "instance:part:microduck:6b5602b4416129fe"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 82,
+      "kind": "join",
+      "label": "左大腿部件",
+      "moving_ids": [
+        "instance:part:microduck:66c73aaad945a993"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 83,
+      "kind": "join",
+      "label": "电源支架",
+      "moving_ids": [
+        "instance:part:microduck:e7e8275c7d01674c"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 84,
+      "kind": "join",
+      "label": "电路板固定件",
+      "moving_ids": [
+        "instance:part:microduck:78cf36c41e4fde06"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 85,
+      "kind": "join",
+      "label": "扬声器外形",
+      "moving_ids": [
+        "instance:part:microduck:22f2cd114e324ec5"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 86,
+      "kind": "join",
+      "label": "树莓派 Zero 2 W 电路板外形",
+      "moving_ids": [
+        "instance:part:microduck:ebfcaf98422b7b28"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 87,
+      "kind": "join",
+      "label": "RPI Robot HAT 电路板外形",
+      "moving_ids": [
+        "instance:part:microduck:554503ef38151e67"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 88,
+      "kind": "join",
+      "label": "镜头外形",
+      "moving_ids": [
+        "instance:part:microduck:b61b0609c61fc572"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 89,
+      "kind": "join",
+      "label": "NP-F970 电池外形",
+      "moving_ids": [
+        "instance:part:microduck:f97c1c6580d651d7"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 90,
+      "kind": "join",
+      "label": "眼部部件",
+      "moving_ids": [
+        "instance:part:microduck:2559a4c412bcda3e"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 91,
+      "kind": "join",
+      "label": "头部上壳",
+      "moving_ids": [
+        "instance:part:microduck:82d68e991b23c2a3"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 92,
+      "kind": "join",
+      "label": "左侧外壳",
+      "moving_ids": [
+        "instance:part:microduck:e27cbdd6c07a264e"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 93,
+      "kind": "join",
+      "label": "右侧外壳",
+      "moving_ids": [
+        "instance:part:microduck:9d70b219a5533bf1"
+      ],
+      "reference_handoff": false,
+      "issue_count": 0
+    },
+    {
+      "index": 94,
+      "kind": "reveal",
+      "label": "参考构型完成 · 5 步装入工艺待核",
+      "moving_ids": [],
+      "reference_handoff": false,
+      "issue_count": 0
+    }
+  ],
+  "nominal_contacts": [
+    {
+      "part_refs": [
+        "part:microduck:52fdcacf474a463f",
+        "part:microduck:ea69e2c6bba10a23"
+      ],
+      "maximum_depth_m": 1.715868702234502e-9,
+      "contact_sample_count": 15
+    },
+    {
+      "part_refs": [
+        "part:microduck:52fdcacf474a463f",
+        "part:microduck:96e22c7fa2b976d3"
+      ],
+      "maximum_depth_m": 0.0008354304219995043,
+      "contact_sample_count": 23
+    },
+    {
+      "part_refs": [
+        "part:microduck:52fdcacf474a463f",
+        "part:microduck:88b7496d63cb41ff"
+      ],
+      "maximum_depth_m": 0.0001999964856170624,
+      "contact_sample_count": 1307
+    },
+    {
+      "part_refs": [
+        "part:microduck:328011951ac11ee7",
+        "part:microduck:f5797f92c2bf01b8"
+      ],
+      "maximum_depth_m": 0.000010947390064320217,
+      "contact_sample_count": 372
+    },
+    {
+      "part_refs": [
+        "part:microduck:328011951ac11ee7",
+        "part:microduck:a0775b54397eb21e"
+      ],
+      "maximum_depth_m": 0.0010076690828739027,
+      "contact_sample_count": 20
+    },
+    {
+      "part_refs": [
+        "part:microduck:b371ac60e2f6757b",
+        "part:microduck:f9955f19a691a1f4"
+      ],
+      "maximum_depth_m": 0.000016516572416296782,
+      "contact_sample_count": 6
+    },
+    {
+      "part_refs": [
+        "part:microduck:b371ac60e2f6757b",
+        "part:microduck:e196235810184adf"
+      ],
+      "maximum_depth_m": 2.553890609213738e-9,
+      "contact_sample_count": 13
+    },
+    {
+      "part_refs": [
+        "part:microduck:7f4fefc3c6de90f1",
+        "part:microduck:e196235810184adf"
+      ],
+      "maximum_depth_m": 1.2665223326990827e-8,
+      "contact_sample_count": 18
+    },
+    {
+      "part_refs": [
+        "part:microduck:2f557a24b2729755",
+        "part:microduck:f9955f19a691a1f4"
+      ],
+      "maximum_depth_m": 0.00001261119295303459,
+      "contact_sample_count": 391
+    },
+    {
+      "part_refs": [
+        "part:microduck:638f29b46b322e64",
+        "part:microduck:766eaa6e4dd8b09f"
+      ],
+      "maximum_depth_m": 1.2665222815400056e-8,
+      "contact_sample_count": 18
+    },
+    {
+      "part_refs": [
+        "part:microduck:07e507f1e9297aa3",
+        "part:microduck:41db565298264db6"
+      ],
+      "maximum_depth_m": 0.000016516572416296782,
+      "contact_sample_count": 6
+    },
+    {
+      "part_refs": [
+        "part:microduck:07e507f1e9297aa3",
+        "part:microduck:766eaa6e4dd8b09f"
+      ],
+      "maximum_depth_m": 2.388895437910321e-9,
+      "contact_sample_count": 9
+    },
+    {
+      "part_refs": [
+        "part:microduck:41db565298264db6",
+        "part:microduck:8b649e45831a1972"
+      ],
+      "maximum_depth_m": 0.000016964185071149275,
+      "contact_sample_count": 399
+    },
+    {
+      "part_refs": [
+        "part:microduck:0820b4025f26a004",
+        "part:microduck:7f4fefc3c6de90f1"
+      ],
+      "maximum_depth_m": 0.004800000458955815,
+      "contact_sample_count": 114
+    },
+    {
+      "part_refs": [
+        "part:microduck:0820b4025f26a004",
+        "part:microduck:b371ac60e2f6757b"
+      ],
+      "maximum_depth_m": 2.634525245071018e-9,
+      "contact_sample_count": 58
+    },
+    {
+      "part_refs": [
+        "part:microduck:48099e14105d3289",
+        "part:microduck:7938fd9143c59ea4"
+      ],
+      "maximum_depth_m": 1.0286705736106682e-9,
+      "contact_sample_count": 1
+    },
+    {
+      "part_refs": [
+        "part:microduck:087d7a46a3ce4ca3",
+        "part:microduck:48099e14105d3289"
+      ],
+      "maximum_depth_m": 0.004800000041723246,
+      "contact_sample_count": 53
+    },
+    {
+      "part_refs": [
+        "part:microduck:3fbf0b5c8cea4488",
+        "part:microduck:c7eeeac0a640d191"
+      ],
+      "maximum_depth_m": 1.0274075323835063e-9,
+      "contact_sample_count": 1
+    },
+    {
+      "part_refs": [
+        "part:microduck:c7eeeac0a640d191",
+        "part:microduck:d924e1596ffb042a"
+      ],
+      "maximum_depth_m": 0.000001350947941252123,
+      "contact_sample_count": 2
+    },
+    {
+      "part_refs": [
+        "part:microduck:a07b37bcb704b29f",
+        "part:microduck:d4b9a9e9474a9829"
+      ],
+      "maximum_depth_m": 0.0029999992400407544,
+      "contact_sample_count": 96
+    },
+    {
+      "part_refs": [
+        "part:microduck:638f29b46b322e64",
+        "part:microduck:7c130c8489b57c99"
+      ],
+      "maximum_depth_m": 0.0048000004589558,
+      "contact_sample_count": 114
+    },
+    {
+      "part_refs": [
+        "part:microduck:07e507f1e9297aa3",
+        "part:microduck:7c130c8489b57c99"
+      ],
+      "maximum_depth_m": 2.6345252592818724e-9,
+      "contact_sample_count": 58
+    },
+    {
+      "part_refs": [
+        "part:microduck:55970da91992f38c",
+        "part:microduck:b364863ffde63eed"
+      ],
+      "maximum_depth_m": 1.028670577163382e-9,
+      "contact_sample_count": 1
+    },
+    {
+      "part_refs": [
+        "part:microduck:55970da91992f38c",
+        "part:microduck:cd6d48fccc95df41"
+      ],
+      "maximum_depth_m": 0.004800000041723246,
+      "contact_sample_count": 53
+    },
+    {
+      "part_refs": [
+        "part:microduck:47a950fbb3d0e416",
+        "part:microduck:fa9ee2f71faafb88"
+      ],
+      "maximum_depth_m": 1.0274075243899006e-9,
+      "contact_sample_count": 1
+    },
+    {
+      "part_refs": [
+        "part:microduck:bb34e925e25e29f6",
+        "part:microduck:fa9ee2f71faafb88"
+      ],
+      "maximum_depth_m": 0.0000013509479412485703,
+      "contact_sample_count": 2
+    },
+    {
+      "part_refs": [
+        "part:microduck:50f0c376d01bb0c1",
+        "part:microduck:52fdcacf474a463f"
+      ],
+      "maximum_depth_m": 0.0005273624869156493,
+      "contact_sample_count": 15
+    },
+    {
+      "part_refs": [
+        "part:microduck:7038a050dbc33fb0",
+        "part:microduck:e40b9945707505e1"
+      ],
+      "maximum_depth_m": 0.0048000000119208935,
+      "contact_sample_count": 46
+    },
+    {
+      "part_refs": [
+        "part:microduck:08c5ade0f3fd37db",
+        "part:microduck:e40b9945707505e1"
+      ],
+      "maximum_depth_m": 0.004800000011920922,
+      "contact_sample_count": 46
+    },
+    {
+      "part_refs": [
+        "part:microduck:986b5adf27910138",
+        "part:microduck:ea69e2c6bba10a23"
+      ],
+      "maximum_depth_m": 1.7158687093399293e-9,
+      "contact_sample_count": 9
+    },
+    {
+      "part_refs": [
+        "part:microduck:4cf80d5a57c8cb04",
+        "part:microduck:66c73aaad945a993"
+      ],
+      "maximum_depth_m": 0.0048000000119208935,
+      "contact_sample_count": 46
+    },
+    {
+      "part_refs": [
+        "part:microduck:66c73aaad945a993",
+        "part:microduck:9ffe9d5bcd6bc13a"
+      ],
+      "maximum_depth_m": 0.004800000011920879,
+      "contact_sample_count": 46
+    },
+    {
+      "part_refs": [
+        "part:microduck:78cf36c41e4fde06",
+        "part:microduck:e7e8275c7d01674c"
+      ],
+      "maximum_depth_m": 0.00020000014901160767,
+      "contact_sample_count": 28
+    },
+    {
+      "part_refs": [
+        "part:microduck:22f2cd114e324ec5",
+        "part:microduck:986b5adf27910138"
+      ],
+      "maximum_depth_m": 0.0017000007629394407,
+      "contact_sample_count": 91
+    },
+    {
+      "part_refs": [
+        "part:microduck:22f2cd114e324ec5",
+        "part:microduck:ea69e2c6bba10a23"
+      ],
+      "maximum_depth_m": 0.00031288255796689237,
+      "contact_sample_count": 5
+    },
+    {
+      "part_refs": [
+        "part:microduck:afa52198f7fad203",
+        "part:microduck:ebfcaf98422b7b28"
+      ],
+      "maximum_depth_m": 0.000006240419937967534,
+      "contact_sample_count": 25
+    },
+    {
+      "part_refs": [
+        "part:microduck:2d2cde8ae8ebacac",
+        "part:microduck:ebfcaf98422b7b28"
+      ],
+      "maximum_depth_m": 0.0008080001418292531,
+      "contact_sample_count": 48
+    },
+    {
+      "part_refs": [
+        "part:microduck:e7e8275c7d01674c",
+        "part:microduck:f97c1c6580d651d7"
+      ],
+      "maximum_depth_m": 0.0009478869987771272,
+      "contact_sample_count": 27
+    },
+    {
+      "part_refs": [
+        "part:microduck:2559a4c412bcda3e",
+        "part:microduck:b61b0609c61fc572"
+      ],
+      "maximum_depth_m": 0.0016682799816821676,
+      "contact_sample_count": 216
+    },
+    {
+      "part_refs": [
+        "part:microduck:554503ef38151e67",
+        "part:microduck:82d68e991b23c2a3"
+      ],
+      "maximum_depth_m": 0.000028642659692877715,
+      "contact_sample_count": 1
+    },
+    {
+      "part_refs": [
+        "part:microduck:50f0c376d01bb0c1",
+        "part:microduck:82d68e991b23c2a3"
+      ],
+      "maximum_depth_m": 0.0005635935109776042,
+      "contact_sample_count": 1
+    },
+    {
+      "part_refs": [
+        "part:microduck:82d68e991b23c2a3",
+        "part:microduck:96e22c7fa2b976d3"
+      ],
+      "maximum_depth_m": 0.001003906823680218,
+      "contact_sample_count": 26
+    },
+    {
+      "part_refs": [
+        "part:microduck:52fdcacf474a463f",
+        "part:microduck:82d68e991b23c2a3"
+      ],
+      "maximum_depth_m": 4.36892266675351e-7,
+      "contact_sample_count": 4
+    },
+    {
+      "part_refs": [
+        "part:microduck:a682dc3620df43f5",
+        "part:microduck:e27cbdd6c07a264e"
+      ],
+      "maximum_depth_m": 0.0012353211781750452,
+      "contact_sample_count": 17
+    },
+    {
+      "part_refs": [
+        "part:microduck:e27cbdd6c07a264e",
+        "part:microduck:f97c1c6580d651d7"
+      ],
+      "maximum_depth_m": 0.00030889908625442077,
+      "contact_sample_count": 16
+    },
+    {
+      "part_refs": [
+        "part:microduck:09cb390e38430c1e",
+        "part:microduck:9d70b219a5533bf1"
+      ],
+      "maximum_depth_m": 0.0008578870276761954,
+      "contact_sample_count": 6
+    }
+  ],
+  "geometry_stats": {
+    "mesh_count": 38,
+    "part_count": 70,
+    "sample_count": 64298,
+    "ray_queries": 445872,
+    "pair_queries": 0,
+    "proxy_parts": []
+  }
+}

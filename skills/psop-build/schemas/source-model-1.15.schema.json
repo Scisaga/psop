@@ -1,0 +1,136 @@
+{
+  "type": "object",
+  "properties": {
+    "schema": {
+      "const": "psop.hardware.source-model/1.15"
+    },
+    "ontology_target": {
+      "const": "psop.hardware/2.0-draft.4"
+    },
+    "device_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "default_configuration_ref": {"type":"string","minLength":1},
+    "parts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source_refs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "stock_quantity": {
+            "type": "null"
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "source_refs",
+          "stock_quantity"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "configurations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "record_type": {
+            "const": "reference_configuration"
+          },
+          "basis": {"const":"engineering_inference"},
+          "derived_from": {"type":"string","minLength":1},
+          "adjustment_ref": {"type":"string","minLength":1},
+          "part_refs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "placements": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "part_ref": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "position": {
+                  "type": "array",
+                  "items": {
+                    "type": "number"
+                  }
+                },
+                "quaternion": {
+                  "type": "array",
+                  "items": {
+                    "type": "number"
+                  }
+                }
+              },
+              "required": [
+                "part_ref",
+                "position",
+                "quaternion"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": [
+          "id",
+          "record_type",
+          "part_refs",
+          "placements"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "catalog_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "compatibility_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "coverage_ref": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "required": [
+    "schema",
+    "ontology_target",
+    "device_id",
+    "parts",
+    "configurations",
+    "catalog_ref",
+    "compatibility_ref",
+    "coverage_ref"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "psop.hardware.source-model/1.15"
+}

@@ -1,0 +1,188 @@
+{
+  "schema": "psop.homepage-validation/2",
+  "checked_at": "2026-11-11T14:37:11.377Z",
+  "timezone": "Asia/Shanghai",
+  "result": "passed",
+  "checks": {
+    "static_integrity": {
+      "local_paths": 25,
+      "duplicate_ids": false,
+      "legacy_anchors": 10,
+      "javascript_syntax": "passed",
+      "brand_master": "identical"
+    },
+    "file_delivery": "passed",
+    "file_tabs_and_image_dialog": "passed",
+    "file_three_dimensional_view": "passed",
+    "file_legacy_research_links": "passed",
+    "file_assembly_recording": "passed",
+    "file_responsive_layout": "passed",
+    "http_delivery": "passed",
+    "http_tabs_and_image_dialog": "passed",
+    "http_three_dimensional_view": "passed",
+    "http_legacy_research_links": "passed",
+    "http_assembly_recording": "passed",
+    "http_responsive_layout": "passed",
+    "degraded_access": {
+      "javascript_disabled": "passed",
+      "webgl_disabled": "passed",
+      "dependency_failure": "passed",
+      "reduced_motion": "passed"
+    },
+    "asset_provenance": {
+      "snapshot": "2.0.0-capabilities.10",
+      "images": 10,
+      "video": "verified",
+      "head_shell_close_up": {
+        "source_original": true,
+        "visible_instances": 2,
+        "hidden_instances": 68,
+        "commands": "connect / disconnect / undo",
+        "ten_second_segment": "split head shells"
+      },
+      "hero_bytes": 165440,
+      "hashes": "matched",
+      "http_byte_ranges": "passed"
+    }
+  },
+  "protocols": {
+    "file": {
+      "initial_media_requests": 0,
+      "external_requests": 0,
+      "geometry": {
+        "source_meshes": 38,
+        "instances": 70,
+        "source_matrices_preserved": true,
+        "manual_initial_pose": true,
+        "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 2080 Ti (0x00001E07) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      },
+      "recording": {
+        "duration": 30.034,
+        "width": 1600,
+        "height": 1000,
+        "seek_to_ten_seconds": "passed"
+      },
+      "console_errors": [],
+      "failed_requests": [],
+      "status": "passed"
+    },
+    "http": {
+      "initial_media_requests": 0,
+      "external_requests": 0,
+      "geometry": {
+        "source_meshes": 38,
+        "instances": 70,
+        "source_matrices_preserved": true,
+        "manual_initial_pose": true,
+        "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 2080 Ti (0x00001E07) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      },
+      "recording": {
+        "duration": 30.034,
+        "width": 1600,
+        "height": 1000,
+        "seek_to_ten_seconds": "passed"
+      },
+      "console_errors": [],
+      "failed_requests": [],
+      "status": "passed"
+    }
+  },
+  "viewports": [
+    {
+      "protocol": "file",
+      "viewport": 1920,
+      "document": 1920,
+      "body": 1920
+    },
+    {
+      "protocol": "file",
+      "viewport": 1440,
+      "document": 1440,
+      "body": 1440
+    },
+    {
+      "protocol": "file",
+      "viewport": 1024,
+      "document": 1024,
+      "body": 1024
+    },
+    {
+      "protocol": "file",
+      "viewport": 768,
+      "document": 768,
+      "body": 768
+    },
+    {
+      "protocol": "file",
+      "viewport": 390,
+      "document": 390,
+      "body": 390
+    },
+    {
+      "protocol": "file",
+      "viewport": 360,
+      "document": 360,
+      "body": 360
+    },
+    {
+      "protocol": "http",
+      "viewport": 1920,
+      "document": 1920,
+      "body": 1920
+    },
+    {
+      "protocol": "http",
+      "viewport": 1440,
+      "document": 1440,
+      "body": 1440
+    },
+    {
+      "protocol": "http",
+      "viewport": 1024,
+      "document": 1024,
+      "body": 1024
+    },
+    {
+      "protocol": "http",
+      "viewport": 768,
+      "document": 768,
+      "body": 768
+    },
+    {
+      "protocol": "http",
+      "viewport": 390,
+      "document": 390,
+      "body": 390
+    },
+    {
+      "protocol": "http",
+      "viewport": 360,
+      "document": 360,
+      "body": 360
+    }
+  ],
+  "previews": [
+    {
+      "file": "preview.png",
+      "width": 1440,
+      "height": 1000,
+      "full_page": false,
+      "sha256": "c835ecb9dd299b9535a339cf8a0a6fd0d2efbec72b21eb9d9fec202dd17e5700"
+    },
+    {
+      "file": "preview-mobile.png",
+      "width": 390,
+      "height": 844,
+      "full_page": false,
+      "sha256": "4d15189cb5b5576e5b6a2abd46f0145197d8beb73382d52f48ec949357910125"
+    },
+    {
+      "file": "preview-full.png",
+      "width": 1440,
+      "height": 1000,
+      "full_page": true,
+      "sha256": "9ec6bdd788380b4f91a53766e88f492c6a51dde08b3cde24575638cc22a4f67d"
+    }
+  ],
+  "errors": []
+}

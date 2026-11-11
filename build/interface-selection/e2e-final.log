@@ -1,0 +1,118 @@
+
+Running 42 tests using 1 worker
+
+(node:36524) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 tests\interface-selection.spec.ts:52:3 › 右外壳 y42-z52：人工复核后的局部画面保持边界与有限壁面 (3.2s)
+  x   2 tests\interface-selection.spec.ts:52:3 › 右外壳 x25-y9：人工复核后的局部画面保持边界与有限壁面 (4.6s)
+(node:2232) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  3 tests\interface-selection.spec.ts:86:1 › 同一右外壳上下文切换两处位置、旋转缩放、隔离与取消选择 (4.6s)
+  ok  4 tests\interface-selection.spec.ts:121:1 › 右壳安装假设贯通发布知识、具体角色、来源、双向定位及导出 (6.6s)
+  ok  5 tests\interface-selection.spec.ts:156:1 › 另一类支承件有具体新关系，右壳Z孔的已调查缺证仍明确保留 (5.3s)
+  ok  6 tests\interface-selection.spec.ts:180:1 › 冻结1.9仍按原数据读取，不补写本轮安装假设或工作状态 (5.9s)
+  ok  7 tests\investigation.spec.ts:41:1 › 独立标注的左外壳 LS-06 漏项可定位、查证、分享和导出，功能仍待证 (5.4s)
+  ok  8 tests\investigation.spec.ts:90:1 › 另一类部件 LG-01 的独立壁截面也可定位，逐区域审查不随发现数自动完成 (3.3s)
+  ok  9 tests\investigation.spec.ts:111:1 › 部分圆柱壁保留角覆盖、拟合残差和方法边界，不补成完整孔 (3.0s)
+  -  10 tests\investigation.spec.ts:127:1 › 历史 1.8 快照仍按原合同浏览，不伪造新增调查状态
+  ok 11 tests\workbench.spec.ts:45:1 › 真实装配可加载，展示控制与局部选择可用 (3.5s)
+  ok 12 tests\workbench.spec.ts:76:1 › 中文查询到部件，再定位到真实 XML 与 CSV 证据 (4.0s)
+  ok 13 tests\workbench.spec.ts:103:1 › 知识筛选、本体目录与原始 PDF 可实际浏览 (2.7s)
+  ok 14 tests\workbench.spec.ts:130:1 › 窄屏保持导航、模型与详情可用且没有页面级横向溢出 (2.4s)
+  ok 15 tests\workbench.spec.ts:144:1 › 分享链接恢复实际旋转视角、部件可见性和展示状态 (5.5s)
+  ok 16 tests\workbench.spec.ts:183:1 › 同一设备在三个能力间保持知识版本，未接入服务不制造运行结果 (3.7s)
+  ok 17 tests\workbench.spec.ts:206:1 › 知识版本切换加载对应DKP，并能返回另一版本 (4.0s)
+  ok 18 tests\workbench.spec.ts:224:1 › 空设备工作区可选择，返回已有设备后恢复真实内容 (4.1s)
+  ok 19 tests\workbench.spec.ts:244:1 › 阶梯孔按一个逻辑孔定位，两个壁段跟随爆炸并精确复原 (5.4s)
+  ok 20 tests\workbench.spec.ts:267:1 › 四孔阵列整体高亮并能进入原子孔，接口资格单独报告 (3.2s)
+  ok 21 tests\workbench.spec.ts:283:1 › 四孔父观测保留原子对应并可在双方之间定位 (3.5s)
+  ok 22 tests\workbench.spec.ts:301:1 › 有限面仅展示几何观测，分页和法向数值不冒充连接作用 (7.9s)
+  ok 23 tests\workbench.spec.ts:329:1 › 几何法线按需显示，分享链接恢复观测身份和显示状态 (6.0s)
+  -  24 tests\workbench.spec.ts:351:1 › 历史平面分组只作几何浏览，不再计入接口实例
+  ok 25 tests\workbench.spec.ts:370:1 › 当前连杆知识可直接打开，版本菜单只列实际登记快照 (2.6s)
+  ok 26 tests\workbench.spec.ts:382:1 › 八个安装孔位按两侧组织，同孔道的另一侧入口可独立定位 (3.8s)
+  ok 27 tests\workbench.spec.ts:407:1 › 标准双孔装配映射显示双方孔位、有限间隔和未绑定连接件 (3.9s)
+  ok 28 tests\workbench.spec.ts:441:1 › 腿部连杆的圆角长槽有真实有限轮廓，覆盖提示与已知安装分别展示 (2.7s)
+  ok 29 tests\workbench.spec.ts:456:1 › 同四孔的两侧只保留一份布局，切换侧别不绘制大块拓扑证据面 (3.5s)
+  ok 30 tests\workbench.spec.ts:473:1 › 安装孔位可以搜索并通过分享链接恢复入口身份 (3.3s)
+  ok 31 tests\workbench.spec.ts:492:1 › 几何入口深链保持未核定状态，不能借孔位ID升级为用户确认 (3.4s)
+  ok 32 tests\workbench.spec.ts:507:1 › 参考双孔从已知入口侧观察，窄屏也将安装目标完整纳入视锥 (4.1s)
+  ok 33 tests\workbench.spec.ts:526:1 › 连杆上端四孔与中部双孔分别展示，未知规则和零位孔轴差异不冒充参考连接 (7.8s)
+  ok 34 tests\workbench.spec.ts:564:1 › 右大腿按壳体配合归拢四根一体小柱，功能推断与源几何分离 (7.1s)
+  ok 35 tests\workbench.spec.ts:619:1 › 左右大腿按两处轴心结构浏览真实大圆洞，多个截面轮廓不重复计成通孔 (3.4s)
+  ok 36 tests\workbench.spec.ts:641:1 › 连接审查目录可查双方局部结构、三种角色与示意第三件，切换对端保留本件身份 (4.7s)
+  ok 37 tests\workbench.spec.ts:668:1 › 补全示意开关、分享、导出与沿负安装轴展开可追踪，源部件数量与位姿保留 (4.0s)
+  ok 38 tests\workbench.spec.ts:725:1 › 参考装配与紧固路径在同一张卡内，选择示意不重复配对或展开来源清单 (3.9s)
+  ok 39 tests\workbench.spec.ts:753:1 › 对象详情可拖拽和键盘调宽，取消与窄屏不覆盖首选宽度 (6.9s)
+  ok 40 tests\workbench.spec.ts:805:1 › 小柱配合优先，轴心方案显式启用并可分享恢复，普通开关不启用方案 (6.0s)
+  ok 41 tests\workbench.spec.ts:872:1 › 舵机待验证方案深链可查看，临时定位保留隐藏和隔离设置 (3.5s)
+  ok 42 tests\workbench.spec.ts:904:1 › 已发布小柱孔配合双向定位只高亮配对原子，不借圆洞证明固定 (5.1s)
+
+
+  1) tests\interface-selection.spec.ts:52:3 › 右外壳 x25-y9：人工复核后的局部画面保持边界与有限壁面 ───────────────────────
+
+    Error: expect(locator).toHaveScreenshot(expected) failed
+
+    Locator: locator('.scene-webgl')
+      11947 pixels (ratio 0.02 of all image pixels) are different.
+
+      Snapshot: right-shell-x25-y9.png
+
+    Call log:
+      - Expect "toHaveScreenshot(right-shell-x25-y9.png)" locator('.scene-webgl') with timeout 5000ms
+        - verifying given screenshot expectation
+      - waiting for locator('.scene-webgl')
+        - locator resolved to <canvas role="img" width="814" height="840" class="scene-webgl" data-engine="three.js r187" aria-label="Microduck 可旋转三维参考装配模型"></canvas>
+      - taking element screenshot
+        - disabled all CSS animations
+      - waiting for fonts to load...
+      - fonts loaded
+      - attempting scroll into view action
+        - waiting for element to be stable
+      - 11947 pixels (ratio 0.02 of all image pixels) are different.
+      - waiting 100ms before taking screenshot
+      - waiting for locator('.scene-webgl')
+        - locator resolved to <canvas role="img" width="814" height="840" class="scene-webgl" data-engine="three.js r187" aria-label="Microduck 可旋转三维参考装配模型"></canvas>
+      - taking element screenshot
+        - disabled all CSS animations
+      - waiting for fonts to load...
+      - fonts loaded
+      - attempting scroll into view action
+        - waiting for element to be stable
+      - captured a stable screenshot
+      - 11947 pixels (ratio 0.02 of all image pixels) are different.
+
+
+      72 |       style: '.scene-analysis-tools { visibility: hidden !important; }',
+      73 |     };
+    > 74 |     await expect(canvas).toHaveScreenshot(`right-shell-${site.key}.png`, screenshotOptions);
+         |                          ^
+      75 |     if (site.key === 'x25-y9') {
+      76 |       await page.locator('.scene-analysis-tools > summary').click();
+      77 |       await page.getByRole('checkbox', { name: '整件特征边线', exact: true }).check();
+        at C:\Users\scisa\Desktop\psop\apps\workbench\tests\interface-selection.spec.ts:74:26
+
+    attachment #1: right-shell-x25-y9 (image/png) ──────────────────────────────────────────────────
+    Expected: tests\interface-selection.spec.ts-snapshots\right-shell-x25-y9-win32.png
+    Received: test-results\interface-selection-右外壳-x25-y9：人工复核后的局部画面保持边界与有限壁面\right-shell-x25-y9-actual.png
+    Diff:     test-results\interface-selection-右外壳-x25-y9：人工复核后的局部画面保持边界与有限壁面\right-shell-x25-y9-diff.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\interface-selection-右外壳-x25-y9：人工复核后的局部画面保持边界与有限壁面\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\interface-selection-右外壳-x25-y9：人工复核后的局部画面保持边界与有限壁面\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\interface-selection-右外壳-x25-y9：人工复核后的局部画面保持边界与有限壁面\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\interface-selection-右外壳-x25-y9：人工复核后的局部画面保持边界与有限壁面\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    tests\interface-selection.spec.ts:52:3 › 右外壳 x25-y9：人工复核后的局部画面保持边界与有限壁面 ────────────────────────
+  2 skipped
+  39 passed (3.1m)

@@ -1,0 +1,85 @@
+{
+  "date": "2026-11-10T21:49:23.297Z",
+  "browser": "157.0.8103.39",
+  "platform": "win32",
+  "gpu": "ANGLE (NVIDIA, NVIDIA GeForce RTX 2080 Ti (0x00001E07) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+  "headless": false,
+  "viewport_mode": "fixed-benchmark",
+  "uncapped": false,
+  "flags": [],
+  "note": "Uncapped mode measures rendering throughput; it does not certify visible-window refresh pacing.",
+  "workspace": "microduck",
+  "snapshot": "dkp-7c4dd301829f4e2cbd23",
+  "package_digest": "7c4dd301829f4e2cbd236f0440bb0d6f971b24635301a6bfc6b478ff48914cb1",
+  "scene": "25f53035-5d2c-4722-aa9a-46de45bddf5c",
+  "duration_seconds": 10,
+  "samples": [
+    {
+      "quality": "high",
+      "scenario": "overview",
+      "window": [
+        1920,
+        1080
+      ],
+      "viewport": [
+        1920,
+        1080
+      ],
+      "gpu_state": "NVIDIA GeForce RTX 2080 Ti, 1425 MHz, P0, 47 %, 55.73 W",
+      "rendered_frames": 601,
+      "fps": 60.07236671145595,
+      "frame_p95_ms": 16.800000000000182,
+      "raf_p95_ms": 16.800000000000182,
+      "cpu_submit_p95_ms": 9,
+      "draw_calls": 240,
+      "dragging": "false",
+      "triangles": 796844,
+      "geometries": 73
+    },
+    {
+      "quality": "high",
+      "scenario": "selection",
+      "window": [
+        1920,
+        1080
+      ],
+      "viewport": [
+        1920,
+        1080
+      ],
+      "gpu_state": "NVIDIA GeForce RTX 2080 Ti, 1080 MHz, P3, 25 %, 52.59 W",
+      "rendered_frames": 601,
+      "fps": 60.053158536341655,
+      "frame_p95_ms": 16.799999999999272,
+      "raf_p95_ms": 16.799999999999272,
+      "cpu_submit_p95_ms": 7.100000023841858,
+      "draw_calls": 460,
+      "dragging": "false",
+      "triangles": 796844,
+      "geometries": 73
+    },
+    {
+      "quality": "high",
+      "scenario": "drag",
+      "window": [
+        1920,
+        1080
+      ],
+      "viewport": [
+        1920,
+        1080
+      ],
+      "gpu_state": "NVIDIA GeForce RTX 2080 Ti, 1050 MHz, P3, 28 %, 55.34 W",
+      "rendered_frames": 601,
+      "fps": 60.06876424273697,
+      "frame_p95_ms": 16.799999999995634,
+      "raf_p95_ms": 16.799999999995634,
+      "cpu_submit_p95_ms": 8.200000047683716,
+      "draw_calls": 282,
+      "dragging": "true",
+      "triangles": 796844,
+      "geometries": 73
+    }
+  ],
+  "idle_render_delta": 0
+}

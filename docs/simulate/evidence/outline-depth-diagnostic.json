@@ -1,0 +1,56 @@
+[
+  {
+    "mode": "before",
+    "depth_type": 1016,
+    "parts": [
+      {
+        "id": "instance:part:microduck:52fdcacf474a463f",
+        "samples": 20,
+        "visible": 0,
+        "false_occluded": 20
+      },
+      {
+        "id": "instance:part:microduck:afa52198f7fad203",
+        "samples": 17,
+        "visible": 13,
+        "false_occluded": 4
+      }
+    ]
+  },
+  {
+    "mode": "hidden-magenta",
+    "depth_type": 1016,
+    "parts": [
+      {
+        "id": "instance:part:microduck:52fdcacf474a463f",
+        "samples": 20,
+        "visible": 0,
+        "false_occluded": 20
+      },
+      {
+        "id": "instance:part:microduck:afa52198f7fad203",
+        "samples": 17,
+        "visible": 13,
+        "false_occluded": 4
+      }
+    ]
+  },
+  {
+    "mode": "rgba8",
+    "depth_type": 1009,
+    "parts": [
+      {
+        "id": "instance:part:microduck:52fdcacf474a463f",
+        "samples": 20,
+        "visible": 20,
+        "false_occluded": 0
+      },
+      {
+        "id": "instance:part:microduck:afa52198f7fad203",
+        "samples": 17,
+        "visible": 17,
+        "false_occluded": 0
+      }
+    ]
+  }
+]

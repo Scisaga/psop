@@ -1,0 +1,20 @@
+{
+  "prototype": "PSOP Microduck installation display using official source geometry",
+  "checks": {
+    "source_38_mesh_70_instances_and_17_item_left_hip_chain": true,
+    "insertion_arrow_terminates_at_real_source_socket": true,
+    "steps_move_source_subassembly_and_preserve_53_fixed_instances": true,
+    "source_matrices_unchanged_and_final_display_restores_assembly": true,
+    "five_rendered_steps_distinct_and_current_step_preview_coherent": true,
+    "final_step_requires_missing_identity_and_recheck_records": true,
+    "next_and_previous_change_real_display_geometry": true,
+    "alignment_branch_changes_pose_and_blocks_unresolved_advance": true,
+    "component_expansion_and_installation_surface_highlight_work": true,
+    "play_advances_installation_and_pause_stops_transforms": true,
+    "orbit_and_object_selection_preserve_projected_socket_binding": true,
+    "event_log_keeps_task_binding_without_false_completion": true,
+    "build_sourced_joint_identity_remains_available": true
+  },
+  "errors": [],
+  "result": "passed"
+}

@@ -1,0 +1,28 @@
+{
+  "snapshot": "dkp-8857e0482824621ff8da",
+  "version": "2.0.0-connection-sites.1",
+  "packageDigest": "8857e0482824621ff8da5ba2c7b8da13f8641ea8c3c10961ed52b3d238993ba9",
+  "part": "part:microduck:fa9ee2f71faafb88",
+  "geometrySha256": "e175896932d76dc7648cf939aa39cb7b1d188b783d91745adb9a4cec65e9052c",
+  "site": "connection-site:d23759d0dc56a68615506eb87e41ec0e",
+  "member": "logical-hole:microduck:fa9ee2f71faafb88:afeaddbfec9e7c6e",
+  "independentlyProjectedSourceTriangle": 12913,
+  "firstVisibleSourceTriangle": 12913,
+  "pixel": {
+    "x": 1026.664444622002,
+    "y": 548.4165012165281
+  },
+  "camera": {
+    "position": [
+      0.004000000000000009,
+      0.003975000381469723,
+      0.1095
+    ],
+    "target": [
+      0.004000000000000024,
+      0.03897500038146973,
+      0.1025
+    ]
+  },
+  "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-8857e0482824621ff8da&part=part%3Amicroduck%3Afa9ee2f71faafb88&connectionSite=connection-site%3Ad23759d0dc56a68615506eb87e41ec0e&member=logical-hole%3Amicroduck%3Afa9ee2f71faafb88%3Aafeaddbfec9e7c6e&explode=0.00&detail=interfaces&view=iso&isolate=part%3Amicroduck%3Afa9ee2f71faafb88&labels=0&grid=0&supplements=0"
+}

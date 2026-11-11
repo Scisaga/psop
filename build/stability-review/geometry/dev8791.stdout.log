@@ -1,0 +1,42 @@
+
+  PSOP Workbench
+  http://127.0.0.1:8791/
+  Device workspaces / v2 DKP
+  Press Ctrl+C to stop.
+
+17:16:14 [vite] (client) [optimizer] bundling dependencies...
+17:17:02 [vite] (client) page reload src/ConnectionReviews.tsx
+17:17:02 [vite] (client) page reload src/MountingInspector.tsx
+17:17:02 [vite] (client) page reload src/MechanicsInspector.tsx
+17:17:37 [vite] (client) page reload src/PhysicalStructureInspector.tsx
+17:17:37 [vite] (client) page reload src/PhysicalStructureInspector.tsx
+17:19:22 [vite] (client) page reload src/types.ts
+17:19:22 [vite] (client) page reload src/RelationAnalysis.tsx
+17:19:22 [vite] (client) page reload src/PhysicalStructureInspector.tsx
+17:19:22 [vite] (client) page reload src/mechanics-model.ts
+17:19:22 [vite] (client) page reload src/App.tsx
+17:20:12 [vite] (client) page reload src/SceneCanvas.tsx
+17:20:18 [vite] (client) page reload src/SceneCanvas.tsx
+17:20:32 [vite] (client) page reload src/ConnectionReviews.tsx
+17:20:32 [vite] (client) page reload src/MechanicsInspector.tsx
+17:20:47 [vite] (client) page reload src/SceneCanvas.tsx
+17:21:13 [vite] (client) page reload src/SceneCanvas.tsx
+17:21:46 [vite] (client) page reload src/types.ts
+17:21:46 [vite] (client) page reload src/ConnectionReviews.tsx
+17:22:24 [vite] (client) page reload src/SceneCanvas.tsx
+17:23:29 [vite] (client) page reload src/types.ts
+17:23:29 [vite] (client) page reload src/RelationAnalysis.tsx
+17:23:29 [vite] (client) page reload src/InvestigationInspector.tsx
+17:24:13 [vite] (client) page reload src/types.ts
+17:24:13 [vite] (client) page reload src/ConnectionReviews.tsx
+17:24:44 [vite] (client) page reload src/SceneCanvas.tsx
+17:24:54 [vite] (client) page reload src/ConnectionReviews.tsx
+17:28:57 [vite] (client) page reload src/RelationAnalysis.tsx
+17:31:53 [vite] (client) page reload src/SceneCanvas.tsx
+17:35:23 [vite] (client) page reload src/MountingInspector.tsx
+17:42:52 [vite] (client) page reload src/RelationAnalysis.tsx
+17:42:52 [vite] (client) page reload src/ConnectionReviews.tsx
+17:43:02 [vite] (client) page reload src/ConnectionReviews.tsx
+17:56:34 [vite] (client) page reload src/RelationAnalysis.tsx
+17:57:27 [vite] (client) page reload src/SceneCanvas.tsx
+17:57:48 [vite] (client) page reload src/SceneCanvas.tsx

@@ -1,0 +1,112 @@
+{
+  "schema_version": 4,
+  "prepared_on": "2026-11-11",
+  "scene": "stark-research-workshop",
+  "visual_reference": "User reference for Tony Stark's private research workshop: rectangular space, warm grey concrete panels, inclined ribbon windows, exposed I-beams, pendant lights and precision equipment. Latest direction: sparse layout; no vehicles, armor, circular platform, red tool chest or grey-green bench lamp.",
+  "reference_usage": "Architectural/material/layout reference; the film still is not shipped as a surrounding texture.",
+  "runtime": "Six local PBR material images, two matched local generated exterior views and two self-contained local GLB models. Readiness awaits all assets. No external requests at runtime.",
+  "active_material_files": [
+    "workshop/smooth-floor-color-4k.jpg",
+    "workshop/smooth-floor-normal-2k.jpg",
+    "workshop/smooth-floor-arm-2k.jpg",
+    "workshop/concrete-color-4k.jpg",
+    "workshop/concrete-normal-2k.jpg",
+    "workshop/concrete-arm-2k.jpg"
+  ],
+  "materials": {
+    "source_record": "workshop/models/source.json",
+    "wall_source_record": "workshop/source.json",
+    "license": "CC0-1.0",
+    "base_color_resolution": 4096,
+    "normal_and_arm_resolution": 2048,
+    "floor": "Smooth concrete, 2m physical map scale, neutral material tint, roughness variation, restrained rough planar reflection and derivative-filtered 2.4m expansion joints. Opaque PBR slab remains below reflection.",
+    "walls": "Individual 105mm precast slabs, 4mm edge bevels, recessed joints and form-tie plugs. Independent 4K color / 2K normal and roughness. Bitmap files unchanged.",
+    "windows": "Single-pass, transparent physical glass with subtle tint and environment reflection. Two world-space exterior planes show matched landward and bayward views of one coastal research campus; each 9.2m wide plane spans a whole side, preserves the image aspect ratio, and is placed outside the wall at x=+/-4.4m, center z=0.75m. No per-pane image repetition."
+  },
+  "geometry": {
+    "source": "../simulate-environment.ts",
+    "architecture": "7.6 × 8.4m rectangular plan, 3.4m height. Straight end walls; a short straight incline confined to the window bands. Physical slabs, ceiling panels, I-beam webs/flanges/end plates/bolts, pendant liners/rims/stems, skirting and one flush grille.",
+    "equipment": "One rear instrument desk with two monitors, one oscilloscope and an orange task lamp attached by a C-clamp with lower jaw, screw, pressure pad and socket. One CAD-derived six-axis assistant on a controller pedestal. Central DKP bench and its remaining rack/tray/calibration block retained.",
+    "interaction": "Context does not enter raycast records, assembly inventory, connector occupancy or undo history. Removed main-bench lamp no longer reserves a desktop return slot.",
+    "batching": "Static opaque meshes batched by material and shadow flags. Imported geometry, materials, image bitmaps and render targets owned per mounted scene; released on failure and scene switching."
+  },
+  "artwork": "Runtime canvas engineering studies on physical monitors; no live solver results are implied.",
+  "lighting": "RoomEnvironment PMREM and neutral key/fill/rim. Separate cached room shadow on a static layer excludes moving DKP meshes. Opaque floor has rough, low-strength planar reflections (1024 high / 512 balanced / disabled performance).",
+  "archived_generated_asset": {
+    "file": "private-workshop-city-vista.png",
+    "resolution": [
+      1774,
+      887
+    ],
+    "bytes": 2349215,
+    "sha256": "434016fcd6fd1982b62889dec656ac780c72ad95340866f4788642b5800b7729",
+    "mode": "built-in image_gen",
+    "prompt_file": "private-workshop-city-vista.prompt.txt",
+    "processing": "Copied at original native dimensions; no upscaling or generated-resolution claim.",
+    "active": false
+  },
+  "historical_unused_assets": "Earlier city imagery, foundry panorama/HDRI and laboratory observation image are not imported. The red tool chest was removed from source assets and production imports.",
+  "active_model_files": [
+    "workshop/models/desk_lamp_arm_01.glb",
+    "workshop/models/precision-assistant.glb"
+  ],
+  "models": {
+    "source_record": "workshop/models/source.json",
+    "preparation": "../../scripts/prepare_workshop_assets.py",
+    "task_lamp": {
+      "source": "https://polyhaven.com/a/desk_lamp_arm_01",
+      "license": "CC0-1.0",
+      "processing": "Source mesh, UVs and 2K images repacked unchanged into GLB; physical base anchored at the clamp socket."
+    },
+    "assistant": {
+      "source": "https://github.com/ros-industrial/abb/tree/kinetic-devel/abb_irb120_support",
+      "license": "Apache-2.0",
+      "processing": "Original 40,020 CAD visual facets and GLB bytes retained. Display normals keep 25-degree base creases and 35-degree arm creases. Continuous object-space PBR masks distinguish satin paint, inset panel, machined rims, recessed sockets and contacts. Original local positions are retained as a separate shader coordinate attribute through display placement. Derivative-filtered micro-roughness; no triangle-color or UV seams. Display environment only.",
+      "attribution": "/licenses/workshop/NOTICE.txt",
+      "license_file": "/licenses/workshop/Apache-2.0.txt",
+      "display_finish_source": "../simulate-robot-surface.ts"
+    }
+  },
+  "active_exterior_files": [
+    "private-workshop-campus-window.png",
+    "private-workshop-bay-window.png"
+  ],
+  "generated_window_views": {
+    "mode": "built-in image_gen",
+    "assets": [
+      {
+        "file": "private-workshop-campus-window.png",
+        "prompt_file": "private-workshop-campus-window.prompt.txt",
+        "resolution": [
+          1774,
+          887
+        ],
+        "bytes": 2736019,
+        "sha256": "b6601943b1852197860cf9f063fd6428c30ca5d9033f0b17b4e2beab07f384a8",
+        "mode": "built-in image_gen",
+        "reference": "private-workshop-coastal-campus.png",
+        "processing": "Original generated pixels copied unchanged. No resizing or upscaling. Native aspect ratio preserved on an exterior plane spanning the entire window band."
+      },
+      {
+        "file": "private-workshop-bay-window.png",
+        "prompt_file": "private-workshop-bay-window.prompt.txt",
+        "resolution": [
+          1774,
+          887
+        ],
+        "bytes": 2301423,
+        "sha256": "f3d3eed32764512441a1fefe2b44aedaf00a96b2799a140f9c8f08eef4c26b06",
+        "mode": "built-in image_gen",
+        "reference": "private-workshop-coastal-campus.png",
+        "processing": "Original generated pixels copied unchanged. No resizing or upscaling. Native aspect ratio preserved on an exterior plane spanning the entire window band."
+      }
+    ],
+    "reference_image": {
+      "file": "private-workshop-coastal-campus.png",
+      "prompt_file": "private-workshop-coastal-campus.prompt.txt",
+      "active": false,
+      "usage": "Shared visual reference for the two final window views."
+    },
+    "lighting": "Coherent hazy afternoon daylight, blue-gray water and sky, gray-green trees, pale low-rise campus buildings and distant mountains."
+  }
+}

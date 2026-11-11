@@ -1,0 +1,79 @@
+{
+  "schema": "psop.dkp-cleanup/1",
+  "completed_at": "2026-11-08T22:33:54.3276358Z",
+  "retained": {
+    "path": "build/microduck/source-1.15/microduck-capabilities-4.dkp",
+    "version": "2.0.0-capabilities.4",
+    "digest": "69f6ee2e13b4051f6f42522639f77459081b83e9b95d4b5ea5b99c48324fe0e4"
+  },
+  "removed_from_build": [
+    {
+      "path": "build/microduck/source-1.14/microduck-assembly-3.dkp",
+      "version": "2.0.0-assembly.3",
+      "digest": "6a841fcb9cb028ba2c63df67cfd35c43f30e95374fb6f6bc314b7332160789e8",
+      "files": 71,
+      "bytes": 70331089
+    },
+    {
+      "path": "build/microduck/source-1.15/microduck-capabilities-1.dkp",
+      "version": "2.0.0-capabilities.1",
+      "digest": "aed80087d09929af30eb845764705dda5885425446fecf72bc26110c85e8838f",
+      "files": 2566,
+      "bytes": 154357009
+    },
+    {
+      "path": "build/microduck/source-1.15/microduck-capabilities-2.dkp",
+      "version": "2.0.0-capabilities.2",
+      "digest": "a123162d9c7bdc946e6ca0ac627c644daf59ecc3b25074d458d3a82b363e21fd",
+      "files": 2566,
+      "bytes": 154447550
+    },
+    {
+      "path": "build/microduck/source-1.15/microduck-capabilities-3.dkp",
+      "version": "2.0.0-capabilities.3",
+      "digest": "68c7c493a38d95f2eb47cacdd0b1cc6ef96ad6e79752f316ea0bc96fff5924b1",
+      "files": 2569,
+      "bytes": 154502944
+    }
+  ],
+  "removed_from_build_bytes": 533638592,
+  "method": "Permanently deleted the four explicitly named retired package directories using PowerShell Remove-Item -LiteralPath -Recurse after renewed user instruction",
+  "local_archive": null,
+  "disk_bytes_reclaimed": 533638592,
+  "git_history_rewritten": false,
+  "current_assets_sha256_verified": 2571,
+  "verification": {
+    "current_package": {
+      "manifest_sha256": "cadc306fd11b38692be8565e10d60a12bd47e9772736e752906062ae8b3c2a33",
+      "all_2571_asset_hashes_match": true
+    },
+    "workbench": {
+      "workspace": "microduck",
+      "snapshots": 1,
+      "version": "2.0.0-capabilities.4",
+      "parts": 70,
+      "catalog_http_status": 200,
+      "view_http_status": 200
+    },
+    "checks": {
+      "source_selection_fasteners_workspace": 30,
+      "catalog_maintenance_and_bearings": 9,
+      "build_fastener_and_reference_alignment": 18,
+      "historical_confirmation_checks_skipped": 2,
+      "reason": "The two confirmation-only invariants belong exclusively to retired assembly.3; current geometry, source, path, and tamper regressions remain active."
+    },
+    "untracked_files": {
+      "before": 10379,
+      "after": 2678,
+      "current_dkp": 2572,
+      "other": 106
+    },
+    "tracked_historical_intermediate_files": 168,
+    "old_packages_absent": true
+  },
+  "archive_history": {
+    "path": ".runtime/retired-dkp-20261109",
+    "method": "Reversible move to Git-ignored local archive after recursive deletion was rejected by automatic approval (blocked by policy)"
+  },
+  "permanently_deleted_at": "2026-11-08T22:40:59.382Z"
+}

@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <title>MiniCPM-V 调用怎样验证视觉输入</title>
+  <desc>PSOP 第 32 / 65 页教学图；文字与方法图保持可编辑。Microduck 视图由官方来源 STL 和 robot_walk.xml 的 source assembly 渲染，配置为 walk-model-reference、MCD-000001。alpha 软件任务身份与该几何参考的实物对应尚未核验；MD-01、S03、J01 和 EG 为教学定义。</desc>
+  <defs>
+    <linearGradient id="steel" x1="0" y1="0" x2="0.9" y2="1">
+      <stop stop-color="#EAF0F3" />
+      <stop offset=".37" stop-color="#A9BBC6" />
+      <stop offset=".63" stop-color="#F1F5F5" />
+      <stop offset="1" stop-color="#859CA9" />
+    </linearGradient>
+  </defs>
+  <g id="base" transform="translate(0 0)">
+    <rect x="0" y="0" width="1600" height="900" rx="0" fill="#FCFDFB" />
+    <rect x="0" y="0" width="9" height="900" rx="0" fill="#14877D" />
+    <path d="M64 62 L1536 62" stroke="#D7E1E7" fill="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+    <text x="64.000" y="41.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="18.999" font-weight="400" data-text="PSOP  /  四个模型与多模态协作" aria-label="PSOP  /  四个模型与多模态协作" xml:space="preserve" textLength="273.541" lengthAdjust="spacingAndGlyphs" fill="#526578">PSOP  /  四个模型与多模态协作</text>
+    <text x="1355.287" y="41.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="18.999" font-weight="400" data-text="LESSON 02  ·  32/65" aria-label="LESSON 02  ·  32/65" xml:space="preserve" textLength="180.021" lengthAdjust="spacingAndGlyphs" fill="#526578">LESSON 02  ·  32/65</text>
+  </g>
+  <g id="title" transform="translate(0 0)">
+    <text x="64.000" y="125.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="48.001" font-weight="700" data-text="MiniCPM-V 调用怎样验证视觉输入" aria-label="MiniCPM-V 调用怎样验证视觉输入" xml:space="preserve" textLength="771.657" lengthAdjust="spacingAndGlyphs" fill="#18344C">MiniCPM-V 调用怎样验证视觉输入</text>
+    <text x="64.000" y="177.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="24.001" font-weight="400" data-text="先按 4.5 模型卡加载模型与 tokenizer，再把 PIL 图像和文字问题组成消息。chat 返回回答；它不会因为接收一张图，就自动连接工程知" aria-label="先按 4.5 模型卡加载模型与 tokenizer，再把 PIL 图像和文字问题组成消息。chat 返回回答；它不会因为接收一张图，就自动连接工程知" xml:space="preserve" textLength="1442.251" lengthAdjust="spacingAndGlyphs" fill="#526578">先按 4.5 模型卡加载模型与 tokenizer，再把 PIL 图像和文字问题组成消息。chat 返回回答；它不会因为接收一张图，就自动连接工程知</text>
+    <text x="64.000" y="209.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="24.001" font-weight="400" data-text="识库、EG 或真实设备状态接口。" aria-label="识库、EG 或真实设备状态接口。" xml:space="preserve" textLength="302.146" lengthAdjust="spacingAndGlyphs" fill="#526578">识库、EG 或真实设备状态接口。</text>
+  </g>
+  <g id="beat_01" transform="translate(0 0)">
+    <g id="illustration" transform="translate(64 238)">
+      <rect x="0" y="0" width="884" height="498" rx="12" fill="#18344C" />
+      <rect x="0" y="0" width="884" height="47" rx="12" fill="#25445D" />
+      <rect x="0" y="25" width="884" height="22" rx="0" fill="#25445D" />
+      <circle cx="23" cy="24" r="5" fill="#BE574C" />
+      <circle cx="46" cy="24" r="5" fill="#B9752E" />
+      <circle cx="69" cy="24" r="5" fill="#14877D" />
+      <text x="113.000" y="31.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="21.000" font-weight="400" data-text="minicpm_vision_check.py" aria-label="minicpm_vision_check.py" xml:space="preserve" textLength="289.697" lengthAdjust="spacingAndGlyphs" fill="#DCE8F0">minicpm_vision_check.py</text>
+      <text x="29.765" y="82.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="17.000" font-weight="400" data-text="1" aria-label="1" xml:space="preserve" textLength="9.350" lengthAdjust="spacingAndGlyphs" fill="#7293A9">1</text>
+      <text x="61.000" y="82.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="20.001" font-weight="400" data-text="from PIL import Image" aria-label="from PIL import Image" xml:space="preserve" textLength="251.820" lengthAdjust="spacingAndGlyphs" fill="#C5ABEB">from PIL import Image</text>
+      <text x="29.765" y="112.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="17.000" font-weight="400" data-text="2" aria-label="2" xml:space="preserve" textLength="9.350" lengthAdjust="spacingAndGlyphs" fill="#7293A9">2</text>
+      <text x="61.000" y="112.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="20.001" font-weight="400" data-text="photo = Image.open(&quot;s03.jpg&quot;).convert(&quot;RGB&quot;)" aria-label="photo = Image.open(&quot;s03.jpg&quot;).convert(&quot;RGB&quot;)" xml:space="preserve" textLength="528.764" lengthAdjust="spacingAndGlyphs" fill="#DCE8F0">photo = Image.open("s03.jpg").convert("RGB")</text>
+      <text x="29.765" y="142.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="17.000" font-weight="400" data-text="3" aria-label="3" xml:space="preserve" textLength="9.350" lengthAdjust="spacingAndGlyphs" fill="#7293A9">3</text>
+      <text x="61.000" y="142.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="20.001" font-weight="400" data-text="question = &quot;S03尚无复检记录，还缺什么？&quot;" aria-label="question = &quot;S03尚无复检记录，还缺什么？&quot;" xml:space="preserve" textLength="431.615" lengthAdjust="spacingAndGlyphs" fill="#DCE8F0">question = "S03尚无复检记录，还缺什么？"</text>
+      <text x="29.765" y="172.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="17.000" font-weight="400" data-text="4" aria-label="4" xml:space="preserve" textLength="9.350" lengthAdjust="spacingAndGlyphs" fill="#7293A9">4</text>
+      <text x="61.000" y="172.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="20.001" font-weight="400" data-text="messages = [{" aria-label="messages = [{" xml:space="preserve" textLength="155.492" lengthAdjust="spacingAndGlyphs" fill="#DCE8F0">messages = [{</text>
+      <text x="29.765" y="202.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="17.000" font-weight="400" data-text="5" aria-label="5" xml:space="preserve" textLength="9.350" lengthAdjust="spacingAndGlyphs" fill="#7293A9">5</text>
+      <text x="109.164" y="202.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="20.001" font-weight="400" data-text="    &quot;role&quot;: &quot;user&quot;," aria-label="    &quot;role&quot;: &quot;user&quot;," xml:space="preserve" textLength="179.574" lengthAdjust="spacingAndGlyphs" fill="#DCE8F0">    "role": "user",</text>
+      <text x="29.765" y="232.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="17.000" font-weight="400" data-text="6" aria-label="6" xml:space="preserve" textLength="9.350" lengthAdjust="spacingAndGlyphs" fill="#7293A9">6</text>
+      <text x="109.164" y="232.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="20.001" font-weight="400" data-text="    &quot;content&quot;: [photo, question]" aria-label="    &quot;content&quot;: [photo, question]" xml:space="preserve" textLength="336.107" lengthAdjust="spacingAndGlyphs" fill="#DCE8F0">    "content": [photo, question]</text>
+      <text x="29.765" y="262.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="17.000" font-weight="400" data-text="7" aria-label="7" xml:space="preserve" textLength="9.350" lengthAdjust="spacingAndGlyphs" fill="#7293A9">7</text>
+      <text x="61.000" y="262.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="20.001" font-weight="400" data-text="}]" aria-label="}]" xml:space="preserve" textLength="23.041" lengthAdjust="spacingAndGlyphs" fill="#DCE8F0">}]</text>
+      <text x="29.765" y="292.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="17.000" font-weight="400" data-text="8" aria-label="8" xml:space="preserve" textLength="9.350" lengthAdjust="spacingAndGlyphs" fill="#7293A9">8</text>
+      <text x="61.000" y="292.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="20.001" font-weight="400" data-text="answer = model.chat(" aria-label="answer = model.chat(" xml:space="preserve" textLength="239.779" lengthAdjust="spacingAndGlyphs" fill="#DCE8F0">answer = model.chat(</text>
+      <text x="29.765" y="322.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="17.000" font-weight="400" data-text="9" aria-label="9" xml:space="preserve" textLength="9.350" lengthAdjust="spacingAndGlyphs" fill="#7293A9">9</text>
+      <text x="109.164" y="322.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="20.001" font-weight="400" data-text="    msgs=messages, tokenizer=tokenizer," aria-label="    msgs=messages, tokenizer=tokenizer," xml:space="preserve" textLength="420.395" lengthAdjust="spacingAndGlyphs" fill="#DCE8F0">    msgs=messages, tokenizer=tokenizer,</text>
+      <text x="19.530" y="352.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="17.000" font-weight="400" data-text="10" aria-label="10" xml:space="preserve" textLength="19.585" lengthAdjust="spacingAndGlyphs" fill="#7293A9">10</text>
+      <text x="109.164" y="352.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="20.001" font-weight="400" data-text="    enable_thinking=False, stream=False" aria-label="    enable_thinking=False, stream=False" xml:space="preserve" textLength="420.395" lengthAdjust="spacingAndGlyphs" fill="#DCE8F0">    enable_thinking=False, stream=False</text>
+      <text x="19.530" y="382.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="17.000" font-weight="400" data-text="11" aria-label="11" xml:space="preserve" textLength="19.585" lengthAdjust="spacingAndGlyphs" fill="#7293A9">11</text>
+      <text x="61.000" y="382.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="20.001" font-weight="400" data-text=")" aria-label=")" xml:space="preserve" textLength="11.000" lengthAdjust="spacingAndGlyphs" fill="#DCE8F0">)</text>
+      <text x="19.530" y="412.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="17.000" font-weight="400" data-text="12" aria-label="12" xml:space="preserve" textLength="19.585" lengthAdjust="spacingAndGlyphs" fill="#7293A9">12</text>
+      <text x="61.000" y="412.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="20.001" font-weight="400" data-text="print(answer)" aria-label="print(answer)" xml:space="preserve" textLength="155.492" lengthAdjust="spacingAndGlyphs" fill="#DCE8F0">print(answer)</text>
+      <path d="M61 437 L856 437" stroke="#526A7D" fill="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+      <text x="61.000" y="473.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="20.001" font-weight="400" data-text="photo 是实际图像对象，model 先按 4.5 加载。" aria-label="photo 是实际图像对象，model 先按 4.5 加载。" xml:space="preserve" textLength="430.831" lengthAdjust="spacingAndGlyphs" fill="#ABD3D7">photo 是实际图像对象，model 先按 4.5 加载。</text>
+    </g>
+  </g>
+  <g id="beat_02" transform="translate(0 0)">
+    <text x="995.000" y="268.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.000" font-weight="700" data-text="加载实现与依赖匹配" aria-label="加载实现与依赖匹配" xml:space="preserve" textLength="225.000" lengthAdjust="spacingAndGlyphs" fill="#326BB8">加载实现与依赖匹配</text>
+    <text x="995.000" y="310.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="固定 openbmb/MiniCPM-V-4_5 与软件版" aria-label="固定 openbmb/MiniCPM-V-4_5 与软件版" xml:space="preserve" textLength="442.457" lengthAdjust="spacingAndGlyphs" fill="#526578">固定 openbmb/MiniCPM-V-4_5 与软件版</text>
+    <text x="995.000" y="340.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="本。手册的完整加载例采用 CUDA / BF16 和" aria-label="本。手册的完整加载例采用 CUDA / BF16 和" xml:space="preserve" textLength="455.934" lengthAdjust="spacingAndGlyphs" fill="#526578">本。手册的完整加载例采用 CUDA / BF16 和</text>
+    <text x="995.000" y="370.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="官方模型实现。" aria-label="官方模型实现。" xml:space="preserve" textLength="160.999" lengthAdjust="spacingAndGlyphs" fill="#526578">官方模型实现。</text>
+    <text x="995.000" y="435.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.000" font-weight="700" data-text="图像是实际消息的一部分" aria-label="图像是实际消息的一部分" xml:space="preserve" textLength="275.000" lengthAdjust="spacingAndGlyphs" fill="#14877D">图像是实际消息的一部分</text>
+    <text x="995.000" y="477.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="content 中同时放入图像和问题。只在文字里" aria-label="content 中同时放入图像和问题。只在文字里" xml:space="preserve" textLength="459.494" lengthAdjust="spacingAndGlyphs" fill="#526578">content 中同时放入图像和问题。只在文字里</text>
+    <text x="995.000" y="507.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="写“看这张图”，而没有传入视觉数据，并不" aria-label="写“看这张图”，而没有传入视觉数据，并不" xml:space="preserve" textLength="459.999" lengthAdjust="spacingAndGlyphs" fill="#526578">写“看这张图”，而没有传入视觉数据，并不</text>
+    <text x="995.000" y="537.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="能完成图像输入。" aria-label="能完成图像输入。" xml:space="preserve" textLength="183.999" lengthAdjust="spacingAndGlyphs" fill="#526578">能完成图像输入。</text>
+    <text x="995.000" y="602.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.000" font-weight="700" data-text="回答要检查看图与条件使用" aria-label="回答要检查看图与条件使用" xml:space="preserve" textLength="300.000" lengthAdjust="spacingAndGlyphs" fill="#7756AA">回答要检查看图与条件使用</text>
+    <text x="995.000" y="644.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="先让模型描述可见对象和看不清部分，再提供缺证状" aria-label="先让模型描述可见对象和看不清部分，再提供缺证状" xml:space="preserve" textLength="528.999" lengthAdjust="spacingAndGlyphs" fill="#526578">先让模型描述可见对象和看不清部分，再提供缺证状</text>
+    <text x="995.000" y="674.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="态。保存原始回答，检查格式、依据和候选动作。" aria-label="态。保存原始回答，检查格式、依据和候选动作。" xml:space="preserve" textLength="505.999" lengthAdjust="spacingAndGlyphs" fill="#526578">态。保存原始回答，检查格式、依据和候选动作。</text>
+  </g>
+  <g id="beat_03" transform="translate(0 0)">
+    <path d="M64 760 L1536 760" stroke="#D7E1E7" fill="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+    <rect x="64" y="782" width="4" height="57" rx="2" fill="#14877D" />
+    <text x="84.000" y="798.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.000" font-weight="400" data-text="图中代码是调用片段，model 与 tokenizer 需先按手册加载。第一轮练习验证图像进入链路，第二轮再接入任务背景与工具。" aria-label="图中代码是调用片段，model 与 tokenizer 需先按手册加载。第一轮练习验证图像进入链路，第二轮再接入任务背景与工具。" xml:space="preserve" textLength="1218.293" lengthAdjust="spacingAndGlyphs" fill="#18344C">图中代码是调用片段，model 与 tokenizer 需先按手册加载。第一轮练习验证图像进入链路，第二轮再接入任务背景与工具。</text>
+  </g>
+  <g id="footer" transform="translate(0 0)">
+    <text x="64.000" y="877.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="17.000" font-weight="400" data-text="学习手册 §06.11.3" aria-label="学习手册 §06.11.3" xml:space="preserve" textLength="138.743" lengthAdjust="spacingAndGlyphs" fill="#8898A8">学习手册 §06.11.3</text>
+    <text x="1247.000" y="877.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="17.000" font-weight="400" data-text="工程案例与数值示意的来源见逐页备注" aria-label="工程案例与数值示意的来源见逐页备注" xml:space="preserve" textLength="289.000" lengthAdjust="spacingAndGlyphs" fill="#8898A8">工程案例与数值示意的来源见逐页备注</text>
+  </g>
+</svg>

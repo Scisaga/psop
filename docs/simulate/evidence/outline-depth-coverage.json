@@ -1,0 +1,35 @@
+[
+  {
+    "position": [
+      0.4,
+      -0.8,
+      0.6
+    ],
+    "visible": 592,
+    "occluded": 113,
+    "false_occluded": 0,
+    "false_visible": 0
+  },
+  {
+    "position": [
+      -0.4,
+      -0.7,
+      0.5
+    ],
+    "visible": 738,
+    "occluded": 166,
+    "false_occluded": 0,
+    "false_visible": 0
+  },
+  {
+    "position": [
+      0.1,
+      -0.6,
+      0.8
+    ],
+    "visible": 749,
+    "occluded": 76,
+    "false_occluded": 0,
+    "false_visible": 0
+  }
+]

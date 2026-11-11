@@ -1,0 +1,31 @@
+{
+  "date": "2026-11-11T11:27:30.933Z",
+  "base": "http://127.0.0.1:8793",
+  "health": {
+    "app": "psop-workbench",
+    "mode": "local",
+    "dkpSchema": "psop.dkp/2.0-draft.1",
+    "simulate": {
+      "commands": [
+        "move",
+        "connect",
+        "disconnect",
+        "reset",
+        "auto_assemble",
+        "set_reference_configuration",
+        "set_assembly_policy",
+        "undo",
+        "redo",
+        "rename"
+      ],
+      "policy_schema": "psop.assembly-policy/1",
+      "assessment_schema": "psop.assembly-assessment/1"
+    }
+  },
+  "snapshot": "dkp-c9a2c6afd8358f836d0f",
+  "package_version": "2.0.0-capabilities.10",
+  "package_digest": "c9a2c6afd8358f836d0f46deae682e35a77710d384653dee5ba6f27716e79c57",
+  "default_configuration_ref": "configuration:microduck:source-qpos0",
+  "static_bundle_matches": true,
+  "index_html_sha256": "f936ab64d80573e445d0d07871f6c4dc237c1db7b7b472e51f9861441eef425a"
+}

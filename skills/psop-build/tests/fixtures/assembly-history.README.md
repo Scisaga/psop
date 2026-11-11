@@ -1,0 +1,8 @@
+# Small historical contract fixtures
+
+These are independent excerpts of frozen knowledge captured before removing the old DKP directories. They are test inputs, not DKP packages: no manifest, copied source assets, all-device catalog, investigation reports, or registry entry is retained.
+
+- `jaw-catalog-v1.json` retains the two jaw/servo interfaces, eight finite source walls, their one historical connection and five required evidence records from `source-model/1.13`. The 104-entry connection-basis map and aggregate hashes preserve the independent assertion that the later confirmation only changed the jaw relationship and added its two scoped evidence records. The fixture records the original package/input digests. Source geometry and assembly placements are read from the retained `source-model/1.15` package. The two confirmation-only aggregate checks run only when an original `2.0.0-assembly.3` fixture is explicitly provided; current geometry, path and tamper checks still run against the retained release.
+- `local-endpoints-v11.json` retains the eight separately specified local-endpoint expectations from the frozen review input, their matching participants, and only the 20 candidate centers/radii/axes used by the historical omission check. It does not contain the original reports or a full scene.
+
+The current input must not be used to regenerate these historical expectations. Changing a baseline is an explicit test-fixture revision. `PSOP_ASSEMBLY_TEST_DKP` can select another retained package containing the same original source geometry for the finite-wall checks; it does not select or rewrite the historical declaration.

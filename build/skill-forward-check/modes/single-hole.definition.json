@@ -1,0 +1,710 @@
+{
+  "schema": "psop.assembly.definition/1.0-draft.1",
+  "id": "synthetic:four-hole-declarative-mount-v1",
+  "basis": {
+    "kind": "synthetic",
+    "refs": [
+      "fixture:four-hole-declarative-mount-v1"
+    ]
+  },
+  "logical_holes": [
+    {
+      "id": "hole:synthetic:left:A",
+      "owner_ref": "part:synthetic:left",
+      "frame_ref": "frame:synthetic:left",
+      "center_m": [
+        -0.006,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius_m": 0.0011,
+      "axial_range_m": [
+        -0.002,
+        0
+      ]
+    },
+    {
+      "id": "hole:synthetic:left:B",
+      "owner_ref": "part:synthetic:left",
+      "frame_ref": "frame:synthetic:left",
+      "center_m": [
+        0.006,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius_m": 0.0011,
+      "axial_range_m": [
+        -0.002,
+        0
+      ]
+    },
+    {
+      "id": "hole:synthetic:left:C",
+      "owner_ref": "part:synthetic:left",
+      "frame_ref": "frame:synthetic:left",
+      "center_m": [
+        0,
+        -0.006,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius_m": 0.0011,
+      "axial_range_m": [
+        -0.002,
+        0
+      ]
+    },
+    {
+      "id": "hole:synthetic:left:D",
+      "owner_ref": "part:synthetic:left",
+      "frame_ref": "frame:synthetic:left",
+      "center_m": [
+        0,
+        0.006,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius_m": 0.0011,
+      "axial_range_m": [
+        -0.002,
+        0
+      ]
+    },
+    {
+      "id": "hole:synthetic:right:A",
+      "owner_ref": "part:synthetic:right",
+      "frame_ref": "frame:synthetic:right",
+      "center_m": [
+        -0.006,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius_m": 0.0008,
+      "axial_range_m": [
+        -0.002,
+        0
+      ]
+    },
+    {
+      "id": "hole:synthetic:right:B",
+      "owner_ref": "part:synthetic:right",
+      "frame_ref": "frame:synthetic:right",
+      "center_m": [
+        0.006,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius_m": 0.0008,
+      "axial_range_m": [
+        -0.002,
+        0
+      ]
+    },
+    {
+      "id": "hole:synthetic:right:C",
+      "owner_ref": "part:synthetic:right",
+      "frame_ref": "frame:synthetic:right",
+      "center_m": [
+        0,
+        -0.006,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius_m": 0.0008,
+      "axial_range_m": [
+        -0.002,
+        0
+      ]
+    },
+    {
+      "id": "hole:synthetic:right:D",
+      "owner_ref": "part:synthetic:right",
+      "frame_ref": "frame:synthetic:right",
+      "center_m": [
+        0,
+        0.006,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius_m": 0.0008,
+      "axial_range_m": [
+        -0.002,
+        0
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "id": "interface:synthetic:left:mount",
+      "owner_ref": "part:synthetic:left",
+      "frame_ref": "frame:synthetic:left",
+      "mechanism": "fastened_mount",
+      "owner_role": "passage_pattern",
+      "complementary_roles": [
+        "receiver_pattern"
+      ],
+      "members": [
+        {
+          "role_ref": "A",
+          "hole_ref": "hole:synthetic:left:A"
+        },
+        {
+          "role_ref": "B",
+          "hole_ref": "hole:synthetic:left:B"
+        },
+        {
+          "role_ref": "C",
+          "hole_ref": "hole:synthetic:left:C"
+        },
+        {
+          "role_ref": "D",
+          "hole_ref": "hole:synthetic:left:D"
+        }
+      ],
+      "warrant": {
+        "kind": "synthetic",
+        "refs": [
+          "fixture:four-hole-declarative-mount-v1"
+        ],
+        "statement": "Explicit synthetic assumptions for testing bounded selection and rigid registration; no real device authorization."
+      },
+      "modes": [
+        {
+          "id": "exact-four-examples",
+          "selection": {
+            "completeness": "complete",
+            "allowed_sets": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "C",
+                "D"
+              ],
+              [
+                "A",
+                "B",
+                "C"
+              ],
+              [
+                "A",
+                "B",
+                "C",
+                "D"
+              ]
+            ],
+            "dimension": "mechanical"
+          },
+          "warrant": {
+            "kind": "synthetic",
+            "refs": [
+              "fixture:four-hole-declarative-mount-v1"
+            ],
+            "statement": "Explicit synthetic assumptions for testing bounded selection and rigid registration; no real device authorization."
+          },
+          "requirements": {
+            "connector_role_refs": [
+              "fastener"
+            ],
+            "path_required": true,
+            "elastic_required": true,
+            "completion_policy": "all_selected_paths"
+          }
+        },
+        {
+          "id": "open-two-examples",
+          "selection": {
+            "completeness": "open_unknown",
+            "allowed_sets": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "C",
+                "D"
+              ]
+            ],
+            "dimension": "mechanical"
+          },
+          "warrant": {
+            "kind": "synthetic",
+            "refs": [
+              "fixture:four-hole-declarative-mount-v1"
+            ],
+            "statement": "Explicit synthetic assumptions for testing bounded selection and rigid registration; no real device authorization."
+          },
+          "requirements": {
+            "connector_role_refs": [
+              "fastener"
+            ],
+            "path_required": true,
+            "elastic_required": true,
+            "completion_policy": "all_selected_paths"
+          }
+        },
+        {
+          "id": "cardinality-2-to-4",
+          "selection": {
+            "completeness": "complete",
+            "cardinality": {
+              "min": 2,
+              "max": 4
+            },
+            "dimension": "mechanical"
+          },
+          "warrant": {
+            "kind": "synthetic",
+            "refs": [
+              "fixture:four-hole-declarative-mount-v1"
+            ],
+            "statement": "Explicit synthetic assumptions for testing bounded selection and rigid registration; no real device authorization."
+          },
+          "requirements": {
+            "connector_role_refs": [
+              "fastener"
+            ],
+            "path_required": true,
+            "elastic_required": true,
+            "completion_policy": "all_selected_paths"
+          }
+        },
+        {
+          "id": "contains-anchor-pair",
+          "selection": {
+            "completeness": "complete",
+            "anchors_any": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "C",
+                "D"
+              ]
+            ],
+            "dimension": "mechanical"
+          },
+          "warrant": {
+            "kind": "synthetic",
+            "refs": [
+              "fixture:four-hole-declarative-mount-v1"
+            ],
+            "statement": "Explicit synthetic assumptions for testing bounded selection and rigid registration; no real device authorization."
+          },
+          "requirements": {
+            "connector_role_refs": [
+              "fastener"
+            ],
+            "path_required": true,
+            "elastic_required": true,
+            "completion_policy": "all_selected_paths"
+          }
+        },
+        {
+          "id": "paired-dependencies",
+          "selection": {
+            "completeness": "complete",
+            "paired_dependencies": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "C",
+                "D"
+              ]
+            ],
+            "dimension": "mechanical"
+          },
+          "warrant": {
+            "kind": "synthetic",
+            "refs": [
+              "fixture:four-hole-declarative-mount-v1"
+            ],
+            "statement": "Explicit synthetic assumptions for testing bounded selection and rigid registration; no real device authorization."
+          },
+          "requirements": {
+            "connector_role_refs": [
+              "fastener"
+            ],
+            "path_required": true,
+            "elastic_required": true,
+            "completion_policy": "all_selected_paths"
+          }
+        },
+        {
+          "id": "full-pattern",
+          "selection": {
+            "completeness": "complete",
+            "allowed_sets": [
+              [
+                "A",
+                "B",
+                "C",
+                "D"
+              ]
+            ],
+            "dimension": "mechanical"
+          },
+          "warrant": {
+            "kind": "synthetic",
+            "refs": [
+              "fixture:four-hole-declarative-mount-v1"
+            ],
+            "statement": "Explicit synthetic assumptions for testing bounded selection and rigid registration; no real device authorization."
+          },
+          "requirements": {
+            "connector_role_refs": [
+              "fastener"
+            ],
+            "path_required": true,
+            "elastic_required": true,
+            "completion_policy": "all_selected_paths"
+          }
+        },
+        {
+          "id": "single-hole",
+          "selection": {
+            "completeness": "complete",
+            "allowed_sets": [
+              [
+                "A"
+              ]
+            ],
+            "dimension": "mechanical"
+          },
+          "warrant": {
+            "kind": "synthetic",
+            "refs": [
+              "fixture:four-hole-declarative-mount-v1"
+            ],
+            "statement": "Explicit synthetic assumptions for testing bounded selection and rigid registration; no real device authorization."
+          },
+          "requirements": {
+            "connector_role_refs": [
+              "fastener"
+            ],
+            "path_required": true,
+            "elastic_required": true,
+            "completion_policy": "all_selected_paths"
+          }
+        }
+      ]
+    },
+    {
+      "id": "interface:synthetic:right:mount",
+      "owner_ref": "part:synthetic:right",
+      "frame_ref": "frame:synthetic:right",
+      "mechanism": "fastened_mount",
+      "owner_role": "receiver_pattern",
+      "complementary_roles": [
+        "passage_pattern"
+      ],
+      "members": [
+        {
+          "role_ref": "A",
+          "hole_ref": "hole:synthetic:right:A"
+        },
+        {
+          "role_ref": "B",
+          "hole_ref": "hole:synthetic:right:B"
+        },
+        {
+          "role_ref": "C",
+          "hole_ref": "hole:synthetic:right:C"
+        },
+        {
+          "role_ref": "D",
+          "hole_ref": "hole:synthetic:right:D"
+        }
+      ],
+      "warrant": {
+        "kind": "synthetic",
+        "refs": [
+          "fixture:four-hole-declarative-mount-v1"
+        ],
+        "statement": "Explicit synthetic assumptions for testing bounded selection and rigid registration; no real device authorization."
+      },
+      "modes": [
+        {
+          "id": "exact-four-examples",
+          "selection": {
+            "completeness": "complete",
+            "allowed_sets": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "C",
+                "D"
+              ],
+              [
+                "A",
+                "B",
+                "C"
+              ],
+              [
+                "A",
+                "B",
+                "C",
+                "D"
+              ]
+            ],
+            "dimension": "mechanical"
+          },
+          "warrant": {
+            "kind": "synthetic",
+            "refs": [
+              "fixture:four-hole-declarative-mount-v1"
+            ],
+            "statement": "Explicit synthetic assumptions for testing bounded selection and rigid registration; no real device authorization."
+          },
+          "requirements": {
+            "connector_role_refs": [
+              "fastener"
+            ],
+            "path_required": true,
+            "elastic_required": true,
+            "completion_policy": "all_selected_paths"
+          }
+        },
+        {
+          "id": "open-two-examples",
+          "selection": {
+            "completeness": "open_unknown",
+            "allowed_sets": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "C",
+                "D"
+              ]
+            ],
+            "dimension": "mechanical"
+          },
+          "warrant": {
+            "kind": "synthetic",
+            "refs": [
+              "fixture:four-hole-declarative-mount-v1"
+            ],
+            "statement": "Explicit synthetic assumptions for testing bounded selection and rigid registration; no real device authorization."
+          },
+          "requirements": {
+            "connector_role_refs": [
+              "fastener"
+            ],
+            "path_required": true,
+            "elastic_required": true,
+            "completion_policy": "all_selected_paths"
+          }
+        },
+        {
+          "id": "cardinality-2-to-4",
+          "selection": {
+            "completeness": "complete",
+            "cardinality": {
+              "min": 2,
+              "max": 4
+            },
+            "dimension": "mechanical"
+          },
+          "warrant": {
+            "kind": "synthetic",
+            "refs": [
+              "fixture:four-hole-declarative-mount-v1"
+            ],
+            "statement": "Explicit synthetic assumptions for testing bounded selection and rigid registration; no real device authorization."
+          },
+          "requirements": {
+            "connector_role_refs": [
+              "fastener"
+            ],
+            "path_required": true,
+            "elastic_required": true,
+            "completion_policy": "all_selected_paths"
+          }
+        },
+        {
+          "id": "contains-anchor-pair",
+          "selection": {
+            "completeness": "complete",
+            "anchors_any": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "C",
+                "D"
+              ]
+            ],
+            "dimension": "mechanical"
+          },
+          "warrant": {
+            "kind": "synthetic",
+            "refs": [
+              "fixture:four-hole-declarative-mount-v1"
+            ],
+            "statement": "Explicit synthetic assumptions for testing bounded selection and rigid registration; no real device authorization."
+          },
+          "requirements": {
+            "connector_role_refs": [
+              "fastener"
+            ],
+            "path_required": true,
+            "elastic_required": true,
+            "completion_policy": "all_selected_paths"
+          }
+        },
+        {
+          "id": "paired-dependencies",
+          "selection": {
+            "completeness": "complete",
+            "paired_dependencies": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "C",
+                "D"
+              ]
+            ],
+            "dimension": "mechanical"
+          },
+          "warrant": {
+            "kind": "synthetic",
+            "refs": [
+              "fixture:four-hole-declarative-mount-v1"
+            ],
+            "statement": "Explicit synthetic assumptions for testing bounded selection and rigid registration; no real device authorization."
+          },
+          "requirements": {
+            "connector_role_refs": [
+              "fastener"
+            ],
+            "path_required": true,
+            "elastic_required": true,
+            "completion_policy": "all_selected_paths"
+          }
+        },
+        {
+          "id": "full-pattern",
+          "selection": {
+            "completeness": "complete",
+            "allowed_sets": [
+              [
+                "A",
+                "B",
+                "C",
+                "D"
+              ]
+            ],
+            "dimension": "mechanical"
+          },
+          "warrant": {
+            "kind": "synthetic",
+            "refs": [
+              "fixture:four-hole-declarative-mount-v1"
+            ],
+            "statement": "Explicit synthetic assumptions for testing bounded selection and rigid registration; no real device authorization."
+          },
+          "requirements": {
+            "connector_role_refs": [
+              "fastener"
+            ],
+            "path_required": true,
+            "elastic_required": true,
+            "completion_policy": "all_selected_paths"
+          }
+        },
+        {
+          "id": "single-hole",
+          "selection": {
+            "completeness": "complete",
+            "allowed_sets": [
+              [
+                "A"
+              ]
+            ],
+            "dimension": "mechanical"
+          },
+          "warrant": {
+            "kind": "synthetic",
+            "refs": [
+              "fixture:four-hole-declarative-mount-v1"
+            ],
+            "statement": "Explicit synthetic assumptions for testing bounded selection and rigid registration; no real device authorization."
+          },
+          "requirements": {
+            "connector_role_refs": [
+              "fastener"
+            ],
+            "path_required": true,
+            "elastic_required": true,
+            "completion_policy": "all_selected_paths"
+          }
+        }
+      ]
+    }
+  ],
+  "participants": [],
+  "context": {},
+  "query": {
+    "part_a": "part:synthetic:left",
+    "part_b": "part:synthetic:right",
+    "interface_a": "interface:synthetic:left:mount",
+    "interface_b": "interface:synthetic:right:mount",
+    "mode_a": "single-hole",
+    "mode_b": "single-hole",
+    "axis_relation": "parallel",
+    "position_tolerance_m": 1e-07,
+    "angle_tolerance_rad": 1e-06,
+    "limits": {
+      "max_members": 8,
+      "max_mappings": 50000,
+      "max_proposals": 256
+    }
+  }
+}

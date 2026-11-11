@@ -1,0 +1,275 @@
+{
+  "schema": "psop.installation-catalog-revision/1",
+  "source_package_digest": "69f6ee2e13b4051f6f42522639f77459081b83e9b95d4b5ea5b99c48324fe0e4",
+  "new_interfaces": [
+    {
+      "id": "interface:assembly:55970da91992f38c:hip_support_two_holes",
+      "owner_ref": "part:microduck:55970da91992f38c",
+      "name": "髋连接件与支承片双孔安装",
+      "member_count": 2
+    },
+    {
+      "id": "interface:assembly:cb253f38c818b9d8:hip_support_two_holes",
+      "owner_ref": "part:microduck:cb253f38c818b9d8",
+      "name": "髋连接件与支承片双孔安装",
+      "member_count": 2
+    },
+    {
+      "id": "interface:assembly:48099e14105d3289:hip_support_two_holes",
+      "owner_ref": "part:microduck:48099e14105d3289",
+      "name": "髋连接件与支承片双孔安装",
+      "member_count": 2
+    },
+    {
+      "id": "interface:assembly:c703574f50f6a46a:hip_support_two_holes",
+      "owner_ref": "part:microduck:c703574f50f6a46a",
+      "name": "髋连接件与支承片双孔安装",
+      "member_count": 2
+    },
+    {
+      "id": "interface:assembly:986b5adf27910138:roll_bearing_drive_cradle",
+      "owner_ref": "part:microduck:986b5adf27910138",
+      "name": "驱动侧横滚轴承局部承座",
+      "member_count": 1
+    },
+    {
+      "id": "interface:assembly:986b5adf27910138:roll_bearing_opposite_cradle",
+      "owner_ref": "part:microduck:986b5adf27910138",
+      "name": "对侧横滚轴承局部承座",
+      "member_count": 1
+    },
+    {
+      "id": "interface:assembly:e27cbdd6c07a264e:vertical_servo_fastening",
+      "owner_ref": "part:microduck:e27cbdd6c07a264e",
+      "name": "左外壳竖向阶梯安装孔",
+      "member_count": 2
+    },
+    {
+      "id": "interface:assembly:a682dc3620df43f5:vertical_shell_receiver",
+      "owner_ref": "part:microduck:a682dc3620df43f5",
+      "name": "左外壳竖孔接收位（B侧）",
+      "member_count": 1
+    },
+    {
+      "id": "interface:assembly:9d70b219a5533bf1:vertical_servo_fastening",
+      "owner_ref": "part:microduck:9d70b219a5533bf1",
+      "name": "右外壳竖向阶梯安装孔",
+      "member_count": 2
+    },
+    {
+      "id": "interface:assembly:09cb390e38430c1e:vertical_shell_receiver",
+      "owner_ref": "part:microduck:09cb390e38430c1e",
+      "name": "右外壳竖孔接收位（B侧）",
+      "member_count": 1
+    },
+    {
+      "id": "interface:assembly:2559a4c412bcda3e:eye_three_tabs",
+      "owner_ref": "part:microduck:2559a4c412bcda3e",
+      "name": "眼环三凸耳定位接口",
+      "member_count": 3
+    },
+    {
+      "id": "interface:assembly:afa52198f7fad203:eye_three_slots",
+      "owner_ref": "part:microduck:afa52198f7fad203",
+      "name": "眼环三通槽定位接口",
+      "member_count": 3
+    },
+    {
+      "id": "interface:assembly:2d2cde8ae8ebacac:lens_radial_retaining_port",
+      "owner_ref": "part:microduck:2d2cde8ae8ebacac",
+      "name": "镜筒径向紧定入口（用途推断）",
+      "member_count": 1
+    },
+    {
+      "id": "interface:assembly:78cf36c41e4fde06:pcb_locating_ears",
+      "owner_ref": "part:microduck:78cf36c41e4fde06",
+      "name": "板件双定位耳（对端缺失）",
+      "member_count": 2
+    }
+  ],
+  "new_connections": [
+    {
+      "id": "connection:assembly:55970da91992f38c:hip_support_two_holes",
+      "name": "髋连接件 ↔ 轴承支承片（双孔）",
+      "mechanism": "screw_fastening",
+      "basis": "hypothesis",
+      "endpoints": [
+        {
+          "interface_ref": "interface:assembly:55970da91992f38c:hip_support_two_holes",
+          "member_refs": [
+            "interface:assembly:55970da91992f38c:hip_support_two_holes:hole_1",
+            "interface:assembly:55970da91992f38c:hip_support_two_holes:hole_2"
+          ]
+        },
+        {
+          "interface_ref": "interface:assembly:cb253f38c818b9d8:hip_support_two_holes",
+          "member_refs": [
+            "interface:assembly:cb253f38c818b9d8:hip_support_two_holes:hole_1",
+            "interface:assembly:cb253f38c818b9d8:hip_support_two_holes:hole_2"
+          ]
+        }
+      ],
+      "evidence_refs": [
+        "evidence:assembly:installation-followup:F01"
+      ],
+      "note": "明确双孔安装用途与具体成员对应；未将孔壁数量解释为已装螺钉数量。来源孔径Ø2.05/Ø2.2、孔距18mm、孔段间隔约0.2mm。"
+    },
+    {
+      "id": "connection:assembly:48099e14105d3289:hip_support_two_holes",
+      "name": "髋连接件 ↔ 轴承支承片（双孔）",
+      "mechanism": "screw_fastening",
+      "basis": "hypothesis",
+      "endpoints": [
+        {
+          "interface_ref": "interface:assembly:48099e14105d3289:hip_support_two_holes",
+          "member_refs": [
+            "interface:assembly:48099e14105d3289:hip_support_two_holes:hole_1",
+            "interface:assembly:48099e14105d3289:hip_support_two_holes:hole_2"
+          ]
+        },
+        {
+          "interface_ref": "interface:assembly:c703574f50f6a46a:hip_support_two_holes",
+          "member_refs": [
+            "interface:assembly:c703574f50f6a46a:hip_support_two_holes:hole_1",
+            "interface:assembly:c703574f50f6a46a:hip_support_two_holes:hole_2"
+          ]
+        }
+      ],
+      "evidence_refs": [
+        "evidence:assembly:installation-followup:F02"
+      ],
+      "note": "明确双孔安装用途与具体成员对应；未将孔壁数量解释为已装螺钉数量。来源孔径Ø2.05/Ø2.2、孔距18mm、孔段间隔约0.2mm。"
+    },
+    {
+      "id": "connection:assembly:986b5adf27910138:roll_bearing_drive_cradle",
+      "name": "电机支架 ↔ 驱动侧横滚轴承外圈",
+      "mechanism": "bearing_fit",
+      "basis": "source_fit",
+      "endpoints": [
+        {
+          "interface_ref": "interface:assembly:986b5adf27910138:roll_bearing_drive_cradle",
+          "member_refs": [
+            "interface:assembly:986b5adf27910138:roll_bearing_drive_cradle:seat_wall"
+          ]
+        },
+        {
+          "interface_ref": "interface:assembly:ea69e2c6bba10a23:outer_ring",
+          "member_refs": [
+            "interface:assembly:ea69e2c6bba10a23:outer_ring:outer_cylinder"
+          ]
+        }
+      ],
+      "evidence_refs": [
+        "evidence:assembly:installation-followup:F03"
+      ],
+      "note": "原始有限曲壁支持局部承接。支架只覆盖约101.8°，不能作为完整闭合承座或轴向保持确认；不得取代已登记下壳承座。"
+    },
+    {
+      "id": "connection:assembly:986b5adf27910138:roll_bearing_opposite_cradle",
+      "name": "电机支架 ↔ 对侧横滚轴承外圈",
+      "mechanism": "bearing_fit",
+      "basis": "source_fit",
+      "endpoints": [
+        {
+          "interface_ref": "interface:assembly:986b5adf27910138:roll_bearing_opposite_cradle",
+          "member_refs": [
+            "interface:assembly:986b5adf27910138:roll_bearing_opposite_cradle:seat_wall"
+          ]
+        },
+        {
+          "interface_ref": "interface:assembly:55121c0b36f62219:outer_ring",
+          "member_refs": [
+            "interface:assembly:55121c0b36f62219:outer_ring:outer_cylinder"
+          ]
+        }
+      ],
+      "evidence_refs": [
+        "evidence:assembly:installation-followup:F04"
+      ],
+      "note": "原始有限曲壁支持局部承接。支架只覆盖约101.8°，不能作为完整闭合承座或轴向保持确认；不得取代已登记下壳承座。"
+    },
+    {
+      "id": "connection:assembly:e27cbdd6c07a264e:vertical_servo_fastening",
+      "name": "左外壳竖孔 ↔ 躯干舵机 B 侧孔",
+      "mechanism": "screw_fastening",
+      "basis": "hypothesis",
+      "endpoints": [
+        {
+          "interface_ref": "interface:assembly:e27cbdd6c07a264e:vertical_servo_fastening",
+          "member_refs": [
+            "interface:assembly:e27cbdd6c07a264e:vertical_servo_fastening:through_bore"
+          ]
+        },
+        {
+          "interface_ref": "interface:assembly:a682dc3620df43f5:vertical_shell_receiver",
+          "member_refs": [
+            "interface:assembly:a682dc3620df43f5:vertical_shell_receiver:receiver"
+          ]
+        }
+      ],
+      "evidence_refs": [
+        "evidence:assembly:installation-followup:shell-左"
+      ],
+      "note": "明确单孔成员映射，不选择整组四孔。原轴线一致；紧固件与保持未验证。"
+    },
+    {
+      "id": "connection:assembly:9d70b219a5533bf1:vertical_servo_fastening",
+      "name": "右外壳竖孔 ↔ 躯干舵机 B 侧孔",
+      "mechanism": "screw_fastening",
+      "basis": "incompatible",
+      "endpoints": [
+        {
+          "interface_ref": "interface:assembly:9d70b219a5533bf1:vertical_servo_fastening",
+          "member_refs": [
+            "interface:assembly:9d70b219a5533bf1:vertical_servo_fastening:through_bore"
+          ]
+        },
+        {
+          "interface_ref": "interface:assembly:09cb390e38430c1e:vertical_shell_receiver",
+          "member_refs": [
+            "interface:assembly:09cb390e38430c1e:vertical_shell_receiver:receiver"
+          ]
+        }
+      ],
+      "evidence_refs": [
+        "evidence:assembly:installation-followup:shell-右"
+      ],
+      "note": "明确单孔成员映射，不选择整组四孔。来源横向偏心0.5mm，远大于两孔名义半径差0.1mm，不能认定该位姿下的同轴紧固路径。仅保留用途与对端推断；需另外核定外壳位置。"
+    },
+    {
+      "id": "connection:assembly:2559a4c412bcda3e:eye_three_tabs",
+      "name": "眼环三凸耳 ↔ 面板三通槽",
+      "mechanism": "keyed_registration",
+      "basis": "source_fit",
+      "endpoints": [
+        {
+          "interface_ref": "interface:assembly:2559a4c412bcda3e:eye_three_tabs",
+          "member_refs": [
+            "interface:assembly:2559a4c412bcda3e:eye_three_tabs:top",
+            "interface:assembly:2559a4c412bcda3e:eye_three_tabs:left",
+            "interface:assembly:2559a4c412bcda3e:eye_three_tabs:right"
+          ]
+        },
+        {
+          "interface_ref": "interface:assembly:afa52198f7fad203:eye_three_slots",
+          "member_refs": [
+            "interface:assembly:afa52198f7fad203:eye_three_slots:top",
+            "interface:assembly:afa52198f7fad203:eye_three_slots:left",
+            "interface:assembly:afa52198f7fad203:eye_three_slots:right"
+          ]
+        }
+      ],
+      "evidence_refs": [
+        "evidence:assembly:installation-followup:eye-three-tabs"
+      ],
+      "note": "三组有限轮廓一一对应。凸耳长1.5mm、板厚1.3mm，穿出约0.2mm；未发现由此可以确认的轴向锁止结构，保持方式仍待补充。"
+    }
+  ],
+  "counts": {
+    "features": 802,
+    "interfaces": 257,
+    "connections": 145
+  },
+  "remaining_open_part_count": 6,
+  "research_sha256": "bd9c23d7a5cadf04ae85b3ff8dbf3a0f1c4e295ffdc8952b60d1d4f9adb2f808"
+}

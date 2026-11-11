@@ -1,0 +1,111 @@
+{
+  "schema": "psop.bearing-reference-ui-review/1",
+  "measured_at": "2026-11-08T09:51:32.086Z",
+  "snapshot": "dkp-a123162d9c7bdc946e6c",
+  "version": "2.0.0-capabilities.2",
+  "package_digest": "a123162d9c7bdc946e6ca0ac627c644daf59ecc3b25074d458d3a82b363e21fd",
+  "bearing_count": 14,
+  "visible_ring_interface_count": 28,
+  "rows": [
+    {
+      "part_ref": "part:microduck:b364863ffde63eed",
+      "body": "trunk_base",
+      "mesh_key": "seeed_bearing__configuration__22x16x4",
+      "inner_text": "内圈配合接口\nØ16 · 厚 4 · 两端独立环面\n偏航与横滚连接件 · 左髋偏航结构 / XL330 舵机 · 躯干基座 · 1\n已确定",
+      "outer_text": "外圈配合接口\nØ22 · 厚 4 · 两端独立环面\n躯干底座\n已确定"
+    },
+    {
+      "part_ref": "part:microduck:7938fd9143c59ea4",
+      "body": "trunk_base",
+      "mesh_key": "seeed_bearing__configuration__22x16x4",
+      "inner_text": "内圈配合接口\nØ16 · 厚 4 · 两端独立环面\n偏航与横滚连接件 · 右髋偏航结构 / XL330 舵机 · 躯干基座 · 2\n已确定",
+      "outer_text": "外圈配合接口\nØ22 · 厚 4 · 两端独立环面\n躯干底座\n已确定"
+    },
+    {
+      "part_ref": "part:microduck:47a950fbb3d0e416",
+      "body": "yaw2roll",
+      "mesh_key": "seeed_bearing__configuration__22x16x4",
+      "inner_text": "内圈配合接口\nØ16 · 厚 4 · 两端独立环面\n髋部件 · 左髋横滚结构 / XL330 舵机 · 左髋偏航结构\n已确定",
+      "outer_text": "外圈配合接口\nØ22 · 厚 4 · 两端独立环面\n横滚轴承支承件 · 左髋偏航结构\n已确定"
+    },
+    {
+      "part_ref": "part:microduck:bb34e925e25e29f6",
+      "body": "hip_l",
+      "mesh_key": "seeed_bearing__configuration__22x16x4",
+      "inner_text": "内圈配合接口\nØ16 · 厚 4 · 两端独立环面\n髋部件 · 左髋横滚结构 / XL330 舵机 · 左大腿 · 2\n已确定",
+      "outer_text": "外圈配合接口\nØ22 · 厚 4 · 两端独立环面\n大腿加强板 · 左大腿\n已确定"
+    },
+    {
+      "part_ref": "part:microduck:e475134639b3f7e1",
+      "body": "upper_leg_left",
+      "mesh_key": "seeed_bearing__configuration__22x16x4",
+      "inner_text": "内圈配合接口\nØ16 · 厚 4 · 两端独立环面\n腿部连杆 · 左腿连杆 / XL330 舵机 · 左大腿 · 1\n已确定",
+      "outer_text": "外圈配合接口\nØ22 · 厚 4 · 两端独立环面\n大腿加强板 · 左大腿\n已确定"
+    },
+    {
+      "part_ref": "part:microduck:766eaa6e4dd8b09f",
+      "body": "ankle_left",
+      "mesh_key": "seeed_bearing__configuration_default",
+      "inner_text": "内圈配合接口\nØ10 · 厚 3 · 两端独立环面\n腿部连杆 · 左腿连杆\n已确定",
+      "outer_text": "外圈配合接口\nØ15.0 · 厚 3 · 两端独立环面\n左踝部件\n已确定"
+    },
+    {
+      "part_ref": "part:microduck:6b884b140f6e283c",
+      "body": "neck_pitch",
+      "mesh_key": "seeed_bearing__configuration__22x16x4",
+      "inner_text": "内圈配合接口\nØ16 · 厚 4 · 两端独立环面\n颈俯仰部件 / XL330 舵机 · 头部偏航结构\n已确定",
+      "outer_text": "外圈配合接口\nØ22 · 厚 4 · 两端独立环面\n原装配对端待确认\n可用"
+    },
+    {
+      "part_ref": "part:microduck:ea69e2c6bba10a23",
+      "body": "yaw_roll_motion",
+      "mesh_key": "seeed_bearing__configuration__22x16x4",
+      "inner_text": "内圈配合接口\nØ16 · 厚 4 · 两端独立环面\n偏航与横滚传动件 / XL330 舵机 · 头部结构 · 2\n已确定",
+      "outer_text": "外圈配合接口\nØ22 · 厚 4 · 两端独立环面\n参考配置存在冲突记录\n可用"
+    },
+    {
+      "part_ref": "part:microduck:55121c0b36f62219",
+      "body": "yaw_roll_motion",
+      "mesh_key": "seeed_bearing__configuration__22x16x4",
+      "inner_text": "内圈配合接口\nØ16 · 厚 4 · 两端独立环面\n偏航与横滚传动件\n已确定",
+      "outer_text": "外圈配合接口\nØ22 · 厚 4 · 两端独立环面\n参考配置存在冲突记录\n可用"
+    },
+    {
+      "part_ref": "part:microduck:a0775b54397eb21e",
+      "body": "jaw_soft",
+      "mesh_key": "seeed_bearing__configuration_default",
+      "inner_text": "内圈配合接口\nØ10 · 厚 3 · 两端独立环面\n喙部件\n已确定",
+      "outer_text": "外圈配合接口\nØ15.0 · 厚 3 · 两端独立环面\n头部下壳 / 电机支架（待确认）\n已确定"
+    },
+    {
+      "part_ref": "part:microduck:3fbf0b5c8cea4488",
+      "body": "bearing_roll",
+      "mesh_key": "seeed_bearing__configuration__22x16x4",
+      "inner_text": "内圈配合接口\nØ16 · 厚 4 · 两端独立环面\n髋部件 · 右髋横滚结构 / XL330 舵机 · 右髋偏航结构\n已确定",
+      "outer_text": "外圈配合接口\nØ22 · 厚 4 · 两端独立环面\n横滚轴承支承件 · 右髋偏航结构\n已确定"
+    },
+    {
+      "part_ref": "part:microduck:d924e1596ffb042a",
+      "body": "hip_l_2",
+      "mesh_key": "seeed_bearing__configuration__22x16x4",
+      "inner_text": "内圈配合接口\nØ16 · 厚 4 · 两端独立环面\n髋部件 · 右髋横滚结构 / XL330 舵机 · 右大腿 · 2\n已确定",
+      "outer_text": "外圈配合接口\nØ22 · 厚 4 · 两端独立环面\n大腿加强板 · 右大腿\n已确定"
+    },
+    {
+      "part_ref": "part:microduck:d6a148b5784955d8",
+      "body": "upper_leg_right",
+      "mesh_key": "seeed_bearing__configuration__22x16x4",
+      "inner_text": "内圈配合接口\nØ16 · 厚 4 · 两端独立环面\n腿部连杆 · 右腿连杆 / XL330 舵机 · 右大腿 · 1\n已确定",
+      "outer_text": "外圈配合接口\nØ22 · 厚 4 · 两端独立环面\n大腿加强板 · 右大腿\n已确定"
+    },
+    {
+      "part_ref": "part:microduck:e196235810184adf",
+      "body": "ankle_right",
+      "mesh_key": "seeed_bearing__configuration_default",
+      "inner_text": "内圈配合接口\nØ10 · 厚 3 · 两端独立环面\n腿部连杆 · 右腿连杆\n已确定",
+      "outer_text": "外圈配合接口\nØ15.0 · 厚 3 · 两端独立环面\n右踝部件\n已确定"
+    }
+  ],
+  "javascript_errors": [],
+  "scope": "Reference interfaces and peer navigation; unknown peers and source-pose conflicts retained, no physical assembly qualification"
+}

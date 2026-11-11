@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <title>Qwen3-ASR 最小调用中每一步做什么</title>
+  <desc>PSOP 第 21 / 65 页教学图；文字与方法图保持可编辑。Microduck 视图由官方来源 STL 和 robot_walk.xml 的 source assembly 渲染，配置为 walk-model-reference、MCD-000001。alpha 软件任务身份与该几何参考的实物对应尚未核验；MD-01、S03、J01 和 EG 为教学定义。</desc>
+  <defs>
+    <linearGradient id="steel" x1="0" y1="0" x2="0.9" y2="1">
+      <stop stop-color="#EAF0F3" />
+      <stop offset=".37" stop-color="#A9BBC6" />
+      <stop offset=".63" stop-color="#F1F5F5" />
+      <stop offset="1" stop-color="#859CA9" />
+    </linearGradient>
+  </defs>
+  <g id="base" transform="translate(0 0)">
+    <rect x="0" y="0" width="1600" height="900" rx="0" fill="#FCFDFB" />
+    <rect x="0" y="0" width="9" height="900" rx="0" fill="#14877D" />
+    <path d="M64 62 L1536 62" stroke="#D7E1E7" fill="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+    <text x="64.000" y="41.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="18.999" font-weight="400" data-text="PSOP  /  四个模型与多模态协作" aria-label="PSOP  /  四个模型与多模态协作" xml:space="preserve" textLength="273.541" lengthAdjust="spacingAndGlyphs" fill="#526578">PSOP  /  四个模型与多模态协作</text>
+    <text x="1355.287" y="41.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="18.999" font-weight="400" data-text="LESSON 02  ·  21/65" aria-label="LESSON 02  ·  21/65" xml:space="preserve" textLength="180.021" lengthAdjust="spacingAndGlyphs" fill="#526578">LESSON 02  ·  21/65</text>
+  </g>
+  <g id="title" transform="translate(0 0)">
+    <text x="64.000" y="125.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="48.001" font-weight="700" data-text="Qwen3-ASR 最小调用中每一步做什么" aria-label="Qwen3-ASR 最小调用中每一步做什么" xml:space="preserve" textLength="830.532" lengthAdjust="spacingAndGlyphs" fill="#18344C">Qwen3-ASR 最小调用中每一步做什么</text>
+    <text x="64.000" y="177.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="24.001" font-weight="400" data-text="先在独立环境安装 qwen-asr 并准备真实短录音。加载检查点决定使用哪版参数；transcribe 处理音频；返回对象中的 text 是转写结果。" aria-label="先在独立环境安装 qwen-asr 并准备真实短录音。加载检查点决定使用哪版参数；transcribe 处理音频；返回对象中的 text 是转写结果。" xml:space="preserve" textLength="1451.603" lengthAdjust="spacingAndGlyphs" fill="#526578">先在独立环境安装 qwen-asr 并准备真实短录音。加载检查点决定使用哪版参数；transcribe 处理音频；返回对象中的 text 是转写结果。</text>
+    <text x="64.000" y="209.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="24.001" font-weight="400" data-text="任务字段抽取与状态核验不在这个调用里完成。" aria-label="任务字段抽取与状态核验不在这个调用里完成。" xml:space="preserve" textLength="504.001" lengthAdjust="spacingAndGlyphs" fill="#526578">任务字段抽取与状态核验不在这个调用里完成。</text>
+  </g>
+  <g id="beat_01" transform="translate(0 0)">
+    <g id="illustration" transform="translate(64 238)">
+      <rect x="0" y="0" width="884" height="498" rx="12" fill="#18344C" />
+      <rect x="0" y="0" width="884" height="47" rx="12" fill="#25445D" />
+      <rect x="0" y="25" width="884" height="22" rx="0" fill="#25445D" />
+      <circle cx="23" cy="24" r="5" fill="#BE574C" />
+      <circle cx="46" cy="24" r="5" fill="#B9752E" />
+      <circle cx="69" cy="24" r="5" fill="#14877D" />
+      <text x="113.000" y="31.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="21.000" font-weight="400" data-text="qwen3_asr_demo.py" aria-label="qwen3_asr_demo.py" xml:space="preserve" textLength="213.839" lengthAdjust="spacingAndGlyphs" fill="#DCE8F0">qwen3_asr_demo.py</text>
+      <text x="29.765" y="82.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="17.000" font-weight="400" data-text="1" aria-label="1" xml:space="preserve" textLength="9.350" lengthAdjust="spacingAndGlyphs" fill="#7293A9">1</text>
+      <text x="61.000" y="82.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="21.000" font-weight="400" data-text="import torch" aria-label="import torch" xml:space="preserve" textLength="150.624" lengthAdjust="spacingAndGlyphs" fill="#C5ABEB">import torch</text>
+      <text x="29.765" y="112.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="17.000" font-weight="400" data-text="2" aria-label="2" xml:space="preserve" textLength="9.350" lengthAdjust="spacingAndGlyphs" fill="#7293A9">2</text>
+      <text x="61.000" y="112.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="21.000" font-weight="400" data-text="from qwen_asr import Qwen3ASRModel" aria-label="from qwen_asr import Qwen3ASRModel" xml:space="preserve" textLength="428.771" lengthAdjust="spacingAndGlyphs" fill="#C5ABEB">from qwen_asr import Qwen3ASRModel</text>
+      <text x="29.765" y="142.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="17.000" font-weight="400" data-text="3" aria-label="3" xml:space="preserve" textLength="9.350" lengthAdjust="spacingAndGlyphs" fill="#7293A9">3</text>
+      <text x="61.000" y="142.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="21.000" font-weight="400" data-text="asr = Qwen3ASRModel.from_pretrained(" aria-label="asr = Qwen3ASRModel.from_pretrained(" xml:space="preserve" textLength="454.057" lengthAdjust="spacingAndGlyphs" fill="#DCE8F0">asr = Qwen3ASRModel.from_pretrained(</text>
+      <text x="29.765" y="172.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="17.000" font-weight="400" data-text="4" aria-label="4" xml:space="preserve" textLength="9.350" lengthAdjust="spacingAndGlyphs" fill="#7293A9">4</text>
+      <text x="111.572" y="172.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="21.000" font-weight="400" data-text="    &quot;Qwen/Qwen3-ASR-0.6B&quot;," aria-label="    &quot;Qwen/Qwen3-ASR-0.6B&quot;," xml:space="preserve" textLength="277.055" lengthAdjust="spacingAndGlyphs" fill="#DCE8F0">    "Qwen/Qwen3-ASR-0.6B",</text>
+      <text x="29.765" y="202.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="17.000" font-weight="400" data-text="5" aria-label="5" xml:space="preserve" textLength="9.350" lengthAdjust="spacingAndGlyphs" fill="#7293A9">5</text>
+      <text x="111.572" y="202.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="21.000" font-weight="400" data-text="    dtype=torch.bfloat16," aria-label="    dtype=torch.bfloat16," xml:space="preserve" textLength="264.412" lengthAdjust="spacingAndGlyphs" fill="#DCE8F0">    dtype=torch.bfloat16,</text>
+      <text x="29.765" y="232.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="17.000" font-weight="400" data-text="6" aria-label="6" xml:space="preserve" textLength="9.350" lengthAdjust="spacingAndGlyphs" fill="#7293A9">6</text>
+      <text x="111.572" y="232.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="21.000" font-weight="400" data-text="    device_map=&quot;cuda:0&quot;," aria-label="    device_map=&quot;cuda:0&quot;," xml:space="preserve" textLength="251.769" lengthAdjust="spacingAndGlyphs" fill="#DCE8F0">    device_map="cuda:0",</text>
+      <text x="29.765" y="262.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="17.000" font-weight="400" data-text="7" aria-label="7" xml:space="preserve" textLength="9.350" lengthAdjust="spacingAndGlyphs" fill="#7293A9">7</text>
+      <text x="111.572" y="262.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="21.000" font-weight="400" data-text="    max_new_tokens=256," aria-label="    max_new_tokens=256," xml:space="preserve" textLength="239.125" lengthAdjust="spacingAndGlyphs" fill="#DCE8F0">    max_new_tokens=256,</text>
+      <text x="29.765" y="292.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="17.000" font-weight="400" data-text="8" aria-label="8" xml:space="preserve" textLength="9.350" lengthAdjust="spacingAndGlyphs" fill="#7293A9">8</text>
+      <text x="61.000" y="292.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="21.000" font-weight="400" data-text=")" aria-label=")" xml:space="preserve" textLength="11.550" lengthAdjust="spacingAndGlyphs" fill="#DCE8F0">)</text>
+      <text x="29.765" y="322.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="17.000" font-weight="400" data-text="9" aria-label="9" xml:space="preserve" textLength="9.350" lengthAdjust="spacingAndGlyphs" fill="#7293A9">9</text>
+      <text x="61.000" y="322.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="21.000" font-weight="400" data-text="result = asr.transcribe(" aria-label="result = asr.transcribe(" xml:space="preserve" textLength="302.341" lengthAdjust="spacingAndGlyphs" fill="#DCE8F0">result = asr.transcribe(</text>
+      <text x="19.530" y="352.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="17.000" font-weight="400" data-text="10" aria-label="10" xml:space="preserve" textLength="19.585" lengthAdjust="spacingAndGlyphs" fill="#7293A9">10</text>
+      <text x="111.572" y="352.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="21.000" font-weight="400" data-text="    audio=&quot;s03.wav&quot;, language=&quot;Chinese&quot;" aria-label="    audio=&quot;s03.wav&quot;, language=&quot;Chinese&quot;" xml:space="preserve" textLength="441.415" lengthAdjust="spacingAndGlyphs" fill="#DCE8F0">    audio="s03.wav", language="Chinese"</text>
+      <text x="19.530" y="382.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="17.000" font-weight="400" data-text="11" aria-label="11" xml:space="preserve" textLength="19.585" lengthAdjust="spacingAndGlyphs" fill="#7293A9">11</text>
+      <text x="61.000" y="382.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="21.000" font-weight="400" data-text=")[0]" aria-label=")[0]" xml:space="preserve" textLength="49.479" lengthAdjust="spacingAndGlyphs" fill="#DCE8F0">)[0]</text>
+      <text x="19.530" y="412.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="17.000" font-weight="400" data-text="12" aria-label="12" xml:space="preserve" textLength="19.585" lengthAdjust="spacingAndGlyphs" fill="#7293A9">12</text>
+      <text x="61.000" y="412.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="21.000" font-weight="400" data-text="print(result.text)" aria-label="print(result.text)" xml:space="preserve" textLength="226.482" lengthAdjust="spacingAndGlyphs" fill="#DCE8F0">print(result.text)</text>
+      <path d="M61 437 L856 437" stroke="#526A7D" fill="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+      <text x="61.000" y="473.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="20.001" font-weight="400" data-text="返回 text 后，再做字段抽取和任务绑定。" aria-label="返回 text 后，再做字段抽取和任务绑定。" xml:space="preserve" textLength="368.224" lengthAdjust="spacingAndGlyphs" fill="#ABD3D7">返回 text 后，再做字段抽取和任务绑定。</text>
+    </g>
+  </g>
+  <g id="beat_02" transform="translate(0 0)">
+    <text x="995.000" y="268.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.000" font-weight="700" data-text="检查点与环境要一致" aria-label="检查点与环境要一致" xml:space="preserve" textLength="225.000" lengthAdjust="spacingAndGlyphs" fill="#326BB8">检查点与环境要一致</text>
+    <text x="995.000" y="310.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="此例采用 qwen-asr 包接口和原始检查点命" aria-label="此例采用 qwen-asr 包接口和原始检查点命" xml:space="preserve" textLength="437.796" lengthAdjust="spacingAndGlyphs" fill="#526578">此例采用 qwen-asr 包接口和原始检查点命</text>
+    <text x="995.000" y="340.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="名。原生 Transformers 的 -hf 检查点使用不" aria-label="名。原生 Transformers 的 -hf 检查点使用不" xml:space="preserve" textLength="457.214" lengthAdjust="spacingAndGlyphs" fill="#526578">名。原生 Transformers 的 -hf 检查点使用不</text>
+    <text x="995.000" y="370.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="同接口，不能直接混配。" aria-label="同接口，不能直接混配。" xml:space="preserve" textLength="252.999" lengthAdjust="spacingAndGlyphs" fill="#526578">同接口，不能直接混配。</text>
+    <text x="995.000" y="435.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.000" font-weight="700" data-text="设备与生成设置影响资源" aria-label="设备与生成设置影响资源" xml:space="preserve" textLength="275.000" lengthAdjust="spacingAndGlyphs" fill="#14877D">设备与生成设置影响资源</text>
+    <text x="995.000" y="477.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="CUDA / BF16 需要兼容硬件。max_new_tokens 控" aria-label="CUDA / BF16 需要兼容硬件。max_new_tokens 控" xml:space="preserve" textLength="526.438" lengthAdjust="spacingAndGlyphs" fill="#526578">CUDA / BF16 需要兼容硬件。max_new_tokens 控</text>
+    <text x="995.000" y="507.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="制生成长度；长录音应采用对应分段或长音频流程。" aria-label="制生成长度；长录音应采用对应分段或长音频流程。" xml:space="preserve" textLength="528.999" lengthAdjust="spacingAndGlyphs" fill="#526578">制生成长度；长录音应采用对应分段或长音频流程。</text>
+    <text x="995.000" y="602.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.000" font-weight="700" data-text="时间戳需要额外对齐" aria-label="时间戳需要额外对齐" xml:space="preserve" textLength="225.000" lengthAdjust="spacingAndGlyphs" fill="#7756AA">时间戳需要额外对齐</text>
+    <text x="995.000" y="644.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="需要字词时间时，配置 ForcedAligner。对齐把文字" aria-label="需要字词时间时，配置 ForcedAligner。对齐把文字" xml:space="preserve" textLength="528.864" lengthAdjust="spacingAndGlyphs" fill="#526578">需要字词时间时，配置 ForcedAligner。对齐把文字</text>
+    <text x="995.000" y="674.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="与时间对应，不能证明转写本身正确。" aria-label="与时间对应，不能证明转写本身正确。" xml:space="preserve" textLength="390.999" lengthAdjust="spacingAndGlyphs" fill="#526578">与时间对应，不能证明转写本身正确。</text>
+  </g>
+  <g id="beat_03" transform="translate(0 0)">
+    <path d="M64 760 L1536 760" stroke="#D7E1E7" fill="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+    <rect x="64" y="782" width="4" height="57" rx="2" fill="#14877D" />
+    <text x="84.000" y="798.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.000" font-weight="400" data-text="先用同一批短录音保存基础结果，再比较术语背景或训练效果。只有词表没有音频—正确转写对，不能完成领域 ASR 参数训练。" aria-label="先用同一批短录音保存基础结果，再比较术语背景或训练效果。只有词表没有音频—正确转写对，不能完成领域 ASR 参数训练。" xml:space="preserve" textLength="1245.320" lengthAdjust="spacingAndGlyphs" fill="#18344C">先用同一批短录音保存基础结果，再比较术语背景或训练效果。只有词表没有音频—正确转写对，不能完成领域 ASR 参数训练。</text>
+  </g>
+  <g id="footer" transform="translate(0 0)">
+    <text x="64.000" y="877.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="17.000" font-weight="400" data-text="学习手册 §06.8.3 / 06.8.4" aria-label="学习手册 §06.8.3 / 06.8.4" xml:space="preserve" textLength="194.159" lengthAdjust="spacingAndGlyphs" fill="#8898A8">学习手册 §06.8.3 / 06.8.4</text>
+    <text x="1247.000" y="877.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="17.000" font-weight="400" data-text="工程案例与数值示意的来源见逐页备注" aria-label="工程案例与数值示意的来源见逐页备注" xml:space="preserve" textLength="289.000" lengthAdjust="spacingAndGlyphs" fill="#8898A8">工程案例与数值示意的来源见逐页备注</text>
+  </g>
+</svg>

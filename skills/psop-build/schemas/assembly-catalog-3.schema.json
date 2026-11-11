@@ -1,0 +1,75 @@
+{
+  "type": "object",
+  "properties": {
+    "schema": {
+      "const": "psop.assembly.catalog/3"
+    },
+    "features": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "interfaces": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "resources": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "frames": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "reference_connections": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "part_notes": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "migrations": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "instance_reviews": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "analysis": {
+      "type": "object"
+    }
+  },
+  "required": [
+    "schema",
+    "features",
+    "interfaces",
+    "resources",
+    "frames",
+    "reference_connections",
+    "part_notes",
+    "migrations",
+    "instance_reviews",
+    "analysis"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "psop.assembly.catalog/3",
+  "description": "Finite source witnesses, physical resources, interface capabilities and separate configuration-bound reference connections. Python semantic validation verifies geometry, references, independence and candidate coverage."
+}

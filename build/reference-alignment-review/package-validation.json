@@ -1,0 +1,58 @@
+{
+  "ok": true,
+  "valid": true,
+  "schema": "psop.dkp/2.0-draft.1",
+  "profile": "psop.hardware.source-model/1.15",
+  "package_id": "psop.microduck",
+  "package_version": "2.0.0-capabilities.3",
+  "device": {
+    "id": "microduck",
+    "name": "Microduck"
+  },
+  "capabilities": {
+    "cross_part_candidates": {
+      "scope": "Every distinct source-instance pair has a disposition for every declared local-geometry template; unresolved specifications are retained",
+      "status": "complete"
+    },
+    "mechanical_validation": {
+      "scope": "No common placement, collision, holding, elastic engagement or load qualification",
+      "status": "unavailable"
+    },
+    "part_capabilities": {
+      "scope": "Finite measured geometry, physical resources, potential modes and explicit residual source regions; independent scope is published",
+      "status": "partial"
+    },
+    "path_validation": {
+      "scope": "Assembly and insertion paths remain Simulate work",
+      "status": "unavailable"
+    },
+    "reference_assembly": {
+      "scope": "Attributed reference uses and configuration-bound conflicts, separate from potential compatibility",
+      "status": "partial"
+    },
+    "source_registry": {
+      "scope": "Captured unchanged source bytes and separate source-instance identities",
+      "status": "complete"
+    },
+    "variant_design_execution": {
+      "scope": "Build publishes consumable capabilities; Simulate search and interactive assembly are not implemented",
+      "status": "unavailable"
+    }
+  },
+  "package_digest": "68c7c493a38d95f2eb47cacdd0b1cc6ef96ad6e79752f316ea0bc96fff5924b1",
+  "counts": {
+    "bodies": 15,
+    "candidates": 9796,
+    "evidence": 350,
+    "features": 8445,
+    "geometries": 38,
+    "instance_pairs": 2415,
+    "interfaces": 350,
+    "joints": 14,
+    "parts": 70,
+    "resources": 7495,
+    "sources": 65
+  },
+  "validation_seconds": 149.12352589995135,
+  "scope": "Independent finite geometry requirements and complete pose-independent candidate template coverage; no solved assembly"
+}

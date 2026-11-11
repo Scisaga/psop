@@ -1,0 +1,37 @@
+{
+  "baselineDigest": "59ce1b25aea434fc336718cfa6bca6f570d34037c87194ba1f45773fbcd3c9a1",
+  "records": [
+    {
+      "image": "x25-y9-close-no_edges.png",
+      "mode": "no_edges",
+      "transformed": true,
+      "responseHash": "b746a3cf8b8d9fdad51a9c9f921589ed7feae0e464e66632808a174179a911d3",
+      "suppliedHash": "bca02da69c5d6b70725888f61b2c214bf985e9eaa2ce3f6bf1ee7a878b4fdbac",
+      "camera": [
+        0.01781021833292681,
+        -0.024706934422452375,
+        0.1630000004470348,
+        0.01350000004943163,
+        -0.025999999907500928,
+        0.14500000044703482
+      ],
+      "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-59ce1b25aea434fc3367&part=part%3Amicroduck%3A9d70b219a5533bf1&opening=opening%3Amicroduck%3A9d70b219a5533bf1%3A4450b2102e065a82&explode=0.00&detail=geometry&view=iso&isolate=part%3Amicroduck%3A9d70b219a5533bf1&labels=0&grid=0&supplements=0&camera=0.0178102%2C-0.0247069%2C0.1630000%2C0.0135000%2C-0.0260000%2C0.1450000"
+    },
+    {
+      "image": "x25-y9-close-smooth_no_edges.png",
+      "mode": "smooth_no_edges",
+      "transformed": true,
+      "responseHash": "b746a3cf8b8d9fdad51a9c9f921589ed7feae0e464e66632808a174179a911d3",
+      "suppliedHash": "31f50721ad3b5c38170cf750e22f883bfcb4a5e764005cac78254276bfea2fa0",
+      "camera": [
+        0.01781021833292681,
+        -0.024706934422452375,
+        0.1630000004470348,
+        0.01350000004943163,
+        -0.025999999907500928,
+        0.14500000044703482
+      ],
+      "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-59ce1b25aea434fc3367&part=part%3Amicroduck%3A9d70b219a5533bf1&opening=opening%3Amicroduck%3A9d70b219a5533bf1%3A4450b2102e065a82&explode=0.00&detail=geometry&view=iso&isolate=part%3Amicroduck%3A9d70b219a5533bf1&labels=0&grid=0&supplements=0&camera=0.0178102%2C-0.0247069%2C0.1630000%2C0.0135000%2C-0.0260000%2C0.1450000"
+    }
+  ]
+}

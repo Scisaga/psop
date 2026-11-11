@@ -1,0 +1,386 @@
+{
+  "date": "2026-10-15",
+  "renderer": "Chromium / Playwright",
+  "canvas": [
+    1600,
+    900
+  ],
+  "source_sha256": "fffb5a004b6a31854ff4dfce5d32ed0aa1404105ce45f3229b377a668186789c",
+  "pages": [
+    {
+      "page": 1,
+      "svg": "01-cover.svg",
+      "preview": "01-cover.png",
+      "svg_sha256": "5681514de19ab57f17bfdf53e4defa234d4a9512357ff79d01812d4bc7a9371c",
+      "png_sha256": "fd9b00908be9df00f565a8420f9b22572e6f91b35411d6ddbb268c4428507496",
+      "outside": [],
+      "overlaps": [],
+      "text_count": 43
+    },
+    {
+      "page": 2,
+      "svg": "02-ai-trends.svg",
+      "preview": "02-ai-trends.png",
+      "svg_sha256": "456e8406d2e485d1b32c12c45d104555799334492dd886f6eac9d5494adef73c",
+      "png_sha256": "1278338cd18ccf8da5cc671b8b4cc24383e107432b47ffc597f09ea19578f558",
+      "text_count": 45,
+      "outside": [],
+      "overlaps": []
+    },
+    {
+      "page": 3,
+      "svg": "03-device-problems.svg",
+      "preview": "03-device-problems.png",
+      "svg_sha256": "a89112e46195da189c4178d59996dd763f5c18b1a7c232d24fa0288d500ca777",
+      "png_sha256": "3b38635173594905712cbf577ce5703d826f06cd24bb8eb3dfe101cfa13d5552",
+      "text_count": 22,
+      "outside": [],
+      "overlaps": []
+    },
+    {
+      "page": 4,
+      "svg": "04-three-workspaces.svg",
+      "preview": "04-three-workspaces.png",
+      "svg_sha256": "cd0838e5f11aca19ad1cb0262075cf69d062f02ada603f4de31ceef88c729ab4",
+      "png_sha256": "904c7b2487d95aab65979d3cc8dec82ffb0bf8b43f81c5effc9a5c6104f5a3ad",
+      "text_count": 30,
+      "outside": [],
+      "overlaps": []
+    },
+    {
+      "page": 5,
+      "svg": "05-system-integration.svg",
+      "preview": "05-system-integration.png",
+      "svg_sha256": "1eac5a4956baef1a9670fb7590b9e602fe00d894d58056500e08a4e3872e0d0c",
+      "png_sha256": "9723334eed211da4450354f6df7b5a34f750492156a4e810933d2db4e76df17e",
+      "text_count": 36,
+      "outside": [],
+      "overlaps": []
+    },
+    {
+      "page": 6,
+      "svg": "06-solution-positioning.svg",
+      "preview": "06-solution-positioning.png",
+      "svg_sha256": "75c7f208605c5c73672cbec48fd8aca2428b7ee4b303f449f7e7e32f6393627b",
+      "png_sha256": "e4ee8befdb1b5cee100d6dc8be1f03b6dfaababa057c5292877151d8ed7ca0de",
+      "text_count": 48,
+      "outside": [],
+      "overlaps": []
+    },
+    {
+      "page": 7,
+      "svg": "07-customer-self-service.svg",
+      "preview": "07-customer-self-service.png",
+      "svg_sha256": "3d3c86027b59578261b889f7dc33b8b388ed77a96509a1729d2dc0f13e79407d",
+      "png_sha256": "4d47bab0180cabdf2cc97dc7090968f2a0f21df96520393791a1ce8ffee3e0f1",
+      "text_count": 42,
+      "outside": [],
+      "overlaps": []
+    },
+    {
+      "page": 8,
+      "svg": "08-engineer-collaboration.svg",
+      "preview": "08-engineer-collaboration.png",
+      "svg_sha256": "23fb8cb08f317096b5012295cea532e680499220fdb8dbba548209086ab3a39c",
+      "png_sha256": "550d8d8aab0e7743563571b52139f12aafb2aa22c7142e9eefb60460790bf926",
+      "text_count": 62,
+      "outside": [],
+      "overlaps": []
+    },
+    {
+      "page": 9,
+      "svg": "09-service-continuity.svg",
+      "preview": "09-service-continuity.png",
+      "svg_sha256": "4b05391fd60a80b1b07b4df9be32bd544c07ae4e132f7ed32bb540626646f983",
+      "png_sha256": "98f34a80ce34faebd3157c6da65df73283948ff9086453664ac56906b33be4dc",
+      "text_count": 39,
+      "outside": [],
+      "overlaps": []
+    },
+    {
+      "page": 10,
+      "svg": "10-service-capacity.svg",
+      "preview": "10-service-capacity.png",
+      "svg_sha256": "ef97b7fcea50367cecd5599e3369c21279c54540b4855e9254382485b857d0e0",
+      "png_sha256": "8de4a4eb29b3c966e7cc6fae46ca4af085e4b29496b2c82badda805c3b7d4eda",
+      "text_count": 42,
+      "outside": [],
+      "overlaps": []
+    },
+    {
+      "page": 11,
+      "svg": "11-pilot-validation.svg",
+      "preview": "11-pilot-validation.png",
+      "svg_sha256": "7118b83b05f4c205232e9b53af9857f456e5d5637395d8e8f608030b6715490a",
+      "png_sha256": "f763ace37f2220cccfe81f8e9d980192df8b5f8054de8ba9ad24dbc6a93ca027",
+      "text_count": 47,
+      "outside": [],
+      "overlaps": []
+    },
+    {
+      "page": 12,
+      "svg": "12-rollout-replication.svg",
+      "preview": "12-rollout-replication.png",
+      "svg_sha256": "b778d123f87c29a00a065a46f82d5968dccd1def200541ff5e94d7cebc866f3e",
+      "png_sha256": "93097ba9e81825874c06d64191cbe03a1e5c3c6371300499dd6dae1e805e04de",
+      "text_count": 32,
+      "outside": [],
+      "overlaps": []
+    },
+    {
+      "page": 13,
+      "svg": "13-device-ai-engineer.svg",
+      "preview": "13-device-ai-engineer.png",
+      "svg_sha256": "53f40e9fd9dc19e88a1f976ce5c0f857fc68d2ad0c8fddd8c4b2ea71d3b65f8b",
+      "png_sha256": "c414c3be83c426e037124e2842543539adaf73ca12588f38d4fdda6000ee6ce4",
+      "text_count": 33,
+      "outside": [],
+      "overlaps": []
+    },
+    {
+      "page": 14,
+      "svg": "14-runtime-evidence.svg",
+      "preview": "14-runtime-evidence.png",
+      "svg_sha256": "dfe75954a8538c1385d6078c020f10d8e935f0314745f7b98a4a92fcb6754bce",
+      "png_sha256": "f3a81247f0f3a77499bb38a99a6f03152a25f8f6322550003fc5e3a609a7bc60",
+      "text_count": 95,
+      "outside": [],
+      "overlaps": []
+    },
+    {
+      "page": 15,
+      "svg": "15-build-workbench.svg",
+      "preview": "15-build-workbench.png",
+      "svg_sha256": "5003ad84bc350c9487478e1ebf97878b4a06b1c65c1d26e1828baa7de3e51287",
+      "png_sha256": "485917ef19d1330bf5d67c6e897d3bfdede86e17bf1a05b61630196e25a486fc",
+      "text_count": 6,
+      "outside": [],
+      "overlaps": []
+    },
+    {
+      "page": 16,
+      "svg": "16-compile-eg.svg",
+      "preview": "16-compile-eg.png",
+      "svg_sha256": "43eb2f6c41e92eca67760bdd28d493991b7d0ddfb20492578e5c6fe52d14580c",
+      "png_sha256": "b9282a8fe6456e2b63e6e306459d99f28eb278e0f9c051f0c557696a28397be3",
+      "text_count": 23,
+      "outside": [],
+      "overlaps": []
+    },
+    {
+      "page": 17,
+      "svg": "17-simulate-workbench.svg",
+      "preview": "17-simulate-workbench.png",
+      "svg_sha256": "2df1a6db1faa06b9a9ef824afe403cef09ca1363a0b923a5bc21747b417d4891",
+      "png_sha256": "e6953fe8956f74f2ef63a34dab7e0004a8fd3444a66e85851e81d9186f3a2cf0",
+      "text_count": 6,
+      "outside": [],
+      "overlaps": []
+    },
+    {
+      "page": 18,
+      "svg": "18-edge-runtime.svg",
+      "preview": "18-edge-runtime.png",
+      "svg_sha256": "8a2ce66c0686334f94cfbb37c5d214057d03b2895c1be1c107a71d0fef06fbe1",
+      "png_sha256": "5a7220b9453ee0ca7a31e2cfb216dcfb32c6b6fca044bb03d051badb4e94182b",
+      "outside": [],
+      "overlaps": [],
+      "text_count": 58
+    },
+    {
+      "page": 19,
+      "svg": "19-mobile-workbench.svg",
+      "preview": "19-mobile-workbench.png",
+      "svg_sha256": "9f9efd4f45c4c4206907c8c70216b9d9c6fcbc640868176326abe4e2312f7ce4",
+      "png_sha256": "3dbea59f23d95ad757cbf300edb0580f3c0cbffae5481446b6dc18731ed3b07a",
+      "text_count": 13,
+      "outside": [],
+      "overlaps": []
+    },
+    {
+      "page": 20,
+      "svg": "20-ar-demo.svg",
+      "preview": "20-ar-demo.png",
+      "svg_sha256": "677c9a8dd589b9505c2d8bb0f934c47f5d9f1bcb81be8856d2d778424caa919a",
+      "png_sha256": "e7fec037d1e426e46e5b5b9f6ff13628b3bfda6604211153773d8af5e0b2a95d",
+      "text_count": 22,
+      "outside": [],
+      "overlaps": []
+    },
+    {
+      "page": 21,
+      "svg": "21-feasibility.svg",
+      "preview": "21-feasibility.png",
+      "svg_sha256": "0180129ec3648fd9a4364b8ae3675de163d41d9a6093ff340131bc31b5da22b2",
+      "png_sha256": "b6385e8a2dad208259f381ed959d130a9e96df3da0e1cc3944bea11d470e1e35",
+      "text_count": 25,
+      "outside": [],
+      "overlaps": []
+    },
+    {
+      "page": 22,
+      "svg": "22-experience-loop.svg",
+      "preview": "22-experience-loop.png",
+      "svg_sha256": "27ab508713424f68bce5a1ad4f677b9292f708337186c342f6b36f1c01e4c556",
+      "png_sha256": "ae89d1f1cf884bf6fac0c7839b7428b75dad386e17ec0ab7a72c5f07b7faf53e",
+      "text_count": 65,
+      "outside": [],
+      "overlaps": []
+    },
+    {
+      "page": 23,
+      "svg": "23-platform-architecture.svg",
+      "preview": "23-platform-architecture.png",
+      "svg_sha256": "a3a1eb8d2bcfbc7d0b305d417c2a0c17a8e14aabd40e9c799f30491a41d8262d",
+      "png_sha256": "15801ea0e2ea464c652ab9295aa00215c2d56c34681528989b866566eb993359",
+      "text_count": 63,
+      "outside": [],
+      "overlaps": []
+    },
+    {
+      "page": 24,
+      "svg": "24-economic-value.svg",
+      "preview": "24-economic-value.png",
+      "svg_sha256": "54b346eb8d1ac6362f1db35a0e03b8d87b60c3a422bfc73d51984993f718ce05",
+      "png_sha256": "404f456766707efc4f5e057f0fedd09744c2a24c6203b5b87a934bc09c48c5c9",
+      "text_count": 45,
+      "outside": [],
+      "overlaps": []
+    },
+    {
+      "page": 25,
+      "svg": "25-social-value.svg",
+      "preview": "25-social-value.png",
+      "svg_sha256": "b62abd1c6318b013631f231b6043c09c9e0a573a75a1e06f9b579fd11e458a03",
+      "png_sha256": "3e07da05f3bf1b23b810452a721a4bcf6485f6d85984f2694e4f8eb6f203c8c3",
+      "text_count": 46,
+      "outside": [],
+      "overlaps": []
+    }
+  ],
+  "viewer": {
+    "cards": 25,
+    "open_close": true,
+    "keyboard_navigation": true,
+    "media_pages": [
+      20
+    ]
+  },
+  "out_of_canvas_text": 0,
+  "text_overlap_candidates": 0,
+  "powerpoint_native_review": "not_performed_svg_and_pdf_delivery",
+  "verification_strategy": {
+    "rendered_svg_pages": [
+      1
+    ],
+    "reused_svg_pages": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25
+    ],
+    "reused_checks": "Other SVGs and cached PNG hashes match the previous validated delivery"
+  },
+  "page_revision": {
+    "changed_pages": [
+      1
+    ],
+    "unchanged_pages": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25
+    ],
+    "baseline": ".psop/v2-join-layout-baseline.json",
+    "strategy": "render page 1; reuse other previews after exact SVG and PNG hash verification",
+    "source": "../tools/cover_task_eg.py",
+    "source_sha256": "3654badc56ffe4bc107880ff09228abfa8a73397f226db16b6395f3b70a7ba23"
+  },
+  "result": "passed",
+  "manifest_sha256": "2759d1e4df3e44833987bf268d5f47d0b4c723ab2c9eb3aa6e8e5b4c08f44b3c",
+  "solution_pages": {
+    "pages": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "source_file_pages": [
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "native_text_nodes": 381,
+    "source_mapping": "manifest.json:solution_visual_references"
+  },
+  "pdf_export": {
+    "result": "passed",
+    "pdf": "psop-v2.pdf",
+    "pdf_sha256": "80f4dcbd49ba2a777414969f2df9cead0760ac5d18858034e7b94a8cb6db7104",
+    "manifest_sha256": "2759d1e4df3e44833987bf268d5f47d0b4c723ab2c9eb3aa6e8e5b4c08f44b3c",
+    "page_count": 25,
+    "bookmarks": 25,
+    "media_pages": [
+      20
+    ],
+    "media_note": "Pages 20 contain static AR video frames; PDF does not play video.",
+    "selectable_text": true,
+    "fonts_embedded": true,
+    "canvas_points": [
+      1200,
+      675
+    ],
+    "maximum_mean_rgb_difference_0_to_255": 4.6365
+  }
+}

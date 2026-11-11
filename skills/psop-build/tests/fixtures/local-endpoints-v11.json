@@ -1,0 +1,703 @@
+{
+  "schema": "psop.test.local-endpoint-history/1",
+  "basis": {
+    "profile": "psop.hardware.source-model/1.11",
+    "package_digest": "84f6829a25a82fefaf1da6cc00b399088a5db6e41923b4074c39a08d1988b6db",
+    "expected_input_sha256": "ec7666a1bad2c8b380a4dbe0d32775230cb70bb89d76c15e172f698a1605d133",
+    "scope": "Only the eight independently required local endpoints and the geometry values consumed by their omission check."
+  },
+  "review": {
+    "expected_local_sites": [
+      {
+        "id": "part:microduck:fa9ee2f71faafb88:X-four",
+        "study_ref": "review-926a5beb2c028185",
+        "part_ref": "part:microduck:fa9ee2f71faafb88",
+        "geometry_sha256": "e175896932d76dc7648cf939aa39cb7b1d188b783d91745adb9a4cec65e9052c",
+        "kind": "bore_wall",
+        "axis_local": [
+          1,
+          0,
+          0
+        ],
+        "diameter_m": 0.0024,
+        "member_centers_local_m": [
+          [
+            0.038975,
+            0,
+            -0.006
+          ],
+          [
+            0.038975,
+            -0.006,
+            0
+          ],
+          [
+            0.038975,
+            0.006,
+            0
+          ],
+          [
+            0.038975,
+            0,
+            0.006
+          ]
+        ],
+        "tolerance_m": 2e-06,
+        "basis": "Independent closed source sections and outward journal winding; see source-checks.json and review_connection_sources.py."
+      },
+      {
+        "id": "part:microduck:fa9ee2f71faafb88:Y-four",
+        "study_ref": "review-e42fab2d8700637e",
+        "part_ref": "part:microduck:fa9ee2f71faafb88",
+        "geometry_sha256": "e175896932d76dc7648cf939aa39cb7b1d188b783d91745adb9a4cec65e9052c",
+        "kind": "bore_wall",
+        "axis_local": [
+          0,
+          1,
+          0
+        ],
+        "diameter_m": 0.0024,
+        "member_centers_local_m": [
+          [
+            0.0235,
+            -0.018025,
+            0
+          ],
+          [
+            0.0175,
+            -0.018025,
+            -0.006
+          ],
+          [
+            0.0175,
+            -0.018025,
+            0.006
+          ],
+          [
+            0.0115,
+            -0.018025,
+            0
+          ]
+        ],
+        "tolerance_m": 2e-06,
+        "basis": "Independent closed source sections and outward journal winding; see source-checks.json and review_connection_sources.py."
+      },
+      {
+        "id": "part:microduck:fa9ee2f71faafb88:X-journal",
+        "study_ref": "review-c2e8a8093a4b8563",
+        "part_ref": "part:microduck:fa9ee2f71faafb88",
+        "geometry_sha256": "e175896932d76dc7648cf939aa39cb7b1d188b783d91745adb9a4cec65e9052c",
+        "kind": "shaft_wall",
+        "axis_local": [
+          1,
+          0,
+          0
+        ],
+        "diameter_m": 0.016,
+        "member_centers_local_m": [
+          [
+            0.039475,
+            0,
+            0
+          ]
+        ],
+        "tolerance_m": 2e-06,
+        "basis": "Independent closed source sections and outward journal winding; see source-checks.json and review_connection_sources.py."
+      },
+      {
+        "id": "part:microduck:fa9ee2f71faafb88:Y-journal",
+        "study_ref": "review-27d56794bd7c8a86",
+        "part_ref": "part:microduck:fa9ee2f71faafb88",
+        "geometry_sha256": "e175896932d76dc7648cf939aa39cb7b1d188b783d91745adb9a4cec65e9052c",
+        "kind": "shaft_wall",
+        "axis_local": [
+          0,
+          1,
+          0
+        ],
+        "diameter_m": 0.016,
+        "member_centers_local_m": [
+          [
+            0.0175,
+            -0.017525,
+            0
+          ]
+        ],
+        "tolerance_m": 2e-06,
+        "basis": "Independent closed source sections and outward journal winding; see source-checks.json and review_connection_sources.py."
+      },
+      {
+        "id": "part:microduck:c7eeeac0a640d191:X-four",
+        "study_ref": "review-bdf54f836e5af91a",
+        "part_ref": "part:microduck:c7eeeac0a640d191",
+        "geometry_sha256": "e175896932d76dc7648cf939aa39cb7b1d188b783d91745adb9a4cec65e9052c",
+        "kind": "bore_wall",
+        "axis_local": [
+          1,
+          0,
+          0
+        ],
+        "diameter_m": 0.0024,
+        "member_centers_local_m": [
+          [
+            0.038975,
+            0,
+            -0.006
+          ],
+          [
+            0.038975,
+            -0.006,
+            0
+          ],
+          [
+            0.038975,
+            0.006,
+            0
+          ],
+          [
+            0.038975,
+            0,
+            0.006
+          ]
+        ],
+        "tolerance_m": 2e-06,
+        "basis": "Independent closed source sections and outward journal winding; see source-checks.json and review_connection_sources.py."
+      },
+      {
+        "id": "part:microduck:c7eeeac0a640d191:Y-four",
+        "study_ref": "review-51d1c3b9f9c96dde",
+        "part_ref": "part:microduck:c7eeeac0a640d191",
+        "geometry_sha256": "e175896932d76dc7648cf939aa39cb7b1d188b783d91745adb9a4cec65e9052c",
+        "kind": "bore_wall",
+        "axis_local": [
+          0,
+          1,
+          0
+        ],
+        "diameter_m": 0.0024,
+        "member_centers_local_m": [
+          [
+            0.0235,
+            -0.018025,
+            0
+          ],
+          [
+            0.0175,
+            -0.018025,
+            -0.006
+          ],
+          [
+            0.0175,
+            -0.018025,
+            0.006
+          ],
+          [
+            0.0115,
+            -0.018025,
+            0
+          ]
+        ],
+        "tolerance_m": 2e-06,
+        "basis": "Independent closed source sections and outward journal winding; see source-checks.json and review_connection_sources.py."
+      },
+      {
+        "id": "part:microduck:c7eeeac0a640d191:X-journal",
+        "study_ref": "review-3a42fc267d7917bb",
+        "part_ref": "part:microduck:c7eeeac0a640d191",
+        "geometry_sha256": "e175896932d76dc7648cf939aa39cb7b1d188b783d91745adb9a4cec65e9052c",
+        "kind": "shaft_wall",
+        "axis_local": [
+          1,
+          0,
+          0
+        ],
+        "diameter_m": 0.016,
+        "member_centers_local_m": [
+          [
+            0.039475,
+            0,
+            0
+          ]
+        ],
+        "tolerance_m": 2e-06,
+        "basis": "Independent closed source sections and outward journal winding; see source-checks.json and review_connection_sources.py."
+      },
+      {
+        "id": "part:microduck:c7eeeac0a640d191:Y-journal",
+        "study_ref": "review-aa00aab586e98383",
+        "part_ref": "part:microduck:c7eeeac0a640d191",
+        "geometry_sha256": "e175896932d76dc7648cf939aa39cb7b1d188b783d91745adb9a4cec65e9052c",
+        "kind": "shaft_wall",
+        "axis_local": [
+          0,
+          1,
+          0
+        ],
+        "diameter_m": 0.016,
+        "member_centers_local_m": [
+          [
+            0.0175,
+            -0.017525,
+            0
+          ]
+        ],
+        "tolerance_m": 2e-06,
+        "basis": "Independent closed source sections and outward journal winding; see source-checks.json and review_connection_sources.py."
+      }
+    ]
+  },
+  "analysis": {
+    "structure_candidates": [
+      {
+        "id": "structure:11173f52f2df89abe32c",
+        "kind": "bore_wall",
+        "geometry": {
+          "center": [
+            0.03897500038146973,
+            -1.695609427262147e-20,
+            -0.005999999992993506
+          ],
+          "radius_m": 0.0011999999815652724,
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      {
+        "id": "structure:22e82199fcae88d962ee",
+        "kind": "bore_wall",
+        "geometry": {
+          "center": [
+            0.023500000026991114,
+            -0.01802500057965517,
+            -1.2898963269842734e-20
+          ],
+          "radius_m": 0.0011999999935907414,
+          "axis": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        }
+      },
+      {
+        "id": "structure:251e653b3c03986ce087",
+        "kind": "bore_wall",
+        "geometry": {
+          "center": [
+            0.01150000001311063,
+            -0.01802500057965517,
+            -1.3148264981387447e-20
+          ],
+          "radius_m": 0.00120000003609033,
+          "axis": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        }
+      },
+      {
+        "id": "structure:262fa3afb69f956c51b3",
+        "kind": "bore_wall",
+        "geometry": {
+          "center": [
+            0.017500000074505806,
+            -0.01802500057965517,
+            -0.005999999992993497
+          ],
+          "radius_m": 0.0012000000933177057,
+          "axis": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        }
+      },
+      {
+        "id": "structure:2ffd2d70d94388821cac",
+        "kind": "shaft_wall",
+        "geometry": {
+          "center": [
+            0.017500000005070827,
+            -0.017525000497698784,
+            -6.684875973627692e-13
+          ],
+          "radius_m": 0.007999999997212988,
+          "axis": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        }
+      },
+      {
+        "id": "structure:370c8de0de55e62e973c",
+        "kind": "bore_wall",
+        "geometry": {
+          "center": [
+            0.03897500038146973,
+            0.005999999992993506,
+            1.3397583188817833e-20
+          ],
+          "radius_m": 0.0011999999815652724,
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      {
+        "id": "structure:434796536a6c45bbcca7",
+        "kind": "bore_wall",
+        "geometry": {
+          "center": [
+            0.03897500038146973,
+            -0.005999999992993506,
+            1.3397587642793305e-20
+          ],
+          "radius_m": 0.0011999999815652724,
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      {
+        "id": "structure:451727d87b3cd9f77f5c",
+        "kind": "bore_wall",
+        "geometry": {
+          "center": [
+            0.03897500038146973,
+            0.005999999992993506,
+            1.3397583188817833e-20
+          ],
+          "radius_m": 0.0011999999815652724,
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      {
+        "id": "structure:50cc73c4fcbf34140e1c",
+        "kind": "shaft_wall",
+        "geometry": {
+          "center": [
+            0.017500000005070827,
+            -0.017525000497698784,
+            -6.684875973627692e-13
+          ],
+          "radius_m": 0.007999999997212988,
+          "axis": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        }
+      },
+      {
+        "id": "structure:691a6552d9a82afe9998",
+        "kind": "bore_wall",
+        "geometry": {
+          "center": [
+            0.017500000074505806,
+            -0.01802500057965517,
+            0.005999999992993497
+          ],
+          "radius_m": 0.0012000000933177057,
+          "axis": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        }
+      },
+      {
+        "id": "structure:70e41b63559258e2806a",
+        "kind": "shaft_wall",
+        "geometry": {
+          "center": [
+            0.03947499953210354,
+            3.6458831694776914e-13,
+            3.6458822208007904e-13
+          ],
+          "radius_m": 0.007999999923995211,
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      {
+        "id": "structure:77868e6578e44d811434",
+        "kind": "bore_wall",
+        "geometry": {
+          "center": [
+            0.03897500038146973,
+            -0.005999999992993506,
+            1.3397587642793305e-20
+          ],
+          "radius_m": 0.0011999999815652724,
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      {
+        "id": "structure:781ff0bb3544d47b5ee9",
+        "kind": "bore_wall",
+        "geometry": {
+          "center": [
+            0.01150000001311063,
+            -0.01802500057965517,
+            -1.3148264981387447e-20
+          ],
+          "radius_m": 0.00120000003609033,
+          "axis": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        }
+      },
+      {
+        "id": "structure:8aa5a11df74e2320e5c3",
+        "kind": "bore_wall",
+        "geometry": {
+          "center": [
+            0.03897500038146973,
+            7.655766027804471e-21,
+            0.005999999992993506
+          ],
+          "radius_m": 0.0011999999815652724,
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      {
+        "id": "structure:b90338acf15ad4108d19",
+        "kind": "bore_wall",
+        "geometry": {
+          "center": [
+            0.023500000026991114,
+            -0.01802500057965517,
+            -1.2898963269842734e-20
+          ],
+          "radius_m": 0.0011999999935907414,
+          "axis": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        }
+      },
+      {
+        "id": "structure:b916b03e2009313214de",
+        "kind": "bore_wall",
+        "geometry": {
+          "center": [
+            0.03897500038146973,
+            -1.695609427262147e-20,
+            -0.005999999992993506
+          ],
+          "radius_m": 0.0011999999815652724,
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      {
+        "id": "structure:bb703ed1dab7f7151b2d",
+        "kind": "bore_wall",
+        "geometry": {
+          "center": [
+            0.03897500038146973,
+            7.655766027804471e-21,
+            0.005999999992993506
+          ],
+          "radius_m": 0.0011999999815652724,
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      {
+        "id": "structure:cd3a63a2bb1dcbc1b79b",
+        "kind": "bore_wall",
+        "geometry": {
+          "center": [
+            0.017500000074505806,
+            -0.01802500057965517,
+            0.005999999992993497
+          ],
+          "radius_m": 0.0012000000933177057,
+          "axis": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        }
+      },
+      {
+        "id": "structure:d5bd64b5aa05d238c0ab",
+        "kind": "bore_wall",
+        "geometry": {
+          "center": [
+            0.017500000074505806,
+            -0.01802500057965517,
+            -0.005999999992993497
+          ],
+          "radius_m": 0.0012000000933177057,
+          "axis": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        }
+      },
+      {
+        "id": "structure:e0564288c2c04c8a5954",
+        "kind": "shaft_wall",
+        "geometry": {
+          "center": [
+            0.03947499953210354,
+            3.6458831694776914e-13,
+            3.6458822208007904e-13
+          ],
+          "radius_m": 0.007999999923995211,
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    ],
+    "connection_review_findings": [
+      {
+        "study_ref": "review-51d1c3b9f9c96dde",
+        "participants": [
+          {
+            "part_ref": "part:microduck:c7eeeac0a640d191",
+            "geometry_sha256": "e175896932d76dc7648cf939aa39cb7b1d188b783d91745adb9a4cec65e9052c",
+            "structure_refs": [
+              "structure:781ff0bb3544d47b5ee9",
+              "structure:22e82199fcae88d962ee",
+              "structure:cd3a63a2bb1dcbc1b79b",
+              "structure:262fa3afb69f956c51b3"
+            ]
+          }
+        ]
+      },
+      {
+        "study_ref": "review-bdf54f836e5af91a",
+        "participants": [
+          {
+            "part_ref": "part:microduck:c7eeeac0a640d191",
+            "geometry_sha256": "e175896932d76dc7648cf939aa39cb7b1d188b783d91745adb9a4cec65e9052c",
+            "structure_refs": [
+              "structure:b916b03e2009313214de",
+              "structure:77868e6578e44d811434",
+              "structure:370c8de0de55e62e973c",
+              "structure:8aa5a11df74e2320e5c3"
+            ]
+          }
+        ]
+      },
+      {
+        "study_ref": "review-aa00aab586e98383",
+        "participants": [
+          {
+            "part_ref": "part:microduck:c7eeeac0a640d191",
+            "geometry_sha256": "e175896932d76dc7648cf939aa39cb7b1d188b783d91745adb9a4cec65e9052c",
+            "structure_refs": [
+              "structure:50cc73c4fcbf34140e1c"
+            ]
+          }
+        ]
+      },
+      {
+        "study_ref": "review-27d56794bd7c8a86",
+        "participants": [
+          {
+            "part_ref": "part:microduck:fa9ee2f71faafb88",
+            "geometry_sha256": "e175896932d76dc7648cf939aa39cb7b1d188b783d91745adb9a4cec65e9052c",
+            "structure_refs": [
+              "structure:2ffd2d70d94388821cac"
+            ]
+          }
+        ]
+      },
+      {
+        "study_ref": "review-926a5beb2c028185",
+        "participants": [
+          {
+            "part_ref": "part:microduck:fa9ee2f71faafb88",
+            "geometry_sha256": "e175896932d76dc7648cf939aa39cb7b1d188b783d91745adb9a4cec65e9052c",
+            "structure_refs": [
+              "structure:bb703ed1dab7f7151b2d",
+              "structure:451727d87b3cd9f77f5c",
+              "structure:434796536a6c45bbcca7",
+              "structure:11173f52f2df89abe32c"
+            ]
+          }
+        ]
+      },
+      {
+        "study_ref": "review-c2e8a8093a4b8563",
+        "participants": [
+          {
+            "part_ref": "part:microduck:fa9ee2f71faafb88",
+            "geometry_sha256": "e175896932d76dc7648cf939aa39cb7b1d188b783d91745adb9a4cec65e9052c",
+            "structure_refs": [
+              "structure:e0564288c2c04c8a5954"
+            ]
+          }
+        ]
+      },
+      {
+        "study_ref": "review-3a42fc267d7917bb",
+        "participants": [
+          {
+            "part_ref": "part:microduck:c7eeeac0a640d191",
+            "geometry_sha256": "e175896932d76dc7648cf939aa39cb7b1d188b783d91745adb9a4cec65e9052c",
+            "structure_refs": [
+              "structure:70e41b63559258e2806a"
+            ]
+          }
+        ]
+      },
+      {
+        "study_ref": "review-e42fab2d8700637e",
+        "participants": [
+          {
+            "part_ref": "part:microduck:fa9ee2f71faafb88",
+            "geometry_sha256": "e175896932d76dc7648cf939aa39cb7b1d188b783d91745adb9a4cec65e9052c",
+            "structure_refs": [
+              "structure:251e653b3c03986ce087",
+              "structure:b90338acf15ad4108d19",
+              "structure:691a6552d9a82afe9998",
+              "structure:d5bd64b5aa05d238c0ab"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "checked_on": "2026-11-07",
+  "client_timezone": "Asia/Shanghai",
+  "started_at_utc": "2026-11-06T20:54:04.406Z",
+  "method": "Isolated anonymous Chrome navigation, then 25-second application-load observation",
+  "page_url": "https://cad.onshape.com/documents/804927696f06d877f3f1803e/w/5b75db19292e71970de02dee/e/ef6e972847fec8d82570b35e",
+  "http_status": 200,
+  "final_url": "https://cad.onshape.com/signin",
+  "title": "Sign in",
+  "body_text": "Continue\nOnshape Terms & Privacy Policy Don't have an account?  Sign up",
+  "controls": [
+    {
+      "tag": "INPUT",
+      "label": "Email"
+    },
+    {
+      "tag": "BUTTON",
+      "label": "Continue"
+    },
+    {
+      "tag": "A",
+      "label": "Onshape Terms & Privacy Policy",
+      "href": "https://www.onshape.com/en/legal"
+    },
+    {
+      "tag": "A",
+      "label": "Sign up"
+    }
+  ],
+  "image": "onshape-loaded-25s.png",
+  "completed_at_utc": "2026-11-06T20:54:45.589Z",
+  "requests_observed": 65,
+  "failed_requests": [],
+  "http_errors": [
+    {
+      "url": "https://cad.onshape.com/api/v14/documents/804927696f06d877f3f1803e/permissionset",
+      "status": 403
+    }
+  ],
+  "console_errors": [
+    "Failed to load resource: the server responded with a status of 403 ()"
+  ],
+  "page_errors": []
+}

@@ -1,0 +1,1035 @@
+{
+  "bodies": [
+    {
+      "body": "hip_l",
+      "parent": "yaw2roll",
+      "attachment": "part:microduck:47a950fbb3d0e416",
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "delta": [
+        0.004000000000000002,
+        0.00775,
+        0.004500000000000004
+      ],
+      "outward": [
+        1,
+        0,
+        0
+      ],
+      "extra": 0.031167715167712003,
+      "before": [
+        0.011335430335424,
+        0,
+        0
+      ]
+    },
+    {
+      "body": "upper_leg_left",
+      "parent": "hip_l",
+      "attachment": "part:microduck:bb34e925e25e29f6",
+      "axis": [
+        -1.110223024625156e-16,
+        1,
+        -2.220446049250312e-16
+      ],
+      "delta": [
+        -0.025301,
+        0.029250000000000005,
+        -0.010362499999999997
+      ],
+      "outward": [
+        -1.110223024625156e-16,
+        1,
+        -2.220446049250312e-16
+      ],
+      "extra": 0.009335430335424012,
+      "before": [
+        0.042503145503136004,
+        0.00511771516771201,
+        0
+      ]
+    },
+    {
+      "body": "leg",
+      "parent": "upper_leg_left",
+      "attachment": "part:microduck:e475134639b3f7e1",
+      "axis": [
+        7.85046229341888e-17,
+        -1,
+        -4.440892098500625e-16
+      ],
+      "delta": [
+        -0.017476,
+        -0.006000000000000005,
+        -0.032387500000000014
+      ],
+      "outward": [
+        0,
+        0,
+        -1
+      ],
+      "extra": 0.015667715167712,
+      "before": [
+        0.042503145503136004,
+        0.005117715167712011,
+        -2.0728819406343765e-18
+      ]
+    },
+    {
+      "body": "ankle_left",
+      "parent": "leg",
+      "attachment": "part:microduck:7c130c8489b57c99",
+      "axis": [
+        -7.85046229341888e-17,
+        1,
+        -2.2204460492503126e-16
+      ],
+      "delta": [
+        0.006999999999999999,
+        0.0013045,
+        -0.029162999999999994
+      ],
+      "outward": [
+        0,
+        0,
+        -1
+      ],
+      "extra": 0.021867715167712003,
+      "before": [
+        0.042503145503136004,
+        0.005117715167712011,
+        -0.015667715167712003
+      ]
+    },
+    {
+      "body": "neck_pitch",
+      "parent": "neck",
+      "attachment": "part:microduck:44b5600c1a735117",
+      "axis": [
+        0,
+        1,
+        -2.2204460492503126e-16
+      ],
+      "delta": [
+        -3.469446951953614e-18,
+        0,
+        0.030896499999999993
+      ],
+      "outward": [
+        0,
+        0,
+        1
+      ],
+      "extra": 0.021667715167711977,
+      "before": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "body": "yaw_roll_motion",
+      "parent": "neck_pitch",
+      "attachment": "part:microduck:6b884b140f6e283c",
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "delta": [
+        -0.0010000000000000009,
+        -0.006750000000000001,
+        0.027297000000000016
+      ],
+      "outward": [
+        0,
+        0,
+        1
+      ],
+      "extra": 0.0052677151677120075,
+      "before": [
+        0,
+        0,
+        0.02673543033542395
+      ]
+    },
+    {
+      "body": "jaw_soft",
+      "parent": "yaw_roll_motion",
+      "attachment": "part:microduck:ea69e2c6bba10a23",
+      "axis": [
+        -1,
+        0,
+        2.2204460492503136e-16
+      ],
+      "delta": [
+        0.005945000000000009,
+        0.006750500000000001,
+        0.012192999999999982
+      ],
+      "outward": [
+        1,
+        0,
+        -2.2204460492503136e-16
+      ],
+      "extra": 0.07756771516771199,
+      "before": [
+        0,
+        0,
+        0.03200314550313596
+      ]
+    },
+    {
+      "body": "hip_l_2",
+      "parent": "bearing_roll",
+      "attachment": "part:microduck:3fbf0b5c8cea4488",
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "delta": [
+        0.004000000000000002,
+        -0.00775,
+        0.004500000000000004
+      ],
+      "outward": [
+        1,
+        0,
+        0
+      ],
+      "extra": 0.031167715167712003,
+      "before": [
+        0.011335430335424,
+        0,
+        0
+      ]
+    },
+    {
+      "body": "upper_leg_right",
+      "parent": "hip_l_2",
+      "attachment": "part:microduck:d924e1596ffb042a",
+      "axis": [
+        -1.110223024625156e-16,
+        -1,
+        -2.220446049250312e-16
+      ],
+      "delta": [
+        -0.025301,
+        -0.029250000000000005,
+        -0.010362499999999997
+      ],
+      "outward": [
+        -1.110223024625156e-16,
+        -1,
+        -2.220446049250312e-16
+      ],
+      "extra": 0.009335430335424012,
+      "before": [
+        0.042503145503136004,
+        -0.00511771516771201,
+        0
+      ]
+    },
+    {
+      "body": "leg_2",
+      "parent": "upper_leg_right",
+      "attachment": "part:microduck:d6a148b5784955d8",
+      "axis": [
+        5.551115123125783e-17,
+        1,
+        0
+      ],
+      "delta": [
+        -0.017476,
+        0.006000000000000005,
+        -0.032387500000000014
+      ],
+      "outward": [
+        0,
+        0,
+        -1
+      ],
+      "extra": 0.015667715167712,
+      "before": [
+        0.042503145503136004,
+        -0.005117715167712011,
+        -2.0728819406343765e-18
+      ]
+    },
+    {
+      "body": "ankle_right",
+      "parent": "leg_2",
+      "attachment": "part:microduck:0820b4025f26a004",
+      "axis": [
+        -7.85046229341888e-17,
+        -1,
+        -2.2204460492503126e-16
+      ],
+      "delta": [
+        0.006999999999999999,
+        -0.0013045,
+        -0.029163499999999995
+      ],
+      "outward": [
+        0,
+        0,
+        -1
+      ],
+      "extra": 0.021867715167712003,
+      "before": [
+        0.042503145503136004,
+        -0.005117715167712011,
+        -0.015667715167712003
+      ]
+    }
+  ],
+  "branches": [
+    {
+      "root": "trunk_base",
+      "outward": [
+        0,
+        0,
+        1
+      ],
+      "extra": 0,
+      "before": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "root": "yaw2roll",
+      "outward": [
+        -0.12889450868123944,
+        0.4985806701782281,
+        -0.8572068134099559
+      ],
+      "extra": 0.02965362249008605,
+      "before": [
+        0,
+        0,
+        -0.011335430335423993
+      ]
+    },
+    {
+      "root": "neck",
+      "outward": [
+        0.38120271198603783,
+        0.000005874598736113715,
+        0.9244914777000268
+      ],
+      "extra": 0.00846905848419797,
+      "before": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "root": "bearing_roll",
+      "outward": [
+        -0.1288937885825125,
+        -0.4985778847429947,
+        -0.8572085417855144
+      ],
+      "extra": 0.029653562699981748,
+      "before": [
+        0,
+        0,
+        -0.011335430335423993
+      ]
+    }
+  ],
+  "internal": [
+    {
+      "body": "trunk_base",
+      "core": [
+        "part:microduck:a682dc3620df43f5",
+        "part:microduck:09cb390e38430c1e"
+      ],
+      "parts": [
+        {
+          "id": "part:microduck:09cb390e38430c1e",
+          "offset": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "part:microduck:a682dc3620df43f5",
+          "offset": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "part:microduck:f97c1c6580d651d7",
+          "offset": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "part:microduck:203d2686e3321e4a",
+          "offset": [
+            0,
+            0,
+            -0.008167715167711994
+          ]
+        },
+        {
+          "id": "part:microduck:e7e8275c7d01674c",
+          "offset": [
+            -0.03600371516771201,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "part:microduck:78cf36c41e4fde06",
+          "offset": [
+            -0.04167143033542401,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "part:microduck:7938fd9143c59ea4",
+          "offset": [
+            0,
+            0,
+            -0.011335430335423993
+          ]
+        },
+        {
+          "id": "part:microduck:b364863ffde63eed",
+          "offset": [
+            0,
+            0,
+            -0.011335430335423993
+          ]
+        },
+        {
+          "id": "part:microduck:e27cbdd6c07a264e",
+          "offset": [
+            0,
+            0.032617715167712,
+            0
+          ]
+        },
+        {
+          "id": "part:microduck:9d70b219a5533bf1",
+          "offset": [
+            0,
+            -0.030167715167711998,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "body": "yaw2roll",
+      "core": [
+        "part:microduck:cd6d48fccc95df41"
+      ],
+      "parts": [
+        {
+          "id": "part:microduck:cd6d48fccc95df41",
+          "offset": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "part:microduck:cb253f38c818b9d8",
+          "offset": [
+            0.008167715167712001,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "part:microduck:55970da91992f38c",
+          "offset": [
+            0,
+            0,
+            0.017667715167712
+          ]
+        },
+        {
+          "id": "part:microduck:47a950fbb3d0e416",
+          "offset": [
+            0.011335430335424,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "body": "hip_l",
+      "core": [
+        "part:microduck:fa9ee2f71faafb88"
+      ],
+      "parts": [
+        {
+          "id": "part:microduck:fa9ee2f71faafb88",
+          "offset": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "part:microduck:bb34e925e25e29f6",
+          "offset": [
+            0,
+            0.00511771516771201,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "body": "upper_leg_left",
+      "core": [
+        "part:microduck:4cf80d5a57c8cb04",
+        "part:microduck:9ffe9d5bcd6bc13a"
+      ],
+      "parts": [
+        {
+          "id": "part:microduck:9ffe9d5bcd6bc13a",
+          "offset": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "part:microduck:4cf80d5a57c8cb04",
+          "offset": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "part:microduck:66c73aaad945a993",
+          "offset": [
+            0,
+            0.030167715167712005,
+            0
+          ]
+        },
+        {
+          "id": "part:microduck:c75bfc0afb35e000",
+          "offset": [
+            0,
+            -0.006167715167712006,
+            0
+          ]
+        },
+        {
+          "id": "part:microduck:e475134639b3f7e1",
+          "offset": [
+            0,
+            -0.009335430335424012,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "body": "leg",
+      "core": [
+        "part:microduck:7c130c8489b57c99"
+      ],
+      "parts": [
+        {
+          "id": "part:microduck:7c130c8489b57c99",
+          "offset": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "part:microduck:638f29b46b322e64",
+          "offset": [
+            0,
+            -0.008117715167712007,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "body": "ankle_left",
+      "core": [
+        "part:microduck:07e507f1e9297aa3"
+      ],
+      "parts": [
+        {
+          "id": "part:microduck:07e507f1e9297aa3",
+          "offset": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "part:microduck:41db565298264db6",
+          "offset": [
+            0,
+            0,
+            -0.013348715167712
+          ]
+        },
+        {
+          "id": "part:microduck:8b649e45831a1972",
+          "offset": [
+            0,
+            0,
+            -0.027425430335424
+          ]
+        },
+        {
+          "id": "part:microduck:766eaa6e4dd8b09f",
+          "offset": [
+            0,
+            -0.008303715167711995,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "body": "neck",
+      "core": [
+        "part:microduck:4cef8bb24d37fe6e",
+        "part:microduck:44b5600c1a735117"
+      ],
+      "parts": [
+        {
+          "id": "part:microduck:44b5600c1a735117",
+          "offset": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "part:microduck:4cef8bb24d37fe6e",
+          "offset": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "part:microduck:133711c520619e45",
+          "offset": [
+            0,
+            0.006167715167712002,
+            0
+          ]
+        },
+        {
+          "id": "part:microduck:6b5602b4416129fe",
+          "offset": [
+            0,
+            -0.006167715167712002,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "body": "neck_pitch",
+      "core": [
+        "part:microduck:834f5cc892eba41e"
+      ],
+      "parts": [
+        {
+          "id": "part:microduck:834f5cc892eba41e",
+          "offset": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "part:microduck:6b884b140f6e283c",
+          "offset": [
+            0,
+            0,
+            0.005067715167711974
+          ]
+        }
+      ]
+    },
+    {
+      "body": "yaw_roll_motion",
+      "core": [
+        "part:microduck:a07b37bcb704b29f"
+      ],
+      "parts": [
+        {
+          "id": "part:microduck:a07b37bcb704b29f",
+          "offset": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "part:microduck:d4b9a9e9474a9829",
+          "offset": [
+            0,
+            0,
+            0.02666771516771201
+          ]
+        },
+        {
+          "id": "part:microduck:55121c0b36f62219",
+          "offset": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "part:microduck:ea69e2c6bba10a23",
+          "offset": [
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "body": "jaw_soft",
+      "core": [
+        "part:microduck:50f0c376d01bb0c1",
+        "part:microduck:96e22c7fa2b976d3"
+      ],
+      "parts": [
+        {
+          "id": "part:microduck:50f0c376d01bb0c1",
+          "offset": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "part:microduck:96e22c7fa2b976d3",
+          "offset": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "part:microduck:22f2cd114e324ec5",
+          "offset": [
+            0,
+            0,
+            0.003167715167711989
+          ]
+        },
+        {
+          "id": "part:microduck:554503ef38151e67",
+          "offset": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "part:microduck:ebfcaf98422b7b28",
+          "offset": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "part:microduck:b61b0609c61fc572",
+          "offset": [
+            0.0010977151677120007,
+            0,
+            -2.4374173073482573e-19
+          ]
+        },
+        {
+          "id": "part:microduck:986b5adf27910138",
+          "offset": [
+            0,
+            0,
+            0.027435430335423994
+          ]
+        },
+        {
+          "id": "part:microduck:2d2cde8ae8ebacac",
+          "offset": [
+            0.030485430335424005,
+            0,
+            -6.7691253347987895e-18
+          ]
+        },
+        {
+          "id": "part:microduck:a0775b54397eb21e",
+          "offset": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "part:microduck:52fdcacf474a463f",
+          "offset": [
+            0,
+            0,
+            -0.016167715167712
+          ]
+        },
+        {
+          "id": "part:microduck:82d68e991b23c2a3",
+          "offset": [
+            0,
+            0,
+            0.04980514550313599
+          ]
+        },
+        {
+          "id": "part:microduck:328011951ac11ee7",
+          "offset": [
+            0,
+            0,
+            -0.048472430335424
+          ]
+        },
+        {
+          "id": "part:microduck:88b7496d63cb41ff",
+          "offset": [
+            0,
+            0,
+            -0.063192145503136
+          ]
+        },
+        {
+          "id": "part:microduck:f5797f92c2bf01b8",
+          "offset": [
+            0,
+            0,
+            -0.068220860670848
+          ]
+        },
+        {
+          "id": "part:microduck:afa52198f7fad203",
+          "offset": [
+            0.04323314550313601,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "part:microduck:2559a4c412bcda3e",
+          "offset": [
+            0.04790086067084801,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "body": "bearing_roll",
+      "core": [
+        "part:microduck:087d7a46a3ce4ca3"
+      ],
+      "parts": [
+        {
+          "id": "part:microduck:087d7a46a3ce4ca3",
+          "offset": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "part:microduck:c703574f50f6a46a",
+          "offset": [
+            0.008167715167712001,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "part:microduck:48099e14105d3289",
+          "offset": [
+            0,
+            0,
+            0.017667715167712
+          ]
+        },
+        {
+          "id": "part:microduck:3fbf0b5c8cea4488",
+          "offset": [
+            0.011335430335424,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "body": "hip_l_2",
+      "core": [
+        "part:microduck:c7eeeac0a640d191"
+      ],
+      "parts": [
+        {
+          "id": "part:microduck:c7eeeac0a640d191",
+          "offset": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "part:microduck:d924e1596ffb042a",
+          "offset": [
+            0,
+            -0.00511771516771201,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "body": "upper_leg_right",
+      "core": [
+        "part:microduck:7038a050dbc33fb0",
+        "part:microduck:08c5ade0f3fd37db"
+      ],
+      "parts": [
+        {
+          "id": "part:microduck:08c5ade0f3fd37db",
+          "offset": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "part:microduck:7038a050dbc33fb0",
+          "offset": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "part:microduck:e40b9945707505e1",
+          "offset": [
+            0,
+            -0.030167715167712005,
+            0
+          ]
+        },
+        {
+          "id": "part:microduck:7e86db28af59d3cc",
+          "offset": [
+            0,
+            0.006167715167712006,
+            0
+          ]
+        },
+        {
+          "id": "part:microduck:d6a148b5784955d8",
+          "offset": [
+            0,
+            0.009335430335424012,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "body": "leg_2",
+      "core": [
+        "part:microduck:0820b4025f26a004"
+      ],
+      "parts": [
+        {
+          "id": "part:microduck:0820b4025f26a004",
+          "offset": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "part:microduck:7f4fefc3c6de90f1",
+          "offset": [
+            0,
+            0.008117715167712007,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "body": "ankle_right",
+      "core": [
+        "part:microduck:b371ac60e2f6757b"
+      ],
+      "parts": [
+        {
+          "id": "part:microduck:b371ac60e2f6757b",
+          "offset": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "part:microduck:f9955f19a691a1f4",
+          "offset": [
+            0,
+            0,
+            -0.013348715167712
+          ]
+        },
+        {
+          "id": "part:microduck:2f557a24b2729755",
+          "offset": [
+            0,
+            0,
+            -0.027425430335424
+          ]
+        },
+        {
+          "id": "part:microduck:e196235810184adf",
+          "offset": [
+            0,
+            0.008303715167711995,
+            0
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1938 @@
+{
+  "date": "2026-11-10T08:15:09.183Z",
+  "workspace": "microduck",
+  "snapshot": "dkp-7c4dd301829f4e2cbd23",
+  "package_digest": "7c4dd301829f4e2cbd236f0440bb0d6f971b24635301a6bfc6b478ff48914cb1",
+  "instances": 70,
+  "parts": {
+    "instance:part:microduck:a682dc3620df43f5": "XL330 舵机",
+    "instance:part:microduck:07e507f1e9297aa3": "左踝部件",
+    "instance:part:microduck:087d7a46a3ce4ca3": "XL330 舵机",
+    "instance:part:microduck:0820b4025f26a004": "XL330 舵机"
+  },
+  "first_match": "interface-match:fc3eff538c7c197c5db91ad6",
+  "third_match": "interface-match:d4d71d5b85c49fdb1fd4b496",
+  "group_bridge_match": "interface-match:d4d71d5b85c49fdb1fd4b496",
+  "reused_match": "interface-match:b87b3d2c9a3a5bc30984637e",
+  "source_manifest_sha256": "21c9308180141f4a03f38d305e5cfed7d7b68b14362afc2ebff77489ab861036",
+  "source_assets_unchanged": true,
+  "final_instances": [
+    {
+      "id": "instance:part:microduck:b364863ffde63eed",
+      "part_ref": "part:microduck:b364863ffde63eed",
+      "position": [
+        -0.31400000005960466,
+        -0.213061587959528,
+        0.0002
+      ],
+      "quaternion": [
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "instance:part:microduck:9d70b219a5533bf1",
+      "part_ref": "part:microduck:9d70b219a5533bf1",
+      "position": [
+        -0.2346021458208561,
+        -0.19229709923267366,
+        -0.01763370226621628
+      ],
+      "quaternion": [
+        0,
+        0,
+        0.7071067811865476,
+        0.7071067811865476
+      ]
+    },
+    {
+      "id": "instance:part:microduck:78cf36c41e4fde06",
+      "part_ref": "part:microduck:78cf36c41e4fde06",
+      "position": [
+        -0.14960214601457117,
+        -0.19703655511140827,
+        -0.04877381737828255
+      ],
+      "quaternion": [
+        0,
+        0,
+        0.7071067811865476,
+        0.7071067811865476
+      ]
+    },
+    {
+      "id": "instance:part:microduck:203d2686e3321e4a",
+      "part_ref": "part:microduck:203d2686e3321e4a",
+      "position": [
+        -0.1413021444380283,
+        -0.1955615878850222,
+        -0.016299999910593034
+      ],
+      "quaternion": [
+        0,
+        0,
+        0.7071067811865476,
+        0.7071067811865476
+      ]
+    },
+    {
+      "id": "instance:part:microduck:a682dc3620df43f5",
+      "part_ref": "part:microduck:a682dc3620df43f5",
+      "position": [
+        0.21999999999999992,
+        -0.021999999210238416,
+        0.20500000000000002
+      ],
+      "quaternion": [
+        0.7071067811865476,
+        0.7071067811865475,
+        -4.357881996052623e-33,
+        5.551115123125784e-17
+      ]
+    },
+    {
+      "id": "instance:part:microduck:e7e8275c7d01674c",
+      "part_ref": "part:microduck:e7e8275c7d01674c",
+      "position": [
+        -0.02330214496701949,
+        -0.19681158855557446,
+        0.026746131819486617
+      ],
+      "quaternion": [
+        0,
+        0,
+        0.7071067811865476,
+        0.7071067811865476
+      ]
+    },
+    {
+      "id": "instance:part:microduck:f97c1c6580d651d7",
+      "part_ref": "part:microduck:f97c1c6580d651d7",
+      "position": [
+        -0.012435739646088517,
+        -0.20475343808531765,
+        0.03578343908732732
+      ],
+      "quaternion": [
+        0.7070798567591068,
+        -0.7070798567591068,
+        -0.006170588749956407,
+        0.006170588749956407
+      ]
+    },
+    {
+      "id": "instance:part:microduck:09cb390e38430c1e",
+      "part_ref": "part:microduck:09cb390e38430c1e",
+      "position": [
+        0.041006002404245956,
+        -0.21406158812344078,
+        0.014699999582767492
+      ],
+      "quaternion": [
+        -0.7071067811865476,
+        0,
+        -0.7071067811865476,
+        0
+      ]
+    },
+    {
+      "id": "instance:part:microduck:e27cbdd6c07a264e",
+      "part_ref": "part:microduck:e27cbdd6c07a264e",
+      "position": [
+        0.11889606681511128,
+        -0.2221115879528225,
+        -0.017635848033428193
+      ],
+      "quaternion": [
+        0,
+        0,
+        0.7071067811865476,
+        0.7071067811865476
+      ]
+    },
+    {
+      "id": "instance:part:microduck:7938fd9143c59ea4",
+      "part_ref": "part:microduck:7938fd9143c59ea4",
+      "position": [
+        0.17839606709823336,
+        -0.213061587959528,
+        0.0002
+      ],
+      "quaternion": [
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "instance:part:microduck:55970da91992f38c",
+      "part_ref": "part:microduck:55970da91992f38c",
+      "position": [
+        0.21989606722489324,
+        -0.23006158795207743,
+        0.005199999888241291
+      ],
+      "quaternion": [
+        0,
+        0,
+        0.7071067811865476,
+        0.7071067811865476
+      ]
+    },
+    {
+      "id": "instance:part:microduck:cd6d48fccc95df41",
+      "part_ref": "part:microduck:cd6d48fccc95df41",
+      "position": [
+        0.26569606656626193,
+        -0.21406158812344078,
+        0.024699999359250067
+      ],
+      "quaternion": [
+        0,
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "id": "instance:part:microduck:47a950fbb3d0e416",
+      "part_ref": "part:microduck:47a950fbb3d0e416",
+      "position": [
+        0.30219606633901924,
+        -0.213061587959528,
+        0.01119999994039536
+      ],
+      "quaternion": [
+        0,
+        -0.7071067811865476,
+        0,
+        0.7071067811865476
+      ]
+    },
+    {
+      "id": "instance:part:microduck:cb253f38c818b9d8",
+      "part_ref": "part:microduck:cb253f38c818b9d8",
+      "position": [
+        0.3086960663166675,
+        -0.23006158795207743,
+        0.024699999359250067
+      ],
+      "quaternion": [
+        0,
+        0,
+        -0.7071067811865476,
+        -0.7071067811865476
+      ]
+    },
+    {
+      "id": "instance:part:microduck:bb34e925e25e29f6",
+      "part_ref": "part:microduck:bb34e925e25e29f6",
+      "position": [
+        -0.31400000005960466,
+        -0.14906158787012103,
+        0.011199999940395364
+      ],
+      "quaternion": [
+        -0.5,
+        -0.5000000000000001,
+        -0.5000000000000001,
+        0.5000000000000001
+      ]
+    },
+    {
+      "id": "instance:part:microduck:fa9ee2f71faafb88",
+      "part_ref": "part:microduck:fa9ee2f71faafb88",
+      "position": [
+        -0.2755000004246831,
+        -0.15706158825010064,
+        0.009699999694526196
+      ],
+      "quaternion": [
+        0,
+        0,
+        -0.7071067811865475,
+        -0.7071067811865475
+      ]
+    },
+    {
+      "id": "instance:part:microduck:66c73aaad945a993",
+      "part_ref": "part:microduck:66c73aaad945a993",
+      "position": [
+        -0.18370084663480513,
+        -0.19156158831715586,
+        0.034391999584436436
+      ],
+      "quaternion": [
+        0.5,
+        0.5000000000000001,
+        -0.5000000000000001,
+        -0.5000000000000001
+      ]
+    },
+    {
+      "id": "instance:part:microduck:4cf80d5a57c8cb04",
+      "part_ref": "part:microduck:4cf80d5a57c8cb04",
+      "position": [
+        -0.14350338401645418,
+        -0.13456158828735354,
+        0.009699999694526206
+      ],
+      "quaternion": [
+        -0.7071067811865476,
+        -0.7071067811865477,
+        -5.551115123125785e-17,
+        0
+      ]
+    },
+    {
+      "id": "instance:part:microduck:c75bfc0afb35e000",
+      "part_ref": "part:microduck:c75bfc0afb35e000",
+      "position": [
+        -0.06844471997767676,
+        -0.19156158831715586,
+        0.03319648314714434
+      ],
+      "quaternion": [
+        0.5,
+        0.5000000000000001,
+        -0.5000000000000001,
+        -0.5000000000000001
+      ]
+    },
+    {
+      "id": "instance:part:microduck:e475134639b3f7e1",
+      "part_ref": "part:microduck:e475134639b3f7e1",
+      "position": [
+        -0.028445651419460705,
+        -0.14906158787012103,
+        0.011199999940395364
+      ],
+      "quaternion": [
+        -0.5,
+        -0.5000000000000001,
+        -0.5000000000000001,
+        0.5000000000000001
+      ]
+    },
+    {
+      "id": "instance:part:microduck:9ffe9d5bcd6bc13a",
+      "part_ref": "part:microduck:9ffe9d5bcd6bc13a",
+      "position": [
+        0.025054347880184735,
+        -0.13456158828735354,
+        0.010199999776482583
+      ],
+      "quaternion": [
+        -0.5,
+        -0.5,
+        -0.5,
+        -0.49999999999999994
+      ]
+    },
+    {
+      "id": "instance:part:microduck:638f29b46b322e64",
+      "part_ref": "part:microduck:638f29b46b322e64",
+      "position": [
+        0.08455434909462944,
+        -0.18156158667802813,
+        0.012422912162542344
+      ],
+      "quaternion": [
+        0,
+        -1.110223024625157e-16,
+        0.7071067811865477,
+        0.7071067811865476
+      ]
+    },
+    {
+      "id": "instance:part:microduck:7c130c8489b57c99",
+      "part_ref": "part:microduck:7c130c8489b57c99",
+      "position": [
+        0.10055434876680386,
+        -0.13456158828735354,
+        0.009699999694526208
+      ],
+      "quaternion": [
+        0.7071067811865477,
+        -0.7071067811865476,
+        0,
+        -1.110223024625157e-16
+      ]
+    },
+    {
+      "id": "instance:part:microduck:8b649e45831a1972",
+      "part_ref": "part:microduck:8b649e45831a1972",
+      "position": [
+        0.17055434797704233,
+        -0.17851700191199782,
+        0.031449284744262694
+      ],
+      "quaternion": [
+        -5.551115123125785e-17,
+        5.551115123125785e-17,
+        -0.7071067811865476,
+        -0.7071067811865476
+      ]
+    },
+    {
+      "id": "instance:part:microduck:41db565298264db6",
+      "part_ref": "part:microduck:41db565298264db6",
+      "position": [
+        0.22,
+        0.02999999999999997,
+        0.25
+      ],
+      "quaternion": [
+        5.551115123125786e-17,
+        -5.551115123125786e-17,
+        0.7071067811865476,
+        0.7071067811865475
+      ]
+    },
+    {
+      "id": "instance:part:microduck:766eaa6e4dd8b09f",
+      "part_ref": "part:microduck:766eaa6e4dd8b09f",
+      "position": [
+        0.22,
+        0.03,
+        0.25
+      ],
+      "quaternion": [
+        -0.7071067811865475,
+        -5.551115123125784e-17,
+        -4.357881996052623e-33,
+        0.7071067811865476
+      ]
+    },
+    {
+      "id": "instance:part:microduck:07e507f1e9297aa3",
+      "part_ref": "part:microduck:07e507f1e9297aa3",
+      "position": [
+        0.1980000000062515,
+        0.028200001195073175,
+        0.2112229124052969
+      ],
+      "quaternion": [
+        -5.110978059009894e-17,
+        -4.4013706411588876e-18,
+        -0.7071067811865476,
+        0.7071067811865475
+      ]
+    },
+    {
+      "id": "instance:part:microduck:6b5602b4416129fe",
+      "part_ref": "part:microduck:6b5602b4416129fe",
+      "position": [
+        -0.2824999995639082,
+        -0.08996305094659329,
+        -0.06929999928474426
+      ],
+      "quaternion": [
+        0,
+        0,
+        -0.7071067811865476,
+        -0.7071067811865476
+      ]
+    },
+    {
+      "id": "instance:part:microduck:4cef8bb24d37fe6e",
+      "part_ref": "part:microduck:4cef8bb24d37fe6e",
+      "position": [
+        -0.22249999826750716,
+        -0.0754630513638258,
+        0.0096999996945262
+      ],
+      "quaternion": [
+        -0.7071067811865476,
+        0.7071067811865476,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "instance:part:microduck:44b5600c1a735117",
+      "part_ref": "part:microduck:44b5600c1a735117",
+      "position": [
+        -0.184499998714542,
+        -0.0754630513638258,
+        0.024699999359250067
+      ],
+      "quaternion": [
+        0,
+        0,
+        -0.7071067811865476,
+        0.7071067811865476
+      ]
+    },
+    {
+      "id": "instance:part:microduck:133711c520619e45",
+      "part_ref": "part:microduck:133711c520619e45",
+      "position": [
+        -0.16849999904236754,
+        -0.08996305094659329,
+        -0.06929999928474426
+      ],
+      "quaternion": [
+        0,
+        0,
+        -0.7071067811865476,
+        -0.7071067811865476
+      ]
+    },
+    {
+      "id": "instance:part:microduck:834f5cc892eba41e",
+      "part_ref": "part:microduck:834f5cc892eba41e",
+      "position": [
+        -0.1094999979098793,
+        -0.07246305087208749,
+        0.0379931147813797
+      ],
+      "quaternion": [
+        0,
+        0,
+        -0.7071067811865476,
+        -0.7071067811865476
+      ]
+    },
+    {
+      "id": "instance:part:microduck:6b884b140f6e283c",
+      "part_ref": "part:microduck:6b884b140f6e283c",
+      "position": [
+        -0.07149999835691412,
+        -0.07896305100619794,
+        0.004200000189989805
+      ],
+      "quaternion": [
+        0,
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "instance:part:microduck:d4b9a9e9474a9829",
+      "part_ref": "part:microduck:d4b9a9e9474a9829",
+      "position": [
+        -0.02459999902150589,
+        -0.06546305158734322,
+        0.004699999806284904
+      ],
+      "quaternion": [
+        0,
+        0,
+        -0.7071067811865475,
+        -0.7071067811865475
+      ]
+    },
+    {
+      "id": "instance:part:microduck:a07b37bcb704b29f",
+      "part_ref": "part:microduck:a07b37bcb704b29f",
+      "position": [
+        0.021399999980116324,
+        -0.06546305158734322,
+        0.014699999582767487
+      ],
+      "quaternion": [
+        0.5,
+        0.5,
+        0.5,
+        -0.5
+      ]
+    },
+    {
+      "id": "instance:part:microduck:ea69e2c6bba10a23",
+      "part_ref": "part:microduck:ea69e2c6bba10a23",
+      "position": [
+        0.05339999994658873,
+        -0.07896305100619794,
+        0.011199999940395354
+      ],
+      "quaternion": [
+        0,
+        0.7071067811865475,
+        0,
+        -0.7071067811865475
+      ]
+    },
+    {
+      "id": "instance:part:microduck:55121c0b36f62219",
+      "part_ref": "part:microduck:55121c0b36f62219",
+      "position": [
+        0.07540000013657855,
+        -0.07896305100619794,
+        0.011199999940395354
+      ],
+      "quaternion": [
+        0,
+        0.7071067811865475,
+        0,
+        -0.7071067811865475
+      ]
+    },
+    {
+      "id": "instance:part:microduck:b61b0609c61fc572",
+      "part_ref": "part:microduck:b61b0609c61fc572",
+      "position": [
+        0.08600000013434339,
+        -0.08149305117875338,
+        0.008669999767839909
+      ],
+      "quaternion": [
+        0,
+        0,
+        0.7071067811865475,
+        -0.7071067811865475
+      ]
+    },
+    {
+      "id": "instance:part:microduck:afa52198f7fad203",
+      "part_ref": "part:microduck:afa52198f7fad203",
+      "position": [
+        0.08731999792181899,
+        -0.04613770397007466,
+        0.0009999999797903002
+      ],
+      "quaternion": [
+        0,
+        0,
+        -0.7071067811865475,
+        -0.7071067811865475
+      ]
+    },
+    {
+      "id": "instance:part:microduck:50f0c376d01bb0c1",
+      "part_ref": "part:microduck:50f0c376d01bb0c1",
+      "position": [
+        0.17031999833160094,
+        -0.0754630513638258,
+        0.010199999776482583
+      ],
+      "quaternion": [
+        -0.5,
+        0.5,
+        0.5,
+        -0.5
+      ]
+    },
+    {
+      "id": "instance:part:microduck:f5797f92c2bf01b8",
+      "part_ref": "part:microduck:f5797f92c2bf01b8",
+      "position": [
+        0.18731866451376128,
+        -0.04612618164718152,
+        0.011347729121148587
+      ],
+      "quaternion": [
+        0,
+        0,
+        -0.7071067811865475,
+        -0.7071067811865475
+      ]
+    },
+    {
+      "id": "instance:part:microduck:986b5adf27910138",
+      "part_ref": "part:microduck:986b5adf27910138",
+      "position": [
+        0.2910539483057802,
+        -0.05046304912865163,
+        -0.00019999998989515006
+      ],
+      "quaternion": [
+        0,
+        0,
+        -0.7071067811865475,
+        -0.7071067811865475
+      ]
+    },
+    {
+      "id": "instance:part:microduck:82d68e991b23c2a3",
+      "part_ref": "part:microduck:82d68e991b23c2a3",
+      "position": [
+        -0.26850000098347665,
+        0.061590342238545426,
+        0.00020135580808091619
+      ],
+      "quaternion": [
+        0,
+        0,
+        -0.7071067811865475,
+        -0.7071067811865475
+      ]
+    },
+    {
+      "id": "instance:part:microduck:96e22c7fa2b976d3",
+      "part_ref": "part:microduck:96e22c7fa2b976d3",
+      "position": [
+        -0.1698099821507931,
+        0.04021068701148034,
+        0.010199999776482586
+      ],
+      "quaternion": [
+        0,
+        0.7071067811865475,
+        0.7071067811865475,
+        0
+      ]
+    },
+    {
+      "id": "instance:part:microduck:a0775b54397eb21e",
+      "part_ref": "part:microduck:a0775b54397eb21e",
+      "position": [
+        -0.1298099827356637,
+        0.01571068765223027,
+        0.0076999998323619345
+      ],
+      "quaternion": [
+        0.7071067811865475,
+        0,
+        0,
+        -0.7071067811865475
+      ]
+    },
+    {
+      "id": "instance:part:microduck:554503ef38151e67",
+      "part_ref": "part:microduck:554503ef38151e67",
+      "position": [
+        -0.10346998290997,
+        0.07721568869054318,
+        0.026710000228881835
+      ],
+      "quaternion": [
+        -0.5,
+        0.5,
+        0.5,
+        -0.5
+      ]
+    },
+    {
+      "id": "instance:part:microduck:88b7496d63cb41ff",
+      "part_ref": "part:microduck:88b7496d63cb41ff",
+      "position": [
+        -0.11097131422441453,
+        0.05962170140445233,
+        0.005170773123204708
+      ],
+      "quaternion": [
+        0,
+        0,
+        -0.7071067811865475,
+        -0.7071067811865475
+      ]
+    },
+    {
+      "id": "instance:part:microduck:2559a4c412bcda3e",
+      "part_ref": "part:microduck:2559a4c412bcda3e",
+      "position": [
+        -0.08890493262093518,
+        0.030710687316954144,
+        -0.004799999888241291
+      ],
+      "quaternion": [
+        0,
+        0,
+        -0.7071067811865475,
+        -0.7071067811865475
+      ]
+    },
+    {
+      "id": "instance:part:microduck:328011951ac11ee7",
+      "part_ref": "part:microduck:328011951ac11ee7",
+      "position": [
+        0.001595069018192563,
+        0.06141861008107663,
+        0.013147659939527512
+      ],
+      "quaternion": [
+        0,
+        0,
+        -0.7071067811865475,
+        -0.7071067811865475
+      ]
+    },
+    {
+      "id": "instance:part:microduck:52fdcacf474a463f",
+      "part_ref": "part:microduck:52fdcacf474a463f",
+      "position": [
+        0.13580556320864706,
+        0.061592163905501374,
+        0.012836257335543633
+      ],
+      "quaternion": [
+        0,
+        0,
+        -0.7071067811865475,
+        -0.7071067811865475
+      ]
+    },
+    {
+      "id": "instance:part:microduck:2d2cde8ae8ebacac",
+      "part_ref": "part:microduck:2d2cde8ae8ebacac",
+      "position": [
+        0.21405384129006416,
+        0.0277106877565384,
+        0.008200000379979611
+      ],
+      "quaternion": [
+        0,
+        0,
+        0.7071067811865475,
+        -0.7071067811865475
+      ]
+    },
+    {
+      "id": "instance:part:microduck:ebfcaf98422b7b28",
+      "part_ref": "part:microduck:ebfcaf98422b7b28",
+      "position": [
+        0.24765384127432483,
+        0.048210686460137375,
+        0.015199999664723867
+      ],
+      "quaternion": [
+        0.7071067811865475,
+        0.7071067811865475,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "instance:part:microduck:22f2cd114e324ec5",
+      "part_ref": "part:microduck:22f2cd114e324ec5",
+      "position": [
+        0.26645384125411514,
+        0.01571068765223027,
+        0.0002
+      ],
+      "quaternion": [
+        0,
+        0,
+        -0.7071067811865475,
+        -0.7071067811865475
+      ]
+    },
+    {
+      "id": "instance:part:microduck:48099e14105d3289",
+      "part_ref": "part:microduck:48099e14105d3289",
+      "position": [
+        -0.3124999998137355,
+        0.1194737146124244,
+        0.005199999888241291
+      ],
+      "quaternion": [
+        0,
+        0,
+        0.7071067811865476,
+        0.7071067811865476
+      ]
+    },
+    {
+      "id": "instance:part:microduck:087d7a46a3ce4ca3",
+      "part_ref": "part:microduck:087d7a46a3ce4ca3",
+      "position": [
+        0.21999999999999997,
+        0.0010000008344650535,
+        0.25
+      ],
+      "quaternion": [
+        0,
+        -5.551115123125784e-17,
+        -0.7071067811865476,
+        0.7071067811865475
+      ]
+    },
+    {
+      "id": "instance:part:microduck:c703574f50f6a46a",
+      "part_ref": "part:microduck:c703574f50f6a46a",
+      "position": [
+        -0.24570000091195104,
+        0.1194737146124244,
+        0.024699999359250067
+      ],
+      "quaternion": [
+        0,
+        0,
+        0.7071067811865476,
+        0.7071067811865476
+      ]
+    },
+    {
+      "id": "instance:part:microduck:3fbf0b5c8cea4488",
+      "part_ref": "part:microduck:3fbf0b5c8cea4488",
+      "position": [
+        -0.20920000113919376,
+        0.13647371460497382,
+        0.01119999994039536
+      ],
+      "quaternion": [
+        0,
+        -0.7071067811865476,
+        0,
+        0.7071067811865476
+      ]
+    },
+    {
+      "id": "instance:part:microduck:c7eeeac0a640d191",
+      "part_ref": "part:microduck:c7eeeac0a640d191",
+      "position": [
+        -0.18170000144466755,
+        0.16592376609146597,
+        0.009699999694526193
+      ],
+      "quaternion": [
+        -0.7071067811865475,
+        0.7071067811865475,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "instance:part:microduck:d924e1596ffb042a",
+      "part_ref": "part:microduck:d924e1596ffb042a",
+      "position": [
+        -0.12770000113174318,
+        0.12547371466457846,
+        0.011199999940395356
+      ],
+      "quaternion": [
+        -0.5,
+        -0.5,
+        -0.5,
+        0.49999999999999994
+      ]
+    },
+    {
+      "id": "instance:part:microduck:7038a050dbc33fb0",
+      "part_ref": "part:microduck:7038a050dbc33fb0",
+      "position": [
+        -0.08870000141486523,
+        0.13997371424734595,
+        0.009699999694526206
+      ],
+      "quaternion": [
+        -0.7071067811865476,
+        0.7071067811865477,
+        -5.551115123125785e-17,
+        0
+      ]
+    },
+    {
+      "id": "instance:part:microduck:d6a148b5784955d8",
+      "part_ref": "part:microduck:d6a148b5784955d8",
+      "position": [
+        -0.04970000169798727,
+        0.12547371466457846,
+        0.011199999940395356
+      ],
+      "quaternion": [
+        -0.5,
+        -0.5,
+        -0.5,
+        0.49999999999999994
+      ]
+    },
+    {
+      "id": "instance:part:microduck:7e86db28af59d3cc",
+      "part_ref": "part:microduck:7e86db28af59d3cc",
+      "position": [
+        0.026358662504702868,
+        0.08297371421754363,
+        0.033196483147144316
+      ],
+      "quaternion": [
+        0.5,
+        0.5,
+        -0.5,
+        -0.49999999999999994
+      ]
+    },
+    {
+      "id": "instance:part:microduck:e40b9945707505e1",
+      "part_ref": "part:microduck:e40b9945707505e1",
+      "position": [
+        0.10415688453987249,
+        0.19597371597588065,
+        0.034391999584436415
+      ],
+      "quaternion": [
+        0.5,
+        0.5,
+        -0.5,
+        -0.49999999999999994
+      ]
+    },
+    {
+      "id": "instance:part:microduck:08c5ade0f3fd37db",
+      "part_ref": "part:microduck:08c5ade0f3fd37db",
+      "position": [
+        0.15885434674099097,
+        0.13997371424734595,
+        0.010199999776482591
+      ],
+      "quaternion": [
+        -0.5000000000000001,
+        0.5,
+        -0.5000000000000001,
+        0.5000000000000001
+      ]
+    },
+    {
+      "id": "instance:part:microduck:0820b4025f26a004",
+      "part_ref": "part:microduck:0820b4025f26a004",
+      "position": [
+        0.21999999999999997,
+        0.030000000000000054,
+        0.25
+      ],
+      "quaternion": [
+        0.7071067811865476,
+        0.7071067811865475,
+        -4.357881996052623e-33,
+        5.551115123125784e-17
+      ]
+    },
+    {
+      "id": "instance:part:microduck:7f4fefc3c6de90f1",
+      "part_ref": "part:microduck:7f4fefc3c6de90f1",
+      "position": [
+        0.2123543458841743,
+        0.1659237139374018,
+        0.01242291216254234
+      ],
+      "quaternion": [
+        0,
+        -5.551115123125785e-17,
+        -0.7071067811865477,
+        0.7071067811865476
+      ]
+    },
+    {
+      "id": "instance:part:microduck:b371ac60e2f6757b",
+      "part_ref": "part:microduck:b371ac60e2f6757b",
+      "position": [
+        0.29901755556091686,
+        0.19532735575735571,
+        0.022722911429405208
+      ],
+      "quaternion": [
+        8.326672684688678e-17,
+        -2.7755575615628926e-17,
+        -0.7071067811865476,
+        -0.7071067811865476
+      ]
+    },
+    {
+      "id": "instance:part:microduck:2f557a24b2729755",
+      "part_ref": "part:microduck:2f557a24b2729755",
+      "position": [
+        -0.28300000056624414,
+        0.253516949787736,
+        0.03144953061342239
+      ],
+      "quaternion": [
+        8.326672684688678e-17,
+        -2.7755575615628926e-17,
+        -0.7071067811865476,
+        -0.7071067811865476
+      ]
+    },
+    {
+      "id": "instance:part:microduck:e196235810184adf",
+      "part_ref": "part:microduck:e196235810184adf",
+      "position": [
+        -0.24550000062957406,
+        0.18296285726130013,
+        0.0076999998323619406
+      ],
+      "quaternion": [
+        0.7071067811865477,
+        0,
+        5.551115123125785e-17,
+        -0.7071067811865476
+      ]
+    },
+    {
+      "id": "instance:part:microduck:f9955f19a691a1f4",
+      "part_ref": "part:microduck:f9955f19a691a1f4",
+      "position": [
+        -0.17800000136345623,
+        0.2531291694194079,
+        0.029450944033265113
+      ],
+      "quaternion": [
+        8.326672684688678e-17,
+        -2.7755575615628926e-17,
+        -0.7071067811865476,
+        -0.7071067811865476
+      ]
+    }
+  ],
+  "final_connections": [
+    {
+      "id": "703237fe-027c-4a77-86e0-6c5bb0e00433",
+      "name": "螺钉承接",
+      "mechanism": "screw_reception",
+      "endpoints": [
+        {
+          "interface_ref": "interface:assembly:07e507f1e9297aa3:servo_drive",
+          "interface_name": "左踝部件 ↔ XL330 舵机",
+          "member_refs": [
+            "interface:assembly:07e507f1e9297aa3:servo_drive:hole_y_high",
+            "interface:assembly:07e507f1e9297aa3:servo_drive:hole_y_low",
+            "interface:assembly:07e507f1e9297aa3:servo_drive:hole_z_high",
+            "interface:assembly:07e507f1e9297aa3:servo_drive:hole_z_low"
+          ],
+          "resource_refs": [
+            "feature:feature:59d569a5a0600fdda83b:geometry:13faf48f03f9db8deb78",
+            "feature:feature:59d569a5a0600fdda83b:geometry:61fee62cbe9bf98f5d21",
+            "feature:feature:59d569a5a0600fdda83b:geometry:91c3f5843f1573205675",
+            "feature:feature:59d569a5a0600fdda83b:geometry:b1ef988195b23f4fdd9c",
+            "feature:feature:microduck:07e507f1e9297aa3:33d9a51d4745",
+            "feature:feature:microduck:07e507f1e9297aa3:5bdc270417c5",
+            "feature:feature:microduck:07e507f1e9297aa3:76fd50fb3902",
+            "feature:feature:microduck:07e507f1e9297aa3:9272ee9f182c",
+            "resource:resource:59d569a5a0600fdda83b:15786bde5b2a0df2646a",
+            "resource:resource:59d569a5a0600fdda83b:3d4b863bd27a48824d77",
+            "resource:resource:59d569a5a0600fdda83b:cdb331755de4f7fe841e",
+            "resource:resource:59d569a5a0600fdda83b:dadfee132a1d40c5a309"
+          ],
+          "instance_id": "instance:part:microduck:07e507f1e9297aa3",
+          "resource_keys": [
+            "instance:part:microduck:07e507f1e9297aa3|feature:feature:59d569a5a0600fdda83b:geometry:13faf48f03f9db8deb78",
+            "instance:part:microduck:07e507f1e9297aa3|feature:feature:59d569a5a0600fdda83b:geometry:61fee62cbe9bf98f5d21",
+            "instance:part:microduck:07e507f1e9297aa3|feature:feature:59d569a5a0600fdda83b:geometry:91c3f5843f1573205675",
+            "instance:part:microduck:07e507f1e9297aa3|feature:feature:59d569a5a0600fdda83b:geometry:b1ef988195b23f4fdd9c",
+            "instance:part:microduck:07e507f1e9297aa3|feature:feature:microduck:07e507f1e9297aa3:33d9a51d4745",
+            "instance:part:microduck:07e507f1e9297aa3|feature:feature:microduck:07e507f1e9297aa3:5bdc270417c5",
+            "instance:part:microduck:07e507f1e9297aa3|feature:feature:microduck:07e507f1e9297aa3:76fd50fb3902",
+            "instance:part:microduck:07e507f1e9297aa3|feature:feature:microduck:07e507f1e9297aa3:9272ee9f182c",
+            "instance:part:microduck:07e507f1e9297aa3|resource:resource:59d569a5a0600fdda83b:15786bde5b2a0df2646a",
+            "instance:part:microduck:07e507f1e9297aa3|resource:resource:59d569a5a0600fdda83b:3d4b863bd27a48824d77",
+            "instance:part:microduck:07e507f1e9297aa3|resource:resource:59d569a5a0600fdda83b:cdb331755de4f7fe841e",
+            "instance:part:microduck:07e507f1e9297aa3|resource:resource:59d569a5a0600fdda83b:dadfee132a1d40c5a309"
+          ]
+        },
+        {
+          "interface_ref": "interface:assembly:a682dc3620df43f5:servo_end_minus",
+          "interface_name": "X−端盘四孔",
+          "member_refs": [
+            "interface:assembly:a682dc3620df43f5:servo_end_minus:hole_y_high",
+            "interface:assembly:a682dc3620df43f5:servo_end_minus:hole_y_low",
+            "interface:assembly:a682dc3620df43f5:servo_end_minus:hole_z_low",
+            "interface:assembly:a682dc3620df43f5:servo_end_minus:hole_z_high"
+          ],
+          "resource_refs": [
+            "feature:feature:8a3b581925da3b094938:geometry:44bbcdd13602ff372437",
+            "feature:feature:8a3b581925da3b094938:geometry:68bf2b85938feb23d517",
+            "feature:feature:8a3b581925da3b094938:geometry:79dea6dfeba60c98e922",
+            "feature:feature:8a3b581925da3b094938:geometry:7bfa7f4d88342836e93d",
+            "feature:feature:microduck:a682dc3620df43f5:678d6de22520",
+            "feature:feature:microduck:a682dc3620df43f5:c762f0d8139b",
+            "feature:feature:microduck:a682dc3620df43f5:ee2340944a76",
+            "feature:feature:microduck:a682dc3620df43f5:f4716268e4b3",
+            "resource:resource:8a3b581925da3b094938:0a8c56ed734e02f60215",
+            "resource:resource:8a3b581925da3b094938:0d418daca4d55b710c9d",
+            "resource:resource:8a3b581925da3b094938:125b74b653054ce988ca",
+            "resource:resource:8a3b581925da3b094938:1f8c5282e7741f97f9c7"
+          ],
+          "instance_id": "instance:part:microduck:a682dc3620df43f5",
+          "resource_keys": [
+            "instance:part:microduck:a682dc3620df43f5|feature:feature:8a3b581925da3b094938:geometry:44bbcdd13602ff372437",
+            "instance:part:microduck:a682dc3620df43f5|feature:feature:8a3b581925da3b094938:geometry:68bf2b85938feb23d517",
+            "instance:part:microduck:a682dc3620df43f5|feature:feature:8a3b581925da3b094938:geometry:79dea6dfeba60c98e922",
+            "instance:part:microduck:a682dc3620df43f5|feature:feature:8a3b581925da3b094938:geometry:7bfa7f4d88342836e93d",
+            "instance:part:microduck:a682dc3620df43f5|feature:feature:microduck:a682dc3620df43f5:678d6de22520",
+            "instance:part:microduck:a682dc3620df43f5|feature:feature:microduck:a682dc3620df43f5:c762f0d8139b",
+            "instance:part:microduck:a682dc3620df43f5|feature:feature:microduck:a682dc3620df43f5:ee2340944a76",
+            "instance:part:microduck:a682dc3620df43f5|feature:feature:microduck:a682dc3620df43f5:f4716268e4b3",
+            "instance:part:microduck:a682dc3620df43f5|resource:resource:8a3b581925da3b094938:0a8c56ed734e02f60215",
+            "instance:part:microduck:a682dc3620df43f5|resource:resource:8a3b581925da3b094938:0d418daca4d55b710c9d",
+            "instance:part:microduck:a682dc3620df43f5|resource:resource:8a3b581925da3b094938:125b74b653054ce988ca",
+            "instance:part:microduck:a682dc3620df43f5|resource:resource:8a3b581925da3b094938:1f8c5282e7741f97f9c7"
+          ]
+        }
+      ],
+      "member_pairs": [
+        {
+          "moving_member_ref": "interface:assembly:07e507f1e9297aa3:servo_drive:hole_y_high",
+          "target_member_ref": "interface:assembly:a682dc3620df43f5:servo_end_minus:hole_y_high",
+          "moving_feature_ref": "feature:59d569a5a0600fdda83b:geometry:61fee62cbe9bf98f5d21",
+          "target_feature_ref": "feature:8a3b581925da3b094938:geometry:79dea6dfeba60c98e922"
+        },
+        {
+          "moving_member_ref": "interface:assembly:07e507f1e9297aa3:servo_drive:hole_y_low",
+          "target_member_ref": "interface:assembly:a682dc3620df43f5:servo_end_minus:hole_y_low",
+          "moving_feature_ref": "feature:59d569a5a0600fdda83b:geometry:91c3f5843f1573205675",
+          "target_feature_ref": "feature:8a3b581925da3b094938:geometry:68bf2b85938feb23d517"
+        },
+        {
+          "moving_member_ref": "interface:assembly:07e507f1e9297aa3:servo_drive:hole_z_high",
+          "target_member_ref": "interface:assembly:a682dc3620df43f5:servo_end_minus:hole_z_low",
+          "moving_feature_ref": "feature:59d569a5a0600fdda83b:geometry:13faf48f03f9db8deb78",
+          "target_feature_ref": "feature:8a3b581925da3b094938:geometry:44bbcdd13602ff372437"
+        },
+        {
+          "moving_member_ref": "interface:assembly:07e507f1e9297aa3:servo_drive:hole_z_low",
+          "target_member_ref": "interface:assembly:a682dc3620df43f5:servo_end_minus:hole_z_high",
+          "moving_feature_ref": "feature:59d569a5a0600fdda83b:geometry:b1ef988195b23f4fdd9c",
+          "target_feature_ref": "feature:8a3b581925da3b094938:geometry:7bfa7f4d88342836e93d"
+        }
+      ],
+      "candidate_id": "candidate:bc06b89c5fede0ca4b33af45a42cc229f05d6240002bc3e390e238f24544c09a",
+      "source_kind": "compatibility",
+      "source_configuration_ref": null,
+      "source_alignment_check_refs": [],
+      "source_candidate_ref": "compatibility:786d8c1859dd806fccef3a68",
+      "source_match_ref": "interface-match:fc3eff538c7c197c5db91ad6",
+      "relative_transform": [
+        -1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1.445602897608622e-16,
+        0,
+        0,
+        1.445602897608622e-16,
+        -1,
+        0,
+        0.050200000405311584,
+        -0.021999999993748444,
+        -0.006222912405296894,
+        1
+      ],
+      "anchors": [
+        [
+          0.06469999998807907,
+          0.021999999993748433,
+          -0.006222912405296892
+        ],
+        [
+          -0.014499999582767487,
+          6.207612847509233e-21,
+          0
+        ]
+      ],
+      "conditions": [
+        "保持与承载尚未核定",
+        "标准连接件规格待补充"
+      ],
+      "source_conditions": [
+        "connector_specification_and_length_unresolved",
+        "head_seat_and_tool_access_unknown",
+        "placement_and_common_axis_not_evaluated",
+        "receiving_thread_or_self_tapping_specification_unknown",
+        "retention_not_evaluated",
+        "assembly_path_and_retention_not_evaluated"
+      ],
+      "source_evidence_refs": [
+        "evidence:assembly:07e507f1e9297aa3:ankle_drive_left",
+        "evidence:assembly:7c130c8489b57c99:ankle_drive_left",
+        "evidence:assembly:a682dc3620df43f5:four_functional_interfaces",
+        "evidence:microduck:complete-servo-output-pattern-2026-11-09",
+        "evidence:microduck:whole-part-interference-2026-11-09"
+      ],
+      "status": "trial",
+      "geometry": {
+        "status": "clear",
+        "method": "closed-source-solid-interference/2",
+        "checked_pairs": 1,
+        "disjoint_pairs": 68
+      },
+      "created_at": "2026-11-10T08:15:03.231Z"
+    },
+    {
+      "id": "c78669b1-997c-49f5-9bb3-2aad54b91efd",
+      "name": "穿孔紧固",
+      "mechanism": "through_fastener",
+      "endpoints": [
+        {
+          "interface_ref": "interface:assembly:087d7a46a3ce4ca3:servo_end_minus",
+          "interface_name": "X−端盘四孔",
+          "member_refs": [
+            "interface:assembly:087d7a46a3ce4ca3:servo_end_minus:hole_y_high",
+            "interface:assembly:087d7a46a3ce4ca3:servo_end_minus:hole_y_low",
+            "interface:assembly:087d7a46a3ce4ca3:servo_end_minus:hole_z_low",
+            "interface:assembly:087d7a46a3ce4ca3:servo_end_minus:hole_z_high"
+          ],
+          "resource_refs": [
+            "feature:feature:b1c0b259a6a3228fe1a8:geometry:44bbcdd13602ff372437",
+            "feature:feature:b1c0b259a6a3228fe1a8:geometry:68bf2b85938feb23d517",
+            "feature:feature:b1c0b259a6a3228fe1a8:geometry:79dea6dfeba60c98e922",
+            "feature:feature:b1c0b259a6a3228fe1a8:geometry:7bfa7f4d88342836e93d",
+            "feature:feature:microduck:087d7a46a3ce4ca3:678d6de22520",
+            "feature:feature:microduck:087d7a46a3ce4ca3:c762f0d8139b",
+            "feature:feature:microduck:087d7a46a3ce4ca3:ee2340944a76",
+            "feature:feature:microduck:087d7a46a3ce4ca3:f4716268e4b3",
+            "resource:resource:b1c0b259a6a3228fe1a8:28aef485fa2145639b07",
+            "resource:resource:b1c0b259a6a3228fe1a8:7b165837dd03a3bfdd38",
+            "resource:resource:b1c0b259a6a3228fe1a8:91a3ed231396de2df2d0",
+            "resource:resource:b1c0b259a6a3228fe1a8:96db09f15691b0a3ac6b"
+          ],
+          "instance_id": "instance:part:microduck:087d7a46a3ce4ca3",
+          "resource_keys": [
+            "instance:part:microduck:087d7a46a3ce4ca3|feature:feature:b1c0b259a6a3228fe1a8:geometry:44bbcdd13602ff372437",
+            "instance:part:microduck:087d7a46a3ce4ca3|feature:feature:b1c0b259a6a3228fe1a8:geometry:68bf2b85938feb23d517",
+            "instance:part:microduck:087d7a46a3ce4ca3|feature:feature:b1c0b259a6a3228fe1a8:geometry:79dea6dfeba60c98e922",
+            "instance:part:microduck:087d7a46a3ce4ca3|feature:feature:b1c0b259a6a3228fe1a8:geometry:7bfa7f4d88342836e93d",
+            "instance:part:microduck:087d7a46a3ce4ca3|feature:feature:microduck:087d7a46a3ce4ca3:678d6de22520",
+            "instance:part:microduck:087d7a46a3ce4ca3|feature:feature:microduck:087d7a46a3ce4ca3:c762f0d8139b",
+            "instance:part:microduck:087d7a46a3ce4ca3|feature:feature:microduck:087d7a46a3ce4ca3:ee2340944a76",
+            "instance:part:microduck:087d7a46a3ce4ca3|feature:feature:microduck:087d7a46a3ce4ca3:f4716268e4b3",
+            "instance:part:microduck:087d7a46a3ce4ca3|resource:resource:b1c0b259a6a3228fe1a8:28aef485fa2145639b07",
+            "instance:part:microduck:087d7a46a3ce4ca3|resource:resource:b1c0b259a6a3228fe1a8:7b165837dd03a3bfdd38",
+            "instance:part:microduck:087d7a46a3ce4ca3|resource:resource:b1c0b259a6a3228fe1a8:91a3ed231396de2df2d0",
+            "instance:part:microduck:087d7a46a3ce4ca3|resource:resource:b1c0b259a6a3228fe1a8:96db09f15691b0a3ac6b"
+          ]
+        },
+        {
+          "interface_ref": "interface:assembly:0820b4025f26a004:servo_end_minus",
+          "interface_name": "X−端盘四孔",
+          "member_refs": [
+            "interface:assembly:0820b4025f26a004:servo_end_minus:hole_y_high",
+            "interface:assembly:0820b4025f26a004:servo_end_minus:hole_y_low",
+            "interface:assembly:0820b4025f26a004:servo_end_minus:hole_z_high",
+            "interface:assembly:0820b4025f26a004:servo_end_minus:hole_z_low"
+          ],
+          "resource_refs": [
+            "feature:feature:6566b626336a0c517352:geometry:44bbcdd13602ff372437",
+            "feature:feature:6566b626336a0c517352:geometry:68bf2b85938feb23d517",
+            "feature:feature:6566b626336a0c517352:geometry:79dea6dfeba60c98e922",
+            "feature:feature:6566b626336a0c517352:geometry:7bfa7f4d88342836e93d",
+            "feature:feature:microduck:0820b4025f26a004:678d6de22520",
+            "feature:feature:microduck:0820b4025f26a004:c762f0d8139b",
+            "feature:feature:microduck:0820b4025f26a004:ee2340944a76",
+            "feature:feature:microduck:0820b4025f26a004:f4716268e4b3",
+            "resource:resource:6566b626336a0c517352:29dc5400aacc0b64dc08",
+            "resource:resource:6566b626336a0c517352:83639a157329067fd413",
+            "resource:resource:6566b626336a0c517352:d0725bba6128218a742f",
+            "resource:resource:6566b626336a0c517352:f972a71b51fed0f310d0"
+          ],
+          "instance_id": "instance:part:microduck:0820b4025f26a004",
+          "resource_keys": [
+            "instance:part:microduck:0820b4025f26a004|feature:feature:6566b626336a0c517352:geometry:44bbcdd13602ff372437",
+            "instance:part:microduck:0820b4025f26a004|feature:feature:6566b626336a0c517352:geometry:68bf2b85938feb23d517",
+            "instance:part:microduck:0820b4025f26a004|feature:feature:6566b626336a0c517352:geometry:79dea6dfeba60c98e922",
+            "instance:part:microduck:0820b4025f26a004|feature:feature:6566b626336a0c517352:geometry:7bfa7f4d88342836e93d",
+            "instance:part:microduck:0820b4025f26a004|feature:feature:microduck:0820b4025f26a004:678d6de22520",
+            "instance:part:microduck:0820b4025f26a004|feature:feature:microduck:0820b4025f26a004:c762f0d8139b",
+            "instance:part:microduck:0820b4025f26a004|feature:feature:microduck:0820b4025f26a004:ee2340944a76",
+            "instance:part:microduck:0820b4025f26a004|feature:feature:microduck:0820b4025f26a004:f4716268e4b3",
+            "instance:part:microduck:0820b4025f26a004|resource:resource:6566b626336a0c517352:29dc5400aacc0b64dc08",
+            "instance:part:microduck:0820b4025f26a004|resource:resource:6566b626336a0c517352:83639a157329067fd413",
+            "instance:part:microduck:0820b4025f26a004|resource:resource:6566b626336a0c517352:d0725bba6128218a742f",
+            "instance:part:microduck:0820b4025f26a004|resource:resource:6566b626336a0c517352:f972a71b51fed0f310d0"
+          ]
+        }
+      ],
+      "member_pairs": [
+        {
+          "moving_member_ref": "interface:assembly:087d7a46a3ce4ca3:servo_end_minus:hole_y_high",
+          "target_member_ref": "interface:assembly:0820b4025f26a004:servo_end_minus:hole_y_high",
+          "moving_feature_ref": "feature:b1c0b259a6a3228fe1a8:geometry:79dea6dfeba60c98e922",
+          "target_feature_ref": "feature:6566b626336a0c517352:geometry:79dea6dfeba60c98e922"
+        },
+        {
+          "moving_member_ref": "interface:assembly:087d7a46a3ce4ca3:servo_end_minus:hole_y_low",
+          "target_member_ref": "interface:assembly:0820b4025f26a004:servo_end_minus:hole_y_low",
+          "moving_feature_ref": "feature:b1c0b259a6a3228fe1a8:geometry:68bf2b85938feb23d517",
+          "target_feature_ref": "feature:6566b626336a0c517352:geometry:68bf2b85938feb23d517"
+        },
+        {
+          "moving_member_ref": "interface:assembly:087d7a46a3ce4ca3:servo_end_minus:hole_z_low",
+          "target_member_ref": "interface:assembly:0820b4025f26a004:servo_end_minus:hole_z_high",
+          "moving_feature_ref": "feature:b1c0b259a6a3228fe1a8:geometry:44bbcdd13602ff372437",
+          "target_feature_ref": "feature:6566b626336a0c517352:geometry:7bfa7f4d88342836e93d"
+        },
+        {
+          "moving_member_ref": "interface:assembly:087d7a46a3ce4ca3:servo_end_minus:hole_z_high",
+          "target_member_ref": "interface:assembly:0820b4025f26a004:servo_end_minus:hole_z_low",
+          "moving_feature_ref": "feature:b1c0b259a6a3228fe1a8:geometry:7bfa7f4d88342836e93d",
+          "target_feature_ref": "feature:6566b626336a0c517352:geometry:44bbcdd13602ff372437"
+        }
+      ],
+      "candidate_id": "candidate:c3caaae7f45b6599273c4d07096bd5157c2564521676b235b3b60f41ce31f170",
+      "source_kind": "compatibility",
+      "source_configuration_ref": null,
+      "source_alignment_check_refs": [],
+      "source_candidate_ref": "compatibility:2024593620e1fad1e5d568f1",
+      "source_match_ref": "interface-match:63cf382f1319e62298b24fca",
+      "relative_transform": [
+        -1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        -0.028999999165534973,
+        0,
+        0,
+        1
+      ],
+      "anchors": [
+        [
+          -0.014499999582767487,
+          6.2076128475092455e-21,
+          0
+        ],
+        [
+          -0.014499999582767487,
+          6.2076128475092455e-21,
+          0
+        ]
+      ],
+      "conditions": [
+        "保持与承载尚未核定",
+        "标准连接件规格待补充"
+      ],
+      "source_conditions": [
+        "common_motion_ownership_not_verified",
+        "connector_specification_and_length_unresolved",
+        "finite_axial_registration_and_insertion_depth_not_evaluated",
+        "full_passage_continuity_unverified",
+        "head_seat_and_tool_access_unknown",
+        "nut_seat_and_multilayer_stack_unresolved",
+        "placement_and_common_axis_not_evaluated",
+        "retention_not_evaluated",
+        "source_coordinate_frame_does_not_prove_common_rigid_motion",
+        "assembly_path_and_retention_not_evaluated"
+      ],
+      "source_evidence_refs": [
+        "evidence:assembly:0820b4025f26a004:four_functional_interfaces",
+        "evidence:assembly:087d7a46a3ce4ca3:four_functional_interfaces",
+        "evidence:microduck:complete-servo-output-pattern-2026-11-09",
+        "evidence:microduck:whole-part-interference-2026-11-09"
+      ],
+      "status": "trial",
+      "geometry": {
+        "status": "clear",
+        "method": "closed-source-solid-interference/2",
+        "checked_pairs": 0,
+        "disjoint_pairs": 69
+      },
+      "created_at": "2026-11-10T08:15:07.307Z"
+    },
+    {
+      "id": "8a88a8be-e1f1-40da-bb20-b762986b5ef8",
+      "name": "穿孔紧固",
+      "mechanism": "through_fastener",
+      "endpoints": [
+        {
+          "interface_ref": "interface:assembly:a682dc3620df43f5:servo_housing_a",
+          "interface_name": "壳体 A 侧四孔",
+          "member_refs": [
+            "interface:assembly:a682dc3620df43f5:servo_housing_a:hole_front_bottom",
+            "interface:assembly:a682dc3620df43f5:servo_housing_a:hole_rear_bottom"
+          ],
+          "resource_refs": [
+            "feature:feature:8a3b581925da3b094938:geometry:d3881704f028f9940519",
+            "feature:feature:8a3b581925da3b094938:geometry:dc450f8685ced7c449a7",
+            "feature:feature:microduck:a682dc3620df43f5:2dbd8ea8d698",
+            "feature:feature:microduck:a682dc3620df43f5:db633e82ba91",
+            "resource:feature:microduck:a682dc3620df43f5:2dbd8ea8d698",
+            "resource:feature:microduck:a682dc3620df43f5:db633e82ba91",
+            "resource:resource:8a3b581925da3b094938:9e69699676cb16d659b3",
+            "resource:resource:8a3b581925da3b094938:ae774820e80c20b8f965"
+          ],
+          "instance_id": "instance:part:microduck:a682dc3620df43f5",
+          "resource_keys": [
+            "instance:part:microduck:a682dc3620df43f5|feature:feature:8a3b581925da3b094938:geometry:d3881704f028f9940519",
+            "instance:part:microduck:a682dc3620df43f5|feature:feature:8a3b581925da3b094938:geometry:dc450f8685ced7c449a7",
+            "instance:part:microduck:a682dc3620df43f5|feature:feature:microduck:a682dc3620df43f5:2dbd8ea8d698",
+            "instance:part:microduck:a682dc3620df43f5|feature:feature:microduck:a682dc3620df43f5:db633e82ba91",
+            "instance:part:microduck:a682dc3620df43f5|resource:feature:microduck:a682dc3620df43f5:2dbd8ea8d698",
+            "instance:part:microduck:a682dc3620df43f5|resource:feature:microduck:a682dc3620df43f5:db633e82ba91",
+            "instance:part:microduck:a682dc3620df43f5|resource:resource:8a3b581925da3b094938:9e69699676cb16d659b3",
+            "instance:part:microduck:a682dc3620df43f5|resource:resource:8a3b581925da3b094938:ae774820e80c20b8f965"
+          ]
+        },
+        {
+          "interface_ref": "interface:assembly:087d7a46a3ce4ca3:servo_housing_a",
+          "interface_name": "壳体 A 侧四孔",
+          "member_refs": [
+            "interface:assembly:087d7a46a3ce4ca3:servo_housing_a:hole_front_bottom",
+            "interface:assembly:087d7a46a3ce4ca3:servo_housing_a:hole_rear_bottom"
+          ],
+          "resource_refs": [
+            "feature:feature:b1c0b259a6a3228fe1a8:geometry:d3881704f028f9940519",
+            "feature:feature:b1c0b259a6a3228fe1a8:geometry:dc450f8685ced7c449a7",
+            "feature:feature:microduck:087d7a46a3ce4ca3:2dbd8ea8d698",
+            "feature:feature:microduck:087d7a46a3ce4ca3:db633e82ba91",
+            "resource:feature:microduck:087d7a46a3ce4ca3:2dbd8ea8d698",
+            "resource:feature:microduck:087d7a46a3ce4ca3:db633e82ba91",
+            "resource:resource:b1c0b259a6a3228fe1a8:4851aa8210056ff8a88e",
+            "resource:resource:b1c0b259a6a3228fe1a8:adff3c0a9003ff39f15c"
+          ],
+          "instance_id": "instance:part:microduck:087d7a46a3ce4ca3",
+          "resource_keys": [
+            "instance:part:microduck:087d7a46a3ce4ca3|feature:feature:b1c0b259a6a3228fe1a8:geometry:d3881704f028f9940519",
+            "instance:part:microduck:087d7a46a3ce4ca3|feature:feature:b1c0b259a6a3228fe1a8:geometry:dc450f8685ced7c449a7",
+            "instance:part:microduck:087d7a46a3ce4ca3|feature:feature:microduck:087d7a46a3ce4ca3:2dbd8ea8d698",
+            "instance:part:microduck:087d7a46a3ce4ca3|feature:feature:microduck:087d7a46a3ce4ca3:db633e82ba91",
+            "instance:part:microduck:087d7a46a3ce4ca3|resource:feature:microduck:087d7a46a3ce4ca3:2dbd8ea8d698",
+            "instance:part:microduck:087d7a46a3ce4ca3|resource:feature:microduck:087d7a46a3ce4ca3:db633e82ba91",
+            "instance:part:microduck:087d7a46a3ce4ca3|resource:resource:b1c0b259a6a3228fe1a8:4851aa8210056ff8a88e",
+            "instance:part:microduck:087d7a46a3ce4ca3|resource:resource:b1c0b259a6a3228fe1a8:adff3c0a9003ff39f15c"
+          ]
+        }
+      ],
+      "member_pairs": [
+        {
+          "moving_member_ref": "interface:assembly:a682dc3620df43f5:servo_housing_a:hole_front_bottom",
+          "target_member_ref": "interface:assembly:087d7a46a3ce4ca3:servo_housing_a:hole_front_bottom",
+          "moving_feature_ref": "feature:8a3b581925da3b094938:geometry:d3881704f028f9940519",
+          "target_feature_ref": "feature:b1c0b259a6a3228fe1a8:geometry:d3881704f028f9940519"
+        },
+        {
+          "moving_member_ref": "interface:assembly:a682dc3620df43f5:servo_housing_a:hole_rear_bottom",
+          "target_member_ref": "interface:assembly:087d7a46a3ce4ca3:servo_housing_a:hole_rear_bottom",
+          "moving_feature_ref": "feature:8a3b581925da3b094938:geometry:dc450f8685ced7c449a7",
+          "target_feature_ref": "feature:b1c0b259a6a3228fe1a8:geometry:dc450f8685ced7c449a7"
+        }
+      ],
+      "candidate_id": "candidate:ee6d2f2320efe9a5ad67f6a259c1bf52bc5234d3de3b64a025585a66c8d5fc45",
+      "source_kind": "compatibility",
+      "source_configuration_ref": null,
+      "source_alignment_check_refs": [],
+      "source_candidate_ref": "compatibility:526b78052c9a0fba72f1c224",
+      "source_match_ref": "interface-match:b87b3d2c9a3a5bc30984637e",
+      "relative_transform": [
+        -1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0.023000000044703484,
+        0,
+        -0.045,
+        1
+      ],
+      "anchors": [
+        [
+          0.011500000022351742,
+          0,
+          -0.02249999996274709
+        ],
+        [
+          0.011500000022351742,
+          0,
+          -0.02249999996274709
+        ]
+      ],
+      "conditions": [
+        "保持与承载尚未核定",
+        "标准连接件规格待补充"
+      ],
+      "source_conditions": [
+        "common_motion_ownership_not_verified",
+        "connector_specification_and_length_unresolved",
+        "finite_axial_registration_and_insertion_depth_not_evaluated",
+        "full_passage_continuity_unverified",
+        "head_seat_and_tool_access_unknown",
+        "nut_seat_and_multilayer_stack_unresolved",
+        "placement_and_common_axis_not_evaluated",
+        "retention_not_evaluated",
+        "source_coordinate_frame_does_not_prove_common_rigid_motion",
+        "assembly_path_and_retention_not_evaluated"
+      ],
+      "source_evidence_refs": [
+        "evidence:assembly:087d7a46a3ce4ca3:four_functional_interfaces",
+        "evidence:assembly:a682dc3620df43f5:four_functional_interfaces",
+        "evidence:microduck:complete-servo-output-pattern-2026-11-09",
+        "evidence:microduck:whole-part-interference-2026-11-09"
+      ],
+      "status": "trial",
+      "geometry": {
+        "status": "clear",
+        "method": "closed-source-solid-interference/2",
+        "checked_pairs": 1,
+        "disjoint_pairs": 135
+      },
+      "created_at": "2026-11-10T08:15:07.738Z"
+    }
+  ],
+  "checks": [
+    "single + single",
+    "third part + group",
+    "group + group",
+    "fixed target and preserved internal poses",
+    "detach, larger component fixed and smaller rigid group returns to a clear desktop slot",
+    "reuse released interface on another object",
+    "undo + redo",
+    "new store reload",
+    "copy resets history",
+    "occupied interfaces excluded",
+    "DKP unchanged"
+  ],
+  "operations": [
+    {
+      "request": {
+        "type": "move",
+        "instance_id": "instance:part:microduck:a682dc3620df43f5",
+        "pose": {
+          "position": [
+            0,
+            0,
+            0.25
+          ],
+          "quaternion": [
+            -0.7071067811865476,
+            0,
+            -0.7071067811865476,
+            0
+          ]
+        }
+      },
+      "revision": 1,
+      "connections": 0,
+      "groups": []
+    },
+    {
+      "request": {
+        "type": "connect",
+        "candidate_id": "candidate:bc06b89c5fede0ca4b33af45a42cc229f05d6240002bc3e390e238f24544c09a",
+        "moving_instance_id": "instance:part:microduck:07e507f1e9297aa3",
+        "target_instance_id": "instance:part:microduck:a682dc3620df43f5"
+      },
+      "revision": 2,
+      "connections": 1,
+      "groups": [
+        [
+          "instance:part:microduck:07e507f1e9297aa3",
+          "instance:part:microduck:a682dc3620df43f5"
+        ]
+      ]
+    },
+    {
+      "request": {
+        "type": "connect",
+        "candidate_id": "candidate:b8a2244eaa1b0caf4f94e00c8fefaf1dffa10bacf515e4da9661f6cfc8e7e8b9",
+        "moving_instance_id": "instance:part:microduck:a682dc3620df43f5",
+        "target_instance_id": "instance:part:microduck:0820b4025f26a004"
+      },
+      "revision": 3,
+      "connections": 2,
+      "groups": [
+        [
+          "instance:part:microduck:07e507f1e9297aa3",
+          "instance:part:microduck:0820b4025f26a004",
+          "instance:part:microduck:a682dc3620df43f5"
+        ]
+      ]
+    },
+    {
+      "request": {
+        "type": "undo"
+      },
+      "revision": 4,
+      "connections": 1,
+      "groups": [
+        [
+          "instance:part:microduck:07e507f1e9297aa3",
+          "instance:part:microduck:a682dc3620df43f5"
+        ]
+      ]
+    },
+    {
+      "request": {
+        "type": "move",
+        "instance_id": "instance:part:microduck:41db565298264db6",
+        "pose": {
+          "position": [
+            0.22,
+            0.03,
+            0.25
+          ],
+          "quaternion": [
+            -5.551115123125785e-17,
+            5.551115123125785e-17,
+            -0.7071067811865476,
+            -0.7071067811865476
+          ]
+        }
+      },
+      "revision": 5,
+      "connections": 1,
+      "groups": [
+        [
+          "instance:part:microduck:07e507f1e9297aa3",
+          "instance:part:microduck:a682dc3620df43f5"
+        ]
+      ]
+    },
+    {
+      "request": {
+        "type": "move",
+        "instance_id": "instance:part:microduck:766eaa6e4dd8b09f",
+        "pose": {
+          "position": [
+            0.22,
+            0.03,
+            0.25
+          ],
+          "quaternion": [
+            -0.7071067811865476,
+            -5.551115123125785e-17,
+            0,
+            0.7071067811865477
+          ]
+        }
+      },
+      "revision": 6,
+      "connections": 1,
+      "groups": [
+        [
+          "instance:part:microduck:07e507f1e9297aa3",
+          "instance:part:microduck:a682dc3620df43f5"
+        ]
+      ]
+    },
+    {
+      "request": {
+        "type": "connect",
+        "candidate_id": "candidate:5436fecc50e2fba6ea159ab3b777583aecb6de8b5ee98f0cd514fb1fd87f4e42",
+        "moving_instance_id": "instance:part:microduck:52fdcacf474a463f",
+        "target_instance_id": "instance:part:microduck:766eaa6e4dd8b09f"
+      },
+      "revision": 7,
+      "connections": 2,
+      "groups": [
+        [
+          "instance:part:microduck:07e507f1e9297aa3",
+          "instance:part:microduck:a682dc3620df43f5"
+        ],
+        [
+          "instance:part:microduck:52fdcacf474a463f",
+          "instance:part:microduck:766eaa6e4dd8b09f"
+        ]
+      ]
+    },
+    {
+      "request": {
+        "type": "undo"
+      },
+      "revision": 8,
+      "connections": 1,
+      "groups": [
+        [
+          "instance:part:microduck:07e507f1e9297aa3",
+          "instance:part:microduck:a682dc3620df43f5"
+        ]
+      ]
+    },
+    {
+      "request": {
+        "type": "connect",
+        "candidate_id": "candidate:f1d17d5d5ce28fd3df0a50604a8b4a461c582f5949ce13b2a3dd4c9be89b22aa",
+        "moving_instance_id": "instance:part:microduck:638f29b46b322e64",
+        "target_instance_id": "instance:part:microduck:766eaa6e4dd8b09f"
+      },
+      "revision": 9,
+      "connections": 2,
+      "groups": [
+        [
+          "instance:part:microduck:07e507f1e9297aa3",
+          "instance:part:microduck:a682dc3620df43f5"
+        ],
+        [
+          "instance:part:microduck:638f29b46b322e64",
+          "instance:part:microduck:766eaa6e4dd8b09f"
+        ]
+      ]
+    },
+    {
+      "request": {
+        "type": "undo"
+      },
+      "revision": 10,
+      "connections": 1,
+      "groups": [
+        [
+          "instance:part:microduck:07e507f1e9297aa3",
+          "instance:part:microduck:a682dc3620df43f5"
+        ]
+      ]
+    },
+    {
+      "request": {
+        "type": "connect",
+        "candidate_id": "candidate:ca403b36e8d80f0d64dc8bbad9cec10e4ca296454399789d926f064f95b8b257",
+        "moving_instance_id": "instance:part:microduck:7f4fefc3c6de90f1",
+        "target_instance_id": "instance:part:microduck:766eaa6e4dd8b09f"
+      },
+      "revision": 11,
+      "connections": 2,
+      "groups": [
+        [
+          "instance:part:microduck:07e507f1e9297aa3",
+          "instance:part:microduck:a682dc3620df43f5"
+        ],
+        [
+          "instance:part:microduck:766eaa6e4dd8b09f",
+          "instance:part:microduck:7f4fefc3c6de90f1"
+        ]
+      ]
+    },
+    {
+      "request": {
+        "type": "undo"
+      },
+      "revision": 12,
+      "connections": 1,
+      "groups": [
+        [
+          "instance:part:microduck:07e507f1e9297aa3",
+          "instance:part:microduck:a682dc3620df43f5"
+        ]
+      ]
+    },
+    {
+      "request": {
+        "type": "move",
+        "instance_id": "instance:part:microduck:0820b4025f26a004",
+        "pose": {
+          "position": [
+            0.22,
+            0.03,
+            0.25
+          ],
+          "quaternion": [
+            -0.7071067811865477,
+            -0.7071067811865476,
+            0,
+            -5.551115123125785e-17
+          ]
+        }
+      },
+      "revision": 13,
+      "connections": 1,
+      "groups": [
+        [
+          "instance:part:microduck:07e507f1e9297aa3",
+          "instance:part:microduck:a682dc3620df43f5"
+        ]
+      ]
+    },
+    {
+      "request": {
+        "type": "connect",
+        "candidate_id": "candidate:c3caaae7f45b6599273c4d07096bd5157c2564521676b235b3b60f41ce31f170",
+        "moving_instance_id": "instance:part:microduck:087d7a46a3ce4ca3",
+        "target_instance_id": "instance:part:microduck:0820b4025f26a004"
+      },
+      "revision": 14,
+      "connections": 2,
+      "groups": [
+        [
+          "instance:part:microduck:07e507f1e9297aa3",
+          "instance:part:microduck:a682dc3620df43f5"
+        ],
+        [
+          "instance:part:microduck:0820b4025f26a004",
+          "instance:part:microduck:087d7a46a3ce4ca3"
+        ]
+      ]
+    },
+    {
+      "request": {
+        "type": "connect",
+        "candidate_id": "candidate:b8a2244eaa1b0caf4f94e00c8fefaf1dffa10bacf515e4da9661f6cfc8e7e8b9",
+        "moving_instance_id": "instance:part:microduck:a682dc3620df43f5",
+        "target_instance_id": "instance:part:microduck:0820b4025f26a004"
+      },
+      "revision": 15,
+      "connections": 3,
+      "groups": [
+        [
+          "instance:part:microduck:07e507f1e9297aa3",
+          "instance:part:microduck:0820b4025f26a004",
+          "instance:part:microduck:087d7a46a3ce4ca3",
+          "instance:part:microduck:a682dc3620df43f5"
+        ]
+      ]
+    },
+    {
+      "request": {
+        "type": "disconnect",
+        "connection_id": "ec3761c2-d1d4-4d0e-a11f-420b0f86c1fb"
+      },
+      "revision": 16,
+      "connections": 2,
+      "groups": [
+        [
+          "instance:part:microduck:07e507f1e9297aa3",
+          "instance:part:microduck:a682dc3620df43f5"
+        ],
+        [
+          "instance:part:microduck:0820b4025f26a004",
+          "instance:part:microduck:087d7a46a3ce4ca3"
+        ]
+      ]
+    },
+    {
+      "request": {
+        "type": "connect",
+        "candidate_id": "candidate:ee6d2f2320efe9a5ad67f6a259c1bf52bc5234d3de3b64a025585a66c8d5fc45",
+        "moving_instance_id": "instance:part:microduck:a682dc3620df43f5",
+        "target_instance_id": "instance:part:microduck:087d7a46a3ce4ca3"
+      },
+      "revision": 17,
+      "connections": 3,
+      "groups": [
+        [
+          "instance:part:microduck:07e507f1e9297aa3",
+          "instance:part:microduck:0820b4025f26a004",
+          "instance:part:microduck:087d7a46a3ce4ca3",
+          "instance:part:microduck:a682dc3620df43f5"
+        ]
+      ]
+    },
+    {
+      "request": {
+        "type": "undo"
+      },
+      "revision": 18,
+      "connections": 2,
+      "groups": [
+        [
+          "instance:part:microduck:07e507f1e9297aa3",
+          "instance:part:microduck:a682dc3620df43f5"
+        ],
+        [
+          "instance:part:microduck:0820b4025f26a004",
+          "instance:part:microduck:087d7a46a3ce4ca3"
+        ]
+      ]
+    },
+    {
+      "request": {
+        "type": "redo"
+      },
+      "revision": 19,
+      "connections": 3,
+      "groups": [
+        [
+          "instance:part:microduck:07e507f1e9297aa3",
+          "instance:part:microduck:0820b4025f26a004",
+          "instance:part:microduck:087d7a46a3ce4ca3",
+          "instance:part:microduck:a682dc3620df43f5"
+        ]
+      ]
+    }
+  ]
+}

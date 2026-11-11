@@ -1,0 +1,13 @@
+{
+  "selected_snapshot": "dkp-2222613002e674936348",
+  "retired_registry_entries": [
+    {
+      "id": "dkp-3955ee11502b1d0c9262",
+      "path": "../build/microduck/source-1.15/microduck-capabilities-5.dkp",
+      "packageDigest": "3955ee11502b1d0c926243de719d00f4bba3b811db9c75f7a9f8608be50edc6a"
+    }
+  ],
+  "old_package_state": "preserved locally and ignored by Git",
+  "deletion_rejected_by_automatic_policy": true,
+  "retained_snapshots": 1
+}

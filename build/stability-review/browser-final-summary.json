@@ -1,0 +1,15 @@
+{
+    "status":  "passed",
+    "passed":  50,
+    "skipped":  2,
+    "duration":  "5.9m",
+    "failedTests":  [
+
+                    ],
+    "resultFile":  "browser-final-alpha/.last-run.json",
+    "log":  "browser-final-alpha.log",
+    "shellPipelineExit":  1,
+    "shellNote":  "PowerShell stderr redirection recorded the NO_COLOR/FORCE_COLOR Node warning as NativeCommandError; Playwright result and its complete test summary both passed.",
+    "snapshot":  "dkp-84f6829a25a82fefaf1d",
+    "bundle":  "index-C49S451n.js"
+}

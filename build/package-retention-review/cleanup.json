@@ -1,0 +1,62 @@
+{
+  "schema": "psop.dkp-cleanup/1",
+  "planned_at": "2026-11-07T20:48:48.736795+00:00",
+  "retained": {
+    "path": "build/microduck/source-1.14/microduck-assembly-3.dkp",
+    "version": "2.0.0-assembly.3",
+    "digest": "6a841fcb9cb028ba2c63df67cfd35c43f30e95374fb6f6bc314b7332160789e8"
+  },
+  "removed": [
+    {
+      "path": "build/microduck/source-1.9/microduck-2.dkp",
+      "version": "2.0.0-interface-investigation.2",
+      "digest": "59ce1b25aea434fc336718cfa6bca6f570d34037c87194ba1f45773fbcd3c9a1",
+      "bytes": 218740157
+    },
+    {
+      "path": "build/microduck/source-1.10/microduck-1.dkp",
+      "version": "2.0.0-interface-relations.1",
+      "digest": "1c8eeda600249ce33b99ec622417a744d5cdaf43a512f1495a4780ae0030cb00",
+      "bytes": 220253578
+    },
+    {
+      "path": "build/microduck/source-1.11/microduck-connection-analysis.dkp",
+      "version": "2.0.0-connection-analysis.1",
+      "digest": "84f6829a25a82fefaf1da6cc00b399088a5db6e41923b4074c39a08d1988b6db",
+      "bytes": 231655047
+    },
+    {
+      "path": "build/microduck/source-1.12/microduck-connection-sites.dkp",
+      "version": "2.0.0-connection-sites.1",
+      "digest": "8857e0482824621ff8da5ba2c7b8da13f8641ea8c3c10961ed52b3d238993ba9",
+      "bytes": 234757083
+    },
+    {
+      "path": "build/microduck/source-1.13/microduck-assembly.dkp",
+      "version": "2.0.0-assembly.1",
+      "digest": "9d8b6de6102df0c95adba8ee1caab7c3de2c7325209d69c6bf8bc578bc5e404c",
+      "bytes": 70284217
+    },
+    {
+      "path": "build/microduck/source-1.13/microduck-assembly-2.dkp",
+      "version": "2.0.0-assembly.2",
+      "digest": "700958f225110d20315d5865fa00ea899e1437622a8a2bed4cdc60db8e576f2e",
+      "bytes": 70312089
+    },
+    {
+      "path": "build/stability-review/reproducibility.dkp",
+      "version": "2.0.0-connection-analysis.1",
+      "digest": "84f6829a25a82fefaf1da6cc00b399088a5db6e41923b4074c39a08d1988b6db",
+      "bytes": 231655047
+    }
+  ],
+  "removed_bytes": 1277657218,
+  "scope": "working_tree_and_workspace_registry",
+  "git_history_rewritten": false,
+  "completed_at": "2026-11-07T20:51:50.547041+00:00",
+  "method": "git rm (tracked, unmodified package files)",
+  "remaining_packages": [
+    "build/microduck/source-1.14/microduck-assembly-3.dkp"
+  ],
+  "registered_snapshots": 1
+}

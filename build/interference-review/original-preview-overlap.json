@@ -1,0 +1,44 @@
+{
+  "source_version": "2.0.0-capabilities.6",
+  "pair": [
+    "part:microduck:638f29b46b322e64",
+    "part:microduck:a682dc3620df43f5"
+  ],
+  "interface_match": "interface-match:5f263c36fbb971bc72198aa4",
+  "rotation_b_to_a": [
+    [
+      -1,
+      -6.66133814775094e-16,
+      -5.669937756276022e-31
+    ],
+    [
+      6.661338147750937e-16,
+      -1,
+      -1.9515639003920167e-15
+    ],
+    [
+      7.395570986446986e-32,
+      -1.951563900392017e-15,
+      1
+    ]
+  ],
+  "translation_b_to_a": [
+    0.05104660847374613,
+    0.0220000000093609,
+    0.038777087607964826
+  ],
+  "actual_preview_interference": {
+    "method": "closed-source-solid-interference/2",
+    "engine": "manifold-3d@3.5.4",
+    "numerical_contact_allowance_m": 3e-7,
+    "source_sha256_a": "9a91cc1ae31ecd9e0c1ba93f3bb2ad8a12e29bff24ec27d1ac66c0c3037d9fcf",
+    "source_sha256_b": "96238ed0d020ce0009cf1a5aa4b6926176c800840318ee65e4375be2298d2744",
+    "status": "interference",
+    "proof": "positive_solid_intersection",
+    "intersection_volume_m3": 5.62434473394761e-7,
+    "witness": {
+      "kind": "positive_source_solid_volume"
+    }
+  },
+  "intersection_volume_mm3": 562.434473394761
+}

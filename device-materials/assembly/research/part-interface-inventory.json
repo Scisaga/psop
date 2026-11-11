@@ -1,0 +1,3678 @@
+{
+  "schema": "psop.assembly-audit.inventory/1",
+  "baseline_head": "796518c",
+  "configuration_ref": "configuration:microduck:source-qpos0",
+  "source_package": "build/microduck/source-1.12/microduck-connection-sites.dkp",
+  "scope": {
+    "instances": 70,
+    "mesh_families": 38,
+    "focused_remaining_instances": 41,
+    "focused_remaining_families": 35
+  },
+  "meaning": "Read-only assembly inventory. Capability/use does not assert completed engagement, thread specification, material or engineering acceptance. Source body restricts lookup only.",
+  "families": [
+    {
+      "mesh_key": "xl330",
+      "count": 15,
+      "region": "专项承接",
+      "instances": [
+        {
+          "part_ref": "part:microduck:a682dc3620df43f5",
+          "body": "trunk_base",
+          "name": "XL330 舵机",
+          "geometry_url": "sources/SRC-000045.stl"
+        },
+        {
+          "part_ref": "part:microduck:09cb390e38430c1e",
+          "body": "trunk_base",
+          "name": "XL330 舵机",
+          "geometry_url": "sources/SRC-000045.stl"
+        },
+        {
+          "part_ref": "part:microduck:cd6d48fccc95df41",
+          "body": "yaw2roll",
+          "name": "XL330 舵机",
+          "geometry_url": "sources/SRC-000045.stl"
+        },
+        {
+          "part_ref": "part:microduck:4cf80d5a57c8cb04",
+          "body": "upper_leg_left",
+          "name": "XL330 舵机",
+          "geometry_url": "sources/SRC-000045.stl"
+        },
+        {
+          "part_ref": "part:microduck:9ffe9d5bcd6bc13a",
+          "body": "upper_leg_left",
+          "name": "XL330 舵机",
+          "geometry_url": "sources/SRC-000045.stl"
+        },
+        {
+          "part_ref": "part:microduck:7c130c8489b57c99",
+          "body": "leg",
+          "name": "XL330 舵机",
+          "geometry_url": "sources/SRC-000045.stl"
+        },
+        {
+          "part_ref": "part:microduck:4cef8bb24d37fe6e",
+          "body": "neck",
+          "name": "XL330 舵机",
+          "geometry_url": "sources/SRC-000045.stl"
+        },
+        {
+          "part_ref": "part:microduck:44b5600c1a735117",
+          "body": "neck",
+          "name": "XL330 舵机",
+          "geometry_url": "sources/SRC-000045.stl"
+        },
+        {
+          "part_ref": "part:microduck:a07b37bcb704b29f",
+          "body": "yaw_roll_motion",
+          "name": "XL330 舵机",
+          "geometry_url": "sources/SRC-000045.stl"
+        },
+        {
+          "part_ref": "part:microduck:50f0c376d01bb0c1",
+          "body": "jaw_soft",
+          "name": "XL330 舵机",
+          "geometry_url": "sources/SRC-000045.stl"
+        },
+        {
+          "part_ref": "part:microduck:96e22c7fa2b976d3",
+          "body": "jaw_soft",
+          "name": "XL330 舵机",
+          "geometry_url": "sources/SRC-000045.stl"
+        },
+        {
+          "part_ref": "part:microduck:087d7a46a3ce4ca3",
+          "body": "bearing_roll",
+          "name": "XL330 舵机",
+          "geometry_url": "sources/SRC-000045.stl"
+        },
+        {
+          "part_ref": "part:microduck:7038a050dbc33fb0",
+          "body": "upper_leg_right",
+          "name": "XL330 舵机",
+          "geometry_url": "sources/SRC-000045.stl"
+        },
+        {
+          "part_ref": "part:microduck:08c5ade0f3fd37db",
+          "body": "upper_leg_right",
+          "name": "XL330 舵机",
+          "geometry_url": "sources/SRC-000045.stl"
+        },
+        {
+          "part_ref": "part:microduck:0820b4025f26a004",
+          "body": "leg_2",
+          "name": "XL330 舵机",
+          "geometry_url": "sources/SRC-000045.stl"
+        }
+      ],
+      "assembly_capability": "两端盘各四孔PCD12；壳体A/B两侧各四孔16×30，同侧选相邻两孔。",
+      "specific_counterparts": "15实例的精确对端见servo-findings.md。",
+      "basis": "Existing authored evidence and targeted source-geometry verification; scope is stated per capability.",
+      "concrete_open_question": "需独立活动端盘及装配相位；共享孔道不能合并侧接口。",
+      "existing_evidence_refs": [
+        "installation-hypothesis:right-shell-neck-four",
+        "installation-hypothesis:bearing-roll-housing-pair",
+        "installation-hypothesis:review-97e1e2f7a5a627de",
+        "installation-hypothesis:review-0dc09de9c6dba451",
+        "installation-hypothesis:review-51d1c3b9f9c96dde",
+        "installation-hypothesis:review-bdf54f836e5af91a",
+        "installation-hypothesis:review-37a83878280bbe93",
+        "installation-hypothesis:review-89bb8be1851b1d34",
+        "installation-hypothesis:review-34bb1bc7a95992cd",
+        "installation-hypothesis:review-40e7f2363528720c",
+        "installation-hypothesis:review-3fcb7dd12cdd874c",
+        "installation-hypothesis:review-f2a79f598ef1612d",
+        "installation-hypothesis:review-926a5beb2c028185",
+        "installation-hypothesis:review-e42fab2d8700637e",
+        "reference-mount:microduck:16ee23a9de58883b",
+        "reference-mount:microduck:c3aab3776d13124a",
+        "pin-hole-fit:microduck:3c9e75c3d0cbea85",
+        "pin-hole-fit:microduck:65c9610b5c4a4f4c",
+        "pin-hole-fit:microduck:9be29990b5767afa",
+        "pin-hole-fit:microduck:9eb0b803c05d42d1",
+        "reference-observation:microduck:surface-0538468f81926ae3",
+        "reference-observation:microduck:surface-ce3b4076c4fc1029",
+        "reference-observation:microduck:surface-9fa5a1a783acb9f7",
+        "reference-observation:microduck:surface-8f10b01eda1e89c9",
+        "reference-observation:microduck:surface-a3f5cb55754fb1f8",
+        "reference-observation:microduck:surface-f2d5d49c46428a7f",
+        "reference-observation:microduck:surface-2c5a6f9949388b44",
+        "reference-observation:microduck:surface-559b800564efaa51",
+        "reference-observation:microduck:surface-420da1d2ae89dcf9",
+        "reference-observation:microduck:surface-70cea73c5c706c83",
+        "reference-observation:microduck:surface-d45e833e6ca0559a",
+        "reference-observation:microduck:surface-f2cf1288ef9cd584",
+        "reference-observation:microduck:surface-8f9f626e96c529ed",
+        "reference-observation:microduck:surface-257ecc2567c121a5",
+        "reference-observation:microduck:surface-496aa0b61bd3ac55",
+        "reference-observation:microduck:surface-3fcb7dd12cdd874c",
+        "reference-observation:microduck:surface-4c241a91aafaaf17",
+        "reference-observation:microduck:surface-3529f9743bef313c",
+        "reference-observation:microduck:surface-bd315624e2a5fe7a",
+        "reference-observation:microduck:surface-da896827ad4ea1d5",
+        "reference-observation:microduck:surface-efeb5a350af3a45b",
+        "reference-observation:microduck:surface-c834a08c28430b2a",
+        "reference-observation:microduck:surface-96170c0e07f56bb2",
+        "reference-observation:microduck:surface-9e5491de42cc7f9b",
+        "reference-observation:microduck:surface-6e53aef37e3b7f34",
+        "reference-observation:microduck:surface-f638bc8ebabef98e",
+        "reference-observation:microduck:surface-be212107b92437b8",
+        "reference-observation:microduck:surface-1b6c9acd1790e13a",
+        "reference-observation:microduck:surface-44a151230734803c",
+        "reference-observation:microduck:surface-818ac0f2dee9c3d6",
+        "reference-observation:microduck:surface-0dc09de9c6dba451"
+      ]
+    },
+    {
+      "mesh_key": "seeed_bearing__configuration__22x16x4",
+      "count": 11,
+      "region": "专项承接",
+      "instances": [
+        {
+          "part_ref": "part:microduck:b364863ffde63eed",
+          "body": "trunk_base",
+          "name": "轴承外形（22×16×4 配置名）",
+          "geometry_url": "sources/SRC-000034.stl"
+        },
+        {
+          "part_ref": "part:microduck:7938fd9143c59ea4",
+          "body": "trunk_base",
+          "name": "轴承外形（22×16×4 配置名）",
+          "geometry_url": "sources/SRC-000034.stl"
+        },
+        {
+          "part_ref": "part:microduck:47a950fbb3d0e416",
+          "body": "yaw2roll",
+          "name": "轴承外形（22×16×4 配置名）",
+          "geometry_url": "sources/SRC-000034.stl"
+        },
+        {
+          "part_ref": "part:microduck:bb34e925e25e29f6",
+          "body": "hip_l",
+          "name": "轴承外形（22×16×4 配置名）",
+          "geometry_url": "sources/SRC-000034.stl"
+        },
+        {
+          "part_ref": "part:microduck:e475134639b3f7e1",
+          "body": "upper_leg_left",
+          "name": "轴承外形（22×16×4 配置名）",
+          "geometry_url": "sources/SRC-000034.stl"
+        },
+        {
+          "part_ref": "part:microduck:6b884b140f6e283c",
+          "body": "neck_pitch",
+          "name": "轴承外形（22×16×4 配置名）",
+          "geometry_url": "sources/SRC-000034.stl"
+        },
+        {
+          "part_ref": "part:microduck:ea69e2c6bba10a23",
+          "body": "yaw_roll_motion",
+          "name": "轴承外形（22×16×4 配置名）",
+          "geometry_url": "sources/SRC-000034.stl"
+        },
+        {
+          "part_ref": "part:microduck:55121c0b36f62219",
+          "body": "yaw_roll_motion",
+          "name": "轴承外形（22×16×4 配置名）",
+          "geometry_url": "sources/SRC-000034.stl"
+        },
+        {
+          "part_ref": "part:microduck:3fbf0b5c8cea4488",
+          "body": "bearing_roll",
+          "name": "轴承外形（22×16×4 配置名）",
+          "geometry_url": "sources/SRC-000034.stl"
+        },
+        {
+          "part_ref": "part:microduck:d924e1596ffb042a",
+          "body": "hip_l_2",
+          "name": "轴承外形（22×16×4 配置名）",
+          "geometry_url": "sources/SRC-000034.stl"
+        },
+        {
+          "part_ref": "part:microduck:d6a148b5784955d8",
+          "body": "upper_leg_right",
+          "name": "轴承外形（22×16×4 配置名）",
+          "geometry_url": "sources/SRC-000034.stl"
+        }
+      ],
+      "assembly_capability": "Ø16内孔、Ø22外圆、每端内/外圈平环。四髋内圈套端盘和髋轴颈，外圈端面由Ø19孔外围面承接。",
+      "specific_counterparts": "四髋的舵机/髋/加强板/横滚支承件；其他7实例保留独立ID。",
+      "basis": "Existing authored evidence and targeted source-geometry verification; scope is stated per capability.",
+      "concrete_open_question": "四髋外圈径向定位与具体保持工艺待核；其他实例由专项补全圈别。",
+      "existing_evidence_refs": [
+        "reference-observation:microduck:surface-415603d8f9b22b5e",
+        "reference-observation:microduck:surface-1cce01d09cb536c2",
+        "reference-observation:microduck:surface-fed970180b4da184",
+        "reference-observation:microduck:surface-d75d13bf0d7cb8da",
+        "reference-observation:microduck:surface-27d56794bd7c8a86",
+        "reference-observation:microduck:surface-c2e8a8093a4b8563",
+        "reference-observation:microduck:surface-e25d5b1829ab0beb",
+        "reference-observation:microduck:surface-499da260b4018440",
+        "reference-observation:microduck:surface-11d0cc14688addfe",
+        "reference-observation:microduck:surface-1a08a75fbdcd14b4",
+        "reference-observation:microduck:surface-27f2a09983d1c249",
+        "reference-observation:microduck:surface-e79d75a34370ab20",
+        "reference-observation:microduck:surface-73109aacaa68f51b",
+        "reference-observation:microduck:surface-e2cd7d04c00e85dc",
+        "reference-observation:microduck:surface-e41b0d1330d7240a",
+        "reference-observation:microduck:surface-73ab6b84aa3fa583",
+        "reference-observation:microduck:surface-aa00aab586e98383",
+        "reference-observation:microduck:surface-3a42fc267d7917bb",
+        "reference-observation:microduck:surface-6520b7add0e15150",
+        "reference-observation:microduck:surface-7e193967229ae9d4",
+        "reference-observation:microduck:surface-147ecd02a48db925"
+      ]
+    },
+    {
+      "mesh_key": "seeed_bearing__configuration_default",
+      "count": 3,
+      "region": "专项承接",
+      "instances": [
+        {
+          "part_ref": "part:microduck:766eaa6e4dd8b09f",
+          "body": "ankle_left",
+          "name": "轴承外形（默认配置名）",
+          "geometry_url": "sources/SRC-000035.stl"
+        },
+        {
+          "part_ref": "part:microduck:a0775b54397eb21e",
+          "body": "jaw_soft",
+          "name": "轴承外形（默认配置名）",
+          "geometry_url": "sources/SRC-000035.stl"
+        },
+        {
+          "part_ref": "part:microduck:e196235810184adf",
+          "body": "ankle_right",
+          "name": "轴承外形（默认配置名）",
+          "geometry_url": "sources/SRC-000035.stl"
+        }
+      ],
+      "assembly_capability": "真实15×10×3。两踝内圈套腿Ø10轴颈、外圈入踝Ø15座；头部对应结构偏心0.2mm。",
+      "specific_counterparts": "两腿件与两踝；喙与头下壳/电机支架。",
+      "basis": "Existing authored evidence and targeted source-geometry verification; scope is stated per capability.",
+      "concrete_open_question": "排除与舵机Ø16盘直接套合；头部偏心及喙肩侵入需核修订。",
+      "existing_evidence_refs": [
+        "reference-observation:microduck:surface-58721ffb3a5442b0",
+        "reference-observation:microduck:surface-2706e228103d58c9",
+        "reference-observation:microduck:surface-ff03c978ccdc5f96"
+      ]
+    },
+    {
+      "mesh_key": "right_shell",
+      "count": 1,
+      "region": "躯干与电源",
+      "instances": [
+        {
+          "part_ref": "part:microduck:9d70b219a5533bf1",
+          "body": "trunk_base",
+          "name": "右侧外壳",
+          "geometry_url": "sources/SRC-000033.stl"
+        }
+      ],
+      "assembly_capability": "四孔PCD12接颈舵机X+端盘；Ø1.6接收孔对应左壳Ø2.2闭壳孔。",
+      "specific_counterparts": "颈舵机4cef8bb24d37fe6e；左壳e27cbdd6c07a264e。",
+      "basis": "Existing authored evidence and targeted source-geometry verification; scope is stated per capability.",
+      "concrete_open_question": "源Z向台阶孔的具体对端未定位；不得补画完整扩孔。",
+      "existing_evidence_refs": [
+        "installation-hypothesis:right-shell-neck-four",
+        "installation-hypothesis:right-left-shell-closure"
+      ]
+    },
+    {
+      "mesh_key": "left_shell",
+      "count": 1,
+      "region": "躯干与电源",
+      "instances": [
+        {
+          "part_ref": "part:microduck:e27cbdd6c07a264e",
+          "body": "trunk_base",
+          "name": "左侧外壳",
+          "geometry_url": "sources/SRC-000022.stl"
+        }
+      ],
+      "assembly_capability": "四孔PCD12接颈舵机X−端盘；Ø2.2通过孔对右壳Ø1.6接收孔。",
+      "specific_counterparts": "颈舵机4cef8bb24d37fe6e；右壳9d70b219a5533bf1。",
+      "basis": "Existing authored evidence and targeted source-geometry verification; scope is stated per capability.",
+      "concrete_open_question": "其余封壳限形边保留；单个闭壳螺钉不等于整壳完整固定。",
+      "existing_evidence_refs": [
+        "installation-hypothesis:right-left-shell-closure",
+        "installation-hypothesis:review-34bb1bc7a95992cd"
+      ]
+    },
+    {
+      "mesh_key": "trunk_base",
+      "count": 1,
+      "region": "躯干与电源",
+      "instances": [
+        {
+          "part_ref": "part:microduck:203d2686e3321e4a",
+          "body": "trunk_base",
+          "name": "躯干底座",
+          "geometry_url": "sources/SRC-000041.stl"
+        }
+      ],
+      "assembly_capability": "四根一体锥销分两组，长2mm、Ø1.8→1.59，分别进入两髋yaw舵机A1+A4；四Ø2.3孔对应A2+A3。两个Ø19孔外围承轴承端面。",
+      "specific_counterparts": "a682dc3620df43f5、09cb390e38430c1e；两yaw轴承；内侧双孔另对电源支架。",
+      "basis": "Existing authored evidence and targeted source-geometry verification; scope is stated per capability.",
+      "concrete_open_question": "新定位的底座销用途为项目推断，不能继承只覆盖大腿销的用户声明。",
+      "existing_evidence_refs": [
+        "reference-observation:microduck:surface-415603d8f9b22b5e",
+        "reference-observation:microduck:surface-0538468f81926ae3",
+        "reference-observation:microduck:surface-ce3b4076c4fc1029",
+        "reference-observation:microduck:surface-1cce01d09cb536c2"
+      ]
+    },
+    {
+      "mesh_key": "banana_pcb_locker",
+      "count": 1,
+      "region": "躯干与电源",
+      "instances": [
+        {
+          "part_ref": "part:microduck:78cf36c41e4fde06",
+          "body": "trunk_base",
+          "name": "电路板固定件",
+          "geometry_url": "sources/SRC-000012.stl"
+        }
+      ],
+      "assembly_capability": "压条两端Ø2.2入口，X=±25/Z=53.6、轴Y、孔距50；与电源支架承座贴合21.431mm²。",
+      "specific_counterparts": "power_support:e7e8275c7d01674c。",
+      "basis": "Existing authored evidence and targeted source-geometry verification; scope is stated per capability.",
+      "concrete_open_question": "源70实例没有相应躯干PCB；需确认实际被压件身份，不能从名称指派头部树莓派。",
+      "existing_evidence_refs": [
+        "reference-observation:microduck:surface-a90b521a50448746"
+      ]
+    },
+    {
+      "mesh_key": "power_support",
+      "count": 1,
+      "region": "躯干与电源",
+      "instances": [
+        {
+          "part_ref": "part:microduck:e7e8275c7d01674c",
+          "body": "trunk_base",
+          "name": "电源支架",
+          "geometry_url": "sources/SRC-000032.stl"
+        }
+      ],
+      "assembly_capability": "上部50mm双孔口Ø1.772对压条；下部X=±9.5/Y20.5的Ø2.5孔与底座Ø2.3同轴、有限间隙0.278mm；端部挡面承接电池。",
+      "specific_counterparts": "压条78cf36c41e4fde06；底座203d2686e3321e4a；电池f97c1c6580d651d7。",
+      "basis": "Existing authored evidence and targeted source-geometry verification; scope is stated per capability.",
+      "concrete_open_question": "确认底座双孔的接收紧固件及电池反向退出锁持；不任意分配其余Ø1.6孔。",
+      "existing_evidence_refs": [
+        "reference-observation:microduck:surface-a90b521a50448746",
+        "reference-observation:microduck:surface-c1db6d1eeb730d89"
+      ]
+    },
+    {
+      "mesh_key": "np_f970",
+      "count": 1,
+      "region": "躯干与电源",
+      "instances": [
+        {
+          "part_ref": "part:microduck:f97c1c6580d651d7",
+          "body": "trunk_base",
+          "name": "NP-F970 电池外形",
+          "geometry_url": "sources/SRC-000030.stl"
+        }
+      ],
+      "assembly_capability": "端部/底部凸缘与支架限形面对应，已有有限贴合6.884mm²、法向间隙约0.0457mm。",
+      "specific_counterparts": "power_support:e7e8275c7d01674c。",
+      "basis": "Existing authored evidence and targeted source-geometry verification; scope is stated per capability.",
+      "concrete_open_question": "需明确滑入方向和防退出锁持；电连接座未在此机械外形中定位。",
+      "existing_evidence_refs": [
+        "reference-observation:microduck:surface-c1db6d1eeb730d89"
+      ]
+    },
+    {
+      "mesh_key": "yaw2roll",
+      "count": 2,
+      "region": "腿部传动",
+      "instances": [
+        {
+          "part_ref": "part:microduck:55970da91992f38c",
+          "body": "yaw2roll",
+          "name": "偏航与横滚连接件",
+          "geometry_url": "sources/SRC-000046.stl"
+        },
+        {
+          "part_ref": "part:microduck:48099e14105d3289",
+          "body": "bearing_roll",
+          "name": "偏航与横滚连接件",
+          "geometry_url": "sources/SRC-000046.stl"
+        }
+      ],
+      "assembly_capability": "四孔PCD12接yaw舵机端盘；16mm双孔对roll舵机壳体B1+B4；18mm双孔对横滚支承件；Ø16轴颈进入yaw轴承内圈。",
+      "specific_counterparts": "左右yaw/roll舵机、bearing_roll和yaw轴承。",
+      "basis": "Existing authored evidence and targeted source-geometry verification; scope is stated per capability.",
+      "concrete_open_question": "18mm双通过孔的接收件待定；Ø19开口不是Ø22圆柱承座。",
+      "existing_evidence_refs": [
+        "installation-hypothesis:review-37a83878280bbe93",
+        "installation-hypothesis:review-40e7f2363528720c",
+        "reference-observation:microduck:surface-fed970180b4da184",
+        "reference-observation:microduck:surface-9fa5a1a783acb9f7",
+        "reference-observation:microduck:surface-e41b0d1330d7240a",
+        "reference-observation:microduck:surface-9e5491de42cc7f9b"
+      ]
+    },
+    {
+      "mesh_key": "bearing_roll",
+      "count": 2,
+      "region": "腿部传动",
+      "instances": [
+        {
+          "part_ref": "part:microduck:cb253f38c818b9d8",
+          "body": "yaw2roll",
+          "name": "横滚轴承支承件",
+          "geometry_url": "sources/SRC-000013.stl"
+        },
+        {
+          "part_ref": "part:microduck:c703574f50f6a46a",
+          "body": "bearing_roll",
+          "name": "横滚轴承支承件",
+          "geometry_url": "sources/SRC-000013.stl"
+        }
+      ],
+      "assembly_capability": "16mm双孔接roll舵机A2+A3；另一18mm双孔对yaw2roll；Ø19孔外围面承roll轴承外圈端面。",
+      "specific_counterparts": "左右roll舵机、yaw2roll、roll轴承。",
+      "basis": "Existing authored evidence and targeted source-geometry verification; scope is stated per capability.",
+      "concrete_open_question": "与yaw2roll的接收紧固件、外圈径向定位和反向保持需单列。",
+      "existing_evidence_refs": [
+        "installation-hypothesis:bearing-roll-housing-pair",
+        "reference-observation:microduck:surface-d75d13bf0d7cb8da",
+        "reference-observation:microduck:surface-8f10b01eda1e89c9",
+        "reference-observation:microduck:surface-6e53aef37e3b7f34",
+        "reference-observation:microduck:surface-73ab6b84aa3fa583"
+      ]
+    },
+    {
+      "mesh_key": "hip_l",
+      "count": 2,
+      "region": "腿部传动",
+      "instances": [
+        {
+          "part_ref": "part:microduck:fa9ee2f71faafb88",
+          "body": "hip_l",
+          "name": "髋部件",
+          "geometry_url": "sources/SRC-000019.stl"
+        },
+        {
+          "part_ref": "part:microduck:c7eeeac0a640d191",
+          "body": "hip_l_2",
+          "name": "髋部件",
+          "geometry_url": "sources/SRC-000019.stl"
+        }
+      ],
+      "assembly_capability": "两个正交四孔PCD12接口接roll/pitch端盘；两Ø16轴颈入两轴承内圈，Ø19肩承内圈端面。",
+      "specific_counterparts": "左右roll/pitch舵机与四髋轴承。",
+      "basis": "Existing authored evidence and targeted source-geometry verification; scope is stated per capability.",
+      "concrete_open_question": "补实际螺钉及活动框架；髋肩与板件孔外围面承接不同圈。",
+      "existing_evidence_refs": [
+        "installation-hypothesis:review-51d1c3b9f9c96dde",
+        "installation-hypothesis:review-bdf54f836e5af91a",
+        "installation-hypothesis:review-926a5beb2c028185",
+        "installation-hypothesis:review-e42fab2d8700637e",
+        "reference-observation:microduck:surface-27d56794bd7c8a86",
+        "reference-observation:microduck:surface-c2e8a8093a4b8563",
+        "reference-observation:microduck:surface-aa00aab586e98383",
+        "reference-observation:microduck:surface-3a42fc267d7917bb"
+      ]
+    },
+    {
+      "mesh_key": "upper_leg_left",
+      "count": 1,
+      "region": "腿部传动",
+      "instances": [
+        {
+          "part_ref": "part:microduck:66c73aaad945a993",
+          "body": "upper_leg_left",
+          "name": "左大腿部件",
+          "geometry_url": "sources/SRC-000042.stl"
+        }
+      ],
+      "assembly_capability": "两组16mm间距一体小销，对本侧髋pitch/膝舵机壳体B2+B3；与加强板围护安装区。",
+      "specific_counterparts": "9ffe9d5bcd6bc13a、4cf80d5a57c8cb04、c75bfc0afb35e000。",
+      "basis": "Existing authored evidence and targeted source-geometry verification; scope is stated per capability.",
+      "concrete_open_question": "销组能定位，不能据此确认抗拔；大圆洞不属于小销接口。",
+      "existing_evidence_refs": [
+        "pin-hole-fit:microduck:3c9e75c3d0cbea85",
+        "pin-hole-fit:microduck:9eb0b803c05d42d1",
+        "reference-observation:microduck:surface-a3f5cb55754fb1f8",
+        "reference-observation:microduck:surface-559b800564efaa51"
+      ]
+    },
+    {
+      "mesh_key": "upper_leg_right",
+      "count": 1,
+      "region": "腿部传动",
+      "instances": [
+        {
+          "part_ref": "part:microduck:e40b9945707505e1",
+          "body": "upper_leg_right",
+          "name": "右大腿部件",
+          "geometry_url": "sources/SRC-000043.stl"
+        }
+      ],
+      "assembly_capability": "独立右侧两组16mm一体小销，对髋pitch/膝舵机B2+B3。",
+      "specific_counterparts": "08c5ade0f3fd37db、7038a050dbc33fb0、7e86db28af59d3cc。",
+      "basis": "Existing authored evidence and targeted source-geometry verification; scope is stated per capability.",
+      "concrete_open_question": "保持链经舵机和板件；不能因同body另造大腿与加强板直接螺钉。",
+      "existing_evidence_refs": [
+        "pin-hole-fit:microduck:65c9610b5c4a4f4c",
+        "pin-hole-fit:microduck:9be29990b5767afa",
+        "reference-observation:microduck:surface-be212107b92437b8",
+        "reference-observation:microduck:surface-44a151230734803c"
+      ]
+    },
+    {
+      "mesh_key": "upper_leg_rigidity_plate",
+      "count": 2,
+      "region": "腿部传动",
+      "instances": [
+        {
+          "part_ref": "part:microduck:c75bfc0afb35e000",
+          "body": "upper_leg_left",
+          "name": "大腿加强板",
+          "geometry_url": "sources/SRC-000044.stl"
+        },
+        {
+          "part_ref": "part:microduck:7e86db28af59d3cc",
+          "body": "upper_leg_right",
+          "name": "大腿加强板",
+          "geometry_url": "sources/SRC-000044.stl"
+        }
+      ],
+      "assembly_capability": "两对16mm小孔分别对本侧两舵机A2+A3；两个Ø19孔外围平面承pitch/膝轴承外圈端面。",
+      "specific_counterparts": "本侧髋pitch/膝舵机及两轴承。",
+      "basis": "Existing authored evidence and targeted source-geometry verification; scope is stated per capability.",
+      "concrete_open_question": "明确小孔紧固件和轴承外圈径向约束；大孔不是Ø22承座。",
+      "existing_evidence_refs": [
+        "reference-observation:microduck:surface-e25d5b1829ab0beb",
+        "reference-observation:microduck:surface-f2d5d49c46428a7f",
+        "reference-observation:microduck:surface-499da260b4018440",
+        "reference-observation:microduck:surface-2c5a6f9949388b44",
+        "reference-observation:microduck:surface-f638bc8ebabef98e",
+        "reference-observation:microduck:surface-6520b7add0e15150",
+        "reference-observation:microduck:surface-7e193967229ae9d4",
+        "reference-observation:microduck:surface-1b6c9acd1790e13a"
+      ]
+    },
+    {
+      "mesh_key": "leg",
+      "count": 2,
+      "region": "腿部传动",
+      "instances": [
+        {
+          "part_ref": "part:microduck:638f29b46b322e64",
+          "body": "leg",
+          "name": "腿部连杆",
+          "geometry_url": "sources/SRC-000023.stl"
+        },
+        {
+          "part_ref": "part:microduck:7f4fefc3c6de90f1",
+          "body": "leg_2",
+          "name": "腿部连杆",
+          "geometry_url": "sources/SRC-000023.stl"
+        }
+      ],
+      "assembly_capability": "上端四孔PCD12为膝传动接口；下端16mm双孔接踝舵机B2+B3；Ø10轴颈入默认轴承内圈。",
+      "specific_counterparts": "本侧膝/踝舵机、默认轴承；轴承外圈承于踝件。",
+      "basis": "Existing authored evidence and targeted source-geometry verification; scope is stated per capability.",
+      "concrete_open_question": "源零位45°相位不否定用途；需独立活动端盘和装配相位，不能编造当前已齐孔。",
+      "existing_evidence_refs": [
+        "reference-mount:microduck:16ee23a9de58883b",
+        "reference-mount:microduck:c3aab3776d13124a",
+        "reference-observation:microduck:surface-11d0cc14688addfe",
+        "reference-observation:microduck:surface-420da1d2ae89dcf9",
+        "reference-observation:microduck:surface-818ac0f2dee9c3d6",
+        "reference-observation:microduck:surface-147ecd02a48db925"
+      ]
+    },
+    {
+      "mesh_key": "ankle_left",
+      "count": 1,
+      "region": "腿足",
+      "instances": [
+        {
+          "part_ref": "part:microduck:07e507f1e9297aa3",
+          "body": "ankle_left",
+          "name": "左踝部件",
+          "geometry_url": "sources/SRC-000010.stl"
+        }
+      ],
+      "assembly_capability": "四孔PCD12接踝舵机X−端；Ø15孔/口沿承默认轴承外圈；与脚有前后钩头及中心阶孔复合接口。",
+      "specific_counterparts": "7c130c8489b57c99、766eaa6e4dd8b09f、foot_left:41db565298264db6。",
+      "basis": "Existing authored evidence and targeted source-geometry verification; scope is stated per capability.",
+      "concrete_open_question": "具体螺钉与扣合工艺未入源；与脚底鞋套接口区分。",
+      "existing_evidence_refs": [
+        "installation-hypothesis:review-97e1e2f7a5a627de",
+        "reference-observation:microduck:surface-70cea73c5c706c83",
+        "reference-observation:microduck:surface-2f220eeef53b247c",
+        "reference-observation:microduck:surface-58721ffb3a5442b0"
+      ]
+    },
+    {
+      "mesh_key": "ankle_right",
+      "count": 1,
+      "region": "腿足",
+      "instances": [
+        {
+          "part_ref": "part:microduck:b371ac60e2f6757b",
+          "body": "ankle_right",
+          "name": "右踝部件",
+          "geometry_url": "sources/SRC-000011.stl"
+        }
+      ],
+      "assembly_capability": "独立右侧PCD12、Ø15轴承承座、脚前后扣合和中心阶孔。",
+      "specific_counterparts": "0820b4025f26a004、e196235810184adf、foot_right:f9955f19a691a1f4。",
+      "basis": "Existing authored evidence and targeted source-geometry verification; scope is stated per capability.",
+      "concrete_open_question": "使用独立右侧原三角；不复制左侧索引。",
+      "existing_evidence_refs": [
+        "installation-hypothesis:review-0dc09de9c6dba451",
+        "reference-observation:microduck:surface-0dc09de9c6dba451",
+        "reference-observation:microduck:surface-ff03c978ccdc5f96",
+        "reference-observation:microduck:surface-639d352cd55d6e70"
+      ]
+    },
+    {
+      "mesh_key": "foot_left",
+      "count": 1,
+      "region": "腿足",
+      "instances": [
+        {
+          "part_ref": "part:microduck:41db565298264db6",
+          "body": "ankle_left",
+          "name": "左脚部件",
+          "geometry_url": "sources/SRC-000017.stl"
+        }
+      ],
+      "assembly_capability": "前后钩舌捕获踝端台阶；中心Ø1.6/Ø3对踝Ø2.2/Ø4.4；下缘和肋底入脚底杯腔。",
+      "specific_counterparts": "ankle_left:07e507f1e9297aa3、sole_left:8b649e45831a1972。",
+      "basis": "Existing authored evidence and targeted source-geometry verification; scope is stated per capability.",
+      "concrete_open_question": "脚踝为扣合+中心紧固，脚与脚底为包覆套合。",
+      "existing_evidence_refs": [
+        "reference-observation:microduck:surface-79bceb0f96a7a7d2",
+        "reference-observation:microduck:surface-2f220eeef53b247c"
+      ]
+    },
+    {
+      "mesh_key": "foot_right",
+      "count": 1,
+      "region": "腿足",
+      "instances": [
+        {
+          "part_ref": "part:microduck:f9955f19a691a1f4",
+          "body": "ankle_right",
+          "name": "右脚部件",
+          "geometry_url": "sources/SRC-000018.stl"
+        }
+      ],
+      "assembly_capability": "两钩头与踝台阶每处约9mm²投影搭接/.3mm间隙；中心阶孔紧固；下部入脚底杯腔。",
+      "specific_counterparts": "ankle_right:b371ac60e2f6757b、sole_right:2f557a24b2729755。",
+      "basis": "Existing authored evidence and targeted source-geometry verification; scope is stated per capability.",
+      "concrete_open_question": ".3mm钩面间隙不能写成已压紧接触；保持工艺另核。",
+      "existing_evidence_refs": [
+        "reference-observation:microduck:surface-8f7b7df18a917501",
+        "reference-observation:microduck:surface-639d352cd55d6e70"
+      ]
+    },
+    {
+      "mesh_key": "sole_left",
+      "count": 1,
+      "region": "腿足",
+      "instances": [
+        {
+          "part_ref": "part:microduck:8b649e45831a1972",
+          "body": "ankle_left",
+          "name": "左脚底",
+          "geometry_url": "sources/SRC-000037.stl"
+        }
+      ],
+      "assembly_capability": "杯腔以双侧壁、周边杯口、曲面内底承接脚下缘和肋底；入口在上，沿局部−Z套入。",
+      "specific_counterparts": "foot_left:41db565298264db6。",
+      "basis": "Existing authored evidence and targeted source-geometry verification; scope is stated per capability.",
+      "concrete_open_question": "包覆/落座已经定位；抗拔工艺及材料未知。",
+      "existing_evidence_refs": [
+        "reference-observation:microduck:surface-79bceb0f96a7a7d2"
+      ]
+    },
+    {
+      "mesh_key": "sole_right",
+      "count": 1,
+      "region": "腿足",
+      "instances": [
+        {
+          "part_ref": "part:microduck:2f557a24b2729755",
+          "body": "ankle_right",
+          "name": "右脚底",
+          "geometry_url": "sources/SRC-000038.stl"
+        }
+      ],
+      "assembly_capability": "独立右侧杯形包覆：侧壁定位、环口止落、曲面肋底分布支承。",
+      "specific_counterparts": "foot_right:f9955f19a691a1f4。",
+      "basis": "Existing authored evidence and targeted source-geometry verification; scope is stated per capability.",
+      "concrete_open_question": "未见独立反扣/锁槽，不指定过盈、胶层或TPU。",
+      "existing_evidence_refs": [
+        "reference-observation:microduck:surface-8f7b7df18a917501"
+      ]
+    },
+    {
+      "mesh_key": "neck",
+      "count": 2,
+      "region": "颈与头部传动",
+      "instances": [
+        {
+          "part_ref": "part:microduck:6b5602b4416129fe",
+          "body": "neck",
+          "name": "颈部件",
+          "geometry_url": "sources/SRC-000028.stl"
+        },
+        {
+          "part_ref": "part:microduck:133711c520619e45",
+          "body": "neck",
+          "name": "颈部件",
+          "geometry_url": "sources/SRC-000028.stl"
+        }
+      ],
+      "assembly_capability": "每片四Ø2.3孔构成两对16mm组，分别连颈pitch和头pitch舵机壳体；两片位于A/B两侧。",
+      "specific_counterparts": "4cef8bb24d37fe6e、44b5600c1a735117。",
+      "basis": "Existing authored evidence and targeted source-geometry verification; scope is stated per capability.",
+      "concrete_open_question": "壳体安装能力已定位，实际接收紧固件未建模。",
+      "existing_evidence_refs": [
+        "reference-observation:microduck:surface-d45e833e6ca0559a",
+        "reference-observation:microduck:surface-f2cf1288ef9cd584",
+        "reference-observation:microduck:surface-8f9f626e96c529ed",
+        "reference-observation:microduck:surface-257ecc2567c121a5"
+      ]
+    },
+    {
+      "mesh_key": "neck_pitch",
+      "count": 1,
+      "region": "颈与头部传动",
+      "instances": [
+        {
+          "part_ref": "part:microduck:834f5cc892eba41e",
+          "body": "neck_pitch",
+          "name": "颈俯仰部件",
+          "geometry_url": "sources/SRC-000027.stl"
+        }
+      ],
+      "assembly_capability": "叉形两侧各PCD12四孔对头pitch舵机两个端盘；另一正交PCD12对头yaw端盘；Ø16外圆参与轴承内圈支承。",
+      "specific_counterparts": "44b5600c1a735117、a07b37bcb704b29f、6b884b140f6e283c。",
+      "basis": "Existing authored evidence and targeted source-geometry verification; scope is stated per capability.",
+      "concrete_open_question": "两侧端盘接口分别保留，八孔调查不能合成八孔接口。",
+      "existing_evidence_refs": [
+        "installation-hypothesis:review-3fcb7dd12cdd874c",
+        "reference-observation:microduck:surface-496aa0b61bd3ac55",
+        "reference-observation:microduck:surface-1a08a75fbdcd14b4",
+        "reference-observation:microduck:surface-3fcb7dd12cdd874c"
+      ]
+    },
+    {
+      "mesh_key": "yaw_roll_motion",
+      "count": 1,
+      "region": "颈与头部传动",
+      "instances": [
+        {
+          "part_ref": "part:microduck:d4b9a9e9474a9829",
+          "body": "yaw_roll_motion",
+          "name": "偏航与横滚传动件",
+          "geometry_url": "sources/SRC-000047.stl"
+        }
+      ],
+      "assembly_capability": "底部16×30四孔对头yaw舵机B侧；正交PCD12四孔对头roll端盘；轴颈/圈面参与头支承链。",
+      "specific_counterparts": "a07b37bcb704b29f、96e22c7fa2b976d3及头部大轴承。",
+      "basis": "Existing authored evidence and targeted source-geometry verification; scope is stated per capability.",
+      "concrete_open_question": "两侧轴承内外圈分别定位，不能按source body整体绑定。",
+      "existing_evidence_refs": [
+        "installation-hypothesis:review-f2a79f598ef1612d",
+        "reference-observation:microduck:surface-4c241a91aafaaf17",
+        "reference-observation:microduck:surface-27f2a09983d1c249",
+        "reference-observation:microduck:surface-e79d75a34370ab20",
+        "reference-observation:microduck:surface-bd315624e2a5fe7a"
+      ]
+    },
+    {
+      "mesh_key": "motor_support",
+      "count": 1,
+      "region": "头部结构与电子件",
+      "instances": [
+        {
+          "part_ref": "part:microduck:986b5adf27910138",
+          "body": "jaw_soft",
+          "name": "电机支架",
+          "geometry_url": "sources/SRC-000026.stl"
+        }
+      ],
+      "assembly_capability": "限形方槽/多向挡面承喙和头roll壳体，有限面661.115/353.757mm²；四Ø2.7孔对下壳四Ø2.2孔；Ø15部分座参与喙轴承安装。",
+      "specific_counterparts": "50f0c376d01bb0c1、96e22c7fa2b976d3、52fdcacf474a463f、a0775b54397eb21e。",
+      "basis": "Existing authored evidence and targeted source-geometry verification; scope is stated per capability.",
+      "concrete_open_question": "壳体抗拔封闭路径待明确；喙轴承存在0.2mm偏心，不能标已相容。",
+      "existing_evidence_refs": [
+        "reference-observation:microduck:surface-73109aacaa68f51b",
+        "reference-observation:microduck:surface-3529f9743bef313c",
+        "reference-observation:microduck:surface-da896827ad4ea1d5",
+        "reference-observation:microduck:surface-47f6ec63ffbd2260"
+      ]
+    },
+    {
+      "mesh_key": "top_head_shell",
+      "count": 1,
+      "region": "头部结构与电子件",
+      "instances": [
+        {
+          "part_ref": "part:microduck:82d68e991b23c2a3",
+          "body": "jaw_soft",
+          "name": "头部上壳",
+          "geometry_url": "sources/SRC-000040.stl"
+        }
+      ],
+      "assembly_capability": "三闭壳中心(±39,−49.5)/(0,49.5)；Ø2.8入口后为Ø2.1接收段；三环形端面与下壳同位对向。",
+      "specific_counterparts": "bottom_head_shell:52fdcacf474a463f。",
+      "basis": "Existing authored evidence and targeted source-geometry verification; scope is stated per capability.",
+      "concrete_open_question": "可补三点紧固能力；没有螺钉实体/螺纹，不设已锁紧。",
+      "existing_evidence_refs": [
+        "reference-observation:microduck:surface-bcf10e1ee088467e"
+      ]
+    },
+    {
+      "mesh_key": "bottom_head_shell",
+      "count": 1,
+      "region": "头部结构与电子件",
+      "instances": [
+        {
+          "part_ref": "part:microduck:52fdcacf474a463f",
+          "body": "jaw_soft",
+          "name": "头部下壳",
+          "geometry_url": "sources/SRC-000014.stl"
+        }
+      ],
+      "assembly_capability": "三闭壳点Ø2.69–2.70通过段对上壳Ø2.1；两侧点有Ø5.5有限头部腔，后点仅口边。四孔对电机支架，前缘承座定位面板，大圈孔承头轴承。",
+      "specific_counterparts": "上壳、motor_support、face_part及头部轴承。",
+      "basis": "Existing authored evidence and targeted source-geometry verification; scope is stated per capability.",
+      "concrete_open_question": "发表遗漏通过壁及承座原三角；不得补画后点完整Ø5.5腔。",
+      "existing_evidence_refs": [
+        "reference-observation:microduck:surface-c834a08c28430b2a",
+        "reference-observation:microduck:surface-47f6ec63ffbd2260",
+        "reference-observation:microduck:surface-0c29431031bf9755",
+        "reference-observation:microduck:surface-e2cd7d04c00e85dc",
+        "reference-observation:microduck:surface-8431cb06f2cd46b3",
+        "reference-observation:microduck:surface-bcf10e1ee088467e"
+      ]
+    },
+    {
+      "mesh_key": "face_part",
+      "count": 1,
+      "region": "头部结构与电子件",
+      "instances": [
+        {
+          "part_ref": "part:microduck:afa52198f7fad203",
+          "body": "jaw_soft",
+          "name": "面部件",
+          "geometry_url": "sources/SRC-000016.stl"
+        }
+      ],
+      "assembly_capability": "前缘双法向承座对下壳188.770mm²；四支柱对树莓派四角；正面承眼环530.351mm²；中央Ø14.5镜筒通道。",
+      "specific_counterparts": "下壳、树莓派、noenoeil、lens。",
+      "basis": "Existing authored evidence and targeted source-geometry verification; scope is stated per capability.",
+      "concrete_open_question": "支柱57.84×22.87与板58×23造成0/.13/.16/.206mm角孔轴距，需核修订/余量；不能只留两孔。",
+      "existing_evidence_refs": [
+        "reference-observation:microduck:surface-779d4abdff03d325",
+        "reference-observation:microduck:surface-0c29431031bf9755"
+      ]
+    },
+    {
+      "mesh_key": "pcb__raspberry_pi_zero_2_w",
+      "count": 1,
+      "region": "头部结构与电子件",
+      "instances": [
+        {
+          "part_ref": "part:microduck:ebfcaf98422b7b28",
+          "body": "jaw_soft",
+          "name": "树莓派 Zero 2 W 电路板外形",
+          "geometry_url": "sources/SRC-000031.stl"
+        }
+      ],
+      "assembly_capability": "四角Ø2.7、58×23孔对面板四支柱；同四孔与HAT逐轴对应，板中心距8.53、净间隙7.32mm。",
+      "specific_counterparts": "face_part:afa52198f7fad203、HAT:554503ef38151e67。",
+      "basis": "Existing authored evidence and targeted source-geometry verification; scope is stated per capability.",
+      "concrete_open_question": "隔柱和实际紧固件未入源；镜座20mm双孔不对应板四角。",
+      "existing_evidence_refs": [
+        "reference-observation:microduck:surface-c609c2eb5ea1e4d4"
+      ]
+    },
+    {
+      "mesh_key": "elec_rpi_robot_hat_pcb",
+      "count": 1,
+      "region": "头部结构与电子件",
+      "instances": [
+        {
+          "part_ref": "part:microduck:554503ef38151e67",
+          "body": "jaw_soft",
+          "name": "RPI Robot HAT 电路板外形",
+          "geometry_url": "sources/SRC-000015.stl"
+        }
+      ],
+      "assembly_capability": "58×23四角Ø2.7孔与树莓派重合；40个Ø1.02、2.54mm双排孔为电连接布局。",
+      "specific_counterparts": "树莓派ebfcaf98422b7b28，安装链回面板支柱。",
+      "basis": "Existing authored evidence and targeted source-geometry verification; scope is stated per capability.",
+      "concrete_open_question": "补隔柱/排针占位；C1板级STEP/BOM不能自动认作此源HAT修订。",
+      "existing_evidence_refs": []
+    },
+    {
+      "mesh_key": "m12_lens_holder",
+      "count": 1,
+      "region": "头部结构与电子件",
+      "instances": [
+        {
+          "part_ref": "part:microduck:2d2cde8ae8ebacac",
+          "body": "jaw_soft",
+          "name": "M12 镜头座",
+          "geometry_url": "sources/SRC-000025.stl"
+        }
+      ],
+      "assembly_capability": "Ø11.6内孔与镜头后段同轴重叠6.998mm；背面邻树莓派外形.03mm/12.239mm²；另有20mm间距双Ø2孔。",
+      "specific_counterparts": "lens:b61b0609c61fc572；树莓派板外形附近。",
+      "basis": "Existing authored evidence and targeted source-geometry verification; scope is stated per capability.",
+      "concrete_open_question": "双孔不对现板四角，需确认传感器小板或夹持件；平面贴合不等于固定。",
+      "existing_evidence_refs": [
+        "reference-observation:microduck:surface-c609c2eb5ea1e4d4"
+      ]
+    },
+    {
+      "mesh_key": "lens",
+      "count": 1,
+      "region": "头部结构与电子件",
+      "instances": [
+        {
+          "part_ref": "part:microduck:b61b0609c61fc572",
+          "body": "jaw_soft",
+          "name": "镜头外形",
+          "geometry_url": "sources/SRC-000024.stl"
+        }
+      ],
+      "assembly_capability": "Ø11.6后段入镜座；Ø13.6段穿面板Ø14.5通道；后肩与镜座有限间隔约.402mm。",
+      "specific_counterparts": "m12_lens_holder、face_part，眼环为视口邻件。",
+      "basis": "Existing authored evidence and targeted source-geometry verification; scope is stated per capability.",
+      "concrete_open_question": "STL无螺纹证据；Ø16.94前段与眼环Ø14.4包络轴向重叠约5.7mm，需核代理修订/位姿。",
+      "existing_evidence_refs": []
+    },
+    {
+      "mesh_key": "noenoeil",
+      "count": 1,
+      "region": "头部结构与电子件",
+      "instances": [
+        {
+          "part_ref": "part:microduck:2559a4c412bcda3e",
+          "body": "jaw_soft",
+          "name": "眼部部件",
+          "geometry_url": "sources/SRC-000029.stl"
+        }
+      ],
+      "assembly_capability": "Ø30环背面落在面板正面530.351mm²；Ø14.4内孔为视口/镜筒邻接通道。",
+      "specific_counterparts": "face_part:afa52198f7fad203、lens:b61b0609c61fc572。",
+      "basis": "Existing authored evidence and targeted source-geometry verification; scope is stated per capability.",
+      "concrete_open_question": "眼环防脱方式待定位；不得把包络相交写作已确认压配。",
+      "existing_evidence_refs": [
+        "reference-observation:microduck:surface-779d4abdff03d325"
+      ]
+    },
+    {
+      "mesh_key": "jaw",
+      "count": 1,
+      "region": "头部结构与电子件",
+      "instances": [
+        {
+          "part_ref": "part:microduck:328011951ac11ee7",
+          "body": "jaw_soft",
+          "name": "喙部件",
+          "geometry_url": "sources/SRC-000021.stl"
+        }
+      ],
+      "assembly_capability": "一端四孔PCD12接喙舵机X−；另一Ø10轴颈入默认轴承；托面承喙软质件。",
+      "specific_counterparts": "50f0c376d01bb0c1、a0775b54397eb21e、jaw_soft:f5797f92c2bf01b8。",
+      "basis": "Existing authored evidence and targeted source-geometry verification; scope is stated per capability.",
+      "concrete_open_question": "MJCF未建喙关节，需独立活动框架；轴承偏心不作为有效装配状态。",
+      "existing_evidence_refs": [
+        "installation-hypothesis:review-89bb8be1851b1d34",
+        "reference-observation:microduck:surface-efeb5a350af3a45b",
+        "reference-observation:microduck:surface-cc5269cafcfa30d8",
+        "reference-observation:microduck:surface-2706e228103d58c9"
+      ]
+    },
+    {
+      "mesh_key": "jaw_soft",
+      "count": 1,
+      "region": "头部结构与电子件",
+      "instances": [
+        {
+          "part_ref": "part:microduck:f5797f92c2bf01b8",
+          "body": "jaw_soft",
+          "name": "喙部软质件",
+          "geometry_url": "sources/SRC-000020.stl"
+        }
+      ],
+      "assembly_capability": "底部/周边对应喙托架，有限面431.875mm²，间隙约.0437mm，构成包覆落座。",
+      "specific_counterparts": "jaw:328011951ac11ee7。",
+      "basis": "Existing authored evidence and targeted source-geometry verification; scope is stated per capability.",
+      "concrete_open_question": "防脱/附着工艺未知；不因soft名称指派TPU。",
+      "existing_evidence_refs": [
+        "reference-observation:microduck:surface-cc5269cafcfa30d8"
+      ]
+    },
+    {
+      "mesh_key": "soft_mouth_top",
+      "count": 1,
+      "region": "头部结构与电子件",
+      "instances": [
+        {
+          "part_ref": "part:microduck:88b7496d63cb41ff",
+          "body": "jaw_soft",
+          "name": "喙上部软质件",
+          "geometry_url": "sources/SRC-000036.stl"
+        }
+      ],
+      "assembly_capability": "薄片对下壳前缘承座96.866mm²、间隙约.0326mm；外形配喙上缘。",
+      "specific_counterparts": "bottom_head_shell:52fdcacf474a463f；jaw_soft为活动邻件。",
+      "basis": "Existing authored evidence and targeted source-geometry verification; scope is stated per capability.",
+      "concrete_open_question": "明确闭壳夹持还是独立附着；不能仅因相邻绑定活动喙。",
+      "existing_evidence_refs": [
+        "reference-observation:microduck:surface-8431cb06f2cd46b3"
+      ]
+    },
+    {
+      "mesh_key": "speaker",
+      "count": 1,
+      "region": "头部结构与电子件",
+      "instances": [
+        {
+          "part_ref": "part:microduck:22f2cd114e324ec5",
+          "body": "jaw_soft",
+          "name": "扬声器外形",
+          "geometry_url": "sources/SRC-000039.stl"
+        }
+      ],
+      "assembly_capability": "仅35×25×7mm、12三角盒体，定位在头壳内；未见孔、卡舌或具体承座。",
+      "specific_counterparts": "头上壳/电机支架附近，真实机械对端未定位。",
+      "basis": "Existing authored evidence and targeted source-geometry verification; scope is stated per capability.",
+      "concrete_open_question": "只需确认这只扬声器的托座/压盖/粘接面；不能把整个body当固定接口。",
+      "existing_evidence_refs": [
+        "reference-observation:microduck:surface-96170c0e07f56bb2"
+      ]
+    }
+  ],
+  "targeted_new_observations": [
+    {
+      "pair": [
+        "trunk_base",
+        "xl330"
+      ],
+      "purpose": "Trunk integral pins to yaw-servo housing A1/A4",
+      "pin_feature_refs": [
+        "feature:microduck:203d2686e3321e4a:3703dcfa5c20d2e7",
+        "feature:microduck:203d2686e3321e4a:8b02221d3668c4a9",
+        "feature:microduck:203d2686e3321e4a:59aee658c7a35058",
+        "feature:microduck:203d2686e3321e4a:12348c71f6f1a559"
+      ],
+      "counterpart_map": {
+        "3703dcfa5c20d2e7": [
+          "part:microduck:09cb390e38430c1e",
+          "A4"
+        ],
+        "8b02221d3668c4a9": [
+          "part:microduck:09cb390e38430c1e",
+          "A1"
+        ],
+        "59aee658c7a35058": [
+          "part:microduck:a682dc3620df43f5",
+          "A4"
+        ],
+        "12348c71f6f1a559": [
+          "part:microduck:a682dc3620df43f5",
+          "A1"
+        ]
+      },
+      "basis": "project_inferred; pose plus finite pin/bore dimensions, not same body"
+    },
+    {
+      "pair": [
+        "power_support",
+        "trunk_base"
+      ],
+      "purpose": "Power support to trunk: two finite mounting passages",
+      "feature_pairs": [
+        [
+          "feature:microduck:e7e8275c7d01674c:3d93f9ef6dff",
+          "feature:microduck:203d2686e3321e4a:a6a83fe79862"
+        ],
+        [
+          "feature:microduck:e7e8275c7d01674c:49e63c171f46",
+          "feature:microduck:203d2686e3321e4a:e03362d5a41f"
+        ]
+      ],
+      "diameters_mm": [
+        2.5,
+        2.3
+      ],
+      "axis_distance_mm": 0,
+      "finite_gap_mm": 0.278
+    },
+    {
+      "pair": [
+        "banana_pcb_locker",
+        "power_support"
+      ],
+      "purpose": "Two-hole retaining bar and finite seats",
+      "centers_local_mm": {
+        "banana_pcb_locker": [
+          [
+            -25,
+            35,
+            53.6
+          ],
+          [
+            25,
+            35,
+            53.6
+          ]
+        ],
+        "power_support": [
+          [
+            -25,
+            34.8,
+            53.6
+          ],
+          [
+            25,
+            34.8,
+            53.6
+          ]
+        ]
+      },
+      "axis_local": [
+        0,
+        1,
+        0
+      ],
+      "entry_diameters_mm": [
+        2.2,
+        1.7718
+      ],
+      "opening_refs": [
+        "opening:microduck:78cf36c41e4fde06:063136b8e676f05c",
+        "opening:microduck:78cf36c41e4fde06:344d773c1547f821",
+        "opening:microduck:78cf36c41e4fde06:7cf84665ae51530b",
+        "opening:microduck:78cf36c41e4fde06:ee47b234fb09af90",
+        "opening:microduck:e7e8275c7d01674c:3840a734b8adf27a",
+        "opening:microduck:e7e8275c7d01674c:77ed02c19411c1af"
+      ],
+      "structure_refs": [
+        "structure:a222b41216cfd28c288e",
+        "structure:295f72105ac4ea2e1fca",
+        "structure:13d583e65d5c53c7037b",
+        "structure:895eb79f1e6a01851b7d"
+      ],
+      "surface_observation_ref": "reference-observation:microduck:surface-a90b521a50448746",
+      "surface_overlap_mm2": 21.431034
+    },
+    {
+      "pair": [
+        "motor_support",
+        "bottom_head_shell"
+      ],
+      "purpose": "Four-point motor-support to lower-head-shell mount",
+      "centers_local_mm": [
+        [
+          -30,
+          23
+        ],
+        [
+          -30,
+          -16
+        ],
+        [
+          19,
+          19.5
+        ],
+        [
+          9.35,
+          -23
+        ]
+      ],
+      "axis_local": [
+        0,
+        0,
+        1
+      ],
+      "diameters_mm": [
+        2.7,
+        2.2
+      ],
+      "finite_gap_mm": 0.7,
+      "fourth_lower_structure_ref": "structure:cbe83de34815ec62d537",
+      "surface_observation_ref": "reference-observation:microduck:surface-47f6ec63ffbd2260"
+    },
+    {
+      "pair": [
+        "top_head_shell",
+        "bottom_head_shell"
+      ],
+      "purpose": "Three-point upper/lower head-shell closure",
+      "centers_xy_local_mm": [
+        [
+          -39,
+          -49.5
+        ],
+        [
+          39,
+          -49.5
+        ],
+        [
+          0,
+          49.5
+        ]
+      ],
+      "axis_local": [
+        0,
+        0,
+        1
+      ],
+      "upper_entry_diameter_mm": 2.8,
+      "upper_receiving_diameter_mm": 2.1,
+      "lower_through_diameter_mm": [
+        2.6878,
+        2.7
+      ],
+      "lower_head_cavity_diameter_mm": 5.5,
+      "surface_observation_ref": "reference-observation:microduck:surface-bcf10e1ee088467e",
+      "raw_lower_members": [
+        {
+          "owner_ref": "part:microduck:52fdcacf474a463f",
+          "source_ref": "SRC-000014",
+          "axis_origin_local_m": [
+            -0.039,
+            -0.0495,
+            0
+          ],
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "through_diameter_m": [
+            0.0026878,
+            0.0027
+          ],
+          "through_axial_range_m": [
+            0.000996,
+            0.003
+          ],
+          "counterbore_diameter_m": 0.0055,
+          "through_wall_triangle_indices": [
+            3775,
+            3776,
+            3777,
+            3778,
+            3779,
+            3780,
+            3781,
+            3782,
+            3783,
+            3784,
+            3785,
+            3786,
+            3787,
+            3788,
+            3789,
+            3790,
+            3791,
+            3792,
+            3793,
+            3794,
+            3795,
+            3796,
+            3797,
+            3798,
+            3799,
+            3800,
+            3801,
+            3802,
+            3803,
+            3804,
+            3805,
+            3806,
+            3807,
+            3808,
+            3809,
+            3810,
+            3811,
+            3812,
+            3813,
+            3814,
+            3815,
+            3816,
+            3817,
+            3818,
+            3819,
+            3820,
+            3821,
+            3822,
+            3823,
+            3824,
+            3825,
+            3826,
+            3827,
+            3828,
+            3829,
+            3830,
+            3831,
+            3832,
+            3833,
+            3834,
+            3835,
+            3836,
+            3837,
+            3838,
+            3839,
+            3840,
+            3841,
+            3842,
+            3843,
+            3844,
+            3845,
+            3846,
+            3847,
+            3848,
+            3849,
+            3850,
+            3851,
+            3852,
+            3853,
+            3854,
+            3855,
+            3856,
+            3857,
+            3858,
+            3859,
+            3860,
+            3861,
+            3862,
+            3863,
+            3864,
+            3865,
+            3866,
+            3867,
+            3868,
+            3869,
+            3870,
+            3871,
+            3872,
+            3873,
+            3874
+          ],
+          "counterbore_wall_triangle_indices": [
+            224,
+            225,
+            226,
+            227,
+            228,
+            229,
+            230,
+            231,
+            232,
+            233,
+            234,
+            235,
+            236,
+            237,
+            238,
+            239,
+            240,
+            241,
+            242,
+            243,
+            244,
+            245,
+            246,
+            247,
+            248,
+            249,
+            250,
+            251,
+            252,
+            253,
+            254,
+            255,
+            256,
+            257,
+            258,
+            259,
+            260,
+            261,
+            262,
+            263,
+            264,
+            265,
+            266,
+            267,
+            268,
+            269,
+            270,
+            271,
+            272,
+            273,
+            274,
+            275,
+            276,
+            277,
+            278,
+            279,
+            280,
+            281,
+            282,
+            283,
+            284,
+            285,
+            286,
+            287,
+            288,
+            289,
+            290,
+            291,
+            292,
+            293,
+            294,
+            295,
+            296,
+            297,
+            298,
+            299,
+            300,
+            301,
+            302,
+            303,
+            304,
+            305,
+            306,
+            307,
+            308,
+            309,
+            310,
+            311,
+            312,
+            313,
+            314,
+            315,
+            316,
+            317,
+            318,
+            319,
+            320,
+            321,
+            322,
+            323,
+            324,
+            325,
+            326,
+            327,
+            328,
+            329,
+            330,
+            331,
+            332,
+            333,
+            334,
+            335,
+            336,
+            337,
+            338,
+            339,
+            340,
+            341,
+            342,
+            343,
+            344,
+            345,
+            346,
+            347,
+            348,
+            349,
+            350,
+            351,
+            352,
+            353,
+            354,
+            355,
+            356,
+            357,
+            358,
+            359,
+            360,
+            361,
+            362,
+            363,
+            364,
+            365,
+            366,
+            367,
+            368,
+            369,
+            370,
+            371,
+            372,
+            373,
+            374,
+            375,
+            376,
+            377,
+            378,
+            379,
+            380,
+            381,
+            382,
+            383,
+            384,
+            385,
+            386,
+            387,
+            388,
+            389,
+            390,
+            391,
+            392,
+            393,
+            394,
+            395,
+            396,
+            397,
+            398,
+            399
+          ],
+          "counterbore_evidence": "finite_wall"
+        },
+        {
+          "owner_ref": "part:microduck:52fdcacf474a463f",
+          "source_ref": "SRC-000014",
+          "axis_origin_local_m": [
+            0.039,
+            -0.0495,
+            0
+          ],
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "through_diameter_m": [
+            0.0026878,
+            0.0027
+          ],
+          "through_axial_range_m": [
+            0.000996,
+            0.003
+          ],
+          "counterbore_diameter_m": 0.0055,
+          "through_wall_triangle_indices": [
+            400,
+            401,
+            402,
+            403,
+            404,
+            405,
+            406,
+            407,
+            408,
+            409,
+            410,
+            411,
+            412,
+            413,
+            414,
+            415,
+            416,
+            417,
+            418,
+            419,
+            420,
+            421,
+            422,
+            423,
+            424,
+            425,
+            426,
+            427,
+            428,
+            429,
+            430,
+            431,
+            432,
+            433,
+            434,
+            435,
+            436,
+            437,
+            438,
+            439,
+            440,
+            441,
+            442,
+            443,
+            444,
+            445,
+            446,
+            447,
+            448,
+            449,
+            450,
+            451,
+            452,
+            453,
+            454,
+            455,
+            456,
+            457,
+            458,
+            459,
+            460,
+            461,
+            462,
+            463,
+            464,
+            465,
+            466,
+            467,
+            468,
+            469,
+            470,
+            471,
+            472,
+            473,
+            474,
+            475,
+            476,
+            477,
+            478,
+            479,
+            480,
+            481,
+            482,
+            483,
+            484,
+            485,
+            486,
+            487,
+            488,
+            489,
+            490,
+            491,
+            492,
+            493,
+            494,
+            495,
+            496,
+            497,
+            498,
+            499
+          ],
+          "counterbore_wall_triangle_indices": [
+            500,
+            501,
+            502,
+            503,
+            504,
+            505,
+            506,
+            507,
+            508,
+            509,
+            510,
+            511,
+            512,
+            513,
+            514,
+            515,
+            516,
+            517,
+            518,
+            519,
+            520,
+            521,
+            522,
+            523,
+            524,
+            525,
+            526,
+            527,
+            528,
+            529,
+            530,
+            531,
+            532,
+            533,
+            534,
+            535,
+            536,
+            537,
+            538,
+            539,
+            540,
+            541,
+            542,
+            543,
+            544,
+            545,
+            546,
+            547,
+            548,
+            549,
+            550,
+            551,
+            552,
+            553,
+            554,
+            555,
+            556,
+            557,
+            558,
+            559,
+            560,
+            561,
+            562,
+            563,
+            564,
+            565,
+            566,
+            567,
+            568,
+            569,
+            570,
+            571,
+            572,
+            573,
+            574,
+            575,
+            576,
+            577,
+            578,
+            579,
+            580,
+            581,
+            582,
+            583,
+            584,
+            585,
+            586,
+            587,
+            588,
+            589,
+            590,
+            591,
+            592,
+            593,
+            594,
+            595,
+            596,
+            597,
+            598,
+            599,
+            600,
+            601,
+            602,
+            603,
+            604,
+            605,
+            606,
+            607,
+            608,
+            609,
+            610,
+            611,
+            612,
+            613,
+            614,
+            615,
+            616,
+            617,
+            618,
+            619,
+            620,
+            621,
+            622,
+            623,
+            624,
+            625,
+            626,
+            627,
+            628,
+            629,
+            630,
+            631,
+            632,
+            633,
+            634,
+            635,
+            636,
+            637,
+            638,
+            639,
+            640,
+            641,
+            642,
+            643,
+            644,
+            645,
+            646,
+            647,
+            648,
+            649,
+            650,
+            651,
+            652,
+            653,
+            654,
+            655,
+            656,
+            657,
+            658,
+            659,
+            660,
+            661,
+            662,
+            663,
+            664,
+            665,
+            666,
+            667,
+            668,
+            669,
+            670,
+            671,
+            672,
+            673,
+            674,
+            675
+          ],
+          "counterbore_evidence": "finite_wall"
+        },
+        {
+          "owner_ref": "part:microduck:52fdcacf474a463f",
+          "source_ref": "SRC-000014",
+          "axis_origin_local_m": [
+            0,
+            0.0495,
+            0
+          ],
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "through_diameter_m": [
+            0.0026878,
+            0.0027
+          ],
+          "through_axial_range_m": [
+            0.000996,
+            0.003
+          ],
+          "counterbore_diameter_m": 0.0055,
+          "through_wall_triangle_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99,
+            100,
+            101
+          ],
+          "counterbore_wall_triangle_indices": [],
+          "counterbore_evidence": "opening_ring_only"
+        }
+      ],
+      "lower_head_cavity_scope": "finite cylinder walls at x=?39/y=-49.5; at x=0/y=49.5 only a 5.5mm boundary ring was located, no complete finite cavity wall"
+    },
+    {
+      "pair": [
+        "elec_rpi_robot_hat_pcb",
+        "pcb__raspberry_pi_zero_2_w"
+      ],
+      "purpose": "Four-corner HAT/Raspberry spacer stack",
+      "spacing_mm": [
+        58,
+        23
+      ],
+      "hole_diameter_mm": 2.7,
+      "max_axis_distance_mm": 2.2e-05,
+      "board_center_separation_mm": 8.53,
+      "net_surface_gap_mm": 7.32,
+      "hat_feature_refs": [
+        "feature:microduck:554503ef38151e67:0afdc3563e09",
+        "feature:microduck:554503ef38151e67:eafcd73c5481",
+        "feature:microduck:554503ef38151e67:3299e9c5856d",
+        "feature:microduck:554503ef38151e67:3afa6241d28a"
+      ],
+      "raspberry_feature_refs": [
+        "feature:microduck:ebfcaf98422b7b28:b3ac75c3bc5d",
+        "feature:microduck:ebfcaf98422b7b28:1f0751efebd1",
+        "feature:microduck:ebfcaf98422b7b28:629b6e97257f",
+        "feature:microduck:ebfcaf98422b7b28:ae90d9754228"
+      ],
+      "retainers_present_in_source": false
+    },
+    {
+      "pair": [
+        "face_part",
+        "pcb__raspberry_pi_zero_2_w"
+      ],
+      "purpose": "Four face-panel standoffs versus Raspberry mounting holes",
+      "source_standoff_spacing_mm": [
+        57.84,
+        22.87
+      ],
+      "board_spacing_mm": [
+        58,
+        23
+      ],
+      "axis_distances_mm": [
+        0,
+        0.13,
+        0.16,
+        0.206
+      ],
+      "note": "Existing review selected two holes only; four-corner capability is useful but current coordinates must not be described as four exactly aligned holes."
+    },
+    {
+      "pair": [
+        "m12_lens_holder",
+        "lens"
+      ],
+      "purpose": "Finite lens-barrel to holder-bore fit",
+      "holder_bore_feature_ref": "feature:microduck:2d2cde8ae8ebacac:5022d8444c7f",
+      "lens_shaft_feature_ref": "feature:microduck:b61b0609c61fc572:95fb515408df",
+      "diameters_mm": [
+        11.6,
+        11.6
+      ],
+      "axis_distance_mm": 0,
+      "finite_overlap_mm": 6.998,
+      "thread_specification": "unresolved; no thread geometry"
+    }
+  ],
+  "selected_existing_features": {
+    "trunk_base": [
+      {
+        "feature_ref": "feature:microduck:203d2686e3321e4a:e79dce6f60d2",
+        "geometry": {
+          "type": "cylinder",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "origin": [
+            -0.02549999982337694,
+            0.020500000228055065,
+            0.01699999999254942
+          ],
+          "radius_m": 0.0011499999491542865,
+          "axial_range_m": [
+            -0.0005000000819563866,
+            0.0005000000819563866
+          ]
+        }
+      },
+      {
+        "feature_ref": "feature:microduck:203d2686e3321e4a:a6a83fe79862",
+        "geometry": {
+          "type": "cylinder",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "origin": [
+            -0.009500000026750213,
+            0.020500000228055072,
+            0.01699999999254942
+          ],
+          "radius_m": 0.0011499999674010675,
+          "axial_range_m": [
+            -0.0005000000819563866,
+            0.0005000000819563866
+          ]
+        }
+      },
+      {
+        "feature_ref": "feature:microduck:203d2686e3321e4a:e03362d5a41f",
+        "geometry": {
+          "type": "cylinder",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "origin": [
+            0.009500000026750213,
+            0.020500000228055072,
+            0.01699999999254942
+          ],
+          "radius_m": 0.0011499999674010675,
+          "axial_range_m": [
+            -0.0005000000819563866,
+            0.0005000000819563866
+          ]
+        }
+      },
+      {
+        "feature_ref": "feature:microduck:203d2686e3321e4a:6a542d3cfbef",
+        "geometry": {
+          "type": "cylinder",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "origin": [
+            0.02549999982337694,
+            0.020500000228055065,
+            0.01699999999254942
+          ],
+          "radius_m": 0.0011499999491542865,
+          "axial_range_m": [
+            -0.0005000000819563866,
+            0.0005000000819563866
+          ]
+        }
+      },
+      {
+        "feature_ref": "feature:microduck:203d2686e3321e4a:3703dcfa5c20d2e7",
+        "geometry": {
+          "type": "conical_frustum",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "origin": [
+            -0.02550000006900019,
+            -0.009500000079388591,
+            0.017500000074505806
+          ],
+          "radius_start_m": 0.0008999991522556757,
+          "radius_end_m": 0.0007951844408905907,
+          "length_m": 0.0020000003278255463
+        }
+      },
+      {
+        "feature_ref": "feature:microduck:203d2686e3321e4a:8b02221d3668c4a9",
+        "geometry": {
+          "type": "conical_frustum",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "origin": [
+            -0.009500000079388593,
+            -0.009500000079388593,
+            0.017500000074505806
+          ],
+          "radius_start_m": 0.0009000002403966838,
+          "radius_end_m": 0.0007951844563028021,
+          "length_m": 0.0020000003278255463
+        }
+      },
+      {
+        "feature_ref": "feature:microduck:203d2686e3321e4a:59aee658c7a35058",
+        "geometry": {
+          "type": "conical_frustum",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "origin": [
+            0.009500000079388593,
+            -0.009500000079388593,
+            0.017500000074505806
+          ],
+          "radius_start_m": 0.0009000002544808562,
+          "radius_end_m": 0.0007951844563028021,
+          "length_m": 0.0020000003278255463
+        }
+      },
+      {
+        "feature_ref": "feature:microduck:203d2686e3321e4a:12348c71f6f1a559",
+        "geometry": {
+          "type": "conical_frustum",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "origin": [
+            0.02550000006900019,
+            -0.009500000079388591,
+            0.017500000074505806
+          ],
+          "radius_start_m": 0.0008999991663398655,
+          "radius_end_m": 0.0007951844408905907,
+          "length_m": 0.0020000003278255463
+        }
+      }
+    ],
+    "power_support": [
+      {
+        "feature_ref": "feature:microduck:e7e8275c7d01674c:3d93f9ef6dff",
+        "geometry": {
+          "type": "cylinder",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "origin": [
+            -0.009500000050515331,
+            0.02050000009513147,
+            0.015300000086426735
+          ],
+          "radius_m": 0.0012500000360143202,
+          "axial_range_m": [
+            -0.0009432714432477951,
+            0.0009432714432477951
+          ]
+        }
+      },
+      {
+        "feature_ref": "feature:microduck:e7e8275c7d01674c:c69f1a3d2d32",
+        "geometry": {
+          "type": "cylinder",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "origin": [
+            -0.009500000050515331,
+            0.02050000009513147,
+            0.04169999994337559
+          ],
+          "radius_m": 0.0012500000360143202,
+          "axial_range_m": [
+            -0.0009432714432477951,
+            0.0009432714432477951
+          ]
+        }
+      },
+      {
+        "feature_ref": "feature:microduck:e7e8275c7d01674c:49e63c171f46",
+        "geometry": {
+          "type": "cylinder",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "origin": [
+            0.009500000050515331,
+            0.02050000009513147,
+            0.015300000086426735
+          ],
+          "radius_m": 0.0012500000360143202,
+          "axial_range_m": [
+            -0.0009432714432477951,
+            0.0009432714432477951
+          ]
+        }
+      },
+      {
+        "feature_ref": "feature:microduck:e7e8275c7d01674c:11c8f47b8082",
+        "geometry": {
+          "type": "cylinder",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "origin": [
+            0.009500000050515331,
+            0.02050000009513147,
+            0.04169999994337559
+          ],
+          "radius_m": 0.0012500000360143202,
+          "axial_range_m": [
+            -0.0009432714432477951,
+            0.0009432714432477951
+          ]
+        }
+      }
+    ],
+    "motor_support": [
+      {
+        "feature_ref": "feature:microduck:986b5adf27910138:24d9b6ed4de0",
+        "geometry": {
+          "type": "cylinder",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "origin": [
+            -0.030000000192563298,
+            0.022999999975267162,
+            0.0012499999575084075
+          ],
+          "radius_m": 0.0013499999991126179,
+          "axial_range_m": [
+            -0.0008499999676132575,
+            0.0008499999676132575
+          ]
+        }
+      },
+      {
+        "feature_ref": "feature:microduck:986b5adf27910138:791505f56d30",
+        "geometry": {
+          "type": "cylinder",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "origin": [
+            -0.03000000019256326,
+            -0.01599999980471978,
+            0.0012499999575084075
+          ],
+          "radius_m": 0.001349999860806041,
+          "axial_range_m": [
+            -0.0008499999676132575,
+            0.0008499999676132575
+          ]
+        }
+      },
+      {
+        "feature_ref": "feature:microduck:986b5adf27910138:dad0c420e9ee",
+        "geometry": {
+          "type": "cylinder",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "origin": [
+            0.009350000080199162,
+            -0.02299999997526717,
+            0.0012499999575084075
+          ],
+          "radius_m": 0.0013500000675912014,
+          "axial_range_m": [
+            -0.0008499999676132575,
+            0.0008499999676132575
+          ]
+        }
+      },
+      {
+        "feature_ref": "feature:microduck:986b5adf27910138:32c03c204fe6",
+        "geometry": {
+          "type": "cylinder",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "origin": [
+            0.019000000099785738,
+            0.01950000006497833,
+            0.0012499999575084075
+          ],
+          "radius_m": 0.0013500001061738573,
+          "axial_range_m": [
+            -0.0008499999676132575,
+            0.0008499999676132575
+          ]
+        }
+      }
+    ],
+    "top_head_shell": [
+      {
+        "feature_ref": "feature:microduck:82d68e991b23c2a3:141c50699b98",
+        "geometry": {
+          "type": "cylinder",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "origin": [
+            -0.039000000067145414,
+            -0.04949999988857162,
+            0.009600000223144889
+          ],
+          "radius_m": 0.0010499996830234816,
+          "axial_range_m": [
+            -0.005600000033155084,
+            0.005600000033155084
+          ]
+        }
+      },
+      {
+        "feature_ref": "feature:microduck:82d68e991b23c2a3:9a82f826734d",
+        "geometry": {
+          "type": "cylinder",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "origin": [
+            -0.03899999994194069,
+            -0.04950000031569618,
+            0.003600000054575503
+          ],
+          "radius_m": 0.001399999771466858,
+          "axial_range_m": [
+            -0.00040000013541430235,
+            0.00040000013541430235
+          ]
+        }
+      },
+      {
+        "feature_ref": "feature:microduck:82d68e991b23c2a3:8d964ca4b872",
+        "geometry": {
+          "type": "cylinder",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "origin": [
+            -1.5394587233252583e-20,
+            0.04950000031569615,
+            0.003600000054575503
+          ],
+          "radius_m": 0.001399999966782442,
+          "axial_range_m": [
+            -0.00040000013541430235,
+            0.00040000013541430235
+          ]
+        }
+      },
+      {
+        "feature_ref": "feature:microduck:82d68e991b23c2a3:80bc2b57838b",
+        "geometry": {
+          "type": "cylinder",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "origin": [
+            1.617000346240565e-20,
+            0.049499999888571726,
+            0.009600000223144889
+          ],
+          "radius_m": 0.0010499998700017063,
+          "axial_range_m": [
+            -0.005600000033155084,
+            0.005600000033155084
+          ]
+        }
+      },
+      {
+        "feature_ref": "feature:microduck:82d68e991b23c2a3:7ba8561d10e9",
+        "geometry": {
+          "type": "cylinder",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "origin": [
+            0.03899999994194069,
+            -0.04950000031569618,
+            0.003600000054575503
+          ],
+          "radius_m": 0.001399999771466858,
+          "axial_range_m": [
+            -0.00040000013541430235,
+            0.00040000013541430235
+          ]
+        }
+      },
+      {
+        "feature_ref": "feature:microduck:82d68e991b23c2a3:108eb82e06db",
+        "geometry": {
+          "type": "cylinder",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "origin": [
+            0.039000000067145414,
+            -0.04949999988857162,
+            0.009600000223144889
+          ],
+          "radius_m": 0.0010499996830234816,
+          "axial_range_m": [
+            -0.005600000033155084,
+            0.005600000033155084
+          ]
+        }
+      }
+    ],
+    "bottom_head_shell": [
+      {
+        "feature_ref": "feature:microduck:52fdcacf474a463f:099d86090113",
+        "geometry": {
+          "type": "cylinder",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "origin": [
+            -0.02999999999142483,
+            0.02300000004391748,
+            -0.0051500000699888915
+          ],
+          "radius_m": 0.001100000016860007,
+          "axial_range_m": [
+            -0.004650000046240166,
+            0.004650000046240166
+          ]
+        }
+      },
+      {
+        "feature_ref": "feature:microduck:52fdcacf474a463f:1ec9be99b3d7",
+        "geometry": {
+          "type": "cylinder",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "origin": [
+            -0.02999999999142478,
+            -0.016000000109909943,
+            -0.0051500000699888915
+          ],
+          "radius_m": 0.0010999999973357777,
+          "axial_range_m": [
+            -0.004650000046240166,
+            0.004650000046240166
+          ]
+        }
+      },
+      {
+        "feature_ref": "feature:microduck:52fdcacf474a463f:5df2d02fe08c",
+        "geometry": {
+          "type": "cylinder",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "origin": [
+            0.01900000001698545,
+            0.019500000132792378,
+            -0.0051500000699888915
+          ],
+          "radius_m": 0.0010999999648394,
+          "axial_range_m": [
+            -0.004650000046240166,
+            0.004650000046240166
+          ]
+        }
+      }
+    ],
+    "face_part": [
+      {
+        "feature_ref": "feature:microduck:afa52198f7fad203:69049324045a",
+        "geometry": {
+          "type": "cylinder",
+          "axis": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "origin": [
+            -0.028920000059960132,
+            -0.04884999990463257,
+            0.008565000064335984
+          ],
+          "radius_m": 0.0030000000386336797,
+          "axial_range_m": [
+            -0.005350001156330109,
+            0.005350001156330109
+          ]
+        }
+      },
+      {
+        "feature_ref": "feature:microduck:afa52198f7fad203:f8f3784f78e9",
+        "geometry": {
+          "type": "cylinder",
+          "axis": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "origin": [
+            -0.028920000059960132,
+            -0.04884999990463257,
+            0.03143499997620031
+          ],
+          "radius_m": 0.0030000001111412447,
+          "axial_range_m": [
+            -0.005350001156330109,
+            0.005350001156330109
+          ]
+        }
+      },
+      {
+        "feature_ref": "feature:microduck:afa52198f7fad203:fb1456311ee5",
+        "geometry": {
+          "type": "cylinder",
+          "axis": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "origin": [
+            -0.028920000047623653,
+            -0.04350000061094761,
+            0.008565000001961505
+          ],
+          "radius_m": 0.001350000124796347,
+          "axial_range_m": [
+            -0.000499999150633812,
+            0.000499999150633812
+          ]
+        }
+      },
+      {
+        "feature_ref": "feature:microduck:afa52198f7fad203:650c2f0240e2",
+        "geometry": {
+          "type": "cylinder",
+          "axis": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "origin": [
+            -0.028920000047623618,
+            -0.04350000061094761,
+            0.03143499990386896
+          ],
+          "radius_m": 0.0013500000882053745,
+          "axial_range_m": [
+            -0.000499999150633812,
+            0.000499999150633812
+          ]
+        }
+      },
+      {
+        "feature_ref": "feature:microduck:afa52198f7fad203:6df8692f29ef",
+        "geometry": {
+          "type": "cylinder",
+          "axis": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "origin": [
+            -0.02891999974797114,
+            -0.04600000008940697,
+            0.03143500011472888
+          ],
+          "radius_m": 0.0010250000692651013,
+          "axial_range_m": [
+            -0.0020000003278255463,
+            0.0020000003278255463
+          ]
+        }
+      },
+      {
+        "feature_ref": "feature:microduck:afa52198f7fad203:c23c696f5485",
+        "geometry": {
+          "type": "cylinder",
+          "axis": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "origin": [
+            -0.028919999747970965,
+            -0.04600000008940697,
+            0.00856500004264319
+          ],
+          "radius_m": 0.0010250000151624053,
+          "axial_range_m": [
+            -0.0020000003278255463,
+            0.0020000003278255463
+          ]
+        }
+      },
+      {
+        "feature_ref": "feature:microduck:afa52198f7fad203:0a22b706f4ed",
+        "geometry": {
+          "type": "cylinder",
+          "axis": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "origin": [
+            0.028919999747970965,
+            -0.04600000008940697,
+            0.00856500004264319
+          ],
+          "radius_m": 0.0010250000151624053,
+          "axial_range_m": [
+            -0.0020000003278255463,
+            0.0020000003278255463
+          ]
+        }
+      },
+      {
+        "feature_ref": "feature:microduck:afa52198f7fad203:348c0e5faab7",
+        "geometry": {
+          "type": "cylinder",
+          "axis": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "origin": [
+            0.02891999974797114,
+            -0.04600000008940697,
+            0.03143500011472888
+          ],
+          "radius_m": 0.0010250000692651013,
+          "axial_range_m": [
+            -0.0020000003278255463,
+            0.0020000003278255463
+          ]
+        }
+      },
+      {
+        "feature_ref": "feature:microduck:afa52198f7fad203:7e37f55a8591",
+        "geometry": {
+          "type": "cylinder",
+          "axis": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "origin": [
+            0.028920000047623618,
+            -0.04350000061094761,
+            0.03143499990386896
+          ],
+          "radius_m": 0.0013500000882053745,
+          "axial_range_m": [
+            -0.000499999150633812,
+            0.000499999150633812
+          ]
+        }
+      },
+      {
+        "feature_ref": "feature:microduck:afa52198f7fad203:bd9b0f80d94e",
+        "geometry": {
+          "type": "cylinder",
+          "axis": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "origin": [
+            0.028920000047623653,
+            -0.04350000061094761,
+            0.008565000001961505
+          ],
+          "radius_m": 0.001350000124796347,
+          "axial_range_m": [
+            -0.000499999150633812,
+            0.000499999150633812
+          ]
+        }
+      },
+      {
+        "feature_ref": "feature:microduck:afa52198f7fad203:0668769d3241",
+        "geometry": {
+          "type": "cylinder",
+          "axis": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "origin": [
+            0.028920000059960132,
+            -0.04884999990463257,
+            0.008565000064335984
+          ],
+          "radius_m": 0.0030000000386336797,
+          "axial_range_m": [
+            -0.005350001156330109,
+            0.005350001156330109
+          ]
+        }
+      },
+      {
+        "feature_ref": "feature:microduck:afa52198f7fad203:ec3b9aebab8e",
+        "geometry": {
+          "type": "cylinder",
+          "axis": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "origin": [
+            0.028920000059960132,
+            -0.04884999990463257,
+            0.03143499997620031
+          ],
+          "radius_m": 0.0030000001111412447,
+          "axial_range_m": [
+            -0.005350001156330109,
+            0.005350001156330109
+          ]
+        }
+      }
+    ],
+    "pcb__raspberry_pi_zero_2_w": [
+      {
+        "feature_ref": "feature:microduck:ebfcaf98422b7b28:b3ac75c3bc5d",
+        "geometry": {
+          "type": "cylinder",
+          "axis": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "origin": [
+            -0.029000000093737238,
+            0.0,
+            -0.011499999920824639
+          ],
+          "radius_m": 0.0013499998984295456,
+          "axial_range_m": [
+            -0.0007900000200606883,
+            0.0007900000200606883
+          ]
+        }
+      },
+      {
+        "feature_ref": "feature:microduck:ebfcaf98422b7b28:1f0751efebd1",
+        "geometry": {
+          "type": "cylinder",
+          "axis": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "origin": [
+            -0.029000000093737238,
+            0.0,
+            0.011499999920824639
+          ],
+          "radius_m": 0.0013499998984295456,
+          "axial_range_m": [
+            -0.0007900000200606883,
+            0.0007900000200606883
+          ]
+        }
+      },
+      {
+        "feature_ref": "feature:microduck:ebfcaf98422b7b28:629b6e97257f",
+        "geometry": {
+          "type": "cylinder",
+          "axis": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "origin": [
+            0.029000000093737238,
+            0.0,
+            -0.011499999920824639
+          ],
+          "radius_m": 0.0013499998984295456,
+          "axial_range_m": [
+            -0.0007900000200606883,
+            0.0007900000200606883
+          ]
+        }
+      },
+      {
+        "feature_ref": "feature:microduck:ebfcaf98422b7b28:ae90d9754228",
+        "geometry": {
+          "type": "cylinder",
+          "axis": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "origin": [
+            0.029000000093737238,
+            0.0,
+            0.011499999920824639
+          ],
+          "radius_m": 0.0013499998984295456,
+          "axial_range_m": [
+            -0.0007900000200606883,
+            0.0007900000200606883
+          ]
+        }
+      }
+    ],
+    "elec_rpi_robot_hat_pcb": [
+      {
+        "feature_ref": "feature:microduck:554503ef38151e67:0afdc3563e09",
+        "geometry": {
+          "type": "cylinder",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "origin": [
+            5.000002215199321e-06,
+            -5.000002215199321e-06,
+            0.0004199999966658652
+          ],
+          "radius_m": 0.001349999996949808,
+          "axial_range_m": [
+            -0.0004199999966658652,
+            0.0004199999966658652
+          ]
+        }
+      },
+      {
+        "feature_ref": "feature:microduck:554503ef38151e67:eafcd73c5481",
+        "geometry": {
+          "type": "cylinder",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "origin": [
+            5.0000022152000875e-06,
+            -0.023005000095017398,
+            0.0004199999966658652
+          ],
+          "radius_m": 0.0013500000179250684,
+          "axial_range_m": [
+            -0.0004199999966658652,
+            0.0004199999966658652
+          ]
+        }
+      },
+      {
+        "feature_ref": "feature:microduck:554503ef38151e67:3299e9c5856d",
+        "geometry": {
+          "type": "cylinder",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "origin": [
+            0.05800500005804702,
+            -5.000002215199635e-06,
+            0.0004199999966658652
+          ],
+          "radius_m": 0.0013499999682640709,
+          "axial_range_m": [
+            -0.0004199999966658652,
+            0.0004199999966658652
+          ]
+        }
+      },
+      {
+        "feature_ref": "feature:microduck:554503ef38151e67:3afa6241d28a",
+        "geometry": {
+          "type": "cylinder",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "origin": [
+            0.05800500005804703,
+            -0.023005000095017287,
+            0.0004199999966658652
+          ],
+          "radius_m": 0.0013499999892393278,
+          "axial_range_m": [
+            -0.0004199999966658652,
+            0.0004199999966658652
+          ]
+        }
+      }
+    ],
+    "m12_lens_holder": [
+      {
+        "feature_ref": "feature:microduck:2d2cde8ae8ebacac:8eddfbf047bc",
+        "geometry": {
+          "type": "cylinder",
+          "axis": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "origin": [
+            -0.009999999961267008,
+            0.0017999999690800905,
+            1.0987631924465539e-20
+          ],
+          "radius_m": 0.001000000035991118,
+          "axial_range_m": [
+            -0.0017999999690800905,
+            0.0017999999690800905
+          ]
+        }
+      },
+      {
+        "feature_ref": "feature:microduck:2d2cde8ae8ebacac:5022d8444c7f",
+        "geometry": {
+          "type": "cylinder",
+          "axis": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "origin": [
+            1.233804594076932e-13,
+            0.010548985796049237,
+            -2.7905907944679453e-11
+          ],
+          "radius_m": 0.00580000003449629,
+          "axial_range_m": [
+            -0.003748985705897212,
+            0.003748985705897212
+          ]
+        }
+      },
+      {
+        "feature_ref": "feature:microduck:2d2cde8ae8ebacac:bad2cf90c164",
+        "geometry": {
+          "type": "cylinder",
+          "axis": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "origin": [
+            2.281138146964813e-13,
+            0.011200000066310167,
+            -9.329365405208456e-12
+          ],
+          "radius_m": 0.0076000000137487235,
+          "axial_range_m": [
+            -0.0034000002779066563,
+            0.0034000002779066563
+          ]
+        }
+      },
+      {
+        "feature_ref": "feature:microduck:2d2cde8ae8ebacac:e079de842c2b",
+        "geometry": {
+          "type": "cylinder",
+          "axis": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "origin": [
+            0.009999999961267008,
+            0.0017999999690800905,
+            1.0987645836193238e-20
+          ],
+          "radius_m": 0.001000000035991118,
+          "axial_range_m": [
+            -0.0017999999690800905,
+            0.0017999999690800905
+          ]
+        }
+      }
+    ],
+    "lens": [
+      {
+        "feature_ref": "feature:microduck:b61b0609c61fc572:95fb515408df",
+        "geometry": {
+          "type": "cylinder",
+          "axis": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "origin": [
+            3.577385252912442e-20,
+            0.011100000003352761,
+            1.094715374742141e-19
+          ],
+          "radius_m": 0.005800000048617699,
+          "axial_range_m": [
+            -0.003700000001117587,
+            0.003700000001117587
+          ]
+        }
+      },
+      {
+        "feature_ref": "feature:microduck:b61b0609c61fc572:d19f040f430a",
+        "geometry": {
+          "type": "cylinder",
+          "axis": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "origin": [
+            4.1941758936116575e-20,
+            0.016460000071674585,
+            1.2538279342392543e-19
+          ],
+          "radius_m": 0.006799999997759001,
+          "axial_range_m": [
+            -0.001660000067204237,
+            0.001660000067204237
+          ]
+        }
+      },
+      {
+        "feature_ref": "feature:microduck:b61b0609c61fc572:c3238faf057d",
+        "geometry": {
+          "type": "cylinder",
+          "axis": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "origin": [
+            5.2242157530707605e-20,
+            0.020969999954104424,
+            1.4151857526798195e-19
+          ],
+          "radius_m": 0.008469999955585152,
+          "axial_range_m": [
+            -0.002849999815225601,
+            0.002849999815225601
+          ]
+        }
+      }
+    ],
+    "noenoeil": [
+      {
+        "feature_ref": "feature:microduck:2559a4c412bcda3e:9161066bc6dc",
+        "geometry": {
+          "type": "cylinder",
+          "axis": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "origin": [
+            -9.368877825205648e-28,
+            -0.05925000086426735,
+            0.0199999998809216
+          ],
+          "radius_m": 0.01499999986576422,
+          "axial_range_m": [
+            -0.003750000149011612,
+            0.003750000149011612
+          ]
+        }
+      },
+      {
+        "feature_ref": "feature:microduck:2559a4c412bcda3e:d5228fb14a4b",
+        "geometry": {
+          "type": "cylinder",
+          "axis": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "origin": [
+            1.2840034117529133e-19,
+            -0.05850000120699406,
+            0.01999999999337088
+          ],
+          "radius_m": 0.007200000015730439,
+          "axial_range_m": [
+            -0.0030000004917383194,
+            0.0030000004917383194
+          ]
+        }
+      }
+    ]
+  },
+  "minimum_next_data": [
+    {
+      "scope": "膝端盘与连杆",
+      "needed": "独立活动端盘框架及装配相位；PCD12用途保留，源45°不作齐孔映射。"
+    },
+    {
+      "scope": "底座及大腿销",
+      "needed": "明确源局部销组、入口侧和实例对；新底座组为项目推断，大腿沿用用户声明。"
+    },
+    {
+      "scope": "躯干压条和电池",
+      "needed": "被压板件身份；电池滑入与防退出锁持路径。"
+    },
+    {
+      "scope": "头壳与电机支架",
+      "needed": "三闭壳点、四支架孔和承座面；遗漏孔壁可直接引用原三角。"
+    },
+    {
+      "scope": "面板/树莓派/HAT",
+      "needed": "完整四角声明、7.32mm净距隔柱占位，以及0–.206mm源孔差的修订/余量。"
+    },
+    {
+      "scope": "镜座与眼环",
+      "needed": "20mm双孔对应的传感器小板/夹持件；核镜筒与眼环包络相交是否代理简化。"
+    },
+    {
+      "scope": "头部非圆件",
+      "needed": "面板限形面、软套/上唇片承座、扬声器具体保持面；不指定未见材料工艺。"
+    },
+    {
+      "scope": "轴承及脚足",
+      "needed": "采用专项已定位圈面/套合/钩头/阶孔，仅保留专项列出的径向定位、抗拔及头部偏心问题。"
+    }
+  ],
+  "companion_reports": [
+    "servo-findings.md",
+    "bearing-findings.md",
+    "foot-findings.md",
+    "foot-connections.json"
+  ],
+  "servo_housing_mounts": [
+    {
+      "servo": "part:microduck:a682dc3620df43f5",
+      "side": "A",
+      "member_names": [
+        "A2",
+        "A3"
+      ],
+      "counterpart": "part:microduck:203d2686e3321e4a",
+      "counterpart_feature_refs": [
+        "feature:microduck:203d2686e3321e4a:6a542d3cfbef",
+        "feature:microduck:203d2686e3321e4a:e03362d5a41f"
+      ],
+      "counterpart_structure_refs": [
+        "structure:8bd2399921ea2a520ecc",
+        "structure:eead1d89028a3e5a3aa2"
+      ],
+      "evidence_ref": "connection-finding:review-0538468f81926ae3",
+      "basis": "insufficient"
+    },
+    {
+      "servo": "part:microduck:09cb390e38430c1e",
+      "side": "A",
+      "member_names": [
+        "A2",
+        "A3"
+      ],
+      "counterpart": "part:microduck:203d2686e3321e4a",
+      "counterpart_feature_refs": [
+        "feature:microduck:203d2686e3321e4a:a6a83fe79862",
+        "feature:microduck:203d2686e3321e4a:e79dce6f60d2"
+      ],
+      "counterpart_structure_refs": [
+        "structure:fa7cb2af717ae35805f0",
+        "structure:12c7571bfbb4edf649f5"
+      ],
+      "evidence_ref": "connection-finding:review-bb7bd2a7e7171788",
+      "basis": "insufficient"
+    },
+    {
+      "servo": "part:microduck:cd6d48fccc95df41",
+      "side": "A",
+      "member_names": [
+        "A2",
+        "A3"
+      ],
+      "counterpart": "part:microduck:cb253f38c818b9d8",
+      "counterpart_feature_refs": [
+        "feature:microduck:cb253f38c818b9d8:46c80faf663c",
+        "feature:microduck:cb253f38c818b9d8:66eefc6432ee"
+      ],
+      "counterpart_structure_refs": [
+        "structure:6aa1d8439d4b4b69aedb",
+        "structure:b010227041e62a5ea9e2"
+      ],
+      "evidence_ref": "connection-finding:97725cac3d892944",
+      "basis": "supported_hypothesis"
+    },
+    {
+      "servo": "part:microduck:cd6d48fccc95df41",
+      "side": "B",
+      "member_names": [
+        "B1",
+        "B4"
+      ],
+      "counterpart": "part:microduck:55970da91992f38c",
+      "counterpart_feature_refs": [
+        "feature:microduck:55970da91992f38c:39171a2ad67a",
+        "feature:microduck:55970da91992f38c:65116bbcb9ea"
+      ],
+      "counterpart_structure_refs": [
+        "structure:0bd3c7226a02af4def88",
+        "structure:6abf59613a1126d99cab"
+      ],
+      "evidence_ref": "connection-finding:review-9fa5a1a783acb9f7",
+      "basis": "insufficient"
+    },
+    {
+      "servo": "part:microduck:087d7a46a3ce4ca3",
+      "side": "A",
+      "member_names": [
+        "A2",
+        "A3"
+      ],
+      "counterpart": "part:microduck:c703574f50f6a46a",
+      "counterpart_feature_refs": [
+        "feature:microduck:c703574f50f6a46a:46c80faf663c",
+        "feature:microduck:c703574f50f6a46a:66eefc6432ee"
+      ],
+      "counterpart_structure_refs": [
+        "structure:cee75e7064e5f4d7be94",
+        "structure:3575b03f05c35bb9592f"
+      ],
+      "evidence_ref": "connection-finding:review-6e53aef37e3b7f34",
+      "basis": "insufficient"
+    },
+    {
+      "servo": "part:microduck:087d7a46a3ce4ca3",
+      "side": "B",
+      "member_names": [
+        "B1",
+        "B4"
+      ],
+      "counterpart": "part:microduck:48099e14105d3289",
+      "counterpart_feature_refs": [
+        "feature:microduck:48099e14105d3289:39171a2ad67a",
+        "feature:microduck:48099e14105d3289:65116bbcb9ea"
+      ],
+      "counterpart_structure_refs": [
+        "structure:025da246a90bebb6c48f",
+        "structure:8b9c7bc953e3076c0b23"
+      ],
+      "evidence_ref": "connection-finding:review-eeb23d0222c0fdd7",
+      "basis": "insufficient"
+    },
+    {
+      "servo": "part:microduck:9ffe9d5bcd6bc13a",
+      "side": "A",
+      "member_names": [
+        "A2",
+        "A3"
+      ],
+      "counterpart": "part:microduck:c75bfc0afb35e000",
+      "counterpart_feature_refs": [
+        "feature:microduck:c75bfc0afb35e000:76e0b0453ea3",
+        "feature:microduck:c75bfc0afb35e000:831a852e8af8"
+      ],
+      "counterpart_structure_refs": [
+        "structure:66deb623238c310d5286",
+        "structure:2c10bad35e8b824b51db"
+      ],
+      "evidence_ref": "connection-finding:review-8bbd7e43a53c0f2b",
+      "basis": "insufficient"
+    },
+    {
+      "servo": "part:microduck:08c5ade0f3fd37db",
+      "side": "A",
+      "member_names": [
+        "A2",
+        "A3"
+      ],
+      "counterpart": "part:microduck:7e86db28af59d3cc",
+      "counterpart_feature_refs": [
+        "feature:microduck:7e86db28af59d3cc:76e0b0453ea3",
+        "feature:microduck:7e86db28af59d3cc:831a852e8af8"
+      ],
+      "counterpart_structure_refs": [
+        "structure:51e4efd1f10463606a99",
+        "structure:de46890d6b995380886d"
+      ],
+      "evidence_ref": "connection-finding:review-84b34861bf059162",
+      "basis": "insufficient"
+    },
+    {
+      "servo": "part:microduck:4cf80d5a57c8cb04",
+      "side": "A",
+      "member_names": [
+        "A2",
+        "A3"
+      ],
+      "counterpart": "part:microduck:c75bfc0afb35e000",
+      "counterpart_feature_refs": [
+        "feature:microduck:c75bfc0afb35e000:44e487a7f65b",
+        "feature:microduck:c75bfc0afb35e000:49e786498ea9"
+      ],
+      "counterpart_structure_refs": [
+        "structure:82666f25a2438309f882",
+        "structure:d6eda7b86ead4cd8458b"
+      ],
+      "evidence_ref": "connection-finding:review-f2d5d49c46428a7f",
+      "basis": "insufficient"
+    },
+    {
+      "servo": "part:microduck:7038a050dbc33fb0",
+      "side": "A",
+      "member_names": [
+        "A2",
+        "A3"
+      ],
+      "counterpart": "part:microduck:7e86db28af59d3cc",
+      "counterpart_feature_refs": [
+        "feature:microduck:7e86db28af59d3cc:44e487a7f65b",
+        "feature:microduck:7e86db28af59d3cc:49e786498ea9"
+      ],
+      "counterpart_structure_refs": [
+        "structure:c01dd90900cf49f4b2d2",
+        "structure:d8501e1e78a0d793abc7"
+      ],
+      "evidence_ref": "connection-finding:review-f638bc8ebabef98e",
+      "basis": "insufficient"
+    },
+    {
+      "servo": "part:microduck:7c130c8489b57c99",
+      "side": "B",
+      "member_names": [
+        "B2",
+        "B3"
+      ],
+      "counterpart": "part:microduck:638f29b46b322e64",
+      "counterpart_feature_refs": [
+        "feature:microduck:638f29b46b322e64:87081b89984e",
+        "feature:microduck:638f29b46b322e64:fa9162324250"
+      ],
+      "counterpart_structure_refs": [
+        "structure:aaea62baf7aba0bcb0a9",
+        "structure:2cd28e42bd3897479459"
+      ],
+      "evidence_ref": "connection-finding:review-420da1d2ae89dcf9",
+      "basis": "insufficient"
+    },
+    {
+      "servo": "part:microduck:0820b4025f26a004",
+      "side": "B",
+      "member_names": [
+        "B2",
+        "B3"
+      ],
+      "counterpart": "part:microduck:7f4fefc3c6de90f1",
+      "counterpart_feature_refs": [
+        "feature:microduck:7f4fefc3c6de90f1:87081b89984e",
+        "feature:microduck:7f4fefc3c6de90f1:fa9162324250"
+      ],
+      "counterpart_structure_refs": [
+        "structure:ab2117fe198922302d0f",
+        "structure:978fd4a48030d4173d32"
+      ],
+      "evidence_ref": "connection-finding:review-818ac0f2dee9c3d6",
+      "basis": "insufficient"
+    },
+    {
+      "servo": "part:microduck:4cef8bb24d37fe6e",
+      "side": "A",
+      "member_names": [
+        "A2",
+        "A3"
+      ],
+      "counterpart": "part:microduck:133711c520619e45",
+      "counterpart_feature_refs": [
+        "feature:microduck:133711c520619e45:fc621ee6f7d2",
+        "feature:microduck:133711c520619e45:ff8792893324"
+      ],
+      "counterpart_structure_refs": [
+        "structure:8293bd4b2a5aa5558266",
+        "structure:a632f200c6261bad7162"
+      ],
+      "evidence_ref": "connection-finding:review-4093d02d6a4eb899",
+      "basis": "insufficient"
+    },
+    {
+      "servo": "part:microduck:4cef8bb24d37fe6e",
+      "side": "B",
+      "member_names": [
+        "B2",
+        "B3"
+      ],
+      "counterpart": "part:microduck:6b5602b4416129fe",
+      "counterpart_feature_refs": [
+        "feature:microduck:6b5602b4416129fe:fc621ee6f7d2",
+        "feature:microduck:6b5602b4416129fe:ff8792893324"
+      ],
+      "counterpart_structure_refs": [
+        "structure:a8cf147387a877392ec2",
+        "structure:e0212586c1cfcc2e3320"
+      ],
+      "evidence_ref": "connection-finding:review-be2b2fa8906c9c4e",
+      "basis": "insufficient"
+    },
+    {
+      "servo": "part:microduck:44b5600c1a735117",
+      "side": "A",
+      "member_names": [
+        "A2",
+        "A3"
+      ],
+      "counterpart": "part:microduck:133711c520619e45",
+      "counterpart_feature_refs": [
+        "feature:microduck:133711c520619e45:3ef558965c69",
+        "feature:microduck:133711c520619e45:c751c347ac67"
+      ],
+      "counterpart_structure_refs": [
+        "structure:02112a6ca7e374512a5e",
+        "structure:310422c2fa49cf61056b"
+      ],
+      "evidence_ref": "connection-finding:review-963d4faa28f58a0d",
+      "basis": "insufficient"
+    },
+    {
+      "servo": "part:microduck:44b5600c1a735117",
+      "side": "B",
+      "member_names": [
+        "B2",
+        "B3"
+      ],
+      "counterpart": "part:microduck:6b5602b4416129fe",
+      "counterpart_feature_refs": [
+        "feature:microduck:6b5602b4416129fe:3ef558965c69",
+        "feature:microduck:6b5602b4416129fe:c751c347ac67"
+      ],
+      "counterpart_structure_refs": [
+        "structure:ef30137a9f791f7727d4",
+        "structure:1cc5e90fa08cd26ac55b"
+      ],
+      "evidence_ref": "connection-finding:review-6fcd4525fde85ab6",
+      "basis": "insufficient"
+    },
+    {
+      "servo": "part:microduck:a07b37bcb704b29f",
+      "side": "B",
+      "member_names": [
+        "B1",
+        "B2",
+        "B3",
+        "B4"
+      ],
+      "counterpart": "part:microduck:d4b9a9e9474a9829",
+      "counterpart_feature_refs": [
+        "feature:microduck:d4b9a9e9474a9829:56c8f605ad2a",
+        "feature:microduck:d4b9a9e9474a9829:5bf77516a9b4",
+        "feature:microduck:d4b9a9e9474a9829:9c0a44fddbed",
+        "feature:microduck:d4b9a9e9474a9829:a173b28c1320"
+      ],
+      "counterpart_structure_refs": [
+        "structure:68137391942a3ad6f0fd",
+        "structure:ad6f6d95c253c50af28f",
+        "structure:60344837fe5797fa851c",
+        "structure:e3befcc639ff6d5e315a"
+      ],
+      "evidence_ref": "connection-finding:review-341c84308507c37a",
+      "basis": "insufficient"
+    },
+    {
+      "servo": "part:microduck:9ffe9d5bcd6bc13a",
+      "side": "B",
+      "member_names": [
+        "B2",
+        "B3"
+      ],
+      "counterpart": "part:microduck:66c73aaad945a993",
+      "counterpart_feature_refs": [
+        "feature:microduck:66c73aaad945a993:1ab3e4529385d56d",
+        "feature:microduck:66c73aaad945a993:25dd6c248ac4acee"
+      ],
+      "evidence_ref": "pin-hole-fit:microduck:3c9e75c3d0cbea85",
+      "basis": "source_fit"
+    },
+    {
+      "servo": "part:microduck:7038a050dbc33fb0",
+      "side": "B",
+      "member_names": [
+        "B2",
+        "B3"
+      ],
+      "counterpart": "part:microduck:e40b9945707505e1",
+      "counterpart_feature_refs": [
+        "feature:microduck:e40b9945707505e1:0825132694990cce",
+        "feature:microduck:e40b9945707505e1:f2d0f20555cb700b"
+      ],
+      "evidence_ref": "pin-hole-fit:microduck:65c9610b5c4a4f4c",
+      "basis": "source_fit"
+    },
+    {
+      "servo": "part:microduck:08c5ade0f3fd37db",
+      "side": "B",
+      "member_names": [
+        "B2",
+        "B3"
+      ],
+      "counterpart": "part:microduck:e40b9945707505e1",
+      "counterpart_feature_refs": [
+        "feature:microduck:e40b9945707505e1:2369c5a1a6fc8b50",
+        "feature:microduck:e40b9945707505e1:c184d47cd1fe51a0"
+      ],
+      "evidence_ref": "pin-hole-fit:microduck:9be29990b5767afa",
+      "basis": "source_fit"
+    },
+    {
+      "servo": "part:microduck:4cf80d5a57c8cb04",
+      "side": "B",
+      "member_names": [
+        "B2",
+        "B3"
+      ],
+      "counterpart": "part:microduck:66c73aaad945a993",
+      "counterpart_feature_refs": [
+        "feature:microduck:66c73aaad945a993:521141ce8171f0da",
+        "feature:microduck:66c73aaad945a993:f5a11e7d4f3dd9c8"
+      ],
+      "evidence_ref": "pin-hole-fit:microduck:9eb0b803c05d42d1",
+      "basis": "source_fit"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+<!doctype html><meta charset="utf-8"><title>Assembly outline depth regression</title>
+<script type="importmap">{"imports":{"three":"/__outline-regression/three/build/three.module.js","three/":"/__outline-regression/three/"}}</script>
+<script type="module">
+import * as T from 'three';
+import {EffectComposer} from 'three/examples/jsm/postprocessing/EffectComposer.js';
+import {RenderPass} from 'three/examples/jsm/postprocessing/RenderPass.js';
+import {createSimulationOutline} from '/__outline-regression/helper.js';
+const renderer=new T.WebGLRenderer({antialias:false});renderer.setPixelRatio(1);renderer.setSize(600,450);document.body.append(renderer.domElement);
+const scene=new T.Scene(),camera=new T.PerspectiveCamera(34,600/450,.01,100);camera.up.set(0,0,1);
+const floor=new T.Mesh(new T.PlaneGeometry(2,2),new T.MeshBasicMaterial({color:'#536662'}));
+const part=new T.Mesh(new T.BoxGeometry(.08,.06,.04),new T.MeshBasicMaterial({color:'#ffffff'}));part.position.z=.0202;
+const occluder=new T.Mesh(new T.BoxGeometry(.014,.02,.06),new T.MeshBasicMaterial({color:'#333333'}));occluder.position.set(0,-.045,.03);scene.add(floor,part,occluder);
+const outline=createSimulationOutline(scene,camera,'compatible');outline.selectedObjects=[part];outline.enabled=true;
+const composer=new EffectComposer(renderer);composer.addPass(new RenderPass(scene,camera));composer.addPass(outline);
+const ray=new T.Raycaster(),results=[];
+for(const position of [[.4,-.8,.6],[-.4,-.7,.5],[.1,-.6,.8]]){
+ camera.position.fromArray(position);camera.lookAt(0,0,.02);camera.near=camera.position.distanceTo(new T.Vector3(0,0,.02))*.01;camera.updateProjectionMatrix();composer.render();
+ const target=outline.renderTargetMaskBuffer,bytes=new Uint8Array(target.width*target.height*4);renderer.readRenderTargetPixels(target,0,0,target.width,target.height,bytes);
+ const box=new T.Box3().setFromObject(part),points=[];for(const x of [box.min.x,box.max.x])for(const y of [box.min.y,box.max.y])for(const z of [box.min.z,box.max.z]){const p=new T.Vector3(x,y,z).project(camera);points.push([(p.x+1)*300,(1-p.y)*225]);}
+ const minX=Math.max(0,Math.floor(Math.min(...points.map(p=>p[0])))),maxX=Math.min(599,Math.ceil(Math.max(...points.map(p=>p[0])))),minY=Math.max(0,Math.floor(Math.min(...points.map(p=>p[1])))),maxY=Math.min(449,Math.ceil(Math.max(...points.map(p=>p[1]))));
+ const result={position,visible:0,occluded:0,false_occluded:0,false_visible:0};
+ for(let y=minY;y<=maxY;y+=2)for(let x=minX;x<=maxX;x+=2){const offset=4*((449-y)*600+x);if(bytes[offset]>10)continue;ray.setFromCamera(new T.Vector2((x+.5)/300-1,1-(y+.5)/225),camera);const hits=ray.intersectObjects([floor,part,occluder],false);if(!hits.some(h=>h.object===part))continue;const hidden=bytes[offset+1]>128;if(hits[0].object===part){result.visible++;if(hidden)result.false_occluded++;}else{result.occluded++;if(!hidden)result.false_visible++;}}
+ results.push(result);
+}
+window.outlineCoverage=results;
+for(const pass of composer.passes)pass.dispose();composer.dispose();for(const mesh of [floor,part,occluder]){mesh.geometry.dispose();mesh.material.dispose();}renderer.dispose();
+</script>

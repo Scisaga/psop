@@ -1,0 +1,6 @@
+{
+  "checked_pair_shards": 2415,
+  "identical_pair_shards": 2415,
+  "different_pair_shards": [],
+  "purpose": "Verify source-path caching preserves all accepted and excluded physical poses byte-for-byte"
+}

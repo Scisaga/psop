@@ -1,0 +1,5436 @@
+{
+  "method": "sampled-source-mesh-transit-audit/1",
+  "sample_fractions": [
+    0.2,
+    0.4,
+    0.6,
+    0.8,
+    0.95
+  ],
+  "snapshot_count": 355,
+  "pair_checks": 475,
+  "step_count": 73,
+  "moving_step_count": 71,
+  "issues": [
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.2,
+      "moving_id": "instance:part:microduck:52fdcacf474a463f",
+      "moving_name": "头部下壳",
+      "other_id": "instance:part:microduck:328011951ac11ee7",
+      "other_name": "喙部件",
+      "penetration_m": 0.0007196517416499617,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -21.345333931078777,
+        -58.12994546259077,
+        -9.502926050926009
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.2,
+      "moving_id": "instance:part:microduck:afa52198f7fad203",
+      "moving_name": "面部件",
+      "other_id": "instance:part:microduck:8b649e45831a1972",
+      "other_name": "左脚底",
+      "penetration_m": 0.000683626905924612,
+      "reference_depth_m": 0,
+      "point_mm": [
+        69.8542052809965,
+        11.951579767352456,
+        -21.549707590955766
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.2,
+      "moving_id": "instance:part:microduck:986b5adf27910138",
+      "moving_name": "电机支架",
+      "other_id": "instance:part:microduck:f5797f92c2bf01b8",
+      "other_name": "喙部软质件",
+      "penetration_m": 0.002726689775305026,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -5.724787235523198,
+        -54.70184061883835,
+        -7.464368511555661
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.4,
+      "moving_id": "instance:part:microduck:82d68e991b23c2a3",
+      "moving_name": "头部上壳",
+      "other_id": "instance:part:microduck:48099e14105d3289",
+      "other_name": "偏航与横滚连接件",
+      "penetration_m": 0.0004275709520538662,
+      "reference_depth_m": 0,
+      "point_mm": [
+        21.614983452268717,
+        -7.596664492605015,
+        14.02242885721127
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.4,
+      "moving_id": "instance:part:microduck:82d68e991b23c2a3",
+      "moving_name": "头部上壳",
+      "other_id": "instance:part:microduck:087d7a46a3ce4ca3",
+      "other_name": "XL330 舵机",
+      "penetration_m": 0.004203016763533789,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -6.5284127972071815,
+        -5.796983236466211,
+        -5.411963254879494
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.4,
+      "moving_id": "instance:part:microduck:82d68e991b23c2a3",
+      "moving_name": "头部上壳",
+      "other_id": "instance:part:microduck:c703574f50f6a46a",
+      "other_name": "横滚轴承支承件",
+      "penetration_m": 0.000605177398540178,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -23.562604881330685,
+        -21.260440668938593,
+        38.78384539307936
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.4,
+      "moving_id": "instance:part:microduck:82d68e991b23c2a3",
+      "moving_name": "头部上壳",
+      "other_id": "instance:part:microduck:d924e1596ffb042a",
+      "other_name": "轴承外形（22×16×4 配置名）",
+      "penetration_m": 0.00043620820854386723,
+      "reference_depth_m": 0,
+      "point_mm": [
+        10.26354805221035,
+        2.510636910737553,
+        1.1735416421981242
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.4,
+      "moving_id": "instance:part:microduck:82d68e991b23c2a3",
+      "moving_name": "头部上壳",
+      "other_id": "instance:part:microduck:f9955f19a691a1f4",
+      "other_name": "右脚部件",
+      "penetration_m": 0.0011511011315680263,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -57.5953596995339,
+        8.40352190385152,
+        -16.99302675260074
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.4,
+      "moving_id": "instance:part:microduck:52fdcacf474a463f",
+      "moving_name": "头部下壳",
+      "other_id": "instance:part:microduck:7c130c8489b57c99",
+      "other_name": "XL330 舵机",
+      "penetration_m": 0.0010634938652213392,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -1.538339194788179,
+        -8.93650613477866,
+        -4.887915106185332
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.4,
+      "moving_id": "instance:part:microduck:52fdcacf474a463f",
+      "moving_name": "头部下壳",
+      "other_id": "instance:part:microduck:8b649e45831a1972",
+      "other_name": "左脚底",
+      "penetration_m": 0.0004828873121443706,
+      "reference_depth_m": 0,
+      "point_mm": [
+        68.88288883802328,
+        29.76704633522334,
+        -20.073060187738673
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.4,
+      "moving_id": "instance:part:microduck:52fdcacf474a463f",
+      "moving_name": "头部下壳",
+      "other_id": "instance:part:microduck:41db565298264db6",
+      "other_name": "左脚部件",
+      "penetration_m": 0.0016889684307674743,
+      "reference_depth_m": 0,
+      "point_mm": [
+        68.19248792879704,
+        37.35539651833453,
+        -16.61031958422021
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.4,
+      "moving_id": "instance:part:microduck:52fdcacf474a463f",
+      "moving_name": "头部下壳",
+      "other_id": "instance:part:microduck:d4b9a9e9474a9829",
+      "other_name": "偏航与横滚传动件",
+      "penetration_m": 0.0006844503487771334,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -14.950461309941536,
+        -12.315549651222867,
+        14.19604658988991
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.4,
+      "moving_id": "instance:part:microduck:52fdcacf474a463f",
+      "moving_name": "头部下壳",
+      "other_id": "instance:part:microduck:a07b37bcb704b29f",
+      "other_name": "XL330 舵机",
+      "penetration_m": 0.0005145925942422587,
+      "reference_depth_m": 0,
+      "point_mm": [
+        11.939816319734106,
+        1.2131184449455041,
+        5.610960049739436
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.4,
+      "moving_id": "instance:part:microduck:52fdcacf474a463f",
+      "moving_name": "头部下壳",
+      "other_id": "instance:part:microduck:afa52198f7fad203",
+      "other_name": "面部件",
+      "penetration_m": 0.0007064344597505965,
+      "reference_depth_m": 0,
+      "point_mm": [
+        29.78143522269005,
+        -52.05031833070957,
+        20.778884533060655
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.4,
+      "moving_id": "instance:part:microduck:328011951ac11ee7",
+      "moving_name": "喙部件",
+      "other_id": "instance:part:microduck:08c5ade0f3fd37db",
+      "other_name": "XL330 舵机",
+      "penetration_m": 0.004421489368887506,
+      "reference_depth_m": 0,
+      "point_mm": [
+        7.0785106311124935,
+        3.1003625278621296,
+        -14.302629113148441
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.4,
+      "moving_id": "instance:part:microduck:328011951ac11ee7",
+      "moving_name": "喙部件",
+      "other_id": "instance:part:microduck:7f4fefc3c6de90f1",
+      "other_name": "腿部连杆",
+      "penetration_m": 0.0011314467953817628,
+      "reference_depth_m": 0,
+      "point_mm": [
+        37.36855320461824,
+        17.200462729561295,
+        -6.469520131101854
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.4,
+      "moving_id": "instance:part:microduck:e7e8275c7d01674c",
+      "moving_name": "电源支架",
+      "other_id": "instance:part:microduck:a682dc3620df43f5",
+      "other_name": "XL330 舵机",
+      "penetration_m": 0.0019377414393761257,
+      "reference_depth_m": 0,
+      "point_mm": [
+        7.044148389152273,
+        4.062258560623874,
+        -13.838757674755989
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.4,
+      "moving_id": "instance:part:microduck:afa52198f7fad203",
+      "moving_name": "面部件",
+      "other_id": "instance:part:microduck:41db565298264db6",
+      "other_name": "左脚部件",
+      "penetration_m": 0.0006797633681498638,
+      "reference_depth_m": 0,
+      "point_mm": [
+        59.98833130181881,
+        12.858444639662636,
+        -25.38456781145844
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.4,
+      "moving_id": "instance:part:microduck:afa52198f7fad203",
+      "moving_name": "面部件",
+      "other_id": "instance:part:microduck:b61b0609c61fc572",
+      "other_name": "镜头外形",
+      "penetration_m": 0.0011382591703170144,
+      "reference_depth_m": 0,
+      "point_mm": [
+        5.9762226223156,
+        21.516029182640228,
+        4.581513399471798
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.4,
+      "moving_id": "instance:part:microduck:9d70b219a5533bf1",
+      "moving_name": "右侧外壳",
+      "other_id": "instance:part:microduck:78cf36c41e4fde06",
+      "other_name": "电路板固定件",
+      "penetration_m": 0.0006908351541209967,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -22.31585729916663,
+        35.690835154121,
+        52.99721719535732
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.4,
+      "moving_id": "instance:part:microduck:9d70b219a5533bf1",
+      "moving_name": "右侧外壳",
+      "other_id": "instance:part:microduck:203d2686e3321e4a",
+      "other_name": "躯干底座",
+      "penetration_m": 0.0005342208187987083,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -2.5480911460240954,
+        -17.486599195276177,
+        29.117274412528765
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.4,
+      "moving_id": "instance:part:microduck:986b5adf27910138",
+      "moving_name": "电机支架",
+      "other_id": "instance:part:microduck:55970da91992f38c",
+      "other_name": "偏航与横滚连接件",
+      "penetration_m": 0.0005053803597273685,
+      "reference_depth_m": 0,
+      "point_mm": [
+        25.580750786732153,
+        3.4191303397545774,
+        11.494619640272632
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.4,
+      "moving_id": "instance:part:microduck:986b5adf27910138",
+      "moving_name": "电机支架",
+      "other_id": "instance:part:microduck:41db565298264db6",
+      "other_name": "左脚部件",
+      "penetration_m": 0.0009096898487632484,
+      "reference_depth_m": 0,
+      "point_mm": [
+        32.51846092508707,
+        -6.925305466339378,
+        -14.251614516121647
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.4,
+      "moving_id": "instance:part:microduck:f5797f92c2bf01b8",
+      "moving_name": "喙部软质件",
+      "other_id": "instance:part:microduck:50f0c376d01bb0c1",
+      "other_name": "XL330 舵机",
+      "penetration_m": 0.002825588267017977,
+      "reference_depth_m": 0,
+      "point_mm": [
+        8.674411732982023,
+        -5.041937878889985,
+        -16.771230693780538
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.4,
+      "moving_id": "instance:part:microduck:88b7496d63cb41ff",
+      "moving_name": "喙上部软质件",
+      "other_id": "instance:part:microduck:d4b9a9e9474a9829",
+      "other_name": "偏航与横滚传动件",
+      "penetration_m": 0.0010009781611055146,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -2.354749669252392,
+        16.89902145742476,
+        0.48486201819947605
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.4,
+      "moving_id": "instance:part:microduck:88b7496d63cb41ff",
+      "moving_name": "喙上部软质件",
+      "other_id": "instance:part:microduck:2559a4c412bcda3e",
+      "other_name": "眼部部件",
+      "penetration_m": 0.0015267290529525752,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -7.712126145438454,
+        -57.026729052952575,
+        13.64765414574888
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.4,
+      "moving_id": "instance:part:microduck:66c73aaad945a993",
+      "moving_name": "左大腿部件",
+      "other_id": "instance:part:microduck:fa9ee2f71faafb88",
+      "other_name": "髋部件",
+      "penetration_m": 0.00202764368732835,
+      "reference_depth_m": 0,
+      "point_mm": [
+        36.47235631267165,
+        -7.586464896396993,
+        4.657709364296359
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.4,
+      "moving_id": "instance:part:microduck:e40b9945707505e1",
+      "moving_name": "右大腿部件",
+      "other_id": "instance:part:microduck:554503ef38151e67",
+      "other_name": "RPI Robot HAT 电路板外形",
+      "penetration_m": 0.00041581569784095504,
+      "reference_depth_m": 0,
+      "point_mm": [
+        12.92040983259146,
+        -2.396775007880799,
+        0.42418427593300123
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.4,
+      "moving_id": "instance:part:microduck:7e86db28af59d3cc",
+      "moving_name": "大腿加强板",
+      "other_id": "instance:part:microduck:7038a050dbc33fb0",
+      "other_name": "XL330 舵机",
+      "penetration_m": 0.0008655956313994579,
+      "reference_depth_m": 0,
+      "point_mm": [
+        1.3344044162842579,
+        -8.755212685226958,
+        -10.809172739307371
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.4,
+      "moving_id": "instance:part:microduck:f9955f19a691a1f4",
+      "moving_name": "右脚部件",
+      "other_id": "instance:part:microduck:3fbf0b5c8cea4488",
+      "other_name": "轴承外形（22×16×4 配置名）",
+      "penetration_m": 0.00041116445733197795,
+      "reference_depth_m": 0,
+      "point_mm": [
+        9.743002037292086,
+        -3.9249886047889646,
+        3.588835542668022
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.4,
+      "moving_id": "instance:part:microduck:41db565298264db6",
+      "moving_name": "左脚部件",
+      "other_id": "instance:part:microduck:50f0c376d01bb0c1",
+      "other_name": "XL330 舵机",
+      "penetration_m": 0.0006985921027660762,
+      "reference_depth_m": 0,
+      "point_mm": [
+        5.445384995610425,
+        -2.403311693926078,
+        8.801407897233924
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.4,
+      "moving_id": "instance:part:microduck:2f557a24b2729755",
+      "moving_name": "右脚底",
+      "other_id": "instance:part:microduck:48099e14105d3289",
+      "other_name": "偏航与横滚连接件",
+      "penetration_m": 0.0006193437795490304,
+      "reference_depth_m": 0,
+      "point_mm": [
+        27.58943236491234,
+        7.63309791149255,
+        11.38065622045097
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.4,
+      "moving_id": "instance:part:microduck:8b649e45831a1972",
+      "moving_name": "左脚底",
+      "other_id": "instance:part:microduck:7c130c8489b57c99",
+      "other_name": "XL330 舵机",
+      "penetration_m": 0.006031819706705303,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -5.462745604677309,
+        -0.06966411547703899,
+        3.4681802932946972
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.4,
+      "moving_id": "instance:part:microduck:8b649e45831a1972",
+      "moving_name": "左脚底",
+      "other_id": "instance:part:microduck:d4b9a9e9474a9829",
+      "other_name": "偏航与横滚传动件",
+      "penetration_m": 0.0015194201030378877,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -7.815561070951077,
+        -12.480579896962112,
+        8.36608331928797
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.4,
+      "moving_id": "instance:part:microduck:8b649e45831a1972",
+      "moving_name": "左脚底",
+      "other_id": "instance:part:microduck:a07b37bcb704b29f",
+      "other_name": "XL330 舵机",
+      "penetration_m": 0.0014687542051002769,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -6.807019302392785,
+        5.9209013254186775,
+        -21.709062368730084
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.4,
+      "moving_id": "instance:part:microduck:b371ac60e2f6757b",
+      "moving_name": "右踝部件",
+      "other_id": "instance:part:microduck:0820b4025f26a004",
+      "other_name": "XL330 舵机",
+      "penetration_m": 0.0010341938679820375,
+      "reference_depth_m": 2.634525245071018e-9,
+      "point_mm": [
+        11.716082280896899,
+        3.9580429886717035,
+        -5.915850669978335
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.4,
+      "moving_id": "instance:part:microduck:d4b9a9e9474a9829",
+      "moving_name": "偏航与横滚传动件",
+      "other_id": "instance:part:microduck:7c130c8489b57c99",
+      "other_name": "XL330 舵机",
+      "penetration_m": 0.0011531922385899307,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -11.701162652597391,
+        5.662069980727679,
+        -4.17728182201149
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.4,
+      "moving_id": "instance:part:microduck:c7eeeac0a640d191",
+      "moving_name": "髋部件",
+      "other_id": "instance:part:microduck:7038a050dbc33fb0",
+      "other_name": "XL330 舵机",
+      "penetration_m": 0.0037155437939854325,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -10.784456206014568,
+        -3.768211431514054,
+        1.730209086728923
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.4,
+      "moving_id": "instance:part:microduck:fa9ee2f71faafb88",
+      "moving_name": "髋部件",
+      "other_id": "instance:part:microduck:4cef8bb24d37fe6e",
+      "other_name": "XL330 舵机",
+      "penetration_m": 0.0010182407530256298,
+      "reference_depth_m": 0,
+      "point_mm": [
+        13.48175924697437,
+        6.029076056346298,
+        -3.7117229810495616
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.4,
+      "moving_id": "instance:part:microduck:834f5cc892eba41e",
+      "moving_name": "颈俯仰部件",
+      "other_id": "instance:part:microduck:9ffe9d5bcd6bc13a",
+      "other_name": "XL330 舵机",
+      "penetration_m": 0.004130105992189457,
+      "reference_depth_m": 0,
+      "point_mm": [
+        4.2841885771499335,
+        1.8698940078105437,
+        -10.018211971546089
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.4,
+      "moving_id": "instance:part:microduck:4cf80d5a57c8cb04",
+      "moving_name": "XL330 舵机",
+      "other_id": "instance:part:microduck:4cef8bb24d37fe6e",
+      "other_name": "XL330 舵机",
+      "penetration_m": 0.003100482552486703,
+      "reference_depth_m": 0,
+      "point_mm": [
+        11.399517447513297,
+        2.450842506922296,
+        3.5502365483851825
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.4,
+      "moving_id": "instance:part:microduck:7c130c8489b57c99",
+      "moving_name": "XL330 舵机",
+      "other_id": "instance:part:microduck:a07b37bcb704b29f",
+      "other_name": "XL330 舵机",
+      "penetration_m": 0.005545323698543191,
+      "reference_depth_m": 0,
+      "point_mm": [
+        7.301663510186598,
+        -3.2513919772647863,
+        3.9546763014568094
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.4,
+      "moving_id": "instance:part:microduck:08c5ade0f3fd37db",
+      "moving_name": "XL330 舵机",
+      "other_id": "instance:part:microduck:0820b4025f26a004",
+      "other_name": "XL330 舵机",
+      "penetration_m": 0.002148268881458252,
+      "reference_depth_m": 0,
+      "point_mm": [
+        5.130293669576596,
+        1.0733148789074143,
+        7.351731118541748
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:52fdcacf474a463f",
+      "moving_name": "头部下壳",
+      "other_id": "instance:part:microduck:834f5cc892eba41e",
+      "other_name": "颈俯仰部件",
+      "penetration_m": 0.0005847419105330865,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -16.278115201430346,
+        -3.4969977968671433,
+        -28.081964962520228
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:52fdcacf474a463f",
+      "moving_name": "头部下壳",
+      "other_id": "instance:part:microduck:986b5adf27910138",
+      "other_name": "电机支架",
+      "penetration_m": 0.00046544756688816235,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -9.440195791503847,
+        -19.32229961052983,
+        7.3628301132916825
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:52fdcacf474a463f",
+      "moving_name": "头部下壳",
+      "other_id": "instance:part:microduck:2559a4c412bcda3e",
+      "other_name": "眼部部件",
+      "penetration_m": 0.0012383356342329393,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -6.393745436260371,
+        -56.73833563423294,
+        30.319249941854583
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:52fdcacf474a463f",
+      "moving_name": "头部下壳",
+      "other_id": "instance:part:microduck:c7eeeac0a640d191",
+      "other_name": "髋部件",
+      "penetration_m": 0.00043054272407492357,
+      "reference_depth_m": 0,
+      "point_mm": [
+        34.05867612420955,
+        -18.57636119576341,
+        -9.06650595477468
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:52fdcacf474a463f",
+      "moving_name": "头部下壳",
+      "other_id": "instance:part:microduck:08c5ade0f3fd37db",
+      "other_name": "XL330 舵机",
+      "penetration_m": 0.0009655054058730137,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -2.1185573890715625,
+        -8.347098455553821,
+        -20.596906455236102
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:52fdcacf474a463f",
+      "moving_name": "头部下壳",
+      "other_id": "instance:part:microduck:0820b4025f26a004",
+      "other_name": "XL330 舵机",
+      "penetration_m": 0.0008767882153142779,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -10.623211784685722,
+        5.472906653962152,
+        -12.86211460165602
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:328011951ac11ee7",
+      "moving_name": "喙部件",
+      "other_id": "instance:part:microduck:cd6d48fccc95df41",
+      "other_name": "XL330 舵机",
+      "penetration_m": 0.0004164699568991992,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -10.371013956823354,
+        8.661424198674263,
+        -24.0835300431008
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:328011951ac11ee7",
+      "moving_name": "喙部件",
+      "other_id": "instance:part:microduck:d4b9a9e9474a9829",
+      "other_name": "偏航与横滚传动件",
+      "penetration_m": 0.0006823451564438789,
+      "reference_depth_m": 0,
+      "point_mm": [
+        1.1903120200903345,
+        -13.000838557810077,
+        -3.7299677022866113
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:328011951ac11ee7",
+      "moving_name": "喙部件",
+      "other_id": "instance:part:microduck:a07b37bcb704b29f",
+      "other_name": "XL330 舵机",
+      "penetration_m": 0.003321508723679017,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -7.157877524775357,
+        5.881486416976379,
+        6.178491276320983
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:328011951ac11ee7",
+      "moving_name": "喙部件",
+      "other_id": "instance:part:microduck:88b7496d63cb41ff",
+      "other_name": "喙上部软质件",
+      "penetration_m": 0.0007144321295241838,
+      "reference_depth_m": 0,
+      "point_mm": [
+        20.688866330002057,
+        -57.23071557165345,
+        -3.621789504242619
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:e7e8275c7d01674c",
+      "moving_name": "电源支架",
+      "other_id": "instance:part:microduck:f97c1c6580d651d7",
+      "other_name": "NP-F970 电池外形",
+      "penetration_m": 0.005785230241681992,
+      "reference_depth_m": 0.0009478869987771271,
+      "point_mm": [
+        -13.464769661950081,
+        -2.2781120020382453,
+        3.130636028253968
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:e7e8275c7d01674c",
+      "moving_name": "电源支架",
+      "other_id": "instance:part:microduck:e27cbdd6c07a264e",
+      "other_name": "左侧外壳",
+      "penetration_m": 0.000536122786362462,
+      "reference_depth_m": 0,
+      "point_mm": [
+        7.353422785325682,
+        47.44705514630476,
+        50.44337960454514
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:e7e8275c7d01674c",
+      "moving_name": "电源支架",
+      "other_id": "instance:part:microduck:48099e14105d3289",
+      "other_name": "偏航与横滚连接件",
+      "penetration_m": 0.0004468613923196196,
+      "reference_depth_m": 0,
+      "point_mm": [
+        6.44686139231962,
+        7.768264455140173,
+        4.591258360966062
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:e7e8275c7d01674c",
+      "moving_name": "电源支架",
+      "other_id": "instance:part:microduck:087d7a46a3ce4ca3",
+      "other_name": "XL330 舵机",
+      "penetration_m": 0.0013551615263376214,
+      "reference_depth_m": 0,
+      "point_mm": [
+        8.958656137211623,
+        5.675278451442024,
+        7.742427354223813
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:afa52198f7fad203",
+      "moving_name": "面部件",
+      "other_id": "instance:part:microduck:a07b37bcb704b29f",
+      "other_name": "XL330 舵机",
+      "penetration_m": 0.0044897689825173755,
+      "reference_depth_m": 0,
+      "point_mm": [
+        6.619596169782982,
+        -1.0840534774725015,
+        -20.010231017482624
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:afa52198f7fad203",
+      "moving_name": "面部件",
+      "other_id": "instance:part:microduck:55121c0b36f62219",
+      "other_name": "轴承外形（22×16×4 配置名）",
+      "penetration_m": 0.00044332587696805173,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -3.354063760811483,
+        10.021984401343897,
+        2.190195516602607
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:e27cbdd6c07a264e",
+      "moving_name": "左侧外壳",
+      "other_id": "instance:part:microduck:f97c1c6580d651d7",
+      "other_name": "NP-F970 电池外形",
+      "penetration_m": 0.00188918296183677,
+      "reference_depth_m": 0.00030889908625442077,
+      "point_mm": [
+        -17.360816190394935,
+        -0.9061154698785643,
+        3.87443783707338
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:e27cbdd6c07a264e",
+      "moving_name": "左侧外壳",
+      "other_id": "instance:part:microduck:087d7a46a3ce4ca3",
+      "other_name": "XL330 舵机",
+      "penetration_m": 0.0005157351342932586,
+      "reference_depth_m": 0,
+      "point_mm": [
+        2.877940093294285,
+        -6.507817720698186,
+        8.984264865706741
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:e27cbdd6c07a264e",
+      "moving_name": "左侧外壳",
+      "other_id": "instance:part:microduck:c703574f50f6a46a",
+      "other_name": "横滚轴承支承件",
+      "penetration_m": 0.0004527571479254977,
+      "reference_depth_m": 0,
+      "point_mm": [
+        11.351189303369813,
+        -14.047242852074502,
+        -12.575283447337469
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:e27cbdd6c07a264e",
+      "moving_name": "左侧外壳",
+      "other_id": "instance:part:microduck:7e86db28af59d3cc",
+      "other_name": "大腿加强板",
+      "penetration_m": 0.00047288535769646954,
+      "reference_depth_m": 0,
+      "point_mm": [
+        24.190169158488985,
+        33.48075513370071,
+        57.389214114531526
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:986b5adf27910138",
+      "moving_name": "电机支架",
+      "other_id": "instance:part:microduck:834f5cc892eba41e",
+      "other_name": "颈俯仰部件",
+      "penetration_m": 0.0005326971353533239,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -16.967302864646676,
+        4.956684818853665,
+        -16.224970458393756
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:986b5adf27910138",
+      "moving_name": "电机支架",
+      "other_id": "instance:part:microduck:08c5ade0f3fd37db",
+      "other_name": "XL330 舵机",
+      "penetration_m": 0.0008463640102408779,
+      "reference_depth_m": 0,
+      "point_mm": [
+        4.4542792269244345,
+        -9.153635989759122,
+        -15.729788698896186
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:88b7496d63cb41ff",
+      "moving_name": "喙上部软质件",
+      "other_id": "instance:part:microduck:08c5ade0f3fd37db",
+      "other_name": "XL330 舵机",
+      "penetration_m": 0.0019465830239712432,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -9.553416976028757,
+        7.802207570588744,
+        -2.7809069799356365
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:f97c1c6580d651d7",
+      "moving_name": "NP-F970 电池外形",
+      "other_id": "instance:part:microduck:48099e14105d3289",
+      "other_name": "偏航与横滚连接件",
+      "penetration_m": 0.0013096187542214076,
+      "reference_depth_m": 0,
+      "point_mm": [
+        7.3096187542214075,
+        -1.925830239089085,
+        9.93538924157588
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:f97c1c6580d651d7",
+      "moving_name": "NP-F970 电池外形",
+      "other_id": "instance:part:microduck:087d7a46a3ce4ca3",
+      "other_name": "XL330 舵机",
+      "penetration_m": 0.0057029976627988805,
+      "reference_depth_m": 0,
+      "point_mm": [
+        1.5585924603160635,
+        -4.2970023372011195,
+        -3.3175168081698097
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:f97c1c6580d651d7",
+      "moving_name": "NP-F970 电池外形",
+      "other_id": "instance:part:microduck:7038a050dbc33fb0",
+      "other_name": "XL330 舵机",
+      "penetration_m": 0.0015203428548340393,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -9.92920528318962,
+        8.47965714516596,
+        -12.036485508560395
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:554503ef38151e67",
+      "moving_name": "RPI Robot HAT 电路板外形",
+      "other_id": "instance:part:microduck:41db565298264db6",
+      "other_name": "左脚部件",
+      "penetration_m": 0.0006534835008228557,
+      "reference_depth_m": 0,
+      "point_mm": [
+        46.435498827888395,
+        -4.1833089682018025,
+        -18.574037454674652
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:41db565298264db6",
+      "moving_name": "左脚部件",
+      "other_id": "instance:part:microduck:7c130c8489b57c99",
+      "other_name": "XL330 舵机",
+      "penetration_m": 0.0005622405730752718,
+      "reference_depth_m": 0,
+      "point_mm": [
+        10.44910402653835,
+        -9.437759426924728,
+        -0.6598108654480157
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:41db565298264db6",
+      "moving_name": "左脚部件",
+      "other_id": "instance:part:microduck:44b5600c1a735117",
+      "other_name": "XL330 舵机",
+      "penetration_m": 0.0012820768316241455,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -1.287144853636537,
+        2.491286941232566,
+        -23.217923168375854
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:41db565298264db6",
+      "moving_name": "左脚部件",
+      "other_id": "instance:part:microduck:133711c520619e45",
+      "other_name": "颈部件",
+      "penetration_m": 0.0008320361989670957,
+      "reference_depth_m": 0,
+      "point_mm": [
+        0.8320361989670957,
+        -17.460746488661826,
+        79.19741017891539
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:2f557a24b2729755",
+      "moving_name": "右脚底",
+      "other_id": "instance:part:microduck:6b5602b4416129fe",
+      "other_name": "颈部件",
+      "penetration_m": 0.0005888260497185413,
+      "reference_depth_m": 0,
+      "point_mm": [
+        1.4111739502814586,
+        -20.785718724661262,
+        70.46247540870667
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:8b649e45831a1972",
+      "moving_name": "左脚底",
+      "other_id": "instance:part:microduck:a682dc3620df43f5",
+      "other_name": "XL330 舵机",
+      "penetration_m": 0.0038873151146589465,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -10.612684885341054,
+        -4.25983297902863,
+        2.711313467868788
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:8b649e45831a1972",
+      "moving_name": "左脚底",
+      "other_id": "instance:part:microduck:fa9ee2f71faafb88",
+      "other_name": "髋部件",
+      "penetration_m": 0.002002765705652866,
+      "reference_depth_m": 0,
+      "point_mm": [
+        12.761341446112041,
+        -18.552766850062046,
+        -5.998101193399112
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:8b649e45831a1972",
+      "moving_name": "左脚底",
+      "other_id": "instance:part:microduck:638f29b46b322e64",
+      "other_name": "腿部连杆",
+      "penetration_m": 0.0010557998616419493,
+      "reference_depth_m": 0,
+      "point_mm": [
+        34.116931405374025,
+        21.251673748652955,
+        -10.106938753699097
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:8b649e45831a1972",
+      "moving_name": "左脚底",
+      "other_id": "instance:part:microduck:4cef8bb24d37fe6e",
+      "other_name": "XL330 舵机",
+      "penetration_m": 0.003820711070408951,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -2.340619503162003,
+        -0.7460180245370935,
+        5.679288929591049
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:8b649e45831a1972",
+      "moving_name": "左脚底",
+      "other_id": "instance:part:microduck:7f4fefc3c6de90f1",
+      "other_name": "腿部连杆",
+      "penetration_m": 0.0004385082809137355,
+      "reference_depth_m": 0,
+      "point_mm": [
+        34.18140100717442,
+        23.667408762407014,
+        -8.844971994080982
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:638f29b46b322e64",
+      "moving_name": "腿部连杆",
+      "other_id": "instance:part:microduck:a682dc3620df43f5",
+      "other_name": "XL330 舵机",
+      "penetration_m": 0.006329339651511831,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -5.170660348488169,
+        -3.2363652031387673,
+        -9.828688947151658
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:638f29b46b322e64",
+      "moving_name": "腿部连杆",
+      "other_id": "instance:part:microduck:4cef8bb24d37fe6e",
+      "other_name": "XL330 舵机",
+      "penetration_m": 0.0011572527087640658,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -3.767152221990706,
+        8.329261384592515,
+        -20.39903290399449
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:7f4fefc3c6de90f1",
+      "moving_name": "腿部连杆",
+      "other_id": "instance:part:microduck:a682dc3620df43f5",
+      "other_name": "XL330 舵机",
+      "penetration_m": 0.0004542621509076916,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -5.201024302711305,
+        9.545737849092308,
+        3.523629948364615
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:7f4fefc3c6de90f1",
+      "moving_name": "腿部连杆",
+      "other_id": "instance:part:microduck:fa9ee2f71faafb88",
+      "other_name": "髋部件",
+      "penetration_m": 0.0006416770493625386,
+      "reference_depth_m": 0,
+      "point_mm": [
+        10.435591674118648,
+        -20.85832295063746,
+        -4.4122584354599725
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:7f4fefc3c6de90f1",
+      "moving_name": "腿部连杆",
+      "other_id": "instance:part:microduck:4cef8bb24d37fe6e",
+      "other_name": "XL330 舵机",
+      "penetration_m": 0.0030350486750410715,
+      "reference_depth_m": 0,
+      "point_mm": [
+        11.464951324958928,
+        -1.558334505032919,
+        0.26762834696130877
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:7f4fefc3c6de90f1",
+      "moving_name": "腿部连杆",
+      "other_id": "instance:part:microduck:b371ac60e2f6757b",
+      "other_name": "右踝部件",
+      "penetration_m": 0.0004316918032760526,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -31.396400303641137,
+        31.846540943428362,
+        -10.552611948603882
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:b371ac60e2f6757b",
+      "moving_name": "右踝部件",
+      "other_id": "instance:part:microduck:a682dc3620df43f5",
+      "other_name": "XL330 舵机",
+      "penetration_m": 0.0006826252753878422,
+      "reference_depth_m": 0,
+      "point_mm": [
+        10.817374724612158,
+        9.212728208344828,
+        4.492454750971405
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:b371ac60e2f6757b",
+      "moving_name": "右踝部件",
+      "other_id": "instance:part:microduck:4cef8bb24d37fe6e",
+      "other_name": "XL330 舵机",
+      "penetration_m": 0.000610885997746486,
+      "reference_depth_m": 0,
+      "point_mm": [
+        10.760053326686368,
+        -9.389114002253514,
+        -16.138027524137353
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:d4b9a9e9474a9829",
+      "moving_name": "偏航与横滚传动件",
+      "other_id": "instance:part:microduck:cd6d48fccc95df41",
+      "other_name": "XL330 舵机",
+      "penetration_m": 0.0007364389599640334,
+      "reference_depth_m": 0,
+      "point_mm": [
+        10.763561040035967,
+        4.673661400646841,
+        -19.961401089302765
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:fa9ee2f71faafb88",
+      "moving_name": "髋部件",
+      "other_id": "instance:part:microduck:a682dc3620df43f5",
+      "other_name": "XL330 舵机",
+      "penetration_m": 0.0021547206777525005,
+      "reference_depth_m": 0,
+      "point_mm": [
+        2.1398281581826604,
+        -0.205708473736804,
+        7.3452793222474995
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:834f5cc892eba41e",
+      "moving_name": "颈俯仰部件",
+      "other_id": "instance:part:microduck:08c5ade0f3fd37db",
+      "other_name": "XL330 舵机",
+      "penetration_m": 0.0006346766589926904,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -13.86532334100731,
+        -4.822221081208276,
+        4.3432633868095465
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:7038a050dbc33fb0",
+      "moving_name": "XL330 舵机",
+      "other_id": "instance:part:microduck:48099e14105d3289",
+      "other_name": "偏航与横滚连接件",
+      "penetration_m": 0.0014579831866371115,
+      "reference_depth_m": 0,
+      "point_mm": [
+        11.880413053799249,
+        -8.815713464016596,
+        10.957983186637112
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:7038a050dbc33fb0",
+      "moving_name": "XL330 舵机",
+      "other_id": "instance:part:microduck:087d7a46a3ce4ca3",
+      "other_name": "XL330 舵机",
+      "penetration_m": 0.0021677970659324188,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -0.9210646326958241,
+        7.832202934067581,
+        -1.1040023092796218
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:08c5ade0f3fd37db",
+      "moving_name": "XL330 舵机",
+      "other_id": "instance:part:microduck:2559a4c412bcda3e",
+      "other_name": "眼部部件",
+      "penetration_m": 0.0005439724791435552,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -6.237507816819084,
+        -56.043972479143555,
+        13.378999163048077
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:0820b4025f26a004",
+      "moving_name": "XL330 舵机",
+      "other_id": "instance:part:microduck:2559a4c412bcda3e",
+      "other_name": "眼部部件",
+      "penetration_m": 0.0015060229438839201,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -11.3680080248308,
+        -57.00602294388392,
+        19.58630451391187
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:a682dc3620df43f5",
+      "moving_name": "XL330 舵机",
+      "other_id": "instance:part:microduck:4cef8bb24d37fe6e",
+      "other_name": "XL330 舵机",
+      "penetration_m": 0.0021391969248120537,
+      "reference_depth_m": 0,
+      "point_mm": [
+        9.919213855846222,
+        -6.5347050186043045,
+        2.7332707258178273
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:44b5600c1a735117",
+      "moving_name": "XL330 舵机",
+      "other_id": "instance:part:microduck:133711c520619e45",
+      "other_name": "颈部件",
+      "penetration_m": 0.0006497957231318117,
+      "reference_depth_m": 0,
+      "point_mm": [
+        1.3502042768681883,
+        -14.872265792219814,
+        70.59298347112586
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:cd6d48fccc95df41",
+      "moving_name": "XL330 舵机",
+      "other_id": "instance:part:microduck:55970da91992f38c",
+      "other_name": "偏航与横滚连接件",
+      "penetration_m": 0.006820653373795355,
+      "reference_depth_m": 0.004800000041723246,
+      "point_mm": [
+        2.2539415984422835,
+        -3.1793466262046444,
+        -16.76509994224927
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:087d7a46a3ce4ca3",
+      "moving_name": "XL330 舵机",
+      "other_id": "instance:part:microduck:48099e14105d3289",
+      "other_name": "偏航与横滚连接件",
+      "penetration_m": 0.005662616329848481,
+      "reference_depth_m": 0.004800000041723246,
+      "point_mm": [
+        -1.7596100121905751,
+        -4.337383670151519,
+        -9.823784751302732
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:ea69e2c6bba10a23",
+      "moving_name": "轴承外形（22×16×4 配置名）",
+      "other_id": "instance:part:microduck:55121c0b36f62219",
+      "other_name": "轴承外形（22×16×4 配置名）",
+      "penetration_m": 0.0004959328752930272,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -5.170778020573301,
+        6.87000670597196,
+        3.278785325614736
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.8,
+      "moving_id": "instance:part:microduck:82d68e991b23c2a3",
+      "moving_name": "头部上壳",
+      "other_id": "instance:part:microduck:a682dc3620df43f5",
+      "other_name": "XL330 舵机",
+      "penetration_m": 0.0005980715069654359,
+      "reference_depth_m": 0,
+      "point_mm": [
+        10.901928493034564,
+        -9.322644145924706,
+        -19.931565609050896
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.8,
+      "moving_id": "instance:part:microduck:82d68e991b23c2a3",
+      "moving_name": "头部上壳",
+      "other_id": "instance:part:microduck:7c130c8489b57c99",
+      "other_name": "XL330 舵机",
+      "penetration_m": 0.003860027619238206,
+      "reference_depth_m": 0,
+      "point_mm": [
+        1.2227115777233521,
+        3.041867995447788,
+        -20.639972380761794
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.8,
+      "moving_id": "instance:part:microduck:82d68e991b23c2a3",
+      "moving_name": "头部上壳",
+      "other_id": "instance:part:microduck:41db565298264db6",
+      "other_name": "左脚部件",
+      "penetration_m": 0.00115688800955985,
+      "reference_depth_m": 0,
+      "point_mm": [
+        63.02041849623396,
+        36.920094491493444,
+        -19.007514951967565
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.8,
+      "moving_id": "instance:part:microduck:82d68e991b23c2a3",
+      "moving_name": "头部上壳",
+      "other_id": "instance:part:microduck:4cef8bb24d37fe6e",
+      "other_name": "XL330 舵机",
+      "penetration_m": 0.0010296448591912081,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -9.00267651943372,
+        8.970355140808792,
+        -12.834485210094213
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.8,
+      "moving_id": "instance:part:microduck:82d68e991b23c2a3",
+      "moving_name": "头部上壳",
+      "other_id": "instance:part:microduck:22f2cd114e324ec5",
+      "other_name": "扬声器外形",
+      "penetration_m": 0.0007464012821160928,
+      "reference_depth_m": 0,
+      "point_mm": [
+        9.26289352333287,
+        -3.5495207293241293,
+        6.253598717883907
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.8,
+      "moving_id": "instance:part:microduck:52fdcacf474a463f",
+      "moving_name": "头部下壳",
+      "other_id": "instance:part:microduck:48099e14105d3289",
+      "other_name": "偏航与横滚连接件",
+      "penetration_m": 0.00044382941430524346,
+      "reference_depth_m": 0,
+      "point_mm": [
+        16.946852478480494,
+        2.6055481245289087,
+        13.877836172041977
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.8,
+      "moving_id": "instance:part:microduck:52fdcacf474a463f",
+      "moving_name": "头部下壳",
+      "other_id": "instance:part:microduck:087d7a46a3ce4ca3",
+      "other_name": "XL330 舵机",
+      "penetration_m": 0.0038387014104957016,
+      "reference_depth_m": 0,
+      "point_mm": [
+        4.309537394333165,
+        -1.790355293607206,
+        5.661298589504298
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.8,
+      "moving_id": "instance:part:microduck:328011951ac11ee7",
+      "moving_name": "喙部件",
+      "other_id": "instance:part:microduck:f5797f92c2bf01b8",
+      "other_name": "喙部软质件",
+      "penetration_m": 0.0026619164504863616,
+      "reference_depth_m": 0.000010947390064320217,
+      "point_mm": [
+        -31.493392237540938,
+        -30.669389322309204,
+        -5.408440465830315
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.8,
+      "moving_id": "instance:part:microduck:328011951ac11ee7",
+      "moving_name": "喙部件",
+      "other_id": "instance:part:microduck:554503ef38151e67",
+      "other_name": "RPI Robot HAT 电路板外形",
+      "penetration_m": 0.0005793837962040556,
+      "reference_depth_m": 0,
+      "point_mm": [
+        42.97366626785704,
+        -14.8916385391126,
+        -8.555323754513317
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.8,
+      "moving_id": "instance:part:microduck:afa52198f7fad203",
+      "moving_name": "面部件",
+      "other_id": "instance:part:microduck:88b7496d63cb41ff",
+      "other_name": "喙上部软质件",
+      "penetration_m": 0.0004852189942102854,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -41.84566757298571,
+        -43.220293694109884,
+        -3.8447721938848733
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.8,
+      "moving_id": "instance:part:microduck:9d70b219a5533bf1",
+      "moving_name": "右侧外壳",
+      "other_id": "instance:part:microduck:e40b9945707505e1",
+      "other_name": "右大腿部件",
+      "penetration_m": 0.0006994392604599753,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -66.46995598832432,
+        7.801247307257448,
+        22.505344352194328
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.8,
+      "moving_id": "instance:part:microduck:9d70b219a5533bf1",
+      "moving_name": "右侧外壳",
+      "other_id": "instance:part:microduck:b371ac60e2f6757b",
+      "other_name": "右踝部件",
+      "penetration_m": 0.00042506753172534675,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -66.07493246827465,
+        27.158788453336374,
+        -5.072303144512169
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.8,
+      "moving_id": "instance:part:microduck:986b5adf27910138",
+      "moving_name": "电机支架",
+      "other_id": "instance:part:microduck:7038a050dbc33fb0",
+      "other_name": "XL330 舵机",
+      "penetration_m": 0.0030010260908664714,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -8.498973909133529,
+        -3.8792823201546014,
+        -18.798099464577994
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.8,
+      "moving_id": "instance:part:microduck:986b5adf27910138",
+      "moving_name": "电机支架",
+      "other_id": "instance:part:microduck:0820b4025f26a004",
+      "other_name": "XL330 舵机",
+      "penetration_m": 0.0032006086414974586,
+      "reference_depth_m": 0,
+      "point_mm": [
+        6.25449945136662,
+        6.799391358502541,
+        -18.424614692958507
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.8,
+      "moving_id": "instance:part:microduck:f5797f92c2bf01b8",
+      "moving_name": "喙部软质件",
+      "other_id": "instance:part:microduck:44b5600c1a735117",
+      "other_name": "XL330 舵机",
+      "penetration_m": 0.0006751908898386745,
+      "reference_depth_m": 0,
+      "point_mm": [
+        6.298868610100323,
+        4.216064059026937,
+        -23.824809110161326
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.8,
+      "moving_id": "instance:part:microduck:f5797f92c2bf01b8",
+      "moving_name": "喙部软质件",
+      "other_id": "instance:part:microduck:d4b9a9e9474a9829",
+      "other_name": "偏航与横滚传动件",
+      "penetration_m": 0.0007080968569672663,
+      "reference_depth_m": 0,
+      "point_mm": [
+        4.156930027432622,
+        17.191902761563007,
+        2.4785396101435953
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.8,
+      "moving_id": "instance:part:microduck:f5797f92c2bf01b8",
+      "moving_name": "喙部软质件",
+      "other_id": "instance:part:microduck:554503ef38151e67",
+      "other_name": "RPI Robot HAT 电路板外形",
+      "penetration_m": 0.00041410436565521633,
+      "reference_depth_m": 0,
+      "point_mm": [
+        57.42271636231138,
+        -20.141204413691277,
+        0.42589560811873994
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.8,
+      "moving_id": "instance:part:microduck:66c73aaad945a993",
+      "moving_name": "左大腿部件",
+      "other_id": "instance:part:microduck:8b649e45831a1972",
+      "other_name": "左脚底",
+      "penetration_m": 0.0008716893349743273,
+      "reference_depth_m": 0,
+      "point_mm": [
+        62.982764527035606,
+        14.392168459092193,
+        -27.832140834055473
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.8,
+      "moving_id": "instance:part:microduck:e40b9945707505e1",
+      "moving_name": "右大腿部件",
+      "other_id": "instance:part:microduck:b371ac60e2f6757b",
+      "other_name": "右踝部件",
+      "penetration_m": 0.0030048579678385394,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -58.53759620809831,
+        23.156177212523588,
+        -19.468645488489933
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.8,
+      "moving_id": "instance:part:microduck:554503ef38151e67",
+      "moving_name": "RPI Robot HAT 电路板外形",
+      "other_id": "instance:part:microduck:44b5600c1a735117",
+      "other_name": "XL330 舵机",
+      "penetration_m": 0.005665775931773137,
+      "reference_depth_m": 0,
+      "point_mm": [
+        8.834224068226863,
+        -1.895661979663405,
+        3.7488333020830646
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.8,
+      "moving_id": "instance:part:microduck:554503ef38151e67",
+      "moving_name": "RPI Robot HAT 电路板外形",
+      "other_id": "instance:part:microduck:133711c520619e45",
+      "other_name": "颈部件",
+      "penetration_m": 0.0007959596876573176,
+      "reference_depth_m": 0,
+      "point_mm": [
+        1.2040403123426824,
+        -27.701044274195947,
+        71.6349277134439
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.8,
+      "moving_id": "instance:part:microduck:f9955f19a691a1f4",
+      "moving_name": "右脚部件",
+      "other_id": "instance:part:microduck:6b5602b4416129fe",
+      "other_name": "颈部件",
+      "penetration_m": 0.0004318209452134383,
+      "reference_depth_m": 0,
+      "point_mm": [
+        1.5681790547865617,
+        -27.240197344675863,
+        74.32367812226185
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.8,
+      "moving_id": "instance:part:microduck:2f557a24b2729755",
+      "moving_name": "右脚底",
+      "other_id": "instance:part:microduck:96e22c7fa2b976d3",
+      "other_name": "XL330 舵机",
+      "penetration_m": 0.009053356355429124,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -4.802461724629701,
+        0.9466436445708766,
+        -1.583641880392257
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.8,
+      "moving_id": "instance:part:microduck:8b649e45831a1972",
+      "moving_name": "左脚底",
+      "other_id": "instance:part:microduck:9ffe9d5bcd6bc13a",
+      "other_name": "XL330 舵机",
+      "penetration_m": 0.0018569489777547972,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -12.643051022245203,
+        0.44508025486059566,
+        -2.742320714658174
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.8,
+      "moving_id": "instance:part:microduck:c7eeeac0a640d191",
+      "moving_name": "髋部件",
+      "other_id": "instance:part:microduck:2559a4c412bcda3e",
+      "other_name": "眼部部件",
+      "penetration_m": 0.0004795216024170798,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -13.095747720687354,
+        -63.020482212280186,
+        14.258796004783754
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.8,
+      "moving_id": "instance:part:microduck:4cf80d5a57c8cb04",
+      "moving_name": "XL330 舵机",
+      "other_id": "instance:part:microduck:9ffe9d5bcd6bc13a",
+      "other_name": "XL330 舵机",
+      "penetration_m": 0.0032979440970794106,
+      "reference_depth_m": 0,
+      "point_mm": [
+        1.6978871114047571,
+        6.7020559029205895,
+        2.6661749972776176
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.8,
+      "moving_id": "instance:part:microduck:7c130c8489b57c99",
+      "moving_name": "XL330 舵机",
+      "other_id": "instance:part:microduck:a682dc3620df43f5",
+      "other_name": "XL330 舵机",
+      "penetration_m": 0.006054235062438011,
+      "reference_depth_m": 0,
+      "point_mm": [
+        5.4457649375619885,
+        0.8787685172271802,
+        -17.663863384262953
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.8,
+      "moving_id": "instance:part:microduck:7c130c8489b57c99",
+      "moving_name": "XL330 舵机",
+      "other_id": "instance:part:microduck:22f2cd114e324ec5",
+      "other_name": "扬声器外形",
+      "penetration_m": 0.0027620020176042388,
+      "reference_depth_m": 0,
+      "point_mm": [
+        10.702767173714767,
+        -7.875332261463281,
+        4.237997982395761
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.8,
+      "moving_id": "instance:part:microduck:7038a050dbc33fb0",
+      "moving_name": "XL330 舵机",
+      "other_id": "instance:part:microduck:0820b4025f26a004",
+      "other_name": "XL330 舵机",
+      "penetration_m": 0.005188198460683165,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -2.71480763163795,
+        -4.811801539316835,
+        -10.597883945720646
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.8,
+      "moving_id": "instance:part:microduck:08c5ade0f3fd37db",
+      "moving_name": "XL330 舵机",
+      "other_id": "instance:part:microduck:087d7a46a3ce4ca3",
+      "other_name": "XL330 舵机",
+      "penetration_m": 0.0012220951175977105,
+      "reference_depth_m": 0,
+      "point_mm": [
+        0.36165966986095555,
+        -1.6307635123410522,
+        -23.27790488240229
+      ]
+    },
+    {
+      "step": 1,
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "phase": "stage",
+      "kind": "transit_intrusion",
+      "fraction": 0.8,
+      "moving_id": "instance:part:microduck:a682dc3620df43f5",
+      "moving_name": "XL330 舵机",
+      "other_id": "instance:part:microduck:22f2cd114e324ec5",
+      "other_name": "扬声器外形",
+      "penetration_m": 0.002885763783370017,
+      "reference_depth_m": 0,
+      "point_mm": [
+        4.881535896577974,
+        -22.114236216629983,
+        4.010977271509697
+      ]
+    },
+    {
+      "step": 10,
+      "label": "头部下壳 · 同轴对准，沿轴线装入轴承外形（22×16×4 配置名）",
+      "phase": "preassemble",
+      "kind": "transit_intrusion",
+      "fraction": 0.8,
+      "moving_id": "instance:part:microduck:55121c0b36f62219",
+      "moving_name": "轴承外形（22×16×4 配置名）",
+      "other_id": "instance:part:microduck:52fdcacf474a463f",
+      "other_name": "头部下壳",
+      "penetration_m": 0.000662188019603494,
+      "reference_depth_m": 0,
+      "point_mm": [
+        7.372368592768964,
+        -58.15798390474585,
+        -0.6621880196034935
+      ]
+    },
+    {
+      "step": 15,
+      "label": "右踝部件 · 同轴对准，沿轴线装入轴承外形（默认配置名）",
+      "phase": "preassemble",
+      "kind": "transit_intrusion",
+      "fraction": 0.95,
+      "moving_id": "instance:part:microduck:e196235810184adf",
+      "moving_name": "轴承外形（默认配置名）",
+      "other_id": "instance:part:microduck:b371ac60e2f6757b",
+      "other_name": "右踝部件",
+      "penetration_m": 0.0005406797107076518,
+      "reference_depth_m": 2.553890609213738e-9,
+      "point_mm": [
+        -31.82699981856114,
+        14.952305357903235,
+        -8.788061080489149
+      ]
+    },
+    {
+      "step": 19,
+      "label": "安装 · XL330 舵机",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.95,
+      "moving_id": "instance:part:microduck:a682dc3620df43f5",
+      "moving_name": "XL330 舵机",
+      "other_id": "instance:part:microduck:b364863ffde63eed",
+      "other_name": "轴承外形（22×16×4 配置名）",
+      "penetration_m": 0.0004746810457276478,
+      "reference_depth_m": 0,
+      "point_mm": [
+        7.878461852669719,
+        3.4444459168147152,
+        2.4634694801516783
+      ]
+    },
+    {
+      "step": 19,
+      "label": "安装 · XL330 舵机",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.95,
+      "moving_id": "instance:part:microduck:a682dc3620df43f5",
+      "moving_name": "XL330 舵机",
+      "other_id": "instance:part:microduck:203d2686e3321e4a",
+      "other_name": "躯干底座",
+      "penetration_m": 0.000738683199267129,
+      "reference_depth_m": 0,
+      "point_mm": [
+        9.555260707987458,
+        -9.634615095762111,
+        17.963469040567425
+      ]
+    },
+    {
+      "step": 20,
+      "label": "安装 · XL330 舵机",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.95,
+      "moving_id": "instance:part:microduck:09cb390e38430c1e",
+      "moving_name": "XL330 舵机",
+      "other_id": "instance:part:microduck:203d2686e3321e4a",
+      "other_name": "躯干底座",
+      "penetration_m": 0.0004503725961708378,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -11.961631272546931,
+        7.448580066249328,
+        -1.2335419711609985
+      ]
+    },
+    {
+      "step": 20,
+      "label": "安装 · XL330 舵机",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.95,
+      "moving_id": "instance:part:microduck:09cb390e38430c1e",
+      "moving_name": "XL330 舵机",
+      "other_id": "instance:part:microduck:7938fd9143c59ea4",
+      "other_name": "轴承外形（22×16×4 配置名）",
+      "penetration_m": 0.0007549862665868962,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -12.961631157062932,
+        6.441962780938102,
+        -3.483743717051087
+      ]
+    },
+    {
+      "step": 21,
+      "label": "安装 · NP-F970 电池外形",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.95,
+      "moving_id": "instance:part:microduck:f97c1c6580d651d7",
+      "moving_name": "NP-F970 电池外形",
+      "other_id": "instance:part:microduck:78cf36c41e4fde06",
+      "other_name": "电路板固定件",
+      "penetration_m": 0.0004459212328959694,
+      "reference_depth_m": 0,
+      "point_mm": [
+        3.025736236436806,
+        35.88918648142696,
+        49.4303995450488
+      ]
+    },
+    {
+      "step": 22,
+      "label": "安装 · 偏航与横滚连接件",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.8,
+      "moving_id": "instance:part:microduck:55970da91992f38c",
+      "moving_name": "偏航与横滚连接件",
+      "other_id": "instance:part:microduck:b364863ffde63eed",
+      "other_name": "轴承外形（22×16×4 配置名）",
+      "penetration_m": 0.0005391115968281426,
+      "reference_depth_m": 1.028670577163382e-9,
+      "point_mm": [
+        6.433333260643218,
+        8.376418018342655,
+        1.2161687885626637
+      ]
+    },
+    {
+      "step": 22,
+      "label": "安装 · 偏航与横滚连接件",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.8,
+      "moving_id": "instance:part:microduck:55970da91992f38c",
+      "moving_name": "偏航与横滚连接件",
+      "other_id": "instance:part:microduck:203d2686e3321e4a",
+      "other_name": "躯干底座",
+      "penetration_m": 0.0007838308165565681,
+      "reference_depth_m": 0,
+      "point_mm": [
+        9.973582083730307,
+        -0.6666669271114092,
+        12.283830816556568
+      ]
+    },
+    {
+      "step": 22,
+      "label": "安装 · 偏航与横滚连接件",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.8,
+      "moving_id": "instance:part:microduck:55970da91992f38c",
+      "moving_name": "偏航与横滚连接件",
+      "other_id": "instance:part:microduck:a682dc3620df43f5",
+      "other_name": "XL330 舵机",
+      "penetration_m": 0.0004911228962226736,
+      "reference_depth_m": 0,
+      "point_mm": [
+        6.491122896222674,
+        1.6471717876223035,
+        10.283831323196058
+      ]
+    },
+    {
+      "step": 24,
+      "label": "安装 · XL330 舵机",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.8,
+      "moving_id": "instance:part:microduck:cd6d48fccc95df41",
+      "moving_name": "XL330 舵机",
+      "other_id": "instance:part:microduck:b364863ffde63eed",
+      "other_name": "轴承外形（22×16×4 配置名）",
+      "penetration_m": 0.00041788170884326446,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -3.074345150484997,
+        10.135623639039185,
+        1.1197482696137655
+      ]
+    },
+    {
+      "step": 24,
+      "label": "安装 · XL330 舵机",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.8,
+      "moving_id": "instance:part:microduck:cd6d48fccc95df41",
+      "moving_name": "XL330 舵机",
+      "other_id": "instance:part:microduck:47a950fbb3d0e416",
+      "other_name": "轴承外形（22×16×4 配置名）",
+      "penetration_m": 0.000595554203921722,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -9.382037256151943,
+        9.404445796078278,
+        -3.2481911237686187
+      ]
+    },
+    {
+      "step": 24,
+      "label": "安装 · XL330 舵机",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.8,
+      "moving_id": "instance:part:microduck:cd6d48fccc95df41",
+      "moving_name": "XL330 舵机",
+      "other_id": "instance:part:microduck:cb253f38c818b9d8",
+      "other_name": "横滚轴承支承件",
+      "penetration_m": 0.001433607691163008,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -8.382037796319036,
+        8.566392308836992,
+        -15.569748449545283
+      ]
+    },
+    {
+      "step": 25,
+      "label": "安装 · 髋部件",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.95,
+      "moving_id": "instance:part:microduck:fa9ee2f71faafb88",
+      "moving_name": "髋部件",
+      "other_id": "instance:part:microduck:47a950fbb3d0e416",
+      "other_name": "轴承外形（22×16×4 配置名）",
+      "penetration_m": 0.00048474494610578313,
+      "reference_depth_m": 1.0274075243899006e-9,
+      "point_mm": [
+        8.420962633505052,
+        0.9504856555351164,
+        0.7170703364342614
+      ]
+    },
+    {
+      "step": 26,
+      "label": "安装 · XL330 舵机",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.2,
+      "moving_id": "instance:part:microduck:9ffe9d5bcd6bc13a",
+      "moving_name": "XL330 舵机",
+      "other_id": "instance:part:microduck:638f29b46b322e64",
+      "other_name": "腿部连杆",
+      "penetration_m": 0.0016871759180818327,
+      "reference_depth_m": 0,
+      "point_mm": [
+        35.187162119556895,
+        16.870723959337823,
+        35.86928250681933
+      ]
+    },
+    {
+      "step": 27,
+      "label": "安装轴承预装组合 · 3 个部件",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.8,
+      "moving_id": "instance:part:microduck:bb34e925e25e29f6",
+      "moving_name": "轴承外形（22×16×4 配置名）",
+      "other_id": "instance:part:microduck:9ffe9d5bcd6bc13a",
+      "other_name": "XL330 舵机",
+      "penetration_m": 0.0012701687663793368,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -6.106144820443447,
+        4.709757398813944,
+        8.229831233620663
+      ]
+    },
+    {
+      "step": 27,
+      "label": "安装轴承预装组合 · 3 个部件",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.8,
+      "moving_id": "instance:part:microduck:c75bfc0afb35e000",
+      "moving_name": "大腿加强板",
+      "other_id": "instance:part:microduck:9ffe9d5bcd6bc13a",
+      "other_name": "XL330 舵机",
+      "penetration_m": 0.0014999995380640101,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -3.6111106640762145,
+        8.50000046193599,
+        -17.999999225139632
+      ]
+    },
+    {
+      "step": 28,
+      "label": "安装 · 腿部连杆",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.2,
+      "moving_id": "instance:part:microduck:638f29b46b322e64",
+      "moving_name": "腿部连杆",
+      "other_id": "instance:part:microduck:66c73aaad945a993",
+      "other_name": "左大腿部件",
+      "penetration_m": 0.0005629800791510852,
+      "reference_depth_m": 0,
+      "point_mm": [
+        68.47035912408379,
+        -8.265249557595283,
+        42.69948506184111
+      ]
+    },
+    {
+      "step": 28,
+      "label": "安装 · 腿部连杆",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.95,
+      "moving_id": "instance:part:microduck:638f29b46b322e64",
+      "moving_name": "腿部连杆",
+      "other_id": "instance:part:microduck:e475134639b3f7e1",
+      "other_name": "轴承外形（22×16×4 配置名）",
+      "penetration_m": 0.0005328249859685244,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -6.654349333102267,
+        -8.213113130256584,
+        1.2207452392201574
+      ]
+    },
+    {
+      "step": 32,
+      "label": "安装轴承预装组合 · 2 个部件",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:766eaa6e4dd8b09f",
+      "moving_name": "轴承外形（默认配置名）",
+      "other_id": "instance:part:microduck:4cf80d5a57c8cb04",
+      "other_name": "XL330 舵机",
+      "penetration_m": 0.007049993835389573,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -3.437163027003395,
+        2.9500061646104276,
+        -6.665551572377726
+      ]
+    },
+    {
+      "step": 32,
+      "label": "安装轴承预装组合 · 2 个部件",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:07e507f1e9297aa3",
+      "moving_name": "左踝部件",
+      "other_id": "instance:part:microduck:66c73aaad945a993",
+      "other_name": "左大腿部件",
+      "penetration_m": 0.0004208469530834265,
+      "reference_depth_m": 0,
+      "point_mm": [
+        69.97439051336715,
+        23.444397894095513,
+        44.75560270569316
+      ]
+    },
+    {
+      "step": 32,
+      "label": "安装轴承预装组合 · 2 个部件",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:07e507f1e9297aa3",
+      "moving_name": "左踝部件",
+      "other_id": "instance:part:microduck:4cf80d5a57c8cb04",
+      "other_name": "XL330 舵机",
+      "penetration_m": 0.0031063455268740404,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -4.414500415325108,
+        6.8936544731259595,
+        -10.934454144238256
+      ]
+    },
+    {
+      "step": 32,
+      "label": "安装轴承预装组合 · 2 个部件",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.8,
+      "moving_id": "instance:part:microduck:766eaa6e4dd8b09f",
+      "moving_name": "轴承外形（默认配置名）",
+      "other_id": "instance:part:microduck:7c130c8489b57c99",
+      "other_name": "XL330 舵机",
+      "penetration_m": 0.00401555777341129,
+      "reference_depth_m": 0,
+      "point_mm": [
+        3.1778484135728164,
+        -2.95000616461044,
+        5.48444222658871
+      ]
+    },
+    {
+      "step": 32,
+      "label": "安装轴承预装组合 · 2 个部件",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.8,
+      "moving_id": "instance:part:microduck:07e507f1e9297aa3",
+      "moving_name": "左踝部件",
+      "other_id": "instance:part:microduck:7c130c8489b57c99",
+      "other_name": "XL330 舵机",
+      "penetration_m": 0.0031063455268740387,
+      "reference_depth_m": 2.6345252592818724e-9,
+      "point_mm": [
+        4.155185801894554,
+        -6.893654473125961,
+        1.2155396547281843
+      ]
+    },
+    {
+      "step": 32,
+      "label": "安装轴承预装组合 · 2 个部件",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.95,
+      "moving_id": "instance:part:microduck:766eaa6e4dd8b09f",
+      "moving_name": "轴承外形（默认配置名）",
+      "other_id": "instance:part:microduck:638f29b46b322e64",
+      "other_name": "腿部连杆",
+      "penetration_m": 0.0011544815650968304,
+      "reference_depth_m": 1.2665222815400056e-8,
+      "point_mm": [
+        36.65448156509683,
+        24.430055057629865,
+        -1.0116300513684626
+      ]
+    },
+    {
+      "step": 32,
+      "label": "安装轴承预装组合 · 2 个部件",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.95,
+      "moving_id": "instance:part:microduck:07e507f1e9297aa3",
+      "moving_name": "左踝部件",
+      "other_id": "instance:part:microduck:638f29b46b322e64",
+      "other_name": "腿部连杆",
+      "penetration_m": 0.0007544822781174361,
+      "reference_depth_m": 0,
+      "point_mm": [
+        36.45448304105689,
+        17.999999225139565,
+        0.7053008767946007
+      ]
+    },
+    {
+      "step": 33,
+      "label": "安装 · 左脚部件",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:41db565298264db6",
+      "moving_name": "左脚部件",
+      "other_id": "instance:part:microduck:7c130c8489b57c99",
+      "other_name": "XL330 舵机",
+      "penetration_m": 0.003346732978374382,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -11.094061115231057,
+        -6.32685008102651,
+        -4.076436884814996
+      ]
+    },
+    {
+      "step": 33,
+      "label": "安装 · 左脚部件",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:41db565298264db6",
+      "moving_name": "左脚部件",
+      "other_id": "instance:part:microduck:07e507f1e9297aa3",
+      "other_name": "左踝部件",
+      "penetration_m": 0.0010496531075544198,
+      "reference_depth_m": 0.000016516572416296782,
+      "point_mm": [
+        67.29331704064796,
+        25.999161025345337,
+        -3.7630923764327733
+      ]
+    },
+    {
+      "step": 34,
+      "label": "安装 · 左脚底",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:8b649e45831a1972",
+      "moving_name": "左脚底",
+      "other_id": "instance:part:microduck:7c130c8489b57c99",
+      "other_name": "XL330 舵机",
+      "penetration_m": 0.0067598110264172374,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -0.573179312531181,
+        -3.2401889735827627,
+        -5.53020894216418
+      ]
+    },
+    {
+      "step": 34,
+      "label": "安装 · 左脚底",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:8b649e45831a1972",
+      "moving_name": "左脚底",
+      "other_id": "instance:part:microduck:07e507f1e9297aa3",
+      "other_name": "左踝部件",
+      "penetration_m": 0.0016003930041496662,
+      "reference_depth_m": 0,
+      "point_mm": [
+        66.41440667707123,
+        17.14377543833156,
+        -1.13911935810685
+      ]
+    },
+    {
+      "step": 34,
+      "label": "安装 · 左脚底",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.8,
+      "moving_id": "instance:part:microduck:8b649e45831a1972",
+      "moving_name": "左脚底",
+      "other_id": "instance:part:microduck:41db565298264db6",
+      "other_name": "左脚部件",
+      "penetration_m": 0.00048824077085924246,
+      "reference_depth_m": 0.000016964185071149275,
+      "point_mm": [
+        43.87051422726233,
+        7.938902809119613,
+        -17.853683896499156
+      ]
+    },
+    {
+      "step": 35,
+      "label": "安装 · 偏航与横滚连接件",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.8,
+      "moving_id": "instance:part:microduck:48099e14105d3289",
+      "moving_name": "偏航与横滚连接件",
+      "other_id": "instance:part:microduck:203d2686e3321e4a",
+      "other_name": "躯干底座",
+      "penetration_m": 0.002153965313870316,
+      "reference_depth_m": 0,
+      "point_mm": [
+        23.574358555869587,
+        2.078273167588838,
+        12.29603449539482
+      ]
+    },
+    {
+      "step": 35,
+      "label": "安装 · 偏航与横滚连接件",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.8,
+      "moving_id": "instance:part:microduck:48099e14105d3289",
+      "moving_name": "偏航与横滚连接件",
+      "other_id": "instance:part:microduck:09cb390e38430c1e",
+      "other_name": "XL330 舵机",
+      "penetration_m": 0.0017039655195063385,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -12.796034480493661,
+        5.13102249953117,
+        1.7698319927513921
+      ]
+    },
+    {
+      "step": 35,
+      "label": "安装 · 偏航与横滚连接件",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.8,
+      "moving_id": "instance:part:microduck:48099e14105d3289",
+      "moving_name": "偏航与横滚连接件",
+      "other_id": "instance:part:microduck:7938fd9143c59ea4",
+      "other_name": "轴承外形（22×16×4 配置名）",
+      "penetration_m": 0.00048747499588533573,
+      "reference_depth_m": 1.0286705736106682e-9,
+      "point_mm": [
+        -1.1217265401621308,
+        -10.416486312809585,
+        1.0101053487644673
+      ]
+    },
+    {
+      "step": 37,
+      "label": "安装 · XL330 舵机",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.8,
+      "moving_id": "instance:part:microduck:087d7a46a3ce4ca3",
+      "moving_name": "XL330 舵机",
+      "other_id": "instance:part:microduck:7938fd9143c59ea4",
+      "other_name": "轴承外形（22×16×4 配置名）",
+      "penetration_m": 0.00045415388423355373,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -1.2795010905644428,
+        -8.446417106774955,
+        1.102592062852528
+      ]
+    },
+    {
+      "step": 37,
+      "label": "安装 · XL330 舵机",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.8,
+      "moving_id": "instance:part:microduck:087d7a46a3ce4ca3",
+      "moving_name": "XL330 舵机",
+      "other_id": "instance:part:microduck:c703574f50f6a46a",
+      "other_name": "横滚轴承支承件",
+      "penetration_m": 0.0004068514847247613,
+      "reference_depth_m": 0,
+      "point_mm": [
+        9.053582893225036,
+        -14.093148515275239,
+        -14.758518471252511
+      ]
+    },
+    {
+      "step": 37,
+      "label": "安装 · XL330 舵机",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.8,
+      "moving_id": "instance:part:microduck:087d7a46a3ce4ca3",
+      "moving_name": "XL330 舵机",
+      "other_id": "instance:part:microduck:3fbf0b5c8cea4488",
+      "other_name": "轴承外形（22×16×4 配置名）",
+      "penetration_m": 0.0004049590377753276,
+      "reference_depth_m": 0,
+      "point_mm": [
+        1.620449337159211,
+        -8.446417106774955,
+        2.2322483084659
+      ]
+    },
+    {
+      "step": 38,
+      "label": "安装 · 髋部件",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.95,
+      "moving_id": "instance:part:microduck:c7eeeac0a640d191",
+      "moving_name": "髋部件",
+      "other_id": "instance:part:microduck:3fbf0b5c8cea4488",
+      "other_name": "轴承外形（22×16×4 配置名）",
+      "penetration_m": 0.0005595861271630716,
+      "reference_depth_m": 1.0274075323835063e-9,
+      "point_mm": [
+        -6.800501910978295,
+        -4.995609694146735,
+        0.6735592705874502
+      ]
+    },
+    {
+      "step": 40,
+      "label": "安装 · 腿部连杆",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.2,
+      "moving_id": "instance:part:microduck:7f4fefc3c6de90f1",
+      "moving_name": "腿部连杆",
+      "other_id": "instance:part:microduck:9d70b219a5533bf1",
+      "other_name": "右侧外壳",
+      "penetration_m": 0.0007633635203396594,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -1.0633635322605883,
+        42.301495925444314,
+        54.23156534983226
+      ]
+    },
+    {
+      "step": 40,
+      "label": "安装 · 腿部连杆",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.95,
+      "moving_id": "instance:part:microduck:7f4fefc3c6de90f1",
+      "moving_name": "腿部连杆",
+      "other_id": "instance:part:microduck:d6a148b5784955d8",
+      "other_name": "轴承外形（22×16×4 配置名）",
+      "penetration_m": 0.0006000085857857602,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -7.020982200919921,
+        -4.771929635814104,
+        2.013338910770763
+      ]
+    },
+    {
+      "step": 41,
+      "label": "安装轴承预装组合 · 2 个部件",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.95,
+      "moving_id": "instance:part:microduck:b371ac60e2f6757b",
+      "moving_name": "右踝部件",
+      "other_id": "instance:part:microduck:7f4fefc3c6de90f1",
+      "other_name": "腿部连杆",
+      "penetration_m": 0.0006911001626517219,
+      "reference_depth_m": 0,
+      "point_mm": [
+        36.45448304105688,
+        29.03524344414477,
+        -0.21725141858382618
+      ]
+    },
+    {
+      "step": 41,
+      "label": "安装轴承预装组合 · 2 个部件",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.95,
+      "moving_id": "instance:part:microduck:e196235810184adf",
+      "moving_name": "轴承外形（默认配置名）",
+      "other_id": "instance:part:microduck:7f4fefc3c6de90f1",
+      "other_name": "腿部连杆",
+      "penetration_m": 0.0011544815390197912,
+      "reference_depth_m": 1.2665223326990827e-8,
+      "point_mm": [
+        36.65448153901979,
+        17.595244225114616,
+        -2.526871158340584
+      ]
+    },
+    {
+      "step": 42,
+      "label": "安装 · 右脚部件",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:f9955f19a691a1f4",
+      "moving_name": "右脚部件",
+      "other_id": "instance:part:microduck:7f4fefc3c6de90f1",
+      "other_name": "腿部连杆",
+      "penetration_m": 0.0015429890453748458,
+      "reference_depth_m": 0,
+      "point_mm": [
+        35.457010954625154,
+        20.393983094691812,
+        10.678062586336416
+      ]
+    },
+    {
+      "step": 42,
+      "label": "安装 · 右脚部件",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:f9955f19a691a1f4",
+      "moving_name": "右脚部件",
+      "other_id": "instance:part:microduck:b371ac60e2f6757b",
+      "other_name": "右踝部件",
+      "penetration_m": 0.000531865377607035,
+      "reference_depth_m": 0.000016516572416296782,
+      "point_mm": [
+        -33.61367171705438,
+        27.66082096826915,
+        0.5501393795207186
+      ]
+    },
+    {
+      "step": 42,
+      "label": "安装 · 右脚部件",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:f9955f19a691a1f4",
+      "moving_name": "右脚部件",
+      "other_id": "instance:part:microduck:e196235810184adf",
+      "other_name": "轴承外形（默认配置名）",
+      "penetration_m": 0.0007291858156668764,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -42.08632676973266,
+        -8.067558502598452,
+        -25.4037043962708
+      ]
+    },
+    {
+      "step": 43,
+      "label": "安装 · 右脚底",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.4,
+      "moving_id": "instance:part:microduck:2f557a24b2729755",
+      "moving_name": "右脚底",
+      "other_id": "instance:part:microduck:986b5adf27910138",
+      "other_name": "电机支架",
+      "penetration_m": 0.0007096760131937394,
+      "reference_depth_m": 0,
+      "point_mm": [
+        26.906783961546267,
+        -8.193183559158145,
+        18.20967601319374
+      ]
+    },
+    {
+      "step": 43,
+      "label": "安装 · 右脚底",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:2f557a24b2729755",
+      "moving_name": "右脚底",
+      "other_id": "instance:part:microduck:b371ac60e2f6757b",
+      "other_name": "右踝部件",
+      "penetration_m": 0.0008462617416288652,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -65.54625868987105,
+        16.42638482455257,
+        -2.4185725876875175
+      ]
+    },
+    {
+      "step": 43,
+      "label": "安装 · 右脚底",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.8,
+      "moving_id": "instance:part:microduck:2f557a24b2729755",
+      "moving_name": "右脚底",
+      "other_id": "instance:part:microduck:f9955f19a691a1f4",
+      "other_name": "右脚部件",
+      "penetration_m": 0.0006942125096296881,
+      "reference_depth_m": 0.00001261119295303459,
+      "point_mm": [
+        -46.50190396118225,
+        5.843995021345654,
+        -21.296342007958817
+      ]
+    },
+    {
+      "step": 46,
+      "label": "安装 · XL330 舵机",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.8,
+      "moving_id": "instance:part:microduck:08c5ade0f3fd37db",
+      "moving_name": "XL330 舵机",
+      "other_id": "instance:part:microduck:e40b9945707505e1",
+      "other_name": "右大腿部件",
+      "penetration_m": 0.00535009719548009,
+      "reference_depth_m": 0.004800000011920922,
+      "point_mm": [
+        -4.14948124946612,
+        -4.649902804519909,
+        -9.74026198188463
+      ]
+    },
+    {
+      "step": 47,
+      "label": "安装 · XL330 舵机",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.2,
+      "moving_id": "instance:part:microduck:0820b4025f26a004",
+      "moving_name": "XL330 舵机",
+      "other_id": "instance:part:microduck:986b5adf27910138",
+      "other_name": "电机支架",
+      "penetration_m": 0.0006105238138946909,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -33.26001726196367,
+        0.004119696360013414,
+        16.51034850751315
+      ]
+    },
+    {
+      "step": 47,
+      "label": "安装 · XL330 舵机",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.2,
+      "moving_id": "instance:part:microduck:0820b4025f26a004",
+      "moving_name": "XL330 舵机",
+      "other_id": "instance:part:microduck:a0775b54397eb21e",
+      "other_name": "轴承外形（默认配置名）",
+      "penetration_m": 0.0004099900685884101,
+      "reference_depth_m": 0,
+      "point_mm": [
+        3.1012424197126043,
+        4.501252768018448,
+        1.9707524049511163
+      ]
+    },
+    {
+      "step": 47,
+      "label": "安装 · XL330 舵机",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.8,
+      "moving_id": "instance:part:microduck:0820b4025f26a004",
+      "moving_name": "XL330 舵机",
+      "other_id": "instance:part:microduck:b371ac60e2f6757b",
+      "other_name": "右踝部件",
+      "penetration_m": 0.0010606841901519887,
+      "reference_depth_m": 2.634525245071018e-9,
+      "point_mm": [
+        -68.28449808871416,
+        29.44084451952045,
+        -11.77643463229126
+      ]
+    },
+    {
+      "step": 48,
+      "label": "安装 · 右侧外壳",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:9d70b219a5533bf1",
+      "moving_name": "右侧外壳",
+      "other_id": "instance:part:microduck:09cb390e38430c1e",
+      "other_name": "XL330 舵机",
+      "penetration_m": 0.0018042984941685828,
+      "reference_depth_m": 0.0008578870276761953,
+      "point_mm": [
+        9.695701505831417,
+        -0.3188079926165157,
+        -19.598625459818038
+      ]
+    },
+    {
+      "step": 48,
+      "label": "安装 · 右侧外壳",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.95,
+      "moving_id": "instance:part:microduck:9d70b219a5533bf1",
+      "moving_name": "右侧外壳",
+      "other_id": "instance:part:microduck:e7e8275c7d01674c",
+      "other_name": "电源支架",
+      "penetration_m": 0.0004457577829955035,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -25.551415153222653,
+        25.445757782995504,
+        45.39725517882723
+      ]
+    },
+    {
+      "step": 52,
+      "label": "安装轴承预装组合 · 2 个部件",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.8,
+      "moving_id": "instance:part:microduck:834f5cc892eba41e",
+      "moving_name": "颈俯仰部件",
+      "other_id": "instance:part:microduck:44b5600c1a735117",
+      "other_name": "XL330 舵机",
+      "penetration_m": 0.0009594094437803457,
+      "reference_depth_m": 0,
+      "point_mm": [
+        15.674764403582108,
+        7.963192409639911,
+        -29.241470213422755
+      ]
+    },
+    {
+      "step": 54,
+      "label": "安装 · XL330 舵机",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.95,
+      "moving_id": "instance:part:microduck:a07b37bcb704b29f",
+      "moving_name": "XL330 舵机",
+      "other_id": "instance:part:microduck:6b884b140f6e283c",
+      "other_name": "轴承外形（22×16×4 配置名）",
+      "penetration_m": 0.0004472660812364868,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -2.7210952144357052,
+        -7.96955730766058,
+        1.5143944797711697
+      ]
+    },
+    {
+      "step": 55,
+      "label": "安装 · 偏航与横滚传动件",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.8,
+      "moving_id": "instance:part:microduck:d4b9a9e9474a9829",
+      "moving_name": "偏航与横滚传动件",
+      "other_id": "instance:part:microduck:a07b37bcb704b29f",
+      "other_name": "XL330 舵机",
+      "penetration_m": 0.003988644391324755,
+      "reference_depth_m": 0.0029999992400407544,
+      "point_mm": [
+        8.561727532403834,
+        1.4099062415271604,
+        0.5266558086070123
+      ]
+    },
+    {
+      "step": 57,
+      "label": "安装轴承预装组合 · 2 个部件",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.8,
+      "moving_id": "instance:part:microduck:52fdcacf474a463f",
+      "moving_name": "头部下壳",
+      "other_id": "instance:part:microduck:834f5cc892eba41e",
+      "other_name": "颈俯仰部件",
+      "penetration_m": 0.0005829172727706941,
+      "reference_depth_m": 0,
+      "point_mm": [
+        1.5130626270756362,
+        -7.268081664652733,
+        -11.266261807084225
+      ]
+    },
+    {
+      "step": 57,
+      "label": "安装轴承预装组合 · 2 个部件",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.8,
+      "moving_id": "instance:part:microduck:52fdcacf474a463f",
+      "moving_name": "头部下壳",
+      "other_id": "instance:part:microduck:6b884b140f6e283c",
+      "other_name": "轴承外形（22×16×4 配置名）",
+      "penetration_m": 0.0007614269870475159,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -8.684431049054254,
+        -1.0508532286621393,
+        2.097721959703896
+      ]
+    },
+    {
+      "step": 57,
+      "label": "安装轴承预装组合 · 2 个部件",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.8,
+      "moving_id": "instance:part:microduck:52fdcacf474a463f",
+      "moving_name": "头部下壳",
+      "other_id": "instance:part:microduck:d4b9a9e9474a9829",
+      "other_name": "偏航与横滚传动件",
+      "penetration_m": 0.0006666388002924175,
+      "reference_depth_m": 0,
+      "point_mm": [
+        1.2015619514776388,
+        -14.254680414963012,
+        -2.7365243448212073
+      ]
+    },
+    {
+      "step": 57,
+      "label": "安装轴承预装组合 · 2 个部件",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.8,
+      "moving_id": "instance:part:microduck:52fdcacf474a463f",
+      "moving_name": "头部下壳",
+      "other_id": "instance:part:microduck:a07b37bcb704b29f",
+      "other_name": "XL330 舵机",
+      "penetration_m": 0.0018215160597253898,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -4.647438149433711,
+        8.17848394027461,
+        -0.5675298161804437
+      ]
+    },
+    {
+      "step": 57,
+      "label": "安装轴承预装组合 · 2 个部件",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.95,
+      "moving_id": "instance:part:microduck:52fdcacf474a463f",
+      "moving_name": "头部下壳",
+      "other_id": "instance:part:microduck:96e22c7fa2b976d3",
+      "other_name": "XL330 舵机",
+      "penetration_m": 0.003662649110069971,
+      "reference_depth_m": 0.0008354304219995042,
+      "point_mm": [
+        10.837350889930029,
+        -3.5035613952205273,
+        1.3426209334284307
+      ]
+    },
+    {
+      "step": 58,
+      "label": "安装轴承预装组合 · 3 个部件",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.8,
+      "moving_id": "instance:part:microduck:986b5adf27910138",
+      "moving_name": "电机支架",
+      "other_id": "instance:part:microduck:96e22c7fa2b976d3",
+      "other_name": "XL330 舵机",
+      "penetration_m": 0.001246785312048746,
+      "reference_depth_m": 0,
+      "point_mm": [
+        10.10836186311229,
+        -4.100000010104776,
+        -0.46160692969957356
+      ]
+    },
+    {
+      "step": 58,
+      "label": "安装轴承预装组合 · 3 个部件",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.8,
+      "moving_id": "instance:part:microduck:986b5adf27910138",
+      "moving_name": "电机支架",
+      "other_id": "instance:part:microduck:52fdcacf474a463f",
+      "other_name": "头部下壳",
+      "penetration_m": 0.0005999997239560222,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -24.477019906043996,
+        -18.48508665407141,
+        1.5000001806765462
+      ]
+    },
+    {
+      "step": 58,
+      "label": "安装轴承预装组合 · 3 个部件",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.95,
+      "moving_id": "instance:part:microduck:ea69e2c6bba10a23",
+      "moving_name": "轴承外形（22×16×4 配置名）",
+      "other_id": "instance:part:microduck:96e22c7fa2b976d3",
+      "other_name": "XL330 舵机",
+      "penetration_m": 0.001270168766379344,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -8.176515249093928,
+        4.709757398813989,
+        8.229831233620656
+      ]
+    },
+    {
+      "step": 58,
+      "label": "安装轴承预装组合 · 3 个部件",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.95,
+      "moving_id": "instance:part:microduck:ea69e2c6bba10a23",
+      "moving_name": "轴承外形（22×16×4 配置名）",
+      "other_id": "instance:part:microduck:52fdcacf474a463f",
+      "other_name": "头部下壳",
+      "penetration_m": 0.0004446182612690617,
+      "reference_depth_m": 1.715868702234502e-9,
+      "point_mm": [
+        -9.999999802559596,
+        2.9176471426206403,
+        0.8905291254873937
+      ]
+    },
+    {
+      "step": 58,
+      "label": "安装轴承预装组合 · 3 个部件",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.95,
+      "moving_id": "instance:part:microduck:986b5adf27910138",
+      "moving_name": "电机支架",
+      "other_id": "instance:part:microduck:d4b9a9e9474a9829",
+      "other_name": "偏航与横滚传动件",
+      "penetration_m": 0.0014814824576731133,
+      "reference_depth_m": 0,
+      "point_mm": [
+        0.46945907524787966,
+        -11.481482457673113,
+        15.59006795287131
+      ]
+    },
+    {
+      "step": 58,
+      "label": "安装轴承预装组合 · 3 个部件",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.95,
+      "moving_id": "instance:part:microduck:986b5adf27910138",
+      "moving_name": "电机支架",
+      "other_id": "instance:part:microduck:a07b37bcb704b29f",
+      "other_name": "XL330 舵机",
+      "penetration_m": 0.0022095962648038432,
+      "reference_depth_m": 0,
+      "point_mm": [
+        2.9900001840433195,
+        7.790403735196157,
+        -19.26538068801164
+      ]
+    },
+    {
+      "step": 58,
+      "label": "安装轴承预装组合 · 3 个部件",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.95,
+      "moving_id": "instance:part:microduck:986b5adf27910138",
+      "moving_name": "电机支架",
+      "other_id": "instance:part:microduck:55121c0b36f62219",
+      "other_name": "轴承外形（22×16×4 配置名）",
+      "penetration_m": 0.0005491022121177966,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -4.1000000101048295,
+        -7.413598336279384,
+        3.2731440995578147
+      ]
+    },
+    {
+      "step": 58,
+      "label": "安装轴承预装组合 · 3 个部件",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.95,
+      "moving_id": "instance:part:microduck:a0775b54397eb21e",
+      "moving_name": "轴承外形（默认配置名）",
+      "other_id": "instance:part:microduck:52fdcacf474a463f",
+      "other_name": "头部下壳",
+      "penetration_m": 0.00047955332603305577,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -39.020446673966944,
+        6.236721572767984,
+        1.2904272228479732
+      ]
+    },
+    {
+      "step": 59,
+      "label": "安装 · XL330 舵机",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.8,
+      "moving_id": "instance:part:microduck:50f0c376d01bb0c1",
+      "moving_name": "XL330 舵机",
+      "other_id": "instance:part:microduck:986b5adf27910138",
+      "other_name": "电机支架",
+      "penetration_m": 0.0008248801992956985,
+      "reference_depth_m": 0,
+      "point_mm": [
+        28.167732189034638,
+        -25.375120563643755,
+        16.11120855394494
+      ]
+    },
+    {
+      "step": 59,
+      "label": "安装 · XL330 舵机",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.95,
+      "moving_id": "instance:part:microduck:50f0c376d01bb0c1",
+      "moving_name": "XL330 舵机",
+      "other_id": "instance:part:microduck:52fdcacf474a463f",
+      "other_name": "头部下壳",
+      "penetration_m": 0.0014892213749278795,
+      "reference_depth_m": 0.0005273624869156493,
+      "point_mm": [
+        -10.01077862507212,
+        -7.913923055875211,
+        -7.151981004303376
+      ]
+    },
+    {
+      "step": 61,
+      "label": "安装 · M12 镜头座",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.8,
+      "moving_id": "instance:part:microduck:2d2cde8ae8ebacac",
+      "moving_name": "M12 镜头座",
+      "other_id": "instance:part:microduck:b61b0609c61fc572",
+      "other_name": "镜头外形",
+      "penetration_m": 0.0028197335725299332,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -3.8056125980595272,
+        20.018677551097028,
+        4.739026589396955
+      ]
+    },
+    {
+      "step": 62,
+      "label": "安装 · RPI Robot HAT 电路板外形",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:554503ef38151e67",
+      "moving_name": "RPI Robot HAT 电路板外形",
+      "other_id": "instance:part:microduck:b61b0609c61fc572",
+      "other_name": "镜头外形",
+      "penetration_m": 0.0023034187216506652,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -5.9637890268254665,
+        21.530418515724442,
+        1.8051069473712111
+      ]
+    },
+    {
+      "step": 62,
+      "label": "安装 · RPI Robot HAT 电路板外形",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.8,
+      "moving_id": "instance:part:microduck:554503ef38151e67",
+      "moving_name": "RPI Robot HAT 电路板外形",
+      "other_id": "instance:part:microduck:2d2cde8ae8ebacac",
+      "other_name": "M12 镜头座",
+      "penetration_m": 0.00042475525831918936,
+      "reference_depth_m": 0,
+      "point_mm": [
+        6.083712583892563,
+        11.04824192800043,
+        -1.2459005745555096
+      ]
+    },
+    {
+      "step": 64,
+      "label": "安装 · 左侧外壳",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:e27cbdd6c07a264e",
+      "moving_name": "左侧外壳",
+      "other_id": "instance:part:microduck:a682dc3620df43f5",
+      "other_name": "XL330 舵机",
+      "penetration_m": 0.002733053848241262,
+      "reference_depth_m": 0.0012353211781750452,
+      "point_mm": [
+        8.766946151758738,
+        -1.6707341156552857,
+        -19.855486666659957
+      ]
+    },
+    {
+      "step": 64,
+      "label": "安装 · 左侧外壳",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.95,
+      "moving_id": "instance:part:microduck:e27cbdd6c07a264e",
+      "moving_name": "左侧外壳",
+      "other_id": "instance:part:microduck:9d70b219a5533bf1",
+      "other_name": "右侧外壳",
+      "penetration_m": 0.0004041634996773666,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -0.8566043698297174,
+        37.05883032772258,
+        58.24700007741623
+      ]
+    },
+    {
+      "step": 64,
+      "label": "安装 · 左侧外壳",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.95,
+      "moving_id": "instance:part:microduck:e27cbdd6c07a264e",
+      "moving_name": "左侧外壳",
+      "other_id": "instance:part:microduck:e7e8275c7d01674c",
+      "other_name": "电源支架",
+      "penetration_m": 0.00043260569350213985,
+      "reference_depth_m": 0,
+      "point_mm": [
+        24.92772910386261,
+        25.43546452316955,
+        40.7402064230936
+      ]
+    },
+    {
+      "step": 65,
+      "label": "安装 · 面部件",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:afa52198f7fad203",
+      "moving_name": "面部件",
+      "other_id": "instance:part:microduck:b61b0609c61fc572",
+      "other_name": "镜头外形",
+      "penetration_m": 0.0014959035538509298,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -5.596966090544029,
+        23.07225168149384,
+        3.8173261394653384
+      ]
+    },
+    {
+      "step": 66,
+      "label": "安装 · 树莓派 Zero 2 W 电路板外形",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.8,
+      "moving_id": "instance:part:microduck:ebfcaf98422b7b28",
+      "moving_name": "树莓派 Zero 2 W 电路板外形",
+      "other_id": "instance:part:microduck:b61b0609c61fc572",
+      "other_name": "镜头外形",
+      "penetration_m": 0.0035505701534349894,
+      "reference_depth_m": 0,
+      "point_mm": [
+        2.4600000158697424,
+        22.465549265429257,
+        1.4325262285534155
+      ]
+    },
+    {
+      "step": 66,
+      "label": "安装 · 树莓派 Zero 2 W 电路板外形",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.95,
+      "moving_id": "instance:part:microduck:ebfcaf98422b7b28",
+      "moving_name": "树莓派 Zero 2 W 电路板外形",
+      "other_id": "instance:part:microduck:afa52198f7fad203",
+      "other_name": "面部件",
+      "penetration_m": 0.0016879841823047065,
+      "reference_depth_m": 0.000006240419937967534,
+      "point_mm": [
+        27.811414884328858,
+        -44.96936173049566,
+        9.645401977163655
+      ]
+    },
+    {
+      "step": 67,
+      "label": "安装 · 头部上壳",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:82d68e991b23c2a3",
+      "moving_name": "头部上壳",
+      "other_id": "instance:part:microduck:d4b9a9e9474a9829",
+      "other_name": "偏航与横滚传动件",
+      "penetration_m": 0.0006728650465607693,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -6.196686771604462,
+        14.32713495343923,
+        13.00040441737843
+      ]
+    },
+    {
+      "step": 67,
+      "label": "安装 · 头部上壳",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:82d68e991b23c2a3",
+      "moving_name": "头部上壳",
+      "other_id": "instance:part:microduck:ea69e2c6bba10a23",
+      "other_name": "轴承外形（22×16×4 配置名）",
+      "penetration_m": 0.0005836003663518348,
+      "reference_depth_m": 0,
+      "point_mm": [
+        8.432349882883573,
+        -6.301056180986798,
+        3.1573014646768556
+      ]
+    },
+    {
+      "step": 67,
+      "label": "安装 · 头部上壳",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:82d68e991b23c2a3",
+      "moving_name": "头部上壳",
+      "other_id": "instance:part:microduck:b61b0609c61fc572",
+      "other_name": "镜头外形",
+      "penetration_m": 0.0008960871085093025,
+      "reference_depth_m": 0,
+      "point_mm": [
+        4.84751263439729,
+        11.508540346423814,
+        -0.7662620502335473
+      ]
+    },
+    {
+      "step": 67,
+      "label": "安装 · 头部上壳",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:82d68e991b23c2a3",
+      "moving_name": "头部上壳",
+      "other_id": "instance:part:microduck:afa52198f7fad203",
+      "other_name": "面部件",
+      "penetration_m": 0.0006333330651124029,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -10.26542210757804,
+        -54.8666669348876,
+        16.999334595340244
+      ]
+    },
+    {
+      "step": 67,
+      "label": "安装 · 头部上壳",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:82d68e991b23c2a3",
+      "moving_name": "头部上壳",
+      "other_id": "instance:part:microduck:986b5adf27910138",
+      "other_name": "电机支架",
+      "penetration_m": 0.0005044601893551679,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -3.435785469505241,
+        25.207690894603726,
+        15.004460189355168
+      ]
+    },
+    {
+      "step": 67,
+      "label": "安装 · 头部上壳",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:82d68e991b23c2a3",
+      "moving_name": "头部上壳",
+      "other_id": "instance:part:microduck:96e22c7fa2b976d3",
+      "other_name": "XL330 舵机",
+      "penetration_m": 0.0029995955956599748,
+      "reference_depth_m": 0.001003906823680218,
+      "point_mm": [
+        6.205669343471534,
+        7.000404404340025,
+        -0.6077499658793641
+      ]
+    },
+    {
+      "step": 67,
+      "label": "安装 · 头部上壳",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:82d68e991b23c2a3",
+      "moving_name": "头部上壳",
+      "other_id": "instance:part:microduck:554503ef38151e67",
+      "other_name": "RPI Robot HAT 电路板外形",
+      "penetration_m": 0.000819234902428569,
+      "reference_depth_m": 0.000028642659692877715,
+      "point_mm": [
+        -41.61779752756257,
+        -33.89999999999998,
+        13.34959524190646
+      ]
+    },
+    {
+      "step": 67,
+      "label": "安装 · 头部上壳",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:82d68e991b23c2a3",
+      "moving_name": "头部上壳",
+      "other_id": "instance:part:microduck:2d2cde8ae8ebacac",
+      "other_name": "M12 镜头座",
+      "penetration_m": 0.0006434574361881049,
+      "reference_depth_m": 0,
+      "point_mm": [
+        2.3345517179235316,
+        10.627291534968812,
+        6.581697886141162
+      ]
+    },
+    {
+      "step": 67,
+      "label": "安装 · 头部上壳",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:82d68e991b23c2a3",
+      "moving_name": "头部上壳",
+      "other_id": "instance:part:microduck:ebfcaf98422b7b28",
+      "other_name": "树莓派 Zero 2 W 电路板外形",
+      "penetration_m": 0.00065738607009415,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -6.9677063610163685,
+        0.1422296965122598,
+        -9.522994924721896
+      ]
+    },
+    {
+      "step": 67,
+      "label": "安装 · 头部上壳",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:82d68e991b23c2a3",
+      "moving_name": "头部上壳",
+      "other_id": "instance:part:microduck:22f2cd114e324ec5",
+      "other_name": "扬声器外形",
+      "penetration_m": 0.0032597275021053747,
+      "reference_depth_m": 0,
+      "point_mm": [
+        17.025839258697587,
+        -7.469418292140936,
+        3.259727502105375
+      ]
+    },
+    {
+      "step": 67,
+      "label": "安装 · 头部上壳",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.8,
+      "moving_id": "instance:part:microduck:82d68e991b23c2a3",
+      "moving_name": "头部上壳",
+      "other_id": "instance:part:microduck:a07b37bcb704b29f",
+      "other_name": "XL330 舵机",
+      "penetration_m": 0.0005331481084227825,
+      "reference_depth_m": 0,
+      "point_mm": [
+        10.051706632303064,
+        -9.466851891577218,
+        -20.993205694278288
+      ]
+    },
+    {
+      "step": 67,
+      "label": "安装 · 头部上壳",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.95,
+      "moving_id": "instance:part:microduck:82d68e991b23c2a3",
+      "moving_name": "头部上壳",
+      "other_id": "instance:part:microduck:52fdcacf474a463f",
+      "other_name": "头部下壳",
+      "penetration_m": 0.0004744095975553364,
+      "reference_depth_m": 4.368922666753705e-7,
+      "point_mm": [
+        -28.023490877954515,
+        47.501832246780424,
+        0.8062817044073856
+      ]
+    },
+    {
+      "step": 68,
+      "label": "安装 · 喙上部软质件",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:88b7496d63cb41ff",
+      "moving_name": "喙上部软质件",
+      "other_id": "instance:part:microduck:afa52198f7fad203",
+      "other_name": "面部件",
+      "penetration_m": 0.0005729255905866068,
+      "reference_depth_m": 0,
+      "point_mm": [
+        7.005095221258134,
+        -48.29474104093439,
+        10.830519043549675
+      ]
+    },
+    {
+      "step": 68,
+      "label": "安装 · 喙上部软质件",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:88b7496d63cb41ff",
+      "moving_name": "喙上部软质件",
+      "other_id": "instance:part:microduck:82d68e991b23c2a3",
+      "other_name": "头部上壳",
+      "penetration_m": 0.0008569507544547861,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -42.90381089449669,
+        -59.882310841022985,
+        10.727650436671793
+      ]
+    },
+    {
+      "step": 68,
+      "label": "安装 · 喙上部软质件",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.95,
+      "moving_id": "instance:part:microduck:88b7496d63cb41ff",
+      "moving_name": "喙上部软质件",
+      "other_id": "instance:part:microduck:52fdcacf474a463f",
+      "other_name": "头部下壳",
+      "penetration_m": 0.0012963637239971108,
+      "reference_depth_m": 0.0001999964856170624,
+      "point_mm": [
+        -43.86926817698494,
+        -48.160448731655016,
+        -0.8518907757775844
+      ]
+    },
+    {
+      "step": 69,
+      "label": "安装 · 眼部部件",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:2559a4c412bcda3e",
+      "moving_name": "眼部部件",
+      "other_id": "instance:part:microduck:82d68e991b23c2a3",
+      "other_name": "头部上壳",
+      "penetration_m": 0.0011905650928830055,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -39.03016540223996,
+        -61.793413644142,
+        25.450948702507425
+      ]
+    },
+    {
+      "step": 69,
+      "label": "安装 · 眼部部件",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.8,
+      "moving_id": "instance:part:microduck:2559a4c412bcda3e",
+      "moving_name": "眼部部件",
+      "other_id": "instance:part:microduck:b61b0609c61fc572",
+      "other_name": "镜头外形",
+      "penetration_m": 0.0037448620624004826,
+      "reference_depth_m": 0.0016682799816821676,
+      "point_mm": [
+        4.025395801796915,
+        21.752599982672244,
+        2.4804131582424613
+      ]
+    },
+    {
+      "step": 70,
+      "label": "安装 · 喙部件",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:328011951ac11ee7",
+      "moving_name": "喙部件",
+      "other_id": "instance:part:microduck:afa52198f7fad203",
+      "other_name": "面部件",
+      "penetration_m": 0.0006488875985965663,
+      "reference_depth_m": 0,
+      "point_mm": [
+        39.06809491941563,
+        -54.84888836153602,
+        3.3442021982385164
+      ]
+    },
+    {
+      "step": 70,
+      "label": "安装 · 喙部件",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:328011951ac11ee7",
+      "moving_name": "喙部件",
+      "other_id": "instance:part:microduck:82d68e991b23c2a3",
+      "other_name": "头部上壳",
+      "penetration_m": 0.0007520792205928934,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -39.99999910593033,
+        -26.205138949573122,
+        14.032628384724354
+      ]
+    },
+    {
+      "step": 70,
+      "label": "安装 · 喙部件",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:328011951ac11ee7",
+      "moving_name": "喙部件",
+      "other_id": "instance:part:microduck:52fdcacf474a463f",
+      "other_name": "头部下壳",
+      "penetration_m": 0.0007028297423336287,
+      "reference_depth_m": 0,
+      "point_mm": [
+        38.69347025950752,
+        -46.79259047274297,
+        1.6992398737880965
+      ]
+    },
+    {
+      "step": 70,
+      "label": "安装 · 喙部件",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.8,
+      "moving_id": "instance:part:microduck:328011951ac11ee7",
+      "moving_name": "喙部件",
+      "other_id": "instance:part:microduck:88b7496d63cb41ff",
+      "other_name": "喙上部软质件",
+      "penetration_m": 0.0006317748323796693,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -42.65614301070603,
+        -52.673014639082126,
+        -3.6870401631778114
+      ]
+    },
+    {
+      "step": 70,
+      "label": "安装 · 喙部件",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.95,
+      "moving_id": "instance:part:microduck:328011951ac11ee7",
+      "moving_name": "喙部件",
+      "other_id": "instance:part:microduck:a0775b54397eb21e",
+      "other_name": "轴承外形（默认配置名）",
+      "penetration_m": 0.0014837290141669266,
+      "reference_depth_m": 0.0010076690828739027,
+      "point_mm": [
+        -39.999999999999986,
+        -3.0364577435309457,
+        3.810802723422436
+      ]
+    },
+    {
+      "step": 71,
+      "label": "安装 · 喙部软质件",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:f5797f92c2bf01b8",
+      "moving_name": "喙部软质件",
+      "other_id": "instance:part:microduck:afa52198f7fad203",
+      "other_name": "面部件",
+      "penetration_m": 0.0006447168517409452,
+      "reference_depth_m": 0,
+      "point_mm": [
+        33.31386845598624,
+        -54.8447176146804,
+        2.020541092842045
+      ]
+    },
+    {
+      "step": 71,
+      "label": "安装 · 喙部软质件",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:f5797f92c2bf01b8",
+      "moving_name": "喙部软质件",
+      "other_id": "instance:part:microduck:82d68e991b23c2a3",
+      "other_name": "头部上壳",
+      "penetration_m": 0.0013540864433348788,
+      "reference_depth_m": 0,
+      "point_mm": [
+        40.9354087413428,
+        -50.499425918688246,
+        8.60888990122996
+      ]
+    },
+    {
+      "step": 71,
+      "label": "安装 · 喙部软质件",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:f5797f92c2bf01b8",
+      "moving_name": "喙部软质件",
+      "other_id": "instance:part:microduck:2559a4c412bcda3e",
+      "other_name": "眼部部件",
+      "penetration_m": 0.00203961186988829,
+      "reference_depth_m": 0,
+      "point_mm": [
+        -2.742459384534044,
+        -61.460391944808975,
+        10.140460481914436
+      ]
+    },
+    {
+      "step": 71,
+      "label": "安装 · 喙部软质件",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.6,
+      "moving_id": "instance:part:microduck:f5797f92c2bf01b8",
+      "moving_name": "喙部软质件",
+      "other_id": "instance:part:microduck:52fdcacf474a463f",
+      "other_name": "头部下壳",
+      "penetration_m": 0.00045239615072105015,
+      "reference_depth_m": 0,
+      "point_mm": [
+        39.24930673275246,
+        -52.46512916078845,
+        2.07813209833318
+      ]
+    },
+    {
+      "step": 71,
+      "label": "安装 · 喙部软质件",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.8,
+      "moving_id": "instance:part:microduck:f5797f92c2bf01b8",
+      "moving_name": "喙部软质件",
+      "other_id": "instance:part:microduck:88b7496d63cb41ff",
+      "other_name": "喙上部软质件",
+      "penetration_m": 0.0004435187044406703,
+      "reference_depth_m": 0,
+      "point_mm": [
+        4.561927901892178,
+        -56.94351870444067,
+        -4.190774023468387
+      ]
+    },
+    {
+      "step": 71,
+      "label": "安装 · 喙部软质件",
+      "phase": "join",
+      "kind": "transit_intrusion",
+      "fraction": 0.95,
+      "moving_id": "instance:part:microduck:f5797f92c2bf01b8",
+      "moving_name": "喙部软质件",
+      "other_id": "instance:part:microduck:328011951ac11ee7",
+      "other_name": "喙部件",
+      "penetration_m": 0.000527017859928558,
+      "reference_depth_m": 0.000010947390064320217,
+      "point_mm": [
+        19.192776195597993,
+        -58.94879882279085,
+        -4.52037060536542
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "index": 0,
+      "kind": "establish",
+      "label": "扫描当前装配 · 70 个部件",
+      "moving_ids": [],
+      "issue_count": 0
+    },
+    {
+      "index": 1,
+      "kind": "stage",
+      "label": "展开承座与轴端 · 预留轴承装入空间",
+      "moving_ids": [
+        "instance:part:microduck:82d68e991b23c2a3",
+        "instance:part:microduck:52fdcacf474a463f",
+        "instance:part:microduck:328011951ac11ee7",
+        "instance:part:microduck:e7e8275c7d01674c",
+        "instance:part:microduck:afa52198f7fad203",
+        "instance:part:microduck:e27cbdd6c07a264e",
+        "instance:part:microduck:9d70b219a5533bf1",
+        "instance:part:microduck:986b5adf27910138",
+        "instance:part:microduck:f5797f92c2bf01b8",
+        "instance:part:microduck:88b7496d63cb41ff",
+        "instance:part:microduck:f97c1c6580d651d7",
+        "instance:part:microduck:66c73aaad945a993",
+        "instance:part:microduck:e40b9945707505e1",
+        "instance:part:microduck:7e86db28af59d3cc",
+        "instance:part:microduck:c75bfc0afb35e000",
+        "instance:part:microduck:554503ef38151e67",
+        "instance:part:microduck:ebfcaf98422b7b28",
+        "instance:part:microduck:f9955f19a691a1f4",
+        "instance:part:microduck:41db565298264db6",
+        "instance:part:microduck:2f557a24b2729755",
+        "instance:part:microduck:8b649e45831a1972",
+        "instance:part:microduck:203d2686e3321e4a",
+        "instance:part:microduck:638f29b46b322e64",
+        "instance:part:microduck:7f4fefc3c6de90f1",
+        "instance:part:microduck:b371ac60e2f6757b",
+        "instance:part:microduck:07e507f1e9297aa3",
+        "instance:part:microduck:78cf36c41e4fde06",
+        "instance:part:microduck:d4b9a9e9474a9829",
+        "instance:part:microduck:c7eeeac0a640d191",
+        "instance:part:microduck:fa9ee2f71faafb88",
+        "instance:part:microduck:834f5cc892eba41e",
+        "instance:part:microduck:4cf80d5a57c8cb04",
+        "instance:part:microduck:7c130c8489b57c99",
+        "instance:part:microduck:7038a050dbc33fb0",
+        "instance:part:microduck:08c5ade0f3fd37db",
+        "instance:part:microduck:0820b4025f26a004",
+        "instance:part:microduck:a682dc3620df43f5",
+        "instance:part:microduck:09cb390e38430c1e",
+        "instance:part:microduck:4cef8bb24d37fe6e",
+        "instance:part:microduck:44b5600c1a735117",
+        "instance:part:microduck:cd6d48fccc95df41",
+        "instance:part:microduck:9ffe9d5bcd6bc13a",
+        "instance:part:microduck:a07b37bcb704b29f",
+        "instance:part:microduck:50f0c376d01bb0c1",
+        "instance:part:microduck:087d7a46a3ce4ca3",
+        "instance:part:microduck:96e22c7fa2b976d3",
+        "instance:part:microduck:cb253f38c818b9d8",
+        "instance:part:microduck:c703574f50f6a46a",
+        "instance:part:microduck:22f2cd114e324ec5",
+        "instance:part:microduck:2559a4c412bcda3e",
+        "instance:part:microduck:55970da91992f38c",
+        "instance:part:microduck:48099e14105d3289",
+        "instance:part:microduck:2d2cde8ae8ebacac",
+        "instance:part:microduck:b61b0609c61fc572",
+        "instance:part:microduck:6b5602b4416129fe",
+        "instance:part:microduck:133711c520619e45",
+        "instance:part:microduck:b364863ffde63eed",
+        "instance:part:microduck:7938fd9143c59ea4",
+        "instance:part:microduck:47a950fbb3d0e416",
+        "instance:part:microduck:bb34e925e25e29f6",
+        "instance:part:microduck:e475134639b3f7e1",
+        "instance:part:microduck:766eaa6e4dd8b09f",
+        "instance:part:microduck:6b884b140f6e283c",
+        "instance:part:microduck:ea69e2c6bba10a23",
+        "instance:part:microduck:55121c0b36f62219",
+        "instance:part:microduck:a0775b54397eb21e",
+        "instance:part:microduck:3fbf0b5c8cea4488",
+        "instance:part:microduck:d924e1596ffb042a",
+        "instance:part:microduck:d6a148b5784955d8",
+        "instance:part:microduck:e196235810184adf"
+      ],
+      "issue_count": 130
+    },
+    {
+      "index": 2,
+      "kind": "preassemble",
+      "label": "躯干底座 · 同轴对准，沿轴线装入轴承外形（22×16×4 配置名）",
+      "moving_ids": [
+        "instance:part:microduck:b364863ffde63eed"
+      ],
+      "issue_count": 0
+    },
+    {
+      "index": 3,
+      "kind": "preassemble",
+      "label": "躯干底座 · 同轴对准，沿轴线装入轴承外形（22×16×4 配置名）",
+      "moving_ids": [
+        "instance:part:microduck:7938fd9143c59ea4"
+      ],
+      "issue_count": 0
+    },
+    {
+      "index": 4,
+      "kind": "preassemble",
+      "label": "横滚轴承支承件 · 同轴对准，沿轴线装入轴承外形（22×16×4 配置名）",
+      "moving_ids": [
+        "instance:part:microduck:47a950fbb3d0e416"
+      ],
+      "issue_count": 0
+    },
+    {
+      "index": 5,
+      "kind": "preassemble",
+      "label": "大腿加强板 · 同轴对准，沿轴线装入轴承外形（22×16×4 配置名）",
+      "moving_ids": [
+        "instance:part:microduck:bb34e925e25e29f6"
+      ],
+      "issue_count": 0
+    },
+    {
+      "index": 6,
+      "kind": "preassemble",
+      "label": "大腿加强板 · 同轴对准，沿轴线装入轴承外形（22×16×4 配置名）",
+      "moving_ids": [
+        "instance:part:microduck:e475134639b3f7e1"
+      ],
+      "issue_count": 0
+    },
+    {
+      "index": 7,
+      "kind": "preassemble",
+      "label": "左踝部件 · 同轴对准，沿轴线装入轴承外形（默认配置名）",
+      "moving_ids": [
+        "instance:part:microduck:766eaa6e4dd8b09f"
+      ],
+      "issue_count": 0
+    },
+    {
+      "index": 8,
+      "kind": "preassemble",
+      "label": "颈俯仰部件 · 同轴对准，沿轴线装入轴承外形（22×16×4 配置名）",
+      "moving_ids": [
+        "instance:part:microduck:6b884b140f6e283c"
+      ],
+      "issue_count": 0
+    },
+    {
+      "index": 9,
+      "kind": "preassemble",
+      "label": "电机支架 · 同轴对准，沿轴线装入轴承外形（22×16×4 配置名）",
+      "moving_ids": [
+        "instance:part:microduck:ea69e2c6bba10a23"
+      ],
+      "issue_count": 0
+    },
+    {
+      "index": 10,
+      "kind": "preassemble",
+      "label": "头部下壳 · 同轴对准，沿轴线装入轴承外形（22×16×4 配置名）",
+      "moving_ids": [
+        "instance:part:microduck:55121c0b36f62219"
+      ],
+      "issue_count": 1
+    },
+    {
+      "index": 11,
+      "kind": "preassemble",
+      "label": "电机支架 · 同轴对准，沿轴线装入轴承外形（默认配置名）",
+      "moving_ids": [
+        "instance:part:microduck:a0775b54397eb21e"
+      ],
+      "issue_count": 0
+    },
+    {
+      "index": 12,
+      "kind": "preassemble",
+      "label": "横滚轴承支承件 · 同轴对准，沿轴线装入轴承外形（22×16×4 配置名）",
+      "moving_ids": [
+        "instance:part:microduck:3fbf0b5c8cea4488"
+      ],
+      "issue_count": 0
+    },
+    {
+      "index": 13,
+      "kind": "preassemble",
+      "label": "大腿加强板 · 同轴对准，沿轴线装入轴承外形（22×16×4 配置名）",
+      "moving_ids": [
+        "instance:part:microduck:d924e1596ffb042a"
+      ],
+      "issue_count": 0
+    },
+    {
+      "index": 14,
+      "kind": "preassemble",
+      "label": "大腿加强板 · 同轴对准，沿轴线装入轴承外形（22×16×4 配置名）",
+      "moving_ids": [
+        "instance:part:microduck:d6a148b5784955d8"
+      ],
+      "issue_count": 0
+    },
+    {
+      "index": 15,
+      "kind": "preassemble",
+      "label": "右踝部件 · 同轴对准，沿轴线装入轴承外形（默认配置名）",
+      "moving_ids": [
+        "instance:part:microduck:e196235810184adf"
+      ],
+      "issue_count": 1
+    },
+    {
+      "index": 16,
+      "kind": "join",
+      "label": "安装轴承预装组合 · 3 个部件",
+      "moving_ids": [
+        "instance:part:microduck:b364863ffde63eed",
+        "instance:part:microduck:203d2686e3321e4a",
+        "instance:part:microduck:7938fd9143c59ea4"
+      ],
+      "issue_count": 0
+    },
+    {
+      "index": 17,
+      "kind": "join",
+      "label": "安装 · 电源支架",
+      "moving_ids": [
+        "instance:part:microduck:e7e8275c7d01674c"
+      ],
+      "issue_count": 0
+    },
+    {
+      "index": 18,
+      "kind": "join",
+      "label": "安装 · 电路板固定件",
+      "moving_ids": [
+        "instance:part:microduck:78cf36c41e4fde06"
+      ],
+      "issue_count": 0
+    },
+    {
+      "index": 19,
+      "kind": "join",
+      "label": "安装 · XL330 舵机",
+      "moving_ids": [
+        "instance:part:microduck:a682dc3620df43f5"
+      ],
+      "issue_count": 2
+    },
+    {
+      "index": 20,
+      "kind": "join",
+      "label": "安装 · XL330 舵机",
+      "moving_ids": [
+        "instance:part:microduck:09cb390e38430c1e"
+      ],
+      "issue_count": 2
+    },
+    {
+      "index": 21,
+      "kind": "join",
+      "label": "安装 · NP-F970 电池外形",
+      "moving_ids": [
+        "instance:part:microduck:f97c1c6580d651d7"
+      ],
+      "issue_count": 1
+    },
+    {
+      "index": 22,
+      "kind": "join",
+      "label": "安装 · 偏航与横滚连接件",
+      "moving_ids": [
+        "instance:part:microduck:55970da91992f38c"
+      ],
+      "issue_count": 3
+    },
+    {
+      "index": 23,
+      "kind": "join",
+      "label": "安装轴承预装组合 · 2 个部件",
+      "moving_ids": [
+        "instance:part:microduck:47a950fbb3d0e416",
+        "instance:part:microduck:cb253f38c818b9d8"
+      ],
+      "issue_count": 0
+    },
+    {
+      "index": 24,
+      "kind": "join",
+      "label": "安装 · XL330 舵机",
+      "moving_ids": [
+        "instance:part:microduck:cd6d48fccc95df41"
+      ],
+      "issue_count": 3
+    },
+    {
+      "index": 25,
+      "kind": "join",
+      "label": "安装 · 髋部件",
+      "moving_ids": [
+        "instance:part:microduck:fa9ee2f71faafb88"
+      ],
+      "issue_count": 1
+    },
+    {
+      "index": 26,
+      "kind": "join",
+      "label": "安装 · XL330 舵机",
+      "moving_ids": [
+        "instance:part:microduck:9ffe9d5bcd6bc13a"
+      ],
+      "issue_count": 1
+    },
+    {
+      "index": 27,
+      "kind": "join",
+      "label": "安装轴承预装组合 · 3 个部件",
+      "moving_ids": [
+        "instance:part:microduck:bb34e925e25e29f6",
+        "instance:part:microduck:c75bfc0afb35e000",
+        "instance:part:microduck:e475134639b3f7e1"
+      ],
+      "issue_count": 2
+    },
+    {
+      "index": 28,
+      "kind": "join",
+      "label": "安装 · 腿部连杆",
+      "moving_ids": [
+        "instance:part:microduck:638f29b46b322e64"
+      ],
+      "issue_count": 2
+    },
+    {
+      "index": 29,
+      "kind": "join",
+      "label": "安装 · XL330 舵机",
+      "moving_ids": [
+        "instance:part:microduck:4cf80d5a57c8cb04"
+      ],
+      "issue_count": 0
+    },
+    {
+      "index": 30,
+      "kind": "join",
+      "label": "安装 · 左大腿部件",
+      "moving_ids": [
+        "instance:part:microduck:66c73aaad945a993"
+      ],
+      "issue_count": 0
+    },
+    {
+      "index": 31,
+      "kind": "join",
+      "label": "安装 · XL330 舵机",
+      "moving_ids": [
+        "instance:part:microduck:7c130c8489b57c99"
+      ],
+      "issue_count": 0
+    },
+    {
+      "index": 32,
+      "kind": "join",
+      "label": "安装轴承预装组合 · 2 个部件",
+      "moving_ids": [
+        "instance:part:microduck:766eaa6e4dd8b09f",
+        "instance:part:microduck:07e507f1e9297aa3"
+      ],
+      "issue_count": 7
+    },
+    {
+      "index": 33,
+      "kind": "join",
+      "label": "安装 · 左脚部件",
+      "moving_ids": [
+        "instance:part:microduck:41db565298264db6"
+      ],
+      "issue_count": 2
+    },
+    {
+      "index": 34,
+      "kind": "join",
+      "label": "安装 · 左脚底",
+      "moving_ids": [
+        "instance:part:microduck:8b649e45831a1972"
+      ],
+      "issue_count": 3
+    },
+    {
+      "index": 35,
+      "kind": "join",
+      "label": "安装 · 偏航与横滚连接件",
+      "moving_ids": [
+        "instance:part:microduck:48099e14105d3289"
+      ],
+      "issue_count": 3
+    },
+    {
+      "index": 36,
+      "kind": "join",
+      "label": "安装轴承预装组合 · 2 个部件",
+      "moving_ids": [
+        "instance:part:microduck:c703574f50f6a46a",
+        "instance:part:microduck:3fbf0b5c8cea4488"
+      ],
+      "issue_count": 0
+    },
+    {
+      "index": 37,
+      "kind": "join",
+      "label": "安装 · XL330 舵机",
+      "moving_ids": [
+        "instance:part:microduck:087d7a46a3ce4ca3"
+      ],
+      "issue_count": 3
+    },
+    {
+      "index": 38,
+      "kind": "join",
+      "label": "安装 · 髋部件",
+      "moving_ids": [
+        "instance:part:microduck:c7eeeac0a640d191"
+      ],
+      "issue_count": 1
+    },
+    {
+      "index": 39,
+      "kind": "join",
+      "label": "安装轴承预装组合 · 3 个部件",
+      "moving_ids": [
+        "instance:part:microduck:d924e1596ffb042a",
+        "instance:part:microduck:d6a148b5784955d8",
+        "instance:part:microduck:7e86db28af59d3cc"
+      ],
+      "issue_count": 0
+    },
+    {
+      "index": 40,
+      "kind": "join",
+      "label": "安装 · 腿部连杆",
+      "moving_ids": [
+        "instance:part:microduck:7f4fefc3c6de90f1"
+      ],
+      "issue_count": 2
+    },
+    {
+      "index": 41,
+      "kind": "join",
+      "label": "安装轴承预装组合 · 2 个部件",
+      "moving_ids": [
+        "instance:part:microduck:b371ac60e2f6757b",
+        "instance:part:microduck:e196235810184adf"
+      ],
+      "issue_count": 2
+    },
+    {
+      "index": 42,
+      "kind": "join",
+      "label": "安装 · 右脚部件",
+      "moving_ids": [
+        "instance:part:microduck:f9955f19a691a1f4"
+      ],
+      "issue_count": 3
+    },
+    {
+      "index": 43,
+      "kind": "join",
+      "label": "安装 · 右脚底",
+      "moving_ids": [
+        "instance:part:microduck:2f557a24b2729755"
+      ],
+      "issue_count": 3
+    },
+    {
+      "index": 44,
+      "kind": "join",
+      "label": "安装 · XL330 舵机",
+      "moving_ids": [
+        "instance:part:microduck:7038a050dbc33fb0"
+      ],
+      "issue_count": 0
+    },
+    {
+      "index": 45,
+      "kind": "join",
+      "label": "安装 · 右大腿部件",
+      "moving_ids": [
+        "instance:part:microduck:e40b9945707505e1"
+      ],
+      "issue_count": 0
+    },
+    {
+      "index": 46,
+      "kind": "join",
+      "label": "安装 · XL330 舵机",
+      "moving_ids": [
+        "instance:part:microduck:08c5ade0f3fd37db"
+      ],
+      "issue_count": 1
+    },
+    {
+      "index": 47,
+      "kind": "join",
+      "label": "安装 · XL330 舵机",
+      "moving_ids": [
+        "instance:part:microduck:0820b4025f26a004"
+      ],
+      "issue_count": 3
+    },
+    {
+      "index": 48,
+      "kind": "join",
+      "label": "安装 · 右侧外壳",
+      "moving_ids": [
+        "instance:part:microduck:9d70b219a5533bf1"
+      ],
+      "issue_count": 2
+    },
+    {
+      "index": 49,
+      "kind": "join",
+      "label": "安装 · XL330 舵机",
+      "moving_ids": [
+        "instance:part:microduck:4cef8bb24d37fe6e"
+      ],
+      "issue_count": 0
+    },
+    {
+      "index": 50,
+      "kind": "join",
+      "label": "安装 · 颈部件",
+      "moving_ids": [
+        "instance:part:microduck:6b5602b4416129fe"
+      ],
+      "issue_count": 0
+    },
+    {
+      "index": 51,
+      "kind": "join",
+      "label": "安装 · XL330 舵机",
+      "moving_ids": [
+        "instance:part:microduck:44b5600c1a735117"
+      ],
+      "issue_count": 0
+    },
+    {
+      "index": 52,
+      "kind": "join",
+      "label": "安装轴承预装组合 · 2 个部件",
+      "moving_ids": [
+        "instance:part:microduck:834f5cc892eba41e",
+        "instance:part:microduck:6b884b140f6e283c"
+      ],
+      "issue_count": 1
+    },
+    {
+      "index": 53,
+      "kind": "join",
+      "label": "安装 · 颈部件",
+      "moving_ids": [
+        "instance:part:microduck:133711c520619e45"
+      ],
+      "issue_count": 0
+    },
+    {
+      "index": 54,
+      "kind": "join",
+      "label": "安装 · XL330 舵机",
+      "moving_ids": [
+        "instance:part:microduck:a07b37bcb704b29f"
+      ],
+      "issue_count": 1
+    },
+    {
+      "index": 55,
+      "kind": "join",
+      "label": "安装 · 偏航与横滚传动件",
+      "moving_ids": [
+        "instance:part:microduck:d4b9a9e9474a9829"
+      ],
+      "issue_count": 1
+    },
+    {
+      "index": 56,
+      "kind": "join",
+      "label": "安装 · XL330 舵机",
+      "moving_ids": [
+        "instance:part:microduck:96e22c7fa2b976d3"
+      ],
+      "issue_count": 0
+    },
+    {
+      "index": 57,
+      "kind": "join",
+      "label": "安装轴承预装组合 · 2 个部件",
+      "moving_ids": [
+        "instance:part:microduck:55121c0b36f62219",
+        "instance:part:microduck:52fdcacf474a463f"
+      ],
+      "issue_count": 5
+    },
+    {
+      "index": 58,
+      "kind": "join",
+      "label": "安装轴承预装组合 · 3 个部件",
+      "moving_ids": [
+        "instance:part:microduck:ea69e2c6bba10a23",
+        "instance:part:microduck:986b5adf27910138",
+        "instance:part:microduck:a0775b54397eb21e"
+      ],
+      "issue_count": 8
+    },
+    {
+      "index": 59,
+      "kind": "join",
+      "label": "安装 · XL330 舵机",
+      "moving_ids": [
+        "instance:part:microduck:50f0c376d01bb0c1"
+      ],
+      "issue_count": 2
+    },
+    {
+      "index": 60,
+      "kind": "join",
+      "label": "安装 · 镜头外形",
+      "moving_ids": [
+        "instance:part:microduck:b61b0609c61fc572"
+      ],
+      "issue_count": 0
+    },
+    {
+      "index": 61,
+      "kind": "join",
+      "label": "安装 · M12 镜头座",
+      "moving_ids": [
+        "instance:part:microduck:2d2cde8ae8ebacac"
+      ],
+      "issue_count": 1
+    },
+    {
+      "index": 62,
+      "kind": "join",
+      "label": "安装 · RPI Robot HAT 电路板外形",
+      "moving_ids": [
+        "instance:part:microduck:554503ef38151e67"
+      ],
+      "issue_count": 2
+    },
+    {
+      "index": 63,
+      "kind": "join",
+      "label": "安装 · 扬声器外形",
+      "moving_ids": [
+        "instance:part:microduck:22f2cd114e324ec5"
+      ],
+      "issue_count": 0
+    },
+    {
+      "index": 64,
+      "kind": "join",
+      "label": "安装 · 左侧外壳",
+      "moving_ids": [
+        "instance:part:microduck:e27cbdd6c07a264e"
+      ],
+      "issue_count": 3
+    },
+    {
+      "index": 65,
+      "kind": "join",
+      "label": "安装 · 面部件",
+      "moving_ids": [
+        "instance:part:microduck:afa52198f7fad203"
+      ],
+      "issue_count": 1
+    },
+    {
+      "index": 66,
+      "kind": "join",
+      "label": "安装 · 树莓派 Zero 2 W 电路板外形",
+      "moving_ids": [
+        "instance:part:microduck:ebfcaf98422b7b28"
+      ],
+      "issue_count": 2
+    },
+    {
+      "index": 67,
+      "kind": "join",
+      "label": "安装 · 头部上壳",
+      "moving_ids": [
+        "instance:part:microduck:82d68e991b23c2a3"
+      ],
+      "issue_count": 12
+    },
+    {
+      "index": 68,
+      "kind": "join",
+      "label": "安装 · 喙上部软质件",
+      "moving_ids": [
+        "instance:part:microduck:88b7496d63cb41ff"
+      ],
+      "issue_count": 3
+    },
+    {
+      "index": 69,
+      "kind": "join",
+      "label": "安装 · 眼部部件",
+      "moving_ids": [
+        "instance:part:microduck:2559a4c412bcda3e"
+      ],
+      "issue_count": 2
+    },
+    {
+      "index": 70,
+      "kind": "join",
+      "label": "安装 · 喙部件",
+      "moving_ids": [
+        "instance:part:microduck:328011951ac11ee7"
+      ],
+      "issue_count": 5
+    },
+    {
+      "index": 71,
+      "kind": "join",
+      "label": "安装 · 喙部软质件",
+      "moving_ids": [
+        "instance:part:microduck:f5797f92c2bf01b8"
+      ],
+      "issue_count": 6
+    },
+    {
+      "index": 72,
+      "kind": "reveal",
+      "label": "ASSEMBLY COMPLETE",
+      "moving_ids": [],
+      "issue_count": 0
+    }
+  ],
+  "nominal_contacts": [
+    {
+      "part_refs": [
+        "part:microduck:82d68e991b23c2a3",
+        "part:microduck:96e22c7fa2b976d3"
+      ],
+      "maximum_depth_m": 0.001003906823680218,
+      "contact_sample_count": 26
+    },
+    {
+      "part_refs": [
+        "part:microduck:e7e8275c7d01674c",
+        "part:microduck:f97c1c6580d651d7"
+      ],
+      "maximum_depth_m": 0.0009478869987771272,
+      "contact_sample_count": 27
+    },
+    {
+      "part_refs": [
+        "part:microduck:4cf80d5a57c8cb04",
+        "part:microduck:66c73aaad945a993"
+      ],
+      "maximum_depth_m": 0.0048000000119208935,
+      "contact_sample_count": 46
+    },
+    {
+      "part_refs": [
+        "part:microduck:0820b4025f26a004",
+        "part:microduck:b371ac60e2f6757b"
+      ],
+      "maximum_depth_m": 2.634525245071018e-9,
+      "contact_sample_count": 58
+    },
+    {
+      "part_refs": [
+        "part:microduck:55970da91992f38c",
+        "part:microduck:cd6d48fccc95df41"
+      ],
+      "maximum_depth_m": 0.004800000041723246,
+      "contact_sample_count": 53
+    },
+    {
+      "part_refs": [
+        "part:microduck:52fdcacf474a463f",
+        "part:microduck:ea69e2c6bba10a23"
+      ],
+      "maximum_depth_m": 1.715868702234502e-9,
+      "contact_sample_count": 15
+    },
+    {
+      "part_refs": [
+        "part:microduck:e27cbdd6c07a264e",
+        "part:microduck:f97c1c6580d651d7"
+      ],
+      "maximum_depth_m": 0.00030889908625442077,
+      "contact_sample_count": 16
+    },
+    {
+      "part_refs": [
+        "part:microduck:66c73aaad945a993",
+        "part:microduck:9ffe9d5bcd6bc13a"
+      ],
+      "maximum_depth_m": 0.004800000011920879,
+      "contact_sample_count": 46
+    },
+    {
+      "part_refs": [
+        "part:microduck:2d2cde8ae8ebacac",
+        "part:microduck:ebfcaf98422b7b28"
+      ],
+      "maximum_depth_m": 0.0008080001418292531,
+      "contact_sample_count": 48
+    },
+    {
+      "part_refs": [
+        "part:microduck:087d7a46a3ce4ca3",
+        "part:microduck:48099e14105d3289"
+      ],
+      "maximum_depth_m": 0.004800000041723246,
+      "contact_sample_count": 53
+    },
+    {
+      "part_refs": [
+        "part:microduck:328011951ac11ee7",
+        "part:microduck:f5797f92c2bf01b8"
+      ],
+      "maximum_depth_m": 0.000010947390064320217,
+      "contact_sample_count": 372
+    },
+    {
+      "part_refs": [
+        "part:microduck:07e507f1e9297aa3",
+        "part:microduck:766eaa6e4dd8b09f"
+      ],
+      "maximum_depth_m": 2.388895437910321e-9,
+      "contact_sample_count": 9
+    },
+    {
+      "part_refs": [
+        "part:microduck:986b5adf27910138",
+        "part:microduck:ea69e2c6bba10a23"
+      ],
+      "maximum_depth_m": 1.7158687093399293e-9,
+      "contact_sample_count": 9
+    },
+    {
+      "part_refs": [
+        "part:microduck:b371ac60e2f6757b",
+        "part:microduck:e196235810184adf"
+      ],
+      "maximum_depth_m": 2.553890609213738e-9,
+      "contact_sample_count": 13
+    },
+    {
+      "part_refs": [
+        "part:microduck:78cf36c41e4fde06",
+        "part:microduck:e7e8275c7d01674c"
+      ],
+      "maximum_depth_m": 0.00020000014901160767,
+      "contact_sample_count": 28
+    },
+    {
+      "part_refs": [
+        "part:microduck:55970da91992f38c",
+        "part:microduck:b364863ffde63eed"
+      ],
+      "maximum_depth_m": 1.028670577163382e-9,
+      "contact_sample_count": 1
+    },
+    {
+      "part_refs": [
+        "part:microduck:47a950fbb3d0e416",
+        "part:microduck:fa9ee2f71faafb88"
+      ],
+      "maximum_depth_m": 1.0274075243899006e-9,
+      "contact_sample_count": 1
+    },
+    {
+      "part_refs": [
+        "part:microduck:bb34e925e25e29f6",
+        "part:microduck:fa9ee2f71faafb88"
+      ],
+      "maximum_depth_m": 0.0000013509479412485703,
+      "contact_sample_count": 2
+    },
+    {
+      "part_refs": [
+        "part:microduck:638f29b46b322e64",
+        "part:microduck:7c130c8489b57c99"
+      ],
+      "maximum_depth_m": 0.0048000004589558,
+      "contact_sample_count": 114
+    },
+    {
+      "part_refs": [
+        "part:microduck:07e507f1e9297aa3",
+        "part:microduck:7c130c8489b57c99"
+      ],
+      "maximum_depth_m": 2.6345252592818724e-9,
+      "contact_sample_count": 58
+    },
+    {
+      "part_refs": [
+        "part:microduck:638f29b46b322e64",
+        "part:microduck:766eaa6e4dd8b09f"
+      ],
+      "maximum_depth_m": 1.2665222815400056e-8,
+      "contact_sample_count": 18
+    },
+    {
+      "part_refs": [
+        "part:microduck:07e507f1e9297aa3",
+        "part:microduck:41db565298264db6"
+      ],
+      "maximum_depth_m": 0.000016516572416296782,
+      "contact_sample_count": 6
+    },
+    {
+      "part_refs": [
+        "part:microduck:41db565298264db6",
+        "part:microduck:8b649e45831a1972"
+      ],
+      "maximum_depth_m": 0.000016964185071149275,
+      "contact_sample_count": 399
+    },
+    {
+      "part_refs": [
+        "part:microduck:48099e14105d3289",
+        "part:microduck:7938fd9143c59ea4"
+      ],
+      "maximum_depth_m": 1.0286705736106682e-9,
+      "contact_sample_count": 1
+    },
+    {
+      "part_refs": [
+        "part:microduck:3fbf0b5c8cea4488",
+        "part:microduck:c7eeeac0a640d191"
+      ],
+      "maximum_depth_m": 1.0274075323835063e-9,
+      "contact_sample_count": 1
+    },
+    {
+      "part_refs": [
+        "part:microduck:c7eeeac0a640d191",
+        "part:microduck:d924e1596ffb042a"
+      ],
+      "maximum_depth_m": 0.000001350947941252123,
+      "contact_sample_count": 2
+    },
+    {
+      "part_refs": [
+        "part:microduck:7f4fefc3c6de90f1",
+        "part:microduck:e196235810184adf"
+      ],
+      "maximum_depth_m": 1.2665223326990827e-8,
+      "contact_sample_count": 18
+    },
+    {
+      "part_refs": [
+        "part:microduck:b371ac60e2f6757b",
+        "part:microduck:f9955f19a691a1f4"
+      ],
+      "maximum_depth_m": 0.000016516572416296782,
+      "contact_sample_count": 6
+    },
+    {
+      "part_refs": [
+        "part:microduck:2f557a24b2729755",
+        "part:microduck:f9955f19a691a1f4"
+      ],
+      "maximum_depth_m": 0.00001261119295303459,
+      "contact_sample_count": 391
+    },
+    {
+      "part_refs": [
+        "part:microduck:7038a050dbc33fb0",
+        "part:microduck:e40b9945707505e1"
+      ],
+      "maximum_depth_m": 0.0048000000119208935,
+      "contact_sample_count": 46
+    },
+    {
+      "part_refs": [
+        "part:microduck:08c5ade0f3fd37db",
+        "part:microduck:e40b9945707505e1"
+      ],
+      "maximum_depth_m": 0.004800000011920922,
+      "contact_sample_count": 46
+    },
+    {
+      "part_refs": [
+        "part:microduck:0820b4025f26a004",
+        "part:microduck:7f4fefc3c6de90f1"
+      ],
+      "maximum_depth_m": 0.004800000458955815,
+      "contact_sample_count": 114
+    },
+    {
+      "part_refs": [
+        "part:microduck:09cb390e38430c1e",
+        "part:microduck:9d70b219a5533bf1"
+      ],
+      "maximum_depth_m": 0.0008578870276761954,
+      "contact_sample_count": 6
+    },
+    {
+      "part_refs": [
+        "part:microduck:a07b37bcb704b29f",
+        "part:microduck:d4b9a9e9474a9829"
+      ],
+      "maximum_depth_m": 0.0029999992400407544,
+      "contact_sample_count": 96
+    },
+    {
+      "part_refs": [
+        "part:microduck:52fdcacf474a463f",
+        "part:microduck:96e22c7fa2b976d3"
+      ],
+      "maximum_depth_m": 0.0008354304219995043,
+      "contact_sample_count": 23
+    },
+    {
+      "part_refs": [
+        "part:microduck:50f0c376d01bb0c1",
+        "part:microduck:52fdcacf474a463f"
+      ],
+      "maximum_depth_m": 0.0005273624869156493,
+      "contact_sample_count": 15
+    },
+    {
+      "part_refs": [
+        "part:microduck:22f2cd114e324ec5",
+        "part:microduck:ea69e2c6bba10a23"
+      ],
+      "maximum_depth_m": 0.00031288255796689237,
+      "contact_sample_count": 5
+    },
+    {
+      "part_refs": [
+        "part:microduck:22f2cd114e324ec5",
+        "part:microduck:986b5adf27910138"
+      ],
+      "maximum_depth_m": 0.0017000007629394407,
+      "contact_sample_count": 91
+    },
+    {
+      "part_refs": [
+        "part:microduck:a682dc3620df43f5",
+        "part:microduck:e27cbdd6c07a264e"
+      ],
+      "maximum_depth_m": 0.0012353211781750452,
+      "contact_sample_count": 17
+    },
+    {
+      "part_refs": [
+        "part:microduck:afa52198f7fad203",
+        "part:microduck:ebfcaf98422b7b28"
+      ],
+      "maximum_depth_m": 0.000006240419937967534,
+      "contact_sample_count": 25
+    },
+    {
+      "part_refs": [
+        "part:microduck:50f0c376d01bb0c1",
+        "part:microduck:82d68e991b23c2a3"
+      ],
+      "maximum_depth_m": 0.0005635935109776042,
+      "contact_sample_count": 1
+    },
+    {
+      "part_refs": [
+        "part:microduck:52fdcacf474a463f",
+        "part:microduck:82d68e991b23c2a3"
+      ],
+      "maximum_depth_m": 4.36892266675351e-7,
+      "contact_sample_count": 4
+    },
+    {
+      "part_refs": [
+        "part:microduck:554503ef38151e67",
+        "part:microduck:82d68e991b23c2a3"
+      ],
+      "maximum_depth_m": 0.000028642659692877715,
+      "contact_sample_count": 1
+    },
+    {
+      "part_refs": [
+        "part:microduck:52fdcacf474a463f",
+        "part:microduck:88b7496d63cb41ff"
+      ],
+      "maximum_depth_m": 0.0001999964856170624,
+      "contact_sample_count": 1307
+    },
+    {
+      "part_refs": [
+        "part:microduck:2559a4c412bcda3e",
+        "part:microduck:b61b0609c61fc572"
+      ],
+      "maximum_depth_m": 0.0016682799816821676,
+      "contact_sample_count": 216
+    },
+    {
+      "part_refs": [
+        "part:microduck:328011951ac11ee7",
+        "part:microduck:a0775b54397eb21e"
+      ],
+      "maximum_depth_m": 0.0010076690828739027,
+      "contact_sample_count": 20
+    }
+  ],
+  "geometry_stats": {
+    "mesh_count": 38,
+    "part_count": 70,
+    "sample_count": 64298,
+    "ray_queries": 185872,
+    "pair_queries": 0,
+    "proxy_parts": []
+  },
+  "elapsed_ms": 7638.5673,
+  "package_digest": "7c4dd301829f4e2cbd236f0440bb0d6f971b24635301a6bfc6b478ff48914cb1"
+}

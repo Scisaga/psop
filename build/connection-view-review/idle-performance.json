@@ -1,0 +1,53 @@
+[
+  {
+    "name": "after-curve",
+    "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-6a841fcb9cb028ba2c63&part=part%3Amicroduck%3A328011951ac11ee7&interface=interface%3Aassembly%3A328011951ac11ee7%3Asoft_cover_support&explode=0.00&detail=interfaces&inspection=1&view=iso&labels=0&camera=0.0182271%2C0.0096079%2C0.4667246%2C0.0701430%2C-0.0048782%2C0.2204987",
+    "idleSeconds": 2,
+    "idleRenders": 0,
+    "taskSeconds": 0.047003,
+    "heapMiB": 15.099334716796875,
+    "viewBytes": 1879810,
+    "scene": {
+      "sceneReady": "true",
+      "renderCount": "5",
+      "cameraFlight": "settled",
+      "inspectionActive": "true",
+      "sourcePlacement": "restored",
+      "interfaceId": "interface:assembly:328011951ac11ee7:soft_cover_support",
+      "memberRefs": "",
+      "selectedFeatures": "feature:assembly:328011951ac11ee7:soft_cover_support_contact_surface",
+      "highlightMode": "source_witness",
+      "witnessMarkers": "1",
+      "highlightedSourceFaces": "0",
+      "fastenerPaths": "",
+      "fastenerCount": "0",
+      "fastenerRepresentation": "schematic",
+      "visibleWitnessMarkers": "1"
+    }
+  },
+  {
+    "name": "connection-exploded",
+    "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-6a841fcb9cb028ba2c63&part=part%3Amicroduck%3A328011951ac11ee7&interface=interface%3Aassembly%3A328011951ac11ee7%3Ajaw_drive&member=interface%3Aassembly%3A328011951ac11ee7%3Ajaw_drive%3Ahole_x_low_z_low&relationRef=connection%3Aassembly%3A328011951ac11ee7%3Ajaw_drive&fastener=fastener-path%3Aassembly%3A328011951ac11ee7%3Ajaw_drive%3Ahole_x_low_z_low&explode=1.00&detail=interfaces&inspection=1&connectionView=1&view=iso&labels=0",
+    "idleSeconds": 2,
+    "idleRenders": 0,
+    "taskSeconds": 0.043543,
+    "heapMiB": 19.748172760009766,
+    "viewBytes": 1879810,
+    "scene": {
+      "sceneReady": "true",
+      "renderCount": "64",
+      "cameraFlight": "settled",
+      "inspectionActive": "true",
+      "sourcePlacement": "exploded",
+      "interfaceId": "interface:assembly:328011951ac11ee7:jaw_drive",
+      "memberRefs": "interface:assembly:328011951ac11ee7:jaw_drive:hole_x_low_z_low",
+      "selectedFeatures": "feature:assembly:328011951ac11ee7:jaw_drive_clearance_hole_1",
+      "highlightMode": "source_facet_colors",
+      "witnessMarkers": "0",
+      "highlightedSourceFaces": "180",
+      "fastenerPaths": "fastener-path:assembly:328011951ac11ee7:jaw_drive:hole_x_low_z_low",
+      "fastenerCount": "1",
+      "fastenerRepresentation": "schematic"
+    }
+  }
+]

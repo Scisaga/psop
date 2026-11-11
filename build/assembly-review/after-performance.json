@@ -1,0 +1,137 @@
+{
+  "phase": "after",
+  "snapshot": "dkp-700958f225110d20315d",
+  "readyMs": 1495,
+  "heapMiB": 13.839893341064453,
+  "taskSeconds": 0.22473699999999996,
+  "scriptSeconds": 0.07337899999999997,
+  "frames": 122,
+  "medianFrameMs": 16.699999999999818,
+  "resources": [
+    {
+      "bytes": 1875690,
+      "duration": 75.29999995231628
+    }
+  ],
+  "longTasks": [
+    {
+      "start": 272.59999990463257,
+      "duration": 560
+    },
+    {
+      "start": 1057.7999999523163,
+      "duration": 132
+    }
+  ],
+  "topSamples": [
+    {
+      "name": "(idle)",
+      "url": "",
+      "line": -1,
+      "hits": 1231
+    },
+    {
+      "name": "(program)",
+      "url": "",
+      "line": -1,
+      "hits": 57
+    },
+    {
+      "name": "D",
+      "url": "http://127.0.0.1:8780/assets/index-D4oPSYFo.js",
+      "line": 4237,
+      "hits": 11
+    },
+    {
+      "name": "A",
+      "url": "http://127.0.0.1:8780/assets/index-D4oPSYFo.js",
+      "line": 4237,
+      "hits": 5
+    },
+    {
+      "name": "ft",
+      "url": "http://127.0.0.1:8780/assets/index-D4oPSYFo.js",
+      "line": 4232,
+      "hits": 2
+    },
+    {
+      "name": "Zl",
+      "url": "http://127.0.0.1:8780/assets/index-D4oPSYFo.js",
+      "line": 4130,
+      "hits": 2
+    },
+    {
+      "name": "uniformMatrix4fv",
+      "url": "",
+      "line": -1,
+      "hits": 2
+    },
+    {
+      "name": "pt",
+      "url": "http://127.0.0.1:8780/assets/index-D4oPSYFo.js",
+      "line": 4232,
+      "hits": 2
+    },
+    {
+      "name": "nt",
+      "url": "http://127.0.0.1:8780/assets/index-D4oPSYFo.js",
+      "line": 4232,
+      "hits": 2
+    },
+    {
+      "name": "setFromSphericalCoords",
+      "url": "http://127.0.0.1:8780/assets/index-D4oPSYFo.js",
+      "line": 8,
+      "hits": 2
+    },
+    {
+      "name": "ce",
+      "url": "http://127.0.0.1:8780/assets/index-D4oPSYFo.js",
+      "line": 4208,
+      "hits": 1
+    },
+    {
+      "name": "getRGB",
+      "url": "http://127.0.0.1:8780/assets/index-D4oPSYFo.js",
+      "line": 8,
+      "hits": 1
+    },
+    {
+      "name": "s",
+      "url": "http://127.0.0.1:8780/assets/index-D4oPSYFo.js",
+      "line": 3830,
+      "hits": 1
+    },
+    {
+      "name": "L",
+      "url": "http://127.0.0.1:8780/assets/index-D4oPSYFo.js",
+      "line": 4208,
+      "hits": 1
+    },
+    {
+      "name": "le",
+      "url": "http://127.0.0.1:8780/assets/index-D4oPSYFo.js",
+      "line": 4208,
+      "hits": 1
+    },
+    {
+      "name": "drawArrays",
+      "url": "",
+      "line": -1,
+      "hits": 1
+    },
+    {
+      "name": "setState",
+      "url": "http://127.0.0.1:8780/assets/index-D4oPSYFo.js",
+      "line": 3830,
+      "hits": 1
+    },
+    {
+      "name": "nu",
+      "url": "http://127.0.0.1:8780/assets/index-D4oPSYFo.js",
+      "line": 4130,
+      "hits": 1
+    }
+  ],
+  "panel": "左右方向键调整宽度，按住 Shift 加快；Home 最窄，End 最宽，回车恢复默认。\n对象详情\n执行器\nXL330 舵机\npart:microduck:0820b4025f26a004\n模型对象\n来源已定位\n接口\n信息\n来源\n安装接口\n尺寸 mm · 源局部\nX−端盘四孔\n4 × Ø1.6 · PCD12\n右踝部件\n可能\nX+端盘四孔\n4 × Ø1.6 · PCD12\n可用\n壳体 A 侧四孔\n4 × Ø2 · 矩形 16×30\n可用\n壳体 B 侧四孔\n4 × Ø2 · 矩形 16×30\n腿部连杆 · 右腿连杆\n已用\nX+端盘 Ø16 外圆\nØ16 有限端盘外圆\n可用\n在场景中聚焦"
+}

@@ -1,0 +1,39 @@
+# These deliverables and their source files carry byte-exact SHA-256 records.
+# Preserve their line endings so a checkout matches the verified artifacts.
+/docs/html/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/docs/presentations/v2/** -text
+/build/** -text -whitespace
+device-materials/oomwoo-official-materials.zip filter=lfs diff=lfs merge=lfs -text
+device-materials/microduck-official-materials.zip filter=lfs diff=lfs merge=lfs -text
+
+# Keep a release as one LFS archive instead of thousands of unpacked files.
+/releases/**/*.dkp.zip filter=lfs diff=lfs merge=lfs -text
+/releases/**/release.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+
+# Frozen DKP tool identities hash exact tool, schema, shared-library and vendor bytes.
+/skills/psop-build/scripts/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/skills/psop-build/schemas/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/packages/assembly/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+
+# Frozen investigation inputs and the new package contract preserve their bytes.
+/device-materials/interface-review/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/device-materials/interface-review/references/** -whitespace
+/skills/psop-build/schemas/*1.9.schema.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/skills/psop-build/schemas/*1.10.schema.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/skills/psop-build/schemas/*1.11.schema.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/skills/psop-build/schemas/*1.12.schema.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/device-materials/references/xl330-assembly/x330_drawing.md -text
+/device-materials/microduck-assembly-knowledge.json -text
+/device-materials/assembly/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/device-materials/microduck-assembly-interfaces.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/skills/psop-build/schemas/*1.13.schema.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/skills/psop-build/schemas/assembly-catalog.schema.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/skills/psop-build/schemas/*1.14.schema.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/skills/psop-build/schemas/assembly-catalog-2.schema.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+
+# Preserve the recorded upstream model metadata and license bytes.
+/apps/workbench/src/assets/workshop/models/abb-irb120-package.xml -text -whitespace
+/apps/workbench/src/assets/workshop/models/abb-irb120-source.xacro -text
+/apps/workbench/src/assets/workshop/models/Apache-2.0.txt -text
+/apps/workbench/static/licenses/workshop/abb-irb120-package.xml -text -whitespace
+/apps/workbench/static/licenses/workshop/Apache-2.0.txt -text

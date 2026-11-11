@@ -1,0 +1,203 @@
+{
+  "source_package_digest": "2222613002e6749363481158658a5a35d5d13de07bfd63816ae5d746c6917fb8",
+  "basis": "Independent solid CSG found edge-coincident intersections missed by transverse triangle screening.",
+  "cases": [
+    {
+      "owner_refs": [
+        "part:microduck:7f4fefc3c6de90f1",
+        "part:microduck:cb253f38c818b9d8"
+      ],
+      "interface_refs": [
+        "interface:assembly:7f4fefc3c6de90f1:lower_servo_housing",
+        "interface:assembly:cb253f38c818b9d8:roll_support_housing"
+      ],
+      "source_sha256": [
+        "9a91cc1ae31ecd9e0c1ba93f3bb2ad8a12e29bff24ec27d1ac66c0c3037d9fcf",
+        "b5603a64b2d965ad75ea847767b5798130852e12a658fde7b5068fc457e2adcc"
+      ],
+      "rotation_b_to_a": [
+        [
+          0,
+          -1,
+          0
+        ],
+        [
+          -1,
+          0,
+          4.3368084544767464e-16
+        ],
+        [
+          -4.3368084544767464e-16,
+          0,
+          -1
+        ]
+      ],
+      "translation_b_to_a": [
+        0.024499998427927494,
+        0.03949999998782728,
+        -0.0062229124865147215
+      ],
+      "intersection_volume_m3": 8.784488313807361e-09,
+      "numerical_contact_thickness_m": 0.0005000000000000004,
+      "status": "unexpected_overlap"
+    },
+    {
+      "owner_refs": [
+        "part:microduck:203d2686e3321e4a",
+        "part:microduck:cb253f38c818b9d8"
+      ],
+      "interface_refs": [
+        "interface:assembly:203d2686e3321e4a:left_hip_yaw_housing_mount",
+        "interface:assembly:cb253f38c818b9d8:roll_support_housing"
+      ],
+      "source_sha256": [
+        "aa4f853ae555a8b765e585ce4519c0bbff325ce298ec15a1437792c52a0beac1",
+        "b5603a64b2d965ad75ea847767b5798130852e12a658fde7b5068fc457e2adcc"
+      ],
+      "rotation_b_to_a": [
+        [
+          1,
+          0,
+          1.084202180437696e-15
+        ],
+        [
+          1.084202180437696e-15,
+          0,
+          -1
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "translation_b_to_a": [
+        -5.340269199072267e-11,
+        -0.0019999999036775865,
+        0.03199999965727329
+      ],
+      "intersection_volume_m3": 9.027904556864218e-09,
+      "numerical_contact_thickness_m": 0.0019999999999999983,
+      "status": "unexpected_overlap"
+    }
+  ],
+  "numerical_contacts": [
+    {
+      "owner_refs": [
+        "part:microduck:52fdcacf474a463f",
+        "part:microduck:a0775b54397eb21e"
+      ],
+      "interface_refs": [
+        "interface:assembly:52fdcacf474a463f:jaw_bearing_seat",
+        "interface:assembly:a0775b54397eb21e:outer_ring"
+      ],
+      "source_sha256": [
+        "1820f7cf96646b0fc0c431f07da87b91b13111bfa9857ab1bf2b1fc3388f8da2",
+        "e815f3483a2e7b80844f3c0938a47e53db38b12faed9b2d364414c19e4322da4"
+      ],
+      "rotation_b_to_a": [
+        [
+          0,
+          0,
+          -1
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          -1,
+          0
+        ]
+      ],
+      "translation_b_to_a": [
+        -0.037200001475866884,
+        -7.307619643820066e-20,
+        0.0074999999647399436
+      ],
+      "intersection_volume_m3": 3.256516427272198e-16,
+      "numerical_contact_thickness_m": 0.0020000000000000018,
+      "status": "unexpected_overlap"
+    },
+    {
+      "owner_refs": [
+        "part:microduck:55121c0b36f62219",
+        "part:microduck:d4b9a9e9474a9829"
+      ],
+      "interface_refs": [
+        "interface:assembly:55121c0b36f62219:inner_ring",
+        "interface:assembly:d4b9a9e9474a9829:head_roll_opposite_support"
+      ],
+      "source_sha256": [
+        "295ee68ed9766c91fe06d3a2a49d39f7c2f56cc943395d293afdeb013123435e",
+        "b0c9902dee19f06cdb7fa930292e0e1c91e2dc59baa971211495b58ff76c3c60"
+      ],
+      "rotation_b_to_a": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          -1,
+          0
+        ]
+      ],
+      "translation_b_to_a": [
+        -1.36071861268357e-20,
+        -0.00450000002717513,
+        -0.014199999161064625
+      ],
+      "intersection_volume_m3": 5.245432015506295e-15,
+      "numerical_contact_thickness_m": 0.0036000008434057236,
+      "status": "unexpected_overlap"
+    },
+    {
+      "owner_refs": [
+        "part:microduck:638f29b46b322e64",
+        "part:microduck:766eaa6e4dd8b09f"
+      ],
+      "interface_refs": [
+        "interface:assembly:638f29b46b322e64:ankle_idler_journal",
+        "interface:assembly:766eaa6e4dd8b09f:inner_ring"
+      ],
+      "source_sha256": [
+        "9a91cc1ae31ecd9e0c1ba93f3bb2ad8a12e29bff24ec27d1ac66c0c3037d9fcf",
+        "e815f3483a2e7b80844f3c0938a47e53db38b12faed9b2d364414c19e4322da4"
+      ],
+      "rotation_b_to_a": [
+        [
+          0,
+          0,
+          -1
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          -1,
+          0
+        ]
+      ],
+      "translation_b_to_a": [
+        0.035299998708069324,
+        0.022000000121009233,
+        -0.0062229123880805075
+      ],
+      "intersection_volume_m3": 4.445516678681428e-15,
+      "numerical_contact_thickness_m": 0.0025999984741210957,
+      "status": "unexpected_overlap"
+    }
+  ]
+}

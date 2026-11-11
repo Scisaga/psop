@@ -1,0 +1,251 @@
+{
+  "schema": "psop.homepage-capture/1",
+  "captured_at": "2026-11-11T13:54:33.049Z",
+  "timezone": "Asia/Shanghai",
+  "viewport": {
+    "width": 1600,
+    "height": 1000
+  },
+  "isolation": {
+    "registry": ".runtime/homepage-capture/registry.json",
+    "user_scenes_modified": false
+  },
+  "source_commit": "d2a84a22637c1006f3ae3880d476357271634da4",
+  "source_dirty": true,
+  "images": [
+    {
+      "file": "workbench-overview.webp",
+      "purpose": "Current workspace, source assembly, structure tree and object details",
+      "kind": "actual_workbench_capture",
+      "route": "#explorer?workspace=microduck&snapshot=dkp-c9a2c6afd8358f836d0f&part=part%3Amicroduck%3Ae40b9945707505e1&explode=0.00&detail=overview&view=iso&labels=0",
+      "dimensions": [
+        1600,
+        1000
+      ],
+      "bytes": 165440,
+      "sha256": "d5cf89b53ef1623c5db8b6228b4ee53614e66f689d76c0a3ea3c8175db14fa4f"
+    },
+    {
+      "file": "workbench-interfaces.webp",
+      "purpose": "Actual part interfaces and source-reference connections",
+      "kind": "actual_workbench_capture",
+      "route": "#explorer?workspace=microduck&snapshot=dkp-c9a2c6afd8358f836d0f&part=part%3Amicroduck%3Aa682dc3620df43f5&explode=0.00&detail=interfaces&view=iso&labels=0",
+      "dimensions": [
+        1600,
+        1000
+      ],
+      "bytes": 181104,
+      "sha256": "9b81bf9a8c3d623014804924a306dd8d0bd16082fe3e621c187224909e129430"
+    },
+    {
+      "file": "workbench-evidence.webp",
+      "purpose": "Original XML and cited evidence lines",
+      "kind": "actual_workbench_capture",
+      "route": "#explorer?workspace=microduck&snapshot=dkp-c9a2c6afd8358f836d0f&part=part%3Amicroduck%3A986b5adf27910138&explode=0.00&detail=evidence&view=iso&labels=0&source=SRC-MD-MJCF&evidence=evidence%3A986b5adf27910138%3Axml",
+      "dimensions": [
+        1600,
+        1000
+      ],
+      "bytes": 143664,
+      "sha256": "50c07c641355808ccd175bf6a95799996ec7b6354e10f92a6c9af55897cc1fb1"
+    },
+    {
+      "file": "workbench-build.webp",
+      "purpose": "Published snapshot, provenance and capability declarations",
+      "kind": "actual_workbench_capture",
+      "route": "#build?workspace=microduck&snapshot=dkp-c9a2c6afd8358f836d0f&explode=0.00&detail=interfaces&view=iso",
+      "dimensions": [
+        1600,
+        1000
+      ],
+      "bytes": 99852,
+      "sha256": "e31841ef12767d0b7a6c15960dda672c4b7d95b12a915e3116e6ab47310f5dd4"
+    },
+    {
+      "file": "workbench-compile.webp",
+      "purpose": "Current Compile page: execution service not connected",
+      "kind": "actual_workbench_capture",
+      "route": "#compile?workspace=microduck&snapshot=dkp-c9a2c6afd8358f836d0f&explode=0.00&detail=interfaces&view=iso",
+      "dimensions": [
+        1600,
+        1000
+      ],
+      "bytes": 64180,
+      "sha256": "6779b3604303c435a03b95c1f893000b49e3764bdc32d884038a695f347e8413"
+    },
+    {
+      "file": "workbench-simulate.webp",
+      "purpose": "Current immersive assembly workshop, initial loose parts",
+      "kind": "actual_workbench_capture",
+      "route": "#simulate?workspace=microduck&snapshot=dkp-c9a2c6afd8358f836d0f&explode=0.00&detail=interfaces&view=iso&session=a1de1aed-4d44-4a45-8a6e-08b6dcab37cb",
+      "dimensions": [
+        1600,
+        1000
+      ],
+      "bytes": 187208,
+      "sha256": "511ee39ec58c840fe904e3b2c172e9cb3d95d764ed6bd9365fbe371bcb1530fb"
+    },
+    {
+      "file": "workbench-connection.webp",
+      "purpose": "Real eligible reference connection card with geometric records",
+      "kind": "actual_workbench_capture",
+      "route": "#simulate?workspace=microduck&snapshot=dkp-c9a2c6afd8358f836d0f&explode=0.00&detail=interfaces&view=iso&session=a1de1aed-4d44-4a45-8a6e-08b6dcab37cb",
+      "dimensions": [
+        1600,
+        1000
+      ],
+      "bytes": 259900,
+      "sha256": "005497092a7952eda5d2a20dadaf929faea7fdababbe94e8a1fb9f7ceb7f71d7"
+    },
+    {
+      "file": "workbench-simulate-poster.webp",
+      "purpose": "Completed source-original reference assembly in the real workshop",
+      "kind": "actual_workbench_capture",
+      "route": "#simulate?workspace=microduck&snapshot=dkp-c9a2c6afd8358f836d0f&explode=0.00&detail=interfaces&view=iso&session=a1de1aed-4d44-4a45-8a6e-08b6dcab37cb",
+      "dimensions": [
+        1600,
+        1000
+      ],
+      "bytes": 206304,
+      "sha256": "459d291770908e84c819e14cf689d432c49b58e90eab607dd6c7dcdaaaf51420"
+    }
+  ],
+  "operations": [
+    {
+      "type": "connect",
+      "revision": 1,
+      "candidate_id": "candidate:9f0947d5bb8b3d6513d112e2322d322c5d0a023bde0c0a24c674b888e40aec4c",
+      "observed_after_click_revision": 1,
+      "saved_connection_count": 1,
+      "request_signature": "e0644f16b9f326c8651abe5f9b5c68c3337bb3cb5bc791c3ec17f7e1ed7e54ad"
+    },
+    {
+      "type": "disconnect",
+      "revision": 2,
+      "observed_after_click_revision": 1,
+      "saved_connection_count": 0,
+      "request_signature": "bd477e34a2cdaea5a5a643cbd74738fa79a13b2893c7c2a68ae104aed37d7312"
+    },
+    {
+      "type": "undo",
+      "revision": 3,
+      "observed_after_click_revision": 2,
+      "saved_connection_count": 1,
+      "request_signature": "5e017b01eaa3d575c2844349bc2a7f5ddf46e77396809a270e87f4293962d203"
+    },
+    {
+      "type": "reset",
+      "revision": 4,
+      "observed_after_click_revision": 4,
+      "saved_connection_count": 0,
+      "request_signature": "221eda7ca0f2965b8e734a58bca4214e6dc4c4660175ca3f047d4c562163875f"
+    },
+    {
+      "type": "auto_assemble",
+      "revision": 5,
+      "configuration": "configuration:microduck:source-qpos0",
+      "speed": 4,
+      "observed_after_click_revision": 5,
+      "saved_connection_count": 69,
+      "request_signature": "9b93ca33d32c574ffe700a8ce36b5a902c1368ac7be8ea6188938c3db296b4cc"
+    }
+  ],
+  "browser_errors": [],
+  "device_id": "microduck",
+  "snapshot_id": "dkp-c9a2c6afd8358f836d0f",
+  "package_version": "2.0.0-capabilities.10",
+  "package_digest": "c9a2c6afd8358f836d0f46deae682e35a77710d384653dee5ba6f27716e79c57",
+  "counts": {
+    "parts": 70,
+    "geometries": 38,
+    "sources": 69
+  },
+  "reference_configuration": "source_original",
+  "scene_id": "a1de1aed-4d44-4a45-8a6e-08b6dcab37cb",
+  "video_start_seconds": 25.124,
+  "video_end_seconds": 127.355,
+  "raw_video": ".runtime/homepage-capture/page@65950f6608dc252e175d945b115249dd.webm",
+  "video": {
+    "file": "workbench-simulate-demo.webm",
+    "kind": "actual_workbench_recording",
+    "encoding": "WebM / VP9",
+    "edited_at": "2026-11-11T14:36:42.071Z",
+    "dimensions": [
+      1600,
+      1000
+    ],
+    "fps": 20,
+    "edit_recipe": "docs/html/assets/workbench-video-edit.json",
+    "connection_capture": "docs/html/assets/workbench-connection-capture.json",
+    "sources": [
+      {
+        "id": "head_shell",
+        "file": ".runtime/homepage-connection/page@136ea9791d3602d453b25757d6d2d479.webm",
+        "capture": "docs/html/assets/workbench-connection-capture.json",
+        "sha256": "48052ff24ee64a90f0446a88229573a1370a1e134a1f598d2135407a1974ec70",
+        "duration_seconds": 24.36
+      },
+      {
+        "id": "automatic",
+        "file": ".runtime/homepage-capture/page@65950f6608dc252e175d945b115249dd.webm",
+        "capture": "docs/html/assets/workbench-capture.json",
+        "sha256": "3bae3c734c440a8d8a89883b87df47ba42dfd216a9caca23958e9e5d52ef0149",
+        "duration_seconds": 127.8
+      }
+    ],
+    "segments": [
+      {
+        "source": "head_shell",
+        "from": 9.6,
+        "to": 12,
+        "label": "选择 · 白色上壳与橙色下壳"
+      },
+      {
+        "source": "head_shell",
+        "from": 12,
+        "to": 17.75,
+        "label": "连接 · 头部上下壳合拢"
+      },
+      {
+        "source": "head_shell",
+        "from": 17.75,
+        "to": 18.9,
+        "label": "拆分 · 两片外壳重新分开"
+      },
+      {
+        "source": "head_shell",
+        "from": 21.1,
+        "to": 22.4,
+        "label": "拆分 · 两片外壳重新分开"
+      },
+      {
+        "source": "head_shell",
+        "from": 22.4,
+        "to": 24.3,
+        "label": "撤销 · 恢复闭合状态"
+      },
+      {
+        "source": "automatic",
+        "from": 94,
+        "to": 102,
+        "label": "自动还原 · 来源原装构型 · 4×"
+      },
+      {
+        "source": "automatic",
+        "from": 118,
+        "to": 127.5,
+        "label": "自动还原 · 来源原装构型 · 4×"
+      }
+    ],
+    "duration_target_seconds": 30,
+    "editing": "The opening shows a white upper head shell joining the orange lower shell through the source-original three-point closure. The other 68 instances are hidden using native scene visibility controls; meshes and mating transforms are unchanged. Two isolated scenes from the same snapshot are used. Waiting and intermediate automatic-assembly footage are cut; native automatic-assembly playback is 4×. No synthetic scene or motion.",
+    "bytes": 7652615,
+    "sha256": "6f49b755db0cec8a3035ce8314bdc368e8af9b83359bb596c4957007d9e5db8c"
+  },
+  "operation_verification": {
+    "source": "persisted isolated-session command results",
+    "saved_state_sha256": "cf1850cbc67878984e899ad054682791c979e819db11165ccc14482f66830c28",
+    "final_revision": 5,
+    "reference_configuration_ref": "configuration:microduck:source-qpos0"
+  }
+}

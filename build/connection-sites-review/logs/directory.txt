@@ -1,0 +1,16 @@
+✔ both hip instances expose each independently required hole group and journal, without duplicate hypothesis/review entries (161.5283ms)
+✔ deleting a required site or one member fails even when all producer counts are recomputed (593.8059ms)
+✔ two local relationships for the same Part pair survive order changes; competing explanations reuse one local site (738.6755ms)
+✔ independent studies of another local endpoint do not leak into a declared reference pool (751.2874ms)
+✔ entry sides share a topology-witnessed hole; coaxial disconnected finite walls remain separate members (301.9287ms)
+✔ local pick uses source triangles and exposes ambiguity, never nearest-center assignment (0.6606ms)
+✔ reference correspondence preserves its selected subset and entry side under the same site identity (1.3493ms)
+✔ an explicitly paired pin/hole entry selects the correct peer group while an unscoped ambiguous entry requires a choice (0.4609ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 8
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 3532.5855

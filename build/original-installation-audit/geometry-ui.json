@@ -1,0 +1,44 @@
+{
+  "schema": "psop.original-installation-geometry-ui/1",
+  "snapshot": "dkp-69f6ee2e13b4051f6f42",
+  "package_digest": "69f6ee2e13b4051f6f42522639f77459081b83e9b95d4b5ea5b99c48324fe0e4",
+  "shots": [
+    {
+      "finding_ref": "F01",
+      "owner_ref": "part:microduck:55970da91992f38c",
+      "feature_ref": "feature:73de4a7931432d81390d:geometry:84530ebce6a93b73e437",
+      "image": "F01-yaw2roll.png",
+      "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-69f6ee2e13b4051f6f42&part=part%3Amicroduck%3A55970da91992f38c&feature=feature%3A73de4a7931432d81390d%3Ageometry%3A84530ebce6a93b73e437&explode=0.00&detail=interfaces&inspection=1&view=iso&labels=0",
+      "visible_source_samples": 16,
+      "source_sample_count": 16
+    },
+    {
+      "finding_ref": "F02",
+      "owner_ref": "part:microduck:48099e14105d3289",
+      "feature_ref": "feature:2125bf7bc58045006779:geometry:84530ebce6a93b73e437",
+      "image": "F02-yaw2roll.png",
+      "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-69f6ee2e13b4051f6f42&part=part%3Amicroduck%3A48099e14105d3289&feature=feature%3A2125bf7bc58045006779%3Ageometry%3A84530ebce6a93b73e437&explode=0.00&detail=interfaces&inspection=1&view=iso&labels=0",
+      "visible_source_samples": 16,
+      "source_sample_count": 16
+    },
+    {
+      "finding_ref": "F03",
+      "owner_ref": "part:microduck:986b5adf27910138",
+      "feature_ref": "feature:235863d91c3a953cf25b:geometry:71085be1b816cc33630d",
+      "image": "F03-motor_support.png",
+      "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-69f6ee2e13b4051f6f42&part=part%3Amicroduck%3A986b5adf27910138&feature=feature%3A235863d91c3a953cf25b%3Ageometry%3A71085be1b816cc33630d&explode=0.00&detail=interfaces&inspection=1&view=iso&labels=0",
+      "visible_source_samples": 16,
+      "source_sample_count": 16
+    },
+    {
+      "finding_ref": "F04",
+      "owner_ref": "part:microduck:986b5adf27910138",
+      "feature_ref": "feature:235863d91c3a953cf25b:geometry:6ba67d7644a67a1676e7",
+      "image": "F04-motor_support.png",
+      "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-69f6ee2e13b4051f6f42&part=part%3Amicroduck%3A986b5adf27910138&feature=feature%3A235863d91c3a953cf25b%3Ageometry%3A6ba67d7644a67a1676e7&explode=0.00&detail=interfaces&inspection=1&view=iso&labels=0",
+      "visible_source_samples": 16,
+      "source_sample_count": 16
+    }
+  ],
+  "javascript_errors": []
+}

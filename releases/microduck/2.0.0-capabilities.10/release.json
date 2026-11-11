@@ -1,0 +1,82 @@
+{
+  "package_version": "2.0.0-capabilities.10",
+  "package_digest": "c9a2c6afd8358f836d0f46deae682e35a77710d384653dee5ba6f27716e79c57",
+  "created_at": "2026-11-11T10:59:44+00:00",
+  "profile": "psop.hardware.source-model/1.15",
+  "toolchain": {
+    "name": "psop-build",
+    "sha256": "fdd94fe9066f6ef003d82fff854dfd5bb92ed606c8db9a34c1cf99dd3ea34a73",
+    "version": "3.0.0-draft.23"
+  },
+  "adapter": {
+    "commit": "cb70b792312d559a4da09064d92009079671815f",
+    "id": "microduck-mjcf/1.0",
+    "xml_sha256": "80fc4424ed71e430ec4919110dfdb5c714dc1c4e1138e1832a16865cf31eb8c8"
+  },
+  "inputs": {
+    "archive": {
+      "path": "inputs-materials.zip",
+      "sha256": "1a20e8494cc633a44ab4d8c662d8aa2e3b44973fbe8b4856040cdd0239d201aa"
+    },
+    "assembly_knowledge": {
+      "path": "sources/SRC-MD-ASSEMBLY-CATALOG.json",
+      "sha256": "a99da7ed4f877dfb1d81c504bce26628869256036c6aedca8c6fbfa962f459f2"
+    },
+    "reference_adjustments": {
+      "path": "sources/SRC-REFERENCE-ADJUSTMENTS.json",
+      "sha256": "d4cb040296d74576f684772104e2522b83934b46e2c733b96629a9cc9dd1dd9a"
+    },
+    "requirements": {
+      "path": "sources/SRC-CAPABILITY-REQUIREMENTS.json",
+      "sha256": "9fc4a67e75cbefeb87e40167375f96bb93e8e6137a6c506e02267ff6daef204d"
+    },
+    "review_document_386d962a0ed390bf": {
+      "path": "sources/SRC-CAPABILITY-REVIEW-386d962a0ed390bf.json",
+      "sha256": "386d962a0ed390bff75280b62cf39b495cb0748ff16e3b0289d0cffa9662eff0"
+    },
+    "review_document_6f1b51a8d027d8ce": {
+      "path": "sources/SRC-CAPABILITY-REVIEW-6f1b51a8d027d8ce.json",
+      "sha256": "6f1b51a8d027d8ce68a8dbd2853bdd256d4c2124a9831a06de3d966ba6f4c116"
+    },
+    "review_document_7439c1ea8fb0909c": {
+      "path": "sources/SRC-CAPABILITY-REVIEW-7439c1ea8fb0909c.json",
+      "sha256": "7439c1ea8fb0909c1054f9e4d76d60735c5f999cf3efe8bd2d6ca35dc3d64066"
+    },
+    "review_document_848a2de9d4645ce6": {
+      "path": "sources/SRC-CAPABILITY-REVIEW-848a2de9d4645ce6.json",
+      "sha256": "848a2de9d4645ce6128202444760645fb1d90a76f5ba153bca9a049ba1e3918c"
+    },
+    "review_document_982bc6e35a4c8c21": {
+      "path": "sources/SRC-CAPABILITY-REVIEW-982bc6e35a4c8c21.json",
+      "sha256": "982bc6e35a4c8c211ac0ec2141354af1d503b0dde56b574fcbaf5838097547cb"
+    },
+    "review_document_bd9c23d7a5cadf04": {
+      "path": "sources/SRC-CAPABILITY-REVIEW-bd9c23d7a5cadf04.json",
+      "sha256": "bd9c23d7a5cadf04ae85b3ff8dbf3a0f1c4e295ffdc8952b60d1d4f9adb2f808"
+    }
+  },
+  "counts": {
+    "bodies": 15,
+    "candidates": 1531,
+    "evidence": 370,
+    "features": 8703,
+    "geometries": 38,
+    "instance_pairs": 2415,
+    "interfaces": 411,
+    "joints": 14,
+    "parts": 70,
+    "resources": 7438,
+    "sources": 69
+  },
+  "schema": "psop.dkp-release/1.0",
+  "device_id": "microduck",
+  "snapshot_id": "dkp-c9a2c6afd8358f836d0f",
+  "local_package": "build/microduck/source-1.15/microduck-capabilities-10.dkp",
+  "manifest_sha256": "461332bcd585d7c1bd4a2ff624e178ae535f25c6a65d9cbfded263b6ff410e57",
+  "archive": {
+    "name": "microduck-capabilities-10.dkp.zip",
+    "sha256": "f39815538352a2c6fce0338ab4abf891bf8ad6d6144ed20dfe91d64e539f169b",
+    "bytes": 125313186,
+    "file_count": 2575
+  }
+}

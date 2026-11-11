@@ -1,0 +1,93 @@
+{
+  "recorded_at": "2026-11-10T23:14:33.418Z",
+  "origin": "http://127.0.0.1:8780",
+  "health": {
+    "app": "psop-workbench",
+    "mode": "local",
+    "dkpSchema": "psop.dkp/2.0-draft.1",
+    "simulate": {
+      "commands": [
+        "move",
+        "connect",
+        "disconnect",
+        "reset",
+        "auto_assemble",
+        "undo",
+        "redo",
+        "rename"
+      ]
+    }
+  },
+  "assets": [
+    {
+      "asset": "/assets/index-WwwM-HTc.js",
+      "sha256": "75a17acbcb7a129b95c8176ebee8ecc1334df3d7a6f74a52587ccf2ac03b2b7c"
+    },
+    {
+      "asset": "/assets/index-BCRkOLcP.css",
+      "sha256": "db10f2453c3c20ac7122f9bfc76bdbddeefa73c76f0e4b1d161922257680d2ac"
+    }
+  ],
+  "source_scene": "2ff0a3e2-51fb-4a60-85a5-7556d25362f3",
+  "source_revision": 5,
+  "source_connections": 3,
+  "source_unchanged": true,
+  "acceptance_scene": "5a78a10c-1a8d-477e-bb12-dafe39c8ae50",
+  "revision": 1,
+  "parts": 70,
+  "groups": 1,
+  "connections": 69,
+  "history": [
+    {
+      "id": 0,
+      "label": "自动组装 · 成品参考演示"
+    }
+  ],
+  "assembly_report": {
+    "mode": "reference",
+    "configuration_ref": "configuration:microduck:reconciled-qpos0",
+    "configuration_label": "修正成品参考",
+    "part_count": 70,
+    "retained_connection_count": 0,
+    "removed_connection_count": 3,
+    "reference_connection_count": 69,
+    "structure_binding_count": 7,
+    "geometry_status": "not_evaluated",
+    "completed_at": "2026-11-10T23:14:15.015Z"
+  },
+  "viewport": {
+    "width": 1920,
+    "height": 1080
+  },
+  "layout": {
+    "reset": {
+      "x": 20,
+      "y": 1024,
+      "width": 36,
+      "height": 36
+    },
+    "button": {
+      "x": 64,
+      "y": 1024,
+      "width": 116.03125,
+      "height": 36
+    },
+    "hint": {
+      "x": 188.03125,
+      "y": 1024,
+      "width": 206.5,
+      "height": 36
+    }
+  },
+  "health_preflight_requests": 1,
+  "commands": [
+    "auto_assemble"
+  ],
+  "page_errors": [],
+  "complete_animation": true,
+  "screenshots": [
+    "auto-original-entry-layout-1920.png",
+    "auto-original-entry-join-1920.png",
+    "auto-original-entry-complete-1920.png"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "schema": "psop.retired-link-recovery/1",
+  "old_snapshot": "dkp-69f6ee2e13b4051f6f42",
+  "selected_snapshot": "dkp-3955ee11502b1d0c9262",
+  "part": "part:microduck:a682dc3620df43f5",
+  "camera_preserved": true,
+  "scene_ready": true,
+  "javascript_errors": []
+}

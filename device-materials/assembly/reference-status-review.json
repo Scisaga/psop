@@ -1,0 +1,176 @@
+{
+  "schema": "psop.reference-status-review/1",
+  "date": "2026-11-10",
+  "source_package_digest": "9b274d8555bf6cd9013fa1918b2fc5913e0a4d223a522ecdc85e05bc160f7bdf",
+  "method": "Selected source member axes rechecked in unchanged qpos0; prior frozen placement exclusions retained as bounded review input, not an independent discovery oracle.",
+  "source_locks": [
+    {
+      "part_ref": "part:microduck:4cef8bb24d37fe6e",
+      "source_id": "SRC-000045",
+      "sha256": "96238ed0d020ce0009cf1a5aa4b6926176c800840318ee65e4375be2298d2744"
+    },
+    {
+      "part_ref": "part:microduck:9d70b219a5533bf1",
+      "source_id": "SRC-000033",
+      "sha256": "3efba3e193cc6aa49d49a9c92cdded0504917397c9e2c5b8fe002a958e2f2d2b"
+    },
+    {
+      "part_ref": "part:microduck:a682dc3620df43f5",
+      "source_id": "SRC-000045",
+      "sha256": "96238ed0d020ce0009cf1a5aa4b6926176c800840318ee65e4375be2298d2744"
+    },
+    {
+      "part_ref": "part:microduck:e27cbdd6c07a264e",
+      "source_id": "SRC-000022",
+      "sha256": "2abde8e2b79c9b011cdb11957c67ab4287b45d7301affd4235ab81141118e331"
+    }
+  ],
+  "connections": [
+    {
+      "connection_ref": "connection:assembly:9d70b219a5533bf1:shell_closure",
+      "endpoints": [
+        {
+          "interface_ref": "interface:assembly:9d70b219a5533bf1:shell_closure",
+          "member_refs": [
+            "interface:assembly:9d70b219a5533bf1:shell_closure:hole_center"
+          ]
+        },
+        {
+          "interface_ref": "interface:assembly:e27cbdd6c07a264e:shell_closure",
+          "member_refs": [
+            "interface:assembly:e27cbdd6c07a264e:shell_closure:hole_center"
+          ]
+        }
+      ],
+      "basis_retained": "hypothesis",
+      "maximum_transverse_axis_residual_m": 7.849999375925476e-05,
+      "prior_compatibility_status": "no_complete_interface_match",
+      "prior_fixed_pose_dispositions": {},
+      "assessment": {
+        "schema": "psop.reference-connection-assessment/1",
+        "configuration_ref": "configuration:microduck:source-qpos0",
+        "purpose": "identified",
+        "counterpart": "identified",
+        "geometry": "review_required",
+        "fastening": "unspecified",
+        "summary": "通过孔与接收孔支持闭壳用途；来源孔轴存在约 0.0785 mm 偏差，实际紧固细节待核。",
+        "evidence_refs": [
+          "evidence:assembly:reference-assessment:shell_closure",
+          "evidence:assembly:9d70b219a5533bf1:shell_closure",
+          "evidence:assembly:e27cbdd6c07a264e:shell_closure",
+          "evidence:9d70b219a5533bf1:xml",
+          "evidence:e27cbdd6c07a264e:xml"
+        ],
+        "open_items": [
+          {
+            "kind": "geometry",
+            "note": "核定两侧外壳约 0.0785 mm 的孔轴偏差及有限入口，不能将名义对端识别当作当前几何验收。"
+          },
+          {
+            "kind": "fastening",
+            "note": "实际螺钉规格、有效啮合及装配过程待核；不影响已经定位的安装用途和对端身份。"
+          }
+        ]
+      }
+    },
+    {
+      "connection_ref": "connection:assembly:4cef8bb24d37fe6e:shell_neck_minus",
+      "endpoints": [
+        {
+          "interface_ref": "interface:assembly:4cef8bb24d37fe6e:servo_end_minus",
+          "member_refs": [
+            "interface:assembly:4cef8bb24d37fe6e:servo_end_minus:hole_y_low",
+            "interface:assembly:4cef8bb24d37fe6e:servo_end_minus:hole_z_low",
+            "interface:assembly:4cef8bb24d37fe6e:servo_end_minus:hole_z_high",
+            "interface:assembly:4cef8bb24d37fe6e:servo_end_minus:hole_y_high"
+          ]
+        },
+        {
+          "interface_ref": "interface:assembly:e27cbdd6c07a264e:shell_neck_minus",
+          "member_refs": [
+            "interface:assembly:e27cbdd6c07a264e:shell_neck_minus:hole_z_low",
+            "interface:assembly:e27cbdd6c07a264e:shell_neck_minus:hole_y_low",
+            "interface:assembly:e27cbdd6c07a264e:shell_neck_minus:hole_z_high",
+            "interface:assembly:e27cbdd6c07a264e:shell_neck_minus:hole_y_high"
+          ]
+        }
+      ],
+      "basis_retained": "hypothesis",
+      "maximum_transverse_axis_residual_m": 3.3149929727043527e-10,
+      "prior_compatibility_status": "fixed_pose_excluded",
+      "prior_fixed_pose_dispositions": {
+        "interference": 64
+      },
+      "assessment": {
+        "schema": "psop.reference-connection-assessment/1",
+        "configuration_ref": "configuration:microduck:source-qpos0",
+        "purpose": "identified",
+        "counterpart": "identified",
+        "geometry": "review_required",
+        "fastening": "unspecified",
+        "summary": "来源四孔能逐一对应；已有有限落座分支均报整件干涉，落座与源模型仍需核对。",
+        "evidence_refs": [
+          "evidence:assembly:reference-assessment:shell_neck_minus",
+          "evidence:assembly:4cef8bb24d37fe6e:shell_neck_minus",
+          "evidence:assembly:e27cbdd6c07a264e:shell_neck_minus",
+          "evidence:4cef8bb24d37fe6e:xml",
+          "evidence:e27cbdd6c07a264e:xml"
+        ],
+        "open_items": [
+          {
+            "kind": "geometry",
+            "note": "核查有限落座与整件干涉的具体区域；已枚举分支失败不表示所有装法均不可能。"
+          },
+          {
+            "kind": "fastening",
+            "note": "实际螺钉规格、有效啮合及装配过程待核；不影响已经定位的安装用途和对端身份。"
+          }
+        ]
+      }
+    },
+    {
+      "connection_ref": "connection:assembly:e27cbdd6c07a264e:vertical_servo_fastening",
+      "endpoints": [
+        {
+          "interface_ref": "interface:assembly:e27cbdd6c07a264e:vertical_servo_fastening",
+          "member_refs": [
+            "interface:assembly:e27cbdd6c07a264e:vertical_servo_fastening:through_bore"
+          ]
+        },
+        {
+          "interface_ref": "interface:assembly:a682dc3620df43f5:vertical_shell_receiver",
+          "member_refs": [
+            "interface:assembly:a682dc3620df43f5:vertical_shell_receiver:receiver"
+          ]
+        }
+      ],
+      "basis_retained": "hypothesis",
+      "maximum_transverse_axis_residual_m": 6.351946713379812e-11,
+      "prior_compatibility_status": "no_complete_interface_match",
+      "prior_fixed_pose_dispositions": {},
+      "assessment": {
+        "schema": "psop.reference-connection-assessment/1",
+        "configuration_ref": "configuration:microduck:source-qpos0",
+        "purpose": "identified",
+        "counterpart": "identified",
+        "geometry": "axes_aligned",
+        "fastening": "unspecified",
+        "summary": "竖向 Ø2.2/Ø5 阶梯孔的用途及指定 B 侧接收孔已识别，孔道与入口同轴。",
+        "evidence_refs": [
+          "evidence:assembly:reference-assessment:vertical_servo_fastening",
+          "evidence:assembly:installation-followup:shell-左"
+        ],
+        "open_items": [
+          {
+            "kind": "fastening",
+            "note": "实际螺钉规格、有效啮合及装配过程待核；不影响已经定位的安装用途和对端身份。"
+          }
+        ]
+      }
+    }
+  ],
+  "limits": [
+    "Identified installation roles and counterpart identities do not establish installed screws, retention or insertion paths.",
+    "Finite placement exclusions do not exhaust continuous placements or active subframes."
+  ]
+}

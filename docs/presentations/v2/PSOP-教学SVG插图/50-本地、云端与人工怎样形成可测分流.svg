@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <title>本地、云端与人工怎样形成可测分流</title>
+  <desc>PSOP 第 50 / 65 页教学图；文字与方法图保持可编辑。Microduck 视图由官方来源 STL 和 robot_walk.xml 的 source assembly 渲染，配置为 walk-model-reference、MCD-000001。alpha 软件任务身份与该几何参考的实物对应尚未核验；MD-01、S03、J01 和 EG 为教学定义。</desc>
+  <defs>
+    <linearGradient id="steel" x1="0" y1="0" x2="0.9" y2="1">
+      <stop stop-color="#EAF0F3" />
+      <stop offset=".37" stop-color="#A9BBC6" />
+      <stop offset=".63" stop-color="#F1F5F5" />
+      <stop offset="1" stop-color="#859CA9" />
+    </linearGradient>
+  </defs>
+  <g id="base" transform="translate(0 0)">
+    <rect x="0" y="0" width="1600" height="900" rx="0" fill="#FCFDFB" />
+    <rect x="0" y="0" width="9" height="900" rx="0" fill="#B9752E" />
+    <path d="M64 62 L1536 62" stroke="#D7E1E7" fill="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+    <text x="64.000" y="41.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="18.999" font-weight="400" data-text="PSOP  /  训练、部署与完整案例" aria-label="PSOP  /  训练、部署与完整案例" xml:space="preserve" textLength="273.541" lengthAdjust="spacingAndGlyphs" fill="#526578">PSOP  /  训练、部署与完整案例</text>
+    <text x="1355.287" y="41.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="18.999" font-weight="400" data-text="LESSON 04  ·  50/65" aria-label="LESSON 04  ·  50/65" xml:space="preserve" textLength="180.021" lengthAdjust="spacingAndGlyphs" fill="#526578">LESSON 04  ·  50/65</text>
+  </g>
+  <g id="title" transform="translate(0 0)">
+    <text x="64.000" y="125.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="48.001" font-weight="700" data-text="本地、云端与人工怎样形成可测分流" aria-label="本地、云端与人工怎样形成可测分流" xml:space="preserve" textLength="768.001" lengthAdjust="spacingAndGlyphs" fill="#18344C">本地、云端与人工怎样形成可测分流</text>
+    <text x="64.000" y="177.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="24.001" font-weight="400" data-text="分流策略要说明哪些输入可以自动接受，哪些需要增强或复核。模型评分不是实际正确率；阈值应在验证集选择，再以独立测试同时观察" aria-label="分流策略要说明哪些输入可以自动接受，哪些需要增强或复核。模型评分不是实际正确率；阈值应在验证集选择，再以独立测试同时观察" xml:space="preserve" textLength="1440.001" lengthAdjust="spacingAndGlyphs" fill="#526578">分流策略要说明哪些输入可以自动接受，哪些需要增强或复核。模型评分不是实际正确率；阈值应在验证集选择，再以独立测试同时观察</text>
+    <text x="64.000" y="209.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="24.001" font-weight="400" data-text="接受率、错误率、转交率与交互延迟。" aria-label="接受率、错误率、转交率与交互延迟。" xml:space="preserve" textLength="408.001" lengthAdjust="spacingAndGlyphs" fill="#526578">接受率、错误率、转交率与交互延迟。</text>
+  </g>
+  <g id="beat_01" transform="translate(0 0)">
+    <g id="illustration" transform="translate(64 237)">
+      <rect x="0" y="52" width="413" height="195" rx="10" fill="#FFFFFF" stroke="#D7E1E7" stroke-width="1.5" />
+      <rect x="0" y="52" width="4" height="195" rx="2" fill="#326BB8" />
+      <text x="18.000" y="90.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.999" font-weight="700" data-text="输入与分流条件" aria-label="输入与分流条件" xml:space="preserve" textLength="181.999" lengthAdjust="spacingAndGlyphs" fill="#326BB8">输入与分流条件</text>
+      <text x="18.000" y="126.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="21.000" font-weight="400" data-text="采集质量 / 已知范围 / 任务类型" aria-label="采集质量 / 已知范围 / 任务类型" xml:space="preserve" textLength="294.800" lengthAdjust="spacingAndGlyphs" fill="#526578">采集质量 / 已知范围 / 任务类型</text>
+      <text x="18.000" y="158.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="21.000" font-weight="400" data-text="分数在验证集校准" aria-label="分数在验证集校准" xml:space="preserve" textLength="168.000" lengthAdjust="spacingAndGlyphs" fill="#526578">分数在验证集校准</text>
+      <text x="18.000" y="190.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="21.000" font-weight="400" data-text="阈值与规则绑定发布版本" aria-label="阈值与规则绑定发布版本" xml:space="preserve" textLength="231.000" lengthAdjust="spacingAndGlyphs" fill="#526578">阈值与规则绑定发布版本</text>
+      <rect x="525" y="0" width="419" height="90" rx="9" fill="#FFFFFF" stroke="#14877D" stroke-width="1.5" />
+      <text x="543.000" y="33.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.999" font-weight="700" data-text="本地执行" aria-label="本地执行" xml:space="preserve" textLength="103.999" lengthAdjust="spacingAndGlyphs" fill="#14877D">本地执行</text>
+      <text x="543.000" y="70.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="已验证的常规输入" aria-label="已验证的常规输入" xml:space="preserve" textLength="183.999" lengthAdjust="spacingAndGlyphs" fill="#526578">已验证的常规输入</text>
+      <path d="M417 149 L474 149 L474 46 L521 46" stroke="#14877D" fill="none" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M474 46 L521 46" stroke="#14877D" fill="none" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M511.9955289764732 50.3496553411123 L521 46 L511.9955289764732 41.6503446588877" stroke="#14877D" fill="none" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" />
+      <rect x="525" y="110" width="419" height="90" rx="9" fill="#FFFFFF" stroke="#7756AA" stroke-width="1.5" />
+      <text x="543.000" y="143.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.999" font-weight="700" data-text="云端增强" aria-label="云端增强" xml:space="preserve" textLength="103.999" lengthAdjust="spacingAndGlyphs" fill="#7756AA">云端增强</text>
+      <text x="543.000" y="180.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="复杂或未知情况" aria-label="复杂或未知情况" xml:space="preserve" textLength="160.999" lengthAdjust="spacingAndGlyphs" fill="#526578">复杂或未知情况</text>
+      <path d="M417 149 L474 149 L474 156 L521 156" stroke="#7756AA" fill="none" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M474 156 L521 156" stroke="#7756AA" fill="none" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M511.9955289764732 160.3496553411123 L521 156 L511.9955289764732 151.6503446588877" stroke="#7756AA" fill="none" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" />
+      <rect x="525" y="220" width="419" height="90" rx="9" fill="#FFFFFF" stroke="#B9752E" stroke-width="1.5" />
+      <text x="543.000" y="253.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.999" font-weight="700" data-text="人工复核" aria-label="人工复核" xml:space="preserve" textLength="103.999" lengthAdjust="spacingAndGlyphs" fill="#B9752E">人工复核</text>
+      <text x="543.000" y="290.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="冲突、越界与关键判断" aria-label="冲突、越界与关键判断" xml:space="preserve" textLength="229.999" lengthAdjust="spacingAndGlyphs" fill="#526578">冲突、越界与关键判断</text>
+      <path d="M417 149 L474 149 L474 266 L521 266" stroke="#B9752E" fill="none" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M474 266 L521 266" stroke="#B9752E" fill="none" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M511.9955289764732 270.3496553411123 L521 266 L511.9955289764732 261.6503446588877" stroke="#B9752E" fill="none" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" />
+      <rect x="1006" y="52" width="466" height="196" rx="11" fill="#EAF1FA" />
+      <text x="1026.000" y="89.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="28.000" font-weight="700" data-text="固定独立测试" aria-label="固定独立测试" xml:space="preserve" textLength="168.000" lengthAdjust="spacingAndGlyphs" fill="#326BB8">固定独立测试</text>
+      <text x="1026.000" y="137.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="24.001" font-weight="400" data-text="自动接受率 / 关键错误率" aria-label="自动接受率 / 关键错误率" xml:space="preserve" textLength="264.458" lengthAdjust="spacingAndGlyphs" fill="#18344C">自动接受率 / 关键错误率</text>
+      <text x="1026.000" y="174.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="24.001" font-weight="400" data-text="转交率 / 等待与延迟" aria-label="转交率 / 等待与延迟" xml:space="preserve" textLength="216.458" lengthAdjust="spacingAndGlyphs" fill="#18344C">转交率 / 等待与延迟</text>
+      <text x="1026.000" y="211.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="24.001" font-weight="400" data-text="资源与完整任务成功" aria-label="资源与完整任务成功" xml:space="preserve" textLength="216.001" lengthAdjust="spacingAndGlyphs" fill="#18344C">资源与完整任务成功</text>
+      <path d="M948 45 L976 45 L976 149 L1002 149" stroke="#326BB8" fill="none" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M976 149 L1002 149" stroke="#326BB8" fill="none" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M992.9955289764732 153.3496553411123 L1002 149 L992.9955289764732 144.6503446588877" stroke="#326BB8" fill="none" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M948 155 L976 155 L976 149 L1002 149" stroke="#326BB8" fill="none" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M976 149 L1002 149" stroke="#326BB8" fill="none" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M992.9955289764732 153.3496553411123 L1002 149 L992.9955289764732 144.6503446588877" stroke="#326BB8" fill="none" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M948 265 L976 265 L976 149 L1002 149" stroke="#326BB8" fill="none" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M976 149 L1002 149" stroke="#326BB8" fill="none" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M992.9955289764732 153.3496553411123 L1002 149 L992.9955289764732 144.6503446588877" stroke="#326BB8" fill="none" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" />
+      <text x="0.000" y="323.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.000" font-weight="400" data-text="不同模型评分分别校准；一个“0.8”不能直接视为统一正确率。" aria-label="不同模型评分分别校准；一个“0.8”不能直接视为统一正确率。" xml:space="preserve" textLength="625.099" lengthAdjust="spacingAndGlyphs" fill="#526578">不同模型评分分别校准；一个“0.8”不能直接视为统一正确率。</text>
+    </g>
+  </g>
+  <g id="beat_02" transform="translate(0 0)">
+    <text x="64.000" y="617.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.000" font-weight="700" data-text="本地负责已验证常规任务" aria-label="本地负责已验证常规任务" xml:space="preserve" textLength="275.000" lengthAdjust="spacingAndGlyphs" fill="#326BB8">本地负责已验证常规任务</text>
+    <text x="64.000" y="656.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="靠近采集与交互可降低部分网络依赖。是否" aria-label="靠近采集与交互可降低部分网络依赖。是否" xml:space="preserve" textLength="436.999" lengthAdjust="spacingAndGlyphs" fill="#526578">靠近采集与交互可降低部分网络依赖。是否</text>
+    <text x="64.000" y="686.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="有效取决于实际资源、输入质量和任务范" aria-label="有效取决于实际资源、输入质量和任务范" xml:space="preserve" textLength="413.999" lengthAdjust="spacingAndGlyphs" fill="#526578">有效取决于实际资源、输入质量和任务范</text>
+    <text x="64.000" y="716.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="围，而不只是参数量。" aria-label="围，而不只是参数量。" xml:space="preserve" textLength="229.999" lengthAdjust="spacingAndGlyphs" fill="#526578">围，而不只是参数量。</text>
+    <text x="570.000" y="617.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.000" font-weight="700" data-text="云端增强保持相同任务结构" aria-label="云端增强保持相同任务结构" xml:space="preserve" textLength="300.000" lengthAdjust="spacingAndGlyphs" fill="#14877D">云端增强保持相同任务结构</text>
+    <text x="570.000" y="656.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="遇到未知或复杂输入，可以调用增强能力，" aria-label="遇到未知或复杂输入，可以调用增强能力，" xml:space="preserve" textLength="436.999" lengthAdjust="spacingAndGlyphs" fill="#526578">遇到未知或复杂输入，可以调用增强能力，</text>
+    <text x="570.000" y="686.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="仍应携带对象、版本、状态和依据，保存实" aria-label="仍应携带对象、版本、状态和依据，保存实" xml:space="preserve" textLength="436.999" lengthAdjust="spacingAndGlyphs" fill="#526578">仍应携带对象、版本、状态和依据，保存实</text>
+    <text x="570.000" y="716.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="际返回与调用成本。" aria-label="际返回与调用成本。" xml:space="preserve" textLength="206.999" lengthAdjust="spacingAndGlyphs" fill="#526578">际返回与调用成本。</text>
+    <text x="1076.000" y="617.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.000" font-weight="700" data-text="人工复核处理越界与冲突" aria-label="人工复核处理越界与冲突" xml:space="preserve" textLength="275.000" lengthAdjust="spacingAndGlyphs" fill="#7756AA">人工复核处理越界与冲突</text>
+    <text x="1076.000" y="656.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="高风险、条件冲突或超出定义范围时转交人" aria-label="高风险、条件冲突或超出定义范围时转交人" xml:space="preserve" textLength="436.999" lengthAdjust="spacingAndGlyphs" fill="#526578">高风险、条件冲突或超出定义范围时转交人</text>
+    <text x="1076.000" y="686.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="员。终端对象是否选对、记录是否提交也纳" aria-label="员。终端对象是否选对、记录是否提交也纳" xml:space="preserve" textLength="436.999" lengthAdjust="spacingAndGlyphs" fill="#526578">员。终端对象是否选对、记录是否提交也纳</text>
+    <text x="1076.000" y="716.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="入完整系统评价。" aria-label="入完整系统评价。" xml:space="preserve" textLength="183.999" lengthAdjust="spacingAndGlyphs" fill="#526578">入完整系统评价。</text>
+  </g>
+  <g id="beat_03" transform="translate(0 0)">
+    <path d="M64 760 L1536 760" stroke="#D7E1E7" fill="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+    <rect x="64" y="782" width="4" height="57" rx="2" fill="#B9752E" />
+    <text x="84.000" y="798.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.000" font-weight="400" data-text="提高自动接受比例时，必须检查关键错误是否增加。检测分数与关系分数各自校准，不把不同模型的“0.8”直接解释为同一可靠程度。" aria-label="提高自动接受比例时，必须检查关键错误是否增加。检测分数与关系分数各自校准，不把不同模型的“0.8”直接解释为同一可靠程度。" xml:space="preserve" textLength="1307.099" lengthAdjust="spacingAndGlyphs" fill="#18344C">提高自动接受比例时，必须检查关键错误是否增加。检测分数与关系分数各自校准，不把不同模型的“0.8”直接解释为同一可靠程度。</text>
+  </g>
+  <g id="footer" transform="translate(0 0)">
+    <text x="64.000" y="877.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="17.000" font-weight="400" data-text="学习手册 §13.6 / 13.7 / 13.8" aria-label="学习手册 §13.6 / 13.7 / 13.8" xml:space="preserve" textLength="217.359" lengthAdjust="spacingAndGlyphs" fill="#8898A8">学习手册 §13.6 / 13.7 / 13.8</text>
+    <text x="1247.000" y="877.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="17.000" font-weight="400" data-text="工程案例与数值示意的来源见逐页备注" aria-label="工程案例与数值示意的来源见逐页备注" xml:space="preserve" textLength="289.000" lengthAdjust="spacingAndGlyphs" fill="#8898A8">工程案例与数值示意的来源见逐页备注</text>
+  </g>
+</svg>

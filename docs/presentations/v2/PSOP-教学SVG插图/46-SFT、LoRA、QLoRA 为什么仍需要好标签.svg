@@ -1,0 +1,200 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <title>SFT、LoRA、QLoRA 为什么仍需要好标签</title>
+  <desc>PSOP 第 46 / 65 页教学图；文字与方法图保持可编辑。Microduck 视图由官方来源 STL 和 robot_walk.xml 的 source assembly 渲染，配置为 walk-model-reference、MCD-000001。alpha 软件任务身份与该几何参考的实物对应尚未核验；MD-01、S03、J01 和 EG 为教学定义。</desc>
+  <defs>
+    <linearGradient id="steel" x1="0" y1="0" x2="0.9" y2="1">
+      <stop stop-color="#EAF0F3" />
+      <stop offset=".37" stop-color="#A9BBC6" />
+      <stop offset=".63" stop-color="#F1F5F5" />
+      <stop offset="1" stop-color="#859CA9" />
+    </linearGradient>
+  </defs>
+  <g id="base" transform="translate(0 0)">
+    <rect x="0" y="0" width="1600" height="900" rx="0" fill="#FCFDFB" />
+    <rect x="0" y="0" width="9" height="900" rx="0" fill="#B9752E" />
+    <path d="M64 62 L1536 62" stroke="#D7E1E7" fill="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+    <text x="64.000" y="41.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="18.999" font-weight="400" data-text="PSOP  /  训练、部署与完整案例" aria-label="PSOP  /  训练、部署与完整案例" xml:space="preserve" textLength="273.541" lengthAdjust="spacingAndGlyphs" fill="#526578">PSOP  /  训练、部署与完整案例</text>
+    <text x="1355.287" y="41.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="18.999" font-weight="400" data-text="LESSON 04  ·  46/65" aria-label="LESSON 04  ·  46/65" xml:space="preserve" textLength="180.021" lengthAdjust="spacingAndGlyphs" fill="#526578">LESSON 04  ·  46/65</text>
+  </g>
+  <g id="title" transform="translate(0 0)">
+    <text x="64.000" y="125.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="48.001" font-weight="700" data-text="SFT、LoRA、QLoRA 为什么仍需要好标签" aria-label="SFT、LoRA、QLoRA 为什么仍需要好标签" xml:space="preserve" textLength="922.079" lengthAdjust="spacingAndGlyphs" fill="#18344C">SFT、LoRA、QLoRA 为什么仍需要好标签</text>
+    <text x="64.000" y="177.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="24.001" font-weight="400" data-text="领域适配通常从已有基础模型开始。SFT 使用输入与参考输出学习行为；LoRA 通过低秩参数学习权重增量；QLoRA 在量化基础模型上结" aria-label="领域适配通常从已有基础模型开始。SFT 使用输入与参考输出学习行为；LoRA 通过低秩参数学习权重增量；QLoRA 在量化基础模型上结" xml:space="preserve" textLength="1449.481" lengthAdjust="spacingAndGlyphs" fill="#526578">领域适配通常从已有基础模型开始。SFT 使用输入与参考输出学习行为；LoRA 通过低秩参数学习权重增量；QLoRA 在量化基础模型上结</text>
+    <text x="64.000" y="209.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="24.001" font-weight="400" data-text="合低秩训练。资源路线不同，监督质量仍决定学到什么。" aria-label="合低秩训练。资源路线不同，监督质量仍决定学到什么。" xml:space="preserve" textLength="600.001" lengthAdjust="spacingAndGlyphs" fill="#526578">合低秩训练。资源路线不同，监督质量仍决定学到什么。</text>
+  </g>
+  <g id="beat_01" transform="translate(0 0)">
+    <g id="illustration" transform="translate(64 237)">
+      <text x="0.000" y="29.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="27.001" font-weight="700" data-text="SFT：用输入和参考输出学习行为" aria-label="SFT：用输入和参考输出学习行为" xml:space="preserve" textLength="399.200" lengthAdjust="spacingAndGlyphs" fill="#326BB8">SFT：用输入和参考输出学习行为</text>
+      <text x="0.000" y="70.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="29.000" font-weight="700" data-text="LoRA：W′ = W + BA" aria-label="LoRA：W′ = W + BA" xml:space="preserve" textLength="291.804" lengthAdjust="spacingAndGlyphs" fill="#7756AA">LoRA：W′ = W + BA</text>
+      <rect x="443" y="45" width="19" height="15" rx="1" fill="#608bc5" />
+      <rect x="465" y="45" width="19" height="15" rx="1" fill="#5784c2" />
+      <rect x="487" y="45" width="19" height="15" rx="1" fill="#618bc5" />
+      <rect x="509" y="45" width="19" height="15" rx="1" fill="#769acb" />
+      <rect x="531" y="45" width="19" height="15" rx="1" fill="#8aa8d0" />
+      <rect x="553" y="45" width="19" height="15" rx="1" fill="#95b0d3" />
+      <rect x="575" y="45" width="19" height="15" rx="1" fill="#93aed3" />
+      <rect x="597" y="45" width="19" height="15" rx="1" fill="#89a7d0" />
+      <rect x="619" y="45" width="19" height="15" rx="1" fill="#80a1cd" />
+      <rect x="641" y="45" width="19" height="15" rx="1" fill="#80a1ce" />
+      <rect x="443" y="63" width="19" height="15" rx="1" fill="#4377bc" />
+      <rect x="465" y="63" width="19" height="15" rx="1" fill="#386fb9" />
+      <rect x="487" y="63" width="19" height="15" rx="1" fill="#487abe" />
+      <rect x="509" y="63" width="19" height="15" rx="1" fill="#6b92c7" />
+      <rect x="531" y="63" width="19" height="15" rx="1" fill="#92aed3" />
+      <rect x="553" y="63" width="19" height="15" rx="1" fill="#b1c3db" />
+      <rect x="575" y="63" width="19" height="15" rx="1" fill="#bdccdf" />
+      <rect x="597" y="63" width="19" height="15" rx="1" fill="#b8c8dd" />
+      <rect x="619" y="63" width="19" height="15" rx="1" fill="#a7bcd8" />
+      <rect x="641" y="63" width="19" height="15" rx="1" fill="#95b0d3" />
+      <rect x="443" y="81" width="19" height="15" rx="1" fill="#3a71ba" />
+      <rect x="465" y="81" width="19" height="15" rx="1" fill="#346cb8" />
+      <rect x="487" y="81" width="19" height="15" rx="1" fill="#497bbe" />
+      <rect x="509" y="81" width="19" height="15" rx="1" fill="#7499ca" />
+      <rect x="531" y="81" width="19" height="15" rx="1" fill="#a6bbd8" />
+      <rect x="553" y="81" width="19" height="15" rx="1" fill="#ced7e3" />
+      <rect x="575" y="81" width="19" height="15" rx="1" fill="#e0e3e8" />
+      <rect x="597" y="81" width="19" height="15" rx="1" fill="#d7dee6" />
+      <rect x="619" y="81" width="19" height="15" rx="1" fill="#bbcade" />
+      <rect x="641" y="81" width="19" height="15" rx="1" fill="#97b1d4" />
+      <rect x="443" y="99" width="19" height="15" rx="1" fill="#4d7dbf" />
+      <rect x="465" y="99" width="19" height="15" rx="1" fill="#4a7cbe" />
+      <rect x="487" y="99" width="19" height="15" rx="1" fill="#608ac4" />
+      <rect x="509" y="99" width="19" height="15" rx="1" fill="#88a7d0" />
+      <rect x="531" y="99" width="19" height="15" rx="1" fill="#b7c7dd" />
+      <rect x="553" y="99" width="19" height="15" rx="1" fill="#dde1e7" />
+      <rect x="575" y="99" width="19" height="15" rx="1" fill="#ebebeb" />
+      <rect x="597" y="99" width="19" height="15" rx="1" fill="#dde2e8" />
+      <rect x="619" y="99" width="19" height="15" rx="1" fill="#b8c8dd" />
+      <rect x="641" y="99" width="19" height="15" rx="1" fill="#87a6cf" />
+      <rect x="443" y="117" width="19" height="15" rx="1" fill="#7599ca" />
+      <rect x="465" y="117" width="19" height="15" rx="1" fill="#7197c9" />
+      <rect x="487" y="117" width="19" height="15" rx="1" fill="#7c9ecc" />
+      <rect x="509" y="117" width="19" height="15" rx="1" fill="#96b0d4" />
+      <rect x="531" y="117" width="19" height="15" rx="1" fill="#b7c7dd" />
+      <rect x="553" y="117" width="19" height="15" rx="1" fill="#d2dae4" />
+      <rect x="575" y="117" width="19" height="15" rx="1" fill="#dbe0e7" />
+      <rect x="597" y="117" width="19" height="15" rx="1" fill="#cbd5e2" />
+      <rect x="619" y="117" width="19" height="15" rx="1" fill="#a5bbd8" />
+      <rect x="641" y="117" width="19" height="15" rx="1" fill="#7499ca" />
+      <rect x="443" y="135" width="19" height="15" rx="1" fill="#a4bad8" />
+      <rect x="465" y="135" width="19" height="15" rx="1" fill="#96b0d4" />
+      <rect x="487" y="135" width="19" height="15" rx="1" fill="#8fabd2" />
+      <rect x="509" y="135" width="19" height="15" rx="1" fill="#92aed3" />
+      <rect x="531" y="135" width="19" height="15" rx="1" fill="#9fb7d6" />
+      <rect x="553" y="135" width="19" height="15" rx="1" fill="#afc1da" />
+      <rect x="575" y="135" width="19" height="15" rx="1" fill="#b5c6dc" />
+      <rect x="597" y="135" width="19" height="15" rx="1" fill="#acbfda" />
+      <rect x="619" y="135" width="19" height="15" rx="1" fill="#91add2" />
+      <rect x="641" y="135" width="19" height="15" rx="1" fill="#6d94c8" />
+      <rect x="443" y="153" width="19" height="15" rx="1" fill="#c8d3e1" />
+      <rect x="465" y="153" width="19" height="15" rx="1" fill="#abbfda" />
+      <rect x="487" y="153" width="19" height="15" rx="1" fill="#8eabd1" />
+      <rect x="509" y="153" width="19" height="15" rx="1" fill="#7b9ecc" />
+      <rect x="531" y="153" width="19" height="15" rx="1" fill="#779bcb" />
+      <rect x="553" y="153" width="19" height="15" rx="1" fill="#7fa1cd" />
+      <rect x="575" y="153" width="19" height="15" rx="1" fill="#8ba9d1" />
+      <rect x="597" y="153" width="19" height="15" rx="1" fill="#91add2" />
+      <rect x="619" y="153" width="19" height="15" rx="1" fill="#8ca9d1" />
+      <rect x="641" y="153" width="19" height="15" rx="1" fill="#7c9ecc" />
+      <rect x="443" y="171" width="19" height="15" rx="1" fill="#d4dbe5" />
+      <rect x="465" y="171" width="19" height="15" rx="1" fill="#abbfd9" />
+      <rect x="487" y="171" width="19" height="15" rx="1" fill="#7d9fcd" />
+      <rect x="509" y="171" width="19" height="15" rx="1" fill="#5b87c3" />
+      <rect x="531" y="171" width="19" height="15" rx="1" fill="#4e7ebf" />
+      <rect x="553" y="171" width="19" height="15" rx="1" fill="#5684c2" />
+      <rect x="575" y="171" width="19" height="15" rx="1" fill="#6d94c8" />
+      <rect x="597" y="171" width="19" height="15" rx="1" fill="#87a6d0" />
+      <rect x="619" y="171" width="19" height="15" rx="1" fill="#99b2d5" />
+      <rect x="641" y="171" width="19" height="15" rx="1" fill="#9eb5d6" />
+      <text x="443.000" y="226.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="24.001" font-weight="700" data-text="W：冻结 d×d" aria-label="W：冻结 d×d" xml:space="preserve" textLength="152.395" lengthAdjust="spacingAndGlyphs" fill="#326BB8">W：冻结 d×d</text>
+      <rect x="776" y="45" width="19" height="15" rx="1" fill="#4aa098" />
+      <rect x="798" y="45" width="19" height="15" rx="1" fill="#3f9b93" />
+      <rect x="820" y="45" width="19" height="15" rx="1" fill="#4aa099" />
+      <rect x="776" y="63" width="19" height="15" rx="1" fill="#289087" />
+      <rect x="798" y="63" width="19" height="15" rx="1" fill="#1b8a81" />
+      <rect x="820" y="63" width="19" height="15" rx="1" fill="#2e938a" />
+      <rect x="776" y="81" width="19" height="15" rx="1" fill="#1e8b82" />
+      <rect x="798" y="81" width="19" height="15" rx="1" fill="#16887e" />
+      <rect x="820" y="81" width="19" height="15" rx="1" fill="#2f948b" />
+      <rect x="776" y="99" width="19" height="15" rx="1" fill="#33958d" />
+      <rect x="798" y="99" width="19" height="15" rx="1" fill="#30948b" />
+      <rect x="820" y="99" width="19" height="15" rx="1" fill="#49a098" />
+      <rect x="776" y="117" width="19" height="15" rx="1" fill="#62aba5" />
+      <rect x="798" y="117" width="19" height="15" rx="1" fill="#5da9a2" />
+      <rect x="820" y="117" width="19" height="15" rx="1" fill="#6aafa9" />
+      <rect x="776" y="135" width="19" height="15" rx="1" fill="#99c5c1" />
+      <rect x="798" y="135" width="19" height="15" rx="1" fill="#89bdb9" />
+      <rect x="820" y="135" width="19" height="15" rx="1" fill="#80b9b4" />
+      <rect x="776" y="153" width="19" height="15" rx="1" fill="#c2d8d6" />
+      <rect x="798" y="153" width="19" height="15" rx="1" fill="#a1c9c5" />
+      <rect x="820" y="153" width="19" height="15" rx="1" fill="#7fb9b4" />
+      <rect x="776" y="171" width="19" height="15" rx="1" fill="#d0dfdd" />
+      <rect x="798" y="171" width="19" height="15" rx="1" fill="#a0c8c5" />
+      <rect x="820" y="171" width="19" height="15" rx="1" fill="#6cb0aa" />
+      <text x="776.000" y="226.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="24.001" font-weight="700" data-text="B：训练 d×r" aria-label="B：训练 d×r" xml:space="preserve" textLength="142.973" lengthAdjust="spacingAndGlyphs" fill="#14877D">B：训练 d×r</text>
+      <rect x="938" y="104" width="19" height="15" rx="1" fill="#947bba" />
+      <rect x="960" y="104" width="19" height="15" rx="1" fill="#8e73b7" />
+      <rect x="982" y="104" width="19" height="15" rx="1" fill="#947cba" />
+      <rect x="1004" y="104" width="19" height="15" rx="1" fill="#a18cc2" />
+      <rect x="1026" y="104" width="19" height="15" rx="1" fill="#ae9dc9" />
+      <rect x="1048" y="104" width="19" height="15" rx="1" fill="#b5a6cd" />
+      <rect x="1070" y="104" width="19" height="15" rx="1" fill="#b4a4cc" />
+      <rect x="1092" y="104" width="19" height="15" rx="1" fill="#ae9cc9" />
+      <rect x="1114" y="104" width="19" height="15" rx="1" fill="#a895c5" />
+      <rect x="1136" y="104" width="19" height="15" rx="1" fill="#a895c6" />
+      <rect x="938" y="122" width="19" height="15" rx="1" fill="#8264b0" />
+      <rect x="960" y="122" width="19" height="15" rx="1" fill="#7b5bac" />
+      <rect x="982" y="122" width="19" height="15" rx="1" fill="#8568b2" />
+      <rect x="1004" y="122" width="19" height="15" rx="1" fill="#9a84be" />
+      <rect x="1026" y="122" width="19" height="15" rx="1" fill="#b3a3cc" />
+      <rect x="1048" y="122" width="19" height="15" rx="1" fill="#c7bcd7" />
+      <rect x="1070" y="122" width="19" height="15" rx="1" fill="#cfc6db" />
+      <rect x="1092" y="122" width="19" height="15" rx="1" fill="#cbc2d9" />
+      <rect x="1114" y="122" width="19" height="15" rx="1" fill="#c0b4d3" />
+      <rect x="1136" y="122" width="19" height="15" rx="1" fill="#b5a6cd" />
+      <rect x="938" y="140" width="19" height="15" rx="1" fill="#7c5dad" />
+      <rect x="960" y="140" width="19" height="15" rx="1" fill="#7857aa" />
+      <rect x="982" y="140" width="19" height="15" rx="1" fill="#8669b2" />
+      <rect x="1004" y="140" width="19" height="15" rx="1" fill="#a18bc1" />
+      <rect x="1026" y="140" width="19" height="15" rx="1" fill="#c0b4d3" />
+      <rect x="1048" y="140" width="19" height="15" rx="1" fill="#d9d4e1" />
+      <rect x="1070" y="140" width="19" height="15" rx="1" fill="#e4e2e7" />
+      <rect x="1092" y="140" width="19" height="15" rx="1" fill="#dfdbe4" />
+      <rect x="1114" y="140" width="19" height="15" rx="1" fill="#cdc4da" />
+      <rect x="1136" y="140" width="19" height="15" rx="1" fill="#b6a7cd" />
+      <text x="938.000" y="195.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="24.001" font-weight="700" data-text="A：训练 r×d" aria-label="A：训练 r×d" xml:space="preserve" textLength="138.837" lengthAdjust="spacingAndGlyphs" fill="#7756AA">A：训练 r×d</text>
+      <text x="716.000" y="137.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="39.000" font-weight="700" data-text="+" aria-label="+" xml:space="preserve" textLength="21.450" lengthAdjust="spacingAndGlyphs" fill="#18344C">+</text>
+      <text x="877.000" y="137.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="39.000" font-weight="700" data-text="×" aria-label="×" xml:space="preserve" textLength="39.000" lengthAdjust="spacingAndGlyphs" fill="#18344C">×</text>
+      <rect x="1210" y="38" width="262" height="178" rx="10" fill="#FFFFFF" stroke="#D7E1E7" stroke-width="1.5" />
+      <rect x="1210" y="38" width="4" height="178" rx="2" fill="#B9752E" />
+      <text x="1228.000" y="75.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.000" font-weight="700" data-text="低秩增量" aria-label="低秩增量" xml:space="preserve" textLength="100.000" lengthAdjust="spacingAndGlyphs" fill="#B9752E">低秩增量</text>
+      <text x="1228.000" y="112.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="21.000" font-weight="400" data-text="r 远小于 d" aria-label="r 远小于 d" xml:space="preserve" textLength="94.996" lengthAdjust="spacingAndGlyphs" fill="#526578">r 远小于 d</text>
+      <text x="1228.000" y="144.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="21.000" font-weight="400" data-text="训练参数更少" aria-label="训练参数更少" xml:space="preserve" textLength="126.000" lengthAdjust="spacingAndGlyphs" fill="#526578">训练参数更少</text>
+      <text x="1228.000" y="176.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="21.000" font-weight="400" data-text="更新目标由标签决定" aria-label="更新目标由标签决定" xml:space="preserve" textLength="189.000" lengthAdjust="spacingAndGlyphs" fill="#526578">更新目标由标签决定</text>
+      <path d="M0 257 L1472 257" stroke="#D7E1E7" fill="none" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" />
+      <text x="0.000" y="305.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.000" font-weight="700" data-text="QLoRA：量化基础权重 + 低秩训练；量化与训练配置必须记录。" aria-label="QLoRA：量化基础权重 + 低秩训练；量化与训练配置必须记录。" xml:space="preserve" textLength="720.740" lengthAdjust="spacingAndGlyphs" fill="#14877D">QLoRA：量化基础权重 + 低秩训练；量化与训练配置必须记录。</text>
+    </g>
+  </g>
+  <g id="beat_02" transform="translate(0 0)">
+    <text x="64.000" y="617.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.000" font-weight="700" data-text="SFT 先定义任务行为" aria-label="SFT 先定义任务行为" xml:space="preserve" textLength="227.075" lengthAdjust="spacingAndGlyphs" fill="#326BB8">SFT 先定义任务行为</text>
+    <text x="64.000" y="656.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="分别组织状态理解、动作选择与结果使用。" aria-label="分别组织状态理解、动作选择与结果使用。" xml:space="preserve" textLength="436.999" lengthAdjust="spacingAndGlyphs" fill="#526578">分别组织状态理解、动作选择与结果使用。</text>
+    <text x="64.000" y="686.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="样本既要包含正常推进，也要包含缺证、等" aria-label="样本既要包含正常推进，也要包含缺证、等" xml:space="preserve" textLength="436.999" lengthAdjust="spacingAndGlyphs" fill="#526578">样本既要包含正常推进，也要包含缺证、等</text>
+    <text x="64.000" y="716.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="待与复核条件。" aria-label="待与复核条件。" xml:space="preserve" textLength="160.999" lengthAdjust="spacingAndGlyphs" fill="#526578">待与复核条件。</text>
+    <text x="570.000" y="617.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.000" font-weight="700" data-text="LoRA 用小矩阵学习增量" aria-label="LoRA 用小矩阵学习增量" xml:space="preserve" textLength="273.804" lengthAdjust="spacingAndGlyphs" fill="#14877D">LoRA 用小矩阵学习增量</text>
+    <text x="570.000" y="656.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="教学表达 W′=W+BA，基础权重冻结，低" aria-label="教学表达 W′=W+BA，基础权重冻结，低" xml:space="preserve" textLength="423.219" lengthAdjust="spacingAndGlyphs" fill="#526578">教学表达 W′=W+BA，基础权重冻结，低</text>
+    <text x="570.000" y="686.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="秩部分可训练。实际设置还包括秩、缩放与" aria-label="秩部分可训练。实际设置还包括秩、缩放与" xml:space="preserve" textLength="436.999" lengthAdjust="spacingAndGlyphs" fill="#526578">秩部分可训练。实际设置还包括秩、缩放与</text>
+    <text x="570.000" y="716.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="选择哪些层。" aria-label="选择哪些层。" xml:space="preserve" textLength="137.999" lengthAdjust="spacingAndGlyphs" fill="#526578">选择哪些层。</text>
+    <text x="1076.000" y="617.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.000" font-weight="700" data-text="量化与训练收益一起评测" aria-label="量化与训练收益一起评测" xml:space="preserve" textLength="275.000" lengthAdjust="spacingAndGlyphs" fill="#7756AA">量化与训练收益一起评测</text>
+    <text x="1076.000" y="656.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="QLoRA 可降低部分微调资源需求，但不能" aria-label="QLoRA 可降低部分微调资源需求，但不能" xml:space="preserve" textLength="428.172" lengthAdjust="spacingAndGlyphs" fill="#526578">QLoRA 可降低部分微调资源需求，但不能</text>
+    <text x="1076.000" y="686.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="代替数据对齐。测试动作、依据、输出结构" aria-label="代替数据对齐。测试动作、依据、输出结构" xml:space="preserve" textLength="436.999" lengthAdjust="spacingAndGlyphs" fill="#526578">代替数据对齐。测试动作、依据、输出结构</text>
+    <text x="1076.000" y="716.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="与资源是否共同改善。" aria-label="与资源是否共同改善。" xml:space="preserve" textLength="229.999" lengthAdjust="spacingAndGlyphs" fill="#526578">与资源是否共同改善。</text>
+  </g>
+  <g id="beat_03" transform="translate(0 0)">
+    <path d="M64 760 L1536 760" stroke="#D7E1E7" fill="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+    <rect x="64" y="782" width="4" height="57" rx="2" fill="#B9752E" />
+    <text x="84.000" y="798.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.000" font-weight="400" data-text="只把“缺证”样本标成“通过”，用任何适配方法都会学习错误目标。先固定模型与测试，再比较普通轨迹和 EG 对齐监督。" aria-label="只把“缺证”样本标成“通过”，用任何适配方法都会学习错误目标。先固定模型与测试，再比较普通轨迹和 EG 对齐监督。" xml:space="preserve" textLength="1207.476" lengthAdjust="spacingAndGlyphs" fill="#18344C">只把“缺证”样本标成“通过”，用任何适配方法都会学习错误目标。先固定模型与测试，再比较普通轨迹和 EG 对齐监督。</text>
+  </g>
+  <g id="footer" transform="translate(0 0)">
+    <text x="64.000" y="877.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="17.000" font-weight="400" data-text="学习手册 §12.2 / 12.3 / 12.4" aria-label="学习手册 §12.2 / 12.3 / 12.4" xml:space="preserve" textLength="217.359" lengthAdjust="spacingAndGlyphs" fill="#8898A8">学习手册 §12.2 / 12.3 / 12.4</text>
+    <text x="1247.000" y="877.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="17.000" font-weight="400" data-text="工程案例与数值示意的来源见逐页备注" aria-label="工程案例与数值示意的来源见逐页备注" xml:space="preserve" textLength="289.000" lengthAdjust="spacingAndGlyphs" fill="#8898A8">工程案例与数值示意的来源见逐页备注</text>
+  </g>
+</svg>

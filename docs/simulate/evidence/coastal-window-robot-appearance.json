@@ -1,0 +1,335 @@
+{
+  "schema": "psop.workshop-appearance-verification/1",
+  "verified_at": "2026-11-11T14:35:50.109Z",
+  "base_url": "http://127.0.0.1:8780",
+  "views": [
+    {
+      "name": "campus-window",
+      "position": [
+        0.2,
+        -0.8,
+        0.45
+      ],
+      "target": [
+        -2.7,
+        -0.49999999999999994,
+        0.6999999999999998
+      ],
+      "camera": [
+        0.20920601135758732,
+        -0.800952346002509,
+        0.7919133772443512
+      ],
+      "programs": 20,
+      "triangles": 1998884,
+      "screenshot": "coastal-campus-window.png",
+      "screenshot_sha256": "9c42b4dc75bd63c53ff7ed341d66ed00e6af36b75b7d8ea20b3c4b54d9434f92"
+    },
+    {
+      "name": "bay-window",
+      "position": [
+        0,
+        -1,
+        0.45
+      ],
+      "target": [
+        2.7,
+        -0.7,
+        0.7
+      ],
+      "camera": [
+        -0.010070906318036865,
+        -1.0011189895908932,
+        0.7856915213792736
+      ],
+      "programs": 20,
+      "triangles": 249778,
+      "screenshot": "coastal-bay-window.png",
+      "screenshot_sha256": "15823f92d0187d8272d4db3cb387543c364425f55fbb2e212257a79103f7750b"
+    },
+    {
+      "name": "robot-panel",
+      "position": [
+        1.65,
+        0.18,
+        0.13
+      ],
+      "target": [
+        1.235,
+        0.27,
+        0.06999999999999999
+      ],
+      "camera": [
+        1.65,
+        0.17999999999999997,
+        0.12999999999999995
+      ],
+      "programs": 20,
+      "triangles": 245746,
+      "screenshot": "coastal-robot-panel.png",
+      "screenshot_sha256": "0a76d5c75cee371e79d6c85e4b4f2c7e0ca17e420c8773a5815d319e22d0b28a"
+    },
+    {
+      "name": "workbench",
+      "position": [
+        0.7,
+        -1.1,
+        0.8
+      ],
+      "target": [
+        0,
+        0,
+        0.08
+      ],
+      "camera": [
+        0.6999999999999998,
+        -1.0999999999999996,
+        0.7999999999999999
+      ],
+      "programs": 20,
+      "triangles": 1917078,
+      "screenshot": "coastal-workbench.png",
+      "screenshot_sha256": "270513d6fd6cf38cd5f046c8871c49cce5e5d18c0bed7e2a77cd7ede266a0ca0"
+    }
+  ],
+  "quality": {
+    "robot_meshes": [
+      {
+        "name": "精细环境设备",
+        "facets": 13712,
+        "source_position_sha256": "aadf820143a7a4ca9710e8f897b0fcdc2d5711f1108136889ea1417af824e6e5",
+        "surface": {
+          "policy": "continuous-source-cad-finishes/2",
+          "regions": [
+            "paint",
+            "panel",
+            "steel",
+            "socket",
+            "pins"
+          ],
+          "positions": "unchanged",
+          "facetOrder": "identity"
+        }
+      },
+      {
+        "name": "精细环境设备",
+        "facets": 2888,
+        "source_position_sha256": "7c5f4152bec213722dc98bc07795fb9c34fa18fe7f991623ee4e531670b1ae47",
+        "surface": {
+          "policy": "continuous-source-cad-finishes/2",
+          "regions": [
+            "paint"
+          ],
+          "positions": "unchanged",
+          "facetOrder": "identity"
+        }
+      },
+      {
+        "name": "精细环境设备",
+        "facets": 5740,
+        "source_position_sha256": "595cbc00151b6f2bfe053299747ca937c062c755301c11fc10e857c3fc05e3e9",
+        "surface": {
+          "policy": "continuous-source-cad-finishes/2",
+          "regions": [
+            "paint"
+          ],
+          "positions": "unchanged",
+          "facetOrder": "identity"
+        }
+      },
+      {
+        "name": "精细环境设备",
+        "facets": 4932,
+        "source_position_sha256": "324442a69a680f54cd1f1ee68cbd585496a2fbfae055c5dbd9caa1d373e77d92",
+        "surface": {
+          "policy": "continuous-source-cad-finishes/2",
+          "regions": [
+            "paint"
+          ],
+          "positions": "unchanged",
+          "facetOrder": "identity"
+        }
+      },
+      {
+        "name": "精细环境设备",
+        "facets": 6300,
+        "source_position_sha256": "d8b6f65f7dd37d649ffc3be539fdc8ca9f7a266136c33f1a7b2d94ed55913aab",
+        "surface": {
+          "policy": "continuous-source-cad-finishes/2",
+          "regions": [
+            "paint"
+          ],
+          "positions": "unchanged",
+          "facetOrder": "identity"
+        }
+      },
+      {
+        "name": "精细环境设备",
+        "facets": 5550,
+        "source_position_sha256": "7a2e3ed445c9b855d8d0742a92f43b1d9b0665ea7ce57fad8ab7083d2a2be153",
+        "surface": {
+          "policy": "continuous-source-cad-finishes/2",
+          "regions": [
+            "paint"
+          ],
+          "positions": "unchanged",
+          "facetOrder": "identity"
+        }
+      },
+      {
+        "name": "精细环境设备",
+        "facets": 898,
+        "source_position_sha256": "e32d5f77ddeaf3db956773b5c85d68eefd9860081e48dd55957cff870d0c4442",
+        "surface": {
+          "policy": "continuous-source-cad-finishes/2",
+          "regions": [
+            "flange"
+          ],
+          "positions": "unchanged",
+          "facetOrder": "identity"
+        }
+      }
+    ],
+    "window_exteriors": [
+      {
+        "position": [
+          -4.4,
+          0,
+          0.75
+        ],
+        "image": [
+          1774,
+          887
+        ],
+        "plane": [
+          9.2,
+          4.6
+        ]
+      },
+      {
+        "position": [
+          4.4,
+          0,
+          0.75
+        ],
+        "image": [
+          1774,
+          887
+        ],
+        "plane": [
+          9.2,
+          4.6
+        ]
+      }
+    ],
+    "program_errors": 0,
+    "draw_calls": 239,
+    "canvas": [
+      1600,
+      1000
+    ]
+  },
+  "errors": [],
+  "robot_source_glb_sha256": "89a6816eec7af38938c06dc60395f1fb5d179bc4bd4b7ba5edac46b991998efd",
+  "source_coordinate_identity": [
+    {
+      "name": "base_link",
+      "facets": 13712,
+      "sha256": "aadf820143a7a4ca9710e8f897b0fcdc2d5711f1108136889ea1417af824e6e5"
+    },
+    {
+      "name": "link_1",
+      "facets": 2888,
+      "sha256": "7c5f4152bec213722dc98bc07795fb9c34fa18fe7f991623ee4e531670b1ae47"
+    },
+    {
+      "name": "link_2",
+      "facets": 5740,
+      "sha256": "595cbc00151b6f2bfe053299747ca937c062c755301c11fc10e857c3fc05e3e9"
+    },
+    {
+      "name": "link_3",
+      "facets": 4932,
+      "sha256": "324442a69a680f54cd1f1ee68cbd585496a2fbfae055c5dbd9caa1d373e77d92"
+    },
+    {
+      "name": "link_4",
+      "facets": 6300,
+      "sha256": "d8b6f65f7dd37d649ffc3be539fdc8ca9f7a266136c33f1a7b2d94ed55913aab"
+    },
+    {
+      "name": "link_5",
+      "facets": 5550,
+      "sha256": "7a2e3ed445c9b855d8d0742a92f43b1d9b0665ea7ce57fad8ab7083d2a2be153"
+    },
+    {
+      "name": "link_6",
+      "facets": 898,
+      "sha256": "e32d5f77ddeaf3db956773b5c85d68eefd9860081e48dd55957cff870d0c4442"
+    }
+  ],
+  "source_coordinates_verified": true,
+  "generated_exterior_assets": [
+    {
+      "file": "private-workshop-campus-window.png",
+      "prompt_file": "private-workshop-campus-window.prompt.txt",
+      "resolution": [
+        1774,
+        887
+      ],
+      "bytes": 2736019,
+      "sha256": "b6601943b1852197860cf9f063fd6428c30ca5d9033f0b17b4e2beab07f384a8",
+      "mode": "built-in image_gen",
+      "reference": "private-workshop-coastal-campus.png",
+      "processing": "Original generated pixels copied unchanged. No resizing or upscaling. Native aspect ratio preserved on an exterior plane spanning the entire window band."
+    },
+    {
+      "file": "private-workshop-bay-window.png",
+      "prompt_file": "private-workshop-bay-window.prompt.txt",
+      "resolution": [
+        1774,
+        887
+      ],
+      "bytes": 2301423,
+      "sha256": "f3d3eed32764512441a1fefe2b44aedaf00a96b2799a140f9c8f08eef4c26b06",
+      "mode": "built-in image_gen",
+      "reference": "private-workshop-coastal-campus.png",
+      "processing": "Original generated pixels copied unchanged. No resizing or upscaling. Native aspect ratio preserved on an exterior plane spanning the entire window band."
+    }
+  ],
+  "scope": "Display-only environment; source DKP, user poses and connections untouched.",
+  "validation": {
+    "typescript": {
+      "command": "node node_modules/typescript/bin/tsc -b --pretty false",
+      "passed": true
+    },
+    "production_build": {
+      "command": "node node_modules/vite/bin/vite.js build",
+      "passed": true
+    },
+    "source_display_normals": {
+      "command": "node --test scripts/source-display-normals.test.mjs",
+      "passed": 3,
+      "failed": 0
+    },
+    "browser": {
+      "command": "node node_modules/@playwright/test/cli.js test --config playwright.simulate.config.ts tests/simulate.spec.ts --grep '高清环境加载失败可重试|沉浸布局保留完整视口|鼠标拖拽只保存一步'",
+      "passed": 3,
+      "failed": 0,
+      "seconds": 52.7,
+      "scope": [
+        "drag/cancel/keyboard isolation/narrow viewport/manual quality",
+        "floor/robot/new bay exterior load failure and successful retry with saved poses retained",
+        "immersive viewport/catalog/tools/scene menu"
+      ]
+    }
+  },
+  "production_entry": {
+    "url": "http://127.0.0.1:8780/",
+    "health_status": 200,
+    "page_status": 200,
+    "script": "/assets/index-BSoOak82.js",
+    "script_matches_dist": true,
+    "script_sha256": "6f5c46e395eb3c795a3205e770d365e2408ae0e7480b182447b2dec0977748ca"
+  }
+}

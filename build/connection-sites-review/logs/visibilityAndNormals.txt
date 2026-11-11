@@ -1,0 +1,14 @@
+✔ a grazing ray cannot fade an entire part; a sustained obstruction can (1.5052ms)
+✔ zero-hit excursions do not repeatedly restore a transparent part (0.2638ms)
+✔ camera motion clears unfinished decisions instead of carrying a stale timer (0.1594ms)
+✔ display shading preserves source coordinates and facet-to-vertex identity (6.6883ms)
+✔ a 90-degree corner and opposite source faces keep their own normals (1.059ms)
+✔ cylinder tessellation shades continuously without smoothing across disconnected shells (1.1678ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 579.1219

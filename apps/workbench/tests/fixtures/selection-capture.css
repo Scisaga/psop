@@ -1,0 +1,2 @@
+/* Comparing the mesh must detect the edges, rather than the opened controls. */
+.scene-analysis-tools { visibility: hidden !important; }

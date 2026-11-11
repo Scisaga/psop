@@ -1,0 +1,59 @@
+{
+  "ok": true,
+  "basis": "documented_simulate_cli_on_real_validated_16_dkp",
+  "package": {
+    "path": "C:\\Users\\scisa\\Desktop\\psop\\build\\v2\\microduck\\packages\\microduck-20261105225147-55d95fd0.dkp",
+    "profile": "psop.hardware.source-model/1.6",
+    "digest": "5efbfb99c188c4d367c5cdccced13c0ab8e609d4d36e4626dfa0a8e900cdb9ae"
+  },
+  "documentation": [
+    "skills/psop-simulate/SKILL.md",
+    "skills/psop-simulate/references/contracts-and-api.md",
+    "skills/psop-simulate/references/implementation-status.md",
+    "docs/architecture/assembly-interfaces.md"
+  ],
+  "source_counts": {
+    "sources": 62,
+    "geometries": 38,
+    "parts": 70,
+    "bodies": 15,
+    "joints": 14,
+    "evidence": 217
+  },
+  "screened_source_pairs": 2415,
+  "right_thigh": {
+    "outer_openings_diameter_mm": [
+      5.500000052457434,
+      5.500000010815411
+    ],
+    "qualified_complete_functional_interfaces": 0,
+    "project_inferred_pins": 4,
+    "all_left_right_project_inferred_pins": 8,
+    "review_status": "unresolved",
+    "schematic_kinds": [
+      "screw",
+      "cap"
+    ],
+    "manufacturer_general_sources": 3
+  },
+  "standard_leg": {
+    "reference_mounts": 1,
+    "paired_sites": 2,
+    "review_status": "reference_supported",
+    "illustrative_screws": 2
+  },
+  "scope": {
+    "execution_performed": false,
+    "enumeration_performed": false,
+    "physical_assessments": "all_unknown",
+    "schematics_are_source_parts": false,
+    "schematics_are_confirmed_bom": false
+  },
+  "input_integrity": {
+    "unchanged": true,
+    "file_count_before": 71,
+    "file_count_after": 71,
+    "before_ledger_sha256": "1d66d3ff1c170ee670e8666eeb6273fe0c4355e9803138a9a5b0a015ecc6d153",
+    "after_ledger_sha256": "1d66d3ff1c170ee670e8666eeb6273fe0c4355e9803138a9a5b0a015ecc6d153"
+  }
+}

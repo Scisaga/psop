@@ -1,0 +1,31 @@
+{
+  "schema_version": "psop.presentation-assets/2",
+  "date": "2026-10-15",
+  "case": "Microduck",
+  "paths": {
+    "case_visuals": "generated/microduck/manifest.json",
+    "model_reference": "../../../build/microduck-official-assembled/microduck-official-assembled-v1.2.1.build.dkp",
+    "experiment": [
+      "experiment/control.svg",
+      "experiment/runtime.svg",
+      "experiment/delta-table.svg"
+    ],
+    "media": "media/ar-demo-25s.mp4",
+    "poster": "generated/ar-demo-poster.png",
+    "products": "reference-products-2026/manifest.json",
+    "geometry_reference": "generated/microduck/model-source-manifest.json",
+    "official_photos": [
+      "generated/microduck/official-closeup.webp",
+      "generated/microduck/official-squad.webp"
+    ],
+    "installation_scene": "generated/microduck/installation-process.png",
+    "installation_generation": "generated/microduck/installation-imagegen-record.json"
+  },
+  "notes": [
+    "设备几何使用 walk 来源 XML / STL 装配，官方照片用于外观对照",
+    "实验数字来自原机械臂 Runtime 配对实验",
+    "视频为原机械臂 AR 演示",
+    "任务和观察为原型与教学设定",
+    "手机与AR页展示生成的安装过程，设备尚未完成装配；生成记录与现场检查结果分别保存"
+  ]
+}

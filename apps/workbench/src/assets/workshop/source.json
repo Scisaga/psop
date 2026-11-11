@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "prepared_on": "2026-11-11",
+  "provider": "Poly Haven",
+  "license": {
+    "id": "CC0-1.0",
+    "url": "https://polyhaven.com/license",
+    "legal_code": "https://creativecommons.org/publicdomain/zero/1.0/"
+  },
+  "runtime": "All files ship locally. No Poly Haven API or CDN requests at application runtime.",
+  "sources": [
+    {
+      "asset": "industrial_workshop_foundry",
+      "url": "https://polyhaven.com/a/industrial_workshop_foundry",
+      "authors": {
+        "Dimitrios Savva": "Photography",
+        "Jarod Guest": "Processing"
+      }
+    },
+    {
+      "asset": "concrete_floor_worn_001",
+      "url": "https://polyhaven.com/a/concrete_floor_worn_001",
+      "authors": {
+        "Dimitrios Savva": "Photography",
+        "Rico Cilliers": "Processing"
+      },
+      "physical_texture_width_m": 3
+    }
+  ],
+  "files": [
+    {
+      "file": "foundry-panorama-8k.webp",
+      "role": "panorama",
+      "resolution": [
+        8192,
+        4096
+      ],
+      "bytes": 10214906,
+      "sha256": "5e286df0d270a9dfbb035be0625de72ebed7347763a7f8c7c989773021ed9bf9",
+      "original": {
+        "file": "foundry-panorama-8k.jpg",
+        "role": "panorama",
+        "resolution_width": 8192,
+        "url": "https://dl.polyhaven.org/file/ph-assets/HDRIs/extra/Tonemapped%20JPG/industrial_workshop_foundry.jpg",
+        "bytes": 46352151,
+        "sha256": "5721713699a8ca8dfcbf0896efd0bc32e05a985f3248d79fac63632366ff5678",
+        "upstream_md5": "d868982b8c40355fb31cbf93ae8f41ec"
+      },
+      "processing": "Format conversion using Chrome OffscreenCanvas, WebP quality 0.94. No resizing, cropping, generated detail, or color editing."
+    },
+    {
+      "file": "foundry-lighting-1k.hdr",
+      "role": "environment-lighting",
+      "resolution_width": 1024,
+      "url": "https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/1k/industrial_workshop_foundry_1k.hdr",
+      "bytes": 1701301,
+      "sha256": "3ee689931f2b1a661e1c8d101539cdd82a8546655813c1fdcd26ab6f248aa54f",
+      "upstream_md5": "d65e13e0b4aff7fd0a2fa32a7c0fd4e3",
+      "processing": "Unmodified upstream download."
+    },
+    {
+      "file": "concrete-color-4k.jpg",
+      "role": "base-color",
+      "resolution_width": 4096,
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/4k/concrete_floor_worn_001/concrete_floor_worn_001_diff_4k.jpg",
+      "bytes": 1916459,
+      "sha256": "73a4f3fe96a2c31d34dd7e7af5f1db440362eed770c38384ee2948e10419e4fb",
+      "upstream_md5": "e3ff3e2154ea66ec3bca2fbdee861bb6",
+      "processing": "Unmodified upstream download."
+    },
+    {
+      "file": "concrete-normal-2k.jpg",
+      "role": "normal-opengl",
+      "resolution_width": 2048,
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/concrete_floor_worn_001/concrete_floor_worn_001_nor_gl_2k.jpg",
+      "bytes": 870609,
+      "sha256": "3b782137e34d63fd59b2e92b4e27b2ee4d082caf9dd23f00dc7ab4da5513daef",
+      "upstream_md5": "210fbc9fe40492177e79fdb4afda268e",
+      "processing": "Unmodified upstream download."
+    },
+    {
+      "file": "concrete-arm-2k.jpg",
+      "role": "ambient-occlusion-roughness-metalness",
+      "resolution_width": 2048,
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/concrete_floor_worn_001/concrete_floor_worn_001_arm_2k.jpg",
+      "bytes": 649883,
+      "sha256": "f239a75b8b816ceb85058933b6115e0fcd92e4709e9210e2b4f834f47d9fa7c6",
+      "upstream_md5": "ed519bf68bcf8581447a9d3fbc1e8c45",
+      "processing": "Unmodified upstream download."
+    }
+  ],
+  "rendering": {
+    "mapping": "World-anchored ground-projected equirectangular panorama; Z-up; no fog, blur, or floor opacity fade.",
+    "floor": "Opaque 6×5m work bay with 4K base color, 2K OpenGL normal and packed AO/roughness maps. Colors tinted in the PBR material; texture files unchanged.",
+    "lighting": "Matching 1K HDRI filtered with PMREM. 8K LDR panorama remains full-resolution for the visible surroundings.",
+    "table": "Procedural welded frame: four legs, closed upper rails, horizontal lower rails, notched shelf, adjustable feet. No diagonal brace or hanging cable."
+  }
+}

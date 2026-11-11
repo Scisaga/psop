@@ -1,0 +1,52 @@
+{
+  "schema": "psop.installation-followup-verification/1",
+  "date": "2026-11-09",
+  "version": "2.0.0-capabilities.5",
+  "package_digest": "3955ee11502b1d0c926243de719d00f4bba3b811db9c75f7a9f8608be50edc6a",
+  "build": {
+    "prepare": true,
+    "freeze": true,
+    "finalize": true,
+    "complete_validation": true,
+    "register": true,
+    "strict_asset_sha256": true,
+    "asset_count": 2572
+  },
+  "tests": {
+    "python_catalog_and_installation": {
+      "passed": 16,
+      "failed": 0
+    },
+    "python_fastener_and_reference_alignment": {
+      "passed": 18,
+      "historical_only_skipped": 2,
+      "failed": 0
+    },
+    "node_source_geometry_and_interface_tests": {
+      "passed": 41,
+      "failed": 0
+    },
+    "browser_neck_rendering_regressions": {
+      "passed": 3,
+      "failed": 0
+    }
+  },
+  "ui": {
+    "reviewed_parts": 70,
+    "functional_interfaces": 257,
+    "new_interfaces_with_visible_source_highlight_or_witness": 14,
+    "verified_peer_navigation": 12,
+    "measured_geometry_to_function_associations": 2,
+    "unresolved_parts_with_specific_items": 6,
+    "javascript_errors": 0
+  },
+  "retention": {
+    "retained_snapshots": 1,
+    "retired_bytes": 172247786,
+    "old_camera_link_recovers_to_latest": true
+  },
+  "limits": [
+    "Physical retaining, manufacturing tolerances, insertion paths and loads are not qualified by these checks.",
+    "Source configuration conflict and missing parts remain explicitly scoped."
+  ]
+}

@@ -1,0 +1,518 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Users\\lsh\\Desktop\\workspace\\psop\\apps\\workbench\\.runtime\\node-v22.23.4-win-x64\\node.exe",
+      "C:\\Users\\lsh\\Desktop\\workspace\\psop\\apps\\workbench\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--config",
+      "playwright.simulate.config.ts",
+      "tests/simulate.spec.ts",
+      "tests/workbench.spec.ts",
+      "--grep",
+      "真实部件|鼠标拖拽|断线后的|当前视角|复合、|高清环境|沉浸布局|同一设备|中文查询|窄屏保持|对象详情可",
+      "--reporter=list,json"
+    ],
+    "configFile": "C:\\Users\\lsh\\Desktop\\workspace\\psop\\apps\\workbench\\playwright.simulate.config.ts",
+    "rootDir": "C:/Users/lsh/Desktop/workspace/psop/apps/workbench/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/lsh/Desktop/workspace/psop/apps/workbench/.runtime/simulate-e2e/results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "C:/Users/lsh/Desktop/workspace/psop/apps/workbench/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "simulate.spec.ts",
+          "workbench.spec.ts",
+          "loading.spec.ts",
+          "compatibility-preview.spec.ts",
+          "rendering.spec.ts"
+        ],
+        "timeout": 90000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\Users\\lsh\\Desktop\\workspace\\psop\\apps\\workbench\\.runtime\\simulate-e2e\\results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "C:\\Users\\lsh\\Desktop\\workspace\\psop\\apps\\workbench\\tests",
+        "snapshotDir": "C:\\Users\\lsh\\Desktop\\workspace\\psop\\apps\\workbench\\tests",
+        "testIgnore": [],
+        "testMatch": [
+          "simulate.spec.ts",
+          "workbench.spec.ts",
+          "loading.spec.ts",
+          "compatibility-preview.spec.ts",
+          "rendering.spec.ts"
+        ],
+        "timeout": 90000,
+        "use": {
+          "baseURL": "http://127.0.0.1:8792",
+          "channel": "chrome",
+          "headless": true,
+          "viewport": {
+            "width": 1600,
+            "height": 1000
+          },
+          "actionTimeout": 15000,
+          "screenshot": "only-on-failure",
+          "trace": "retain-on-failure"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list"
+      ],
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": {
+      "command": "\"C:\\Users\\lsh\\Desktop\\workspace\\psop\\apps\\workbench\\.runtime\\node-v22.23.4-win-x64\\node.exe\" scripts/serve.mjs --port 8792 --registry \"C:\\Users\\lsh\\Desktop\\workspace\\psop\\apps\\workbench\\.runtime\\simulate-e2e\\registry.json\"",
+      "url": "http://127.0.0.1:8792/health",
+      "reuseExistingServer": false,
+      "timeout": 30000
+    }
+  },
+  "suites": [
+    {
+      "title": "simulate.spec.ts",
+      "file": "simulate.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "真实部件连接、预览取消、拆开、历史、刷新和复制",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 22256,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T18:45:29.053Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6063be3a779225c32cca-ff7a5384eee43023e966",
+          "file": "simulate.spec.ts",
+          "line": 29,
+          "column": 1
+        },
+        {
+          "title": "鼠标拖拽只保存一步，Esc 取消，输入框快捷键隔离，窄窗口和手动画质",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7866,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T18:45:51.625Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6063be3a779225c32cca-88b4ced81f0c3ae85a74",
+          "file": "simulate.spec.ts",
+          "line": 49,
+          "column": 1
+        },
+        {
+          "title": "断线后的操作草稿跨刷新重试，候选读取期间不出现无结果文案",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9152,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T18:45:59.517Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6063be3a779225c32cca-7599d6e22a7781bff74c",
+          "file": "simulate.spec.ts",
+          "line": 59,
+          "column": 1
+        },
+        {
+          "title": "当前视角外包络靠近即可弹卡片，移远关闭，切换方案释放画布",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 150000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 23203,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T18:46:08.696Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6063be3a779225c32cca-a3c5c31b71db3644faac",
+          "file": "simulate.spec.ts",
+          "line": 66,
+          "column": 1
+        },
+        {
+          "title": "复合、包覆和承座接口显示关联对象，右脚原装姿态如实报告实体干涉",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6894,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T18:46:31.922Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6063be3a779225c32cca-557092ffc222d3135b93",
+          "file": "simulate.spec.ts",
+          "line": 89,
+          "column": 1
+        },
+        {
+          "title": "高清环境加载失败可重试，完整就绪后才开放场景",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7472,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T18:46:38.849Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6063be3a779225c32cca-1e7dcaa5f45f431badb4",
+          "file": "simulate.spec.ts",
+          "line": 101,
+          "column": 1
+        },
+        {
+          "title": "沉浸布局保留完整视口，目录、精确工具和方案菜单按需展开",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5952,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T18:46:46.339Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6063be3a779225c32cca-8e98ee0447e976257b6c",
+          "file": "simulate.spec.ts",
+          "line": 112,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "workbench.spec.ts",
+      "file": "workbench.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "中文查询到部件，再定位到真实 XML 与 CSV 证据",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3725,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T18:46:52.360Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-f6ac1963c68247e79d56",
+          "file": "workbench.spec.ts",
+          "line": 10,
+          "column": 1
+        },
+        {
+          "title": "窄屏保持导航、模型与详情可用且没有页面级横向溢出",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2716,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T18:46:56.317Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-ff2629d34aa2e9712b1f",
+          "file": "workbench.spec.ts",
+          "line": 38,
+          "column": 1
+        },
+        {
+          "title": "同一设备在三个能力间保持知识版本，未接入服务不制造运行结果",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5776,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T18:46:59.066Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-1a265c611ce60d26cfa1",
+          "file": "workbench.spec.ts",
+          "line": 93,
+          "column": 1
+        },
+        {
+          "title": "对象详情可拖拽和键盘调宽，取消与窄屏不覆盖首选宽度",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5947,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T18:47:04.871Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-087511970048671e3ce1",
+          "file": "workbench.spec.ts",
+          "line": 174,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-10T18:45:27.491Z",
+    "duration": 104072.743,
+    "expected": 11,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

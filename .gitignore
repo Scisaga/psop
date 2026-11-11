@@ -1,0 +1,39 @@
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.mypy_cache/
+*.egg-info/
+.psop/
+/workspaces/
+.env
+.env.*
+
+# Local-only compile UI data projection (sources are not cleared for distribution).
+/apps/compile/data/
+
+# Local UI verification and temporary validation dependencies.
+/.runtime/
+/apps/workbench/test-results-*/
+
+# Published review evidence remains versioned; these are reproducible intermediates.
+/build/connection-sites-review/work-*/
+
+# Local editor preference; this only suppresses the Git file-count warning.
+/.vscode/settings.json
+
+# Unpacked DKPs are restored from releases/ archives or rebuilt from source.
+/build/**/*.dkp/
+
+# Prepare, restore and publication staging directories are never source inputs.
+/build/**/measurement-cache-v*/
+/build/**/.*.prepare-*/
+/build/**/.*.publish-*/
+/build/**/.*.restore-*/
+/build/**/.capabilities-publish-*/
+/build/microduck/source-*/.work.prepare-*/
+/build/microduck/source-*/work-final-*/
+/build/v2/microduck/work-*/
+/build/v2/cache/*
+# This pinned upstream XML is a source input despite its historical cache path.
+!/build/v2/cache/microduck-reference.xml

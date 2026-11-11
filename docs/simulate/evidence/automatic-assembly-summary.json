@@ -1,0 +1,62 @@
+{
+  "recorded_at": "2026-11-10T22:56:18.128Z",
+  "timezone": "Asia/Shanghai",
+  "workspace": "microduck",
+  "snapshot": "dkp-7c4dd301829f4e2cbd23",
+  "package_digest": "7c4dd301829f4e2cbd236f0440bb0d6f971b24635301a6bfc6b478ff48914cb1",
+  "build": {
+    "javascript": "index-DF-Col1H.js",
+    "css": "index-iMVeu0lk.css"
+  },
+  "node": {
+    "tests": 45,
+    "passed": 45,
+    "failed": 0,
+    "duration_ms": 3452.0999
+  },
+  "real_data": {
+    "tests": 1,
+    "passed": 1,
+    "parts": 70,
+    "connections": 69,
+    "structure_reference_count": 7,
+    "planning_ms": 952.4322000000002,
+    "time_line_ms": 62575
+  },
+  "browser": {
+    "startTime": "2026-11-10T22:52:46.992Z",
+    "duration": 175424.56,
+    "expected": 11,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0,
+    "passed": 11,
+    "tests": 11
+  },
+  "preview": {
+    "port": 8781,
+    "scene": "2ff0a3e2-51fb-4a60-85a5-7556d25362f3",
+    "isolated_registry": "apps/workbench/.runtime/simulate-auto-preview/registry.json",
+    "original_state_unchanged": true
+  },
+  "screenshots": [
+    {
+      "file": "simulate-auto-detach-1600.png",
+      "width": 1600,
+      "height": 1000,
+      "sha256": "d345dc7a00ddfb18dfbcf28f47a2c44661b5da70df6c30e91c66ffc20d0d834b"
+    },
+    {
+      "file": "simulate-auto-join-1600.png",
+      "width": 1600,
+      "height": 1000,
+      "sha256": "37c43e0b09ae7979ccfe680ac542d170b1ed961cd054f5b89e9f2c86da9a49bf"
+    },
+    {
+      "file": "simulate-auto-complete-1600.png",
+      "width": 1600,
+      "height": 1000,
+      "sha256": "67ecb26d1b9cdd771c2743439081ab5bf840943e3c708a50fc441bd60242b741"
+    }
+  ]
+}

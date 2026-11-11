@@ -1,0 +1,151 @@
+/* Native EG artwork. Marking and token movement are owned by demos.js. */
+#eg-graph {
+  color: var(--dark-muted);
+  font-family: var(--font);
+}
+#eg-graph .eg-surface { fill: var(--dark-panel); }
+#eg-graph .eg-guide { fill: none; stroke: var(--dark-muted); stroke-width: .7; opacity: .15; }
+#eg-graph .eg-phase {
+  font-family: "SFMono-Regular", Consolas, monospace;
+  font-size: 7.6px;
+  letter-spacing: 1.35px;
+  fill: var(--dark-muted);
+}
+#eg-graph .eg-phase-number { fill: var(--dark-muted); letter-spacing: .3px; }
+#eg-graph .eg-edges path {
+  fill: none;
+  stroke: var(--dark-muted);
+  color: var(--dark-muted);
+  stroke-width: 1.05;
+  opacity: .82;
+  marker-end: url(#eg-arrow);
+  transition: stroke .45s, color .45s, opacity .45s;
+}
+#eg-graph .eg-edges path.is-active,
+#eg-graph .eg-edges path.is-flowing {
+  stroke: var(--dark-accent);
+  color: var(--dark-accent);
+  stroke-width: 1.45;
+  opacity: 1;
+}
+#eg-graph .eg-edges path.is-passed { stroke: var(--dark-accent); color: var(--dark-accent); opacity: .86; }
+#eg-graph .eg-edges path.is-blocked { stroke: var(--warning-dark); color: var(--warning-dark); stroke-dasharray: 2 5; opacity: .7; }
+#eg-graph .eg-edges path.is-flowing { stroke-dasharray: 5 7; animation: eg-refined-flow 1.15s linear infinite; }
+#eg-graph .eg-nodes .eg-place {
+  fill: url(#eg-place-surface);
+  stroke: var(--dark-muted);
+  stroke-width: 1.05;
+  opacity: 1;
+  transition: fill .45s, stroke .45s;
+}
+#eg-graph .eg-nodes .eg-place-ring {
+  fill: none;
+  stroke: var(--dark-muted);
+  stroke-width: .5;
+  stroke-dasharray: none;
+  opacity: .27;
+  pointer-events: none;
+}
+#eg-graph .eg-nodes .eg-place-halo {
+  fill: none;
+  stroke: var(--dark-accent);
+  stroke-width: .6;
+  stroke-dasharray: none;
+  opacity: 0;
+  transition: opacity .45s, stroke .45s;
+  pointer-events: none;
+}
+#eg-graph .eg-nodes .eg-precision {
+  fill: none;
+  stroke: var(--dark-muted);
+  stroke-width: .65;
+  opacity: .45;
+  pointer-events: none;
+}
+#eg-graph .eg-nodes .eg-transition {
+  fill: url(#eg-gate-surface);
+  stroke: var(--dark-muted);
+  stroke-width: .75;
+  opacity: 1;
+  transition: fill .45s, stroke .45s;
+}
+#eg-graph .eg-nodes .eg-gate-detail {
+  fill: none;
+  stroke: var(--dark-muted);
+  stroke-width: .65;
+  opacity: .7;
+  pointer-events: none;
+}
+#eg-graph .eg-nodes .eg-glyph {
+  fill: none;
+  stroke: var(--dark-muted);
+  stroke-width: .95;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  opacity: .78;
+  transition: stroke .45s, opacity .3s;
+  pointer-events: none;
+}
+#eg-graph .eg-nodes .eg-glyph-check { opacity: 0; }
+#eg-graph .eg-nodes .eg-node-label {
+  fill: var(--dark-muted);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: .15px;
+  transition: fill .4s;
+}
+#eg-graph .eg-nodes [data-eg-node="t_join"] .eg-node-label { font-size: 14px; font-weight: 600; }
+#eg-graph .eg-nodes .eg-node-meta {
+  font-family: "SFMono-Regular", Consolas, monospace;
+  font-size: 7.6px;
+  font-weight: 400;
+  letter-spacing: .8px;
+  fill: var(--dark-muted);
+  transition: fill .4s;
+}
+#eg-graph .eg-nodes .eg-join-leader { fill: none; stroke: var(--dark-muted); stroke-width: .65; stroke-dasharray: 2 3; opacity: .55; }
+#eg-graph .eg-nodes .is-active .eg-place { fill: url(#eg-place-active); stroke: var(--dark-accent); }
+#eg-graph .eg-nodes .is-active .eg-place-ring { stroke: var(--dark-accent); opacity: .33; }
+#eg-graph .eg-nodes .is-active .eg-place-halo { opacity: .24; }
+#eg-graph .eg-nodes .is-active .eg-transition { fill: url(#eg-gate-active); stroke: var(--dark-accent); }
+#eg-graph .eg-nodes .is-active .eg-gate-detail { stroke: var(--dark-accent); opacity: .8; }
+#eg-graph .eg-nodes .is-active .eg-glyph,
+#eg-graph .eg-nodes .is-active .eg-precision { stroke: var(--dark-accent); }
+#eg-graph .eg-nodes .is-active .eg-node-label { fill: var(--dark-accent); }
+#eg-graph .eg-nodes .is-active .eg-node-meta { fill: var(--dark-accent); }
+#eg-graph .eg-nodes .is-active .eg-join-leader { stroke: var(--dark-accent); }
+#eg-graph .eg-nodes .is-passed .eg-place { fill: url(#eg-place-passed); stroke: var(--dark-accent); }
+#eg-graph .eg-nodes .is-passed .eg-place-ring { stroke: var(--dark-accent); opacity: .36; }
+#eg-graph .eg-nodes .is-passed .eg-place-halo { stroke: var(--dark-accent); opacity: .12; }
+#eg-graph .eg-nodes .is-passed .eg-transition { fill: url(#eg-gate-passed); stroke: var(--dark-accent); }
+#eg-graph .eg-nodes .is-passed .eg-gate-detail,
+#eg-graph .eg-nodes .is-passed .eg-glyph { stroke: var(--dark-accent); }
+#eg-graph .eg-nodes .is-passed .eg-node-label { fill: var(--dark-accent); }
+#eg-graph .eg-nodes .is-passed .eg-node-meta { fill: var(--dark-muted); }
+#eg-graph .eg-nodes .is-passed .eg-join-leader { stroke: var(--dark-accent); }
+#eg-graph .eg-nodes .is-passed .eg-glyph-await { opacity: 0; }
+#eg-graph .eg-nodes .is-passed .eg-glyph-check { opacity: .92; }
+#eg-graph .eg-nodes .is-blocked .eg-place { fill: var(--dark-panel); stroke: var(--warning-dark); stroke-dasharray: 2.5 3; }
+#eg-graph .eg-nodes .is-blocked .eg-place-ring { stroke: var(--warning-dark); opacity: .23; }
+#eg-graph .eg-nodes .is-blocked .eg-place-halo { stroke: var(--warning-dark); opacity: .13; }
+#eg-graph .eg-nodes .is-blocked .eg-transition { fill: url(#eg-gate-blocked); stroke: var(--warning-dark); opacity: 1; }
+#eg-graph .eg-nodes .is-blocked .eg-gate-detail,
+#eg-graph .eg-nodes .is-blocked .eg-glyph { stroke: var(--warning-dark); }
+#eg-graph .eg-nodes .is-blocked .eg-node-label { fill: var(--warning-dark); }
+#eg-graph .eg-nodes .is-blocked .eg-node-meta { fill: var(--warning-dark); }
+#eg-graph .eg-nodes .is-blocked .eg-join-leader { stroke: var(--warning-dark); }
+#eg-graph .eg-nodes .has-token .eg-glyph { opacity: 0; }
+#eg-graph .eg-token {
+  fill: url(#eg-token-core);
+  stroke: var(--dark-ink);
+  stroke-width: .75;
+  r: 5px;
+  filter: url(#eg-token-glow);
+  pointer-events: none;
+}
+.is-demo-paused #eg-graph .is-flowing { animation-play-state: paused; }
+@keyframes eg-refined-flow { to { stroke-dashoffset: -24; } }
+@media (prefers-reduced-motion: reduce) {
+  #eg-graph .eg-edges path.is-flowing { animation: none; stroke-dasharray: none; }
+  #eg-graph .eg-nodes *, #eg-graph .eg-edges path { transition: none; }
+}

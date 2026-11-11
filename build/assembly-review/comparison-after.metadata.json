@@ -1,0 +1,52 @@
+{
+  "name": "after",
+  "port": 8780,
+  "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-700958f225110d20315d&part=part%3Amicroduck%3A0820b4025f26a004&detail=interfaces&explode=1&labels=0&grid=1&camera=0.45%2C-0.55%2C0.38%2C0%2C0%2C0.15",
+  "snapshot": "dkp-700958f225110d20315d",
+  "viewFile": "C:\\Users\\scisa\\Desktop\\psop\\build\\assembly-review\\comparison-after.json",
+  "screenshot": "C:\\Users\\scisa\\Desktop\\psop\\build\\assembly-review\\comparison-after.png",
+  "camera": {
+    "position": [
+      0.45000000000000284,
+      -0.5499999999999539,
+      0.3799999999999898
+    ],
+    "target": [
+      0,
+      0,
+      0.15
+    ]
+  },
+  "layout": {
+    "viewport": {
+      "width": 1600,
+      "height": 900,
+      "devicePixelRatio": 1
+    },
+    "inspectorWidth": 360,
+    "preferredWidth": 360,
+    "inspector": {
+      "x": 1240,
+      "y": 135,
+      "width": 360,
+      "height": 740
+    },
+    "scene": {
+      "x": 406,
+      "y": 135,
+      "width": 834,
+      "height": 740
+    },
+    "sceneState": {
+      "sceneReady": "true",
+      "renderCount": "4",
+      "cameraFlight": "settled",
+      "inspectionActive": "false",
+      "sourcePlacement": "exploded",
+      "interfaceId": "",
+      "memberRefs": "",
+      "selectedFeatures": ""
+    }
+  },
+  "errors": []
+}

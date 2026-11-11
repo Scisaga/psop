@@ -1,0 +1,116 @@
+{
+  "recorded_at": "2026-11-11T00:47:19.224Z",
+  "origin": "http://127.0.0.1:8780",
+  "assets": [
+    {
+      "asset": "/assets/index-D48yBXqI.js",
+      "sha256": "61d2e36271b2e29b32a89ebdb963b0c5dadc009f58b5e5427b617f7dc08c1225"
+    },
+    {
+      "asset": "/assets/index-DpD1r5ZD.css",
+      "sha256": "c702dd2e63843ac9fa7e901f2df69111254717579a9b62204aac86ca485f0bad"
+    }
+  ],
+  "source_scene": "2ff0a3e2-51fb-4a60-85a5-7556d25362f3",
+  "source_revision": 5,
+  "source_unchanged": true,
+  "acceptance_scene": "e1b8d9c5-463e-4466-b644-dec8430d69d2",
+  "request_ms": 8541.3007,
+  "health_during_planning_ms": [
+    341.6360999999997,
+    2.9804000000003725,
+    2.5491000000001804,
+    2.558999999999287,
+    2.569800000000214
+  ],
+  "browser": "157.0.8103.39",
+  "gpu": "ANGLE (NVIDIA, NVIDIA GeForce RTX 2080 Ti (0x00001E07) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+  "viewport": {
+    "width": 1600,
+    "height": 1000
+  },
+  "quality": "high",
+  "report": {
+    "mode": "reference",
+    "configuration_ref": "configuration:microduck:reconciled-qpos0",
+    "configuration_label": "修正成品参考",
+    "part_count": 70,
+    "retained_connection_count": 0,
+    "removed_connection_count": 3,
+    "bearing_preassembly_count": 14,
+    "access_opened_connection_count": 0,
+    "reference_connection_count": 69,
+    "structure_binding_count": 7,
+    "geometry_status": "not_evaluated",
+    "completed_at": "2026-11-11T00:46:36.021Z",
+    "process_version": "source-process/2",
+    "process_check": {
+      "method": "source-surface-swept-translation/1",
+      "surface_spacing_m": 0.002,
+      "contact_margin_m": 0.0004,
+      "part_count": 70,
+      "ordered_insertion_count": 69,
+      "subassembly_count": 4,
+      "checked_motion_count": 88,
+      "reference_handoff_count": 5,
+      "conditions": [
+        {
+          "instance_ids": [
+            "instance:part:microduck:328011951ac11ee7"
+          ],
+          "reason": "来源限形关系保留；刚性装入和保持工艺待核。"
+        },
+        {
+          "instance_ids": [
+            "instance:part:microduck:88b7496d63cb41ff"
+          ],
+          "reason": "来源限形关系保留；刚性装入和保持工艺待核。"
+        },
+        {
+          "instance_ids": [
+            "instance:part:microduck:f5797f92c2bf01b8"
+          ],
+          "reason": "来源限形关系保留；刚性装入和保持工艺待核。"
+        },
+        {
+          "instance_ids": [
+            "instance:part:microduck:f9955f19a691a1f4"
+          ],
+          "reason": "来源限形关系保留；刚性装入和保持工艺待核。"
+        },
+        {
+          "instance_ids": [
+            "instance:part:microduck:41db565298264db6"
+          ],
+          "reason": "来源限形关系保留；刚性装入和保持工艺待核。"
+        }
+      ],
+      "proxy_parts": [],
+      "physics_status": "not_evaluated",
+      "scope": "Finite source-surface sweeps, conservative box transport; source nominal contacts preserved.",
+      "audit": {
+        "method": "sampled-source-mesh-transit-audit/1",
+        "snapshot_count": 2294,
+        "pair_checks": 628,
+        "new_intrusion_observations": 0,
+        "reference_handoff_count": 5,
+        "continuous_rigid_path_status": "not_certified"
+      },
+      "planning_ms": 7652.97629999998
+    }
+  },
+  "step_count": 96,
+  "total_duration_ms": 128100,
+  "complete_animation": true,
+  "default_view_preserved": true,
+  "free_mouse_orbit_pan_zoom": true,
+  "view_buttons_do_not_skip": true,
+  "no_process_warnings_visible": true,
+  "page_errors": [],
+  "failed_requests": [],
+  "screenshots": [
+    "process-inline-default-1600.png",
+    "process-axial-entry-1600.png",
+    "process-complete-1600.png"
+  ]
+}

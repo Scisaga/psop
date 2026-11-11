@@ -1,0 +1,309 @@
+{
+  "phase": "before",
+  "snapshot": "dkp-1c8eeda600249ce33b99",
+  "meta": {
+    "title": "Microduck",
+    "ontologyVersion": "psop.hardware/2.0-draft.4",
+    "scope": "官方模型参考 · qpos0；不等同 alpha 实机配置或工程验收",
+    "sourceCommit": "cb70b792312d559a4da09064d92009079671815f",
+    "counts": {
+      "sources": 69,
+      "geometries": 38,
+      "parts": 70,
+      "bodies": 15,
+      "joints": 14,
+      "evidence": 224
+    },
+    "version": "2.0.0-interface-relations.1",
+    "snapshot": "psop.microduck@2.0.0-interface-relations.1",
+    "generatedAt": "2026-11-06T20:48:01+00:00",
+    "packageId": "psop.microduck",
+    "packageVersion": "2.0.0-interface-relations.1",
+    "packageDigest": "1c8eeda600249ce33b99ec622417a744d5cdaf43a512f1495a4780ae0030cb00",
+    "dkpSchema": "psop.dkp/2.0-draft.1",
+    "inputKind": "dkp",
+    "capabilities": {
+      "source_registry": {
+        "status": "complete",
+        "scope": "captured source bytes, paths and digests",
+        "description": "captured source bytes, paths and digests"
+      },
+      "source_model_projection": {
+        "status": "complete",
+        "scope": "frozen Microduck MJCF visual model at qpos0",
+        "description": "frozen Microduck MJCF visual model at qpos0"
+      },
+      "hardware_knowledge": {
+        "status": "partial",
+        "scope": "source geometry, finite pin/housing reference-pair location evidence and separately identified unverified connector alternatives; retention remains unknown",
+        "description": "source geometry, finite pin/housing reference-pair location evidence and separately identified unverified connector alternatives; retention remains unknown"
+      },
+      "mechanical_validation": {
+        "status": "unavailable",
+        "scope": "no confirmed interface connection, retaining, motion constraint, assembly path or mechanical success is published",
+        "description": "no confirmed interface connection, retaining, motion constraint, assembly path or mechanical success is published"
+      },
+      "engineering_validation": {
+        "status": "unavailable",
+        "scope": "materials, tolerances, manufacturing and load acceptance not established",
+        "description": "materials, tolerances, manufacturing and load acceptance not established"
+      },
+      "path_validation": {
+        "status": "unavailable",
+        "scope": "presentation explosion is not a disassembly or motion proof",
+        "description": "presentation explosion is not a disassembly or motion proof"
+      },
+      "training_data": {
+        "status": "unavailable",
+        "scope": "no training dataset, canonical multiview render or use authorization is published",
+        "description": "no training dataset, canonical multiview render or use authorization is published"
+      },
+      "geometric_analysis": {
+        "status": "partial",
+        "scope": "finite arbitrary-axis cylindrical discovery with strict source witnesses, legacy finite geometry and per-instance raw mesh regions; unsupported structures remain open",
+        "description": "finite arbitrary-axis cylindrical discovery with strict source witnesses, legacy finite geometry and per-instance raw mesh regions; unsupported structures remain open"
+      },
+      "interface_analysis": {
+        "status": "partial",
+        "scope": "connection reviews separate declared knowledge from project-inferred roles and manufacturer-general examples; no complete physical interface qualification",
+        "description": "connection reviews separate declared knowledge from project-inferred roles and manufacturer-general examples; no complete physical interface qualification"
+      },
+      "connection_candidates": {
+        "status": "unavailable",
+        "scope": "raw geometry observations are not qualified interfaces or mechanism-level connection candidates",
+        "description": "raw geometry observations are not qualified interfaces or mechanism-level connection candidates"
+      },
+      "reference_mounting": {
+        "status": "partial",
+        "scope": "supplied standard-assembly assertions checked against the frozen source placements and mapped site axes; no executed engagement is published",
+        "description": "supplied standard-assembly assertions checked against the frozen source placements and mapped site axes; no executed engagement is published"
+      },
+      "connection_review": {
+        "status": "partial",
+        "scope": "source-pose pin/housing fits support installation-location inference only; outer circular openings and manufacturer-general illustrations do not establish retaining roles",
+        "description": "source-pose pin/housing fits support installation-location inference only; outer circular openings and manufacturer-general illustrations do not establish retaining roles"
+      },
+      "supplemental_components": {
+        "status": "partial",
+        "scope": "reference connector schematics use explicit through-bracket hypotheses with independently checked finite entrance, head seat, shaft direction and target coverage; actual installation side, thread, continuous path and retention remain unverified",
+        "description": "reference connector schematics use explicit through-bracket hypotheses with independently checked finite entrance, head seat, shaft direction and target coverage; actual installation side, thread, continuous path and retention remain unverified"
+      },
+      "structure_investigation": {
+        "status": "partial",
+        "scope": "every source Part and mesh normal region is inventoried before functional interpretation; unknown function has explicit evidence gaps and next actions",
+        "description": "every source Part and mesh normal region is inventoried before functional interpretation; unknown function has explicit evidence gaps and next actions"
+      },
+      "independent_review": {
+        "status": "partial",
+        "scope": "locked source-SHA-bound independent annotations establish expected sample features; automatic screening is distinct from completed region review",
+        "description": "locked source-SHA-bound independent annotations establish expected sample features; automatic screening is distinct from completed region review"
+      },
+      "installation_hypotheses": {
+        "status": "partial",
+        "scope": "frozen completed research, source-bound finite counterpart geometry, dimensional complementarity and evidence support bounded mechanism hypotheses; no actual retaining or engineering confirmation",
+        "description": "frozen completed research, source-bound finite counterpart geometry, dimensional complementarity and evidence support bounded mechanism hypotheses; no actual retaining or engineering confirmation"
+      }
+    },
+    "validation": {
+      "valid": true,
+      "profile": "psop.hardware.source-model/1.10"
+    }
+  },
+  "reviews": [
+    {
+      "reviewId": "connection-review:microduck:27d56794bd7c8a86",
+      "participants": [
+        {
+          "part_ref": "part:microduck:47a950fbb3d0e416",
+          "feature_refs": [
+            "feature:microduck:47a950fbb3d0e416:4b70f665bd37",
+            "feature:microduck:47a950fbb3d0e416:plane-61bdfcca3695"
+          ],
+          "opening_refs": [
+            "opening:microduck:47a950fbb3d0e416:452e107b7fb32383",
+            "opening:microduck:47a950fbb3d0e416:6eaa4083b66aac77",
+            "opening:microduck:47a950fbb3d0e416:cc2d448293b5dd35",
+            "opening:microduck:47a950fbb3d0e416:f3a95e2795236d14"
+          ],
+          "site_refs": []
+        },
+        {
+          "part_ref": "part:microduck:fa9ee2f71faafb88",
+          "feature_refs": [
+            "feature:microduck:fa9ee2f71faafb88:0f97108977c9",
+            "feature:microduck:fa9ee2f71faafb88:8c530854bffc",
+            "feature:microduck:fa9ee2f71faafb88:plane-5da8ab6659b8"
+          ],
+          "opening_refs": [
+            "opening:microduck:fa9ee2f71faafb88:61a17ff765f34335",
+            "opening:microduck:fa9ee2f71faafb88:966151ae6197c62f"
+          ],
+          "site_refs": []
+        }
+      ],
+      "text": "局部连接审查\n待补证据\n本件\n髋部件 · #aafb88\nØ6 · +Y 侧\n源局部特征\n源局部特征\n左腿与足部 · 基准位置 (4, 0, 102.5) mm\n其他有限截面 · 1 条\n查看原始几何\n对端\n轴承外形（22×16×4 配置名） · #d0e416\nØ20 · +Z 侧\n源局部特征\n左腿与足部 · 基准位置 (22.5, 17.5, 102.5) mm\n其他有限截面 · 3 条\n查看原始几何\n定位\n待补证据\n\n来源近接、圆洞同轴或未获功能角色的一体柱均仅为几何观察；实际用途及是否参与定位或保持待设备资料核实，厂家通用方案不构成本连接依据。\n\n保持与第三件\n待补证据\n\n保持方式尚未知；相向面、圆洞同轴和厂家通用示例不能证明本设备采用轴心螺钉、压盖或实际抗拔结构。\n\n运动关系\n待补证据\n\n舵机壳体、输出舵盘、惰轮、轴承及支架的活动归属分别待核定；源网格可能合并舵盘外形，来源 body／hinge 不证明物理固定。\n\n候选解释与要求 · 1 项\n待补依据 · 4 项\n辅助几何观测 · 1 项\n来源与证据\n追踪审查与评估状态",
+      "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-1c8eeda600249ce33b99&part=part%3Amicroduck%3Afa9ee2f71faafb88&review=connection-review%3Amicroduck%3A27d56794bd7c8a86&explode=0.00&detail=interfaces&inspection=1&view=iso&labels=0&grid=0&supplements=0",
+      "image": "27d56794bd7c8a86.png"
+    },
+    {
+      "reviewId": "connection-review:microduck:f81f10dc6482cb07",
+      "participants": [
+        {
+          "part_ref": "part:microduck:55970da91992f38c",
+          "feature_refs": [],
+          "opening_refs": [],
+          "site_refs": []
+        },
+        {
+          "part_ref": "part:microduck:fa9ee2f71faafb88",
+          "feature_refs": [],
+          "opening_refs": [],
+          "site_refs": []
+        }
+      ],
+      "text": "局部连接审查\n待补证据\n本件\n髋部件 · #aafb88\n局部连接特征尚未定位\n左腿与足部 · 基准位置 (4, 0, 102.5) mm\n对端\n偏航与横滚连接件 · #92f38c\n局部连接特征尚未定位\n左腿与足部 · 基准位置 (4, 0, 102.5) mm\n定位\n待补证据\n\n来源近接、圆洞同轴或未获功能角色的一体柱均仅为几何观察；实际用途及是否参与定位或保持待设备资料核实，厂家通用方案不构成本连接依据。\n\n保持与第三件\n待补证据\n\n保持方式尚未知；相向面、圆洞同轴和厂家通用示例不能证明本设备采用轴心螺钉、压盖或实际抗拔结构。\n\n运动关系\n待补证据\n\n舵机壳体、输出舵盘、惰轮、轴承及支架的活动归属分别待核定；源网格可能合并舵盘外形，来源 body／hinge 不证明物理固定。\n\n候选解释与要求 · 1 项\n待补依据 · 4 项\n辅助几何观测 · 0 项\n来源与证据\n追踪审查与评估状态",
+      "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-1c8eeda600249ce33b99&part=part%3Amicroduck%3Afa9ee2f71faafb88&review=connection-review%3Amicroduck%3Af81f10dc6482cb07&explode=0.00&detail=interfaces&inspection=1&view=iso&labels=0&grid=0&supplements=0",
+      "image": "f81f10dc6482cb07.png"
+    },
+    {
+      "reviewId": "connection-review:microduck:926a5beb2c028185",
+      "participants": [
+        {
+          "part_ref": "part:microduck:9ffe9d5bcd6bc13a",
+          "feature_refs": [
+            "feature:microduck:9ffe9d5bcd6bc13a:4c6adb5a4bd2",
+            "feature:microduck:9ffe9d5bcd6bc13a:678d6de22520",
+            "feature:microduck:9ffe9d5bcd6bc13a:c762f0d8139b",
+            "feature:microduck:9ffe9d5bcd6bc13a:ee2340944a76",
+            "feature:microduck:9ffe9d5bcd6bc13a:f4716268e4b3"
+          ],
+          "opening_refs": [
+            "opening:microduck:9ffe9d5bcd6bc13a:e77de7cf187ae9b2"
+          ],
+          "site_refs": []
+        },
+        {
+          "part_ref": "part:microduck:fa9ee2f71faafb88",
+          "feature_refs": [
+            "feature:microduck:fa9ee2f71faafb88:2ae52bb39653",
+            "feature:microduck:fa9ee2f71faafb88:2ee7062c1815",
+            "feature:microduck:fa9ee2f71faafb88:40aa9fcc7543",
+            "feature:microduck:fa9ee2f71faafb88:7f1abed92893",
+            "feature:microduck:fa9ee2f71faafb88:968274710e8e",
+            "feature:microduck:fa9ee2f71faafb88:9e6a15bfabec",
+            "feature:microduck:fa9ee2f71faafb88:d0acc192b12c",
+            "feature:microduck:fa9ee2f71faafb88:ec1d9aeca1f6",
+            "feature:microduck:fa9ee2f71faafb88:f3519facbf1d"
+          ],
+          "opening_refs": [
+            "opening:microduck:fa9ee2f71faafb88:8905efb6dc74da8c"
+          ],
+          "site_refs": []
+        }
+      ],
+      "text": "局部连接审查\n待补证据\n本件\n髋部件 · #aafb88\nØ16 · +X 侧\n源局部特征\n源局部特征\n源局部特征\n源局部特征\n源局部特征\n源局部特征\n源局部特征\n源局部特征\n源局部特征\n左腿与足部 · 基准位置 (4, 0, 102.5) mm\n查看原始几何\n对端\nXL330 舵机 · #6bc13a\nØ16 · −X 侧\n源局部特征\n源局部特征\n源局部特征\n源局部特征\n源局部特征\n左腿与足部 · 基准位置 (4, 55, 102.5) mm\n查看原始几何\n定位\n待补证据\n\n来源近接、圆洞同轴或未获功能角色的一体柱均仅为几何观察；实际用途及是否参与定位或保持待设备资料核实，厂家通用方案不构成本连接依据。\n\n保持与第三件\n待补证据\n\n保持方式尚未知；相向面、圆洞同轴和厂家通用示例不能证明本设备采用轴心螺钉、压盖或实际抗拔结构。\n\n运动关系\n待补证据\n\n舵机壳体、输出舵盘、惰轮、轴承及支架的活动归属分别待核定；源网格可能合并舵盘外形，来源 body／hinge 不证明物理固定。\n\n候选解释与要求 · 1 项\n待补依据 · 4 项\n辅助几何观测 · 4 项\n来源与证据\n追踪审查与评估状态",
+      "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-1c8eeda600249ce33b99&part=part%3Amicroduck%3Afa9ee2f71faafb88&review=connection-review%3Amicroduck%3A926a5beb2c028185&explode=0.00&detail=interfaces&inspection=1&view=iso&labels=0&grid=0&supplements=0",
+      "image": "926a5beb2c028185.png"
+    },
+    {
+      "reviewId": "connection-review:microduck:c2e8a8093a4b8563",
+      "participants": [
+        {
+          "part_ref": "part:microduck:bb34e925e25e29f6",
+          "feature_refs": [
+            "feature:microduck:bb34e925e25e29f6:4b70f665bd37",
+            "feature:microduck:bb34e925e25e29f6:plane-61bdfcca3695"
+          ],
+          "opening_refs": [
+            "opening:microduck:bb34e925e25e29f6:452e107b7fb32383",
+            "opening:microduck:bb34e925e25e29f6:6eaa4083b66aac77",
+            "opening:microduck:bb34e925e25e29f6:cc2d448293b5dd35",
+            "opening:microduck:bb34e925e25e29f6:f3a95e2795236d14"
+          ],
+          "site_refs": []
+        },
+        {
+          "part_ref": "part:microduck:fa9ee2f71faafb88",
+          "feature_refs": [
+            "feature:microduck:fa9ee2f71faafb88:2ee7062c1815",
+            "feature:microduck:fa9ee2f71faafb88:ec1d9aeca1f6",
+            "feature:microduck:fa9ee2f71faafb88:plane-e63b5358fc46"
+          ],
+          "opening_refs": [
+            "opening:microduck:fa9ee2f71faafb88:8905efb6dc74da8c"
+          ],
+          "site_refs": []
+        }
+      ],
+      "text": "局部连接审查\n待补证据\n本件\n髋部件 · #aafb88\nØ16 · +X 侧\n源局部特征\n源局部特征\n左腿与足部 · 基准位置 (4, 0, 102.5) mm\n查看原始几何\n对端\n轴承外形（22×16×4 配置名） · #5e29f6\nØ20 · +Z 侧\n源局部特征\n左腿与足部 · 基准位置 (4, 38.5, 102.5) mm\n其他有限截面 · 3 条\n查看原始几何\n定位\n待补证据\n\n来源近接、圆洞同轴或未获功能角色的一体柱均仅为几何观察；实际用途及是否参与定位或保持待设备资料核实，厂家通用方案不构成本连接依据。\n\n保持与第三件\n待补证据\n\n保持方式尚未知；相向面、圆洞同轴和厂家通用示例不能证明本设备采用轴心螺钉、压盖或实际抗拔结构。\n\n运动关系\n待补证据\n\n舵机壳体、输出舵盘、惰轮、轴承及支架的活动归属分别待核定；源网格可能合并舵盘外形，来源 body／hinge 不证明物理固定。\n\n候选解释与要求 · 1 项\n待补依据 · 4 项\n辅助几何观测 · 1 项\n来源与证据\n追踪审查与评估状态",
+      "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-1c8eeda600249ce33b99&part=part%3Amicroduck%3Afa9ee2f71faafb88&review=connection-review%3Amicroduck%3Ac2e8a8093a4b8563&explode=0.00&detail=interfaces&inspection=1&view=iso&labels=0&grid=0&supplements=0",
+      "image": "c2e8a8093a4b8563.png"
+    },
+    {
+      "reviewId": "connection-review:microduck:d22c650fc9abdaca",
+      "participants": [
+        {
+          "part_ref": "part:microduck:cb253f38c818b9d8",
+          "feature_refs": [],
+          "opening_refs": [
+            "opening:microduck:cb253f38c818b9d8:81eef8e201ce8d0d",
+            "opening:microduck:cb253f38c818b9d8:d098b90aa4f668f3"
+          ],
+          "site_refs": []
+        },
+        {
+          "part_ref": "part:microduck:fa9ee2f71faafb88",
+          "feature_refs": [
+            "feature:microduck:fa9ee2f71faafb88:0f97108977c9",
+            "feature:microduck:fa9ee2f71faafb88:8c530854bffc"
+          ],
+          "opening_refs": [],
+          "site_refs": []
+        }
+      ],
+      "text": "局部连接审查\n待补证据\n本件\n髋部件 · #aafb88\n源局部特征\n源局部特征\n左腿与足部 · 基准位置 (4, 0, 102.5) mm\n查看原始几何\n对端\n横滚轴承支承件 · #18b9d8\nØ19 · −Y 侧\n左腿与足部 · 基准位置 (4, 0, 102.5) mm\n其他有限截面 · 1 条\n查看原始几何\n定位\n待补证据\n\n来源近接、圆洞同轴或未获功能角色的一体柱均仅为几何观察；实际用途及是否参与定位或保持待设备资料核实，厂家通用方案不构成本连接依据。\n\n保持与第三件\n待补证据\n\n保持方式尚未知；相向面、圆洞同轴和厂家通用示例不能证明本设备采用轴心螺钉、压盖或实际抗拔结构。\n\n运动关系\n待补证据\n\n舵机壳体、输出舵盘、惰轮、轴承及支架的活动归属分别待核定；源网格可能合并舵盘外形，来源 body／hinge 不证明物理固定。\n\n候选解释与要求 · 1 项\n待补依据 · 4 项\n辅助几何观测 · 0 项\n来源与证据\n追踪审查与评估状态",
+      "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-1c8eeda600249ce33b99&part=part%3Amicroduck%3Afa9ee2f71faafb88&review=connection-review%3Amicroduck%3Ad22c650fc9abdaca&explode=0.00&detail=interfaces&inspection=1&view=iso&labels=0&grid=0&supplements=0",
+      "image": "d22c650fc9abdaca.png"
+    },
+    {
+      "reviewId": "connection-review:microduck:e42fab2d8700637e",
+      "participants": [
+        {
+          "part_ref": "part:microduck:cd6d48fccc95df41",
+          "feature_refs": [
+            "feature:microduck:cd6d48fccc95df41:4c6adb5a4bd2",
+            "feature:microduck:cd6d48fccc95df41:678d6de22520",
+            "feature:microduck:cd6d48fccc95df41:c762f0d8139b",
+            "feature:microduck:cd6d48fccc95df41:ee2340944a76",
+            "feature:microduck:cd6d48fccc95df41:f4716268e4b3"
+          ],
+          "opening_refs": [
+            "opening:microduck:cd6d48fccc95df41:e77de7cf187ae9b2"
+          ],
+          "site_refs": []
+        },
+        {
+          "part_ref": "part:microduck:fa9ee2f71faafb88",
+          "feature_refs": [
+            "feature:microduck:fa9ee2f71faafb88:0f97108977c9",
+            "feature:microduck:fa9ee2f71faafb88:296a39d9819c",
+            "feature:microduck:fa9ee2f71faafb88:61ab5d99f5cd",
+            "feature:microduck:fa9ee2f71faafb88:7c88d6e0ea46",
+            "feature:microduck:fa9ee2f71faafb88:8c530854bffc",
+            "feature:microduck:fa9ee2f71faafb88:b1c955159fb3",
+            "feature:microduck:fa9ee2f71faafb88:ed90b2c80473"
+          ],
+          "opening_refs": [
+            "opening:microduck:fa9ee2f71faafb88:61a17ff765f34335",
+            "opening:microduck:fa9ee2f71faafb88:966151ae6197c62f"
+          ],
+          "site_refs": []
+        }
+      ],
+      "text": "局部连接审查\n待补证据\n本件\n髋部件 · #aafb88\nØ6 · +Y 侧\n源局部特征\n源局部特征\n源局部特征\n源局部特征\n源局部特征\n源局部特征\n源局部特征\n左腿与足部 · 基准位置 (4, 0, 102.5) mm\n其他有限截面 · 1 条\n查看原始几何\n对端\nXL330 舵机 · #95df41\nØ16 · −X 侧\n源局部特征\n源局部特征\n源局部特征\n源局部特征\n源局部特征\n左腿与足部 · 基准位置 (6, 17.5, 102.5) mm\n查看原始几何\n定位\n待补证据\n\n来源近接、圆洞同轴或未获功能角色的一体柱均仅为几何观察；实际用途及是否参与定位或保持待设备资料核实，厂家通用方案不构成本连接依据。\n\n保持与第三件\n待补证据\n\n保持方式尚未知；相向面、圆洞同轴和厂家通用示例不能证明本设备采用轴心螺钉、压盖或实际抗拔结构。\n\n运动关系\n待补证据\n\n舵机壳体、输出舵盘、惰轮、轴承及支架的活动归属分别待核定；源网格可能合并舵盘外形，来源 body／hinge 不证明物理固定。\n\n候选解释与要求 · 1 项\n待补依据 · 4 项\n辅助几何观测 · 5 项\n来源与证据\n追踪审查与评估状态",
+      "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-1c8eeda600249ce33b99&part=part%3Amicroduck%3Afa9ee2f71faafb88&review=connection-review%3Amicroduck%3Ae42fab2d8700637e&explode=0.00&detail=interfaces&inspection=1&view=iso&labels=0&grid=0&supplements=0",
+      "image": "e42fab2d8700637e.png"
+    }
+  ],
+  "errors": []
+}

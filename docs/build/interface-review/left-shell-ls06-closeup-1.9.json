@@ -1,0 +1,36 @@
+{
+  "image": "left-shell-ls06-closeup-1.9.png",
+  "snapshotId": "dkp-59ce1b25aea434fc3367",
+  "packageVersion": "2.0.0-interface-investigation.2",
+  "packageDigest": "59ce1b25aea434fc336718cfa6bca6f570d34037c87194ba1f45773fbcd3c9a1",
+  "partRef": "part:microduck:e27cbdd6c07a264e",
+  "sourceGeometrySha256": "2abde8e2b79c9b011cdb11957c67ab4287b45d7301affd4235ab81141118e331",
+  "independentAnnotationId": "LS-06",
+  "structureRef": "structure:2f4619dc0b3a74d95a37",
+  "supportTriangleCount": 180,
+  "camera": {
+    "position": [
+      0.03229814800506221,
+      0.04294458436194605,
+      0.17466719834221406
+    ],
+    "target": [
+      0.01350000004299835,
+      0.025499999953279413,
+      0.14395117408299446
+    ]
+  },
+  "isolateId": "part:microduck:e27cbdd6c07a264e",
+  "inspectionMode": "through_geometry",
+  "translucentPartIds": [
+    "part:microduck:e27cbdd6c07a264e"
+  ],
+  "initialViewUrl": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-59ce1b25aea434fc3367&part=part%3Amicroduck%3Ae27cbdd6c07a264e&structure=structure%3A2f4619dc0b3a74d95a37&explode=0&detail=geometry&isolate=part%3Amicroduck%3Ae27cbdd6c07a264e&labels=0&grid=0&supplements=0&inspection=1",
+  "captureActions": [
+    "Isolate the selected source Part; disable labels, grid and connector schematics.",
+    "Focus selected geometry.",
+    "Orbit from viewport center by +110 px horizontally and -85 px vertically, then zoom with wheel delta -1000.",
+    "Scroll the detail panel to the selected structure; retain the source-wall overlay and temporary through-geometry inspection."
+  ],
+  "scope": "Isolated source geometry and 180 source wall triangles; no functional or mechanical confirmation."
+}

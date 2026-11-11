@@ -1,0 +1,306 @@
+{
+  "method": "independent-connection-source-sections/1",
+  "parent_investigation_sha256": "4027932ed7225231bfc836852a7a47293b3be6aed2cd180c4acab723a1ce098a",
+  "source_archive_sha256": "1a20e8494cc633a44ab4d8c662d8aa2e3b44973fbe8b4856040cdd0239d201aa",
+  "passed": 37,
+  "sections": [
+    {
+      "part_ref": "part:microduck:fa9ee2f71faafb88",
+      "id": "HIP-Y-1",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.142532830168859e-06,
+      "max_outward_radial_dot": -0.9998939615198557
+    },
+    {
+      "part_ref": "part:microduck:fa9ee2f71faafb88",
+      "id": "HIP-Y-2",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.1428459928627694e-06,
+      "max_outward_radial_dot": -0.9998939529692144
+    },
+    {
+      "part_ref": "part:microduck:fa9ee2f71faafb88",
+      "id": "HIP-Y-3",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.1428459928298097e-06,
+      "max_outward_radial_dot": -0.9998939529692144
+    },
+    {
+      "part_ref": "part:microduck:fa9ee2f71faafb88",
+      "id": "HIP-Y-4",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.1423806083035379e-06,
+      "max_outward_radial_dot": -0.9998940502780036
+    },
+    {
+      "part_ref": "part:microduck:fa9ee2f71faafb88",
+      "id": "HIP-X-1",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.1423180430424063e-06,
+      "max_outward_radial_dot": -0.9998940571671064
+    },
+    {
+      "part_ref": "part:microduck:fa9ee2f71faafb88",
+      "id": "HIP-X-2",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.1423180430424063e-06,
+      "max_outward_radial_dot": -0.9998940571671064
+    },
+    {
+      "part_ref": "part:microduck:fa9ee2f71faafb88",
+      "id": "HIP-X-3",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.1423180430424063e-06,
+      "max_outward_radial_dot": -0.9998940571671064
+    },
+    {
+      "part_ref": "part:microduck:fa9ee2f71faafb88",
+      "id": "HIP-X-4",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.1423180430424063e-06,
+      "max_outward_radial_dot": -0.9998940571671064
+    },
+    {
+      "part_ref": "part:microduck:fa9ee2f71faafb88",
+      "id": "HIP-JOURNAL-Y",
+      "source_triangles": 146,
+      "closed_section": true,
+      "max_radius_residual_m": 7.614532109689182e-06,
+      "min_outward_radial_dot": 0.9998940874190696
+    },
+    {
+      "part_ref": "part:microduck:fa9ee2f71faafb88",
+      "id": "HIP-JOURNAL-X",
+      "source_triangles": 146,
+      "closed_section": true,
+      "max_radius_residual_m": 7.6144492335405295e-06,
+      "min_outward_radial_dot": 0.9998940987883632
+    },
+    {
+      "part_ref": "part:microduck:c7eeeac0a640d191",
+      "id": "HIP-Y-1",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.142532830168859e-06,
+      "max_outward_radial_dot": -0.9998939615198557
+    },
+    {
+      "part_ref": "part:microduck:c7eeeac0a640d191",
+      "id": "HIP-Y-2",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.1428459928627694e-06,
+      "max_outward_radial_dot": -0.9998939529692144
+    },
+    {
+      "part_ref": "part:microduck:c7eeeac0a640d191",
+      "id": "HIP-Y-3",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.1428459928298097e-06,
+      "max_outward_radial_dot": -0.9998939529692144
+    },
+    {
+      "part_ref": "part:microduck:c7eeeac0a640d191",
+      "id": "HIP-Y-4",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.1423806083035379e-06,
+      "max_outward_radial_dot": -0.9998940502780036
+    },
+    {
+      "part_ref": "part:microduck:c7eeeac0a640d191",
+      "id": "HIP-X-1",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.1423180430424063e-06,
+      "max_outward_radial_dot": -0.9998940571671064
+    },
+    {
+      "part_ref": "part:microduck:c7eeeac0a640d191",
+      "id": "HIP-X-2",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.1423180430424063e-06,
+      "max_outward_radial_dot": -0.9998940571671064
+    },
+    {
+      "part_ref": "part:microduck:c7eeeac0a640d191",
+      "id": "HIP-X-3",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.1423180430424063e-06,
+      "max_outward_radial_dot": -0.9998940571671064
+    },
+    {
+      "part_ref": "part:microduck:c7eeeac0a640d191",
+      "id": "HIP-X-4",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 1.1423180430424063e-06,
+      "max_outward_radial_dot": -0.9998940571671064
+    },
+    {
+      "part_ref": "part:microduck:c7eeeac0a640d191",
+      "id": "HIP-JOURNAL-Y",
+      "source_triangles": 146,
+      "closed_section": true,
+      "max_radius_residual_m": 7.614532109689182e-06,
+      "min_outward_radial_dot": 0.9998940874190696
+    },
+    {
+      "part_ref": "part:microduck:c7eeeac0a640d191",
+      "id": "HIP-JOURNAL-X",
+      "source_triangles": 146,
+      "closed_section": true,
+      "max_radius_residual_m": 7.6144492335405295e-06,
+      "min_outward_radial_dot": 0.9998940987883632
+    },
+    {
+      "part_ref": "part:microduck:cd6d48fccc95df41",
+      "id": "ACTUATOR-X-1",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.606955190774846e-07,
+      "max_outward_radial_dot": -0.9998940450377382
+    },
+    {
+      "part_ref": "part:microduck:cd6d48fccc95df41",
+      "id": "ACTUATOR-X-2",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.606955190774846e-07,
+      "max_outward_radial_dot": -0.9998940450377382
+    },
+    {
+      "part_ref": "part:microduck:cd6d48fccc95df41",
+      "id": "ACTUATOR-X-3",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.606955190774846e-07,
+      "max_outward_radial_dot": -0.9998940450377382
+    },
+    {
+      "part_ref": "part:microduck:cd6d48fccc95df41",
+      "id": "ACTUATOR-X-4",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.606955190774846e-07,
+      "max_outward_radial_dot": -0.9998940450377382
+    },
+    {
+      "part_ref": "part:microduck:9ffe9d5bcd6bc13a",
+      "id": "ACTUATOR-X-1",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.606955190774846e-07,
+      "max_outward_radial_dot": -0.9998940450377382
+    },
+    {
+      "part_ref": "part:microduck:9ffe9d5bcd6bc13a",
+      "id": "ACTUATOR-X-2",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.606955190774846e-07,
+      "max_outward_radial_dot": -0.9998940450377382
+    },
+    {
+      "part_ref": "part:microduck:9ffe9d5bcd6bc13a",
+      "id": "ACTUATOR-X-3",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.606955190774846e-07,
+      "max_outward_radial_dot": -0.9998940450377382
+    },
+    {
+      "part_ref": "part:microduck:9ffe9d5bcd6bc13a",
+      "id": "ACTUATOR-X-4",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.606955190774846e-07,
+      "max_outward_radial_dot": -0.9998940450377382
+    },
+    {
+      "part_ref": "part:microduck:087d7a46a3ce4ca3",
+      "id": "ACTUATOR-X-1",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.606955190774846e-07,
+      "max_outward_radial_dot": -0.9998940450377382
+    },
+    {
+      "part_ref": "part:microduck:087d7a46a3ce4ca3",
+      "id": "ACTUATOR-X-2",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.606955190774846e-07,
+      "max_outward_radial_dot": -0.9998940450377382
+    },
+    {
+      "part_ref": "part:microduck:087d7a46a3ce4ca3",
+      "id": "ACTUATOR-X-3",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.606955190774846e-07,
+      "max_outward_radial_dot": -0.9998940450377382
+    },
+    {
+      "part_ref": "part:microduck:087d7a46a3ce4ca3",
+      "id": "ACTUATOR-X-4",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.606955190774846e-07,
+      "max_outward_radial_dot": -0.9998940450377382
+    },
+    {
+      "part_ref": "part:microduck:08c5ade0f3fd37db",
+      "id": "ACTUATOR-X-1",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.606955190774846e-07,
+      "max_outward_radial_dot": -0.9998940450377382
+    },
+    {
+      "part_ref": "part:microduck:08c5ade0f3fd37db",
+      "id": "ACTUATOR-X-2",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.606955190774846e-07,
+      "max_outward_radial_dot": -0.9998940450377382
+    },
+    {
+      "part_ref": "part:microduck:08c5ade0f3fd37db",
+      "id": "ACTUATOR-X-3",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.606955190774846e-07,
+      "max_outward_radial_dot": -0.9998940450377382
+    },
+    {
+      "part_ref": "part:microduck:08c5ade0f3fd37db",
+      "id": "ACTUATOR-X-4",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.606955190774846e-07,
+      "max_outward_radial_dot": -0.9998940450377382
+    },
+    {
+      "mesh_key": "seeed_bearing__configuration__22x16x4",
+      "geometry_sha256": "295ee68ed9766c91fe06d3a2a49d39f7c2f56cc943395d293afdeb013123435e",
+      "id": "BEARING-INNER-WALL",
+      "source_triangles": 144,
+      "closed_section": true,
+      "max_radius_residual_m": 7.614449233516243e-06,
+      "max_outward_radial_dot": -0.9998940987883632,
+      "finding": "The complete inner wall is nominal 16 mm; 16.4 mm entry boundaries are chamfers, not the fitted bearing diameter or a manufacturing tolerance."
+    }
+  ]
+}

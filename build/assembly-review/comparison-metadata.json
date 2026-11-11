@@ -1,0 +1,175 @@
+{
+  "requestedCamera": {
+    "position": [
+      0.45,
+      -0.55,
+      0.38
+    ],
+    "target": [
+      0,
+      0,
+      0.15
+    ]
+  },
+  "results": [
+    {
+      "name": "before",
+      "port": 8791,
+      "url": "http://127.0.0.1:8791/#explorer?workspace=microduck&snapshot=dkp-8857e0482824621ff8da&part=part%3Amicroduck%3A0820b4025f26a004&detail=interfaces&explode=1&labels=0&grid=1&camera=0.45%2C-0.55%2C0.38%2C0%2C0%2C0.15",
+      "snapshot": "dkp-8857e0482824621ff8da",
+      "viewFile": "C:\\Users\\scisa\\Desktop\\psop\\build\\assembly-review\\comparison-before.json",
+      "screenshot": "C:\\Users\\scisa\\Desktop\\psop\\build\\assembly-review\\comparison-before.png",
+      "camera": {
+        "position": [
+          0.45000000000000284,
+          -0.5499999999999541,
+          0.3799999999999898
+        ],
+        "target": [
+          0,
+          0,
+          0.15
+        ]
+      },
+      "layout": {
+        "viewport": {
+          "width": 1600,
+          "height": 900,
+          "devicePixelRatio": 1
+        },
+        "inspectorWidth": 360,
+        "preferredWidth": 360,
+        "inspector": {
+          "x": 1240,
+          "y": 135,
+          "width": 360,
+          "height": 740
+        },
+        "scene": {
+          "x": 406,
+          "y": 135,
+          "width": 834,
+          "height": 740
+        },
+        "sceneState": {
+          "sceneReady": "true",
+          "depthNear": "0.01",
+          "depthFar": "4",
+          "contactDepthPolicy": "opaque-actuator-priority",
+          "cameraFlight": "settled",
+          "interfaceNormals": "hidden",
+          "geometryNormals": "hidden",
+          "visibleInterfaceNormals": "0",
+          "visibleGeometryNormals": "0",
+          "renderedInstances": "70",
+          "sourceInstances": "70",
+          "visibleSupplementalInstances": "0",
+          "visibleAlternativeInstances": "0",
+          "supplementalInstances": "12",
+          "supplementalAuthority": "illustrative_unconfirmed",
+          "meshEdges": "hidden",
+          "sourceNormalPolicy": "edge_connected_angle_weighted",
+          "sourceFacetMapping": "identity_positions_and_facet_order",
+          "displayCreaseDegrees": "35",
+          "sourceNormalScope": "selected_and_related_parts",
+          "connectionSite": "",
+          "connectionMember": "",
+          "selectedStructureRefs": "",
+          "selectedFeatureRefs": "",
+          "connectionSiteHighlight": "",
+          "interfaceHighlight": "",
+          "highlightedInterface": "",
+          "observationHighlight": "",
+          "featureHighlight": "",
+          "holeHighlight": "",
+          "patternHighlight": "",
+          "siteHighlight": "",
+          "pinFitHighlight": "",
+          "mountHighlight": "",
+          "mountingInterfaceHighlight": "",
+          "installationHypothesisHighlight": "",
+          "slotHighlight": "",
+          "openingHighlight": "",
+          "passageHighlight": "",
+          "reviewHighlight": "",
+          "supplementHighlight": "",
+          "structureHighlight": "",
+          "reviewRegionHighlight": "",
+          "legacyGroupHighlight": "",
+          "legacyObservationHighlight": "",
+          "geometryAuthority": "",
+          "geometrySelectionKind": "",
+          "geometryFeatureTypes": "",
+          "geometryPeerOwners": "",
+          "selectedEntrySide": "",
+          "selectedEntryDirection": "",
+          "highlightedFeatures": "0",
+          "highlightedPlanes": "0",
+          "planeFeatures": "0",
+          "highlightedCylinders": "0",
+          "highlightedCones": "0",
+          "highlightedTriangles": "0",
+          "highlightedSupportTriangles": "0",
+          "highlightedSiteEntrances": "0",
+          "highlightedEntryRings": "0",
+          "sourcePlacement": "exploded",
+          "supplementalDisplayPlacement": "exploded",
+          "supplementalWorldPositions": "[{\"id\":\"supplement:microduck:818ac0f2dee9c3d6:reference-screw-9a31b01a95cfe09e\",\"position\":[-0.05759891336168894,-0.09739000145196919,0.013490797065022155],\"displayAnchor\":\"part:microduck:7f4fefc3c6de90f1\"},{\"id\":\"supplement:microduck:818ac0f2dee9c3d6:reference-screw-e45405b05af5158a\",\"position\":[-0.07359891344434585,-0.09739000145196919,0.013490797065022127],\"displayAnchor\":\"part:microduck:7f4fefc3c6de90f1\"},{\"id\":\"supplement:microduck:d9d7236003552b7a:axis-screw\",\"position\":[-0.018462248377283195,-0.1640000016629696,0.06356937164133178],\"displayAnchor\":\"part:microduck:e40b9945707505e1\"},{\"id\":\"supplement:microduck:d9d7236003552b7a:idler-cap\",\"position\":[-0.018462248377283195,-0.15860000166296964,0.06356937164133178],\"displayAnchor\":\"part:microduck:e40b9945707505e1\"},{\"id\":\"supplement:microduck:eb3b847d54e19743:axis-screw\",\"position\":[-0.05423933597459047,0.16400000166296963,0.04156937162481335],\"displayAnchor\":\"part:microduck:66c73aaad945a993\"},{\"id\":\"supplement:microduck:eb3b847d54e19743:idler-cap\",\"position\":[-0.054239335974590464,0.15860000166296964,0.04156937162481335],\"displayAnchor\":\"part:microduck:66c73aaad945a993\"},{\"id\":\"supplement:microduck:420da1d2ae89dcf9:reference-screw-9c3b70ed2f465298\",\"position\":[-0.07359891451881515,0.09739000145196916,0.013490797065022151],\"displayAnchor\":\"part:microduck:638f29b46b322e64\"},{\"id\":\"supplement:microduck:420da1d2ae89dcf9:reference-screw-b9c400a23841cc99\",\"position\":[-0.05759891443615821,0.09739000145196919,0.013490797065022124],\"displayAnchor\":\"part:microduck:638f29b46b322e64\"},{\"id\":\"supplement:microduck:559b800564efaa51:axis-screw\",\"position\":[-0.01846224837728325,0.16400000166296966,0.06356937164133178],\"displayAnchor\":\"part:microduck:66c73aaad945a993\"},{\"id\":\"supplement:microduck:559b800564efaa51:idler-cap\",\"position\":[-0.01846224837728325,0.15860000166296964,0.06356937164133178],\"displayAnchor\":\"part:microduck:66c73aaad945a993\"},{\"id\":\"supplement:microduck:be212107b92437b8:axis-screw\",\"position\":[-0.05423933597459038,-0.1640000016629696,0.04156937162481336],\"displayAnchor\":\"part:microduck:e40b9945707505e1\"},{\"id\":\"supplement:microduck:be212107b92437b8:idler-cap\",\"position\":[-0.05423933597459038,-0.15860000166296961,0.04156937162481336],\"displayAnchor\":\"part:microduck:e40b9945707505e1\"}]"
+        }
+      },
+      "errors": []
+    },
+    {
+      "name": "after",
+      "port": 8780,
+      "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-700958f225110d20315d&part=part%3Amicroduck%3A0820b4025f26a004&detail=interfaces&explode=1&labels=0&grid=1&camera=0.45%2C-0.55%2C0.38%2C0%2C0%2C0.15",
+      "snapshot": "dkp-700958f225110d20315d",
+      "viewFile": "C:\\Users\\scisa\\Desktop\\psop\\build\\assembly-review\\comparison-after.json",
+      "screenshot": "C:\\Users\\scisa\\Desktop\\psop\\build\\assembly-review\\comparison-after.png",
+      "camera": {
+        "position": [
+          0.45000000000000284,
+          -0.5499999999999539,
+          0.3799999999999898
+        ],
+        "target": [
+          0,
+          0,
+          0.15
+        ]
+      },
+      "layout": {
+        "viewport": {
+          "width": 1600,
+          "height": 900,
+          "devicePixelRatio": 1
+        },
+        "inspectorWidth": 360,
+        "preferredWidth": 360,
+        "inspector": {
+          "x": 1240,
+          "y": 135,
+          "width": 360,
+          "height": 740
+        },
+        "scene": {
+          "x": 406,
+          "y": 135,
+          "width": 834,
+          "height": 740
+        },
+        "sceneState": {
+          "sceneReady": "true",
+          "renderCount": "4",
+          "cameraFlight": "settled",
+          "inspectionActive": "false",
+          "sourcePlacement": "exploded",
+          "interfaceId": "",
+          "memberRefs": "",
+          "selectedFeatures": ""
+        }
+      },
+      "errors": []
+    }
+  ]
+}

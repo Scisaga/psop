@@ -1,0 +1,167 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <title>Qwen3-ASR：为什么声音要先被编码</title>
+  <desc>PSOP 第 19 / 65 页教学图；文字与方法图保持可编辑。Microduck 视图由官方来源 STL 和 robot_walk.xml 的 source assembly 渲染，配置为 walk-model-reference、MCD-000001。alpha 软件任务身份与该几何参考的实物对应尚未核验；MD-01、S03、J01 和 EG 为教学定义。</desc>
+  <defs>
+    <linearGradient id="steel" x1="0" y1="0" x2="0.9" y2="1">
+      <stop stop-color="#EAF0F3" />
+      <stop offset=".37" stop-color="#A9BBC6" />
+      <stop offset=".63" stop-color="#F1F5F5" />
+      <stop offset="1" stop-color="#859CA9" />
+    </linearGradient>
+  </defs>
+  <g id="base" transform="translate(0 0)">
+    <rect x="0" y="0" width="1600" height="900" rx="0" fill="#FCFDFB" />
+    <rect x="0" y="0" width="9" height="900" rx="0" fill="#14877D" />
+    <path d="M64 62 L1536 62" stroke="#D7E1E7" fill="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+    <text x="64.000" y="41.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="18.999" font-weight="400" data-text="PSOP  /  四个模型与多模态协作" aria-label="PSOP  /  四个模型与多模态协作" xml:space="preserve" textLength="273.541" lengthAdjust="spacingAndGlyphs" fill="#526578">PSOP  /  四个模型与多模态协作</text>
+    <text x="1355.287" y="41.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="18.999" font-weight="400" data-text="LESSON 02  ·  19/65" aria-label="LESSON 02  ·  19/65" xml:space="preserve" textLength="180.021" lengthAdjust="spacingAndGlyphs" fill="#526578">LESSON 02  ·  19/65</text>
+  </g>
+  <g id="title" transform="translate(0 0)">
+    <text x="64.000" y="125.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="48.001" font-weight="700" data-text="Qwen3-ASR：为什么声音要先被编码" aria-label="Qwen3-ASR：为什么声音要先被编码" xml:space="preserve" textLength="816.235" lengthAdjust="spacingAndGlyphs" fill="#18344C">Qwen3-ASR：为什么声音要先被编码</text>
+    <text x="64.000" y="177.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="24.001" font-weight="400" data-text="语音识别要把随时间变化的声音转成可生成文字的表示。Qwen3-ASR 使用 AuT 音频编码器、投影层和 Qwen3 语言模型，按音频条件逐" aria-label="语音识别要把随时间变化的声音转成可生成文字的表示。Qwen3-ASR 使用 AuT 音频编码器、投影层和 Qwen3 语言模型，按音频条件逐" xml:space="preserve" textLength="1451.708" lengthAdjust="spacingAndGlyphs" fill="#526578">语音识别要把随时间变化的声音转成可生成文字的表示。Qwen3-ASR 使用 AuT 音频编码器、投影层和 Qwen3 语言模型，按音频条件逐</text>
+    <text x="64.000" y="209.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="24.001" font-weight="400" data-text="步产生转写，而不是简单匹配声音和汉字。" aria-label="步产生转写，而不是简单匹配声音和汉字。" xml:space="preserve" textLength="456.001" lengthAdjust="spacingAndGlyphs" fill="#526578">步产生转写，而不是简单匹配声音和汉字。</text>
+  </g>
+  <g id="beat_01" transform="translate(0 0)">
+    <g id="illustration" transform="translate(64 237)">
+      <text x="0.000" y="28.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.999" font-weight="700" data-text="① 声音：连续采样的波形" aria-label="① 声音：连续采样的波形" xml:space="preserve" textLength="293.743" lengthAdjust="spacingAndGlyphs" fill="#326BB8">① 声音：连续采样的波形</text>
+      <path d="M0 91.0 L415.6666666666667 91.0" stroke="#D7E1E7" fill="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M0.00 91.00 L1.00 95.82 L2.00 99.96 L3.00 102.74 L4.00 103.70 L5.00 102.65 L6.00 99.73 L7.00 95.37 L8.00 90.23 L9.00 85.13 L10.00 80.88 L11.00 78.16 L12.00 77.44 L13.00 78.87 L14.00 82.26 L15.00 87.10 L16.00 92.64 L17.00 98.03 L18.00 102.39 L19.00 105.01 L20.00 105.45 L21.00 103.59 L22.00 99.70 L23.00 94.34 L24.00 88.36 L25.00 82.69 L26.00 78.24 L27.00 75.75 L28.00 75.64 L29.00 77.98 L30.00 82.43 L31.00 88.33 L32.00 94.76 L33.00 100.71 L34.00 105.22 L35.00 107.54 L36.00 107.27 L37.00 104.40 L38.00 99.34 L39.00 92.86 L40.00 85.97 L41.00 79.76 L42.00 75.22 L43.00 73.12 L44.00 73.83 L45.00 77.29 L46.00 83.00 L47.00 90.08 L48.00 97.43 L49.00 103.89 L50.00 108.41 L51.00 110.23 L52.00 109.02 L53.00 104.92 L54.00 98.53 L55.00 90.82 L56.00 83.02 L57.00 76.35 L58.00 71.90 L59.00 70.41 L60.00 72.19 L61.00 76.98 L62.00 84.10 L63.00 92.43 L64.00 100.68 L65.00 107.52 L66.00 111.84 L67.00 112.92 L68.00 110.52 L69.00 104.97 L70.00 97.11 L71.00 88.15 L72.00 79.50 L73.00 72.54 L74.00 68.40 L75.00 67.80 L76.00 70.89 L77.00 77.22 L78.00 85.85 L79.00 95.43 L80.00 104.45 L81.00 111.47 L82.00 115.34 L83.00 115.39 L84.00 111.56 L85.00 104.40 L86.00 95.00 L87.00 84.83 L88.00 75.49 L89.00 68.48 L90.00 64.96 L91.00 65.53 L92.00 70.16 L93.00 78.17 L94.00 88.33 L95.00 99.06 L96.00 108.65 L97.00 115.56 L98.00 118.66 L99.00 117.41 L100.00 111.93 L101.00 103.06 L102.00 92.16 L103.00 80.93 L104.00 71.16 L105.00 64.42 L106.00 61.83 L107.00 63.83 L108.00 70.18 L109.00 79.92 L110.00 91.53 L111.00 103.19 L112.00 113.05 L113.00 119.52 L114.00 121.54 L115.00 118.72 L116.00 111.47 L117.00 100.89 L118.00 88.62 L119.00 76.60 L120.00 66.75 L121.00 60.63 L122.00 59.28 L123.00 62.95 L124.00 71.11 L125.00 82.51 L126.00 95.36 L127.00 107.65 L128.00 117.40 L129.00 123.06 L130.00 123.68 L131.00 119.12 L132.00 110.06 L133.00 97.90 L134.00 84.54 L135.00 72.09 L136.00 62.54 L137.00 57.43 L138.00 57.60 L139.00 63.07 L140.00 73.01 L141.00 85.87 L142.00 99.64 L143.00 112.14 L144.00 121.38 L145.00 125.86 L146.00 124.85 L147.00 118.47 L148.00 107.69 L149.00 94.21 L150.00 80.13 L151.00 67.69 L152.00 58.87 L153.00 55.10 L154.00 56.99 L155.00 64.27 L156.00 75.83 L157.00 89.84 L158.00 104.11 L159.00 116.37 L160.00 124.66 L161.00 127.67 L162.00 124.88 L163.00 116.72 L164.00 104.46 L165.00 90.02 L166.00 75.69 L167.00 63.73 L168.00 56.05 L169.00 53.87 L170.00 57.56 L171.00 66.55 L172.00 79.43 L173.00 94.17 L174.00 108.44 L175.00 119.99 L176.00 126.97 L177.00 128.28 L178.00 123.70 L179.00 113.94 L180.00 100.54 L181.00 85.63 L182.00 71.54 L183.00 60.52 L184.00 54.31 L185.00 53.89 L186.00 59.34 L187.00 69.78 L188.00 83.58 L189.00 98.55 L190.00 112.32 L191.00 122.72 L192.00 128.10 L193.00 127.62 L194.00 121.36 L195.00 110.31 L196.00 96.23 L197.00 81.35 L198.00 68.01 L199.00 58.32 L200.00 53.81 L201.00 55.17 L202.00 62.19 L203.00 73.73 L204.00 87.97 L205.00 102.65 L206.00 115.45 L207.00 124.35 L208.00 127.97 L209.00 125.74 L210.00 118.05 L211.00 106.11 L212.00 91.85 L213.00 77.50 L214.00 65.34 L215.00 57.28 L216.00 54.57 L217.00 57.61 L218.00 65.90 L219.00 78.10 L220.00 92.28 L221.00 106.18 L222.00 117.61 L223.00 124.79 L224.00 126.60 L225.00 122.80 L226.00 114.01 L227.00 101.66 L228.00 87.70 L229.00 74.35 L230.00 63.71 L231.00 57.44 L232.00 56.50 L233.00 60.99 L234.00 70.17 L235.00 82.57 L236.00 96.19 L237.00 108.90 L238.00 118.69 L239.00 124.05 L240.00 124.16 L241.00 119.06 L242.00 109.58 L243.00 97.27 L244.00 84.07 L245.00 72.08 L246.00 63.18 L247.00 58.73 L248.00 59.39 L249.00 65.02 L250.00 74.68 L251.00 86.81 L252.00 99.48 L253.00 110.69 L254.00 118.69 L255.00 122.26 L256.00 120.88 L257.00 114.82 L258.00 105.08 L259.00 93.23 L260.00 81.16 L261.00 70.77 L262.00 63.68 L263.00 60.96 L264.00 62.98 L265.00 69.39 L266.00 79.11 L267.00 90.58 L268.00 101.99 L269.00 111.53 L270.00 117.73 L271.00 119.65 L272.00 117.06 L273.00 110.41 L274.00 100.79 L275.00 89.76 L276.00 79.07 L277.00 70.39 L278.00 65.06 L279.00 63.87 L280.00 66.96 L281.00 73.77 L282.00 83.19 L283.00 93.71 L284.00 103.66 L285.00 111.48 L286.00 115.98 L287.00 116.49 L288.00 113.00 L289.00 106.11 L290.00 96.95 L291.00 86.99 L292.00 77.81 L293.00 70.83 L294.00 67.12 L295.00 67.20 L296.00 71.02 L297.00 77.91 L298.00 86.75 L299.00 96.12 L300.00 104.53 L301.00 110.70 L302.00 113.68 L303.00 113.06 L304.00 108.99 L305.00 102.17 L306.00 93.71 L307.00 84.95 L308.00 77.29 L309.00 71.90 L310.00 69.59 L311.00 70.67 L312.00 74.92 L313.00 81.62 L314.00 89.68 L315.00 97.80 L316.00 104.73 L317.00 109.39 L318.00 111.09 L319.00 109.61 L320.00 105.25 L321.00 98.72 L322.00 91.10 L323.00 83.60 L324.00 77.38 L325.00 73.40 L326.00 72.25 L327.00 74.05 L328.00 78.48 L329.00 84.79 L330.00 91.96 L331.00 98.86 L332.00 104.40 L333.00 107.75 L334.00 108.42 L335.00 106.35 L336.00 101.91 L337.00 95.84 L338.00 89.12 L339.00 82.82 L340.00 77.90 L341.00 75.13 L342.00 74.89 L343.00 77.17 L344.00 81.58 L345.00 87.39 L346.00 93.66 L347.00 99.40 L348.00 103.72 L349.00 105.98 L350.00 105.85 L351.00 103.40 L352.00 99.05 L353.00 93.52 L354.00 87.69 L355.00 82.48 L356.00 78.70 L357.00 76.91 L358.00 77.35 L359.00 79.93 L360.00 84.19 L361.00 89.45 L362.00 94.85 L363.00 99.56 L364.00 102.85 L365.00 104.22 L366.00 103.51 L367.00 100.84 L368.00 96.68 L369.00 91.70 L370.00 86.70 L371.00 82.45 L372.00 79.62 L373.00 78.61 L374.00 79.56 L375.00 82.29 L376.00 86.33 L377.00 91.04 L378.00 95.67 L379.00 99.49 L380.00 101.91 L381.00 102.59 L382.00 101.45 L383.00 98.68 L384.00 94.76 L385.00 90.30 L386.00 86.03 L387.00 82.60 L388.00 80.55 L389.00 80.16 L390.00 81.47 L391.00 84.26 L392.00 88.06 L393.00 92.27 L394.00 96.21 L395.00 99.28 L396.00 101.01 L397.00 101.14 L398.00 99.68 L399.00 96.88 L400.00 93.20 L401.00 89.23 L402.00 85.58 L403.00 82.84 L404.00 81.41 L405.00 81.51 L406.00 83.09 L407.00 85.89 L408.00 89.46 L409.00 93.22 L410.00 96.58 L411.00 99.03 L412.00 100.19 L413.00 99.89 L414.00 98.20 L415.00 95.40" stroke="#326BB8" fill="none" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" />
+      <text x="502.667" y="28.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.999" font-weight="700" data-text="② AuT：提取声音表示" aria-label="② AuT：提取声音表示" xml:space="preserve" textLength="268.403" lengthAdjust="spacingAndGlyphs" fill="#14877D">② AuT：提取声音表示</text>
+      <rect x="515.6666666666667" y="49" width="22" height="11" rx="1" fill="#4b9a91" />
+      <rect x="540.6666666666667" y="49" width="22" height="11" rx="1" fill="#338c82" />
+      <rect x="565.6666666666667" y="49" width="22" height="11" rx="1" fill="#238379" />
+      <rect x="590.6666666666667" y="49" width="22" height="11" rx="1" fill="#1f8176" />
+      <rect x="615.6666666666667" y="49" width="22" height="11" rx="1" fill="#29877c" />
+      <rect x="640.6666666666667" y="49" width="22" height="11" rx="1" fill="#40948a" />
+      <rect x="665.6666666666667" y="49" width="22" height="11" rx="1" fill="#5ea59c" />
+      <rect x="690.6666666666667" y="49" width="22" height="11" rx="1" fill="#7fb8b0" />
+      <rect x="715.6666666666667" y="49" width="22" height="11" rx="1" fill="#9ac8c0" />
+      <rect x="740.6666666666667" y="49" width="22" height="11" rx="1" fill="#acd2cb" />
+      <rect x="765.6666666666667" y="49" width="22" height="11" rx="1" fill="#b1d5ce" />
+      <rect x="790.6666666666667" y="49" width="22" height="11" rx="1" fill="#aad1ca" />
+      <rect x="815.6666666666667" y="49" width="22" height="11" rx="1" fill="#9bc8c1" />
+      <rect x="840.6666666666667" y="49" width="22" height="11" rx="1" fill="#89beb6" />
+      <rect x="515.6666666666667" y="63" width="22" height="11" rx="1" fill="#29877c" />
+      <rect x="540.6666666666667" y="63" width="22" height="11" rx="1" fill="#1b7f74" />
+      <rect x="565.6666666666667" y="63" width="22" height="11" rx="1" fill="#1c7f74" />
+      <rect x="590.6666666666667" y="63" width="22" height="11" rx="1" fill="#2a877d" />
+      <rect x="615.6666666666667" y="63" width="22" height="11" rx="1" fill="#41958b" />
+      <rect x="640.6666666666667" y="63" width="22" height="11" rx="1" fill="#5da49b" />
+      <rect x="665.6666666666667" y="63" width="22" height="11" rx="1" fill="#76b3ab" />
+      <rect x="690.6666666666667" y="63" width="22" height="11" rx="1" fill="#87bdb5" />
+      <rect x="715.6666666666667" y="63" width="22" height="11" rx="1" fill="#8dc0b9" />
+      <rect x="740.6666666666667" y="63" width="22" height="11" rx="1" fill="#88bdb5" />
+      <rect x="765.6666666666667" y="63" width="22" height="11" rx="1" fill="#7ab5ad" />
+      <rect x="790.6666666666667" y="63" width="22" height="11" rx="1" fill="#69aca3" />
+      <rect x="815.6666666666667" y="63" width="22" height="11" rx="1" fill="#5ba49b" />
+      <rect x="840.6666666666667" y="63" width="22" height="11" rx="1" fill="#56a097" />
+      <rect x="515.6666666666667" y="77" width="22" height="11" rx="1" fill="#2e8a7f" />
+      <rect x="540.6666666666667" y="77" width="22" height="11" rx="1" fill="#338d82" />
+      <rect x="565.6666666666667" y="77" width="22" height="11" rx="1" fill="#42958c" />
+      <rect x="590.6666666666667" y="77" width="22" height="11" rx="1" fill="#57a198" />
+      <rect x="615.6666666666667" y="77" width="22" height="11" rx="1" fill="#6cada4" />
+      <rect x="640.6666666666667" y="77" width="22" height="11" rx="1" fill="#79b5ac" />
+      <rect x="665.6666666666667" y="77" width="22" height="11" rx="1" fill="#7cb6ae" />
+      <rect x="690.6666666666667" y="77" width="22" height="11" rx="1" fill="#74b2aa" />
+      <rect x="715.6666666666667" y="77" width="22" height="11" rx="1" fill="#63a89f" />
+      <rect x="740.6666666666667" y="77" width="22" height="11" rx="1" fill="#4f9c93" />
+      <rect x="765.6666666666667" y="77" width="22" height="11" rx="1" fill="#3c9288" />
+      <rect x="790.6666666666667" y="77" width="22" height="11" rx="1" fill="#328c82" />
+      <rect x="815.6666666666667" y="77" width="22" height="11" rx="1" fill="#348d83" />
+      <rect x="840.6666666666667" y="77" width="22" height="11" rx="1" fill="#43968c" />
+      <rect x="515.6666666666667" y="91" width="22" height="11" rx="1" fill="#5ea59c" />
+      <rect x="540.6666666666667" y="91" width="22" height="11" rx="1" fill="#6eaea6" />
+      <rect x="565.6666666666667" y="91" width="22" height="11" rx="1" fill="#7fb8b0" />
+      <rect x="590.6666666666667" y="91" width="22" height="11" rx="1" fill="#89beb6" />
+      <rect x="615.6666666666667" y="91" width="22" height="11" rx="1" fill="#89beb6" />
+      <rect x="640.6666666666667" y="91" width="22" height="11" rx="1" fill="#7eb7af" />
+      <rect x="665.6666666666667" y="91" width="22" height="11" rx="1" fill="#69aba3" />
+      <rect x="690.6666666666667" y="91" width="22" height="11" rx="1" fill="#4e9c93" />
+      <rect x="715.6666666666667" y="91" width="22" height="11" rx="1" fill="#348d83" />
+      <rect x="740.6666666666667" y="91" width="22" height="11" rx="1" fill="#218378" />
+      <rect x="765.6666666666667" y="91" width="22" height="11" rx="1" fill="#1b7f74" />
+      <rect x="790.6666666666667" y="91" width="22" height="11" rx="1" fill="#228378" />
+      <rect x="815.6666666666667" y="91" width="22" height="11" rx="1" fill="#368f84" />
+      <rect x="840.6666666666667" y="91" width="22" height="11" rx="1" fill="#539f96" />
+      <rect x="515.6666666666667" y="105" width="22" height="11" rx="1" fill="#a0cbc4" />
+      <rect x="540.6666666666667" y="105" width="22" height="11" rx="1" fill="#abd1cb" />
+      <rect x="565.6666666666667" y="105" width="22" height="11" rx="1" fill="#add2cb" />
+      <rect x="590.6666666666667" y="105" width="22" height="11" rx="1" fill="#a1cbc4" />
+      <rect x="615.6666666666667" y="105" width="22" height="11" rx="1" fill="#8abeb7" />
+      <rect x="640.6666666666667" y="105" width="22" height="11" rx="1" fill="#6bada4" />
+      <rect x="665.6666666666667" y="105" width="22" height="11" rx="1" fill="#4b9a91" />
+      <rect x="690.6666666666667" y="105" width="22" height="11" rx="1" fill="#308b81" />
+      <rect x="715.6666666666667" y="105" width="22" height="11" rx="1" fill="#208277" />
+      <rect x="740.6666666666667" y="105" width="22" height="11" rx="1" fill="#1e8076" />
+      <rect x="765.6666666666667" y="105" width="22" height="11" rx="1" fill="#29877c" />
+      <rect x="790.6666666666667" y="105" width="22" height="11" rx="1" fill="#3e9389" />
+      <rect x="815.6666666666667" y="105" width="22" height="11" rx="1" fill="#58a298" />
+      <rect x="840.6666666666667" y="105" width="22" height="11" rx="1" fill="#70afa7" />
+      <rect x="515.6666666666667" y="119" width="22" height="11" rx="1" fill="#d0e6e1" />
+      <rect x="540.6666666666667" y="119" width="22" height="11" rx="1" fill="#cae2dd" />
+      <rect x="565.6666666666667" y="119" width="22" height="11" rx="1" fill="#b6d7d1" />
+      <rect x="590.6666666666667" y="119" width="22" height="11" rx="1" fill="#99c7bf" />
+      <rect x="615.6666666666667" y="119" width="22" height="11" rx="1" fill="#77b3ab" />
+      <rect x="640.6666666666667" y="119" width="22" height="11" rx="1" fill="#58a299" />
+      <rect x="665.6666666666667" y="119" width="22" height="11" rx="1" fill="#42958b" />
+      <rect x="690.6666666666667" y="119" width="22" height="11" rx="1" fill="#378f85" />
+      <rect x="715.6666666666667" y="119" width="22" height="11" rx="1" fill="#3a9187" />
+      <rect x="740.6666666666667" y="119" width="22" height="11" rx="1" fill="#48988f" />
+      <rect x="765.6666666666667" y="119" width="22" height="11" rx="1" fill="#5ba39a" />
+      <rect x="790.6666666666667" y="119" width="22" height="11" rx="1" fill="#6eaea6" />
+      <rect x="815.6666666666667" y="119" width="22" height="11" rx="1" fill="#7ab5ad" />
+      <rect x="840.6666666666667" y="119" width="22" height="11" rx="1" fill="#7db7af" />
+      <text x="1006.333" y="28.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.999" font-weight="700" data-text="③ 投影 → Qwen3 → 文字" aria-label="③ 投影 → Qwen3 → 文字" xml:space="preserve" textLength="312.152" lengthAdjust="spacingAndGlyphs" fill="#7756AA">③ 投影 → Qwen3 → 文字</text>
+      <rect x="1009.3333333333334" y="80" width="100" height="47" rx="7" fill="#EEE7F5" />
+      <text x="1035.704" y="111.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="700" data-text="S03" aria-label="S03" xml:space="preserve" textLength="45.723" lengthAdjust="spacingAndGlyphs" fill="#7756AA">S03</text>
+      <path d="M1059.3333333333335 78 Q1115.3333333333335 29 1177.3333333333335 78" stroke="#7756AA" fill="none" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" />
+      <rect x="1127.3333333333335" y="80" width="100" height="47" rx="7" fill="#EEE7F5" />
+      <text x="1154.333" y="111.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="700" data-text="暂未" aria-label="暂未" xml:space="preserve" textLength="45.999" lengthAdjust="spacingAndGlyphs" fill="#7756AA">暂未</text>
+      <path d="M1177.3333333333335 78 Q1233.3333333333335 29 1295.3333333333335 78" stroke="#7756AA" fill="none" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" />
+      <rect x="1245.3333333333335" y="80" width="100" height="47" rx="7" fill="#EEE7F5" />
+      <text x="1272.333" y="111.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="700" data-text="检查" aria-label="检查" xml:space="preserve" textLength="45.999" lengthAdjust="spacingAndGlyphs" fill="#7756AA">检查</text>
+      <text x="1010.333" y="151.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="18.999" font-weight="400" data-text="利用前面的输入生成后续片段" aria-label="利用前面的输入生成后续片段" xml:space="preserve" textLength="246.999" lengthAdjust="spacingAndGlyphs" fill="#526578">利用前面的输入生成后续片段</text>
+      <rect x="0.0" y="160" width="440.6666666666667" height="111" rx="12" fill="#FFFFFF" stroke="#D7E1E7" stroke-width="1.5" />
+      <rect x="0.0" y="160" width="4" height="111" rx="2" fill="#326BB8" />
+      <text x="20.000" y="199.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.000" font-weight="700" data-text="音频特征" aria-label="音频特征" xml:space="preserve" textLength="100.000" lengthAdjust="spacingAndGlyphs" fill="#326BB8">音频特征</text>
+      <text x="20.000" y="238.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.000" font-weight="400" data-text="从振动中组织可计算的输入" aria-label="从振动中组织可计算的输入" xml:space="preserve" textLength="264.000" lengthAdjust="spacingAndGlyphs" fill="#526578">从振动中组织可计算的输入</text>
+      <path d="M440.6666666666667 214 L490.6666666666667 214" stroke="#326BB8" fill="none" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M481.6621956431399 218.3496553411123 L490.6666666666667 214 L481.6621956431399 209.6503446588877" stroke="#326BB8" fill="none" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" />
+      <rect x="490.6666666666667" y="160" width="440.6666666666667" height="111" rx="12" fill="#FFFFFF" stroke="#D7E1E7" stroke-width="1.5" />
+      <rect x="490.6666666666667" y="160" width="4" height="111" rx="2" fill="#14877D" />
+      <text x="510.667" y="199.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.000" font-weight="700" data-text="AuT 编码 + 投影" aria-label="AuT 编码 + 投影" xml:space="preserve" textLength="192.004" lengthAdjust="spacingAndGlyphs" fill="#14877D">AuT 编码 + 投影</text>
+      <text x="510.667" y="238.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.000" font-weight="400" data-text="声音表示映射到模型输入空间" aria-label="声音表示映射到模型输入空间" xml:space="preserve" textLength="286.000" lengthAdjust="spacingAndGlyphs" fill="#526578">声音表示映射到模型输入空间</text>
+      <path d="M931.3333333333334 214 L981.3333333333334 214" stroke="#14877D" fill="none" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M972.3288623098066 218.3496553411123 L981.3333333333334 214 L972.3288623098066 209.6503446588877" stroke="#14877D" fill="none" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" />
+      <rect x="981.3333333333334" y="160" width="440.6666666666667" height="111" rx="12" fill="#FFFFFF" stroke="#D7E1E7" stroke-width="1.5" />
+      <rect x="981.3333333333334" y="160" width="4" height="111" rx="2" fill="#7756AA" />
+      <text x="1001.333" y="199.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.000" font-weight="700" data-text="Qwen3 条件生成" aria-label="Qwen3 条件生成" xml:space="preserve" textLength="195.362" lengthAdjust="spacingAndGlyphs" fill="#7756AA">Qwen3 条件生成</text>
+      <text x="1001.333" y="238.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.000" font-weight="400" data-text="依据音频产生转写片段" aria-label="依据音频产生转写片段" xml:space="preserve" textLength="220.000" lengthAdjust="spacingAndGlyphs" fill="#526578">依据音频产生转写片段</text>
+      <rect x="30" y="288" width="383.755859375" height="38" rx="5" fill="#EAF1FA" stroke="#326BB8" stroke-width="1.2" />
+      <text x="42.000" y="313.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.000" font-weight="700" data-text="输出：S03 的 J01 暂未复检，先申请复检。" aria-label="输出：S03 的 J01 暂未复检，先申请复检。" xml:space="preserve" textLength="359.756" lengthAdjust="spacingAndGlyphs" fill="#326BB8">输出：S03 的 J01 暂未复检，先申请复检。</text>
+      <text x="1111.000" y="316.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="700" data-text="保留“未”字，才能保留任务语义" aria-label="保留“未”字，才能保留任务语义" xml:space="preserve" textLength="344.999" lengthAdjust="spacingAndGlyphs" fill="#B9752E">保留“未”字，才能保留任务语义</text>
+    </g>
+  </g>
+  <g id="beat_02" transform="translate(0 0)">
+    <text x="64.000" y="617.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.000" font-weight="700" data-text="编码器提取声音信息" aria-label="编码器提取声音信息" xml:space="preserve" textLength="225.000" lengthAdjust="spacingAndGlyphs" fill="#326BB8">编码器提取声音信息</text>
+    <text x="64.000" y="656.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="音频特征描述局部声音变化，编码器将其组" aria-label="音频特征描述局部声音变化，编码器将其组" xml:space="preserve" textLength="436.999" lengthAdjust="spacingAndGlyphs" fill="#526578">音频特征描述局部声音变化，编码器将其组</text>
+    <text x="64.000" y="686.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="织成更高层表示。图中的波形与特征网格用" aria-label="织成更高层表示。图中的波形与特征网格用" xml:space="preserve" textLength="436.999" lengthAdjust="spacingAndGlyphs" fill="#526578">织成更高层表示。图中的波形与特征网格用</text>
+    <text x="64.000" y="716.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="于解释处理层次。" aria-label="于解释处理层次。" xml:space="preserve" textLength="183.999" lengthAdjust="spacingAndGlyphs" fill="#526578">于解释处理层次。</text>
+    <text x="570.000" y="617.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.000" font-weight="700" data-text="投影层连接表示空间" aria-label="投影层连接表示空间" xml:space="preserve" textLength="225.000" lengthAdjust="spacingAndGlyphs" fill="#14877D">投影层连接表示空间</text>
+    <text x="570.000" y="656.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="声音表示与语言模型需要的输入形式不同，" aria-label="声音表示与语言模型需要的输入形式不同，" xml:space="preserve" textLength="436.999" lengthAdjust="spacingAndGlyphs" fill="#526578">声音表示与语言模型需要的输入形式不同，</text>
+    <text x="570.000" y="686.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="投影帮助连接两者，让生成依赖录音内容。" aria-label="投影帮助连接两者，让生成依赖录音内容。" xml:space="preserve" textLength="436.999" lengthAdjust="spacingAndGlyphs" fill="#526578">投影帮助连接两者，让生成依赖录音内容。</text>
+    <text x="1076.000" y="617.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25.000" font-weight="700" data-text="语言生成仍需现场测试" aria-label="语言生成仍需现场测试" xml:space="preserve" textLength="250.000" lengthAdjust="spacingAndGlyphs" fill="#7756AA">语言生成仍需现场测试</text>
+    <text x="1076.000" y="656.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="0.6B 与 1.7B 是模型命名规格，完整资源还" aria-label="0.6B 与 1.7B 是模型命名规格，完整资源还" xml:space="preserve" textLength="436.303" lengthAdjust="spacingAndGlyphs" fill="#526578">0.6B 与 1.7B 是模型命名规格，完整资源还</text>
+    <text x="1076.000" y="686.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="含音频部件与运行开销。噪声、口音、术语" aria-label="含音频部件与运行开销。噪声、口音、术语" xml:space="preserve" textLength="436.999" lengthAdjust="spacingAndGlyphs" fill="#526578">含音频部件与运行开销。噪声、口音、术语</text>
+    <text x="1076.000" y="716.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.999" font-weight="400" data-text="与数字都要单独检查。" aria-label="与数字都要单独检查。" xml:space="preserve" textLength="229.999" lengthAdjust="spacingAndGlyphs" fill="#526578">与数字都要单独检查。</text>
+  </g>
+  <g id="beat_03" transform="translate(0 0)">
+    <path d="M64 760 L1536 760" stroke="#D7E1E7" fill="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+    <rect x="64" y="782" width="4" height="57" rx="2" fill="#14877D" />
+    <text x="84.000" y="798.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22.000" font-weight="400" data-text="当设备声掩盖“未”字时，模型可能改变否定语义。因此工业 ASR 要重视“暂未复检”“已经复检”这类决定任务状态的表达。" aria-label="当设备声掩盖“未”字时，模型可能改变否定语义。因此工业 ASR 要重视“暂未复检”“已经复检”这类决定任务状态的表达。" xml:space="preserve" textLength="1243.559" lengthAdjust="spacingAndGlyphs" fill="#18344C">当设备声掩盖“未”字时，模型可能改变否定语义。因此工业 ASR 要重视“暂未复检”“已经复检”这类决定任务状态的表达。</text>
+  </g>
+  <g id="footer" transform="translate(0 0)">
+    <text x="64.000" y="877.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="17.000" font-weight="400" data-text="学习手册 §06.8.1" aria-label="学习手册 §06.8.1" xml:space="preserve" textLength="128.773" lengthAdjust="spacingAndGlyphs" fill="#8898A8">学习手册 §06.8.1</text>
+    <text x="1247.000" y="877.000" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="17.000" font-weight="400" data-text="工程案例与数值示意的来源见逐页备注" aria-label="工程案例与数值示意的来源见逐页备注" xml:space="preserve" textLength="289.000" lengthAdjust="spacingAndGlyphs" fill="#8898A8">工程案例与数值示意的来源见逐页备注</text>
+  </g>
+</svg>

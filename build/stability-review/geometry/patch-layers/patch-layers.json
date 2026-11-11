@@ -1,0 +1,536 @@
+{
+  "records": [
+    {
+      "target": "right-y42-z52",
+      "kind": "hole",
+      "id": "logical-hole:microduck:9d70b219a5533bf1:04f94c3a0b748d4f",
+      "mode": "source-only",
+      "image": "right-y42-z52-04f94c3a0b748d4f-source-only.png",
+      "url": "http://127.0.0.1:8791/#explorer?workspace=microduck&snapshot=dkp-1c8eeda600249ce33b99&part=part%3Amicroduck%3A9d70b219a5533bf1&hole=logical-hole%3Amicroduck%3A9d70b219a5533bf1%3A04f94c3a0b748d4f&explode=0.00&detail=geometry&view=iso&isolate=part%3Amicroduck%3A9d70b219a5533bf1&labels=0&grid=0&supplements=0&camera=-0.0335874%2C0.0172000%2C0.1558825%2C-0.0380000%2C-0.0008000%2C0.1550000",
+      "camera": {
+        "position": [
+          -0.029676121578137676,
+          0.03315499514878348,
+          0.15666473795660008
+        ],
+        "target": [
+          -0.038,
+          -0.0008,
+          0.155
+        ]
+      },
+      "objects": [
+        {
+          "type": "LineLoop",
+          "userData": {
+            "entryRing": true
+          },
+          "triangles": 32,
+          "material": {
+            "depthWrite": false,
+            "depthTest": true,
+            "polygonOffset": false,
+            "polygonOffsetFactor": 0,
+            "polygonOffsetUnits": 0
+          }
+        },
+        {
+          "type": "LineLoop",
+          "userData": {
+            "entryRing": true
+          },
+          "triangles": 32,
+          "material": {
+            "depthWrite": false,
+            "depthTest": true,
+            "polygonOffset": false,
+            "polygonOffsetFactor": 0,
+            "polygonOffsetUnits": 0
+          }
+        },
+        {
+          "type": "LineSegments",
+          "userData": {},
+          "triangles": 0.6666666666666666,
+          "material": {
+            "depthWrite": false,
+            "depthTest": true,
+            "polygonOffset": false,
+            "polygonOffsetFactor": 0,
+            "polygonOffsetUnits": 0
+          }
+        },
+        {
+          "type": "Mesh",
+          "userData": {},
+          "triangles": 144,
+          "material": {
+            "wireframe": false,
+            "depthWrite": false,
+            "depthTest": true,
+            "polygonOffset": true,
+            "polygonOffsetFactor": -2,
+            "polygonOffsetUnits": -2
+          }
+        },
+        {
+          "type": "LineLoop",
+          "userData": {},
+          "triangles": 24,
+          "material": {
+            "depthWrite": false,
+            "depthTest": true,
+            "polygonOffset": false,
+            "polygonOffsetFactor": 0,
+            "polygonOffsetUnits": 0
+          }
+        },
+        {
+          "type": "LineLoop",
+          "userData": {},
+          "triangles": 24,
+          "material": {
+            "depthWrite": false,
+            "depthTest": true,
+            "polygonOffset": false,
+            "polygonOffsetFactor": 0,
+            "polygonOffsetUnits": 0
+          }
+        }
+      ]
+    },
+    {
+      "target": "right-y42-z52",
+      "kind": "hole",
+      "id": "logical-hole:microduck:9d70b219a5533bf1:04f94c3a0b748d4f",
+      "mode": "patch-and-boundaries",
+      "image": "right-y42-z52-04f94c3a0b748d4f-patch-and-boundaries.png",
+      "url": "http://127.0.0.1:8791/#explorer?workspace=microduck&snapshot=dkp-1c8eeda600249ce33b99&part=part%3Amicroduck%3A9d70b219a5533bf1&hole=logical-hole%3Amicroduck%3A9d70b219a5533bf1%3A04f94c3a0b748d4f&explode=0.00&detail=geometry&view=iso&isolate=part%3Amicroduck%3A9d70b219a5533bf1&labels=0&grid=0&supplements=0&camera=-0.0335874%2C0.0172000%2C0.1558825%2C-0.0380000%2C-0.0008000%2C0.1550000",
+      "camera": {
+        "position": [
+          -0.029676121578137676,
+          0.03315499514878348,
+          0.15666473795660008
+        ],
+        "target": [
+          -0.038,
+          -0.0008,
+          0.155
+        ]
+      },
+      "objects": [
+        {
+          "type": "LineLoop",
+          "userData": {
+            "entryRing": true
+          },
+          "triangles": 32,
+          "material": {
+            "depthWrite": false,
+            "depthTest": true,
+            "polygonOffset": false,
+            "polygonOffsetFactor": 0,
+            "polygonOffsetUnits": 0
+          }
+        },
+        {
+          "type": "LineLoop",
+          "userData": {
+            "entryRing": true
+          },
+          "triangles": 32,
+          "material": {
+            "depthWrite": false,
+            "depthTest": true,
+            "polygonOffset": false,
+            "polygonOffsetFactor": 0,
+            "polygonOffsetUnits": 0
+          }
+        },
+        {
+          "type": "LineSegments",
+          "userData": {},
+          "triangles": 0.6666666666666666,
+          "material": {
+            "depthWrite": false,
+            "depthTest": true,
+            "polygonOffset": false,
+            "polygonOffsetFactor": 0,
+            "polygonOffsetUnits": 0
+          }
+        },
+        {
+          "type": "Mesh",
+          "userData": {},
+          "triangles": 144,
+          "material": {
+            "wireframe": false,
+            "depthWrite": false,
+            "depthTest": true,
+            "polygonOffset": true,
+            "polygonOffsetFactor": -2,
+            "polygonOffsetUnits": -2
+          }
+        },
+        {
+          "type": "LineLoop",
+          "userData": {},
+          "triangles": 24,
+          "material": {
+            "depthWrite": false,
+            "depthTest": true,
+            "polygonOffset": false,
+            "polygonOffsetFactor": 0,
+            "polygonOffsetUnits": 0
+          }
+        },
+        {
+          "type": "LineLoop",
+          "userData": {},
+          "triangles": 24,
+          "material": {
+            "depthWrite": false,
+            "depthTest": true,
+            "polygonOffset": false,
+            "polygonOffsetFactor": 0,
+            "polygonOffsetUnits": 0
+          }
+        }
+      ]
+    },
+    {
+      "target": "right-x25-y9",
+      "kind": "structure",
+      "id": "structure:7af674db6217c5ccd32c",
+      "mode": "source-only",
+      "image": "right-x25-y9-7af674db6217c5ccd32c-source-only.png",
+      "url": "http://127.0.0.1:8791/#explorer?workspace=microduck&snapshot=dkp-1c8eeda600249ce33b99&part=part%3Amicroduck%3A9d70b219a5533bf1&structure=structure%3A7af674db6217c5ccd32c&explode=0.00&detail=geometry&view=iso&isolate=part%3Amicroduck%3A9d70b219a5533bf1&labels=0&grid=0&supplements=0&camera=0.0178102%2C-0.0247069%2C0.1630000%2C0.0135000%2C-0.0260000%2C0.1450000",
+      "camera": {
+        "position": [
+          0.021630711204078973,
+          -0.023560711183241035,
+          0.1789549908759272
+        ],
+        "target": [
+          0.0135,
+          -0.026,
+          0.145
+        ]
+      },
+      "objects": [
+        {
+          "type": "Mesh",
+          "userData": {},
+          "triangles": 180,
+          "material": {
+            "wireframe": false,
+            "depthWrite": false,
+            "depthTest": true,
+            "polygonOffset": true,
+            "polygonOffsetFactor": -2,
+            "polygonOffsetUnits": -2
+          }
+        },
+        {
+          "type": "LineSegments",
+          "userData": {},
+          "triangles": 2,
+          "material": {
+            "depthWrite": false,
+            "depthTest": true,
+            "polygonOffset": false,
+            "polygonOffsetFactor": 0,
+            "polygonOffsetUnits": 0
+          }
+        }
+      ]
+    },
+    {
+      "target": "right-x25-y9",
+      "kind": "structure",
+      "id": "structure:7af674db6217c5ccd32c",
+      "mode": "patch-and-boundaries",
+      "image": "right-x25-y9-7af674db6217c5ccd32c-patch-and-boundaries.png",
+      "url": "http://127.0.0.1:8791/#explorer?workspace=microduck&snapshot=dkp-1c8eeda600249ce33b99&part=part%3Amicroduck%3A9d70b219a5533bf1&structure=structure%3A7af674db6217c5ccd32c&explode=0.00&detail=geometry&view=iso&isolate=part%3Amicroduck%3A9d70b219a5533bf1&labels=0&grid=0&supplements=0&camera=0.0178102%2C-0.0247069%2C0.1630000%2C0.0135000%2C-0.0260000%2C0.1450000",
+      "camera": {
+        "position": [
+          0.021630711204078973,
+          -0.023560711183241035,
+          0.1789549908759272
+        ],
+        "target": [
+          0.0135,
+          -0.026,
+          0.145
+        ]
+      },
+      "objects": [
+        {
+          "type": "Mesh",
+          "userData": {},
+          "triangles": 180,
+          "material": {
+            "wireframe": false,
+            "depthWrite": false,
+            "depthTest": true,
+            "polygonOffset": true,
+            "polygonOffsetFactor": -2,
+            "polygonOffsetUnits": -2
+          }
+        },
+        {
+          "type": "LineSegments",
+          "userData": {},
+          "triangles": 2,
+          "material": {
+            "depthWrite": false,
+            "depthTest": true,
+            "polygonOffset": false,
+            "polygonOffsetFactor": 0,
+            "polygonOffsetUnits": 0
+          }
+        }
+      ]
+    },
+    {
+      "target": "right-x25-y9",
+      "kind": "structure",
+      "id": "structure:8ef7de9c559016befede",
+      "mode": "source-only",
+      "image": "right-x25-y9-8ef7de9c559016befede-source-only.png",
+      "url": "http://127.0.0.1:8791/#explorer?workspace=microduck&snapshot=dkp-1c8eeda600249ce33b99&part=part%3Amicroduck%3A9d70b219a5533bf1&structure=structure%3A8ef7de9c559016befede&explode=0.00&detail=geometry&view=iso&isolate=part%3Amicroduck%3A9d70b219a5533bf1&labels=0&grid=0&supplements=0&camera=0.0178102%2C-0.0247069%2C0.1630000%2C0.0135000%2C-0.0260000%2C0.1450000",
+      "camera": {
+        "position": [
+          0.021630711204078973,
+          -0.023560711183241035,
+          0.1789549908759272
+        ],
+        "target": [
+          0.0135,
+          -0.026,
+          0.145
+        ]
+      },
+      "objects": [
+        {
+          "type": "Mesh",
+          "userData": {},
+          "triangles": 98,
+          "material": {
+            "wireframe": false,
+            "depthWrite": false,
+            "depthTest": true,
+            "polygonOffset": true,
+            "polygonOffsetFactor": -2,
+            "polygonOffsetUnits": -2
+          }
+        },
+        {
+          "type": "LineSegments",
+          "userData": {},
+          "triangles": 2,
+          "material": {
+            "depthWrite": false,
+            "depthTest": true,
+            "polygonOffset": false,
+            "polygonOffsetFactor": 0,
+            "polygonOffsetUnits": 0
+          }
+        }
+      ]
+    },
+    {
+      "target": "right-x25-y9",
+      "kind": "structure",
+      "id": "structure:8ef7de9c559016befede",
+      "mode": "patch-and-boundaries",
+      "image": "right-x25-y9-8ef7de9c559016befede-patch-and-boundaries.png",
+      "url": "http://127.0.0.1:8791/#explorer?workspace=microduck&snapshot=dkp-1c8eeda600249ce33b99&part=part%3Amicroduck%3A9d70b219a5533bf1&structure=structure%3A8ef7de9c559016befede&explode=0.00&detail=geometry&view=iso&isolate=part%3Amicroduck%3A9d70b219a5533bf1&labels=0&grid=0&supplements=0&camera=0.0178102%2C-0.0247069%2C0.1630000%2C0.0135000%2C-0.0260000%2C0.1450000",
+      "camera": {
+        "position": [
+          0.021630711204078973,
+          -0.023560711183241035,
+          0.1789549908759272
+        ],
+        "target": [
+          0.0135,
+          -0.026,
+          0.145
+        ]
+      },
+      "objects": [
+        {
+          "type": "Mesh",
+          "userData": {},
+          "triangles": 98,
+          "material": {
+            "wireframe": false,
+            "depthWrite": false,
+            "depthTest": true,
+            "polygonOffset": true,
+            "polygonOffsetFactor": -2,
+            "polygonOffsetUnits": -2
+          }
+        },
+        {
+          "type": "LineSegments",
+          "userData": {},
+          "triangles": 2,
+          "material": {
+            "depthWrite": false,
+            "depthTest": true,
+            "polygonOffset": false,
+            "polygonOffsetFactor": 0,
+            "polygonOffsetUnits": 0
+          }
+        }
+      ]
+    },
+    {
+      "target": "hip-x17-z6",
+      "kind": "feature",
+      "id": "feature:microduck:fa9ee2f71faafb88:plane-5da8ab6659b8",
+      "mode": "source-only",
+      "image": "hip-x17-z6-plane-5da8ab6659b8-source-only.png",
+      "url": "http://127.0.0.1:8791/#explorer?workspace=microduck&snapshot=dkp-1c8eeda600249ce33b99&part=part%3Amicroduck%3Afa9ee2f71faafb88&feature=feature%3Amicroduck%3Afa9ee2f71faafb88%3Aplane-5da8ab6659b8&explode=0.00&detail=geometry&view=iso&isolate=part%3Amicroduck%3Afa9ee2f71faafb88&labels=0&grid=0&supplements=0&camera=0.0415000%2C0.0212442%2C0.0989962%2C0.0235000%2C0.0175000%2C0.0965000",
+      "camera": {
+        "position": [
+          0.05745498513390924,
+          0.024563014185465713,
+          0.10120880188284802
+        ],
+        "target": [
+          0.0235,
+          0.0175,
+          0.0965
+        ]
+      },
+      "objects": [
+        {
+          "type": "Mesh",
+          "userData": {},
+          "triangles": 144,
+          "material": {
+            "wireframe": false,
+            "depthWrite": false,
+            "depthTest": true,
+            "polygonOffset": true,
+            "polygonOffsetFactor": -2,
+            "polygonOffsetUnits": -2
+          }
+        },
+        {
+          "type": "Line",
+          "userData": {},
+          "triangles": 24.333333333333332,
+          "material": {
+            "depthWrite": false,
+            "depthTest": true,
+            "polygonOffset": false,
+            "polygonOffsetFactor": 0,
+            "polygonOffsetUnits": 0
+          }
+        },
+        {
+          "type": "Line",
+          "userData": {},
+          "triangles": 24.333333333333332,
+          "material": {
+            "depthWrite": false,
+            "depthTest": true,
+            "polygonOffset": false,
+            "polygonOffsetFactor": 0,
+            "polygonOffsetUnits": 0
+          }
+        },
+        {
+          "type": "LineSegments",
+          "userData": {
+            "geometryNormal": true
+          },
+          "triangles": 2,
+          "material": {
+            "depthWrite": false,
+            "depthTest": true,
+            "polygonOffset": false,
+            "polygonOffsetFactor": 0,
+            "polygonOffsetUnits": 0
+          }
+        }
+      ]
+    },
+    {
+      "target": "hip-x17-z6",
+      "kind": "feature",
+      "id": "feature:microduck:fa9ee2f71faafb88:plane-5da8ab6659b8",
+      "mode": "patch-and-boundaries",
+      "image": "hip-x17-z6-plane-5da8ab6659b8-patch-and-boundaries.png",
+      "url": "http://127.0.0.1:8791/#explorer?workspace=microduck&snapshot=dkp-1c8eeda600249ce33b99&part=part%3Amicroduck%3Afa9ee2f71faafb88&feature=feature%3Amicroduck%3Afa9ee2f71faafb88%3Aplane-5da8ab6659b8&explode=0.00&detail=geometry&view=iso&isolate=part%3Amicroduck%3Afa9ee2f71faafb88&labels=0&grid=0&supplements=0&camera=0.0415000%2C0.0212442%2C0.0989962%2C0.0235000%2C0.0175000%2C0.0965000",
+      "camera": {
+        "position": [
+          0.05745498513390924,
+          0.024563014185465713,
+          0.10120880188284802
+        ],
+        "target": [
+          0.0235,
+          0.0175,
+          0.0965
+        ]
+      },
+      "objects": [
+        {
+          "type": "Mesh",
+          "userData": {},
+          "triangles": 144,
+          "material": {
+            "wireframe": false,
+            "depthWrite": false,
+            "depthTest": true,
+            "polygonOffset": true,
+            "polygonOffsetFactor": -2,
+            "polygonOffsetUnits": -2
+          }
+        },
+        {
+          "type": "Line",
+          "userData": {},
+          "triangles": 24.333333333333332,
+          "material": {
+            "depthWrite": false,
+            "depthTest": true,
+            "polygonOffset": false,
+            "polygonOffsetFactor": 0,
+            "polygonOffsetUnits": 0
+          }
+        },
+        {
+          "type": "Line",
+          "userData": {},
+          "triangles": 24.333333333333332,
+          "material": {
+            "depthWrite": false,
+            "depthTest": true,
+            "polygonOffset": false,
+            "polygonOffsetFactor": 0,
+            "polygonOffsetUnits": 0
+          }
+        },
+        {
+          "type": "LineSegments",
+          "userData": {
+            "geometryNormal": true
+          },
+          "triangles": 2,
+          "material": {
+            "depthWrite": false,
+            "depthTest": true,
+            "polygonOffset": false,
+            "polygonOffsetFactor": 0,
+            "polygonOffsetUnits": 0
+          }
+        }
+      ]
+    }
+  ]
+}

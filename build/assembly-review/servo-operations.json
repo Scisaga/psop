@@ -1,0 +1,416 @@
+[
+  {
+    "name": "servo-adjacent-pair",
+    "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-700958f225110d20315d&part=part%3Amicroduck%3A0820b4025f26a004&interface=interface%3Aassembly%3A0820b4025f26a004%3Aservo_housing_b&members=interface%3Aassembly%3A0820b4025f26a004%3Aservo_housing_b%3Ahole_front_top%2Cinterface%3Aassembly%3A0820b4025f26a004%3Aservo_housing_b%3Ahole_front_bottom&explode=0.00&detail=interfaces&view=iso&labels=0&grid=0",
+    "view": {
+      "kind": "psop.workbench.view/1.0",
+      "workspaceId": "microduck",
+      "packageId": "psop.microduck",
+      "packageVersion": "2.0.0-assembly.2",
+      "packageDigest": "700958f225110d20315d5865fa00ea899e1437622a8a2bed4cdc60db8e576f2e",
+      "snapshotId": "dkp-700958f225110d20315d",
+      "sourceCommit": "cb70b792312d559a4da09064d92009079671815f",
+      "selectedId": "part:microduck:0820b4025f26a004",
+      "geometrySelection": {
+        "kind": "interface",
+        "id": "interface:assembly:0820b4025f26a004:servo_housing_b",
+        "ownerRef": "part:microduck:0820b4025f26a004",
+        "memberRefs": [
+          "interface:assembly:0820b4025f26a004:servo_housing_b:hole_front_top",
+          "interface:assembly:0820b4025f26a004:servo_housing_b:hole_front_bottom"
+        ]
+      },
+      "explosion": 0,
+      "view": "iso",
+      "camera": {
+        "position": [
+          0.3000000000000001,
+          -0.31999999999999895,
+          0.2299999999999992
+        ],
+        "target": [
+          0,
+          0,
+          0.105
+        ]
+      },
+      "hiddenIds": [],
+      "isolateId": null,
+      "showLabels": false,
+      "showGrid": false,
+      "clipping": false,
+      "xray": false,
+      "inspection": {
+        "active": false,
+        "previousCamera": null,
+        "camera": {
+          "position": [
+            0.3000000000000001,
+            -0.31999999999999895,
+            0.2299999999999992
+          ],
+          "target": [
+            0,
+            0,
+            0.105
+          ]
+        },
+        "visiblePartIds": [
+          "part:microduck:b364863ffde63eed",
+          "part:microduck:9d70b219a5533bf1",
+          "part:microduck:78cf36c41e4fde06",
+          "part:microduck:203d2686e3321e4a",
+          "part:microduck:a682dc3620df43f5",
+          "part:microduck:e7e8275c7d01674c",
+          "part:microduck:f97c1c6580d651d7",
+          "part:microduck:09cb390e38430c1e",
+          "part:microduck:e27cbdd6c07a264e",
+          "part:microduck:7938fd9143c59ea4",
+          "part:microduck:55970da91992f38c",
+          "part:microduck:cd6d48fccc95df41",
+          "part:microduck:47a950fbb3d0e416",
+          "part:microduck:cb253f38c818b9d8",
+          "part:microduck:bb34e925e25e29f6",
+          "part:microduck:fa9ee2f71faafb88",
+          "part:microduck:66c73aaad945a993",
+          "part:microduck:4cf80d5a57c8cb04",
+          "part:microduck:c75bfc0afb35e000",
+          "part:microduck:e475134639b3f7e1",
+          "part:microduck:9ffe9d5bcd6bc13a",
+          "part:microduck:638f29b46b322e64",
+          "part:microduck:7c130c8489b57c99",
+          "part:microduck:8b649e45831a1972",
+          "part:microduck:41db565298264db6",
+          "part:microduck:766eaa6e4dd8b09f",
+          "part:microduck:07e507f1e9297aa3",
+          "part:microduck:6b5602b4416129fe",
+          "part:microduck:4cef8bb24d37fe6e",
+          "part:microduck:44b5600c1a735117",
+          "part:microduck:133711c520619e45",
+          "part:microduck:834f5cc892eba41e",
+          "part:microduck:6b884b140f6e283c",
+          "part:microduck:d4b9a9e9474a9829",
+          "part:microduck:a07b37bcb704b29f",
+          "part:microduck:ea69e2c6bba10a23",
+          "part:microduck:55121c0b36f62219",
+          "part:microduck:b61b0609c61fc572",
+          "part:microduck:afa52198f7fad203",
+          "part:microduck:50f0c376d01bb0c1",
+          "part:microduck:f5797f92c2bf01b8",
+          "part:microduck:986b5adf27910138",
+          "part:microduck:82d68e991b23c2a3",
+          "part:microduck:96e22c7fa2b976d3",
+          "part:microduck:a0775b54397eb21e",
+          "part:microduck:554503ef38151e67",
+          "part:microduck:88b7496d63cb41ff",
+          "part:microduck:2559a4c412bcda3e",
+          "part:microduck:328011951ac11ee7",
+          "part:microduck:52fdcacf474a463f",
+          "part:microduck:2d2cde8ae8ebacac",
+          "part:microduck:ebfcaf98422b7b28",
+          "part:microduck:22f2cd114e324ec5",
+          "part:microduck:48099e14105d3289",
+          "part:microduck:087d7a46a3ce4ca3",
+          "part:microduck:c703574f50f6a46a",
+          "part:microduck:3fbf0b5c8cea4488",
+          "part:microduck:c7eeeac0a640d191",
+          "part:microduck:d924e1596ffb042a",
+          "part:microduck:7038a050dbc33fb0",
+          "part:microduck:d6a148b5784955d8",
+          "part:microduck:7e86db28af59d3cc",
+          "part:microduck:e40b9945707505e1",
+          "part:microduck:08c5ade0f3fd37db",
+          "part:microduck:0820b4025f26a004",
+          "part:microduck:7f4fefc3c6de90f1",
+          "part:microduck:b371ac60e2f6757b",
+          "part:microduck:2f557a24b2729755",
+          "part:microduck:e196235810184adf",
+          "part:microduck:f9955f19a691a1f4"
+        ],
+        "mode": "inactive",
+        "translucentPartIds": []
+      }
+    },
+    "scene": {
+      "sceneReady": "true",
+      "renderCount": "11",
+      "cameraFlight": "settled",
+      "inspectionActive": "false",
+      "sourcePlacement": "restored",
+      "interfaceId": "interface:assembly:0820b4025f26a004:servo_housing_b",
+      "memberRefs": "interface:assembly:0820b4025f26a004:servo_housing_b:hole_front_top,interface:assembly:0820b4025f26a004:servo_housing_b:hole_front_bottom",
+      "selectedFeatures": "feature:microduck:0820b4025f26a004:ddfaefcaa38b,feature:microduck:0820b4025f26a004:2dbd8ea8d698"
+    }
+  },
+  {
+    "name": "servo-housing-focus",
+    "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-700958f225110d20315d&part=part%3Amicroduck%3A0820b4025f26a004&interface=interface%3Aassembly%3A0820b4025f26a004%3Aservo_housing_b&members=interface%3Aassembly%3A0820b4025f26a004%3Aservo_housing_b%3Ahole_front_top%2Cinterface%3Aassembly%3A0820b4025f26a004%3Aservo_housing_b%3Ahole_front_bottom&explode=0.00&detail=interfaces&inspection=1&view=iso&labels=0&grid=0",
+    "view": {
+      "kind": "psop.workbench.view/1.0",
+      "workspaceId": "microduck",
+      "packageId": "psop.microduck",
+      "packageVersion": "2.0.0-assembly.2",
+      "packageDigest": "700958f225110d20315d5865fa00ea899e1437622a8a2bed4cdc60db8e576f2e",
+      "snapshotId": "dkp-700958f225110d20315d",
+      "sourceCommit": "cb70b792312d559a4da09064d92009079671815f",
+      "selectedId": "part:microduck:0820b4025f26a004",
+      "geometrySelection": {
+        "kind": "interface",
+        "id": "interface:assembly:0820b4025f26a004:servo_housing_b",
+        "ownerRef": "part:microduck:0820b4025f26a004",
+        "memberRefs": [
+          "interface:assembly:0820b4025f26a004:servo_housing_b:hole_front_top",
+          "interface:assembly:0820b4025f26a004:servo_housing_b:hole_front_bottom"
+        ]
+      },
+      "explosion": 0,
+      "view": "iso",
+      "camera": {
+        "position": [
+          -0.03977709999999999,
+          0.03215041862135694,
+          0.04600000000000003
+        ],
+        "target": [
+          -0.03977709999999998,
+          -0.038500000000000006,
+          0.04600000000000003
+        ]
+      },
+      "hiddenIds": [],
+      "isolateId": null,
+      "showLabels": false,
+      "showGrid": false,
+      "clipping": false,
+      "xray": false,
+      "inspection": {
+        "active": true,
+        "previousCamera": {
+          "position": [
+            0.3,
+            -0.3199999999999993,
+            0.22999999999999948
+          ],
+          "target": [
+            0,
+            0,
+            0.105
+          ]
+        },
+        "camera": {
+          "position": [
+            -0.03977709999999999,
+            0.03215041862135694,
+            0.04600000000000003
+          ],
+          "target": [
+            -0.03977709999999998,
+            -0.038500000000000006,
+            0.04600000000000003
+          ]
+        },
+        "visiblePartIds": [
+          "part:microduck:0820b4025f26a004"
+        ],
+        "mode": "local",
+        "translucentPartIds": []
+      }
+    },
+    "scene": {
+      "sceneReady": "true",
+      "renderCount": "15",
+      "cameraFlight": "settled",
+      "inspectionActive": "true",
+      "sourcePlacement": "restored",
+      "interfaceId": "interface:assembly:0820b4025f26a004:servo_housing_b",
+      "memberRefs": "interface:assembly:0820b4025f26a004:servo_housing_b:hole_front_top,interface:assembly:0820b4025f26a004:servo_housing_b:hole_front_bottom",
+      "selectedFeatures": "feature:microduck:0820b4025f26a004:ddfaefcaa38b,feature:microduck:0820b4025f26a004:2dbd8ea8d698"
+    }
+  },
+  {
+    "name": "servo-to-leg",
+    "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-700958f225110d20315d&part=part%3Amicroduck%3A7f4fefc3c6de90f1&interface=interface%3Aassembly%3A7f4fefc3c6de90f1%3Alower_servo_housing&relationRef=connection%3Aassembly%3A7f4fefc3c6de90f1%3Adeclared_ankle_servo_housing&members=interface%3Aassembly%3A7f4fefc3c6de90f1%3Alower_servo_housing%3Ahole_y_high%2Cinterface%3Aassembly%3A7f4fefc3c6de90f1%3Alower_servo_housing%3Ahole_y_low&explode=0.00&detail=interfaces&inspection=1&view=iso&labels=0&grid=0",
+    "view": {
+      "kind": "psop.workbench.view/1.0",
+      "workspaceId": "microduck",
+      "packageId": "psop.microduck",
+      "packageVersion": "2.0.0-assembly.2",
+      "packageDigest": "700958f225110d20315d5865fa00ea899e1437622a8a2bed4cdc60db8e576f2e",
+      "snapshotId": "dkp-700958f225110d20315d",
+      "sourceCommit": "cb70b792312d559a4da09064d92009079671815f",
+      "selectedId": "part:microduck:7f4fefc3c6de90f1",
+      "geometrySelection": {
+        "kind": "interface",
+        "id": "interface:assembly:7f4fefc3c6de90f1:lower_servo_housing",
+        "ownerRef": "part:microduck:7f4fefc3c6de90f1",
+        "memberRefs": [
+          "interface:assembly:7f4fefc3c6de90f1:lower_servo_housing:hole_y_high",
+          "interface:assembly:7f4fefc3c6de90f1:lower_servo_housing:hole_y_low"
+        ],
+        "relationRef": "connection:assembly:7f4fefc3c6de90f1:declared_ankle_servo_housing"
+      },
+      "explosion": 0,
+      "view": "iso",
+      "camera": {
+        "position": [
+          -0.03177709999063898,
+          -0.00015473405028219867,
+          0.06099998764521795
+        ],
+        "target": [
+          -0.031777099990639,
+          -0.037100000306963955,
+          0.06099998764521794
+        ]
+      },
+      "hiddenIds": [],
+      "isolateId": null,
+      "showLabels": false,
+      "showGrid": false,
+      "clipping": false,
+      "xray": false,
+      "inspection": {
+        "active": true,
+        "previousCamera": {
+          "position": [
+            0.3,
+            -0.3199999999999993,
+            0.22999999999999948
+          ],
+          "target": [
+            0,
+            0,
+            0.105
+          ]
+        },
+        "camera": {
+          "position": [
+            -0.03177709999063898,
+            -0.00015473405028219867,
+            0.06099998764521795
+          ],
+          "target": [
+            -0.031777099990639,
+            -0.037100000306963955,
+            0.06099998764521794
+          ]
+        },
+        "visiblePartIds": [
+          "part:microduck:7f4fefc3c6de90f1"
+        ],
+        "mode": "local",
+        "translucentPartIds": []
+      }
+    },
+    "scene": {
+      "sceneReady": "true",
+      "renderCount": "18",
+      "cameraFlight": "settled",
+      "inspectionActive": "true",
+      "sourcePlacement": "restored",
+      "interfaceId": "interface:assembly:7f4fefc3c6de90f1:lower_servo_housing",
+      "memberRefs": "interface:assembly:7f4fefc3c6de90f1:lower_servo_housing:hole_y_high,interface:assembly:7f4fefc3c6de90f1:lower_servo_housing:hole_y_low",
+      "selectedFeatures": "feature:microduck:7f4fefc3c6de90f1:fa9162324250,feature:microduck:7f4fefc3c6de90f1:87081b89984e"
+    }
+  },
+  {
+    "name": "servo-return",
+    "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-700958f225110d20315d&part=part%3Amicroduck%3A0820b4025f26a004&interface=interface%3Aassembly%3A0820b4025f26a004%3Aservo_housing_b&members=interface%3Aassembly%3A0820b4025f26a004%3Aservo_housing_b%3Ahole_front_top%2Cinterface%3Aassembly%3A0820b4025f26a004%3Aservo_housing_b%3Ahole_front_bottom&explode=0.00&detail=interfaces&inspection=1&view=iso&labels=0&grid=0",
+    "view": {
+      "kind": "psop.workbench.view/1.0",
+      "workspaceId": "microduck",
+      "packageId": "psop.microduck",
+      "packageVersion": "2.0.0-assembly.2",
+      "packageDigest": "700958f225110d20315d5865fa00ea899e1437622a8a2bed4cdc60db8e576f2e",
+      "snapshotId": "dkp-700958f225110d20315d",
+      "sourceCommit": "cb70b792312d559a4da09064d92009079671815f",
+      "selectedId": "part:microduck:0820b4025f26a004",
+      "geometrySelection": {
+        "kind": "interface",
+        "id": "interface:assembly:0820b4025f26a004:servo_housing_b",
+        "ownerRef": "part:microduck:0820b4025f26a004",
+        "memberRefs": [
+          "interface:assembly:0820b4025f26a004:servo_housing_b:hole_front_top",
+          "interface:assembly:0820b4025f26a004:servo_housing_b:hole_front_bottom"
+        ]
+      },
+      "explosion": 0,
+      "view": "iso",
+      "camera": {
+        "position": [
+          -0.03977709999999999,
+          0.03215041862135547,
+          0.04600000000000003
+        ],
+        "target": [
+          -0.03977709999999998,
+          -0.038500000000000006,
+          0.04600000000000003
+        ]
+      },
+      "hiddenIds": [],
+      "isolateId": null,
+      "showLabels": false,
+      "showGrid": false,
+      "clipping": false,
+      "xray": false,
+      "inspection": {
+        "active": true,
+        "previousCamera": {
+          "position": [
+            0.3,
+            -0.3199999999999993,
+            0.22999999999999948
+          ],
+          "target": [
+            0,
+            0,
+            0.105
+          ]
+        },
+        "camera": {
+          "position": [
+            -0.03977709999999999,
+            0.03215041862135547,
+            0.04600000000000003
+          ],
+          "target": [
+            -0.03977709999999998,
+            -0.038500000000000006,
+            0.04600000000000003
+          ]
+        },
+        "visiblePartIds": [
+          "part:microduck:0820b4025f26a004"
+        ],
+        "mode": "local",
+        "translucentPartIds": []
+      }
+    },
+    "scene": {
+      "sceneReady": "true",
+      "renderCount": "21",
+      "cameraFlight": "settled",
+      "inspectionActive": "true",
+      "sourcePlacement": "restored",
+      "interfaceId": "interface:assembly:0820b4025f26a004:servo_housing_b",
+      "memberRefs": "interface:assembly:0820b4025f26a004:servo_housing_b:hole_front_top,interface:assembly:0820b4025f26a004:servo_housing_b:hole_front_bottom",
+      "selectedFeatures": "feature:microduck:0820b4025f26a004:ddfaefcaa38b,feature:microduck:0820b4025f26a004:2dbd8ea8d698"
+    }
+  },
+  {
+    "name": "servo-evidence",
+    "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-700958f225110d20315d&part=part%3Amicroduck%3A0820b4025f26a004&interface=interface%3Aassembly%3A0820b4025f26a004%3Aservo_housing_b&members=interface%3Aassembly%3A0820b4025f26a004%3Aservo_housing_b%3Ahole_front_top%2Cinterface%3Aassembly%3A0820b4025f26a004%3Aservo_housing_b%3Ahole_front_bottom&explode=0.00&detail=interfaces&inspection=1&view=iso&labels=0&grid=0&source=SRC-MD-ASSEMBLY-CATALOG&evidence=evidence%3Aassembly%3A0820b4025f26a004%3Afour_functional_interfaces",
+    "view": null,
+    "scene": {
+      "sceneReady": "true",
+      "renderCount": "21",
+      "cameraFlight": "settled",
+      "inspectionActive": "true",
+      "sourcePlacement": "restored",
+      "interfaceId": "interface:assembly:0820b4025f26a004:servo_housing_b",
+      "memberRefs": "interface:assembly:0820b4025f26a004:servo_housing_b:hole_front_top,interface:assembly:0820b4025f26a004:servo_housing_b:hole_front_bottom",
+      "selectedFeatures": "feature:microduck:0820b4025f26a004:ddfaefcaa38b,feature:microduck:0820b4025f26a004:2dbd8ea8d698"
+    }
+  }
+]

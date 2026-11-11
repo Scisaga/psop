@@ -1,0 +1,70 @@
+
+Running 56 tests using 1 worker
+
+node.exe : (node:23496) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+所在位置 行:1 字符: 1
++ & "C:\Program Files\nodejs/node.exe" "C:\Program Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ((node:23496) Wa... env being set.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 tests\connection-analysis.spec.ts:16:1 › 六对基线审查仍逐项保留；目录不把六条审查当六个接口 (5.6s)
+  ok  2 tests\connection-analysis.spec.ts:24:25 › 研究字段与实际来源迁移到证据分析视图：connection-review:microduck:27d56794bd7c8a86 (5.7s)
+  ok  3 tests\connection-analysis.spec.ts:24:25 › 研究字段与实际来源迁移到证据分析视图：connection-review:microduck:f81f10dc6482cb07 (8.6s)
+  ok  4 tests\connection-analysis.spec.ts:24:25 › 研究字段与实际来源迁移到证据分析视图：connection-review:microduck:926a5beb2c028185 (5.8s)
+  ok  5 tests\connection-analysis.spec.ts:24:25 › 研究字段与实际来源迁移到证据分析视图：connection-review:microduck:c2e8a8093a4b8563 (6.3s)
+  ok  6 tests\connection-analysis.spec.ts:24:25 › 研究字段与实际来源迁移到证据分析视图：connection-review:microduck:d22c650fc9abdaca (9.0s)
+  ok  7 tests\connection-analysis.spec.ts:24:25 › 研究字段与实际来源迁移到证据分析视图：connection-review:microduck:e42fab2d8700637e (6.0s)
+  ok  8 tests\connection-analysis.spec.ts:41:1 › 查询与工作台一致，70个实例保留覆盖记录与既有三条假设 (948ms)
+  ok  9 tests\connection-analysis.spec.ts:47:1 › 左踝无需人工定义也可从局部四孔找到对端并返回 (6.5s)
+  ok 10 tests\connection-sites.spec.ts:19:1 › 1600×900 / 360px 首屏直接区分重点部位，1100px 下保持生产默认状态 (4.3s)
+  ok 11 tests\connection-sites.spec.ts:32:23 › 成员→定位本件→对应舵机→返回→正交孔组→两轴颈→具体证据：part:microduck:fa9ee2f71faafb88 (25.2s)
+  ok 12 tests\connection-sites.spec.ts:32:23 › 成员→定位本件→对应舵机→返回→正交孔组→两轴颈→具体证据：part:microduck:c7eeeac0a640d191 (27.8s)
+  ok 13 tests\connection-sites.spec.ts:70:1 › 正式安装定义与纯几何部件复用目录，知识 API 的独立部位验收一致 (6.9s)
+  ok 14 tests\interface-selection.spec.ts:53:3 › 右外壳 y42-z52：人工复核后的局部画面保持边界与有限壁面 (3.7s)
+  ok 15 tests\interface-selection.spec.ts:53:3 › 右外壳 x25-y9：人工复核后的局部画面保持边界与有限壁面 (5.7s)
+  ok 16 tests\interface-selection.spec.ts:87:1 › 同一右外壳上下文切换两处位置、旋转缩放、隔离与取消选择 (4.7s)
+  ok 17 tests\interface-selection.spec.ts:122:1 › 右壳安装假设贯通发布知识、具体角色、来源、双向定位及导出 (6.6s)
+  ok 18 tests\interface-selection.spec.ts:156:1 › 另一类支承件有具体新关系，右壳Z孔的已调查缺证仍明确保留 (5.2s)
+  ok 19 tests\interface-selection.spec.ts:183:1 › 冻结1.9仍按原数据读取，不补写本轮安装假设或工作状态 (6.9s)
+  ok 20 tests\investigation.spec.ts:41:1 › 独立标注的左外壳 LS-06 漏项可定位、查证、分享和导出，功能仍待证 (7.9s)
+  ok 21 tests\investigation.spec.ts:90:1 › 另一类部件 LG-01 的独立壁截面也可定位，逐区域审查不随发现数自动完成 (4.1s)
+  ok 22 tests\investigation.spec.ts:111:1 › 部分圆柱壁保留角覆盖、拟合残差和方法边界，不补成完整孔 (3.8s)
+  -  23 tests\investigation.spec.ts:127:1 › 历史 1.8 快照仍按原合同浏览，不伪造新增调查状态
+  ok 24 tests\loading.spec.ts:3:1 › 长时间读取说明等待原因，校验失败显示服务返回的具体原因 (10.5s)
+  ok 25 tests\workbench.spec.ts:61:1 › 真实装配可加载，展示控制与局部选择可用 (5.0s)
+  ok 26 tests\workbench.spec.ts:92:1 › 中文查询到部件，再定位到真实 XML 与 CSV 证据 (5.3s)
+  ok 27 tests\workbench.spec.ts:119:1 › 知识筛选、本体目录与原始 PDF 可实际浏览 (3.5s)
+  ok 28 tests\workbench.spec.ts:146:1 › 窄屏保持导航、模型与详情可用且没有页面级横向溢出 (3.1s)
+  ok 29 tests\workbench.spec.ts:160:1 › 分享链接恢复实际旋转视角、部件可见性和展示状态 (7.5s)
+  ok 30 tests\workbench.spec.ts:199:1 › 同一设备在三个能力间保持知识版本，未接入服务不制造运行结果 (5.1s)
+  ok 31 tests\workbench.spec.ts:222:1 › 知识版本切换加载对应DKP，并能返回另一版本 (4.0s)
+  ok 32 tests\workbench.spec.ts:240:1 › 空设备工作区可选择，返回已有设备后恢复真实内容 (4.7s)
+  ok 33 tests\workbench.spec.ts:260:1 › 阶梯孔按一个逻辑孔定位，两个壁段跟随爆炸并精确复原 (6.9s)
+  ok 34 tests\workbench.spec.ts:283:1 › 四孔阵列整体高亮并能进入原子孔，接口资格单独报告 (5.5s)
+  ok 35 tests\workbench.spec.ts:300:1 › 四孔父观测保留原子对应并可在双方之间定位 (4.9s)
+  ok 36 tests\workbench.spec.ts:318:1 › 有限面仅展示几何观测，分页和法向数值不冒充连接作用 (9.7s)
+  ok 37 tests\workbench.spec.ts:346:1 › 几何法线按需显示，分享链接恢复观测身份和显示状态 (7.6s)
+  -  38 tests\workbench.spec.ts:368:1 › 历史平面分组只作几何浏览，不再计入接口实例
+  ok 39 tests\workbench.spec.ts:387:1 › 当前连杆知识可直接打开，版本菜单只列实际登记快照 (3.5s)
+  ok 40 tests\workbench.spec.ts:399:1 › 八个安装孔位按两侧组织，同孔道的另一侧入口可独立定位 (5.5s)
+  ok 41 tests\workbench.spec.ts:426:1 › 标准双孔装配映射显示双方孔位、有限间隔和未绑定连接件 (5.6s)
+  ok 42 tests\workbench.spec.ts:456:1 › 腿部连杆的圆角长槽有真实有限轮廓，覆盖提示与已知安装分别展示 (4.5s)
+  ok 43 tests\workbench.spec.ts:473:1 › 同四孔的两侧只保留一份布局，切换侧别不绘制大块拓扑证据面 (4.6s)
+  ok 44 tests\workbench.spec.ts:490:1 › 安装孔位可以搜索并通过分享链接恢复入口身份 (4.8s)
+  ok 45 tests\workbench.spec.ts:510:1 › 几何入口深链保持未核定状态，不能借孔位ID升级为用户确认 (4.1s)
+  ok 46 tests\workbench.spec.ts:526:1 › 参考双孔从已知入口侧观察，窄屏也将安装目标完整纳入视锥 (5.7s)
+  ok 47 tests\workbench.spec.ts:546:1 › 连杆上端四孔与中部双孔分别展示，未知规则和零位孔轴差异不冒充参考连接 (8.7s)
+  ok 48 tests\workbench.spec.ts:576:1 › 右大腿按壳体配合归拢四根一体小柱，功能推断与源几何分离 (8.0s)
+  ok 49 tests\workbench.spec.ts:603:1 › 左右大腿按两处轴心结构浏览真实大圆洞，多个截面轮廓不重复计成通孔 (5.7s)
+  ok 50 tests\workbench.spec.ts:625:1 › 连接审查目录可查双方局部结构、三种角色与示意第三件，切换对端保留本件身份 (5.4s)
+  ok 51 tests\workbench.spec.ts:638:1 › 补全示意开关、分享、导出与沿负安装轴展开可追踪，源部件数量与位姿保留 (6.1s)
+  ok 52 tests\workbench.spec.ts:696:1 › 参考装配与紧固路径在同一张卡内，选择示意不重复配对或展开来源清单 (5.4s)
+  ok 53 tests\workbench.spec.ts:706:1 › 对象详情可拖拽和键盘调宽，取消与窄屏不覆盖首选宽度 (8.6s)
+  ok 54 tests\workbench.spec.ts:758:1 › 小柱配合优先，轴心方案显式启用并可分享恢复，普通开关不启用方案 (8.6s)
+  ok 55 tests\workbench.spec.ts:828:1 › 舵机待验证方案深链可查看，临时定位保留隐藏和隔离设置 (4.7s)
+  ok 56 tests\workbench.spec.ts:861:1 › 已发布小柱孔配合双向定位只高亮配对原子，不借圆洞证明固定 (6.5s)
+
+  2 skipped
+  54 passed (6.1m)

@@ -1,0 +1,428 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "psop.dkp/2.0-draft.1/source-model-1.12",
+  "title": "Frozen completed relationship research and independently checked bounded installation hypotheses",
+  "type": "object",
+  "properties": {
+    "schema": {
+      "const": "psop.dkp/2.0-draft.1"
+    },
+    "profile": {
+      "const": "psop.hardware.source-model/1.12"
+    },
+    "package_id": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^psop\\.[a-z][a-z0-9-]{1,63}$"
+    },
+    "package_version": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^[0-9][A-Za-z0-9.+-]{0,95}$"
+    },
+    "device": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^[a-z][a-z0-9-]{1,63}$"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        }
+      },
+      "required": [
+        "id",
+        "name"
+      ],
+      "additionalProperties": false
+    },
+    "created_at": {
+      "type": "string",
+      "minLength": 1
+    },
+    "ontology": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "const": "psop.hardware"
+        },
+        "version": {
+          "const": "psop.hardware/2.0-draft.4"
+        },
+        "path": {
+          "const": "sources/SRC-PSOP-ONTOLOGY.md"
+        },
+        "sha256": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^[a-f0-9]{64}$"
+        }
+      },
+      "required": [
+        "id",
+        "version",
+        "path",
+        "sha256"
+      ],
+      "additionalProperties": false
+    },
+    "adapter": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "const": "microduck-mjcf/1.0"
+        },
+        "commit": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^[a-f0-9]{40}$"
+        },
+        "xml_sha256": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^[a-f0-9]{64}$"
+        }
+      },
+      "required": [
+        "id",
+        "commit",
+        "xml_sha256"
+      ],
+      "additionalProperties": false
+    },
+    "inputs": {
+      "type": "object",
+      "properties": {
+        "archive": {
+          "type": "object",
+          "properties": {
+            "path": {
+              "const": "inputs/materials.zip"
+            },
+            "sha256": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^[a-f0-9]{64}$"
+            }
+          },
+          "required": [
+            "path",
+            "sha256"
+          ],
+          "additionalProperties": false
+        },
+        "assembly_knowledge": {
+          "type": "object",
+          "properties": {
+            "path": {
+              "const": "sources/SRC-MD-ASSEMBLY-KNOWLEDGE.json"
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            }
+          },
+          "required": [
+            "path",
+            "sha256"
+          ],
+          "additionalProperties": false
+        },
+        "supporting_documents": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "path": {
+                "type": "string",
+                "pattern": "^sources/SRC-[A-Z0-9-]+\\.(md|png)$"
+              },
+              "sha256": {
+                "type": "string",
+                "pattern": "^[a-f0-9]{64}$"
+              }
+            },
+            "required": [
+              "id",
+              "path",
+              "sha256"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 0,
+          "maxItems": 16
+        },
+        "investigation": {
+          "type": "object",
+          "properties": {
+            "path": {
+              "const": "sources/SRC-INTERFACE-INVESTIGATION.json"
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            }
+          },
+          "required": [
+            "path",
+            "sha256"
+          ],
+          "additionalProperties": false
+        },
+        "investigation_documents": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "path": {
+                "type": "string",
+                "pattern": "^sources/SRC-INVESTIGATION-[A-F0-9]+\\.(md|json|txt|png)$"
+              },
+              "sha256": {
+                "type": "string",
+                "pattern": "^[a-f0-9]{64}$"
+              }
+            },
+            "required": [
+              "id",
+              "path",
+              "sha256"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "archive"
+      ],
+      "additionalProperties": false
+    },
+    "toolchain": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "const": "psop-build"
+        },
+        "version": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 96,
+          "pattern": "^[0-9][A-Za-z0-9.+-]{0,95}$"
+        },
+        "sha256": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^[a-f0-9]{64}$"
+        }
+      },
+      "required": [
+        "name",
+        "version",
+        "sha256"
+      ],
+      "additionalProperties": false
+    },
+    "entrypoints": {
+      "type": "object",
+      "properties": {
+        "knowledge": {
+          "const": "knowledge/entities.json"
+        },
+        "sources": {
+          "const": "knowledge/sources.json"
+        },
+        "evidence": {
+          "const": "knowledge/evidence.json"
+        },
+        "gaps": {
+          "const": "knowledge/gaps.json"
+        },
+        "scene": {
+          "const": "indexes/scene.json"
+        }
+      },
+      "required": [
+        "knowledge",
+        "sources",
+        "evidence",
+        "gaps",
+        "scene"
+      ],
+      "additionalProperties": false
+    },
+    "counts": {
+      "type": "object",
+      "properties": {
+        "sources": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "geometries": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "parts": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "bodies": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "joints": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "evidence": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "sources",
+        "geometries",
+        "parts",
+        "bodies",
+        "joints",
+        "evidence"
+      ],
+      "additionalProperties": false
+    },
+    "capabilities": {
+      "const": {
+        "source_registry": {
+          "status": "complete",
+          "scope": "captured source bytes, paths and digests"
+        },
+        "source_model_projection": {
+          "status": "complete",
+          "scope": "frozen Microduck MJCF visual model at qpos0"
+        },
+        "hardware_knowledge": {
+          "status": "partial",
+          "scope": "source geometry, finite pin/housing reference-pair location evidence and separately identified unverified connector alternatives; retention remains unknown"
+        },
+        "mechanical_validation": {
+          "status": "unavailable",
+          "scope": "no confirmed interface connection, retaining, motion constraint, assembly path or mechanical success is published"
+        },
+        "engineering_validation": {
+          "status": "unavailable",
+          "scope": "materials, tolerances, manufacturing and load acceptance not established"
+        },
+        "path_validation": {
+          "status": "unavailable",
+          "scope": "presentation explosion is not a disassembly or motion proof"
+        },
+        "training_data": {
+          "status": "unavailable",
+          "scope": "no training dataset, canonical multiview render or use authorization is published"
+        },
+        "geometric_analysis": {
+          "status": "partial",
+          "scope": "finite arbitrary-axis cylindrical discovery with strict source witnesses, legacy finite geometry and per-instance raw mesh regions; unsupported structures remain open"
+        },
+        "interface_analysis": {
+          "status": "partial",
+          "scope": "connection reviews separate declared knowledge from project-inferred roles and manufacturer-general examples; no complete physical interface qualification"
+        },
+        "connection_candidates": {
+          "status": "unavailable",
+          "scope": "raw geometry observations are not qualified interfaces or mechanism-level connection candidates"
+        },
+        "reference_mounting": {
+          "status": "partial",
+          "scope": "supplied standard-assembly assertions checked against the frozen source placements and mapped site axes; no executed engagement is published"
+        },
+        "connection_review": {
+          "status": "partial",
+          "scope": "source-pose pin/housing fits support installation-location inference only; outer circular openings and manufacturer-general illustrations do not establish retaining roles"
+        },
+        "supplemental_components": {
+          "status": "partial",
+          "scope": "reference connector schematics use explicit through-bracket hypotheses with independently checked finite entrance, head seat, shaft direction and target coverage; actual installation side, thread, continuous path and retention remain unverified"
+        },
+        "structure_investigation": {
+          "status": "partial",
+          "scope": "every source Part and mesh normal region is inventoried before functional interpretation; unknown function has explicit evidence gaps and next actions"
+        },
+        "independent_review": {
+          "status": "partial",
+          "scope": "locked source-SHA-bound independent annotations establish expected sample features; automatic screening is distinct from completed region review"
+        },
+        "installation_hypotheses": {
+          "status": "partial",
+          "scope": "frozen completed research, source-bound finite counterpart geometry, dimensional complementarity and evidence support bounded mechanism hypotheses; no actual retaining or engineering confirmation"
+        },
+        "connection_analysis": {
+          "status": "partial",
+          "scope": "every connection review has finite local evidence and an explicit investigation stage; frozen executed investigations support bounded mechanisms, multi-Part context and independent omission acceptance without qualifying Interfaces"
+        }
+      }
+    },
+    "files": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sha256": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "bytes": {
+            "type": "integer",
+            "minimum": 0
+          }
+        },
+        "required": [
+          "path",
+          "sha256",
+          "bytes"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1,
+      "maxItems": 1200
+    },
+    "package_digest": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^[a-f0-9]{64}$"
+    }
+  },
+  "required": [
+    "schema",
+    "profile",
+    "package_id",
+    "package_version",
+    "device",
+    "created_at",
+    "ontology",
+    "adapter",
+    "inputs",
+    "toolchain",
+    "entrypoints",
+    "counts",
+    "capabilities",
+    "files",
+    "package_digest"
+  ],
+  "additionalProperties": false
+}

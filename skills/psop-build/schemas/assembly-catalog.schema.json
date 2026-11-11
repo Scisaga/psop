@@ -1,0 +1,886 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "psop.assembly.catalog/1",
+  "title": "Finite source-bound assembly interfaces, member selection and attributed connection records",
+  "$ref": "#/$defs/assembly_catalog",
+  "$defs": {
+    "assembly_vector": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      },
+      "minItems": 3,
+      "maxItems": 3
+    },
+    "assembly_cylinder": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "const": "cylinder"
+        },
+        "origin": {
+          "$ref": "#/$defs/assembly_vector"
+        },
+        "triangle_indices": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "minItems": 1,
+          "maxItems": 1000000,
+          "uniqueItems": true
+        },
+        "axis": {
+          "$ref": "#/$defs/assembly_vector"
+        },
+        "radius_m": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "axial_range_m": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "minItems": 2,
+          "maxItems": 2
+        }
+      },
+      "required": [
+        "type",
+        "origin",
+        "triangle_indices",
+        "axis",
+        "radius_m",
+        "axial_range_m"
+      ],
+      "additionalProperties": false
+    },
+    "assembly_plane": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "const": "plane"
+        },
+        "origin": {
+          "$ref": "#/$defs/assembly_vector"
+        },
+        "triangle_indices": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "minItems": 1,
+          "maxItems": 1000000,
+          "uniqueItems": true
+        },
+        "normal": {
+          "$ref": "#/$defs/assembly_vector"
+        },
+        "area_m2": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "boundary_loops": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/assembly_vector"
+            },
+            "minItems": 3,
+            "maxItems": 100000
+          },
+          "minItems": 1,
+          "maxItems": 100000
+        }
+      },
+      "required": [
+        "type",
+        "origin",
+        "triangle_indices",
+        "normal",
+        "area_m2",
+        "boundary_loops"
+      ],
+      "additionalProperties": false
+    },
+    "assembly_frustum": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "const": "conical_frustum"
+        },
+        "origin": {
+          "$ref": "#/$defs/assembly_vector"
+        },
+        "triangle_indices": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "minItems": 1,
+          "maxItems": 1000000,
+          "uniqueItems": true
+        },
+        "axis": {
+          "$ref": "#/$defs/assembly_vector"
+        },
+        "radius_start_m": {
+          "type": "number",
+          "minimum": 0
+        },
+        "radius_end_m": {
+          "type": "number",
+          "minimum": 0
+        },
+        "length_m": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        }
+      },
+      "required": [
+        "type",
+        "origin",
+        "triangle_indices",
+        "axis",
+        "radius_start_m",
+        "radius_end_m",
+        "length_m"
+      ],
+      "additionalProperties": false
+    },
+    "assembly_source_region": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "const": "source_region"
+        },
+        "origin": {
+          "$ref": "#/$defs/assembly_vector"
+        },
+        "triangle_indices": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "minItems": 1,
+          "maxItems": 1000000,
+          "uniqueItems": true
+        },
+        "normal": {
+          "$ref": "#/$defs/assembly_vector"
+        }
+      },
+      "required": [
+        "type",
+        "origin",
+        "triangle_indices",
+        "normal"
+      ],
+      "additionalProperties": false
+    },
+    "assembly_geometry": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/assembly_cylinder"
+        },
+        {
+          "$ref": "#/$defs/assembly_plane"
+        },
+        {
+          "$ref": "#/$defs/assembly_frustum"
+        },
+        {
+          "$ref": "#/$defs/assembly_source_region"
+        }
+      ]
+    },
+    "assembly_feature": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256
+        },
+        "owner_ref": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256
+        },
+        "geometry_source_ref": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256
+        },
+        "geometry_digest": {
+          "type": "string",
+          "pattern": "^sha256:[a-f0-9]{64}$"
+        },
+        "kind": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256
+        },
+        "geometry": {
+          "$ref": "#/$defs/assembly_geometry"
+        }
+      },
+      "required": [
+        "id",
+        "owner_ref",
+        "geometry_source_ref",
+        "geometry_digest",
+        "kind",
+        "geometry"
+      ],
+      "additionalProperties": false
+    },
+    "assembly_member": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 4000
+        },
+        "feature_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 256
+          },
+          "minItems": 1,
+          "maxItems": 1000,
+          "uniqueItems": true
+        },
+        "position": {
+          "$ref": "#/$defs/assembly_vector"
+        },
+        "direction": {
+          "$ref": "#/$defs/assembly_vector"
+        },
+        "resource_ref": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256
+        }
+      },
+      "required": [
+        "id",
+        "label",
+        "feature_refs",
+        "position",
+        "direction"
+      ],
+      "additionalProperties": false
+    },
+    "assembly_selection": {
+      "type": "object",
+      "properties": {
+        "kind": {
+          "enum": [
+            "unspecified",
+            "adjacent_pair"
+          ]
+        },
+        "allowed_pairs": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 256
+            },
+            "minItems": 2,
+            "maxItems": 2
+          },
+          "minItems": 1,
+          "maxItems": 1000,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "kind"
+      ],
+      "additionalProperties": false
+    },
+    "assembly_interface": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256
+        },
+        "owner_ref": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256
+        },
+        "key": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 4000
+        },
+        "purpose": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 4000
+        },
+        "geometry_summary": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 4000
+        },
+        "members": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/assembly_member"
+          },
+          "minItems": 1,
+          "maxItems": 1000
+        },
+        "selection": {
+          "$ref": "#/$defs/assembly_selection"
+        },
+        "origin": {
+          "enum": [
+            "user_statement",
+            "source_geometry",
+            "project_inference"
+          ]
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 256
+          },
+          "minItems": 1,
+          "maxItems": 1000,
+          "uniqueItems": true
+        },
+        "note": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 4000
+        }
+      },
+      "required": [
+        "id",
+        "owner_ref",
+        "key",
+        "name",
+        "purpose",
+        "geometry_summary",
+        "members",
+        "selection",
+        "origin",
+        "evidence_refs"
+      ],
+      "additionalProperties": false
+    },
+    "assembly_endpoint": {
+      "type": "object",
+      "properties": {
+        "interface_ref": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256
+        },
+        "member_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 256
+          },
+          "minItems": 0,
+          "maxItems": 1000,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "interface_ref",
+        "member_refs"
+      ],
+      "additionalProperties": false
+    },
+    "assembly_basis": {
+      "enum": [
+        "declared",
+        "source_assembly",
+        "source_fit",
+        "hypothesis",
+        "incompatible"
+      ]
+    },
+    "assembly_connection": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 4000
+        },
+        "mechanism": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 4000
+        },
+        "basis": {
+          "$ref": "#/$defs/assembly_basis"
+        },
+        "endpoints": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/assembly_endpoint"
+          },
+          "minItems": 2,
+          "maxItems": 20
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 256
+          },
+          "minItems": 1,
+          "maxItems": 1000,
+          "uniqueItems": true
+        },
+        "note": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 4000
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "mechanism",
+        "basis",
+        "endpoints",
+        "evidence_refs"
+      ],
+      "additionalProperties": false
+    },
+    "assembly_part_note": {
+      "type": "object",
+      "properties": {
+        "owner_ref": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256
+        },
+        "text": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 4000
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 256
+          },
+          "minItems": 1,
+          "maxItems": 1000,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "owner_ref",
+        "text",
+        "evidence_refs"
+      ],
+      "additionalProperties": false
+    },
+    "assembly_catalog": {
+      "type": "object",
+      "properties": {
+        "features": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/assembly_feature"
+          },
+          "minItems": 0,
+          "maxItems": 100000
+        },
+        "interfaces": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/assembly_interface"
+          },
+          "minItems": 0,
+          "maxItems": 100000
+        },
+        "connections": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/assembly_connection"
+          },
+          "minItems": 0,
+          "maxItems": 100000
+        },
+        "part_notes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/assembly_part_note"
+          },
+          "minItems": 0,
+          "maxItems": 100000
+        }
+      },
+      "required": [
+        "features",
+        "interfaces",
+        "connections",
+        "part_notes"
+      ],
+      "additionalProperties": false
+    },
+    "assembly_evidence": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256
+        },
+        "sourceId": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 4000
+        },
+        "kind": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256
+        },
+        "excerpt": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 4000
+        },
+        "lineStart": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "lineEnd": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "row": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "partId": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256
+        }
+      },
+      "required": [
+        "id",
+        "sourceId",
+        "title",
+        "kind",
+        "excerpt"
+      ],
+      "additionalProperties": false
+    },
+    "assembly_supporting_document": {
+      "type": "object",
+      "properties": {
+        "scope": {
+          "const": "manufacturer_general"
+        },
+        "id": {
+          "type": "string",
+          "pattern": "^SRC-[A-Z0-9-]{3,100}$"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 4000
+        },
+        "path": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256
+        },
+        "url": {
+          "type": "string",
+          "pattern": "^https://[^/\\s]+/"
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "claims": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 4000
+          },
+          "minItems": 1,
+          "maxItems": 20
+        }
+      },
+      "required": [
+        "id",
+        "title",
+        "path",
+        "url",
+        "sha256",
+        "claims"
+      ],
+      "additionalProperties": false
+    },
+    "assembly_required_member": {
+      "type": "object",
+      "properties": {
+        "position": {
+          "$ref": "#/$defs/assembly_vector"
+        },
+        "direction": {
+          "$ref": "#/$defs/assembly_vector"
+        },
+        "geometry_type": {
+          "enum": [
+            "cylinder",
+            "plane",
+            "conical_frustum",
+            "source_region"
+          ]
+        },
+        "radius_m": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "feature_kind": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256
+        }
+      },
+      "required": [
+        "position"
+      ],
+      "additionalProperties": false
+    },
+    "assembly_required_interface": {
+      "type": "object",
+      "properties": {
+        "owner_ref": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256
+        },
+        "key": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256
+        },
+        "members": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/assembly_required_member"
+          },
+          "minItems": 1,
+          "maxItems": 1000
+        },
+        "exact_members": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "owner_ref",
+        "key",
+        "members"
+      ],
+      "additionalProperties": false
+    },
+    "assembly_required_endpoint": {
+      "type": "object",
+      "properties": {
+        "owner_ref": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256
+        },
+        "key": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256
+        }
+      },
+      "required": [
+        "owner_ref",
+        "key"
+      ],
+      "additionalProperties": false
+    },
+    "assembly_required_connection": {
+      "type": "object",
+      "properties": {
+        "endpoints": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/assembly_required_endpoint"
+          },
+          "minItems": 2,
+          "maxItems": 20
+        },
+        "basis": {
+          "$ref": "#/$defs/assembly_basis"
+        }
+      },
+      "required": [
+        "endpoints"
+      ],
+      "additionalProperties": false
+    },
+    "assembly_requirements": {
+      "type": "object",
+      "properties": {
+        "schema": {
+          "const": "psop.assembly.requirements/1"
+        },
+        "device_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256
+        },
+        "sources": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 256
+              },
+              "sha256": {
+                "type": "string",
+                "pattern": "^[a-f0-9]{64}$"
+              }
+            },
+            "required": [
+              "id",
+              "sha256"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 1,
+          "maxItems": 1000
+        },
+        "interfaces": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/assembly_required_interface"
+          },
+          "minItems": 1,
+          "maxItems": 100000
+        },
+        "connections": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/assembly_required_connection"
+          },
+          "minItems": 0,
+          "maxItems": 100000
+        }
+      },
+      "required": [
+        "schema",
+        "device_id",
+        "sources",
+        "interfaces"
+      ],
+      "additionalProperties": false
+    },
+    "assembly_input": {
+      "type": "object",
+      "properties": {
+        "schema": {
+          "const": "psop.assembly.catalog/1"
+        },
+        "device_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256
+        },
+        "provenance": {
+          "type": "object",
+          "minProperties": 1
+        },
+        "catalog": {
+          "$ref": "#/$defs/assembly_catalog"
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/assembly_evidence"
+          },
+          "minItems": 0,
+          "maxItems": 100000
+        },
+        "supporting_documents": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/assembly_supporting_document"
+          },
+          "minItems": 0,
+          "maxItems": 16
+        },
+        "requirements": {
+          "$ref": "#/$defs/assembly_requirements"
+        }
+      },
+      "required": [
+        "schema",
+        "device_id",
+        "provenance",
+        "catalog",
+        "evidence",
+        "supporting_documents"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

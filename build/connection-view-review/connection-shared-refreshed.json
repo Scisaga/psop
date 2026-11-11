@@ -1,0 +1,118 @@
+{
+  "name": "connection-shared-refreshed",
+  "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-6a841fcb9cb028ba2c63&part=part%3Amicroduck%3A328011951ac11ee7&interface=interface%3Aassembly%3A328011951ac11ee7%3Ajaw_drive&member=interface%3Aassembly%3A328011951ac11ee7%3Ajaw_drive%3Ahole_x_low_z_low&relationRef=connection%3Aassembly%3A328011951ac11ee7%3Ajaw_drive&fastener=fastener-path%3Aassembly%3A328011951ac11ee7%3Ajaw_drive%3Ahole_x_low_z_low&explode=0.00&detail=interfaces&inspection=1&connectionView=1&view=iso&labels=0&camera=0.0520198%2C0.0766193%2C0.2567390%2C0.0261000%2C0.0391674%2C0.2382571",
+  "view": {
+    "kind": "psop.workbench.view/1.0",
+    "workspaceId": "microduck",
+    "packageId": "psop.microduck",
+    "packageVersion": "2.0.0-assembly.3",
+    "packageDigest": "6a841fcb9cb028ba2c63df67cfd35c43f30e95374fb6f6bc314b7332160789e8",
+    "snapshotId": "dkp-6a841fcb9cb028ba2c63",
+    "sourceCommit": "cb70b792312d559a4da09064d92009079671815f",
+    "selectedId": "part:microduck:328011951ac11ee7",
+    "geometrySelection": {
+      "kind": "interface",
+      "id": "interface:assembly:328011951ac11ee7:jaw_drive",
+      "ownerRef": "part:microduck:328011951ac11ee7",
+      "memberRef": "interface:assembly:328011951ac11ee7:jaw_drive:hole_x_low_z_low",
+      "relationRef": "connection:assembly:328011951ac11ee7:jaw_drive",
+      "fastenerRef": "fastener-path:assembly:328011951ac11ee7:jaw_drive:hole_x_low_z_low"
+    },
+    "explosion": 0,
+    "view": "iso",
+    "camera": {
+      "position": [
+        0.052019765102908795,
+        0.07661933932660274,
+        0.2567390196347923
+      ],
+      "target": [
+        0.026100000000000005,
+        0.039167352622535595,
+        0.2382571001701095
+      ]
+    },
+    "hiddenIds": [],
+    "isolateId": null,
+    "showLabels": false,
+    "showGrid": true,
+    "clipping": false,
+    "xray": false,
+    "showFasteners": true,
+    "inspection": {
+      "active": true,
+      "previousCamera": {
+        "position": [
+          0.3000000000000001,
+          -0.31999999999999895,
+          0.2299999999999992
+        ],
+        "target": [
+          0,
+          0,
+          0.105
+        ]
+      },
+      "camera": {
+        "position": [
+          0.052019765102908795,
+          0.07661933932660274,
+          0.2567390196347923
+        ],
+        "target": [
+          0.026100000000000005,
+          0.039167352622535595,
+          0.2382571001701095
+        ]
+      },
+      "visiblePartIds": [
+        "part:microduck:50f0c376d01bb0c1",
+        "part:microduck:328011951ac11ee7"
+      ],
+      "mode": "connection",
+      "translucentPartIds": [],
+      "referenceFasteners": [
+        {
+          "pathRef": "fastener-path:assembly:328011951ac11ee7:jaw_drive:hole_x_low_z_low",
+          "representation": "schematic",
+          "entry": [
+            0.02610000000066495,
+            0.04369470477104186,
+            0.2326145999951397
+          ],
+          "head": [
+            0.02610000000066495,
+            0.044014704777088534,
+            0.2326145999951397
+          ],
+          "receiver": [
+            0.026099999999999995,
+            0.039999999582767475,
+            0.23261459999754255
+          ],
+          "axis": [
+            -2.2204460492503136e-16,
+            -1,
+            0
+          ]
+        }
+      ]
+    }
+  },
+  "scene": {
+    "sceneReady": "true",
+    "renderCount": "23",
+    "cameraFlight": "settled",
+    "inspectionActive": "true",
+    "sourcePlacement": "restored",
+    "interfaceId": "interface:assembly:328011951ac11ee7:jaw_drive",
+    "memberRefs": "interface:assembly:328011951ac11ee7:jaw_drive:hole_x_low_z_low",
+    "selectedFeatures": "feature:assembly:328011951ac11ee7:jaw_drive_clearance_hole_1",
+    "highlightMode": "source_facet_colors",
+    "witnessMarkers": "0",
+    "highlightedSourceFaces": "180",
+    "fastenerPaths": "fastener-path:assembly:328011951ac11ee7:jaw_drive:hole_x_low_z_low",
+    "fastenerCount": "1",
+    "fastenerRepresentation": "schematic"
+  }
+}

@@ -1,0 +1,961 @@
+{
+  "schema": "psop.interface-investigation/1.0",
+  "device_id": "microduck",
+  "revision": "microduck-source-sections/1",
+  "recorded_on": "2026-11-07",
+  "authoring_method": "Independent source STL multiview review plus raw triangle-plane sections. Production detector output was not used as the expected-feature denominator.",
+  "scope": "11 selected closed inner-wall sections: six on the left shell and five on one left leg instance. Other surfaces, slots, entrances and instances remain explicitly unreviewed unless separately recorded.",
+  "independence": {
+    "production_imports": false,
+    "denominator": "Manually selected source sections after viewing the isolated source mesh; raw section closure and inward winding are recomputed by the standalone helper.",
+    "reproduce": "python -B device-materials/interface-review/independent_sections.py",
+    "limitations": [
+      "This finite sample tests omissions at known source locations; it does not establish arbitrary-direction coverage or whole-device recall.",
+      "Triangle indices are zero-based original binary-STL facet indices.",
+      "Radii are source-mesh measurements, not manufacturing tolerances.",
+      "Each item is a wall-section witness, not necessarily a distinct logical hole."
+    ]
+  },
+  "sources": [
+    {
+      "id": "SRC-000022",
+      "url": "https://github.com/pollen-robotics/microduck_rl/blob/cb70b792312d559a4da09064d92009079671815f/src/mjlab_microduck/robot/microduck/assets/left_shell.stl",
+      "revision": "cb70b792312d559a4da09064d92009079671815f",
+      "sha256": "2abde8e2b79c9b011cdb11957c67ab4287b45d7301affd4235ab81141118e331",
+      "source_path": "microduck-official-materials/03-三维模型/assets/left_shell_左侧外壳.stl",
+      "scope": "frozen simulation-model STL, not a verified alpha production CAD revision",
+      "supports": [
+        "source facet geometry and local coordinates only"
+      ],
+      "conflicts": [
+        "The simulator reference model is not evidence of alpha hardware assembly, screw specification or real engagement."
+      ]
+    },
+    {
+      "id": "SRC-000023",
+      "url": "https://github.com/pollen-robotics/microduck_rl/blob/cb70b792312d559a4da09064d92009079671815f/src/mjlab_microduck/robot/microduck/assets/leg.stl",
+      "revision": "cb70b792312d559a4da09064d92009079671815f",
+      "sha256": "9a91cc1ae31ecd9e0c1ba93f3bb2ad8a12e29bff24ec27d1ac66c0c3037d9fcf",
+      "source_path": "microduck-official-materials/03-三维模型/assets/leg_腿部连杆.stl",
+      "scope": "frozen simulation-model STL, not a verified alpha production CAD revision",
+      "supports": [
+        "source facet geometry and local coordinates only"
+      ],
+      "conflicts": [
+        "The simulator reference model is not evidence of alpha hardware assembly, screw specification or real engagement."
+      ]
+    },
+    {
+      "id": "upstream-model-readme",
+      "url": "https://github.com/pollen-robotics/microduck_rl/blob/cb70b792312d559a4da09064d92009079671815f/README.md",
+      "revision": "cb70b792312d559a4da09064d92009079671815f",
+      "retrieved_on": "2026-11-07",
+      "query": "Find exact-version model purpose and a shell fastener/assembly drawing link.",
+      "observed": "Read the captured README model section (lines 124 onward) and inspected its hardware/assembly references. It identifies the MJCF as an Onshape export and the repository as RL training/runtime infrastructure; no per-hole shell connection definition was located in that text.",
+      "supports": [
+        "Purpose and model-export origin of the frozen simulation project."
+      ],
+      "limitations": [
+        "The README model export link points to an Onshape workspace, not a frozen CAD version. A per-hole assembly drawing was not located in this file; it may exist elsewhere."
+      ],
+      "local_path": "device-materials/interface-review/references/upstream-model-readme.md",
+      "sha256": "b5e606efe7ff71f4f6324820b36152d401a0b1be6e2f908bbaca01ffee81638d",
+      "capture_kind": "original_utf8_content_returned_by_GitHub_connector",
+      "capture_path": "references/upstream-model-readme.md",
+      "capture_bytes": 13267
+    },
+    {
+      "id": "upstream-model-docs",
+      "url": "https://api.github.com/repos/pollen-robotics/microduck_rl/contents/docs?ref=cb70b792312d559a4da09064d92009079671815f",
+      "revision": "cb70b792312d559a4da09064d92009079671815f",
+      "retrieved_on": "2026-11-07",
+      "query": "Find a shell assembly guide in exact-version documentation directory.",
+      "observed_paths": [
+        "docs/roller_standup_policy_summary.md",
+        "docs/superpowers"
+      ],
+      "supports": [],
+      "limitations": [
+        "The inspected top-level directory listing did not provide a shell assembly drawing. Nested documents were not exhaustively reviewed."
+      ],
+      "local_path": "device-materials/interface-review/references/upstream-model-docs.json",
+      "sha256": "0756917217a37d3e2abe84def0f5d46960bc87d18b00a21468f0e3c34bd99ab3",
+      "capture_kind": "original_utf8_content_returned_by_GitHub_connector",
+      "capture_path": "references/upstream-model-docs.json",
+      "capture_bytes": 2088
+    },
+    {
+      "id": "upstream-microduck-design-tree",
+      "url": "https://api.github.com/repos/pollen-robotics/microduck/git/trees/4861141fdc7c7acd253671acf5abdd55b77b779e?recursive=1",
+      "revision": "4861141fdc7c7acd253671acf5abdd55b77b779e",
+      "retrieved_on": "2026-11-07",
+      "query": "Locate matching shell/CAD/BOM/mechanical assembly files in the archived official alpha runtime revision.",
+      "method": "Inspected the complete nontruncated Git tree and filtered path names for assembl|hardware|cad|mechanic|shell|bom|design.",
+      "observed": "The matching entries were docs/design and software/network/simulation design notes; no shell/CAD/BOM/assembly-named path was returned.",
+      "supports": [],
+      "limitations": [
+        "This path-name search does not establish that no useful unnamed document exists, and this alpha runtime revision is not automatically the STL mechanical revision."
+      ],
+      "local_path": "device-materials/interface-review/references/upstream-microduck-tree.json",
+      "sha256": "8d379daa2a1ce0fc9218e8ca113c9b77118c60c1b4e661141e72165363bf43ab",
+      "capture_kind": "original_utf8_content_returned_by_GitHub_connector",
+      "capture_path": "references/upstream-microduck-tree.json",
+      "capture_bytes": 113885
+    },
+    {
+      "id": "local-xl330-assembly",
+      "url": "https://raw.githubusercontent.com/ROBOTIS-GIT/emanual/0807b1b5f7472bbbbb2c9751f1d3406678e86d37/_includes/en/dxl/drawing/x330_drawing.md",
+      "revision": "0807b1b5f7472bbbbb2c9751f1d3406678e86d37",
+      "sha256": "ea5859ff3975edf15a823a8f4c9f8ba6adcdc9981a65f8b219641a9950f67740",
+      "local_path": "device-materials/references/xl330-assembly/x330_drawing.md",
+      "retrieved_on": "2026-11-07",
+      "observed": "Inspected the captured manufacturer image-index include, which links the generic horn screw and assembly illustrations.",
+      "supports": [
+        "General X330 drawing provenance only."
+      ],
+      "limitations": [
+        "Manufacturer-general diagrams do not determine the left-shell Z hole function, actual Microduck connection or retention."
+      ],
+      "capture_path": "references/x330_drawing.md",
+      "capture_bytes": 205
+    },
+    {
+      "id": "upstream-model-export-config",
+      "url": "https://github.com/pollen-robotics/microduck_rl/blob/cb70b792312d559a4da09064d92009079671815f/src/mjlab_microduck/robot/microduck/config_mjcf_walk.json",
+      "revision": "cb70b792312d559a4da09064d92009079671815f",
+      "retrieved_on": "2026-11-07",
+      "capture_path": "references/upstream-config-mjcf-walk.json",
+      "local_path": "device-materials/interface-review/references/upstream-config-mjcf-walk.json",
+      "sha256": "978dcc845ae4072d74618bd7a3ac752079c3592ebc0fd2ec3079db00c0ceb954",
+      "capture_bytes": 1815,
+      "query": "Locate the CAD source linked by this exact model-export revision.",
+      "observed": "The configuration identifies an Onshape workspace URL and STL simplification settings; the JSON fixes the export configuration, but it does not pin the changing CAD workspace to the STL revision.",
+      "supports": [
+        "Provenance link from the fixed model configuration to its CAD workspace."
+      ],
+      "limitations": [
+        "No part function, fastener or retaining role is established by the export configuration."
+      ]
+    },
+    {
+      "id": "upstream-onshape-attempt",
+      "url": "https://cad.onshape.com/documents/804927696f06d877f3f1803e/w/5b75db19292e71970de02dee/e/ef6e972847fec8d82570b35e",
+      "revision": "workspace URL from config_mjcf_walk.json at cb70b792312d559a4da09064d92009079671815f; CAD revision unpinned",
+      "retrieved_on": "2026-11-07",
+      "status": "blocked",
+      "query": "Inspect matching assembly CAD and identify the left-shell Z-hole counterpart and insertion side.",
+      "attempted_method": "web open of the actual source URL",
+      "observed": "The web tool returned: URL is not accessible via this tool.",
+      "supports": [],
+      "limitations": [
+        "No CAD content was obtained. No authentication requirement or permanent availability claim is inferred from this tool failure."
+      ],
+      "next_action": "Obtain a frozen CAD export or accessible assembly drawing for the matching STL revision."
+    }
+  ],
+  "samples": [
+    {
+      "part_ref": "part:microduck:e27cbdd6c07a264e",
+      "mesh_key": "left_shell",
+      "geometry_sha256": "2abde8e2b79c9b011cdb11957c67ab4287b45d7301affd4235ab81141118e331",
+      "source_ref": "SRC-000022",
+      "source_path": "microduck-official-materials/03-三维模型/assets/left_shell_左侧外壳.stl",
+      "source_revision": "cb70b792312d559a4da09064d92009079671815f",
+      "annotation_scope": "Selected closed inner-wall sections, independently chosen after source-mesh visual review. Not an exhaustive part inventory.",
+      "pose_reference": {
+        "configuration": "source qpos0",
+        "position_m": [0.004, 0, 0.1024215],
+        "quaternion_xyzw": [0, 0, 0.7071067811865476, 0.7071067811865476],
+        "evidence": "frozen MJCF/CSV scene identity; view directions and feature coordinates are source-local"
+      },
+      "regions": [
+        {
+          "id": "LS-R01",
+          "label": "LS-01 原始三角截面壁",
+          "triangle_indices": [1152, 1153, 1154, 1155, 1156, 1157, 1158, 1159, 1160, 1161, 1162, 1163, 1164, 1165, 1166, 1167, 1168, 1169, 1170, 1171, 1172, 1173, 1174, 1175, 1176, 1177, 1178, 1179, 1180, 1181, 1182, 1183, 1184, 1185, 1186, 1187, 1188, 1189, 1190, 1191, 1192, 1193, 1194, 1195, 1196, 1197, 1198, 1199, 1200, 1201, 1202, 1203, 1204, 1205, 1206, 1207, 1208, 1209, 1210, 1211, 1212, 1213, 1214, 1215, 1216, 1217, 1218, 1219, 1220, 1221, 1222, 1223, 1224, 1225, 1226, 1227, 1228, 1229, 1230, 1231, 1232, 1233, 1234, 1235, 1236, 1237, 1238, 1239, 1240, 1241, 1242, 1243, 1244, 1245, 1246, 1247, 1248, 1249, 1250, 1251, 1252, 1253, 1254, 1255, 1256, 1257, 1258, 1259, 1260, 1261, 1262, 1263, 1264, 1265, 1266, 1267, 1268, 1269, 1270, 1271, 1272, 1273, 1274, 1275, 1276, 1277, 1278, 1279, 1280, 1281, 1282, 1283, 1284, 1285, 1286, 1287, 1288, 1289, 1290, 1291, 1292, 1293, 1294, 1295],
+          "review_status": "reviewed",
+          "evidence": [
+            "independent-source-plane-sections/1",
+            "SRC-000022",
+            "LS-01"
+          ],
+          "limitations": [
+            "Reviewed only the source triangles intersecting this plane. This does not certify the whole part, both entrances, all wall transitions, thread or retaining function."
+          ],
+          "center_local_m": [0.0005, 0.042, 0.0525]
+        },
+        {
+          "id": "LS-R02",
+          "label": "LS-02 原始三角截面壁",
+          "triangle_indices": [20043, 20044, 20045, 20046, 20047, 20048, 20049, 20050, 20051, 20052, 20053, 20054, 20055, 20056, 20057, 20058, 20059, 20060, 20061, 20062, 20063, 20064, 20065, 20066, 20067, 20068, 20069, 20070, 20071, 20072, 20073, 20074, 20075, 20076, 20077, 20078, 20079, 20080, 20081, 20082, 20083, 20084, 20085, 20086, 20087, 20088, 20089, 20090, 20091, 20092, 20093, 20094, 20095, 20096, 20097, 20098, 20099, 20100, 20101, 20102, 20103, 20104, 20105, 20106, 20107, 20108, 20109, 20110, 20111, 20112, 20113, 20114, 20115, 20116, 20117, 20118, 20119, 20120, 20121, 20122, 20123, 20124, 20125, 20126, 20127, 20128, 20129, 20130, 20131, 20132, 20133, 20134, 20135, 20136, 20137, 20138, 20139, 20140, 20141, 20142, 20143, 20144, 20145, 20146, 20147, 20148, 20149, 20150, 20151, 20152, 20153, 20154, 20155, 20156, 20157, 20158, 20159, 20160, 20161, 20162, 20163, 20164, 20165, 20166, 20167, 20168, 20169, 20170, 20171, 20172, 20173, 20174, 20175, 20176, 20177, 20178, 20179, 20180, 20181, 20182, 20183, 20184, 20185, 20186],
+          "review_status": "reviewed",
+          "evidence": [
+            "independent-source-plane-sections/1",
+            "SRC-000022",
+            "LS-02"
+          ],
+          "limitations": [
+            "Reviewed only the source triangles intersecting this plane. This does not certify the whole part, both entrances, all wall transitions, thread or retaining function."
+          ],
+          "center_local_m": [0.01625, -0.028, 0.05]
+        },
+        {
+          "id": "LS-R03",
+          "label": "LS-03 原始三角截面壁",
+          "triangle_indices": [20302, 20303, 20304, 20305, 20306, 20307, 20308, 20309, 20310, 20311, 20312, 20313, 20314, 20315, 20316, 20317, 20318, 20319, 20320, 20321, 20322, 20323, 20324, 20325, 20326, 20327, 20328, 20329, 20330, 20331, 20332, 20333, 20334, 20335, 20336, 20337, 20338, 20339, 20340, 20341, 20342, 20343, 20344, 20345, 20346, 20347, 20348, 20349, 20350, 20351, 20352, 20353, 20354, 20355, 20356, 20357, 20358, 20359, 20360, 20361, 20362, 20363, 20364, 20365, 20366, 20367, 20368, 20369, 20370, 20371, 20372, 20373, 20374, 20375, 20376, 20377, 20378, 20379, 20380, 20381, 20382, 20383, 20384, 20385, 20386, 20387, 20388, 20389, 20390, 20391, 20392, 20393, 20394, 20395, 20396, 20397, 20398, 20399, 20400, 20401, 20402, 20403, 20404, 20405, 20406, 20407, 20408, 20409, 20410, 20411, 20412, 20413, 20414, 20415, 20416, 20417, 20418, 20419, 20420, 20421, 20422, 20423, 20424, 20425, 20426, 20427, 20428, 20429, 20430, 20431, 20432, 20433, 20434, 20435, 20436, 20437, 20438, 20439, 20440, 20441, 20442, 20443, 20444, 20445],
+          "review_status": "reviewed",
+          "evidence": [
+            "independent-source-plane-sections/1",
+            "SRC-000022",
+            "LS-03"
+          ],
+          "limitations": [
+            "Reviewed only the source triangles intersecting this plane. This does not certify the whole part, both entrances, all wall transitions, thread or retaining function."
+          ],
+          "center_local_m": [0.01625, -0.022, 0.056]
+        },
+        {
+          "id": "LS-R04",
+          "label": "LS-04 原始三角截面壁",
+          "triangle_indices": [19750, 19751, 19752, 19753, 19754, 19755, 19756, 19757, 19758, 19759, 19760, 19761, 19762, 19763, 19764, 19765, 19766, 19767, 19768, 19769, 19770, 19771, 19772, 19773, 19774, 19775, 19776, 19777, 19778, 19779, 19780, 19781, 19782, 19783, 19784, 19785, 19786, 19787, 19788, 19789, 19790, 19791, 19792, 19793, 19794, 19795, 19796, 19797, 19798, 19799, 19800, 19801, 19802, 19803, 19804, 19805, 19806, 19807, 19808, 19809, 19810, 19811, 19812, 19813, 19814, 19815, 19816, 19817, 19818, 19819, 19820, 19821, 19822, 19823, 19824, 19825, 19826, 19827, 19828, 19829, 19830, 19831, 19832, 19833, 19834, 19835, 19836, 19837, 19838, 19839, 19840, 19841, 19842, 19843, 19844, 19845, 19846, 19847, 19848, 19849, 19850, 19851, 19852, 19853, 19854, 19855, 19856, 19857, 19858, 19859, 19860, 19861, 19862, 19863, 19864, 19865, 19866, 19867, 19868, 19869, 19870, 19871, 19872, 19873, 19874, 19875, 19876, 19877, 19878, 19879, 19880, 19881, 19882, 19883, 19884, 19885, 19886, 19887, 19888, 19889, 19890, 19891, 19892, 19893],
+          "review_status": "reviewed",
+          "evidence": [
+            "independent-source-plane-sections/1",
+            "SRC-000022",
+            "LS-04"
+          ],
+          "limitations": [
+            "Reviewed only the source triangles intersecting this plane. This does not certify the whole part, both entrances, all wall transitions, thread or retaining function."
+          ],
+          "center_local_m": [0.01625, -0.022, 0.044]
+        },
+        {
+          "id": "LS-R05",
+          "label": "LS-05 原始三角截面壁",
+          "triangle_indices": [19606, 19607, 19608, 19609, 19610, 19611, 19612, 19613, 19614, 19615, 19616, 19617, 19618, 19619, 19620, 19621, 19622, 19623, 19624, 19625, 19626, 19627, 19628, 19629, 19630, 19631, 19632, 19633, 19634, 19635, 19636, 19637, 19638, 19639, 19640, 19641, 19642, 19643, 19644, 19645, 19646, 19647, 19648, 19649, 19650, 19651, 19652, 19653, 19654, 19655, 19656, 19657, 19658, 19659, 19660, 19661, 19662, 19663, 19664, 19665, 19666, 19667, 19668, 19669, 19670, 19671, 19672, 19673, 19674, 19675, 19676, 19677, 19678, 19679, 19680, 19681, 19682, 19683, 19684, 19685, 19686, 19687, 19688, 19689, 19690, 19691, 19692, 19693, 19694, 19695, 19696, 19697, 19698, 19699, 19700, 19701, 19702, 19703, 19704, 19705, 19706, 19707, 19708, 19709, 19710, 19711, 19712, 19713, 19714, 19715, 19716, 19717, 19718, 19719, 19720, 19721, 19722, 19723, 19724, 19725, 19726, 19727, 19728, 19729, 19730, 19731, 19732, 19733, 19734, 19735, 19736, 19737, 19738, 19739, 19740, 19741, 19742, 19743, 19744, 19745, 19746, 19747, 19748, 19749],
+          "review_status": "reviewed",
+          "evidence": [
+            "independent-source-plane-sections/1",
+            "SRC-000022",
+            "LS-05"
+          ],
+          "limitations": [
+            "Reviewed only the source triangles intersecting this plane. This does not certify the whole part, both entrances, all wall transitions, thread or retaining function."
+          ],
+          "center_local_m": [0.01625, -0.016, 0.05]
+        },
+        {
+          "id": "LS-R06",
+          "label": "LS-06 原始三角截面壁",
+          "triangle_indices": [4213, 4214, 4215, 4216, 4217, 4218, 4219, 4220, 4221, 4222, 4223, 4224, 4225, 4226, 4227, 4228, 4229, 4230, 4231, 4232, 4233, 4234, 4235, 4236, 4237, 4238, 4239, 4240, 4241, 4242, 4243, 4244, 4245, 4246, 4247, 4248, 4249, 4250, 4251, 4252, 4253, 4254, 4255, 4256, 4257, 4258, 4259, 4260, 4261, 4262, 4263, 4264, 4265, 4266, 4267, 4268, 4269, 4270, 4271, 4272, 4273, 4274, 4275, 4276, 4277, 4278, 4279, 4280, 4281, 4282, 4283, 4284, 4285, 4286, 4287, 4288, 4289, 4290, 4291, 4292, 4293, 4294, 4295, 4296, 4297, 4298, 4299, 4300, 4301, 4302, 4303, 4304, 4305, 4306, 4307, 4308, 4309, 4310, 4311, 4312, 4313, 4314, 4315, 4316, 4317, 4318, 4319, 4320, 4321, 4322, 4323, 4324, 4325, 4326, 4327, 4328, 4329, 4330, 4331, 4332, 4333, 4334, 4335, 4336, 4337, 4338, 4339, 4340, 4341, 4342, 4343, 4344, 4345, 4346, 4347, 4348, 4349, 4350, 4351, 4352, 4353, 4354, 4355, 4356, 4357, 4358, 4359, 4360, 4361, 4362, 4363, 4364, 4365, 4366, 4367, 4368, 4369, 4370, 4371, 4372, 4373, 4374, 4375, 4376, 4377, 4378, 4379, 4380, 4381, 4382, 4383, 4384, 4385, 4386, 4387, 4388, 4389, 4390, 4391, 4392],
+          "review_status": "reviewed",
+          "evidence": [
+            "independent-source-plane-sections/1",
+            "SRC-000022",
+            "LS-06"
+          ],
+          "limitations": [
+            "Reviewed only the source triangles intersecting this plane. This does not certify the whole part, both entrances, all wall transitions, thread or retaining function."
+          ],
+          "center_local_m": [0.0255, -0.0095, 0.04153]
+        },
+        {
+          "id": "LS-R-remaining",
+          "label": "其余源三角、唇缘、槽与遮挡结构",
+          "triangle_indices": [],
+          "review_status": "unreviewed",
+          "evidence": [
+            "docs/build/interface-review/left_shell-source.png"
+          ],
+          "limitations": [
+            "Whole-part context was viewed from multiple directions, but the remaining triangles have not been independently classified or exhaustively annotated. No 100% part or device recall is claimed."
+          ],
+          "next_action": "逐段复核内外唇缘、窄槽和台阶；上方扩口只在视图中观察，未作为第二个逻辑孔计数。",
+          "center_local_m": [0.022059670028463214, 0.0036802573326719995, 0.043400911931075814],
+          "locator_basis": "Mean of raw STL facet vertices, used only as a whole-source locator; no reviewed triangles are claimed for this remainder."
+        }
+      ],
+      "expected_features": [
+        {
+          "id": "LS-01",
+          "label": "左外壳独立截面 1",
+          "kind": "cylindrical_wall",
+          "center_local_m": [0.0005, 0.042, 0.0525],
+          "axis_local": [1, 0, 0],
+          "radius_m": 0.0011,
+          "tolerance_m": 3e-05,
+          "center_world_m": [-0.038000000000000006, 0.0005, 0.1549215],
+          "triangle_witnesses": [1152, 1153, 1154, 1155, 1156, 1157, 1158, 1159, 1160, 1161, 1162, 1163, 1164, 1165, 1166, 1167, 1168, 1169, 1170, 1171, 1172, 1173, 1174, 1175, 1176, 1177, 1178, 1179, 1180, 1181, 1182, 1183, 1184, 1185, 1186, 1187, 1188, 1189, 1190, 1191, 1192, 1193, 1194, 1195, 1196, 1197, 1198, 1199, 1200, 1201, 1202, 1203, 1204, 1205, 1206, 1207, 1208, 1209, 1210, 1211, 1212, 1213, 1214, 1215, 1216, 1217, 1218, 1219, 1220, 1221, 1222, 1223, 1224, 1225, 1226, 1227, 1228, 1229, 1230, 1231, 1232, 1233, 1234, 1235, 1236, 1237, 1238, 1239, 1240, 1241, 1242, 1243, 1244, 1245, 1246, 1247, 1248, 1249, 1250, 1251, 1252, 1253, 1254, 1255, 1256, 1257, 1258, 1259, 1260, 1261, 1262, 1263, 1264, 1265, 1266, 1267, 1268, 1269, 1270, 1271, 1272, 1273, 1274, 1275, 1276, 1277, 1278, 1279, 1280, 1281, 1282, 1283, 1284, 1285, 1286, 1287, 1288, 1289, 1290, 1291, 1292, 1293, 1294, 1295],
+          "region_ref": "LS-R01",
+          "annotation_basis": "independent_source_plane_section_and_multiview_review",
+          "annotation_method": {
+            "method": "independent-source-plane-sections/1",
+            "plane_normal_local": [1, 0, 0],
+            "plane_offset_m": 0.0005,
+            "closed_contour": true,
+            "section_vertex_count": 144,
+            "source_winding": "inward_radial",
+            "construction": "Triangle-plane intersections joined at 0.1 micrometre; radius checked against the contour, with no Build imports or normal-based patch extraction.",
+            "sample_points_local_m": [
+              [0.0005, 0.041999999433755875, 0.05139999836683273],
+              [0.0005, 0.04244271479652295, 0.051493881270725496],
+              [0.0005, 0.04277781769633293, 0.05172218382358551],
+              [0.0005, 0.043024482205946214, 0.05210161302343979],
+              [0.0005, 0.04309999942779541, 0.05249999836087227],
+              [0.0005, 0.043006120249192946, 0.05294271651760712],
+              [0.0005, 0.04277781769633293, 0.053277816623449326],
+              [0.0005, 0.042398387565156126, 0.05352448113306261],
+              [0.0005, 0.041999999433755875, 0.053599998354911804],
+              [0.0005, 0.041557285002311324, 0.05350611917630934],
+              [0.0005, 0.04122218117117882, 0.053277816623449326],
+              [0.0005, 0.04097551945553331, 0.052898387423595046],
+              [0.0005, 0.04089999943971634, 0.05249999836087227],
+              [0.0005, 0.04099387954964133, 0.05205728392942772],
+              [0.0005, 0.04122218117117882, 0.05172218382358551],
+              [0.0005, 0.041601614096323396, 0.05147551931397223]
+            ]
+          },
+          "function_status": "unknown",
+          "functional_scope": "This annotation verifies a finite inner-wall section; any mounting-site claim must come from the separately captured assembly input.",
+          "next_action": "核对匹配版本的壳体装配图、实际连接件与孔的装入侧；检查有限壁段及邻件，不从几何圆孔推断紧固。",
+          "inspected_materials": [
+            "SRC-000022",
+            "upstream-model-readme",
+            "upstream-microduck-design-tree",
+            "local-xl330-assembly"
+          ],
+          "missing_evidence": "本设备该孔的装配对象、装入侧、保持方式与实物规格尚未由独立图纸或实物证据核定。",
+          "stop_reason": "本轮已完成源字节、闭合截面、内向法线及多视图复核；所检索的固定版本资料未提供逐孔功能与实物保持依据。"
+        },
+        {
+          "id": "LS-02",
+          "label": "左外壳独立截面 2",
+          "kind": "cylindrical_wall",
+          "center_local_m": [0.01625, -0.028, 0.05],
+          "axis_local": [1, 0, 0],
+          "radius_m": 0.0011,
+          "tolerance_m": 3e-05,
+          "center_world_m": [0.032, 0.01625, 0.1524215],
+          "triangle_witnesses": [20043, 20044, 20045, 20046, 20047, 20048, 20049, 20050, 20051, 20052, 20053, 20054, 20055, 20056, 20057, 20058, 20059, 20060, 20061, 20062, 20063, 20064, 20065, 20066, 20067, 20068, 20069, 20070, 20071, 20072, 20073, 20074, 20075, 20076, 20077, 20078, 20079, 20080, 20081, 20082, 20083, 20084, 20085, 20086, 20087, 20088, 20089, 20090, 20091, 20092, 20093, 20094, 20095, 20096, 20097, 20098, 20099, 20100, 20101, 20102, 20103, 20104, 20105, 20106, 20107, 20108, 20109, 20110, 20111, 20112, 20113, 20114, 20115, 20116, 20117, 20118, 20119, 20120, 20121, 20122, 20123, 20124, 20125, 20126, 20127, 20128, 20129, 20130, 20131, 20132, 20133, 20134, 20135, 20136, 20137, 20138, 20139, 20140, 20141, 20142, 20143, 20144, 20145, 20146, 20147, 20148, 20149, 20150, 20151, 20152, 20153, 20154, 20155, 20156, 20157, 20158, 20159, 20160, 20161, 20162, 20163, 20164, 20165, 20166, 20167, 20168, 20169, 20170, 20171, 20172, 20173, 20174, 20175, 20176, 20177, 20178, 20179, 20180, 20181, 20182, 20183, 20184, 20185, 20186],
+          "region_ref": "LS-R02",
+          "annotation_basis": "independent_source_plane_section_and_multiview_review",
+          "annotation_method": {
+            "method": "independent-source-plane-sections/1",
+            "plane_normal_local": [1, 0, 0],
+            "plane_offset_m": 0.01625,
+            "closed_contour": true,
+            "section_vertex_count": 144,
+            "source_winding": "inward_radial",
+            "construction": "Triangle-plane intersections joined at 0.1 micrometre; radius checked against the contour, with no Build imports or normal-based patch extraction.",
+            "sample_points_local_m": [
+              [0.01625, -0.02800000086426735, 0.051100000739097595],
+              [0.01625, -0.02757944911368074, 0.05101529881213048],
+              [0.01625, -0.027222182601690292, 0.05077781900763512],
+              [0.01625, -0.026984700000325306, 0.05042055062599363],
+              [0.01625, -0.026900000870227814, 0.05000000074505806],
+              [0.01625, -0.02698470000322713, 0.0495794489944716],
+              [0.01625, -0.027222182601690292, 0.049222182482481],
+              [0.01625, -0.02757944912068663, 0.04898469894979337],
+              [0.01625, -0.02800000086426735, 0.048900000751018524],
+              [0.01625, -0.02842055075220881, 0.04898469895269534],
+              [0.01625, -0.028777817264199257, 0.049222182482481],
+              [0.01625, -0.02901530079688689, 0.04957944900147719],
+              [0.01625, -0.029100000858306885, 0.05000000074505806],
+              [0.01625, -0.02901530079398492, 0.050420550632999515],
+              [0.01625, -0.028777817264199257, 0.05077781900763512],
+              [0.01625, -0.02842055074520292, 0.05101529881503245]
+            ]
+          },
+          "function_status": "unknown",
+          "functional_scope": "This annotation verifies a finite inner-wall section; any mounting-site claim must come from the separately captured assembly input.",
+          "next_action": "核对匹配版本的壳体装配图、实际连接件与孔的装入侧；检查有限壁段及邻件，不从几何圆孔推断紧固。",
+          "inspected_materials": [
+            "SRC-000022",
+            "upstream-model-readme",
+            "upstream-microduck-design-tree",
+            "local-xl330-assembly"
+          ],
+          "missing_evidence": "本设备该孔的装配对象、装入侧、保持方式与实物规格尚未由独立图纸或实物证据核定。",
+          "stop_reason": "本轮已完成源字节、闭合截面、内向法线及多视图复核；所检索的固定版本资料未提供逐孔功能与实物保持依据。"
+        },
+        {
+          "id": "LS-03",
+          "label": "左外壳独立截面 3",
+          "kind": "cylindrical_wall",
+          "center_local_m": [0.01625, -0.022, 0.056],
+          "axis_local": [1, 0, 0],
+          "radius_m": 0.0011,
+          "tolerance_m": 3e-05,
+          "center_world_m": [0.026, 0.01625, 0.1584215],
+          "triangle_witnesses": [20302, 20303, 20304, 20305, 20306, 20307, 20308, 20309, 20310, 20311, 20312, 20313, 20314, 20315, 20316, 20317, 20318, 20319, 20320, 20321, 20322, 20323, 20324, 20325, 20326, 20327, 20328, 20329, 20330, 20331, 20332, 20333, 20334, 20335, 20336, 20337, 20338, 20339, 20340, 20341, 20342, 20343, 20344, 20345, 20346, 20347, 20348, 20349, 20350, 20351, 20352, 20353, 20354, 20355, 20356, 20357, 20358, 20359, 20360, 20361, 20362, 20363, 20364, 20365, 20366, 20367, 20368, 20369, 20370, 20371, 20372, 20373, 20374, 20375, 20376, 20377, 20378, 20379, 20380, 20381, 20382, 20383, 20384, 20385, 20386, 20387, 20388, 20389, 20390, 20391, 20392, 20393, 20394, 20395, 20396, 20397, 20398, 20399, 20400, 20401, 20402, 20403, 20404, 20405, 20406, 20407, 20408, 20409, 20410, 20411, 20412, 20413, 20414, 20415, 20416, 20417, 20418, 20419, 20420, 20421, 20422, 20423, 20424, 20425, 20426, 20427, 20428, 20429, 20430, 20431, 20432, 20433, 20434, 20435, 20436, 20437, 20438, 20439, 20440, 20441, 20442, 20443, 20444, 20445],
+          "region_ref": "LS-R03",
+          "annotation_basis": "independent_source_plane_section_and_multiview_review",
+          "annotation_method": {
+            "method": "independent-source-plane-sections/1",
+            "plane_normal_local": [1, 0, 0],
+            "plane_offset_m": 0.01625,
+            "closed_contour": true,
+            "section_vertex_count": 144,
+            "source_winding": "inward_radial",
+            "construction": "Triangle-plane intersections joined at 0.1 micrometre; radius checked against the contour, with no Build imports or normal-based patch extraction.",
+            "sample_points_local_m": [
+              [0.01625, -0.02199999988079071, 0.057100001722574234],
+              [0.01625, -0.021579448130204102, 0.05701529979560712],
+              [0.01625, -0.021222181618213654, 0.05677781626582146],
+              [0.01625, -0.02098469994817117, 0.05642055160947027],
+              [0.01625, -0.020899999886751175, 0.0560000017285347],
+              [0.01625, -0.02098469995107314, 0.055579448115302944],
+              [0.01625, -0.021222181618213654, 0.05522218346595764],
+              [0.01625, -0.02157944813720999, 0.05498469993327001],
+              [0.01625, -0.02199999988079071, 0.05490000173449516],
+              [0.01625, -0.02242055163137732, 0.05498469993617198],
+              [0.01625, -0.022777818143367767, 0.05522218346595764],
+              [0.01625, -0.023015299813410252, 0.055579448122308826],
+              [0.01625, -0.023099999874830246, 0.0560000017285347],
+              [0.01625, -0.02301529981050828, 0.056420551616476154],
+              [0.01625, -0.022777818143367767, 0.05677781626582146],
+              [0.01625, -0.02242055162437143, 0.05701529979850909]
+            ]
+          },
+          "function_status": "unknown",
+          "functional_scope": "This annotation verifies a finite inner-wall section; any mounting-site claim must come from the separately captured assembly input.",
+          "next_action": "核对匹配版本的壳体装配图、实际连接件与孔的装入侧；检查有限壁段及邻件，不从几何圆孔推断紧固。",
+          "inspected_materials": [
+            "SRC-000022",
+            "upstream-model-readme",
+            "upstream-microduck-design-tree",
+            "local-xl330-assembly"
+          ],
+          "missing_evidence": "本设备该孔的装配对象、装入侧、保持方式与实物规格尚未由独立图纸或实物证据核定。",
+          "stop_reason": "本轮已完成源字节、闭合截面、内向法线及多视图复核；所检索的固定版本资料未提供逐孔功能与实物保持依据。"
+        },
+        {
+          "id": "LS-04",
+          "label": "左外壳独立截面 4",
+          "kind": "cylindrical_wall",
+          "center_local_m": [0.01625, -0.022, 0.044],
+          "axis_local": [1, 0, 0],
+          "radius_m": 0.0011,
+          "tolerance_m": 3e-05,
+          "center_world_m": [0.026, 0.01625, 0.14642149999999998],
+          "triangle_witnesses": [19750, 19751, 19752, 19753, 19754, 19755, 19756, 19757, 19758, 19759, 19760, 19761, 19762, 19763, 19764, 19765, 19766, 19767, 19768, 19769, 19770, 19771, 19772, 19773, 19774, 19775, 19776, 19777, 19778, 19779, 19780, 19781, 19782, 19783, 19784, 19785, 19786, 19787, 19788, 19789, 19790, 19791, 19792, 19793, 19794, 19795, 19796, 19797, 19798, 19799, 19800, 19801, 19802, 19803, 19804, 19805, 19806, 19807, 19808, 19809, 19810, 19811, 19812, 19813, 19814, 19815, 19816, 19817, 19818, 19819, 19820, 19821, 19822, 19823, 19824, 19825, 19826, 19827, 19828, 19829, 19830, 19831, 19832, 19833, 19834, 19835, 19836, 19837, 19838, 19839, 19840, 19841, 19842, 19843, 19844, 19845, 19846, 19847, 19848, 19849, 19850, 19851, 19852, 19853, 19854, 19855, 19856, 19857, 19858, 19859, 19860, 19861, 19862, 19863, 19864, 19865, 19866, 19867, 19868, 19869, 19870, 19871, 19872, 19873, 19874, 19875, 19876, 19877, 19878, 19879, 19880, 19881, 19882, 19883, 19884, 19885, 19886, 19887, 19888, 19889, 19890, 19891, 19892, 19893],
+          "region_ref": "LS-R04",
+          "annotation_basis": "independent_source_plane_section_and_multiview_review",
+          "annotation_method": {
+            "method": "independent-source-plane-sections/1",
+            "plane_normal_local": [1, 0, 0],
+            "plane_offset_m": 0.01625,
+            "closed_contour": true,
+            "section_vertex_count": 144,
+            "source_winding": "inward_radial",
+            "construction": "Triangle-plane intersections joined at 0.1 micrometre; radius checked against the contour, with no Build imports or normal-based patch extraction.",
+            "sample_points_local_m": [
+              [0.01625, -0.02199999988079071, 0.045099999755620956],
+              [0.01625, -0.021579448130204102, 0.04501530155394414],
+              [0.01625, -0.021222181618213654, 0.04477781802415848],
+              [0.01625, -0.02098469994817117, 0.044420549642516995],
+              [0.01625, -0.020899999886751175, 0.04399999976158142],
+              [0.01625, -0.02098469995107314, 0.043579449873639965],
+              [0.01625, -0.021222181618213654, 0.043222181499004364],
+              [0.01625, -0.02157944813720999, 0.042984699828962025],
+              [0.01625, -0.02199999988079071, 0.042899999767541885],
+              [0.01625, -0.02242055163137732, 0.042984699831863704],
+              [0.01625, -0.022777818143367767, 0.043222181499004364],
+              [0.01625, -0.023015299813410252, 0.04357944988064585],
+              [0.01625, -0.023099999874830246, 0.04399999976158142],
+              [0.01625, -0.02301529981050828, 0.04442054964952288],
+              [0.01625, -0.022777818143367767, 0.04477781802415848],
+              [0.01625, -0.02242055162437143, 0.04501530155684611]
+            ]
+          },
+          "function_status": "unknown",
+          "functional_scope": "This annotation verifies a finite inner-wall section; any mounting-site claim must come from the separately captured assembly input.",
+          "next_action": "核对匹配版本的壳体装配图、实际连接件与孔的装入侧；检查有限壁段及邻件，不从几何圆孔推断紧固。",
+          "inspected_materials": [
+            "SRC-000022",
+            "upstream-model-readme",
+            "upstream-microduck-design-tree",
+            "local-xl330-assembly"
+          ],
+          "missing_evidence": "本设备该孔的装配对象、装入侧、保持方式与实物规格尚未由独立图纸或实物证据核定。",
+          "stop_reason": "本轮已完成源字节、闭合截面、内向法线及多视图复核；所检索的固定版本资料未提供逐孔功能与实物保持依据。"
+        },
+        {
+          "id": "LS-05",
+          "label": "左外壳独立截面 5",
+          "kind": "cylindrical_wall",
+          "center_local_m": [0.01625, -0.016, 0.05],
+          "axis_local": [1, 0, 0],
+          "radius_m": 0.0011,
+          "tolerance_m": 3e-05,
+          "center_world_m": [0.02, 0.01625, 0.1524215],
+          "triangle_witnesses": [19606, 19607, 19608, 19609, 19610, 19611, 19612, 19613, 19614, 19615, 19616, 19617, 19618, 19619, 19620, 19621, 19622, 19623, 19624, 19625, 19626, 19627, 19628, 19629, 19630, 19631, 19632, 19633, 19634, 19635, 19636, 19637, 19638, 19639, 19640, 19641, 19642, 19643, 19644, 19645, 19646, 19647, 19648, 19649, 19650, 19651, 19652, 19653, 19654, 19655, 19656, 19657, 19658, 19659, 19660, 19661, 19662, 19663, 19664, 19665, 19666, 19667, 19668, 19669, 19670, 19671, 19672, 19673, 19674, 19675, 19676, 19677, 19678, 19679, 19680, 19681, 19682, 19683, 19684, 19685, 19686, 19687, 19688, 19689, 19690, 19691, 19692, 19693, 19694, 19695, 19696, 19697, 19698, 19699, 19700, 19701, 19702, 19703, 19704, 19705, 19706, 19707, 19708, 19709, 19710, 19711, 19712, 19713, 19714, 19715, 19716, 19717, 19718, 19719, 19720, 19721, 19722, 19723, 19724, 19725, 19726, 19727, 19728, 19729, 19730, 19731, 19732, 19733, 19734, 19735, 19736, 19737, 19738, 19739, 19740, 19741, 19742, 19743, 19744, 19745, 19746, 19747, 19748, 19749],
+          "region_ref": "LS-R05",
+          "annotation_basis": "independent_source_plane_section_and_multiview_review",
+          "annotation_method": {
+            "method": "independent-source-plane-sections/1",
+            "plane_normal_local": [1, 0, 0],
+            "plane_offset_m": 0.01625,
+            "closed_contour": true,
+            "section_vertex_count": 144,
+            "source_winding": "inward_radial",
+            "construction": "Triangle-plane intersections joined at 0.1 micrometre; radius checked against the contour, with no Build imports or normal-based patch extraction.",
+            "sample_points_local_m": [
+              [0.01625, -0.01600000075995922, 0.051100000739097595],
+              [0.01625, -0.015579449009372612, 0.05101529881213048],
+              [0.01625, -0.015222182497382164, 0.05077781900763512],
+              [0.01625, -0.014984699896017103, 0.05042055062599363],
+              [0.01625, -0.01489999983459711, 0.05000000074505806],
+              [0.01625, -0.014984699898919077, 0.0495794489944716],
+              [0.01625, -0.015222182497382164, 0.049222182482481],
+              [0.01625, -0.015579449016378501, 0.04898469894979337],
+              [0.01625, -0.01600000075995922, 0.048900000751018524],
+              [0.01625, -0.01642055064790068, 0.04898469895269534],
+              [0.01625, -0.01677781715989113, 0.049222182482481],
+              [0.01625, -0.017015300692578762, 0.04957944900147719],
+              [0.01625, -0.017100000753998756, 0.05000000074505806],
+              [0.01625, -0.017015300689676792, 0.050420550632999515],
+              [0.01625, -0.01677781715989113, 0.05077781900763512],
+              [0.01625, -0.01642055064089479, 0.05101529881503245]
+            ]
+          },
+          "function_status": "unknown",
+          "functional_scope": "This annotation verifies a finite inner-wall section; any mounting-site claim must come from the separately captured assembly input.",
+          "next_action": "核对匹配版本的壳体装配图、实际连接件与孔的装入侧；检查有限壁段及邻件，不从几何圆孔推断紧固。",
+          "inspected_materials": [
+            "SRC-000022",
+            "upstream-model-readme",
+            "upstream-microduck-design-tree",
+            "local-xl330-assembly"
+          ],
+          "missing_evidence": "本设备该孔的装配对象、装入侧、保持方式与实物规格尚未由独立图纸或实物证据核定。",
+          "stop_reason": "本轮已完成源字节、闭合截面、内向法线及多视图复核；所检索的固定版本资料未提供逐孔功能与实物保持依据。"
+        },
+        {
+          "id": "LS-06",
+          "label": "左外壳独立截面 6",
+          "kind": "cylindrical_wall",
+          "center_local_m": [0.0255, -0.0095, 0.04153],
+          "axis_local": [0, 0, 1],
+          "radius_m": 0.0011,
+          "tolerance_m": 3e-05,
+          "center_world_m": [0.0135, 0.0255, 0.1439515],
+          "triangle_witnesses": [4213, 4214, 4215, 4216, 4217, 4218, 4219, 4220, 4221, 4222, 4223, 4224, 4225, 4226, 4227, 4228, 4229, 4230, 4231, 4232, 4233, 4234, 4235, 4236, 4237, 4238, 4239, 4240, 4241, 4242, 4243, 4244, 4245, 4246, 4247, 4248, 4249, 4250, 4251, 4252, 4253, 4254, 4255, 4256, 4257, 4258, 4259, 4260, 4261, 4262, 4263, 4264, 4265, 4266, 4267, 4268, 4269, 4270, 4271, 4272, 4273, 4274, 4275, 4276, 4277, 4278, 4279, 4280, 4281, 4282, 4283, 4284, 4285, 4286, 4287, 4288, 4289, 4290, 4291, 4292, 4293, 4294, 4295, 4296, 4297, 4298, 4299, 4300, 4301, 4302, 4303, 4304, 4305, 4306, 4307, 4308, 4309, 4310, 4311, 4312, 4313, 4314, 4315, 4316, 4317, 4318, 4319, 4320, 4321, 4322, 4323, 4324, 4325, 4326, 4327, 4328, 4329, 4330, 4331, 4332, 4333, 4334, 4335, 4336, 4337, 4338, 4339, 4340, 4341, 4342, 4343, 4344, 4345, 4346, 4347, 4348, 4349, 4350, 4351, 4352, 4353, 4354, 4355, 4356, 4357, 4358, 4359, 4360, 4361, 4362, 4363, 4364, 4365, 4366, 4367, 4368, 4369, 4370, 4371, 4372, 4373, 4374, 4375, 4376, 4377, 4378, 4379, 4380, 4381, 4382, 4383, 4384, 4385, 4386, 4387, 4388, 4389, 4390, 4391, 4392],
+          "region_ref": "LS-R06",
+          "annotation_basis": "independent_source_plane_section_and_multiview_review",
+          "annotation_method": {
+            "method": "independent-source-plane-sections/1",
+            "plane_normal_local": [0, 0, 1],
+            "plane_offset_m": 0.04153,
+            "closed_contour": true,
+            "section_vertex_count": 180,
+            "source_winding": "inward_radial",
+            "construction": "Triangle-plane intersections joined at 0.1 micrometre; radius checked against the contour, with no Build imports or normal-based patch extraction.",
+            "sample_points_local_m": [
+              [0.026597382920051958, -0.009428065839021962, 0.04153],
+              [0.026524961094223972, -0.009101403866136535, 0.04153],
+              [0.02634264901280403, -0.008792934007942677, 0.04153],
+              [0.025964880362153053, -0.008503061719238758, 0.04153],
+              [0.025452527081703973, -0.008402072642242612, 0.04153],
+              [0.024949999526143074, -0.008547372184693813, 0.04153],
+              [0.02462761652188245, -0.008831684612238185, 0.04153],
+              [0.02445847502556416, -0.009146940963122746, 0.04153],
+              [0.024399999529123306, -0.009499999694526196, 0.04153],
+              [0.02445847502556416, -0.00985305935725222, 0.04153],
+              [0.024613372985613273, -0.010150628840205806, 0.04153],
+              [0.024949999526143074, -0.010452628135681152, 0.04153],
+              [0.02545155945092964, -0.010597884964604044, 0.04153],
+              [0.025964880362153053, -0.010496938601136208, 0.04153],
+              [0.02634264901280403, -0.010207066312432289, 0.04153],
+              [0.026524961094223972, -0.00989859645423843, 0.04153],
+              [0.026597382920051958, -0.009571934015539777, 0.04153]
+            ]
+          },
+          "function_status": "unknown",
+          "functional_scope": "This annotation verifies a finite inner-wall section; any mounting-site claim must come from the separately captured assembly input.",
+          "next_action": "核对匹配版本的壳体装配图、实际连接件与孔的装入侧；检查有限壁段及邻件，不从几何圆孔推断紧固。",
+          "inspected_materials": [
+            "SRC-000022",
+            "upstream-model-readme",
+            "upstream-microduck-design-tree",
+            "local-xl330-assembly"
+          ],
+          "missing_evidence": "本设备该孔的装配对象、装入侧、保持方式与实物规格尚未由独立图纸或实物证据核定。",
+          "stop_reason": "本轮已完成源字节、闭合截面、内向法线及多视图复核；所检索的固定版本资料未提供逐孔功能与实物保持依据。"
+        }
+      ],
+      "figures": [
+        "docs/build/interface-review/left_shell-source.png",
+        "docs/build/interface-review/independent-sections.png"
+      ]
+    },
+    {
+      "part_ref": "part:microduck:638f29b46b322e64",
+      "mesh_key": "leg",
+      "geometry_sha256": "9a91cc1ae31ecd9e0c1ba93f3bb2ad8a12e29bff24ec27d1ac66c0c3037d9fcf",
+      "source_ref": "SRC-000023",
+      "source_path": "microduck-official-materials/03-三维模型/assets/leg_腿部连杆.stl",
+      "source_revision": "cb70b792312d559a4da09064d92009079671815f",
+      "annotation_scope": "Selected closed inner-wall sections, independently chosen after source-mesh visual review. Not an exhaustive part inventory.",
+      "pose_reference": {
+        "configuration": "source qpos0",
+        "position_m": [-0.0097771, 0, 0.0447229],
+        "quaternion_xyzw": [0, 0, 0.7071067811865476, 0.7071067811865476],
+        "evidence": "frozen MJCF/CSV scene identity; view directions and feature coordinates are source-local"
+      },
+      "regions": [
+        {
+          "id": "LG-R01",
+          "label": "LG-01 原始三角截面壁",
+          "triangle_indices": [4109, 4110, 4111, 4112, 4113, 4114, 4115, 4116, 4117, 4118, 4119, 4120, 4121, 4122, 4123, 4124, 4125, 4126, 4127, 4128, 4129, 4130, 4131, 4132, 4133, 4134, 4135, 4136, 4137, 4138, 4139, 4140, 4141, 4142, 4143, 4144, 4145, 4146, 4147, 4148, 4149, 4150, 4151, 4152, 4153, 4154, 4155, 4156, 4157, 4158, 4159, 4160, 4161, 4162, 4163, 4164, 4165, 4166, 4167, 4168, 4169, 4170, 4171, 4172, 4173, 4174, 4175, 4176, 4177, 4178, 4179, 4180, 4181, 4182, 4183, 4184, 4185, 4186, 4187, 4188, 4189, 4190, 4191, 4192, 4193, 4194, 4195, 4196, 4197, 4198, 4199, 4200, 4201, 4202, 4203, 4204, 4205, 4206, 4207, 4208, 4209, 4210, 4211, 4212, 4213, 4214, 4215, 4216, 4217, 4218, 4219, 4220, 4221, 4222, 4223, 4224, 4225, 4226, 4227, 4228, 4229, 4230, 4231, 4232, 4233, 4234, 4235, 4236, 4237, 4238, 4239, 4240, 4241, 4242, 4243, 4244, 4245, 4246, 4247, 4248, 4249, 4250, 4251, 4252],
+          "review_status": "reviewed",
+          "evidence": [
+            "independent-source-plane-sections/1",
+            "SRC-000023",
+            "LG-01"
+          ],
+          "limitations": [
+            "Reviewed only the source triangles intersecting this plane. This does not certify the whole part, both entrances, all wall transitions, thread or retaining function."
+          ],
+          "center_local_m": [0.039, 0.0262426407, 0.0315344471]
+        },
+        {
+          "id": "LG-R02",
+          "label": "LG-02 原始三角截面壁",
+          "triangle_indices": [4884, 4885, 4886, 4887, 4888, 4889, 4890, 4891, 4892, 4893, 4894, 4895, 4896, 4897, 4898, 4899, 4900, 4901, 4902, 4903, 4904, 4905, 4906, 4907, 4908, 4909, 4910, 4911, 4912, 4913, 4914, 4915, 4916, 4917, 4918, 4919, 4920, 4921, 4922, 4923, 4924, 4925, 4926, 4927, 4928, 4929, 4930, 4931, 4932, 4933, 4934, 4935, 4936, 4937, 4938, 4939, 4940, 4941, 4942, 4943, 4944, 4945, 4946, 4947, 4948, 4949, 4950, 4951, 4952, 4953, 4954, 4955, 4956, 4957, 4958, 4959, 4960, 4961, 4962, 4963, 4964, 4965, 4966, 4967, 4968, 4969, 4970, 4971, 4972, 4973, 4974, 4975, 4976, 4977, 4978, 4979, 4980, 4981, 4982, 4983, 4984, 4985, 4986, 4987, 4988, 4989, 4990, 4991, 4992, 4993, 4994, 4995, 4996, 4997, 4998, 4999, 5000, 5001, 5002, 5003, 5004, 5005, 5006, 5007, 5008, 5009, 5010, 5011, 5012, 5013, 5014, 5015, 5016, 5017, 5018, 5019, 5020, 5021, 5022, 5023, 5024, 5025, 5026, 5027],
+          "review_status": "reviewed",
+          "evidence": [
+            "independent-source-plane-sections/1",
+            "SRC-000023",
+            "LG-02"
+          ],
+          "limitations": [
+            "Reviewed only the source triangles intersecting this plane. This does not certify the whole part, both entrances, all wall transitions, thread or retaining function."
+          ],
+          "center_local_m": [0.039, 0.0262426407, 0.0400197285]
+        },
+        {
+          "id": "LG-R03",
+          "label": "LG-03 原始三角截面壁",
+          "triangle_indices": [5297, 5298, 5299, 5300, 5301, 5302, 5303, 5304, 5305, 5306, 5307, 5308, 5309, 5310, 5311, 5312, 5313, 5314, 5315, 5316, 5317, 5318, 5319, 5320, 5321, 5322, 5323, 5324, 5325, 5326, 5327, 5328, 5329, 5330, 5331, 5332, 5333, 5334, 5335, 5336, 5337, 5338, 5339, 5340, 5341, 5342, 5343, 5344, 5345, 5346, 5347, 5348, 5349, 5350, 5351, 5352, 5353, 5354, 5355, 5356, 5357, 5358, 5359, 5360, 5361, 5362, 5363, 5364, 5365, 5366, 5367, 5368, 5369, 5370, 5371, 5372, 5373, 5374, 5375, 5376, 5377, 5378, 5379, 5380, 5381, 5382, 5383, 5384, 5385, 5386, 5387, 5388, 5389, 5390, 5391, 5392, 5393, 5394, 5395, 5396, 5397, 5398, 5399, 5400, 5401, 5402, 5403, 5404, 5405, 5406, 5407, 5408, 5409, 5410, 5411, 5412, 5413, 5414, 5415, 5416, 5417, 5418, 5419, 5420, 5421, 5422, 5423, 5424, 5425, 5426, 5427, 5428, 5429, 5430, 5431, 5432, 5433, 5434, 5435, 5436, 5437, 5438, 5439, 5440],
+          "review_status": "reviewed",
+          "evidence": [
+            "independent-source-plane-sections/1",
+            "SRC-000023",
+            "LG-03"
+          ],
+          "limitations": [
+            "Reviewed only the source triangles intersecting this plane. This does not certify the whole part, both entrances, all wall transitions, thread or retaining function."
+          ],
+          "center_local_m": [0.039, 0.0177573593, 0.0315344471]
+        },
+        {
+          "id": "LG-R04",
+          "label": "LG-04 原始三角截面壁",
+          "triangle_indices": [8233, 8234, 8235, 8236, 8237, 8238, 8239, 8240, 8241, 8242, 8243, 8244, 8245, 8246, 8247, 8248, 8249, 8250, 8251, 8252, 8253, 8254, 8255, 8256, 8257, 8258, 8259, 8260, 8261, 8262, 8263, 8264, 8265, 8266, 8267, 8268, 8269, 8270, 8271, 8272, 8273, 8274, 8275, 8276, 8277, 8278, 8279, 8280, 8281, 8282, 8283, 8284, 8285, 8286, 8287, 8288, 8289, 8290, 8291, 8292, 8293, 8294, 8295, 8296, 8297, 8298, 8299, 8300, 8301, 8302, 8303, 8304, 8305, 8306, 8307, 8308, 8309, 8310, 8311, 8312, 8313, 8314, 8315, 8316, 8317, 8318, 8319, 8320, 8321, 8322, 8323, 8324, 8325, 8326, 8327, 8328, 8329, 8330, 8331, 8332, 8333, 8334, 8335, 8336, 8337, 8338, 8339, 8340, 8341, 8342, 8343, 8344, 8345, 8346, 8347, 8348, 8349, 8350, 8351, 8352, 8353, 8354, 8355, 8356, 8357, 8358, 8359, 8360, 8361, 8362, 8363, 8364, 8365, 8366, 8367, 8368, 8369, 8370, 8371, 8372, 8373, 8374, 8375, 8376],
+          "review_status": "reviewed",
+          "evidence": [
+            "independent-source-plane-sections/1",
+            "SRC-000023",
+            "LG-04"
+          ],
+          "limitations": [
+            "Reviewed only the source triangles intersecting this plane. This does not certify the whole part, both entrances, all wall transitions, thread or retaining function."
+          ],
+          "center_local_m": [0.039, 0.0177573593, 0.0400197285]
+        },
+        {
+          "id": "LG-R05",
+          "label": "LG-05 原始三角截面壁",
+          "triangle_indices": [8665, 8666, 8667, 8668, 8669, 8670, 8671, 8672, 8673, 8674, 8675, 8676, 8677, 8678, 8679, 8680, 8681, 8682, 8683, 8684, 8685, 8686, 8687, 8688, 8689, 8690, 8691, 8692, 8693, 8694, 8695, 8696, 8697, 8698, 8699, 8700, 8701, 8702, 8703, 8704, 8705, 8706, 8707, 8708, 8709, 8710, 8711, 8712, 8713, 8714, 8715, 8716, 8717, 8718, 8719, 8720, 8721, 8722, 8723, 8724, 8725, 8726, 8727, 8728, 8729, 8730, 8731, 8732, 8733, 8734, 8735, 8736, 8737, 8738, 8739, 8740, 8741, 8742, 8743, 8744, 8745, 8746, 8747, 8748, 8749, 8750, 8751, 8752, 8753, 8754, 8755, 8756, 8757, 8758, 8759, 8760, 8761, 8762, 8763, 8764, 8765, 8766, 8767, 8768, 8769, 8770, 8771, 8772, 8773, 8774, 8775, 8776, 8777, 8778, 8779, 8780, 8781, 8782, 8783, 8784, 8785, 8786, 8787, 8788, 8789, 8790, 8791, 8792, 8793, 8794, 8795, 8796, 8797, 8798, 8799, 8800, 8801, 8802, 8803, 8804, 8805, 8806, 8807, 8808],
+          "review_status": "reviewed",
+          "evidence": [
+            "independent-source-plane-sections/1",
+            "SRC-000023",
+            "LG-05"
+          ],
+          "limitations": [
+            "Reviewed only the source triangles intersecting this plane. This does not certify the whole part, both entrances, all wall transitions, thread or retaining function."
+          ],
+          "center_local_m": [0.033, 0.022, -0.006222912]
+        },
+        {
+          "id": "LG-R-remaining",
+          "label": "其余源三角、唇缘、槽与遮挡结构",
+          "triangle_indices": [],
+          "review_status": "unreviewed",
+          "evidence": [
+            "docs/build/interface-review/leg-source.png"
+          ],
+          "limitations": [
+            "Whole-part context was viewed from multiple directions, but the remaining triangles have not been independently classified or exhaustively annotated. No 100% part or device recall is claimed."
+          ],
+          "next_action": "继续核对中间长槽、两侧孔和凸缘；本期仅独立验收上端四个内孔段及底部大孔段。",
+          "center_local_m": [0.036334543873987414, 0.022006111161034046, 0.021179118470639868],
+          "locator_basis": "Mean of raw STL facet vertices, used only as a whole-source locator; no reviewed triangles are claimed for this remainder."
+        }
+      ],
+      "expected_features": [
+        {
+          "id": "LG-01",
+          "label": "左连杆独立截面 1",
+          "kind": "cylindrical_wall",
+          "center_local_m": [0.039, 0.0262426407, 0.0315344471],
+          "axis_local": [1, 0, 0],
+          "radius_m": 0.0011,
+          "tolerance_m": 3e-05,
+          "center_world_m": [-0.0360197407, 0.039, 0.07625734710000001],
+          "triangle_witnesses": [4109, 4110, 4111, 4112, 4113, 4114, 4115, 4116, 4117, 4118, 4119, 4120, 4121, 4122, 4123, 4124, 4125, 4126, 4127, 4128, 4129, 4130, 4131, 4132, 4133, 4134, 4135, 4136, 4137, 4138, 4139, 4140, 4141, 4142, 4143, 4144, 4145, 4146, 4147, 4148, 4149, 4150, 4151, 4152, 4153, 4154, 4155, 4156, 4157, 4158, 4159, 4160, 4161, 4162, 4163, 4164, 4165, 4166, 4167, 4168, 4169, 4170, 4171, 4172, 4173, 4174, 4175, 4176, 4177, 4178, 4179, 4180, 4181, 4182, 4183, 4184, 4185, 4186, 4187, 4188, 4189, 4190, 4191, 4192, 4193, 4194, 4195, 4196, 4197, 4198, 4199, 4200, 4201, 4202, 4203, 4204, 4205, 4206, 4207, 4208, 4209, 4210, 4211, 4212, 4213, 4214, 4215, 4216, 4217, 4218, 4219, 4220, 4221, 4222, 4223, 4224, 4225, 4226, 4227, 4228, 4229, 4230, 4231, 4232, 4233, 4234, 4235, 4236, 4237, 4238, 4239, 4240, 4241, 4242, 4243, 4244, 4245, 4246, 4247, 4248, 4249, 4250, 4251, 4252],
+          "region_ref": "LG-R01",
+          "annotation_basis": "independent_source_plane_section_and_multiview_review",
+          "annotation_method": {
+            "method": "independent-source-plane-sections/1",
+            "plane_normal_local": [1, 0, 0],
+            "plane_offset_m": 0.039,
+            "closed_contour": true,
+            "section_vertex_count": 144,
+            "source_winding": "inward_radial",
+            "construction": "Triangle-plane intersections joined at 0.1 micrometre; radius checked against the contour, with no Build imports or normal-based patch extraction.",
+            "sample_points_local_m": [
+              [0.039, 0.026242639869451523, 0.030434446409344673],
+              [0.039, 0.026665609575475396, 0.030520148036955037],
+              [0.039, 0.02702045813202858, 0.0307566300034523],
+              [0.039, 0.027258942245882444, 0.031116314477885904],
+              [0.039, 0.02734263986349106, 0.03153444826602936],
+              [0.039, 0.027256939218002863, 0.03195741610940808],
+              [0.039, 0.02702045813202858, 0.032312262803316116],
+              [0.039, 0.026660773657594977, 0.032550747899292146],
+              [0.039, 0.026242639869451523, 0.03263444826006889],
+              [0.039, 0.0258196720260728, 0.032548744769813384],
+              [0.039, 0.025464823469519615, 0.032312262803316116],
+              [0.039, 0.025226338373543582, 0.03195258019152766],
+              [0.039, 0.025142639875411987, 0.03153444826602936],
+              [0.039, 0.02522834150302235, 0.031111478560005484],
+              [0.039, 0.025464823469519615, 0.0307566300034523],
+              [0.039, 0.025824507943953218, 0.030518144907476268]
+            ]
+          },
+          "function_status": "unknown",
+          "functional_scope": "This annotation verifies a finite inner-wall section; any mounting-site claim must come from the separately captured assembly input.",
+          "next_action": "与已捕获的连杆安装位置说明分别比对；底部阶梯孔需匹配版本装配图和对端证据。",
+          "inspected_materials": [
+            "SRC-000023",
+            "upstream-model-readme",
+            "upstream-microduck-design-tree",
+            "local-xl330-assembly"
+          ],
+          "missing_evidence": "本设备该孔的装配对象、装入侧、保持方式与实物规格尚未由独立图纸或实物证据核定。",
+          "stop_reason": "本轮已完成源字节、闭合截面、内向法线及多视图复核；所检索的固定版本资料未提供逐孔功能与实物保持依据。"
+        },
+        {
+          "id": "LG-02",
+          "label": "左连杆独立截面 2",
+          "kind": "cylindrical_wall",
+          "center_local_m": [0.039, 0.0262426407, 0.0400197285],
+          "axis_local": [1, 0, 0],
+          "radius_m": 0.0011,
+          "tolerance_m": 3e-05,
+          "center_world_m": [-0.0360197407, 0.039, 0.0847426285],
+          "triangle_witnesses": [4884, 4885, 4886, 4887, 4888, 4889, 4890, 4891, 4892, 4893, 4894, 4895, 4896, 4897, 4898, 4899, 4900, 4901, 4902, 4903, 4904, 4905, 4906, 4907, 4908, 4909, 4910, 4911, 4912, 4913, 4914, 4915, 4916, 4917, 4918, 4919, 4920, 4921, 4922, 4923, 4924, 4925, 4926, 4927, 4928, 4929, 4930, 4931, 4932, 4933, 4934, 4935, 4936, 4937, 4938, 4939, 4940, 4941, 4942, 4943, 4944, 4945, 4946, 4947, 4948, 4949, 4950, 4951, 4952, 4953, 4954, 4955, 4956, 4957, 4958, 4959, 4960, 4961, 4962, 4963, 4964, 4965, 4966, 4967, 4968, 4969, 4970, 4971, 4972, 4973, 4974, 4975, 4976, 4977, 4978, 4979, 4980, 4981, 4982, 4983, 4984, 4985, 4986, 4987, 4988, 4989, 4990, 4991, 4992, 4993, 4994, 4995, 4996, 4997, 4998, 4999, 5000, 5001, 5002, 5003, 5004, 5005, 5006, 5007, 5008, 5009, 5010, 5011, 5012, 5013, 5014, 5015, 5016, 5017, 5018, 5019, 5020, 5021, 5022, 5023, 5024, 5025, 5026, 5027],
+          "region_ref": "LG-R02",
+          "annotation_basis": "independent_source_plane_section_and_multiview_review",
+          "annotation_method": {
+            "method": "independent-source-plane-sections/1",
+            "plane_normal_local": [1, 0, 0],
+            "plane_offset_m": 0.039,
+            "closed_contour": true,
+            "section_vertex_count": 144,
+            "source_winding": "inward_radial",
+            "construction": "Triangle-plane intersections joined at 0.1 micrometre; radius checked against the contour, with no Build imports or normal-based patch extraction.",
+            "sample_points_local_m": [
+              [0.039, 0.026242639869451523, 0.03891972824931145],
+              [0.039, 0.026665609575475396, 0.03900542977532263],
+              [0.039, 0.02702045813202858, 0.039241909980773926],
+              [0.039, 0.027258942245882444, 0.03960159631785268],
+              [0.039, 0.02734263986349106, 0.04001972824335098],
+              [0.039, 0.027256939218002863, 0.04044269608672971],
+              [0.039, 0.02702045813202858, 0.04079754650592804],
+              [0.039, 0.026660773657594977, 0.04103603160190407],
+              [0.039, 0.026242639869451523, 0.04111972823739052],
+              [0.039, 0.0258196720260728, 0.04103402847242531],
+              [0.039, 0.025464823469519615, 0.04079754650592804],
+              [0.039, 0.025226338373543582, 0.04043786016884929],
+              [0.039, 0.025142639875411987, 0.04001972824335098],
+              [0.039, 0.02522834150302235, 0.03959676039997226],
+              [0.039, 0.025464823469519615, 0.039241909980773926],
+              [0.039, 0.025824507943953218, 0.039003426849042226]
+            ]
+          },
+          "function_status": "unknown",
+          "functional_scope": "This annotation verifies a finite inner-wall section; any mounting-site claim must come from the separately captured assembly input.",
+          "next_action": "与已捕获的连杆安装位置说明分别比对；底部阶梯孔需匹配版本装配图和对端证据。",
+          "inspected_materials": [
+            "SRC-000023",
+            "upstream-model-readme",
+            "upstream-microduck-design-tree",
+            "local-xl330-assembly"
+          ],
+          "missing_evidence": "本设备该孔的装配对象、装入侧、保持方式与实物规格尚未由独立图纸或实物证据核定。",
+          "stop_reason": "本轮已完成源字节、闭合截面、内向法线及多视图复核；所检索的固定版本资料未提供逐孔功能与实物保持依据。"
+        },
+        {
+          "id": "LG-03",
+          "label": "左连杆独立截面 3",
+          "kind": "cylindrical_wall",
+          "center_local_m": [0.039, 0.0177573593, 0.0315344471],
+          "axis_local": [1, 0, 0],
+          "radius_m": 0.0011,
+          "tolerance_m": 3e-05,
+          "center_world_m": [-0.0275344593, 0.039, 0.07625734710000001],
+          "triangle_witnesses": [5297, 5298, 5299, 5300, 5301, 5302, 5303, 5304, 5305, 5306, 5307, 5308, 5309, 5310, 5311, 5312, 5313, 5314, 5315, 5316, 5317, 5318, 5319, 5320, 5321, 5322, 5323, 5324, 5325, 5326, 5327, 5328, 5329, 5330, 5331, 5332, 5333, 5334, 5335, 5336, 5337, 5338, 5339, 5340, 5341, 5342, 5343, 5344, 5345, 5346, 5347, 5348, 5349, 5350, 5351, 5352, 5353, 5354, 5355, 5356, 5357, 5358, 5359, 5360, 5361, 5362, 5363, 5364, 5365, 5366, 5367, 5368, 5369, 5370, 5371, 5372, 5373, 5374, 5375, 5376, 5377, 5378, 5379, 5380, 5381, 5382, 5383, 5384, 5385, 5386, 5387, 5388, 5389, 5390, 5391, 5392, 5393, 5394, 5395, 5396, 5397, 5398, 5399, 5400, 5401, 5402, 5403, 5404, 5405, 5406, 5407, 5408, 5409, 5410, 5411, 5412, 5413, 5414, 5415, 5416, 5417, 5418, 5419, 5420, 5421, 5422, 5423, 5424, 5425, 5426, 5427, 5428, 5429, 5430, 5431, 5432, 5433, 5434, 5435, 5436, 5437, 5438, 5439, 5440],
+          "region_ref": "LG-R03",
+          "annotation_basis": "independent_source_plane_section_and_multiview_review",
+          "annotation_method": {
+            "method": "independent-source-plane-sections/1",
+            "plane_normal_local": [1, 0, 0],
+            "plane_offset_m": 0.039,
+            "closed_contour": true,
+            "section_vertex_count": 144,
+            "source_winding": "inward_radial",
+            "construction": "Triangle-plane intersections joined at 0.1 micrometre; radius checked against the contour, with no Build imports or normal-based patch extraction.",
+            "sample_points_local_m": [
+              [0.039, 0.017757359892129898, 0.030434446409344673],
+              [0.039, 0.018180327735508622, 0.030520148036955037],
+              [0.039, 0.018535176292061806, 0.0307566300034523],
+              [0.039, 0.01877366138803784, 0.031116314477885904],
+              [0.039, 0.018857359886169434, 0.03153444826602936],
+              [0.039, 0.01877165825855907, 0.03195741610940808],
+              [0.039, 0.018535176292061806, 0.032312262803316116],
+              [0.039, 0.018175491817628203, 0.032550747899292146],
+              [0.039, 0.017757359892129898, 0.03263444826006889],
+              [0.039, 0.017334390186106025, 0.032548744769813384],
+              [0.039, 0.01697954162955284, 0.032312262803316116],
+              [0.039, 0.016741057515698977, 0.03195258019152766],
+              [0.039, 0.016657359898090363, 0.03153444826602936],
+              [0.039, 0.016743060543578558, 0.031111478560005484],
+              [0.039, 0.01697954162955284, 0.0307566300034523],
+              [0.039, 0.017339226103986444, 0.030518144907476268]
+            ]
+          },
+          "function_status": "unknown",
+          "functional_scope": "This annotation verifies a finite inner-wall section; any mounting-site claim must come from the separately captured assembly input.",
+          "next_action": "与已捕获的连杆安装位置说明分别比对；底部阶梯孔需匹配版本装配图和对端证据。",
+          "inspected_materials": [
+            "SRC-000023",
+            "upstream-model-readme",
+            "upstream-microduck-design-tree",
+            "local-xl330-assembly"
+          ],
+          "missing_evidence": "本设备该孔的装配对象、装入侧、保持方式与实物规格尚未由独立图纸或实物证据核定。",
+          "stop_reason": "本轮已完成源字节、闭合截面、内向法线及多视图复核；所检索的固定版本资料未提供逐孔功能与实物保持依据。"
+        },
+        {
+          "id": "LG-04",
+          "label": "左连杆独立截面 4",
+          "kind": "cylindrical_wall",
+          "center_local_m": [0.039, 0.0177573593, 0.0400197285],
+          "axis_local": [1, 0, 0],
+          "radius_m": 0.0011,
+          "tolerance_m": 3e-05,
+          "center_world_m": [-0.0275344593, 0.039, 0.0847426285],
+          "triangle_witnesses": [8233, 8234, 8235, 8236, 8237, 8238, 8239, 8240, 8241, 8242, 8243, 8244, 8245, 8246, 8247, 8248, 8249, 8250, 8251, 8252, 8253, 8254, 8255, 8256, 8257, 8258, 8259, 8260, 8261, 8262, 8263, 8264, 8265, 8266, 8267, 8268, 8269, 8270, 8271, 8272, 8273, 8274, 8275, 8276, 8277, 8278, 8279, 8280, 8281, 8282, 8283, 8284, 8285, 8286, 8287, 8288, 8289, 8290, 8291, 8292, 8293, 8294, 8295, 8296, 8297, 8298, 8299, 8300, 8301, 8302, 8303, 8304, 8305, 8306, 8307, 8308, 8309, 8310, 8311, 8312, 8313, 8314, 8315, 8316, 8317, 8318, 8319, 8320, 8321, 8322, 8323, 8324, 8325, 8326, 8327, 8328, 8329, 8330, 8331, 8332, 8333, 8334, 8335, 8336, 8337, 8338, 8339, 8340, 8341, 8342, 8343, 8344, 8345, 8346, 8347, 8348, 8349, 8350, 8351, 8352, 8353, 8354, 8355, 8356, 8357, 8358, 8359, 8360, 8361, 8362, 8363, 8364, 8365, 8366, 8367, 8368, 8369, 8370, 8371, 8372, 8373, 8374, 8375, 8376],
+          "region_ref": "LG-R04",
+          "annotation_basis": "independent_source_plane_section_and_multiview_review",
+          "annotation_method": {
+            "method": "independent-source-plane-sections/1",
+            "plane_normal_local": [1, 0, 0],
+            "plane_offset_m": 0.039,
+            "closed_contour": true,
+            "section_vertex_count": 144,
+            "source_winding": "inward_radial",
+            "construction": "Triangle-plane intersections joined at 0.1 micrometre; radius checked against the contour, with no Build imports or normal-based patch extraction.",
+            "sample_points_local_m": [
+              [0.039, 0.017757359892129898, 0.03891972824931145],
+              [0.039, 0.018180327735508622, 0.03900542977532263],
+              [0.039, 0.018535176292061806, 0.039241909980773926],
+              [0.039, 0.01877366138803784, 0.03960159631785268],
+              [0.039, 0.018857359886169434, 0.04001972824335098],
+              [0.039, 0.01877165825855907, 0.04044269608672971],
+              [0.039, 0.018535176292061806, 0.04079754650592804],
+              [0.039, 0.018175491817628203, 0.04103603160190407],
+              [0.039, 0.017757359892129898, 0.04111972823739052],
+              [0.039, 0.017334390186106025, 0.04103402847242531],
+              [0.039, 0.01697954162955284, 0.04079754650592804],
+              [0.039, 0.016741057515698977, 0.04043786016884929],
+              [0.039, 0.016657359898090363, 0.04001972824335098],
+              [0.039, 0.016743060543578558, 0.03959676039997226],
+              [0.039, 0.01697954162955284, 0.039241909980773926],
+              [0.039, 0.017339226103986444, 0.039003426849042226]
+            ]
+          },
+          "function_status": "unknown",
+          "functional_scope": "This annotation verifies a finite inner-wall section; any mounting-site claim must come from the separately captured assembly input.",
+          "next_action": "与已捕获的连杆安装位置说明分别比对；底部阶梯孔需匹配版本装配图和对端证据。",
+          "inspected_materials": [
+            "SRC-000023",
+            "upstream-model-readme",
+            "upstream-microduck-design-tree",
+            "local-xl330-assembly"
+          ],
+          "missing_evidence": "本设备该孔的装配对象、装入侧、保持方式与实物规格尚未由独立图纸或实物证据核定。",
+          "stop_reason": "本轮已完成源字节、闭合截面、内向法线及多视图复核；所检索的固定版本资料未提供逐孔功能与实物保持依据。"
+        },
+        {
+          "id": "LG-05",
+          "label": "左连杆独立截面 5",
+          "kind": "cylindrical_wall",
+          "center_local_m": [0.033, 0.022, -0.006222912],
+          "axis_local": [1, 0, 0],
+          "radius_m": 0.00275,
+          "tolerance_m": 3e-05,
+          "center_world_m": [-0.0317771, 0.033, 0.038499988000000006],
+          "triangle_witnesses": [8665, 8666, 8667, 8668, 8669, 8670, 8671, 8672, 8673, 8674, 8675, 8676, 8677, 8678, 8679, 8680, 8681, 8682, 8683, 8684, 8685, 8686, 8687, 8688, 8689, 8690, 8691, 8692, 8693, 8694, 8695, 8696, 8697, 8698, 8699, 8700, 8701, 8702, 8703, 8704, 8705, 8706, 8707, 8708, 8709, 8710, 8711, 8712, 8713, 8714, 8715, 8716, 8717, 8718, 8719, 8720, 8721, 8722, 8723, 8724, 8725, 8726, 8727, 8728, 8729, 8730, 8731, 8732, 8733, 8734, 8735, 8736, 8737, 8738, 8739, 8740, 8741, 8742, 8743, 8744, 8745, 8746, 8747, 8748, 8749, 8750, 8751, 8752, 8753, 8754, 8755, 8756, 8757, 8758, 8759, 8760, 8761, 8762, 8763, 8764, 8765, 8766, 8767, 8768, 8769, 8770, 8771, 8772, 8773, 8774, 8775, 8776, 8777, 8778, 8779, 8780, 8781, 8782, 8783, 8784, 8785, 8786, 8787, 8788, 8789, 8790, 8791, 8792, 8793, 8794, 8795, 8796, 8797, 8798, 8799, 8800, 8801, 8802, 8803, 8804, 8805, 8806, 8807, 8808],
+          "region_ref": "LG-R05",
+          "annotation_basis": "independent_source_plane_section_and_multiview_review",
+          "annotation_method": {
+            "method": "independent-source-plane-sections/1",
+            "plane_normal_local": [1, 0, 0],
+            "plane_offset_m": 0.033,
+            "closed_contour": true,
+            "section_vertex_count": 144,
+            "source_winding": "inward_radial",
+            "construction": "Triangle-plane intersections joined at 0.1 micrometre; radius checked against the contour, with no Build imports or normal-based patch extraction.",
+            "sample_points_local_m": [
+              [0.033, 0.02199999988079071, -0.008972912095487118],
+              [0.033, 0.023130537331140188, -0.008728374360541804],
+              [0.033, 0.023944543674588203, -0.008167455904185772],
+              [0.033, 0.024571039814354864, -0.007195131466288768],
+              [0.033, 0.02474999986588955, -0.006222912576049566],
+              [0.033, 0.024505461465714487, -0.005092375923976252],
+              [0.033, 0.023944543674588203, -0.004278368782252073],
+              [0.033, 0.022972219303214404, -0.003651873141407724],
+              [0.033, 0.02199999988079071, -0.003472912358120084],
+              [0.033, 0.020869464026993557, -0.0037174504922034782],
+              [0.033, 0.020055456086993217, -0.004278368782252073],
+              [0.033, 0.01942896154377888, -0.005250693286672285],
+              [0.033, 0.01924999989569187, -0.006222912576049566],
+              [0.033, 0.01949453856195976, -0.0073534491615996735],
+              [0.033, 0.020055456086993217, -0.008167455904185772],
+              [0.033, 0.021027780724459842, -0.008793951378722685]
+            ]
+          },
+          "function_status": "unknown",
+          "functional_scope": "This annotation verifies a finite inner-wall section; any mounting-site claim must come from the separately captured assembly input.",
+          "next_action": "与已捕获的连杆安装位置说明分别比对；底部阶梯孔需匹配版本装配图和对端证据。",
+          "inspected_materials": [
+            "SRC-000023",
+            "upstream-model-readme",
+            "upstream-microduck-design-tree",
+            "local-xl330-assembly"
+          ],
+          "missing_evidence": "本设备该孔的装配对象、装入侧、保持方式与实物规格尚未由独立图纸或实物证据核定。",
+          "stop_reason": "本轮已完成源字节、闭合截面、内向法线及多视图复核；所检索的固定版本资料未提供逐孔功能与实物保持依据。"
+        }
+      ],
+      "figures": [
+        "docs/build/interface-review/leg-source.png",
+        "docs/build/interface-review/independent-sections.png"
+      ]
+    }
+  ]
+}

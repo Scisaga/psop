@@ -1,0 +1,20 @@
+{
+  "phase": "after",
+  "snapshot": "dkp-8857e0482824621ff8da",
+  "camera": "0.30,-0.32,0.23,0,0,0.105",
+  "url": "http://127.0.0.1:8780/#explorer?workspace=microduck&snapshot=dkp-8857e0482824621ff8da&part=part%3Amicroduck%3Afa9ee2f71faafb88&explode=0.00&detail=interfaces&view=iso&labels=0&grid=0&supplements=0&camera=0.3000000%2C-0.3200000%2C0.2300000%2C0.0000000%2C0.0000000%2C0.1050000",
+  "desktopBounds": {
+    "x": 1240,
+    "y": 135,
+    "width": 360,
+    "height": 740
+  },
+  "desktop": "左右方向键调整宽度，按住 Shift 加快；Home 最窄，End 最宽，回车恢复默认。\n对象详情\n结构件\n髋部件\npart:microduck:fa9ee2f71faafb88\n模型对象\n来源已定位\n概览\n几何\n接口\n关联\n证据\n3\n本件连接部位\n源局部坐标\n\n选择部位或成员；点击定位进入局部查看。\n\nX 向四孔组\n4 × Ø2.4 · PCD 12 mm\nXL330 舵机 · upper_leg_left · 场景 4, 55, 102.5 mm · 假设\nY 向四孔组\n4 × Ø2.4 · PCD 12 mm\nXL330 舵机 · yaw2roll · 场景 6, 17.5, 102.5 mm · 假设\nX 向轴颈\nØ16 mm\n轴承外形（22×16×4 配置名） · hip_l · 场景 4, 38.5, 102.5 mm · 支承候选\nY 向轴颈\nØ16 mm\n轴承外形（22×16×4 配置名） · yaw2roll · 场景 22.5, 17.5, 102.5 mm · 支承候选\n其他几何线索 · 用途未定\n11\n关联与调查\n含间接关系、排除结果与检索记录\n打开全机连接审查\n分析覆盖与待完善能力\n在场景中聚焦",
+  "scripts": [
+    "/assets/index-CGRDHGhI.js"
+  ],
+  "stylesheets": [
+    "/assets/index-BnGLjiCt.css"
+  ],
+  "errors": []
+}
